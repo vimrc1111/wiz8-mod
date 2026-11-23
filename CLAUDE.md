@@ -37,3 +37,4 @@ Wizardry 8 中文化＋現代機器相容。原版資料與美術一個 byte 不
 ## CI
 本機 CI：`bash scripts/ci-run.sh wiz8-mod bash scripts/ci-check.sh`（`.ci-evidence` 開閘，推送要 tip 有 exit 0 證據）。
 - MG 2026-11-01 結案後解除安裝 Steam 原版（「wiz8 是我解除安裝的」）：go／tr／lib／zhpatch 四 lane 讀原版，之後必紅。b7276cd5 在 CI exit 1 下推出（cc 指令未以 CI 結果擋 push，pre-push 閘亦放行）。重開本案先裝回原版補跑 CI。
+- 2026-11-23 MG 重裝 Steam 原版（v1.2.4）：獨立 repo first commit 27b37e4 CI 五道 exit 0（`~/.local/state/wiz8-mod-ci/27b37e4c…/`）。原版再移除時上述四 lane 照舊必紅。
