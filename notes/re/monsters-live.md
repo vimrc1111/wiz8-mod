@@ -32,7 +32,6 @@
 - [已驗證] 朝向：`0x453970`（`@0x53970`：d981d4000000c3909090909090909090，`fld [ecx+0xd4]`）ecx＝M+0x18 → M+0xec（float yaw）。與隊伍 yaw（`f32[D+4]`，D＝[0x65a0f8]）是否同零點／同方向：[未取得]（怪物 yaw 與 `mp8_theta` 的零點未對照）。
 - [已驗證] 初始位置寫入：E+0x17/+0x1b/+0x1f 是建立時複製的 3 個 float（asm 305483 起）；`0x4e3c70`（asm 約 305743；`@0xe3c70`：83ec0c568b74241485f657751d8b3df4）啟動個體時於 0x4e3d07（`@0xe3d07`：8d46175051e8ef21feff8b15b93f6800）以 `lea eax,[esi+0x17]` 呼叫 `0x4c5f00(M, &E+0x17)`（`@0xc5f00`：83ec188b442420d90056d95c2404d940）把位置設到 M。
 - [未取得] E+0x17 是否隨怪物移動同步更新：靜態上未見；建議把 E+0x17 當「出生／邏輯點」，每幀用 M+0x118。
-- [未取得] 單位換算（與地圖頁 X、Z 的整數格比例）：與隊伍同欄位，直接沿用隊伍的換算（mappos8.h 的 X/Z）。
 
 ## X1-Q3 存活／死亡／隱形旗標
 
@@ -79,6 +78,6 @@
 ## 原版自動地圖的怪物圖示與敵我（2026-11-01，cc 自 objdump 靜態追；未派 rea）
 - [已驗證：static_analysis] 圖示路徑字串（.data）：`Data\Automap\map_monsterhostile_a.tga`@0x64b9d0、neutral@0x64b9f8、friendly@0x64ba20、partymarker@0x64ba48；載入在 0x582361–0x582723（`call 0x47c630`），sprite 物件存 0x68f29c＝party、0x68f2a0＝friendly、0x68f2a4＝neutral、0x68f2a8＝hostile（0x68f2ac 用途未取得）。
 - [已驗證：static_analysis] 建標記 `0x583710(kind)`：kind 0→0x68f2a0 friendly、1→neutral、2→hostile。呼叫端 0x582d9a 迴圈走個體向量 A（0x683fad，`call 0x5e2870` 取第 i 筆）：取 **E+0x16** byte，0→push 1（neutral）、1→push 2（hostile）、2→push 0（friendly），其他值不畫。⇒ **E+0x16：0 中立、1 敵對、2 友善**（E 建立時取自群組 G+0x2a，見上 Q1）。
-- [已驗證：runtime_reproduction] MG 2026-11-01 實玩 x-ray（ddraw e6f7f789 部署版，地圖頁依 E+0x16 畫中立／敵對／友善圖示）：「x-ray 表現完全符合預期」。
+- [已驗證：runtime_reproduction] MG 2026-11-01 實玩 x-ray（ddraw e6f7f789 部署版，依 E+0x16 區分中立／敵對／友善）：「x-ray 表現完全符合預期」。
 - [已驗證：static_analysis] 原版顯示條件：`ds:0x68f264` 非 0 或區域旗標（[esp+0x1f]）非 0 時全畫；否則要 `M+0x217==0` 且 `E+0x28a==1`。[推測：無實測支撐] E+0x28a＝已偵測／可見、M+0x217＝死亡或隱形。x-ray 不套此條件；ddraw diag log 每筆印 E+0x16、E+0x28a、M+0x217 供實玩判讀。
 - 圖示檔：DATA.SLF `AUTOMAP\MAP_MONSTER{HOSTILE,NEUTRAL,FRIENDLY}_A.TGA`（64×64、type 2、32bpp、自下而上、有 alpha）；adapter 現場抽成試玩包 `攻略\mob-<k>.png`（k＝E+0x16），不入 repo。

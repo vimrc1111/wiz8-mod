@@ -6,7 +6,7 @@ MG 2026-10-31：「wiz8 是有辦法在地圖裡頭拿到即時怪物移動資�
 ## 已知（引用，不重查）
 - 怪物 runtime M、模板 D；攻擊者→目標平面角用 `0x4be420`→`0x517c60`，朝向 `0x453970`（`notes/re/backstab.md:25`）。
 - 怪物逐次更新 `0x4c2100`（vtable 0x5ed22c +0x40），外層 dispatch 未定位（`notes/re/combat-anim.md:13`、`:15`）。
-- 隊伍：D=`[0x65a0f8]`，yaw=f32[D+4]；隊伍世界座標、mapPose 座標系＝X、Z 平面（`hook/ddraw/mappos8.h`、`proxy.c`）。
+- 隊伍：D=`[0x65a0f8]`，yaw=f32[D+4]；隊伍世界座標在 X、Z 平面（`hook/ddraw/proxy.c`）。
 
 ## 問題（每題給 [已驗證]／[推測]／[未取得]）
 Q1 當前地圖**全部**怪物（含非戰鬥、遊蕩中）的容器：全域指標位址、型別（陣列／鏈結串列／vector）、筆數欄、走訪方式。

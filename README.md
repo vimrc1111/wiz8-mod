@@ -88,7 +88,7 @@ bash scripts/ci-run.sh wiz8-mod bash scripts/ci-check.sh   # 本機 CI（五道�
 ```
 
 - CI 證據寫在 `~/.local/state/wiz8-mod-ci/<SHA>/`；pre-push 閘要求 tip 有 exit 0 的證據。
-- go／tr／lib／zhpatch 四道讀原版：原版不在時必紅（2026-11-01 起 Steam 原版已解除安裝，重開本案先裝回）。
+- go／tr／lib／zhpatch 四道讀原版：原版不在時必紅。
 - 原版衍生物（解出的檔、表、截圖、試算中間檔）一律放 `build/`（gitignored）或 `~/.local/state/wiz8-mod-*`，不入版。
 
 ### 配裝試算（`tools/calc`）
