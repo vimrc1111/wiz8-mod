@@ -10,7 +10,7 @@ Wizardry 8 繁體中文化。原版資料一個 byte 都不改：安裝時只往
 
 ## 打包（開發機）
 
-需要 Go、`i686-w64-mingw32` 工具鏈（建 ddraw.dll）、`/mnt/c/Windows/SysWOW64/ddraw.dll`（算匯出表；可用 `SYS_DDRAW=` 指定）。
+環境同下方「開發機需要」（Go、`i686-w64-mingw32`、`python3`、`cpio`、系統 `ddraw.dll`、兩個字型檔）；打包本身不讀原版。
 
 ```bash
 bash scripts/release.sh /path/to/wiz8-mod.zip
@@ -56,7 +56,7 @@ bash scripts/release.sh /path/to/wiz8-mod.zip
 
 ## 更新到新版
 
-解壓新版，直接跑新版的 `install.bat`：會先移除舊版再裝，存檔不受影響。
+解壓新版，直接跑新版的 `install.bat`：會先移除舊版再裝，存檔不受影響。F10 選單的設定（`wiz8mod.ini`）會一起被清掉，回到預設值。
 
 ## 移除
 
@@ -64,7 +64,7 @@ bash scripts/release.sh /path/to/wiz8-mod.zip
 uninstall.bat "C:\...\Wizardry8"
 ```
 
-刪本 mod 的兩個檔與 F10 選單存的 `wiz8mod.ini`；`ddraw.dll` 不是本包那份（或不在）就兩個都不動（`PATCH.002` 本身認不出是誰做的）。存檔不受影響。
+刪本 mod 的兩個檔。`ddraw.dll` 不是 wiz8-mod 的（或不在）時，這兩個檔都不動（`PATCH.002` 本身認不出是誰做的）。F10 選單存的 `wiz8mod.ini` 一律刪除。存檔不受影響。
 
 ## 已知限制
 
@@ -107,7 +107,7 @@ go test ./...                                    # Go 單元測試
 bash scripts/ci-run.sh wiz8-mod bash scripts/ci-check.sh   # 本機 CI（五道：go／hook／tr／lib／zhpatch）
 ```
 
-- CI 證據寫在 `~/.local/state/wiz8-mod-ci/<SHA>/`；pre-push 閘要求 tip 有 exit 0 的證據。
+- CI 結果寫在 `~/.local/state/wiz8-mod-ci/<SHA>/`（`exit-code.txt`＝0 為通過）。
 - go／tr／lib／zhpatch 四道讀原版：原版不在時必紅。
 - 原版衍生物（解出的檔、表、截圖、試算中間檔）一律放 `build/`（gitignored）或 `~/.local/state/wiz8-mod-*`，不入版。
 
