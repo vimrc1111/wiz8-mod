@@ -61,7 +61,7 @@ uninstall.bat "C:\...\Wizardry8"
 |---|---|
 | `translations/` | 譯文（只有我們的文字；`stringdata.json`、`lib.tsv`、`monsters.json`…） |
 | `tools/` | Go 工具：`slf`（解／打 SLF、PATCH）、`strings`、`strlib`、`nsf`、`dbsname`、`zhpatch`（玩家端產 PATCH.002）、`atlas`（字形圖集）、`calc`（傷害試算）、`trcheck` 等 |
-| `hook/ddraw/` | 代理 `ddraw.dll`（中文繪字、F10 速度選單、截圖、地圖位置輸出） |
+| `hook/ddraw/` | 代理 `ddraw.dll`（中文繪字、F10 速度選單、截圖） |
 | `release/` | 玩家用 `install.bat`／`uninstall.bat`／`INSTALL.txt` |
 | `scripts/` | 建置、檢查、CI、實機跑測（`wiz8-run.sh`） |
 | `notes/`、`notes/re/` | 研究筆記、反組譯推得的規則（只寫規則與位址，不含反組譯碼） |
@@ -94,29 +94,6 @@ bash scripts/ci-run.sh wiz8-mod bash scripts/ci-check.sh   # 本機 CI（五道�
 ### 配裝試算（`tools/calc`）
 
 近戰與單體直接傷害法術的期望傷害；公式條目在 `notes/re/formulas.md`。結論與用法見 `notes/party.md`（最終隊伍建議）。
-
-### 即時地圖（BitAtlas，不在本 repo）
-
-中文化只需要本 repo＋Steam 原版，不需要地圖。地圖是 `rpg-mod` repo 裡的共用地圖層 BitAtlas（`rpg-mod/bitatlas/`），分工如下：
-
-| 部分 | 在哪 | 作用 |
-|---|---|---|
-| 位置輸出 | 本 repo `hook/ddraw/mappos8.h`＋`proxy.c`（CI：`hook/ddraw/mappos8.test.sh`） | 遊戲執行中每幀把隊伍位置、本圖怪物寫到遊戲目錄的 `MAPPOS.JS`（暫存檔＋換名）。沒有地圖頁讀它時無作用，不影響中文化 |
-| 原版 → 地圖轉換 | `rpg-mod/wiz8-mod/tools/atlas_wiz8.ts`、`mobs_wiz8.ts` | 從原版 `Levels/LEVELS.SLF`、`Data/DATA.SLF`、`Wiz8.exe` 現場產各層底圖 PNG＋`atlas.json`；怪物名取 `translations/monsters.json` |
-| 地圖頁與部署 | `rpg-mod/bitatlas/`（`viewer.html`、`viewer.js`、`atlas.ts`、`deploy.sh`） | 驗證地圖格式、把頁面放進遊戲目錄 `攻略\` |
-
-這兩支轉換工具在本 repo 已移除（2026-11-23 拆出時），正本只在 `rpg-mod`；本 repo 的 dll 與 rpg-mod 那份寫出同一種 `MAPPOS.JS`。
-
-要用地圖（在 rpg-mod 裡做）：
-
-```bash
-cd rpg-mod
-bash bitatlas/deploy.sh wiz8        # 需要 bun（~/.bun/bin/bun 或 BUN=）；DRY=1 只比對不寫入
-```
-
-- 產物放到 Steam 遊戲目錄 `攻略\`：`地圖.html`、`viewer.js`、`atlas.js`、`walk.js`、`mobs.js`、`wiz8-<圖>-<層>.png`。部署前後對原版三檔取雜湊，不同就失敗。
-- 遊戲目錄要裝著帶位置輸出的 `ddraw.dll`（本 repo 或 rpg-mod 建的都可）。遊戲開著時用瀏覽器開 `攻略\地圖.html`，頁面輪詢 `..\MAPPOS.JS` 即時顯示位置與怪物。
-- `uninstall.bat` 不刪 `攻略\` 與 `MAPPOS.JS`，要自己刪。
 
 ### 工作紀錄
 
