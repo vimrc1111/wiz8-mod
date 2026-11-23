@@ -1,0 +1,46 @@
+call	2b6	無關	掃描器的非函式呼叫目標；477-byte 入口範圍沒有此子呼叫，與效果時間規則無關（build/wiz8.asm:452150..452302）
+call	40efa0	randomDurationAdjustment	非永久時間呼叫 R(4)，保留完整呼叫順序及所有分支
+call	4acd80	attachMonsterBuffVisual	新效果或不同法術才附加怪物顯示效果，0x49f3ba額外消耗R(20)並在calc重放；視覺描述取法術表，與槽內時間公式無關；子函式仍執行，SR 資源介面由 case stubs 提供，顯示列表不納入規則輸出
+call	4e5550	findMonsterByIdentity	用目標列表的識別碼在已載入怪物列表找索引；case 配置兩個不同識別碼的獨立記錄
+call	4e5620	getMonsterRecord	由怪物索引取得完整記錄；case 配置有效列表與模板，原版直接執行
+call	50e700	rebuildPartySharedModifiers	效果槽寫入後重建隊伍修正；calc 呼叫既有 partyEffectRebuildNode，共享同一個執行時 exe 分派表；case 無在場角色及戰鬥光環，輸出包含完整103-byte緩衝
+call	50e8c0	rebuildMonsterSharedModifiers	清除怪物103-byte修正並合併狀態、條件與共享法術；case 狀態和條件固定零，共享法術沿用50e700節點；模板已載入，額外攻擊快取不納入本介面
+call	517f90	addDurationPercentage	以低32位時間乘加成後無號除100，再回繞相加；不是有號百分比，也不作四捨五入
+call	562a50	requestPartyBuffDisplayRefresh	畫面模式7且顯示物件存在時，刷新旗標 OR 0x800100；case 固定存在物件並將模式與舊旗標納入輸入
+
+data	4	無關	立即值與stack調整誤列為資料引用；不是資料表或遊戲記錄
+data	5ebaf4	assertInvalidBuffReference	SR斷言import槽；不合法法術或怪物參考才呼叫，合法案例不進此分支
+data	60cffc	spellMonsterVisualDescriptor	每法術8-byte記錄的怪物視覺描述索引；原版子呼叫直接讀exe映射，不內嵌；沒有視覺描述的法術僅測隊伍套用或同碼怪物槽刷新
+data	60f4f8	missingMonsterAssertionText	怪物記錄缺失的斷言文字；不是時間規則輸入
+data	616d84	sharedBuffSpellSlotOrder	十二筆法術碼決定隊伍和怪物共享槽；calc 執行時從使用者exe讀取，不內嵌表
+data	616d88	sharedBuffSpellSlotOrderNext	上述槽序表第二筆，搜尋迴圈的資料引用；不是獨立全域規則
+data	616db4	sharedBuffSpellSlotOrderEnd	十二筆表的結束位址；搜尋失敗屬不合法法術防禦分支
+data	61e2c4	spellSourceAssertionFile	斷言來源檔名字串；不參與遊戲數值
+data	61e2f8	unknownBuffAssertionText	法術不在共享槽序表的斷言文字；不參與遊戲數值
+data	686930	partySharedBuffSlotActive	隊伍共享槽第二筆的啟用byte，實際起點0x68691f與步長17；case 將全部槽納入輸入和輸出
+data	686931	partySharedBuffSlotSpell	第二筆共享槽的法術識別碼u32；對應每槽+1
+data	686935	partySharedBuffSlotPower	第二筆共享槽的威力u32；寫入全32位，修正重建僅取低byte
+data	68693d	partySharedBuffSlotDuration	第二筆共享槽的時間u32；對應每槽+13
+data	800100	partyBuffRefreshMask	刷新位元立即值，來源0x54ccc8；不是物件指標或exe資料表
+data	fffffffffffffff8	無關	堆疊負位移掃描產物；呼叫暫存，不是遊戲規則欄位
+data	fffffffffffffffc	無關	堆疊負位移掃描產物；呼叫暫存，不是遊戲規則欄位
+field	eax+0x0	partySharedBuffActive	搜尋得到的隊伍共享槽啟用byte，套用時置1
+field	eax+0x1	partySharedBuffSpell	隊伍共享槽法術碼u32，套用時寫入本次法術碼
+field	eax+0x5	partySharedBuffPower	隊伍共享槽威力u32；+9倍率保留既有值
+field	eax+0xd	partySharedBuffDuration	隊伍共享槽時間u32，套用時寫入合成時間
+field	ecx*8+0x60cffc	monsterBuffVisualDescriptor	依本次法術碼查每筆8-byte視覺描述；只有新增／換碼才呼叫視覺附加
+field	edi+0x0	buffSpellIdentity	效果物件法術碼，決定共享槽及怪物視覺；case 直接輸入
+field	edi+0x125	buffApplied	效果物件已套用byte；任一隊伍或怪物成功套用置1，無目標時保留
+field	edi+0xd0	buffPower	效果威力u32，參與線性時間並寫共享槽
+field	edi+0xd4	buffDurationBonusPercent	時間加成百分比u32；時間乘積先回繞再無號除100
+field	edi+0xd8	buffBaseDuration	效果基本時間u32，和每威力時間相加；合成9999代表永久
+field	edi+0xdc	buffDurationPerPower	每單位威力的時間u32；乘加使用32位回繞
+field	edi+0xe4	monsterTargetCount	目標列表筆數，以有號比較；零或負數不進怪物迴圈，case 至多兩個有效目標
+field	edi+0xec	monsterTargetIdentities	怪物目標識別碼列表指標；case 固定兩筆識別碼100/101，與怪物記錄一致
+field	edi+0xf4	applyToParty	非零才写隊伍共享槽並重建隊伍修正及請求畫面刷新
+field	esi+0x0	monsterIdentity	當前怪物記錄識別碼；傳給重建子呼叫再次查找同一記錄
+field	esi+0xc	monsterRenderObject	怪物顯示物件指標；case 配置顯示狀態及效果列表，原版視覺附加照常執行
+field	esi+ebp*1	monsterSharedBuffActive	怪物+0x10f加槽索引乘17的啟用byte；舊值決定是否附加視覺
+field	esi+ebp*1+0x1	monsterSharedBuffSpell	怪物共享槽法術碼u32；相同碼且已啟用時保留視覺
+field	esi+ebp*1+0x5	monsterSharedBuffPower	怪物共享槽威力u32；直接覆寫而非取最大值，倍率欄保留
+field	esi+ebp*1+0xd	monsterSharedBuffDuration	怪物共享槽時間u32；直接覆寫，所有目標用同一條亂數軌跡合成的時間

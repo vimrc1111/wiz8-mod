@@ -1,0 +1,497 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "820582221e7d88bc3459d4a6a54d4836429ea75a5c6946fbfb200439f42be22c",
+  "zh": "立刻離開我的帳篷。這是命令。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "4f35fd1d70899f054d09809a8c0908baca2f042dce76ca9d0450ef1723ce86ff",
+  "zh": "你們說服不了我……"
+ },
+ {
+  "id": 6,
+  "src_sha256": "670e08c0b10956e00248b5db57412cb52c5d8277ba9bfb01087fa2d9dbc77993",
+  "zh": "你們竟敢威脅你們的王（ KING ）？你們將付出慘痛代價……"
+ },
+ {
+  "id": 7,
+  "src_sha256": "d23bbad3ca7898dfbe30e43a54557258cd51c4d2170217005873c194e5658ddd",
+  "zh": "這根本稱不上是什麼貢品……"
+ },
+ {
+  "id": 8,
+  "src_sha256": "134f4d2a138be892bcec5558377b723b3a9714205ab4086455a5215ef5681172",
+  "zh": "讓我看看這場打鬥……"
+ },
+ {
+  "id": 9,
+  "src_sha256": "4839f8a2d7f2c0652119ab08cb1ab279d69b1180563495825b0a8c3e9e6fdb7a",
+  "zh": "加入你們？！ Templar ，你們的職責是保護我，為了我們黑暗同盟的大業賭上性命。加入你們？呵呵。你們還真有趣……"
+ },
+ {
+  "id": 12,
+  "src_sha256": "a6ff02b72bc2cc8df5addd37e4cc2746ea1123e0ef40bcff03b69c8bdc6ff09e",
+  "zh": "給我的？謝謝……"
+ },
+ {
+  "id": 13,
+  "src_sha256": "5bb27d3c1451ae71aef05a75bbf4203f11e8eba86ab1df3bd15b0e48b9978b5b",
+  "zh": "嗯……不。這對我沒用。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "605ef52e22da7ed2c976669c4108d528f615cccd9cb428326e31050fdcce5a2a",
+  "zh": "你們的貨色我不想再看了……"
+ },
+ {
+  "id": 16,
+  "src_sha256": "9c199354dde1dfad37b9d10301afaf12b343cbb6d8cdef1b396d738d84fea4f6",
+  "zh": "你們的金錢（ money ）不夠， Templar 。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "aefa92a48b38d1de7e84d6a9b55faaeff045b07fa8fc7f826fe9b653e8c5bc29",
+  "zh": "你們好大的膽子！這是我自己的東西！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "b66ffcd7cc7a1853081efee892a9d8d0bc781347ce12dc544bcfc9eaf5649903",
+  "zh": "我可是相信，衛兵們昨晚才剛把刀刃磨利！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "86a7dcecb326bee4fed4882bd3cb56c225d4a4d1ab03675585ab7faefe35b048",
+  "zh": "剛才那是什麼？莫非有隻手伸進我的口袋？你們竟敢背叛我……"
+ },
+ {
+  "id": 20,
+  "src_sha256": "71c8bf433c74d56108864b8f00f42f4383660f6d4de950501b1dbb1ae4e7a673",
+  "zh": "我就知道我們會找到你們！！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "9c18ac3df391530ecac68e4870e08f9054c1afab2d1a06b5c4e951a3bacba15b",
+  "zh": "就這樣而已？"
+ },
+ {
+  "id": 22,
+  "src_sha256": "223abc17d45fe913ac5a69320a2061be0def752413ae0eaeb07cf06f8d45553c",
+  "zh": "現在沒時間討論這個。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "2be1e28472c7a716181c53f5c0f0b516a26744bfbe1f6023a38a06a011572050",
+  "zh": "去問我的僕人。我們還有別的事要談。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "ebb0058b97575ed823e1aaf2b9f6ad9e426343dfcefbf925139b4abcc998c539",
+  "zh": "也許改天我會告訴你們。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "5ed2c3a92c25acbec2d2db9d25440b131e1172de33cd2e628c6fb32718fc97b4",
+  "zh": "如我所說……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "e4523991091b703497d2bf9af6738aee3b5eb206760743ff34a031e2d5a204ec",
+  "zh": "你們吵得王室的耳朵都累了……"
+ },
+ {
+  "id": 27,
+  "src_sha256": "7266801b3149f1b1b0fe29627deda8ca4df0e279a2111723f2d49bb942ea5b5c",
+  "zh": "還有另一件事……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "6614ea99e91dce7755da0515345554b1d8ccd75abac6a23caf0307dedd710a5a",
+  "zh": "沒錯，真是太驚人了！"
+ },
+ {
+  "id": 29,
+  "src_sha256": "b39f8f5f465fa6faddc3dd5666e442e97ca228d316a49a24f8d472c5e6dc1bd3",
+  "zh": "我有太多計畫要籌備了……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "4291fd23f4fe2da9a8f1c62cc45fc7822d1b7df79dd36fe0f0b30f9ecfdcf228",
+  "zh": "如果你們那些重要的問題問完了，那麼……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "015094616d234cf3b177eb623da92d244ceb2df6b1d5b5bd70ae8fdcee89f469",
+  "zh": "Dominus ……我們存在數百年來的家園，很快就要完完全全屬於我們了。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "0d5dea6335d4b257af73b83f1ea987bd17b900d7dd6fba9a07d47fec3e159562",
+  "zh": " Arnika ，是啊。那座城鎮的故事很悲慘。如果你們還沒去過，我建議在我們夷平它之前去一趟。 Savant Tower 會替我們處理的……"
+ },
+ {
+  "id": 33,
+  "src_sha256": "cf294057cb1cba6b18e11ea76e413606842c5024f8057d7d182e2b18370dc81d",
+  "zh": "那又怎樣？那座可悲的小島……"
+ },
+ {
+  "id": 34,
+  "src_sha256": "c85a6c8d4794ba60dc5adeb4a45308e976245110de3039f5b9df4169d74b7f58",
+  "zh": "沒錯！那就是我們下一個要去的地方。那些小小的 Trynnie 終於要去見他們的造物主了！一個也不留……"
+ },
+ {
+  "id": 35,
+  "src_sha256": "109f948ee208dbf71bd056d04b073ad13afdc8a03cb6e46d54e10f6045cc19a3",
+  "zh": "很快就不只是城堡……整個世界都將屬於我們！"
+ },
+ {
+  "id": 36,
+  "src_sha256": "1b72961b86efc5a9b812d909306ecb695f8cf7c89f888044308886e3169c4d9e",
+  "zh": "我最喜歡的地方之一，沒錯。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "85511c0a9af704884553db2de1aefb5cf20559e8da2d094b704f8341eb767834",
+  "zh": "是啊，那是愚蠢的 Umpani 的家……他們的時候就要到了。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "d333a2c593f1d73cd589a896a433f9db7d09a26a2e184b796415dcdd3417f845",
+  "zh": "果然是虛張聲勢（ bluff ）！就算 T'Rang 人數多出三倍，也擋不住 Rapax 的入侵。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "b9bbd689d8ebcb9c5074d8b66866d977c098cdef4bb639198565c68e8a501a96",
+  "zh": "時機成熟之時（ when ）， Savant Tower 會處理他們的……"
+ },
+ {
+  "id": 45,
+  "src_sha256": "22a8836e3e82b30f299e9fc9e50e570a6278b4546622e48d1c4338ec429e3891",
+  "zh": "眼下這個時候，我想 Dominus 上的每個人都巴不得自己是其中一個吧……"
+ },
+ {
+  "id": 46,
+  "src_sha256": "9d0a96a5cdc0a31721e5b97074dc2abcb5954678ca12fe3776825f57c221a791",
+  "zh": "可憐的傻瓜……他們根本不知道自己面對的是什麼。唉，跟他們交手簡直有點不公平，不過嘛，時候到了自然會交手。當（ when ）他們挑戰 Dark Savant 的那一刻，人生（ life ）的命運就已經註定了……"
+ },
+ {
+  "id": 47,
+  "src_sha256": "edf1d986ad1c7084512372ac4d88a3c8682a4c4c1578c923a418e161c4467000",
+  "zh": "他們令我作嘔……幸好， Savant 的計畫（ plan ）是把他們從這個宇宙中永遠清除。他們竟然妄想跟他爭奪 Ascension ，真是愚蠢。他們的死，是自找的。"
+ },
+ {
+  "id": 49,
+  "src_sha256": "c7fbc74160e6677b936358cb924dc09bb0a2895f9b1c8dec08a7217640f9a2ea",
+  "zh": "他們的孤立曾是他們的優勢，如今卻成了最大的弱點……我們降臨之時（ when ），他們將無處可逃……"
+ },
+ {
+  "id": 52,
+  "src_sha256": "83ec69974ce4f741b1b855f56200df8bf6d898e8642a0f5a7a72dc9cb7b35d7e",
+  "zh": "{{Lord}}們認可並祝福我們所做的一切！現在是 Ascension 之時，這顆星球將屬於我們！"
+ },
+ {
+  "id": 54,
+  "src_sha256": "40baa7fc2ea826bae8b61f7c774cf17151915bf41982bdbf1d82caa89fba4541",
+  "zh": "能遇上 Dark Savant ，是我們的幸運。也是他的幸運！我們的同盟將使我們達成統治！"
+ },
+ {
+  "id": 57,
+  "src_sha256": "b2354e7971fb0a5ef0968e786f65d660bee02fac08ea114845291de2af2c1456",
+  "zh": "Phoonzang 讚頌 Rapax 帝國！"
+ },
+ {
+  "id": 60,
+  "src_sha256": "16c14cb204f622560bce0412a21814d52e320b8cb3ea50125ef79ec8e36d8db5",
+  "zh": "Dark Savant 的敵人啊……"
+ },
+ {
+  "id": 61,
+  "src_sha256": "e3fefe24ac23fd1dcddf81b098c061d6963e08d0e3fe961a954f08e72eee55da",
+  "zh": "你們現在就站在我面前。你們所看到的，就是全部了……"
+ },
+ {
+  "id": 62,
+  "src_sha256": "4447ec3bd8a96aff92475f05b4f57696fde3bca8e6c7b432d939c799f0e5bffa",
+  "zh": "我寧可談我自己的死，也不願談那個誘惑人的叛徒。"
+ },
+ {
+  "id": 63,
+  "src_sha256": "3ba25163437c7a40d93c4db2bffbabd9e57fa4b76784513f0f8df65317e38417",
+  "zh": "我兒子可以自己為自己發言。"
+ },
+ {
+  "id": 64,
+  "src_sha256": "72da5284d53c0a13b8988e82f14259941654bf6d3dc1f7921798edf684610138",
+  "zh": "她一定很喜歡你們……"
+ },
+ {
+  "id": 68,
+  "src_sha256": "19eb7d2d4fb8f3c0837330b54cf11b799a92b58f833eb14c830d2c7da9853527",
+  "zh": "Dark Savant 遲早會得到它的……"
+ },
+ {
+  "id": 72,
+  "src_sha256": "b79933e026f1ae27fe3fe624088b2846565f482373f9297f5c6d1594ec038a4a",
+  "zh": "Ascension ？ Dark Savant 將會昇華。 Higardi 長久以來自欺欺人，以為自己是 Cosmic Circle 的合法繼承人。他們要是敢試圖昇華，只會迎來死亡。 Savant Tower 會確保這一點！"
+ },
+ {
+  "id": 74,
+  "src_sha256": "8948c553c6c25a8e46f0eb96023c51584562f6e886a51811116d7bdf0bd9ef7a",
+  "zh": "我就是 Rapax King 。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "71ec681f2bd8369282cd4ca2fdcd46008ac03573de23d7f642b7447df6b645fd",
+  "zh": "求求你們……"
+ },
+ {
+  "id": 77,
+  "src_sha256": "a670d883c27dbefc4dad88458337673a8afae184b9456d10084233b9327aba4e",
+  "zh": "我的死期還遠得很，遠得很。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "c64efad52071ea6cbcbfa6676a4f675666e36c2a602709ae188a87943303f095",
+  "zh": "歡迎來到我的寢宮。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "ac03c15ae8610e4d53107da34d074c2428b5df17c58748419aad57d42f18fcb6",
+  "zh": "再會， Templar 。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "f3f2ae5997c2abaa37a0fae026a2c02d66ff0a864f028498dad960cb8bd236fd",
+  "zh": "我確實會提供幫助（ help ）。我有僕人來幫我！"
+ },
+ {
+  "id": 81,
+  "src_sha256": "756eaa71cd42ab74098358d1c645a9e3158093f139b5850197557f9d2eacbcc2",
+  "zh": "我不是商店， Templar 。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "7f42f2ae2c52a4481435c5964d7ee4e8b42a1f75cd69d199d1c8b01ddc10a8a2",
+  "zh": "嗯， Templar 。我很好。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "470ad32efdd6836f115e9056be528526af3f3e05715ce5cbc4982482db972f15",
+  "zh": "沒錯，圍繞 Ascension 的戰爭（ war ）即將來臨。 Dark Savant 對上 T'Rang 、 Umpani 與 Higardi 。我們對上 Rynjin 、 Trynnie 與 Higardi 。我們的聯軍將為所有牽涉其中者帶來迅速的終結。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "3dd9abe650e60907b5796b6e10d8da238144c74fad1299a1b56837317d368eb7",
+  "zh": "該怎麼辦？該拿王后怎麼辦？嗯。我不知道。把她一直關著似乎是種罪過。不對。不對。可是放她走？不。同盟就會瓦解。不。不！她必須繼續藏在這裡的洞穴中。"
+ },
+ {
+  "id": 89,
+  "src_sha256": "3b821048092052b97d5c19d5412846b2cec3ef01deb788c7f68efbe009d2136f",
+  "zh": "我真該叫他們去檢查那個洞穴的鎖。我不希望王后逃走。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "d65f56418c39cf2acacd367ec3df36cc2220264e9fbc8e6910a16dc60478671b",
+  "zh": "他們長得確實非常古怪……"
+ },
+ {
+  "id": 91,
+  "src_sha256": "3526bc3dcda0e624c2f0c088551f15a1e7eb0822006890db09236aceaaa788f9",
+  "zh": "當然是在 Arnika 。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "e9870bf8abe34455e49f79b07ea9152dc8f587fe1e9a1a49edaf81bd2b4ba3db",
+  "zh": "Trynton ……"
+ },
+ {
+  "id": 93,
+  "src_sha256": "33506bb7611196d113b17733b173a34a85ab2d531acfc6634e71853dec39d4de",
+  "zh": "那個可悲的沼澤。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "d5c257274aad4b258be8061fb6330be337eaacb491e048e71fad510aaae355e3",
+  "zh": "在 Marten's Bluff 裡面。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "bbccc73839c81eaef9ba1f903d5ce1d96b2dbb913bc4f9f4708efe96cc577aa7",
+  "zh": "就在這座前哨營地，當然！"
+ },
+ {
+  "id": 96,
+  "src_sha256": "06e8a97ee7f296d73c82508899f523215ea950d9beaca588eee0a14370511f81",
+  "zh": "我想是在 Mt. Gigas 。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "1b7f07b916bcd36d84cf64558392878b6c042f77e6270290fae12f541f2ae6b6",
+  "zh": "我想是在海底洞窟。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "f4b18e2bc8df10882b2006e8458483353dff24dc69f1b12bb88c9fa9206eb349",
+  "zh": "在奇妙的 Rapax Rift 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "7501ba47f23a73d710129399a7e60e892fc05e01a3048db0961663c92fccc92b",
+  "zh": "在我們的城堡， Templar ！"
+ },
+ {
+  "id": 100,
+  "src_sha256": "1c40683761314070fd510a6f2476a6fb9c6e089c9904e071b29e704d2f18968c",
+  "zh": "Ascension Peak ！"
+ },
+ {
+  "id": 101,
+  "src_sha256": "5c4338c1ba74cf323303d7c2e44c22ca8736637acecf29cb215e5cf2acb5d1d3",
+  "zh": "在 Cosmic Circle 。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "5b0e015d01d97b69566f73cd7733f284fb952fa0fc49060d683ab433d5e8e5d5",
+  "zh": "就在這裡， Templar ！"
+ },
+ {
+  "id": 103,
+  "src_sha256": "720eafd253b40e55316507f3b37524d771ba24ddc1c15121dd65f3c4969f5567",
+  "zh": "去問我的僕人在哪裡……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "8df847ff94d0250a38d70eafcae1de59f327ad0d891ea8c5661659f007328b4e",
+  "zh": "在 Bayjin 。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "0a248d07b02a30c1cb6b69e8ca751bed7c3e71dfc43bc637d2363e0fd1a6e2bf",
+  "zh": "你們在這裡幹什麼！你們為什麼把它們從籠子裡放出來！？！你們瘋了嗎！衛兵！！"
+ },
+ {
+  "id": 106,
+  "src_sha256": "1adf0708666f5d8ed9771e197070e009c2628f294622d429b4ebbc097a6a5a30",
+  "zh": "好！好！你們總算來了。我得知你們成為 Templar 之後，就派了信使到城堡去。聽說你們很擅長審問（ interrogation ）。所有報告都指出，自從你們抵達 Dominus 以來就一直在發問。是時候把這些本事用在正途上了。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "354dee32dd5acb3fd80a6c3e3931d4826d1eba90bbe5675478cf6404317b9b18",
+  "zh": "囚犯關在附近高地上的籠子裡。他們不跟任何人說話，連彼此都不說！你們看，一個 T'Rang ，一個 Umpani 。可不是什麼好朋友。查出他們為什麼在這裡，還有他們聽說了多少關於同盟的事。我不希望細節洩漏回他們的首領那裡。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "9c83f631437db8a2e0c1e75a2eaac0267596eddef4465383caae33b939a3cf3b",
+  "zh": "所以，他們知道任何關於同盟的事嗎？"
+ },
+ {
+  "id": 109,
+  "src_sha256": "3857572874c4e55851c052473052250cfdeeca7e69ec11652fc6d11848484fe3",
+  "zh": "我派你們去審問他們！不是放了他們！你們瘋了嗎？！衛兵！"
+ },
+ {
+  "id": 110,
+  "src_sha256": "e2af7acf4378215bd4f2289cd5f34d195e1af879bc8ec457d98001cd223b0c65",
+  "zh": "你們知道的，恕我直言，我還有別的事要處理……"
+ },
+ {
+  "id": 111,
+  "src_sha256": "528e8e7d7cf51642740ef6caa4ff03c8c3dc04091dece6894b70dc68b8ad8166",
+  "zh": "籠子在*那*個方向。這裡找不到他們……快去。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "fe3465608d29e265831d1305d7d0d587d1b7de1eb3eb7d8f3b8d391ea71669f0",
+  "zh": "嗯嗯。我就懷疑他們可能知道。這表示我得殺了他們，當然。我會派衛兵上去。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "3ff4ade650667e8073648c041bd687801516ec02ada69e68675303ab08a0a849",
+  "zh": "真是好消息！也許有一天我會放了他們。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "0a6710e8b0011cebc4de4fdfa024ae7e3fbf7578d8a3d8087095d607a6018430",
+  "zh": "Dark Savant 的條件好到我們不可能拒絕。他要 Cosmic Circle ，而我們要 Dominus 。我們聯手摧毀所有競爭者，各取所需，雙方都是贏家！ Tower 裡的那個裝置保證我們兩邊都能獲勝……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "a20ed2ad4f013573b991949890d85624b13aeb38792660d098f1b0808aaa6180",
+  "zh": "我不談論我的子民。是他們談論我。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "7e6d8eb22d228581c2cc60281a595e6e3d0d720a7213d0466eb4052eabdfc4d4",
+  "zh": "喔，沒錯，多麼奇妙的裝置！只要有人干擾我們的計畫，它就能依我們的命令毀滅 Dominus 上所有生命（ life ）！當然，事發之時（ when ）我們會安然待在他的船上。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "236fd7c01db642fce144198e29720d8ccadf8052672a93e84f8159d5ac39f97f",
+  "zh": "我們將從簡單的開始，那些 Trynnie 。我們會蹂躪 Trynton ，然後轉往 Bayjin 。接下來，我再決定誰是下一個面對我們的：是 Umpani 還是 T'Rang 。無所謂。到頭來，他們全都會消失。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "7205d3acdb99d9126e0a1674ab3f364c7be3d0432fa9ba876d1a511a7631a948",
+  "zh": "你們怎麼知道他們的名字？ Templar ，你們讓我擔心。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "162a0ce85625e170f22c9338dd32c829e1a06f4cf4ac85adbb12ec28acf417ea",
+  "zh": "他們在籠子裡，就在那邊的高地上。去看看吧， Templar 。你們會找到他們的。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "bd4710baf6a02bb24565ab8df28ab0bf22888aaa79c8c0678106b24969db3166",
+  "zh": "每個人都是我的僕人， Templar 。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "0b101a2c7c9cf1a8c523b6480016ab607bfe338281c881a3da50694e0ffdc675",
+  "zh": "我不信你們……"
+ },
+ {
+  "id": 122,
+  "src_sha256": "7879705dc16927f2b91e533cc76026f8337c9bc6b7051a0f101f4a8726e5cbfa",
+  "zh": "你們知道嗎，一個問題接著一個問題， Templar 。你們現在只是在練習而已，當然。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "06bb7636215de56a3b84dc4454d26815e93f5fa1063d00215171f5218e9ef8de",
+  "zh": "我相當喜歡它。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "54aef9648274ef74386c5d043a28fc4868fa7f373b46dca33149ed27320f8d64",
+  "zh": "現在不是討論你們忠誠的時候， Templar 。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "d114d25e53ac5c1cedb5f126aa4241a25c1804d673e29a999b490cc6c11dfa0f",
+  "zh": "是的！奇妙的機器。它們將成為我軍隊的一大助力。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "35f8b0f2d0afdffe200b184f695c543208a5d16a995b3f5d4a74ffbf5e0d57cc",
+  "zh": "你們沒聽錯。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "5f7e57bd96b2b17d1f9e79de7020399c7cf75c5ad06c9b8f069f49e80eb1e977",
+  "zh": "在這裡的北邊。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "d1a225fd7ff3d7b759d029ce91c360b1721a081aed3bfb611aef01b5092d971a",
+  "zh": "在這裡的南邊。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "435390dec0f8983699c9227fb1fb666aa1443edec273c1c0459347c1a3a87196",
+  "zh": "當然是在這裡的東邊。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "43362182fd107bc3745ce74f4ec5427b941c2c0e123a382b3761765c535267b4",
+  "zh": "你們得前往城堡的西邊。"
+ }
+]

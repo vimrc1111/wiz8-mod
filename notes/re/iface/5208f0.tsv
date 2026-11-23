@@ -1,0 +1,19 @@
+call	2b6	srAssertFail	間接呼叫 srAssertFail 的分析標記；只在物品指標為 NULL 時停止，物品是記錄不是輸入，合法輸入不可達
+call	553f10	natural_skill_growth	識別差距 0..2 時以（角色、技能 0x14、重複 2、安靜 1）訓練技能；D4 公式節點，case 位址樁，回傳值取自輸入且呼叫端忽略，記錄四參數與呼叫次數
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 IAT 槽；物品 NULL 的不可達防禦性斷言
+data	61a758	無關	斷言來源檔名字串，只供診斷，不參與規則
+data	61a9e4	無關	斷言條件文字，只供診斷，不參與規則
+data	68516c	item_definitions	物品定義庫指標，每筆 269 bytes；取 +0x85 為識別所需技能等級，case 配置合成表
+field	ebp+0xb11	character_realm_sp_pools_enabled	角色 +0xb11 的技能池啟用字；為零則不識別
+field	ebp+0xb01	character_state	角色 +0xb01 狀態字；>= 11 則不識別
+field	ebp+0x49b	character_identify_skill_score	角色 +0x49b 識別用技能分數；除以 6 取低位元組與物品需求比較
+field	eax+ecx*1+0x85	item_required_skill	物品定義 +0x85 的識別所需等級（定義庫索引為實例 +0 的物品 ID）；case 以 itemId 索引並在其他定義放不同的誘餌值
+field	eax+edx*1+0x85	item_required_skill	同上，第二次讀取（旗標 +0xb 的門檻）
+field	ecx+edx*1+0x85	item_required_skill	同上，第三次讀取（差距計算）
+field	esi+0x0	item_instance_id	物品實例 +0 的物品 ID，索引定義庫
+field	esi+0x6	item_identified_flag_a	識別旗標，通過需求時寫 1
+field	esi+0x7	item_identified_flag_b	識別旗標，通過需求時寫 1
+field	esi+0x8	item_identified_flag_c	識別旗標，通過需求時寫 1
+field	esi+0xb	item_identified_flag_d	等級超過需求 3 以上時寫 1

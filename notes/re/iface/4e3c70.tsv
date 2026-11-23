@@ -1,0 +1,75 @@
+call	2b6	無關	抽取器把怪物可見關聯清單欄位位移當成呼叫目標；低於 PE ImageBase，並非遊戲函式。 來源：0x4e3c70..0x4e404e。
+call	40efa0	randomIdleFrame	從待機動畫幀數的支集中選起始幀；特殊未出生怪物固定起始幀零。 來源：0x4e3c70..0x4e404e。
+call	428e20	processMemoryUsage	以 GlobalMemoryStatus 計算已用虛擬記憶體；兩次讀值差寫模型與全域載入成本。 來源：0x4e3c70..0x4e404e。
+call	42e620	monsterScenePositionIndex	用怪物識別碼低 16 位及位置更新世界網格索引。 來源：0x4e3c70..0x4e404e。
+call	450750	cameraPosition	從視覺管理器的 SR 相機物件取 X/Y/Z，交給模型更新觀察方向。三個 import 回傳 x87 ST0；case st0 從相機座標輸入讀取 double。 來源：0x4e3c70..0x4e404e。
+call	451280	visualManager	取得全域 659ab4 的視覺管理器；參數不影響回傳。 來源：0x4e3c70..0x4e404e。
+call	46e580	registerVisibleMonster	把怪物模型加入視覺管理器的可見模型列表。 來源：0x4e3c70..0x4e404e。
+call	4c5870	bindModelMonsterId	寫模型完整識別碼及低 16 位索引，亦傳到模型子物件。 來源：0x4e3c70..0x4e404e。
+call	4c59b0	attachModelVisualManager	透過模型虛擬方法連接視覺管理器。 來源：0x4e3c70..0x4e404e。
+call	4c5a00	setIdleAnimationRunning	設定模型動畫運轉開關並重設動畫時鐘；未出生怪物停用。 來源：0x4e3c70..0x4e404e。
+call	4c5a40	updateModelCameraDirection	根據相機位置更新模型觀看方向與對應動畫。 來源：0x4e3c70..0x4e404e。
+call	4c5a80	modelSupportsAnimationCycle	查詢指定動畫循環；未出生怪物必須支援循環零。 來源：0x4e3c70..0x4e404e。
+call	4c5b40	modelAnimationQuery	查詢模型動畫；查詢零取得當前循環的幀數，-1 是失敗。 來源：0x4e3c70..0x4e404e。
+call	4c5b60	setModelHeading	以怪物朝向角度更新模型旋轉。 來源：0x4e3c70..0x4e404e。
+call	4c5f00	setModelWorldPosition	把怪物三維世界位置寫入模型變換。 來源：0x4e3c70..0x4e404e。
+call	4c6180	setModelVisible	透過模型虛擬方法設定可見；未出生怪物隱藏。 來源：0x4e3c70..0x4e404e。
+call	4c61a0	setModelAnimationCycle	普通怪物選循環三；未出生怪物選循環一。 來源：0x4e3c70..0x4e404e。
+call	4c61c0	setModelAnimationFrame	設定動畫幀；普通怪物使用亂數幀，未出生怪物使用零。 來源：0x4e3c70..0x4e404e。
+call	4c6990	setMonsterDamageAppearance	把由失血比例算出的階段寫至模型相關視覺部件。 來源：0x4e3c70..0x4e404e。
+call	4c6a50	monsterDamageAppearanceCount	取得模型第一個相關視覺部件的受傷外觀數；大於一才計算血量階段。 來源：0x4e3c70..0x4e404e。
+call	4ca290	modelActivationRefreshNeeded	讀模型 +0x216，決定是否重新綁定與初始化啟用資料。 來源：0x4e3c70..0x4e404e。
+call	4e4050	ensureMonsterModel	確保怪物模型已載入；本節點以模式零呼叫。 來源：0x4e3c70..0x4e404e。
+call	4e57c0	monsterTemplate	按種類取得 663-byte 模板，必要時載入並快取。 來源：0x4e3c70..0x4e404e。
+call	509cd0	activateMonsterNpc	按模板 +0xcd 的 NPC 索引啟用怪物 NPC 關聯；此命名為行為描述，非官方欄位名。 來源：0x4e3c70..0x4e404e。
+call	50e8c0	rebuildMonsterConditionCache	清除並重建怪物 +0x1db 的 103-byte 狀態修正，合併狀態、暫時增益、主動效果；呼叫 4e5d00 更新五項有效屬性，再呼叫 502c50 重算 HP/SP 衍生回復係數。 來源：0x4e3c70..0x4e404e。
+call	51b420	initializeAttackAnimationCapabilities	初始化怪物 +0x379/+0x37b 為一；按三組模板攻擊次數與模型支援計算 +0x37a，按模板 +0xe0 與循環 25 計算 +0x37c；不是 HP/SP 初始化。 來源：0x4e3c70..0x4e404e。
+call	54a8a0	loadMonsterTemplate	由 MONSTERS 記錄讀取指定種類的 0x297-byte 模板；來源 notes/re/loot.md。 來源：0x4e3c70..0x4e404e。
+call	5653f0	markMonsterDisplayDirty	戰鬥畫面存在時標記 +0x2c8；戰鬥模式亦標記 +0x2c0。 來源：0x4e3c70..0x4e404e。
+call	57dbb0	activationDiagnosticsEnabled	讀全域 68f105 決定是否記錄模型記憶體耗用。 來源：0x4e3c70..0x4e404e。
+call	58aad0	無關	格式化並輸出模型載入記憶體診斷訊息；不改怪物戰鬥數值或動畫選擇。 來源：0x4e3c70..0x4e404e。
+call	593330	refreshBattleInventoryDisplay	模式七且畫面存在並啟用相關顯示時刷新戰鬥介面物品圖示。 來源：0x4e3c70..0x4e404e。
+call	5e22c0	newVisibleMonsterAssociationList	配置怪物與可見怪物的關聯清單，初始容量十、筆數零；回傳的是指標而非整數索引。 來源：0x4e3c70..0x4e404e。
+call	5e2890	findUnbornMonster	在全域 683fb9 的特殊怪物清單查找本怪物指標；-1 表示普通可見啟用。 來源：0x4e3c70..0x4e404e。
+call	65	無關	抽取器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。 來源：0x4e3c70..0x4e404e。
+call	86	無關	抽取器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。 來源：0x4e3c70..0x4e404e。
+data	4	無關	第一個堆疊參數的位移，定位怪物指標；不是絕對位址規則表。 來源：0x4e3c70..0x4e404e。
+data	5eb1a0	allocateMonsterStorage	CRT malloc 匯入槽；配置模板及關聯清單。 來源：0x4e3c70..0x4e404e。
+data	5eb224	releaseMonsterStorage	CRT free 匯入槽；模板讀取失敗時釋放配置。 來源：0x4e3c70..0x4e404e。
+data	5ebaf4	無關	srAssertFail 匯入槽；只處理違反物件、種類、模型或配置前置條件的錯誤，不回傳合法規則結果。 來源：0x4e3c70..0x4e404e。
+data	6147e0	無關	assert 診斷的來源檔名字串；不參與合法規則計算。 來源：0x4e3c70..0x4e404e。
+data	614818	無關	assert 診斷的關聯清單配置成功條件文字；不參與合法規則計算。 來源：0x4e3c70..0x4e404e。
+data	614840	無關	assert 診斷的種類小於 1000 條件文字；合法種類的檢查界限是程式常數。 來源：0x4e3c70..0x4e404e。
+data	61486c	無關	模型記憶體診斷訊息格式字串；不參與戰鬥規則。 來源：0x4e3c70..0x4e404e。
+data	614878	無關	assert 診斷的模型動畫查詢成功條件文字；不參與合法規則計算。 來源：0x4e3c70..0x4e404e。
+data	6148b0	無關	assert 診斷的動畫循環支援條件文字；不參與合法規則計算。 來源：0x4e3c70..0x4e404e。
+data	6148e8	無關	未出生怪物所需循環的 assert 說明文字；不參與合法規則計算。 來源：0x4e3c70..0x4e404e。
+data	614910	無關	assert 診斷的非空怪物指標條件文字；不參與合法規則計算。 來源：0x4e3c70..0x4e404e。
+data	6598a4	worldSceneIndex	世界場景索引物件指標；用怪物位置更新網格。 來源：0x4e3c70..0x4e404e。
+data	65ba4c	totalModelActivationMemory	累加本次兩次系統記憶體讀值之差；模型亦保存此次差值。 來源：0x4e3c70..0x4e404e。
+data	683fa1	activeMonsterCount	本次從未啟用轉為啟用時遞增；已啟用怪物直接返回。 來源：0x4e3c70..0x4e404e。
+data	683fb9	unbornMonsterList	特殊／未出生怪物列表；是否包含本怪物決定可見、循環、幀與動畫運轉。 來源：0x4e3c70..0x4e404e。
+data	6840c7	monsterTemplateCache	按怪物種類索引的模板指標快取；合法種類小於 1000。 來源：0x4e3c70..0x4e404e。
+data	fffffffffffffff4	無關	抽取器將堆疊局部區的負位移視為資料目標；不是遊戲規則表。 來源：0x4e3c70..0x4e404e。
+field	eax+0x216	modelActivationRefreshNeeded	完成模型重新啟用設定後清為零。 來源：0x4e3c70..0x4e404e。
+field	eax+0xa0	modelUnbornPresentationState	未出生分支清為零的模型狀態 byte；未確認官方名稱，以實際用途命名。 來源：0x4e3c70..0x4e404e。
+field	eax+0xd8	modelFlags	模板特殊顯示旗標非零時加入 0x10000000，保留其他位元。 來源：0x4e3c70..0x4e404e。
+field	eax+0xe0	modelMonsterLevelIdentity	模板等級乘 65536 加怪物完整識別碼。 來源：0x4e3c70..0x4e404e。
+field	ebp*4+0x6840c7	monsterTemplateCacheBySpecies	按怪物種類索引模板指標；可在載入成功後回填快取。 來源：0x4e3c70..0x4e404e。
+field	ecx+0x215	modelUnbornActivation	未出生分支设為一的模型啟用狀態。 來源：0x4e3c70..0x4e404e。
+field	ecx+0x27c	modelActivationMemory	本次模型設定前後的系統虛擬記憶體耗用差。 來源：0x4e3c70..0x4e404e。
+field	ecx+0xc0	templateSpecialDisplayFlag	模板顯示旗標；非零時加入模型旗標 0x10000000。 來源：0x4e3c70..0x4e404e。
+field	ecx+0xcd	templateNpcIndex	傳給 NPC 啟用函式的模板 byte；行為命名，來源 notes/re/loot.md:193。 來源：0x4e3c70..0x4e404e。
+field	edx+0x24f	templateLevel	怪物模板等級，組合至模型識別欄位；來源 notes/re/combat-2.md:115。 來源：0x4e3c70..0x4e404e。
+field	esi+0x0	monsterInstanceId	完整怪物識別碼；場景索引呼叫僅傳低 16 位。 來源：0x4e3c70..0x4e404e。
+field	esi+0x14	monsterEnabled	非零直接返回；完成啟用時設為一。 來源：0x4e3c70..0x4e404e。
+field	esi+0x23	monsterHeading	傳給模型旋轉設定的世界朝向角度。 來源：0x4e3c70..0x4e404e。
+field	esi+0x24e	monsterIdleAnimationSuppressed	零表示普通怪物允許待機動畫；非零則停用。 來源：0x4e3c70..0x4e404e。
+field	esi+0x27	monsterMaxHP	受傷外觀比例的有號 32 位分母。 來源：0x4e3c70..0x4e404e。
+field	esi+0x2b	monsterCurrentHP	與最大 HP 的差乘外觀數後除以最大 HP；截斷並夾至外觀數減一。 來源：0x4e3c70..0x4e404e。
+field	esi+0x2b6	visibleMonsterAssociationList	接收新配置的清單指標，非整數索引。 來源：0x4e3c70..0x4e404e。
+field	esi+0x8	monsterSpecies	模板快取種類索引，合法範圍 0..999。 來源：0x4e3c70..0x4e404e。
+field	esi+0xc	monsterModel	怪物模型指標；空或需刷新時進入模型初始化分支。 來源：0x4e3c70..0x4e404e。
+call	4e5d00	rebuildMonsterEffectiveAttributes	按模板 +0xd1..+0xd5 與狀態修正重建五項屬性，限制 1..125；來源 notes/re/combat-2.md:120、0x50e961。
+call	502c50	rebuildMonsterRecoveryCoefficients	以零擴展的最大 HP/SP、狀態修正及抑制旗標更新怪物 +0x47/+0x4f 的 float32 係數；來源 0x50e968、0x502c50。
+call	50edc0	activeMonsterEffectModifiers	十二個主動效果依記錄順序合併；效果類型分派表在執行時讀使用者 exe，不存表內容；來源 0x50e91d、0x50edf8。

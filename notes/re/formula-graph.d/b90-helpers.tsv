@@ -1,0 +1,221 @@
+addr	class	depth	node	calc	evidence
+537220	公式	D4	action_target_eligible	actionTargetEligibleNode	(who, 法術, 情境) 判斷行動能否對目標施放：取行動來源類別（5010f0）與目標指標（53b7f0），經 537160 比對類別後交 519180 依目標型別與情境檢查射程／存活，回傳布林；501660／5012e0／501400 等 6 處物品與排隊法術資格判定共用；build/wiz8.asm:422747、build/wiz8.asm:422766。
+53c720	公式	D4	attack_target_search	attackTargetSearchNode	列舉存活怪物群（4e5620／4e5720 取群與模板），經 546f10／5194e0 篩可攻擊者，依 4c7cb0 浮點距離排序（qsort import）選攻擊目標，結果交 536570／53c990 自動選敵；build/wiz8.asm:430298、build/wiz8.asm:430357。
+595600	排除	-	combat_ui_panel_refresh		戰鬥介面面板重建：取 UI 管理器物件、重排按鈕與肖像元件並對 0x69b8ec..0x69b900 的 UI 物件虛擬解構，閉包是整個 UI 層，不產生規則結果；520d10 在 0x68ec78==7 且 UI 物件存在時呼叫；build/wiz8.asm:547477、build/wiz8.asm:391726。
+593330	排除	-	combat_ui_display_update		依 UI+0x314 走 593360 更新戰鬥顯示元件，屬畫面刷新，不產生規則結果（4e4280 先例同一呼叫）；build/wiz8.asm:544649、build/wiz8.asm:391727。
+48fc10	排除	-	message_output		訊息輸出：格式化訊息字串並交文字／音訊顯示子樹（約 8KB，408ad0／4cf3b0／591780 等），屬呈現，不產生規則結果；4e6ce0 呼叫；build/wiz8.asm:193362。
+55f260	排除	-	mode_message_box		依 0x68ec78（6／7）分派到 5a4c00／569a50 的對話框顯示，屬 UI 呈現，不產生規則結果；522b80 呼叫；build/wiz8.asm:478408。
+4c7f10	排除	-	monster_sound_load		怪物音效資源載入：經匯入表 API 與 4cf020／4cf3b0 資源讀取（48fc10 同用）取音效，屬資源 I/O，不產生規則結果；48ad20 呼叫；build/wiz8.asm:267732。
+58aad0	排除	-	mongen_log		MonGen 日誌輸出：依 0x683f94..0x683f9b 除錯旗標經 58ac00 格式化寫日誌，屬診斷輸出，不產生規則結果；48ad20 呼叫；build/wiz8.asm:533276。
+421070	非公式	-	party_view_position		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：讀全域 0x65a0f8 物件的座標向量到輸出參數（鏡頭／隊伍位置）；距離計算的輸入；build/wiz8.asm:44162。
+4534c0	非公式	-	object_position_copy		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：thiscall：複製物件 +0x100 起 3 個 DWORD（座標）到輸出參數，回輸出指標；build/wiz8.asm:111878。
+4e5550	非公式	-	record_id_to_index		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：id→記錄索引掃描（比對記錄首 DWORD），回索引；錯誤路徑才走 assert；build/wiz8.asm:307807。
+4e5620	非公式	-	record_index_to_ptr		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：索引→記錄指標（兩個 vector：<0x2710 與 0x2710 起），回指標；build/wiz8.asm:307890。
+4e5720	非公式	-	template_slot_lookup		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：槽→模板記錄指標快取（0x6840c7 表）；未命中走 54a8a0 載入。回指標被讀 +0xcb、+0x25f 等規則欄位；build/wiz8.asm:307977。
+4e5840	非公式	-	record_id_to_ptr		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：4e5550+4e5620 組合的 id→記錄，回指標；build/wiz8.asm:308096。
+4e5950	非公式	-	record_id_field_c		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：id→記錄→取 +0xc 欄，回值供 53c630 取座標；build/wiz8.asm:308201。
+5100b0	非公式	-	record2_id_to_index		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：按記錄首 DWORD 反查索引（掃兩表），回索引；build/wiz8.asm:367682。
+5101b0	非公式	-	record2_index_to_ptr		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：索引→第二記錄表(0x683fb1／0x683fbd)指標；build/wiz8.asm:367781。
+536170	非公式	-	query_struct_init		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：查詢結構建構：32 bytes 清零、欄位 +0/+4/+8/+c 設 -1；5327e0／534ef0 讀此結構；build/wiz8.asm:421211。
+53be50	非公式	-	query_struct_from_id		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：查詢結構建構（型別 2、+8 設為來源指標指向的 id）；含空指標 assert，回寫輸出結構；build/wiz8.asm:429434。
+4ac9d0	非公式	-	spell_class_of		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：法術 id→表格 +0x137 欄的法術類別；旗標參數為真且類別==1 時回 0；5327e0／5330e0／5474b0 用它分流；build/wiz8.asm:231537。
+4c4660	非公式	-	character_state_field		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：依 case(0–9) 讀角色狀態欄位（含 vtbl[+0xc]／[+0x1c] 虛擬呼叫）回狀態值；4ca4c0 用；build/wiz8.asm:262662。
+4c5a80	非公式	-	object_vflag_19		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：虛擬呼叫薄殼：obj->vtbl[+0x18](0x19) 的布林（5327e0 在 0xe0 旗標分支用它決定回 0 或遞迴 532550）；vtable 目標靜態不可解；build/wiz8.asm:264545。
+4ca4c0	非公式	-	character_state_15		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：角色狀態==0x15（4c4660 case 6 或 +0x1d8 物件 +0xa7）布林；511850 用；build/wiz8.asm:270532。
+4fb1d0	非公式	-	caster_template_can_cast		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：施放者模板類（+0xcb）是否屬可施法集合（4–5、0xd 為否）；532550 直接用結果決策；build/wiz8.asm:338322。
+505d20	非公式	-	relation_entry_find		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：在角色 +0x2b6 向量找首 DWORD 等於另一角色 id 的元素（敵我關係表）；build/wiz8.asm:352535。
+505dd0	非公式	-	character_mode_field		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：依 mode(0–5) 取角色記錄欄位（+4/+5/+7/+b/+0x28 與 +0x37a／+0x37c 旗標選）回 byte；build/wiz8.asm:352599。
+505e60	非公式	-	character_flag_37a		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：角色 +0x37a 旗標轉 0/1；build/wiz8.asm:352665。
+505e80	非公式	-	character_flag_37c		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：角色 +0x37c 旗標轉 2/3；build/wiz8.asm:352685。
+511850	非公式	-	group_all_state_ok		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：迴圈：群內每個成員 4e5550/4e5620 後 4ca4c0 全真才回真（群體資格）；build/wiz8.asm:369870。
+519be0	非公式	-	mode_flag_37a		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：mode 2..3 時回 505e60，否則 0；build/wiz8.asm:381275。
+51a730	非公式	-	hostility_value		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：依 +0x2e1 分類回敵對度／陣營數值（表或 0x65be1c 角色表 +0x12f）；build/wiz8.asm:382290。
+51a9a0	非公式	-	hostility_range_scale		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：敵對等級 -1..3 → 0/2/4/25/50 乘浮點常數（距離／射程加成）；build/wiz8.asm:382526。
+51abe0	非公式	-	wrap_51aec0		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：包裝：呼叫已登記的 51aec0，回結果（反組譯在 51abdb 脫同步，入口位元組在該行內）；build/wiz8.asm:382716。
+546f80	非公式	-	target_disposition		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：兩角色比陣營(+0x16)與模板(+0x25f)／+0x8b 判斷是否可為目標，回 0/1/2；534dd0 與 533320 用；build/wiz8.asm:444029。
+5474b0	非公式	-	spell_class_3_7		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：法術 id 是否屬類別 3..7（排除 3、0x29）的布林；5330e0 用；build/wiz8.asm:444534。
+4c7cb0	非公式	-	party_surface_distance		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：浮點：目標到隊伍點的 3D 距離減兩半徑，下限夾制；thiscall；build/wiz8.asm:267518。
+4c7dd0	非公式	-	object_surface_distance		輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：浮點：兩物件 3D 距離減兩半徑，下限夾制；build/wiz8.asm:267611。
+53c630	排除	-	query_target_position		實體世界（目標世界座標），依 MG 2026-10-11 數值規劃範圍改歸排除（decisions/2026-10-11-numeric-only-scope.md），原非公式。原描述：輔助子程序（查表／謂詞／距離），不單獨成節點，由呼叫端節點原生執行並經差分驗證：依查詢型別(1/2/3)算目標世界座標（4e5950／4534c0／421070），寫回結構 +0x10..+0x18；build/wiz8.asm:430153。
+4d9080	排除	-	ui_event_dispatch		UI 事件廣播／分派（0x6109f4 等函式指標表、0x6834d4 UI 焦點）；回「已處理」布林。樁固定回 0，需 cc 確認（headless 無 UI，語義為不處理）；build/wiz8.asm:291053。
+517a70	排除	-	assert_message_format		格式化字串到靜態緩衝 0x68bfd0（5eb20c），只供 assert／日誌訊息；build/wiz8.asm:378137。
+5182e0	排除	-	debug_log_printf		printf 式日誌（5eb20c）；5327e0 以 0x68d524 做一次性旗標但回傳值不用；build/wiz8.asm:378953。
+54a8a0	排除	-	template_file_load		從資料檔載入模板記錄（檔案 I/O：404c80/405030/404ea0 開檔／讀／關、517ea0 後處理），回狀態布林；位址樁需讓案例預先填 0x6840c7 快取（待決）；build/wiz8.asm:449172。
+532550	非公式	-	monster_can_cast_on_target		輔助子程序（目標搜尋／評分），已有 D4 節點（519c00、53fea0、519920、53d010、545cf0、544010 等）原生跑並在 calc 重現，不單獨成節點：SCC：5327e0 呼叫它、它呼叫 533320；怪物能否對目標施法的包裝：驗施放者存在旗標(+0x126)、4fb1d0 模板類、+0x344、+0x133，結果布林回 5327e0；build/wiz8.asm:416035。
+534dd0	非公式	-	monster_valid_target_majority		輔助子程序（目標搜尋／評分），已有 D4 節點（519c00、53fea0、519920、53d010、545cf0、544010 等）原生跑並在 calc 重現，不單獨成節點：SCC：533320 呼叫它、它迴圈呼叫 5327e0；數有效目標個數並與一半比較，回布林供 533320 決策；build/wiz8.asm:419443。
+519f80	排除	-	spell_target_search		實體世界（4c7cb0/4c7dd0 浮點距離選目標），依 MG 2026-10-11 數值規劃範圍改歸排除（decisions/2026-10-11-numeric-only-scope.md），原非公式。原描述：輔助子程序（目標搜尋／評分），已有 D4 節點（519c00、53fea0、519920、53d010、545cf0、544010 等）原生跑並在 calc 重現，不單獨成節點：目標搜尋：列舉 4e5550/4e5620/4e5720，經 4c7cb0 距離、51a510/51a730/51a9a0 資格篩選（含 assert 呼叫）；build/wiz8.asm:381577。
+51a2f0	非公式	-	party_target_score		輔助子程序（目標搜尋／評分），已有 D4 節點（519c00、53fea0、519920、53d010、545cf0、544010 等）原生跑並在 calc 重現，不單獨成節點：目標評分／距離篩（4c7cb0、505e60／505e80、51aec0 已登記）；build/wiz8.asm:381919。
+51a510	非公式	-	object_target_score		輔助子程序（目標搜尋／評分），已有 D4 節點（519c00、53fea0、519920、53d010、545cf0、544010 等）原生跑並在 calc 重現，不單獨成節點：目標評分／距離篩（4c7dd0、505d20、505e60／505e80）；入口在 51a50f 指令內（objdump 脫同步，funcs.tsv 有位址）；build/wiz8.asm:382103。
+5330e0	非公式	-	monster_spell_target_select		輔助子程序（目標搜尋／評分），已有 D4 節點（519c00、53fea0、519920、53d010、545cf0、544010 等）原生跑並在 calc 重現，不單獨成節點：533320 的兄弟：以 4ac9d0／5474b0 分流後選目標；與 4e5550/4e5620/4e5720/53be50 協作；build/wiz8.asm:416981。
+537780	非公式	-	group_member_target_pick		輔助子程序（目標搜尋／評分），已有 D4 節點（519c00、53fea0、519920、53d010、545cf0、544010 等）原生跑並在 calc 重現，不單獨成節點：群內挑選目標（4c7cb0／4c7dd0 距離、51a730／51a9a0、5199f0 已登記）；入口在 53777b 指令內；build/wiz8.asm:423234。
+4add30	排除	-	target_cone_toggle		目標錐（"TargetCone" 字串 0x60da7c）顯示／隱藏：參數真時經 4ad8a0 建物件存 0x65be20、假時經 vtable 銷毀；0x65be20 只有本函式讀寫，全部 9 個呼叫點不用回傳值，屬呈現（MG 2026-10-09 條件①，decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:233177、build/wiz8.asm:233178。
+427ab0	排除	-	set_mouse_cursor		依資源 handle／frame／熱點設滑鼠游標：只寫游標與畫面快取 0x6596b4–0x6596c4、0x65968c–0x659698、0x654ad0／0x654ad4（畫面 640×480），經 USER32 GetClientRect／ClientToScreen／SetCursorPos；20 個呼叫點（55eedc…5b2f0e）都不讀 eax，屬呈現（MG 2026-10-09 條件①，decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:53058。
+427ff0	排除	-	render_touch_refresh		畫面刷新：SR.DLL srClass::touch（0x659688 物件）後尾跳 0x659690 物件 vtable+0x3c，本身不寫全域；55f22d 等呼叫點不讀 eax，582171／583fb9／584017／584077 只把它當自身回傳轉出，該四函式同時呼叫 427ab0，屬游標呈現 wrapper，屬呈現（MG 2026-10-09 條件①）；build/wiz8.asm:53488。
+4c5eb0	排除	-	monster_selection_marker_call		轉呼叫 4c4de0（非公式 monster_selection_marker：場景選取標記物件建立／銷毀，經 4c3f70 場景刷新；兩者無直接全域寫入，只動標記物件）；538e87 等呼叫點不讀 eax，屬呈現（MG 2026-10-09 條件①）；build/wiz8.asm:264929、build/wiz8.asm:263352。
+434f20	排除	-	map_ray_blocked		地圖射線／遮擋查詢（*0x6598a4 地圖物件的 thiscall）：兩點換格、沿線段逐格以 41c330 測遮擋物（含每物件百分比擋線擲骰 R(100) 對 +0x44），寫地圖物件 +0x1b8 與 0x652db4 命中快取；37 個呼叫點含 544630 建彈道（5447cc）與 519180 座標目標可達（519429），屬 stage10 排除「遠程碰撞（彈道、射線、遮擋）」；樁掉時其內部擲骰不消耗亂數，case 以回傳值當輸入；build/wiz8.asm:70872、build/wiz8.asm:37770。
+576030	排除	-	message_box_show		訊息框：轉呼叫 576060（文字資源載入 5cf6c0、格式化 590950、UI 繪製 58ab60／58ac00、音效 408860；直接全域寫入只有 0x68edd8／0x6f04ec 清零的訊息緩衝旗標）；17 個呼叫點下一步都覆寫 eax 或不讀，屬呈現（MG 2026-10-09 條件①）；build/wiz8.asm:506237、build/wiz8.asm:506261。
+5adb10	排除	-	ui_panel_redraw		UI 面板重繪：呼叫 58aa20、5ad950、5adbe0、573190 等 UI 管理器函式，本身無直接全域寫入；22 個呼叫點都不讀 eax，屬呈現（MG 2026-10-09 條件①）；build/wiz8.asm:580070。
+4146e0	排除	-	zero_ddsurfacedesc		memset(ptr,0,n)：9 個呼叫點 n 全為 0x6c（DDSURFACEDESC 大小，5 處立即數、4 處經 esi=0x6c），目的皆為呼叫端堆疊上的表面描述結構；無全域寫入；呼叫點不讀 eax（MG 2026-10-09 條件①）；build/wiz8.asm:27443。
+40f100	排除	-	surface_lock		DirectDraw 表面 Lock 包裝（vtable+0x64，遇 DDERR_SURFACELOST 0x8876021c 重試，其他錯誤交 4023a0）；只寫呼叫端的 0x6c 位元組 DDSURFACEDESC；2 個呼叫點（4263f0、4274b8）不讀 eax，只讀輸出結構的像素指標；屬圖形 I/O（MG 2026-10-09 條件①）；build/wiz8.asm:19295。
+4263f0	排除	-	screen_rect_clear		以 40f100 鎖定 0x6596a8 畫面表面、逐列 rep stos 清零指定矩形、40f150 解鎖；只寫畫面表面像素，無規則結果；約 80 個呼叫點不讀 eax（MG 2026-10-09 條件①）；build/wiz8.asm:51112。
+422d50	排除	-	screen_dirty_rect_mark		畫面髒矩形登記：矩形夾到 640×480、對齊 8 像素，逐格呼叫 4259b0 於 0x6596e4 索引的 80 欄髒格表標記，整個畫面時設 0x6596e8；只動畫面重繪旗標，無規則結果；約 130 個呼叫點不讀 eax（MG 2026-10-09 條件①）；build/wiz8.asm:46787。
+4f21e0	排除	-	ui_widget_set_flag		UI 元件表（count 0x617b18，越界走 assert）：0x61f238+idx*12 置 1；表只在 4f1xxx～4f2xxx 被存取；約 62 個呼叫點不讀 eax，屬 UI 呈現（MG 2026-10-09 條件①）；build/wiz8.asm:324794。
+4f23d0	排除	-	ui_widget_set_state_flag		UI 元件表（count 0x617b1c，越界走 assert）：對 idx 的 28 位元組項（0x620048 起）旗標 &0xfff3|4；與 4f21e0（0x61f238 表置 1）同屬 UI 元件狀態寫入，表只在 4f1xxx～4f2xxx 被存取；約 90 個呼叫點都不讀 eax，屬 UI 呈現（MG 2026-10-09 條件①）；build/wiz8.asm:324962。
+4f21b0	排除	-	ui_clear_focus_widget		UI 管理器：若參數等於目前焦點元件 0x689b44 則清 0x689b44／0x689b3c 並回 1，否則回 0；這兩個全域與 0x61f238／0x620048 元件表只在 4f1xxx～4f2xxx 的 UI 管理器內被讀寫（機器掃描 grep 證實）；13 個呼叫點都不讀 eax／al，屬 UI 呈現（MG 2026-10-09 條件①）；build/wiz8.asm:324769。
+5a1950	排除	-	ui_toggle_panel_widgets		UI：4f21e0(0x1c) 置元件旗標、依只讀謂詞 4f0800（party_action_pending）決定 0x69bf40／0x69bf44 兩個 UI 元件的顯示順序（4f40f0 → 4f2380／4f23d0）；只動 UI 元件表，不產生規則結果；2 個呼叫點不讀 eax（MG 2026-10-09 條件①）；build/wiz8.asm:563438、build/wiz8.asm:324794。
+420b40	排除	-	input_view_mode_switch		檢視／滑鼠輸入模式切換（參數 1／2／4／8）：惰性建立 0x6598bc 的 0x34 位元組輸入／鏡頭物件，依參數呼叫 439bc0／439ca0（對 0x6598c0 裝置物件取得／釋放）並寫模式旗標 0x652dce；回傳 obj+0x28 浮點，唯一被讀的呼叫點 450080 只餵鏡頭搖晃（寫 0x659abc／0x659ac0／0x607d84／0x607d88 後呼叫匯入表鏡頭 API），其餘 10 個呼叫點 fstp st(0) 丟棄；屬輸入裝置與呈現，不產生規則結果（MG 2026-10-09 條件①）；build/wiz8.asm:43661、build/wiz8.asm:107300。
+55ee70	排除	-	cursor_icon_set		游標圖示切換：依參數（-1＝預設或手持物，其餘＝模式碼）寫游標模式 0x683fdb、動畫幀 0x683fdf、動畫截止 0x683fe3（406bf0＝時鐘 0x6eb70c+250，非亂數），經 55f080／427ab0／427c90／429170／485400／427f00／427fc0／427ff0 設滑鼠游標與精靈；手持物分支只讀 0x6874cb（物品 id）經 55ce80 取圖示，對 0x6874ca 的寫入只在它已非 0 時寫 1（該位元組全專案只有 55f160／55ef90／55ee70 寫 1、55f1e0 寫 0，值域 0/1，等於不改值）；43 個呼叫點都不讀 eax；屬呈現（MG 2026-10-09 條件①）；build/wiz8.asm:478080、build/wiz8.asm:478253、build/wiz8.asm:478100。
+4f93d0	排除	-	item_object_terrain_place		物品物件世界放置：4f6b90（物品物件建構子）呼叫，依地形／碰撞查詢 433820（世界單例 0x6598a4／0x652db0）設新物件位置與旗標；2 個呼叫點不讀回傳；屬世界幾何放置，與 434f20 同類（MG 2026-10-10「可排除」）；build/wiz8.asm:335674、build/wiz8.asm:332187、build/wiz8.asm:332984。
+52f790	排除	-	condition_voice_dispatch		狀態語音投遞：依狀態碼經跳表選語音事件交 0x52e690（語音事件建立，52e5c0 已排除）；唯一他種副作用是清 0x6875f8，該旗標只由語音 helper 52f444／52f790 讀（一次性抑制下一句語音，502860／5274a3 設），非規則輸入；523330 呼叫點不讀回傳（MG 2026-10-09 條件①）；build/wiz8.asm:412239、build/wiz8.asm:411906、build/wiz8.asm:395191。
+52e690	排除	-	voice_event_enqueue		語音事件建立與排入：檢查 0x685108／0x68c504..0x68c568 的發聲角色後，new 0x38 位元組事件（0x5e1ce0）、0x52c810 建構、0x52d610 排入語音管理器 0x683fd7；回傳僅為事件指標；53e250:53eec5 讀回傳只為非 0 時寫該事件的 +0x30＝0x320 與 +0x34＝GetTickCount（語音事件自身欄位，不回流規則；53e250 agent static_analysis，cc 核 asm），其餘呼叫點不讀（4edcff 後 eax 重設、52297d 所在 5227d0 的呼叫者皆重設 al／eax、5229e7 後讀 [esi+9]）；與 52e5c0 同類（MG 2026-10-09 條件①）；build/wiz8.asm:410729、build/wiz8.asm:319132、build/wiz8.asm:394050、build/wiz8.asm:394088。
+4f7610	排除	-	held_item_world_drop		手持物丟到世界：依鏡頭位置三角函數算前方落點，經 434f20／433820／451800 查地形，可放則 4f6b90 把手持物 0x6874cb 建成世界物件，否則 408860 播音效；屬世界幾何放置，與 4f93d0、434f20 同類；4 個呼叫點不讀回傳（51be79 後 mov al,1；522136／52248c／5225ba 跳往讀堆疊或 bl 的塊）（cc 判斷，MG 2026-10-10 授權）；build/wiz8.asm:333070、build/wiz8.asm:384473、build/wiz8.asm:393364、build/wiz8.asm:393663、build/wiz8.asm:393743。
+5a19a0	排除	-	ui_widget_clear_flag_thunk		UI 轉呼叫：只呼叫 4f2220（UI 元件表 0x61f238+idx*12 清 0，同 4f21e0 表）後返回；4 個呼叫點後續皆不讀 eax（3 處接 mov al 覆寫、1 處接 call）；build/wiz8.asm:563466、:324817。
+4f2380	排除	-	ui_widget_clear_state_flags		UI 元件表（count 0x617b1c，越界走 assert）：對 idx 的 28 位元組項（0x620048 起）旗標 &0xfff3；與已排除的 4f23d0 同表同形；全部呼叫點後續不讀 eax（直接 add esp／push／覆寫 eax，4 處 jmp 目標亦先 add esp 後覆寫）；build/wiz8.asm:324936。
+4f2040	排除	-	ui_focus_widget_set		UI 管理器焦點切換：寫 0x689b44／0x689b3c／0x689b48／0x689b4c／0x689b50（與已排除的 4f21b0 同組全域，只在 4f1xxx～4f2xxx 存取），改 0x620048 元件表旗標並呼叫元件回呼與 429770；呼叫點後續皆不讀 eax；build/wiz8.asm:324676。
+524ca0	排除	-	npc_model_sound_load		依角色組 0x61c2b8 起字串建模型／音效資源檔名並經 55a480 開檔載入（50a400、50c770）；屬資源 I/O；8 個呼叫點，50b26d 後 add esp 直接略過 eax；build/wiz8.asm:397250、build/wiz8.asm:360482。
+55a0a0	排除	-	npc_model_release		逐槽經 0x5eb224（匯入釋放）釋放物件 +0xa 底下的模型資源；屬資源 I/O；18 個呼叫點，50b261 後不讀 eax（50b267 寫 [esi]、50b26d 再 call）；build/wiz8.asm:470458、build/wiz8.asm:360479。
+4e3af0	排除	-	world_object_remove		世界物件移除：4e5620 取物件後經 4e4500、5100b0／5101b0、50f4a0、510350／5103e0、565420 自世界清單與格位卸下並釋放（5e2b80）；屬世界物件管理，與 4f93d0、4f7610 同類；25 個呼叫點，50b23d 後 add esp 不讀 eax；build/wiz8.asm:305604、build/wiz8.asm:360470。
+4acd80	排除	-	visual_status_icon_update		視覺節點狀態圖示增減：操作物件 +0x1d8 視覺節點下 +0x5e8 圖示清單，經 4c5500→47c630 取 SR.DLL 類別註冊表（getClassNode／sGetClassNode）建立視覺物件；屬呈現；23 個呼叫點，523d9b 後 add esp 並以 mov al,[ebp+0x15] 覆寫、不讀回傳（cc 依 MG 2026-10-10 授權判斷）；build/wiz8.asm:231907、build/wiz8.asm:395834。
+5b1af0	排除	-	ui_list_entry_add		介面單例 0x69c2e8 清單更新：557c90(obj+0x18, obj+0x187c, arg) 改介面物件內清單後經 +0x1b14 元件 vtable +0x28 重繪；寫入只落在介面物件；3 個呼叫點皆不讀 eax（553b20／553f8d add esp、553d57 跳 553d6e add esp）；build/wiz8.asm:585606、build/wiz8.asm:461364。
+5b1b30	排除	-	ui_list_entry_remove		介面單例 0x69c2e8 清單更新：557d20(obj+0x18, obj+0x187c, arg) 改介面物件內清單後經 +0x1b14 元件 vtable +0x28 重繪；與 5b1af0 成對；2 個呼叫點不讀 eax（553b97、553d6e add esp）；build/wiz8.asm:585639、build/wiz8.asm:461400。
+4e4db0	排除	-	actor_visual_anim_trigger		怪物視覺動畫觸發：依視覺節點經 vtable 呼叫 4c5a00 播放動作；屬呈現；523f0d 唯一呼叫後 add esp 即 pop／ret、不讀 eax；build/wiz8.asm:395696。
+523c00	公式	D4	monster_condition_apply	monsterConditionApplyNode	怪物狀態套用（與角色版 522fe0 對應）：(怪物, 狀態 esi, 持續 edi) 經 0x523f24 跳表分派，寫持續時間 +0x57+4*狀態、主狀態 +0x107，0x270f 永久哨兵，含倒下／死亡處理與訊息；8 個呼叫點（52c070 以 0x11、0x270f 呼叫）；54f8c0 回報其可達非 D4 樹約 2–4KB，另開節點（cc 判斷）；build/wiz8.asm:395696。
+561a20	排除	-	portrait_focus_state		戰鬥肖像焦點／目標狀態機：僅在 UI 旗標 0x6850ce 置位時由 portrait_damage_animation（59ac40，非公式）呼叫，引用 0x6850ce 的函式全屬肖像／對話／面板 UI；子呼叫含顯示 helper 4f21e0／4f23d0；呼叫端只用 bl、不讀 eax；build/wiz8.asm:412513。
+55f1e0	排除	-	cursor_item_reset		游標持有物品重設：清 0x6874ca／cb／cf／d3 游標物品狀態，視 0x683fdb 呼叫資源快取載入（549390→549090 檔案 I/O）與已排除的 427ab0／427ff0；10+ 呼叫點、520070 呼叫後不讀 eax；不算規則數字；build/wiz8.asm:478367。
+58ac00	排除	-	log_message_format		日誌／訊息格式化輸出：讀 UI 物件 0x68edcc、0x68ec78，下游 58af60、407010 與 Win32 匯入；僅寫 0x69b7bc（訊息巢狀計數，只被 58aee0／58b22e 自身與 5298b8 錯誤對話框路徑讀）與 0x6875a2（同路徑旗標）；118 呼叫點，504602 呼叫後不讀 eax；58aad0／576030 已排除且經它輸出；不算規則數字；build/wiz8.asm:533378。
+408860	排除	-	sound_play		音效播放：下游 404bf0／404c80／404e10／405150／409970／40a5c0 音訊層與 Win32 匯入，無全域寫入；93 呼叫點，571660 呼叫點 5717f1 後 add esp 不讀 eax；不算規則數字；build/wiz8.asm:10560。
+55e7c0	排除	-	panel_widget_refresh		面板控制項重繪：呼叫 5d2400、已排除鄰近 55e2c0／55e1e0 與控制項虛擬 +0x4；只讀控制項 +0x60；571660 呼叫點 5717d3 後不讀 eax；不算規則數字；build/wiz8.asm:477421。
+575390	排除	-	panel_mode_controls_show		依 [0x649f1c]+0x1d8 面板模式逐一對控制項做虛擬 +0x48／+0x4c 顯示切換，無全域寫入；571660 呼叫點 5717d8 後不讀 eax；只讀規則狀態、不產生規則數字；build/wiz8.asm:505240。
+55e2c0	排除	-	panel_widget_draw		控制項繪製：已排除 4263f0 screen_rect_clear、422d50 screen_dirty_rect_mark，另 562a50×10、4f2220、4f23d0、5d1640 繪製 helper，無全域寫入；571660 呼叫點 5717f6 後不讀 eax；不算規則數字；build/wiz8.asm:476941。
+55e1e0	排除	-	panel_widget_layout		控制項版面：5d1d30／5d1cb0／5d1640／5d1ab0 與 UI 旗標 helper 4f2420／4f21e0（已排除）／4f2380，無全域寫入；571660 呼叫點 5717fd 後不讀 eax；不算規則數字；build/wiz8.asm:476864。
+569a50	排除	-	mode_dialog_show		互動模式（0x68ec78==7）對話框顯示：55f260（已排除）依模式分派的目標；子呼叫全為 UI（已排除 422d50／4263f0，另 4257f0 4f2040 5187e0 56e800 5cf300 5cf580 5d2800 5d2cb0）；全域寫入只有 UI 狀態 0x68edd0、0x68eddc（與 576030 寫的 0x68edd8 同區）；9 個呼叫點（553b69 527bab 591aa0 591ae4 5a1436 5a1506 5a15a4 5a1620，55f281 tail）都不讀 eax；不算規則數字；build/wiz8.asm:491024。
+4ed9d0	公式	D4	rebuild_character_rule_abilities	rebuildCharacterRuleAbilitiesNode	角色規則快取重算：有效屬性、技能（5539e0 經 51d960）、生命／耐力／法力、抗性、負重、天生減傷；能力表 r<16 上界；呼叫者 50e5c0／50e540／553f10／503100 等；503100 回報其可達非 D4 樹約 2.7KB 超 3KB 上限，另開節點（cc 判斷）；build/wiz8.asm:318884。
+5a1890	排除	-	movement_panel_close		關閉戰鬥移動面板：重繪畫面矩形（4263f0／422d50）、虛擬解構 0x69bf40..0x69bf50 UI 物件、清面板開啟旗標 0x683fcd（讀者 4f0520 getter、4ea1f0、55f8c0 等皆 UI 流程）；4f0aa0 尾跳進入，4e8370 於 0x4e8423 重讀 ecx 不讀 eax；build/wiz8.asm:563373。
+56a5a0	排除	-	ui_selection_hover_clear		清除 UI 選取與懸停：G+0x264 已選物品／目標走 569f70 物品管理 UI，G+0x268 走 tooltip 與 640×480 座標；無全域規則寫入；4e8370 於 0x4e845d 以 mov eax,[0x6836a8] 覆蓋回傳；build/wiz8.asm:491898。
+595570	排除	-	combat_ui_panel_close		關閉戰鬥 UI 面板：5990f0 對 13 個 widget 指標呼叫 5dba70、虛擬解構 0x69b8e8 與 0x69b8ec..0x69b900（同已排除 595600 的物件組）、寫 0x69b87e（讀者 5957e0／598fa0 UI）；4e8370 於 0x4e83b5 跳 0x4e83bc 只比記憶體；build/wiz8.asm:547430。
+56aa30	排除	-	input_mode_ui_enter		輸入模式 UI 進入段：設 0x6840bc（輸入模式旗標，讀者為 UI／輸入分派）、音效 420b40、面板 5a19a0；由 53a320 呼叫，53a320 本體（寫 0x683fe7、0x68407f..87 規則狀態）照原版跑；回傳不被讀；build/wiz8.asm:492307。
+56aab0	排除	-	input_mode_ui_leave		輸入模式 UI 離開段：寫 0x6840bc／0x6840bd 輸入模式旗標、重繪矩形 4263f0／422d50、音效 420b40（進 SR.DLL srTimer）、面板 5a1950；由 53a320 呼叫，53a320 本體照原版跑；回傳不被讀；build/wiz8.asm:492346。
+58b410	排除	-	message_text_color_range		訊息文字色彩範圍設定（MGSTextBox）：只寫訊息框物件，無全域規則寫入；590950 於 0x590a27 呼叫後直接返回，4e8370 三個呼叫點 0x4e87ad／0x4e87f8／0x4e883c 只 add esp 不讀 eax；build/wiz8.asm:534011。
+434b60	排除	-	world_los_raycast		世界射線／視線遮擋（*0x6598a4 地圖物件 thiscall）：octree 格查詢 435c40、平面多邊形測試 435f00、DDA 4362d0、三角形相交 46d530，未中牆再查物件碰撞 436510→438d50；需整張地圖 octree、SR.DLL mesh 多邊形與碰撞雜湊表。與 434f20 map_ray_blocked 同屬 stage10「遠程碰撞（彈道、射線、遮擋）」排除範圍；回傳值（看得見與否）由 case 當輸入。呼叫者含 5049c0 經 4c4810／4c4920／4c4af0／46f820；build/wiz8.asm:70588。
+4c4810	排除	-	monster_party_los		怪物對隊伍視線包裝，往下 434b60 世界射線；反組譯此處未對齊，引 5049c0 呼叫點（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:351073。
+4c4870	排除	-	monster_party_ray		怪物對隊伍射線，往下 434f20，寫射線結果 +0x34d／+0x34f（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:262870。
+4c4920	排除	-	monster_party_los_multi		視線（可選多點，經 46fd70／434b60），寫 +0x2ab 結果（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:262930。
+4c4a20	排除	-	monster_ray_check		射線，往下 434f20，寫 +0x28b／+0x28c 結果（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:263020。
+4c4af0	排除	-	monster_monster_los		怪物對怪物視線，往下 434b60（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:263092。
+4c4b70	排除	-	monster_monster_ray		怪物對怪物射線，往下 434f20（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:263135。
+46fd70	排除	-	multi_point_los		多點視線，往下 434b60（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:149633。
+46f820	排除	-	screen_projection_los		螢幕投影（SR.DLL srCamera::project）與視線（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:149122。
+539870	排除	-	object_on_screen		物件是否在畫面上：421070、4ca4f0、46f820（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:426137。
+4c77f0	排除	-	skeleton_attach_position		骨架掛點世界座標（4c7960、getWorldSpaceRotation）（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:267088。
+4c78e0	排除	-	skeleton_attach_position2		骨架掛點世界座標（4c7960）（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:267179。
+4c4f80	排除	-	model_anim_blend		模型動畫混合（obj+0x30c 計時器、模型 +0x5c 權重），回傳不被讀，表現層（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:263484。
+4c5150	排除	-	model_anim_blend2		模型動畫混合，回傳不被讀，表現層（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:263649。
+50cf70	排除	-	story_npc_placement		劇情 NPC 放置／移圖／移除（SgtRubbleTeleport、RubbleCovert、door08 等），寫 +0xe9／+0xea／+0x114、0x6875a0，地圖 0xd 陷阱經 43d940；取代 cc 先前『原生跑』裁定（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:363211。
+50ff40	排除	-	group_set_position		群位置設定：把生成點 xyz 寫入群 +0xb7/+0xbb/+0xbf 與成員物件 +0x280，無回傳值；48ad20 於 0x48af96、0x48b0d8 呼叫（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:367537。
+50fc20	排除	-	group_attach_companion		群跟隨連結：連結跟隨槽 +0xa7..+0xb3 與父指標 +0xa3、間距配置（經 510590、547570、48c670、48c750、5100b0），回傳值在 0x48b0e4 後被覆寫不入規則（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:367247。
+510930	排除	-	group_dissolve		群解散：逐個成員呼叫 4e3af0（排除 world_object_remove）移出世界物件清單，經 50f4a0／48c670 遞減活躍群數 [0x65ba14]；48ca20 入口清空迴圈與 48c8e0 呼叫（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:368493。
+48c8e0	排除	-	group_cull_by_distance		依群與隊伍距離及群 +0xcf 時間淘汰舊群並呼叫 510930 解散；48b200 在活躍群數達額度 [0x60a6c0] 時呼叫（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:188727。
+48f650	排除	-	monster_camera_follow		攝影機跟隨：讀 0x6850e5/0x6850e9、怪物 +0x2ba/+0x2be、srNode +0x118 座標，呼叫 4c7c00/4c7cb0 與攝影機 0x65a0f8；4eae20 於 4eae8b 每次呼叫、回傳不用（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:192841。
+4eb8c0	排除	-	monster_move_speed_set		設 srNode 移動速度（453c70，基底 4e5990×100/50/150 加怪物 +0xe3）並清 node+0x134/+0x3e；4eae20 於 4eb0cc 等 4 處呼叫、回傳不用（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:315986。
+4c6030	排除	-	monster_path_move		路徑移動：node+0x18 經 451280/46e440/4527a0 與世界 0x659c0c，回傳成功旗標；4eae20 移動分支 4eb1f7/4eb279（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:265123。
+4c6070	排除	-	monster_flee_path_plan		逃跑路徑規劃：453970/4529a0 與 51a9a0 距離、51b320 偏移，回傳狀態 1/3；4eae20 於 4eb17c（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:265158。
+4c60d0	排除	-	monster_approach_path_plan		接近路徑規劃：同 4c6070 形狀，回傳狀態 1/3；4eae20 於 4eb137（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:265199。
+4c6200	排除	-	monster_move_stop		停止移動（node 4531f0）；4eae20 於 4eb4aa、回傳不用（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:265379。
+51b320	排除	-	monster_position_offset		由 node+0x190、4534c0 與 4c77f0/4c78e0 算三浮點位置偏移；4eae20 於 4eb0ab（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:383414。
+51ac30	排除	-	monster_target_by_distance		依距離挑目標（4c7cb0/4c7dd0/546f80）寫怪物 +0x2ba；4eae20 於 4eb0c4（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:382757。
+4ec900	排除	-	monster_face_target		轉向目標：讀 +0x2ba/+0x2c2 與目標座標 +0x2ca..+0x2d2，呼叫 454040/453f30/555a60 等；4eae20 於 4eb47b、4eb980 內（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:317387。
+534d50	排除	-	monster_path_to_node		怪物走向路徑節點：500f30 後 4526c0/4534c0/453f30；4eae20 於 4eb2f2（動作 9）（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:419387。
+534a40	排除	-	monster_range_check		距離範圍判定（4c7cb0/51a9a0、533320、556050）；4eb980 內 4eb98e、51a840 內 51a8df（MG 2026-10-11 數值規劃範圍：實體世界）；build/wiz8.asm:419121。
+590b40	排除	-	monster_action_message		格式化戰鬥訊息（swprintf 類 import、4e5150、58aad0）；4eae20 於 4eb40d 等 4 處，之後重讀 +0x2e1、回傳不用（MG 2026-10-09 呈現／I/O helper，回傳值不入規則）；build/wiz8.asm:541219。
+562a50	排除	-	combat_ui_flag_set		0x68ec78==7 時把參數 OR 進 0x68edcc+0xf4（UI 刷新旗標）；4eae20 於 4eb525，之後 eax 覆寫（MG 2026-10-09 呈現／I/O helper，回傳值不入規則）；build/wiz8.asm:482405。
+4c2cf0	排除	-	visual_action_playable		visual 動作可否播放（57dbb0 全域 0x68f105、visual+0x6d 跳表 0x4c2de0、4c4660、虛擬呼叫）；523c00 於 523eff 只用回傳決定是否呼叫 4e4db0（排除 actor_visual_anim_trigger）（MG 2026-10-09 呈現／I/O helper，回傳值不入規則）；build/wiz8.asm:260667。
+4c5a00	排除	-	visual_anim_state_set		寫 visual(+0x1d8)+0x6d 動畫狀態並以 0x6598b8 計時器寫 +0x68，回傳舊狀態；4e60b0 視覺動作段呼叫（MG 2026-10-09 呈現／I/O helper，回傳值不入規則）；build/wiz8.asm:264480。
+4c5aa0	排除	-	visual_flag_a7_set		visual(+0x1d8)+0xa7 寫參數 byte（+0x1dc bit5 為 0 時）；4e60b0 視覺動作段呼叫（MG 2026-10-09 呈現／I/O helper，回傳值不入規則）；build/wiz8.asm:264565。
+50b2f0	排除	-	npc_spawn_position		NPC 離隊生成座標：421070 取隊伍位置做浮點偏移，以半徑 0xa/0x14/0x1e 呼叫 437f30 找空位，座標經輸出參數交回（MG 2026-10-11 數值規劃範圍：實體世界放置）；build/wiz8.asm:360545。
+54a760	排除	-	monsters_dbs_load		MONSTERS.DBS 整檔讀入 malloc 緩衝（404c80 開檔），經輸出參數交回指標；檔案 I/O，內容是有來源的資料表（使用者原版 DBS），樁以 case 輸入的模板記錄代之（MG 2026-10-09 I/O helper；資料表來源依 B0 依賴圖閉合）；build/wiz8.asm:449023。
+4be5c0	排除	-	facing_angle_to_party		朝向角：位置結構 +0/+8 兩 float 與 421070 隊伍座標相減，與常數 0x5ebb34 比較回傳角度（MG 2026-10-11 數值規劃範圍：實體世界幾何）；build/wiz8.asm:255528。
+510cc0	排除	-	group_place		群體放置：呼叫 437980/437f30 找位、4534c0 複製座標、4e3af0 移除，回傳 al 是否放置成功（MG 2026-10-11 數值規劃範圍：實體世界放置）；build/wiz8.asm:368859。
+539e70	排除	-	area_monsters_in_range		範圍內怪物清單：fsqrt 距離與範圍比較，經 4c4c40→434f20（已排除射線遮擋）篩選，輸出怪物 ID 清單（MG 2026-10-11 數值規劃範圍：實體世界幾何／視線）；build/wiz8.asm:426670。
+4e4390	排除	-	monster_scene_insert		怪物進場景：4c6140→4537e0→42e810 把座標換算成格寫入空間雜湊（437000），另掛視覺節點與動畫；呼叫端不讀回傳。副作用欄位 +0x15=1、+0x34c 0→2、+0x354=[0x686a48]、+0x10 配置區，樁時以 record 記參數（MG 2026-10-11 數值規劃範圍：實體世界放置）；build/wiz8.asm:306320。
+4ecb40	排除	-	monster_look_at		怪物注視點：寫動畫物件 +0x1bf/+0x1c0..+0x1c8，依 +0x2ba 分支取 51ad60→4c7dd0 物件表面距離或 421070 隊伍視點座標（MG 2026-10-11 數值規劃範圍：實體世界幾何＋呈現）；build/wiz8.asm:317602。
+5471d0	排除	-	group_hostility_and_remove		群體敵對傳播並移出：經 547570 遞迴改群體 +0x2a/+0xca/+0xcb，再 50f720 移除群體進入世界物件管理（4e4390 場景、4e76f0 距離選目標）；敵我狀態結果以 case 輸入代之（MG 2026-10-11 數值規劃範圍：實體世界物件管理）；build/wiz8.asm:444268。
+54ff20	排除	-	summon_face_nearest		召喚物朝向：以效果物件座標 +0xa0..+0xa8 經 42ef00 世界空間查詢找最近物件、fsqrt 距離、4be420/4be650 算朝向；回傳僅 ST0 浮點交 4538f0 寫視覺物件朝向，不當規則輸入（MG 2026-10-11 數值規劃範圍：實體世界幾何）；build/wiz8.asm:456223。
+4538f0	排除	-	visual_set_facing		視覺物件朝向寫入：三角函數後寫 +0xd4/+0xd8 浮點，經 517c60；與規則值無關（MG 2026-10-11 數值規劃範圍：實體世界幾何）；build/wiz8.asm:112316。
+5905f0	排除	-	message_output		訊息輸出：模式 6/7 走訊息佇列（577850、56efd0、5e1ce0…、58ac00/58b410 與 import）；兩呼叫點回傳皆不讀（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:540759。
+4c6c30	排除	-	actor_zero_damage_visual		角色物件表現：傷害被抗性減為 0 時由 54e950（0x54ec4b）以怪物 +0xc 角色物件呼叫；+0x1dc 位元 0x400 未設時配置 0x5c 物件並經 421xxx 視點、4534c0 視覺物件等二十多個子函式做表現；呼叫端下一條即覆寫 eax，回傳不讀（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:266235。
+462e60	排除	-	map_cell_lookup		地圖格查找：thiscall 於 [[0x6598a4]+0x180] 地圖物件，(pos-origin)/cellsize 經 5e1c22 取格座標、雜湊走 [esi+0x64] 鏈表，回 al 命中並可寫回校正位置；503990 等以回傳分支（地圖幾何，MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md），結果在上層當 case 輸入；build/wiz8.asm:132465。
+4be940	排除	-	camera_point_offscreen		鏡頭投影：float3 轉 double3 後呼叫 SR.DLL srCamera::project（IAT 0x5eb7ac，ecx=[[0x659ab4]+0x44]），投影為 0 回 1；503990 四處（503ade、503d73、503e9d、503f4d）以回傳決定是否在畫面上搬移怪物群（視野／投影幾何，MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md），結果在上層當 case 輸入；build/wiz8.asm:255879。
+4c4ca0	排除	-	actor_facing_check		朝向判定：4534c0 取兩物件座標、4be420 由座標差算角度、517c60 正規化、453970 取朝向，fabs 差與 [0x5ec2b0] 比較回 al；540170 唯一呼叫點 540a61 只以回傳決定是否呼叫 4e4db0 播受擊動畫（已排除），eax 無其他讀者（幾何＋呈現，同 4c2cf0 前例；MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md）；build/wiz8.asm:263235。
+4c4d40	排除	-	actor_facing_check_b		朝向判定（與 4c4ca0 同型）：經 4534c0、4be420、517c60、453970 算兩物件角度差；53e250 於未命中且目標為怪物時 53ec6f 呼叫，回傳只決定 53ec8f 是否呼叫 4e4db0 播動畫（已排除），兩路都到 53f45a（幾何＋呈現；MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md）；build/wiz8.asm:263292。
+48f800	排除	-	camera_focus_position		攝影機移到座標：讀攝影機 65a0f8 與 6850e5、6850e9，呼叫 420fb0、477180、477440 移動視點；4ecc80 在目標種類 6 時以 (&R+0x10..+0x18, 0, 0) 呼叫，回傳無讀者（呈現＋世界幾何，同 48f650 monster_camera_follow；MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md）；build/wiz8.asm:192981。
+4ad080	排除	-	spell_visual_factory_a		法術視覺物件工廠：子樹經 4ab580 讀 data\\Spells\\*.mls（sscanf）與 453590 srNode setLocation；4fb4c0 內 13 處工廠呼叫（4fc0a5…4fc9d3）回傳只做 null 測試，非 null 時僅設視覺物件欄位（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md；法術核心普查 static_analysis）；build/wiz8.asm:232169。
+4ad430	排除	-	spell_visual_factory_b		法術視覺物件工廠：子樹經 4ab580 讀 data\\Spells\\*.mls（sscanf）與 453590 srNode setLocation；4fb4c0 內 13 處工廠呼叫（4fc0a5…4fc9d3）回傳只做 null 測試，非 null 時僅設視覺物件欄位（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:232449。
+4ad630	排除	-	spell_visual_factory_c		法術視覺物件工廠：子樹經 4ab580 讀 data\\Spells\\*.mls（sscanf）與 453590 srNode setLocation；4fb4c0 內 13 處工廠呼叫（4fc0a5…4fc9d3）回傳只做 null 測試，非 null 時僅設視覺物件欄位（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:232611。
+4ad8a0	排除	-	spell_visual_factory_d		法術視覺物件工廠：子樹經 4ab580 讀 data\\Spells\\*.mls（sscanf）與 453590 srNode setLocation；4fb4c0 內 13 處工廠呼叫（4fc0a5…4fc9d3）回傳只做 null 測試，非 null 時僅設視覺物件欄位（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:232801。
+4adb20	排除	-	spell_visual_factory_e		法術視覺物件工廠：子樹經 4ab580 讀 data\\Spells\\*.mls（sscanf）與 453590 srNode setLocation；4fb4c0 內 13 處工廠呼叫（4fc0a5…4fc9d3）回傳只做 null 測試，非 null 時僅設視覺物件欄位；4fc9d3 帶 "Default" 後接 GeneralMagic.wav（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:232995。
+59af40	排除	-	spell_video_object		視訊物件／動畫＋音效：經 549420 VideoObjectManager（子樹約 26KB）；4fb4c0:4fc5e6 呼叫後下一指令即覆寫 eax，回傳不讀（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:554866。
+4ae080	排除	-	spell_dynamic_light		動態光源：讀效果物件 +0x68..+0x70 位置、+0xd0 強度，掛全域清單 0x65be2c；54ba00:54bfec 對回傳指標做位元清除寫入→樁回傳須為 case 提供的可寫 scratch 指標（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:233503。
+4537e0	排除	-	scene_spatial_hash		場景空間雜湊：thiscall，4e6020:4e6069 呼叫後下一指令寫 +0x255，回傳不讀（地圖幾何，MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md）；build/wiz8.asm:112197。
+4506c0	排除	-	node_camera_position		節點／攝影機座標：呼叫 SR.DLL srNode getLocationX/Y/Z 與 3dapi CamPos；54ba00:54c209 呼叫後 eax 被覆寫，回傳不讀（呈現＋幾何，MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md）；build/wiz8.asm:107809。
+590bd0	排除	-	ui_text_box_notice		UI 文字框：54ba00:54c6b3 只在 0x68ec78==6 時以參數 -1 呼叫，wcscat／wcscpy 組字後經 55f260（排除）顯示，回傳不讀（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md）；build/wiz8.asm:541265。
+506280	排除	-	story_fact_query_log		故事事實查詢：54ba00:54bb77 以參數 0x83 呼叫，經 5080f0 查事實、旗標 0x688290 時經 58aad0 除錯 log；54ba00 處回傳被下一呼叫覆寫；53e250:53e657 以參數 0x44 呼叫且讀回傳（0 時 edi+5），該回傳是故事事實＝遊戲狀態，位址樁從 case 輸入取（53e250 agent static_analysis，cc 核 asm）（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md；5080f0 無副作用為 static_analysis 判讀，D4 票若見寫入規則狀態要停下回報）；build/wiz8.asm:353076。
+42ef00	排除	-	camera_clip_spatial_query		空間查詢範圍：45B，經 46e440 呼叫 SR.DLL srCamera getClipRange；551500 以它取目標集合（目標選取屬幾何，結果當 case 輸入，MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md；551500 其餘含 552410 心智抗性骰原生跑）；build/wiz8.asm:62983。
+4c72a0	排除	-	model_attach_world_position		模型掛點世界座標：怪物模型 vtable 0x5ed22c 的 +0x48 槽（notes/re/vtable-entries.tsv），4fea50:4feb91 在法術類別 5、來源為怪物且 4c78e0 回 0 時呼叫；取骨架（4a8250）、經 SR.DLL srMeshModel::getVertexLoc／srNode::getWorldSpaceMatrix 做矩陣乘向量，寫 tgt+0x10..0x18 世界座標（實體世界，結果當 case 輸入，MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md；原生跑停在骨架虛擬呼叫，4fa4d0 循環群 agent runtime_reproduction）；build/wiz8.asm:266650。
+46e440	排除	-	sr_camera_call		SR.DLL 相機 import 包裝（74B，ordinal 0x1f0 經 0x5eb7dc）；551500:55150b 呼叫後 eax 未讀即於 551529 覆寫；42ef00／4c6030 經它取空間資料（MG 2026-10-11 數值規劃範圍：實體世界；cc 判斷）；build/wiz8.asm:147462。
+420bd0	排除	-	terrain_ground_height		地面高度查詢：讀場景單例 0x652db0，已載入時經 433820（地形／碰撞查詢，同 4f93d0）以 st0 回傳高度，未載入回傳輸入 Y；500f70:50102e 怪物分支把結果寫回目標位置 Y 交 4fb4c0（MG 2026-10-11 數值規劃範圍：實體世界幾何；cc 判斷）；build/wiz8.asm:43711。
+5a4a00	排除	-	inventory_list_ui_refresh		背包清單 UI 重建：讀 UI 單例 0x69c0f4，重寫篩選物品清單 ui+0x4e4..0x4ec，經 4f65a0／4f6440／4f6470 更新捲軸元件；5ba740:5ba85b 呼叫後 eax 未讀即於 5ba860 重載（呈現／UI 刷新，回傳值非規則輸入）；build/wiz8.asm:567184。
+5b59b0	排除	-	camp_tab_switch_ui		營地畫面分頁切換：呼叫 0x69c3cc 起 8 個分頁按鈕的 vtable +0x4c／+0x48，寫 ui+0xd3f、ui+0xf8|=0x1000，經 53a320／55f160 切 UI 模式；5ba740 尾端呼叫，呼叫端 5b5e1a 於 5b5e25 覆寫 eax（呈現／UI 刷新）；build/wiz8.asm:590612。
+5ba110	排除	-	item_info_window_open		物品資訊視窗開啟：new 0x1ac、5d6fb0 建構、vtable +0x14／+0x18、5a4be0；5ba740 內呼叫後 eax 未讀即於 5ba814 以 item+6 覆寫 al（呈現／UI）；build/wiz8.asm:596631。
+58ab60	排除	-	message_log_write		訊息記錄寫入：vswprintf（import 0x5eb1f0）格式化進堆疊緩衝，依 0x683f97／0x683f9b、577850／56efd0／57dbb0 取顏色，轉 58ac00 寫入訊息視窗（0x68edcc、0x68ec78）；全 exe 6 個呼叫點都不讀 eax（例：51f12c 後 51f131 寫 [ebx+7]、590adc 覆寫 eax）（呈現／訊息；cc 判斷）；build/wiz8.asm:533324。
+4c6240	排除	-	actor_face_toward		角色朝向調整：經 4e5550／4e5620 取位置、421070 隊伍視點、454040 算朝向寫回 srNode；所有呼叫點（48f4a0、4e749f、4e776a 等）只 add esp 不讀 eax（世界幾何／朝向；數值範圍外，MG 2026-10-11；cc 判斷）；build/wiz8.asm:265413。
+4c62c0	排除	-	actor_face_object		角色朝向物件：經 4e5550／4e5620、4534c0 物件位置、454040 算朝向寫回 srNode；呼叫點（4e74c1、4e7796、4eb64c 等）只 add esp 不讀 eax（世界幾何／朝向；數值範圍外，MG 2026-10-11；cc 判斷）；build/wiz8.asm:265466。
+44d5c0	排除	-	model_bounds		模型包圍盒：轉 4a1710 寫出座標到呼叫端堆疊，呼叫端（4de0b6、51714e、5e3bae）以 fld 讀作放置位置（物件放置幾何，結果當 case 輸入；MG 2026-10-11 數值範圍；cc 判斷）；build/wiz8.asm:103396。
+421150	排除	-	camera_point_ahead		鏡頭前方 1000 單位點：轉 478ce0 寫出座標，呼叫端（4fc081、5387ac、5e3c1d）讀作施法／放置目標點（世界幾何，結果當 case 輸入；MG 2026-10-11 數值範圍；cc 判斷）；build/wiz8.asm:44249。
+4512c0	排除	-	map_location_lookup		依名稱找地圖地點或以 "PARTY" 經 421070 取隊伍視點，把 +0x80 起 3 個 float 座標抄到 out 參數，回傳 bool；地圖位置幾何（數值範圍外，MG 2026-10-11），ret 與座標當 case 輸入（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:108882。
+4f6c50	排除	-	item_spawn_at		在座標建物品物件（經 4f6b90、51c020），回傳物件指標；物件放置（數值範圍外，MG 2026-10-11）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:332230。
+4d8f00	排除	-	monster_group_spawn_at		在座標生怪群：420bd0 地形高度、547570 生成子樹、505780、50f1a0、50ffd0，呼叫端不讀回傳；生成／放置（數值範圍外，MG 2026-10-11）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:290934。
+420f90	排除	-	party_camera_teleport		把鏡頭／隊伍移到固定 float 座標，經 476f90；回傳不讀；移動／幾何（數值範圍外，MG 2026-10-11）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:44057。
+451080	排除	-	scene_object_find_by_name		以 SR getName 依名稱找場景物件（例 "FuzzBlast"），回傳物件指標；場景節點查詢，ret 當 case 輸入（數值範圍外）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:108602。
+49acd0	排除	-	renderer_effect_set_a		對 renderer *0x6598b8 虛擬呼叫並寫 0x65bd90..0x65bda4 顯示狀態，無子呼叫，回傳不讀（呈現）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:206929。
+498d90	排除	-	renderer_effect_set_b		對 renderer *0x6598b8 虛擬呼叫並寫顯示狀態，無子呼叫，回傳不讀（呈現）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:204667。
+408ad0	排除	-	sound_play_file		經 404bf0／404c80／404e10 串流 I/O 播放音效檔（例 Earthquake End.wav），回傳不讀（音效）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:10775。
+41f0d0	排除	-	camera_effect_reset		清鏡頭物件 *0x652dac 的旗標與 +0x40..+0xa8（0x652dac 的讀寫集中在 41a..421 鏡頭模組），無子呼叫，回傳不讀（鏡頭呈現）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:41464。
+483fd0	排除	-	environment_sky_update		天空／月亮／貼圖動畫更新（Environment.cpp，呼叫 GetTickCount、427380、4299b0、483ba0），回傳不讀（畫面環境）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:176590。
+5299b0	排除	-	message_event_enqueue		以文字表 *0x68c09c+0x770 的字串 wcscpy 建訊息事件、接到佇列 0x68c4c8（4addf0），回傳不讀（呈現／訊息）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:403442。
+562580	排除	-	ui_screen_mode_switch		UI 畫面模式切換：寫 0x68ec78／0x68edcc 欄位與 0x6850ce，子樹經 5b1c80／5554a0／549390（VideoObjectManager）、4f21e0（RegionManager）；呼叫點 589afe、589c9c、58a3a7 後接 push 0x200／call 562a50，不讀 eax（呈現／UI）（589a80 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:482110。
+59c930	排除	-	item_use_screen_open		開啟物品使用畫面：呼叫 562580、56af20、595570、56e800、569570、5618f0 等 UI；呼叫點 58a45e 後 add esp,0x1c 不讀 eax（呈現／UI）（589a80 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:557022。
+58a3e0	排除	-	item_use_screen_enter		物品使用流程入口：只經 4f30f0、58f6b0、562580、562a50、59c930 開 UI，無規則計算（呈現／UI）（589a80 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:532674。
+50c560	排除	-	npc_map_spawn		在當前地圖生成／放置 NPC：呼叫 54a760（DBS 載入）、4512c0、50f1a0；呼叫端 50c1c0 不讀 eax（世界放置）（506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:362303。
+547570	排除	-	monster_group_disposition_set		怪物群 disposition 設定外殼：逐成員經 511850、5477d0、505f30（距離／視線）並遞迴連結群組；四個呼叫點 50697e、507b6f、507b8d、507bab 不讀 eax；規則部分另由 5477d0 節點承擔（含世界幾何；cc 判斷）；build/wiz8.asm:444616。
+509aa0	排除	-	npc_record_create		建立 NPC 執行期紀錄（malloc、50aed0、55a630、50b9e0、4addf0）；回傳紀錄指標由 case 輸入給定（物件配置；cc 判斷）；build/wiz8.asm:358205。
+476f90	排除	-	camera_move_to		以 3 個 float（怪物座標）移動鏡頭／隊伍定位；56c6d0 呼叫後直接 ret、各呼叫端不讀 eax（幾何；cc 判斷）；build/wiz8.asm:159316、494903、494968。
+56cad0	排除	-	dialogue_open_ui		開對話畫面 UI 流程（56af20、569570、55bcc0、vtable、import 0x5eb188）；56c6d0 呼叫後直接 ret、各呼叫端不讀 eax（UI；cc 判斷）；build/wiz8.asm:495052、494790、494974。
+52db30	排除	-	voice_queue_clear		清空語音／對話佇列並逐項交音效與肖像釋放（呈現層）；502010 呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:409533、347947。
+598c70	排除	-	sound_pause_all		對 12 個音效物件設暫停旗標（音效）；502010 呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:551998、347961。
+56b4e0	排除	-	rest_screen_open		建休息畫面 UI（UI）；502010 呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:493163、347970。
+452f50	排除	-	world_objects_freeze		世界物件凍結／解凍與速度欄（移動／物件，數值範圍外）；502010 呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:111411、347992。
+43aa20	排除	-	timer_object_reset		重設計時器物件（引擎）；502010 呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:78618、347995。
+48cbe0	排除	-	anim_speed_reset		重設動畫速度與物件清單動畫（呈現層）；502010 呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:189012、347996。
+56b5f0	排除	-	rest_screen_close		休息畫面 UI 收尾（UI）；502010 呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:493241、347997。
+50da00	排除	-	npc_reposition_all		NPC 記錄表逐筆重新擺放（放置，數值範圍外）；502010 呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:364080、347999。
+42b770	排除	-	map_file_probe		以地圖名組檔名並查檔案（I/O）；502010 呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:58482、348002。
+5554a0	排除	-	camera_face_turn		依選中角色朝向轉動鏡頭（5b1e70／421550 等場景 API；呈現層）；呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:463658、314492。
+555560	排除	-	member_face_target		隊員轉向目標，寫朝向 0x687528（物件／隊伍位置；幾何，數值範圍外）；呼叫點後不讀 eax（cc 判斷）；build/wiz8.asm:463725、314724。
+531920	排除	-	monster_group_engage_check		怪物群接戰判定：依隊伍距離、射程、物件位置（4c7cb0、534a40、4534c0、45a1b0）；4e9b20 讀其 byte 回傳，依數值範圍裁定以 case 輸入給定（幾何）（cc 判斷）；build/wiz8.asm:414956。
+534300	排除	-	monster_groups_engage_update		逐群逐成員依距離／射程／敵意範圍更新接戰（4c7cb0、51a840、534fc0、531920）；4e9b20 無條件呼叫（幾何）（cc 判斷）；build/wiz8.asm:418464。
+5354e0	排除	-	monster_groups_advance		怪物群推進：5355d0 依距離與物件位置移動（4c7cb0、453480、4534c0、534fc0），另呼叫 547570（排除）（移動／幾何）（cc 判斷）；build/wiz8.asm:420090。
+4ecaa0	排除	-	party_face_nearest		取距離（4c7cb0）後經 4c6240 轉向（幾何／呈現）（cc 判斷）；build/wiz8.asm:317535。
+53a930	排除	-	action_target_refresh		行動目標重選與選取標記（4e77b0、4c5820／4c5840／4c5eb0 標記、4fd030）；六處呼叫；目標屬位置／射程結果，依數值範圍裁定以 case 輸入給定，4fd030 仍為 D4 公式（目標選取）（cc 判斷）；build/wiz8.asm:427628、322449。
+452c90	排除	-	actor_anim_reset		怪物 render 物件動作／動畫重設（455140、4563e0、4564f0、517c60；呈現層）；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:111178。
+53a320	排除	-	combat_ui_refresh		戰鬥 UI 呈現，經 55ee70 走影像物件管理（UI）；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:427088。
+53ae00	排除	-	monster_marker_clear		逐怪清選取標記位元（4c5eb0、4c5840；呈現層）；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:428047。
+482990	排除	-	realtime_clock_tick		以 GetTickCount 差值乘 0x60a390 推進 482a20（實際經過時間，IO；502010 由他處以規則輸入呼叫）；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:174781。
+56af20	排除	-	ui_close_all		依畫面旗標呼叫 5879a0、58a790、59f2b0、59cac0、5b2200 關閉畫面（UI；呼叫端讀的旗標由 case 輸入給定）；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:492686。
+5b1c80	排除	-	formation_ui_redraw		陣形 UI 重畫（4257f0、4255c0；UI）；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:585790。
+5a3470	排除	-	formation_overlay_radius		以鏡頭物件與 51a9a0 重設 overlay 半徑並呼叫 5a24a0（呈現／幾何）；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:565588。
+58f6b0	排除	-	ui_page_select		設定 UI 頁面 0x56／0x57（UI；入口解碼錯位，證據取呼叫點）；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:314414、310383。
+58a860	排除	-	ui_panel_refresh_f99		UI 面板刷新；565740 依 byte 0x683f99 呼叫；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:533046、485895。
+5b3100	排除	-	ui_widget_refresh_f9a		widget vtable 刷新；565740 依 byte 0x683f9a 呼叫；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:587465、485900。
+596cf0	排除	-	ui_panel_refresh_2ca		UI 面板刷新；565740 依 word uip+0x2ca≠0xffff 呼叫；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:549318、485903。
+592e60	排除	-	ui_panel_refresh_314		UI 面板刷新；565740 依 byte uip+0x314 呼叫；呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:544252、485910。
+4bf970	排除	-	anim_sequence_frame_total		動畫序列總影格數（A vtable 0x5ed200 槽 +0xc），未載入時讀資源檔；回傳只在 4c4660 與目前影格比較、決定等不等動畫，呈現閘，結果當 case 輸入（cc 判斷，數值規劃範圍裁定）；build/wiz8.asm:257144、262674。

@@ -1,0 +1,2 @@
+ok g1-check
+ok node-accept 3 節點 D4

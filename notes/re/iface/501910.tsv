@@ -1,0 +1,11 @@
+call	2b6	無關	子呼叫分析對 0x50193e 的間接匯入產生此識別碼；實際為 0x5ebaf4 的 srAssertFail，只在非法難度時停止，沒有合法公式子呼叫。
+data	4	characterIndexArgument	第一個 cdecl 堆疊參數的偏移；角色索引用來選擇戰鬥進度記錄。來源 0x50195b。
+data	8	riskPointerArgument	第二個 cdecl 堆疊參數的偏移；指向讀取及回寫的 u32 法術風險指標。來源 0x501989。
+data	5ebaf4	無關	srAssertFail 匯入槽，只處理不在 0、1、2 的非法難度，不參與合法風險縮放。來源 0x50193e。
+data	609b24	無關	非法難度斷言的條件文字，僅用於錯誤診斷，不是公式資料。來源 0x501939。
+data	61920c	無關	非法難度斷言的來源檔名文字，僅用於錯誤診斷，不是公式資料。來源 0x501934。
+data	6836a8	partyCombatState	戰鬥狀態物件指標；角色記錄 stride 0xd4，行動進度為物件 +0xb4+角色索引×0xd4。來源 0x50195b..0x501972；notes/re/combat-timing.md 的 G 記號。
+data	683f94	combatActive	u8 戰鬥旗標；零時保持風險，任何非零值均執行難度及進度判斷。來源 0x501910..0x501917。
+data	6850d5	combatDifficulty	u32 難度 0／1／2 分別選門檻 80／60／40；其他值於戰鬥中觸發斷言。來源 0x50191d..0x501956。
+field	eax+0x9c	characterActionProgress	選中的戰鬥角色記錄從 G+0x18+索引×0xd4 起算，+0x9c 等同 G+0xb4+索引×0xd4；u32 進度等於或超過門檻即縮放。來源 0x50196e..0x50197a。
+field	ecx+0x0	spellRiskIndicator	第二參數指向的 u32 法術風險；倍率為 2×(進度−門檻+50)/100，乘積及加倍均保留 32 位元回繞，最後無號除法取整並回寫。來源 0x501989..0x50199c。EAX 並非穩定的規則輸出。

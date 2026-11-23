@@ -1,0 +1,22 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "1377813a952bf11a41e5cad7bf9f936d8a304bb221c9e02312a1e98305349950",
+  "zh": "請向 EWAXX 裝置出示安全授權。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "1377813a952bf11a41e5cad7bf9f936d8a304bb221c9e02312a1e98305349950",
+  "zh": "請向 EWAXX 裝置出示安全授權。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "ebf395e88ff187dc3fec9d1ab4cf102b44e59d666676f5e8c01c8b35d0bbf052",
+  "zh": "拒絕存取。找不到有效的安全卡。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "7ad56c2b544eea3d15ad2504fda6ced9e417713d72a2c37ff4fec5cd5324ab2c",
+  "zh": "存取已驗證。正在啟動升降機。"
+ }
+]

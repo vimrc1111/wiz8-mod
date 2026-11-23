@@ -1,0 +1,74 @@
+# case 範圍：八個角色、兩手、目標種類與目標角色／怪物、三個怪物模板、八筆物品記錄皆由 arena 建立，不讀寫遊戲目錄；筆數與編號超出上限 calc 報錯。
+# 位址樁：0x517970、0x51cce0、0x4ed2d0、0x553f10（D4 公式，回傳與寫入取自輸入）；0x52e690（排除類，記錄引數與呼叫次數成為輸出）。0x4ed2b0、0x4e5550、0x4e5620、0x4e5720、0x51c8b0、0x5479b0、0x5e1c22、0x40efa0 原樣執行。
+# 斷言路徑：目標怪物編號找不到、目標角色索引為負、手旗標與模式不合、不可達的負值夾制，calc 一律報錯，不回傳值。
+call	2b6	srAssertFail	分析器列出的 srAssertFail 標記；只在斷言路徑停止，合法輸入走不到
+call	40efa0	rollPercentDie	亂數 R(n)：百分比骰與多骰機率，以 Rand 重放
+call	51c8b0	attackSwingSlotTable	依攻擊模式查跳轉表，取得搭配槽；calc 重用既有跳轉表讀取
+call	5479b0	levelScaleValue	依職業等級取比例值，與百分比骰門檻比較；原樣執行
+call	5e1c22	_ftol	浮點轉整數截斷（x87）
+data	5ebcf4	maxedScaleA	binary32 常數，滿骰判斷的每次遞減係數；執行時讀 exe
+data	5ebb38	maxedScaleB	binary32 常數，滿骰判斷的被減基數；執行時讀 exe
+data	5ed8c8	restockArgA	傳給 0x52e690 的第四個引數常數；執行時讀 exe
+data	5ed914	restockArgB	傳給 0x52e690 的第五個引數常數；執行時讀 exe
+data	6836a8	combatGlobal	戰鬥全域記錄指標
+data	68516c	itemRecordArray	物品記錄陣列指標，每筆 269 位元組
+data	685174	characterRecords	角色記錄陣列基址，步距 0x1862
+data	68c510	damageEventCookie	全域值，原樣傳給 0x52e690 作第二個引數
+data	5ebaf4	srAssertFail	srAssertFail 的 IAT 位址；僅斷言路徑使用，合法輸入走不到
+data	61d2ac	assertText	斷言訊息字串位址，非遊戲資料
+data	61d3a8	assertText	斷言訊息字串位址，非遊戲資料
+data	61d90c	assertText	斷言訊息字串位址，非遊戲資料
+data	61d938	assertText	斷言訊息字串位址，非遊戲資料
+data	61d960	assertText	斷言訊息字串位址，非遊戲資料
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe3	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffa	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffb	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x1e1	monsterDamageMod	怪物記錄 +0x1e1 有號 byte 傷害修正：與模板 +0xcf 相加後從 100 扣
+field	eax+0x8c5	targetKind	戰鬥全域 +0x8c5 目標種類：3 為怪物，其餘為角色
+field	eax+0x8c9	targetCharacter	戰鬥全域 +0x8c9 目標角色索引（有號，目標為角色時作 0..7 索引）
+field	eax+0x8cd	targetMonsterId	戰鬥全域 +0x8cd 目標怪物編號，用來找怪物記錄；全 1 為無效
+field	eax+0x9a4	flag9a4	戰鬥全域 +0x9a4 旗標：非零時多骰一次，並抑制減骰
+field	eax+0x9a5	flag9a5	戰鬥全域 +0x9a5 旗標：非零時依等級比例擲骰決定是否多骰
+field	eax+ebx*1+0x61	itemClassByte	物品記錄 +0x61 位元組：與怪物模板 +0xcb 比對，相同且不為 0xff 時多骰
+field	eax+ecx*1+0x4a	itemDice	物品記錄 +0x4a 骰值：主要物品與搭配槽物品的傷害骰參數
+field	eax+edx*2+0x1149	handFlagByHand	角色記錄 +0x1149 起每手一組的手模式旗標（以手索引定址）
+field	ebp+0x1149	handFlag0	角色記錄 +0x1149 主手手模式旗標
+field	ebp+0x1176	handDice0	角色記錄 +0x1176 主手傷害骰參數
+field	ebp+0x11a4	handFlag1	角色記錄 +0x11a4 副手手模式旗標
+field	ebp+0x11d1	handDice1	角色記錄 +0x11d1 副手傷害骰參數
+field	ebp+0x1773	attackPower	角色記錄 +0x1773 有號 byte 攻擊力加成：加進 100 基數
+field	ebp+0xfa5	equipSlot6	角色記錄 +0xfa5 第六個裝備槽的物品索引
+field	ebp+0xfb1	equipSlot7	角色記錄 +0xfb1 第七個裝備槽的物品索引
+field	ebp+eax*4+0xf5d	equipSlotIndexed	角色記錄 +0xf5d 起每槽 12 位元組的物品索引（以槽號定址）
+field	ebp+ecx*4+0xf5d	equipSlotIndexed	角色記錄 +0xf5d 起每槽 12 位元組的物品索引（以槽號定址）
+field	ebp+edx*4+0xf5d	equipSlotIndexed	角色記錄 +0xf5d 起每槽 12 位元組的物品索引（以槽號定址）
+field	ecx+0x0	monsterRecordId	怪物記錄 +0 怪物編號：與目標怪物編號比對
+field	ecx+0x8c5	targetKind	戰鬥全域 +0x8c5 目標種類
+field	ecx+0x8c9	targetCharacter	戰鬥全域 +0x8c9 目標角色索引
+field	ecx+0xcb	templateClassByte	怪物模板 +0xcb 位元組：與物品記錄 +0x61 比對
+field	ecx+eax*2+0x1149	handFlagByHand	角色記錄 +0x1149 起每手一組的手模式旗標
+field	edi+0x1172	handBonus	角色記錄 +0x1172 當手有號傷害加成
+field	edi+0x1176	handDice	角色記錄 +0x1176 當手傷害骰參數
+field	edi+0x70	combatSlot70	戰鬥全域每角色記錄 +0x70（全域 +0x88）物品索引：怪物目標時比對模板類別
+field	edi+0x71b	targetStatusByte	目標角色記錄 +0x71b byte：非零時對目標登記一筆狀態呼叫
+field	edi+0x74	combatSlot74	戰鬥全域每角色記錄 +0x74 物品索引，-1 為無
+field	edi+0xcf	templateClassFlag	怪物模板 +0xcf 位元組：加進怪物傷害修正
+field	edi+0xed9	targetDamageAdjust	目標角色記錄 +0xed9 有號傷害調整：100 減此值作縮放
+field	edx+0x0	monsterRecordId	怪物記錄 +0 怪物編號
+field	edx+0x8c9	targetCharacter	戰鬥全域 +0x8c9 目標角色索引
+field	edx+eax*1+0x4a	itemDice	物品記錄 +0x4a 骰值
+field	edx+ecx*2+0x1149	handFlagByHand	角色記錄 +0x1149 起每手一組的手模式旗標
+field	esi+0x17b5	targetAttrByte	目標角色記錄 +0x17b5 byte：非零時加骰
+field	esi+0x220	monsterAttrByte	怪物記錄 +0x220 byte：非零時加骰
+field	esi+0x2e1	monsterKind	怪物記錄 +0x2e1 種類：1 與 8 為減骰條件、4 為加骰條件

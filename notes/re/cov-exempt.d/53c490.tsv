@@ -1,0 +1,4 @@
+53c490	53c4b8	來源角色索引為 -1 時的 srAssertFail 分支；srAssertFail 停止，沒有可差分的正常返回，合法來源角色索引不為 -1。
+53c490	53c509	來源怪物 ID 為 -1 時的 srAssertFail 分支；srAssertFail 停止，合法來源怪物 ID 不為 -1。
+53c490	53c5ec	目標種類不是 1／3／4 的 srAssertFail 分支；srAssertFail 停止，合法目標種類只有三種。
+53c490	53c608	來源種類不是 1／2 的 srAssertFail 分支；srAssertFail 停止，合法來源種類只有兩種。

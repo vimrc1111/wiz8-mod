@@ -1,0 +1,69 @@
+{
+  "run_id": "20261007-022108-menu-timing",
+  "commit": "b72c2bbad7cc24e245dec973a6b02be05f6b886e",
+  "scenario": {
+    "id": "menu-timing",
+    "duration": 95,
+    "steps": [
+      {
+        "t": 30,
+        "shot": "t30"
+      },
+      {
+        "t": 35,
+        "shot": "t35"
+      },
+      {
+        "t": 40,
+        "shot": "t40"
+      },
+      {
+        "t": 45,
+        "shot": "t45"
+      },
+      {
+        "t": 50,
+        "shot": "t50"
+      },
+      {
+        "t": 55,
+        "shot": "t55"
+      },
+      {
+        "t": 60,
+        "shot": "t60"
+      },
+      {
+        "t": 65,
+        "shot": "t65"
+      },
+      {
+        "t": 70,
+        "shot": "t70"
+      },
+      {
+        "t": 75,
+        "shot": "t75"
+      },
+      {
+        "t": 80,
+        "shot": "t80"
+      },
+      {
+        "t": 85,
+        "shot": "t85"
+      },
+      {
+        "t": 90,
+        "shot": "t90"
+      }
+    ]
+  },
+  "before_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [],
+  "modules": [],
+  "powershell": "New-Item : �L�k�N�޼�ô���� 'Path' �ѼơA�]�����O Null�C\n��� \\\\wsl.localhost\\Ubuntu\\home\\mg\\Projects\\games\\wiz8-mod\\scripts\\wiz8-run.ps1:16 �r��:37\n+ New-Item -ItemType Directory -Force $Out | Out-Null\n+                                     ~~~~\n    + CategoryInfo          : InvalidData: (:) [New-Item]�AParentContainsErrorRecordException\n    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.NewItemComm \n   and\n \npowershell rc=1",
+  "shots": {}
+}

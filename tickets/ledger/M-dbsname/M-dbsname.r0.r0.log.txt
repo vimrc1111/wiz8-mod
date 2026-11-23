@@ -1,0 +1,2 @@
+stat ~/Projects/games/wiz8-mod-M/tools/dbsname: directory not found
+FAIL dbsname tools/dbsname 編譯失敗或不存在

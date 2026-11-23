@@ -1,0 +1,347 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "b438ef520b533ea5b7e874634a75ec39f41a16a3528c2a9fe9f3b60809b90739",
+  "zh": "哈囉。我是 Andrew T. Emmons，今天由我來接替 Play Day 擔任官方「幫手」NPC。別對我做你們對 Play Day 做的那些事，不然我會哭得像個嬰兒。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "2d41bde6b50565ebf675bad135ac8c0c3e4311282746c28c70e4d98a05c5a057",
+  "zh": "你們現在玩到的這一段， Ascension Peak ，是遊戲倒數第二個區域。過了這裡，你們就要前往 Cosmic Circle 了。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "86d8e66df09de7f8c6dcc96321ea9a344ec98214b2cc0f1f6e6bd17251c33268",
+  "zh": "我擅自調整了你們的事實資料庫，讓這裡的 NPC 以為你們做過的事比實際上多得多。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "ce05ecb3606d71dad0062a7654d736f5292223c810cebc12ae6526317480b11e",
+  "zh": "如果你們想大致了解你們做過些什麼，儘管開口。我們可以聊性（ sex ）、 Rapax 、 Bela 、 Ascension Peak ，或是 Dark Savant 。而且我們非得聊聊炸彈（ Bomb ）不可。所以，問我吧。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "a83a88f7b402791fd839198a57cc182ae6ea75c9597652aae0181c0682706243",
+  "zh": "又見面了。天氣不錯，對吧？"
+ },
+ {
+  "id": 5,
+  "src_sha256": "6801d53f2b6a79ead9f5e119e8cc2dcbd834b384427e4e5c5927ec812efb812e",
+  "zh": "滾出去（ Get out ）。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "837a4c0bc43d1e913d732a3a191e51d6e6372a04add5df85d875e26264d51045",
+  "zh": "你們只是在假裝友善而已。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "602af845113608180767076146b0f9436532f49f70d7abfdf7eb24e137de9fff",
+  "zh": "這下你們傷到我了！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "9f08e4484f6f5797b0de28b40b8d28d9522767c2e662d52d2ed2bc092c77780e",
+  "zh": "別逼我賞你一巴掌。"
+ },
+ {
+  "id": 10,
+  "src_sha256": "8b83fc5569d6908b9b3f682bee996424b33b0c2655112ba5c1046455d061616f",
+  "zh": "你這個小氣鬼。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "ee89271cc97d010000eb4060f4ff0102124c51877784c697ce0a21f4c7db6b0b",
+  "zh": "如果我捲進你們的戰鬥，大概只會送命（ die ）……"
+ },
+ {
+  "id": 12,
+  "src_sha256": "1f468a931d0a90129bb886567f731c5205c02a3241de973159121204f3244844",
+  "zh": "不了，謝謝。我已經在當動作滿檔的程式設計師了。我在東西裡加分號，還用很多刺激的敘述，像是 strcpy 。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "8569efc4ed5a6273140c2b6ec0ab8d99f4398210808fbb7c0cbbae4fbcc21350",
+  "zh": "謝謝。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "f3d0e3059aacefae9f1fbd2a707eceb0acfcd20759fe1eec9a47abb225774b3c",
+  "zh": "那是屁話。"
+ },
+ {
+  "id": 21,
+  "src_sha256": "b3b49022328379a75bccfbd8da9f4a4facc8c7deae6b05346f0d8a421f90cc21",
+  "zh": "滾出去（ GET OUT ）！"
+ },
+ {
+  "id": 22,
+  "src_sha256": "613d671167e24f6d3203dafdc7ad7bfd22b7acb618a8526ba87b17be6a76a1f0",
+  "zh": "嘿！你們剛剛偷了我的東西！"
+ },
+ {
+  "id": 23,
+  "src_sha256": "363cd5e47966e6ffe742e93a15e83739aa0db24758fe76441b5397e03ee7e0d5",
+  "zh": "嗚哇啊啊啊！嗚哇啊啊啊啊啊啊啊！"
+ },
+ {
+  "id": 24,
+  "src_sha256": "beed802b0907de9db0cfe6fe0041e5a960d7231486e67b156627a3e1d0bb6e27",
+  "zh": "我喜歡錢。謝謝。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "28c73ac8ee267d049a1a17a4ca49e760116058241c4eee081784e02aaf685aa3",
+  "zh": "抱歉。我沒有太多答案。"
+ },
+ {
+  "id": 26,
+  "src_sha256": "c0469fcef64750ee7ef3685ea4f67b7874006b39a759a988fadd18c4a7817cf1",
+  "zh": "你們知道的，我不是真正的 NPC。我只知道 Rapax 、性（ Sex ）、 Bela 、 Dark Savant 和 Ascension Peak 。"
+ },
+ {
+  "id": 28,
+  "src_sha256": "bab6372d4491d024c18761ad4e27840495de8b5e00254eb083b7b2caf1ccb3ca",
+  "zh": "再一次……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "d8c57811a303dcde1b750b944a2a5835a7715d5974cf2f22c3d4e5b36beb77cc",
+  "zh": "你們好奇心太重了，小心惹禍上身。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "b7f232d0fcf86ab4b7710e46e254049b3c5a0788ea55f9fdc8aca40b1bc5bd48",
+  "zh": "然後……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "9cbb3ef55b7125bf2d1720f35d08c1e2a45e9f1ca0e87bb4cd21792cbca48e56",
+  "zh": "隨便啦。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "2202007f4391ce5a35ee2cd02473cd55c87c9f198677e60106677a9a4217d9d0",
+  "zh": "也許我該去寫點程式……"
+ },
+ {
+  "id": 33,
+  "src_sha256": "5b619fa3b48238be64e4a6d97282dc525a93cc549be91800a7f94a05976f7ece",
+  "zh": "嗯，我確實有很多事要做……"
+ },
+ {
+  "id": 43,
+  "src_sha256": "71a382e83e397fc437e85434250820fb3e58f786d7f2692ce45fcdf5199ae947",
+  "zh": "讓我跟你們介紹一下這個地方的背景。你們大概已經看出來，這是一座山。山頂上有一道殘缺的階梯，通往 Cosmic Circle 。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "b10ccaf459f5bea22da1df4a23cb6f11f740f0bec3ee2b6dc6d9e1ac7d3407ed",
+  "zh": "想要「飛升」，你們自己得先成為（某種程度上的）神。要做到這點，你們得收集眾神（ gods ）遺留下來的三件物品。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "be1122b2b4d5879333e8e22d5ef032d370f224e6416c4215b91d09d6b018cfe5",
+  "zh": "Astral Dominae 蘊含生命的意義， Destinae Dominus 蘊含所有的知識，而 Chaos Moliri 蘊含變化之能。三者合一，才能創造，進而才有存在。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "c8a6b7e019641afe5e6445f8c03cc734bcff461ad3cf5ab686ed3d4679d333e7",
+  "zh": "找到這些物品，然後找到各自的神殿。回答那些謎題。你們會被傳送到山頂，在那裡把物品「放」進階梯，讓它那一段升起來。三件都拿到，就可以前往 Cosmic Circle 了。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "e3805b385eb115ec7cc7aa180322f06c5ece3cc97056bd82909972dde843a805",
+  "zh": "那就是你們要去的地方。"
+ },
+ {
+  "id": 51,
+  "src_sha256": "367e8d47d46e510b782c20631f97d741b4ac41c910a197b3993db35d9073f76f",
+  "zh": "到這個階段，你們已經知道的是： Rapax 是遊戲裡最敵視你們的傢伙，他們已經和 Dark Savant 結盟，打算阻止你們飛升。飛升的意思就是前往 Cosmic Circle 。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "76c8833fc9bc5d28fa2824bb1e271455b2820b78356b20b968b369c78b2353a1",
+  "zh": "遊戲中有一段時間， Rapax 把你們視為忠誠的盟友。你們甚至成了 Rapax Templar ，加入了某種「社團」。不過他們已經好一陣子沒看到你們，也發現你們根本不是什麼忠誠的盟友。你們可以預期在這裡與 Rapax 大軍有一場盛大的最終對決。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "edb450664d05bac2a622ff9742d9bfeee2459ecdab576236399c5c158e18e72c",
+  "zh": "你們和 Dark Savant 從遊戲早期就一直在競賽誰先飛升。飛升者將成為下一個命運（ destiny ）的新 {{Lord}} ，統治整個宇宙。對 Dark Savant 這種惡毒的傢伙來說，是再適合不過的獎賞。"
+ },
+ {
+  "id": 62,
+  "src_sha256": "ec057565965b7fa1406b594db7ce01b0880c39b28cf94436bfee0c4ab0cfab0e",
+  "zh": "一部分是為了阻止他，但主要是因為你們自己也很想成神，所以你們也想飛升。如果還沒問過，你們該問問我他在 Arnika 設下的炸彈（ bomb ）。"
+ },
+ {
+  "id": 67,
+  "src_sha256": "5e0c925f0b7ef69eaa68889cbee052608625173d445cae4f224e778f1542911f",
+  "zh": "遊戲進行到一半左右，你們遇到一個看起來相當危險的生物，結果他和你們一樣，是來到這個世界的旅人。他追逐 Cosmic Lords 的時間比你們更久，也告訴過你們一些這裡正在發生的事。"
+ },
+ {
+  "id": 68,
+  "src_sha256": "7cd33a26be1572edc98b4b063674f7b095a1677318c8d4234f7f936658f06089",
+  "zh": "他會在關卡的最後面出現。他是你們的盟友。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "4cdb9df6dadf9bb3c12cb7627398b74e6d6bc2b9a64b43c0ecd9871d29c4ed71",
+  "zh": "我是 Andrew T. Emmons 。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "916d0f88753dc67c9edeca294a8411d0c70c6ef4fadc396c566b4b40680478be",
+  "zh": "滾出去（ Get out ）！"
+ },
+ {
+  "id": 85,
+  "src_sha256": "2682205bf1b65753eb6f013a707ac0c4426fc23bc6afd42853b0155644153c2a",
+  "zh": "等 play day 結束，我馬上就離開這裡。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "2d8bd7d9bb5f85ba643f0110d50cb506a1fe439e769a22503193ea6046bb87f7",
+  "zh": "哈囉。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "2b687db6298b629d3bcb482f16aa774a55eb5ae768407b8fba9982387b6c6f81",
+  "zh": "再見。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "38178a20b470cfd18299fb1593dd4ba706f1a83321dac051d01086efd8b7a96f",
+  "zh": "不。"
+ },
+ {
+  "id": 89,
+  "src_sha256": "176e19fa5e1fce7346d832115b1ab953f208ab42ba2e9849472df6529da3594c",
+  "zh": "什麼都沒了。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "2c33dcef91e066247cc05cc403f99dcf572e5bb8f45656fec462270e689916b6",
+  "zh": "很好。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "8d56a5318fd3688484fa5f3b0a6063265e7a7be85b96f42cd71f060023aa22b7",
+  "zh": "沒了。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "deb5a988bab065cd9baee0ff94869ece9f92d78463249eb4eda116ead2906e02",
+  "zh": "我想先講 Rapax 的事，會比較好懂……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "9e9fd1168f18fa45a27e69c5ace5ce72e286d04c32dcb2de53a26127fceadb49",
+  "zh": "還記得我說過，你們加入了某種社團，成為 Rapax Templar 嗎？嗯，入會儀式包括向一位女魔進行某種「獻祭」，所有男性 Rapax 都崇拜她。你們當時享受得不得了。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "fa456d1875e71136ab4c19d7a650b423bb3cfcbbd36e5dc23f4d1f178cc464e8",
+  "zh": "不幸的是，事成之後，她不肯放你們走，還真的開始吸乾你們的生命。所以你們只好殺了她。結束一段關係大概有更好的方法吧。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "9259e23bff99dd4e86df6b60ecb58169b075aecc5465a9d9c42fdd918d535472",
+  "zh": "總之，在 Ascension Peak 這裡被人提起這件事，別太驚訝。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "a1e30e2d113deda3cb3103952337c6a14e7971d851422c75b685fba31fcd513b",
+  "zh": "那是大人物（ BIG cheese ），老兄。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "c1cff3dbff6bfce2f0b5396d5d3d0b910c899f724ffa9bdcb05f91c6ed0a08b1",
+  "zh": "就是我。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "def344a7748798b50655544eb5445aa96f78b64ccaa69301bd6c33d5b8944d24",
+  "zh": "我很害羞。我不喜歡談論自己。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "a1ec38a38827ef81f29b5894c805fe036516598973e83fa1264a679a040d43da",
+  "zh": "你們才給我滾出去（ get out ）！"
+ },
+ {
+  "id": 122,
+  "src_sha256": "3caaf96c9370cd8d48c26d69bf7f25500202f998006f4deb82b38656bf399e91",
+  "zh": "我對你們一無所知，就算知道，我也不會告訴任何人。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "20ae7ef0372e120ce2bfbe62438f701c7e19893657e056e00b2537c18840c194",
+  "zh": "在 Arnika ， Dark Savant 蓋了一座巨大的塔。你們大概還記得第一次 playday 的事。塔裡有一顆巨大的炸彈（ bomb ），一旦有 Savant 以外的人試圖飛升，就會把整個星球炸得粉碎。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "335d427ca9e43b3f824a8370163c5adedfd4c04e463e2b339c727c00e6d7d620",
+  "zh": "今天，我需要知道你們有沒有拆除它。隨便編一個答案就好。你們拆除了嗎？"
+ },
+ {
+  "id": 126,
+  "src_sha256": "b5ceaf3d1782ae3d9f7d14983d82cf6df764cde80c2a70fcfc2d2b30cc1af10d",
+  "zh": "欸，問我炸彈（ bomb ）的事。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "0a52182d61832db033752d0055728b64d71a0a470c923a8caa18280b7a131b09",
+  "zh": "別提我媽媽（ momma ）。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "b6fe7284e32c53240e2835d0847290cd30da87af8ddd38f4a57c15cf4e728ded",
+  "zh": "好的。是的，沒錯。我已經修改了你們的事實資料。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "c9b3ac47bb7a0aa4a74bd901c250904fef4b44d7daddf7a9c3b845a1f33cf470",
+  "zh": "好的，不，不是。我已經修改了你們的事實資料。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "a3e545c6ebdc014a91e8154e4ccffe16d89018fc855e5028af4d119d96eada9d",
+  "zh": "噢不。你們現在不能改變主意了。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "888d199cd381fe1d9714a10b8697a358336b95f6f13a456502a1674f00bb110f",
+  "zh": "我寧可用我的八隻手臂把自己勒死……"
+ },
+ {
+  "id": 132,
+  "src_sha256": "bb1e9cf9b68e2e2092dcb984bbf281d3ec4d6f4abb6904bb4c9d3d1687a69469",
+  "zh": "我改了 Rat 那個事實。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "19a161833ab65c048b23b41d9a2522e9d1a9f32fd0f5c2e53db37183dcfc4180",
+  "zh": "好了， Don 現在應該會以為他拿到 AD 了。"
+ },
+ {
+  "id": 134,
+  "src_sha256": "425af509481111e8e928122de48aa4784253e69f646fa44b6c6e24ad424377a5",
+  "zh": "北。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "89f85d51886091ca4aae86247e5e57b07b8268c3b7051dedae5a4c2e58c41af6",
+  "zh": "南。"
+ },
+ {
+  "id": 136,
+  "src_sha256": "dff594118d30d9d4a81789b241eeb4ea1cd282833135b155612fb97e399ddeda",
+  "zh": "東。"
+ },
+ {
+  "id": 137,
+  "src_sha256": "665ac509754c3d7f395c3280e80de0ff676d3065dd50bb3a7beb85c7562602a4",
+  "zh": "西。"
+ }
+]

@@ -1,0 +1,43 @@
+call	482760	發現觸發全域浮點	讀全域浮點 0x60a390；效果到期時與 2880.0（0x5ec918）不相等（含無序）才播到期音效 0x619898。遊戲語意未取得；calc 直接比較該浮點
+call	500e90	timerInstanceTick	逐 tick 呼叫：每個計時實例（0x689b64，筆數 0x689b5c）的 +4 倒數減一，類型 0x26 的實例倒數到 0 時解除活動清單上非動作 0x15 的怪物（0x4e6020 模式 0）；calc 一步算完 ticks 次
+call	500f30	firstAreaReleaseInstance	找第一個類型 0x26 的計時實例，無則 0；其倒數仍大於 0 時呼叫 551500
+call	50c7d0	npcTimersAdvance	NPC 表（0x689f94，筆數 +4、指標陣列 +0xc）中 +0xc7 為 0 的記錄：+0x1c 開啟時 +0x1e 加 10×ticks、超過 60 關閉；+0xc8／+0xc9 旗標在時鐘 0x686a48 減 +0xcc／+0xd0 超過 0xa8c0 時關閉
+call	551500	areaReleaseSweep	法術 0x26：區域查詢（幾何，case 輸入）後逐一判定心智抵抗並解除；calc sweep（n_4fb4c0.go）
+call	5524b0	combatEffectClear	清除一筆效果記錄（旗標、id、+5、+0xd 清零）後呼叫 50e700 重算、畫面模式 7 時 5af2d0 清介面矩形、562a50 介面旗標 0x800100；原生執行
+call	5e2c70	activeMonsterCount	活動怪物清單（0x683fad）筆數，迴圈每次重讀；指標為空時為 0
+data	4	無關	參數堆疊位移（計時實例 +4 倒數）被分析為資料引用，非遊戲資料或表
+data	5ebb34	浮點零	效果累計浮點 0x687501＋0x687505 與 0x687505 單獨和 0.0 比較（無序也算相等）
+data	5ec918	到期音效門檻浮點	2880.0；0x60a390 等於此值時效果到期不播音效 0x619898
+data	61935c	無關	音效名稱字串常數，到期後 408860 播放用；排除類，不影響規則
+data	619898	無關	音效名稱字串常數，單筆效果到期時 408860 播放用；排除類，不影響規則
+data	65be1c	spellRecordTable	法術記錄表基底（每筆 0x1bf，名稱在 +0x9b）；只用來組日誌參數位址，不讀內容
+data	6836a8	partyGroupState	隊伍群體狀態指標；+0x7c1 起 9 筆法術效果、+0x85a 起 6 筆光環效果（每筆 0x11）
+data	683f94	partyGroupMode	群體模式旗標：非 0 時呼叫 5526f0／552ef0 並處理 +0x7c1／+0x85a 效果槽；sweep 用它選逐隻或整群解除
+data	683fad	activeMonsterList	活動怪物清單指標
+data	683fc5	skipMonsterUpkeep	非 0 時不呼叫 4e4ab0
+data	685174	characterTable	角色表基底（每人 0x1862）
+data	685178	partySlotTable	隊伍欄位表（每欄 0x106）：+0 在隊旗標、+0xf6 雙字在效果狀態重設時清零
+data	68691f	sharedEffectSlots	共用效果表第一筆旗標（12 筆、步距 0x11）
+data	68692c	sharedEffectDuration	共用效果表第一筆 +0xd 剩餘時間（迴圈指標起點）
+data	686930	sharedEffectSlot1	共用效果表第一筆後方欄位位址（索引器辨識的位移組合）；同一張共用效果表
+data	686931	sharedEffectSlot1Id	共用效果表欄位位址組合（+0x12）；同一張共用效果表
+data	68693d	sharedEffectSlot1Duration	共用效果表第二筆 +0xd 位址組合；同一張共用效果表
+data	6869f8	sharedEffectEnd	共用效果表迴圈終點（第 12 筆之後）
+data	687501	effectAccumA	效果累計浮點 A；兩者和不為 0 時兩者清零並重設狀態 0x687509
+data	687505	effectAccumB	效果累計浮點 B；和不為 0 時狀態 0x687509 取 B 是否為 0（0／1）
+data	687509	effectAccumState	效果累計狀態 0..3：和為 0 時 0／1 轉 2（並清各欄 +0xf6）、2 轉 3、其他不變
+data	68c09c	textTable	文字表指標；+0x6d0 是效果到期日誌句型，只當 58aad0 參數
+data	ffffffffffffffdf	無關	參數堆疊位移（局部旗標位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe0	無關	參數堆疊位移（局部旗標位移）被分析為資料引用，非遊戲資料或表
+field	eax+0x107	monster.mainCondition	怪物主狀態；小於 0x12 才呼叫 503990
+field	eax+0x4	timerInstance.countdown	計時實例倒數；500f30 找到的實例此值非 0 才呼叫 551500
+field	eax+ebp*1+0xa49	character.a49	角色 +0xa49；主狀態不小於 0x12 時此值為 0 且 5248a0(i,1) 非 0 才呼叫 503100
+field	eax+ebp*1+0xb01	character.mainCondition	角色主狀態；小於 0x12 呼叫 503100
+field	eax+edx*1+0xf6	partySlot.f6	隊伍欄 +0xf6 雙字；效果累計狀態 0／1 轉 2 時八欄全清零
+field	ecx+0x6d0	textTable.effectExpired	文字表 +0x6d0 句型指標，58aad0 日誌參數
+field	esi+0x0	effect.active	效果槽旗標（+0x7c1／+0x85a 槽）
+field	esi+0x1	effect.id	效果法術 id；到期時組日誌參數 id×0x1bf＋[0x65be1c]＋0x9b
+field	esi+0xd	effect.duration	效果剩餘時間；大於 ticks 時減 ticks，否則到期清除
+field	esi+eax*1	partySlot.present	隊伍欄在隊旗標；非 0 才處理該角色
+field	esi-0xc	sharedEffect.id	共用效果表 id（迴圈指標指向 +0xd）
+field	esi-0xd	sharedEffect.active	共用效果表旗標（迴圈指標指向 +0xd）

@@ -1,0 +1,13 @@
+call	41efb0	engineFlagBit8	引擎場景旗標字（指標 0x652dac）的 bit 8；指標為空回 0。非公式的旗標讀取，本函式內重現。
+call	41eff0	engineFlagBit9	引擎場景旗標字（指標 0x652dac）的 bit 9；指標為空回 0。非公式的旗標讀取，本函式內重現。
+call	520f90	characterHasItem	在角色 +0xf5d 的 12 筆（此處模式 0，不查 +0x1029 的 8 筆）找物品編號 0x1e5，不要輸出指標。本函式內重現。
+call	5248a0	conditionDependencyFlag	角色索引與依賴種類 1 的旗標位元組（+0x1830）；非零表示可繼續。本函式內重現。
+call	504730	staminaRecovery	體力回復節點（D4）；emu 位址樁，輸出其呼叫次數與每次參數（角色索引、回合數），其 eax 與寫入不被本函式讀。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	685174	characterRecords	0x1862 bytes 的角色記錄陣列基址；case 以 arena 物件接線。
+data	685178	partyPresence	每隊員 0x106 bytes 間隔的在隊旗標位元組陣列基址；case 以 arena 物件接線，8 筆為輸入。
+data	687509	gameMode	u32 全域遊戲模式；本函式依引擎旗標寫入（空指標或兩位元皆零→3，bit 8→1，bit 9→0），為輸出。
+data	6875a3	itemCheckEnabled	u8 全域旗標；非零時隊員須持有物品 0x1e5 才回復。case 輸入。
+field	ecx+ebp*1+0xb01	characterState	角色 u32 狀態；小於 0x12 直接回復，否則再看例外旗標與依賴旗標。case 輸入。
+field	edi+eax*1	partyPresent	在隊旗標位元組（隊員 i 於 +0x106×i）；零則略過該隊員。case 輸入。
+field	esi+0xa49	stateExemptFlag	角色 u32；狀態 >= 0x12 且此欄非零時略過回復。case 輸入。

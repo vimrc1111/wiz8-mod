@@ -1,0 +1,122 @@
+call	2b6	無關	反組譯在 0x53e21c 之後的跳轉表資料被當成指令而得的假目標；函式內沒有對應的呼叫
+call	40efa0	遊戲亂數 R(n)	揮擊骰、Lightning Strikes 加骰、怪物背後判定、結尾音效挑選都用它；case 以亂數序列比對
+call	48f650	無關	揮擊後的畫面或特效通知，不寫入揮擊、旗標或目標狀態
+call	4c6240	怪物被打擾的反應	怪物判定被擾動時呼叫，改怪物自身狀態；本節點輸出不含該狀態，calc 不建模（case 不觀察）
+call	4e5550	monsterIndexByID	依怪物識別碼查列表索引；case 自建單一怪物列表
+call	4e5620	monsterAtListIndex	按列表序號取怪物記錄
+call	517a90	無關	戰鬥訊息格式化，只寫訊息緩衝
+call	5182e0	無關	診斷與訊息格式化，不影響揮擊與旗標
+call	51c8b0	weaponCompanionSlot	把武器槽 6..9 換成伴隨槽 7、6、9、8；calc 從使用者 exe 的跳轉表讀取
+call	520f90	無關	訊息用的格式化輔助，回傳值只決定訊息分支；該分支在揮擊與旗標上沒有差別
+call	52e690	無關	把訊息送進顯示佇列，不寫揮擊與旗標
+call	536170	清除目前攻擊目標記錄	揮擊後的清除，輸出欄不觀察；calc 不建模
+call	547940	種族職業能力判定	查能力 9 是否來自職業表或種族表；calc 沿用 prayerTables
+call	5557e0	記住目標方位	把目標角色的最近方位寫進隊形表（f3o 輸出）
+call	555920	目標方位已相同	方位關係為 4 或等於記住的方位時為真
+call	555a60	monsterFrontal	怪物面向攻擊者的判定；calc 沿用 n_541630.go
+call	555c20	目標方位相反	方位關係與記住的方位差 2 時為真，寫入 0x9a4
+call	555d60	monsterRear	怪物背後判定；calc 沿用 n_541630.go
+call	57	無關	同 2b6：跳轉表資料被誤判的假目標，函式內沒有這個呼叫
+call	78	無關	同 2b6：跳轉表資料被誤判的假目標，函式內沒有這個呼叫
+data	4	無關	呼叫參數或位移，不是絕對位址
+data	53e21c	跳轉表	訊息分支的跳轉表，不影響狀態
+data	53e230	跳轉表	訊息分支的跳轉表，不影響狀態
+data	5eb168	無關	字串格式化函式指標，只用於訊息
+data	5eb1ec	無關	字串格式化函式指標，只用於訊息
+data	5ebaf4	斷言函式指標	失敗路徑的 srAssertFail，列為 cov-exempt
+data	5ed8c8	結尾音效候選表	揮擊結尾挑選音效的表，只影響音效
+data	5ed914	結尾音效候選表	揮擊結尾挑選音效的表，只影響音效
+data	60cc74	無關	訊息格式字串
+data	61ae88	無關	斷言訊息字串
+data	61d298	無關	斷言或訊息用字串／表，不影響狀態
+data	61d2ac	無關	斷言或訊息用字串／表，不影響狀態
+data	61d39c	無關	斷言或訊息用字串／表，不影響狀態
+data	61d3a8	無關	斷言或訊息用字串／表，不影響狀態
+data	61d3d4	無關	斷言或訊息用字串／表，不影響狀態
+data	61d404	無關	斷言或訊息用字串／表，不影響狀態
+data	61d43c	無關	斷言或訊息用字串／表，不影響狀態
+data	61d45c	無關	斷言或訊息用字串／表，不影響狀態
+data	61d490	無關	斷言或訊息用字串／表，不影響狀態
+data	61e9aa	訊息索引表	依攻擊種類挑訊息字串，只影響顯示
+data	61e9ca	訊息索引	挑訊息字串，只影響顯示
+data	6836a8	戰鬥狀態陣列	基底；T 欄位以 262 與 0xd4 為步距，見 field 列
+data	68510c	訊息旗標	只決定是否輸出訊息，不影響揮擊與旗標；case 有此輸入
+data	68516c	物品記錄基底	物品記錄步距 0x10d，見 I+ 欄位
+data	685174	角色記錄基底	角色記錄步距 0x1862，見 C+ 欄位
+data	685178	行動槽基底	行動槽步距 0x106，見 field 列
+data	68c09c	訊息字串表基底	只取字串
+data	68c554	無關	訊息緩衝或字串，不影響狀態
+data	68c56c	無關	訊息緩衝或字串，不影響狀態
+data	68c57c	無關	訊息緩衝或字串，不影響狀態
+data	8	無關	呼叫參數或位移，不是絕對位址
+data	ffffffffffffffdc	無關	區域變數在堆疊上的相對位置，不是遊戲資料
+data	ffffffffffffffe0	無關	區域變數在堆疊上的相對位置，不是遊戲資料
+data	ffffffffffffffe4	無關	區域變數在堆疊上的相對位置，不是遊戲資料
+data	ffffffffffffffe8	無關	區域變數在堆疊上的相對位置，不是遊戲資料
+data	ffffffffffffffec	無關	區域變數在堆疊上的相對位置，不是遊戲資料
+data	fffffffffffffff0	無關	區域變數在堆疊上的相對位置，不是遊戲資料
+data	fffffffffffffff4	無關	區域變數在堆疊上的相對位置，不是遊戲資料
+data	fffffffffffffff8	無關	區域變數在堆疊上的相對位置，不是遊戲資料
+data	fffffffffffffffc	無關	區域變數在堆疊上的相對位置，不是遊戲資料
+field	eax*4+0x61e9aa	訊息索引表項	依種類挑訊息字串，只影響顯示
+field	eax+0x810	訊息字串表項	字串表內的一句話
+field	eax+0x814	訊息字串表項	字串表內的一句話
+field	eax+0x9a4	G+0x9a4 背後旗標	揮擊旗標，先清零後視方位寫入（flag9a4）
+field	eax+0x9a5	G+0x9a5 祈禱旗標	開場清零（flag9a5）
+field	eax+ebx*1+0x1149	C+0x1149 手別攻擊種類	每手 0x5b 步距（kind0/kind1）
+field	eax+ebx*1+0x1162	C+0x1162 手別骰面數	揮擊骰 R(n)+1 的 n（dice0/dice1）
+field	eax+ecx*1+0x3e	I+0x3e 物品類別	只用於挑訊息字串
+field	eax+ecx*4	訊息字串表項	按索引取字串
+field	eax+edi*1+0x5	行動槽的手別模式	槽 who*262+5+手別*4，存選定的攻擊模式（mode0/mode1）
+field	ebp+0x68	T+0x68 揮擊傷害基礎	R(骰面)+1 加物品加成與 Lightning Strikes（T68）
+field	ebp+0x6c	T+0x6c 目前手別	hand
+field	ebp+0x70	T+0x70 武器槽	手 0 為 6，手 1 為 7（T70）
+field	ebp+0x74	T+0x74 伴隨武器槽	手 0 且 51cce0 為真取 51c8b0 結果，否則 -1（T74）
+field	ebp+0x78	T+0x78 主武器道具索引	T78
+field	ebp+0x7c	T+0x7c 伴隨武器道具索引	T7c
+field	ebp+0x82	T+0x82 Lightning Strikes 旗標	手 0 使用後清除（lsFlag/Tls）
+field	ebp+0xa5	T+0xa5 低揮擊旗標	結尾 v1>=2 時設 1（Ta5）
+field	ebp+esi*4+0x38	T+0x38 手別計數	只用於診斷訊息
+field	ebp+esi*4+0x40	T+0x40 手別剩餘揮擊數	遞減（swings0/swings1）
+field	ebx+0x114e	C+0x114e 手別攻擊模式	每手 0x5b 步距（hmode0/hmode1）
+field	ebx+0x69	C+0x69 職業	cls，查能力 9
+field	ebx+0xa15	C+0xa15 旗標	a15，抑制 Lightning Strikes 加骰
+field	ebx+0xfa5	C+0xfa5 槽 6 道具索引	item6（主手）
+field	ebx+eax*4+0xf5d	C+0xf5d 裝備槽道具索引	槽步距 12；item6/item7
+field	ebx+ecx*4+0xf5d	C+0xf5d 裝備槽道具索引	槽步距 12；item6/item7
+field	ebx+edx*4+0x8d	C+0x8d 職業等級	level（各職業格相同）
+field	ecx*4+0x53e230	跳轉表項	訊息分支，不影響狀態
+field	ecx+0x13d	怪物擴充記錄 +0x13d 攔截計數	背後判定的嘗試次數（mcnt／mcntOut）
+field	ecx+0x854	訊息字串表項	字串表內的一句話
+field	ecx+0x858	訊息字串表項	字串表內的一句話
+field	ecx+0x85c	訊息字串表項	字串表內的一句話
+field	ecx+0x860	訊息字串表項	字串表內的一句話
+field	ecx+0x9a4	G+0x9a4 背後旗標	方位判定後寫入（flag9a4）
+field	ecx+eax*1+0x21	行動槽目標角色	slots+0x21，tchar
+field	ecx+eax*1+0x25	行動槽目標怪物	slots+0x25，tmon
+field	ecx+eax*4	訊息字串表項	按索引取字串
+field	edi+0x0	無關	迴圈指標的間接取值，只用於訊息處理
+field	edx*4+0x53e21c	跳轉表項	訊息分支，不影響狀態
+field	edx+0x80c	訊息字串表項	字串表內的一句話
+field	edx+0x81c	訊息字串表項	字串表內的一句話
+field	edx+0x854	訊息字串表項	字串表內的一句話
+field	edx+0x858	訊息字串表項	字串表內的一句話
+field	edx+0x85c	訊息字串表項	字串表內的一句話
+field	edx+0x860	訊息字串表項	字串表內的一句話
+field	edx+0x9a4	G+0x9a4 背後旗標	開場清零（flag9a4）
+field	edx+0x9a5	G+0x9a5 祈禱旗標	開場清零及能力 9 條件成立時設 1（flag9a5）；之後訊息段只讀
+field	edx+eax*1+0x114d	C+0x114d 手別啟用旗標	每手 0x5b 步距（enabled0/enabled1）
+field	edx+eax*1+0xad	I+0xad 物品加成	加到 T68（itNbonus）
+field	edx+ebx*1+0x1149	C+0x1149 手別攻擊種類	每手 0x5b 步距（kind0/kind1）
+field	edx+ebx*1+0x114e	C+0x114e 手別攻擊模式	每手 0x5b 步距（hmode0/hmode1）
+field	esi+0x0	怪物 id	mid
+field	esi+0x10	怪物擴充記錄指標	指向 +0x13d 計數所在記錄
+field	esi+0x107	怪物 +0x107	m107，小於 14
+field	esi+0x24b	怪物 +0x24b	m24b，攔截門檻
+field	esi+0x2b	怪物 +0x2b 生命	mhp
+field	esi+0x2e1	怪物 +0x2e1	m2e1，須等於 1
+field	esi+0x33	怪物 +0x33	m33
+field	esi+0x87	怪物 +0x87	m87，須為 0
+field	esi+0xc	怪物自身識別	傳給 4c6240 的對象
+field	esi+eax*1+0x1d	行動槽目標種類	slots+0x1d，ttype
+field	esi+eax*1+0x21	行動槽目標角色	slots+0x21，tchar

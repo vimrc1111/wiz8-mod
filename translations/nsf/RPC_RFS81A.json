@@ -1,0 +1,267 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "9206f875ff6bbce5403f7b62685d93238a0359c636cad2420d71c0a6c09234a3",
+  "zh": "主人！緊急！緊急！"
+ },
+ {
+  "id": 2,
+  "src_sha256": "a8615a04da3b1a4c340854ecf19048fc2a16b6e1ae8243c763a6b84ad7573986",
+  "zh": "內部錯誤。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "e2c02c726a42f02be0655bb35ffcc408a62ff4c4114eae3251c6dc6a3dbcfd73",
+  "zh": "可能發生致命錯誤。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "232c68d01376f8909daba08aa625642fad32dae96183ab5472b7f719a6c001d6",
+  "zh": "視訊螢幕關閉。"
+ },
+ {
+  "id": 10,
+  "src_sha256": "1b9f8edd51954993ac207a55f8d9a1982987ea74c3c4833e80701cb7ecf0a300",
+  "zh": "複製。Ftz。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "55934a82f5d154e73f5d60fd5ee8b5fd7a2c422b7a04bfb288b4888c54a2a8b3",
+  "zh": "正在彙整敵對事件紀錄。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "d6882d2c9b46f6a7a80e7498059ee30c675b46d237562bef7ee8981b2ad7c3b6",
+  "zh": "掃描腦波中。未發現。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "c033fd09c9eb35d7dc10af6a3af70a43a89d3134de2d702a6f32d139e729db97",
+  "zh": "RFS-81 報到，隨時待命。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "3d589a99aaba0665e9f628284dc10df5e1dd759224a95f29a6b3a4dc4e70aabf",
+  "zh": "系統不 FTZ！運作中……"
+ },
+ {
+  "id": 17,
+  "src_sha256": "55d11b478e835ff4ba7c04d728a8bb944545b0689eda7e4e054eb5bec008ab72",
+  "zh": "消滅生命體。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "d82b469751f9c9dea176784ff93a6a4741c5a7fb81009cb72b7b617b19dc0c1b",
+  "zh": "焚毀軀殼。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "7342292231a776390f35f0e02d9b2f6f41445b5b16f5fe99594215cf57d15e27",
+  "zh": "物件。Ftz。"
+ },
+ {
+  "id": 26,
+  "src_sha256": "76787727c39b48fc56f6a991192db960c8323cd4e204504c11f8511b5e4cbb12",
+  "zh": "偵測隱形……隱形……隱形……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "f19b58a3460c5149d34d5491bb63dc68df5195bb270cce94ffe8b232aa56ec28",
+  "zh": "Ftz！回報系統錯誤。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "f6ed9300bea4fc51676a561abec5a410cfa120dd5ea1df80ff3e455a61e5eb39",
+  "zh": "RFS-81 練習 Ftz 模式。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "f713f0f210f85dff7bebcc1cda3ec6c7455912e27602c8f1024dcbbc7c135202",
+  "zh": "RFS-81 戰鬥 ftz 模式。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "40f368b276d96494165620b5052987e485173e5821009afe2057b42cb2fc5c42",
+  "zh": "需要 Ftz 受害者。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "4806ff3e6e5435d2b1dc1a3a3b99589f0d48579d7fab53eddfe2a65b56725afa",
+  "zh": "生命 ftz 體。我將鎖定並擊殺。"
+ },
+ {
+  "id": 39,
+  "src_sha256": "5c4c17044c660621d27537a86abdc6a72ab896a2c07ebb2c230b08e3ebc74fdc",
+  "zh": "需要 ftz ftz 推進裝置。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "e9571f7645114d244f63fba82b2ff447c7b33d3d3fab40568bab233bafd28bd4",
+  "zh": "正在彙整生命體失蹤紀錄。生命體被 ftz ftz 帶走。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "caa310ae8a3796628987173b699d314531af8d9b7378de1771dbc55474268832",
+  "zh": "Eeerrrrrb。帶去給主人。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "0fb340f45243d915732d97862fbb0bec8802058b26f753bae52a9858aa39e3a3",
+  "zh": "輸入錯誤。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "64cb00b0f1fcd3ec08cf17253faa93d28f1a17d65d4fac684ae75f1ce6b94a5c",
+  "zh": "軀殼不在 FTZ！消滅範圍內。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "5c4c17044c660621d27537a86abdc6a72ab896a2c07ebb2c230b08e3ebc74fdc",
+  "zh": "需要 ftz ftz 推進裝置。"
+ },
+ {
+  "id": 65,
+  "src_sha256": "1dbedc96dcc0eda140f3326a1f06c6736cdcca17bc81896c31708cfac2823eba",
+  "zh": "主人！任務完成成成……ftz。"
+ },
+ {
+  "id": 67,
+  "src_sha256": "3894db702e10dbc36ceeee024d21eea9e53ed082bb506b0ee44970d47526fcc8",
+  "zh": "RFS-81 戰鬥 ftz 模模模式。"
+ },
+ {
+  "id": 68,
+  "src_sha256": "4b3ebe0848225a80295549f4bb28d95b38d3ad824fb66d8368b175cbcebcf950",
+  "zh": "生命體 ftz。"
+ },
+ {
+  "id": 69,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 70,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "401946a9c99e59691cd5f0a8520c361640174cc6d80196662ee7815e3e9ea5c6",
+  "zh": "Eeerrrrrb。Ftz。Ftz。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "9f5f941e9c14204ea02fbe6d9612d4766955ef0154566051cfb4565394b033bc",
+  "zh": "你你你你需要 erb 將 RFS 送回安全傳送點。Ftz。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "ef107c7fbaf9b65d77417b36dca4e957e362db7ff142f976fa98224be7a8c7c3",
+  "zh": "Ftz。此區域不允許 ftz！移動。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "4d756fb2571a37e798b0ab6b401998cdc90bb02b8ddfae7cc62b7766e21c61e3",
+  "zh": "必須離開此區域。Ftz！"
+ },
+ {
+  "id": 88,
+  "src_sha256": "dd078a9d981d156da375bbf710057c1af3d37a591372080b7f1fbd8f3ebe507f",
+  "zh": "Ftz！RFS 不獲准進入此區域。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "47c0ded68fb54562f2d0f695e13a0bcdd3db07c2914b3a20f914a45c95af42dd",
+  "zh": "該物品是 ftz ftz 需要要要……"
+ },
+ {
+  "id": 92,
+  "src_sha256": "53566593ac83f1d21ccb424068232de75317c9069f380a51eaf8e4e559d5bd60",
+  "zh": "RF……ftzz！將不進入該區域。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "2536e54f018aa4e288d83ce9a9413b9755bbf390464a0535f6fce4683d324793",
+  "zh": "消消消消滅 Umpani 領袖。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "0775d22bd84ded9ac0859f0899d41be1af2dfee90dcf97cfaaea81f535adc3a7",
+  "zh": "焚焚焚焚毀 T'Rang 領袖。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "e4d94d158547f2bcc8eb8a28eb10ab35d3e7fdab782e2b0e8c1418268c350867",
+  "zh": "消滅 Ratt-ftz！-kin……"
+ },
+ {
+  "id": 96,
+  "src_sha256": "5b975d5593c53e212dc0313439ab38e699b6fb7f3401183e4064e354a35648fd",
+  "zh": "裝置啟動……啟動……啟動……"
+ },
+ {
+  "id": 98,
+  "src_sha256": "c006851cc9b699d4c15e5de39f57e945e0b1ea3861afffe9309e9b789106c255",
+  "zh": "主人，掌握 Errrrrbb 之盔！"
+ }
+]

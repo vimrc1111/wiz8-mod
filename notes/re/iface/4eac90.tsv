@@ -1,0 +1,18 @@
+call	5179f0	clampUnsignedPhase	無號比較先檢查上限 100、再檢查下限 minimumPhase，原地回寫；calc 內聯同一順序。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	6836a8	combatState	戰鬥區塊基址；案例以 combat 物件提供，各槽階段／手別／餘量／間隔基值以 stride 0xd4 尋址並塡不同誘餌值。
+data	685174	partyCharacterRecords	隊伍角色記錄基址，stride 0x1862；案例以 characterSlot 尋址，其他槽填誘餌值。
+data	685178	partyActionRecords	行動記錄基址，stride 0x106；讀 +1 主要行動，須為 0 或 1 才往下判定。
+field	edi+0x0	combatPhase	戰鬥區塊 +0x18+slot*0xd4 的行動階段 u32，輸出之一；溢出以 u32 迴繞。
+field	edi+0x6c	currentHand	戰鬥區塊目前手別（0 主手／1 副手），輸出之一；合法狀態僅 0/1。
+field	edi+0x9c	intervalBase	戰鬥區塊攻擊間隔基值，與 minimumPhase 相減加 100 後除以剩餘次數+1。
+field	edi+ebx*4+0x40	remainingAttackCount	所選手別的剩餘攻擊次數 u32（以手別索引）；案例兩手填不同值。
+field	edi+ecx*4+0x40	remainingAttackCount	另一手的剩餘攻擊次數；同上，比較兩手大小決定換手。
+field	eax+0x8	minimumPhase	戰鬥區塊 +8 的階段下限（合法 1..100，供限幅與取整）。
+field	edx+0x8	minimumPhase	戰鬥區塊 +8 的階段下限（合法 1..100，供限幅與取整）。
+field	ebp+0x8	minimumPhase	戰鬥區塊 +8 的階段下限（合法 1..100，供限幅與取整）。
+field	ecx+eax*2+0x1	characterMainAction	行動記錄 +1 的主要行動；0/1 才繼續，其餘清階段。
+field	edx+eax*1+0x1166	handSpeed	角色記錄 +0x1166 起、依手別索引的手速 i8 有號；換手時階段加上兩手速度差。
+field	esi+eax*1+0x1166	handSpeed	角色記錄 +0x1166 起、依手別索引的手速 i8 有號；換手時階段加上兩手速度差。
+field	eax+ebp*1+0x1166	handSpeed	角色記錄 +0x1166 起、依手別索引的手速 i8 有號；換手時階段加上兩手速度差。
+field	ecx+eax*1+0x1166	handSpeed	角色記錄 +0x1166 起、依手別索引的手速 i8 有號；換手時階段加上兩手速度差。

@@ -1,0 +1,49 @@
+call	40efa0	boundedRandom	有界亂數 R(n)；本節點擲 R(100) 對成長門檻
+call	510180	getMonsterTemplate	取怪物種類模板記錄（+0x24f 為等級位元組）；快取上限 3 筆
+call	511b40	groupVisibleToParty	群中有成員被隊伍看見；case 不登錄，直接跑
+call	56	無關	靜態掃描把立即值誤讀為呼叫目標，函式內無此呼叫
+call	565420	battleSceneContentsDirty	模式 7 且戰鬥物件存在時設其 +0xf4 的 0x20000 旗標
+call	5e2c70	listCount	取群清單元素數
+data	4e4d8c	vowelJumpTable	首字母母音判斷的跳躍表，執行期讀 exe
+data	4e4d94	vowelIndexBytes	首字母 A..U 對應跳躍表索引的位元組表，執行期讀 exe
+data	5eb164	towupperImport	字元轉大寫的函式庫匯入槽；case 以位址樁，回傳值為輸入
+data	614a3c	groupIdentifiedMessageFormat	辨識訊息格式字串位址，只作為訊息呼叫的參數記錄
+data	683f94	partyViewGateFlag	非零時只處理隊伍看得見（群 +0x29）的群
+data	683fb1	monsterGroupList	怪物群清單基址
+data	685174	partyCharacterRecords	角色記錄陣列基址，每筆 0x1862 bytes
+data	685178	partyPresenceRecords	隊伍在場記錄陣列基址，每筆 0x106 bytes，第 0 byte 為在場旗標
+data	68c09c	messageTextTable	訊息文字表指標；+0x728/0x72c/0x730/0x734 為辨識訊息的四個文字指標
+data	ffffffffffffffe7	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x0	cursorTarget	通用游標讀取的字（在場記錄第 0 byte 或角色狀態字，視基址而定）
+field	ecx+0x0	cursorTarget	通用游標讀取的字（同上，視基址而定）
+field	eax+0x4e4d94	vowelIndexByte	母音索引位元組表（exe）
+field	ecx*4+0x4e4d8c	vowelJumpEntry	母音跳躍表項（exe）
+field	eax+0x728	messageTextPointer	辨識訊息文字指標之一
+field	eax+0x72c	messageTextPointerSingle	群數量為 1 時的辨識訊息文字
+field	edx+0x730	messageTextPointerSingleVowel	群數量為 1 且名稱首字為母音時的辨識訊息文字
+field	ecx+0x734	messageTextPointerPlural	群數量非 1 時的辨識訊息文字
+field	eax+0xa31	characterBlockFlag	角色記錄 +0xa31，非零者不參與辨識
+field	edi+0xa31	characterBlockFlag	角色記錄 +0xa31，非零者不參與辨識
+field	eax+0xb01	characterMainStatus	角色主狀態 u32，小於 11 才可參與
+field	edi+0xb01	characterMainStatus	角色主狀態 u32，小於 11 才可參與
+field	eax+0xb11	characterHitPoints	角色目前 HP，非零才可參與
+field	edi+0xb11	characterHitPoints	角色目前 HP，非零才可參與
+field	eax+edi*1+0x12b6	monsterKnownCount	角色對各怪物種類的已知計數位元組（+0x12b6 起，以種類編號索引）
+field	ebp+0x4	groupMemberCount	怪物群數量；等於 1 選單數訊息
+field	ebp+0x18	groupSpeciesId	怪物群種類／模板編號
+field	ebp+0x28	groupAlive	群存在旗標，零則略過
+field	ebp+0x29	groupVisibleToParty	群被隊伍看見旗標，與 0x683f94 閘配合
+field	ebp+0x2c	groupIdentified	群已辨識旗標
+field	ebp+0x2d	groupGrowthDone	群已完成成長旗標
+field	ebx+edx*1	partyPresenceFlag	在場記錄第 0 byte，非零為在場
+field	edx+ecx*1	groupListEntry	怪物群清單元素（按索引）
+field	ecx+0x24f	monsterTemplateLevel	怪物模板等級 u8
+field	edi+0x4bb	characterSkillRawProgress	角色技能 0x15 的成長原始值（553f10 讀寫）
+field	edi+0x4c1	characterSkillEffective	角色技能 0x15 的有效值（553f10 讀寫），加入門檻
+field	edi+0xfd	characterAttributeWord	角色屬性字，除 10 加入門檻

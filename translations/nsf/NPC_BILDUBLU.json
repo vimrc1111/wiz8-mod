@@ -1,0 +1,562 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "e701213e71315dc9493b6a286a19bb362b3ce7a5f17b3da80fd6090ee1dd9a50",
+  "zh": "嘿！我們這裡賣的是給硬漢喝的烈酒……而你們看起來臉色有*點*發青……像是海（ ocean ）水灌進肚子了一點！"
+ },
+ {
+  "id": 2,
+  "src_sha256": "71f3f157d209ad9993ef3eef29d68509e3c8efc92f8e80adb56dbd4d72f7026a",
+  "zh": "我們這裡不招待你們這種人……"
+ },
+ {
+  "id": 3,
+  "src_sha256": "81cf9e7b80360207af084a320702ac6271a083320f087f54ee055350880a1214",
+  "zh": "少跟我調情，小不點。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "b859d1d339e0e4b375b9de5f6ff0e0d15663f2edae1976d9a833bad19dfc0a61",
+  "zh": "我開玩笑的啦！你們要什麼都行。吧台給你們了，老兄。"
+ },
+ {
+  "id": 5,
+  "src_sha256": "6271bf820ab0f0c4b87ce33da76f55b889ca2ea6a1a88337f802bad9a79664c9",
+  "zh": "要來點什麼？"
+ },
+ {
+  "id": 6,
+  "src_sha256": "46ec886127be01f77eae7004110ad726bae78353e7d1c955331b8efbe57cea35",
+  "zh": "你們這麼想喝？那我整瓶灌進你們喉嚨怎麼樣，連瓶子一起！"
+ },
+ {
+  "id": 7,
+  "src_sha256": "eb2ac22ede042ddb94c89d810d989e823b943df56d12a995c075448b4c3698f9",
+  "zh": "想得美，大金主（ spender ）……"
+ },
+ {
+  "id": 8,
+  "src_sha256": "d308ca2c7b92117b3cd6a4b9be88729aa9f527bb1c63e892e2a144f3eec7ab3b",
+  "zh": "這地方不安靜下來我就不說話！老是要打架！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "03e3984c5d411bb12a2e1e98b9a2402e4a198c9b5e8f09fcb168fb94ea07bff5",
+  "zh": "老兄，我要是離開這個吧台，五分鐘內這裡就變瘋人院。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "f4674cd17f74ea5bef6c130f5fe19397e2d97abb2b00657c0ef83d8f85d2003b",
+  "zh": "謝啦，老兄。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "7a64d4fde9b58210534fd3162c5435b882429d9aec2dbaecaa7c15d39d2be26c",
+  "zh": "我拿那堆破爛（ junk ）能幹嘛？"
+ },
+ {
+  "id": 14,
+  "src_sha256": "123dbd1d083b3ac0132530700fb0d7f1b576b77922181bb780a62e8ba08b4f57",
+  "zh": "你們知道嗎，我就快想起來了……"
+ },
+ {
+  "id": 15,
+  "src_sha256": "3f48429d140ce957607e740d673275570a03aeadb06da3a8ecc9c91b9669fac0",
+  "zh": "我今天的採買已經做完了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "2bd6c66d5d9e3a61d26274ed1e01a44cb8012d4311ad9397a18fa22599c0dd6e",
+  "zh": "聽著。你們不是有零錢，就是沒有……"
+ },
+ {
+  "id": 17,
+  "src_sha256": "916d9c998b74cec56f37fbe92822a1c2c2fa6f19a52def81cd108be33833b748",
+  "zh": "聽好了，蠢蛋！你們當我是白痴嗎！那是我的！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "2f4eb3170b0bb33468e316c9c55a81f0fffaa3add386c7ce649072237f97965c",
+  "zh": "我真想把你們這些鬍渣屁股（ butts ）扔到外面去！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "c167f22f0466f9341f62ca18b10e45bee60af9a261adf141dec16e903e45f5b6",
+  "zh": "這次就放你們一馬……再來一次，我就拿你們的手臂當攪拌棒。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "784d3c3e0990c9c01d3bb3035db06866e378949962bd891badaf5aa53efebb2c",
+  "zh": "去你們的，老兄！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "cccbb91a49186c4ea785e29500f2818f0fb4a763e863a6a6470680276535bbc9",
+  "zh": "謝謝你們的小費。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "c68ace82693857d787a9ef0dc367ce8b0bd7b11d342687f7a46a74bb8cb3cc6f",
+  "zh": "這裡什麼都沒聽說過。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "0bdb90659a48bc5d77862e999dae05de47d2a902adece6eabdddbe2deb804803",
+  "zh": "我敢說 Balbrak 知道……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "4f5606f71686b2a9511632a368c984cdf2568f26fe7541e0eef7be3340f9d6ba",
+  "zh": "還是閉上嘴比較好。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "2e3abe4ee9227dd592fd780ca47f28d5408fa4254e302c57b29a0f2372e3916b",
+  "zh": "這次給我聽仔細點……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "37a86b78a058c50d0b9ec0e15310476a112a3efd1b6c641a56904e5536619ac9",
+  "zh": "一件一件來，老兄……你們想知道什麼？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "4fcecea2cf8855dbf14b5bedb452e4eb4b3a238d35f433b5f128db1caa8488d0",
+  "zh": "那麼，另一件事……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "12ef430724366a7ea2f66b0e78c27c72d3b190514ccfef003cec8551e7298554",
+  "zh": "謝謝你們告訴我……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "61f94d1a3200e574802dc09b41003e58ea2d3ebde9e07d6890c505b1dfc6553a",
+  "zh": "別讓我耽誤你們的時間，嗯？"
+ },
+ {
+  "id": 30,
+  "src_sha256": "612a083eb311f573c3b2803a6641c81fd80acadaaaef9d4b85c627f3a6a88e6e",
+  "zh": "我還有其他客人要招呼……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "76143927c86cb13285b2536d99e2a39ef267a412f228a27a0620da9486aa3447",
+  "zh": "Dominus 行動。我們來這裡就是為了這個。把 T'Rang 踢回他們來的那個洞裡去。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "e0b87f51e9ca442a59fd80963f7074dd5451eba9dbde3bc99e263b0801b7152a",
+  "zh": "前幾天有幾個傢伙經過這裡。他們在聊這家銀行，說那是塊肥肉，很好下手。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "cf31ec08a126390a49cfb85cf4ba98ecd315ff6905bc6dcf07a3f35e9baa35b7",
+  "zh": "我們這裡有些來訪的 Trynnie ，不知道為了什麼事，那些矮小的傢伙跑進酒吧。他們可不是你說的那種專業酒客。總之，他們在聊那些在他們城市裡橫行的巨型老鼠。依我看，那是 Rattkin 。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "5d0ee6485d24edaacbd414fa1c0f86e5a83911da9aab74de5571c1067a50fe17",
+  "zh": "你們最好離那裡遠一點。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "5d0ee6485d24edaacbd414fa1c0f86e5a83911da9aab74de5571c1067a50fe17",
+  "zh": "你們最好離那裡遠一點。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "6a78cfaf2f7fc863cecb33f875d4785f8b0ddba649c8956e3584ed78c833474c",
+  "zh": "這沒什麼好說的，到處走走自己就知道了。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "458b1edad4743e4ec542158de6c1314a5135a203d1d58d0115308bf33ee48b07",
+  "zh": "他們要派你們進去？祝你們好運，老兄。也該派些新血，呃，新部隊去對付 T'Rang 了！"
+ },
+ {
+  "id": 40,
+  "src_sha256": "9a6b7b68c3fa60c307af7384115d9530bc226a67eb2d974d74a8c8041033a9ca",
+  "zh": "Ascension Peak ？啊，我猜是某種當地的宗教聖地吧。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "ea675d12e1409f1d26a2ae5fae63d25492c7af69eb2029baa98c0d494b82e469",
+  "zh": "前幾天這裡來了個傢伙，是 IUF 的戰略人員？聽著，這事保密，他似乎認為這個 Circle 不只是古老的傳說和神話而已，你們懂吧。他認為那是個*真實*存在的地方。而他既然認為是真的，我就信他！好像得穿過 Ascension Peak 才到得了那裡。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "7940a8a23c3617664ce086789d35d6bc97aab737fa43b704c300139b0b306211",
+  "zh": "我對那個了解不夠，沒法說什麼。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "0642ad4c833784a9a180b55c11e1ee6976644832ae3dc3871ed8c192d746ed9b",
+  "zh": "對對，一群好傢伙。腦袋大概跟螢火蟲一樣亮，不過人很善良。聽說他們還很有一套法術的本事。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "0bc63edadd3e7951351f073f145b7a6b5f23594b1b4eb8e0c09ace8d1e37abfd",
+  "zh": "嗯，每次我們哪個斥候（ scout ）被派去執行跟他們有關的任務（ mission ），都會*先*到這裡來，你們自己想想這代表什麼。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "267c8d775a6b84fc5d5c144933ecb0a98b31ad56588fccd0901317a8ace0c91c",
+  "zh": "銀河系最優秀的！"
+ },
+ {
+  "id": 47,
+  "src_sha256": "d8960a75265f880ff1fde1d98cc9360d5b07fd85a23dc30618b293dba472400d",
+  "zh": "我要是在這裡看到那種東西，我就拿它的腦袋把這地方從頭拖到尾！"
+ },
+ {
+  "id": 50,
+  "src_sha256": "e0832a3a9937948657b2815dfa78f09d3b19aa476c5a8a7f86384e859a74986c",
+  "zh": "難纏的小混蛋，你都還沒發現口袋被摸過，就被他們偷光了。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "a63ef1821b13ad6896ec1d043885558d7a08dc6f4c219a004678849b8d3c451d",
+  "zh": "那是當地宗教那一套的一部分。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "2ba95515ccc64ea9365c436cbc2c1f3fa952530dc55bac8f44a3459c1802386c",
+  "zh": "舊行動了。結束了。我們好久以前就去過了。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "ec92736882e8d8e513e3fe30d381aeed027b05a6dbc47fbbc9b0f218bbf029f8",
+  "zh": "說來話長，你們還是去問 Balbrak 比較好。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "f35fa69a9c64968f16732eaad9f2f0b54b526bbaa05d326fe59d87cab16095e6",
+  "zh": "Cosmic Lords 、 Gods 、 Phoonzang ，都是同一回事。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "e735d8b0573a6a880407960f073405c30de2c5ecfe2b9a925d26eedc42cec6c8",
+  "zh": "在這附近，你們最好對那件事守口如瓶。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "1983182760b1d804c394e71cef69d366b3825fd4e39a57d5463c87b7eb40a8d7",
+  "zh": "好將軍！"
+ },
+ {
+  "id": 61,
+  "src_sha256": "72e7e6d592c0143662ebd8042a03108bc0ff7e85de6265dcd8a17a24696893f5",
+  "zh": "聽著，老兄，我客人很多，沒辦法記住每個人的名字。"
+ },
+ {
+  "id": 65,
+  "src_sha256": "2467454032c4cb50a09f3841681fa44253a71df2ac522cd9e62b022c32d1de07",
+  "zh": "那名字我當然聽過。 T'Rang 的頭頭……跟其他的一樣，只是更醜。"
+ },
+ {
+  "id": 67,
+  "src_sha256": "e8c39ca91cb3525848120255484cacc08f8053bc0a64634d41441cdbc98cd9f7",
+  "zh": "我自己從沒見過。據說——這只在你我之間——那東西真的很特別……不然我想我們也不會費這麼大力氣去弄到它！"
+ },
+ {
+  "id": 68,
+  "src_sha256": "2d89db1612a367192dc2af23e5ab2833445e49abb0dc09797549f9659ab476fe",
+  "zh": "不，我們沒釀過叫那名字的啤酒……"
+ },
+ {
+  "id": 69,
+  "src_sha256": "5ed1085f8be29ef4ed83795af1a64ccfba1196c44387b3b7c2e4fa4fdeff784c",
+  "zh": "我沒有。聽起來很烈，不管是什麼。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "fcbbe856841b8bf42729a184d3a782be65a91a99ee338b837f80946da0226fa0",
+  "zh": "跟你們說，這件事你們該去找誰談。 Pvt. Sparkle 。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "dd0fa3e48653a49413c1a5977de9fa41d9387df51190827f7a340f00608d3497",
+  "zh": "我在這裡什麼都聽得到。你們對什麼有興趣？ Trynton 、 Arnika ，還是 Cosmic Circle ？"
+ },
+ {
+  "id": 73,
+  "src_sha256": "fdf36a27afd7453cb184fe2f0e1a816e1ee5908eb6f8f8af327b7c77847d0478",
+  "zh": "Bildublu ！"
+ },
+ {
+  "id": 75,
+  "src_sha256": "3089f006386d5ac67b6a85da3e78ddd7f900d1d3ba190cd47afa88a192cbe2f1",
+  "zh": "是是是……"
+ },
+ {
+  "id": 76,
+  "src_sha256": "4e6f131b917091676bdfbda6d8666ad0e7da1a1e7398fb69bc98b79597f89821",
+  "zh": "噢，我有幾次差點就成了。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "3b8348ba481d26e8a13285a7b1e17bfeee29d22440d8443b6cb658c67d4ccdc2",
+  "zh": "幸會幸會……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "912bc82dd339a247b5979cb1d4302f1a72e0b33e0f31ca7231e4c47c25f17a38",
+  "zh": "那你們需要什麼再跟我說……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "f8b69bad5a2d985166c6938d8ae6c5c3bc8d000e5b9322bc4f667deaf5384d51",
+  "zh": "在這裡你們找不到幫手，這點可以肯定……"
+ },
+ {
+  "id": 80,
+  "src_sha256": "9e6178caccb912e2e88c18c21c7b5abad316344dfaaa650ebb54fe530db49c33",
+  "zh": "嗯，我有的就是喝的，就這樣。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "3c929e6e771cac3cf413db471eb983fd908758d8ac8dcd7456745d191caec40e",
+  "zh": "我？沒什麼好抱怨的。過一天算一天，你們懂的……"
+ },
+ {
+  "id": 82,
+  "src_sha256": "1a26adf341f47c2845c17c05b9f50f48d156a9f3dec552b3aa1af927678d4deb",
+  "zh": "這類東西你們可以去 Commissary 找找。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "e7617bc186411c93003aab640cb7905e0f942263a8222285f4e5d7f3b246d899",
+  "zh": "當然有助於業績！"
+ },
+ {
+  "id": 84,
+  "src_sha256": "67326ed2ea3d0949209f3704e868acbbec9e99a192b422b8e6a4cffd69b3a582",
+  "zh": "對，那艘 T'Rang 的船。我們遲早會逮到她。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "7bed55353b826e2d214e92919ee0cb40de665c8f7f69b80705338e49cb77ca1d",
+  "zh": "我們漂亮的母艦！還是戰鬥級的呢！"
+ },
+ {
+  "id": 87,
+  "src_sha256": "8f47c251a9575d5c8d57d9332de653223cd0f61e7e40002027f4ce5169e698a5",
+  "zh": "情況不妙。那些任務出去多久了？ Rodan 和 UTU 都失蹤了！"
+ },
+ {
+  "id": 88,
+  "src_sha256": "3ee0995fbdfaaa8af937cfde16ef4a9ea251b1e40eb3859f1c9e6836fc7216df",
+  "zh": "HPIOU1"
+ },
+ {
+  "id": 89,
+  "src_sha256": "4f92d632d13288866297f891c5f394b7a9bcff41fd4164e7cb039903d72325f6",
+  "zh": "我真不敢相信 Balbrak 居然約 Sparkle 去約會。呵……"
+ },
+ {
+  "id": 90,
+  "src_sha256": "8e61e9f104110cb81ffd85c130b5c6984d5dcb98f6a8c9e3c18f72260613eaff",
+  "zh": "去 Arnika 找找。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "01f194aa5603d93d8dab78fc61670b256cb1631ee70bb111c5dd5b7f71089697",
+  "zh": "我聽說那在 Trynton 。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "f3a0b3d93ca0af7acfd1fab83a5a3a29cad5f4a63e72add2ac2edf1daf3de5c6",
+  "zh": "你們去沼澤找過了嗎？我不懂為什麼會有人想去。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "6adfd8c414e3d19e2cfb562df613baeb2b33fc999ac69f1b6f15e37c7c5bc877",
+  "zh": "你們去找 T'Rang 的足跡，就會找到它…… Marten's Bluff 。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "ec6f6c65c5d46fc31830361ecb71ff21e82476c291bd85a28ad4e4f2c21028e8",
+  "zh": "我聽說 Rapax 有某種前進營地。不知道在哪。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "7bfac7d382908f961bf9e1b51aff33d095a34327830dfb2e24108f8b0ad60a1a",
+  "zh": "就在這裡， Mt. Gigas 。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "b76e761ac0cadaf5fe0f3fe4d93542d10a61b50e30289e452881c66a3a69113c",
+  "zh": "我確實聽說過一些洞窟。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "e6c39089d2691f1fe08862ebb2f07f24d27a33c47c891c52a7c144136d81aa1d",
+  "zh": "那是 Rapax Rift ，不過我會避開那裡！"
+ },
+ {
+  "id": 98,
+  "src_sha256": "4e3365112c34c9e07056476d73fbc30db2674d6ef5b54cae28f42fb8f80a2507",
+  "zh": "Rapax Castle ！我可不會靠近那裡！"
+ },
+ {
+  "id": 99,
+  "src_sha256": "f4ad2a54f899c46e4fd6692c9eb22dea3cf405a4a440791668f949fde8abea84",
+  "zh": "你們去過 Ascension Peak 了嗎？"
+ },
+ {
+  "id": 100,
+  "src_sha256": "bac6a02d29a676ce2a11af4d44d2a0702b293e9dd3e31ff6297eafa8b82c8d99",
+  "zh": "Cosmic Circle ……不過我猜你們得飄上去才行……呵。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "06517a90720cea004a13d4996a02698410ee03700ba5897c90be5f38ceb80132",
+  "zh": "就在這裡！你們到底喝了多少啊？！"
+ },
+ {
+  "id": 102,
+  "src_sha256": "727a0696df118dd2958f090f38274bca219f48e664d808489bbacfbf5ceff4d1",
+  "zh": "絞盡腦汁了，可腦袋是空的。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "1321737af5027df4823b30e07b6ec143c8bac15c47722f4226a9ac32ee1f68d4",
+  "zh": "我聽到的是 Bayjin ……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "f3b44695e6e7b9d6f71b9adfbf8eceb612fb303ff3151c20f30be0fa9afe3e1f",
+  "zh": "希望你們的酒量撐得住……"
+ },
+ {
+  "id": 105,
+  "src_sha256": "efc7800c285cffd0585e62bc8a806ce69a2f9e1bf0800619e4bfbde2f3ac0179",
+  "zh": "再說， Roadhouse 只招待現役士兵！看來你們得去見 Balbrak ！現在給我滾出去！"
+ },
+ {
+  "id": 106,
+  "src_sha256": "ca4b3ea1584c3bf9076e582fdec5e675114e0869f209253d375c8cb0531a82bc",
+  "zh": "要來點什麼？"
+ },
+ {
+  "id": 107,
+  "src_sha256": "7c5f5f1508ee7f93b53048219f214f418b869c06a7838b165a95e55dd58c04d1",
+  "zh": "你們聽到我說的了！"
+ },
+ {
+  "id": 108,
+  "src_sha256": "634d1ad3ad52b6f934d8ea6527e0c9e4ca25a15350ec44eb94f132d750a8850a",
+  "zh": "我得說，菜鳥們，你們替 Balbrak 做得不錯。你們上次任務（ mission ）時他來過這裡。說對你們這支隊伍印象深刻。我猜他對你們有大計畫（ plans ）。這次算我請客。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "cf8144dd39b3aac09414ef08054941754e6670bf6e206c425ee8c58334a9745e",
+  "zh": "我不清楚細節。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "c726663c86f3601fea545b5bda886e8cc8dc2112bf8379575c30260badede431",
+  "zh": "天啊， Glumph ，你看起來糟透了！喝一杯吧……"
+ },
+ {
+  "id": 111,
+  "src_sha256": "f98cc1534eca6624c36ed7cc1a8cd8d0c226c4cc3d55a0dcd0a3f00070a0b4a4",
+  "zh": "出門，就在某處。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "d131bd5063b23c3b2ff59ee2da36d32a19ec9a978ab92ce154c260f69acdb0a9",
+  "zh": "經過這裡的人多得很……"
+ },
+ {
+  "id": 113,
+  "src_sha256": "e233430bb4d8476a579e75f7e8132dd5215dc53c24d571b973b74eb052e9cb00",
+  "zh": "就是買東西的地方，你們懂吧？"
+ },
+ {
+  "id": 114,
+  "src_sha256": "04fae9c7dd40cd79da9b5200d99d0d60c9d35225bedbbab6ae5d9096e3f2122e",
+  "zh": "你們儘管四處看看。沒什麼好說的。重點是人，不是地方，你們懂我意思吧。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "61b81a29bb9a6c8a7886f9f584f64d4903574f3ed9c76cf0ab433794a7d1e855",
+  "zh": "不，我不跟客人搞私交。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "6d9f8e088309cbdf5908714b859b25d045b986fabf76e2c7c6eb96c639447d04",
+  "zh": "你們高興就好。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "7e8ab125213a1134b2d99115524ec88d1d9943eb30b8241e4500fbea9bd50ea9",
+  "zh": "水下戰術部隊（ Underwater Tactical Unit ）。我們能提供的最頂尖的。你們可以考慮去受訓（ training ）。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "614821cd4603a59e3d82a4328df90eebb47b5c2052e78932c912b66c407a44f0",
+  "zh": "我看起來像教練嗎？"
+ },
+ {
+  "id": 120,
+  "src_sha256": "acd339170d1fd1e17f8a249967ba23de41d9aa89b76df44588f65ff8c0a2b330",
+  "zh": "任務（ Mission ）？你們都進來這裡了，老兄，你們的任務就是喝酒！"
+ },
+ {
+  "id": 121,
+  "src_sha256": "4b7f18ad2e343a35260be92daacf38a6d3921d61fcfdc17599d71597280da594",
+  "zh": "把那玩意兒弄出我的酒吧！馬上！"
+ },
+ {
+  "id": 122,
+  "src_sha256": "ee8b0b2e880cb5f4d14c8485a5979abe3d7258f295b8b28dc53eb8b1a27cdcbf",
+  "zh": "有意思。話說回來，我在這裡什麼都聽得到、看得到。你們要是真的很在意，建議你們去找 Balbrak 說。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "46d1a4e537383106465696eb3d0bd7c2c585b0ceefce41b4d061e239c7282407",
+  "zh": "喔，等一下。等一~下！那是 T'Rang 嗎，在我的酒吧裡？！你們這些小子到底在搞什麼？把那——那玩意兒馬上弄出去！"
+ },
+ {
+  "id": 124,
+  "src_sha256": "37d363edc91cc2ac2564151048ea0383a127ef488e7969b505bb9207262a558b",
+  "zh": "要不要看看我這裡有什麼在賣？"
+ },
+ {
+  "id": 125,
+  "src_sha256": "28f4a2dd6c28b255dce38639d1623e7e552e5d187218c0a72edbf596da696ef3",
+  "zh": "嗯，我偶爾會看到他們。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "a97fcfb0ddcfe15761d811b5c7b8d3d07817641b9eccb7fd81f637de0271e2d7",
+  "zh": "夠了！你們被禁酒了。現在給我滾出去！"
+ },
+ {
+  "id": 127,
+  "src_sha256": "fcac9ea6f3bc2da81d03d8d9637b8a12784f4d2db89c178dab1c1a5be851f464",
+  "zh": "別嘲笑我，臭小子！"
+ },
+ {
+  "id": 128,
+  "src_sha256": "e27b1e826d79962ae30bbbbb313651a4a325a9a5060f6e110fdd7942e974634b",
+  "zh": "出門，往北。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "b468afd64f93cbedc5c0c699db0cf0f538ee1db4454ebce4367a3c79e45a51c5",
+  "zh": "過了門就是，往南。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "b8a9a57454530fe9daecef3be93911a71b35e9846e1b3471309b8fa9b6729e89",
+  "zh": "把門踹開，往東走。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "56d862602f0102fffc5abca8a3a7c8b42ba51ca6030a4ae5912396721b730471",
+  "zh": "在這裡的西邊。"
+ }
+]

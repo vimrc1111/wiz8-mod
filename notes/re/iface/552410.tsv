@@ -1,0 +1,14 @@
+call	40efa0	rand_n	抵抗骰 R(100)，由 Rand 重放
+call	4e5550	monsterIndexByTargetID	以目標記錄的怪物 ID 查列表索引；有效目標選取怪物，不改抵抗公式
+call	4e5620	monsterInstanceByIndex	索引解析怪物實例，供主狀態與心智抗性修正讀取
+call	4e5720	monsterTemplateByInstance	以實例模板索引取得已載入模板，供類別、等級、心智抗性讀取
+call	5179d0	clampSignedResistance	有號抵抗率限制在 5 至 95
+data	4	無關	堆疊參數位移及清理長度，非規則資料位址
+data	8	無關	參數位移及目標記錄欄位位移，欄位另以 targetMonsterID 命名，非獨立資料表
+data	61e2c4	無關	查怪物失敗時的診斷來源檔名，合法目標不讀其字串內容，不影響抵抗規則
+field	eax+0x8	targetMonsterID	目標記錄內怪物 ID，用來選取實例；case 配置有效列表與相符 ID
+field	eax+0xcb	monsterCategory	模板類別 u8；碼 20 硬免疫，文字枚舉名稱未確認
+field	eax+0x24f	monsterLevel	模板等級 u8，與效果強度之差乘 3
+field	eax+0x17a	mentalResistance	模板心智抗性 u8，加入抵抗率
+field	esi+0x107	primaryStatus	怪物實例主狀態 u32，碼大於等於 18 硬免疫
+field	esi+0x21b	mentalResistanceBonus	怪物實例心智抗性修正 i8，符號延伸後加入抵抗率

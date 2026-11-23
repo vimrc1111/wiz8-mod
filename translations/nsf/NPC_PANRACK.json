@@ -1,0 +1,372 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "18d9cc448e900870932627ed658af5439111e90ddfabe35c5e6349fbdc76904d",
+  "zh": "站住！就地止步！這片領土是 Imperial Umpani Federation 的專屬領地！放你們進去之前，我得先問幾個問題。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "12f236fefba928032b7b852c59089df0c6b1ca2ffceb2716b2e6bed292eda410",
+  "zh": "直接過去吧。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "39d17e8f51ad4cfc09d224851c47560228066d50aa4e8c181b8d76825243d27b",
+  "zh": "這裡不准你們進入。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "1b30d52874d1723cec8c7c13c3aa5847074b70cf1f37b34c9958fd322e024e5c",
+  "zh": "說得都很好聽，不過這裡不歡迎你們。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "20ba7753c9525d1db457d5ae00b4556bf938c6ca3ee3d20446ab15163680704f",
+  "zh": "給你們個建議……千萬別威脅那個負責放你們進門的人。好好想想吧。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "b3d98480aec1b8c2da368aca98cca1f17ff700708ca8f1d5e6ed914fd46be1dd",
+  "zh": "我可不是收費站，長官。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "0e277f8fdb7973912f874114b14631b4f7ee9d29da1c6974e5a7693aecc85c76",
+  "zh": "這裡在幹什麼！住手！！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "018a1f17eba5970a80835a19ceafd59cef8ee1d4fa748fb28c2c2b478b8db868",
+  "zh": "噢，不了。謝謝你們的好意，不過我不能擅離崗位。那樣可不得了。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "22c2847fb7ead2b7d41373c493e1808ce2fbec4dd82f12055334bb4f66c6fc07",
+  "zh": "你們真客氣。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "a379f411d515b2a42091ce94e30fc4db64a13057bd7185494b5ce957dc4fcd62",
+  "zh": "噢，不用了，謝謝。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "1dc561889f8798dddb75412092d22a6e708ef0fc21aeddafae88e12ef687e3dc",
+  "zh": "我沒錢啦，各位老兄。這個職位薪水可不高。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "2aa838fddeccd251e148b9954031f75d2f03f3aa7bdae4e7649672a1cee46630",
+  "zh": "我們的品味（ taste ）一定很像，老兄們。我以前也有一個一模一樣的……"
+ },
+ {
+  "id": 18,
+  "src_sha256": "2159398be62ca530c122807a886cc78ec24d1a31cc4a296e3967febecde938f2",
+  "zh": "你們太過分了！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "298ef5e6c984fa653d78023d02b5254c5d7ae2a414890a6b3474b7466a7eb929",
+  "zh": "你們這些偷東西、騙人、搶東西、說謊的混帳破壞狂！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "67426b6b1d3bc79e676f927131fdd3a9f4d20b6359688e00de7887638fd6ca41",
+  "zh": "你們死定了！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "69151d22560d93454580d698614dea261a8a3fe5588506641ff3cf2d18bf2cfa",
+  "zh": "噢，這我可不能收。違反規定（ regulation ）的。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "b4c96b8d80b8342fadbc6cba3be480419dac00a429351ae995e1cdfd8623152e",
+  "zh": "那八成是機密。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "ed8be115b166b3b1d9dec92f245bbaeda12ef685d49b59be6f2928516f5c74d8",
+  "zh": "也許 IUF Intelligence 會知道。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "145c0d2a8f332010fe181a06a9bb960f4fed737f5655270354d0f4ddd35845ab",
+  "zh": "噢，那絕對是機密。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "caefc1edb85291f9db3fa71fed228b5af0ea3786f0e7bd6e8e67b4e2eb18b3f0",
+  "zh": "就像我說的……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "efee520d7ad7b16e5c8f2800b0541db7c6599e698de82f28e89e0edb22285dbe",
+  "zh": "你們還真愛打聽，對吧？一次問一個問題……"
+ },
+ {
+  "id": 27,
+  "src_sha256": "e8a6a13d4f1a407688957604f4bf92744600a112c3dc6c622cb6a786bde67c2a",
+  "zh": "那麼，接著說……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "e120c038daa31ea80488b19addafeace9a7c39f3877ccc3255a00c293c486280",
+  "zh": "原來如此……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "66c8d9cc70ae258631a8657e4c3d4a046a3c11da0d8257c22afd2b781c515e4a",
+  "zh": "我是來站崗的，不是來聊天的……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "39afae740ed464ddb5d6e1f2d57cebe1a211b82728f29ce1d0eb378d8d628df1",
+  "zh": "我該回去執勤了……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "2019a957f50dd00642bb70bfb8368e21a38c51f637f6d72aa0d7f796b5a7f9a2",
+  "zh": "看看你們腳下！"
+ },
+ {
+  "id": 32,
+  "src_sha256": "c10fabf1b04e674eb41717bd06bd9772d7beb5ab2521230d857bbb6d633a97b2",
+  "zh": "Arnika 嘛，在西邊。等我休假（ R & R ）的時候，我是打算去那裡看看。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "c2631638b206b6b55d267a3c0ab2317c195da16489889b7dfdbafbc0ce47d2ad",
+  "zh": "你們這麼一提，我們這裡正好有個士兵就是那裡來的。我記得她叫 Sparkle 。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "3f4d05370b39ceaeee67bb91e0a5d2939567b814fb28facd32e4098b49b532de",
+  "zh": "就在我後面而已。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "06021570787cdb9d5d867c2da17e293c1612b65e9770645c0bc1411911825b85",
+  "zh": "他們住在 Arnika 。我自己是沒真正見過啦。聽說他們人還不錯。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "3f16bac787b6ad55955882ae9539863e1ee0ab01aae154e2ef3a1a0f6889980f",
+  "zh": "就是些小傢伙，真的。私下跟你們說？我可不覺得他們有多聰明。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "71f1b8e2aff286e077d3cf6d0adf8e6714ce618eedcd4247def330d571e4152f",
+  "zh": "是的，長官！徹頭徹尾！責任！{{Strength}}！勝利！這就是我們的格言！"
+ },
+ {
+  "id": 47,
+  "src_sha256": "cca047c66dae60e8013a0b7e41acebf309d71422b0d00a28da540c68faa3afed",
+  "zh": "最低等的最低等……"
+ },
+ {
+  "id": 60,
+  "src_sha256": "05ac4213ee68fb02ab6ac3645f35b0e4bcdd8f6313486e11ac6833a571232de0",
+  "zh": "將軍本人！而且是位了不起、了不起的好人。他就在 Mount Gigas 裡面。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "354e12224bfff67d9f6d23f6069e776773e63c0428735624be36deffa9633f37",
+  "zh": "我聽到的都是機密。這是工作的一部分，你們懂的。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "0e2d51cdd6ed26720013b31076f5be8cf0f618cdd23ecfcc58f0d776f0ed1257",
+  "zh": "Private Panrack ，IUF 一等兵。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "7231162f1af14f30a359d0689938da89c6adcca8bafb02079429a5692d324180",
+  "zh": "我晚點休息……"
+ },
+ {
+  "id": 76,
+  "src_sha256": "91910e6e6b77ef5a3507a55efb170986ec29bf15905070981f73aafc11365869",
+  "zh": "我不認為那是個選項。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "e6f31557134f310cc038f3ad960bf66ca9905717ae488dd09eec05ad564c87ac",
+  "zh": "嗯，你好啊。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "ec66646ba9d6211d1059402f18808482c91fb2a08972ff123cb7041db646e6fa",
+  "zh": "我會替你們守住這裡的，各位。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "ac7083e367b47cfd2d106d0e1785636852fcd7e77dd4e476146cbc2e736aa5da",
+  "zh": "你們需要的東西，裡面都買得到。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "0229d1f29fb34db57ac9a3a0f29dc84b6dedbb7400a476f2f1dfdd15b13ebfac",
+  "zh": "在 Commissary 嗎？那裡大部分東西都有。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "abbe1bca5e514c39c2097a1665d091990133d8a528ff970feb82bc7ad6f8d23a",
+  "zh": "我嗎？噢，沒什麼好抱怨的。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "bdf70f82c5cfb6c9d18fcea941caffa6346d61260f94e4e209042a50fee2d106",
+  "zh": "你們可以去裡面的 Commissary 看看。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "b46cdaf2b60cd34c5d2e7b2b61f74a64d53afa67ef3a8559dbe3a2d63e7c0434",
+  "zh": "這是工作的一部分……不過要是那些 T'Rang 肯滾回他們的石頭底下去，就不會這樣了！"
+ },
+ {
+  "id": 87,
+  "src_sha256": "8e144683f25b3ef1f564dc8baf88d594f949a5cc8b5bf477b1c719c4f77bc301",
+  "zh": "Kunar 在搞什麼鬼……我就是知道。我得跟 Yamir 提一下。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "d2ce8dcddb1b87f96f28ff3ae80ef4d7afd47d713e929465050fc2dc374fc010",
+  "zh": "真希望 Rodan 快點回來！他幾個小時前就該來報到了，要是他以為這次我還會替他擦屁股，那他腦袋有問題！！"
+ },
+ {
+  "id": 95,
+  "src_sha256": "27c395cfe67be87fe3e31cf3c559282da89a751df64b32c3ae7d0e190858ffb4",
+  "zh": "就在這裡，長官。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "03c6acaaeaa89140b25efaae6f3430ae8606abd170a1fa6c6e3da021f967330b",
+  "zh": "就在這裡，長官。在營區（ compound ）裡面。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "075d73de55841110e89f6d79b618bc465f43004244d2d058461fcf2cf5f235ab",
+  "zh": "那件事我得先調查一下，長官。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "b998b482e32d4c1604506f1a5375449bb3a31a03709772500de8f11c44b06539",
+  "zh": "各位士兵？謝謝你們把我們的人帶回來……"
+ },
+ {
+  "id": 106,
+  "src_sha256": "e6935b0284b4fa31994207680f38652608f42c76eb4153ce95e5489ab9c9bbcf",
+  "zh": "我看你們把他帶回來了。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "ab1c30fe51e33c352345035f9b9773a8405f993df6b1e06277a40e0ff17574f4",
+  "zh": "他是個優秀的軍人！"
+ },
+ {
+  "id": 108,
+  "src_sha256": "93eea95f1f27d4d35fcd74039ab440ec7d550fd019db11b345a73184db4b1df7",
+  "zh": "噢，我這裡不分派任務（ mission ）。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "15a67167362cb98b6ac5483ac9b65344e1d1a25dd8afe06cfc17ea19a7488103",
+  "zh": "你們有沒有攜帶任何易燃裝置或危險物品？"
+ },
+ {
+  "id": 110,
+  "src_sha256": "a1941400a9f6b47f898578fb610d11b08fa24385c2a0fbad14076a2bba86b8f1",
+  "zh": "這很重要，必須知道。那麼，你們在這裡或其他任何星球，有沒有被判過罪？尤其是在 I.U.F. 的其他轄區？"
+ },
+ {
+  "id": 111,
+  "src_sha256": "2e897fd2918c2a26db292fb7d6dae0db9c75fc22ede97a24848e736960c59416",
+  "zh": "有意思。你們曾經或打算與 T'Rang Empire 有任何牽連嗎？"
+ },
+ {
+  "id": 112,
+  "src_sha256": "b3ed0dbeeab811271bcaaa495d576226aa7e1d308e90a360b7c1721d106bd0ef",
+  "zh": "我相信他們會很樂意跟你們在裡面談一談。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "f397bb0c60dc594f9a2e00d3f6c32075f014db6e8de7f39851651674943a1552",
+  "zh": "你們可以進去了。記住，別耍花樣。我會盯著你們的。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "83961dd11b8ab39a3c11aeabd7ca52c7a75280b9697308650278a513261c4815",
+  "zh": "小心看管那個囚犯，長官。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "a178205967498718f291ec3c1aa341c8477a0cca8423675c4d69cead233b95d5",
+  "zh": "嘿！這是怎樣……嘿！住手！聽著，你們這麼想要旗子，可以去 Commissary 買一面。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "db50529ffd4c333b062060d57e4011d7ffde24b09282d68ae59127df4c1e0834",
+  "zh": "也許我們晚點可以在 Roadhouse 碰面，到時候我再好好跟你們講講我的事。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "d60a8e7193b3b02db35dde23f64b552dd8f79d0639e045c9d93fc1e8c455ae9d",
+  "zh": "嗯，你們要去的地方不同，通行許可（ clearance ）的等級也不同。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "34f2114a8fd01277a561f4962120f22daf60f30dada0a1eaa66db8e2deea3a1c",
+  "zh": "Kunar 在那邊開了間店。你們需要的東西他差不多都有。當然，你們得是 IUF 的成員，除非你們只是想賣（ sell ）一些自己的東西。噢，對了，我們還有紀念旗，我想是給觀光客的吧。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "b4513e6d66ff898243c98f772f45b308ce7a1f47c971e8c4ef56d250f3b31aa3",
+  "zh": "我想你心裡有數，長官。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "fe5dd7cd1a2e89609136e8e2d3caa8d4a5786ef9a47c12133c27e879d8cee720",
+  "zh": "你們見過他了！？！他幾個小時前就該回來了，我連他的影子都沒看到。如果你們碰到他，告訴他這次我才不幫他掩護。我才不管她有多漂亮！"
+ },
+ {
+  "id": 122,
+  "src_sha256": "f239386e39195572a98cc2cb874580a3d49c67198943efc6739cf22fe6784639",
+  "zh": "自己去買一面吧。進去之後就是 Commissary ……"
+ },
+ {
+  "id": 123,
+  "src_sha256": "2becdc1089a80581148fd5856823d83ee42013320a32a752848b7ee5fc97c1d9",
+  "zh": "這件事我寧可你去跟 Balbrak 談，長官。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "198665d1b50add664da690b25412e3bc951b13ee9b6ca1d64c778f01a0bd1f46",
+  "zh": "我們見過了。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "f43ab125ce2b4cfe47950ce14e41ae5db5db29e2c5bc3e0298150fbba74968f5",
+  "zh": "是的，長官。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "94b53ba69be346fdb5cb857e3d02f5ce1463ed6f1057425986da42df2301548b",
+  "zh": "北邊，長官。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "e736bb02274d62fc8682e3ef5f3ccb49618559029ea4c4797d47bfcc2682d89c",
+  "zh": "南邊，長官。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "06c8997b227ad8b7ec88c7e26bb0a6ece3fd041e41dfa5648dcd1c7bd3285d9c",
+  "zh": "東邊，長官。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "6318c3cc06c139e0bf3095e1a51f014472e3c32655306222852c900680b64195",
+  "zh": "西邊，長官。"
+ }
+]

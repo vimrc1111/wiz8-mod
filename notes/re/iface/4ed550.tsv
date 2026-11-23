@@ -1,0 +1,20 @@
+call	4e5620	monsterByIndex	依 0 起算的戰場列表索引取怪物實例；索引必小於筆數，列表存取交模擬器直接執行。
+call	5e2c70	monsterListCount	列表指標為空回零，否則讀列表 +8 的筆數；每次迴圈重讀。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	685174	partyCharacterBase	角色陣列基址，每角色 6242 bytes（0x4ed568）。
+data	685178	partyPresentFlags	角色在隊旗標陣列，每角色 262 bytes，首位元組非零才讀該角色的效果欄。
+data	6836a8	battlePointer	戰鬥物件指標；內含兩排各 17 bytes 間距的待處理旗標（0x4ed5dc、0x4ed64b）。
+data	683fad	monsterListPointer	戰場怪物列表指標；+0 指向實例指標陣列，+8 是筆數，空指標視為零筆。
+field	ecx+0x0	characterPresent	角色在隊旗標，非零才檢查該角色 8 個持續效果欄。
+field	esi+edx*1+0xa6d	characterEffectWord	角色持續效果欄（u32，8 筆、間距 12）；任一非零表示有待處理效果。
+field	esi+edx*1+0x7c1	battlePendingFlagA	戰鬥物件第一排待處理旗標（9 筆、間距 17）；非零表示有待處理效果。
+field	esi+eax*1+0x85a	battlePendingFlagB	戰鬥物件第二排待處理旗標（6 筆、間距 17）；非零表示有待處理效果。
+field	eax+0x14	monsterPresent	怪物在場旗標。
+field	eax+0x15	monsterActive	怪物啟用旗標；與在場旗標皆非零才讀其狀態記錄。
+field	eax+0x10	monsterStatusRecord	怪物狀態記錄指標，供兩排待處理旗標讀取。
+field	ecx+esi*1+0x3e	monsterPendingFlagA	怪物狀態記錄的第一排旗標（9 筆、間距 17）；非零表示有待處理效果。
+field	edx+esi*1+0xd7	monsterPendingFlagB	怪物狀態記錄的第二排旗標（6 筆、間距 17）；非零表示有待處理效果。
+field	edi+eax*1+0xaf	monsterEffectWord	怪物持續效果欄（u32，8 筆、間距 12）；任一非零表示有待處理效果。
+field	eax+0x2b	monsterCurrentHP	怪物目前生命（u32，非零即存活，無號比較）。
+field	eax+0x9f	monsterField9f	怪物欄位，須為零才算待處理（語意未取得）。
+field	eax+0x2da	monsterField2da	怪物欄位，非零且存活且 +0x9f 為零時算待處理（語意未取得）。

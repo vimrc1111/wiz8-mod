@@ -1,0 +1,28 @@
+call	4e5550	findMonsterIndexById	依怪物 ID 先搜活動列表再搜備用列表（備用索引加 10000）；旗標 1 時找不到會斷言。來源 0x4e5550。
+call	4e5620	monsterAtIndex	把活動或備用索引轉成怪物記錄指標。來源 0x4e5620。
+call	5100b0	findMonsterGroupIndexById	依群體 ID 先搜活動列表再搜備用列表（備用索引加 10000）；旗標 1 時找不到會斷言。來源 0x5100b0。
+call	5101b0	monsterGroupAtIndex	把活動或備用索引轉成群體記錄指標。來源 0x5101b0。
+call	511be0	setMonsterGroupActionState	依群體 ID 設群組行動狀態旗標（+0xc8）與連續計數（+0xc9），並同步到該群組的四個關聯群組；種類 0x1b6／0x234 且旗標為 1 時整個不動。案例以群組 +0xc8／+0xc9 為輸出。來源 0x511be0..0x511ca3。
+call	5e2c70	listCount	空列表指標回零，否則讀列表 +8 的筆數。來源 0x5e2c70。
+call	5e2c80	listEntryAt	依序號讀列表項（群組成員的怪物 ID）；序號超出筆數回 -1。來源 0x5e2c80。
+data	61cc3c	無關	斷言來源檔名字串，只在查找失敗時使用，不參與規則。
+data	6836a8	battleData	戰鬥資料指標；+0xa5c 的 u32 小於 3 時整個函式直接返回。
+data	683fb1	activeMonsterGroupList	活動怪物群組列表指標；+8 為筆數，逐筆走訪，每回合重讀筆數。
+data	fffffffffffffff8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+field	eax+0x0	無關	0x4e5620 回傳之怪物記錄／列表陣列的指標解參考，ID 比對在子函式內，不是本函式讀的欄位。
+field	eax+0x10	monsterBattleObjectPointer	怪物記錄 +0x10 指向戰鬥副物件。
+field	eax+0x14	monsterFlag14	怪物記錄 +0x14 byte，非零才可能構成危險成員。
+field	eax+0x15	monsterFlag15	怪物記錄 +0x15 byte，非零才可能構成危險成員。
+field	ebp+0x0	monsterGroupId	群組記錄 +0 的群組 ID，傳給 0x511be0。
+field	ebp+0x8	monsterGroupMemberList	群組記錄 +8 的成員列表指標；+8 為筆數，項目為怪物 ID。
+field	ebp+0x28	monsterGroupFlag28	群組記錄 +0x28 byte，須非零。
+field	ebp+0x29	monsterGroupFlag29	群組記錄 +0x29 byte，須非零。
+field	ebp+0x2a	monsterGroupFlag2a	群組記錄 +0x2a byte，須等於 1。
+field	ebp+0xa3	monsterGroupValue0xa3	群組記錄 +0xa3 u32，須為 0。
+field	ebp+0xc9	monsterGroupActionCount	群組記錄 +0xc9 byte 連續計數，小於 3 給旗標 1、否則 0；同時是本函式的輸出之一（經 0x511be0 更新）。
+field	ebx+0x0	linkedMonsterGroupId	群組 +0xa7 起四個關聯群組 ID 之一，0 表示無。
+field	ebx+0x575608ec	無關	反組譯把跳表資料跨界錯解成指令的偽位移，入口 bytes 沒有此運算元。
+field	ecx+0x14c	monsterBattleLevel	戰鬥副物件 +0x14c u32，小於 3 且兩個旗標皆非零的成員使群組旗標為 0。
+field	edx+0x14c	monsterBattleLevel	同 ecx+0x14c，另一條路徑（關聯群組成員）的同一欄位。
+field	esi+0x8	linkedGroupMemberList	關聯群組記錄 +8 的成員列表指標；+8 為筆數。

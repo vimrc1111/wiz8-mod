@@ -1,0 +1,38 @@
+call	55f1e0	clearHeldItemCursor	清游標手持物狀態（0x6874cb 實例、0x6874ca），模式 0x683fdb 非 -1 時刷新游標並把模式、0x683fdf、0x683fe3 復位；case 原樣重放（游標狀態是遊戲狀態）；其中 0x5493e0、0x549390 查表原樣跑；夾具事實：case 令 0x650e20=1（關斷言）、0x6448c8=0，並把游標資源記錄的已載入旗標 0x62c464 設非零，使 0x549090 延遲載入（資源 I/O，非本節點的塊）整段跳過；游標資源 handle 0x62c468 與 word 0x6448cc 為 case 輸入，經 0x427ab0 樁的參數記錄進輸出
+call	5e1da0	無關	堆疊探測（為 0x1770 位元組區域變數配置堆疊），不寫遊戲資料；原樣重放
+call	4edd20	sharedEncumbrance	實例表壓縮後重算共用負重；既有 sharedEncumbranceNode（D4）；case 位址樁，只記呼叫次數
+call	520750	depletedItemRetention	充能耗盡後物品是否仍有其他效果而保留；既有 depletedItemRetentionNode（D4）；case 位址樁，回傳取自輸入 retain，記錄 id 參數與次數
+call	520d10	equipmentActionRefresh	實例被清空後的裝備／行動刷新；既有 equipmentActionRefreshNode（D4）；case 位址樁，記錄三個參數（實例、擁有者、1）與次數，回傳值無人使用
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	68516c	itemRecordTable	物品定義表指標；實例 id 乘 269 取得物品記錄；讀記錄 +0x66 與 +0x3e
+data	6840c0	heldItemId	游標手持物槽 id i32；清游標分支寫 -1；亦為 case 輸出
+data	6840c4	heldItemCountByte	游標手持物槽的 byte；清游標分支寫 0xff；亦為 case 輸出
+data	6840c5	heldItemChargeWord	游標手持物槽的 word；清游標分支寫 0xffff；亦為 case 輸出
+data	685185	instanceTableZeroing	實例表第 n-1 筆（0x685191 前 12 位元組起算）：壓縮後清零再置 id -1；亦為 case 輸出
+data	685189	instanceTableZeroing	同上，+4 欄；壓縮後清零
+data	68518d	instanceTableZeroing	同上，+8 欄；壓縮後清零
+data	685191	instanceTable	物品實例表起點（12 位元組一筆：id、數量／充能 byte、第三欄）；實例位址在 0x685191..0x6868f5 才走壓縮
+data	68519d	instanceTableNext	壓縮時由第 k+1 筆起複製到第 k 筆；亦為 case 輸出
+data	6851a1	instanceTableNext	同上，+4 欄
+data	6851a2	instanceTableNext	同上，實例 +5 欄（充能 byte）
+data	6851a9	instanceTableNext	同上，+0xc 欄
+data	6851ad	instanceTableNext	同上，+0x10 欄
+data	6851ae	instanceTableNext	同上，+0x11 欄
+data	6868f5	instanceTableLimit	實例位址上界：大於此值不屬於實例表，不壓縮
+data	686901	instanceTableCount	實例表筆數 u32；零直接返回；壓縮後減一；亦為 case 輸出
+data	6874cb	heldItemInstance	游標手持物實例（id、數量、充能）；位址等於它時走清游標分支，不碰實例表
+field	eax+0x0	instanceTableZeroing	實例表尾筆 id 欄：壓縮後清零再置 -1
+field	eax+0x3e	itemKind	物品記錄 +0x3e；+0x66 為零時等於 0x16 才可耗用
+field	eax+0x4	instanceTableZeroing	實例表尾筆第二欄：壓縮後清零
+field	eax+0x66	itemConsumeMode	物品記錄 +0x66；1 扣數量 byte，零（配合 +0x3e）與其他值扣充能 byte
+field	eax+0x8	instanceTableZeroing	實例表尾筆第三欄：壓縮後清零
+field	ecx*4+0x685185	instanceTableZeroing	實例表尾筆（筆數減一）置 id -1；亦為 case 輸出
+field	ecx+0x0	clearedInstanceId	被清空實例 id 欄，清零後設 -1
+field	ecx+0x4	clearedInstanceCount	被清空實例第二欄，清零
+field	ecx+0x8	clearedInstanceThird	被清空實例第三欄，清零
+field	edi+0x0	instanceCompactCopy	壓縮複製的目的位址（暫存緩衝與實例表）
+field	edx+0x685191	instanceTableEntry	實例表第 k 筆（k×12）：id 欄須為 -1（剛清空）才壓縮
+field	esi+0x0	itemInstanceId	物品實例 id i32；-1 為空，否則乘 269 查物品記錄
+field	esi+0x4	itemInstanceCount	物品實例數量 byte；物品記錄 +0x66 為 1 時遞減，歸零則耗盡
+field	esi+0x5	itemInstanceCharges	物品實例充能 byte；其他模式遞減，歸零後查 0x520750 決定是否保留

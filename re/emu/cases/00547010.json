@@ -1,0 +1,31 @@
+{
+  "cc": "cdecl",
+  "steps": 100,
+  "path_limit": 1,
+  "samples": 1,
+  "objects": {"characters": 0},
+  "args": [0, 1],
+  "setup": [
+    {"at": {"global": "0x685174"}, "size": 4, "value": "@characters"}
+  ],
+  "in": [
+    {"name": "sourceCharm", "at": {"object": "characters", "offset": 2613}, "size": 4, "signed": false},
+    {"name": "targetCharm", "at": {"object": "characters", "offset": 8855}, "size": 4, "signed": false}
+  ],
+  "out": [
+    {"name": "disposition", "at": {"reg": "eax"}, "size": 1, "signed": false}
+  ],
+  "boundary": [
+    [0, 0], [0, 1], [1, 0], [1, 1], [1, 2], [2, 1],
+    [0, 2147483647], [2147483647, 0], [2147483647, 2147483647],
+    [0, 2147483648], [2147483648, 0], [2147483648, 2147483648],
+    [0, 4294967295], [4294967295, 0], [4294967295, 4294967295],
+    [2147483647, 2147483648], [2147483648, 2147483647],
+    [1, 4294967295], [4294967295, 1]
+  ],
+  "random": {
+    "seed": 547010,
+    "count": 128,
+    "ranges": [[0, 4294967295], [0, 4294967295]]
+  }
+}

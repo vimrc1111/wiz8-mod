@@ -1,0 +1,602 @@
+[
+ {
+  "id": 1,
+  "src_sha256": "1f3909509ad6af6db62e89a1d9d4c944a75073cc9a6d88da5bb6c3a94b03069c",
+  "zh": "酸液飛濺"
+ },
+ {
+  "id": 2,
+  "src_sha256": "3abbd69ed48b2d67b7163fd4283e293f7c8248d7a225dc42896fc84baf98b9b1",
+  "zh": "祝福"
+ },
+ {
+  "id": 3,
+  "src_sha256": "cb202ce740ea23b09a039a51724a26f05a05cbd44cb1fb5692f72a7c406b4201",
+  "zh": "魅惑"
+ },
+ {
+  "id": 4,
+  "src_sha256": "17636dd620d730ae34b5c04a3cbd2591218b1f0543a1685b992d456123cc4382",
+  "zh": "冰霜"
+ },
+ {
+  "id": 5,
+  "src_sha256": "206de9bd6860fca1873656ff07f1b80416dac6fd1bae5a851d36873fc8113c13",
+  "zh": "能量衝擊"
+ },
+ {
+  "id": 6,
+  "src_sha256": "212b1a39c8b0119a827b431dac7cf4f8767e584ec874fecbced0653f9396f640",
+  "zh": "治療傷口"
+ },
+ {
+  "id": 7,
+  "src_sha256": "3d8a5d9a5d337eb35eca17a1c06f7aeef7093c7df1cc5d3ca4525818d2e9153d",
+  "zh": "皮膚搔癢"
+ },
+ {
+  "id": 8,
+  "src_sha256": "dbcd5e7bb7a0f538810de44c3efbd813037ee3fa358747bb71fa58e157af45f7",
+  "zh": "光明術"
+ },
+ {
+  "id": 9,
+  "src_sha256": "a1a23c5388f0a8c9207dd4de6eed391aed6205750859987130b947bac518dbbb",
+  "zh": "創傷術"
+ },
+ {
+  "id": 10,
+  "src_sha256": "8316f7b4b382df11a7c7b8e02b82642c3e510a72ce6ad6d14754f147bf8d8740",
+  "zh": "精神穿刺"
+ },
+ {
+  "id": 11,
+  "src_sha256": "1d5e7e989b88522a8bbe801c5be3fb99a0ba6afca28eb3e5ab8713e1769ba693",
+  "zh": "麻痺"
+ },
+ {
+  "id": 12,
+  "src_sha256": "d466bcf52eb6921b1e747e51bf2cc1441926455ba146ecc477bed1574e44f9c0",
+  "zh": "沉睡"
+ },
+ {
+  "id": 13,
+  "src_sha256": "cc350ea3393968f7cd7cbf135e8c1ec826c85b881b68dc619c699667805a3e96",
+  "zh": "恢復耐力"
+ },
+ {
+  "id": 14,
+  "src_sha256": "43f7b0cbafad394c21cd2e4a9c65273cb14137a818da644c326d066c17519f12",
+  "zh": "恐懼"
+ },
+ {
+  "id": 15,
+  "src_sha256": "0cf5f79bc54b33ce59f400b3d6447557e1526ed8aaa9a842b420891b334aa718",
+  "zh": "致盲閃光"
+ },
+ {
+  "id": 16,
+  "src_sha256": "6737ee1824404fb9a76ad5d457c957ae59c198e51d972effeba2cdd8f6973c1e",
+  "zh": "解除輕症"
+ },
+ {
+  "id": 17,
+  "src_sha256": "e9100e89bf1e7dde25e669a2b242dc0f874f2b1b6a6e720878c9bdf7d62a1e06",
+  "zh": "偵測秘密"
+ },
+ {
+  "id": 18,
+  "src_sha256": "e1bdfa61f84db9671caf65411e71fc23bf1d8c18bf9b129bb4308efbdf185d77",
+  "zh": "探知陷阱"
+ },
+ {
+  "id": 19,
+  "src_sha256": "f18547e03529f3498106bc3139cc41aeb72f8f432684e1934184eca4c529803e",
+  "zh": "{{Dracon}}吐息"
+ },
+ {
+  "id": 20,
+  "src_sha256": "0c2c3ea95a5d2417ad150c060154ec3bff054017960b295e372a92d82411328e",
+  "zh": "附魔刀刃"
+ },
+ {
+  "id": 21,
+  "src_sha256": "af3547abb5e6d69c2372b62331d6039acaf16cca337eefb27e5734bbee3fb307",
+  "zh": "守護天使"
+ },
+ {
+  "id": 22,
+  "src_sha256": "ae351f9a3fcd5ab533d54dc3d780b919a941229fb18d1bbed6f11a33515ea526",
+  "zh": "聖水"
+ },
+ {
+  "id": 23,
+  "src_sha256": "18147e5ca17c8a60f712780d64924d4c313424c8b0894c48fc63609f555047bf",
+  "zh": "鑑定物品"
+ },
+ {
+  "id": 24,
+  "src_sha256": "8191dcc1cf8a3d71f32cc44e240772c887bae90b42d23e75f3cec2fb0aa1b614",
+  "zh": "瘋狂"
+ },
+ {
+  "id": 25,
+  "src_sha256": "c83cfaf4080c7b26098ae96344ebdd08014f5dc85990454ddb4b90e78388e347",
+  "zh": "{{Magic}}飛彈"
+ },
+ {
+  "id": 26,
+  "src_sha256": "76d5f37d5db405ac6ff41fb24d48b1be9878747503c24d4e78bf397ef759ea63",
+  "zh": "飛彈護盾"
+ },
+ {
+  "id": 27,
+  "src_sha256": "4f3ab234da1748f6abd38e394080fc97cb4269cf9847fd29a3a219886f9248c7",
+  "zh": "剃刀斗篷"
+ },
+ {
+  "id": 28,
+  "src_sha256": "be3ea72b2afb0c8e362fe1e90c15aeb6354db98ae7e90b7005c49c3bce45446b",
+  "zh": "尖嘯"
+ },
+ {
+  "id": 29,
+  "src_sha256": "4b2bebbf33aeb7aea11cbab9d95019a647ca038b638f99f593aae85b986ed2e2",
+  "zh": "遲緩"
+ },
+ {
+  "id": 30,
+  "src_sha256": "dd112b33c54b8e3ea89a2bbca9d00af389ea77074150c16775cfd80f1772b745",
+  "zh": "音爆"
+ },
+ {
+  "id": 31,
+  "src_sha256": "2975104784a401e3880e2215550e9490eda7e67db5fc2b35e1a244acb092ced3",
+  "zh": "蛛網"
+ },
+ {
+  "id": 32,
+  "src_sha256": "47f515eb07b9855306ae0e72166bf438c1abd0ac3495e906e54aefa77d7f272c",
+  "zh": "鎧甲術"
+ },
+ {
+  "id": 33,
+  "src_sha256": "986370a75b28fbadb45c7c8d54dc67c65269c96e5e346a494889081ec3fffa3d",
+  "zh": "擬態"
+ },
+ {
+  "id": 34,
+  "src_sha256": "4f9fc5fcaed5e4cf9f70dbcec7e8a1dcf105355fc4a1054494642f716f7f6f97",
+  "zh": "解除麻痺"
+ },
+ {
+  "id": 35,
+  "src_sha256": "77d163d0cc72792867f2ab81963e555b2b6e0f5c51de30c43b2194287d940485",
+  "zh": "解毒"
+ },
+ {
+  "id": 36,
+  "src_sha256": "cc173df6702cba90cfae123f149085dc44e3f6c660816c528f063c75083e5a9e",
+  "zh": "火球"
+ },
+ {
+  "id": 37,
+  "src_sha256": "40a2ec4da38c35dbacab310dbcaec6cd93e767ae2c153568b901a679be93973b",
+  "zh": "冰凍肉身"
+ },
+ {
+  "id": 38,
+  "src_sha256": "7181fc6a503a5d74c39c611b0fcf554cef2ebfd9ddbe3ac23728c32072054cf2",
+  "zh": "催眠誘惑"
+ },
+ {
+  "id": 39,
+  "src_sha256": "319cfd6fb06d998e2851d7edcfccdcffbb4c92c89faefb0074a1d46b58440ca1",
+  "zh": "開鎖術"
+ },
+ {
+  "id": 40,
+  "src_sha256": "8f2acc35a870a8e00782674e399971200d05e5c83dfd8297ce735ccaf6c2ef21",
+  "zh": "{{Magic}}屏障"
+ },
+ {
+  "id": 41,
+  "src_sha256": "20906b87159589d0d2582ee7df37b0e936a05d64728ed1d32cbc0e6e517931f0",
+  "zh": "讀心術"
+ },
+ {
+  "id": 42,
+  "src_sha256": "c0f37faa1434e26710d5b98e3e6c92daf0fa6628e103e1a9883a3eb797f72452",
+  "zh": "毒霧"
+ },
+ {
+  "id": 43,
+  "src_sha256": "766400ff6f18cceb2eddc046752f31630f3f95cdc8f080bf795943c32edd8829",
+  "zh": "念力火焰"
+ },
+ {
+  "id": 44,
+  "src_sha256": "c1f12b00577cbabc9a0628045bdf59f9315d262b52efe26ca2c47a4b2653d737",
+  "zh": "全體休息"
+ },
+ {
+  "id": 45,
+  "src_sha256": "4fc6063dcd5eb8652c4d862f4ac111075bb79ab268340b4cd53dba2ee3cb3213",
+  "zh": "暗影獵犬"
+ },
+ {
+  "id": 46,
+  "src_sha256": "6c61fe498281f4216fd03973936e6f88b0142654174538f4eb41987dfc4c965a",
+  "zh": "沉默"
+ },
+ {
+  "id": 47,
+  "src_sha256": "fb0d8240a07482fdc91ffbc52f50640222c486b1f3fe09d9938a4320077d3e04",
+  "zh": "碎石鞭擊"
+ },
+ {
+  "id": 48,
+  "src_sha256": "e7d44675262dd65b7e02a86464c0b266eb462845ba6d6cee6457afb0bbd5903b",
+  "zh": "酸液炸彈"
+ },
+ {
+  "id": 49,
+  "src_sha256": "9607f855945af80e3ae9dd37964448fc6a8cba30227349714276432f554ecd9c",
+  "zh": "熔甲"
+ },
+ {
+  "id": 50,
+  "src_sha256": "fd4982bc31020a050d8c067fc834614cf61219ea924918ad39ea13972fc1b8e0",
+  "zh": "粉碎"
+ },
+ {
+  "id": 51,
+  "src_sha256": "c2322227f70008ece5acead62281b75b17219b55608d9c5864047a3af48728e8",
+  "zh": "治療疾病"
+ },
+ {
+  "id": 52,
+  "src_sha256": "15bfd72b1bc373e518bb7b8cb2f68a7c19ba29402f925f79e35693718e81ceae",
+  "zh": "心鞭"
+ },
+ {
+  "id": 53,
+  "src_sha256": "9419a93ba216bb4e45fdf6565c1ed086f12efd6db88648a2a67c8ea662f5dd14",
+  "zh": "元素護盾"
+ },
+ {
+  "id": 54,
+  "src_sha256": "83b8164374ec6090a353a2b53c49795ef7d67794e3eba27cb29d573b1a912e05",
+  "zh": "以眼還眼"
+ },
+ {
+  "id": 55,
+  "src_sha256": "9b1ced8bedd734e85341cdccc84cf62438d1730119d89b6d0d85f7d77061e832",
+  "zh": "火焰炸彈"
+ },
+ {
+  "id": 56,
+  "src_sha256": "de3b46da4da8a98c381a34e6ef1326411f01962e4bb094b007055b41e1d37ce4",
+  "zh": "加速"
+ },
+ {
+  "id": 57,
+  "src_sha256": "51a5459f8cf2e3ecdc4c7c6f5fe3f0d7b109495f1638e0a79e2f008f702c5d29",
+  "zh": "冰球"
+ },
+ {
+  "id": 58,
+  "src_sha256": "6b7573221b4facf165f47f3e17b4da68ad02816f1747ee161df8b904e8215b98",
+  "zh": "解除詛咒"
+ },
+ {
+  "id": 59,
+  "src_sha256": "fa6a6afe494dbcbef208eb36efb323473babd0304f70c3e29d40e2db7a2a5da6",
+  "zh": "靈魂護盾"
+ },
+ {
+  "id": 60,
+  "src_sha256": "e349daa9793b5a26262b307485ce944cc2f3c56c872fe18c2ae0869980eecf4f",
+  "zh": "召喚元素"
+ },
+ {
+  "id": 61,
+  "src_sha256": "27d5233ddd8968526735078ca9efa95ec03a22ea942420df0841f78ca9d9c272",
+  "zh": "超人"
+ },
+ {
+  "id": 62,
+  "src_sha256": "e8dd5b97152841faa95071f715b40be0191b9999479e8c179c997abd2e114ed0",
+  "zh": "火環"
+ },
+ {
+  "id": 63,
+  "src_sha256": "c976afe00288482575b7680eb7b742f74eaeb3aac7fab39be31717e7986af99f",
+  "zh": "旋風"
+ },
+ {
+  "id": 64,
+  "src_sha256": "6fe357156ae9a7fb0e1fdca4d7edcef07343b2a2d81bce9f11e55f9e306f285d",
+  "zh": "透視術"
+ },
+ {
+  "id": 65,
+  "src_sha256": "e1c0dbb2e8e266e7506d2b8273f55b87f52373f5ee3a995dea78d3ac89f86068",
+  "zh": "石之軀"
+ },
+ {
+  "id": 66,
+  "src_sha256": "bc21b633fd140b2377e99e0e76b6cedc90550676b30bd28583aebe082d853b38",
+  "zh": "脫水"
+ },
+ {
+  "id": 67,
+  "src_sha256": "f514d6d7b4aa89bf4acd793e7b32622d580e1a12f75db642c8ed56c500b0a757",
+  "zh": "全體冰凍"
+ },
+ {
+  "id": 68,
+  "src_sha256": "82e1674ac280b648f7a8cc0a5759bf3cbbfb1d39eecc31a16e0efc1d18643848",
+  "zh": "全體治療"
+ },
+ {
+  "id": 69,
+  "src_sha256": "69493e6f1a6957cad7e3ece5267a57e8a8ed035b5ea5fd7e360ce9eb2405c30b",
+  "zh": "邪咒"
+ },
+ {
+  "id": 70,
+  "src_sha256": "66f4e11305d83b3912bdfa7d592a324e92ed24b92aab05dfee0e241fcb544310",
+  "zh": "即死"
+ },
+ {
+  "id": 71,
+  "src_sha256": "0fa029948a81f852163cb6cea068626327d63075b26976760e6d82ed5979dded",
+  "zh": "念力衝擊"
+ },
+ {
+  "id": 72,
+  "src_sha256": "de5f3a06fcb62c6c7dff699d359cfc5af6bc4cf64475a68991db8c9a4b14cff8",
+  "zh": "淨化空氣"
+ },
+ {
+  "id": 73,
+  "src_sha256": "7feab472b3f0048732e10a6f751b49aca7e6c957d0e45d8e0a358c0f95ab3e3c",
+  "zh": "返回傳送門"
+ },
+ {
+  "id": 74,
+  "src_sha256": "87b74e665ac2b7fe6506856cb07899cb3809833c2e347ad6c1ab18fbc0f1cae3",
+  "zh": "回復神智"
+ },
+ {
+  "id": 75,
+  "src_sha256": "c27cbdca9b2eeaed0b995cccd787548ec001cccc52f34f06a43cfdf79a84a45b",
+  "zh": "設置傳送門"
+ },
+ {
+  "id": 76,
+  "src_sha256": "02052928d3ca03016529aea5da7ed98a50edebe6a4f60484523ebb7ba840facd",
+  "zh": "毒雲"
+ },
+ {
+  "id": 77,
+  "src_sha256": "37bae5c7966cd0b190dbb947ea529b96f88b4f90f1a8d516266056d8aee663e3",
+  "zh": "放逐"
+ },
+ {
+  "id": 78,
+  "src_sha256": "4e00ad2bdbffd737174b244f2bdfd718ba7633673a7e38548636477b0ddaf42d",
+  "zh": "暴風雪"
+ },
+ {
+  "id": 79,
+  "src_sha256": "3394b6765a9ef7e24b0929888e47f48697306ec62e5f00a31634d480567e50aa",
+  "zh": "沸血"
+ },
+ {
+  "id": 80,
+  "src_sha256": "f1d17dfe80675004875a368461862e3121363298e4cd84833ef295f8f50f5c3c",
+  "zh": "汲取之雲"
+ },
+ {
+  "id": 81,
+  "src_sha256": "4f827e86263468c7ee54c70750f747df55cb193818954ea93bd73791d1bf837a",
+  "zh": "火焰風暴"
+ },
+ {
+  "id": 82,
+  "src_sha256": "3fa7fb78015de1ab3cb62a2032789b047c7f4b247372c823a3be42abb6e9e6f1",
+  "zh": "生命竊取"
+ },
+ {
+  "id": 83,
+  "src_sha256": "41e68f2cdb3806bb899cb2f3c3d80a2171f37c85b60e8e486742234e4e5f5738",
+  "zh": "閃電"
+ },
+ {
+  "id": 84,
+  "src_sha256": "cd95b952715377fad7c3507ca1cd5093e9c6ab49096c8bbed987d119028195e4",
+  "zh": "化力為魔"
+ },
+ {
+  "id": 85,
+  "src_sha256": "2bce2982deda92e4334e1eba413174b87e2853485b88b8b192f3d5178d886985",
+  "zh": "群魔亂舞"
+ },
+ {
+  "id": 86,
+  "src_sha256": "4fb894ee2eb9e5332726e37354e61d205fc1906a1d78f95a6b4e20b973a2a0fc",
+  "zh": "稜光射線"
+ },
+ {
+  "id": 87,
+  "src_sha256": "c7df4b55bf83a8a55a292e5e79f0f23c853b924a7881c418668583faf52e6ee9",
+  "zh": "流沙"
+ },
+ {
+  "id": 88,
+  "src_sha256": "7f65e66d7b992f00e39bd0933f6ed9732c99bf22e061c0fbf46af3aeb1c52bc0",
+  "zh": "復活"
+ },
+ {
+  "id": 89,
+  "src_sha256": "fb20726a88f18b7fffd499b32dadd8572f6e44503cd64faa5f88d0b54975bf43",
+  "zh": "倒戈"
+ },
+ {
+  "id": 90,
+  "src_sha256": "838fea79f94b470e75b22d741c1a3aceb2af2c22522ded2e1b5c732ebf464377",
+  "zh": "窒息"
+ },
+ {
+  "id": 91,
+  "src_sha256": "4fba2b7f126b9f69b227b8c67ad0131be37e8e1461ef31449766b125c4ce72dd",
+  "zh": "腦溢血"
+ },
+ {
+  "id": 92,
+  "src_sha256": "a91e1107d707c09bc2ce6af8925cd1fe069629e4b563a2119744b66b8b0cd967",
+  "zh": "震盪"
+ },
+ {
+  "id": 93,
+  "src_sha256": "ab60cc61e3b638afc9c33dff11bb7eb03f39ca405d0901610ba901ca175abc46",
+  "zh": "死亡之雲"
+ },
+ {
+  "id": 94,
+  "src_sha256": "646b4d65bc3afb6f44db707d5d88040ecaab0f56d5cd1e713eefe370123eaa42",
+  "zh": "死念"
+ },
+ {
+  "id": 95,
+  "src_sha256": "7f65878d43af16310996ef79311257baa270193adc507db7bb98fcf5cb50f671",
+  "zh": "地震"
+ },
+ {
+  "id": 96,
+  "src_sha256": "27e24f081a3f8e8dbcac094661d5d9f52596723cf0bfe11b67e54b696e6f35a0",
+  "zh": "星墜"
+ },
+ {
+  "id": 97,
+  "src_sha256": "a6801d1fe81d74c1eed224585928d96e39e2a46acd4dbdc7f49825a5a2692718",
+  "zh": "精神鞭撻"
+ },
+ {
+  "id": 98,
+  "src_sha256": "e5193bd35c1b18aeca167c9772d7181a74064c25cf234fe8dc0c0d6ec5d05578",
+  "zh": "核爆"
+ },
+ {
+  "id": 99,
+  "src_sha256": "5216746bcc3b4e012265d07d26e20c5f04871cc3de2b32fc0fc601d21fca7721",
+  "zh": "稜光混沌"
+ },
+ {
+  "id": 100,
+  "src_sha256": "6a3c6c77892d34a5246dc63f64719d2e7873685a098f13e5e8f1234c375f1069",
+  "zh": "復原"
+ },
+ {
+  "id": 101,
+  "src_sha256": "fd94aaf4c6f400d964a0a51d26c12da0446c0d759b1d461ad1fb7e9a890e2557",
+  "zh": "海嘯"
+ },
+ {
+  "id": 114,
+  "src_sha256": "541635d1ff61f3cc34fc596ee6a48fecaed200c148721ee9bc30325dee1a4a5e",
+  "zh": "恢復生命"
+ },
+ {
+  "id": 115,
+  "src_sha256": "254916815e56b4667c8fbfb3d631aba9d1ba303a2d3b1999a329409735ba9378",
+  "zh": "恢復法力"
+ },
+ {
+  "id": 116,
+  "src_sha256": "0b05a7384b21bf510964f64b85989e1e3f044b1ce82d04b252e5699c2f7b255c",
+  "zh": "嗅鹽"
+ },
+ {
+  "id": 117,
+  "src_sha256": "b5aed20c8974f2c679f1d5c45b811f3c2b41042fb9ec5d1c28b4b7a9b18a3c8e",
+  "zh": "潰散"
+ },
+ {
+  "id": 118,
+  "src_sha256": "bd66a582bf15e9486f00be1e44581234b96065f1ef39079e19482bc540440f3e",
+  "zh": "沸血爆發"
+ },
+ {
+  "id": 119,
+  "src_sha256": "98df30e77506bc990f2d60527791b65dd695b9541a0fdb4123f615f231d719ff",
+  "zh": "特殊錐形攻擊"
+ },
+ {
+  "id": 120,
+  "src_sha256": "f4a9133d791782c1d6c1729e52e2738cd03a6467fe1e01bf574a970edda1e13c",
+  "zh": "再生"
+ },
+ {
+  "id": 121,
+  "src_sha256": "b12cc7b77636ef776432787deb9684c6d6f873843e7b265b5d23f59350cfbfbc",
+  "zh": "{{Dagger}}散射"
+ },
+ {
+  "id": 122,
+  "src_sha256": "8364c59f4b1f689ef964393b1c9d263c95528f81dad6632d7c0497cbe3286834",
+  "zh": "毒鏢"
+ },
+ {
+  "id": 123,
+  "src_sha256": "f3b67957357963f70aaf939fd76caf4ef15d392889acee40168a2b3e13cede8e",
+  "zh": "警報"
+ },
+ {
+  "id": 124,
+  "src_sha256": "8ffdfc78ec14206f0f4e71ebe9f9f455b31b39112cb6c9c2844bf07142a0799f",
+  "zh": "賢者之禍"
+ },
+ {
+  "id": 125,
+  "src_sha256": "dd9609ec751917247ff006d615bf352cd8f43d3d56f2b9a82cb3a035774689ce",
+  "zh": "吸血漩渦"
+ },
+ {
+  "id": 126,
+  "src_sha256": "9ea6b1d92de21d2f74e23883dd190c6590e55dfa5bf900933ce68960b7a6561e",
+  "zh": "熱浪"
+ },
+ {
+  "id": 127,
+  "src_sha256": "cff57dc609cf0a8511da0f318a4e7053eb7b858ee1308fb89744d7e5d19d2612",
+  "zh": "反{{Magic}}"
+ },
+ {
+  "id": 128,
+  "src_sha256": "1e4f693e6692d5088818833f6538f80ef3001bf53e6f633246504e13f4f0f9b1",
+  "zh": "死亡詛咒"
+ },
+ {
+  "id": 129,
+  "src_sha256": "4931b85834b62386190b0c1fb3d0115dce4d5fadce8a483fb824bc4ea45e96fe",
+  "zh": "驅散不死生物"
+ },
+ {
+  "id": 130,
+  "src_sha256": "2d40135411c0f5d85b0deb51cc85240af5944a200f9200de033edc892cd805fc",
+  "zh": "烈酒"
+ },
+ {
+  "id": 131,
+  "src_sha256": "3160307f82b3c01fa1a8af91a1831c540551d945c20f129dabf277097806a199",
+  "zh": "火箭爆擊"
+ },
+ {
+  "id": 149,
+  "src_sha256": "a76b28f099424e8aad32c6ae5293659bff049524b3dc7e0907ac7e1ab1e2078d",
+  "zh": "停用法術"
+ }
+]

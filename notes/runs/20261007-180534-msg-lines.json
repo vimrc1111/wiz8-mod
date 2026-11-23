@@ -1,0 +1,52 @@
+{
+  "run_id": "20261007-180534-msg-lines",
+  "commit": "6b864625c1207baaca9f4c2642fe2d22cb5bb638",
+  "scenario": {
+    "id": "msg-lines",
+    "duration": 75,
+    "files": [
+      {
+        "src": "hook/ddraw/out/ddraw.dll",
+        "dst": "ddraw.dll"
+      },
+      {
+        "src": "build/zh/PATCH.002",
+        "dst": "Patches/PATCH.002"
+      }
+    ],
+    "steps": [
+      {
+        "t": 45,
+        "shot": "msg"
+      },
+      {
+        "t": 65,
+        "shot": "msg2"
+      }
+    ],
+    "args": [
+      "/LOAD"
+    ]
+  },
+  "before_diff": "noise A Saves/Ascension Peak.SAV\nnoise A Saves/Ascension Peak2.SAV\nnoise A Saves/Bayjin Shallows.SAV\nnoise A Saves/Cosmic Circle.SAV\nnoise A Saves/Cosmic Circle2.SAV\nnoise A Saves/Ending.SAV\nnoise A Saves/Ending1.SAV\nnoise A Saves/Ending2.SAV\nnoise A Saves/Ending3.SAV\nnoise A Saves/Ending4.SAV\nnoise A Saves/Ending5.SAV\nnoise A Saves/Ending6.SAV\nnoise A Saves/Import/SAVEGAME.GLB\nnoise A Saves/Import/SAVEGAME.GRL\nnoise A Saves/Import/SAVEGAME.TRA\nnoise A Saves/Import/SAVEGAME.UMP\nnoise A Saves/Jan-Ette.SAV\nnoise A Saves/Mountain Wilderness Retro.Fin.SAV\nnoise A Saves/Mt. Gigas Water Caves.SAV\nnoise A Saves/Quick 1.SAV\nnoise A Saves/Quick 2.SAV\nnoise A Saves/Quick 3.SAV\nnoise A Saves/Rapax Castle Main Level.SAV\nnoise A Saves/light shield.SAV\nnoise A Saves/light sword.SAV\nnoise D Saves/Characters/steam_autocloud.vdf\nnoise D Saves/steam_autocloud.vdf\nnoise M Saves/CurrentGame.SAV\nnoise M Wiz8.CFG\nsummary: 25 added, 2 removed, 2 changed, 0 non-noise",
+  "after_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [
+    "0.0 start pid="
+  ],
+  "modules": [],
+  "powershell": "Stop-Process : �L�k�N�޼�ô���� 'Id' �ѼơA�]�����O Null�C\n��� \\\\wsl.localhost\\Ubuntu\\home\\mg\\Projects\\games\\wiz8-mod\\scripts\\wiz8-run.ps1:66 �r��:45\n+   if (-not $p.HasExited) { Stop-Process -Id $p.Id -Force; Ev \"killed\" ...\n+                                             ~~~~~\n    + CategoryInfo          : InvalidData: (:) [Stop-Process]�AParentContainsErrorRecordException\n    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.StopProcess \n   Command\n \npowershell rc=1",
+  "placed": [
+    {
+      "dst": "ddraw.dll",
+      "sha256": "5c6f6bb7191cfb085c8fd6256a280e80c857c159e2a700c35050097bfe0884d6"
+    },
+    {
+      "dst": "Patches/PATCH.002",
+      "sha256": "0510b60365b7760f54db977c961281c83f2d45275732f9ab4eda0f335c20841d"
+    }
+  ],
+  "shots": {},
+  "ddraw_log": [],
+  "text_log_lines": 0
+}

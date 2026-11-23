@@ -1,0 +1,27 @@
+call	2b6	castableSpellCountAssertion	分析器對 import 的識別值；實際呼叫 0x5ebaf4 的 srAssertFail，要求至少一個可施放法術，非公式子節點。
+call	40efa0	weightedSpellDraw	以可施放槽位權重總和為 R(n) 的 n，依槽位順序逐段減去權重選取法術。
+call	532550	monsterSpellCastEligibility	檢查法術非零、怪物可用旗標、沉默、特殊目標、戰鬥限制，並要求生成的目標清單非空；第三參數固定為 1。
+data	4	無關	堆疊參數與權重指標步長的立即數；不是絕對資料位址。
+data	8	無關	第二個堆疊參數的位置；不是絕對資料位址。
+data	5ebaf4	castableSpellCountAssertionImport	SR.DLL 的 srAssertFail 匯入槽；零可施放項目會停止，不能當成輸出零。
+data	61cc14	monsterSpellSlotWeights	十個模板法術槽的 u32 權重；calc 初始化透過 exe.go 的 peOffset 從玩家 exe 讀取，未內嵌資料表。
+data	61cc3c	spellWeightTableEndAndAssertionSource	權重表結尾位址同時是 assert 的來源檔名字串起點；字串內容不影響選取規則。
+data	61cde4	castableSpellCountAssertionText	無可施放項目的 assert 說明文字；與權重或法術編號無關。
+data	ffffffffffffffac	無關	分析器列出的負堆疊偏移，局部權重總和位置；不是全域資料。
+data	ffffffffffffffb0	無關	分析器列出的負堆疊偏移，局部權重陣列位置；不是全域資料。
+data	ffffffffffffffb4	無關	分析器列出的負堆疊偏移，局部權重陣列初始化位置；不是全域資料。
+data	ffffffffffffffdc	無關	分析器列出的負堆疊偏移，局部法術編號陣列位置；不是全域資料。
+field	ebp+0x0	monsterTemplateSpellSlot	模板 +0x14d 起十個 u8 法術編號，ebp 逐槽遞增；零代表沒有法術。
+field	edi+0x0	monsterSpellSlotWeight	0x61cc14 起對應模板槽位的 u32 權重，只有資格通過的槽位才累加。
+field	M+0x77	silence	怪物沉默狀態，非零時檢查法術 +0x48 與已載入模板 +0xcb 的種類；來源 0x4fb1d0。
+field	T+0xcb	creatureType	沉默例外種類 4、5、13；來源 0x4fb205..0x4fb218。
+field	M+0x344	specialSpellTarget	法術 60 要求此欄為 -1；來源 0x532604..0x532625。
+field	F+0x126	monsterSpellEnabled	法術記錄 stride 447 的怪物施法啟用旗標；來源 0x532587..0x5325a3。
+field	F+0x48	spellVerbalFlag	沉默資格的法術旗標，保留原版非零判斷；來源 0x4fb1ed..0x4fb1fa。
+field	F+0x133	spellCombatUsable	戰鬥中要求此 u32 欄非零；來源 0x532626..0x53263e。
+field	F+0x137	spellTargetRule	案例固定使用合成的座標目標規則 8；0x5340bf 一律加入怪物的座標，未把子呼叫替換成公式樁。
+field	M+0xc	monsterSceneObject	arena 指向座標物件；其 +0x118 起三個 float32 位元由輸入提供，來源 0x4534c0、0x5340c9。
+data	652da4	combatActive	戰鬥情境旗標，供可施放資格判斷。
+data	68f105	regionChecksDisabled	非零時跳過區域限制；案例區域列表為空，零時仍執行原版區域掃描。
+data	65ba5c	regionObjectCount	案例固定為零的區域物件數，沒有區域施法限制；来源 0x48edda..0x48ee23。
+data	652db0	terrainCollisionContext	案例固定空地形碰撞指標，原版 0x420bd0 使用座標高度。

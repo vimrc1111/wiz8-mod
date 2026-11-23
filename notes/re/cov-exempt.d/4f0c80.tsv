@@ -1,0 +1,3 @@
+4f0c80	4f0cde	隊伍行動階段不在 1..100 的防禦性 assert；srAssertFail 停止、無可差分返回，合法狀態不進入（同 4f0480 先例）。
+4f0c80	4f0d62	隊員行動階段不在 1..100 的防禦性 assert；srAssertFail 停止、無可差分返回，合法狀態不進入。
+4f0c80	4f0e19	怪物行動階段不在 1..100 的防禦性 assert；srAssertFail 停止、無可差分返回，合法狀態不進入。

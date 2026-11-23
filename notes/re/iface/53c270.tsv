@@ -1,0 +1,6 @@
+data	4	無關	第一個堆疊參數的位移立即值，非資料表或全域記憶體引用；參數語意為角色槽位索引
+data	685174	partyCharacterRecords	角色主記錄陣列的執行期指標，索引乘 0x1862；本節點讀目前 HP 與主狀態，非 exe 常數表；來源 exe 0x53c293、notes/re/formulas.md:9
+data	685178	partySlotRecords	角色副記錄陣列的執行期指標，索引乘 0x106；本節點讀槽位存在旗標；來源 exe 0x53c27e、notes/re/formulas.md:9
+field	eax+edx*2	slotActive	角色副記錄 +0 的 u8 存在旗標；非零才檢查主記錄，非只接受 1；來源 exe 0x53c283
+field	eax+edx*2+0xb11	currentHP	角色目前 HP，i32；僅零值拒絕，負值仍通過 HP 條件；來源 exe 0x53c29d、0x53c2a4、notes/re/abilities.md:21
+field	eax+0xb01	mainStatus	角色主狀態碼，u32；無號值小於 0x12（18）才可成為目標；來源 exe 0x53c2ab、notes/re/formulas-2.md:72

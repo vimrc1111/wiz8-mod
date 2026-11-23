@@ -1,0 +1,5 @@
+data	685174	角色主記錄陣列	執行期指標；八個角色記錄步長 0x1862，讀取主狀態 C+0xb01 與當前 HP C+0xb11；來源 exe 0x4eee80、0x4eeeb3
+data	685178	角色副記錄陣列	執行期指標；八個角色副記錄步長 0x106，讀取 Q+0 的角色槽有效旗標；來源 exe 0x4eee86、0x4eeead
+field	ecx+0x0	角色主狀態	游標指向 C+0xb01，讀 u32；小於 18 才可分享戰後 XP，來源 exe 0x4eee90、0x4eeea7
+field	ecx+0x10	角色當前HP	游標已偏移 C+0xb01，因此此欄為 C+0xb11；32 位 HP 只排除零，負數位元模式仍計入，來源 exe 0x4eeea0、0x4eeea3
+field	edx+0x0	角色槽有效旗標	副記錄 Q+0 的 u8 旗標；任何非零值代表在場，零值不分享 XP，來源 exe 0x4eee9b

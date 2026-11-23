@@ -1,0 +1,52 @@
+call	2b6	無關	靜態掃描間接呼叫的假目標；實際為 0x5ebaf4 的 srAssertFail，僅診斷不可能的部位索引
+call	4ed2d0	角色防禦／保護姿態資格	戰鬥中依序查姿態 4 與 5，第三參數為零，不改姿態
+call	517ec0	角色隊伍索引	將角色指標轉為隊伍記錄索引供姿態查詢
+call	52a7d0	疲勞等級懲罰	把疲勞碼換為懲罰尺度後除以十扣 AC
+call	547940	種族職業能力判定	查能力 0x16 是否提供固定 AC 加二
+data	4	無關	堆疊／索引位移由靜態資料引用掃描收錄，非資料表位址
+data	4eed68	防具部位槽位分派表	五個部位對應裝備槽，純函數以各分支的槽位常數表達
+data	4eed6c	防具部位槽位分派表第二列	同 0x4eed68 的部位分派表內部位置
+data	5ebaf4	無關	srAssertFail import；僅供部位索引斷言診斷
+data	609b24	無關	斷言訊息字串，不參與 AC 規則
+data	616308	部位命中權重表	五個百分比 byte；calc 執行時讀使用者 exe
+data	616309	部位命中權重第二列	同 0x616308 權重表內部位置
+data	6176b8	無關	斷言來源檔名字串，不參與規則
+data	6177c8	無關	斷言描述字串，不參與規則
+data	683f94	戰鬥中旗標	非零才查防禦或保護姿態
+data	68516c	物品定義陣列	物品索引乘 269，讀種類及有號 AC
+data	fffffffffffffffc	負重最高級 AC 懲罰	負四常數經靜態掃描符號延伸，並非資料指標
+field	eax+0x3e	物品種類	種類 5 歸入盾牌 AC，其餘歸飾品 AC
+field	eax+0x62	物品有號 AC	裝備附加防護值，以 i8 讀取
+field	ebp+0x0	角色天生能力 AC 分項	指向 C+0xe8d，能力 0x16 時加二
+field	ecx+0x0	角色 AC 分項迭代值	C+0xe8d 起累加十二項但略過部位魔法項
+field	ecx+edx*1+0x62	部位防具 AC	物品定義基底加索引乘 269 後讀 i8 AC
+field	edi*4+0x4eed68	部位至裝備槽分派	索引固定零至四，決定頭身手腿腳的裝備槽
+field	edi+0x0	裝備槽物品索引	C+0xf5d 起每十二 bytes 一筆；負一表示空槽
+field	edi+0x616308	目前部位權重	部位 AC 乘此百分比形成加權 AC
+field	esi+0x14d	角色有效速度	80／90 各加一；低於 20／10 各減一
+field	esi+0x169e	角色疲勞等級	交疲勞換算子函數後除十
+field	esi+0x1774	角色魔法 AC 修正	有號 byte，加到 C+0xea1
+field	esi+0x1775	角色部位魔法 AC 修正	有號 byte，加到 C+0xea5；逐部位計入
+field	esi+0x17b5	角色易受攻擊旗標	非零時共同 AC 至多負五
+field	esi+0x17bb	角色效果 AC 修正	有號 byte，加到 C+0xead；具體效果名稱未確定
+field	esi+0x287	角色有效盾牌技能	通常除 25，防禦姿態除 15，並受裝備盾牌 AC 上限限制
+field	esi+0x345	角色有效潛行技能	除十加到技能 AC 分項
+field	esi+0x741	角色 Reflexion 啟用旗標	啟用才計技能 38 的 AC 分項
+field	esi+0x747	角色有效 Reflexion 技能	除二十加一作為獨立 AC 分項
+field	esi+0xb01	角色主狀態	狀態低於 18 才計入角色個人修正
+field	esi+0xbc9	角色負重級別	級別 2／3／4 分別扣一／二／四
+field	esi+0xe85	角色共同 AC	十二分項累加但略過部位魔法，再套易受攻擊上限
+field	esi+0xe89	角色加權 AC	五部位權重總和除百，正負半值均向遠離零方向取整
+field	esi+eax*4+0xf5d	部位裝備槽索引	部位分派選出槽號，再換為十二 byte 裝備記錄
+field	esi+edi*4+0xec1	角色五部位 AC	共同 AC 加部位魔法與該部位防具值
+field	esi+0xe91	角色速度 AC	有效速度門檻分項
+field	esi+0xe95	角色潛行 AC	有效潛行技能除十
+field	esi+0xe99	角色盾牌 AC	種類五的裝備 AC 及盾牌技能加成
+field	esi+0xe9d	角色飾品 AC	非部位且非盾牌裝備的 AC
+field	esi+0xea1	角色魔法 AC	角色魔法有號修正
+field	esi+0xea5	角色部位魔法 AC	共同 AC 求和時略過，逐部位再加
+field	esi+0xea9	角色負重 AC	負重級別懲罰
+field	esi+0xead	角色效果 AC	角色效果有號修正
+field	esi+0xeb1	角色疲勞 AC	疲勞換算值除十後取負
+field	esi+0xeb5	角色防禦姿態 AC	防禦或保護姿態固定加二
+field	esi+0xeb9	角色Reflexion AC	啟用技能 38 時除二十加一

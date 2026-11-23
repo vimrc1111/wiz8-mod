@@ -1,0 +1,9 @@
+FAIL g1-check 00550c10：stubs 沒有 0x4c6c30
+FAIL g1-check 00550c10：setup 仍固定 +0x1dc 位元 0x400（{'object': 'actor0', 'offset': 476}）
+FAIL g1-check 00550c10：setup 仍固定 +0x1dc 位元 0x400（{'object': 'actor1', 'offset': 476}）
+FAIL g1-check 0054fa30：stubs 沒有 0x4c6c30
+FAIL g1-check 0054fa30：setup 仍固定 +0x1dc 位元 0x400（{'object': 'actor0', 'offset': 476}）
+FAIL g1-check 0054fa30：setup 仍固定 +0x1dc 位元 0x400（{'object': 'actor1', 'offset': 476}）
+FAIL g1-check 00545090：stubs 沒有 0x4c6c30
+FAIL g1-check 00545090：setup 仍固定 +0x1dc 位元 0x400（{'object': 'actor0', 'offset': 476}）
+FAIL g1-check 00545090：setup 仍固定 +0x1dc 位元 0x400（{'object': 'actor1', 'offset': 476}）

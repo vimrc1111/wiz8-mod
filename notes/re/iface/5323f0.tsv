@@ -1,0 +1,21 @@
+call	40efa0	boundedRandom	有界亂數 R(n)：以候選行動清單筆數為 n 挑一筆；n 為 0 時不會到此（先已回報空清單）；TestEmu 以錄下的 rng 序列逐次對齊。
+call	5e2870	monsterListGet	取清單第 i 筆：清單為空指標或 i 不小於筆數（有號比較）回零，否則回資料陣列第 i 個指標；i 為 R(筆數) 所以必在範圍內。
+call	5e2c70	monsterListCount	取清單筆數：清單指標為空回零，否則讀清單 +8；零筆時本函式回傳假。
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+field	eax+0x0	candidateAction.type	候選行動 +0x0：行動種類；寫入怪物 +0x2e1，0 與 1 兩種另有後續欄位複製
+field	eax+0x4	candidateAction.attackIndex	候選行動 +0x4：攻擊選擇值；種類 0 與 1 時寫入怪物 +0x2e5
+field	eax+0x8	candidateAction.attackParameter	候選行動 +0x8：額外攻擊參數；種類 0 時寫入戰鬥記錄 +0x11
+field	ecx+0x11	combatRecord.attackKindFrom	戰鬥記錄 +0x11：指定攻擊類別的起點，種類 0 時由候選行動 +0x8 覆寫
+field	ecx+0x16	combatRecord.candidateList	戰鬥記錄 +0x16：候選行動清單指標，由 531ce0 重建後讀筆數與項目
+field	ecx+0x5	combatRecord.attacksRemaining5	戰鬥記錄 +0x5：攻擊次數，旗標非零且種類 0 時寫入模板 +0xe5
+field	ecx+0x9	combatRecord.attacksRemaining9	戰鬥記錄 +0x9：攻擊次數，旗標非零且種類 0 時寫入模板 +0xe5
+field	edi+0x0	monster.targetRecordDest	怪物 +0x2ba 起八個雙字的目標記錄（由 edi+0x2ba 位址進入字串複製）
+field	edi+0x10	monster.combatRecord	怪物 +0x10：戰鬥記錄指標
+field	edi+0x2e1	monster.actionType	怪物 +0x2e1：目前行動種類，挑中候選的種類寫入
+field	edi+0x2e5	monster.attackIndex	怪物 +0x2e5：目前攻擊選擇值，種類 0 與 1 時寫入
+field	edx+0x16	combatRecord.candidateList	戰鬥記錄 +0x16：候選行動清單指標（取筆數與取項目各讀一次）
+field	esi+0x0	candidateAction.targetBlock	候選行動 +0xc 起八個雙字的目標記錄，為字串複製的來源
+field	esi+0xe5	template.attackCount	怪物模板 +0xe5：攻擊次數位元組，旗標非零且種類 0 時寫入戰鬥記錄 +0x5 與 +0x9

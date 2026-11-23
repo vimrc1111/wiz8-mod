@@ -1,0 +1,51 @@
+call	2b6	無關	分析器列出的例外展開輔助目標；正常返回不執行，與縮放規則無關
+call	40efa0	scaleRandom	R(n) 亂數：100 一次（變體判定）、1000 最多五次（尺寸、週期、漂移、擺動）
+call	404b50	無關	週期清單缺項的錯誤訊息格式化，只在週期數為負的非法資料出現，不影響縮放結果
+call	401920	無關	缺項錯誤訊息輸出，只在週期數為負的非法資料出現
+data	5ebaf4	scaleRangeAssert	尺寸下限大於上限的斷言 import，失敗停止而無規則結果
+data	5ebb34	zeroFloat	浮點零，判定尺寸界限是否存在
+data	5ebb38	oneFloat	浮點 1.0，週期縮放下限與最小縮放判定
+data	5ebc40	driftScale500	浮點 500.0，漂移速度換算係數
+data	5ec128	rollToUnit	浮點 0.001，亂數 0..999 換成 0..1 小數
+data	5ec318	twoPi	雙精度 2π，擺動相位換成弧度
+data	60ea10	無關	缺項錯誤訊息的模型名稱指標
+data	60ebfc	無關	分析器列出的資料引用，函式內未讀其內容
+data	60ee2c	無關	斷言與錯誤訊息的來源檔名文字
+data	60eeac	無關	尺寸範圍斷言的說明文字
+data	60eec0	無關	缺項錯誤訊息的格式文字
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	esi+0x1d8	monsterModel	怪物實例指向的模型記錄
+field	esi+0x1be	instanceVariantFlag	實例變體旗標：百分比骰小於模型機率時為 1
+field	esi+0x154	driftX	實例漂移速度 X（浮點）
+field	esi+0x158	driftY	實例漂移速度 Y（浮點）
+field	esi+0x15c	phase	實例擺動相位 0..1（浮點）
+field	esi+0x190	driftXTotal	累計漂移 X，加上本次 driftX
+field	esi+0x194	driftYTotal	累計漂移 Y，加上本次 driftX
+field	esi+0x198	swayValue	driftX 加 driftY 乘相位正弦
+field	esi+0x1cc	scaleCap	實例縮放值，小於 1.0 時寫回模型最小縮放
+field	esi+0x21c	driftLow	漂移 X 隨機下限
+field	esi+0x220	driftHigh	漂移 X 隨機上限
+field	esi+0x224	swayLow	漂移 Y 隨機下限
+field	esi+0x228	swayHigh	漂移 Y 隨機上限
+field	edi+0x610	variantChancePercent	模型變體機率百分比（有號）
+field	edi+0x5f4	sizeMin	模型尺寸下限，零表示不隨機
+field	edi+0x5f8	sizeMax	模型尺寸上限，零表示不隨機
+field	edx+0x5f0	size	隨機得到的模型尺寸
+field	eax+0x600	cycleEnabled	模型動畫週期縮放啟用旗標（位元組）
+field	edi+0x608	cycleMin	週期縮放下界
+field	edi+0x60c	cycleMax	週期縮放上界
+field	edx+0x604	cycleOffset	各週期縮放共同加值
+field	edi+0xc0	cycleCount	週期記錄數（位元組低位決定迴圈次數）
+field	edi+0xc8	cycleRecordTable	週期記錄指標陣列
+field	edi+0x0	無關	週期記錄指標陣列元素的解參考，記錄本身僅寫入其縮放欄
+field	ecx+0x8	cycleRecordScale	週期記錄的縮放值
+field	eax+ebx*4	cycleListEntry	週期縮放清單第 i 項
+field	eax+0xc	cycleListData	週期縮放清單資料指標
+field	eax+0x270	cycleListCount	週期縮放清單項數
+field	edi+0x5c0	無關	缺項錯誤訊息的模型名稱欄
+field	edi+0xa5	無關	索引為 -1 的預設週期編號；迴圈索引永遠不到 -1，該分支不可達
+field	eax+0x5c	minScale	模型最小縮放
+field	eax+0x61	minScaleFlag	模型最小縮放已設旗標

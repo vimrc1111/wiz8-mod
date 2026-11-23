@@ -1,0 +1,25 @@
+call	40efa0	rollPercentDie	百分骰 R(100)：回 0 至 99；小於分類機率才算一次成功
+call	55b9c0	stockListResort	把商人庫存清單依物品排序比較重排：複製條目、qsort、清空並重建清單；calc 逐步重現配置與寫入
+call	5e22c0	stockListNew	建立商人庫存清單（表頭加 40 bytes 資料陣列、容量 10）
+call	5e2870	stockListGet	清單取第 i 個條目指標
+call	5e2c70	stockListCount	清單筆數；清單指標為 0 回 0
+data	4	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	55a798	stockProbabilityJumpTable	switch 跳轉表位址（類別 0 至 4 對應 0、25、50、75、100 百分比的程式塊），非遊戲資料表；機率常數寫在 calc
+data	55a7a8	stockProbabilityJumpTable	同一跳轉表的尾端位址（表內第五項），非遊戲資料
+data	683f78	itemDefinitionCount	物品定義總數：貨單條目物品編號（有號）不小於它就略過
+data	686a48	shopRestockStamp	全域值，結束時寫入商人 +0xe 與 +0x12（補貨時間戳）
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax*4+0x55a798	stockProbabilityJumpTable	以分類為索引的 switch 跳轉（0 至 4 對應 0、25、50、75、100 百分比）
+field	eax+0x2ca	shopOfferList	商店記錄 +0x2ca 的貨單清單指標，為 0 時商人 +0xa 清零並結束
+field	ecx+0x2ca	shopOfferList	商店記錄 +0x2ca 的貨單清單指標（迴圈內重讀）
+field	edi+0x6	merchantShopRecord	商人物件 +0x6 的商店記錄指標
+field	edi+0xa	merchantStockList	商人物件 +0xa 的庫存清單指標；為 0 時建立新清單
+field	edi+0xe	merchantStockStampA	商人物件 +0xe 補貨時間戳（取自全域 0x686a48）
+field	edi+0x12	merchantStockStampB	商人物件 +0x12 補貨時間戳（取自全域 0x686a48）
+field	esi+0x0	offerItemId	貨單條目 +0 物品編號（有號）
+field	esi+0x4	offerQuantity	貨單條目 +4 數量 byte：逐件擲百分骰的次數
+field	esi+0x5	offerFixedFlag	貨單條目 +5 旗標 byte：非 0 時機率固定為 100%，不看物品等級分類

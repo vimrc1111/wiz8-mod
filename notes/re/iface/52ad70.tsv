@@ -1,0 +1,9 @@
+call	517970	healing_dice_roll	以 Z/N/S 骰記錄計算單一角色回復量；每個有效槽獨立消耗 N 次 R(S)，死亡或滿血也先擲骰
+call	52add0	character_hp_heal	將有號骰結果的 32 位元模式交給角色 HP 回復；目前 HP 為零或已滿時保留，其他以無號加法及最大 HP 封頂，並處理受傷事件
+data	4	healingDiceCount_argument	第一個 cdecl 參數低位元組為回復骰數 N；同一立即值也用於子呼叫堆疊回收
+data	8	healingDiceSides_argument	第二個 cdecl 參數低位元組為回復骰面數 S
+data	c	healingDiceBase_argument	第三個 cdecl 參數低 16 位為有號回復基值 Z；同一立即值也用於子呼叫堆疊回收
+data	e	healingDiceCount_packed	局部骰記錄的 N 位元組；分析器的堆疊資料引用，非全域資料表
+data	f	healingDiceSides_packed	局部骰記錄的 S 位元組；分析器的堆疊資料引用，非全域資料表
+data	685178	party_character_slots	角色副表陣列指標；8 個槽，每槽 0x106 bytes，首位元組決定是否擲骰與回復
+field	esi+eax*1	character_slot_occupied	角色副表有效位元組，u8 非零表示該槽有角色；esi 為槽索引乘 0x106，eax 為副表起點

@@ -1,0 +1,19 @@
+call	2b6	無關	srAssertFail 匯入的分析目標；前置條件失敗時停止，沒有正常公式輸出，既有模擬器樁會報錯
+data	5ebaf4	無關	srAssertFail 匯入槽，只供前置條件斷言，沒有公式數值
+data	5ebb34	zeroDistance	f32 零，距離上限須大於零；來源 exe 0x4f0117，非資料表
+data	617974	無關	斷言來源檔名字串，僅供錯誤診斷
+data	6179b0	無關	總移動階段數大於零的斷言訊息；實際檢查只排除零分母
+data	6179cc	無關	隊伍移動距離上限大於零的斷言訊息，非數值來源
+data	6179f0	無關	隊伍移動模式已啟用的斷言訊息，非數值來源
+data	617a0c	無關	隊伍目前行動狀態為移動的斷言訊息，非數值來源
+data	6836a8	partyCombatState	戰鬥資料物件指標；arena 固定接線，供讀取隊伍階段及行動狀態
+data	683fce	partyMovementEnabled	隊伍移動啟用旗標 u8，非零才允許本函式正常返回
+data	683fcf	distanceLimit	隊伍本次移動距離上限 f32，須大於零；輸入以 IEEE754 位元表示
+data	683fd3	distanceMoved	隊伍已累積移動距離 f32，除以上限後先存為 f32；輸入以 IEEE754 位元表示
+data	fffffffffffffff4	無關	分析器列出的負堆疊位移，屬區域暫存配置，非全域遊戲資料
+data	fffffffffffffff8	無關	分析器列出的負堆疊位移，屬區域暫存配置，非全域遊戲資料
+data	fffffffffffffffc	無關	分析器列出的負堆疊位移，屬區域暫存配置，非全域遊戲資料
+field	eax+0x918	partyActionStage	隊伍目前行動狀態 u32，必須為 1（移動）；來源 exe 0x4f00c5
+field	edx+0x8	currentPhase	目前戰鬥階段 u32，計算階段進度分子；來源 exe 0x4f0158
+field	edx+0x910	partyActionMode	隊伍行動模式 u32，零的階段步長 1、非零 10；來源 exe 0x4f0152，與 4f0500 相同
+field	edx+0x914	movementStartPhase	隊伍移動起始階段 u32；總階段為 101 減此值，差值以 i32 作分母，僅零觸發斷言；來源 exe 0x4f014c

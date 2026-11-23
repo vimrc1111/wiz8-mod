@@ -1,0 +1,22 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "a7cc6bf935ce5fdba0f76bb70da8cf81e640dde6a3970f92b8f41917810a84ac",
+  "zh": "I.U.F. 傳送門通行閘。請向 EWAXX 單位出示保全授權。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "a7cc6bf935ce5fdba0f76bb70da8cf81e640dde6a3970f92b8f41917810a84ac",
+  "zh": "I.U.F. 傳送門通行閘。請向 EWAXX 單位出示保全授權。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "88c636ef3be3f80e63a492b16b57d4ab502b35560b922ec463a1126ee83826d9",
+  "zh": "拒絕通行。通行需持有四級保全通行證。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "75e5c37e43a4691b6abb86b95427c698f1278e88cadabb5ea8c917060676a860",
+  "zh": "通行驗證完成。"
+ }
+]

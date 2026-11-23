@@ -1,0 +1,30 @@
+call	40efa0	rand_n	狀態 15 有效且抗性未阻擋時擲 R(100)，門檻為 50 加感知的一半；0x52bed6
+call	4e4db0	monster_hit_visual_response	要求怪物受擊反應動作 20、模式 1；案例的已載入視覺物件正在動作 5，反應鎖定，呈現不影響狀態規則；0x52beb7、0x4e4e21
+call	4e5840	monster_record_from_id	由來源怪物 ID 尋找記錄，要求必須存在；案例列表前置來源記錄及另一筆目標記錄防止誤取
+call	4e6020	monster_pending_response_cancel	目標反應狀態等於 1 時取消為 0；視覺物件 +0x74 非零時保留 responseSuppressed；0x52bf07、0x4e6062
+call	523f40	monster_condition_remove	成功百分骰解除狀態 15；HP 非零才清時間、更新最高有效狀態並重建衍生快取
+call	524110	monster_condition_decay	友方來源且抗性／來源抑制旗標皆零時，狀態 13 時間減一；HP 零不衰減，時間 1 時解除
+call	53bea0	attack_source_is_character	第二參數 0 時僅接受來源類型 1；角色索引不能為空值 -1
+call	53bf10	attack_source_is_monster	第二參數 0 時僅接受來源類型 2；來源怪物 ID 不能為空值 -1
+call	546f10	character_to_monster_disposition	讀選定角色魅惑時間與目標陣營，非零魅惑反轉敵我，回傳 2 才衰減
+call	546f80	monster_to_monster_disposition	任一模板 548 回傳 0；同陣營回傳 2；異陣營再讀模板群系及魅惑時間，只回傳 0 或 1，均不衰減
+data	4	無關	呼叫後堆疊清理量，不是規則資料表
+data	8	無關	呼叫後堆疊清理量，不是規則資料表
+data	c	無關	入口堆疊參數位移或呼叫後清理量，不是規則資料表
+data	61c8ac	無關	來源怪物查找失敗的診斷來源檔名；字串內容不決定狀態回應
+field	edi+0x1b	attack_source_condition_decay_suppression_a	攻擊來源抑制旗標；非零即保留狀態 13 時間，未推定來源種類的更細含義；0x52bf43
+field	edi+0x1c	attack_source_condition_decay_suppression_b	攻擊來源抑制旗標；非零即保留狀態 13 時間，未推定來源種類的更細含義；0x52bf38
+field	edi+0x1e	attack_source_condition_decay_suppression_c	攻擊來源抑制旗標；非零即保留狀態 13 時間，未推定來源種類的更細含義；0x52bf4a
+field	edi+0x4	attack_source_character_index	來源角色的隊伍索引，以 C+0xa35 魅惑時間判定與怪物的敵我關係
+field	edi+0x8	attack_source_monster_id	來源怪物 ID，經原版列表查找取得其陣營與模板
+field	esi+0x0	monster_instance_id	目標怪物 ID；解除／衰減子函式以此重新查找目標，案例目標 123 與来源 789 分開
+field	esi+0x24b	monster_senses	無號 byte 感知，成功百分骰門檻 50+floor(Senses/2)，大於 99 時全部骰值成功
+field	esi+0x2fd	monster_pending_response_state	等於 1 才取消反應為 0，其他值保留
+field	esi+0x8b	monster_charm_duration	狀態 13 的 u32 时间；非零且符合來源條件才嘗試減一
+field	esi+0x93	monster_sleep_duration	狀態 15 的 u32 時間；非零且抗性參數為零時才擲解除骰
+field	monster+0xa3	monster_character_only_condition_duration	狀態 19 時間固定為零：原版怪物重建以空角色 context 呼叫 0x50eac0，此狀態的 0x50ebf0 分支要求有效角色並在 0x517ec5 讀空指標；不宣稱支援帶狀態 19 的怪物
+field	character+0xa35	character_charm_duration	案例按來源角色索引定位此 i32，涵蓋零、負值及有號端點；0x546f29
+field	monster+0x16	monster_disposition	目標與來源各自的無號陣營 byte；0x546f38、0x546f9b
+field	monster+0x8	monster_template_id	目標與來源模板 ID；548 為陣營判定例外，模板由使用者 exe 的已映射結構及案例 arena 載入指標取得
+field	template+0x25f	monster_faction_id	不同陣營時原版讀雙方群系；相同非零群系與魅惑時間決定 0 或 1，兩者皆不減少目標狀態
+field	monster+0x255	monster_response_suppressed	反應取消 helper 的旗標；案例視覺 +0x74 非零，因此保留，列為輸入輸出

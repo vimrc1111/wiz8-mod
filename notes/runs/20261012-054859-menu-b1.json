@@ -1,0 +1,146 @@
+{
+  "run_id": "20261012-054859-menu-b1",
+  "commit": "002edc6acc9e28e84af05a44f34ef836396e8b0f",
+  "scenario": {
+    "id": "menu-b1",
+    "duration": 70,
+    "files": [
+      {
+        "src": "hook/ddraw/out/ddraw.dll",
+        "dst": "ddraw.dll"
+      },
+      {
+        "src": "build/zh/PATCH.002",
+        "dst": "Patches/PATCH.002"
+      }
+    ],
+    "steps": [
+      {
+        "t": 36,
+        "shot": "title"
+      },
+      {
+        "t": 38,
+        "keys": "{DOWN}"
+      },
+      {
+        "t": 39,
+        "keys": "{ENTER}"
+      },
+      {
+        "t": 46,
+        "shot": "party"
+      },
+      {
+        "t": 50,
+        "keys": "{F10}"
+      },
+      {
+        "t": 53,
+        "shot": "menuopen"
+      },
+      {
+        "t": 55,
+        "keys": "{F10}"
+      },
+      {
+        "t": 58,
+        "shot": "menuclosed"
+      }
+    ]
+  },
+  "before_diff": "noise A Saves/Ascension Peak.SAV\nnoise A Saves/Ascension Peak2.SAV\nnoise A Saves/Bayjin Shallows.SAV\nnoise A Saves/Cosmic Circle.SAV\nnoise A Saves/Cosmic Circle2.SAV\nnoise A Saves/Ending.SAV\nnoise A Saves/Ending1.SAV\nnoise A Saves/Ending2.SAV\nnoise A Saves/Ending3.SAV\nnoise A Saves/Ending4.SAV\nnoise A Saves/Ending5.SAV\nnoise A Saves/Ending6.SAV\nnoise A Saves/Ending7.SAV\nnoise A Saves/Import/SAVEGAME.GLB\nnoise A Saves/Import/SAVEGAME.GRL\nnoise A Saves/Import/SAVEGAME.TRA\nnoise A Saves/Import/SAVEGAME.UMP\nnoise A Saves/Jan-Ette.SAV\nnoise A Saves/Mountain Wilderness Retro.Fin.SAV\nnoise A Saves/Mt. Gigas Water Caves.SAV\nnoise A Saves/Quick 1.SAV\nnoise A Saves/Quick 2.SAV\nnoise A Saves/Quick 3.SAV\nnoise A Saves/Rapax Castle Main Level.SAV\nnoise A Saves/light shield.SAV\nnoise A Saves/light sword.SAV\nnoise A Saves/test.SAV\nnoise M Saves/CurrentGame.SAV\nnoise M Wiz8.CFG\nsummary: 27 added, 0 removed, 2 changed, 0 non-noise",
+  "after_diff": "noise M Saves/CurrentGame.SAV\nsummary: 0 added, 0 removed, 1 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [
+    "0.2 start pid=3276",
+    "36.5 shot title rect=-32000,-32000,-31763,-31961",
+    "38.1 input-skipped keys={DOWN} click= foreground-pid=23616",
+    "39.1 input-skipped keys={ENTER} click= foreground-pid=23616",
+    "46.4 shot party rect=-32000,-32000,-31763,-31961",
+    "50.2 keys {F10}",
+    "53.9 shot menuopen rect=0,0,3840,2160",
+    "55.1 keys {F10}",
+    "59.1 shot menuclosed rect=0,0,3840,2160"
+  ],
+  "modules": [],
+  "powershell": "",
+  "placed": [
+    {
+      "dst": "ddraw.dll",
+      "sha256": "460ff1ebc55eb5d542b77a1403dc47a3c04ce45d1a55823b35002d5a1b5edc57"
+    },
+    {
+      "dst": "Patches/PATCH.002",
+      "sha256": "19feeaf3cd09b551b0f9f0630b6c507628b5d90d72384c01f20c358235aa6e7f"
+    }
+  ],
+  "shots": {
+    "menuclosed.screen": {
+      "sha256": "3d06722881a17a1aa729176b9dfb75234892de209457289c0b117cafb41ec97c",
+      "w": 3840,
+      "h": 2160,
+      "mean": 35.09004192360161,
+      "stddev": 30.089930472465625,
+      "uniform": false
+    },
+    "menuclosed.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "menuopen.screen": {
+      "sha256": "f9153190830916ad205fd4356efb2b5095729a6d81b0e9d689bd94ca44d27e4d",
+      "w": 3840,
+      "h": 2160,
+      "mean": 64.8323903635649,
+      "stddev": 53.48917761846676,
+      "uniform": false
+    },
+    "menuopen.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "party.screen": {
+      "sha256": "e3cfcf00f22453416c1762ec4b65c7f6376494c364b9e7c4badd4e008b6ec37f",
+      "w": 3840,
+      "h": 2160,
+      "mean": 32.59794893239386,
+      "stddev": 30.31471758862388,
+      "uniform": false
+    },
+    "party.window": {
+      "sha256": "4ab8bbdf6f3d62072b128e84af047749defecce53958b007ef6a2e6389008fef",
+      "w": 237,
+      "h": 39,
+      "mean": 211.84326171156047,
+      "stddev": 23.76445590625342,
+      "uniform": false
+    },
+    "title.screen": {
+      "sha256": "0a7d91086441ed87dde3c419b7a34ca7b648ae0043390972c71643f2a2ffd701",
+      "w": 3840,
+      "h": 2160,
+      "mean": 32.67307354460708,
+      "stddev": 30.60920943868638,
+      "uniform": false
+    },
+    "title.window": {
+      "sha256": "d8644b3955ba7d49699756e3c534bfac591b69016b43b4eaf72650b4cb3275e1",
+      "w": 237,
+      "h": 39,
+      "mean": 204.91894579681536,
+      "stddev": 41.13561583956638,
+      "uniform": false
+    }
+  },
+  "ddraw_log": [],
+  "text_log_lines": 0
+}

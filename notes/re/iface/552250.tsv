@@ -1,0 +1,19 @@
+call	40efa0	rand_n	兩次 R(n) 組成削減百分比，Rand 重放原呼叫次序
+call	4e5550	monster_index_by_id	依目標怪物 ID 搜尋即時怪物列表；找不到時的診斷不是公式
+call	4e5620	monster_record_by_index	將列表索引解成即時怪物記錄，供模板與有號抗性修正取值
+call	4e5720	monster_template_by_record	依怪物模板索引取得模板的六領域抗性與等級
+data	10	無關	堆疊參數位移／立即值，非規則資料位址
+data	4	無關	堆疊參數位移，非規則資料位址
+data	8	無關	堆疊參數位移，非規則資料位址
+data	c	無關	堆疊參數位移，非規則資料位址
+data	61e2c4	無關	怪物 ID 查找失敗時使用的來源檔名診斷字串，不參與抗性運算
+data	685174	character_records	角色陣列基址；目標角色索引乘記錄長度 0x1862 選取記錄
+field	eax+0x0	target_kind	目標記錄類型；3 是怪物，其餘讀角色記錄
+field	eax+0x4	target_character_index	目標記錄中的角色索引
+field	eax+0x8	target_monster_id	目標記錄中的怪物 ID，交給怪物列表搜尋
+field	eax+0x89	character_total_level	角色總等級 u32，與效果強度之差乘三
+field	eax+0x24f	monster_template_level	怪物模板等級 u8
+field	eax+edi*1+0x176	monster_template_realm_resistance	模板六領域基礎抗性 u8，領域索引 0..5
+field	ebp+0x0	quantity	輸入與回寫的效果量 u32；9999 保留
+field	edx+eax*1+0xee1	character_effective_realm_resistance	角色六領域已合成抗性 u32，領域間隔 16 bytes
+field	esi+edi*1+0x217	monster_runtime_realm_resistance_modifier	怪物六領域即時抗性修正 i8，可為負數，與模板抗性相加

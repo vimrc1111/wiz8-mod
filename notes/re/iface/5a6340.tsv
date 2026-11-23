@@ -1,0 +1,17 @@
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	685178	partyActionSlotTable	全域指標：隊伍成員行動區塊表（每員 0x106 bytes），Q＝[0x685178]+idx*0x106；case 指向 slots 物件
+data	6193b0	無關	結果音效名（0x408860 參數，結果不為 1）；表現層字串位址，calc 只當常數記入樁參數
+data	64c664	無關	結果音效名（0x408860 參數，成功）；表現層字串位址，calc 只當常數記入樁參數
+data	64cf2c	無關	結果音效名（0x408860 參數，法術 0x17 成功且目標物品 +6 非 0）；表現層字串位址，calc 只當常數記入樁參數
+field	eax+ecx*1+0x1	actionSlot.kind	Q+1 行動種類，直接施法寫 7
+field	eax+edx*1+0x5	actionSlot.spell	Q+5 法術 id（notes/re/backstab.md:33 同一欄）
+field	eax+ecx*1+0x9	actionSlot.arg9	Q+9 寫 −1（notes/re/backstab.md:33 同一欄）
+field	eax+esi*1+0x15	actionSlot.powerLevel	Q+0x15 施法 PL
+field	eax+esi*1+0x19	actionSlot.f19	Q+0x19 清 0
+field	edi+0x0	actionSlot.target	rep movs 目的端：Q+0x1d 起 8 dword 目標記錄（自 src 複製）
+field	esi+0x0	spellTarget	rep movs 來源端：參數 src 指向的 8 dword 目標記錄（種類、角色、怪物、群組、座標、物品指標）
+field	edi+0x1c	spellTarget.item	src+0x1c 目標物品指標；法術 0x17 成功時讀其 +6
+field	eax+0x6	item.b6	目標物品 +6 位元組旗標；非 0 時法術 0x17 成功改播 0x64cf2c

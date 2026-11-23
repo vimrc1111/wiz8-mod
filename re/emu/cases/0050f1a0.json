@@ -1,0 +1,3013 @@
+{
+ "cc": "cdecl",
+ "steps": 3000000,
+ "path_limit": 16,
+ "samples": 16,
+ "objects": {
+  "group": 0,
+  "template": 4096,
+  "position": 8192,
+  "party": 12288,
+  "normalList": 16384,
+  "specialList": 20480,
+  "normalEntries": 24576,
+  "specialEntries": 28672,
+  "ids": 32768,
+  "idEntries": 36864,
+  "world": 40960,
+  "battle": 45056,
+  "gridRef": 50000,
+  "forwardHash": 51000,
+  "reverseHash": 52000,
+  "forwardBuckets": 53000,
+  "reverseBuckets": 54000,
+  "forwardRecords": 55000,
+  "reverseRecords": 56000,
+  "groupList": 60096,
+  "specialGroupList": 64192,
+  "groupEntries": 68288,
+  "specialGroupEntries": 72384,
+  "visualManager": 76480,
+  "camera": 80576,
+  "timer": 84672,
+  "monster": 196608,
+  "render": 204800,
+  "renderState": 208896,
+  "unbornList": 221184,
+  "unbornEntries": 221216,
+  "animationEntries": 225280,
+  "animation": 229376,
+  "mesh": 233472,
+  "meshEntries": 237568,
+  "meshNode": 241664,
+  "activeList": 245760,
+  "activeEntries": 249856,
+  "modelPosition": 253952,
+  "modelName": 258048,
+  "emptyEntries": 262144,
+  "visibleList": 270336,
+  "visibleEntries": 274432,
+  "npcList": 278528,
+  "eventModel": 282624,
+  "eventCodes": 286720,
+  "eventIndices": 290816,
+  "eventFrames": 294912,
+  "eventVector": 299008,
+  "decoyTemplate": 303104,
+  "sceneScratchBits": 339968,
+  "sceneCollision": 344064,
+  "sceneMonster": 348160,
+  "cacheNames": 352256,
+  "cacheResources": 356352,
+  "cacheEntry": 360448,
+  "cacheModelPointer": 364544,
+  "fakeVtable": 400000
+ },
+ "args": [
+  0,
+  1,
+  "@position",
+  0,
+  0,
+  1
+ ],
+ "setup": [
+  {
+   "at": {
+    "global": "0x65a0f8"
+   },
+   "size": 4,
+   "value": "@party"
+  },
+  {
+   "at": {
+    "global": "0x683fad"
+   },
+   "size": 4,
+   "value": "@normalList"
+  },
+  {
+   "at": {
+    "global": "0x683fb9"
+   },
+   "size": 4,
+   "value": "@specialList"
+  },
+  {
+   "at": {
+    "global": "0x6598a4"
+   },
+   "size": 4,
+   "value": "@world"
+  },
+  {
+   "at": {
+    "global": "0x68edcc"
+   },
+   "size": 4,
+   "value": "@battle"
+  },
+  {
+   "at": {
+    "object": "normalList",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@normalEntries"
+  },
+  {
+   "at": {
+    "object": "normalList",
+    "offset": 4
+   },
+   "size": 4,
+   "value": 64
+  },
+  {
+   "at": {
+    "object": "specialList",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@specialEntries"
+  },
+  {
+   "at": {
+    "object": "specialList",
+    "offset": 4
+   },
+   "size": 4,
+   "value": 64
+  },
+  {
+   "at": {
+    "object": "world",
+    "offset": 112
+   },
+   "size": 4,
+   "value": 1065353216
+  },
+  {
+   "at": {
+    "object": "world",
+    "offset": 188
+   },
+   "size": 4,
+   "value": "@gridRef"
+  },
+  {
+   "at": {
+    "object": "gridRef",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@forwardHash"
+  },
+  {
+   "at": {
+    "object": "gridRef",
+    "offset": 4
+   },
+   "size": 4,
+   "value": "@reverseHash"
+  },
+  {
+   "at": {
+    "object": "forwardHash",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@forwardBuckets"
+  },
+  {
+   "at": {
+    "object": "forwardHash",
+    "offset": 4
+   },
+   "size": 4,
+   "value": "@forwardRecords"
+  },
+  {
+   "at": {
+    "object": "forwardHash",
+    "offset": 8
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "forwardHash",
+    "offset": 12
+   },
+   "size": 4,
+   "value": 4
+  },
+  {
+   "at": {
+    "object": "forwardBuckets",
+    "offset": 0
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "object": "forwardRecords",
+    "offset": 0
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "forwardBuckets",
+    "offset": 4
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "object": "forwardRecords",
+    "offset": 12
+   },
+   "size": 4,
+   "value": 2
+  },
+  {
+   "at": {
+    "object": "forwardBuckets",
+    "offset": 8
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "object": "forwardRecords",
+    "offset": 24
+   },
+   "size": 4,
+   "value": 3
+  },
+  {
+   "at": {
+    "object": "forwardBuckets",
+    "offset": 12
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "object": "forwardRecords",
+    "offset": 36
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "object": "reverseHash",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@reverseBuckets"
+  },
+  {
+   "at": {
+    "object": "reverseHash",
+    "offset": 4
+   },
+   "size": 4,
+   "value": "@reverseRecords"
+  },
+  {
+   "at": {
+    "object": "reverseHash",
+    "offset": 8
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "reverseHash",
+    "offset": 12
+   },
+   "size": 4,
+   "value": 4
+  },
+  {
+   "at": {
+    "object": "reverseBuckets",
+    "offset": 0
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "object": "reverseRecords",
+    "offset": 0
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "reverseBuckets",
+    "offset": 4
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "object": "reverseRecords",
+    "offset": 12
+   },
+   "size": 4,
+   "value": 2
+  },
+  {
+   "at": {
+    "object": "reverseBuckets",
+    "offset": 8
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "object": "reverseRecords",
+    "offset": 24
+   },
+   "size": 4,
+   "value": 3
+  },
+  {
+   "at": {
+    "object": "reverseBuckets",
+    "offset": 12
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "object": "reverseRecords",
+    "offset": 36
+   },
+   "size": 4,
+   "value": 4294967295
+  },
+  {
+   "at": {
+    "global": "0x6840c7"
+   },
+   "value": "@template",
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x683fb1"
+   },
+   "value": "@groupList",
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x683fbd"
+   },
+   "value": "@specialGroupList",
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x659ab4"
+   },
+   "value": "@visualManager",
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x6598b8"
+   },
+   "value": "@timer",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "timer",
+    "offset": 0
+   },
+   "value": "0x5ec078",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "visualManager",
+    "offset": 68
+   },
+   "value": "@camera",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "groupList",
+    "offset": 0
+   },
+   "value": "@groupEntries",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "groupList",
+    "offset": 4
+   },
+   "value": 64,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "specialGroupList",
+    "offset": 0
+   },
+   "value": "@specialGroupEntries",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "specialGroupList",
+    "offset": 4
+   },
+   "value": 64,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "render",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "0x5ed22c"
+  },
+  {
+   "at": {
+    "object": "render",
+    "offset": 472
+   },
+   "size": 4,
+   "value": "@renderState"
+  },
+  {
+   "at": {
+    "object": "visualManager",
+    "offset": 68
+   },
+   "size": 4,
+   "value": "@camera"
+  },
+  {
+   "at": {
+    "object": "renderState"
+   },
+   "size": 4,
+   "value": "0x5ed200"
+  },
+  {
+   "at": {
+    "object": "animationEntries",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@animation"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 176
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 184
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 192
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 200
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 208
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 216
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 224
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 232
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 240
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 248
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 256
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 264
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 272
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 280
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 288
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 296
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 304
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 312
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 320
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 328
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 336
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 344
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 352
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 360
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 368
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 376
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 384
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 392
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 400
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 408
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 416
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 424
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 432
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 440
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 448
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 456
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 464
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 472
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 480
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 488
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 496
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 504
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 512
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 520
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 528
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 536
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 544
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 552
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 560
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 568
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 576
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 584
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 592
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 600
+   },
+   "size": 4,
+   "value": "@animationEntries"
+  },
+  {
+   "at": {
+    "object": "animation",
+    "offset": 24
+   },
+   "size": 4,
+   "value": "@mesh"
+  },
+  {
+   "at": {
+    "object": "animation",
+    "offset": 28
+   },
+   "size": 4,
+   "value": "@mesh"
+  },
+  {
+   "at": {
+    "object": "animation",
+    "offset": 32
+   },
+   "size": 4,
+   "value": "@mesh"
+  },
+  {
+   "at": {
+    "object": "mesh",
+    "offset": 0
+   },
+   "size": 1,
+   "value": 7
+  },
+  {
+   "at": {
+    "object": "mesh",
+    "offset": 1
+   },
+   "size": 1,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "mesh",
+    "offset": 4
+   },
+   "size": 4,
+   "value": "@meshEntries"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1472
+   },
+   "size": 4,
+   "value": "@modelName"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 616
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 632
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 648
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 664
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 680
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 696
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 712
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 728
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 744
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 760
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 776
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 792
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 808
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 824
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 840
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 856
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 872
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 888
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 904
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 920
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 936
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 952
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 968
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 984
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1000
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1016
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1032
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1048
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1064
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1080
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1096
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1112
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1128
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1144
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1160
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1176
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1192
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1208
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1224
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1240
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1256
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1272
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1288
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1304
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1320
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1336
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1352
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1368
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1384
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1400
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1416
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1432
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1448
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 1464
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "object": "timer"
+   },
+   "size": 4,
+   "value": "0x5ec078"
+  },
+  {
+   "at": {
+    "object": "visualManager",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@visibleList"
+  },
+  {
+   "at": {
+    "object": "visibleList",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@visibleEntries"
+  },
+  {
+   "at": {
+    "object": "visibleList",
+    "offset": 4
+   },
+   "size": 4,
+   "value": 10
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 4
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 8
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 12
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 16
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 20
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 24
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 28
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 32
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 36
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 40
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 44
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 48
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 52
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 56
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "meshEntries",
+    "offset": 60
+   },
+   "size": 4,
+   "value": "@meshNode"
+  },
+  {
+   "at": {
+    "object": "renderState",
+    "offset": 448
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "meshNode",
+    "offset": 312
+   },
+   "size": 4,
+   "value": "0x5ec7c0"
+  },
+  {
+   "at": {
+    "object": "eventModel",
+    "offset": 1076
+   },
+   "size": 4,
+   "value": 2
+  },
+  {
+   "at": {
+    "object": "eventModel",
+    "offset": 1084
+   },
+   "size": 4,
+   "value": "@eventCodes"
+  },
+  {
+   "at": {
+    "object": "eventModel",
+    "offset": 1060
+   },
+   "size": 4,
+   "value": 2
+  },
+  {
+   "at": {
+    "object": "eventModel",
+    "offset": 1068
+   },
+   "size": 4,
+   "value": "@eventIndices"
+  },
+  {
+   "at": {
+    "object": "eventModel",
+    "offset": 976
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "eventModel",
+    "offset": 980
+   },
+   "size": 4,
+   "value": "@eventFrames"
+  },
+  {
+   "at": {
+    "object": "eventModel",
+    "offset": 556
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "eventFrames",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@eventVector"
+  },
+  {
+   "at": {
+    "object": "decoyTemplate",
+    "offset": 591
+   },
+   "size": 1,
+   "value": 99
+  },
+  {
+   "at": {
+    "object": "decoyTemplate",
+    "offset": 192
+   },
+   "size": 1,
+   "value": 1
+  },
+  {
+   "at": {
+    "global": "0x65bdf4"
+   },
+   "value": 1,
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x65bdfc"
+   },
+   "value": "@cacheNames",
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x65be04"
+   },
+   "value": 1,
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x65be0c"
+   },
+   "value": "@cacheResources",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "cacheNames",
+    "offset": 0
+   },
+   "value": "@modelName",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "cacheResources",
+    "offset": 0
+   },
+   "value": "@cacheEntry",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "cacheEntry",
+    "offset": 4
+   },
+   "value": 1,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "cacheEntry",
+    "offset": 12
+   },
+   "value": "@cacheModelPointer",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "cacheModelPointer",
+    "offset": 0
+   },
+   "value": "@render",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "mesh",
+    "offset": 44
+   },
+   "size": 4,
+   "value": "@modelName"
+  },
+  {
+   "at": {
+    "object": "mesh",
+    "offset": 48
+   },
+   "size": 4,
+   "value": "@modelName"
+  },
+  {
+   "at": {
+    "object": "eventModel",
+    "offset": 0
+   },
+   "size": 4,
+   "value": "@fakeVtable"
+  },
+  {
+   "at": {
+    "object": "fakeVtable",
+    "offset": 4
+   },
+   "size": 4,
+   "value": "0x401151"
+  },
+  {
+   "at": {
+    "object": "world",
+    "offset": 404
+   },
+   "size": 4,
+   "value": "@sceneScratchBits"
+  },
+  {
+   "at": {
+    "object": "world",
+    "offset": 84
+   },
+   "size": 4,
+   "value": 1065353216
+  },
+  {
+   "at": {
+    "global": "0x652db0"
+   },
+   "size": 4,
+   "value": "@sceneCollision"
+  },
+  {
+   "at": {
+    "global": "0x689f94"
+   },
+   "size": 4,
+   "value": "@npcList"
+  },
+  {
+   "at": {
+    "global": "0x685174"
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "global": "0x6836a0"
+   },
+   "size": 4,
+   "value": "@emptyEntries"
+  },
+  {
+   "at": {
+    "global": "0x683f84"
+   },
+   "size": 4,
+   "value": 1000
+  }
+ ],
+ "stubs": {
+  "_finite": {
+   "ret": 1,
+   "pop": 0
+  },
+  "GlobalMemoryStatus": {
+   "ret": 0,
+   "pop": 4,
+   "write": [
+    {
+     "arg": 1,
+     "offset": 16,
+     "size": 4,
+     "value": 1048576
+    },
+    {
+     "arg": 1,
+     "offset": 20,
+     "size": 4,
+     "value": 524288
+    }
+   ]
+  },
+  "?getLocationX@srNode@@QBENXZ": {
+   "ret": 0,
+   "st0": {
+    "at": {
+     "object": "camera",
+     "offset": 0
+    }
+   }
+  },
+  "?getLocationY@srNode@@QBENXZ": {
+   "ret": 0,
+   "st0": {
+    "at": {
+     "object": "camera",
+     "offset": 8
+    }
+   }
+  },
+  "?getLocationZ@srNode@@QBENXZ": {
+   "ret": 0,
+   "st0": {
+    "at": {
+     "object": "camera",
+     "offset": 16
+    }
+   }
+  },
+  "?getLocation@srNode@@QBE?AV?$srVector3T@N@@XZ": {
+   "ret": "camera",
+   "pop": 4,
+   "write": [
+    {
+     "arg": 1,
+     "offset": 0,
+     "size": 8,
+     "value": 0
+    },
+    {
+     "arg": 1,
+     "offset": 8,
+     "size": 8,
+     "value": 0
+    },
+    {
+     "arg": 1,
+     "offset": 16,
+     "size": 8,
+     "value": 0
+    }
+   ]
+  },
+  "?getModel@Client@srModel@@UBEPAV2@XZ": {
+   "ret": "eventModel",
+   "pop": 0
+  },
+  "?getWorldSpaceRotation@srNode@@QBEXAAV?$srMatrix3T@M@@@Z": {
+   "ret": 0,
+   "pop": 4,
+   "write": [
+    {
+     "arg": 1,
+     "offset": 0,
+     "size": 4,
+     "value": 1065353216
+    },
+    {
+     "arg": 1,
+     "offset": 4,
+     "size": 4,
+     "value": 0
+    },
+    {
+     "arg": 1,
+     "offset": 8,
+     "size": 4,
+     "value": 0
+    },
+    {
+     "arg": 1,
+     "offset": 12,
+     "size": 4,
+     "value": 0
+    },
+    {
+     "arg": 1,
+     "offset": 16,
+     "size": 4,
+     "value": 1065353216
+    },
+    {
+     "arg": 1,
+     "offset": 20,
+     "size": 4,
+     "value": 0
+    },
+    {
+     "arg": 1,
+     "offset": 24,
+     "size": 4,
+     "value": 0
+    },
+    {
+     "arg": 1,
+     "offset": 28,
+     "size": 4,
+     "value": 0
+    },
+    {
+     "arg": 1,
+     "offset": 32,
+     "size": 4,
+     "value": 1065353216
+    }
+   ]
+  },
+  "?setLocation@srNode@@QAEXABV?$srVector3T@N@@@Z": {
+   "ret": 0,
+   "pop": 4
+  },
+  "_stricmp": {
+   "ret": 0,
+   "pop": 0
+  },
+  "??0srTimer@@QAE@HHH@Z": {
+   "ret": 0,
+   "pop": 12
+  },
+  "?getUTime@srTimer@@UAEKW4e_timerReadControl@1@@Z": {
+   "ret": 0,
+   "pop": 4
+  },
+  "??0srModelInstance@@QAE@PAVsrNode@@@Z": {
+   "ret": 0,
+   "pop": 4
+  },
+  "?getClassNode@srRegistry@@QAEPAVClassNode@1@K@Z": {
+   "ret": "decoyTemplate",
+   "pop": 4
+  },
+  "?registerInstance@srRegistry@@QAEXPAVClassNode@1@PAVsrRuntimeClass@@@Z": {
+   "ret": 0,
+   "pop": 8
+  },
+  "??4srModelInstance@@QAEAAV0@ABV0@@Z": {
+   "ret": 0,
+   "pop": 4
+  },
+  "?setModel@Client@srModel@@UAEXPAV2@@Z": {
+   "ret": 0,
+   "pop": 4
+  },
+  "?setScale@srNode@@QAEXABV?$srVector3T@N@@@Z": {
+   "ret": 0,
+   "pop": 4
+  }
+ },
+ "in": [
+  {
+   "name": "hpBase",
+   "at": {
+    "object": "template",
+    "offset": 214
+   },
+   "size": 2,
+   "signed": true
+  },
+  {
+   "name": "hpDice",
+   "at": {
+    "object": "template",
+    "offset": 216
+   },
+   "size": 1,
+   "signed": false
+  },
+  {
+   "name": "hpSides",
+   "at": {
+    "object": "template",
+    "offset": 217
+   },
+   "size": 1,
+   "signed": false
+  },
+  {
+   "name": "spBase",
+   "at": {
+    "object": "template",
+    "offset": 218
+   },
+   "size": 2,
+   "signed": true
+  },
+  {
+   "name": "spDice",
+   "at": {
+    "object": "template",
+    "offset": 220
+   },
+   "size": 1,
+   "signed": false
+  },
+  {
+   "name": "spSides",
+   "at": {
+    "object": "template",
+    "offset": 221
+   },
+   "size": 1,
+   "signed": false
+  },
+  {
+   "name": "specialMonster",
+   "at": {
+    "object": "template",
+    "offset": 618
+   },
+   "size": 1,
+   "signed": false
+  },
+  {
+   "name": "nextMonsterId",
+   "at": {
+    "global": "0x6874be"
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "positionX",
+   "at": {
+    "object": "position",
+    "offset": 0
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "positionY",
+   "at": {
+    "object": "position",
+    "offset": 4
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "positionZ",
+   "at": {
+    "object": "position",
+    "offset": 8
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "partyX",
+   "at": {
+    "object": "party",
+    "offset": 140
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "partyY",
+   "at": {
+    "object": "party",
+    "offset": 144
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "partyZ",
+   "at": {
+    "object": "party",
+    "offset": 148
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "mode",
+   "at": {
+    "global": "0x68ec78"
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "battleFlags",
+   "at": {
+    "object": "battle",
+    "offset": 244
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "requestedCount",
+   "at": {
+    "arg": 1
+   },
+   "size": 4
+  },
+  {
+   "name": "forceIdentified",
+   "at": {
+    "arg": 3
+   },
+   "size": 1
+  },
+  {
+   "name": "report",
+   "at": {
+    "arg": 4
+   },
+   "size": 1
+  },
+  {
+   "name": "placementMode",
+   "at": {
+    "arg": 5
+   },
+   "size": 1
+  },
+  {
+   "name": "templateFlags",
+   "at": {
+    "object": "template",
+    "offset": 208
+   },
+   "size": 1
+  },
+  {
+   "name": "nextGroupId",
+   "at": {
+    "global": "0x6874ba"
+   },
+   "size": 4
+  },
+  {
+   "name": "worldTime",
+   "at": {
+    "global": "0x686a48"
+   },
+   "size": 4
+  },
+  {
+   "name": "reportEnabled",
+   "at": {
+    "global": "0x689b32"
+   },
+   "size": 1
+  },
+  {
+   "name": "templateId",
+   "at": {
+    "arg": 0
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "nameId",
+   "at": {
+    "object": "template",
+    "offset": 391
+   },
+   "size": 2,
+   "signed": false
+  },
+  {
+   "name": "animationFrames",
+   "at": {
+    "object": "mesh",
+    "offset": 1
+   },
+   "size": 1,
+   "signed": false
+  },
+  {
+   "name": "unbornCount",
+   "at": {
+    "object": "unbornList",
+    "offset": 8
+   },
+   "size": 4,
+   "signed": false
+  }
+ ],
+ "out": [
+  {
+   "name": "groupPointer",
+   "at": {
+    "reg": "eax"
+   }
+  },
+  {
+   "name": "groupId",
+   "at": {
+    "global": "0x50000000"
+   },
+   "size": 4
+  },
+  {
+   "name": "memberCount",
+   "at": {
+    "global": "0x50000004"
+   },
+   "size": 4
+  },
+  {
+   "name": "memberListPointer",
+   "at": {
+    "global": "0x50000008"
+   },
+   "size": 4
+  },
+  {
+   "name": "field0C",
+   "at": {
+    "global": "0x5000000c"
+   },
+   "size": 4
+  },
+  {
+   "name": "field10",
+   "at": {
+    "global": "0x50000010"
+   },
+   "size": 4
+  },
+  {
+   "name": "memberTotal",
+   "at": {
+    "global": "0x50000014"
+   },
+   "size": 4
+  },
+  {
+   "name": "templateIdCopy",
+   "at": {
+    "global": "0x50000018"
+   },
+   "size": 4
+  },
+  {
+   "name": "positionXCopy",
+   "at": {
+    "global": "0x5000001c"
+   },
+   "size": 4
+  },
+  {
+   "name": "positionYCopy",
+   "at": {
+    "global": "0x50000020"
+   },
+   "size": 4
+  },
+  {
+   "name": "positionZCopy",
+   "at": {
+    "global": "0x50000024"
+   },
+   "size": 4
+  },
+  {
+   "name": "presenceFlag",
+   "at": {
+    "global": "0x50000028"
+   },
+   "size": 1
+  },
+  {
+   "name": "field29",
+   "at": {
+    "global": "0x50000029"
+   },
+   "size": 1
+  },
+  {
+   "name": "field2B",
+   "at": {
+    "global": "0x5000002b"
+   },
+   "size": 1
+  },
+  {
+   "name": "identified",
+   "at": {
+    "global": "0x5000002c"
+   },
+   "size": 1
+  },
+  {
+   "name": "field2D",
+   "at": {
+    "global": "0x5000002d"
+   },
+   "size": 1
+  },
+  {
+   "name": "field2E",
+   "at": {
+    "global": "0x5000002e"
+   },
+   "size": 1
+  },
+  {
+   "name": "field2F",
+   "at": {
+    "global": "0x5000002f"
+   },
+   "size": 4
+  },
+  {
+   "name": "monsterIdMark",
+   "at": {
+    "global": "0x5000009b"
+   },
+   "size": 4
+  },
+  {
+   "name": "lastMonsterId",
+   "at": {
+    "global": "0x5000009f"
+   },
+   "size": 4
+  },
+  {
+   "name": "worldTimeCopy",
+   "at": {
+    "global": "0x500000cf"
+   },
+   "size": 4
+  },
+  {
+   "name": "nextGroupIdAfter",
+   "at": {
+    "global": "0x6874ba"
+   }
+  },
+  {
+   "name": "nextMonsterIdAfter",
+   "at": {
+    "global": "0x6874be"
+   }
+  },
+  {
+   "name": "groupListCount",
+   "at": {
+    "object": "groupList",
+    "offset": 8
+   }
+  },
+  {
+   "name": "specialGroupListCount",
+   "at": {
+    "object": "specialGroupList",
+    "offset": 8
+   }
+  }
+ ],
+ "boundary": [
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   12,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   16,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   1,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1,
+   0,
+   1,
+   0,
+   1,
+   0,
+   397,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   16,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   2,
+   0,
+   1,
+   1,
+   16,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0
+  ],
+  [
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   3,
+   0
+  ],
+  [
+   0,
+   2,
+   5,
+   1,
+   1,
+   7,
+   0,
+   1,
+   4096,
+   7,
+   8738,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0
+  ]
+ ],
+ "random": {
+  "seed": 505010,
+  "count": 10,
+  "ranges": [
+   [
+    1,
+    50
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    50
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    5000
+   ],
+   [
+    0,
+    5000
+   ],
+   [
+    0,
+    5000
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    0,
+    3
+   ],
+   [
+    0,
+    1000
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    0
+   ],
+   [
+    396,
+    398
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    0,
+    0
+   ]
+  ]
+ },
+ "description": "怪物群體建立 0x50f1a0：配置並清零群體記錄、取模板、配 id、建成員清單、登記普通／特殊群體清單、呼叫 4e3930 逐隻初始化（最多九隻）、4e3c70 模型載入、通報訊息；失敗路徑回 0。"
+}

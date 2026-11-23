@@ -1,0 +1,437 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "3ce6f4e93d45ca87c9a39c40d1e53e3de4b921d87cab00b68919c328b0f491c5",
+  "zh": "記住，我何時離開由我決定，但只要我與你們同行，就沒人敢傷你們。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "99670c197e30221f3e0eec00f42a5566b290be00e4eb1c42dbf090dccc40524c",
+  "zh": "我就是這樣變得如此強大的！"
+ },
+ {
+  "id": 2,
+  "src_sha256": "3c3b0e7757b45bbe93eaf03c1c2b838bb0c48df371e6afe30719aa3a0527b755",
+  "zh": "我漸漸虛弱了……"
+ },
+ {
+  "id": 3,
+  "src_sha256": "0a17c4bc05bbd915eddcc54e03a7693fe9f58e923b8b5c9e38d68aa150a3e519",
+  "zh": "別讓我死……"
+ },
+ {
+  "id": 4,
+  "src_sha256": "7288fd45669a81037b2b3582a23c8345ae7a3fe4dc0e0dcfb0ad252ac0423c77",
+  "zh": "我們先休息……之後再造成更多傷害！"
+ },
+ {
+  "id": 5,
+  "src_sha256": "56ff1638ea489dcb9db05ea4479564dbb1a754ee88aad5822dc783edd147f7ca",
+  "zh": "我們得治好這個！"
+ },
+ {
+  "id": 6,
+  "src_sha256": "42f45d04376dbe8762a8e1c21c815a1667f3d85affaef876a9e28000f700f8d6",
+  "zh": "我怎麼了？"
+ },
+ {
+  "id": 7,
+  "src_sha256": "befc2c5d383e88df267e2794dd2093cb61a323924bb7e85ad1ef481c296e6ec3",
+  "zh": "魔術師可不能瞎！幫幫我！"
+ },
+ {
+  "id": 8,
+  "src_sha256": "cc282a5078c66e121dbb1956e70e62cddb72f3a6282bd59c8416d0ad1b9fb61b",
+  "zh": "把太多負擔壓在我身上並不明智。那會對我的能力造成不良影響。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "404164debddee8671632d0892bd69c8fe4c86b5aa3e104ddaba1eb25ab15e9dd",
+  "zh": "救命！我可不能一直麻痺！"
+ },
+ {
+  "id": 10,
+  "src_sha256": "da5c2505ef4fe80c8a7421aa6cdc78d66cea6ce556ca2f301a6905b27d127a2c",
+  "zh": "這個我也體驗過。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "16a354fa138ec7d7504c129998219355e41dfa911ecc3e70baae36da495ace3f",
+  "zh": "Rapax 什麼都撐得過去。別為此驚慌。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "d97a01edec9ccd04451c2fc0f832ecb17d7558ff67dc096dca9c13a14712b4ad",
+  "zh": "死亡不過是暫時的小麻煩。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "b58171d3a3fcb844cdcb232d7e676b38903694c6d20cf8284e3ac45e9f227fd9",
+  "zh": "糟透了。我們有兩條路：復仇或接受。我從來不甘於後者。"
+ },
+ {
+  "id": 14,
+  "src_sha256": "58f1c6761daecae23dad9301d4c341e398c6f08d9eaca64de43ee81337891d5b",
+  "zh": "希望你們明白，我的時間有限。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "9b395ada51e40d48d20f52b9a06e157a330a957002787ae80ca26e8e5e625b4b",
+  "zh": "我不認為有什麼東西會來煩我們……尤其是我在這裡的時候。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "f56ddfe056df2e52b43ddff5426b65f61b3c3f0edf84afbeb605d7e96322abfd",
+  "zh": "我深深致歉……"
+ },
+ {
+  "id": 17,
+  "src_sha256": "bcb8dc723911df079ef54fab18972dc2a89a8a94c2b357975dcde3ccc7fa90c0",
+  "zh": "下次給我*小心得多*，免得又打到我！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "2a62877b43fcf979c7fc7df7e358303786882e42bd9cb9d4d3618af568a03eaa",
+  "zh": "如果那些攻擊落在我身上，或許他還救得回來。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "684a3213c727a261d915a8d71aea9baaa0052a459d2dc6ba2c01170c2ed4d04e",
+  "zh": "Rapax 的女性都很強悍——不像這個樣本。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "b82244fd9e2e7472d820b40c6751ba2851b7c6055d78806d60b48dea7a6c3e01",
+  "zh": "你們會注意到，*我*還好好站在這裡。"
+ },
+ {
+  "id": 21,
+  "src_sha256": "d3b7fda2fd8692c9c550238ee64d695d9f65ea76fab4669bebd394fe5bf53c7f",
+  "zh": "我不能再拿我的名聲冒險了！ Rapax 從不容許死這麼多人。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "ebbe16d0fab43240caa34ff0e7ba1bead1c1433dcba2a30b5c6a2756b4791e82",
+  "zh": "你們想要這個東西？"
+ },
+ {
+  "id": 24,
+  "src_sha256": "cef5c053c01e1d80ccf8c9fc112dae0ef287059138183ad671f0abeba2bda00d",
+  "zh": "我發現了什麼。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "94f61964eecfa66c1ebe42b3648429b7278b44d4f301bcbf1cd79bac6acd2102",
+  "zh": "有陷阱！"
+ },
+ {
+  "id": 26,
+  "src_sha256": "49a10a54b485300cb228f6230adb3ade97e2adcde9a72dc26abf031f993a84ef",
+  "zh": "這裡藏著東西。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "e30dd8649830168a06ac8b73396545af5d710b70180b46598855de4bae684cdc",
+  "zh": "我建議你們考慮離開這一帶。這裡很危險……對你們而言。"
+ },
+ {
+  "id": 28,
+  "src_sha256": "f170efb0deefd129ff3899d614d9931480ebdb67b5699d304330e93ae51cdf22",
+  "zh": "這些傷讓我很痛。我必須治好它們。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "2e892888722ce81bae296cecdf1f1f49aff1f255eca676595865b10e6cd62731",
+  "zh": "我們很快就能解決他們……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "7d7daf33996a48a5b2cc1351ee6e050b497a0cd1fbdef28672a7740ce90f2f92",
+  "zh": "我要把他們全燒光！"
+ },
+ {
+  "id": 31,
+  "src_sha256": "803b96b774631923a30cf2158a77556729f0939bc239e50d129325c9c7f41ab2",
+  "zh": "準備受死吧！"
+ },
+ {
+  "id": 32,
+  "src_sha256": "8b25751fee7d9ccfc41232dc9a7f1dde5d83c010c6a725a4c22c5f5d8811fcb1",
+  "zh": "我該打誰？"
+ },
+ {
+  "id": 33,
+  "src_sha256": "c9ad267f82fe3312f1a80f9a652e4fca66139d0c80c81ad9365f3f0fe7199fe6",
+  "zh": "盡管來吧！我不會倒下！"
+ },
+ {
+  "id": 34,
+  "src_sha256": "6bed157f7d9a3a920938a30d3dbe69d9a471e50f442a0d8139b026afb56831e4",
+  "zh": "剛才太險了……"
+ },
+ {
+  "id": 35,
+  "src_sha256": "3385acf75380065493a48b65069216bcefef0123432b7babddc0b54f7cf873b0",
+  "zh": "殺戮確實帶來某種喜悅……"
+ },
+ {
+  "id": 37,
+  "src_sha256": "8ee789c1d04aca2c42bafc702992c9b34dd219ee6b7def69593dc1e739ea032e",
+  "zh": "這場勝利讓我特別愉快！"
+ },
+ {
+  "id": 38,
+  "src_sha256": "4359ca4e5c8fc8160100a963e42297447821e5705c01512c103947955187270b",
+  "zh": "誰在那裡？"
+ },
+ {
+  "id": 39,
+  "src_sha256": "59b7aa61faedbf2a8f5b6458bb8f9fea3cda088d63d070025d181c924fbaf538",
+  "zh": "這個裝置是空的！"
+ },
+ {
+  "id": 40,
+  "src_sha256": "8950cacbfae40dc6a71d0cfdd4edf4cefcf8c2f35d250ae0984712586828c9bb",
+  "zh": "我們會找到他們的。別擔心。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "6f9e43807d90731e268d06c88b6eed960d027ec6bcafb3521475946208871035",
+  "zh": "我們偉大的女神 Al-Sedexus ！現在，我是她的人了！"
+ },
+ {
+  "id": 44,
+  "src_sha256": "0ce540d13a533ae87c82a4112fafaaad0e1c0387aeaf122fcb15c42afb0e8feb",
+  "zh": "失陪……不過也許你們誤會了我先前的話。我現在是她的人了。 Rapax 一旦投身 Al-Sedexus，\t就再也無法離開。 "
+ },
+ {
+  "id": 45,
+  "src_sha256": "47f65d42b261d9d27f95563b662bcbc45fd5c9f5b4ce67b628beb116ea179a59",
+  "zh": "至於你們呢？只因為你們靠近我們的結合，她就會永遠纏著你們，而且這個詛咒無從解除，除非你們殺了她……而這一點，我幫不了你們。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "d0ee5a6ad95541f899b32f1c0e1f1f6f0821a030772bbaeec49648e93c12f765",
+  "zh": "噢，她就在附近！我甜美的女神， Al-Sedexus ！"
+ },
+ {
+  "id": 47,
+  "src_sha256": "07474557e4e361586c4fd9616a9f8f00cd036b48c8baf0af71e770863e5287fe",
+  "zh": "沒用的小玩意！把它交給 Dark Savant 。想要它的人是他！"
+ },
+ {
+  "id": 48,
+  "src_sha256": "c85f9afbc02583eeaf2b7d98eeffaca028731db500c3c0d00b0182e1d4bff9db",
+  "zh": "Destinae Dominus 。對我毫無價值。不過 Dark Savant 會願意出重金把它握在手中。"
+ },
+ {
+  "id": 50,
+  "src_sha256": "41669cc0a6c83d7c68b69bb6d913674c7fce0842d58e1349932409a5472d5336",
+  "zh": "我是否可以建議你們把這個交給 Dark Savant ？尋找它的人是他。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "1f2d9995bea64cc7d9ccd6c41d9cd74d58f126674d2c554cf2b23dd8ab2c3353",
+  "zh": "我辦不到。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "a0d74272348731d7012cb61dca9223da028f04f74eaa7eb8c0339769199a8355",
+  "zh": "騙子！我要把他們點燃！"
+ },
+ {
+  "id": 56,
+  "src_sha256": "e31fbcadcaf8e2a782ebcf478300c99d90ee7b833111ba3d507c5f05cc3c14e1",
+  "zh": "對，這個我要留給自己。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "2467254dc42f0b132078149ad5e7cdaeaae222d1e4625982a2c503d893d1bff4",
+  "zh": "朋友們，那就是你們付錢買的本事！"
+ },
+ {
+  "id": 58,
+  "src_sha256": "fe6c4cfe88fcc8d5e4a6d85949cc155746c3f52a4f5d7dc40a7af0c16d7624ec",
+  "zh": "Vi Domina ……"
+ },
+ {
+  "id": 59,
+  "src_sha256": "2b94580f45b5f84655739ca96c3006ecba637083236f73ca3250a8c36c8e138b",
+  "zh": "他們從這裡看不到我們，更別說打中我們了。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "ea4db65c8ae95b010290f788354c7245baf7316d16965a6045a9b655e074c673",
+  "zh": "他是個極其睿智的存在。"
+ },
+ {
+  "id": 62,
+  "src_sha256": "ef840ccd50ead4ad9d3aa46252cff2fc3c02938e5615b64ec8f680e1a2d63176",
+  "zh": "這個冒牌惡魔是誰！他看起來有部分 Rapax 血統，卻一點也沒有我們的脾性！"
+ },
+ {
+  "id": 63,
+  "src_sha256": "ca0ed9b40b6f471e7b18081a0b09c9d9927f039902e8287915de6c3acaf55d99",
+  "zh": "你們的勝利只是一時的，朋友們。我不認為他在那艘船上。我也提醒你們，像他那種能耐的人，輕易就能再造一艘。"
+ },
+ {
+  "id": 66,
+  "src_sha256": "fecad327c756e1f49aad606ab26929e1ed6e2c51ea73a049dcdf7286a0707e5c",
+  "zh": "你們完成了任務。"
+ },
+ {
+  "id": 67,
+  "src_sha256": "c11f7873d30127cbc54b74024c91f3020ac7975381845612856eca8770a56273",
+  "zh": "這是垃圾……"
+ },
+ {
+  "id": 68,
+  "src_sha256": "1fa5b10e6fa00f1b4fc6b613561eb4ced0937a61a4a9a8eeacf4264e4557507e",
+  "zh": "我發現了一些受害者……"
+ },
+ {
+  "id": 69,
+  "src_sha256": "8aba6a1f4ece336d78e6c655be93e23262d9f409badc116c6cc7a31dfb1fb177",
+  "zh": "看。又是更多生物……"
+ },
+ {
+  "id": 70,
+  "src_sha256": "95203c35846d8e0ff4b4e03afa5b38c54c559721f059b1cbd76a84650106c717",
+  "zh": "樂意之至……"
+ },
+ {
+  "id": 71,
+  "src_sha256": "9de2e1abd0b84753baffae8f1de524a6ce00dbd4ddd6ba0a07a75d4bab26d0ce",
+  "zh": "你們竟敢帶我來這裡。 Dark Savant 掌控著 Arnika ，我不會插手！你們要去就自己去！"
+ },
+ {
+  "id": 72,
+  "src_sha256": "e69fb69614db8ac15756943ab645747e2049ed98da985e411fdf496234d896e6",
+  "zh": "我是否可以建議你們獨自去 Trynton ？ Rapax 的名聲會先一步傳到。你們瞧，對我們來說， Trynnie 可是相當美味的佳餚！而他們似乎對這點有點意見。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "d7b78047ab46bfffc96e28de05ba7bbe5d3136f31c06a611d090f5e70c5712a8",
+  "zh": "是的，我非常好奇，想多看看住在這裡的這些 T'Rang 。 Dark Savant 對他們可是另有打算呢！"
+ },
+ {
+  "id": 74,
+  "src_sha256": "52d57fa9f248c86a9a72a33c165ef802c1834d366a938467f96ca8860f6ee4c9",
+  "zh": "我不會再往前走了。你們想帶我去鬧鬼的洞窟。你們說什麼都改變不了我的心意！"
+ },
+ {
+  "id": 75,
+  "src_sha256": "e036165584922833a0d457bd4fb85f83bc444b174d41e2f6bab4b13814f12f29",
+  "zh": "這些長角的傢伙真怪！依我看，他們打的是一場必敗的仗！我聽 Dark Savant 談起過他們。他們對他或對我都構不成威脅。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "00cd6b775e71f6e05cd32f29314bdd88d983fd4ecd80c4c15cb9ce4eb158d237",
+  "zh": "Dominus 上最美麗的地方！ Rapax Rift ！"
+ },
+ {
+  "id": 77,
+  "src_sha256": "8f2d0fabf524133bc5d4691ba16d4255e062dee46f5b667fe72a79cedb559004",
+  "zh": "所有城堡中最壯麗的一座！"
+ },
+ {
+  "id": 78,
+  "src_sha256": "ded32dca090b72dc9d12f474e717354837d8201d614272c1270889e797ff886c",
+  "zh": "我不會進入 Bayjin 。傳言那裡有比我更危險的生物。你們自己去吧……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "a886d32c46fbe2db49337b0ba25d0081ae4fe0c6ff4e7956fde65ad31fc8401c",
+  "zh": "與你們同行是我的榮幸，但我不會再走下去了，不去 Ascension Peak 。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "14332d6dd4a7f3d4d64d9c57870ba7048d34fd9af2d6b2de00f242365310d966",
+  "zh": "多麼骯髒的地方……小心這裡的陷阱。這裡正適合設陷阱，而把這裡當家的那個老 Crock 正是會設陷阱的那種人！"
+ },
+ {
+  "id": 82,
+  "src_sha256": "766f25c6d1ae0b3c6c3acf0dc82b7c9121393e9813e5e7e89a1af590e70dded4",
+  "zh": "我不知道你們認為自己在這裡有什麼目的。這是我們國王的領地。我可不能被人看見跟你們一起走進他的營地！現在就回頭，否則我就離開。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "040baf7e221db73848a754059ed3ef9455420671cdbd46278a74dcf46aaeac89",
+  "zh": "我與你們同行的時間到期了。我保證，這相當有趣。祝你們一路順風，朋友們。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "b8d6b8c7ba0d4de5ae149f87aff02cdabc333f81b2786852ff44cc9d97a80d67",
+  "zh": "噢不，我現在可不離開你們！是你們把我帶來的，就得由你們帶我出去！"
+ },
+ {
+  "id": 85,
+  "src_sha256": "3f087a2a079594c149b0fedd3adc092f62d861e46a7621c62897470754828b38",
+  "zh": "我的狀況好轉了……但還沒有完全康復。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "2997e6bed998cc01ff283d0e3b5b5797b56a48057559539e1a1d599f4b08b37a",
+  "zh": "我已經戰勝了這場病。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "2bed1a7cf0fe5099dacbd204e3400f10d443123daf4f1bc43504a1aa39d588fd",
+  "zh": "我傾向認為你們是故意弄傷我，好讓我違背意願來到這裡！我要立刻離開這裡！"
+ },
+ {
+  "id": 88,
+  "src_sha256": "1e6ee85d34700a7dbd9c1e5683618b511620516dccc7d78893b664d67d953629",
+  "zh": "我對你們越來越不耐煩了……"
+ },
+ {
+  "id": 89,
+  "src_sha256": "cbc00091a03e4f5324debafa7a3168bac31a190c1d3a92e0f27b2424991809b4",
+  "zh": "我們為什麼還待在這裡！？！"
+ },
+ {
+  "id": 92,
+  "src_sha256": "8f4810b1c2b0712f44830fc8a00670ae2a7ec5bb330546f4df2fd5ec94b8565b",
+  "zh": "派你們的人上前來！你們不知道自己錯過了什麼。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "944c9da522fedb836d82f100d7505334ae2cf63b035e4bfe93ce6b39b076f33d",
+  "zh": "想都別想。我的東西就是我的。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "ffea893bf95f7cee0e997596686516d0c3477833a8471ed7b5de71aa830a886e",
+  "zh": "我說過了，這一帶不是我願意走的地方。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "b4f372e3fa5ccd6fc018a60f6bae80aefd1e368a4a0bfc3eca4024aaa6f36166",
+  "zh": "所以那就是 Umpani 的領袖？嗯。我對他的印象改觀了。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "165df7a5d0083902f93e570b5b2d7d916cba07347516fa91e6bad9f36098f50b",
+  "zh": "T'Rang 的領袖比 Dark Savant 讓人以為的有趣得多，也文明得多。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "8de7e66edca8e43330550a64a33749c9d2909f3468727880da301413922726c8",
+  "zh": "我從 Antone 那裡聽說了很多關於他的事。他對這些 Cosmic Lords與 Ascension 瞭若指掌。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "2038e5532b23112bb439221cd8baf59c6d798aabec7956293d8e58d2fef00dcb",
+  "zh": "我懷疑這個裝置執行著某種任務……"
+ },
+ {
+  "id": 99,
+  "src_sha256": "913027ac32543b05d24093908c2e250b9465e1f6de842aec9ee0d4f907253a4b",
+  "zh": "我不會談論她的死。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "c4b0256f051930bbf8f361443ec4e48aa8dde49b2354675cbdd5d5bb52d3ec67",
+  "zh": "Helm of Serenity ？嗯。所以它真的存在……"
+ }
+]

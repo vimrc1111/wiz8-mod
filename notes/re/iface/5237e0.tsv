@@ -1,0 +1,22 @@
+call	2b6	無關	掃描器的非函式呼叫目標；實際指令是在場副表為零時的 srAssertFail 間接呼叫，防禦性診斷，合法角色不進入。
+call	55ee30	partyPanelRefreshMark	介面模式 6 對顯示物件旗標併入 0x100；模式 7 對戰鬥物件併入該角色位元；其餘模式不做事。本函式內重現。
+call	562a50	markCombatInterfaceRefresh	模式 7 且戰鬥物件非空時對其 +0xf4 併入遮罩；本函式先併入角色位元，結尾再併入 0x200000 與 0x8000。本函式內重現。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import 槽；只在在場副表為零時呼叫，合法案例到不了。
+data	61a710	無關	斷言訊息字串位址，只供診斷停止時顯示，不影響規則輸出。
+data	61ad64	無關	斷言來源檔名字串位址，只供診斷停止時顯示，不影響規則輸出。
+data	6836a8	combatFormationHolder	戰鬥用隊形的持有物件指標；戰鬥旗標非零時第三份隊形在其 +0x920；case 以 arena 物件接線。
+data	6836b8	portraitRecords	角色呈現記錄陣列基址；每筆 280 bytes，按角色編號尋址；+0x8d 是表情編號、+0x99 是 52f000 清零的旗標。
+data	683745	portraitExpression	呈現記錄 +0x8d（陣列基址加 0x8d）；表情編號，2 表示狀態 0xf 以上的樣式；八筆各自為 case 輸入與輸出。
+data	683f94	combatActive	戰鬥中旗標 u8；非零時另外對兩份戰鬥隊形重做隊形維護；亦為 case 輸入。
+data	683feb	secondFormation	第二份隊形表基址（戰鬥旗標非零時才維護）；52 個隊形欄位為 case 輸入與輸出。
+data	685174	partyCharacters	角色記錄陣列基址；八筆、步長 0x1862；arena 接線。
+data	685178	partyPresence	角色在場副表基址；每筆步長 0x106，首 byte 零即斷言停止；case 八筆皆在場。
+data	687511	partyFormation	隊伍隊形表基址（每次必維護的第一份）；52 個隊形欄位為 case 輸入與輸出；亦是 554e70 比對通知旗標的位址。
+data	68ec78	interfaceMode	介面模式 u32；6 與 7 觸發面板標記，其他不動；亦為 case 輸入。
+field	eax+edx*2	partyPresenceByte	在場副表按角色編號（步長 0x106）尋址，首 byte 零走斷言；case 固定為 1。
+field	ebp+0x8d	portraitExpressionField	呈現記錄的表情編號 u32；與 2 比較決定是否呼叫 52f000；亦為 case 輸入與輸出。
+field	ecx+0x0	stateSlotScan	角色 +0xa01 起的 20 個 u32 狀態槽，自索引 0x13 向下掃描，找第一個非零。
+field	edx+0x0	primaryConditionWrite	掃描結果（最高非零槽索引，全零為 0）寫入角色主狀態 +0xb01。
+field	esi+ecx*1+0xb01	oldPrimaryCondition	覆寫前的角色主狀態，只與 0x12 比較決定是否重算共用負重。
+field	esi+edx*1+0xb01	newPrimaryCondition	覆寫後的角色主狀態；與 0x12、0xf 比較，決定負重重算與表情。

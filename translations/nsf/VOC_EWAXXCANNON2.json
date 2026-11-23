@@ -1,0 +1,27 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "59872fef1e5d65878f4fbadea8d6d5f00e6c77f2af17cd69b3af37058610dded",
+  "zh": "目標：BLACK SHIP\n 位置：已摧毀\n 狀態：已摧毀\n 命中機率：無\n 損傷機率：無\n"
+ },
+ {
+  "id": 3,
+  "src_sha256": "f887175ce0b01576d20031046f982d93b3b6cc600a7b3ca0881c8387d01a82bf",
+  "zh": "目標：BLACK SHIP\n 位置：不明\n 狀態：追蹤訊號於源頭遭干擾\n 命中機率：0%\n 損傷機率：0%\n"
+ },
+ {
+  "id": 5,
+  "src_sha256": "90f4634815dceb3d0526eaf2e7e631564481f73c480681e5a9fd049fbbbe8023",
+  "zh": "已收到軌道座標。\n 追蹤中……\n 目標已鎖定。\n 開始發射程序。\n"
+ },
+ {
+  "id": 6,
+  "src_sha256": "22581f4e662c11ad334f4d6b06acc27ca6f9f6dc1ccec79eb1c8dc7a2ccb9515",
+  "zh": "……3\n ……2\n ……1\n ……發射"
+ },
+ {
+  "id": 8,
+  "src_sha256": "37f43ddf94c4847e0c05ed6e6224fd6df8c35b37dc8db2ccbd28bf6f310aea2d",
+  "zh": "目標——BLACK SHIP——已摧毀。確認無誤。"
+ }
+]

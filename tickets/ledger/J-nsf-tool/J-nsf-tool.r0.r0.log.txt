@@ -1,0 +1,19 @@
+ok  	wiz8-mod/tools/atlas	0.602s
+ok  	wiz8-mod/tools/fitcheck	0.025s
+ok  	wiz8-mod/tools/hashdir	0.015s
+--- FAIL: TestFixtureDecode (0.00s)
+    nsf_test.go:134: decode exit 2：/tmp/TestFixtureDecode1425827381/001/in.nsf: 未實作
+--- FAIL: TestFixtureRoundTrip (0.00s)
+    nsf_test.go:142: decode exit 2：/tmp/TestFixtureRoundTrip2769076717/001/in.nsf: 未實作
+--- FAIL: TestEncodeResizes (0.00s)
+    nsf_test.go:146: decode exit 2：/tmp/TestEncodeResizes1018982871/001/in.nsf: 未實作
+--- FAIL: TestRealAll (0.05s)
+    nsf_test.go:253: decode exit 2：/tmp/TestRealAll2865546403/001/in.nsf: 未實作
+FAIL
+FAIL	wiz8-mod/tools/nsf	0.073s
+ok  	wiz8-mod/tools/shot	0.013s
+ok  	wiz8-mod/tools/slf	51.462s
+ok  	wiz8-mod/tools/strings	0.044s
+ok  	wiz8-mod/tools/strlib	0.184s
+ok  	wiz8-mod/tools/trcheck	0.058s
+FAIL

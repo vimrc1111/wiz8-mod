@@ -1,0 +1,47 @@
+call	2b6	無關	登記器把 assertion 的 IAT 間接呼叫（0x5ebaf4）誤列為相對目標，實際為 srAssertFail；只在 0x5021e3 assert 塊呼叫，該塊走不到（cov-exempt），calc panic。
+call	41f010	sceneMotionActive	場景物件 *0x652dac：null 或旗標 dword bit0 清 → 0；否則 +0x88／+0x8c／+0x90 任一 float 與 0.0f 比較為不等且有序（非 ±0、非 NaN）→ 1；自動休息需為 0；模擬器原樣執行，calc 以 scenePtr／sceneFlags／sf88／sf8c／sf90 重現。
+call	41f070	sceneRestAllowed	場景物件 *0x652dac：null → 0，否則旗標 dword bit4；自動休息需為 1；模擬器原樣執行，calc 重現。
+call	482750	restWakeValueSet	把參數 dword 寫入 0x60a390；本節點醒來時固定 0x41400000（12.0f）；模擬器原樣執行，輸出 o60a390。
+call	4e7ca0	anyPartyMemberEligible	成員 0..7 依序呼叫 0x524a10（characterActionEligibilityNode），任一成立回 1；自動休息前提為 0、醒來需為 1；模擬器原樣執行，calc 以 characterActionEligibilityNode 逐人重現（pres／hp／b01_）。
+call	561440	noTransientUiFlags	byte 0x683f94..0x683f99 全為 0 時回 1；自動休息需為 1；模擬器原樣執行，calc 重現（g683f94..g683f99）。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	斷言失敗處理的匯入位置；只在走不到的 0x5021e3 assert 塊呼叫。
+data	619844	無關	0x48fc10（排除）第 1 參數的常數位址，原樣轉交；位址樁記錄 a48fc10_1。
+data	619850	無關	assert 訊息字串位址（0x5021e3 塊），該塊走不到。
+data	619864	無關	assert 原始檔名字串位址（0x5021e3 塊），該塊走不到。
+data	652da4	environmentDrainEnabled	byte；非零（且非戰鬥或規則 tick 非零）才累積 0x6875a6 並呼叫 0x5044d0，否則清 0x6875a6／0x6875a3／0x687608；case 輸入 g652da4。
+data	6598bc	無關	0x43aa20（排除，thiscall）的 this 指標來源；模擬器無法記錄 ecx，非公式資料。
+data	6836b8	portraitRecords	肖像記錄陣列（每筆 0x118 bytes，成員 0..7）；休息時對出席成員呼叫 0x52f000(記錄, 2)：+0x99 := 0、+0x8d := 2；case 輸入 p8d_*／p99_*，輸出 op8d_*／op99_*。
+data	6837d0	無關	肖像記錄陣列內的掃描邊界引用（記錄 1 的 +0x118 位置），非獨立資料。
+data	683f78	無關	肖像記錄迴圈的結束位址（0x6836b8 + 8×0x118），非獨立資料。
+data	683f94	combatActive	byte；非零時汲取固定 4 tick（規則 tick 非零才走）、0x6875f3 清零並跳過自動休息；case 輸入 g683f94。
+data	683fc5	restInProgress	byte；非零時跳過自動休息直接檢查醒來，休息開始時寫 1；case 輸入 g683fc5，輸出 o683fc5。
+data	683fc6	restNotifiedFlag	byte；休息開始且無人可行動時寫 1，醒來的前提之一；case 輸入 g683fc6，輸出 o683fc6。
+data	683fc7	restWakeTime	休息結束時刻 dword，休息開始時清 0；case 輸入 g683fc7，輸出 o683fc7。
+data	683fcb	restPhase	word；休息開始寫 0，等於 1 且條件成立時醒來並寫 2；case 輸入 g683fcb，輸出 o683fcb。
+data	683fd7	無關	0x52db30（排除，thiscall）的 this 指標來源；模擬器無法記錄 ecx，非公式資料。
+data	6840bc	inputModeActive	byte；休息開始時非零就先呼叫 0x56aab0（排除）離開輸入模式；case 輸入 g6840bc。
+data	685071	ruleTickSuspended	byte；非零時不累算規則 tick 除法，ebx 取未初始化的區域 dword（case 輸入 junk = 堆疊參數 -4）；case 輸入 g685071。
+data	6850b0	無關	休息開始時寫 0 的 dword（呈現狀態）；case 輸入 g6850b0、輸出 o6850b0 以涵蓋寫入。
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）；物品槽 +0xf5d／+0x1029、+0xb01／+0xb11（經 0x524a10）；case 夾具。
+data	685178	partyPresenceBase	出席記錄陣列基址（每人 0x106 bytes，byte +0 出席）；case 夾具，輸入 pres*。
+data	685191	partyPackFirstItem	隊伍共用背包第一槽物品編號（每槽 12 bytes，容量 500）；編號 0x266 的槽每小時呼叫 0x51e920(槽, 小時數)；case 輸入 pack*。
+data	68519d	partyPackFirstItem	Ghidra 把第二筆記錄位址（0x685191+12）當資料引用，與 685191 同表。
+data	686901	partyPackCount	共用背包筆數 u32，每次迭代重讀；case 輸入 packN，夾具上限 500（表容量），calc 超過即 panic。
+data	686a48	gameClock	遊戲時鐘（秒）dword；加上 (0x686a4c+dt)/1000；case 輸入 g686a48，輸出 o686a48。
+data	686a4c	gameClockMillis	時鐘毫秒餘數 dword；(舊值+dt)%1000；case 輸入 g686a4c，輸出 o686a4c。
+data	6874fb	ruleTickAccumulator	規則 tick 累加器 dword（ms）；每 120000 呼叫 0x502d00 一次並扣除；case 輸入 g6874fb，輸出 o6874fb。
+data	68750d	hourAccumulator	小時累加器 dword（ms）；每 3600000 對物品 0x266 呼叫 0x51e920 並扣除；case 輸入 g68750d，輸出 o68750d。
+data	6875a3	drainNoticeShown	byte；0x5044d0 的通知旗標，非零阻止自動休息，清除分支寫 0；case 輸入 g6875a3，輸出 o6875a3。
+data	6875a6	drainAccumulator	環境汲取累加器 dword（ms）；每 2500 一 tick 交 0x5044d0，戰鬥固定扣 4×2500；case 輸入 g6875a6，輸出 o6875a6。
+data	6875f3	recoveryAccumulator	體力恢復累加器 dword（ms）；每 1400 一 tick 交 0x504670，戰鬥中清零；case 輸入 g6875f3，輸出 o6875f3。
+data	687608	drainElapsed	0x5044d0 的累計 tick dword，清除分支寫 0；case 輸入 g687608，輸出 o687608。
+data	68c09c	restTextTable	文字表物件指標；+0x1e50 為休息通知字串指標（交 0x58ac00），+0x1e40 只在走不到的 0x50232e 讀；case 夾具，鄰欄放誘餌。
+data	fffffffffffffff4	ruleTickCountLocal	入口 esp-0xc 的區域 dword：0x685071 清時存規則 tick 數 n，設時直接讀它（未初始化），小時迴圈後重載回 ebx；case 輸入 junk（堆疊參數 -4，協調者 2026-10-11 核准）。
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+ecx*1	partyPresence	出席記錄 byte +0（*0x685178 + 0x106×m），小時物品迴圈只掃出席成員；case 輸入 pres*。
+field	ecx+0x1e40	無關	文字表 +0x1e40 通知字串指標，只在走不到的 0x50232e 塊讀取（cov-exempt）；case 放誘餌。
+field	edi+eax*1	partyPresence	出席記錄 byte +0，休息時只對出席成員呼叫 0x52f000；case 輸入 pres*。
+field	edx+0x1e50	restTextStart	文字表 +0x1e50 休息開始通知字串指標，交 0x58ac00 第 2 參數；case 輸入 t1e50。
+field	esi+0x0	itemSlotId	12-byte 物品槽 dword +0 物品編號；等於 0x266 才呼叫 0x51e920；case 輸入 it*_*／pack*。

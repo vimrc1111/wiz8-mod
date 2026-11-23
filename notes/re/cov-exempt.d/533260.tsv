@@ -1,0 +1,1 @@
+533260	5332cb	防禦性 srAssertFail 專屬分支：沒有任何可施放法術時觸發，模擬器按 notes/re/emu.md 的 assert 規約停止，不產生完成路徑；正常呼叫端在已有可施放項目時才選取（build/decomp/cand-b06.c 的 00531540 呼叫情境）。

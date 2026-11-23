@@ -1,0 +1,31 @@
+call	2b6	無關	抽取器把偏移當成呼叫目標；低於 PE ImageBase，並非遊戲函式（同 4e4280 的處理）
+call	40efa0	rand_n	一次 R(100) 與限幅後的抵抗門檻比較；Rand 重放原呼叫次序
+call	4e5550	monster_index_by_id	依目標記錄的怪物 ID 搜尋即時怪物列表；找不到時的診斷不是公式
+call	4e5620	monster_record_by_index	將列表索引解成即時怪物記錄（狀態字、抗性修正、難度類別所在）
+call	4e5720	monster_template_by_record	依怪物記錄的模板索引取得模板的六領域抗性與等級
+call	5179d0	clampSigned	把有號門檻限制在 5 至 95；calc 內聯
+call	553f10	natural_skill_growth	抵抗成功且角色技能成長旗標非零時，對該角色呼叫（技能 0x24、重複 2、安靜 0）；D4 公式節點，case 以位址樁記錄引數與呼叫次數，輸出不被本節點讀回，calc 照同規則算出引數與次數
+call	55cc00	difficulty	角色路徑依難度與角色反轉狀態把門檻乘 140% 或 60%，就地改寫門檻；D4 公式節點，case 以位址樁換掉，寫回值取自 case 輸入，calc 的 F 另行呼叫 difficultyNode
+call	55ccb0	difficulty_adjust_monster	怪物路徑依怪物難度類別欄與難度全域把門檻乘 60% 或 140%；非公式輔助子程序，emu 原生執行，calc 內聯重現（32 位元乘積後有號除 100）
+data	4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；目標種類不是角色或怪物、角色索引為 -1 時停止，沒有可差分的返回，合法輸入走不到
+data	6172a0	status_resist_bonus	依狀態碼索引的有號 32 位元加值表（每項 4 bytes），加進抵抗門檻；執行時從使用者自己的 Wiz8.exe 讀，不內嵌
+data	6191e0	無關	角色索引為 -1 時 assert 使用的訊息字串，不參與抵抗運算
+data	61e2c4	無關	assert 與怪物查找失敗診斷用的來源檔名字串，不參與抵抗運算
+data	61e380	無關	目標種類不是角色或怪物時 assert 使用的訊息字串，不參與抵抗運算
+data	685174	character_records	角色陣列基址；角色索引乘記錄長度 0x1862 選取記錄
+field	edi+0x0	target_kind	目標記錄類型；3 是怪物、1 是角色，其餘 assert
+field	edi+0x4	target_character_index	目標記錄中的角色索引；-1 assert
+field	edi+0x8	target_monster_id	目標記錄中的怪物 ID，交給怪物列表搜尋
+field	eax+0x89	character_total_level	角色總等級 u32，與效果強度之差乘三
+field	edx+eax*1+0xee1	character_effective_realm_resistance	角色六領域已合成抗性 u32，領域間隔 16 bytes
+field	eax+0xb01	character_primary_state	角色主狀態字 u32；無號 >= 0x12 時不擲骰直接抵抗
+field	eax+0x6f5	character_skill_growth_flag	角色技能成長旗標 u8；抵抗成功且非零時呼叫技能成長
+field	eax+0x24f	monster_template_level	怪物模板等級 u8
+field	eax+ebp*1+0x176	monster_template_realm_resistance	模板六領域基礎抗性 u8，領域索引 0..5
+field	esi+ebp*1+0x217	monster_runtime_realm_resistance_modifier	怪物六領域即時抗性修正 i8，可為負，與模板抗性相加
+field	esi+0x107	monster_primary_state	怪物主狀態字 u32；無號 >= 0x12 時不擲骰直接抵抗
+field	edx*4+0x6172a0	status_resist_bonus_entry	狀態碼索引的加值表項（0x6172a0 表）

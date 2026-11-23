@@ -1,0 +1,507 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "7c0df5f4605951e7f5d8e2a5da711df167355f839dfe694f884f2ce391e5da96",
+  "zh": "終於！我還以為你們不會來了。來，在火堆旁坐下吧。我等著跟你們談話，已經等了非常、非常久了……"
+ },
+ {
+  "id": 1,
+  "src_sha256": "a81ae3d55e4a8463ee69fe1b7835635f96a33c00b21004e2423ed57519d15e0d",
+  "zh": "很高興再見到你們。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "75f4e2163f8b49d1448314ee444dd75690b6fad50ffb20c915f075fd4d57f62c",
+  "zh": "曾經，我想與你們合作。現在，我不想再見到你們……"
+ },
+ {
+  "id": 3,
+  "src_sha256": "48723479063580576ad2d27c499ab32ebeabdf72cef5cb7da75533506c53b6b5",
+  "zh": "這對你們沒有用處……"
+ },
+ {
+  "id": 6,
+  "src_sha256": "451b8d52cdd3c46ba2827fdaf9e7e06c5c56ef9bec549c7ff9dd002f4ff4b608",
+  "zh": "你們對我構不成威脅。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "a66497afd559393f0dbe24c3032e287deb6da397e4f670df14b9a23924c1e5aa",
+  "zh": "金錢對我毫無意義。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "43a95113e98485888c0714e2f416ea831da44f793dea77fb12c8aca342b90f8f",
+  "zh": "這是你們的戰鬥，不是我的。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "5fcd756b8d316ec6e255d85d5c03751550947b5d68dacd2e69992425552d9f5e",
+  "zh": "我們會合作……但時機尚未成熟。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "95ebae39003d0fd4db6963d3bdf4804a32fad9a1f55a6693835104c915ea66e1",
+  "zh": "你們真是太客氣了。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "ee1bb05f1872ad47220eacd3388c84906de89d068324883caff4a6f29dd56cc3",
+  "zh": "這對我沒有用處。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "a042d1a5aeac39f9405a74b785d9e16bd4ca2b7e2c6e6896f6d22a648919181e",
+  "zh": "我沒有什麼需要再買的了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "ddc424161a482d545528e3edf4ad8baa3eacffb7db9588f9f40e3379dcc7302a",
+  "zh": "或許你們該等到買得起的時候再來……"
+ },
+ {
+  "id": 17,
+  "src_sha256": "4a27b3efcfd0bacd114813b3c6aee6b8e883093e265ef202fceba1896c58b9ef",
+  "zh": "我沒想到你們會這樣。這件東西我再熟悉不過。我不會付錢給你們，但我希望這個小小的教訓對你們多少有點價值。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "255d8031772a80cd3d024f6de480332c7ae056c981cbc6df312f66ee2ea00ea8",
+  "zh": "我原以為這種行為你們不屑去做。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "cf110b5693075d2a1d30818f490f620ab2891137f5a1b94889e7811c988f7c8e",
+  "zh": "你們為什麼要偷我的東西？如果我有你們需要的東西，我會直接給你們的。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "02fd440c44dfa9ee35313bfeaf67b669581e36031ba377dd1b5489127a19da2d",
+  "zh": "真遺憾事情走到這一步……"
+ },
+ {
+  "id": 21,
+  "src_sha256": "9cddcef7c8bd38ccb37bacf2f44f3dcac511ae241d5d7f3eb28d5408d3c667c9",
+  "zh": "你們永遠都不嫌多，是嗎？"
+ },
+ {
+  "id": 22,
+  "src_sha256": "f7407ac23ab2c25455ce8d1223f981235324cc8455216d859ee818e6b02e514f",
+  "zh": "我不是本地人，你們知道的……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "cc32abafda20a155c89b02c79c0ba550dea977f7ab86a1a1bc4c006595467d69",
+  "zh": "我相信別人比我更了解……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "e3d7be3945624d9bb52c19c446065ae482966af737d4393c4a59c6cd538a0058",
+  "zh": "到最後一切都會明朗（ clear ），但現在我不想再多說了。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "5ed2c3a92c25acbec2d2db9d25440b131e1172de33cd2e628c6fb32718fc97b4",
+  "zh": "如我所說……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "0ba69a23b30de5fe288c1245d2c0e37dadaa22e784da9ab650113a00a7f7bc09",
+  "zh": "那麼，你們想先談哪一個？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "1583e72f6ce8fcac3fdfe77a63da387c45a4384033e6cf09d47e553a48304afa",
+  "zh": "而且是的，我知道另一個……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "9a7e7711db6f4b939bc70bc2d0c440c8e4b3e7b5b1c0e0c710cd3781793d54b2",
+  "zh": "我會考慮的。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "c55767b4d74c5da78ec7fc769803708464fa68bd522c255297a829e056013834",
+  "zh": "如果沒有更要緊的事要談，那我們該上路了……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "d58b89aae91c2534ee298b3c029a95d9495e9d26ba5638dd54a4ab65d768d2bd",
+  "zh": "你們的時間有限。我不想耽誤你們……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "a105d37b7afba02ae5ee89f6f3f2ecdbd4196a66c3366f0c8f87ec614709c0b3",
+  "zh": "我是千里迢迢才來到這裡的……"
+ },
+ {
+  "id": 32,
+  "src_sha256": "47165f7ecf61131e276669459205bd983453b8f7ab047658e6b0c205bec5bb2c",
+  "zh": "是的，就是 Savant 的 Tower 所在之處。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "954963623c13303f7fd160729965175f7e27c848d6c4a1335c684134758e4778",
+  "zh": "這與我無關。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "4124e6ff2612f7fbd1ef499eeae1763da2c061cf8944230f0e986ed1e112c2de",
+  "zh": "聽說 Savant 已經與 Rapax 結盟了。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "a782b8200db00276bc5afcaf92431da3993baf71e7c620a9df4429b24d73306d",
+  "zh": "是的，我會在那裡與你們會合。我向你保證。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "484264a90e376a1831b11d2776d06cba045f42a5dae68e6941039bd651df785d",
+  "zh": "我對 Cosmic Circle 感興趣已經很久了，出於……個人因素。就是在研究 Cosmic Circle 的過程中，我開始對 Savant 產生興趣。在許多世界裡，眾所周知他渴求任何遺物、任何關於 Cosmic Circle 的消息。於是，我變得更加好奇了。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "39fb6e4508e59554566597f7e08e7ac4cd7727e6f0f0377797ebefd68c2cad50",
+  "zh": "最後，我查出了我相信是 Savant 尋求飛升的真正原因。我唯一能確定的方法，就是把 Savant 帶到 Circle 本身去。在那裡， Cosmic Forge 會揭示一切！"
+ },
+ {
+  "id": 44,
+  "src_sha256": "4be8f4962d0791195a7cea1207fa2b2c8f94cdf58ae3537721b0a34d534010be",
+  "zh": "他們對這裡發生的事所知甚少。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "f42ff7b47db1be92cfab889cbeea62241501432c44183ef85ffd4fefcba1c3f0",
+  "zh": "與我們無關……"
+ },
+ {
+  "id": 46,
+  "src_sha256": "d999cd0480a4b5f6ae700becb34c7ef1ef087282a26cbb5d98d9ed12bcb1636e",
+  "zh": "Savant 已經與他們結盟了。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "2257f26997a95a3e5e978d718238c83476cb161ee342b9b49b100595a13af9ba",
+  "zh": "我曾認識一位名叫 Yamo 的 Umpani 將軍。我向他說了我與 Dark Savant 的過往（ history ），還有我對 Cosmic Circle 的推論。 Yamo 很和善、很有禮貌，但他當然聽不進去。多年的恐懼與怨恨太過強烈，無法克服。"
+ },
+ {
+  "id": 48,
+  "src_sha256": "9999ad274e67133c1a782df884119e2edab3f1e4c491f5fe30c2203a59608d47",
+  "zh": "T'Rang 這些年變了許多，但他們對 Savant 由來已久的恨意卻只增不減。就算他的滅亡只換來一枚小小的銅板作賞金，我相信他們也願意為此赴死（ die ）。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "5862120c834cffb22d68f676ff4e7dca80df5bfe0312b42a4dbb18521e49d94e",
+  "zh": "宇宙中最古老、最睿智的存在。我追尋關於他們的知識，已經很久很久了。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "84dcd1258f9274d625e5c405740ec487a6da7c457b88b1676ec5537bfe44e9b2",
+  "zh": "我知道 Guardia ，是的，但在這裡無關緊要。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "82262d36401eae49e01b4cc6d24cee82b0751b5579eb835e49388e4c9127cde4",
+  "zh": "我追隨 Dark Savant 已經很久、很久了。我看著他在上千個世界裡肆虐，也看過數以百萬計的人在他的權勢下瑟縮。但 Savant 並不只是表面看到的那樣。他身上不只有邪惡。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "e5c9c3e0622f49024dc7724dd22f807744f409dae4000afb450744cc6772e712",
+  "zh": "我是在發現他為何想抵達 Cosmic Circle 時，才領悟到這一點。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "0595136220f0f63cc1aead7ee524b5089921256b89c47f81182a0868913ff11f",
+  "zh": "她比我們任何人都更該明白，我們面對的 Dark Savant 是什麼樣的人。她或許曾看見過他善良的一面。但那一面總是被惡所遮蔽（ eclipsed ），不是嗎？是的。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "0a308c6e207af5fc87bec968b77fa3800395cd629b4371fdf86465d10e96919d",
+  "zh": "你比我們任何人都更該明白， Vitalia ，我們面對的 Dark Savant 是什麼樣的人。或許你也見過他善良的一面，不然你當初為何會同意與他同行？但那一面總是被惡所遮蔽（ eclipsed ），不是嗎？是的。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "442b7c9bf1119ad7bc25d472c4c23cc6a6a55f3efaa869983af63b60ef17dd38",
+  "zh": "他是一位 Cosmic Lord。我只能希望我們到達時他在 Circle 裡。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "d6dc7ab5b9c66cc5f9577bd78a6f60fb7678dbbf7674dbe1e914744b18b326da",
+  "zh": "談談我自己？我的故事，其實就是 Cosmic Forge 的一部分。"
+ },
+ {
+  "id": 69,
+  "src_sha256": "e59cf63bef44945e7f7a2b8a3833e2d6a16a7d702a6444e7a94028ac99bd360e",
+  "zh": "三者之一。這件器物（ artifact ）蘊含著生命的意義。"
+ },
+ {
+  "id": 70,
+  "src_sha256": "524e4823215fffa4d8ee450c19701c41e1e46e77698cd78097d42a734a365769",
+  "zh": "在這件器物之中，蘊含著一切知識。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "b3aa6ec7702e4d266a066a9f9aaf2215193bc170db1daaebecd98241000109a0",
+  "zh": "據說它蘊含著「變」的本質。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "f6efeb00f273a7d0030dd916a6d3b6bd71a42c05e4c3a369e580fa9137be5f41",
+  "zh": "是的， Cosmic Forge 。在這個世界上，人們對它所知甚少。它是 Cosmic Lords 用來書寫宇宙命運的筆。它寫下的一切會立刻成真。寫下「宇宙終結」，它便會終結。確實是非常強大的物品。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "d5c60737621a37bcabe6210994ecd2528ac47b34fd2d4cc7f11dfb2a09aec0d5",
+  "zh": "當然， Cosmic Lord 把它嚴密藏在 Cosmic Circle 之內……除了很久以前那次不幸的事件之外。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "252c4c92ee259cca3c0d8f59d7b9d70fb9eda5f893e82ea4c186b9577ea15fb5",
+  "zh": "從 Ascension Peak 登上 Cosmic Circle ……"
+ },
+ {
+  "id": 75,
+  "src_sha256": "096200248e4c5499d9d1bc976e85389353577262f4f15f20921c00350e3d79be",
+  "zh": "我聽過足夠多的傳聞，知道它們以某種方式，全都是真的。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "326d8207aecaa3c1d4d981f77080c5cb8bb77e6d2ddd7bb06707e669c3a238c8",
+  "zh": "我是 Bela 。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "5ec1209123a6e31f2601a5a9e294726b6269947d7999d8478212800752d476c7",
+  "zh": "我們的使命是抵達 Cosmic Circle 。我對此深信不疑。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "8c8a8ef8a42029431856202a88b9e3166cccad9f468dcb4a9f37d400429058e5",
+  "zh": "嗯哼。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "fd7e5eee6df556b720caec729f3a0f277f2049efa5af49ca82b431042376f769",
+  "zh": "你們沒有更好的主意嗎？"
+ },
+ {
+  "id": 80,
+  "src_sha256": "3fc2118d352cbb01db0d8b015d9df5926e416c4b75379601277187da80329c6b",
+  "zh": "歡迎。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "195e28c4d49c473e7485d06a707e02ab672f56d667634e93231c431ad3a844b7",
+  "zh": "我們很快就會再見面。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "50b63fbc0d1a7ef5fe4e9d128c0a11b7a68e6a93c7cab5cf197ee4059035eda0",
+  "zh": "在對付 Dark Savant 這件事上，我們會互相幫助……"
+ },
+ {
+  "id": 83,
+  "src_sha256": "e7ab36811a93ff5b6441d688f8eae08026d0fe464cfb4797bc8cd2b456fb0605",
+  "zh": "這真不關我的事（ business ），你們明白的。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "ae9cc8980cb66aa2c7774017374548de1f59ec9acefec88df19baf0f2093d80e",
+  "zh": "我很高興，我們終於見面了。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "2e45503366fa17e70b33a5dc698c2c70f97452776e92dfd26ffebe6998e273dd",
+  "zh": "在 Arnika 。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "2f1ff22262c13554d9cde3f83f6813de3da6ce1c05e9ef9197684306c37673f0",
+  "zh": "我想是在 Trynton 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "ba83302ea9c27ae5cd5b379e53e299424d7bb2f28623ace91f78f4b8943ba100",
+  "zh": "你們可以在 Swamp 找到它。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "741fbbd4400e41e2b4b5c97cd4f7071c43725868c5cea71423f9d5ec290aaafb",
+  "zh": "Marten's Bluff 。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "6976b9406c40d44527a92d3877eac261922cc4286f6af75c553b4430c897a42d",
+  "zh": "或許是 Rapax Away Camp ？"
+ },
+ {
+  "id": 98,
+  "src_sha256": "070171c020a3900f5bfae08d3862144117c3700821bb0ec45992b23e988c9db0",
+  "zh": "Mt. Gigas 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "065c8d54c05a1fe595fceff1f8d03b33ccdbb59c4f72ea30c9b7ee5138b628c9",
+  "zh": "在 Sea Caves 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "eeb032713ae5094ddc8f1e13d6ee578964ae2e5c63e65a32b431c8d2cbe51448",
+  "zh": "Rapax Rift 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "a6dbd8f6a09e25c9f756bfdd4a34db734cd880f87f98dde6c10a3534a1bcaa88",
+  "zh": "Rapax Castle 。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "54ab9fdf42d2f964d710775be4a0eb0db4a78ec8fc1a9cbd49474e70e7e8d741",
+  "zh": "……就在 Ascension Peak 。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "5c4338c1ba74cf323303d7c2e44c22ca8736637acecf29cb215e5cf2acb5d1d3",
+  "zh": "在 Cosmic Circle 。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "b2fd8628a58bc8a3db14d1b1a7dbb52b96fe6c9e59ab2e7922c52ec6299f689a",
+  "zh": "當然就在這裡。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "fe29d208ef674cd8044ba42320a1aacb42e196d4e779c3a8102ae9a035a65088",
+  "zh": "我真希望能確定。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "eebc2a378effb4e56a8a7d40a78a6b5eda572e9e777e884dca8bdfbce0543c76",
+  "zh": "我想是 Bayjin 。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "5aacd8452df3d56a6de2008a5a7e16bf0dda3a4159078e1d9fad46663ebc48a9",
+  "zh": "有那麼一下子，你們考慮把所有兵刃都對準這個駭人的生物。可轉念一想，他看起來還算友善，有這樣的人站在你們這邊或許是明智之舉。你們緩步靠近，聆聽著……"
+ },
+ {
+  "id": 108,
+  "src_sha256": "04bafbbb71a28255976179c78e572aea49c9a3258a5d9367817b0e5c86a96109",
+  "zh": "沒什麼好怕的，至少我不會傷害你們。我的名字是 Bela ，和你們以及其他人一樣，我也是遠渡重洋來到這裡……追隨 Dark Savant 。這就是我想與你們談談的原因，所以我在這裡等你們，我想這裡或許安全。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "2401c29e723e87ef27a0098335d480ef2df3c719747a0069ada872173d979274",
+  "zh": "我知道這聽起來很奇怪，但我請求你們相信我。如果我錯了，我們就一起殺了他，但我需要你們的協助（ assistance ）。你們願意嗎？"
+ },
+ {
+  "id": 110,
+  "src_sha256": "04c04d8fb916e72c97c8782d3268bf64d70daa7d6278ec790da477165dab1669",
+  "zh": "我就知道你們會的。這就是我選擇你們而不是其他人的原因。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "0f40293afa32a08ecd90c7d5863c3d527d2cd2c132053e1221b1b30775eed8ac",
+  "zh": "或許你們不明白我為何選擇你們而不是其他人。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "fd00ee73a309a42ee6bd63fe2a71c4984c77edc010a95b0fb4614448eb050913",
+  "zh": "為什麼我不去找 T'Rang 或 Umpani ，他們有更強大的勢力與更多的人手？他們也有更多的貪婪……我永遠無法說服他們讓 Dark Savant 活著。就算我說服了，他們的大軍也必定會洩露我的行蹤與我的計畫（ plan ）。我不認為你們會。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "a78db781bac5285e35a4d57c5518eab00823e49073d96be8bebfd22aaab3157f",
+  "zh": "前往 Arnika ，拆除 Savant Tower 內的炸彈。然後，集齊三件器物（ artifacts ），帶到 Ascension Peak 。我會在那裡與你們會合……而且我向你們保證， Savant 絕不會落後太遠……"
+ },
+ {
+  "id": 114,
+  "src_sha256": "1a2010ee9059c64903c39365c93d272cecd54877f5fdf9ff5985b75a9d2144fd",
+  "zh": "Astral Dominae 、 Destinae Dominus ，以及 Chaos Moliri 。進入 Cosmic Circle 所需的拼圖碎片。說真的，它們不過如此。*真正*的威能在於 Cosmic Forge 。有了它，你們可以創造出上百件這樣的器物（ artifacts ）！"
+ },
+ {
+  "id": 115,
+  "src_sha256": "3d90ef9ec661cda2f9c23da944334b67770644c60e53d5a5deaabc908a2eb8d6",
+  "zh": "留到 Ascension Peak 再說吧。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "e4550c11406aacd4a39264ba685251dc7ac3117952ed964a9f7184c28baa2e53",
+  "zh": "這是…… Becky 的？噢，我的妹妹。我多麼想念她。那麼你們就是救了她的人。而你們還留著這枚戒指！我永遠無法感謝你們足夠。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "4f5ae7a4e61ec1d920ae4615453f5c0e35a18487a4c6e9743a843f722f8f24a2",
+  "zh": "有朝一日我會回去看他們。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "1b102374e4f80fe4eb5d74e7398250903e109dd2cf1b02144c193c46b585092b",
+  "zh": "我的妹妹……"
+ },
+ {
+  "id": 119,
+  "src_sha256": "faf40e7728ea5a03d005d68517a20703a4298a88cd3c8212636b1849d5f72e1e",
+  "zh": "我是出於個人因素離開的……"
+ },
+ {
+  "id": 120,
+  "src_sha256": "5c36a17daeefadf720d8b7c89d673f80c8584710f7ef194a16bcc77bc9c262cd",
+  "zh": "我從哪裡來？一個遙遠、遙遠世界裡的 Bane Castle 。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "a1f0050cbb975ddc6865ac1cddca2e95c6d4a8545dcf99b6b3cf18d9f9e12ea8",
+  "zh": "說來話長。許多年前，一百多年前吧，有位巫師設法從 Cosmic Circle 偷走了 Cosmic Forge 。非常遺憾，因為他因此落得悲慘的下場。但那是另一個故事了，你可以說是 Cosmic Forge 的禍根。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "bef8dd3bcfe667a40de51a804d02ba6752b32c89364233597d716edcfa043570",
+  "zh": "就在 Forge 失蹤期間， Dark Savant 設法追查到了 Astral Dominae 。整件亂局就是這麼開始的。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "91b638e3d164014cd610b0505147614d0d3af91e4517c2482e5074895fccbb3b",
+  "zh": "我追隨 Dark Savant 已經很多、很多年了。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "9d9f9099a545d61a2a62e29d2cf5144ab5fa3bf1480a36c8ee50c50e24876ba0",
+  "zh": "他現在已經死了，願他安息。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "8179a51d897e93390b732198bf7e29ff559f515e93ad845c37fc1fc1a8ff0aaf",
+  "zh": "Savant 的 Tower 裡有一枚巨大的炸彈。只要我們一試圖飛升，他就會夷平 Arnika ，甚至整顆星球。我認為明智的做法是先採取預防措施，把它拆除。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "180a4a062467c56a7dc2190ebc420ac0c361f7eb591ba2449ca5b09e074fe2a4",
+  "zh": "遙遠、遙遠的地方……"
+ },
+ {
+  "id": 128,
+  "src_sha256": "218129b85ab97075c36e7439f021631dd6474403456e770d05a3025d84f2f8c2",
+  "zh": "是的，如我所說。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "6fe2b71c558f5b36d5564347826ce138aad3e24fd8f4d5c3aae1651e84fddf19",
+  "zh": "我想是在這裡的北方。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "5aafdd9e0c9932a8d19f381dfd61bcb78e45e2723ea62badde2fb74c68ae41e0",
+  "zh": "在這裡的南方。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "f29a0dc98cbee95c1de953899e3e66b01fc2106c0e10a8f47f20b5d8bbcd2559",
+  "zh": "是的，在這裡的東方。"
+ },
+ {
+  "id": 132,
+  "src_sha256": "b8922bc80e66a412ab656be8ef772a58f08ed3d182ee01f0af001f265e75330e",
+  "zh": "在我們所在位置的西邊。"
+ }
+]

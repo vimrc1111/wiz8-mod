@@ -1,0 +1,52 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "4c86540302e5c3aab437bc0ee2fea6545f5ba3b20138fb8b12fe69f5bb39df5f",
+  "zh": "也許待會兒我們有時間聊聊。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "989e9d3253760be54633ad7bcba5d0561b79eaa4e3e71a3b0706498f47bb5254",
+  "zh": "很高興見到你， Templar 。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "3be387a57f7dab4b013a28322576f8d88827ff1acd231c0c65ce3d79e1cf19b6",
+  "zh": "在這裡沒人會來打擾你們……"
+ },
+ {
+  "id": 5,
+  "src_sha256": "e8a9c9bcac33238dd0f23fc8bd5403065cf05f29ebf8367e8b965b46daaef952",
+  "zh": "我會盯著你們……你們也要盯著我！"
+ },
+ {
+  "id": 6,
+  "src_sha256": "a9a8e53251113afbd73deb7a694354ef59bda8b757f3d804f63bacf5c1b31623",
+  "zh": "很高興在我們的城堡見到你們……"
+ },
+ {
+  "id": 7,
+  "src_sha256": "2293dc43b10e38fb5522f15a13a8728d75184f51c38b3131c786a831d952d2ad",
+  "zh": "Al-Sedexus 對你相當感興趣。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "34ef914f023fc98556981fbdf088e87e7b64d9d56ddb1fce1cc0bd0ddc78f9e8",
+  "zh": "讓我看看你們的身手！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "df34eb91589006345867d7a454f7d3386f647cc7aaf10c093748299f1e9e47e2",
+  "zh": "你們怎麼能這樣？！你們殺了她！"
+ },
+ {
+  "id": 10,
+  "src_sha256": "67f5399f2e244c9b6e669b063be0cfd338123b00ad68c7bd35204e5a78bcb412",
+  "zh": "這是為了 Al-Sedexus ！"
+ },
+ {
+  "id": 11,
+  "src_sha256": "49ca44c6a5a24139ba68c307a5bf09933603841c1f15459afc6306d6243b3165",
+  "zh": "這裡不再歡迎你們了！滾出去！"
+ }
+]

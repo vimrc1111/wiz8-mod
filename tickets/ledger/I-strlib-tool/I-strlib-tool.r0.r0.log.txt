@@ -1,0 +1,22 @@
+ok  	wiz8-mod/tools/atlas	0.598s
+ok  	wiz8-mod/tools/fitcheck	0.023s
+ok  	wiz8-mod/tools/hashdir	0.016s
+ok  	wiz8-mod/tools/shot	0.017s
+ok  	wiz8-mod/tools/slf	50.709s
+ok  	wiz8-mod/tools/strings	0.044s
+--- FAIL: TestFixtureDecode (0.00s)
+    strlib_test.go:117: decode: code=2 err=未實作
+--- FAIL: TestFixtureRoundTrip (0.00s)
+    strlib_test.go:144: decode: code=2 err=未實作
+--- FAIL: TestEncodeRecomputesOffsets (0.00s)
+    strlib_test.go:160: encode: code=2 err=未實作
+--- FAIL: TestRejectsMalformed (0.01s)
+    strlib_test.go:226: encode: code=2 err=未實作
+--- FAIL: TestRealDesc (0.01s)
+    strlib_test.go:299: decode: code=2 err=未實作
+--- FAIL: TestRealMsg (0.02s)
+    strlib_test.go:314: decode: code=2 err=未實作
+FAIL
+FAIL	wiz8-mod/tools/strlib	0.054s
+ok  	wiz8-mod/tools/trcheck	0.052s
+FAIL

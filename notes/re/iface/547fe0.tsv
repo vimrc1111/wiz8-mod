@@ -1,0 +1,101 @@
+call	40efa0	boundedRandom	有界亂數 R(N)：體力不足時擲 R(消耗)、結果擲 R(權重總和)、回合大於 8 加 R(10)、各結果的抽選與結果 0 的 R(2)；TestEmu 以錄下的 rng 序列逐次對齊
+call	5012b0	sharedEffectActive	共用效果表（0x68691f 起 12 筆、步距 0x11）是否有指定 id 的有效項；原生執行，結果 10 依此決定補施 0x28／0x14／0x20／0x1a
+call	517a90	messageFormat	寬字串格式化到 0x689fd0；原生執行，緩衝前 8 個雙字為輸出 buf0..7（性別稱謂、角色名、金幣訊息）
+call	51bea0	partyGoldAdd	隊伍金幣加值：0x685189 加 100，目前地圖編號 < 0x2f 時該圖累計 0x686b7d+33×圖 加 100，並送日誌與音效；原生執行，金幣與各圖累計為輸出
+call	53be00	makeCharacterSource	來源描述十三個雙字清零後寫種類 1、角色索引、怪物欄 -1；原生執行，來源描述為輸出 src0..12
+call	547940	characterHasAbility	職業／種族能力表是否含能力碼 11（祈禱）；原生執行，結果由 prayerAvailableNode 重現
+call	5524b0	combatEffectClear	清除一筆隊伍戰鬥效果記錄（旗標、id、+5、+0xd 清零）後呼叫 50e700 重算與 562a50 介面旗標；原生執行，效果記錄為輸出 eff0..8
+call	5905c0	messageOverlaySet	原生執行：寫位元組 0x69b7b8＝1；第二參數 -1 時不寫 0x64bd54；0x69b7b8 為輸出 msgContinue
+call	5e1c10	無關	operator delete：釋放 id 名單緩衝，emu 堆不回收，無規則輸出
+call	5e1ce0	無關	operator new：容量五的 id 名單初始緩衝；緩衝內第一筆以 list0 輸出
+call	5e2c70	monsterListCount	怪物名單筆數（名單 +8）；原生執行，case 輸入 monCount
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff76	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff77	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff78	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff7c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff80	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff84	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff88	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff8c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff90	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffbc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe6	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	548de4	無關	結果分派跳躍表 0x548de8 前一個雙字（函式末尾 ret 後的位元組）被分析為資料引用，不是表內容
+data	548de8	prayerResultDispatch	祈禱結果 0..12 的跳躍表（本函式內），值域外走預設訊息
+data	5ebfe0	無關	id 名單的虛函數表，屬容器生命週期
+data	619788	無關	祈禱開場訊息字串位址，只交給 0x5905f0 顯示；以 s5905f0_a1 輸出
+data	61dd38	prayerResultWeights	祈禱結果權重表 14 個雙字；累積表為空時加總進 0x68d814..0x68d84c；calc 執行時從使用者 exe 讀
+data	61dd3c	prayerResultWeights	權重表第二筆（0x61dd38+4），同上
+data	61e434	genderTitleText	性別稱謂字串編號表，列步距 8、以性別 -1..1 索引的 u16；結果 11 格式化訊息用；calc 執行時從使用者 exe 讀
+data	65be1c	spellTable	法術資料表指標；讀 +0x2cd6、+0xa8cf 的射程類別
+data	6836a8	battleObject	戰鬥物件指標；+4 回合、+0x14 結果 0 的加值欄、+0xb0+0xd4×角色 祈禱已用旗標、+0x7c1 起隊伍戰鬥效果記錄
+data	683fad	monsterList	怪物名單物件指標；名單第 i 筆怪物記錄
+data	6850b4	difficulty	難度位元組：0 擲骰減 10、2 加 10
+data	68510c	messageQuiet	訊息靜默位元組；為 0 才設定續行旗標並顯示開場訊息
+data	685174	partyCharacterRecords	角色記錄陣列基址，步長 0x1862；讀職業、種族、性別、職業級數、狀態、HP、體力、+0xa2d／+0xa35／+0xa85、名稱
+data	685178	partySlots	隊伍格陣列，步長 0x106；首位元組非零＝該格有人
+data	68c09c	無關	訊息字串表指標；所指字串只交給顯示或格式化，以指標或格式化結果輸出
+data	68d814	prayerResultCumulative	祈禱結果累積權重 cum[0..13]（有號比較）；空表時由權重表累加，輸出 cum0..13
+data	68d818	prayerResultCumulative	累積權重第二筆（0x68d814+4），同上
+data	68d84c	prayerResultTotal	累積權重總和 cum[14]；為 0 時重建累積表，擲 R(總和)
+field	eax*8+0x61e434	genderTitleText	性別稱謂字串編號（u16），以角色性別索引
+field	eax+0x0	prayerResultCumulative	累積權重表的累加寫入與擲骰比較 cum[j]；結果 2 走訪時亦為角色 +0xb01 狀態（同一暫存器基址）
+field	eax+0x10	characterHP	角色 +0xb11 目前 HP（以 +0xb01 為基址的 +0x10），零即不合格
+field	eax+0x14	monsterPresent	怪物記錄 +0x14 在場位元組
+field	eax+0x15	monsterActive	怪物記錄 +0x15 活動位元組
+field	eax+0x16	monsterDisposition	怪物記錄 +0x16 敵對狀態，1＝敵對
+field	eax+0x2b	monsterHP	怪物記錄 +0x2b 目前 HP（u32），零即不合格
+field	eax+0x5d4	無關	訊息字串表的體力不足字串指標，交給 0x590950 顯示
+field	eax+0x5e4	無關	訊息字串表的祈禱生效字串指標，交給 0x5905f0 顯示；以 s5905f0_a1 輸出
+field	eax+0x5ec	無關	訊息字串表的群體祈禱字串指標，交給 0x5905f0 顯示；以 s5905f0_a1 輸出
+field	eax+0x5f0	無關	訊息字串表的性別稱謂格式字串，交給 0x517a90 格式化；結果以 buf 輸出
+field	eax+0x6f	monsterPrayerImmune	怪物記錄 +0x6f 雙字，非零的怪物不受結果 11 影響
+field	eax+0xc	monsterNode	怪物記錄 +0xc 世界節點指標，取位置與半徑交給 0x4c7cb0
+field	eax+ebx*1+0xb11	characterHP	結果 4 目前最低 HP 角色的 +0xb11 HP 比較
+field	eax+ecx*1+0xb0	characterPrayerUsed	戰鬥角色列的祈禱已用旗標，步距 212 bytes；結束時寫 1
+field	eax+ecx*4	idListEntry	id 名單第 k 筆寫入（結果 6）；結果 11 為訊息字串表以稱謂編號索引
+field	eax-0x1	combatEffectFlag	隊伍戰鬥效果記錄旗標位元組（G+0x85a 起，以 +1 的 id 為基址）
+field	eax-0x7c	characterA85	角色 +0xa85 雙字；為 0 的合格角色才是結果 2 的對象
+field	eax-0xcc	characterA35	角色 +0xa35 雙字；與 +0xa2d 任一非零的合格角色是結果 3 的對象
+field	eax-0xd4	characterA2d	角色 +0xa2d 雙字；與 +0xa35 任一非零的合格角色是結果 3 的對象
+field	ebp+0x69	characterClass	祈禱者職業（有號），選職業級數列與能力表
+field	ebp+0xb1d	characterStamina	祈禱者目前體力（有號），與 0x52b2f0 消耗比較
+field	ebp+ecx*4+0x0	idListEntry	id 名單擴容時讀舊緩衝（走不到，cov-exempt）
+field	ebp+ecx*4+0x8d	characterClassLevel	職業歷史級數列 C+0x8d+4×職業（u32），威力＝級數/3+2
+field	ecx+0x0	partySlotOrStat	隊伍格首位元組（有人）；結果 1 的目前體力 +0xb1d、結果 4 的目前 HP +0xb11（同一暫存器基址）
+field	ecx+0x4	battleRound	戰鬥物件 +4 回合數（u32）：< 4 擲骰加 15×回合−60，> 8 加 R(10)
+field	ecx+0x5d0	無關	訊息字串表的祈禱開始字串指標，交給 0x590950 顯示
+field	ecx+0x5d8	無關	訊息字串表的祈禱無效字串指標，交給 0x5905f0 顯示；以 s5905f0_a1 輸出
+field	ecx+0x5e0	無關	訊息字串表的結果 0 另一分支字串指標，交給 0x5905f0 顯示
+field	ecx+0x5e4	無關	訊息字串表的祈禱生效字串指標，交給 0x5905f0 顯示
+field	ecx+0x5ec	無關	訊息字串表的群體祈禱字串指標，交給 0x5905f0 顯示
+field	ecx-0x10	characterCondition	角色 +0xb01 狀態（u32），< 0x12 才合格（結果 4，以 +0xb11 為基址）
+field	ecx-0x4	characterMax	結果 1 的最大體力 +0xb19（有號）；結果 4 的最大 HP +0xb0d（u32）
+field	ecx-0xc	characterHP	結果 1 的目前 HP +0xb11（以 +0xb1d 為基址），零即跳過
+field	edi*4+0x548de8	prayerResultDispatch	祈禱結果 0..12 的跳躍表
+field	edx+0x0	partySlotOccupied	隊伍格首位元組，非零＝該格有人
+field	edx+0x2cd6	rangeClassResult6	法術資料表 +0x2cd6 射程類別（-1..3），交給 0x51a9a0 換算距離
+field	edx+0x5dc	無關	訊息字串表的結果 0 金幣字串指標，交給 0x5905f0 顯示
+field	edx+0x5e4	無關	訊息字串表的祈禱生效字串指標，交給 0x5905f0 顯示
+field	edx+0x5e8	無關	訊息字串表的角色名格式字串，交給 0x517a90 格式化；結果以 buf 輸出
+field	edx+0x61dd38	prayerResultWeights	權重表第 u 筆，累加進 cum[u..14]
+field	edx+0x75	characterGender	祈禱者性別（有號 -1..1），索引稱謂表
+field	edx+0xa8cf	rangeClassResult12	法術資料表 +0xa8cf 射程類別（-1..3），交給 0x51a9a0 換算距離
+field	esi+0x0	monsterId	怪物記錄 +0 id，寫進目標描述與 id 名單
+field	esi+0x14	monsterPresent	怪物記錄 +0x14 在場位元組
+field	esi+0x15	monsterActive	怪物記錄 +0x15 活動位元組
+field	esi+0x16	monsterDisposition	怪物記錄 +0x16 敵對狀態，1＝敵對
+field	esi+0x2b	monsterHP	怪物記錄 +0x2b 目前 HP（u32）
+field	esi+0xc	monsterNode	怪物記錄 +0xc 世界節點指標，取位置與半徑交給 0x4c7cb0
+field	esi+eax*1+0x7c1	combatEffectFlag	隊伍戰鬥效果記錄旗標（G+0x7c1+0x11k），結果 8 逐筆檢查

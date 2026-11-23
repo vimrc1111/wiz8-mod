@@ -1,0 +1,38 @@
+call	2b6	無關	objdump 跨前函式尾端錯解的呼叫；從 0x5194e0 真正入口重放無此呼叫，並非規則 helper。
+call	4c7cb0	monsterSurfaceDistanceToParty	讀怪物與隊伍座標，扣碰撞半徑並下限截斷；本呼叫直接比較延伸精度距離。來源 0x4c7cb0..0x4c7d4d。
+call	4e77b0	resolveCharacterAttackAction	依角色槽與動作情境解析種類、法術 ID 或物品列表；角色存在、生命及主要狀態決定是否可用。來源 0x4e77b0..0x4e796d。
+call	519ac0	characterHandAttackRange	依 hand 選主手、副手或兩手最大射程；攻擊不可用回 -1，種類 1/3 使用所選物品射程。來源 0x519ac0..0x519ba5。
+call	51aec0	formationRangePenalty	怪物相對方向、角色所在區域與前方／中央可用隊員决定短射程懲罰。來源 0x51aec0..0x51afee。
+call	5207e0	itemEmbeddedSpellRange	物品列表第一筆提供物品索引，再從嵌入法術讀射程；空列表或零法術回 -1。來源 0x5207e0..0x520875。
+call	52e690	queueCharacterFailureMessage	showFailure 非零時送出失敗提示，回傳值不影響 AL；case 使用已含各角色的重複提示遮罩，原版 helper 照常執行。
+data	10	無關	堆疊區域變數與參數偏移，非絕對資料位址。
+data	14	無關	堆疊參數清理大小及區域偏移，非規則資料。
+data	4	無關	堆疊參數偏移，非規則資料。
+data	8	無關	區域堆疊配置與參數偏移，非規則資料。
+data	c	無關	堆疊參數偏移，非規則資料。
+data	fffffffffffffff8	無關	區域堆疊配置量經符號延伸列出，非資料指標。
+data	fffffffffffffffc	無關	堆疊偏移經符號延伸列出，非資料指標。
+data	519784	attackKindRangeDispatch	動作種類 0/1 為武器、2 固定長、5 固定短、7 法術、8 物品；其餘無射程。來源 0x5195a7。
+data	5197ac	rangeDistanceDispatch	射程枚舉加一的分派表內項目；-1/0/1/2/3 對應 0/2/4/25/50 個距離單位。來源 0x5196c4。
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail；非法射程枚舉停止，非可達判定參數。
+data	5ebc40	attackRangeWorldUnit	距離單位換算係數，沿用 queuedSpellRuleData 從使用者 exe 執行時讀取。
+data	5ed8c8	failureMessagePriority	提示佇列參數，沿用 exe 初值；不影響攻擊可達旗標。
+data	5ed914	failureMessageTiming	提示時間參數，沿用 exe 初值；不影響攻擊可達旗標。
+data	609b24	assertFalseText	非法枚舉診斷字串，不含規則值。
+data	61a5b8	invalidRangeDiagnostic	非法射程枚舉診斷字串，不含規則值。
+data	61a604	attackRangeSourceFilename	assert 用來源檔名，不參與規則。
+data	65be1c	spellDefinitions	法術記錄 stride 447，射程在 +0x12f；case 依各法術 ID 寫合成記錄，沒有複製 exe 表。
+data	683f94	combatFormationMode	非零表示套用正常戰鬥動作與隊形射程懲罰。
+data	683f95	specialSpellSelectionMode	非零啟用特殊法術動作來源，亦使冒險預設短射程分支失效。
+data	683f96	specialItemSelectionMode	非零啟用特殊物品動作來源，亦使冒險預設短射程分支失效。
+data	683fe7	combatPhase	非零需依角色動作計算射程；四個模式全零時預設短射程且使用怪物法術可攻擊旗標。
+data	685174	partyCharacterRecords	八個角色 stride 0x1862；動作射程、隊形與提示均取選定記錄。
+data	68c518	monsterAttackForbiddenMessageId	怪物所選可攻擊旗標為零時的提示 ID；不影響結果。
+data	68c530	monsterOutOfRangeMessageId	隊形懲罰或距離超限時的提示 ID；不影響結果。
+field	eax*4+0x519784	attackKindRangeDispatchEntry	由動作種類選射程來源；並非角色欄位。
+field	eax*4+0x5197a8	rangeDistanceDispatchEntry	射程加一選距離門檻；合法長度常數來源 0x5196cf..0x5196e4。
+field	ebx+0x28a	monsterTargetAttackEnabled	必須等於 1 才進行攻擊可達檢查。
+field	ebx+0xc	monsterSceneObject	怪物位置物件指標；該物件 +0x118/+0x11c/+0x120 提供三維座標，+0x18c 提供碰撞半徑。
+field	ecx+0x4	itemTargetListEntries	動作的物品目標列表 +4 指向物品索引列表，第一笔供嵌入法術射程查詢。
+field	edx+eax*1+0x12f	spellRangeClass	所選法術記錄的有號射程枚舉；零法術無射程，合法值 -1..3。
+field	edx+ebx*1+0x28b	monsterAttackKindAllowed	0x28b 物理可攻擊、0x28c 法術可攻擊；冒險預設與動作種類 3/6/7/8 選後者。

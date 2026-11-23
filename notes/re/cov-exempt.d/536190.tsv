@@ -1,0 +1,7 @@
+536190	5361b8	一般角色索引為 -1 才進入的 srAssertFail 專屬塊；合法角色索引為 0..7，模擬器 assert 會停止而不產生完整路徑
+536190	536222	死亡角色索引為 -1 才進入的 srAssertFail 專屬塊；合法角色索引為 0..7
+536190	53629d	怪物 ID 為 BAD_INDEX (-1) 的 srAssertFail 專屬塊；其他查無 ID 已涵蓋正常回 false
+536190	5362e1	查找成功後取得 NULL 怪物記錄的 srAssertFail 專屬塊；合法列表每項必須指向記錄，查找子函式本身亦要求非 NULL
+536190	53632b	群組 ID 為 BAD_INDEX (-1) 的 srAssertFail 專屬塊；其他查無 ID 已涵蓋正常回 false
+536190	536372	查找成功後取得 NULL 群組記錄的 srAssertFail 專屬塊；合法列表每項必須指向記錄，查找子函式本身亦要求非 NULL
+536190	5363a6	物品種類的 NULL 物品指標 srAssertFail 專屬塊；合法物品目標有記錄，空物品以定義 ID -1 表示並已涵蓋

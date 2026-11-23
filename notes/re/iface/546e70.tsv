@@ -1,0 +1,17 @@
+call	4e5620	monsterByIndex	依普通怪物列表的零起算索引取得實例；子函式 0x5e2870 讀列表 +0 的指標陣列，所有有效索引都指向獨立 arena 記錄。
+call	5653f0	monsterDisplayInvalidate	尾呼叫；UI 存在時設場景顯示更新旗標，戰鬥中另設戰鬥顯示更新旗標；納入差分輸出（0x5653f0..0x565416）。
+call	5e2c70	monsterListCount	空列表指標回零，否則讀列表 +8 的 u32 筆數；入口及每次迴圈都重新讀取（0x5e2c70..0x5e2c7c）。
+data	6836a8	battlePointer	戰鬥資料物件指標 G；有敵方怪物且戰鬥中才寫 G+0xa54，案例配置有效 G（notes/re/combat-timing.md:35）。
+data	683f94	combatActive	戰鬥中旗標 u8，任何非零值都啟用開場阻擋及戰鬥顯示更新（0x546ee0、0x5653f9）。
+data	683fa5	hostileMonsterCount	有效且陣營等於敵方 1 的怪物數 u32；入口歸零，不檢查 HP 或魅惑量（0x546e77、0x546eb0..0x546eb6）。
+data	683fad	monsterListPointer	普通怪物列表；+0 為指標陣列，+8 為數量，空列表亦合法；案例分開輸入指標與數量，配置八筆不同記錄。
+data	6850be	charmedMonsterCount	有效怪物中魅惑剩餘量非零者的 u32 計數；不要求敵方陣營，入口歸零（0x546e81、0x546ebc..0x546ec6）。
+field	eax+0x14	monsterPresent	怪物在場旗標 u8，零值跳過兩個計數；任意非零值通過（0x546e9f..0x546ea7）。
+field	eax+0x15	monsterActive	怪物啟用旗標 u8，零值跳過兩個計數；任意非零值通過（0x546ea9..0x546eae）。
+field	eax+0x16	monsterDisposition	怪物陣營 u8；只計敵方代碼 1，其他值不增加敵方數，仍可增加魅惑數（0x546eb0、iface/546f10.tsv）。
+field	eax+0x8b	monsterCharmDuration	怪物狀態 13 的 u32 魅惑剩餘量；只判非零，包括最高位值，不是 HP（iface/52beb0.tsv、iface/4fe480.tsv；0x546ebc）。
+field	edx+0xa54	combatOpeningBlocked	戰鬥開場資格阻擋旗標 u8；戰鬥中敵方數非零即設 1，其他情況保留原值；使用者見 iface/547510.tsv（0x546ef9）。
+data	68edcc	uiPointer	尾呼叫讀 UI 物件指標，零時不寫顯示旗標；案例包括存在及空指標（0x5653f0）。
+field	UI+0x2c0	combatDisplayDirty	戰鬥顯示待更新 u8；戰鬥中旗標非零才設 1；更新流程讀取後清零（0x565405、0x56046e..0x5604af）。
+field	UI+0x2c8	sceneDisplayDirty	場景顯示待更新 u8；有 UI 就設 1；更新流程讀取後清零（0x565410、0x5604eb..0x560511）。
+field	list+0,list+8,entries+index*4	monsterListRecords	案例容量八筆是差分模型大小，不是遊戲數量上限；count 0..8 且每筆獨立輸入，空指標時 count 被忽略；子呼叫讀取的完整結構均配置，無角色、物品或模板表存取。

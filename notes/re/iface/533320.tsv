@@ -1,0 +1,52 @@
+call	5e1c10	無關	釋放舊的候選列表儲存，沒有改變資格規則
+call	5e1ce0	無關	配置新的候選列表儲存（計數乘 32 bytes），不制定規則
+call	5e2c70	無關	取容器元素數量，不制定規則
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	534268	spellTypeJumpTable	法術類型（0..8）的 switch 跳躍位址表；與規則分派同義，非遊戲資料
+data	683fad	monsterList	場上怪物容器指標；迴圈逐筆取怪物記錄
+data	683fb1	monsterGroupList	怪物群組容器指標；迴圈逐筆取群組記錄
+data	685174	partyCharacterRecords	角色主記錄陣列指標，每筆步長 0x1862
+data	685178	partyActiveSlots	隊伍佔用旗標陣列，每槽 0x106 bytes，首 byte 非零才算在隊
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff90	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax*4+0x534268	spellTypeJumpTable	法術類型 switch 的跳躍位址表項
+field	eax+0x0	targetRecordId	目標記錄首欄（怪物識別碼／候選記錄種類），案例逐值對照原版
+field	eax+0x4	listCountOrRecordField4	容器計數／候選記錄第二欄，案例逐值對照原版
+field	eax+0x8	listCapacity	容器容量／候選記錄第三欄，案例逐值對照原版
+field	eax+ecx*1+0xb01	characterStatus	角色狀態 u32，小於 0x12 才算可被選為目標
+field	eax+ecx*1+0xb11	characterHP	角色 HP u32，零代表已倒下，不列入目標
+field	ebp+0x4	candidateListCount	候選列表目前筆數
+field	ebp+0x8	candidateListCapacity	候選列表容量（筆數）
+field	ebp+0xc	candidateListBuffer	候選列表緩衝指標，每筆 32 bytes
+field	ebx+0x0	casterId	施法怪物識別碼
+field	ebx+0x2e1	casterReachState	施法怪物的射程狀態；函式暫改後還原
+field	ebx+0x2e5	casterReachSpell	施法怪物的射程法術編號；函式暫改後還原
+field	ebx+0x4	casterGroupId	施法怪物所屬群組識別碼
+field	ebx+0xc	casterAnimationObject	施法怪物的動畫物件指標
+field	ecx+edx*1	candidateRecordWord	候選記錄逐字複製的來源字
+field	edi+0x0	monsterListElement	容器元素指標
+field	esi+0x0	monsterId	怪物識別碼；與候選記錄、關係記錄比對
+field	esi+0x107	monsterStatus	怪物狀態 u32，小於 0x12 才算可被選為目標
+field	esi+0x14	monsterActive	怪物啟用旗標，零代表不在場
+field	esi+0x15	monsterFlag15	怪物旗標，零代表不可被選為目標
+field	esi+0x28	groupFlag28	群組旗標 28，零代表群組不可選
+field	esi+0x29	groupFlag29	群組旗標 29，零代表群組不可選
+field	esi+0x2b	monsterHP	怪物 HP u32，零代表已倒下，不列入目標

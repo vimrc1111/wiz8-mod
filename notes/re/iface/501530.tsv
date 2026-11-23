@@ -1,0 +1,37 @@
+call	5010f0	queuedSpellTargetClass	將 Q+0x75 排程法術 ID 的 F+0x137 目標規則轉成資格類別；context 固定 6，無法術回 0。來源 0x50154f、0x5010f0、notes/re/combat-2.md C15。
+call	519180	queuedSpellTargetReachability	目標相容後檢查目標存在、角色隊形、怪物可達性與座標射程／遮擋；參數為角色索引、0、排程法術 context 3，並非僅 UI 確認。來源 0x501574、0x519180。
+call	537160	spellTargetKindCompatibility	將排程目標描述與法術資格類別比較，再依目標種類檢查存活或復活資格；回傳 AL。來源 0x501560、0x537160、0x536190。
+call	53b7f0	queuedSpellTargetDescriptor	context 3 固定取 Q+0x81 排程法術目標描述；Q 為角色副表記錄，stride 0x106。來源 0x501559、0x53b8b1。
+data	4	無關	資料引用分析把堆疊參數偏移 4 列為資料；它只定位角色索引參數，並非規則表或絕對記憶體資料。
+data	685178	partyQueuedActionRecords	角色排程動作副表基址；每筆 0x106 bytes，排程法術 ID 在 +0x75，法術目標描述在 +0x81。來源 0x501530、notes/re/combat-2.md 記號 Q。
+field	edx+ecx*2+0x75	queuedSpellId	Q+0x75 的 u32 排程法術 ID；ecx*2 等於角色索引乘 0x106，透過 F+0x137 的目標種類決定資格類別。來源 0x501546、0x4ac9d0。
+data	65be1c	spellDefinitions	法術記錄 stride 447；+0x137 是法術目標規則、+0x12f 是射程類別。案例同步 150 筆合成記錄的這兩欄，並非複製 exe 表。來源 0x4ac9d0、0x519a4e。
+data	685174	partyCharacterRecords	角色記錄 stride 0x1862；施法者與盟友的存在、生命與主要狀態各自輸入，避免把施法者失能和目標失能混為一談。來源 0x5361cf、0x4e791b、0x53c270。
+field	C+0xb11	currentHitPoints	存活資格只要求生命非零，保留完整 u32 值；復活資格要求生命為零。來源 0x536200、0x536266。
+field	C+0xb01	mainCondition	存活及施法者可用資格要求主要狀態小於 18。來源 0x53620a、0x53c2ab。
+field	C+0xa49	resurrectionAvailable	生命為零時要求此復活可用欄非零；spell 88 使用復活目標種類 9。來源 0x501119、0x536274。
+field	C+0xa4d	resurrectionBlocked	復活目標要求此阻止復活欄為零。來源 0x53627e。
+field	C+0x17b5	formationObstructionDisabled	角色是否不計入隊形阻隔；前排仍有可阻隔角色時，短距離盟友法術不能跨相對隊形。來源 0x51b077。
+field	Q+0x81	queuedSpellTargetKind	排程目標描述的種類，與資格類別匹配後檢查角色、怪物、群組或物品清單。種類 6 為座標目標，9 為復活角色。來源 0x53717c、0x536190、0x519180。
+field	Q+0x85	queuedSpellCharacterTarget	角色索引；案例施法者固定 slot 0、盟友 slot 1，-1 為未選擇。自我目標在可達性階段直接通過。來源 0x519205。
+field	Q+0x89	queuedSpellMonsterTarget	怪物識別碼；案例怪物 ID 123，其他 ID 走原版列表查找失敗分支。來源 0x5362b0、0x5191b0。
+field	Q+0x8d	queuedSpellGroupTarget	怪物群組識別碼；案例群組 ID 456，資格要求群組大小及啟用旗標非零，可達性逐成員檢查距離。來源 0x536341、0x536387、0x53785d。
+field	Q+0x91..0x99	queuedSpellTargetPosition	座標目標的三維 float32 位元輸入；法術目標規則 5、6、8 才能進入合法座標射程檢查，規則 6、8 還會執行原版場景遮擋檢查。來源 0x519273..0x519429。
+field	Q+0x9d	queuedSpellItemTargets	物品清單指標是 arena 配線；首筆物品索引以輸入表達，-1 不具目標資格。來源 0x5371d4、0x5363c0。
+field	M+0x2b	monsterHitPoints	怪物存活要求生命非零。來源 0x5362f6。
+field	M+0x9f	monsterRemoved	怪物移除狀態必須為零。來源 0x536301。
+field	M+0x14	monsterPresent	怪物必須在場；這是非零判斷。來源 0x53630f。
+field	M+0x28a	monsterVisible	可達性要求可見旗標恰為 1，並非任何非零值都通過。來源 0x5194e8。
+field	M+0x28c	monsterSpellReachable	非戰鬥場景選用的法術可達旗標，必須非零；案例保留 0、1、2、255 邊界。來源 0x519522..0x51953a。
+field	monsterPosition+0x118..0x120	monsterWorldPosition	怪物三維座標，與隊伍位置分別輸入；距離檢查扣除怪物及隊伍碰撞半徑。來源 0x4534c0、0x4c7cb0。
+field	monsterPosition+0x18c	monsterCollisionRadius	怪物碰撞半徑 float32 位元。來源 0x4c7d28。
+data	65a0f8	partyWorldPosition	隊伍三維位置位於 +0x8c..0x94；射程計算會用 exe 的高度常數作垂直偏移。來源 0x421070、0x51938e、0x4c7ce1。
+data	659c0c	partyCollisionShape	+0x174 是怪物距離所扣隊伍半徑，+0x84 是座標目標所扣半徑，分別輸入。來源 0x4c7d2f、0x5193ea。
+data	687525	characterFormationSlots	slot 0 與 1 的隊形分別輸入，中心隊形 4 不受相對隊形阻隔。來源 0x51b008、0x51b016、0x51b02e。
+data	68751d	frontFormationCharacters	前三個前排角色位置；第一格輸入 -1／0／1，其他兩格固定空，角色失能欄同步兩個角色。來源 0x51b05b..0x51b088。
+data	68edcc	battleContextPresent	此呼叫鏈 context 固定 3／6，法術資格分類只判斷戰鬥物件是否存在，不讀該物件內容。來源 0x501149。
+data	683f94..683f96	combatActionModes	本案例明示固定三旗標為零，測試冒險場景的怪物可達性；戰鬥／特殊互動場景會選擇其他射程與隊形流程，未宣稱覆蓋那些子函式路徑。來源 0x519505..0x519520。
+data	683fe7	combatRangeContext	本案例固定零，與動作模式旗標共同選擇冒險場景射程。來源 0x5194f8。
+data	6598a4	worldCollisionIndex	案例建立空場景及合法空雜湊索引、scratch 與 collision 物件；原版遮擋子函式照常執行，沒有替換成布林樁。來源 0x519423、0x434f20、0x42f533、0x438d50。
+data	5371f8	spellTargetCompatibilityDispatch	八類法術资格的分派資料由 calc 初始化時讀使用者 exe；case 不覆寫，repo 不內嵌此表。來源 0x537175。
+data	603ac8,5ebc64,5ebc40,5ebb38,5ec35c,5ebb34	spellRangeGeometryConstants	高度偏移、射程單位、距離容差、遠距離上限與最小距離皆由使用者 exe 讀取；射程類別的 0／2／4／25／50 為子函式的直接規則常數。來源 0x51933d..0x5193f8、0x4c7d35、0x51a9b7..0x51aa05。

@@ -1,0 +1,28 @@
+call	2b6	無關	反組譯把 srAssertFail import 的識別值當成呼叫位址；只在體重等級超出 0..4 的斷言路徑（cov-exempt 的塊）
+call	4ee9d0	calcArmorClasses	疲勞級改變時重算 AC；本函式不讀它的寫出，emu 位址樁記呼叫次數與角色參數
+call	522fe0	characterConditionApply	體力歸零時對角色套狀態 0x11（持續 0x270f）；emu 位址樁記六個參數與次數
+call	52e690	voiceEventEnqueue	疲勞級升到 3 以上首次提示的語音事件；呈現用，登記排除，emu 位址樁記五個參數與次數
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	52b144	encumbranceFatiguePercentJumpTable	體重等級 0..4 的跳表（消耗修正百分比 0、25、50、100、200 的程式碼位址）；calc 以常數重現
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import；只在斷言失敗路徑呼叫，stop 無返回值可差分
+data	5ed8c8	voiceEventParamB	語音事件第 4 參數（exe 全域），原樣交給 52e690；case 當輸入、calc 原樣輸出
+data	5ed914	voiceEventParamC	語音事件第 5 參數（exe 全域），原樣交給 52e690；case 當輸入、calc 原樣輸出
+data	5ee598	voiceEventParamA	語音事件第 2 參數（exe 全域），原樣交給 52e690；case 當輸入、calc 原樣輸出
+data	609b24	無關	斷言檔名字串位址，僅 srAssertFail 路徑使用
+data	61c8ac	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	61c90c	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	685174	characterRecords	角色記錄陣列基址（每人 0x1862 bytes）
+field	eax*4+0x52b144	體重等級跳表項	依 +0xbc9 取表項；表值是塊位址，等級 0..4 對應百分比 0、25、50、100、200
+field	esi+0x169e	疲勞級	0..4，由剩餘體力占最大體力比例決定；改變時重算 AC
+field	esi+0x185b	疲勞提示旗標	疲勞級升到 3 以上首次發語音後設 1
+field	esi+0x4c	呼叫者結果結構計數 +0x4c	體力歸零並套狀態時加 1（目標指標非空才加）
+field	esi+0xa15	角色狀態槽 +0xa15	非零時消耗百分比減 25
+field	esi+0xa45	角色狀態槽 +0xa45	體力歸零時小於 0x270f 才套狀態 0x11
+field	esi+0xaa9	角色狀態槽 +0xaa9	+0xa15 為零且此欄非零時消耗百分比加 25
+field	esi+0xb11	角色 HP +0xb11	為零時不處理
+field	esi+0xb19	角色最大體力 +0xb19	疲勞級比例的除數
+field	esi+0xb1d	角色現有體力 +0xb1d	有號；小於等於零時不處理，扣除消耗後寫回
+field	esi+0xbc9	負重級 +0xbc9	0..4 決定消耗修正百分比

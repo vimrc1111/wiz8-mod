@@ -1,0 +1,53 @@
+call	408860	playUiSound	無關：只播放提示音效，音效關閉時直接返回，不寫規則輸出；呼叫端忽略回傳
+call	520070	clearCharacterItemSlot	清空角色物品槽十二 bytes 並呼叫手部刷新 0x520d10；落在隊伍背包範圍時壓縮（本節點傳角色槽）
+call	521cd0	removePartyPackSlot	依隊伍背包索引清空槽、後續槽前移、遞減堆疊數並重算負重 0x4edd20
+call	55f1e0	clearHeldItem	清空手持物品全域 0x6874cb..0x6874d3 與標記；若 0x683fdb 非 −1 另釋放游標圖形
+call	576030	showMessageBox	無關：把訊息文字排入訊息框，只影響畫面；呼叫端忽略回傳
+call	5adb10	refreshTradeScreen	無關：重繪商店與交易清單畫面，不產生規則結果；呼叫端忽略回傳
+call	5f	無關	分析器把立即值當子呼叫目標，非函式
+call	84	無關	分析器把立即值當子呼叫目標，非函式
+call	a	無關	分析器把立即值當子呼叫目標，非函式
+data	4	無關	參數堆疊位移，非資料引用
+data	8	無關	參數堆疊位移，非資料引用
+data	c	無關	每槽十二 bytes 的步距立即值，非資料引用
+data	fffffffffffffddc	無關	本地暫存位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffdf4	無關	本地暫存位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffdfc	無關	本地暫存位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffe70	無關	本地暫存位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffe7c	無關	本地暫存位移，被分析為資料引用，非遊戲資料或表
+data	68ef8c	無關	分析器列出但本函式反組譯範圍內無此位址的存取，非本節點資料
+data	68f07d	無關	分析器列出但本函式反組譯範圍內無此位址的存取，非本節點資料
+data	68f089	無關	分析器列出但本函式反組譯範圍內無此位址的存取，非本節點資料
+data	5eb02c	getTickCountImport	GetTickCount 匯入槽；只寫通知計時，不影響規則
+data	5eb188	swprintfImport	swprintf 匯入槽；格式化通知文字，只影響畫面
+data	5eb21c	sprintfImport	sprintf 匯入槽；組音效檔名，只影響音效
+data	61c3c0	無關	提示音效檔名字串，只傳給 0x408860
+data	649f1c	interactionPanel	對話／物品互動面板物件指標；讀畫面模式 +0xfc、手持物品編號 +0x1ed、手持旗標 +0x1f9
+data	683f97	suppressHeldClear	非零時手持物品用完不呼叫 0x55f1e0 清游標
+data	685174	characterRecords	角色記錄基址，每筆 0x1862 bytes；物品槽自 +0x1029 起八個，每槽十二 bytes
+data	685178	partySlotRecords	八個隊員槽記錄，每筆 0x106 bytes，首 byte 非零才處理該角色；+5 為角色名
+data	685191	partyPackFirstItem	隊伍共用背包第一槽物品編號；每槽十二 bytes，−1 為空
+data	68519d	partyPackSecondItem	第二槽物品編號；移除時後續槽前移
+data	6851a1	partyPackSecondQuantity	第二槽數量及狀態 byte
+data	686901	partyPackCount	隊伍共用背包堆疊數；外層迴圈上限，移除空堆疊時遞減
+data	68c09c	textResources	文字資源物件；+0x1fb0 角色物品用完通知格式，+0x1fb4 隊伍物品用完通知格式
+data	68c4a0	無關	通知音效狀態旗標，只影響顯示／音效
+data	68c4a1	無關	通知音效狀態旗標，只影響顯示／音效
+data	68c4b4	無關	通知顯示時間常數 2000，只影響畫面
+data	68c4b8	無關	通知顯示起始時間，只影響畫面
+data	68c4f0	無關	通知顯示起始時間，只影響畫面
+field	eax+0x0	物品槽編號	目前掃描物品槽的物品編號，−1 為空槽；與手持／參數編號比對
+field	eax+0x4	物品槽數量及狀態	低 byte 為堆疊數量，非零先減一，歸零才移除；其他 bytes 保留至移除
+field	ebp+0x0	隊員槽存在旗標	隊員槽記錄首 byte，非零才掃描該角色的八個物品槽
+field	ebx+0x0	參數物品的編號	手持分支比對：參數物品指標指向的編號
+field	ebx+0x4	參數物品的數量及狀態	手持分支遞減的堆疊數量 byte
+field	ecx+0x1ed	手持物品編號	面板內手持物品編號，與參數物品編號相等才處理手持分支
+field	ecx+0x1f9	手持物品旗標	面板手持旗標，非零才處理；數量歸零時清為 0
+field	edi+0x0	物品槽編號	同 eax+0x0，另一暫存器的角色槽掃描
+field	edx+0x1fb0	角色物品用完通知格式	文字資源，只影響通知文字
+field	edx+0x1fb4	隊伍物品用完通知格式	文字資源，只影響通知文字
+field	edx+0xfc	畫面模式	面板 +0xfc；等於 4 走交易畫面刷新 0x5adb10，否則顯示訊息並播音效
+# case 範圍：八個角色的八個背包槽、隊伍背包八槽（上限，超過 calc 報錯）、手持結構皆由 arena／全域建立；不讀寫遊戲目錄。
+# 環境前提一：0x650e20=1（影像管理器已初始化，0x549390／0x5493e0 的斷言檢查通過）。環境前提二：0x62c464=1（游標圖形第 0 槽已載入；載入器 0x549090 是資源 I/O）。0x650e50=0（音效關，exe 初值）。GetTickCount 固定 4660。
+# 位址樁：0x576030、0x5adb10、0x427ab0、0x427ff0（排除類）；0x520d10、0x4edd20（D4 公式，回傳取自輸入 ret520d10／ret4edd20，呼叫端忽略）。0x55f1e0、0x5493e0、0x549390、0x520070、0x521cd0、0x408860 原樣執行。
+# 覆蓋：本函式 40 個基本塊皆由合法輸入命中，無 cov-exempt；D4 不宣稱子函式全部塊皆覆蓋。

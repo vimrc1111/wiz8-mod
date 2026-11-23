@@ -1,0 +1,11 @@
+--- FAIL: TestFixtureDecode (0.00s)
+    fact_test.go:128: decode exit 2：/tmp/TestFixtureDecode260330981/001/in.dbs: 未實作
+--- FAIL: TestFixtureRoundTrip (0.00s)
+    fact_test.go:136: decode exit 2：/tmp/TestFixtureRoundTrip3847932134/001/in.dbs: 未實作
+--- FAIL: TestEncodeChanges (0.00s)
+    fact_test.go:143: decode exit 2：/tmp/TestEncodeChanges1429121359/001/in.dbs: 未實作
+--- FAIL: TestRealFact (0.01s)
+    fact_test.go:239: decode exit 2：/tmp/TestRealFact3389191439/001/in.dbs: 未實作
+FAIL
+FAIL	wiz8-mod/tools/fact	0.027s
+FAIL

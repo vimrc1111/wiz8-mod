@@ -1,0 +1,48 @@
+call	2b6	無關	srAssertFail 匯入識別；只在非法索引或類型的斷言分支進入，沒有可差分的返回。
+call	40efa0	boundedRandom	有界亂數 R(n)；覆寫判定的擲骰，TestEmu 以錄下的 rng 序列逐次對齊。
+call	4e5550	monsterIndexByID	依怪物識別碼查列表索引，非法 ID 斷言。
+call	4e5620	monsterRecordByIndex	依有效索引取怪物記錄。
+call	4e5720	loadedMonsterTemplate	取怪物種類模板，供攻擊槽的存在與射程判定。
+call	51f8d0	allHandsEmpty	四個手部記錄皆空時非零；只在此為真才走換手分支。
+call	53d450	monsterAttackReady	怪物逐一檢查攻擊槽，有目標返回 0，否則回最大狀態值；calc 為 saoMonsterReady。
+call	547440	monsterCanActWithAction	依攻擊類別與法術判斷怪物能否行動；calc 為 saoMonsterCanAct。
+call	547940	characterHasFeature	職業與種族能力聯集，查能力 7；calc 為 saoFeature7。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	srAssertFail 匯入槽，僅斷言分支使用。
+data	61738c	無關	斷言用原始檔名診斷字串，非規則資料。
+data	6175c8	無關	斷言用診斷字串，非規則資料。
+data	6175ec	無關	斷言用診斷字串，非規則資料。
+data	617614	無關	斷言用診斷字串，非規則資料。
+data	6836a8	combatSlotRecords	戰鬥槽記錄陣列基址，步距 0xd4，+0x98 為角色戰鬥槽旗標；case 以 combat 物件擺放。
+data	685174	characterRecords	角色陣列基址，步距 6242；case 以 character 物件擺放。
+data	685178	actionQueue	行動佇列基址，步距 262；+0 在場旗標、+1 行動種類；case 以 queue 物件擺放。
+data	68c09c	messageController	訊息控制器指標；只供換手失敗時的訊息通知，不影響返回碼。
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff5	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff6	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff7	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x0	partyActionQueueRecord	行動佇列記錄 +0，在場旗標。
+field	eax+0xcb	characterPartyFlag	取自角色／戰鬥記錄的旗標位元組，參與隊員資格判定。
+field	eax+edx*4+0x98	combatSlotFlag	戰鬥槽記錄 +0x98 的隊員索引欄；以 char.combatSlotFlag 輸入。
+field	ebp+0x10	statusWord10	狀態計數字 +0x10；角色起於 +0xa01，怪物起於 +0x57。
+field	ebp+0x18	statusWord18	狀態計數字 +0x18。
+field	ebp+0x2c	statusWord2c	狀態計數字 +0x2c。
+field	ebp+0x30	statusWord30	狀態計數字 +0x30。
+field	ebp+0x34	statusWord34	狀態計數字 +0x34。
+field	ebp+0x38	statusWord38	狀態計數字 +0x38。
+field	ecx+0x0	parameterType	參數結構 +0，類型 1 角色、2 怪物。
+field	ecx+0x8f4	characterHandState	角色手部記錄區的換手相關欄位，由 51d3b0 與 4ee220 重算。
+field	ecx+eax*2+0x1	itemSubtypeOrFlag	以物品索引為位移的物品欄位位元組；12 個固定物品由 handItem 輸入擺放。
+field	edi+0x0	parameterType	參數結構 +0，類型 1 角色、2 怪物。
+field	edi+0x4	partySlot	參數結構 +4，隊員槽索引，0..7。
+field	edi+0x8	monsterId	參數結構 +8，怪物識別碼。
+field	edx+0x0	parameterType	參數結構 +0。
+field	edx+0x15	monsterSpellFlag	怪物攻擊槽的法術旗標位元組。
+field	edx+0xe9	characterActionState	角色 +0xe9 起的行動狀態欄位。
+field	esi+0x10	monsterStatusWord10	怪物狀態計數字；輸入 mon.f10。
+field	esi+0x247	monsterStrength	怪物 +0x247；輸入 mon.str。
+field	esi+0x2e1	monsterAction	怪物行動代碼；53d4b0 前後歸零，故為武器攻擊。
+field	esi+0x2e5	monsterSpellIndex	怪物法術索引；行動為 0 時不讀。
+field	esi+0x2fd	monsterFlag2fd	怪物 +0x2fd 旗標；輸入 mon.flag2fd。

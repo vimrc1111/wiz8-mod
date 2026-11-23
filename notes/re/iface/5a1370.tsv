@@ -1,0 +1,21 @@
+# 位址樁：0x536190、0x53c270（D4 公式，回傳取自輸入 r536190／r53c270；F 跑 combatTargetValidNode／characterTargetableNode）；0x4ea5c0、0x4e8000（D4 公式，回傳不被讀，只記引數與次數）；0x569a50、0x52e690、0x4c5eb0（排除，引數與次數為輸出）；0x52e5c0、0x562a50、0x53a320、0x4f23d0、0x55ee70、0x58f6b0、0x562580、0x5b1c80、0x56aab0（排除的顯示呼叫，只計次、不比對）。0x58aa20、0x59f2b0、0x560e10 的顯示效果原樣執行、不比對。
+call	537270	施法目標相容檢查	選定角色目前目標描述（0x53b7f0）對法術目標類別（0x5010f0）；類別 2 且全隊旗標 0x685116 時直接通過，否則 0x537160 相容表＋0x536190 目標有效；回傳 al 決定是否提交
+call	56aa20	對話框開啟中	讀 0x68edd0 非零；開啟中不提交、不送提示訊息
+call	58aa20	無關	訊息面板清空（顯示）；回傳不被讀，只寫戰鬥 UI 物件的訊息槽，不是規則資料
+call	59f2b0	無關	施法面板關閉與畫面刷新（顯示，尾跳）；回傳不被讀，不寫規則資料
+data	5a0ae0	無關	提示訊息的回呼／格式常數位址，只原樣交給排除類 0x569a50 當參數
+data	683f9b	訊息面板清空旗標	byte；非零時排入施法前先清訊息面板（顯示）
+data	685174	角色記錄陣列	指標，步距 0x1862；施法者以記錄位址識別（0x517ec0）
+data	68518d	選定角色槽	目前選定的隊伍槽 0..7；相容檢查、動作提交都用它
+data	69bf3c	施法面板	指標；+0xf8 施法者、+0x100 法術、+0x108 零起算強度、+0x10c 模式、+0xc5a 提交中、+0xc5b 提示鎖
+data	68c09c	字串表	指標；+0x1e90／+0x1e94 兩則提示訊息 id，只交給排除類訊息呼叫
+field	eax+0x100	panelSpell	面板選定法術 id；0 表示未選，不提交
+field	eax+0x108	panelPower	面板零起算強度；-1 表示未選（模式 3 除外），排入時加一成為強度
+field	eax+0x10c	panelMode	面板模式；3 時即使強度未選也做相容檢查
+field	eax+0x1e94	無關	字串表內的提示訊息 id（法術 0x49），只交給排除類訊息呼叫
+field	ecx+0x1e90	無關	字串表內的提示訊息 id（法術 0x4b），只交給排除類訊息呼叫
+field	eax+0xc5a	panelSubmitting	面板提交中旗標；提交選定動作（0x53a830）期間設 1，之後清 0
+field	edx+0xc5a	panelSubmitting	同上，提交結束清 0
+field	eax+0xc5b	panelHintLock	面板提示鎖；非零時不送法術 0x49／0x4b 的提示訊息
+field	eax+0xf8	panelCaster	施法者角色記錄位址；0x517ec0 換成隊伍槽
+field	eax+edx*2+0x1861	characterHintFlag	角色記錄 +0x1861 byte；法術 0x4b 時非零才送提示訊息

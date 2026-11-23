@@ -1,0 +1,1460 @@
+node	input	source	value	reason
+004ee220	inParty	fixed	1	角色在隊伍中
+004ee220	class	scenario	Class	
+004ee220	race	scenario	Race	
+004ee220	strength	scenario	STR（PlanAttrs）	
+004ee220	dexterity	scenario	DEX（PlanAttrs）	
+004ee220	speed	scenario	SPD（PlanAttrs）	
+004ee220	senses	scenario	SEN（PlanAttrs）	
+004ee220	loadCategory	fixed	0	負重未建模（取無負重）
+004ee220	rangedExpert	scenario	SEN≥100（PlanAttrs）	
+004ee220	meleeExpert	scenario	STR≥100（PlanAttrs）	
+004ee220	classLevel0	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel1	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel2	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel3	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel4	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel5	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel6	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel7	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel8	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel9	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel10	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel11	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel12	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel13	scenario	Level（k==Class，其餘 0）	
+004ee220	classLevel14	scenario	Level（k==Class，其餘 0）	
+004ee220	skill0	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill1	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill2	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill3	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill4	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill5	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill6	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill7	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill8	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill9	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill10	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill11	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill12	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill13	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill14	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill15	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill16	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill17	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill18	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill19	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill20	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill21	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill22	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill23	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill24	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill25	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill26	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill27	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill28	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill29	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill30	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill31	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill32	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill33	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill34	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill35	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill36	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill37	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill38	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill39	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	skill40	scenario	EffectiveSkill(Skills[k])（未列 0）	
+004ee220	itemID0	fixed	0	世界表索引：calc fight 直接給該筆的欄值（主手＝0；0x51c930 另取 Main.Item 定義 ID）
+004ee220	charges0	fixed	1	武器不耗次數
+004ee220	itemID1	scenario	Off（有 1，無 -1）	
+004ee220	charges1	fixed	1	武器不耗次數
+004ee220	item0type	dbs	ITEMS[Main]+0x3e（無則 0）	
+004ee220	item0subtype	dbs	ITEMS[Main]+0x3f（無則 0）	
+004ee220	item0weaponSkill	dbs	ITEMS[Main]+0x46（無則 0）	
+004ee220	item0range	dbs	ITEMS[Main]+0x47（無則 0）	
+004ee220	item0initiative	dbs	ITEMS[Main]+0x48（無則 0）	
+004ee220	item0toHit	dbs	ITEMS[Main]+0x49（無則 0）	
+004ee220	item0damage	dbs	ITEMS[Main]+0x4a（無則 0）	
+004ee220	item0attacks	dbs	ITEMS[Main]+0x4e（無則 0）	
+004ee220	item0chargeType	dbs	ITEMS[Main]+0x66（無則 0）	
+004ee220	item1type	dbs	ITEMS[Off]+0x3e（無則 0）	
+004ee220	item1subtype	dbs	ITEMS[Off]+0x3f（無則 0）	
+004ee220	item1weaponSkill	dbs	ITEMS[Off]+0x46（無則 0）	
+004ee220	item1range	dbs	ITEMS[Off]+0x47（無則 0）	
+004ee220	item1initiative	dbs	ITEMS[Off]+0x48（無則 0）	
+004ee220	item1toHit	dbs	ITEMS[Off]+0x49（無則 0）	
+004ee220	item1damage	dbs	ITEMS[Off]+0x4a（無則 0）	
+004ee220	item1attacks	dbs	ITEMS[Off]+0x4e（無則 0）	
+004ee220	item1chargeType	dbs	ITEMS[Off]+0x66（無則 0）	
+004ee220	npcUnavailable	fixed	0	非 NPC、無任務旗標
+004ee220	npcPersonality	fixed	0	非 NPC、無任務旗標
+004ee220	quest68	fixed	0	非 NPC、無任務旗標
+004ee220	prior0combinedSkill	node	004ee220.hand0combinedSkill（前次輸出，不動點）	
+004ee220	prior0BAR	node	004ee220.hand0BAR（前次輸出，不動點）	
+004ee220	prior0attacks	node	004ee220.hand0attacks（前次輸出，不動點）	
+004ee220	prior0swings	node	004ee220.hand0swings（前次輸出，不動點）	
+004ee220	prior0initiative	node	004ee220.hand0initiative（前次輸出，不動點）	
+004ee220	prior0toHit	node	004ee220.hand0toHit（前次輸出，不動點）	
+004ee220	prior0damageFlat	node	004ee220.hand0damageFlat（前次輸出，不動點）	
+004ee220	prior0damagePercent	node	004ee220.hand0damagePercent（前次輸出，不動點）	
+004ee220	prior0damageDice	node	004ee220.hand0damageDice（前次輸出，不動點）	
+004ee220	prior0attackModes	node	004ee220.hand0attackModes（前次輸出，不動點）	
+004ee220	prior0effect0	node	004ee220.hand0effect0（前次輸出，不動點）	
+004ee220	prior0effect1	node	004ee220.hand0effect1（前次輸出，不動點）	
+004ee220	prior0effect2	node	004ee220.hand0effect2（前次輸出，不動點）	
+004ee220	prior0effect3	node	004ee220.hand0effect3（前次輸出，不動點）	
+004ee220	prior1combinedSkill	node	004ee220.hand1combinedSkill（前次輸出，不動點）	
+004ee220	prior1BAR	node	004ee220.hand1BAR（前次輸出，不動點）	
+004ee220	prior1attacks	node	004ee220.hand1attacks（前次輸出，不動點）	
+004ee220	prior1swings	node	004ee220.hand1swings（前次輸出，不動點）	
+004ee220	prior1initiative	node	004ee220.hand1initiative（前次輸出，不動點）	
+004ee220	prior1toHit	node	004ee220.hand1toHit（前次輸出，不動點）	
+004ee220	prior1damageFlat	node	004ee220.hand1damageFlat（前次輸出，不動點）	
+004ee220	prior1damagePercent	node	004ee220.hand1damagePercent（前次輸出，不動點）	
+004ee220	prior1damageDice	node	004ee220.hand1damageDice（前次輸出，不動點）	
+004ee220	prior1attackModes	node	004ee220.hand1attackModes（前次輸出，不動點）	
+004ee220	prior1effect0	node	004ee220.hand1effect0（前次輸出，不動點）	
+004ee220	prior1effect1	node	004ee220.hand1effect1（前次輸出，不動點）	
+004ee220	prior1effect2	node	004ee220.hand1effect2（前次輸出，不動點）	
+004ee220	prior1effect3	node	004ee220.hand1effect3（前次輸出，不動點）	
+0053d870	who	fixed	0	攻擊者佔隊伍格 0
+0053d870	mode	scenario	Mode／OffMode（依手）	
+0053d870	flag510c	fixed	0	非紀錄重播
+0053d870	hand	scenario	手（0 主、1 副）	
+0053d870	swings0	node	004ee220.hand0attacks	
+0053d870	swings1	node	004ee220.hand1attacks	
+0053d870	lsFlag	scenario	LS 旗標：0x4e8370 以 lsChance 抽中（Fight 兩值加權）	
+0053d870	kind0	node	004ee220.hand0type	
+0053d870	kind1	node	004ee220.hand1type	
+0053d870	enabled0	node	004ee220.hand0enabled	
+0053d870	enabled1	node	004ee220.hand1enabled	
+0053d870	hmode0	node	004ee220.hand0weaponSkill	
+0053d870	hmode1	node	004ee220.hand1weaponSkill	
+0053d870	dice0	node	004ee220.hand0swings	
+0053d870	dice1	node	004ee220.hand1swings	
+0053d870	umask0	node	004ee220.hand0attackModes	
+0053d870	umask1	node	004ee220.hand1attackModes	
+0053d870	item6	fixed	0	世界表索引：calc fight 直接給該筆的欄值（主手＝0）
+0053d870	item7	scenario	Off（有 1，無 2＝空物品格；子節點 519ac0 域不收 -1）	
+0053d870	a15	fixed	0	未建模：C+0xa15 禁 LS 狀態取 0
+0053d870	cls	scenario	Class	
+0053d870	race	scenario	Race	
+0053d870	level	scenario	當前職業等級 [C+0x8d+4·C+0x69]（build/wiz8.asm:432059）	
+0053d870	inParty	fixed	1	角色在隊伍中
+0053d870	mainAction	fixed	0	行動＝近戰攻擊
+0053d870	ttype	fixed	3	目標類別＝怪物
+0053d870	tchar	fixed	4	目標是怪物，角色目標欄不讀（任一非攻擊者格）
+0053d870	tmon	fixed	0	世界表索引：calc fight 直接給該筆的欄值（怪物清單 0）
+0053d870	tgrp	fixed	-1	單一目標，無群組
+0053d870	it0cls	dbs	ITEMS[Main]+0x3e（無則 0）	
+0053d870	it0sub	dbs	ITEMS[Main]+0x3f（無則 0）	
+0053d870	it0range	dbs	ITEMS[Main]+0x47（無則 0）	
+0053d870	it0bonus	dbs	ITEMS[Main]+0xad（無則 0）	
+0053d870	it0wmask	dbs	ITEMS[Main]+0x4e（無則 0）	
+0053d870	it1cls	dbs	ITEMS[Off]+0x3e（無則 0）	
+0053d870	it1sub	dbs	ITEMS[Off]+0x3f（無則 0）	
+0053d870	it1range	dbs	ITEMS[Off]+0x47（無則 0）	
+0053d870	it1bonus	dbs	ITEMS[Off]+0xad（無則 0）	
+0053d870	it1wmask	dbs	ITEMS[Off]+0x4e（無則 0）	
+0053d870	it2cls	fixed	0	裝備表只用主副手兩格
+0053d870	it2sub	fixed	0	裝備表只用主副手兩格
+0053d870	it2range	fixed	0	裝備表只用主副手兩格
+0053d870	it2bonus	fixed	0	裝備表只用主副手兩格
+0053d870	it2wmask	fixed	0	裝備表只用主副手兩格
+0053d870	it3cls	fixed	0	裝備表只用主副手兩格
+0053d870	it3sub	fixed	0	裝備表只用主副手兩格
+0053d870	it3range	fixed	0	裝備表只用主副手兩格
+0053d870	it3bonus	fixed	0	裝備表只用主副手兩格
+0053d870	it3wmask	fixed	0	裝備表只用主副手兩格
+0053d870	tpresent	fixed	1	目標是怪物，角色目標欄不讀
+0053d870	thp	fixed	10	目標是怪物，角色目標欄不讀
+0053d870	tstatus	fixed	0	目標是怪物，角色目標欄不讀
+0053d870	tmainA	fixed	0	目標是怪物，角色目標欄不讀
+0053d870	toffA	fixed	0	目標是怪物，角色目標欄不讀
+0053d870	tcur	fixed	20	目標是怪物，角色目標欄不讀
+0053d870	tinterf	fixed	0	目標是怪物，角色目標欄不讀
+0053d870	tatt	fixed	0	目標是怪物，角色目標欄不讀
+0053d870	mid	fixed	0	世界表索引：calc fight 直接給該筆的欄值（怪物清單 0）
+0053d870	mhp	fixed	1	怪物存活（回合內死亡未建模）
+0053d870	m33	fixed	1	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+0053d870	m107	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+0053d870	m87	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+0053d870	m2e1	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）（姿勢正常）
+0053d870	m24b	fixed	100	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+0053d870	mexcl	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+0053d870	mactive	fixed	1	怪物在場
+0053d870	men	fixed	1	怪物可被攻擊
+0053d870	mphys	fixed	1	怪物可被攻擊
+0053d870	mspell	fixed	1	怪物可被攻擊
+0053d870	mcnt	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+0053d870	combat	fixed	1	戰鬥中
+0053d870	px	fixed	1092616192	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格
+0053d870	py	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格
+0053d870	pz	fixed	1092616192	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格
+0053d870	mx	fixed	1093664768	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格
+0053d870	my	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格
+0053d870	mz	fixed	1092616192	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格
+0053d870	mrad	fixed	1065353216	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格
+0053d870	prad	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格
+0053d870	mhead	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格
+0053d870	f0_0	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f0_1	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f0_2	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f0_3	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f0_4	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f0_5	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f0_6	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f0_7	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f3_0	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f3_1	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f3_2	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f3_3	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f3_4	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f3_5	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f3_6	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+0053d870	f3_7	fixed	0	幾何不在數值範圍（MG 2026-10-11）：固定正面相鄰 1 格（隊形格）
+00541c00	targetType	fixed	3	目標類別＝怪物
+00541c00	mode	scenario	Mode／OffMode（依手）	
+00541c00	characterIndex	fixed	4	目標是怪物，角色目標欄不讀（任一非攻擊者格）
+00541c00	combat	fixed	1	戰鬥中
+00541c00	ambush	node	0053d870.flag9a4	
+00541c00	surprise	node	0053d870.flag9a5	
+00541c00	speedDefense	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	shieldDefense	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	characterDefenseSuppressed	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	monsterDefense	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	monsterHitDefense	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	fatigue	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	monsterPosture	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	monsterDefenseSuppressed	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	ambushDefenseMask	dbs	MONSTERS[Monster]+0xd0	
+00541c00	completedActionSelector	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	completedPosture	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	pendingPosture	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	sceneFlags	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	HP	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	status	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	actionCompleted	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	mainAction	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	offAction	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	monsterID	fixed	0	世界表索引：calc fight 直接給該筆的欄值（怪物清單 0）
+00541c00	templateIndex	fixed	0	世界表索引：calc fight 直接給該筆的欄值（模板欄直接給）
+00541c00	characterDefHit	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541c00	monsterAC	dbs	MONSTERS[Monster]+0x15d	
+00541c00	who	fixed	0	攻擊者佔隊伍格 0
+00541c00	hand	scenario	手（0 主、1 副）	
+00541c00	skipDefense	node	0053e250 膠合（命中 0／失手項 1）	
+00541c00	handB0	node	004ee220.hand0BAR	
+00541c00	handB1	node	004ee220.hand1BAR	
+00541c00	handJ0	node	004ee220.hand0toHit	
+00541c00	handJ1	node	004ee220.hand1toHit	
+00541c00	handKind0	node	004ee220.hand0weaponSkill	
+00541c00	handKind1	node	004ee220.hand1weaponSkill	
+00541c00	skillBonus	fixed	0	未建模：暫時技能加成
+00541c00	fatigueCategory	fixed	0	未建模：疲勞（取精神飽滿）
+00541c00	battleRecordT94	fixed	0	未建模：戰鬥紀錄 T94
+00541c00	speed	scenario	SPD（PlanAttrs）	
+00541c00	attackerStat0	scenario	INT（PlanAttrs）	
+00541c00	attackerStat1	scenario	DEX（PlanAttrs）	
+00541c00	attackerStat2	scenario	SEN（PlanAttrs）	
+00541c00	levelCapState	fixed	0	未建模：等級上限狀態
+00541c00	currentClass	scenario	Class	
+00541c00	race	scenario	Race	
+00541c00	difficulty	scenario	Difficulty	
+00541c00	reverseDifficultyState	fixed	0	未建模：反向難度狀態
+00541c00	targetCharStat0	fixed	0	目標是怪物，角色目標欄不讀
+00541c00	targetCharStat1	fixed	0	目標是怪物，角色目標欄不讀
+00541c00	targetCharSpeed	fixed	0	目標是怪物，角色目標欄不讀
+00541c00	targetCharStat3	fixed	0	目標是怪物，角色目標欄不讀
+00541c00	monsterStat0	dbs	clamp(MONSTERS[Monster]+0xd2,1,125)	
+00541c00	monsterStat1	dbs	clamp(MONSTERS[Monster]+0xd3,1,125)	
+00541c00	monsterStat2	dbs	clamp(MONSTERS[Monster]+0xd4,1,125)	
+00541c00	monsterStat3	dbs	clamp(MONSTERS[Monster]+0xd5,1,125)	
+00541c00	classLevel-1	scenario	Level	
+00541c00	classLevel0	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel1	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel2	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel3	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel4	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel5	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel6	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel7	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel8	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel9	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel10	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel11	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel12	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel13	scenario	Level（k==Class，其餘 0）	
+00541c00	classLevel14	scenario	Level（k==Class，其餘 0）	
+00541ec0	who	fixed	0	攻擊者佔隊伍格 0
+00541ec0	hand	scenario	手（0 主、1 副）	
+00541ec0	targetType	fixed	3	目標類別＝怪物
+00541ec0	mode	scenario	Mode／OffMode（依手）	
+00541ec0	characterIndex	fixed	4	目標是怪物，角色目標欄不讀（任一非攻擊者格）
+00541ec0	combat	fixed	1	戰鬥中
+00541ec0	ambush	node	0053d870.flag9a4	
+00541ec0	surprise	node	0053d870.flag9a5	
+00541ec0	speedDefense	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	shieldDefense	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	characterDefenseSuppressed	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	monsterDefense	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	monsterHitDefense	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	fatigue	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	monsterPosture	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	monsterDefenseSuppressed	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	ambushDefenseMask	dbs	MONSTERS[Monster]+0xd0	
+00541ec0	completedActionSelector	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	completedPosture	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	pendingPosture	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	sceneFlags	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	HP	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	status	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	actionCompleted	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	mainAction	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	offAction	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	monsterID	fixed	0	世界表索引：calc fight 直接給該筆的欄值（怪物清單 0）
+00541ec0	templateIndex	fixed	0	世界表索引：calc fight 直接給該筆的欄值（模板欄直接給）
+00541ec0	characterDefHit	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	monsterAC	dbs	MONSTERS[Monster]+0x15d	
+00541ec0	hitLocation	node	0053e250 膠合（部位骰）	
+00541ec0	monsterPenDefense	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+00541ec0	monsterModeAC0	dbs	MONSTERS[Monster]+0x16d	
+00541ec0	monsterModeAC1	dbs	MONSTERS[Monster]+0x16e	
+00541ec0	monsterModeAC2	dbs	MONSTERS[Monster]+0x16f	
+00541ec0	monsterModeAC3	dbs	MONSTERS[Monster]+0x170	
+00541ec0	monsterModeAC4	dbs	MONSTERS[Monster]+0x171	
+00541ec0	monsterModeAC5	dbs	MONSTERS[Monster]+0x172	
+00541ec0	monsterModeAC6	dbs	MONSTERS[Monster]+0x173	
+00541ec0	monsterModeAC7	dbs	MONSTERS[Monster]+0x174	
+00541ec0	monsterModeAC8	dbs	MONSTERS[Monster]+0x175	
+00541ec0	monsterLocAC0	dbs	MONSTERS[Monster]+0x166	
+00541ec0	monsterLocAC1	dbs	MONSTERS[Monster]+0x167	
+00541ec0	monsterLocAC2	dbs	MONSTERS[Monster]+0x168	
+00541ec0	monsterLocAC3	dbs	MONSTERS[Monster]+0x169	
+00541ec0	monsterLocAC4	dbs	MONSTERS[Monster]+0x16a	
+00541ec0	monsterLocAC5	dbs	MONSTERS[Monster]+0x16b	
+00541ec0	monsterLocAC6	dbs	MONSTERS[Monster]+0x16c	
+00541ec0	characterLocDef0	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	characterLocDef1	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	characterLocDef2	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	characterLocDef3	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	characterLocDef4	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	characterLocDef5	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	characterLocDef6	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	hand0Base	node	004ee220.hand0BAR	
+00541ec0	hand0Skill	node	004ee220.hand0toHit	
+00541ec0	hand0Bonus	node	004ee220.hand0damageFlat	
+00541ec0	hand0Kind	node	004ee220.hand0weaponSkill	
+00541ec0	hand1Base	node	004ee220.hand1BAR	
+00541ec0	hand1Skill	node	004ee220.hand1toHit	
+00541ec0	hand1Bonus	node	004ee220.hand1damageFlat	
+00541ec0	hand1Kind	node	004ee220.hand1weaponSkill	
+00541ec0	bonusA	fixed	0	未建模：暫時加成
+00541ec0	bonusB	fixed	0	未建模：暫時加成
+00541ec0	staminaGrade	fixed	0	未建模：疲勞（取精神飽滿）
+00541ec0	attackerINT	scenario	INT（PlanAttrs）	
+00541ec0	attackerDEX	scenario	DEX（PlanAttrs）	
+00541ec0	attackerSPD	scenario	SPD（PlanAttrs）	
+00541ec0	attackerSEN	scenario	SEN（PlanAttrs）	
+00541ec0	targetINT	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	targetDEX	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	targetSPD	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	targetSEN	fixed	0	目標是怪物，角色目標欄不讀
+00541ec0	monsterAttrA	dbs	clamp(MONSTERS[Monster]+0xd2,1,125)	
+00541ec0	monsterAttrB	dbs	clamp(MONSTERS[Monster]+0xd3,1,125)	
+00541ec0	monsterAttrC	dbs	clamp(MONSTERS[Monster]+0xd4,1,125)	
+00541ec0	monsterAttrD	dbs	clamp(MONSTERS[Monster]+0xd5,1,125)	
+00541ec0	reverseDifficultyState	fixed	0	未建模：反向難度狀態
+00541ec0	difficulty	scenario	Difficulty	
+005420b0	who	fixed	0	攻擊者佔隊伍格 0
+005420b0	hand	scenario	手（0 主、1 副）	
+005420b0	mode	scenario	Mode／OffMode（依手）	
+005420b0	tgt	fixed	3	目標類別＝怪物
+005420b0	tchar	fixed	4	目標是怪物，角色目標欄不讀（任一非攻擊者格）
+005420b0	mid	fixed	0	世界表索引：calc fight 直接給該筆的欄值（怪物清單 0）
+005420b0	g90c	fixed	0	目標是怪物，角色姿勢選擇格不讀
+005420b0	g910	fixed	0	目標是怪物，角色姿勢選擇格不讀
+005420b0	g918	fixed	0	目標是怪物，角色姿勢選擇格不讀
+005420b0	f9a4	node	0053d870.flag9a4	
+005420b0	f9a5	node	0053d870.flag9a5	
+005420b0	s70	node	0053d870.T70	
+005420b0	s74	node	0053d870.T74	
+005420b0	lvi	scenario	Class	
+005420b0	lvm1	scenario	Level	
+005420b0	lv0	scenario	Level（k==Class，其餘 0）	
+005420b0	lv1	scenario	Level（k==Class，其餘 0）	
+005420b0	lv2	scenario	Level（k==Class，其餘 0）	
+005420b0	lv3	scenario	Level（k==Class，其餘 0）	
+005420b0	lv4	scenario	Level（k==Class，其餘 0）	
+005420b0	lv5	scenario	Level（k==Class，其餘 0）	
+005420b0	lv6	scenario	Level（k==Class，其餘 0）	
+005420b0	lv7	scenario	Level（k==Class，其餘 0）	
+005420b0	lv8	scenario	Level（k==Class，其餘 0）	
+005420b0	lv9	scenario	Level（k==Class，其餘 0）	
+005420b0	lv10	scenario	Level（k==Class，其餘 0）	
+005420b0	lv11	scenario	Level（k==Class，其餘 0）	
+005420b0	lv12	scenario	Level（k==Class，其餘 0）	
+005420b0	lv13	scenario	Level（k==Class，其餘 0）	
+005420b0	lv14	scenario	Level（k==Class，其餘 0）	
+005420b0	it0	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	it1	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	it2	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	it3	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	it4	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	it5	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	it6	fixed	0	世界表索引：calc fight 直接給該筆的欄值（主手＝物品格 0）
+005420b0	it7	fixed	1	世界表索引：calc fight 直接給該筆的欄值（副手＝物品格 1，無副手時該格為空）
+005420b0	it8	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	it9	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	it10	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	it11	fixed	2	世界表索引：calc fight 直接給該筆的欄值（其他裝備格指向空物品格 2）
+005420b0	hf0	node	004ee220.hand0type	
+005420b0	hf1	node	004ee220.hand1type	
+005420b0	hb0	node	004ee220.hand0damagePercent	
+005420b0	hb1	node	004ee220.hand1damagePercent	
+005420b0	hd0	node	004ee220.hand0damageDice	
+005420b0	hd1	node	004ee220.hand1damageDice	
+005420b0	pwr	fixed	0	未建模：暫時傷害加成
+005420b0	tA	fixed	0	目標是怪物，角色目標欄不讀
+005420b0	tDA	fixed	0	目標是怪物，角色目標欄不讀
+005420b0	tS	fixed	0	目標是怪物，角色目標欄不讀
+005420b0	mtidx	fixed	0	世界表索引：calc fight 直接給該筆的欄值（模板欄直接給）
+005420b0	mA	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+005420b0	mK	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）（姿勢正常）
+005420b0	mD	fixed	0	戰鬥中執行期狀態未建模（防禦／疲勞／姿勢等取開戰初值 0）
+005420b0	tcb	dbs	MONSTERS[Monster]+0xcb	
+005420b0	tcf	dbs	MONSTERS[Monster]+0xcf	
+005420b0	idice0	dbs	ITEMS[Main]+0x4a（無則 0）	
+005420b0	idice1	dbs	ITEMS[Off]+0x4a（無則 0）	
+005420b0	idice2	fixed	0	空物品格
+005420b0	idice3	fixed	0	空物品格
+005420b0	idice4	fixed	0	空物品格
+005420b0	idice5	fixed	0	空物品格
+005420b0	idice6	fixed	0	空物品格
+005420b0	idice7	fixed	0	空物品格
+005420b0	ib0	dbs	ITEMS[Main]+0x61（無則 255）	
+005420b0	ib1	dbs	ITEMS[Off]+0x61（無則 255）	
+005420b0	ib2	fixed	255	空物品格
+005420b0	ib3	fixed	255	空物品格
+005420b0	ib4	fixed	255	空物品格
+005420b0	ib5	fixed	255	空物品格
+005420b0	ib6	fixed	255	空物品格
+005420b0	ib7	fixed	255	空物品格
+005420b0	g68c510	fixed	0	事件參數，不影響傷害
+005420b0	cbase	fixed	0	角色表基址，只出現在事件參數
+005420b0	dd0	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	dd1	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	dd2	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	dd3	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	dd4	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	dd5	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	dd6	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	dd7	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	r51	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	r4d0	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	r4d1	fixed	0	Emu 重播格，F 路徑不讀
+005420b0	fcls0	dbs	ITEMS[Main]+0x3f（無則 0）	
+005420b0	fcls1	dbs	ITEMS[Off]+0x3f（無則 0）	
+005420b0	fcls2	fixed	0	空物品格
+005420b0	fcls3	fixed	0	空物品格
+005420b0	fcls4	fixed	0	空物品格
+005420b0	fcls5	fixed	0	空物品格
+005420b0	fcls6	fixed	0	空物品格
+005420b0	fcls7	fixed	0	空物品格
+005420b0	fhp	fixed	0	目標是怪物，角色目標欄不讀
+005420b0	fst	fixed	0	目標是怪物，角色目標欄不讀
+005420b0	fmain	fixed	0	目標是怪物，角色目標欄不讀
+005420b0	foff	fixed	0	目標是怪物，角色目標欄不讀
+005420b0	fdone	fixed	0	目標是怪物，角色目標欄不讀
+00543270	durationMessage	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	message	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	statsOut	fixed	536871168	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	sourceKind	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	sourceIndex	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	sourceID	fixed	2513873324	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	targetKind	fixed	3	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	targetIndex	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	monsterID	fixed	3958627719	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	matchSlot	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	presence	fixed	156	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	memberNameColor	fixed	184	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	characterPrimaryState	fixed	3	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	characterName0	fixed	68	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	characterName1	fixed	81	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	templateIndex	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	monsterPrimaryState	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	monsterHP	fixed	2	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	monsterMaxStamina	fixed	150	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	monsterStamina	fixed	34	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	monsterCondition17	fixed	9276	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	monsterFatigue	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	quantityBase	fixed	0	53e250 攻擊包清零後不寫（數量、威力、持續）
+00543270	quantityDiceCount	fixed	0	53e250 攻擊包清零後不寫（數量、威力、持續）
+00543270	quantityDieSides	fixed	0	53e250 攻擊包清零後不寫（數量、威力、持續）
+00543270	chance0	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance1	dbs	ITEMS[該手武器]+0x51（徒手：4ee220 effect 位元組 1）	
+00543270	chance2	dbs	ITEMS[該手武器]+0x52（徒手：4ee220 effect 位元組 2）	
+00543270	chance3	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance4	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance5	dbs	ITEMS[該手武器]+0x55（徒手：4ee220 effect 位元組 5）＋Critical Strike 項（技能 19／25，餘數以 R(25) 進位）	
+00543270	chance6	dbs	ITEMS[該手武器]+0x56（徒手：4ee220 effect 位元組 6）＋戰士 fighterKO(Level)	
+00543270	chance7	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance8	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance9	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance10	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance11	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance12	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance13	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance14	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	chance15	fixed	0	未建模：槽 1、2、5、6 以外的特效槽
+00543270	effectStrength	scenario	Level＋min(Level,15)	
+00543270	effectPenalty	dbs	ITEMS[該手]+0x60＋（T74≠-1）ITEMS[副槽]+0x60（無武器 0；weapon-effects.md E+0x1c）	
+00543270	effectPower	fixed	0	53e250 攻擊包清零後不寫（數量、威力、持續）
+00543270	durationBonusPercent	fixed	0	53e250 攻擊包清零後不寫（數量、威力、持續）
+00543270	durationBase	fixed	0	53e250 攻擊包清零後不寫（數量、威力、持續）
+00543270	durationPerPower	fixed	0	53e250 攻擊包清零後不寫（數量、威力、持續）
+00543270	hostileMonsterCount	fixed	2	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	activeCharacterIndex	fixed	7	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	damageEventCookie	fixed	2402464987	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_0c	fixed	842	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_10	fixed	472	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_14	fixed	632	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_18	fixed	931	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_1c	fixed	765	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_20	fixed	518	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_24	fixed	124	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_28	fixed	465	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_2c	fixed	145	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_30	fixed	839	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_34	fixed	822	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_38	fixed	864	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_3c	fixed	27	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_40	fixed	661	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_44	fixed	669	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_48	fixed	833	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_4c	fixed	756	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_50	fixed	63	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_54	fixed	337	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_68	fixed	606	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_6c	fixed	589	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	stats_70	fixed	652	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	event_30	fixed	79	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	event_34	fixed	805	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	text383Ptr	fixed	3391413659	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	text913_0	fixed	71	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	text913_1	fixed	26	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_0	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_1	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_2	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_3	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_4	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_5	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_6	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_7	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_8	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_9	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_10	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_11	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551ba0_12	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_0	fixed	20	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_1	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_2	fixed	9	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_3	fixed	16	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_4	fixed	6	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_5	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_6	fixed	5	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_7	fixed	20	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_8	fixed	16	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_9	fixed	20	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_10	fixed	11	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_11	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_12	fixed	7	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_13	fixed	9	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_14	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_15	fixed	5	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_16	fixed	7	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_17	fixed	14	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_18	fixed	11	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5519c0_19	fixed	8	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_0	fixed	9	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_1	fixed	12	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_2	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_3	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_4	fixed	10	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_5	fixed	13	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_6	fixed	12	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_7	fixed	10	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_8	fixed	5	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_9	fixed	10	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_10	fixed	3	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_11	fixed	14	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_12	fixed	11	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_13	fixed	5	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_14	fixed	13	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_15	fixed	2	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_16	fixed	4	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_17	fixed	7	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_18	fixed	6	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r551a20_19	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5520d0_0	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5520d0_1	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r5520d0_2	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	w552250_0	fixed	8	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	w552250_1	fixed	13	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	w552250_2	fixed	46	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r552250	fixed	1230137050	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r52b7e0	fixed	4086375950	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r52af50	fixed	893252631	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r52b590	fixed	2775586159	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r524780	fixed	3402614605	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r523c00	fixed	927822497	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	r52e690	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterStatus13Block	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterClass	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterRace	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.templateStatus12Immune	dbs	MONSTERS[Monster]+0x1be	
+00543270	f.templateCategory	dbs	MONSTERS[Monster]+0xcb	
+00543270	f.resistResult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.durationResult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.messagesEnabled	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.difficulty	scenario	Difficulty	
+00543270	f.characterLevel	fixed	10	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterResistance_fire	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterResistance_water	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterResistance_air	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterResistance_earth	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterResistance_mental	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterResistance_divine	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterSkillGrowthFlag	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.characterReverseDifficulty	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.templateResistance_fire	dbs	MONSTERS[Monster]+0x176	
+00543270	f.templateResistance_water	dbs	MONSTERS[Monster]+0x177	
+00543270	f.templateResistance_air	dbs	MONSTERS[Monster]+0x178	
+00543270	f.templateResistance_earth	dbs	MONSTERS[Monster]+0x179	
+00543270	f.templateResistance_mental	dbs	MONSTERS[Monster]+0x17a	
+00543270	f.templateResistance_divine	dbs	MONSTERS[Monster]+0x17b	
+00543270	f.templateLevel	dbs	MONSTERS[Monster]+0x24f	
+00543270	f.monsterResistanceModifier_fire	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.monsterResistanceModifier_water	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.monsterResistanceModifier_air	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.monsterResistanceModifier_earth	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.monsterResistanceModifier_mental	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.monsterResistanceModifier_divine	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.monsterDifficultyClass	fixed	1	敵對怪 E+0x16＝1（notes/re/monsters-live.md:81；0x55ccb0 依此套難度倍率）
+00543270	f.sdr.r552250	fixed	20	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.r522fe0	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.C.buff5.dur	fixed	5	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.C.name0	fixed	65	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.C.name1	fixed	66	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.C.name2	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.P.present	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.P.f1	fixed	7	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.text0	fixed	65	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.text1	fixed	66	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.group	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.inCombat	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.maxHP	fixed	50	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.maxSP	fixed	10	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond0	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond1	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond2	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond3	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond4	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond5	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond6	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond7	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond8	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond9	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond10	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond11	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond12	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond13	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond14	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond15	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond16	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond17	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.cond18	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff0.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff0.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff0.dur	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff1.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff1.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff1.dur	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff2.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff2.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff2.dur	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff3.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff3.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff3.dur	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff4.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff4.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff4.dur	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff5.power	fixed	9	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff5.mult	fixed	100	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff5.dur	fixed	5	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff6.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff6.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff6.dur	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff7.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff7.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.buff7.dur	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.attackPenalty	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff0.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff0.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff0.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff0.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff1.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff1.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff1.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff1.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff2.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff2.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff2.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff2.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff3.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff3.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff3.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff3.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff4.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff4.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff4.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff4.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff5.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff5.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff5.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff5.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff6.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff6.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff6.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff6.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff7.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff7.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff7.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff7.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff8.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff8.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff8.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff8.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff9.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff9.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff9.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff9.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff10.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff10.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff10.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff10.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff11.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff11.type	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff11.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.M.eff11.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.tpl.attr0	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.tpl.attr1	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.tpl.attr2	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.tpl.attr3	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.tpl.attr4	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.tpl.species	fixed	396	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.actor.fa4	fixed	20	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.actor.fa7	fixed	19	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp0.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp0.code	fixed	48	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp0.value	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp1.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp1.code	fixed	48	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp1.value	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp2.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp2.code	fixed	48	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp2.value	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp3.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp3.code	fixed	48	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp3.value	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp4.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp4.code	fixed	48	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp4.value	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp5.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp5.code	fixed	48	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp5.value	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp6.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp6.code	fixed	48	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp6.value	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp7.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp7.code	fixed	48	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp7.value	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp8.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp8.code	fixed	48	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.sp8.value	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura0.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura0.code	fixed	52	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura0.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura0.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura1.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura1.code	fixed	52	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura1.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura1.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura2.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura2.code	fixed	52	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura2.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura2.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura3.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura3.code	fixed	52	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura3.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura3.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura4.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura4.code	fixed	52	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura4.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura4.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura5.active	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura5.code	fixed	52	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura5.power	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.T.aura5.mult	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.grpA.f2c	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.grpB.f2c	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.fRj	fixed	10	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.fLt	fixed	5	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft0	fixed	536870912	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft1	fixed	536940544	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft2	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft3	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft4	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft5	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft6	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft7	fixed	537133056	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft8	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft9	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft10	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft11	fixed	537137152	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft12	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft13	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft14	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft15	fixed	537138176	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft16	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft17	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft18	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft19	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft20	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft21	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft22	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft23	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft24	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft25	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft26	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft27	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft28	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft29	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft30	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft31	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft32	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft33	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft34	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft35	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft36	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft37	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft38	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft39	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft40	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft41	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft42	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft43	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft44	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft45	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft46	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft47	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft48	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft49	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft50	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft51	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft52	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft53	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft54	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft55	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft56	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft57	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft58	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft59	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft60	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft61	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft62	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft63	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft64	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft65	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft66	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft67	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft68	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft69	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft70	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft71	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft72	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft73	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft74	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft75	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft76	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft77	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft78	fixed	536956928	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft79	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft80	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft81	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft82	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft83	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft84	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft85	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft86	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft87	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft88	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft89	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft90	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft91	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft92	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft93	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft94	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft95	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft96	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft97	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft98	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft99	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft100	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft101	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft102	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft103	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft104	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft105	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft106	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft107	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft108	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft109	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft110	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft111	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft112	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft113	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft114	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft115	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft116	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft117	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft118	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft119	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft120	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft121	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft122	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft123	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft124	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft125	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft126	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft127	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft128	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft129	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft130	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft131	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft132	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft133	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft134	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft135	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft136	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft137	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft138	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft139	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft140	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft141	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft142	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft143	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft144	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft145	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft146	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft147	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft148	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft149	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft150	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft151	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft152	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft153	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft154	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft155	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft156	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft157	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft158	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft159	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft160	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft161	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft162	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft163	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft164	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft165	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft166	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft167	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft168	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft169	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft170	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft171	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft172	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft173	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft174	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft175	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft176	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft177	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft178	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft179	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft180	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft181	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft182	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft183	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft184	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft185	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft186	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft187	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft188	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft189	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft190	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft191	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft192	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft193	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft194	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft195	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft196	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft197	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft198	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft199	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft200	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft201	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft202	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft203	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft204	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft205	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft206	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft207	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft208	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft209	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft210	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft211	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft212	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft213	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft214	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft215	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft216	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft217	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft218	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft219	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft220	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft221	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft222	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft223	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft224	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft225	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft226	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft227	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft228	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft229	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft230	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft231	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft232	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft233	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft234	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft235	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft236	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft237	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft238	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft239	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft240	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft241	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft242	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft243	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft244	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft245	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft246	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft247	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft248	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft249	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft250	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft251	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft252	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft253	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft254	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft255	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft256	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft257	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft258	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft259	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft260	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft261	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft262	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft263	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft264	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft265	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft266	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft267	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft268	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft269	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft270	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft271	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft272	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft273	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft274	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft275	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft276	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft277	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft278	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft279	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft280	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft281	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft282	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft283	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft284	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft285	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft286	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft287	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft288	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft289	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft290	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft291	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft292	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft293	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft294	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft295	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft296	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft297	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft298	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft299	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft300	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft301	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft302	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft303	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	f.sdr.ft304	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.textPtr	fixed	4660	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.b0d	fixed	100	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.b11	fixed	10	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.b15	fixed	1000	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.a05	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.f69	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.f6d	fixed	3	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e0	fixed	10	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e1	fixed	11	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e2	fixed	12	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e3	fixed	13	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e4	fixed	14	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e5	fixed	15	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e6	fixed	16	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e7	fixed	17	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e8	fixed	18	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e9	fixed	19	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e10	fixed	20	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e11	fixed	21	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e12	fixed	22	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e13	fixed	23	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.e14	fixed	24	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.lvl	fixed	10	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.vt2	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.vt3	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.g544	fixed	7	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.g550	fixed	8	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.g51c	fixed	9	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ret52af	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ret522a	fixed	2	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ret522b	fixed	3	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft0	fixed	536870912	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft1	fixed	536940544	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft2	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft3	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft4	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft5	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft6	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft7	fixed	537133056	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft8	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft9	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft10	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft11	fixed	537137152	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft12	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft13	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft14	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft15	fixed	537138176	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft16	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft17	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft18	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft19	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft20	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft21	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft22	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft23	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft24	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft25	fixed	1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft26	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft27	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft28	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft29	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft30	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft31	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft32	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft33	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft34	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft35	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft36	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft37	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft38	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft39	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft40	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft41	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft42	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft43	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft44	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft45	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft46	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft47	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft48	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft49	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft50	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft51	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft52	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft53	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft54	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft55	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft56	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft57	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft58	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft59	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft60	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft61	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft62	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft63	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft64	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft65	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft66	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft67	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft68	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft69	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft70	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft71	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft72	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft73	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft74	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft75	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft76	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft77	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft78	fixed	536956928	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft79	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft80	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft81	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft82	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft83	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft84	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft85	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft86	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft87	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft88	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft89	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft90	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft91	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft92	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft93	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft94	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft95	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft96	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft97	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft98	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft99	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft100	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft101	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft102	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft103	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft104	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft105	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft106	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft107	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft108	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft109	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft110	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft111	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft112	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft113	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft114	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft115	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft116	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft117	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft118	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft119	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft120	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft121	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft122	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft123	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft124	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft125	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft126	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft127	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft128	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft129	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft130	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft131	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft132	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft133	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft134	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft135	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft136	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft137	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft138	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft139	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft140	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft141	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft142	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft143	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft144	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft145	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft146	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft147	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft148	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft149	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft150	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft151	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft152	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft153	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft154	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft155	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft156	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft157	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft158	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft159	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft160	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft161	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft162	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft163	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft164	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft165	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft166	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft167	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft168	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft169	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft170	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft171	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft172	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft173	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft174	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft175	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft176	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft177	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft178	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft179	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft180	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft181	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft182	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft183	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft184	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft185	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft186	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft187	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft188	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft189	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft190	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft191	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft192	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft193	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft194	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft195	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft196	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft197	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft198	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft199	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft200	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft201	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft202	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft203	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft204	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft205	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft206	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft207	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft208	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft209	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft210	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft211	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft212	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft213	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft214	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft215	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft216	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft217	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft218	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft219	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft220	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft221	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft222	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft223	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft224	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft225	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft226	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft227	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft228	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft229	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft230	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft231	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft232	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft233	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft234	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft235	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft236	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft237	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft238	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft239	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft240	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft241	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft242	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft243	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft244	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft245	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft246	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft247	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft248	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft249	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft250	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft251	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft252	fixed	255	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft253	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft254	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft255	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft256	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft257	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft258	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft259	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft260	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft261	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft262	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft263	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft264	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft265	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft266	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft267	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft268	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft269	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft270	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft271	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft272	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft273	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft274	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft275	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft276	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft277	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft278	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft279	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft280	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft281	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft282	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft283	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft284	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft285	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft286	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft287	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft288	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft289	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft290	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft291	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft292	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft293	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft294	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft295	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft296	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft297	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft298	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft299	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft300	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft301	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft302	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft303	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.ft304	fixed	-1	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.fstamina	fixed	100	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.fstaMax	fixed	100	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.fenc	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.faa9	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.flevel	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）
+00543270	g.fflag	fixed	0	calc-qa Q4 情境列（re/emu/cases/00543270.json boundary 81 改欄）

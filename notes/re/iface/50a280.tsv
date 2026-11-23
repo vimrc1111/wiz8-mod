@@ -1,0 +1,32 @@
+call	4e5550	findMonsterIndexByIdentity	依 NPC 怪物識別碼搜尋已載入或備用怪物列表；來源 0x4e5550
+call	4e5620	monsterRecordAtIndex	依搜尋結果取得怪物記錄；合法索引要求記錄存在，錯誤時子函式 assert
+call	535c50	factionAttitudeBand	目標類型 1 查可變陣營態度；有號 byte <34 回 0，34..66 回 1，>=67 回 2
+call	535d30	currentFactionAttitude	依陣營 ID 取 0x68d6e8 的目前態度 byte，記錄步長 14
+data	4	無關	列表槽位位址計算的比例因子 4，並非外部資料位址
+data	619ebc	無關	怪物查找失敗時 assert 的來源檔名字串；不參與態度規則
+data	685174	partyCharacterRecords	角色主表指標，兩個 NPC 槽依 0x1862 步長讀目前 HP
+data	685178	partyCharacterSideRecords	角色副表指標，兩個 NPC 槽依 0x106 步長讀使用旗標與 NPC 索引
+data	689f94	npcRecordList	NPC 記錄列表；空列表指標跳過同盟判定
+field	eax+0x0	npcEntryPointer	NPC 列表所選槽位的物件指標；零值跳過
+field	eax+0x2de	monsterAttitudeModifier	怪物態度加成，byte 加法回繞；無陣營及有陣營的最終 fallback 都回傳合成後個體態度
+field	eax+0x54	fixedFactionAttitude	模板的陣營態度固定旗標；非零直接回傳陣營態度，此名稱依本節點行為
+field	eax+0x5f	npcFactionIdentity	NPC 模板陣營 ID；無符號讀取後與有號的同盟陣營 ID 比較
+field	eax+0x6	npcTemplatePointer	NPC 記錄指向模板，讀陣營資訊
+field	eax+0x6e	alliedFactionIdentity	模板同盟陣營 ID；非零時檢查兩個隊伍 NPC，比較前 sign extend
+field	eax+0x8b	monsterAttitudeOverride	怪物非零覆寫旗標，將態度及最終 fallback 設為 100
+field	eax+0xc7	npcUnavailable	隊伍 NPC 不可用旗標；非零不參與同盟判定
+field	ebp+0x0	characterCurrentHP	主表角色 +0xb11 的 u32 目前 HP，非零才參與同盟判定
+field	ecx+0x0	partySlotActive	副表角色槽的使用旗標；非零才參與同盟判定
+field	ecx+0x5f	npcFactionIdentity	入口 NPC 模板陣營 ID；0 直接回傳個體態度，1..20 查可變陣營狀態
+field	ecx+0xfa	partySlotNPCIndex	角色副表對應 NPC 的有號索引；不小於列表長度時回退槽 0
+field	edi+0x4	npcListCount	NPC 列表長度，有號比較用於索引回退
+field	edi+0xc	npcListEntries	NPC 列表槽位陣列指標
+field	esi+0x16	linkedMonsterIdentity	NPC 對應怪物的識別碼；與怪物記錄 +0 比對
+field	esi+0x1a	monsterLinkEnabled	NPC 怪物連結旗標；非零才讀可用旗標並查怪物
+field	esi+0x1b	npcBaseAttitude	NPC 個體態度 byte；也是一般 fallback 的初值
+field	esi+0x25	linkedMonsterAvailable	NPC 已連結怪物可用旗標；與連結旗標共同控制怪物查找
+field	esi+0x6	npcTemplatePointer	入口 NPC 模板指標，提供陣營、固定態度及同盟欄位
+data	68d6e8	mutableFactionAttitudes	子函式讀取的可變遊戲狀態，21 筆 stride 14；case 將每筆目前態度納入輸入，並非固定 exe 表，calc 不內嵌初值
+field	monster+0x0	monsterIdentity	case 的 monsterID 同步入口 NPC 連結與怪物記錄；另一筆不同 ID 防止查找誤取第一筆
+field	683fad/list	loadedMonsterList	case 配置兩筆非空已載入怪物列表與 +8 長度、+0 槽位指標，子函式原樣執行
+field	683fb9/list	reserveMonsterList	case 的備用列表為空；怪物 ID 保證存在已載入列表，無需 assert 或 import 樁

@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+408d60	非公式	-	ambient_sound_schedule		亂數與時鐘相加後寫入音效槽的下次播放時間，只影響環境音排程；build/wiz8.asm:11095。
+4093b0	非公式	-	sound_slot_init		亂數控制音效槽的播放參數與等待時間，隨後載入並播放音效；build/wiz8.asm:11666。
+409fe0	非公式	-	sample_playback_rate		亂數結果作為音訊取樣播放速率傳給音效介面，未產生規則數值；build/wiz8.asm:12724。
+40a2e0	非公式	-	stream_playback_rate		亂數只改變串流音訊的播放速率；build/wiz8.asm:12976。
+40ad40	非公式	-	spatial_sound_rate		亂數決定空間音效的播放速率並傳給音效介面；build/wiz8.asm:13842。
+40b040	非公式	-	spatial_sound_schedule		呼叫空間音效播放器後以亂數重設播放等待時間；build/wiz8.asm:14096、build/wiz8.asm:14105。
+41c330	排除	-	ray_triangle_intersection		對射線與場景三角形求交並更新最近交點，亂數參與穿透表面判定，屬射線遮擋／碰撞；build/wiz8.asm:37973。
+437980	公式	D4	spawn_position_search	spawnPositionSearchNode	不確定：讀中心座標、方向、半徑、要求數量與場景佔用資訊，隨機搜尋後寫輸出座標陣列每筆+0/+4/+8及回傳成功數量，呼叫端用於怪物放置但位置選擇的規則範圍待核；build/wiz8.asm:74582、build/wiz8.asm:74780、build/wiz8.asm:369039。
+437f30	公式	D4	spawn_position_grid	spawnPositionGridNode	不確定：讀中心、間距、數量及怪物距離限制，以亂數抖動格點並輸出座標陣列與成功數量，怪物生成呼叫端證實放置用途但是否僅為幾何安排待核；build/wiz8.asm:75044、build/wiz8.asm:369021。
+43ba10	公式	D4	treasure_seed_init	treasureSeedInitNode	讀時鐘與範圍30000的亂數，相加寫物件+354作為後續寶物生成的種子，會決定掉落結果；build/wiz8.asm:80289，種子用途見 notes/re/loot.md:35。
+43ccf0	公式	D4	lock_code_load_init	lockCodeLoadInitNode	讀初始化旗標及物件+368類型、+36c難度，產生八個0至3的鎖碼寫+371至+378，並把限制到2至8的難度乘3寫+384；build/wiz8.asm:81969、build/wiz8.asm:81984。
+43d940	排除	-	trigger_fire_dispatch		觸發器總派發：依觸發器 +0x230 動作類型跳表（43d9a8 讀、43d9c0 經 0x4407d4 分派，約 60 種、682 塊、11922 bytes），多數分支是投射物發射、位置／朝向、場景節點旗標、門與開關、定時事件、鏡頭（數值範圍外，MG 2026-10-11）；規則部分（0x24..0x2b 全隊傷害）交給已 D4 的 52a820／52ad70／52b160／52ba00／524720，本函式只在 +bc／+c0／+c4 為負時改用預設 1、6、2；取代先前「公式 trigger_party_damage」歸類（43d940 票子 agent 靜態分析，cc 抽查跳表）（cc 判斷）；build/wiz8.asm:82820。
+445500	公式	D4	treasure_generation	treasureGenerationNode	讀物件+24c寶物表名、+354種子及表+1cd物品數骰式、+1d5金錢骰式，生成物件+34c物品容器、+358金錢並寫+350完成旗標；build/wiz8.asm:92700、build/wiz8.asm:92742，notes/re/loot.md:13、notes/re/loot.md:35。
+445730	公式	D4	lock_code_init	lockCodeInitNode	讀鎖結構+0類型及+4難度，亂數4產生八個碼寫+9至+10，難度限制2至8後乘3寫+1c並重設+20/+8；build/wiz8.asm:92846、build/wiz8.asm:92869。
+44c310	非公式	-	prop_animation_frame		讀動畫模式及幀上下限後更新模型+64的顯示幀，亂數僅選擇動畫幀與變體；build/wiz8.asm:101997、build/wiz8.asm:102203。
+44f400	非公式	-	scene_update_dispatch		依暫停旗標派送場景、物件與鏡頭更新，所呼叫的亂數相關流程包含鏡頭震動，函式本身是流程調度；build/wiz8.asm:106324。
+461960	排除	-	ai_waypoint_path		實體世界（路徑／移動），依 MG 2026-10-11 數值規劃範圍改歸排除（decisions/2026-10-11-numeric-only-scope.md），原未取得。原描述：不確定：讀起終點、路徑範圍及路點網路，以亂數900設定物件+1e8搜尋限制，輸出路徑+8數量、+1c/+20/+24下一座標與+4c/+50陣列，尚不能確定路徑選擇是否構成AI規則；build/wiz8.asm:130847、build/wiz8.asm:131050。嘗試: 2026-10-09 cc 子 agent 節點票，子樹 45b120／460950→460b80／461d10／45a1b0 約 7KB 無 calc 且未登記，超出票規模退件；影響: 怪物路點尋路結果（路徑數量、下一座標）calc 無法重現，怪物移動路線類查詢不可答。
+479970	非公式	-	ambient_spatial_sound		亂數用於環境音的音量及播放機會，再傳給空間音效播放器；build/wiz8.asm:162834、build/wiz8.asm:162997。
+47a440	非公式	-	footstep_variant		亂數挑選腳步音效變體並避開上一個音效，結果送往腳步音效載入播放流程；build/wiz8.asm:163280。
+48ad20	公式	D4	encounter_generate	encounterGenerateNode	讀生成器+0旗標、+1c表索引及怪物模板+c1至+c4數量、+c5/+c8伴隨怪物資料，概率判定後生成怪物群並寫群+c3啟用旗標；build/wiz8.asm:186348、build/wiz8.asm:186517。嘗試: 2026-10-09 cc 子 agent 兩次節點票；伴隨怪物機率判定 40efe0 直呼 CRT rand（emu 只攔 40efa0），群建立經 50fc20→547570／510590 等未登記子樹 >3.5KB、506280→5080f0 遞迴 2.5KB，退件；影響: 遭遇生成（怪物群數量、伴隨怪物）calc 無法重現，遭遇組成類查詢不可答。
+48b420	公式	D4	encounter_respawn_interval	encounterRespawnIntervalNode	讀生成器+0旗標與+6間隔或全域60a6b6，加入亂數時間變動後重設生成器+20所指的重生計時器；build/wiz8.asm:186844、build/wiz8.asm:186852。
+48b9a0	公式	D4	encounter_table_select	encounterTableSelectNode	讀遭遇表+1c權重、+2c時段、+3c等級及隊伍等級與6874f7時間，按亂數選類別和候選並輸出結果結構+4數量、+c索引陣列；build/wiz8.asm:187319、build/wiz8.asm:187481。
+48bc30	公式	D4	encounter_group_size	encounterGroupSizeNode	讀怪物模板+c1基數、+c3骰數、+c4骰面、+251等級及隊伍等級與6850d5難度，擲骰並限制數量後回傳生成隻數；build/wiz8.asm:187575、build/wiz8.asm:187643。
+48ca20	公式	D4	encounter_spawn_order	encounterSpawnOrderNode	讀場景+c4生成器列表及生成額度，亂數交換候選索引後依次呼叫遭遇生成，輸出生成順序及在額度內實際建立的怪物群；build/wiz8.asm:188882、build/wiz8.asm:188947。
+48f9e0	非公式	-	music_playlist_schedule		按播放列表權重與亂數間隔選下一段音樂，結果交給音樂播放流程；build/wiz8.asm:193340。
+49f350	非公式	-	item_visual_init		建立物品顯示模型，亂數換算為子物件+88的旋轉參數，屬外觀變化；build/wiz8.asm:212936。
+49f5d0	非公式	-	item_visual_variant		配置物品顯示物件後將亂數寫為模型+88浮點旋轉參數，再初始化顯示資源；build/wiz8.asm:213180。
+4a4050	公式	D4	spell_effect_completion	spellEffectCompletionNode	不確定：讀法術物件+1d8識別、+1dc生命週期及法術表+154，寫+1e0完成旗標，經500460把效果物件+280起的數值累加到父效果+126/+12a等欄位，但各累加值的規則語意待核；build/wiz8.asm:219484、build/wiz8.asm:345120。
+4a4ac0	非公式	-	combat_text_format		取名稱與顏色並送往文字顯示器，引用角色記錄只用來格式化戰鬥訊息；build/wiz8.asm:220485。
+4a4c20	公式	D4	spell_effect_activation	spellEffectActivationNode	不確定：讀法術物件+1dc效果控制器及法術表條件，啟動後寫控制器+71/+a7與物件+1e1，完成支路寫+1e0並累加效果+280至父效果+126起，是否含純動畫旗標待核；build/wiz8.asm:220545、build/wiz8.asm:220578。
+4a4cf0	排除	-	projectile_flight_step		投射物飛行逐步更新：讀進度 +14、門檻 +18、父物件 +1f8 總長，經 4534c0／453540 位置與碰撞測試、438f90／478eb0 旋轉、4b88d0 設變換，到點交 4a49e0／500460、越門檻交 4a4c20（投射物；數值範圍外，MG 2026-10-11）；取代先前「公式 spell_effect_progress（不確定）」歸類；與 43d940 的循環經 4a4c20／4a49e0 以 -1 呼叫 43d940 形成（cc 判斷）；build/wiz8.asm:220586。
+4a5450	非公式	-	spell_bitmap_load		載入法術位圖並初始化渲染物件，直接初始化的完成旗標使後續完成支路不在此處結算效果；build/wiz8.asm:221237、build/wiz8.asm:221273。
+4ae310	非公式	-	camera_shake		亂數只生成鏡頭震動偏移，寫6599ac、6599b0、6599b4的顯示座標；build/wiz8.asm:233875、build/wiz8.asm:233889。
+4c1d20	公式	D4	monster_instance_scale	monsterInstanceScaleNode	不確定：讀模型+5f4/+5f8縮放界限、+600及+604至+60c週期參數，以亂數寫模型+5f0尺寸與動畫週期，另更新物件+154/+158/+15c偏移，尺寸是否僅影響外觀待核；build/wiz8.asm:259543。
+4c2e00	非公式	-	idle_variant_select		亂數6挑選並避開前一待機變體，呼叫端把回傳值加6作為待機動畫序號；build/wiz8.asm:260775、build/wiz8.asm:410892。
+4c4de0	非公式	-	monster_selection_marker		依角色副表旗標建立或移除怪物選取標記，呼叫標記位圖載入流程，未計算戰鬥數值；build/wiz8.asm:263392。
+4c73f0	非公式	-	monster_idle_timer		以時鐘及亂數2000加2000重設模型+20c等待時間，再設定模型動畫序號，屬待機動畫排程；build/wiz8.asm:266795。
+4c75c0	公式	D4	monster_missile_release	monsterMissileReleaseNode	讀怪物模板+24f等級、+e7起的攻擊資料及怪物+2e5武器／法術，計算等級加限制15的等級與命中參數後建立遠程攻擊，寫怪物+2ba至+2c2行動及+2df釋放旗標；build/wiz8.asm:267056、build/wiz8.asm:267078、build/wiz8.asm:266995，notes/re/combat-anim.md:33、notes/re/combat-anim.md:59。
+4d5890	非公式	-	monster_sound_variant		依怪物與動作種類隨機選音效變體，再交給音效播放函式；build/wiz8.asm:287029。
+4d5a10	非公式	-	monster_spatial_sound		亂數用於怪物音效播放機會、音量與腳步變體，後續只有空間音效播放；build/wiz8.asm:287093、build/wiz8.asm:287161。
+4ddf40	排除	-	crusher_trap		壓碎機陷阱：以場景物件包圍盒（4b7500、42ef00）做空間查詢，被夾到的怪物經 453590 寫座標推出，或經 4e4690 死亡；其餘分支是觸發器狀態（443780、4440d0、444170）、音效（4aec90、4d8f80）與 43d940；整體為碰撞／移動／放置（數值範圍外，MG 2026-10-11）。唯一規則：夾到時 R(100)>35（4de481 呼叫亂數、4de489 比 0x23）即擊殺，約 64%；怪物種類 0x183 另給 4eef10(10000,0)（已 D4）。取代先前「公式 monster_crusher_kill」歸類（4ddf40 票子 agent 靜態分析，cc 抽查亂數門檻）（cc 判斷）；build/wiz8.asm:297881。
+4de7d0	公式	D4	quest_status_target_select	questStatusTargetSelectNode	不確定：讀角色副表+0啟用與角色+69分類、+b01狀態，按分類優先度隨機選同順位角色，寫68760c索引並施加0x13、9999的狀態，狀態的具體規則名稱待核；build/wiz8.asm:298581、build/wiz8.asm:298628。
+4deb40	非公式	-	dial_scene_init		三次亂數的回傳值均未使用，DialState初始化使用固定常數470111，其餘派送場景氣體及音效流程；build/wiz8.asm:298855、build/wiz8.asm:298857。
+4e3930	公式	D4	monster_hp_sp_init	monsterHpSpInitNode	讀怪物模板+d6與+da的HP／SP骰式，擲骰寫怪物+27/+2b最大及目前HP、+2f/+33最大及目前SP，再計算+242衍生值；build/wiz8.asm:305513、build/wiz8.asm:305514，notes/re/combat-2.md:103。
+4e3c70	公式	D4	monster_activation_stats	monsterActivationStatsNode	不確定：讀怪物+8種類、+27/+2b血量與模板，載入模型並呼叫51b420初始化，寫怪物+14啟用及+2b6索引等欄位，但子函式是否還寫戰鬥衍生數值未釐清；build/wiz8.asm:305970。
+4e4280	公式	D4	monster_remove_state	monsterRemoveStateNode	讀怪物+14啟用及戰鬥當前物件，將怪物+2b血量、+33法力歸零並寫+107為0x12、減少683fa1存活計數，同時清除隊伍+7b0/+7b8行動指標；build/wiz8.asm:306265、build/wiz8.asm:306266。
+4e4500	公式	D4	monster_combat_status_clear	monsterCombatStatusClearNode	不確定：讀怪物+10狀態區的+3e及+d7起的狀態槽，經5524e0清除槽+0/+1/+5/+d並清怪物+15與隊伍+7b0/+7b8，尚待分清狀態規則清除與物件卸載；build/wiz8.asm:306486。
+4e46f0	公式	D4	monster_kill_rewards	monsterKillRewardsNode	讀怪物種類、擊殺者及模板+268獎勵旗標、+26b覆寫或+181經驗值，累加隊伍+c擊殺數、+10經驗及角色+9f9擊殺記錄；build/wiz8.asm:306887、build/wiz8.asm:306899。
+4e4ab0	公式	D4	monster_identification_growth	monsterIdentificationGrowthNode	讀角色+12b6起的種類知識、+fd、+4c1及怪物+24f等級，與亂數100比較後寫群+2c識別旗標，依群+4隻數累加知識並限制255，也可觸發技能0x15成長；build/wiz8.asm:307006、build/wiz8.asm:307113。
+4e5150	排除	-	monster_display_name		怪物顯示名稱，結果只交 58ab60（排除）寫戰鬥 log（呈現；非公式→排除，cc 判斷）；build/wiz8.asm:307468。
+4e6370	公式	D4	monster_hp_sp_reroll	monsterHpSpRerollNode	讀兩個怪物列表及模板+d6/+da骰式，重新擲骰寫怪物+27/+2b血量、+2f/+33法力、+242衍生值並更新+24f縮放；build/wiz8.asm:309232、build/wiz8.asm:309242。
+4e65d0	公式	D4	monster_hp_scale	monsterHpScaleNode	不確定：讀怪物+27最大HP、模板+d6/+d8/+d9骰式與模型+5f4/+5f8尺寸界限，以HP比例插值及亂數抖動後回傳尺寸，呼叫端寫模型+5f0或怪物+24f，但尺寸是否僅用於外觀待核；build/wiz8.asm:309435、build/wiz8.asm:309453。
+4e67a0	非公式	-	monster_idle_animation		血量及戰鬥旗標只作動畫播放的前置檢查，亂數通過後呼叫動畫切換器選序號2；build/wiz8.asm:309595、build/wiz8.asm:309602。
+4e6a80	非公式	-	combat_exit_ui		檢查目前戰鬥流程是否可結束並顯示訊息或呼叫結束流程，未生成規則數值；build/wiz8.asm:309882。
+4e6c10	非公式	-	auto_combat_toggle		切換自動戰鬥操作模式、顯示提示並刷新介面，角色引用為模式檢查；build/wiz8.asm:309954。
+4e6ce0	公式	D4	combat_difficulty_rating	combatDifficultyRatingNode	不確定：讀怪物+27/+2b血量、模板經驗與角色+89等級及NPC關係，算敵我相對強度寫6850b4並設定NPC物件+f0/+f1與6837a1，強度用於音樂選擇但NPC旗標的規則影響待核；build/wiz8.asm:310205、build/wiz8.asm:310248。
+4e7090	非公式	-	combat_lifecycle_init		配置戰鬥暫存區並初始化隊伍+7ac計時與+7b0/+7b4/+7b8流程指標，再派送既有初始化流程，屬戰鬥生命週期管理；build/wiz8.asm:310424，notes/re/combat-timing.md:35。
+4e7590	公式	D4	combat_pc_action_init	combatPcActionInitNode	讀角色副表+0啟用、角色+b11血量及+b01狀態，推導不能行動條件寫隊伍每筆+d4的+4c旗標並重設角色+1817/+181b/+181f行動記錄；build/wiz8.asm:310692、build/wiz8.asm:310703。
+4e77b0	非公式	-	action_target_get		依目前行動類型取得既存目標、物品或法術欄位並寫出參數，主要為行動上下文搬運；build/wiz8.asm:310919，notes/re/backstab.md:11。
+4e79a0	公式	D4	pc_action_eligibility	pcActionEligibilityNode	讀角色+b01狀態、+b19/+b1d體力及目前行動與武器、法術資格，其中體力須達最大值五分之一，經各資格檢查回傳能否執行行動的布林值；build/wiz8.asm:311207、build/wiz8.asm:311208。

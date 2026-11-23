@@ -1,0 +1,5 @@
+54ba00	54bb41	反彈臂（法術 0x13 群）索引表的預設斷言塊（srAssertFail，訊息 609b24）；進入此臂的法術 id 只有 0x13/0x15/0x1b/0x36/0x38/0x3d/0x41，索引表對這七個值都不指向此塊，所有法術×反彈列皆未到達。calc 對此 panic（back arm index outside the table）
+54ba00	54c057	法術 0x17 來源不是角色的斷言塊（srAssertFail，訊息 61e29c）；0x17 只由角色施放（4fb4c0 同樣以角色來源建立實例），srAssertFail 停止、無可差分返回。calc 對此 panic（spell 0x17 from a non-character）
+54ba00	54c0fe	法術 0x73 迴圈內清單索引超出筆數的分支；迴圈條件已保證索引小於 +0xf4，此分支不可達。calc 對此 panic（list index past its count）
+54ba00	54c10b	法術 0x73 隊伍目標 id 為 -1 的斷言塊（srAssertFail，訊息 61a944）；隊伍清單只放有效角色 id，srAssertFail 停止。calc 對此 panic（party target -1）
+54ba00	54c1cb	法術 0x4b 來源不是角色的斷言塊（srAssertFail，訊息 61e29c）；0x4b 只由角色施放，srAssertFail 停止。calc 對此 panic（spell 0x4b from a non-character）

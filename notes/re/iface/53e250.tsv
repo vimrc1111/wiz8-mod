@@ -1,0 +1,241 @@
+call	2b6	無關	匯入符號 srAssertFail；只在無效目標、空揮擊次數、手索引越界、空列表時斷言；calc 對應 panic
+call	78	無關	wcscpy 匯入（IAT 0x5eb1ec）；只把部位名稱或怪物名稱複製進訊息緩衝，不影響規則
+call	a	tickClock	GetTickCount；語音事件記錄 +0x34 的時間戳，case.tick 固定
+call	40efa0	RNG	R(n)；命中、部位、暴擊、30% 削減、失手目標選擇與語音擲骰
+call	4ecc80	無關	目標高亮顯示；只改 UI 狀態，不回饋規則
+call	4ed260	無關	除錯記錄輸出（TO HIT／TO PENETRATE 字串）；只留 log
+call	50b800	objectTableLookup	依物件 id 取物件表項；本節點讀 +0x2e 物件類型字元
+call	5179d0	signedClamp	有號限幅（以 0、100 呼叫）；命中機率夾在 0..100
+call	520070	clearItemInstance	清空物品實例；彈藥或投擲品耗盡時清槽
+call	524390	endMonsterShield	怪物護盾次數用盡時結束該效果（id, 3）
+call	52bb60	怪物傷害入口	吸收護盾、累計結果總量與命中數、扣怪物生命並在致死時新增死亡事件
+call	52c500	swingFatigue	揮擊體力消耗（目標, 消耗量, 1）
+call	53be00	makeCharacterSource	把堆疊描述符填成角色來源（種類 1、索引）；只供訊息與記錄
+call	547940	角色職業種族能力	職業／種族能力判定（0x61507c、0x615130 表）
+call	5479b0	職業等級縮放	能力 0x13 的等級縮放加成
+call	5e1c10	無關	free；釋放失手目標列表，不影響規則
+call	5e1c22	ftol	x87 向零截斷為整數（傷害比例、浮點加成）
+call	5e1ce0	alloc	配置堆積記憶體（列表標頭 0xc 與陣列 0x28）
+call	5e1f6c	pow	x87 冪運算；部位／傷害比例縮放
+call	5e22c0	listNew	新建列表：標頭 0xc、10 筆陣列 0x28、容量 10、筆數 0
+call	5e23e0	listDestroy	斷言非空並釋放列表
+call	5e2870	listGetAt	取失手目標列表第 i 筆，超界回空
+call	5e2c70	listCount	列表筆數；空列表回 0
+data	4	呼叫參數與向量位移	小位移是堆疊參數相對位置，不是絕對資料位址
+data	5e739b	無關	進入時推入的 SEH 處理常式位址；非遊戲規則資料
+data	5eb02c	tickClockImport	GetTickCount 匯入槽；語音事件時間戳
+data	5eb1ec	無關	wcscpy 匯入槽；只複製名稱入訊息
+data	5ebaf4	無關	srAssertFail 匯入槽；斷言失敗停止而無規則結果
+data	5ebca4	woundRatio	0.4f 生命比例門檻（未命中時 30% 削減判定）；calc 執行時讀 exe
+data	5ebe80	half	0.5 常數；浮點捨入；calc 執行時讀 exe
+data	5ebfec	無關	寫入區域描述符的類 vtable 常數；不參與規則運算
+data	5ece4c	無關	寫入區域描述符的類 vtable 常數；不參與規則運算
+data	5ed8c8	voiceEventArg4	語音事件 0x52e690 參數（exe 全域）；case 當輸入
+data	5ed914	voiceEventArg	語音事件 0x52e690 參數（exe 全域）；case 當輸入
+data	5ee668	voiceEventArg	語音事件 0x52e690 參數（exe 全域）；case 當輸入
+data	5ee7a8	epsilon	1e-5 浮點容差常數；calc 執行時讀 exe
+data	5ee7b0	three	3.0 浮點常數；calc 執行時讀 exe
+data	616308	部位命中權重表	角色命中部位百分比 byte；總和須為 100（否則斷言）；calc 執行時讀 exe
+data	616309	部位命中權重表	0x616308 表 +1 的分析假象引用；同一表
+data	61e7b4	角色部位訊息編號	角色部位名稱訊息編號 u16（索引部位×4）；calc 執行時讀 exe
+data	61ea24	怪物部位訊息編號	怪物部位名稱訊息編號 u16（索引(部位×6+體型)×2）；calc 執行時讀 exe
+data	6836a8	combatState	戰鬥狀態物件指標 G；模式、目前目標描述符、旗標
+data	683fa5	voiceGate	語音門檻全域；無號比較 >1 時才發死亡語音；case 當輸入
+data	68510c	訊息旗標	每目標訊息模式旗標；只決定輸出哪種訊息
+data	68516c	itemDefinitions	物品定義庫基址；記錄 269 byte
+data	685174	角色記錄庫基址	角色記錄庫，索引乘 6242
+data	685178	partySlotRecords	槽位記錄陣列指標，索引乘 0x106
+data	689b32	無關	文字旗標 byte；只影響訊息
+data	689b34	無關	寬字串訊息緩衝；只影響訊息
+data	68c09c	messageCatalog	訊息目錄指標；只取字串樣板指標當格式參數
+data	68c558	voiceEventArg	語音事件 0x52e690 參數（exe 全域）；case 當輸入
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	61d298	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d2ac	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d4d8	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d4f8	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d51c	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d548	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d584	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d5d8	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d5f0	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d600	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d62c	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	61d640	無關	斷言或除錯記錄字串；只在斷言／log 使用，不影響規則
+data	fffffffffffffe10	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe11	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe12	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe13	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe14	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe18	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe1c	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe20	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe27	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe28	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe2f	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe30	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe34	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe38	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe3c	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe40	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe44	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe4b	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe4c	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe50	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe54	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe58	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe5c	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe64	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe68	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe69	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe6a	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe6c	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe70	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe74	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe78	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe8c	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe90	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe94	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffe98	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffeae	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffec4	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffec8	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffecc	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffed0	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffed4	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffed8	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff2c	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff30	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff34	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff38	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff50	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff54	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff55	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff56	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff78	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff7c	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移被分析為資料引用；為區域暫存，非遊戲資料或表
+field	eax*2+0x61ea24	怪物部位訊息編號	表 0x61ea24 以(部位×6+體型)索引
+field	eax+0x0	描述符首欄	首 dword：目標描述符種類、列表元素或傷害骰記錄首欄（依基底暫存器）
+field	eax+0x114e	手持武器子類	角色 +0x114e＋手×0x5b；9＝彈藥類
+field	eax+0x1152	手持武器類型	角色 +0x1152＋手×0x5b；0x11＝射擊器
+field	eax+0x2e	物件類型字元	0x50b800 物件表項 +0x2e；' ' 時走特例
+field	eax+0x3e	物品類別	物品 +0x3e；2 時檢查彈藥消耗
+field	eax+0x4	描述符／傷害骰第二 dword	目標描述符索引，或徒手傷害骰記錄第二 dword
+field	eax+0x41	物品旗標	物品 +0x41 bit7 不消耗
+field	eax+0x48	揮擊結果最佳等級	揮擊結果 +0x48＋手×16
+field	eax+0x4c	揮擊結果武器子類	揮擊結果 +0x4c＋手×16
+field	eax+0x54	揮擊結果旗標	揮擊結果 +0x54＋手×16 ← 角色 +0x12b5
+field	eax+0x63	物品旗標	物品 +0x63 非零不消耗
+field	eax+0x66	物品堆疊型式	物品 +0x66；1＝扣數量，其他走 0x51e760
+field	eax+0x70	主手槽索引	戰鬥行動記錄 cb +0x70
+field	eax+0x71	種族	角色 +0x71；0xf 時讀物件類型
+field	eax+0x7c	結果累計量	效果結果 +0x7c 累加傷害
+field	eax+0x8	描述符／傷害骰第三 dword	目標描述符 id，或徒手傷害骰記錄第三 dword
+field	eax+0x824	命中訊息樣板	訊息目錄 +0x824 字串指標；只影響訊息
+field	eax+0x828	失手訊息樣板	訊息目錄 +0x828 字串指標；只影響訊息
+field	eax+0x830	部位訊息樣板	訊息目錄 +0x830 字串指標；只影響訊息
+field	eax+0x8c4	戰鬥模式	G +0x8c4 byte；切換近戰／遠程分支
+field	eax+0x8c5	目前目標描述符	G +0x8c5 起 3 dword（種類）
+field	eax+0x8c9	目前目標索引	G +0x8c9
+field	eax+0x8cd	目前目標 id	G +0x8cd
+field	eax+0x9a4	戰鬥旗標	G +0x9a4
+field	eax+0xa26	記錄旗標	G +0xa26；只決定是否輸出 log
+field	eax+0xc	怪物 actor	怪物記錄 +0xc
+field	eax+0xf5d	槽物品 id	角色 +0xf5d＋槽×0xc
+field	eax+0xf61	槽數量	角色 +0xf61＋槽×0xc
+field	eax+ecx*1+0x1	槽位記錄參數	槽位記錄 +1，交 0x52b2f0
+field	eax+ecx*1+0x5	揮擊目標	槽位記錄 +5＋手×4
+field	eax+ecx*1+0xc1	武器命中音效	主手物品 +0xc1，交給 0x543110
+field	eax+edi*4	訊息樣板	訊息目錄以訊息編號索引；只影響訊息
+field	eax+edx*1+0x3f	物品型別	物品 +0x3f；0xb／0xd 判定
+field	eax+edx*1+0x60	武器傷害加值	物品 +0x60 byte 加入傷害包
+field	eax+edx*4	部位名稱訊息	訊息目錄以角色部位訊息編號索引；只影響訊息
+field	eax+esi*1+0x15f	怪物部位權重	怪物模板 +0x15f＋i；≥100 時特例
+field	eax+esi*1+0x48	揮擊結果最佳等級	揮擊結果 +0x48＋手×16，取大值
+field	ebp+0x12b5	角色旗標	角色 +0x12b5 抄入揮擊結果
+field	ebp+0x429	技能	角色 +0x429
+field	ebp+0x46f	技能升級旗標	角色 +0x46f
+field	ebp+0x475	技能	角色 +0x475
+field	ebp+0x6a9	技能升級旗標	角色 +0x6a9
+field	ebp+0x78d	技能升級旗標	角色 +0x78d
+field	ebp+0x89	等級	角色 +0x89
+field	ebp+0xb0d	最大生命	角色 +0xb0d
+field	ebp+0xb11	生命	角色 +0xb11
+field	ebp+0xfa5	主手物品 id	角色 +0xfa5
+field	ebp+eax*4+0xf5d	槽物品 id	角色 +0xf5d＋槽×0xc
+field	ebp+eax*4+0xf62	槽數量二	角色 +0xf62＋槽×0xc
+field	ebp+ecx*4+0xf5d	槽物品 id	角色 +0xf5d＋槽×0xc
+field	ebp+ecx*4+0xf61	槽數量	角色 +0xf61＋槽×0xc
+field	ebp+edx*4+0xf61	槽數量	角色 +0xf61＋槽×0xc
+field	ebx+0x0	描述符首欄	首 dword：目標描述符種類、列表元素或傷害骰記錄首欄（依基底暫存器）
+field	ebx+0xd3	怪物護盾生效	怪物 +0xd3
+field	ebx+ecx*1+0xb01	狀態	角色 +0xb01；0xf 判定
+field	ebx+ecx*1+0xb11	生命	角色 +0xb11
+field	ebx+ecx*2+0x1152	手持武器類型	角色 +0x1152＋手×0x5b；0x11 時消耗彈藥
+field	ecx*4+0x61e7b0	角色部位訊息編號	表 0x61e7b0 以部位×4 索引
+field	ecx+0x0	描述符首欄	首 dword：目標描述符種類、列表元素或傷害骰記錄首欄（依基底暫存器）
+field	ecx+0x114e	手持武器子類	角色 +0x114e＋手×0x5b，寫入揮擊結果
+field	ecx+0x1152	手持武器類型	角色 +0x1152＋手×0x5b，寫入揮擊結果
+field	ecx+0x4	武器傷害骰第二 dword	物品 +0x50 記錄
+field	ecx+0x616308	部位命中權重	表 0x616308 第 i 個百分比
+field	ecx+0x74	副手槽索引	cb +0x74；-1＝無
+field	ecx+0x8	武器傷害骰第三 dword	物品 +0x50 記錄
+field	ecx+0x80	未命中旗標	效果結果 +0x80
+field	ecx+0x81	結果旗標	效果結果 +0x81
+field	ecx+0x8c5	目前目標描述符	G +0x8c5 起 3 dword（種類）
+field	ecx+0x8c9	目前目標索引	G +0x8c9
+field	ecx+0x9a4	戰鬥旗標	G +0x9a4
+field	ecx+0x9a5	戰鬥旗標二	G +0x9a5
+field	ecx+0xc	武器傷害骰第四 dword	物品 +0x50 記錄
+field	ecx+eax*1+0x5	揮擊目標	槽位記錄 +5＋手×4
+field	ecx+eax*1+0xfa5	主手物品 id	角色 +0xfa5
+field	ecx+eax*2+0xfa	物件 id	槽位記錄 +0xfa
+field	ecx+eax*4+0x84	手索引	cb +0x84；須 <2（斷言）
+field	ecx+edx*4+0xe6	目標效果旗標	目標 cb +0xe6（角色 +0x741 條件）
+field	ecx+esi*1+0x15f	怪物部位權重	怪物模板 +0x15f＋i
+field	edi+0x0	描述符首欄	首 dword：目標描述符種類、列表元素或傷害骰記錄首欄（依基底暫存器）
+field	edi+0x24e	怪物旗標	怪物記錄 +0x24e
+field	edi+0x2b	怪物生命	怪物 +0x2b；致死判定
+field	edi+0x30	語音事件延遲	0x52e690 記錄 +0x30 寫 800
+field	edi+0x34	語音事件時間	0x52e690 記錄 +0x34 寫 tick
+field	edi+0x70	主手槽索引	戰鬥行動記錄 cb +0x70
+field	edi+0x74	副手槽索引	cb +0x74；-1＝無
+field	edi+0x8	被擊角色記錄	角色 +0xa89 記錄 +8
+field	edi+0x9a4	戰鬥旗標	G +0x9a4；狀態效果條件
+field	edi+0x9a5	戰鬥旗標二	G +0x9a5；狀態效果條件
+field	edi+0xa5	揮擊音效旗標	cb +0xa5
+field	edi+0xc	怪物 actor	怪物記錄 +0xc，交 0x4c4d40
+field	edi+eax*1	傷害包 byte	區域 16-byte 傷害包加總來源
+field	edi+esi*4+0xc6	目標效果旗標	目標 cb +0xc6（角色 +0x281 條件）
+field	edi+esi*4+0xcb	目標效果旗標	目標 cb +0xcb（角色 +0x33f 條件）
+field	edx+0x81	結果旗標	效果結果 +0x81
+field	edx+0x824	命中訊息樣板	訊息目錄 +0x824 字串指標；只影響訊息
+field	edx+0x828	失手訊息樣板	訊息目錄 +0x828 字串指標；只影響訊息
+field	edx+0x834	擊殺訊息樣板	訊息目錄 +0x834 字串指標；只影響訊息
+field	edx+0x8c4	戰鬥模式	G +0x8c4；2 時設結果旗標
+field	edx+0x9a4	戰鬥旗標	G +0x9a4
+field	edx+0xf5d	槽物品 id	角色 +0xf5d＋槽×0xc
+field	edx+0xf61	槽數量	角色 +0xf61＋槽×0xc；遞減
+field	edx+eax*1+0x3f	物品型別	物品 +0x3f；0xd 判定
+field	edx+eax*2+0xf8d	第 4 槽物品 id	角色 +0xf8d（＝0xf5d＋4×0xc）與 500 比較
+field	edx+ecx*1+0x114d	手持武器存在	角色 +0x114d＋手×0x5b
+field	edx+ecx*2+0x1152	手持武器類型	角色 +0x1152＋手×0x5b；技能升級分支
+field	edx+ecx*4	部位名稱訊息	訊息目錄以怪物部位訊息編號索引；只影響訊息
+field	edx+esi*1	揮擊結果武器類型	揮擊結果 +0x50＋手×16
+field	edx+esi*1+0x281	目標狀態	角色 +0x281
+field	edx+esi*1+0x33f	目標狀態	角色 +0x33f
+field	edx+esi*1+0x741	目標狀態	角色 +0x741
+field	edx+esi*1+0xe99	目標狀態計數	角色 +0xe99 有號 >0
+field	esi+0x0	描述符首欄	首 dword：目標描述符種類、列表元素或傷害骰記錄首欄（依基底暫存器）
+field	esi+0x114e	手持武器子類	角色 +0x114e＋手×0x5b
+field	esi+0x1152	手持武器類型	角色 +0x1152＋手×0x5b
+field	esi+0x15e	怪物體型	怪物模板 +0x15e
+field	esi+0x68	剩餘揮擊次數	cb +0x68；須 >0（斷言）
+field	esi+0x70	主手槽索引	戰鬥行動記錄 cb +0x70
+field	esi+0x74	副手槽索引	cb +0x74；-1＝無
+field	esi+0xa5	揮擊音效旗標	cb +0xa5 清零
+field	esi+eax*1-0x1	傷害包 byte	區域 16-byte 傷害包加總結果

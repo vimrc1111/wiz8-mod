@@ -1,0 +1,7 @@
+53e250	53e544	5e22c0（串列建構）回 NULL 的 srAssertFail 0x359 塊：只在配置器失敗時發生，模擬器 heap 配置不回 NULL，合法輸入控制不到（同 4f8cb0 4f8db4 前例）；srAssertFail 停止、沒有可差分的返回。calc 配置超出 fixture heap 視窗時 panic。
+53e250	53e5cb	失誤清單為空的 assert 塊（0x11d0）：543dc0 回填的清單元素數為 0；srAssertFail 停止、沒有可差分的返回。calc 在清單為空時 panic。
+53e250	53e6df	失誤清單為空的 assert 塊（0x127e）：抽失誤元素前再檢一次元素數；srAssertFail 停止、沒有可差分的返回。calc 在清單為空時 panic。
+53e250	53e70f	失誤元素為 NULL 的 assert 塊（0x1282）；srAssertFail 停止、沒有可差分的返回。calc 取到 NULL 元素時 panic。
+53e250	53eb12	角色命中部位權重走完仍未命中的不可達塊：exe 表 0x616308 五個權重和為 100，R(100) 恆小於 100，迴圈必在表內命中。calc 在權重和不足時 panic。
+53e250	53f854	剩餘揮擊數為 0 的 assert 塊（0x611）：cb+0x68 為 0 時遞減前檢查；srAssertFail 停止、沒有可差分的返回。calc 在揮擊數為 0 時 panic。
+53e250	53f8b1	手別索引 ≥ 2 的 assert 塊（0x66）：手別只有 0、1；srAssertFail 停止、沒有可差分的返回。calc 在手別大於 1 時 panic。

@@ -1,0 +1,76 @@
+=== RUN   TestPlanAttrs
+    build_test.go:41: PlanAttrs(race 6, L1) = [0 0 0 0 0 0 0], <nil>; want [77 25 25 70 67 66 30]
+    build_test.go:41: PlanAttrs(race 6, L5) = [0 0 0 0 0 0 0], <nil>; want [89 25 25 70 79 66 30]
+    build_test.go:41: PlanAttrs(race 6, L28) = [0 0 0 0 0 0 0], <nil>; want [100 49 43 100 100 100 30]
+    build_test.go:41: PlanAttrs(race 0, L1) = [0 0 0 0 0 0 0], <nil>; want [69 45 45 50 64 57 45]
+    build_test.go:41: PlanAttrs(race 0, L28) = [0 0 0 0 0 0 0], <nil>; want [100 52 45 95 100 100 45]
+    build_test.go:46: unpayable class minimum must error
+--- FAIL: TestPlanAttrs (0.00s)
+=== RUN   TestEffectiveSkill
+    build_test.go:57: EffectiveSkill(16,100) = 0, want 125
+    build_test.go:57: EffectiveSkill(16,0) = 0, want 1
+    build_test.go:57: EffectiveSkill(16,10) = 0, want 12
+    build_test.go:57: EffectiveSkill(0,100) = 0, want 100
+--- FAIL: TestEffectiveSkill (0.00s)
+=== RUN   TestBuildDualL28
+    build_test.go:102: G1 main = {K:0 M:0 A:0 V:0 BARraw:0 HitMod:0 DmgPct:0} hit 0 pen 0; want {K:92 M:-27 A:92 V:115 BARraw:166 HitMod:13 DmgPct:100} hit 188 pen 188
+    build_test.go:102: G1 off = {K:0 M:0 A:0 V:0 BARraw:0 HitMod:0 DmgPct:0} hit 0 pen 0; want {K:68 M:-37 A:81 V:91 BARraw:147 HitMod:9 DmgPct:50} hit 149 pen 149
+    build_test.go:102: G1 total = 0, want 208.05
+--- FAIL: TestBuildDualL28 (0.00s)
+=== RUN   TestBuildBerserkL28
+    build_test.go:115: G2 main = {K:0 M:0 A:0 V:0 BARraw:0 HitMod:0 DmgPct:0} hit 0 pen 0; want {K:108 M:0 A:106 V:90 BARraw:186 HitMod:13 DmgPct:100} hit 97 pen 97
+    build_test.go:115: G2 total = 0, want 376.2
+--- FAIL: TestBuildBerserkL28 (0.00s)
+=== RUN   TestBuildDualL5
+    build_test.go:128: G3 main = {K:0 M:0 A:0 V:0 BARraw:0 HitMod:0 DmgPct:0} hit 0 pen 0; want {K:17 M:-32 A:23 V:20 BARraw:80 HitMod:5 DmgPct:62} hit 57 pen 57
+    build_test.go:128: G3 off = {K:0 M:0 A:0 V:0 BARraw:0 HitMod:0 DmgPct:0} hit 0 pen 0; want {K:14 M:-42 A:19 V:16 BARraw:74 HitMod:3 DmgPct:31} hit 41 pen 41
+    build_test.go:128: G3 total = 0, want 7.776666666666667
+--- FAIL: TestBuildDualL5 (0.00s)
+=== RUN   TestBuildRealData
+    build_test.go:161: Light Sword main = {K:0 M:0 A:0 V:0 BARraw:0 HitMod:0 DmgPct:0}, off <nil>
+--- FAIL: TestBuildRealData (0.00s)
+=== RUN   TestScale
+--- PASS: TestScale (0.00s)
+=== RUN   TestDice
+--- PASS: TestDice (0.00s)
+=== RUN   TestSwingProb
+--- PASS: TestSwingProb (0.00s)
+=== RUN   TestPhysDamage
+--- PASS: TestPhysDamage (0.00s)
+=== RUN   TestKillThreshold
+--- PASS: TestKillThreshold (0.00s)
+=== RUN   TestRoundCounts
+--- PASS: TestRoundCounts (0.00s)
+=== RUN   TestSpell
+--- PASS: TestSpell (0.00s)
+=== RUN   TestResist
+--- PASS: TestResist (0.00s)
+=== RUN   TestLoadSpellsSynthetic
+--- PASS: TestLoadSpellsSynthetic (0.00s)
+=== RUN   TestRealData
+--- PASS: TestRealData (0.00s)
+=== RUN   TestExeTables
+--- PASS: TestExeTables (0.00s)
+=== RUN   TestMeleeRoundComposition
+--- PASS: TestMeleeRoundComposition (0.00s)
+=== RUN   TestAttackValuesComposition
+--- PASS: TestAttackValuesComposition (0.00s)
+=== RUN   TestAttackValuesSlowAndSkip
+--- PASS: TestAttackValuesSlowAndSkip (0.00s)
+=== RUN   TestSpellCastComposition
+--- PASS: TestSpellCastComposition (0.00s)
+=== RUN   TestDistributionEnumeration
+--- PASS: TestDistributionEnumeration (0.00s)
+=== RUN   TestLoadItemsMonstersSynthetic
+--- PASS: TestLoadItemsMonstersSynthetic (0.00s)
+=== RUN   TestLoadRecordLengthValidation
+=== RUN   TestLoadRecordLengthValidation/spells
+=== RUN   TestLoadRecordLengthValidation/items
+=== RUN   TestLoadRecordLengthValidation/monsters
+--- PASS: TestLoadRecordLengthValidation (0.00s)
+    --- PASS: TestLoadRecordLengthValidation/spells (0.00s)
+    --- PASS: TestLoadRecordLengthValidation/items (0.00s)
+    --- PASS: TestLoadRecordLengthValidation/monsters (0.00s)
+FAIL
+FAIL	wiz8-mod/internal/calc	0.019s
+FAIL

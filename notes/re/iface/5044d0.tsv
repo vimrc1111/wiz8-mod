@@ -1,0 +1,26 @@
+call	517970	diceRoll	擲骰（D4 節點）：記錄 {Z=0, N=ticks 低位元組, S=0x687608/6+2 的低位元組}；emu 原生執行，calc 呼叫 diceNode。
+call	520f90	characterHasItem	在角色 +0xf5d 的 12 筆（此處模式 0，不查 +0x1029 的 8 筆）找物品編號 0x1e5，不要輸出指標；找到的隊員不被消耗。emu 原生執行，calc 內重現。
+call	52a890	characterDamageApply	把不足量當傷害套到隊員（D4 節點）；emu 位址樁，輸出其呼叫次數與每次七個參數，其 eax 與寫入不被本函式讀。
+call	52af50	characterFatigueApply	消耗隊員體力（D4 節點）；emu 位址樁，輸出其呼叫次數與每次四個參數，其 eax 與寫入不被本函式讀。
+call	58ac00	messageLog	一次性的環境傷害提示訊息（日誌／UI 呈現，已登記排除）；emu 位址樁，輸出呼叫次數與五個參數，回傳值被忽略。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	683f94	debugModeFlag	u8 全域旗標；與 0x68510c 同時非零時傷害呼叫的第 4 參數為 1。case 輸入。
+data	685174	characterRecords	0x1862 bytes 的角色記錄陣列基址；case 以 arena 物件接線。
+data	685178	partyPresence	每隊員 0x106 bytes 間隔的在隊旗標位元組陣列基址；case 以 arena 物件接線，8 筆為輸入。
+data	68510c	damageFlag	u8 全域旗標；與 0x683f94 同時非零時傷害呼叫的第 4 參數為 1。case 輸入。
+data	687500	suspendFlag	u8 全域旗標；非零時整個函式不做事。case 輸入。
+data	6875a3	noticeShown	u8 全域旗標；清除時第一個被消耗的隊員之後送一次提示並設起；無人被消耗時清零。case 輸入與輸出。
+data	6875a6	noticeAux	u32 全域；無人被消耗時清零，其餘不讀不寫。case 輸入與輸出。
+data	687608	elapsedTicks	u32 全域累積時間；S 取其除以 6 加 2，有人被消耗時加上本次 ticks，否則清零。case 輸入與輸出。
+data	68c09c	uiObject	UI 物件指標，提示訊息的第 2 參數取其 +0x768；case 以 arena 物件接線。
+data	fffffffffffffff7	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffa	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffb	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x71	race	角色 u32 種族；等於 0xf 的隊員不被消耗。case 輸入。
+field	eax+0xb01	characterState	角色 u32 狀態；0x12 以上（無號）不被消耗。case 輸入。
+field	eax+edx*1+0xb1d	currentStamina	角色 i32 目前體力；與擲出量比較決定先耗體力再轉傷害。case 輸入。
+field	ecx+0x768	messageArgument	UI 物件 u32；提示訊息的第 2 參數。case 輸入。
+field	ecx+ebp*1	partyPresent	在隊旗標位元組（隊員 i 於 +0x106×i）；零則略過該隊員。case 輸入。
+field	eax+edx*1+0xb11	hitPoints	角色 u32 生命值；為零的隊員不被消耗。case 輸入。

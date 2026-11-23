@@ -1,0 +1,9 @@
+4fe740	4fe752	來源記錄 +0x1c 位元組非零時的斷言塊；srAssertFail 樁在此停止，無可重放的正常輸出（4f0480 先例）。
+4fe740	4fe802	來源種類既非角色也非怪物時的斷言塊；srAssertFail 在此停止，之後的收尾不會執行。
+4fe740	4fe8c3	八個隊員槽都不合格時的斷言塊；srAssertFail 在此停止。
+4fe740	4fe8d4	不可達：只從掃描迴圈內以槽號 0..7 跳入，槽號比較 8 的條件永遠為假。
+4fe740	4fe8fe	重導向後來源種類不是角色也不是怪物時的斷言塊；srAssertFail 在此停止。
+4fe740	4fe905	斷言訊息共用塊，只由 srAssertFail 路徑跳入；srAssertFail 在此停止。
+4fe740	4fe9af	群體分支來源種類不合法時的斷言塊；srAssertFail 在此停止。
+4fe740	4fe9fe	目標種類不是 1、2、3、4、9 時的斷言塊；srAssertFail 在此停止。
+4fe740	4fea05	斷言訊息共用塊，只由 srAssertFail 路徑進入；srAssertFail 在此停止。

@@ -1,0 +1,5 @@
+data	685174	partyCharacters	角色記錄陣列指標；固定八槽、步長 0x1862，主狀態 +0xb01、目前 HP +0xb11；來源 exe 0x4eeec0、0x4eeecf、0x4eeef1
+data	685178	partySlots	隊員副表陣列指標；固定八槽、步長 0x106，有效旗標 +0；來源 exe 0x4eeec5、0x4eeed4、0x4eeeeb
+field	eax+0x0	mainStatus	角色主狀態 u32；游標已偏移角色 +0xb01，無號值小於 18 才算存活；來源 exe 0x4eeecf、0x4eeee5
+field	eax+0x10	currentHP	角色目前 HP 的 32 位元值；游標已偏移角色 +0xb01，故此處為角色 +0xb11；只排除零，最高位為一也算非零；來源 exe 0x4eeede、0x4eeee1、0x4eeee3
+field	ecx+0x0	slotActive	隊員副表 +0 的 u8 有效旗標；任何非零值均有效，還須 HP 非零且主狀態小於 18；來源 exe 0x4eeed9

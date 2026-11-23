@@ -1,0 +1,29 @@
+--- FAIL: TestGood (0.00s)
+    fitcheck_test.go:114: 要 rc=0；得 rc=-1：
+--- FAIL: TestOver (0.00s)
+    fitcheck_test.go:120: 要 rc=1；得 rc=-1：
+--- FAIL: TestOffXCounts (0.00s)
+    fitcheck_test.go:127: 要 rc=0；得 rc=-1：
+--- FAIL: TestRegistered (0.00s)
+    fitcheck_test.go:134: 要 rc=0；得 rc=-1：
+--- FAIL: TestRegisteredNeedsReason (0.00s)
+    fitcheck_test.go:141: 要 rc=1；得 rc=-1：
+--- FAIL: TestStale (0.00s)
+    fitcheck_test.go:147: 要 rc=1；得 rc=-1：
+--- FAIL: TestUnknownChars (0.00s)
+    fitcheck_test.go:155: 要 rc=1；得 rc=-1：
+--- FAIL: TestMixedASCII (0.00s)
+    fitcheck_test.go:163: 要 rc=0；得 rc=-1：
+--- FAIL: TestEmptySourceOver (0.00s)
+    fitcheck_test.go:170: 要 rc=1；得 rc=-1：
+--- FAIL: TestBadSTI (0.00s)
+    fitcheck_test.go:177: 壞字型檔要 rc=2；得 -1：
+--- FAIL: TestNoTable (0.00s)
+    fitcheck_test.go:185: 找不到字表要 rc=2；得 -1：
+--- FAIL: TestTableLongerThanFont (0.00s)
+    fitcheck_test.go:195: 要 rc=0；得 rc=-1：
+--- FAIL: TestExplicitLines (0.00s)
+    fitcheck_test.go:203: 要 rc=1；得 rc=-1：
+FAIL
+FAIL	wiz8-mod/tools/fitcheck	0.015s
+FAIL

@@ -1,0 +1,337 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "62695110299f3c1d70d06974bf22a0c261cde486ee2bb0911805dc6f3c734504",
+  "zh": "感謝{{Lord}}們！你們能幫（ help ）我們！我還以為永遠不會有人來了！"
+ },
+ {
+  "id": 2,
+  "src_sha256": "587ca1ca68d8520afc120f1bff7d7767278bf1f64cf96b7869afa4f1ac3dd924",
+  "zh": "讓我死（ die ）吧……"
+ },
+ {
+  "id": 3,
+  "src_sha256": "b355d2a03486eeeab2821a3bb67a45ce3776b01f4bb7b4015ce8780978b9b70c",
+  "zh": "你們說的話我一概不信……"
+ },
+ {
+  "id": 6,
+  "src_sha256": "4537f1a070bd083e5cf7d7325ec17c092f121eab69d629d871d8d66b1a8607d6",
+  "zh": "我早已被標上死亡記號（ mark ）……來吧，盡管使出你們最狠的！"
+ },
+ {
+  "id": 7,
+  "src_sha256": "1adc1f78e109f4142a671b51e85839ec6dcaa2a713218f873f0782ab4dca2742",
+  "zh": "錢對我毫無意義……"
+ },
+ {
+  "id": 8,
+  "src_sha256": "1dfbb3407e87a9aa46cc847c5ae21b2f582ddeb87619215b44cf57956b5179c4",
+  "zh": "你們現在有別的麻煩了……"
+ },
+ {
+  "id": 9,
+  "src_sha256": "520c3c81d2dcc85f304a50a359c723d353fd7e2da4e83b619105364a96682d78",
+  "zh": "我不能加入你們。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "a4ef56fd48ad1e5f9a90545fde01c153a7497dcd1f5f84e62e1f9bdd428ef481",
+  "zh": "我會善加利用……"
+ },
+ {
+  "id": 13,
+  "src_sha256": "92f565c7445904f5417a7c71a264e6ceb0dbd6582a6a4a73cfd104a0511dc90a",
+  "zh": "我只需要灰燼法杖（ Staff of Ash ）。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "ff100b8b4d04cd1f56bc49aee331a86bc3878a9821bba4e1120fee7721700644",
+  "zh": "它的價值不只如此。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "821ecf24a5ba3594b0b371aca06476ef0ae1eefaa5e0ab231968513f022139d0",
+  "zh": "我認得那東西。你們竟然偷（ steal ）一個被判死刑的人，這說明了你們是什麼樣的人？不怎麼樣。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "1071bfd8025db15542ca487467d8bb8fc9e10f15de98a15139343e820264484b",
+  "zh": "Al-Sedexus 顯然奪走的不只是你的身體……"
+ },
+ {
+  "id": 20,
+  "src_sha256": "aab14f2cba54dbd963291143a95b57f4dacebfdc0571a8299563459098742e3a",
+  "zh": "而我本來願意幫（ help ）你們的！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "4bf737128f3019e607db2d8a5447e619624f957accf7a9f7c8bb3db927cdd812",
+  "zh": "錢在這裡改變不了什麼。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "6ef1c7ad84bf0999b1e9c406fb94e69453bd0e5dd0b45ba8dd8dc1d38fceda17",
+  "zh": "現在這不重要了……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "7b581dc317f8ffb7f7f85d4b9a5803ab042ea44bc34bade9819a024fefcaa6f4",
+  "zh": "現在這無關緊要！"
+ },
+ {
+  "id": 24,
+  "src_sha256": "6106c9c8b53503f51d1f1ba2f3142c79f37c5cedc963abd865f89885b04ea626",
+  "zh": "也許我晚點會告訴你們。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "caefc1edb85291f9db3fa71fed228b5af0ea3786f0e7bd6e8e67b4e2eb18b3f0",
+  "zh": "就像我說的……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "38ce98f17c23e2d2379bbb7daa65b23bd24d32b3db388e240d21c064bb024c71",
+  "zh": "我該從哪裡說起？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "c8c00982231fbebeb541423b6fad6e4e8e2d0b7b818252b942ac89073a8c0e14",
+  "zh": "我還記得另外那件事……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "989cc6b29704bdac97d6269d0e6152caa4cf2df5152cc97f0c467ce8a4ed8bb8",
+  "zh": "我不知道該說什麼。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "72f3acbf11cc44391d318bb4a5397f23be3ccb632719c01e5e357b3eb835fcf6",
+  "zh": "我們該快點。我怕 Lava Lord 會來……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "f6d1257315a273dbc657429a73afb1a046aad7043e3b4957c579ed4a3e308cee",
+  "zh": "別浪費時間了……"
+ },
+ {
+  "id": 35,
+  "src_sha256": "246f822d66a59ef1bbec0df6a784e4ba21f712367816cc29cf0a30ad64acfa5a",
+  "zh": "要是我還能再（ again ）看一眼 Rapax Castle 就好了！"
+ },
+ {
+  "id": 36,
+  "src_sha256": "2650232021c356c08f44c95bbd27e333f79aeb8d7d1b9933431d70e21dda364a",
+  "zh": "萬物都來這裡等死（ die ）……"
+ },
+ {
+  "id": 45,
+  "src_sha256": "df1f2382c42610779675465f9a9b820fdf5c6c7aa4d56c1d4762d36932e8d7e3",
+  "zh": "身為 Rapax ，我已經一無所有了……"
+ },
+ {
+  "id": 52,
+  "src_sha256": "102449d77cecb2d5ddf7701296f554857c8ab812f54f385b75c9858944916fb7",
+  "zh": "現在只有他們能幫（ help ）我了……"
+ },
+ {
+  "id": 64,
+  "src_sha256": "e5595f3eb4472bcba7fefa0b539ff87e330efc9e37f56435bfe112adf4059439",
+  "zh": "我們口口聲聲說以 Rapax 的身分崇拜她，可實際上是她在統治我們！"
+ },
+ {
+  "id": 73,
+  "src_sha256": "78507dbd5ead75d0de87ea804a5400de67baa1a434f3553360bd34109a96e007",
+  "zh": "我算什麼……"
+ },
+ {
+  "id": 75,
+  "src_sha256": "e3d7f76bccb8bb2ddd28db601e231fff693543abc4bf388b38cdfb250e01b772",
+  "zh": "棍棒與石頭。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "8ddc1731f10eb501d4a4f1dfa24e82d432019513f8f64132601dd1ff6740cea9",
+  "zh": "我考慮過了！不過你們把杖（ staff ）帶來，我就不會！"
+ },
+ {
+  "id": 77,
+  "src_sha256": "d53d202d5a6b09896bc9075c6e8531a176aac88800c1fba8bf45af1654e22270",
+  "zh": "你們好……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "e30a1d111cc9cb728100d3ec95eec34217d394fb784c4909d741955d70112ada",
+  "zh": "那麼，再見了……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "1ae31334793b86115707c373074340bb5023e1bb6a40d1f6553889b56619b869",
+  "zh": "如果你們把杖（ Staff ）帶來，或許我就能幫（ help ）你們……"
+ },
+ {
+  "id": 81,
+  "src_sha256": "ddcd014577382a9a6332b5e05e3ed2faa3163d1f7fcff1bfd7c8e57306d1cf95",
+  "zh": "對一個被關在籠子裡等死的人來說，我還算不錯。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "f55598e602e4b91d813bfd07c79f123d873a962b5338b48af25066b7299b8632",
+  "zh": "他們必須找到召喚石（ Beckoning Stone ）才能得到她……"
+ },
+ {
+  "id": 88,
+  "src_sha256": "f4a6dee2c3dbfe6a74daf73d2fb1bd3d7d88cb3715e9c83ea43d0dca68133205",
+  "zh": "那根杖（ Staff ）會讓我自由……"
+ },
+ {
+  "id": 89,
+  "src_sha256": "e50f0ce9b45adb76bd4b1e6ea0bfba97dd93324e6496e5f732ee119168a2a3db",
+  "zh": "我希望自己能活得夠久，看到 Al-Sedexus die ！"
+ },
+ {
+  "id": 97,
+  "src_sha256": "11677368a8f2e66ccf1e24a383389902779fc740e564ed9046c3f4c681d097cd",
+  "zh": "就在 Rift ！"
+ },
+ {
+  "id": 98,
+  "src_sha256": "b46b46740d64247117edfd01aa7b124d6d8e705a9306f9de93d9473444eddca6",
+  "zh": "在 Rapax Castle ！"
+ },
+ {
+  "id": 102,
+  "src_sha256": "88b23e8f1b8ad1337fe2f6108c7166b5211d77681e85a56b5bf8adb061d15f51",
+  "zh": "這對我來說不重要……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "5db58d021e3306ef4df43194ecc27fd936e70f26816480093ff022798bbd4c41",
+  "zh": "我不知道自己還剩多少時間，但如果你們能救我脫離必死的命運，我就告訴你們怎麼去 Al-Sedexus 的祭壇。我一直祈禱有人能來。你們願意幫（ help ）我嗎？"
+ },
+ {
+  "id": 105,
+  "src_sha256": "1cd5073e3edcca67fe7f2149cc487a04b56f6cbe7909658632bca47732b6f1e1",
+  "zh": "感謝上天！我來告訴你們我發生了什麼事。我和這裡的其他人一樣，是 Al-Sedexus 的囚犯。我們的刑罰從來不一樣！有些人她放走，有些人她直接殺掉。還有一些人，她拿去獻祭給 Lava Lord 。她已經在我們身上標下死亡記號（ mark ）！"
+ },
+ {
+  "id": 106,
+  "src_sha256": "2f3324fcd882ba2e71e42850328a07c329aca233f71ac2fe9719c3e7d6b16cdf",
+  "zh": "你們顯然不是我祈禱來的那些人……"
+ },
+ {
+  "id": 107,
+  "src_sha256": "f07676b965094bd29fc4310bd50a28e723fcc6f9986bfe80f613a7c795f66f8c",
+  "zh": "我手上帶著這個記號（ mark ）。要是不解除，我很快就會死（ die ）！我需要你們替我拿到灰燼法杖（ Staff of Ash ）。有了它，我就能解除這個死亡記號（ mark ）。記號解除之後，我就能安全離開。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "3f064eccccd46bbe7af8197e58fdd8190b7c4e9b5361f9e0a76a84afb5c4d7a0",
+  "zh": "你們拿到了嗎？那根杖（ Staff ）？交給我……"
+ },
+ {
+  "id": 110,
+  "src_sha256": "12a790abcf0d2f70e2aa3991ee18bdb61103c5ccd23e4f4922814a93f3fa59d3",
+  "zh": "你們看過她的大門嗎？她祭壇前的那道門？就在 Rapax Castle 本身的入口附近。它永遠關著，只有她的野獸能打開。要召喚他，你們必須有召喚石（ beckoning stone ）。我真希望能多告訴你們一些。這就是我記得的全部，也是我唯一想記得的。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "47b66f431faa4526784eaccf05a10906f79bb7c43457f1f57885d2aee4012984",
+  "zh": "我去過那裡，親眼見過。我知道進去該做什麼，不過在你們解除我身上的死亡記號（ mark ），並讓我脫離這個籠子（ cage ）之前，我不會說！"
+ },
+ {
+  "id": 113,
+  "src_sha256": "2ec46bcf92d25a95e3fdac3a3c3dc4d4c379eb6e970111e871d15119672e433f",
+  "zh": "我只見過一次，就是當初被標記（ mark ）的時候。我記得模模糊糊的，只記得一道岩架。其實就在這附近。我們爬了一層，也許兩層，然後再下來，才到杖（ staff ）本身那裡。它在某位女祭司（ priestess ）的房間附近……離她遠一點。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "1ccbad29280ba17513279759ea830eb7be7ab47890a7a06f2ac285187d1f4174",
+  "zh": "你們找到了！感謝上天！"
+ },
+ {
+  "id": 116,
+  "src_sha256": "ae57e6105c5bda2f6302770e639570798d5b603600b8f5014e3b54919d57656d",
+  "zh": "死亡記號（ mark ）解除了！"
+ },
+ {
+  "id": 118,
+  "src_sha256": "10726b36b653b285fc61555a3bdf32bde5fadab3fdde54e50da816a9f844fa39",
+  "zh": "現在擋在我和自由之間的，只剩我籠子（ cage ）上的鎖……"
+ },
+ {
+  "id": 119,
+  "src_sha256": "970ffcd4d1d8c3219326392730616f4176bcd179c20fc75a2e14d718f26c1874",
+  "zh": "我自由了！我會遵守承諾，告訴你們通往 Al-Sedexus 祭壇的路。願{{Lord}}們幫（ help ）你們殺了她……"
+ },
+ {
+  "id": 120,
+  "src_sha256": "b998f3f2e853b4f89c21bdb4ad73fca4020e46a2305ac9663b82ea18dc05f8e4",
+  "zh": "我看到你們撬開了我籠子（ cage ）的鎖。等死亡記號（ Mark ）解除後我就會離開。在拿到杖（ Staff ）之前，我留在這裡比較安全。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "034e67b93d295b890e8a8e9a11d6d7e8753ebc080692aef04ce23838ceea3811",
+  "zh": "我感激不盡，但我們能一起做的都已經做了。我現在必須離開 Rift ，而你們必須去找 Al-Sedexus 。為了我們所有人……你們必須去。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "58141b37d966e10a73f6a1dc1aba120ad5d81af3dc752f589209b30e5c3b29ca",
+  "zh": "我被杖（ Staff ）標記（ mark ）了。我們全都是，為了我們記不得的罪行。許多 Rapax 自稱崇拜 Al-Sedexus ，但我相信他們其實是怕她！她殘酷得毫無道理。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "b2293460e613a26d2abe19673cdbfc4cba3c83425d849dab43453dddc634aa2c",
+  "zh": "Al-Sedexus 用死亡之杖（ Staff ）標記（ mark ）我們。我呢？我註定死（ die ）在 Lava Lord 手中。如果他決定帶走我，我會從裡到外被燒死……"
+ },
+ {
+  "id": 124,
+  "src_sha256": "330914b2eb540be0978002cbc1c10cca03bbc540176ef0200de14f14b22da205",
+  "zh": "她是 Al-Sedexus 的大祭司，她會殺了你們。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "c51b68a7f66e62de8b6559c260d417b643ddcea2cee94bdb4daa676d7842e13f",
+  "zh": "你們不知道被關在籠子（ cage ）裡是什麼感覺……或許你們知道。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "519c5cf5f43feb6e812c034acb8e8248dc93cba9845f3452bc5171c58fab22d4",
+  "zh": "你們不會想知道的！"
+ },
+ {
+  "id": 127,
+  "src_sha256": "cdeb762a85ad88547174ef1cc47ea75ee7df1c7a238abc337c85c797cf70b7cb",
+  "zh": "我真希望能多告訴你們一些……"
+ },
+ {
+  "id": 128,
+  "src_sha256": "d2be7d78fdee8c16e31be74414cba283d6501f51e0a50d712984de93b0bdc72c",
+  "zh": "我沒辦法談這件事……"
+ },
+ {
+  "id": 129,
+  "src_sha256": "fb3f7bfa081a0d49a86b6d8d4827cd13bf1e6d3258005dc04ec2b311f12cb44b",
+  "zh": "是的，就像我說的……"
+ },
+ {
+  "id": 130,
+  "src_sha256": "6fe2b71c558f5b36d5564347826ce138aad3e24fd8f4d5c3aae1651e84fddf19",
+  "zh": "我想在這裡北邊。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "3d3ef5004e3597e4e5f792eb16fc2e6fef73fabb5e866da6eaeed59880941f81",
+  "zh": "可能在這裡南邊。"
+ },
+ {
+  "id": 132,
+  "src_sha256": "9b811a0361caaced471968a4eb65dcc3d7127c3b6fdde881bbc03726e6bf0e2b",
+  "zh": "也許是東邊。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "b0d5fab1d71664adddfce1e6cf84c1121b990e91692096b8f0dd304a922c22e0",
+  "zh": "可能是西邊。"
+ }
+]

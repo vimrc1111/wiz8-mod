@@ -1,0 +1,22 @@
+call	5e1c22	floatToInt32Truncate	CRT 浮點轉整數跳板（_ftol）；價格倍率乘積朝零截斷，取低 32 位
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	堆疊負位移掃描產物；呼叫暫存，不是遊戲規則欄位
+data	fffffffffffffff8	無關	堆疊負位移掃描產物；呼叫暫存，不是遊戲規則欄位
+data	fffffffffffffffc	無關	堆疊負位移掃描產物；呼叫暫存，不是遊戲規則欄位
+data	68516c	itemDefinitions	物品定義表基址，步長 0x10d；類型、堆疊旗標、基價欄位作為 calc 輸入，不內嵌資料表，來源 exe 0x55b686、0x55b69c
+data	5ee8b8	skillBonusScale	f32 0.002；隊伍最佳議價技能乘此值得加成，來源 exe 0x55b616
+data	5ebe80	bonusCapGapFraction	f64 0.5；加成超過費率差一半時觸發上限，來源 exe 0x55b630
+data	5ebc7c	bonusCapGapScale	f32 0.5；加成上限為費率差乘此值，來源 exe 0x55b643
+data	5ebb34	zeroMultiplier	f32 0；倍率不大於零時改用最低倍率，來源 exe 0x55b66f
+data	5ebc3c	minimumPriceMultiplier	f32 0.1；倍率不大於零時的替代倍率，來源 exe 0x55b67e
+field	esi+0x0	itemDefinitionIndex	物品實例的 u32 模板編號；選取定義，並供 0x51b840 計值
+field	esi+0x4	quantity	物品實例的 u8 數量；大於 1 且為可堆疊非類型 4 時單價乘數量
+field	esi+0x6	identified	物品實例的 u8 辨識旗標；為 0 時價格除以 4（朝零）
+field	eax+0x3e	itemType	物品模板的 u8 類型；類型 4 不走單價乘數量分支
+field	eax+0x66	stackable	物品模板的 u8 堆疊旗標；值 1 才走單價乘數量分支
+field	eax+0x86	baseValue	物品模板的 u32 基價；單價乘數量分支以此乘倍率
+field	eax+0x6	merchantDefinition	第一參數結構的指標欄位，指向商人定義
+field	ecx+0x2ce	merchantRateLow	商人定義的 f32 低倍率；方向旗標為 0 時加上議價加成
+field	ecx+0x2d2	merchantRateHigh	商人定義的 f32 高倍率；方向旗標非零時減去議價加成

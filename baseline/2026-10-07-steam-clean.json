@@ -1,0 +1,758 @@
+{
+ "3DSetup.exe": {
+  "size": 102454,
+  "sha256": "b440ee06a3aa03c4fa301dcaba6875a61488f0dee3d06386b721f4cbe0c11473"
+ },
+ "3DVideo.CFG": {
+  "size": 55,
+  "sha256": "23307428e9530b888452a0535df800d608366fa5b75c0b2e33ec5a88437fadc4"
+ },
+ "3DfxSpl.dll": {
+  "size": 1105408,
+  "sha256": "1ee8b2b4963b95f600ac683907778304f75c559aa6831a3f203efafc8d67d45a"
+ },
+ "3DfxSpl2.dll": {
+  "size": 1105408,
+  "sha256": "262c70749ac24b4d3691e39767d3e01b5b4957b9b82768186e5faa58f395ceba"
+ },
+ "3DfxSpl3.dll": {
+  "size": 1105408,
+  "sha256": "e282bcba9e04ac9a898ae353f93573fa7f94eb5a4e0bc0c25933c3b702bb269e"
+ },
+ "Bonus Content/Avatar/avatar1.jpg": {
+  "size": 87276,
+  "sha256": "86d3ea10861582b89c3265842b891e4a15f472a82351311ab41ad225cc011f5d"
+ },
+ "Bonus Content/Soundtrack FLAC/01 Main Menu Theme.flac": {
+  "size": 3124039,
+  "sha256": "b538e2254d60c9a30b37fe8b3fe52753b04094141a738796a9208a6476926c82"
+ },
+ "Bonus Content/Soundtrack FLAC/02 Arnika Theme.flac": {
+  "size": 8336759,
+  "sha256": "c533a1f7fdc8a5150b8a73e0e45be88c454051d967d9914143937689411c0fdc"
+ },
+ "Bonus Content/Soundtrack FLAC/03 Camping Theme.flac": {
+  "size": 1004681,
+  "sha256": "82a09d5010a7e443f061ff6fb9097385dcc581371c9a032a924aa134d5da03c9"
+ },
+ "Bonus Content/Soundtrack FLAC/04 Character Creation.flac": {
+  "size": 3760659,
+  "sha256": "77a9033d98c7114dba963da8c78c3343754a16e02f31928ac5baa09c717b896e"
+ },
+ "Bonus Content/Soundtrack FLAC/05 Combat Variation 1.flac": {
+  "size": 11090545,
+  "sha256": "edb0929f77bdff6f274087dc8ab72fb0777c641dc2d2f088492d38c44661b36f"
+ },
+ "Bonus Content/Soundtrack FLAC/06 Cosmic Circle.flac": {
+  "size": 4356531,
+  "sha256": "a37cd8e4a078149be0a786fedfc1d296c1e727b5a4d104abfe79b6ef91af4259"
+ },
+ "Bonus Content/Soundtrack FLAC/07 Easy Combat.flac": {
+  "size": 10703678,
+  "sha256": "9d6b0763db537371910752dd7f09febf123494132ce77ab5d20a326ac64239c4"
+ },
+ "Bonus Content/Soundtrack FLAC/08 Lose Combat Tag.flac": {
+  "size": 1127663,
+  "sha256": "a0dae0abe55523f2ca3a34f1f2d87083d11e0cf5ed86233e282f8b86e345e465"
+ },
+ "Bonus Content/Soundtrack FLAC/09 Normal Combat 1.flac": {
+  "size": 10310358,
+  "sha256": "73422af48ee600b4e675b6b98549707bd3811003504e2871f10099f4b2f2c4d5"
+ },
+ "Bonus Content/Soundtrack FLAC/10 Normal Combat 2.flac": {
+  "size": 13025106,
+  "sha256": "9546b5f6890dd44918dcd9cec7a8af3b967f8dfa3ecec5b3b48989ed4fed8b80"
+ },
+ "Bonus Content/Soundtrack FLAC/11 Outdoor 2.flac": {
+  "size": 5157771,
+  "sha256": "451d10b48d185d3050f06762ecce1c173066f9547d7f267d185db95ed0095c4d"
+ },
+ "Bonus Content/Soundtrack FLAC/12 Outdoor Area.flac": {
+  "size": 6301703,
+  "sha256": "0ef156270b0a00eccabcb7cd0d7c7b6303eab44f80a4f10c0fcd418e256ce65a"
+ },
+ "Bonus Content/Soundtrack FLAC/13 Rapax.flac": {
+  "size": 7453021,
+  "sha256": "2651242da615a18b9b1b10922592f75507bfc28c9a856662d52f13997d93641c"
+ },
+ "Bonus Content/Soundtrack FLAC/14 T-Rang.flac": {
+  "size": 7406353,
+  "sha256": "850d5f3a16f4c13b70583ae8dc290de2b3d391075534e8fa07659c6d828f2e5b"
+ },
+ "Bonus Content/Soundtrack FLAC/15 Tough Combat.flac": {
+  "size": 13144820,
+  "sha256": "513f2467dc572b4e3d418db1537ca906c3b77a9f6b3062dde153ddacdee35993"
+ },
+ "Bonus Content/Soundtrack FLAC/16 Trynton.flac": {
+  "size": 8482598,
+  "sha256": "857ace0d6fd8dba3b79bcada5650188d33e5f5e9e3a336e6090812a1dcae7593"
+ },
+ "Bonus Content/Soundtrack FLAC/17 Umpani.flac": {
+  "size": 6288790,
+  "sha256": "10ce3c0b7a023c3b68b500296fba7fa44f735b7010ca95b04d2208e670598bc6"
+ },
+ "Bonus Content/Soundtrack FLAC/18 Underground.flac": {
+  "size": 9009216,
+  "sha256": "653b8654146ece974aaf3b17cebcf80edd72112e02656b25871e3b1aa74ef18b"
+ },
+ "Bonus Content/Soundtrack FLAC/19 Win Combat Tag 1.flac": {
+  "size": 678445,
+  "sha256": "2aab8fe96f7e86466da6300ac2f794e6d776bbd8728bb1285bc702e38a9caba0"
+ },
+ "Bonus Content/Soundtrack FLAC/20 Win Combat Tag 2.flac": {
+  "size": 644600,
+  "sha256": "478b92beac7bc09b6fc5ee9fc3b439a5634892ab62d4c48fbfb4d39f500994d0"
+ },
+ "Bonus Content/Soundtrack FLAC/21 Win Combat Tag 3.flac": {
+  "size": 818079,
+  "sha256": "3ce646c6b0a0698a1a856fe41402c81206dddb3e1e151d3eb328dd39a50d4455"
+ },
+ "Bonus Content/Soundtrack FLAC/Wizardry 8 Soundtrack.jpg": {
+  "size": 1486701,
+  "sha256": "b81b228142b1019e5524f112264c9aff88ef23efdaf21e07f3f09f1848e78090"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 Soundtrack.jpg": {
+  "size": 1486701,
+  "sha256": "b81b228142b1019e5524f112264c9aff88ef23efdaf21e07f3f09f1848e78090"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 01 Main Menu Theme.mp3": {
+  "size": 1041435,
+  "sha256": "21f2d169a25ecff36efda218c08d8a2e0397cbd37bba14a05635888f579bdd6f"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 02 Arnika Theme.mp3": {
+  "size": 2536678,
+  "sha256": "bb2b7bee4d1539469565e7b2783292e5a3fba4691927c0a1d6ebee174ce5659a"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 03 Camping Theme.mp3": {
+  "size": 580004,
+  "sha256": "8e420874c21f6bf9ef7f809fff4f5eccb3033ee0c4a65ceb46988af59b93f1c3"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 04 Character Creation.mp3": {
+  "size": 1467133,
+  "sha256": "68c1989eb1015331357b8abe5ed4e2a7c12e524335f1fae01d5647669e0b0188"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 05 Combat Variation 1.mp3": {
+  "size": 3210650,
+  "sha256": "66447fed02dc1c7dbaddca5b3e78d288191c444ec3d5c19ea12d787944c76d49"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 06 Cosmic Circle.mp3": {
+  "size": 1614453,
+  "sha256": "6793594d5aed79463ede4dbd173783a3d46846a47b8d9ea95eeccd9865e557c1"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 07 Easy Combat.mp3": {
+  "size": 3280853,
+  "sha256": "e21ba3b2e6e667c5bc5c388e64143142c82c493fb5ba0a0f1057d3cc6197ba03"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 08 Lose Combat Tag.mp3": {
+  "size": 560573,
+  "sha256": "f588469880e8c6f8b71b7545006d4e080460840c9132cbbcc29d3ecbad7f04f2"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 09 Normal Combat 1.mp3": {
+  "size": 2779310,
+  "sha256": "65bab31819a04114ab57cdd39799c44fbd07d91fe753d115761940e82a03387e"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 10 Normal Combat 2.mp3": {
+  "size": 3184941,
+  "sha256": "4cb1d23bd5746c3e5f52d2b5bb94e1f8b65dbc37a5c4c3ab29a2f62fd882b0f4"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 11 Outdoor 2.mp3": {
+  "size": 1997507,
+  "sha256": "2f7c1ebbd209b6f9c1e1551959eabdd82f034854699dd9f7db41f32a73db07c4"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 12 Outdoor Area.mp3": {
+  "size": 2534173,
+  "sha256": "5b10201f3b865b051cc6ff5bbb1f18cb343e9352d539a973a8a69e9ebc583dea"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 13 Rapax.mp3": {
+  "size": 2439491,
+  "sha256": "ec7d36a3e7e54f77874192144e722f9e92d01c6202fd90fdca8953a3daacc535"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 14 T-Rang.mp3": {
+  "size": 2546072,
+  "sha256": "a5f476e3a8ec5178a80e1bdf2b8a9bf7f2ff0ea866c77a853e0cb3071da18e17"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 15 Tough Combat.mp3": {
+  "size": 3134153,
+  "sha256": "6d116ebfa5abdde36d9646fe5c422f3174728f991496b0286bb0caee2fd5f8d4"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 16 Trynton.mp3": {
+  "size": 3124112,
+  "sha256": "4cc456dd5a0090d23e7e38a8591a8544c3f2a30e93c6487c571bf120772a5ffa"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 17 Umpani.mp3": {
+  "size": 2419431,
+  "sha256": "0691d670aff2de7f01f986a72a0a9ebfa2ea0a1565d31ebd8246b7c20201f15a"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 18 Underground.mp3": {
+  "size": 3131016,
+  "sha256": "e0a6338cea0f8efca1737157d71675cc67feeb2cafb4cfb3d63f6ecc9763d7e5"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 19 Win Combat Tag 1.mp3": {
+  "size": 418889,
+  "sha256": "5284bc6590eb5afa0de41706e57978fa616cdd955a0c3c6cfb711f85d8934f9d"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 20 Win Combat Tag 2.mp3": {
+  "size": 411993,
+  "sha256": "3ef07270f4319348b4a552d4286a8398c0ea0a39f6f57d4e8c676640905f6624"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 21 Win Combat Tag 3.mp3": {
+  "size": 431428,
+  "sha256": "4657a9bd8937671bd9ce767e70a9ebd37a66d3fa53abb4ee9e9facb8d1c65fe2"
+ },
+ "CD.ROM": {
+  "size": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ "Data/DATA.SLF": {
+  "size": 149080821,
+  "sha256": "12ce5055097da6710de995b2465713781190cb00515cd81a0c26fd7732d348cd"
+ },
+ "Data/Flics/Intro/DarkEnd.bik": {
+  "size": 32685504,
+  "sha256": "b30c69eb9e4d66666c18ddd17d14053f60479852f0c86b56ced33bcd79650f3c"
+ },
+ "Data/Flics/Intro/T'Rang.bik": {
+  "size": 25913396,
+  "sha256": "b95096b48755e28292ee030b8637329cba8a377bee8199ed1172b6c180f6723e"
+ },
+ "Data/Flics/Intro/Umpani.bik": {
+  "size": 21531916,
+  "sha256": "7c55d227e3507eb8830c8c4ed13940d04d93773f4744ef8e6bb5f514f070879c"
+ },
+ "Data/Flics/Intro/Unaligned.bik": {
+  "size": 40200364,
+  "sha256": "24299f5d179a83d5c40736e779dc0cdddfd9f57dd8773e84114fa57251a30029"
+ },
+ "Data/Flics/Intro/Virgin.bik": {
+  "size": 36564740,
+  "sha256": "a326a906c6b7c19b87e27fb8d98ce2896de7d963889b3d897c6fcf22985775e0"
+ },
+ "Data/Flics/Intro/Wizardry8.bik": {
+  "size": 60981956,
+  "sha256": "4701390da80baecdf7f03bfb4514c7bade06414425bb969236bd52f6e8a1654e"
+ },
+ "Data/Flics/Intro/sirtech.BIK": {
+  "size": 2330252,
+  "sha256": "00d2f0ac02e5737061db45514c500a6bf78310bf1d67a623adee3e6345ef3c5b"
+ },
+ "Data/MONSTERS/MONSTERS.SLF": {
+  "size": 127440105,
+  "sha256": "7f371eb8768b9674428d718e40d30c733f4af0468df377771de99cef75f786f9"
+ },
+ "Data/Music/Arnika Theme.mp3": {
+  "size": 1910915,
+  "sha256": "7f85689c5fc0f0efd310b8fe8e16a3d69bf724982d73c241b91693949a9f680b"
+ },
+ "Data/Music/Camping Theme v2.mp3": {
+  "size": 280674,
+  "sha256": "960d99e2038b690d00ac422a30b2ae5446b8c8f9b2b6b7d1ce927511a427f4de"
+ },
+ "Data/Music/Camping Theme v3.mp3": {
+  "size": 280154,
+  "sha256": "b2d4ab1c77241920e27dbd9b6e19ca3f82025e032e5400ac4d18395bf98f0bad"
+ },
+ "Data/Music/Combat Easy variation.mp3": {
+  "size": 2475470,
+  "sha256": "58c0ce4c5cee9cee1833e554f1dad86c6629a9181829710873824f3718ac1b2c"
+ },
+ "Data/Music/Combat Easy.mp3": {
+  "size": 2533983,
+  "sha256": "226b9d84c89af4ea1954325a9f8d6fb19eacfd840580da209429c82d0d767d51"
+ },
+ "Data/Music/Combat Normal Variation.mp3": {
+  "size": 2451684,
+  "sha256": "6f8d028c472ec78246cccd226a544c02f80c534b135c65890f9e79349df3033b"
+ },
+ "Data/Music/Combat Normal.mp3": {
+  "size": 2116712,
+  "sha256": "40d0e59aa341cb83983aa1f5718f9b88342ff2c90e7daefa091497038243c94f"
+ },
+ "Data/Music/Combat Tough.mp3": {
+  "size": 2408803,
+  "sha256": "273e4be1dbc2c3a20346c971bdc1487c907c29bdfcb3f1476418ae9d047c6497"
+ },
+ "Data/Music/Cosmic Circle.mp3": {
+  "size": 1142373,
+  "sha256": "bac97387c74c1cb68e591023dad6492c79770ef9729e31bd5bc3c0a11234ff89"
+ },
+ "Data/Music/END CREDIT.mp3": {
+  "size": 5655910,
+  "sha256": "40fff567bbeaf42457745830755f9cd4949a5f3a4649c4a102353e5d3af6e6cb"
+ },
+ "Data/Music/Lose Combat Tag.mp3": {
+  "size": 264649,
+  "sha256": "8b6774e74308c3dad49dc17580793a86478e35fa94f0a0a7fde0574967041126"
+ },
+ "Data/Music/Main Menu Theme.mp3": {
+  "size": 629340,
+  "sha256": "70bd07e5e5cc0423449b86918bb5dffcb29d0579297ee0a2a59466a6254d82fe"
+ },
+ "Data/Music/Menu Theme.mp3": {
+  "size": 1020163,
+  "sha256": "4629a470b3e026147b82b19bbd45e9a262610089f7735f188b6609fcdda127d4"
+ },
+ "Data/Music/Outdoor 2.mp3": {
+  "size": 1461649,
+  "sha256": "71dce91b63ce2b02d37511b3fba24ed7be646871dd4fb5d618846ae1cd2be904"
+ },
+ "Data/Music/Outdoor Area.mp3": {
+  "size": 1909340,
+  "sha256": "b421d31e73ddfb60175907902103bba889f3a6ded71c9df0c880dfc1c695590e"
+ },
+ "Data/Music/Rapax.mp3": {
+  "size": 1829941,
+  "sha256": "60f3c8d062ce76dac8c4ae728a8267e6e95b18c0bdf4d802a9df6e979741f62a"
+ },
+ "Data/Music/T-Rang.mp3": {
+  "size": 1921844,
+  "sha256": "63d3653c5dc45806a1164a4b2aa6c0b070c0dfa519babd23d58c96112cc4ce17"
+ },
+ "Data/Music/Trynton.mp3": {
+  "size": 2400434,
+  "sha256": "4f378f1a6fa66c58224f55def4938c379cf028ed7d4e952c09a1be8b2bf40a79"
+ },
+ "Data/Music/Umpani.mp3": {
+  "size": 1813195,
+  "sha256": "55701cbd5f55631452566d9702ab5ed5a7cf9fca0c1a1bca8a0b99ced2d41072"
+ },
+ "Data/Music/Underground.mp3": {
+  "size": 2406009,
+  "sha256": "b27122b97696a3d75f3f8e28704f8987e59e54cb2fc3f4c17fd6a3d8c1c4c507"
+ },
+ "Data/Music/Win Combat Tag 1.mp3": {
+  "size": 146115,
+  "sha256": "f4957c305bf7f106a943bf9aef008a4e0610c3ac1e1466e59c2007376fefd9e6"
+ },
+ "Data/Music/Win Combat Tag 2.mp3": {
+  "size": 139800,
+  "sha256": "28b1859b82ea18765d65b0bdccb80b70f92d63d450aa9f0438557cf0b9ae4831"
+ },
+ "Data/Music/Win Combat Tag 3.mp3": {
+  "size": 156522,
+  "sha256": "de539f888a75a8476c06e2c4e22ea5e0a5d5dcc2c26dffd2288142404a66fa1c"
+ },
+ "Data/Sound/Monsters/MONSTERSOUND.SLF": {
+  "size": 250052335,
+  "sha256": "5563309d8d12939a608f4337655741f0fb448e53c58925114968e6dcd7f63799"
+ },
+ "Data/Sound/SOUND.SLF": {
+  "size": 600017960,
+  "sha256": "0ad04ffb605f148a8cdaa7b15e9bb672a920f8642f77cf5a2d2764a8aae9ee11"
+ },
+ "Dll/srDD_DirectX6.dll": {
+  "size": 86096,
+  "sha256": "2968987f843f1e1b228b2ff322923e5ac215095a3cb41877b169f01820f8f316"
+ },
+ "Dll/srDD_DirectX7.dll": {
+  "size": 94283,
+  "sha256": "3623f1cb66cd50b7141b49f82100a8ffa1fd3c53ddebc7093bfddeb148cbf8e9"
+ },
+ "Dll/srDD_Glide2x.dll": {
+  "size": 69705,
+  "sha256": "e19987fb5bc9abcceadf4ad64bf108ac2f95d10b520d8de294d9b10466ca1d11"
+ },
+ "Dll/srDD_OpenGL.dll": {
+  "size": 36953,
+  "sha256": "a176aa711039aebbfe33eb5d48e082dcd608835eeebd2a69ead9b455400afc8c"
+ },
+ "Dll/srDD_Software.dll": {
+  "size": 127051,
+  "sha256": "8866a254569f61022b857628380171dff018939376c02965741635421d0c79f8"
+ },
+ "Dll/srEXT_AVI.dll": {
+  "size": 24650,
+  "sha256": "9d27a6698693fb6b244951166d873a1f1a102213f5832d60379234176bd0eb07"
+ },
+ "Dll/srEXT_FLIC.dll": {
+  "size": 28748,
+  "sha256": "3ce83b9944f4d26f027c5b322a5dbea97cfe6339a7298b25914f67f35ccfd281"
+ },
+ "Dll/srEXT_HTTP.dll": {
+  "size": 24652,
+  "sha256": "ade27ce64a7af1824aeb5ba65f908bab56344311cd8f45c0c65edde02d1d87af"
+ },
+ "Dll/srEXT_Inspector.dll": {
+  "size": 45142,
+  "sha256": "6bc2949d6c9bca35ecc37e8f4f98ed36886a075f00d69ae86687d38f682387a1"
+ },
+ "Dll/srEXT_JPEGImporter.dll": {
+  "size": 118876,
+  "sha256": "0bf545937bd86ce2195c08b6dbf6b70e1a1071a9fce449ccb9f06dfa384de490"
+ },
+ "Dll/srEXT_LWOImporter.dll": {
+  "size": 57434,
+  "sha256": "a681095372decd2639d0ea14bdbadb362b7aeac04f137dc1558856212479932a"
+ },
+ "Dll/srEXT_MPEG.dll": {
+  "size": 77900,
+  "sha256": "42344e67d5de0b962652677d70891402dae16b0f39979693539867f779455ecd"
+ },
+ "Dll/srEXT_Unzip.dll": {
+  "size": 102400,
+  "sha256": "dba6cdc5741ae57574e019ab8f37935362bc288bee738bc711460f34d7647f62"
+ },
+ "Dll/srEXT_default.dll": {
+  "size": 57426,
+  "sha256": "e2a9d1e7f11e0927b7bacfe058a7113b234f0aded92f4c5fecfb23cf86ead7f8"
+ },
+ "Dll/srHXImporter.dll": {
+  "size": 73728,
+  "sha256": "db83029ad30f8df5dd425e586a1b847193b0edc38e79ec62a3d2c7d4cb59e7a7"
+ },
+ "Dll/srVP_486.dll": {
+  "size": 49152,
+  "sha256": "e28fd5ad6da156179910fa59b8d6ef88da432b1e69b3c44507592d10fdfc8c57"
+ },
+ "Dll/srVP_AMD3DNow.dll": {
+  "size": 65536,
+  "sha256": "42e169c89a01ab620320981d5b6a15a89ea7a6d3fe312a8728e1262b95fac8f3"
+ },
+ "Dll/srVP_Generic.dll": {
+  "size": 36864,
+  "sha256": "0c4704c920235e58f0fab852844fc9273cd4683b7b9655c702855bc9335e1474"
+ },
+ "Dll/srVP_KNI.dll": {
+  "size": 106561,
+  "sha256": "895b5fb3f4982f7a70e7bfc518fed1d674587380d708487f57a0a00e0c9669cc"
+ },
+ "Dll/srVP_Pentium.dll": {
+  "size": 49152,
+  "sha256": "9a08cddb2f75d98d61a3a3bfd644bffe07610c080840c03660ba9d6d849e14fa"
+ },
+ "Dll/srVP_PentiumII.dll": {
+  "size": 57421,
+  "sha256": "2cadefd51ed177c762ccbc6be0181fc70e6e26ecaf04b1b475298f206fed518c"
+ },
+ "Dll/srVP_PentiumMMX.dll": {
+  "size": 61440,
+  "sha256": "bf1a2e932680a71261382115a3afc4ceb1742814d4c52742fcf8a1d6fb0f5a47"
+ },
+ "Dll/srVP_PentiumPro.dll": {
+  "size": 57344,
+  "sha256": "7f3502649d7cfd151ebdb82ab5472d8f32ab0268d2ac24add60490b6b0e4cdd0"
+ },
+ "Dll/srVP_x86.dll": {
+  "size": 61505,
+  "sha256": "bbec96aa91b6988618fb4ec07696baed01ca556a3eab6f3836f9f475b45730c2"
+ },
+ "Levels/LEVELS.SLF": {
+  "size": 497064244,
+  "sha256": "38e63c2109ac903ee122fe214264f331b598bdef0357d921303af56c1de081de"
+ },
+ "MSVCIRT.DLL": {
+  "size": 77878,
+  "sha256": "647f7534aaaedffa93534e4cb9b24bfcf91524828ff0364d88973be58139e255"
+ },
+ "MSVCP60.DLL": {
+  "size": 401462,
+  "sha256": "2b6b93c2d66969eb00258e2b5ad6172decebada096e3b1b077a3380c80e4a072"
+ },
+ "MSVCRT.DLL": {
+  "size": 266293,
+  "sha256": "d4287ab5e4988dfe99bd54243d50dbe8744094f11fe5f9809a1a6fb9728c2124"
+ },
+ "Mp3dec.asi": {
+  "size": 125952,
+  "sha256": "0a6db88a5fad28168c1dac700473c5709b17802c33e36b2668c3300c1e580fad"
+ },
+ "Mss32.dll": {
+  "size": 348160,
+  "sha256": "2a515199cc7a2e1ccd8d756efdaab07cedd5c3052309ef1c7499c2560e2097bd"
+ },
+ "Mssa3d.m3d": {
+  "size": 52224,
+  "sha256": "eed462395fb40bf145fa503f3d7cf5600843147f0cc818ab76588bd7d542d6ac"
+ },
+ "Mssa3d2.m3d": {
+  "size": 61952,
+  "sha256": "d86567df6530952542d89eeaa1cdd802ccac6d98e6849034bbc7c2bb802febc3"
+ },
+ "Mssdolby.m3d": {
+  "size": 65536,
+  "sha256": "44d7555faadcbf777d78f675695da3add28ab5c6a800cb39bfd2664e8afd6502"
+ },
+ "Mssds3dh.m3d": {
+  "size": 51200,
+  "sha256": "b90b26d654b7edc746f326ed34bbfd65e6cee4ecf6876eda5c7d04de4d54d1de"
+ },
+ "Mssds3ds.m3d": {
+  "size": 50688,
+  "sha256": "4f6642c0a7ebf33f2f5adf01149eaf5749159082fdd8ed5930d2cd1458e94709"
+ },
+ "Mssdx7sh.m3d": {
+  "size": 51712,
+  "sha256": "e30a5ac6980d873b720c937300c968e31ff87bee05a98b87b9018a1c6cecb91c"
+ },
+ "Mssdx7sl.m3d": {
+  "size": 51712,
+  "sha256": "1aff1b1436fc9b3e7a6df8bb9af56b14db673e305a74a1067e91936301494b5d"
+ },
+ "Mssdx7sn.m3d": {
+  "size": 51712,
+  "sha256": "efa0feedc9e66ef290f56dd5b68f5fb83ea216e030ae64cc687f1043b0197269"
+ },
+ "Msseax.m3d": {
+  "size": 54272,
+  "sha256": "34617f321bd68616c4c4a96c2ca17a8ca92c3c381f699102e7584c1881f734cc"
+ },
+ "Msseax2.m3d": {
+  "size": 70144,
+  "sha256": "005b8966d8c67fe705c1497f5199e14108c960914305cd846a8e9905f7d14142"
+ },
+ "Mssfast.m3d": {
+  "size": 64000,
+  "sha256": "343ba39b3e5d0f220e0d15ec5f9eb9b84a04617599ba6cd1d815539637f10647"
+ },
+ "Mssrsx.m3d": {
+  "size": 354304,
+  "sha256": "56e1c9fb9e2bfcba0fac899bb69934dbbaf294d64891a30ecc7d357c12839cbf"
+ },
+ "Mssv12.asi": {
+  "size": 142848,
+  "sha256": "1f27fed68d5985d7cb923508a9764c32a2ea6747069588afb166197e8bbfb508"
+ },
+ "Mssv24.asi": {
+  "size": 134144,
+  "sha256": "a64972a1dc1725e128175a4ddf609e29e4efc50ff4d13d57aa3911951360da75"
+ },
+ "Mssv29.asi": {
+  "size": 161280,
+  "sha256": "ccaa347d91388314d2d480c019f1746d2718319b55642c4b43b434dca5c57153"
+ },
+ "Patches/PATCH.001": {
+  "size": 519421,
+  "sha256": "74bbc59acc581ede5e6c148c47486e4f287ea3169deca260abc28d5e9f715936"
+ },
+ "Patches/Wiz8Patch2001_12_23_README.txt": {
+  "size": 6188,
+  "sha256": "7f68a7475332d8d6d302998eedd8e346f3f960c6d513b7220bf208a0492c566e"
+ },
+ "Saves/Arnika Road.SAV": {
+  "size": 430321,
+  "sha256": "40b8f9045aa2baca763a858064c63baac71f519b4b6916c39029d93ac9be478a"
+ },
+ "Saves/Arnika-Trynton Road.SAV": {
+  "size": 628883,
+  "sha256": "86fc979cef70898ed09592d7474754636c31bc81ca80f63e7a29083a2a77610d"
+ },
+ "Saves/Arnika.Fin.SAV": {
+  "size": 1793780,
+  "sha256": "14946a42c53a33897dc4cb209eeecebc692b584675b37badc5ba731fef8e6b9b"
+ },
+ "Saves/Arnika.SAV": {
+  "size": 648909,
+  "sha256": "7926a7b28e762ee60dec67a8612a7e002981c7e8e534c09f26311de242e6409f"
+ },
+ "Saves/Cemetery Retro.Fin.SAV": {
+  "size": 1748198,
+  "sha256": "2351b388f9544db5ee1e3004e1f4069ebb290fe22907b971ef5a957c0474cc6e"
+ },
+ "Saves/Cemetery Retro.SAV": {
+  "size": 1608452,
+  "sha256": "72401252158b690cb34ed18da6c7a032f32996142c18bb4732a2a4d63f674d48"
+ },
+ "Saves/Characters/Canus.CHR": {
+  "size": 6246,
+  "sha256": "21b78be5543af49ffd4b16278ec515af13e4e85ebad0f2843c708306ef0b6556"
+ },
+ "Saves/Characters/Drizbach.CHR": {
+  "size": 6246,
+  "sha256": "75ba46f974a2ad26f3dfda3f35b6243234da389177a9a873ca34c77f17fe9afd"
+ },
+ "Saves/Characters/Eandor.CHR": {
+  "size": 6246,
+  "sha256": "eb6331f95b014c877dccc8ef11c2e088a4d780e3d4048e61d47649e694531c40"
+ },
+ "Saves/Characters/Evenstar.CHR": {
+  "size": 6246,
+  "sha256": "219b03bf5a7f285dbf2f263538632cd2b0d7c581aaa3b7b8aca19a35680e733d"
+ },
+ "Saves/Characters/Fingers.CHR": {
+  "size": 6246,
+  "sha256": "d4e46151fcb146c5b567751e04625a95f9f5e2042cbf692446bfd8c453c51bcd"
+ },
+ "Saves/Characters/Flicker.CHR": {
+  "size": 6246,
+  "sha256": "b84c91cbf4be076796e3417c6986c6707dab1e044003bf9261a6fd5e27a3c9db"
+ },
+ "Saves/Characters/Gudrun.CHR": {
+  "size": 6246,
+  "sha256": "6640859fc96e43eca2a577560379b9110da14866501971d32cc43a784e7f50e0"
+ },
+ "Saves/Characters/Iona.CHR": {
+  "size": 6246,
+  "sha256": "b206097ec1cf5e5cbb3349abc6be52f6810e6b2728621f92ab8103e0ff4f1cc2"
+ },
+ "Saves/Characters/Sparrow.CHR": {
+  "size": 6246,
+  "sha256": "30f5c02b1ac17f75f745788975984193cbbf38be22165f97fd84e885e9a1ee8b"
+ },
+ "Saves/Characters/Sprocket.CHR": {
+  "size": 6246,
+  "sha256": "e49df21eb0dda91ae05cedc32226a3e5e75bafa27d253af7d2af454fe963ae7a"
+ },
+ "Saves/Characters/Sslar.CHR": {
+  "size": 6246,
+  "sha256": "11748d056bb24944dfea8ca9c88317fe6655f2f2ed5153c2f32f3513c89ee401"
+ },
+ "Saves/Characters/T'Lan.CHR": {
+  "size": 6246,
+  "sha256": "02ff767c67d599b8c6a1f4498437d86973bd2fcc5e46d5c027ee098d32a17f0d"
+ },
+ "Saves/Characters/Taku.CHR": {
+  "size": 6246,
+  "sha256": "112a10c2bfbd2d7d5bdf193fcb1946274143ab2e941339b42c02045efa4ec5ab"
+ },
+ "Saves/Characters/Tempus.CHR": {
+  "size": 6246,
+  "sha256": "96c4537d854410fb20ad624219da172fefcc73df9210f5e78b854a62f3ff27d6"
+ },
+ "Saves/Characters/Ulf.CHR": {
+  "size": 6246,
+  "sha256": "71fadc618edf3d1603eff83a1440cc90f166cb3daa2a2d3676562ce950270e89"
+ },
+ "Saves/Characters/steam_autocloud.vdf": {
+  "size": 52,
+  "sha256": "5a46b2a80d7502e8fe5a294bc01028fde66d86072cd96a6babb6c258de7cbe38"
+ },
+ "Saves/CurrentGame.SAV": {
+  "size": 2249382,
+  "sha256": "13ea3714cc0f3c5ba76179d0583cfafd3f405d00204987d613a191c99b22420b"
+ },
+ "Saves/Lower Marten's Bluff.SAV": {
+  "size": 1148617,
+  "sha256": "1ecd9a0a587da637644e30f319d6a40e40344c18de6c671e8ba4437c27eaf74f"
+ },
+ "Saves/Marten's Bluff.SAV": {
+  "size": 1699753,
+  "sha256": "280926479fd253ddc8cbe143dec027d083cba3b5d03070fc6f044e66439c0c1a"
+ },
+ "Saves/Mine Tunnels.SAV": {
+  "size": 970464,
+  "sha256": "f20dec7256f411970a7175e6c47411a7d5609fce75b19180af186edb18d4eda1"
+ },
+ "Saves/Monastery.Fin.SAV": {
+  "size": 863111,
+  "sha256": "dc2bb50ab45a2c9a44a596f036c7b1e08546c1c79c69cd99cfd646efc37fbd32"
+ },
+ "Saves/Monastery.SAV": {
+  "size": 374502,
+  "sha256": "c642c3abddea611abb92c296be97f10735141c6ba8ad0cd9b21830124b82426a"
+ },
+ "Saves/Mountain Wilderness Retro.SAV": {
+  "size": 2077389,
+  "sha256": "db547dadfd6657371729f6eae2275ad3b2600849d9edecde91dff4b23b3eb611"
+ },
+ "Saves/Mt.Gigas Upper Caves.SAV": {
+  "size": 1981306,
+  "sha256": "fcb233ed5eb1508453c1bcfde8d3e98a7f7de4fd272a6a6a878cf867c2103d8d"
+ },
+ "Saves/Northern Wilderness Retro..Fin.SAV": {
+  "size": 1990554,
+  "sha256": "dfa331fa4a3a0dbba8f9e92ee80df2080726e4d9c3a47acdd475044027478498"
+ },
+ "Saves/Northern Wilderness Retro.SAV": {
+  "size": 1968584,
+  "sha256": "8a884c6d26cfe49ad91bc17a9b3d67f29c80db6bcf0a11e9a97096a1be72efc5"
+ },
+ "Saves/Northern Wilderness.Fin.SAV": {
+  "size": 1974363,
+  "sha256": "ca28063ae2fd70c957fc1828eb5960ee37bdb27b637db337d418777be8705b8e"
+ },
+ "Saves/Northern Wilderness.SAV": {
+  "size": 1259951,
+  "sha256": "9e19f9e4b519678b4660f97a0ccc5d60826db4d3435bdc1d4ff832547eeb3810"
+ },
+ "Saves/Sample Party.SAV": {
+  "size": 293059,
+  "sha256": "3aae0f1dc3d5b86d89e477694be2316a17b7e7545c47fc5630da22593095fdd5"
+ },
+ "Saves/South East Wilderness.SAV": {
+  "size": 1715646,
+  "sha256": "68586198e375fb0f1df48e3ee3fd70acf5e832f54044043e1d059c90cf3766fc"
+ },
+ "Saves/Swamp.SAV": {
+  "size": 924992,
+  "sha256": "6f674a321e0d0437dc93c89f4e35351bc283fad20fd52ee3e0a5a45403837a2b"
+ },
+ "Saves/Trynton.Fin.SAV": {
+  "size": 1623159,
+  "sha256": "483deb101ac310fa573eaa51728ec2495e99d74aa2edd6208eea6d9dee6d445a"
+ },
+ "Saves/Trynton.SAV": {
+  "size": 950414,
+  "sha256": "ce389f946d02495bd5f57c03e0a7bf2db2d6edab83c89efe44f1d086d4918174"
+ },
+ "Saves/Umpani Base Camp.SAV": {
+  "size": 1380557,
+  "sha256": "2f3147763b9d17a7805efe996919c2e6a917e11aa199c24f6ee1c5e2d28088d3"
+ },
+ "Saves/Upper Rapax Castle.SAV": {
+  "size": 2064225,
+  "sha256": "725599207ebfd3387f262f3375ed1048b83b4a22eec7a3010a609f1d6c4f8169"
+ },
+ "Saves/Wilderness Clearing.SAV": {
+  "size": 1729295,
+  "sha256": "c449a3c40ace441a2cd2b3bab627c2732caf29c7689c08e1e52d0f6b6ff03014"
+ },
+ "Saves/steam_autocloud.vdf": {
+  "size": 52,
+  "sha256": "5a46b2a80d7502e8fe5a294bc01028fde66d86072cd96a6babb6c258de7cbe38"
+ },
+ "Wiz8.CFG": {
+  "size": 2063,
+  "sha256": "cb947360103abf60d66c47a5926ae28d428f7c8ae70910ba260cdfbdd1722c7e"
+ },
+ "Wiz8.exe": {
+  "size": 3580513,
+  "sha256": "18a74ff61c65b8a2d4cfa11ffce82ad7fef022a94eaf0c2f217e479e981420d2"
+ },
+ "Wiz8.ico": {
+  "size": 2238,
+  "sha256": "99314ba01d1a914a0d3a65606cf5cb391d628a1dd36ef74b0565fa013586749a"
+ },
+ "Wizardry 8 - Manual (printer friendly).pdf": {
+  "size": 42093557,
+  "sha256": "2fb7761c0cacfa0e0bea92028d2de1cc8dbf3f3071a836aac1b54674d1948ed7"
+ },
+ "Wizardry 8 - Manual.pdf": {
+  "size": 33313549,
+  "sha256": "6bcfb489b7d4e43f1e8f1c048bbfa8f5e4a20d44122892f5cbe753974feb184b"
+ },
+ "binkw32.dll": {
+  "size": 286208,
+  "sha256": "1fd7ef7873c8a3be7e2f127b306d0d24d7d88e20cf9188894eff87b5af0d495f"
+ },
+ "glide.dll": {
+  "size": 1527808,
+  "sha256": "57fd08de7adb9268027d79a3c28c49aa29970c752cab4d50e31425e4d9d089f0"
+ },
+ "glide2x.dll": {
+  "size": 1617920,
+  "sha256": "7ff40975fee4016e029abb45732cdd06b54c23e8778c77bce50806c11c6e23fa"
+ },
+ "glide3x.dll": {
+  "size": 1712128,
+  "sha256": "db1630a50eb481bc86702a8fcc2e4e5e67f7f4c34f9707ad325424d24acb1381"
+ },
+ "nGlideEULA.txt": {
+  "size": 227,
+  "sha256": "3d779c24adecd1ffc7daf67354d5510d7b3e908235a07b58e434ba299ec61546"
+ },
+ "nglide_config.exe": {
+  "size": 348160,
+  "sha256": "7445dc0a2a63b8532457e17795ca4f264035b90c49ca457673556bdfc3c31d00"
+ },
+ "nglide_readme.txt": {
+  "size": 23016,
+  "sha256": "f2e041f3b68435abf4b7eb09bb5ed78866440ad56ddf6475ce7a36699fac2740"
+ },
+ "sr.dll": {
+  "size": 688191,
+  "sha256": "cec1caf85861c34bc4583ef1c69209e96a6930bdfc9af545c429f7470a8b6165"
+ },
+ "wizardry8_installscript.vdf": {
+  "size": 750,
+  "sha256": "b07457ff42aa32d944c343656018d7cacefc2ea22e0e0a595b449b6cfa8480d5"
+ }
+}

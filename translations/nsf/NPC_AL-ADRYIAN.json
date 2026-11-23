@@ -1,0 +1,382 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "89ab6073b2281d10a05ef71ebb0d681838cbb4956be2000011f1d9a8fbd683fb",
+  "zh": " Surdan 告訴我你們想加入我們，如今你們就站在這裡，我卻仍幾乎不敢相信。不是 Rapax 血脈的人想成為 Templar ，實屬罕見。然而，我很高興歡迎你們。我有種感覺，是 Al-Sedexus 希望如此安排。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "3f022b036b275b8eb725f068f85e9bc85531d0348c5bc7d64b3410ca2fe28747",
+  "zh": "你們在這裡已不受歡迎。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "641f650ba4d3aad25781ddecfcecbf89b2e2165907d866b3e856f305a4a5a5de",
+  "zh": "沒有什麼能改變我的心意。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "64b64bd274a2f3228c70226547be3cbcfb2ad01ce6c475bd87c70fe081bf9c7f",
+  "zh": "把你們的靈魂留給 Al-Sedexus 吧。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "3810d1492da92f959e6b0a5c5b91777724fceddee2f14f2a137bf8a080d02c67",
+  "zh": "這座 Temple 之內不容打鬥！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "c76a79544c68da6029d6d6c70b65d5f3384b7d40b9148438ccac8e9d5f1fba44",
+  "zh": " Temple 就是我所歸屬之處。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "3f663e106f16cfccd6cc9be0b4cd0d9c921fc0fffb48d3ebe70f8b2c37de0671",
+  "zh": "她會記得這些供奉……"
+ },
+ {
+  "id": 13,
+  "src_sha256": "4e1e08b0ae3647495184c4cd73240ec5dec95db369c1f109d70f6dc200686b98",
+  "zh": "不必了……"
+ },
+ {
+  "id": 15,
+  "src_sha256": "1a026184bd28ea7117f67ae7eb9c2a067ca74d9505204cd7c43954546fb84f73",
+  "zh": "我不需要更多了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "e2b848bca87805e926a193cd4cb887fde6a4432ce958966250e3991d33f2bd5a",
+  "zh": "你們高估了你們的金幣……你們的錢不夠。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "5873279e47ab626bcd074fd3d85fcab3f72f9797e56f3ef9bb4d3b0cb296b9ae",
+  "zh": "你們永遠別想成為 Templar 了！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "8dfc6decd76cdcc84c62e3def6e3d5742ac7e9d0d0e5d805933c844a569e75c6",
+  "zh": "你們永遠成不了 Templar ！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "5f6d1c48d198137ff93d45d180f60b162656dd00b86947542935241079057eec",
+  "zh": "你們的所作所為將被記住……"
+ },
+ {
+  "id": 20,
+  "src_sha256": "11cacce99cbc891bc7bc70a750682ca4f39568d10fe025070f409a1587a098a4",
+  "zh": "你們的最後一口氣將屬於我！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "ec96c85142ff67a9faef1960443ea72932a0e93a50e82a620b1e43457225b831",
+  "zh": "你們的供奉已被接受。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "666249eb6d19b8775a23c603956c1c31ec6e8a92ce070ce30e928847173a7123",
+  "zh": "我們的談話就限於 Temple 的事務吧。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "2344375fe832d0ae152c95d19d692c4d1ffbb64931afbe98d5c6430abe63452c",
+  "zh": "與我無關。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "98a841816b24d1b8a290663462cce5c4ee5b73562dab1c01ec04257481435b41",
+  "zh": "時候到了你們自會發現……"
+ },
+ {
+  "id": 25,
+  "src_sha256": "1e13e9c3cd0a32907b0a6e370b3ee59a5d318088c7eb1388cf2480149e7bcc39",
+  "zh": "我已經說過了……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "681b60d5ed1600db629e0d0f210155bc9c554b5a9f62d0ed2d4bfb5a721a6857",
+  "zh": "你們最感興趣的是哪一個？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "d18df6b79df17caa5e597754a060e8bf7fe3e214fda82fcd02bf670f44d7da0e",
+  "zh": "另一件事我也知道……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "37aeaf36e0ef19f1ef7ce7a90a65da93abbde097c08c076d77ccde57ecb97bab",
+  "zh": "我會記住的。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "5dac0bc76b154c664c0f5695eb70211077b9b63bbd0554ef1d3e9c07f9952ec5",
+  "zh": "是的，那麼，讓我們繼續你們成為 Templar 的道路……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "e2de9945e1c88e6b106bb20615cea01be2bad0e0195b94af32d3e42ad68b4780",
+  "zh": "有更重要的事需要討論。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "436eddb7b8a95c962a9cacbbe18a5172c2f3ca9f33bbf7902874456390ae278f",
+  "zh": "建立在所有 Rapax 的背脊之上，是我們{{Strength}}的見證……"
+ },
+ {
+  "id": 36,
+  "src_sha256": "ca971a5b9b03d4c71cad69b47bb25df32c6b7678ca50ea72f0b84cb90df0c145",
+  "zh": " Al-Sedexus 居住之處……"
+ },
+ {
+  "id": 45,
+  "src_sha256": "ef8a38f1a297fd894a55556fdb59770e667ce4aef31522f013fa9933798fcf89",
+  "zh": " Al-Sedexus 的孩子們。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "09821aaa380ae63678c301dc8d5c079da1d6c82fa41dc6fc19682e6001f43fd5",
+  "zh": "對，你們是指 Phoonzang 。身為 Cosmic Lord ，他會為我們的喜悅而歡欣……你們很快就會看到。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "899cafbcece73f5e7bffaa31f50be49503dd56763ba0a5cf61e46e03d1f3203b",
+  "zh": "他尚未成為 Templar ，但或許有一天……"
+ },
+ {
+  "id": 57,
+  "src_sha256": "da22be999e4cfe3721ef3379f3e27c76a68f64ff0d0cb1f74e186c27130d8580",
+  "zh": " Phoonzang ，那位 Cosmic Lord 。他的祝福降臨在 Rapax 身上！"
+ },
+ {
+  "id": 61,
+  "src_sha256": "2a58a601138228adb15ea606c824fb3c17eee415059988aa5764eae41728682d",
+  "zh": "他是 Al-Sedexus 所寵愛的人之一……"
+ },
+ {
+  "id": 62,
+  "src_sha256": "73cebbc3aa18e32e0cc1b6ea43d6372bf81ea747cbb56a6702043beefb5e5d5a",
+  "zh": "她與國王在一起……"
+ },
+ {
+  "id": 63,
+  "src_sha256": "39e72d67d7e8b30a0f2121f77f1f702699ab3f4b9c94695ff879f49bdcd6b104",
+  "zh": "他對我來說無關緊要。"
+ },
+ {
+  "id": 64,
+  "src_sha256": "a31f5d482c98bd02cc7904472b0bf42245f0089bb145c0fe6152617ee3e2869a",
+  "zh": "黑暗的女惡魔，生育者，孕育所有 Rapax 的子宮……你們很快就會見到她。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "8d1bf7b6de3f1bff2e1d33efd1df8702bd16767ae38fab38a43b49fbc68faddb",
+  "zh": "這裡沒有祕密。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "8f600efca70291a50b5caef785bfeef59981be542d228955341236eef5b1ef90",
+  "zh": "我是 Al-Adryian ，她的 Temple 之主。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "267546540b04b8b9a7dcaa48a5d98754469a04db2f9497759d191974c80141ea",
+  "zh": "那個，還有更多……"
+ },
+ {
+  "id": 76,
+  "src_sha256": "2d5e8b40a728cdea272c2e372deb61ef6cc2f7e0a747bdf45a68acf8939969cd",
+  "zh": "不……"
+ },
+ {
+  "id": 77,
+  "src_sha256": "f04427070edda834513cf98138a625fd419f64c92044c862a3a9d961514fbc9b",
+  "zh": "你好……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "31a13b8a1b8d90fac8e83f6ef5a8de386ac4eedeed6ee860f59e95273a03aecd",
+  "zh": "我們會再見面的……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "974a91c9846e5a49da6b0f6b33aaf330914f1dc8ec9bdc00d0b938222c4d6217",
+  "zh": "她會給你們所需的一切幫助（ help ）……"
+ },
+ {
+  "id": 80,
+  "src_sha256": "428d7417381353e8fac38c3f19b39c26f4dfaab8d5225d6dec416fa441d48a22",
+  "zh": " Ferro 可以協助你們……"
+ },
+ {
+  "id": 81,
+  "src_sha256": "a556bafb63d916162deddbfd09a7cf8a57cb780dd46517df89b3f47e89ae6bb4",
+  "zh": "謝謝你們的關心。我很好。"
+ },
+ {
+  "id": 89,
+  "src_sha256": "238d6ccdfea2dc047103311446510fc5670c460fccb10f6ecbe092e348350ae6",
+  "zh": "她會喜歡這個的……"
+ },
+ {
+  "id": 90,
+  "src_sha256": "d022fec5cdf436eb76553c751592d15ee29c6a63f5721cf2ea469e516f3ee220",
+  "zh": "在 Arnika ……"
+ },
+ {
+  "id": 91,
+  "src_sha256": "d0b235735a0a98fb412d02ebd52d7a52323132d9c5d05a0cbe045d05b0348c88",
+  "zh": "在 Trynton ……"
+ },
+ {
+  "id": 92,
+  "src_sha256": "f607e3c17049400d6997ae1e6071594669a44ce611e378d50a69c0b1ffa56eea",
+  "zh": "在 Swamp ……"
+ },
+ {
+  "id": 93,
+  "src_sha256": "455f278702d049da25ab5dce23140606bbc5f9d95e736d03a0b29dfa6cff0c37",
+  "zh": "在 Marten's Bluff"
+ },
+ {
+  "id": 94,
+  "src_sha256": "04572508f8ca03345fa9720751cc3e7fb4d9003ab2b95006dcc55170f188e78d",
+  "zh": "在我們的 Away Camp ……"
+ },
+ {
+  "id": 95,
+  "src_sha256": "11ef444f1c1ee1efaf3aafc7323f3abb12c0141c0eecaba84d3a22fa8b5d54a1",
+  "zh": "在 Mt. Gigas ……"
+ },
+ {
+  "id": 96,
+  "src_sha256": "2c157f6a390816fb3a71aa807f55bce4ace64ad2cd2d72fcd81dc43dcb0fbb75",
+  "zh": "Sea Caves ……"
+ },
+ {
+  "id": 97,
+  "src_sha256": "edf7c62a7c378bfb85dfcca128c55d92f350ed927faed47883969eda4b6e1590",
+  "zh": "此時此刻？當然是在 Rift 。 Al-Sedexus 只有在儀式（ ceremony ）之時才會來到這裡。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "0de60392b167d3faf16916a8694a5a395ed5d5fea91f4d7689072729ca6a1a6e",
+  "zh": "當然就在這裡，我們的 Castle 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "e932c2a2abe7d7f63c7d64130f507b9e63367db860518583fbb2046c1413a0b7",
+  "zh": "在 Ascension Peak ……"
+ },
+ {
+  "id": 100,
+  "src_sha256": "791fa9d7cbf98ae67b2abf34e89dee400fdc6902af9e11c7447e1cc1de871b61",
+  "zh": "當然是在 Cosmic Circle 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "2ab73003870a6f167663f54173da7503d3246debf5464f16b9ccad5aead201bf",
+  "zh": "這裡……"
+ },
+ {
+  "id": 102,
+  "src_sha256": "954963623c13303f7fd160729965175f7e27c848d6c4a1335c684134758e4778",
+  "zh": "與我無關。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "c44322967a0d8352e7a4ee1460ab4c62d4a2823077c8ca2887e8d8eefb5d8df1",
+  "zh": "在 Bayjin ……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "98f3a60b75d574151838de6348503c49726b51254a6f0e0c29d2b3fbdafc0911",
+  "zh": "你們的入會儀式（ initiation ）將在 Temple of the Initiate 開始，離這裡不遠。告訴他們是我 Al-Adryian 派你們去的。在那裡，你們要取得  Canezou of Al-Sedexus 。然後回到我這裡來（ come ）。我會指引你們剩下的步驟。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "6744957b3d3af5875cac527748a9b89fd47cf4629700326dd4daec3463eb02b2",
+  "zh": "我們談話的時候還沒到。去 Temple 完成你們的 Initiation 。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "8b3ac52b98114bd5a7200ca7b8a5b2d10781e83a1f19b0ec19a24195ea1dec21",
+  "zh": "就這樣開始了，現在是你們的儀式（ ceremony ）時刻。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "85b470e77d0dce9a9eec566a9437bbaa6956a88bfb9a97e2d369e75f154cd3d7",
+  "zh": "首先，你們必須讓你們之中最強的一位穿上完整的 Canezou 。接著，在我後方下面的大 Temple 裡，你們會找到一座祭壇。把 Dark Nectar 倒在祭壇上。如果你們夠格？ Al-Sedexus 就會降臨（ come ）……"
+ },
+ {
+  "id": 108,
+  "src_sha256": "3a8c9c67e59729284176762155691ac118a02d087ebc96d53f00365f51562bb5",
+  "zh": "你們的儀式（ ceremony ）正等著你們……"
+ },
+ {
+  "id": 110,
+  "src_sha256": "ba33d59fd81774a7c047b369cb19f8cdc3b112507ac6acaa5f107d22931a6ee0",
+  "zh": "他是個非常出色的軍械匠。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "3dea9d4c32bead8500c29b1d861c05e79d5bfb93ce01c88113bb1efac20f0646",
+  "zh": "所有 Rapax 都能為自己發言。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "d7edfd8f1e64b1bd688ae762f2a657e7120ec1e3acc0783e75c3cf28278b2d1f",
+  "zh": "沒錯，可以說是儀式（ ceremonial ）服裝。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "f08d579260a13ea102a39ad62c0350309281ef8d3dff938030a5012e408c366c",
+  "zh": "離這裡不遠。那裡可以學到 Al-Sedexus 的要求。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "ff2ea2c083db175ed5ff7ec16fe4e85e660dc0749a07ddee85878e3096dda0d9",
+  "zh": "所有 Templar 與 Al-Sedexus 舉行儀式（ ceremony ）之處。就在我後面過去，然後往下……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "1cbff2803bcb886d5ff620032e17dbb700b454aa98ac55b981cdb1e00815fa20",
+  "zh": "我是這裡的守護者，這座 Al-Sedexus 的 Temple 。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "d7618062db5d6f923a52c9c5a43159c96980433065310bae2eae81099527acb3",
+  "zh": "透過 Temple of the Initiate ，你們將學到 Al-Sedexus 對你們的要求。透過這裡 Al-Sedexus 的 Temple ，你們將明白身為 Templar 的意義。所有 Rapax 都會敬重你們，而我們絕不會舉起刀劍。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "1810e6193c0b61dc5fd2cb875e5e563ae3e91144fcfcce88d91eb83f4a979cb0",
+  "zh": "她所喜愛的東西。你們的儀式（ ceremony ）所需，我已給你們綽綽有餘。不過若你們還需要更多， Ferro 會提供。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "fdeef662b944b08c6e47f26b87681eeef3b14bce7f5387ee6753c30bf98a0df0",
+  "zh": "正是如此……"
+ },
+ {
+  "id": 119,
+  "src_sha256": "5f7e57bd96b2b17d1f9e79de7020399c7cf75c5ad06c9b8f069f49e80eb1e977",
+  "zh": "在這裡的北邊。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "d1a225fd7ff3d7b759d029ce91c360b1721a081aed3bfb611aef01b5092d971a",
+  "zh": "在這裡的南邊。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "435390dec0f8983699c9227fb1fb666aa1443edec273c1c0459347c1a3a87196",
+  "zh": "當然在這裡的東邊。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "8fe96f767db4638912729f969a41d5eede50f93276c1af4236b98433cca5c1a8",
+  "zh": "往西走……"
+ }
+]

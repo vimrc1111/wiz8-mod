@@ -1,0 +1,2 @@
+ok g2-probe 33
+ok node-accept 1 節點 D4

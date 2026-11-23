@@ -1,0 +1,565 @@
+{
+ "cc": "cdecl",
+ "steps": 2000,
+ "path_limit": 400,
+ "samples": 16,
+ "objects": {
+  "effect": 0,
+  "stub": 4096
+ },
+ "args": [
+  "@effect"
+ ],
+ "stubs": {
+  "0x54d5c0": {
+   "ret": {
+    "at": {
+     "object": "stub",
+     "offset": 256
+    }
+   },
+   "pop": 0,
+   "record": [
+    {
+     "arg": 1,
+     "size": 4,
+     "at": {
+      "object": "stub",
+      "offset": 4
+     }
+    },
+    {
+     "arg": 2,
+     "size": 4,
+     "at": {
+      "object": "stub",
+      "offset": 8
+     }
+    },
+    {
+     "arg": 3,
+     "size": 4,
+     "at": {
+      "object": "stub",
+      "offset": 12
+     }
+    },
+    {
+     "arg": 4,
+     "size": 4,
+     "at": {
+      "object": "stub",
+      "offset": 16
+     }
+    }
+   ],
+   "count": {
+    "at": {
+     "object": "stub",
+     "offset": 0
+    }
+   }
+  },
+  "0x54f520": {
+   "ret": {
+    "at": {
+     "object": "stub",
+     "offset": 260
+    }
+   },
+   "pop": 0,
+   "record": [
+    {
+     "arg": 1,
+     "size": 4,
+     "at": {
+      "object": "stub",
+      "offset": 36
+     }
+    }
+   ],
+   "count": {
+    "at": {
+     "object": "stub",
+     "offset": 32
+    }
+   }
+  },
+  "0x54e3f0": {
+   "ret": {
+    "at": {
+     "object": "stub",
+     "offset": 264
+    }
+   },
+   "pop": 0,
+   "record": [
+    {
+     "arg": 1,
+     "size": 4,
+     "at": {
+      "object": "stub",
+      "offset": 68
+     }
+    },
+    {
+     "arg": 2,
+     "size": 4,
+     "at": {
+      "object": "stub",
+      "offset": 72
+     }
+    }
+   ],
+   "count": {
+    "at": {
+     "object": "stub",
+     "offset": 64
+    }
+   }
+  }
+ },
+ "setup": [],
+ "in": [
+  {
+   "name": "durationPerPower",
+   "at": {
+    "object": "effect",
+    "offset": 220
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "power",
+   "at": {
+    "object": "effect",
+    "offset": 208
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "durationBase",
+   "at": {
+    "object": "effect",
+    "offset": 216
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "percentBonus",
+   "at": {
+    "object": "effect",
+    "offset": 212
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "targetType",
+   "at": {
+    "object": "effect",
+    "offset": 144
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "statusRet",
+   "at": {
+    "object": "stub",
+    "offset": 256
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "staminaRet",
+   "at": {
+    "object": "stub",
+    "offset": 260
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "buffRet",
+   "at": {
+    "object": "stub",
+    "offset": 264
+   },
+   "size": 4,
+   "signed": false
+  }
+ ],
+ "out": [
+  {
+   "name": "eax",
+   "at": {
+    "reg": "eax"
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "duration",
+   "at": {
+    "arg": 0
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "status.count",
+   "at": {
+    "object": "stub",
+    "offset": 0
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "status.effect",
+   "at": {
+    "object": "stub",
+    "offset": 4
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "status.kind",
+   "at": {
+    "object": "stub",
+    "offset": 8
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "status.chance",
+   "at": {
+    "object": "stub",
+    "offset": 12
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "status.arg4",
+   "at": {
+    "object": "stub",
+    "offset": 16
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "stamina.count",
+   "at": {
+    "object": "stub",
+    "offset": 32
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "stamina.effect",
+   "at": {
+    "object": "stub",
+    "offset": 36
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "buff.count",
+   "at": {
+    "object": "stub",
+    "offset": 64
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "buff.effect",
+   "at": {
+    "object": "stub",
+    "offset": 68
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "buff.kind",
+   "at": {
+    "object": "stub",
+    "offset": 72
+   },
+   "size": 4,
+   "signed": false
+  }
+ ],
+ "boundary": [
+  [
+   0,
+   0,
+   0,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   1,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   2,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   3,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   1,
+   1,
+   0,
+   100,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   9999,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   9999,
+   50,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   1,
+   9999,
+   0,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   4294967295,
+   1,
+   10000,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   3,
+   3333,
+   0,
+   7,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   9998,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   10000,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   4294967295,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   4294967294,
+   0,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   4294967295,
+   4294967295,
+   4294967295,
+   4294967295,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   2,
+   5,
+   10,
+   25,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   10,
+   3,
+   4,
+   150,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   65536,
+   65536,
+   5,
+   3,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   40,
+   4294967196,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   7,
+   2147483648,
+   1,
+   2147483648,
+   1,
+   286331153,
+   572662306,
+   858993459
+  ],
+  [
+   0,
+   0,
+   5,
+   0,
+   1,
+   0,
+   4294967295,
+   2147483648
+  ],
+  [
+   0,
+   0,
+   5,
+   0,
+   1,
+   4294967295,
+   0,
+   1
+  ]
+ ],
+ "random": {
+  "seed": 5564944,
+  "count": 40,
+  "ranges": [
+   [
+    0,
+    4294967295
+   ],
+   [
+    0,
+    4294967295
+   ],
+   [
+    0,
+    4294967295
+   ],
+   [
+    0,
+    4294967295
+   ],
+   [
+    1,
+    1
+   ],
+   [
+    0,
+    4294967295
+   ],
+   [
+    0,
+    4294967295
+   ],
+   [
+    0,
+    4294967295
+   ]
+  ]
+ }
+}

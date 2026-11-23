@@ -1,0 +1,12 @@
+call	2b6	無關	擷取器誤判：斷言是經 IAT 槽 5ebaf4 的間接呼叫，2b6 非函式位址；斷言路徑 cov-exempt
+call	40efa0	rollRandom	R(4) 決定持續時間是否再加 1；R(100) 以 40/80/90/95 分界選效果
+call	517f90	percentAdjustInPlace	原地把持續時間加上 持續時間×百分修正÷100（乘積取低 32 位、無號除）；非公式輔助，由本節點原生執行
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	斷言失敗入口的 IAT 槽（srAssertFail），只在目標種類非角色時呼叫，無返回值可差分
+data	61e2c4	無關	斷言用的原始檔名字串，只傳給斷言入口，不參與規則
+data	61e300	無關	斷言用的條件字串（目標種類為角色），只傳給斷言入口
+field	esi+0x90	effectTargetType	效果目標種類，必須為 1（角色），其餘走斷言
+field	esi+0xd0	effectPower	效果威力，持續時間乘數
+field	esi+0xd4	effectPercentBonus	百分修正，持續時間調整（0x517f90）
+field	esi+0xd8	effectDurationBase	持續時間基量；與乘積和為 9999 時跳過持續時間計算
+field	esi+0xdc	effectDurationPerPower	每點威力的持續時間加成

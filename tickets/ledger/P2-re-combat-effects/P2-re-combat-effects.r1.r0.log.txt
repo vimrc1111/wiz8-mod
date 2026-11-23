@@ -1,0 +1,2 @@
+notes/re/formulas-2.md: 不存在
+FAIL research:formulas-2

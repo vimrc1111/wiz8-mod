@@ -1,0 +1,6 @@
+call	517ec0	partyCharacterSlot	依角色指標取得隊伍槽 0..7；角色 C+0x4 在隊旗標必須非零，指標必須對應 0x685174 起每筆 0x1862 的角色（build/wiz8.asm:378554）
+data	4	無關	呼叫後清理一個指標參數的堆疊立即值，非遊戲資料引用
+data	8	無關	第二參數在入口堆疊的位置，為能力緩衝指標，非全域遊戲資料
+data	685178	npcSlotStateBase	NPC 槽副表基址；槽距 0x106，讀取對應槽的地區懲罰旗標
+field	eax+0x0	npcSlotStateBase	0x50dc04 讀取全域 0x685178 的指標值；不是副表第零欄（build/wiz8.asm:364267）
+field	eax+edx*2+0xfe	npcRegionPenaltyEnabled	NPC 槽副表 Q+0xfe 的 u8；非零則能力緩衝 +0xc..+0x12 七屬性與 +0x13..+0x3b 四十一技能各減 20，byte 回繞（build/wiz8.asm:364268）

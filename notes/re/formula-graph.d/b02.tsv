@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+4f0010	公式	D4	party_movement_effect_average	partyMovementEffectAverageNode	讀角色+0xa4d、+0xaa1、+0xaa5、+0xaa9與副表+0，逐員縮放後取平均並寫輸出指標，平均值供0x4f0af0計算戰鬥移動距離；build/wiz8.asm:322049。
+4f00c0	公式	D4	combat_movement_phase_limit	combatMovementPhaseLimitNode	讀隊伍+0x8、+0x910、+0x914及0x683fd3、0x683fcf，以階段比例比較已走距離比例，輸出可否繼續移動的布林值；build/wiz8.asm:322147。
+4f01d0	排除	-	combat_movement_remaining_percent		實體世界（戰鬥移動距離累積），依 MG 2026-10-11 數值規劃範圍改歸排除（decisions/2026-10-11-numeric-only-scope.md），原 D0。原描述：讀移動增量、0x683fcf、0x683fd3與隊伍+0x91c，累積距離後換算並限制剩餘百分比，寫0x683fd3及0x68edcc所指物件+0x2dc，耗盡時結束移動；build/wiz8.asm:322263。
+4f0480	公式	D4	combat_phase_rounding	combatPhaseRoundingNode	讀隊伍+0x910、輸入階段指標與下限，把移動中的行動階段取整到十的倍數並限制到下限至100，回寫階段指標；build/wiz8.asm:322338、build/wiz8.asm:322352。
+4f0500	公式	D4	combat_phase_step	combatPhaseStepNode	讀隊伍+0x910，依是否正在隊伍行動輸出階段步長1或10，改變戰鬥階段推進量；build/wiz8.asm:322384。
+4f0520	非公式	-	party_action_mode_set		只依傳入動作種類把隊伍+0x90c設為流程模式1或2，沒有計算規則量；build/wiz8.asm:322413。
+4f0560	非公式	-	party_action_queue_refresh		清除隊伍動作模式並呼叫0x53a930重建其他隊員行動，末端重設移動顯示百分比，屬行動流程編排；build/wiz8.asm:322449。
+4f0630	排除	-	party_movement_end		戰鬥結束時隊伍／怪物群移動收尾：子樹 4ecaa0、5354e0（排除）、505810、5a1dd0（面板虛擬呼叫）；4ea310 呼叫後重讀 al 不用回傳（移動／幾何，數值範圍外；非公式→排除，cc 判斷）；build/wiz8.asm:322487、314270。
+4f06b0	公式	D4	movement_action_retention_chance	movementActionRetentionChanceNode	讀剩餘移動百分比、隊伍+0x910與角色+0xb11、+0xb01，按百分比擲100骰決定保留行動或寫隊員行動+0、+0x34及副表+1使行動失效；build/wiz8.asm:322586。
+4f0800	非公式	-	party_action_pending		只比對隊伍+0x910、+0x918、+0x90c的流程列舉值並回傳是否尚有隊伍動作，沒有數值或機率計算；build/wiz8.asm:322636。
+4f0990	公式	D4	combat_phase_resume	combatPhaseResumeNode	讀隊伍當前階段+0x8與隊員行動+0、+0x34，將未完成行動階段提升到當前階段，超過100則寫完成旗標及副表+1，輸出更新後排程；build/wiz8.asm:322774、build/wiz8.asm:322788。
+4f0aa0	非公式	-	movement_display_refresh		按隊伍流程旗標呼叫0x5a1890或把顯示物件+0x2dc、+0x2e0設100後更新，僅刷新移動介面；build/wiz8.asm:322845。
+4f0af0	公式	D4	combat_movement_distance_limit	combatMovementDistanceLimitNode	讀隊伍+0x910、+0x8、+0x914及0x4f0010平均效果量，以動作倍率算0x683fcf移動距離上限並更新隊伍+0x914及+0x8的戰鬥階段；build/wiz8.asm:322895、build/wiz8.asm:322914。
+4f0c80	公式	D4	combat_actor_phase_rounding	combatActorPhaseRoundingNode	讀隊伍+0x910、+0x8、+0x914及角色與怪物的未完成行動階段，取整到十的倍數並限制範圍，寫隊伍+0x914、隊員行動+0與怪物行動+0；build/wiz8.asm:323041、build/wiz8.asm:323115。
+4f0e80	公式	D4	noise_alert_probability	noiseAlertProbabilityNode	讀事件位置、強度、模式與怪物模板+0xd5，以距離衰減量和100骰決定感知，成功寫怪物+0x43、+0x2f5及+0x37至+0x3f並可觸發警戒；build/wiz8.asm:323268、build/wiz8.asm:323340。
+4f6cf0	排除	-	item_model_activate		物品 3D 模型載入與啟用；唯一亂數（4f6f3f）是 360 範圍朝向交 0x49fbf0，屬外觀初始化，與規則無關；由非公式改排除，讓呼叫端（4f6c50 等）可位址樁（506670 票；cc 判斷）；build/wiz8.asm:332488、build/wiz8.asm:332500。
+4f8220	非公式	-	item_model_name_lookup		讀物品+0x8d模型名稱或備用名稱，以忽略大小寫字串比對尋找物品索引，屬資源名稱查找；build/wiz8.asm:334132。
+4f88f0	公式	D4	item_pool_selection	itemPoolSelectionNode	讀物品池+0x104起40槽的ID與權重、+0x1cc篩選旗標、物品+0x86及隊伍平均等級，以選槽骰和權重骰決定加入輸出物品列表+0x4、+0xc；build/wiz8.asm:334984；notes/re/loot.md:21、notes/re/loot.md:23。
+4f8cb0	公式	D4	monster_drop_generation	monsterDropGenerationNode	讀怪物+0x1f3起掉落槽的門檻與數量骰或NPC+0x30、+0x115及+0x10e，擲骰決定物品和金錢掉落並輸出世界物品列表，NPC成功槽清為-1；build/wiz8.asm:335302、build/wiz8.asm:335370；notes/re/loot.md:19、notes/re/loot.md:29。
+4f91e0	非公式	-	item_flag_query		只由物品實例+9索引讀定義+0x41的0x20旗標並回傳該位元是否存在，沒有規則量計算；build/wiz8.asm:335518。
+4f97a0	排除	-	spell_target_string		目標名字串：4fa4d0:4fa6fb、4fa4d0:4fa783 回傳字串只推入訊息格式化（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md；原歸非公式，改排除以便位址樁）；build/wiz8.asm:336052。
+4f9a20	非公式	-	spell_action_record_set		傳遞施法動作後把法術、PL與目標描述搬入角色副表+0x75、+0x79、+0x81，屬動作資料登記；build/wiz8.asm:336315、build/wiz8.asm:336320。
+4f9aa0	非公式	-	spell_action_record_copy		只寫副表+0x75、+0x79、清+0x7d並複製八個目標欄位到+0x81，沒有計算；build/wiz8.asm:336352。
+4f9ae0	公式	D4	spell_training_eligibility	spellTrainingEligibilityNode	讀法術+0x44、+0x4d、PL與目標HP、體力、狀態或效果剩餘量，比較需求及持續量比例輸出施法是否計入技能使用的布林值，部分法術另寫0x685078起冷卻期限；build/wiz8.asm:336434。
+4fa4d0	公式	D4	character_spell_cast	characterSpellCastNode	讀角色+0x6cf、+0x6d5、學派與領域技能、職業等級、領域SP及法術+0x49、+0x56，算Power Cast加成和失敗風險交0x4fb4c0，輸出施法結果、扣SP並給技能使用點；build/wiz8.asm:337721；notes/re/combat-2.md:59。
+4fac40	公式	D4	spell_cast_eligibility	spellCastEligibilityNode	讀角色副表+0x1d目標、法術ID與PL，生成命中名單並檢查非空、特殊情境與隊伍+0xa54旗標，輸出能否施法的布林值；build/wiz8.asm:337858、build/wiz8.asm:337906。
+4fb4c0	公式	D4	spell_failure_backfire_and_effect	spellFailureBackfireAndEffectNode	讀法術ID、來源、目標、PL、加成與失敗率，用同一次100骰判失敗及反噬，另依法術+0x51及加成計效果量與強度，輸出結果碼、實際PL及法術實例效果記錄；build/wiz8.asm:338733、build/wiz8.asm:339179；notes/re/formulas-2.md:35、notes/re/formulas-2.md:37、notes/re/combat-2.md:59。
+4fd030	公式	D4	spell_area_target_selection	spellAreaTargetSelectionNode	讀來源與目標位置、PL、法術+0x121、+0x127、+0x12f及角色HP、狀態，計範圍並篩選敵我有效目標，寫輸出名單+0x4、+0xc；除射線外還計算效果範圍與隊員資格；build/wiz8.asm:341192、build/wiz8.asm:341658。
+4fe480	公式	D4	spell_auto_power_level	spellAutoPowerLevelNode	讀施法者、法術ID、加成及副表+0x1d目標，依目標HP缺口或狀態+0xa01起剩餘量呼叫0x4fdf30、0x4fe1c0或開鎖估算，輸出自動PL且下限1；build/wiz8.asm:342282。
+4fe740	公式	D4	spell_reflected_source_target	spellReflectedSourceTargetNode	讀原來源、目標種類及角色+0xb01、+0xb11和副表+0，選有效角色或怪物交換施法來源與目標，寫來源描述、目標+0至+0xc與來源+0x1d重導向旗標；build/wiz8.asm:342695。
+4fedc0	公式	D4	confused_spell_random_target	confusedSpellRandomTargetNode	讀副表+0有效隊員及怪物+0x14、+0x15、+0x2b，排除原施法者後擲骰選目標，寫目標類型+0與索引+4、+8或群組+0xc，輸出成功旗標；build/wiz8.asm:343105、build/wiz8.asm:343217。
+4fef90	公式	D4	confused_spell_random_location	confusedSpellRandomLocationNode	讀法術+0x12f射程及施法者位置，以三個亂數選偏移並限制到射程內，寫目標+0x10、+0x14、+0x18；射線只是落點輔助，主要輸出為隨機法術目標位置；build/wiz8.asm:343412。
+4ff220	公式	D4	confused_spell_redirect_chance	confusedSpellRedirectChanceNode	讀角色+0xa31或怪物+0x87狀態、來源目標與能力7，擲100骰決定免於混亂或重選法術目標，輸出改寫的目標描述+0至+0x18；build/wiz8.asm:343498、build/wiz8.asm:343512。
+4ff4b0	非公式	-	spell_risk_display_category		雖重算技能與PL的風險，最後只按0、5、15、40門檻回傳1至5的顯示等級，呼叫端0x59f710與0x59f9d0用於施法介面；build/wiz8.asm:343902。
+4ff7f0	公式	D4	spell_school_skill_selection	spellSchoolSkillSelectionNode	讀角色+0x52d起四學派啟用與技能、領域技能、職業等級、法術旗標及PL，比較技能與施法風險選出使用或訓練的學派技能索引並回傳；build/wiz8.asm:344241。
+500010	公式	D4	item_magic_usable	itemMagicUsableNode	不確定：讀物品定義+0x42、實例+6與角色，交0x51d610資格判定後輸出可用布林值，尚未完整追到該資格對效果與介面的分界，保留規則候選；build/wiz8.asm:344663。
+500060	公式	D4	item_spell_learning_points	itemSpellLearningPointsNode	讀物品+0x63法術ID、法術+0x56等級與+0x133領域，通過學習資格後按倍數計技能使用點，經0x553f10輸出魔法與領域技能成長並消耗物品；build/wiz8.asm:344730、build/wiz8.asm:344776。
+500330	公式	D4	monster_spell_power_level	monsterSpellPowerLevelNode	讀怪物+0x2f9、模板+0x26f與法術+0x49、+0x56，逐PL算風險選基準後擲4骰作增減，輸出1至7的怪物施法PL；build/wiz8.asm:345037。
+5005c0	非公式	-	spell_effect_result_messages		讀效果累計與目標名稱，把傷害平均、狀態數量等格式化後交0x5905f0顯示並清理訊息列表，數值只用於戰鬥文字；build/wiz8.asm:345438。
+500930	非公式	-	spell_event_completion_update		輪詢法術動畫與投射物完成旗標，依序呼叫效果結算及結果訊息後移除事件，自己只管理完成時序；build/wiz8.asm:345822；notes/re/combat-anim.md:37。
+500f70	公式	D4	spell_death_followup_effect	spellDeathFollowupEffectNode	讀法術結果目標+0x90、+0x94、+0x98及角色+0xb11或怪物+0x2b，死亡時以原效果PL與加成觸發法術0x76，輸出死亡後的次級法術效果；build/wiz8.asm:346134。
+501250	非公式	-	party_active_spell_lookup		掃隊伍+0x7c1與+0x85a的有效旗標和法術ID，只回傳是否已存在指定法術，屬效果記錄查找；build/wiz8.asm:346296。
+5012e0	公式	D4	queued_spell_usable	queuedSpellUsableNode	讀副表+0x75、+0x79、角色已學法術+0xbcd與領域SP+0xb45，計PL乘法術+0x49費用並檢查情境資格，輸出能否執行已排施法的布林值；build/wiz8.asm:346428。
+501400	公式	D4	queued_spell_affordable_power	queuedSpellAffordablePowerNode	讀副表法術ID、PL、角色已學法術與領域SP及法術+0x49，逐級降低PL直至費用可負擔，輸出可執行PL或0；build/wiz8.asm:346563。
+501530	公式	D4	queued_spell_target_eligibility	queuedSpellTargetEligibilityNode	不確定：讀副表+0x75法術ID與角色目標，經0x537160及0x519180返回資格布林值，尚未完整區分目標規則檢查與UI確認條件，保留公式；build/wiz8.asm:346597、build/wiz8.asm:346607。
+501590	非公式	-	queued_spell_action_apply		複製副表+0x81目標描述，將法術與PL交0x4e7cc0登記動作並切換目標與確認介面，自身不計效果量；build/wiz8.asm:346671。
+501660	公式	D4	queued_item_magic_eligibility	queuedItemMagicEligibilityNode	讀副表+0xcd、+0xce物品位置、+0xc9預期ID及物品法術，檢查實例可用、角色裝備資格及目標類型，寫副表+0xa5實例指標並輸出可執行布林值；build/wiz8.asm:346772。
+501790	非公式	-	queued_item_magic_action_apply		搬移副表+0xa9目標並登記物品使用動作，最後依目標檢查切換執行或介面，自身沒有效果數值計算；build/wiz8.asm:346858。
+501880	非公式	-	queued_rebreathing_action_apply		確認角色可再呼吸後把常數動作2登記並移交目標和介面流程，自身不算回復量或成功率；build/wiz8.asm:346961。
+501910	公式	D4	combat_spell_risk_phase_scaling	combatSpellRiskPhaseScalingNode	讀戰鬥模式、難度、隊員行動進度隊伍+0xb4及輸入風險指標，超過80、60或40門檻時按進度倍率縮放風險並回寫指標；build/wiz8.asm:347036。
+501d20	公式	D4	item_spell_usage_counts	itemSpellUsageCountsNode	不確定：讀角色+0xf5d及+0x1029物品、物品+0x63法術與+0x66充能類型和實例+5，去重後累加0x687614起可用法術計數及0x687610起使用計數，尚未追到計數是否影響成長，保留公式；build/wiz8.asm:347480、build/wiz8.asm:347490。
+502010	公式	D4	game_time_rule_ticks	gameTimeRuleTicksNode	讀時間增量及0x686a4c、0x6874fb等餘數，每120000單位輸出規則tick給0x502d00，每3600000單位更新指定物品，寫時間餘數及下游規則效果；build/wiz8.asm:347741；notes/re/combat-2.md:83。
+502460	非公式	-	camping_start_flow		依戰鬥與場景旗標決定進入休息，重設隊員動作、更新UI及載入Camping資源，沒有計算回復量或隨機結果；build/wiz8.asm:348109。
+5025f0	非公式	-	camping_action_reset		循環有效角色呼叫0x52f000重設動作，末端刷新隊伍介面，屬休息流程初始化；build/wiz8.asm:348145。
+502860	公式	D4	camping_timed_status_release	campingTimedStatusReleaseNode	讀0x6875f7時間標記、0x686a48時鐘與0x6875ff角色，時間差超過0x15180才寫0x6875f8並交0x523330清除狀態0x13，輸出定時狀態解除；build/wiz8.asm:348380。
+5029e0	公式	D4	post_rest_status_duration	postRestStatusDurationNode	讀隊伍+0xa52、有效角色與角色+0x161，100骰減屬性比例及20後決定是否施加狀態0xf，正值除30加1作持續時間交0x522fe0，輸出角色狀態及期限；build/wiz8.asm:348487。
+502d00	公式	D4	game_turns_passed	gameTurnsPassedNode	讀經過tick、角色有效與主狀態、怪物狀態及隊伍+0x7c1、+0x85a效果，分派回復並按tick減效果期限或清除，寫各效果+0xd剩餘時間；build/wiz8.asm:348803；notes/re/combat-2.md:83。
+503100	公式	D4	character_turn_recovery_and_status	characterTurnRecoveryAndStatusNode	讀tick、休息與戰鬥模式、能力、HP/SP/體力回復率及角色狀態，計再生與隨機狀態損耗，寫HP+0xb11、體力+0xb1d、SP+0xb45起及+0xb6d、+0xb75、+0xb7d起小數餘量與狀態期限；build/wiz8.asm:349463、build/wiz8.asm:349525；notes/re/combat-2.md:79、notes/re/abilities.md:21。
+503990	公式	D4	monster_turn_recovery_and_status	monsterTurnRecoveryAndStatusNode	讀怪物HP+0x27、+0x2b、體力+0x2f、+0x33、回復率+0x47、+0x4f、模板修正及tick，算持續傷害、回復和狀態倒數，寫HP、體力、+0x4b、+0x53餘量及效果期限；build/wiz8.asm:350305、build/wiz8.asm:350406。
+5044d0	公式	D4	environment_stamina_hp_drain	environmentStaminaHpDrainNode	讀tick、角色存活狀態、種族+0x71、豁免物品與0x687608累積量，擲數量骰先耗體力+0xb1d再把不足量轉HP+0xb11傷害，輸出資源扣量與累積時間；build/wiz8.asm:350612、build/wiz8.asm:350654。

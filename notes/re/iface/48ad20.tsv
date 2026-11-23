@@ -1,0 +1,74 @@
+call	2b6	srAssertFail	IAT 0x5ebaf4 的 srAssertFail 分析標記；只在模板為空（快取未命中且模板檔載入失敗）或群體人數為 0 時停止，所在塊 48ae1f、48af4e、48b06e 列 cov-exempt，calc panic
+call	40efe0	percentChanceRoll	百分比擲骰：R(100) 小於同伴出現機率（模板 +0xc7／+0xca 位元組）才成功；emu 亂數樁記 [100,v]、回 v<pct，calc 以 r.R(100) < pct 建模
+call	4addf0	activeGroupListGrow	作用中群體清單 0x65ba10 擴容（thiscall）：配置 4*(筆數+1)、複製舊條目、容量設為筆數+1、釋放舊緩衝，回 1；calc 照 emu 堆疊位址模型重放
+call	4e57c0	monsterTemplateGet	物種模板指標：取快取 0x6840c7+4*物種；未命中需讀模板檔（模擬器限制），物種 >= 1000 assert；calc 只接受快取 0..2
+call	4e5b50	monsterTemplateValue	對物種模板取值（呼叫 4a87a0、47b610）；回傳只累加到死變數 [esp+0x58]，對本函式結果無影響，calc 只做模板存在檢查
+call	506280	storyFactQuery	劇情事實查詢：本函式問事實 0x30、0x22、0x31，回全域事實陣列 0x689b78 的該位元組；子函式 0x5080f0 的除錯記錄受 0x688290 控制，不影響回傳
+call	510180	groupLeaderTemplate	群體 +0x18 物種的模板指標（轉呼叫 4e57c0），群體為空 assert；用於結尾記錄參數
+call	535ad0	factionHostile	陣營態度判斷：陣營位元組 >= 0x15 assert；態度記錄 0x68d6e8+14*陣營 的有號位元組 >= 0x22 回非 0（本函式因此放棄生成）
+call	5e1c10	無關	operator delete：釋放結果清單緩衝，emu 堆不回收，無規則輸出
+call	5e1ce0	無關	operator new(0x14)：配置結果清單初始緩衝（容量 5），emu bump 堆位址 0x50000000
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5e55e8	無關	SEH 例外處理程序位址（函式序言），非遊戲資料
+data	5ebaf4	無關	斷言失敗處理的匯入位置；只在模板為空或人數為 0 的 assert 塊呼叫
+data	5ec0e0	無關	結果清單物件的 vtable 位址（解構前寫回），非遊戲資料
+data	60a6e0	無關	斷言檔名字串位址，僅 srAssertFail 路徑使用
+data	60a768	encounterLogFormat	結尾除錯記錄 58aad0 的格式字串位址（排除類呼叫的參數，case 記錄）
+data	60a7c0	chumDeletedFormat	同伴模板已刪除時 5182e0 的訊息格式字串位址（case 記錄）
+data	60a830	encounterLogPlural	結尾記錄的複數字尾字串位址（同伴人數合計不為 1）
+data	60a83c	encounterLogSingular	結尾記錄的單數字尾字串位址（同伴人數合計為 1）
+data	60a848	defaultSoundName	無 MSF 名稱或名稱為空字串時給 4c7f10 的預設音效名字串位址
+data	60a854	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	60a864	無關	斷言訊息格式字串位址，僅 srAssertFail 路徑使用
+data	60a890	leaderDeletedFormat	領頭模板已刪除時 5182e0 的訊息格式字串位址（case 記錄）
+data	60a8ec	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	60a8f8	無關	斷言訊息格式字串位址，僅 srAssertFail 路徑使用
+data	6505a8	logSuppressed	結尾記錄的抑制旗標位元組（非 0 不記錄）
+data	65ba10	activeGroupList	作用中群體清單物件（4addf0 的 this）
+data	65ba14	activeGroupCount	作用中群體清單筆數
+data	65ba18	activeGroupCapacity	作用中群體清單容量
+data	65ba1c	activeGroupData	作用中群體清單資料指標
+data	65ba24	encounterTableCount	遭遇表個數；生成器索引小於它才用該表，否則用第 0 表
+data	65ba2c	encounterTables	遭遇表指標陣列
+data	689b32	reportEnabled	除錯記錄開關位元組（非 0 才記錄）
+data	68ec78	gameMode	遊戲模式；等於 4 時不記錄
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	ffffffffffffffbc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffdc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x0	listOrTableWord	三處 +0：結果清單資料第 0 筆（選中的表列索引）、MSF 名稱指標陣列元素、位置結構第 0 個座標（座標為常數，幾何不在範圍）
+field	eax+0x4	positionY	位置結構 +4 座標複製到堆疊（幾何不在範圍，case 常數）
+field	eax+0x8	positionZ	位置結構 +8 座標複製到堆疊（幾何不在範圍，case 常數）
+field	ebp+0x25f	templateFaction	領頭模板 +0x25f 陣營位元組，給 535ad0
+field	ebp+0x267	templateDeleted	領頭模板 +0x267 刪除旗標，非 0 放棄生成並記訊息
+field	ebp+0x4	groupMemberCount	領頭群體 +4 成員數：結尾記錄參數，不為 1 時名稱指標 +0x30（複數）
+field	ebp+0x9f	groupLastMonsterId	領頭群體 +0x9f 最後一名怪物編號，給 4e5950 查怪物記錄
+field	ebp+0xc3	groupActiveFlag	領頭群體 +0xc3 作用中旗標：寫 1 後再讀，非 0 才加入作用中清單
+field	ecx+0x0	encounterTableEntry	遭遇表指標陣列元素（依索引或第 0 個）
+field	ecx+0x34	tableLevelLength	遭遇表 +0x34 等級陣列長度（索引超出用第 0 個）
+field	ecx+0x3c	tableLevelArray	遭遇表 +0x3c 等級陣列指標（結尾記錄參數）
+field	edi+0x0	generatorFlags	生成器 +0 旗標：bit0 不生成；bit5 需陣營與劇情事實檢查
+field	edi+0x1c	generatorTableIndex	生成器 +0x1c 遭遇表索引；-1 不生成
+field	edi+0x267	chumTemplateDeleted	同伴模板 +0x267 刪除旗標，非 0 放棄並記訊息
+field	edx+0x0	activeOrSelection	作用中清單資料條目（比對是否已登記）、結果清單第 0 筆選中索引
+field	edx+ecx*4	activeGroupSlot	作用中清單資料第 count 格寫入新群體
+field	esi+0x0	chumSpecies	領頭模板 +0xc5／+0xc8 同伴物種（有號 16 位元，>0 才擲骰）；第二輪同伴槽指向的同一欄位
+field	esi+0x2	chumChance	同伴條目 +2 出現機率位元組，給 40efe0
+field	esi+0x4	tableRecordCount	遭遇表 +4 記錄數（物種陣列長度，索引超出用第 0 個）
+field	esi+0x44	tableMsfLength	遭遇表 +0x44 MSF 名稱陣列長度
+field	esi+0x4c	tableMsfArray	遭遇表 +0x4c MSF 名稱指標陣列
+field	esi+0xc	tableSpeciesArray	遭遇表 +0xc 物種 u16 陣列指標
+field	esi+0xc3	chumGroupActiveFlag	同伴群體 +0xc3 作用中旗標寫 1

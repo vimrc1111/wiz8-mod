@@ -1,0 +1,11 @@
+call	517f90	movementBuffPercentBonus	移動增益量加上百分比增量，乘積與加法保留 u32、除以 100 向下取整；來源 0x517f90，無子呼叫、全域或表格
+data	4	無關	呼叫慣例與堆疊配置的立即值，並非遊戲資料引用
+data	fffffffffffffffc	無關	局部暫存的堆疊位移，並非遊戲資料引用
+data	685174	partyCharacters	八名隊員主記錄的指標，角色步長 0x1862；來源 0x4f0011、0x4f0083
+data	685178	partySlots	八名隊員副記錄的指標，副記錄步長 0x106；來源 0x4f0023、0x4f007d
+field	eax+ebp*1	partySlotActive	隊員副記錄 +0 的 u8 存在旗標，零表示不參與平均；來源 0x4f0028
+field	ecx+0x0	movementAverageOutput	可選 u32 輸出指標；成功且非空才寫逐員增益的整數平均，失敗保留原值；來源 0x4f0091..0x4f009f
+field	esi+ecx*1+0xa4d	characterMovementExcludedCondition	角色狀態槽 19 的 u32，非零者不參與移動平均；狀態專有名稱未確定，按本規則作用命名；來源 0x4f002e、0x5237e0
+field	esi+ecx*1+0xaa1	characterMovementBuffStrength	角色持續增益第 5 筆的 u8 強度，乘 10 後保留低 byte；來源 0x4f0046..0x4f0051、0x50ed77
+field	esi+ecx*1+0xaa5	characterMovementBuffBonusPercent	移動增益的 u16 百分加成，零擴展交子函式；來源 0x4f005a..0x4f006a；增益記錄結構見 notes/re/iface/50e650.tsv
+field	esi+ecx*1+0xaa9	characterMovementBuffDuration	移動增益 u32 剩餘時間；合格隊員任一時間為零則整體失敗，不計平均；來源 0x4f0039..0x4f0042；增益記錄結構見 notes/re/iface/50e650.tsv

@@ -1,0 +1,48 @@
+call	406bf0	clockAfter	現在時鐘（0x6eb70c）加參數；calc 直接算 0x6850b0 與 0x689fcc
+call	41f0c0	cursorFlagsReset	[[0x652dac]] 清 bit 5..7（& 0xffffff1f）；指標為 0 不動；calc 內聯
+call	492530	cameraScaleReset	0x60ab48 設 f32 4000（0x457a0000）；calc 內聯
+call	4c61f0	animStateReset	轉呼叫 0x4531a0：每個動畫記錄 +0x25 清零，計時器 +0x28 設 GetTickCount；calc anims()
+call	4c6220	renderModeSet	0x6081e4 設參數 byte、0x659c14 清零；calc 內聯
+call	4e5c00	showDefeatedMonsters	逐怪物：在場、HP、+0x9f、+0x2da 條件下記 log、0x5248d0（D4），非 quiet 時 0x4e4280／0x4e46f0（D4）與 0x4e3af0 樁；calc showDefeats()
+call	4e5ea0	clearMonsterTransient	逐怪物：HP>0 時呼叫 0x452c90 樁，+0x255 為 1..3 清零；calc clearTransient()
+call	50fad0	endMonsterGroup	群組 id 清單逐項 0x4e4500（D4），清 +0x29，介面旗標 0x20000，隊長 +0x255 |= 0x80；calc endGroup()
+call	515ac0	alarmRearm	0x687599 非零時設 0x68506b 並在模式 7 記 log；calc 內聯
+call	517780	alarmToggle	切換 0x6874ff 並記 log；開啟時 0x689fcc = 時鐘+500、0x6834d4 清零；calc alarm()
+call	561fb0	widgetRowReset	0x4f2220(4) 清列首、0x4f22f0(4) 設列內 widget 位元 2..3 為 01，界限從 exe 讀；calc widgets()
+call	565420	uiFlagCombatEnd	模式 7 且介面物件存在時 +0xf4 |= 0x20000；calc uiFlag()
+call	5699b0	uiFlagCombatExit	模式 7 且介面物件存在時 +0xf4 |= 0x100；calc uiFlag()
+call	5e2c70	getListCount	清單筆數，清單指標為空回 0，來源 exe 0x5e2c70
+call	86	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+data	5eb224	無關	CRT free 匯入槽；釋放戰鬥記錄，內建 no-op，與規則輸出無關
+data	6836a8	combatState	戰鬥全域狀態指標：+0x10 經驗池、+0x14 加成、+0x90c 特殊模式、+0xa54／+0xa61 旗標；結尾清零
+data	683f94	inCombat	戰鬥中旗標；結尾清零
+data	683f95	specialUsesSpell	特殊模式旗標；三者皆 0 時呼叫 0x58f6b0
+data	683f96	specialUsesItem	特殊模式旗標；三者皆 0 時呼叫 0x58f6b0
+data	683f97	otherMode0	特殊模式旗標；三者皆 0 時呼叫 0x58f6b0
+data	683fb1	groupList	怪物群組清單
+data	683fcd	pendingSpecialB	非零時呼叫 0x5a1890
+data	683fce	pendingSpecialA	非零時呼叫 0x4f0630
+data	6840bc	refreshPending	非零時呼叫 0x56aab0
+data	6850b0	nextEncounterTime	設為時鐘 + 0x1d4c0
+data	685174	characterArray	角色記錄陣列（stride 0x1862）
+data	685178	partySlots	隊伍槽陣列（stride 0x106，+0 在場）
+data	686a70	mapIndex	目前地圖索引；<47 時遞增該圖擊敗計數
+data	686b75	mapCombatCount	每圖戰鬥計數 word，stride 33
+data	688291	speciesSeen	1000 個物種 dword；值 1 改 2
+data	688295	speciesSeen	物種表第二項（迴圈起點偏移的分析器引用）
+data	689231	speciesSeenEnd	物種表結尾（迴圈界限）
+data	68c09c	stringTable	字串指標表（fixture 2048 項）
+data	68ec78	interfaceMode	介面模式；7 時處理介面旗標、按鈕與狀態圖示
+data	68edcc	uiObject	介面物件指標：+0xf4 旗標、+0x2dc／+0x2e0、+0x327
+field	eax+0x0	speciesSeenEntry	物種 seen dword：1 改 2
+field	eax+0x10	combatXpPool	戰鬥塊 +0x10：本場經驗池
+field	eax+0x14	combatXpBonus	戰鬥塊 +0x14：每人加成，與平分值相加後發放
+field	eax+0x29	groupActive	群組 +0x29：非零時結束群組
+field	eax+0x8cc	stringEntry	字串表項 0x8cc/4：+0xa54 旗標的 log
+field	eax+0xa61	combatAlarmFlag	戰鬥塊 +0xa61：非零時切換 0x6874ff
+field	ecx+0x10	combatXpPool	戰鬥塊 +0x10：寫回平分值
+field	ecx+0x327	uiButtonsHidden	介面 +0x327：0 時畫兩個框與 0x562a50
+field	edx+0x90c	combatSpecialMode	戰鬥塊 +0x90c：非零時 0x4f0560(-1)
+field	edx+0xa54	combatLogFlag	戰鬥塊 +0xa54：非零時記 log
+field	edx+eax*1+0x686b75	mapCombatCount	每圖戰鬥計數 word（33*map）
+field	esi+eax*1	slotPresent	隊伍槽 +0：在場 byte

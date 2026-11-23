@@ -1,0 +1,42 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "b649a685265bbf4ff75f7d06ff3a6e27a8504201edc7ff3e48bbfdb5b0096fcf",
+  "zh": "別……別煩我。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "94a7a9f2d3c18bbc96c7d306a1b6b52b731b0af03013094da811cc136f908050",
+  "zh": "嗚呃……我好像要吐了。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "18429d2371795f4ace430bb24ae581b0b4cdfc1db08743264824068e4f2ce005",
+  "zh": "拜託！去找你們自己的房間啦！"
+ },
+ {
+  "id": 4,
+  "src_sha256": "2336ddfe519b8a29b9e6eff2750b8a24ca7b68ccdd5bb68a1c14c68a87fe7e45",
+  "zh": "呃？啊？啊……嗯嗯嗯。"
+ },
+ {
+  "id": 5,
+  "src_sha256": "917801be877082393c81a445cfdcb5110f68997f2bd724cfaff8f6bbfa824ae3",
+  "zh": "走開……"
+ },
+ {
+  "id": 6,
+  "src_sha256": "9329c97684d0eb8020aa13ac73cb6051afb6e4125e6c7dd77ded0af59f97ad87",
+  "zh": "不是我幹的……不管那是什麼。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "716b24e026e3f7763713e42650a70a03dbc82f13dbc73de0397e7789f6a58548",
+  "zh": "別逼我起來，不然我會……啊……"
+ },
+ {
+  "id": 8,
+  "src_sha256": "48c07b5b5b04acb41bcaf7adc0b3cc7b55c8dbbc097b1318602232528316ca68",
+  "zh": "滾出去！你們通通滾！"
+ }
+]

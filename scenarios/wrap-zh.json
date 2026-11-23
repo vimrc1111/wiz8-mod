@@ -1,0 +1,40 @@
+{
+  "id": "wrap-zh",
+  "duration": 75,
+  "files": [
+    {
+      "src": "hook/ddraw/out/ddraw.dll",
+      "dst": "ddraw.dll"
+    },
+    {
+      "src": "build/zh/PATCH.002",
+      "dst": "Patches/PATCH.002"
+    }
+  ],
+  "steps": [
+    {
+      "t": 36,
+      "shot": "menu"
+    },
+    {
+      "t": 38,
+      "keys": "{DOWN}"
+    },
+    {
+      "t": 39,
+      "keys": "{ENTER}"
+    },
+    {
+      "t": 46,
+      "shot": "party"
+    },
+    {
+      "t": 55,
+      "keys": "{ENTER}"
+    },
+    {
+      "t": 62,
+      "shot": "party2"
+    }
+  ]
+}

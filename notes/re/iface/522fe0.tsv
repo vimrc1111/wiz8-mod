@@ -1,0 +1,48 @@
+call	2b6	無關	反組譯把常數誤判成呼叫位址，非函式
+call	538d10	memberEffectWrapper	狀態大於 0x11 時 (who,0) 呼叫，組出參數表後呼叫 538e00（已登記公式，case 以位址樁記錄最後一次參數與次數）；本函式內只重現這個呼叫與其參數。
+call	53aeb0	monsterSightRefresh	戰鬥中且成員不能行動時依 0x683fad 的怪物清單更新怪物遮罩；內部 4c5eb0 以位址樁記錄參數與次數；本函式內重現對遮罩的寫入。
+call	547940	characterHasFeature	測試職業列 0x61507c／種族列 0x615130 是否含特性碼；特性 0x1c 另看 +0xa79；本函式內以 exe 表重現。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5232ec	stateDispatchTable	2 個 dword 的跳表，由 5232f4 的類別 byte 索引，區分狀態 2..19 是否強制時間 0x270f。
+data	5232f2	stateDispatchTable	5232f4 類別 byte 表前一位置的掃描邊界引用。
+data	523308	stateRefusalTable	5 個 dword 的跳表，由 52331c 的類別 byte 索引，選擇特性拒絕檢查（特性 3、0x1e、0xe）。
+data	52331a	stateRefusalTable	52331c 類別 byte 表前一位置的掃描邊界引用。
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import 槽；只在成員不在場或強度只限狀態 7 的斷言失敗時呼叫，合法案例到不了。
+data	6175c0	無關	通知格式字串位址，傳給通知函式，只決定顯示文字。
+data	61a710	無關	斷言訊息字串位址，只供診斷停止時顯示，不影響規則輸出。
+data	61ad28	無關	斷言訊息字串位址，只供診斷停止時顯示，不影響規則輸出。
+data	61ad64	無關	斷言來源檔名字串位址，只供診斷停止時顯示，不影響規則輸出。
+data	61e570	stateNoticeIndex	每狀態 8 bytes 的表，前 2 bytes 是通知文字索引；只決定通知文字，不影響狀態輸出。
+data	61e572	stateNoticeIndex	同上，第 2 個 word（成功通知文字索引）；只決定通知文字。
+data	683f94	combatActive	戰鬥中旗標 u8；尾段的怪物更新與 5237e0 的戰鬥記錄存取都要求它；case 輸入。
+data	6840bb	stateFlag6840bb	狀態 9 或 12 首次放上槽（原槽為 0）時寫 1 的旗標 u8；case 輸入與輸出。
+data	685174	characterRecords	0x1862 bytes 的角色記錄陣列基址；case 以 arena 物件接線。
+data	685178	partyPresence	每成員 0x106 bytes 的在場表，首 byte 是在場旗標；不在場即斷言中止。
+data	687500	noticeOnlyFlag	旗標 u8，非零時施加狀態只顯示通知而不改槽；case 輸入。
+data	68c09c	noticeTextTable	文字表物件指標；+0x600／+0x604／+0x754／+0x908 與按索引取的通知格式字串指標；只決定通知文字。
+field	eax+0x5232f4	stateDispatchClass	由狀態-2 查出的類別 byte（強制時間 0x270f 與否）。
+field	eax+0x52331c	stateRefusalClass	由狀態-2 查出的特性拒絕類別 byte。
+field	ecx*4+0x5232ec	stateDispatchEntry	跳表項目，依類別分派。
+field	ecx*4+0x523308	stateRefusalEntry	跳表項目，依類別選擇特性拒絕檢查。
+field	eax*8+0x61e570	stateNoticeIndex	通知文字索引 word（狀態 8 bytes 表）；只決定顯示文字。
+field	ebx*8+0x61e572	stateNoticeIndex	同上，第二個 word；只決定顯示文字。
+field	eax+0x908	noticeFormatText	文字表 +0x908 的通知格式字串指標，不影響規則輸出。
+field	edx+0x600	noticeFormatText	文字表 +0x600 的通知格式字串指標（特性 3 拒絕），不影響規則輸出。
+field	ecx+0x604	noticeFormatText	文字表 +0x604 的通知格式字串指標（特性 0xe 拒絕），不影響規則輸出。
+field	edx+0x754	noticeFormatText	文字表 +0x754 的通知格式字串指標，不影響規則輸出。
+field	eax+edx*4	noticeText	通知文字指標（文字表按索引取）；不影響規則輸出。
+field	edx+ecx*4	noticeText	同上。
+field	eax+edx*1	memberPresent	在場表中該成員的在場旗標 u8；0 則斷言中止。case 輸入。
+field	edx+ecx*1	memberPresent	同上，尾段的檢查形式。
+field	edi+0xa45	stateSlot17	狀態槽 0x11（+0xa45）；狀態 0x12 且職業或種族有特性 2 且此槽小於 7 時改走 547a50。case 輸入。
+field	edi+ecx*4+0xa01	stateSlot	角色 +0xa01+4×狀態的 u32 狀態槽；時間較長才覆寫。case 輸入與輸出。
+field	edi+0xb01	primaryCondition	角色主狀態 u32（+0xb01）；施加前先記下，變動則呼叫 52f430。case 輸入與輸出。
+field	edi+0xb09	conditionStrength	角色 +0xb09 u32 強度；較大的強度才覆寫。case 輸入與輸出。
+field	eax+ebp*1+0xb01	primaryCondition	主狀態 u32；尾段判斷成員能否行動（小於 0xd）。case 輸入。
+field	eax+ebp*1+0xb11	memberHp	角色目前 HP u32；非零且主狀態小於 0xd 才算可行動。case 輸入。

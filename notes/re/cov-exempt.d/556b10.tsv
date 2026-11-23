@@ -1,0 +1,1 @@
+556b10	556b89	50f1a0 回 NULL 的 assert 塊：生成群體失敗只來自模板缺失或配置失敗（模擬器無檔案 I/O 樁）；srAssertFail 停止、沒有可差分的返回（同 48ad20 48ae1f 前例）。calc 在 50f1a0 回 NULL 時 panic。

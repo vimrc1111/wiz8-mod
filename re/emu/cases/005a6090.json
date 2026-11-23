@@ -1,0 +1,1683 @@
+{
+ "stubs": {
+  "wcscspn": {
+   "ret": 0,
+   "pop": 0
+  }
+ },
+ "cc": "cdecl",
+ "steps": 200000,
+ "path_limit": 512,
+ "samples": 64,
+ "objects": {
+  "chars": 0,
+  "quests": 65536,
+  "game": 69632,
+  "msgs": 73728,
+  "handle": 90112,
+  "s0": 98304,
+  "s1": 98560,
+  "s2": 98816,
+  "s3": 99072,
+  "fm": 102400,
+  "cm": 102656,
+  "chs": 102912,
+  "fo": 103168,
+  "gl": 103424
+ },
+ "args": [
+  0
+ ],
+ "setup": [
+  {
+   "at": {
+    "global": "0x685174"
+   },
+   "size": 4,
+   "value": "@chars"
+  },
+  {
+   "at": {
+    "global": "0x685178"
+   },
+   "size": 4,
+   "value": "@quests"
+  },
+  {
+   "at": {
+    "global": "0x6836a8"
+   },
+   "size": 4,
+   "value": "@game"
+  },
+  {
+   "at": {
+    "global": "0x68c09c"
+   },
+   "size": 4,
+   "value": "@msgs"
+  },
+  {
+   "at": {
+    "global": "0x69c0f4"
+   },
+   "size": 4,
+   "value": "@handle"
+  },
+  {
+   "at": {
+    "object": "msgs",
+    "offset": 9224
+   },
+   "size": 4,
+   "value": "@s0"
+  },
+  {
+   "at": {
+    "object": "msgs",
+    "offset": 9228
+   },
+   "size": 4,
+   "value": "@s1"
+  },
+  {
+   "at": {
+    "object": "msgs",
+    "offset": 9232
+   },
+   "size": 4,
+   "value": "@s2"
+  },
+  {
+   "at": {
+    "object": "msgs",
+    "offset": 9256
+   },
+   "size": 4,
+   "value": "@s3"
+  },
+  {
+   "at": {
+    "global": "0x6eb704"
+   },
+   "size": 4,
+   "value": "@fm"
+  },
+  {
+   "at": {
+    "object": "fm",
+    "offset": 4
+   },
+   "size": 4,
+   "value": "@cm"
+  },
+  {
+   "at": {
+    "object": "cm",
+    "offset": 0
+   },
+   "size": 2,
+   "value": 2
+  },
+  {
+   "at": {
+    "object": "cm",
+    "offset": 4
+   },
+   "size": 4,
+   "value": "@chs"
+  },
+  {
+   "at": {
+    "object": "chs",
+    "offset": 0
+   },
+   "size": 2,
+   "value": 65
+  },
+  {
+   "at": {
+    "object": "chs",
+    "offset": 2
+   },
+   "size": 2,
+   "value": 66
+  },
+  {
+   "at": {
+    "global": "0x6eb69c"
+   },
+   "size": 4,
+   "value": "@fo"
+  },
+  {
+   "at": {
+    "object": "fo",
+    "offset": 24
+   },
+   "size": 4,
+   "value": "@gl"
+  },
+  {
+   "at": {
+    "object": "gl",
+    "offset": 8
+   },
+   "size": 2,
+   "value": 5
+  },
+  {
+   "at": {
+    "object": "gl",
+    "offset": 10
+   },
+   "size": 2,
+   "value": 7
+  },
+  {
+   "at": {
+    "object": "gl",
+    "offset": 12
+   },
+   "size": 2,
+   "value": 9
+  },
+  {
+   "at": {
+    "object": "gl",
+    "offset": 14
+   },
+   "size": 2,
+   "value": 6
+  },
+  {
+   "at": {
+    "object": "gl",
+    "offset": 24
+   },
+   "size": 2,
+   "value": 5
+  },
+  {
+   "at": {
+    "object": "gl",
+    "offset": 26
+   },
+   "size": 2,
+   "value": 7
+  },
+  {
+   "at": {
+    "object": "gl",
+    "offset": 28
+   },
+   "size": 2,
+   "value": 9
+  },
+  {
+   "at": {
+    "object": "gl",
+    "offset": 30
+   },
+   "size": 2,
+   "value": 6
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 2621
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 2625
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 2629
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 2633
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "game",
+    "offset": 76
+   },
+   "size": 1,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 1
+   },
+   "size": 4,
+   "signed": true,
+   "value": 9
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 61
+   },
+   "size": 4,
+   "signed": true,
+   "value": 2
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 8863
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 8867
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 8871
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 8875
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "game",
+    "offset": 288
+   },
+   "size": 1,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 263
+   },
+   "size": 4,
+   "signed": true,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 323
+   },
+   "size": 4,
+   "signed": true,
+   "value": 9
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 15105
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 15109
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 15113
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 15117
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "game",
+    "offset": 500
+   },
+   "size": 1,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 525
+   },
+   "size": 4,
+   "signed": true,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 585
+   },
+   "size": 4,
+   "signed": true,
+   "value": 2
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 21347
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 21351
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 21355
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 21359
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "game",
+    "offset": 712
+   },
+   "size": 1,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 787
+   },
+   "size": 4,
+   "signed": true,
+   "value": 9
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 847
+   },
+   "size": 4,
+   "signed": true,
+   "value": 9
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 27589
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 27593
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 27597
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 27601
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "game",
+    "offset": 924
+   },
+   "size": 1,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 1049
+   },
+   "size": 4,
+   "signed": true,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 1109
+   },
+   "size": 4,
+   "signed": true,
+   "value": 2
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 33831
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 33835
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 33839
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 33843
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "game",
+    "offset": 1136
+   },
+   "size": 1,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 1311
+   },
+   "size": 4,
+   "signed": true,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 1371
+   },
+   "size": 4,
+   "signed": true,
+   "value": 9
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 40073
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 40077
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 40081
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 40085
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "game",
+    "offset": 1348
+   },
+   "size": 1,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 1573
+   },
+   "size": 4,
+   "signed": true,
+   "value": 9
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 1633
+   },
+   "size": 4,
+   "signed": true,
+   "value": 2
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 46315
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 46319
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 46323
+   },
+   "size": 4,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "chars",
+    "offset": 46327
+   },
+   "size": 4,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "game",
+    "offset": 1560
+   },
+   "size": 1,
+   "value": 0
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 1835
+   },
+   "size": 4,
+   "signed": true,
+   "value": 1
+  },
+  {
+   "at": {
+    "object": "quests",
+    "offset": 1895
+   },
+   "size": 4,
+   "signed": true,
+   "value": 9
+  }
+ ],
+ "in": [
+  {
+   "name": "gate",
+   "at": {
+    "global": "0x683f94"
+   },
+   "size": 1
+  },
+  {
+   "name": "who",
+   "at": {
+    "arg": 0
+   },
+   "size": 4
+  },
+  {
+   "name": "limit49",
+   "at": {
+    "object": "chars",
+    "offset": 2633,
+    "index": "who",
+    "stride": 6242,
+    "count": 8
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "limit45",
+   "at": {
+    "object": "chars",
+    "offset": 2629,
+    "index": "who",
+    "stride": 6242,
+    "count": 8
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "limit41",
+   "at": {
+    "object": "chars",
+    "offset": 2625,
+    "index": "who",
+    "stride": 6242,
+    "count": 8
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "limit3d",
+   "at": {
+    "object": "chars",
+    "offset": 2621,
+    "index": "who",
+    "stride": 6242,
+    "count": 8
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "phase",
+   "at": {
+    "object": "game",
+    "offset": 2640
+   },
+   "size": 1
+  },
+  {
+   "name": "slotFlag",
+   "at": {
+    "object": "game",
+    "offset": 76,
+    "index": "who",
+    "stride": 212,
+    "count": 8
+   },
+   "size": 1,
+   "signed": false
+  },
+  {
+   "name": "slotA",
+   "at": {
+    "object": "quests",
+    "offset": 1,
+    "index": "who",
+    "stride": 262,
+    "count": 8
+   },
+   "size": 4,
+   "signed": true
+  },
+  {
+   "name": "slotB",
+   "at": {
+    "object": "quests",
+    "offset": 61,
+    "index": "who",
+    "stride": 262,
+    "count": 8
+   },
+   "size": 4,
+   "signed": true
+  }
+ ],
+ "out": [
+  {
+   "name": "allowed",
+   "at": {
+    "reg": "eax"
+   },
+   "size": 1
+  }
+ ],
+ "boundary": [
+  [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   9,
+   9
+  ],
+  [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   9,
+   1
+  ],
+  [
+   1,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   9
+  ],
+  [
+   1,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1
+  ],
+  [
+   1,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   9,
+   9
+  ],
+  [
+   1,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   9,
+   1
+  ],
+  [
+   1,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   9
+  ],
+  [
+   1,
+   7,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   9
+  ],
+  [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   1
+  ],
+  [
+   1,
+   2,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   9
+  ],
+  [
+   1,
+   3,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   1
+  ],
+  [
+   1,
+   4,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   9,
+   9
+  ],
+  [
+   1,
+   5,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   9,
+   1
+  ],
+  [
+   1,
+   6,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   9
+  ],
+  [
+   1,
+   7,
+   0,
+   0,
+   0,
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  [
+   1,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   4294967295,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   2147483648,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   3,
+   0,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   4,
+   0,
+   4294967295,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   5,
+   0,
+   2147483648,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   6,
+   0,
+   0,
+   1,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   7,
+   0,
+   0,
+   4294967295,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   2147483648,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0,
+   0,
+   0,
+   4294967295,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   3,
+   0,
+   0,
+   0,
+   2147483648,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   4,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   5,
+   4294967295,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   6,
+   2147483648,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   7,
+   0,
+   1,
+   0,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   0,
+   0,
+   4294967295,
+   0,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   0,
+   2147483648,
+   0,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0,
+   0,
+   1,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   3,
+   0,
+   0,
+   4294967295,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   4,
+   0,
+   0,
+   2147483648,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   5,
+   0,
+   0,
+   0,
+   1,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   6,
+   0,
+   0,
+   0,
+   4294967295,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   7,
+   0,
+   0,
+   0,
+   2147483648,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   3,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   4,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   5,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   6,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   7,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   2
+  ],
+  [
+   1,
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   2
+  ],
+  [
+   1,
+   2,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   2
+  ],
+  [
+   1,
+   3,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   2
+  ],
+  [
+   1,
+   4,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   2
+  ],
+  [
+   1,
+   5,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   2
+  ],
+  [
+   1,
+   6,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   2
+  ],
+  [
+   1,
+   7,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   9,
+   2
+  ],
+  [
+   1,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   1,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   2,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   3,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   4,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   5,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   6,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   7,
+   0,
+   0,
+   0,
+   1,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   255,
+   1,
+   0,
+   0,
+   0,
+   0,
+   0,
+   0,
+   1,
+   2
+  ],
+  [
+   0,
+   2,
+   5,
+   0,
+   0,
+   0,
+   1,
+   0,
+   1,
+   2
+  ],
+  [
+   1,
+   3,
+   0,
+   0,
+   0,
+   0,
+   1,
+   0,
+   -2147483648,
+   2147483647
+  ],
+  [
+   2,
+   4,
+   0,
+   0,
+   0,
+   0,
+   255,
+   255,
+   1,
+   2
+  ]
+ ],
+ "random": {
+  "seed": 5922960,
+  "count": 512,
+  "ranges": [
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    7
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    0,
+    1
+   ],
+   [
+    8,
+    10
+   ],
+   [
+    8,
+    10
+   ]
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+call	4ed9d0	rebuildCharacterRuleAbilities	合計修正生成後重建角色有效屬性、技能、生命／耐力／法力、抗性、負重與手部能力；差分輸出沿用 50e650 的七屬性、四十一技能、負重規則，另驗證等級上限；其他能力快取與通知／隊形副作用未納入純函數輸出（build/wiz8.asm:318884；notes/re/iface/50e650.tsv）
+call	50e980	sumEquippedItemRuleModifiers	讀十二裝備槽與物品記錄，產生命中、先攻、恢復、屬性、技能與六領域抗性修正；沿用 equipmentEffectSumNode，槽 8/9 不產生修正但仍計負重（build/wiz8.asm:365477）
+call	50f090	mergeRuleModifierBuffers	數值 byte 相加回繞，六旗標正規化聯集，三強度取 unsigned 最大值；只合併前 76 bytes（build/wiz8.asm:366184）
+data	4	無關	參數堆疊位置及呼叫後清理大小的立即值，非規則資料引用
+data	685174	partyCharacterBase	隊伍角色陣列指標；隊伍槽索引以 0x1862 步長定位，本案例輸入可選 0..7 並動態定位欄位
+data	687453	partySharedRuleModifiers	角色在隊時合併的 103-byte 隊伍共同修正；可變全域全部列為輸入，非從 exe 複製的固定資料
+field	edi+0x0	characterModifierClearDestination	裝備與合計修正緩衝各清除 103 bytes；初始化輸出，無須把先前內容当作規則輸入
+field	esi+0x4	characterInParty	在隊旗標；零不合併隊伍修正，任意非零值合併；兩路徑皆列入邊界及隨機案例
+field	esi+0xf5d	characterEquipmentSlots	十二裝備記錄，步長 12，物品 ID 以 -1 表示空槽；堆疊數位於每槽 +4 並影響負重
+field	esi+0x16a2	characterStatusRuleModifiers	既存 103-byte 狀態修正全部列為輸入與保持不變的輸出；本節點不重算狀態
+field	esi+0x1709	characterEquipmentRuleModifiers	清零後生成的完整 103-byte 裝備修正輸出
+field	esi+0x1770	characterTotalRuleModifiers	清零後合併裝備、狀態與可選隊伍效果的完整 103-byte 合計修正輸出

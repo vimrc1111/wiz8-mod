@@ -1,0 +1,1 @@
+4ef7e0	4ef905	隊形數為 1 的 srAssertFail 專屬塊（斷言字串 0x617858），失敗停止沒有可差分的正常返回；calc 以 panic 對應，fixture 隊形數恆不為 1。

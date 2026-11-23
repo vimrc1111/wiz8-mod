@@ -1,0 +1,7 @@
+call	51d610	item_use_requirements	檢查各角色的職業、種族、性別、有效屬性與技能，以及卷軸已學狀態或裝置／樂器職業級數；原版子函式直接重放，calc 組合既有 itemUseRequirementsNode。
+data	4	無關	分析器把第一參數的堆疊位移列為資料引用，實際是物品定義索引，沒有讀取位址 4 的資料。
+data	685174	party_character_records	角色主表指標，8 格含同伴，每筆 0x1862 bytes；case 提供各格獨立記錄。
+data	685178	party_slot_records	隊伍副表指標，每筆 0x106 bytes；各筆首 byte 非零才有角色。
+field	eax+0xb01	character_main_status	角色主狀態 u32；必須小於 18，18 及更大狀態略過，不是僅排除單一死亡碼。
+field	eax+0xb11	character_current_hp	角色當前 HP，原版檢查 32 位非零，負 i32 也通過；不是有號大於零比較。
+field	esi+eax*1	party_slot_present	隊伍副表每格首 byte 的占用旗標，非零才檢查該格角色，最多遍歷 8 格。

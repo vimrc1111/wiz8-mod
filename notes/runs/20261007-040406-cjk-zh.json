@@ -1,0 +1,64 @@
+{
+  "run_id": "20261007-040406-cjk-zh",
+  "commit": "770dbbafcda796d829311a59b3d5b408ae816656",
+  "scenario": {
+    "id": "cjk-zh",
+    "duration": 60,
+    "files": [
+      {
+        "src": "hook/ddraw/out/ddraw.dll",
+        "dst": "ddraw.dll"
+      },
+      {
+        "src": "build/zh/PATCH.002",
+        "dst": "Patches/PATCH.002"
+      }
+    ],
+    "steps": [
+      {
+        "t": 36,
+        "shot": "menu"
+      },
+      {
+        "t": 38,
+        "keys": "{DOWN}"
+      },
+      {
+        "t": 39,
+        "keys": "{ENTER}"
+      },
+      {
+        "t": 46,
+        "shot": "party"
+      }
+    ]
+  },
+  "before_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [
+    "0.1 start pid=11180",
+    "36.1 exited code=-1073741819"
+  ],
+  "modules": [],
+  "powershell": "",
+  "placed": [
+    {
+      "dst": "ddraw.dll",
+      "sha256": "7afe8af9cde0794ca5d6576220558bd11f00259fcf4c7fd73840f08a831b043b"
+    },
+    {
+      "dst": "Patches/PATCH.002",
+      "sha256": "458b292b1dc979226ab7d5b6d98939e5e0990fd12ae5060f52e3635d8147f68a"
+    }
+  ],
+  "shots": {},
+  "ddraw_log": [
+    "2026-10-07 04:04:27.396 pid=11180 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe attach real=C:\\WINDOWS\\SysWOW64\\ddraw.dll missing=0",
+    "2026-10-07 04:04:27.396 pid=11180 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked A 0x00407650",
+    "2026-10-07 04:04:27.397 pid=11180 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked B 0x004077d0",
+    "2026-10-07 04:04:27.397 pid=11180 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked L 0x00406e00",
+    "2026-10-07 04:04:36.933 pid=11180 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe font colors distinct=65 3:1:fffe 5:1:fffc 7:2:fffa 11:1:fffa 17:2:f7b8 21:2:f797 22:1:f798 30:3:ef56 34:2:eb56 41:1:e733 45:2:e715 49:1:e314 52:1:e314 54:1:e2f4 57:2:def3 67:2:def3 68:1:ded3 69:2:ded2 70:1:ded3 71:2:dad3 76:1:dad2 77:1:dad2 79:1:dad2 88:1:d6b1 89:1:d6b1 95:2:d68d 104:1:ce70 115:2:ca4f 116:2:ca2f 125:2:c20e 126:1:c20d 130:1:c20d 134:1:bded 137:1:bdec 141:1:b9cc 143:1:b9cc 149:1:b5ab 152:1:b5aa 156:1:b18a 159:1:b16a 160:1:ad69 162:1:ad69 171:1:a948 181:2:a107 192:1:98c5 195:2:98c5 196:1:98c5 197:1:98c5 203:1:94a4 211:1:9083 219:1:8c63 220:1:8c63"
+  ],
+  "text_log_lines": 0
+}

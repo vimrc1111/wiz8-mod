@@ -1,0 +1,5 @@
+internal/calc/rank.go
+internal/calc/rank_test.go
+tools/calc/main.go
+notes/calc-rank.md
+notes/calc-qa/rank-savant.json

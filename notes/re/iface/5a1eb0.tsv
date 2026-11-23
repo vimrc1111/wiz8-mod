@@ -1,0 +1,33 @@
+call	2b6	無關	反組譯把 srAssertFail import 的識別值當成呼叫位址；只在負重級超出 0..4 的斷言路徑（cov-exempt 的塊）
+call	41f170	partyMovementStepTake	取走場景物件累積的兩個移動量：寫入兩個傳入浮點、累加到全域累計、清零來源，並回報是否有任一量超過 0.001；回 0 時本函式直接返回 0。未登記公式，emu 原樣執行，calc 重現
+call	52af50	characterFatigueApply	把換算出的消耗量交給角色疲勞扣減；D4 公式，emu 位址樁記四個參數與次數，其回傳值本函式忽略
+call	5e1c22	floatToInt	CRT _ftol 匯入跳板；浮點截斷成整數，calc 以朝零截斷、取低 32 位重現
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	堆疊相對位移；區域暫存，並非遊戲資料欄位
+data	fffffffffffffff0	無關	堆疊相對位移；區域暫存（負重倍率），並非遊戲資料欄位
+data	fffffffffffffff4	無關	堆疊相對位移；區域暫存（本步移動量），並非遊戲資料欄位
+data	fffffffffffffff8	無關	堆疊相對位移；區域暫存，並非遊戲資料欄位
+data	fffffffffffffffc	無關	堆疊相對位移；區域暫存，並非遊戲資料欄位
+data	5a2068	loadLevelFactorJumpTable	負重級 0..4 的跳表（倍率 1、1.25、1.5、2、3 的程式碼位址）；calc 以常數重現
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import；只在負重級超出 0..4 的斷言路徑呼叫，stop 無返回值可差分
+data	5ebc7c	halfFactor	float32 0.5；旗標開啟時把第一個移動量折半加進本步移動量
+data	5ebfdc	fatigueSpendThreshold	float32 2500.0；累積量超過它才換算成消耗量並扣掉對應累積
+data	5ec3b8	burdenedFactorScale	float32 1.5；角色有 +0xa09 狀態時倍率乘它
+data	5eecd0	fatigueUnitScale	float32 0.0004（即 1/2500）；累積量乘它再截斷得到消耗量
+data	609b24	無關	斷言路徑的條件字串 "FALSE"，只供 srAssertFail 訊息
+data	64ca20	無關	斷言路徑的原始檔名字串，只供 srAssertFail 訊息
+data	64ca5c	無關	斷言路徑的訊息字串，只供 srAssertFail 訊息
+data	683f94	combatActiveFlag	戰鬥進行中旗標位元組；非零時第一個移動量折半加入、負重倍率加倍
+data	685174	characterRecords	角色主記錄陣列基址，八筆、步距 0x1862；case 以 chars 物件擺放
+data	685178	characterSubRecords	角色副記錄陣列基址，八筆、步距 0x106；+0 在場旗標、+0xf6 疲勞累積量；case 以 q 物件擺放
+data	6874ff	movementBonusFlag	位元組旗標；非零時第一個移動量折半加入本步移動量
+field	eax*4+0x5a2068	負重級跳表項	依 +0xbc9 取表項；表值是塊位址，等級 0..4 對應倍率 1、1.25、1.5、2、3
+field	eax+0x0	第一個移動量（浮點參數 A）	由 0x41f170 寫入；旗標開啟時折半加進本步移動量
+field	ecx+0x0	第二個移動量（浮點參數 B）	由 0x41f170 寫入；本步移動量的基底
+field	edi+0x0	角色副記錄在場旗標 Q+0	位元組；為零的角色略過
+field	edi+0xf6	疲勞累積量 Q+0xf6	float32；加上倍率乘移動量，超過 2500 時扣掉已換算的部分
+field	esi+0xa09	負重狀態槽 +0xa09	非零時負重倍率乘 1.5
+field	esi+0xb01	角色主狀態 +0xb01	無號；不小於 15 的角色略過
+field	esi+0xb1d	角色現有體力 +0xb1d	有號；小於等於零的角色略過
+field	esi+0xbc9	負重級 +0xbc9	0..4 決定負重倍率

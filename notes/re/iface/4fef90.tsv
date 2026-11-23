@@ -1,0 +1,53 @@
+call	2b6	無關	分析器對 0x4feff7 的 srAssertFail 間接匯入所用識別碼；僅施法來源既非角色也非怪物時停止，不提供合法落點。
+call	40efa0	randomBelow	依序抽 R(2001)、R(2001)、R(1001)，分別產生 X、Z、Y 偏移；高度無效時最多重試五次。
+call	420bd0	spellLandingHeight	查候選落點高度；無碰撞幾何時保留候選 Y，特殊無效高度會觸發重試。
+call	434f20	clipSpellLandingRay	從施法者位置向候選點作場景射線，可能修正候選座標；案例使用合法空幾何索引，子函式照常執行。
+call	4534c0	casterModelWorldPosition	讀模型 +0x100 的三維世界位置；角色模型由全域隊伍形體取得，怪物由記錄 +0xc 的物件再加 0x18 取得。
+call	4e5840	lookupCasterMonster	依來源描述 +0x8 的怪物 ID 查已載入怪物記錄；案例用 ID 123 的單筆列表，保留原版查找。
+call	51a9a0	spellRangeWorldLength	法術射程類別 -1..3 轉為 0、2、4、25、50，再乘 exe 0x5ebc40 的世界尺度；常數載入於純函數之外。
+data	5ebaf4	無關	來源類型斷言的匯入槽；非法來源停止，與合法落點無關。
+data	5ebb40	zeroSquaredDistance	縮放的零平方距離防護值，執行時讀使用者 exe；非負射程下此防護分支無法成立。
+data	5ec3d8	horizontalRandomCenter	水平亂數的中心偏移量；執行時讀 exe 的 double。
+data	5ec8d0	randomOffsetScale	三軸亂數偏移的 double 比例；執行時讀 exe。
+data	5ed7d0	invalidLandingHeight	高度查詢無效的 float32 哨兵；比較的是查詢的原精度值，最多重試五次。
+data	6175ec	無關	非法來源種類的斷言文字；正常落點不讀此字串。
+data	61920c	無關	來源斷言及怪物查找診斷的來源檔名字串，不参与座標或射程。
+data	6598a4	worldCollisionIndex	場景射線索引；arena 建立空幾何、空格網、scratch 及 collision 物件，沒有替換遊戲子函式。
+data	659c0c	partyCasterModel	角色來源的模型基址；+0x100..0x108 為本節點讀取的世界位置。
+data	65be1c	spellDefinitionRecords	法術記錄基址，stride 447，索引參數選取 +0x12f 射程類別；原版 0x96 筆，fixture 為 150 筆獨立合成記錄（索引 0..149）並非 exe 表。
+data	4	無關	分析器列出的堆疊參數位移；依序定位法術索引、來源描述、輸出目標指標，非絕對資料位址。
+data	8	無關	分析器列出的堆疊參數位移；依序定位法術索引、來源描述、輸出目標指標，非絕對資料位址。
+data	c	無關	分析器列出的堆疊參數位移；依序定位法術索引、來源描述、輸出目標指標，非絕對資料位址。
+data	ffffffffffffffa0	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffa8	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffac	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffb0	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffb4	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffb8	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffbc	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffc0	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffc4	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffc8	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffd0	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffd4	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffd8	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffe0	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffe4	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffe8	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	ffffffffffffffec	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	fffffffffffffff0	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+data	fffffffffffffff4	無關	分析器將負堆疊位移列為資料引用；屬局部位置向量、射程、亂數或縮放暫存，不是外部規則欄位。
+field	eax+0x0	casterWorldX	位置複製結果的 X，源自隊伍模型或怪物模型；並非角色屬性。
+field	eax+0x4	casterWorldY	位置複製結果的 Y；用來偏移候選高度並計算三維射程。
+field	eax+0x8	casterWorldZ	位置複製結果的 Z；水平亂數的第二個候選座標。
+field	eax+0xc	monsterModelObject	已載入怪物的模型物件指標；加 0x18 後交給世界位置子函式，arena 配線。
+field	eax+0x10	spellTargetWorldX	輸出目標的 X float32 位元；超射程時使用原版的反方向縮放。
+field	eax+0x14	spellTargetWorldY	輸出目標的 Y float32 位元；由落點高度查詢及射程限制决定。
+field	eax+0x18	spellTargetWorldZ	輸出目標的 Z float32 位元。
+field	ecx+edx*1+0x12f	spellRangeCategory	所選法術記錄的有號射程類別，合法值 -1..3；stride 447 的索引與類別皆为輸入。
+field	esi+0x0	spellCasterSourceKind	施法來源種類：1 為隊伍角色，2 為怪物；其他值觸發防禦性斷言。
+field	esi+0x8	spellCasterMonsterId	怪物來源的識別碼，案例 ID 123 對應列表唯一一筆；只定位位置記錄，不改变落點公式。
+field	partyModel+0x100..0x108	partyCasterWorldPosition	三個獨立 float32 位元輸入；角色來源固定使用隊伍模型位置。
+field	monsterModel+0x118..0x120	monsterCasterWorldPosition	怪物模型物件基址下的三個獨立位置輸入，與隊伍位置刻意不同。
+field	world+0x70	emptySceneCellWidth	案例固定空格網及格寬 1000000，避免沒有幾何時仍逐一走過數萬個空格；不影響空場景的射線或高度結果。
+field	collision+0x4	emptySceneGeometryCount	案例固定無高度幾何，0x420bd0 直接回候選 Y；場景子函式覆蓋不屬本節點 D4 證據。

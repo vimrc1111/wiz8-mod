@@ -1,0 +1,57 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "a251fc1669e16f999c44966a0fb46bf78c5275fe5cf1d4cf1d823e37e6b4695a",
+  "zh": "請輸入控制密碼："
+ },
+ {
+  "id": 1,
+  "src_sha256": "a251fc1669e16f999c44966a0fb46bf78c5275fe5cf1d4cf1d823e37e6b4695a",
+  "zh": "請輸入控制密碼："
+ },
+ {
+  "id": 27,
+  "src_sha256": "a4949e2c96de26681c9519749e57bfb362bbac2a8f40c89b24c35d1de111336d",
+  "zh": "什麼？"
+ },
+ {
+  "id": 28,
+  "src_sha256": "55c3e5daec20a64dcc70fbed694d58b7b529e567f03b0c43f0d6ac23630f7c4e",
+  "zh": "嗄？"
+ },
+ {
+  "id": 75,
+  "src_sha256": "d92df33d8aec6a58070a3a2d2425a3042ef54fd4125babf262aa45629a853e53",
+  "zh": "請向 EWAXX UNIT 出示安全許可證。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "a251fc1669e16f999c44966a0fb46bf78c5275fe5cf1d4cf1d823e37e6b4695a",
+  "zh": "請輸入控制密碼："
+ },
+ {
+  "id": 86,
+  "src_sha256": "a251fc1669e16f999c44966a0fb46bf78c5275fe5cf1d4cf1d823e37e6b4695a",
+  "zh": "請輸入控制密碼："
+ },
+ {
+  "id": 87,
+  "src_sha256": "a251fc1669e16f999c44966a0fb46bf78c5275fe5cf1d4cf1d823e37e6b4695a",
+  "zh": "請輸入控制密碼："
+ },
+ {
+  "id": 101,
+  "src_sha256": "e71ba8ef3b3f7f310b120f0a5f76cc06fd0e9456921f863132b9376ec6c81674",
+  "zh": "控制系統啟動降落程序……"
+ },
+ {
+  "id": 102,
+  "src_sha256": "b4aa152a71e00c3d9ca5831053f69603fa325ee40e70dada1bc8f03259f847d5",
+  "zh": "無法辨識密碼。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "5fdc6d35f3b1444c0c6138808d57646079a7bcd38c99f4989feebd8c5979a84e",
+  "zh": "降落程序已啟動……"
+ }
+]

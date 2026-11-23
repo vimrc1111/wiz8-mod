@@ -1,0 +1,39 @@
+call	2b6	無關	分析器把立即值當子呼叫目標，非函式
+call	55f1e0	clearHeldItem	清空手持物品結構 0x6874cb..0x6874d3 與標記 0x6874ca；游標圖形 0x683fdb 不為 -1 時再釋放（呼叫 0x427ab0/0x427ff0）；本函式原樣重放，calc 重現其效果（取空來源為手持物品時）
+call	5e1da0	無關	編譯器的堆疊探測（本函式 0x1770 bytes 區域變數），與規則無關
+data	18	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	srAssertFailImport	srAssertFail 匯入槽；只在不可達的斷言分支（堆疊量超過上限）使用，停止後無返回
+data	609b24	無關	斷言訊息的條件字串位址，只傳給 srAssertFail
+data	61a758	無關	斷言訊息的檔名字串位址，只傳給 srAssertFail
+data	61aaf0	無關	斷言訊息的格式字串位址，只傳給 0x517a70（排除類）組訊息
+data	6840c0	heldSourceMarkerA	手持來源標記 dword；空來源為手持物品時設 -1
+data	6840c4	heldSourceMarkerB	手持來源標記 byte；空來源為手持物品時設 0xff
+data	6840c5	heldSourceMarkerC	手持來源標記 word；空來源為手持物品時設 0xffff
+data	68516c	itemDefinitions	物品定義庫基址；索引以 269-byte 記錄定位，讀 +0x66 種類、+0x6b 堆疊上限
+data	685185	sharedItemSlots	共用物品實例槽陣列起點前 12 bytes 的位移形式；加上 12×筆數即最後一筆（清除用）
+data	685189	sharedItemSlots	同上，位移形式，非獨立欄位
+data	68518d	sharedItemSlots	同上，位移形式，非獨立欄位
+data	685191	sharedItemSlots	共用物品實例槽陣列基址（12-byte 記錄）；來源指標落在此陣列時，清空後把後面的槽前移
+data	68519d	sharedItemSlots	陣列第 1 筆起點；前移時的複製來源
+data	6851a1	sharedItemSlots	陣列內位移形式，非獨立欄位
+data	6851a2	sharedItemSlots	陣列內位移形式，非獨立欄位
+data	6851a9	sharedItemSlots	陣列內位移形式，非獨立欄位
+data	6851ad	sharedItemSlots	陣列內位移形式，非獨立欄位
+data	6851ae	sharedItemSlots	陣列內位移形式，非獨立欄位
+data	6868f5	sharedItemSlotsLast	共用槽陣列最後一筆（第 499 筆）的起點；來源指標範圍判斷的上界
+data	686901	sharedSlotCount	共用物品實例槽的使用筆數（u32）；前移後遞減
+data	6874cb	heldItem	手持物品實例（12 bytes：定義索引、數量與副數量、尾端 dword）；來源指標等於此位址時走手持分支
+field	esi+0x0	itemIndex	第一個實例（目標）的 i32 定義索引；-1 表示空並直接返回
+field	esi+0x4	quantity	第一個實例的 u8 堆疊數量；先經 0x51fb40 正規化，再加上併入量
+field	esi+0x6	identifyState	第一個實例的 u8 位元組 +6；須與來源相同才可併堆
+field	edi+0x0	itemIndex	第二個實例（來源）的 i32 定義索引；須與目標相同；清空時寫 -1
+field	edi+0x4	quantity	第二個實例的 u8 堆疊數量；扣掉併入量，歸零即清空來源
+field	edi+0x6	identifyState	第二個實例的 u8 位元組 +6；須與目標相同
+field	eax+0x0	itemIndex	清空來源時寫 0 的 dword +0（隨後改寫 -1）
+field	eax+0x4	quantity	清空來源時寫 0 的 dword +4（數量、副數量、位元組 +6／+7）
+field	eax+0x8	itemInstanceTail8	清空來源時寫 0 的 dword +8
+field	eax+ebp*1+0x66	itemKind	所選物品定義 +0x66 的 u8 種類；只有 1（可堆疊）才繼續併堆；步長 269
+field	eax+ebp*1+0x6b	stackLimit	所選物品定義 +0x6b 的 u8 堆疊上限；步長 269
+field	eax+edx*1+0x6b	stackLimit	同上，斷言分支重新載入定義庫基址後再讀
+field	ecx*4+0x685185	sharedItemSlots	最後一筆（第 count−1 筆）的定義索引欄，前移後設 -1
+field	edx+0x685191	sharedItemSlots	找到的共用槽的 dword +0（定義索引）；清空來源時已為 -1

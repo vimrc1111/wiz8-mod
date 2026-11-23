@@ -1,0 +1,417 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "fccffbc47eab909c46e9e813bf73e9ae7d151d6082b0f7000daf070a2715882c",
+  "zh": "我什麼都準備好了！"
+ },
+ {
+  "id": 1,
+  "src_sha256": "8d079e17f74b00a825dd0335db4c478196ebfce894fb0db4114a1118bce0ec5c",
+  "zh": "跟你們在一起我學到好多！我要成為最棒的{{Gadgeteer}}！"
+ },
+ {
+  "id": 2,
+  "src_sha256": "db34fd778dd78a2bcdb23aaeb7e14d00befdc7ccfb317505aec6de8ebc0ab8bd",
+  "zh": "嗚嗚……好痛喔！"
+ },
+ {
+  "id": 3,
+  "src_sha256": "93f683fd2e01f4813b8d02f01056cc69797e13e6ec49b36b671a86a13d009c29",
+  "zh": "我不會死吧？！？對吧？"
+ },
+ {
+  "id": 4,
+  "src_sha256": "332234beb2c0b7ac4ca269907d0f0e636f7c94b971e7c9ff386041112ea0d078",
+  "zh": "要是我還有那個 InstaSleep 裝置就好了……"
+ },
+ {
+  "id": 5,
+  "src_sha256": "80a784d236952812f18fe871b80ab35ca5eff3c57a1026309a35479c01fbdd6a",
+  "zh": "需要 InstaCure 的時候它跑哪去了？"
+ },
+ {
+  "id": 6,
+  "src_sha256": "1b053d73ade3298144fcd628e9a1e9a8d1647271eb8bd46acfac099845912105",
+  "zh": "你們有辦法治好這個嗎，嗯？"
+ },
+ {
+  "id": 7,
+  "src_sha256": "5b702e597b46015f32371c562982b7c7d4ca6570d64fd37294404547c676cca3",
+  "zh": "我的眼睛跑哪去了？！？"
+ },
+ {
+  "id": 8,
+  "src_sha256": "47ef18ab52ec0cb8abec1c1ac020ce1c7258a58943c8d911ae022cf034641131",
+  "zh": "要是我有反重力背包，說不定就能幫我扛這超級沉重的東西。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "27328901b88dec54a4ed716c9a6c71ed4d7741b6b9db2cb419d49fabd8377351",
+  "zh": "等等！我的身體不能動了！"
+ },
+ {
+  "id": 10,
+  "src_sha256": "efab72b3ce2de27315a89d17ccd78f5b5415a297bf29d4c69b40bdfa61f55d03",
+  "zh": "哇！我也是！"
+ },
+ {
+  "id": 11,
+  "src_sha256": "ea6215e76e3ae2dd8835b80485169001154b726352946af9a4aec1fc758550fc",
+  "zh": "一次就夠了！我再也不想那樣了！"
+ },
+ {
+  "id": 12,
+  "src_sha256": "dc7e27c759c036b5efcb4cbe23e79b60bc724ad1dbcd3ef4baae4e6820532742",
+  "zh": "嘿，你們也有 PrestoLife 裝置嗎？"
+ },
+ {
+  "id": 13,
+  "src_sha256": "00ed422db0e9619b102c961975691c6baa9412a1c7936421bcd23566e433a1f0",
+  "zh": "我想我手上沒有能治這個的東西！"
+ },
+ {
+  "id": 14,
+  "src_sha256": "e114314c63a515f635ae47115f8647fec1e5076a83c0591e337ce0d651f89dd6",
+  "zh": "我覺得你們都好有趣。很高興你們找我一起來。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "8cfbba366545feff6d985da32b1d92129448ccb29fbcf37a81ace7d479c0d3d2",
+  "zh": "住在這裡嗎？嗯，只要離 Rapax 遠一點，其實也不算太糟。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "f4055847be820d4c1f3a09ce420c4d52158dfcbdcc0295bf352f7c09da4c081c",
+  "zh": "噢噢噢！那是我！對不起！"
+ },
+ {
+  "id": 17,
+  "src_sha256": "51e94e466879ea700bc76210d94579cbb130fc60053d87007ad31e1acf0e485d",
+  "zh": "嘿！我對你們做了什麼啊？！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "5ae5c8a1eb39455320ca879407a469bda5f257c3211edbaba55c5489878151eb",
+  "zh": "Fuzzfas 一定幫得上他的忙。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "90856a30e14f3c9caf8337e7fa7ecc5202580384efdef5d03b8201757404fb87",
+  "zh": "噢，她對我真的很好。我可以試著把她拼回去，不過我想應該沒用。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "36eac7ffd6ca308caf485d796474b55f8c58ec81c0142ecee101f39af4366c88",
+  "zh": "天哪！看看你們做了什麼？！？幫你們的人就是這種下場嗎？"
+ },
+ {
+  "id": 21,
+  "src_sha256": "e15f81e46d74adb81ecbca94abb6f1f598e5e2841d928e9f6484e10dc8d36120",
+  "zh": "我很慶幸自己個子小。我要躲在屍體旁邊。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "cd5f6b7281b80019a507d20ce6c6b27e0590fa3de5432698c343baf98ef165c5",
+  "zh": "我會裝死，希望沒人注意到。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "2838946582762591cbc0025ab5d0619ad1581f0c227904355142800951d636b2",
+  "zh": "我發現東西了！"
+ },
+ {
+  "id": 24,
+  "src_sha256": "849a9b02be112544f34340bb7f68ec6784cb419142c0a43e919e7bad7dd1750f",
+  "zh": "看！我看到東西了！"
+ },
+ {
+  "id": 25,
+  "src_sha256": "6253f2fc827ac6dd4771884849d8e7c282d711f37d8045d5012c3c5107c0e80d",
+  "zh": "這裡絕對有陷阱。"
+ },
+ {
+  "id": 26,
+  "src_sha256": "54ed7c2023f30cb31392b6948d437a9f987bf3af0a66e8ddce250d595ca18134",
+  "zh": "嘿，這裡有東西躲著。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "1b6f4a12d213f0d437ee5f29621a734efc01b49a627f67473ca0265d1fabf7d2",
+  "zh": "我、呃，覺得我們走錯地方了，對吧？這裡好可怕……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "885c274ac58a5514bee583120da975bd87376673a45fcd469da942dabe267c76",
+  "zh": "哇，我真需要一大塊、一大塊繃帶！"
+ },
+ {
+  "id": 29,
+  "src_sha256": "588e5a2204cc0452cb0b0262931b0af97136932108c52138f108b0b12aa5fe82",
+  "zh": "耶！要打架了！"
+ },
+ {
+  "id": 30,
+  "src_sha256": "e69da66702910d3936600b4c89045e46da0f1d6defaea0d32638e6c5478596b3",
+  "zh": "我們打得贏他們！上吧！"
+ },
+ {
+  "id": 31,
+  "src_sha256": "7e89f06e9ff28a838c9f22e3dc91e2e7627829147b5dfdbb90a63f845b73997a",
+  "zh": "哇，他們看起來好強……"
+ },
+ {
+  "id": 32,
+  "src_sha256": "5b449fd1fa1b0f5c9b7e3264495b52250e89aaa5b7f9b2f95eb279d99fe91c4f",
+  "zh": "我不知道該打誰！"
+ },
+ {
+  "id": 33,
+  "src_sha256": "16a15b988f79aef77605eeaee6247529c0e4bd6753ede3459757bc7071a3aa5d",
+  "zh": "他們、他們、他們到處都是！"
+ },
+ {
+  "id": 34,
+  "src_sha256": "a888555067d6416d9ebb5774ce6278fdb36967e27ba232b32a809e447b06793a",
+  "zh": "哇啊啊啊啊！差點打到我！"
+ },
+ {
+  "id": 35,
+  "src_sha256": "795d7a4da446201ec972a4d89469218d77e35ce1d1d0498e34385a1802775b61",
+  "zh": "好人又贏一個！"
+ },
+ {
+  "id": 37,
+  "src_sha256": "253b1f82b953e6633ed16bd011d366f28e21bf7a8dff8cf42b5eb8ed9fc28d25",
+  "zh": "我做到了！我做到了！我把它殺了！"
+ },
+ {
+  "id": 38,
+  "src_sha256": "f55eab77742c9135ee3d9bcfb6aff47757ed5e532e39360c643ad1aad0270965",
+  "zh": "我們的朋友嗎？"
+ },
+ {
+  "id": 39,
+  "src_sha256": "0d07d1a5862f393e5b19fad2917f1318d03bb4930f92fb33e72c9ba33fb271e4",
+  "zh": "可以給我彈藥嗎？"
+ },
+ {
+  "id": 40,
+  "src_sha256": "54d98a7ffd3505065502c4847c62b65b5ab52962d723946930b3ac9ac1039c3c",
+  "zh": "嘿！有人不見了！噢，真希望我有 Portable FindEmerator。這樣我們馬上就能追上他們了！"
+ },
+ {
+  "id": 46,
+  "src_sha256": "f535e59c850c403b4ce1d79313303ec9a57be384aa492deb2ad11fb25afcaf10",
+  "zh": "我不知道這是什麼。它看起來有點像我認識的東西。那就是 Destinae Dominus。Phoonzang 好久好久以前就交給我們了。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "ddac507f015a2c16a992e7678863b59d1372aaad2cc1522373f796118c252741",
+  "zh": "Destinae Dominus！Trynnie 保守 Marten 的秘密這麼久了！這是個邪惡的東西！是 Phoonzang 親手創造的！"
+ },
+ {
+  "id": 48,
+  "src_sha256": "b177a4acac0baaf491be25058241cd0155f953a766960ba23d7f79f5101dc868",
+  "zh": "我拿到這個裝置了……我們可以趕快離開嗎？ Mook 個個都是我的五倍大，我不想惹他們生氣！"
+ },
+ {
+  "id": 49,
+  "src_sha256": "639024bb4895697459e8ff074cdfd7b101cb044d8e4660b4dcb40327ef6873b6",
+  "zh": "我不知道這是什麼。它看起來像 Destinae Dominus……就是 Phoonzang 做的那個。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "3b9603737f43672f5d2051c3f9da0f73b5cc1d1051e30f1c8346d8e2a3059bf8",
+  "zh": "我不覺得我辦得到！"
+ },
+ {
+  "id": 54,
+  "src_sha256": "ce62e8064841f39479d2afdd2f00b45d03b616cbf0c9f22506d03c415b5e41d7",
+  "zh": "說謊不是不對的嗎？"
+ },
+ {
+  "id": 55,
+  "src_sha256": "64866dbfe61aba4f4f922a8b0c6a4820f6ae313ad2be11084fa7fcb85290fdf6",
+  "zh": "哇！這是有史以來最棒的東西！"
+ },
+ {
+  "id": 56,
+  "src_sha256": "fa3d79fa481acd172b42cbeafa7672395bfb46a672cb36d3f668d3fff53dc8b4",
+  "zh": "我做到了！"
+ },
+ {
+  "id": 57,
+  "src_sha256": "21286e108eef32dbaad8e86581f7cee33616b9d5ca38bbd181763d6db17b0817",
+  "zh": "我忘了那個女孩是誰……"
+ },
+ {
+  "id": 58,
+  "src_sha256": "9324a4a1d9512c1dd4ff9de52e26a498b4e118334ae518ab6a982c119274f874",
+  "zh": "好啦，好啦，好啦……"
+ },
+ {
+  "id": 60,
+  "src_sha256": "4e6c265ca08a0c110591e3bc47694ac82ca32d305c54ea6b48e9ffebaeb2534c",
+  "zh": "要是我有 Destructo-Blast，他早就成了歷史的歷史了！"
+ },
+ {
+  "id": 61,
+  "src_sha256": "9d8e465dc5d2eced782494bc24102e16ea60fa83a6750debaca101e0e959637c",
+  "zh": "我希望你們打算跟他當朋友，尤其是有我在的時候。他看起來、呃、對我的健康很危險。"
+ },
+ {
+  "id": 62,
+  "src_sha256": "1cc787992d4f549815d59b2b2e396f2a71241a00413981ed58d48de3b98868da",
+  "zh": "嘿！我們可以再來一次嗎！"
+ },
+ {
+  "id": 65,
+  "src_sha256": "a80b1003eb6b6d7dbe4e12a6aa637e7e17759c0c7fed857e57bfdc733b0957b6",
+  "zh": "我們做到了！我就知道我們可以！"
+ },
+ {
+  "id": 66,
+  "src_sha256": "800e7cd66cc493f26636c62ae3f51c25573836d3ffb9d3cdb984c64116f4a866",
+  "zh": "呃，我不知道這是什麼……不過上面全是老鼠腳印。相信我，老鼠我最懂了！"
+ },
+ {
+  "id": 67,
+  "src_sha256": "6edd413ccb50457cfa55c3682997363561879486aaa5bff2ce5fee16b0c8890f",
+  "zh": "救命！大家看這邊！"
+ },
+ {
+  "id": 68,
+  "src_sha256": "48c456f3910e3baccfde40f1b43a248c5268b9d7740998fc2a9e8c1d47f9e1f9",
+  "zh": "這邊！它朝我們來了！"
+ },
+ {
+  "id": 69,
+  "src_sha256": "99880d1b3de01fa39438f09c654314ab8af8d7d8bb4043bca1d50ef8101d8c31",
+  "zh": "好玩！再來一次好不好？"
+ },
+ {
+  "id": 70,
+  "src_sha256": "7fb362e150ebe5331dc2d01d9a7122a8df7a6c8c79fafd2d649b899da04b480a",
+  "zh": "你們以前來過 Arnika 嗎？我們通常從地底下來，那樣比較安全。我們會從這裡收集東西。亮晶晶的東西。我們喜歡。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "6c23f3d2c7597639f00de1a71e7f6c31109487a843cc5b68163586c6d8ec0bba",
+  "zh": "你們認得這個地方嗎？這是 Trynton！ Trynnie 引以為傲的家！謝謝你們來拜訪。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "841f6bb1e1ed26a0165e0a1df71ed9772ce522baeb94e9c40543b4e1087a86f3",
+  "zh": "噢……我們認得這個地方。Marten's Bluff。你們該去問問 Trynnie Shaman。現在有些兩百隻腳的大傢伙住在那裡。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "b8421e5a199b819af62a6b23a9d2e08a7d4dee89b896d86b4fd67ecf77e73ac2",
+  "zh": "這是個秘密、秘密的地方！我答應過 Marten 不會洩漏他所在的秘密，所以我什麼都不能說！噢！我已經說了！"
+ },
+ {
+  "id": 74,
+  "src_sha256": "748dae526575825368076b55aadf82e2eecd4354036b005dc276694713992bf3",
+  "zh": "你們真的要進去這裡嗎？！？ Trynnie 一向避開這些洞穴！裡面有各種長著又大又噁心牙齒的東西！我們甚至看過有船從頂端飛出來！你們覺得那會是什麼？"
+ },
+ {
+  "id": 75,
+  "src_sha256": "6985db22b293950ec38c1de1868a7b4509d3607c2bc23c11396acc1a78d9daa3",
+  "zh": "噢不。不、不。這是通往 Rapax Rift 的路！我不能進去。他們會殺了我。我寧願冒險自己回 Trynton！"
+ },
+ {
+  "id": 76,
+  "src_sha256": "4b3b3dd578093a5f780a8f8dab86db3c99ce2e6bc509dd34e65bdff204ca5c58",
+  "zh": "呃，Rapax Castle 在這個方向。我不能進去！你們不知道他們會對 Trynnie 做什麼。我自己找路回去。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "070b6ebdfa298c447c36b193ca23e5551f34ed3b0669d8fa1ec7fbb6907e17fc",
+  "zh": "我想我知道你們要去哪，而且我去不太明智。Rynjin 住在這裡，他們把 Trynnie 當食物。如果你們得沒有我就自己去，你們應該會諒解。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "4fb5def6aa9ca5c6318cc337ad3b0d29cfe7fa979a69c6aead8be0741a8eaca5",
+  "zh": "Ascension Peak。我很熟，但我不能去。Ascension 是屬於 Higardi 的。Trynnie 是要繼承世界的！據我所知一直都是這樣。必要的話，我會回 Trynton。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "d160e0e9a0ea68d904d2f7301bbab1c9cae1855c7d24e5f0659d20b694f4a9ad",
+  "zh": "沼澤是個危險的地方！很多年前，Higardi 小偷會穿過它的高草叢偷偷摸摸。我們跟蹤他們，想知道他們要去哪！結果是去 Marten's Bluff！"
+ },
+ {
+  "id": 81,
+  "src_sha256": "62da4bdd9aa108e49d9aa08ea37c68959acc5893afc751c5c2b2cf607a0cbdfa",
+  "zh": "你們聞得到嗎？Rapax！他們在這附近有個營地。我必須馬上回 Trynton！我不能跟你們去。他們會殺了我！"
+ },
+ {
+  "id": 82,
+  "src_sha256": "d77ea0339d8a56e9cfab10f0feb794df1040b9d6fe6753525aaefd8a68eab973",
+  "zh": "嗯，今天好好玩，不過我得回去了。還有好多事要做。我們以後再一起合作，好嗎？"
+ },
+ {
+  "id": 83,
+  "src_sha256": "02078a1062e3d9921ec84ba4764cff0974f4e82687adb4d55e09f9e142a6ee72",
+  "zh": "噢不不不不！離開這裡？自己一個人？你們瘋了嗎？是你們把我帶進來的，你們要帶我出去！"
+ },
+ {
+  "id": 84,
+  "src_sha256": "629c9f6d69b2bd8e695128d4afda6d8802ff1748c83160d913cb8009ef63170d",
+  "zh": "我沒有剛才那麼難受了，不過還是有點不舒服。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "4ddc8d52c9a7000af6940e429eb820ed3407c68991b32518c009c66219d03580",
+  "zh": "嘿！你們知道我染上的那個病嗎？嗯，它不見了！"
+ },
+ {
+  "id": 86,
+  "src_sha256": "5ca678f73450cd893f7639dec4cf928b82bb844b59cbe5dfa037c429b7c4895b",
+  "zh": "哇噢……我們怎麼來到這裡的？這裡好、好、好糟糕！可以請你們現在離開嗎？"
+ },
+ {
+  "id": 87,
+  "src_sha256": "24ef4a0ffc4a219d9f8266b437f00b332db2382481a7b2f6fcbfa7de140c9274",
+  "zh": "噢噢噢……我討厭這個地方。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "0da0b68fcbe015cbfa32dbc46d66274c46d36010ace38e675014a8879b6ae1ed",
+  "zh": "拜託。我什麼都願意做！快帶我離開這裡！"
+ },
+ {
+  "id": 91,
+  "src_sha256": "a81d2b15f46d6a6dbc1726ac4b92e7a5edc4e5f0e8cece13f7a181de671ceeb4",
+  "zh": "噢，我敢說你們一定很想要吧！自己去找一個。這個是我的。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "ed786a2f6aae70cce8116d1b528f1c18f2e296916b8d7085e99d362ee2ee4d58",
+  "zh": "我說過了，我不去！"
+ },
+ {
+  "id": 93,
+  "src_sha256": "b69f9748e4ae90a796bf525c1e2a2dbb24248e383589135aec3cbc8721547482",
+  "zh": "他對 Ascension 知道好多喔，你們知道嗎。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "8bc0bc0b3b31a8621f21300f70b58beb6825ee2aabf8c626374c7c7907be4d71",
+  "zh": "哇，我從來沒想過真的能見到他。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "b3817be8fc1d12f08b0cdf19f4b948f94fce59fd8f53c75c82a65dbc7e951be5",
+  "zh": "他最棒了！"
+ },
+ {
+  "id": 96,
+  "src_sha256": "f37c2fd0fc01f2a1c614e6e8ba1d79ece01f1455b9efd24b440d6019933621fc",
+  "zh": "嘿，如果我沒猜錯，這東西有什麼用處。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "2db9a767b12f146d651435a4bed0adfb0d6787920554dd9a91c6e6da14e7e8f4",
+  "zh": "Helm of Serenity！噢，我等不及要給大家看了！想想看，我竟然拿過它！"
+ }
+]

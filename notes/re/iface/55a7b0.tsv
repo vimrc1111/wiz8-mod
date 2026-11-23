@@ -1,0 +1,21 @@
+call	5e1ce0	operatorNew	配置 0x14 bytes 的庫存條目（operator new 的跳板）；模擬器 bump 配置，calc 以同一規則定址
+call	5e22c0	stockListNew	建立商人庫存清單：16 bytes 表頭（資料指標、容量 10、筆數 0）加 40 bytes 資料陣列；calc 逐步重現配置與寫入
+call	5e2480	stockListAdd	清單附加：筆數不小於容量（有號比較）時以 容量×4+0x14 bytes 重配陣列、複製既有指標、容量加 5；再寫入並回傳新索引
+call	5e2870	stockListGet	清單取第 i 個條目指標；清單空或 i 不小於筆數（有號）回 0
+call	5e2c70	stockListCount	清單筆數；清單指標為 0 回 0
+data	4	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	8	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	c	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	fffffffffffffffc	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	68516c	itemDefinitions	物品定義陣列的執行期指標，每筆 269 bytes（0x10d）；case 指向 arena 的 16 筆記錄
+field	ebx+0xa	merchantStockList	商人物件 +0xa 的庫存清單指標；為 0 時建立新清單
+field	ebp+0x3e	itemClass	物品定義 +0x3e 類別 byte；4 表示每件拆成獨立條目（迴圈次數為加入數量）
+field	ebp+ecx*1+0x3e	itemClass	物品定義 +0x3e 類別 byte（開頭以 id×269 為位移的同一欄）
+field	ebp+0x66	itemStackKind	物品定義 +0x66 堆疊型態 byte；1 表示累加條目 +8 的數量，否則累加 +0x10 的件數
+field	eax+0x0	stockEntryZero	新條目 +0 清零（0x14 bytes 條目的初始化寫入）
+field	eax+0x4	stockEntryItemId	庫存條目 +4 物品編號（新條目先清零，由 0x51c020 的第二參數帶入；累加時與參數比對）
+field	eax+0x8	stockEntryInit	新條目 +8 初始化清零寫入
+field	eax+0xc	stockEntryInit	新條目 +0xc 初始化清零寫入
+field	eax+0x10	stockEntryInit	新條目 +0x10 初始化清零寫入
+field	esi+0x8	stockEntryQuantity	庫存條目 +8 數量 byte：類別 4 設 0x19，型態 1 加入數量低 byte，其餘設 1
+field	esi+0x10	stockEntryPieces	庫存條目 +0x10 件數 byte：類別 4 與型態 1 設 1，其餘加入數量低 byte

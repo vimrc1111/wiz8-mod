@@ -1,0 +1,17 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "97f2aabd56b4dd01002a64996c616d02b9ffdf1e75ce56b0e725b51ac38e7ebb",
+  "zh": "警告。紀錄顯示有敵對入侵者進入建築物。入侵者身分確認為……警官 Marten 。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "918fa1488c50ec79eb5edfa3ebf962c2acac27c32a2449d61c09d1e3f294d650",
+  "zh": "AWOOOOOGA! AWOOOOOGA!"
+ },
+ {
+  "id": 4,
+  "src_sha256": "892066e6b16efd00040cc1b5c22c44b119489c0e09160c3eeb8e95623365cc3e",
+  "zh": "這個 NPC 需要被核爆。"
+ }
+]

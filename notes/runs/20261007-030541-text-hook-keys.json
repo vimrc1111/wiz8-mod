@@ -1,0 +1,88 @@
+{
+  "run_id": "20261007-030541-text-hook-keys",
+  "commit": "b4f60c9fd63bae440985e524793f50a798be1ed0",
+  "scenario": {
+    "id": "text-hook-keys",
+    "duration": 60,
+    "files": [
+      {
+        "src": "hook/ddraw/out/ddraw.dll",
+        "dst": "ddraw.dll"
+      }
+    ],
+    "steps": [
+      {
+        "t": 36,
+        "shot": "menu"
+      },
+      {
+        "t": 38,
+        "keys": "{ENTER}"
+      },
+      {
+        "t": 43,
+        "shot": "k1"
+      },
+      {
+        "t": 44,
+        "keys": "n"
+      },
+      {
+        "t": 49,
+        "shot": "k2"
+      },
+      {
+        "t": 50,
+        "keys": "{ESC}"
+      },
+      {
+        "t": 52,
+        "keys": "c"
+      },
+      {
+        "t": 57,
+        "shot": "k3"
+      }
+    ]
+  },
+  "before_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [
+    "0.1 start pid=23096",
+    "36.9 shot menu rect=0,0,3840,2160",
+    "38.2 killed"
+  ],
+  "modules": [],
+  "powershell": "�榡�Ʀr��ɵo�Ϳ��~: ��J�r��榡�����T�C�C\n��� \\\\wsl.localhost\\Ubuntu\\home\\mg\\Projects\\games\\wiz8-mod\\scripts\\wiz8-run.ps1:22 �r��:19\n+ ... on Ev($s) { \"{0:F1} $s\" -f ((Get-Date) - $script:t0).TotalSeconds | A ...\n+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n    + CategoryInfo          : InvalidOperation: ({0:F1} keys {ENTER}:String) []�AParentContainsErrorRecordException\n    + FullyQualifiedErrorId : FormatError\n \npowershell rc=1",
+  "placed": [
+    {
+      "dst": "ddraw.dll",
+      "sha256": "868a0aeab24bfb1f1246ac99fbfc4c9ddadebab14aba7337b8bc5564f3b6828b"
+    }
+  ],
+  "shots": {
+    "menu.screen": {
+      "sha256": "2393639e24fa4462992a82a459c442c922a706c3fc87087aa4391141f3d91e7b",
+      "w": 3840,
+      "h": 2160,
+      "mean": 64.81913119665725,
+      "stddev": 53.47198874034843,
+      "uniform": false
+    },
+    "menu.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    }
+  },
+  "ddraw_log": [
+    "2026-10-07 03:06:02.579 pid=23096 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe attach real=C:\\WINDOWS\\SysWOW64\\ddraw.dll missing=0",
+    "2026-10-07 03:06:02.580 pid=23096 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked A 0x00407650",
+    "2026-10-07 03:06:02.580 pid=23096 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked B 0x004077d0"
+  ],
+  "text_log_lines": 1
+}

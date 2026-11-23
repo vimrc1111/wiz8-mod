@@ -1,0 +1,27 @@
+call	2b6	無關	登記器把 assertion 的 IAT 間接呼叫誤列為相對目標，實際為 srAssertFail（0x5ebaf4 引用）；只在施法者越界或不在場的 assert 塊
+call	51f2b0	itemIdentifiable	物品可否鑑定（id≠-1 且 +6 為 0，或 51c4e0 非 -1 且 +0xb 為 0）；原生執行，calc 併入並呼叫 itemDefaultEquipSlotNode
+call	52e690	voiceEventEnqueue	不可鑑定或鑑定成功後物品 +6 為 0 時送施法者提示；登記排除，emu 位址樁記五個參數、次數，回傳值為 case 輸入（不可鑑定時成為 eax）
+call	536170	queryStructInit	初始化 32 bytes 來源描述符（全 0、+0..+0xc 為 -1），非公式；原生執行
+call	5a4a00	inventoryListUiRefresh	背包清單 UI 刷新；登記排除，emu 位址樁只記次數
+call	5a6340	directSpellResolution	施法者施放 0x17（鑑定）、等級 8、來源描述符 type 7 且 +0x1c 為物品；已 D4，emu 位址樁（回傳值為 case 輸入，記三個非指標參數與次數），F 跑真 directSpellResolutionNode
+call	5b59b0	campTabSwitchUi	營地分頁切換 UI（參數 0）；登記排除，emu 位址樁記參數與次數，回傳值為 case 輸入並成為 eax
+call	5ba110	itemInfoWindowOpen	鑑定結果 1 時開物品資訊視窗（物品, 0）；登記排除，emu 位址樁回 0、記第 2 參數與次數
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	srAssertFail 的 IAT 位址，非遊戲資料。
+data	5ed8c8	voiceEventArg4	52e690 的第 4 參數來源 dword；全程式無寫入，calc 從使用者 exe 讀
+data	5ed914	voiceEventArg5	52e690 的第 5 參數來源 dword；全程式無寫入，calc 從使用者 exe 讀（檔案外為 0）
+data	5ee65c	voiceEventArg2	52e690 的第 2 參數來源 dword；全程式無寫入，calc 從使用者 exe 讀
+data	64dd6c	無關	assertion 失敗訊息文字（原始檔名）
+data	64ddb8	無關	assertion 失敗訊息文字（施法者不在場）
+data	64dddc	無關	assertion 失敗訊息文字（施法者索引上限）
+data	64ddfc	無關	assertion 失敗訊息文字（施法者索引下限）
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）；52e690 第 1 參數為施法者記錄
+data	685178	partyPresenceRecords	隊伍在場記錄陣列基址（每人 0x106 bytes，第 0 byte 為在場旗標）；物品 id 為 -1 時成為 eax
+data	69c0ec	identifyCasterIndex	鑑定施法者索引（0..7）；不可鑑定時保留，否則結束時設為 -1
+data	69c0f4	campUiState	營地 UI 狀態物件指標；結束時 +0xf8 |= 0x0fffffff
+data	ffffffffffffffe0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0xf8	campUiDirtyMask	營地 UI 物件 +0xf8，結束時 OR 0x0fffffff
+field	eax+edx*2	partyPresenceFlag	在場記錄第 0 byte（施法者×0x106），為 0 即 assert
+field	esi+0x0	itemDefinitionId	物品 +0 定義 id，-1 即提早返回
+field	esi+0x6	itemUnidentified	物品 +6，鑑定成功後為 0 才送提示

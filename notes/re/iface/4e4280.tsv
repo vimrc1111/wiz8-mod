@@ -1,0 +1,33 @@
+call	2b6	無關	擷取器誤將怪物欄位位移當成呼叫目標；怪物+0x2b6 是攻擊／效果列表指標，非子函式
+call	4acf90	clearMonsterSceneAnimations	清理怪物場景物件附屬動畫列表；本場景動畫記錄無附屬效果，列表計數歸零
+call	4c5750	getMonsterScenePosition	從場景內部 actor 取世界座標，複寫怪物最後位置
+call	505810	refreshMonsterCombatVisibility	重新計算怪物顯示與角色行動；本場景只有已停用的怪物，沒有啟用角色
+call	505c80	clearMonsterAttackEffects	釋放怪物攻擊／效果列表並解除其他怪物對此怪物的記錄
+call	538d60	clearActionsTargetingMonster	清除以怪物識別碼為目標的行動，並取消場景目標標記
+call	546e70	recountHostileAndCharmedMonsters	停用後重算敵對與魅惑怪物數並使場景 UI 更新；共享既有 calc 節點
+call	593330	refreshCombatDisplay	模式為7且 UI 存在並啟用戰鬥顯示才更新；本 case 顯示停用，避免引入整套視窗繪製狀態
+data	4	無關	清理呼叫參數的堆疊大小常數，不是資料位置
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；不合法空怪物／空場景物件使模擬器停止
+data	6147e0	無關	assert 診斷來源檔名；不是遊戲規則資料
+data	614910	無關	assert 診斷：怪物指標必須存在；文字不參與規則計算
+data	614978	無關	assert 診斷：啟用怪物必須有場景物件；文字不參與規則計算
+data	6836a8	partyBattleState	隊伍／戰鬥狀態物件指標，保存目前行動及怪物目標
+data	683f94	combatActive	戰鬥模式旗標，控制重算與清理目前目標
+data	683fa1	livingMonsterCount	存活怪物數，移除啟用怪物時以32位無號減一
+data	fffffffffffffff4	無關	區域座標 X 的堆疊位移，非全域資料引用
+data	fffffffffffffff8	無關	區域座標 Y 的堆疊位移，非全域資料引用
+data	fffffffffffffffc	無關	區域座標 Z 的堆疊位移，非全域資料引用
+field	eax+0x7b0	currentPartyAction	目前隊伍行動指標，目標是移除怪物時清零
+field	eax+0x7b8	currentPartyMonsterTarget	目前隊伍怪物目標指標，只有同一怪物才清零
+field	eax+0xa0	monsterSceneEnabled	怪物場景物件啟用旗標，移除時清零
+field	ecx+0x24	monsterSceneFlags	怪物場景物件狀態旗標，移除時替換為0x200000
+field	esi+0x0	monsterId	怪物識別碼，子函式用來解除行動目標
+field	esi+0x107	monsterCondition	怪物主要狀態，移除時設為0x12
+field	esi+0x14	monsterEnabled	怪物啟用旗標；零值完全不處理，完成移除後清零
+field	esi+0x17	monsterPositionX	從場景物件取回的最後世界座標 X，float32
+field	esi+0x1b	monsterPositionY	從場景物件取回的最後世界座標 Y，float32
+field	esi+0x1f	monsterPositionZ	從場景物件取回的最後世界座標 Z，float32
+field	esi+0x2b	monsterHP	怪物目前血量，移除時清零
+field	esi+0x33	monsterSP	怪物目前法力，移除時清零
+field	esi+0x9f	monsterActionTime	怪物行動時間，移除時設9999無效值
+field	esi+0xc	monsterSceneObject	怪物場景物件指標，啟用怪物不可為空

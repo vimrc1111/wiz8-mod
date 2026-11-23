@@ -1,0 +1,2166 @@
+{
+ "2021_11_12_23_44_35.png": {
+  "size": 182773,
+  "sha256": "8775ccf3dca383a42c4a32ad0d35f09b12ed3c35c629a4881df8fee2dfcab5ee"
+ },
+ "3DSetup.exe": {
+  "size": 102454,
+  "sha256": "b440ee06a3aa03c4fa301dcaba6875a61488f0dee3d06386b721f4cbe0c11473"
+ },
+ "3DSetup1_28c.exe": {
+  "size": 102454,
+  "sha256": "0f6d35447fc7a2f579e8f8347e8c347fe22a8aba9a05769752933ffb4450010a"
+ },
+ "3DVideo.CFG": {
+  "size": 51,
+  "sha256": "09736e7b0f6853d55f57f23d4d3a7dfc93f425635554a0975bc77c9b1dd9eb7f"
+ },
+ "3DfxSpl.dll": {
+  "size": 1105408,
+  "sha256": "1ee8b2b4963b95f600ac683907778304f75c559aa6831a3f203efafc8d67d45a"
+ },
+ "3DfxSpl2.dll": {
+  "size": 1105408,
+  "sha256": "262c70749ac24b4d3691e39767d3e01b5b4957b9b82768186e5faa58f395ceba"
+ },
+ "3DfxSpl3.dll": {
+  "size": 1105408,
+  "sha256": "e282bcba9e04ac9a898ae353f93573fa7f94eb5a4e0bc0c25933c3b702bb269e"
+ },
+ "Bonus Content/Avatar/avatar1.jpg": {
+  "size": 87276,
+  "sha256": "86d3ea10861582b89c3265842b891e4a15f472a82351311ab41ad225cc011f5d"
+ },
+ "Bonus Content/Soundtrack FLAC/01 Main Menu Theme.flac": {
+  "size": 3124039,
+  "sha256": "b538e2254d60c9a30b37fe8b3fe52753b04094141a738796a9208a6476926c82"
+ },
+ "Bonus Content/Soundtrack FLAC/02 Arnika Theme.flac": {
+  "size": 8336759,
+  "sha256": "c533a1f7fdc8a5150b8a73e0e45be88c454051d967d9914143937689411c0fdc"
+ },
+ "Bonus Content/Soundtrack FLAC/03 Camping Theme.flac": {
+  "size": 1004681,
+  "sha256": "82a09d5010a7e443f061ff6fb9097385dcc581371c9a032a924aa134d5da03c9"
+ },
+ "Bonus Content/Soundtrack FLAC/04 Character Creation.flac": {
+  "size": 3760659,
+  "sha256": "77a9033d98c7114dba963da8c78c3343754a16e02f31928ac5baa09c717b896e"
+ },
+ "Bonus Content/Soundtrack FLAC/05 Combat Variation 1.flac": {
+  "size": 11090545,
+  "sha256": "edb0929f77bdff6f274087dc8ab72fb0777c641dc2d2f088492d38c44661b36f"
+ },
+ "Bonus Content/Soundtrack FLAC/06 Cosmic Circle.flac": {
+  "size": 4356531,
+  "sha256": "a37cd8e4a078149be0a786fedfc1d296c1e727b5a4d104abfe79b6ef91af4259"
+ },
+ "Bonus Content/Soundtrack FLAC/07 Easy Combat.flac": {
+  "size": 10703678,
+  "sha256": "9d6b0763db537371910752dd7f09febf123494132ce77ab5d20a326ac64239c4"
+ },
+ "Bonus Content/Soundtrack FLAC/08 Lose Combat Tag.flac": {
+  "size": 1127663,
+  "sha256": "a0dae0abe55523f2ca3a34f1f2d87083d11e0cf5ed86233e282f8b86e345e465"
+ },
+ "Bonus Content/Soundtrack FLAC/09 Normal Combat 1.flac": {
+  "size": 10310358,
+  "sha256": "73422af48ee600b4e675b6b98549707bd3811003504e2871f10099f4b2f2c4d5"
+ },
+ "Bonus Content/Soundtrack FLAC/10 Normal Combat 2.flac": {
+  "size": 13025106,
+  "sha256": "9546b5f6890dd44918dcd9cec7a8af3b967f8dfa3ecec5b3b48989ed4fed8b80"
+ },
+ "Bonus Content/Soundtrack FLAC/11 Outdoor 2.flac": {
+  "size": 5157771,
+  "sha256": "451d10b48d185d3050f06762ecce1c173066f9547d7f267d185db95ed0095c4d"
+ },
+ "Bonus Content/Soundtrack FLAC/12 Outdoor Area.flac": {
+  "size": 6301703,
+  "sha256": "0ef156270b0a00eccabcb7cd0d7c7b6303eab44f80a4f10c0fcd418e256ce65a"
+ },
+ "Bonus Content/Soundtrack FLAC/13 Rapax.flac": {
+  "size": 7453021,
+  "sha256": "2651242da615a18b9b1b10922592f75507bfc28c9a856662d52f13997d93641c"
+ },
+ "Bonus Content/Soundtrack FLAC/14 T-Rang.flac": {
+  "size": 7406353,
+  "sha256": "850d5f3a16f4c13b70583ae8dc290de2b3d391075534e8fa07659c6d828f2e5b"
+ },
+ "Bonus Content/Soundtrack FLAC/15 Tough Combat.flac": {
+  "size": 13144820,
+  "sha256": "513f2467dc572b4e3d418db1537ca906c3b77a9f6b3062dde153ddacdee35993"
+ },
+ "Bonus Content/Soundtrack FLAC/16 Trynton.flac": {
+  "size": 8482598,
+  "sha256": "857ace0d6fd8dba3b79bcada5650188d33e5f5e9e3a336e6090812a1dcae7593"
+ },
+ "Bonus Content/Soundtrack FLAC/17 Umpani.flac": {
+  "size": 6288790,
+  "sha256": "10ce3c0b7a023c3b68b500296fba7fa44f735b7010ca95b04d2208e670598bc6"
+ },
+ "Bonus Content/Soundtrack FLAC/18 Underground.flac": {
+  "size": 9009216,
+  "sha256": "653b8654146ece974aaf3b17cebcf80edd72112e02656b25871e3b1aa74ef18b"
+ },
+ "Bonus Content/Soundtrack FLAC/19 Win Combat Tag 1.flac": {
+  "size": 678445,
+  "sha256": "2aab8fe96f7e86466da6300ac2f794e6d776bbd8728bb1285bc702e38a9caba0"
+ },
+ "Bonus Content/Soundtrack FLAC/20 Win Combat Tag 2.flac": {
+  "size": 644600,
+  "sha256": "478b92beac7bc09b6fc5ee9fc3b439a5634892ab62d4c48fbfb4d39f500994d0"
+ },
+ "Bonus Content/Soundtrack FLAC/21 Win Combat Tag 3.flac": {
+  "size": 818079,
+  "sha256": "3ce646c6b0a0698a1a856fe41402c81206dddb3e1e151d3eb328dd39a50d4455"
+ },
+ "Bonus Content/Soundtrack FLAC/Wizardry 8 Soundtrack.jpg": {
+  "size": 1486701,
+  "sha256": "b81b228142b1019e5524f112264c9aff88ef23efdaf21e07f3f09f1848e78090"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 Soundtrack.jpg": {
+  "size": 1486701,
+  "sha256": "b81b228142b1019e5524f112264c9aff88ef23efdaf21e07f3f09f1848e78090"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 01 Main Menu Theme.mp3": {
+  "size": 1041435,
+  "sha256": "21f2d169a25ecff36efda218c08d8a2e0397cbd37bba14a05635888f579bdd6f"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 02 Arnika Theme.mp3": {
+  "size": 2536678,
+  "sha256": "bb2b7bee4d1539469565e7b2783292e5a3fba4691927c0a1d6ebee174ce5659a"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 03 Camping Theme.mp3": {
+  "size": 580004,
+  "sha256": "8e420874c21f6bf9ef7f809fff4f5eccb3033ee0c4a65ceb46988af59b93f1c3"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 04 Character Creation.mp3": {
+  "size": 1467133,
+  "sha256": "68c1989eb1015331357b8abe5ed4e2a7c12e524335f1fae01d5647669e0b0188"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 05 Combat Variation 1.mp3": {
+  "size": 3210650,
+  "sha256": "66447fed02dc1c7dbaddca5b3e78d288191c444ec3d5c19ea12d787944c76d49"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 06 Cosmic Circle.mp3": {
+  "size": 1614453,
+  "sha256": "6793594d5aed79463ede4dbd173783a3d46846a47b8d9ea95eeccd9865e557c1"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 07 Easy Combat.mp3": {
+  "size": 3280853,
+  "sha256": "e21ba3b2e6e667c5bc5c388e64143142c82c493fb5ba0a0f1057d3cc6197ba03"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 08 Lose Combat Tag.mp3": {
+  "size": 560573,
+  "sha256": "f588469880e8c6f8b71b7545006d4e080460840c9132cbbcc29d3ecbad7f04f2"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 09 Normal Combat 1.mp3": {
+  "size": 2779310,
+  "sha256": "65bab31819a04114ab57cdd39799c44fbd07d91fe753d115761940e82a03387e"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 10 Normal Combat 2.mp3": {
+  "size": 3184941,
+  "sha256": "4cb1d23bd5746c3e5f52d2b5bb94e1f8b65dbc37a5c4c3ab29a2f62fd882b0f4"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 11 Outdoor 2.mp3": {
+  "size": 1997507,
+  "sha256": "2f7c1ebbd209b6f9c1e1551959eabdd82f034854699dd9f7db41f32a73db07c4"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 12 Outdoor Area.mp3": {
+  "size": 2534173,
+  "sha256": "5b10201f3b865b051cc6ff5bbb1f18cb343e9352d539a973a8a69e9ebc583dea"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 13 Rapax.mp3": {
+  "size": 2439491,
+  "sha256": "ec7d36a3e7e54f77874192144e722f9e92d01c6202fd90fdca8953a3daacc535"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 14 T-Rang.mp3": {
+  "size": 2546072,
+  "sha256": "a5f476e3a8ec5178a80e1bdf2b8a9bf7f2ff0ea866c77a853e0cb3071da18e17"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 15 Tough Combat.mp3": {
+  "size": 3134153,
+  "sha256": "6d116ebfa5abdde36d9646fe5c422f3174728f991496b0286bb0caee2fd5f8d4"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 16 Trynton.mp3": {
+  "size": 3124112,
+  "sha256": "4cc456dd5a0090d23e7e38a8591a8544c3f2a30e93c6487c571bf120772a5ffa"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 17 Umpani.mp3": {
+  "size": 2419431,
+  "sha256": "0691d670aff2de7f01f986a72a0a9ebfa2ea0a1565d31ebd8246b7c20201f15a"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 18 Underground.mp3": {
+  "size": 3131016,
+  "sha256": "e0a6338cea0f8efca1737157d71675cc67feeb2cafb4cfb3d63f6ecc9763d7e5"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 19 Win Combat Tag 1.mp3": {
+  "size": 418889,
+  "sha256": "5284bc6590eb5afa0de41706e57978fa616cdd955a0c3c6cfb711f85d8934f9d"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 20 Win Combat Tag 2.mp3": {
+  "size": 411993,
+  "sha256": "3ef07270f4319348b4a552d4286a8398c0ea0a39f6f57d4e8c676640905f6624"
+ },
+ "Bonus Content/Soundtrack MP3/Wizardry 8 soundtrack - 21 Win Combat Tag 3.mp3": {
+  "size": 431428,
+  "sha256": "4657a9bd8937671bd9ce767e70a9ebd37a66d3fa53abb4ee9e9facb8d1c65fe2"
+ },
+ "CD.ROM": {
+  "size": 0,
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+ },
+ "Data/CHAR GENERATION/CG_ICONS_PROFESSIONfp.STI": {
+  "size": 18657,
+  "sha256": "5d0d7d1d05003a886f50c635e87a5cddcd611d2a9578cfc999bb27b32b6a4ca2"
+ },
+ "Data/CHAR GENERATION/CG_ICONS_RACEfp.STI": {
+  "size": 15991,
+  "sha256": "ab582d055bff4c286222aecff40f62f96bf26f10a4d3f28560a4501ce9126c90"
+ },
+ "Data/CHAR GENERATION/CG_PERSONALITY.STI": {
+  "size": 210238,
+  "sha256": "d25bd5c85e2993e040df34afc2559f7968239b0dcd9763638987004588db3cd2"
+ },
+ "Data/CHAR GENERATION/CG_PROFESSIONfp.STI": {
+  "size": 201502,
+  "sha256": "bd6194a6e2a51064969319a917c248ed801ccc5c18c8fc9c95ab5a1c45ff67de"
+ },
+ "Data/DATA.SLF": {
+  "size": 149080821,
+  "sha256": "12ce5055097da6710de995b2465713781190cb00515cd81a0c26fd7732d348cd"
+ },
+ "Data/ENG.SLF": {
+  "size": 62522,
+  "sha256": "c30af2eb13bccfc56524b43526d8995458ef5c70d80c1eb5dddbf2fd3adac60b"
+ },
+ "Data/FanPatch.Dat": {
+  "size": 2488931,
+  "sha256": "0476763035ab1bba70aaf914bc97d63aad0fe9830b99893e239711afb8909ab9"
+ },
+ "Data/Flics/Intro/DarkEnd.bik": {
+  "size": 32685504,
+  "sha256": "b30c69eb9e4d66666c18ddd17d14053f60479852f0c86b56ced33bcd79650f3c"
+ },
+ "Data/Flics/Intro/T'Rang.bik": {
+  "size": 25913396,
+  "sha256": "b95096b48755e28292ee030b8637329cba8a377bee8199ed1172b6c180f6723e"
+ },
+ "Data/Flics/Intro/Umpani.bik": {
+  "size": 21531916,
+  "sha256": "7c55d227e3507eb8830c8c4ed13940d04d93773f4744ef8e6bb5f514f070879c"
+ },
+ "Data/Flics/Intro/Unaligned.bik": {
+  "size": 40200364,
+  "sha256": "24299f5d179a83d5c40736e779dc0cdddfd9f57dd8773e84114fa57251a30029"
+ },
+ "Data/Flics/Intro/Virgin.bik": {
+  "size": 36564740,
+  "sha256": "a326a906c6b7c19b87e27fb8d98ce2896de7d963889b3d897c6fcf22985775e0"
+ },
+ "Data/Flics/Intro/Wizardry8.bik": {
+  "size": 60981956,
+  "sha256": "4701390da80baecdf7f03bfb4514c7bade06414425bb969236bd52f6e8a1654e"
+ },
+ "Data/Flics/Intro/sirtech.BIK": {
+  "size": 2330252,
+  "sha256": "00d2f0ac02e5737061db45514c500a6bf78310bf1d67a623adee3e6345ef3c5b"
+ },
+ "Data/ITEMS3D/bitmaps/metal_02.tga": {
+  "size": 49196,
+  "sha256": "306b52bb02c3196052b7c4abaab636cba619e3eda0d11fbe784c26fdab9e5a23"
+ },
+ "Data/ITEMS3D/bitmaps/metal_02b.tga": {
+  "size": 12332,
+  "sha256": "85094ad81f8898132c4e1d545c14c458bf4f0230f7e408cb60e7b08c1ad812db"
+ },
+ "Data/ITEMS3D/bitmaps/metalwall02.tga": {
+  "size": 196652,
+  "sha256": "a53d9ab579de14e6532e22b4b47d611785cb76b7a6245d2a48742e25b8523649"
+ },
+ "Data/ITEMS3D/flamethrower2.itm": {
+  "size": 5843,
+  "sha256": "0f2bfa6d9a933fe4c9c58dbe7e04719466857805535d819ddd236d3147eaf940"
+ },
+ "Data/ITEMS3D/flamethrowerfueltank.itm": {
+  "size": 2921,
+  "sha256": "7e01d376ffac700a36f072e729b02ea21b0bc3fe9cf77b205acb94ed134c2665"
+ },
+ "Data/MONSTERS/MONSTERS.SLF": {
+  "size": 127440105,
+  "sha256": "7f371eb8768b9674428d718e40d30c733f4af0468df377771de99cef75f786f9"
+ },
+ "Data/ModInfoBLANK.INI": {
+  "size": 8876,
+  "sha256": "2f86b1c74eacae370f72db0f66ccf34a3d490ae806548767eee1474b3912eedb"
+ },
+ "Data/Music/Arnika Theme.mp3": {
+  "size": 1910915,
+  "sha256": "7f85689c5fc0f0efd310b8fe8e16a3d69bf724982d73c241b91693949a9f680b"
+ },
+ "Data/Music/Camping Theme v2.mp3": {
+  "size": 280674,
+  "sha256": "960d99e2038b690d00ac422a30b2ae5446b8c8f9b2b6b7d1ce927511a427f4de"
+ },
+ "Data/Music/Camping Theme v3.mp3": {
+  "size": 280154,
+  "sha256": "b2d4ab1c77241920e27dbd9b6e19ca3f82025e032e5400ac4d18395bf98f0bad"
+ },
+ "Data/Music/Combat Easy variation.mp3": {
+  "size": 2475470,
+  "sha256": "58c0ce4c5cee9cee1833e554f1dad86c6629a9181829710873824f3718ac1b2c"
+ },
+ "Data/Music/Combat Easy.mp3": {
+  "size": 2533983,
+  "sha256": "226b9d84c89af4ea1954325a9f8d6fb19eacfd840580da209429c82d0d767d51"
+ },
+ "Data/Music/Combat Normal Variation.mp3": {
+  "size": 2451684,
+  "sha256": "6f8d028c472ec78246cccd226a544c02f80c534b135c65890f9e79349df3033b"
+ },
+ "Data/Music/Combat Normal.mp3": {
+  "size": 2116712,
+  "sha256": "40d0e59aa341cb83983aa1f5718f9b88342ff2c90e7daefa091497038243c94f"
+ },
+ "Data/Music/Combat Tough.mp3": {
+  "size": 2408803,
+  "sha256": "273e4be1dbc2c3a20346c971bdc1487c907c29bdfcb3f1476418ae9d047c6497"
+ },
+ "Data/Music/Cosmic Circle.mp3": {
+  "size": 1142373,
+  "sha256": "bac97387c74c1cb68e591023dad6492c79770ef9729e31bd5bc3c0a11234ff89"
+ },
+ "Data/Music/END CREDIT.mp3": {
+  "size": 5655910,
+  "sha256": "40fff567bbeaf42457745830755f9cd4949a5f3a4649c4a102353e5d3af6e6cb"
+ },
+ "Data/Music/Lose Combat Tag.mp3": {
+  "size": 264649,
+  "sha256": "8b6774e74308c3dad49dc17580793a86478e35fa94f0a0a7fde0574967041126"
+ },
+ "Data/Music/Main Menu Theme.mp3": {
+  "size": 629340,
+  "sha256": "70bd07e5e5cc0423449b86918bb5dffcb29d0579297ee0a2a59466a6254d82fe"
+ },
+ "Data/Music/Menu Theme.mp3": {
+  "size": 1020163,
+  "sha256": "4629a470b3e026147b82b19bbd45e9a262610089f7735f188b6609fcdda127d4"
+ },
+ "Data/Music/Outdoor 2.mp3": {
+  "size": 1461649,
+  "sha256": "71dce91b63ce2b02d37511b3fba24ed7be646871dd4fb5d618846ae1cd2be904"
+ },
+ "Data/Music/Outdoor Area.mp3": {
+  "size": 1909340,
+  "sha256": "b421d31e73ddfb60175907902103bba889f3a6ded71c9df0c880dfc1c695590e"
+ },
+ "Data/Music/Rapax.mp3": {
+  "size": 1829941,
+  "sha256": "60f3c8d062ce76dac8c4ae728a8267e6e95b18c0bdf4d802a9df6e979741f62a"
+ },
+ "Data/Music/T-Rang.mp3": {
+  "size": 1921844,
+  "sha256": "63d3653c5dc45806a1164a4b2aa6c0b070c0dfa519babd23d58c96112cc4ce17"
+ },
+ "Data/Music/Trynton.mp3": {
+  "size": 2400434,
+  "sha256": "4f378f1a6fa66c58224f55def4938c379cf028ed7d4e952c09a1be8b2bf40a79"
+ },
+ "Data/Music/Umpani.mp3": {
+  "size": 1813195,
+  "sha256": "55701cbd5f55631452566d9702ab5ed5a7cf9fca0c1a1bca8a0b99ced2d41072"
+ },
+ "Data/Music/Underground.mp3": {
+  "size": 2406009,
+  "sha256": "b27122b97696a3d75f3f8e28704f8987e59e54cb2fc3f4c17fd6a3d8c1c4c507"
+ },
+ "Data/Music/Win Combat Tag 1.mp3": {
+  "size": 146115,
+  "sha256": "f4957c305bf7f106a943bf9aef008a4e0610c3ac1e1466e59c2007376fefd9e6"
+ },
+ "Data/Music/Win Combat Tag 2.mp3": {
+  "size": 139800,
+  "sha256": "28b1859b82ea18765d65b0bdccb80b70f92d63d450aa9f0438557cf0b9ae4831"
+ },
+ "Data/Music/Win Combat Tag 3.mp3": {
+  "size": 156522,
+  "sha256": "de539f888a75a8476c06e2c4e22ea5e0a5d5dcc2c26dffd2288142404a66fa1c"
+ },
+ "Data/Options/LoadingPleaseWait.sti": {
+  "size": 311408,
+  "sha256": "d1746938f46d2303054f555cd9af105167b09e988359c575e6b055c61121f294"
+ },
+ "Data/Options/StartGameBannerFanPatch1.sti": {
+  "size": 311408,
+  "sha256": "871205ad6443ee012c2a3e553795824220c0ccd23bcd808e3534d55bbd5d0da5"
+ },
+ "Data/PORTRAITS/SMALL/SDRACFF.STI": {
+  "size": 3304,
+  "sha256": "52f12d794aeda3a4fd6f0745290111ff04bcaf7b8284238e05c2be264df920f2"
+ },
+ "Data/RUS.SLF": {
+  "size": 4963865,
+  "sha256": "1511b7ff71bedc9291ce3259e2a955b7c6105c2654323d950254bf7c0de68aa3"
+ },
+ "Data/Sound/Monsters/MONSTERSOUND.SLF": {
+  "size": 250052335,
+  "sha256": "5563309d8d12939a608f4337655741f0fb448e53c58925114968e6dcd7f63799"
+ },
+ "Data/Sound/SOUND.SLF": {
+  "size": 600017960,
+  "sha256": "0ad04ffb605f148a8cdaa7b15e9bb672a920f8642f77cf5a2d2764a8aae9ee11"
+ },
+ "Data/Sound/combat/flesh_hit_blunt_wood.wav": {
+  "size": 44060,
+  "sha256": "6485d13bcef0b55d4523ce69eb07a67ca39775e7705f53107c7fadf5eb624d8c"
+ },
+ "Dll/srDD_DirectX6.dll": {
+  "size": 86096,
+  "sha256": "2968987f843f1e1b228b2ff322923e5ac215095a3cb41877b169f01820f8f316"
+ },
+ "Dll/srDD_DirectX7.dll": {
+  "size": 94283,
+  "sha256": "3623f1cb66cd50b7141b49f82100a8ffa1fd3c53ddebc7093bfddeb148cbf8e9"
+ },
+ "Dll/srDD_DirectX7_1.dll": {
+  "size": 94283,
+  "sha256": "bc309994fcc1bd9699064569b06ae6a7459bf607992a0efcc36510cd284f2f7f"
+ },
+ "Dll/srDD_Glide2x.dll": {
+  "size": 69705,
+  "sha256": "e19987fb5bc9abcceadf4ad64bf108ac2f95d10b520d8de294d9b10466ca1d11"
+ },
+ "Dll/srDD_OpenGL.dll": {
+  "size": 36953,
+  "sha256": "a176aa711039aebbfe33eb5d48e082dcd608835eeebd2a69ead9b455400afc8c"
+ },
+ "Dll/srDD_OpenGLa.dll": {
+  "size": 36953,
+  "sha256": "727d84ed2e4ec26e6b9fe2fe13a30e702b5ba2f2b6d199ddbdb78b57b9d58788"
+ },
+ "Dll/srDD_Software.dll": {
+  "size": 127051,
+  "sha256": "8866a254569f61022b857628380171dff018939376c02965741635421d0c79f8"
+ },
+ "Dll/srEXT_AVI.dll": {
+  "size": 24650,
+  "sha256": "9d27a6698693fb6b244951166d873a1f1a102213f5832d60379234176bd0eb07"
+ },
+ "Dll/srEXT_FLIC.dll": {
+  "size": 28748,
+  "sha256": "3ce83b9944f4d26f027c5b322a5dbea97cfe6339a7298b25914f67f35ccfd281"
+ },
+ "Dll/srEXT_HTTP.dll": {
+  "size": 24652,
+  "sha256": "ade27ce64a7af1824aeb5ba65f908bab56344311cd8f45c0c65edde02d1d87af"
+ },
+ "Dll/srEXT_Inspector.dll": {
+  "size": 45142,
+  "sha256": "6bc2949d6c9bca35ecc37e8f4f98ed36886a075f00d69ae86687d38f682387a1"
+ },
+ "Dll/srEXT_JPEGImporter.dll": {
+  "size": 118876,
+  "sha256": "0bf545937bd86ce2195c08b6dbf6b70e1a1071a9fce449ccb9f06dfa384de490"
+ },
+ "Dll/srEXT_LWOImporter.dll": {
+  "size": 57434,
+  "sha256": "a681095372decd2639d0ea14bdbadb362b7aeac04f137dc1558856212479932a"
+ },
+ "Dll/srEXT_MPEG.dll": {
+  "size": 77900,
+  "sha256": "42344e67d5de0b962652677d70891402dae16b0f39979693539867f779455ecd"
+ },
+ "Dll/srEXT_Unzip.dll": {
+  "size": 102400,
+  "sha256": "dba6cdc5741ae57574e019ab8f37935362bc288bee738bc711460f34d7647f62"
+ },
+ "Dll/srEXT_default.dll": {
+  "size": 57426,
+  "sha256": "e2a9d1e7f11e0927b7bacfe058a7113b234f0aded92f4c5fecfb23cf86ead7f8"
+ },
+ "Dll/srHXImporter.dll": {
+  "size": 73728,
+  "sha256": "db83029ad30f8df5dd425e586a1b847193b0edc38e79ec62a3d2c7d4cb59e7a7"
+ },
+ "Dll/srVP_486.dll": {
+  "size": 49152,
+  "sha256": "e28fd5ad6da156179910fa59b8d6ef88da432b1e69b3c44507592d10fdfc8c57"
+ },
+ "Dll/srVP_AMD3DNow.dll": {
+  "size": 65536,
+  "sha256": "42e169c89a01ab620320981d5b6a15a89ea7a6d3fe312a8728e1262b95fac8f3"
+ },
+ "Dll/srVP_Generic.dll": {
+  "size": 36864,
+  "sha256": "0c4704c920235e58f0fab852844fc9273cd4683b7b9655c702855bc9335e1474"
+ },
+ "Dll/srVP_KNI.dll": {
+  "size": 106561,
+  "sha256": "895b5fb3f4982f7a70e7bfc518fed1d674587380d708487f57a0a00e0c9669cc"
+ },
+ "Dll/srVP_Pentium.dll": {
+  "size": 49152,
+  "sha256": "9a08cddb2f75d98d61a3a3bfd644bffe07610c080840c03660ba9d6d849e14fa"
+ },
+ "Dll/srVP_PentiumII.dll": {
+  "size": 57421,
+  "sha256": "2cadefd51ed177c762ccbc6be0181fc70e6e26ecaf04b1b475298f206fed518c"
+ },
+ "Dll/srVP_PentiumMMX.dll": {
+  "size": 61440,
+  "sha256": "bf1a2e932680a71261382115a3afc4ceb1742814d4c52742fcf8a1d6fb0f5a47"
+ },
+ "Dll/srVP_PentiumPro.dll": {
+  "size": 57344,
+  "sha256": "7f3502649d7cfd151ebdb82ab5472d8f32ab0268d2ac24add60490b6b0e4cdd0"
+ },
+ "Dll/srVP_x86.dll": {
+  "size": 61505,
+  "sha256": "bbec96aa91b6988618fb4ec07696baed01ca556a3eab6f3836f9f475b45730c2"
+ },
+ "Levels/LEVELS.SLF": {
+  "size": 497064244,
+  "sha256": "38e63c2109ac903ee122fe214264f331b598bdef0357d921303af56c1de081de"
+ },
+ "Localization/Fan-Patch1.28/1.28 default eng text.txt": {
+  "size": 5273,
+  "sha256": "9cf63a8b0af37b8509cf4dcd0582c36b6b27b8d56693fc8e26a05a01c511a765"
+ },
+ "Localization/Fan-Patch1.28/POL/Info.ini": {
+  "size": 436,
+  "sha256": "16a3b48b13cbdae753e1348ec13a961320e1057fdef1b41c2abee6305ca8bdc3"
+ },
+ "Localization/Fan-Patch1.28/POL/Lang.SLF": {
+  "size": 5313021,
+  "sha256": "304b2c2369070792c971be67714b03786a5860bd5afbe8a4904be0d5fee66e9a"
+ },
+ "Localization/Fan-Patch1.28/POL/Text.txt": {
+  "size": 5178,
+  "sha256": "3c7bf4c3fb6ad3b233c49927ef8ea686cb715f78e11dbb27f244c3d2258cd861"
+ },
+ "Lua5.1.dll": {
+  "size": 167936,
+  "sha256": "2a7d9440b05bd407a0a3d8a8e86d96874fb2771f4b102df4a7d7215c6eb77f29"
+ },
+ "MSVCIRT.DLL": {
+  "size": 77878,
+  "sha256": "647f7534aaaedffa93534e4cb9b24bfcf91524828ff0364d88973be58139e255"
+ },
+ "MSVCP60.DLL": {
+  "size": 401462,
+  "sha256": "2b6b93c2d66969eb00258e2b5ad6172decebada096e3b1b077a3380c80e4a072"
+ },
+ "MSVCRT.DLL": {
+  "size": 266293,
+  "sha256": "d4287ab5e4988dfe99bd54243d50dbe8744094f11fe5f9809a1a6fb9728c2124"
+ },
+ "Mp3dec.asi": {
+  "size": 125952,
+  "sha256": "0a6db88a5fad28168c1dac700473c5709b17802c33e36b2668c3300c1e580fad"
+ },
+ "Mss32.dll": {
+  "size": 348160,
+  "sha256": "2a515199cc7a2e1ccd8d756efdaab07cedd5c3052309ef1c7499c2560e2097bd"
+ },
+ "Mssa3d.m3d": {
+  "size": 52224,
+  "sha256": "eed462395fb40bf145fa503f3d7cf5600843147f0cc818ab76588bd7d542d6ac"
+ },
+ "Mssa3d2.m3d": {
+  "size": 61952,
+  "sha256": "d86567df6530952542d89eeaa1cdd802ccac6d98e6849034bbc7c2bb802febc3"
+ },
+ "Mssdolby.m3d": {
+  "size": 65536,
+  "sha256": "44d7555faadcbf777d78f675695da3add28ab5c6a800cb39bfd2664e8afd6502"
+ },
+ "Mssds3dh.m3d": {
+  "size": 51200,
+  "sha256": "b90b26d654b7edc746f326ed34bbfd65e6cee4ecf6876eda5c7d04de4d54d1de"
+ },
+ "Mssds3ds.m3d": {
+  "size": 50688,
+  "sha256": "4f6642c0a7ebf33f2f5adf01149eaf5749159082fdd8ed5930d2cd1458e94709"
+ },
+ "Mssdx7sh.m3d": {
+  "size": 51712,
+  "sha256": "e30a5ac6980d873b720c937300c968e31ff87bee05a98b87b9018a1c6cecb91c"
+ },
+ "Mssdx7sl.m3d": {
+  "size": 51712,
+  "sha256": "1aff1b1436fc9b3e7a6df8bb9af56b14db673e305a74a1067e91936301494b5d"
+ },
+ "Mssdx7sn.m3d": {
+  "size": 51712,
+  "sha256": "efa0feedc9e66ef290f56dd5b68f5fb83ea216e030ae64cc687f1043b0197269"
+ },
+ "Msseax.m3d": {
+  "size": 54272,
+  "sha256": "34617f321bd68616c4c4a96c2ca17a8ca92c3c381f699102e7584c1881f734cc"
+ },
+ "Msseax2.m3d": {
+  "size": 70144,
+  "sha256": "005b8966d8c67fe705c1497f5199e14108c960914305cd846a8e9905f7d14142"
+ },
+ "Mssfast.m3d": {
+  "size": 64000,
+  "sha256": "343ba39b3e5d0f220e0d15ec5f9eb9b84a04617599ba6cd1d815539637f10647"
+ },
+ "Mssrsx.m3d": {
+  "size": 354304,
+  "sha256": "56e1c9fb9e2bfcba0fac899bb69934dbbaf294d64891a30ecc7d357c12839cbf"
+ },
+ "Mssv12.asi": {
+  "size": 142848,
+  "sha256": "1f27fed68d5985d7cb923508a9764c32a2ea6747069588afb166197e8bbfb508"
+ },
+ "Mssv24.asi": {
+  "size": 134144,
+  "sha256": "a64972a1dc1725e128175a4ddf609e29e4efc50ff4d13d57aa3911951360da75"
+ },
+ "Mssv29.asi": {
+  "size": 161280,
+  "sha256": "ccaa347d91388314d2d480c019f1746d2718319b55642c4b43b434dca5c57153"
+ },
+ "NewHotKeyIntervar1.png": {
+  "size": 85840,
+  "sha256": "b9b94d45667fea7dd1fd61bd7a4a4b23952cefab56c33f9288321725e167c77a"
+ },
+ "NewHotKeyIntervar2.png": {
+  "size": 133044,
+  "sha256": "d4aef9ce7fade6f13f55cbba373fcd6c7a2d55b54884d849171c29dc075ad688"
+ },
+ "ParallelWorld/ParallelWorld.jpg": {
+  "size": 171710,
+  "sha256": "a11f6ea4743f6be2d6cb7ae342c9929c7f4508a3c5cae6877906ad5a191b7b6a"
+ },
+ "Patch128_README/Fan patch 1.28 provides a lot of additional features for Modders.doc": {
+  "size": 724480,
+  "sha256": "9f62c0aace5d0b9fb20f0a2a4aa35ed517874aeb9d5ee3708675a7be5b04f492"
+ },
+ "Patch128_README/LUA/Patch128_NewLUA_Call.txt": {
+  "size": 11892,
+  "sha256": "d6582103059be2f9cb90261fb44f621fe241b83af3126d2d620d65afa616fffc"
+ },
+ "Patch128_README/LUA/Patch128_NewLUA_Function.txt": {
+  "size": 17093,
+  "sha256": "f0bc54c5ee8795511115442db73aa4deaa8c99ec498779f1168cb6e352c5f67b"
+ },
+ "Patch128_README/LUA/Patch128_New_LUA_Function.txt": {
+  "size": 8298,
+  "sha256": "7bb9ea5334557340a11bc92ac2603c0276fb1dc566ed5c3b39565add253476e6"
+ },
+ "Patch128_README/LUA/Wizardry8 fan-patch 1.28 LUA ModFunction FP_CharacterLevelUP_UpdateOmnigun NEW+array.lua": {
+  "size": 12141,
+  "sha256": "364acbbfa8c90fb821bbbd95d68fc56f631b3376d05672350cf0291e5b92286f"
+ },
+ "Patch128_README/LUA/Wizardry8 fan-patch 1.28 LUA ModFunction FP_CharacterLevelUP_UpdateOmnigun NEW.lua": {
+  "size": 7054,
+  "sha256": "143b7f2b5e70285445155b99f3a6d710ea5856d2056781a2e889a7332301cf53"
+ },
+ "Patch128_README/LUA/Wizardry8 fan-patch 1.28 LUA ModFunction FP_NPC_TRADE_ItemsPRICE.lua": {
+  "size": 13615,
+  "sha256": "b6b4547ecb161c5865c447950626f4fc96752430d99a53e58e935a283fec4e4d"
+ },
+ "Patch128_README/LUA/Эволюция омниган.doc": {
+  "size": 1379328,
+  "sha256": "961448f2436adeb42bf051d57c34fb84828c0e58cefe9792f7b3275a3eabde33"
+ },
+ "Patch128_README/Parallel World.txt": {
+  "size": 6801,
+  "sha256": "b6fafbf49e5cddd458fbf7dd3c996ab048c04bd1b57afce6bde40f87a0e62605"
+ },
+ "Patch128_README/Patch128_0_README ENG google translate.txt": {
+  "size": 17633,
+  "sha256": "0271c854b791eb2d06f14e678bd30bbc7d451a5632acd337edfb235fcff0dcbd"
+ },
+ "Patch128_README/Patch128_0_README ENG.txt": {
+  "size": 3334,
+  "sha256": "81b6df02b43b719ab854412c434c83d94a3bf68befa5051e8bbb9edc6f30594e"
+ },
+ "Patch128_README/Patch128_0_README.txt": {
+  "size": 29045,
+  "sha256": "dd067d2fc8995145e69bafde05629cf376c975952b9685a2113f7134b5246f1d"
+ },
+ "Patch128_README/Patch128_10_README ENG translate Google.txt": {
+  "size": 10224,
+  "sha256": "1bd1e3d62e8739196e1ff31b366f750aff23f6fcb68c260b3cffdd3b4a711979"
+ },
+ "Patch128_README/Patch128_10_README.txt": {
+  "size": 10097,
+  "sha256": "292b18f01f32dd9fea358f337a1c51aa5c844235a3818144ea40a70ef3dcbc57"
+ },
+ "Patch128_README/Patch128_11_README ENG translate Google.txt": {
+  "size": 32585,
+  "sha256": "3521365f53556131af4c87a253a12148c9de42b5c83ffd5982b2763022e70e2d"
+ },
+ "Patch128_README/Patch128_11_README.txt": {
+  "size": 32837,
+  "sha256": "e46d320504b647a91df7c350779ad36e5ea2c34761f584e9970b05757d5d3417"
+ },
+ "Patch128_README/Patch128_12_README ENG translate Google.txt": {
+  "size": 3936,
+  "sha256": "de0d23e9a54b389053bea642dee2fdfefeae7e40909d8d2f14973d6febd0ca24"
+ },
+ "Patch128_README/Patch128_12_README.txt": {
+  "size": 3916,
+  "sha256": "a6835845dec8cc737507d7cb6276d35dfde6236eb5ac60527ee1586660f30cad"
+ },
+ "Patch128_README/Patch128_1_README ENG google translate.txt": {
+  "size": 1213,
+  "sha256": "4002222fd737ce94aaa3c5d0c271af55908818b7a364e8fd60cc7d53d5066f42"
+ },
+ "Patch128_README/Patch128_1_README.txt": {
+  "size": 1982,
+  "sha256": "fde75151928e3b5cd89b8bd52ed5d6279bb1e1565f91eec282eed097dd5a5adb"
+ },
+ "Patch128_README/Patch128_2_README ENG google translate.txt": {
+  "size": 2033,
+  "sha256": "54e343579a87ef2cefa1bb83f9859539118d21a32824cf1948e8c693ce7ed629"
+ },
+ "Patch128_README/Patch128_2_README.txt": {
+  "size": 3306,
+  "sha256": "8732ff7a013f0f47736c5bc86c663408c37e225a30ac89850607de17fe325fbe"
+ },
+ "Patch128_README/Patch128_3_README ENG google translate.txt": {
+  "size": 6870,
+  "sha256": "041d820692d062efc11c6a047082794a0e2904263c6e98a3c856f2428f7d2948"
+ },
+ "Patch128_README/Patch128_3_README.txt": {
+  "size": 11715,
+  "sha256": "64eb347f96ffdb3ddc847cd174afb6d1833b0f7cb85e789dc96e2ae636038b09"
+ },
+ "Patch128_README/Patch128_4_README ENG yandex translate.txt": {
+  "size": 29074,
+  "sha256": "8cd01ddaff65b5aa95e6c05167cdea19799b1f58bb8275c4bc00f17873913197"
+ },
+ "Patch128_README/Patch128_4_README.txt": {
+  "size": 28648,
+  "sha256": "93fd5ba853f529b2b2007504f74edc27e30b070df74c82871b5fefd228a92e75"
+ },
+ "Patch128_README/Patch128_5_README ENG google translate.txt": {
+  "size": 5501,
+  "sha256": "d728b9851b83fee2f1a29a02f6b6d46fa54331e8ff28b09f1a1a9ba7cf0311bc"
+ },
+ "Patch128_README/Patch128_5_README.txt": {
+  "size": 5288,
+  "sha256": "0fba0b3a68890621547e7eb77b87db8ee47459f8f42385fbad1ccb0d010d9d7f"
+ },
+ "Patch128_README/Patch128_6_README ENG yandex translate.txt": {
+  "size": 20987,
+  "sha256": "4fba367c20e643c6778c0bd813de7e7fcf5399f78e3eef1bb6d994ef500cb0b9"
+ },
+ "Patch128_README/Patch128_6_README.txt": {
+  "size": 20115,
+  "sha256": "72e3f32ddf2aebe9827a71bb3a54e8048c63355b7f0852f39f5697542010e22b"
+ },
+ "Patch128_README/Patch128_7_README ENG google translate.txt": {
+  "size": 25728,
+  "sha256": "4e2033a8c066b4ba5ce26aac11dd7b5263891621f2dac39a4fe3e28dc9fb5519"
+ },
+ "Patch128_README/Patch128_7_README.txt": {
+  "size": 25775,
+  "sha256": "f3bcb5c6d6b51d2c17c558aca50dbbbd2ef8bc27dd2c97bfe15cde17fafaefa3"
+ },
+ "Patch128_README/Patch128_8_README ENG yandex translate.txt": {
+  "size": 17069,
+  "sha256": "fc944537f48f027b33924883e554b0ead17c129ffc0f6d2bc980eef3ac8cb1a8"
+ },
+ "Patch128_README/Patch128_8_README.txt": {
+  "size": 16348,
+  "sha256": "12ab334e0bc85b9c39dcd9290eafe3cb5f986395236d7f3d98f1903ab71acee3"
+ },
+ "Patch128_README/Patch128_9_README +++.txt": {
+  "size": 28134,
+  "sha256": "3fcca74980f221e68a717121d8e2d64238ee7cc91543f7d41726d0beab048d82"
+ },
+ "Patch128_README/Patch128_9_README ENG translate.yandex.ru.txt": {
+  "size": 26093,
+  "sha256": "b1e3506c6107060cf2b84114bb5cfc59fcb01f1e07fb5ad73d11c668e1e4a4e3"
+ },
+ "Patch128_README/Patch128_9_README.txt": {
+  "size": 24643,
+  "sha256": "5feab1b8dbc24186ac23f7ee17da7f4ebc5251727fe9036433d2e2235fe1008f"
+ },
+ "Patch128_README/Patch128_NewLUA_Call.txt": {
+  "size": 13282,
+  "sha256": "d4c3592658cd2451a396e2ec904d9a4a6f1092e8ab8984c0a43222bc7d9912c9"
+ },
+ "Patch128_README/Patch128_NewLUA_Function.txt": {
+  "size": 19618,
+  "sha256": "ad41b91f7d4749e0b508aba24b7372ae0ea121389d3edabe92c730bb19b726c8"
+ },
+ "Patch128_README/Wizardry8 fan-patch 1.28 LUA ModFunction FP_NPC_TRADE_ItemsPRICE.lua": {
+  "size": 13615,
+  "sha256": "b6b4547ecb161c5865c447950626f4fc96752430d99a53e58e935a283fec4e4d"
+ },
+ "Patch128_README/Параллельный Мир.txt": {
+  "size": 6794,
+  "sha256": "40a392cbec521f9df1de8b6cd43d51211e4dc4a927e09206d5c58ef38b57f3ae"
+ },
+ "Patch128_README/Фан-патч 1.28 предоставляет множество дополнительных возможностей для Модеров.doc": {
+  "size": 862208,
+  "sha256": "c0adb8677979ab432bc44ada9b0cf9b283f9b75a9c54fb83b7adf7e6fa10004f"
+ },
+ "Patches/PATCH.001": {
+  "size": 519421,
+  "sha256": "74bbc59acc581ede5e6c148c47486e4f287ea3169deca260abc28d5e9f715936"
+ },
+ "Patches/Wiz8Patch2001_12_23_README.txt": {
+  "size": 6188,
+  "sha256": "7f68a7475332d8d6d302998eedd8e346f3f960c6d513b7220bf208a0492c566e"
+ },
+ "Saves/Arnika Road.SAV": {
+  "size": 430321,
+  "sha256": "40b8f9045aa2baca763a858064c63baac71f519b4b6916c39029d93ac9be478a"
+ },
+ "Saves/Arnika-Trynton Road.SAV": {
+  "size": 628883,
+  "sha256": "86fc979cef70898ed09592d7474754636c31bc81ca80f63e7a29083a2a77610d"
+ },
+ "Saves/Arnika.Fin.SAV": {
+  "size": 1793780,
+  "sha256": "14946a42c53a33897dc4cb209eeecebc692b584675b37badc5ba731fef8e6b9b"
+ },
+ "Saves/Arnika.SAV": {
+  "size": 648909,
+  "sha256": "7926a7b28e762ee60dec67a8612a7e002981c7e8e534c09f26311de242e6409f"
+ },
+ "Saves/Ascension Peak.SAV": {
+  "size": 2365819,
+  "sha256": "4dbd7f1fdc33e96041311f138e706f4a4688cc4c7474fdbe4d126775c5710d1c"
+ },
+ "Saves/Ascension Peak2.SAV": {
+  "size": 2395301,
+  "sha256": "16cd111c07081f33d864a5dc7f0e2b84a1363047875ba9e28e278ea6606a53ef"
+ },
+ "Saves/Bayjin Shallows.SAV": {
+  "size": 2182937,
+  "sha256": "cebdc5963b33078e6b6740efb048229acb591f24085d417f105fd1bc7cf35d61"
+ },
+ "Saves/Cemetery Retro.Fin.SAV": {
+  "size": 1748198,
+  "sha256": "2351b388f9544db5ee1e3004e1f4069ebb290fe22907b971ef5a957c0474cc6e"
+ },
+ "Saves/Cemetery Retro.SAV": {
+  "size": 1608452,
+  "sha256": "72401252158b690cb34ed18da6c7a032f32996142c18bb4732a2a4d63f674d48"
+ },
+ "Saves/Characters/Canus.CHR": {
+  "size": 6246,
+  "sha256": "21b78be5543af49ffd4b16278ec515af13e4e85ebad0f2843c708306ef0b6556"
+ },
+ "Saves/Characters/Drizbach.CHR": {
+  "size": 6246,
+  "sha256": "75ba46f974a2ad26f3dfda3f35b6243234da389177a9a873ca34c77f17fe9afd"
+ },
+ "Saves/Characters/Eandor.CHR": {
+  "size": 6246,
+  "sha256": "eb6331f95b014c877dccc8ef11c2e088a4d780e3d4048e61d47649e694531c40"
+ },
+ "Saves/Characters/Evenstar.CHR": {
+  "size": 6246,
+  "sha256": "219b03bf5a7f285dbf2f263538632cd2b0d7c581aaa3b7b8aca19a35680e733d"
+ },
+ "Saves/Characters/Fingers.CHR": {
+  "size": 6246,
+  "sha256": "d4e46151fcb146c5b567751e04625a95f9f5e2042cbf692446bfd8c453c51bcd"
+ },
+ "Saves/Characters/Flicker.CHR": {
+  "size": 6246,
+  "sha256": "b84c91cbf4be076796e3417c6986c6707dab1e044003bf9261a6fd5e27a3c9db"
+ },
+ "Saves/Characters/Gudrun.CHR": {
+  "size": 6246,
+  "sha256": "6640859fc96e43eca2a577560379b9110da14866501971d32cc43a784e7f50e0"
+ },
+ "Saves/Characters/Iona.CHR": {
+  "size": 6246,
+  "sha256": "b206097ec1cf5e5cbb3349abc6be52f6810e6b2728621f92ab8103e0ff4f1cc2"
+ },
+ "Saves/Characters/Sparrow.CHR": {
+  "size": 6246,
+  "sha256": "30f5c02b1ac17f75f745788975984193cbbf38be22165f97fd84e885e9a1ee8b"
+ },
+ "Saves/Characters/Sprocket.CHR": {
+  "size": 6246,
+  "sha256": "e49df21eb0dda91ae05cedc32226a3e5e75bafa27d253af7d2af454fe963ae7a"
+ },
+ "Saves/Characters/Sslar.CHR": {
+  "size": 6246,
+  "sha256": "11748d056bb24944dfea8ca9c88317fe6655f2f2ed5153c2f32f3513c89ee401"
+ },
+ "Saves/Characters/T'Lan.CHR": {
+  "size": 6246,
+  "sha256": "02ff767c67d599b8c6a1f4498437d86973bd2fcc5e46d5c027ee098d32a17f0d"
+ },
+ "Saves/Characters/Taku.CHR": {
+  "size": 6246,
+  "sha256": "112a10c2bfbd2d7d5bdf193fcb1946274143ab2e941339b42c02045efa4ec5ab"
+ },
+ "Saves/Characters/Tempus.CHR": {
+  "size": 6246,
+  "sha256": "96c4537d854410fb20ad624219da172fefcc73df9210f5e78b854a62f3ff27d6"
+ },
+ "Saves/Characters/Ulf.CHR": {
+  "size": 6246,
+  "sha256": "71fadc618edf3d1603eff83a1440cc90f166cb3daa2a2d3676562ce950270e89"
+ },
+ "Saves/Cosmic Circle.SAV": {
+  "size": 2380638,
+  "sha256": "3eabeac69e8a6df4d8df6819181b22f7d3a415394b9b8be5360f5c1408630611"
+ },
+ "Saves/Cosmic Circle2.SAV": {
+  "size": 2392655,
+  "sha256": "1707ecc062f8a62f20befab36bf2caa9a836a89256ff31d095d3ab26789fda45"
+ },
+ "Saves/CurrentGame.SAV": {
+  "size": 2249382,
+  "sha256": "13ea3714cc0f3c5ba76179d0583cfafd3f405d00204987d613a191c99b22420b"
+ },
+ "Saves/Ending.SAV": {
+  "size": 2383000,
+  "sha256": "fb72a21feda3bb2159e0b25b6eaa86403a4d10c2409dcb38e7aaf497e8c6779f"
+ },
+ "Saves/Ending1.SAV": {
+  "size": 2392755,
+  "sha256": "6cbbcb5d606900aa741837e4eb2553be56e3f6f622e6f82cc478fc03c385579b"
+ },
+ "Saves/Ending2.SAV": {
+  "size": 2391553,
+  "sha256": "243696bfc8b1ee1f8ab16deda8f2a1ca7b0f01842158d3de3c1814fe2a59763b"
+ },
+ "Saves/Ending3.SAV": {
+  "size": 2395478,
+  "sha256": "74a00554121e6ff250aeb35771af78bf5ec2d04d9989d435e2841b6624a23525"
+ },
+ "Saves/Ending4.SAV": {
+  "size": 2397954,
+  "sha256": "f925f1a99b0bce7c0da8cf87b7da6cd94affb9d358eb148d8b85d0b43e9b33b2"
+ },
+ "Saves/Ending5.SAV": {
+  "size": 2398926,
+  "sha256": "7ed9c10486f583001d2bcf8cff4cd46ba0dac7deb86e0f28f9b5654898368039"
+ },
+ "Saves/Ending6.SAV": {
+  "size": 2396221,
+  "sha256": "b066bbc12ccc0fe1113eeb4c3f8c2abce0252f32392af21833244fa216d1cf0e"
+ },
+ "Saves/Import/SAVEGAME.GLB": {
+  "size": 17306,
+  "sha256": "3d688a8a9e3554a83f53ee1e017e5843d20eeae1c4cd57735aae29cdf31e9068"
+ },
+ "Saves/Import/SAVEGAME.GRL": {
+  "size": 17306,
+  "sha256": "78845ebaa60e3d795b2ad1ec20c6118d5a86a80aa78e50646bb4b5607f619c85"
+ },
+ "Saves/Import/SAVEGAME.TRA": {
+  "size": 17306,
+  "sha256": "6ec9d015fc3f1f0c4272668cb45cef5e8900d6f97c99d8a009375efbe3784582"
+ },
+ "Saves/Import/SAVEGAME.UMP": {
+  "size": 17306,
+  "sha256": "5f6967b4fa1b0706baf6e877a6310d217e53e22543ed7d0119ad41c59fff0fa5"
+ },
+ "Saves/Jan-Ette.SAV": {
+  "size": 2114937,
+  "sha256": "02f1bc5f7b93e6493a801e9742dc891dc35e0d08c80ff36360692e6314d2bc65"
+ },
+ "Saves/Lower Marten's Bluff.SAV": {
+  "size": 1148617,
+  "sha256": "1ecd9a0a587da637644e30f319d6a40e40344c18de6c671e8ba4437c27eaf74f"
+ },
+ "Saves/Marten's Bluff.SAV": {
+  "size": 1699753,
+  "sha256": "280926479fd253ddc8cbe143dec027d083cba3b5d03070fc6f044e66439c0c1a"
+ },
+ "Saves/Mine Tunnels.SAV": {
+  "size": 970464,
+  "sha256": "f20dec7256f411970a7175e6c47411a7d5609fce75b19180af186edb18d4eda1"
+ },
+ "Saves/Monastery.Fin.SAV": {
+  "size": 863111,
+  "sha256": "dc2bb50ab45a2c9a44a596f036c7b1e08546c1c79c69cd99cfd646efc37fbd32"
+ },
+ "Saves/Monastery.SAV": {
+  "size": 374502,
+  "sha256": "c642c3abddea611abb92c296be97f10735141c6ba8ad0cd9b21830124b82426a"
+ },
+ "Saves/Mountain Wilderness Retro.Fin.SAV": {
+  "size": 1996174,
+  "sha256": "ea8bdb53c5ce17251dc46fe68972f6ddfa8f34286fec6837bbfdd72e8e47dba5"
+ },
+ "Saves/Mountain Wilderness Retro.SAV": {
+  "size": 2077389,
+  "sha256": "db547dadfd6657371729f6eae2275ad3b2600849d9edecde91dff4b23b3eb611"
+ },
+ "Saves/Mt. Gigas Water Caves.SAV": {
+  "size": 2049316,
+  "sha256": "39ff6d00b4efbae19855760bdb7c1009d6ae44325b593725999acd6f3de80481"
+ },
+ "Saves/Mt.Gigas Upper Caves.SAV": {
+  "size": 1981306,
+  "sha256": "fcb233ed5eb1508453c1bcfde8d3e98a7f7de4fd272a6a6a878cf867c2103d8d"
+ },
+ "Saves/Northern Wilderness Retro..Fin.SAV": {
+  "size": 1990554,
+  "sha256": "dfa331fa4a3a0dbba8f9e92ee80df2080726e4d9c3a47acdd475044027478498"
+ },
+ "Saves/Northern Wilderness Retro.SAV": {
+  "size": 1968584,
+  "sha256": "8a884c6d26cfe49ad91bc17a9b3d67f29c80db6bcf0a11e9a97096a1be72efc5"
+ },
+ "Saves/Northern Wilderness.Fin.SAV": {
+  "size": 1974363,
+  "sha256": "ca28063ae2fd70c957fc1828eb5960ee37bdb27b637db337d418777be8705b8e"
+ },
+ "Saves/Northern Wilderness.SAV": {
+  "size": 1259951,
+  "sha256": "9e19f9e4b519678b4660f97a0ccc5d60826db4d3435bdc1d4ff832547eeb3810"
+ },
+ "Saves/Quick 1.SAV": {
+  "size": 2418130,
+  "sha256": "dfb62b174245fe9ba0e0c8533e0074a34c6efac40e7436ef451233d310fb4c6c"
+ },
+ "Saves/Quick 2.SAV": {
+  "size": 2418198,
+  "sha256": "c52cb7b925f8b9bb373b46e57bcbd2bb285e1d60106d5238c381a83c75bf201b"
+ },
+ "Saves/Quick 3.SAV": {
+  "size": 2418126,
+  "sha256": "bacc6c5451ae0dbb9f712d9aed49fb4e0b4b455868b1092a03190fa29e65e94b"
+ },
+ "Saves/Rapax Castle Main Level.SAV": {
+  "size": 2249382,
+  "sha256": "13ea3714cc0f3c5ba76179d0583cfafd3f405d00204987d613a191c99b22420b"
+ },
+ "Saves/Sample Party.SAV": {
+  "size": 293059,
+  "sha256": "3aae0f1dc3d5b86d89e477694be2316a17b7e7545c47fc5630da22593095fdd5"
+ },
+ "Saves/South East Wilderness.SAV": {
+  "size": 1715646,
+  "sha256": "68586198e375fb0f1df48e3ee3fd70acf5e832f54044043e1d059c90cf3766fc"
+ },
+ "Saves/Swamp.SAV": {
+  "size": 924992,
+  "sha256": "6f674a321e0d0437dc93c89f4e35351bc283fad20fd52ee3e0a5a45403837a2b"
+ },
+ "Saves/Trynton.Fin.SAV": {
+  "size": 1623159,
+  "sha256": "483deb101ac310fa573eaa51728ec2495e99d74aa2edd6208eea6d9dee6d445a"
+ },
+ "Saves/Trynton.SAV": {
+  "size": 950414,
+  "sha256": "ce389f946d02495bd5f57c03e0a7bf2db2d6edab83c89efe44f1d086d4918174"
+ },
+ "Saves/Umpani Base Camp.SAV": {
+  "size": 1380557,
+  "sha256": "2f3147763b9d17a7805efe996919c2e6a917e11aa199c24f6ee1c5e2d28088d3"
+ },
+ "Saves/Upper Rapax Castle.SAV": {
+  "size": 2064225,
+  "sha256": "725599207ebfd3387f262f3375ed1048b83b4a22eec7a3010a609f1d6c4f8169"
+ },
+ "Saves/Wilderness Clearing.SAV": {
+  "size": 1729295,
+  "sha256": "c449a3c40ace441a2cd2b3bab627c2732caf29c7689c08e1e52d0f6b6ff03014"
+ },
+ "Saves/light shield.SAV": {
+  "size": 2075875,
+  "sha256": "6f6b2c5ca71beb682bea12d407e315d5563c31b45e5146b3c856bf116dadc945"
+ },
+ "Saves/light sword.SAV": {
+  "size": 2075113,
+  "sha256": "3ecea182e9028df02f35c0ddae16c3706e717d7e3887f9340c906e10a4f35b7e"
+ },
+ "Seven mercenaries in the party.jpg": {
+  "size": 562718,
+  "sha256": "ce94d1f675f6ae3bc51b16c7cc68d890278eec900011946bb82234c0833c5fc9"
+ },
+ "Spell Panel2.png": {
+  "size": 59581,
+  "sha256": "0862e3beceb882fc15b35ae775375a1c3fb2efc82309a5cb3a652e3711e1ec67"
+ },
+ "User/PORTRAITS/Large/LCharlie bowateelfw1.sti": {
+  "size": 13547,
+  "sha256": "020bbe02ddaef1e4104d2ff0910e02eb3af34d2178b7308a409233d559e7e46e"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdracm1.sti": {
+  "size": 51904,
+  "sha256": "25d61b9b6b72421b4b3ebe3f1f4b81505abdfda72ae37c0b34acec3aacbcc714"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdracm2.sti": {
+  "size": 51904,
+  "sha256": "8265d1cd95756bb8f279b93833602e48fec2fb8711bef8b18a1f7a91f986e872"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdracw1.sti": {
+  "size": 51904,
+  "sha256": "c7eaa5a308012e45a089680cb018fe2d5fd5e051197d037bd9ad99b61c387fc3"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdracw2.sti": {
+  "size": 51904,
+  "sha256": "2538bc40ad302fddc806fa0902542393d7aff80d1973b61e1a62b22e2a315ac1"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfm1.sti": {
+  "size": 20272,
+  "sha256": "2204cd5a7af8b4c8e02d4fa3fc4b2e9585116d37ac883da433d0d8855e244d4f"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfm2.sti": {
+  "size": 16905,
+  "sha256": "61c0316e7eb51a424fcd661bf05f3a7121e276b9bd153d907c19f1cabe0ac923"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfm3.sti": {
+  "size": 13612,
+  "sha256": "8d4921d701882012a16c9ddbd1f0c5f4b3019dd60a0d8b973931ff0bf1e6488c"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfm4.sti": {
+  "size": 51904,
+  "sha256": "0cfc587cb88107c35b6346d495a73fcb8f8563cb11c3a41326a9a9f512271b7b"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfm5.sti": {
+  "size": 51904,
+  "sha256": "b5c4a640489f136648aa2b7cdc436d7ad8fd3701a3e92c4c21528082347b4a13"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfw1.sti": {
+  "size": 19642,
+  "sha256": "f7f12227e236a7f84d48f990f6dba5f52b05e9fb3139b9ca6a072f3755a4e938"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfw2.sti": {
+  "size": 20179,
+  "sha256": "ac1f7df0a4b465e50eea3fe359dfc9657735df7007b7acb0cc884ea9dea10bb8"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfw3.sti": {
+  "size": 16509,
+  "sha256": "ac2f01ed6de26bc76bd59223794063a41232a28c90a0462d6aa0b6725833cf20"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfw4.sti": {
+  "size": 51904,
+  "sha256": "f1c9f486583873c80f4a37f0081fee7d728f3c2604b9b8d6cb7d4b19df607f20"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingdwarfw5.sti": {
+  "size": 51904,
+  "sha256": "0182a0e75686a45f246884b7e6d42f62c7cdcd3f5b61b7d62dc9a6f8ba03ce71"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfm1.sti": {
+  "size": 16070,
+  "sha256": "6ec71fb47d7744032af3ea81d3b30a0068511ea174b03a9dc7cfbb511fa854f3"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfm2.sti": {
+  "size": 15284,
+  "sha256": "ffc5515fc020303442824481106d528d65fb3caf28e494ce34212b37ceca0ccf"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfm3.sti": {
+  "size": 16495,
+  "sha256": "55631dc9960b28ec2ec854955f2b4f61d5be363242b140f57866d5fda0636af5"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfm4.sti": {
+  "size": 13247,
+  "sha256": "5ca19e89629995c9ac8e155107568e9c60e81f53e3ac6461fbf616ec26643e26"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfm5.sti": {
+  "size": 51904,
+  "sha256": "2e180d0224b015de33ec5d5b22242059d236bd3feb74e35adc3d5ad31d0ada16"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfm6.sti": {
+  "size": 51904,
+  "sha256": "52600ede80a6da6cea2753bb0d6d4deaafe6f64e615b7a4ac4f036e527d25d58"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfw1.sti": {
+  "size": 15831,
+  "sha256": "cb32c14575461e756d329f47394a0a3ec7dc730ba42e37cdb0f1d805374de6dd"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfw2.sti": {
+  "size": 12703,
+  "sha256": "8ded3b954c9dd62a64c307f6e6d570fd27f3e853cfaf0b3a936ee849fa96de24"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfw3.sti": {
+  "size": 18473,
+  "sha256": "84d5017f070f8fbe8f451bb571114bfcdf567bf46e903e9f9268b2a3e89c7aaa"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfw4.sti": {
+  "size": 14254,
+  "sha256": "d3f5433d2acf1411f336d5a351b83c1a118db420c84baa9b0a6ed6108f4f5696"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingelfw5.sti": {
+  "size": 51904,
+  "sha256": "c1fc25703bbf882a08b3e747fe24726ecc4f4aeba7c06e95c9f8468c4e555118"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfairym1.sti": {
+  "size": 24290,
+  "sha256": "f960270d19019320cff6a8b6fd5d3657b568eb37f993b5050c0d1323fe763e72"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfairym2.sti": {
+  "size": 27273,
+  "sha256": "5ab6de953fabeff75145ba5620857e7a245f6e44f42d25e80bc2b60bc728a7c8"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfairym3.sti": {
+  "size": 51904,
+  "sha256": "a7abea01ca1aa0b3cb26fcee0bffe100fe9f94f2e38cebf19b7b1b9882577aa4"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfairyw1.sti": {
+  "size": 22127,
+  "sha256": "8c49b3e82c53c613cf6f6692395879bad5002293b74cb2701e4122880c002975"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfairyw2.sti": {
+  "size": 24318,
+  "sha256": "ce6874d4715b6c9143779a1b4cd6a901633c0978e78a8d9e0f1fb9857d9ecca1"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfairyw3.sti": {
+  "size": 22755,
+  "sha256": "0fb604905b84ab2be4e908cd28d59bce54a4f559018c891255b3c3e1a6726f57"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfairyw4.sti": {
+  "size": 51904,
+  "sha256": "ee4c94ee516cf99eaf72b46d96d5c696c2257332093bcca5740646656f0491a7"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfairyw5.sti": {
+  "size": 51904,
+  "sha256": "0ce4d9ba94c66387e1abf79820a8296a7ba696f888564a99175a4d75e5382157"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfelpm1.sti": {
+  "size": 51904,
+  "sha256": "d540e92556f30305c89626fca9793a11b112c8fd117f09d4856bf21ce09e97de"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfelpm2.sti": {
+  "size": 51904,
+  "sha256": "b65b06b81f4854290dcdd6f46b273609ee247d13884c1980e58f98836dd64e3f"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfelpw1.sti": {
+  "size": 51904,
+  "sha256": "bbdbe7556399a757944a4d8773b74913b0171020aba19eb94f7dab6d8bc849c2"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingfelpw2.sti": {
+  "size": 51904,
+  "sha256": "568b66a8f351b334b9c51cf8566a8bbdbfcba91a4a3a0251405fb0fcbb85bdea"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinggnomem1.sti": {
+  "size": 14461,
+  "sha256": "7042c22e3a73fb1f07f3d1c6ff80423991aa72cea5485a3f8baedadad081fa6b"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinggnomem2.sti": {
+  "size": 51904,
+  "sha256": "fcdd781ddf08f64e9a4317a0bad4b744d0b2819dc39c4c859a4e27068182e292"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinggnomew1.sti": {
+  "size": 15396,
+  "sha256": "85eea11cc7cb29f3efc179bd9bd9483d3646dfd39fb32bcd3d971146f4754c6e"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinggnomew2.sti": {
+  "size": 17316,
+  "sha256": "53f4e3e239cd5f25507ebf978b5dbee7aa742cfd4dbfb43ae2a2d389ea078aeb"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghobmm1.sti": {
+  "size": 14536,
+  "sha256": "89983d62dbfa3f39c8dcc76c4da236e4230a5a13bd246730d2a1c6c7504f85ef"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghobmm2.sti": {
+  "size": 14119,
+  "sha256": "28679b7712d22f5c0e1abf8d297eaa57dc9b48f5411ef57efa8b9a00ed0e1b1b"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghobmm3.sti": {
+  "size": 51904,
+  "sha256": "2fa65599da3229ad2f3588c20fe598cbcb51f54e07d608cbbfdbd61e83d54c30"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghobmm4.sti": {
+  "size": 51904,
+  "sha256": "874e05fb0967f3da21207bf0dfbb3eca24f4d13e589b88276b6542c53ed7c6cb"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghobmw1.sti": {
+  "size": 16918,
+  "sha256": "1e98bdcdb29a6a1d64fb6c97b1360e034d668e2ac64b458df52cdde1606c1136"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghobmw2.sti": {
+  "size": 15683,
+  "sha256": "2146608971d77da9330e171369b36ab6e8446d4b696e737d2af47dadd1f314a5"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm1.sti": {
+  "size": 17976,
+  "sha256": "61aea31535d1df0dd917653d1595d768f28bb908b4f23239d3433651889503ef"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm10.sti": {
+  "size": 51904,
+  "sha256": "c706dfde954f5bc18db70f3bd99c403511fd9da97299d00b137f71c97564308c"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm11.sti": {
+  "size": 51904,
+  "sha256": "3d1ab225d6077b3b9204b20982e1c9b47fab650821bfb701b220bde19864a688"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm12.sti": {
+  "size": 51904,
+  "sha256": "98f6857e2c376b51540b1094cde4e289d0ab03bee9c0eec917095022829af668"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm2.sti": {
+  "size": 16664,
+  "sha256": "869aeec0cfd559719ac88b41ba97f0a9075e023f338a017080edc4f72b0514ed"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm3.sti": {
+  "size": 18009,
+  "sha256": "44d6f40ad6a8866943a6e13beac9888829528ccdd968527727946a67be4bc88e"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm4.sti": {
+  "size": 18529,
+  "sha256": "bf068f8e922febb4a4eeaa17027068050006fa02d28e7043dbb329b0f619f142"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm5.sti": {
+  "size": 19854,
+  "sha256": "237e3283935f96ef95d4031c947a6230353d8b3055394671d4993206b0d79b56"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm6.sti": {
+  "size": 51904,
+  "sha256": "b2b894c226b8a823197080ae4eed3db1dc3d97c31ec75477dc972fdf0efbca2a"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm7.sti": {
+  "size": 14099,
+  "sha256": "0894204d87fdd16c7ac629db4a29fa0de26f938f64367f9860c67c2d8a68064e"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm8.sti": {
+  "size": 51904,
+  "sha256": "5541327872a5e080a8814601faf25458142c18df3547a6e453fc8e68769d6f6d"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumm9.sti": {
+  "size": 51904,
+  "sha256": "b8908e4aa3678979def46b153f4bf0830d60e29c4a6b24cb9ad3856323666007"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw1.sti": {
+  "size": 15449,
+  "sha256": "e445ec2db51ea3d7d17d5f8fe5da07e23dc6a51175e7f5a7ae7cad66a6922015"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw10.sti": {
+  "size": 51904,
+  "sha256": "98effe59b8fde8b428c5ff3813652034b24f156cacbeef93a345925a7a163c26"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw11.sti": {
+  "size": 51904,
+  "sha256": "bd5d50915a08a7ceda94fc14324d2d0b8dd7f64901f0ed148af4e6ca70d61783"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw12.sti": {
+  "size": 51904,
+  "sha256": "7f8d3e5fd4b59286268d5f3a5dec90acd90fe8ed377a2172e076d36616f26929"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw2.sti": {
+  "size": 16260,
+  "sha256": "cd2b069e3542a71b89023be81d4bdc1b9f781086006f693b7d75b37d21cd1ce1"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw3.sti": {
+  "size": 51904,
+  "sha256": "2bb519b6c44eb862ad1112f1da954e5778cdb47e97bd8cec00bea383fe63d05a"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw4.sti": {
+  "size": 16556,
+  "sha256": "958192bcca3d09c0c4e5ea94e117cfaed43059f1d74731f41bd7c5ac8cd82a77"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw5.sti": {
+  "size": 14685,
+  "sha256": "e97dd87555216bdd87a677945a9826d46b4977420eec2fa87e7c86ad0ce29023"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw6.sti": {
+  "size": 15337,
+  "sha256": "8f6a8c456efd96fd72e0dc9c3e5e4a11e753bed58778cdbde746dff6bc948d14"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw7.sti": {
+  "size": 14893,
+  "sha256": "bf5911441f05e02f044841fbc37dc47c3486d18af5d4b150b168cca4dd63472b"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw8.sti": {
+  "size": 15119,
+  "sha256": "e79de89e4eac483b940c99063a9dfeffe104e9a0ff1a1893050bfdb0bceee5bc"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinghumw9.sti": {
+  "size": 51904,
+  "sha256": "52ecbe03bda31854d9ec9ce75e96341b45e51d0643b74429469a822d06761e78"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinglizm1.sti": {
+  "size": 51904,
+  "sha256": "f7d05d3e0383f8c24de2a99f0f63159fc17869c870f5a45804508ab921507f28"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinglizm2.sti": {
+  "size": 15509,
+  "sha256": "2337caf2218bd1e8bc2975df3a1bdec616f03b80d23c72620325fbcfef3ba45c"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinglizm3.sti": {
+  "size": 51904,
+  "sha256": "34e575754a84e0eaeb57fce4cdce1bac8da5de0a4246aaa9a5c5852a0f1cc804"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinglizw1.sti": {
+  "size": 15516,
+  "sha256": "e1dec4aa6508acb00ad1ddfbcd25c8b099f474bb027adcdbcba315d172a4ac85"
+ },
+ "User/PORTRAITS/Large/LGrayTiefinglizw2.sti": {
+  "size": 13583,
+  "sha256": "94e42e5ddf34fe5700eb61c405724b993967f2952356e86e4688224cee880df6"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingrawm1.sti": {
+  "size": 51904,
+  "sha256": "897135e91d7a2e58a3692ed54d2c9c1c7f6635d302183b8266bdf7f0862abf61"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingrawm2.sti": {
+  "size": 51904,
+  "sha256": "7be4d8fdcb0a4781087c48c46b77c8c5275c4c7005a0721a4797e5cd8f285d12"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingraww1.sti": {
+  "size": 51904,
+  "sha256": "4a6e302e0d4ef24cfae5084339985bc778bff901157caeec2d386c784d01d275"
+ },
+ "User/PORTRAITS/Large/LGrayTiefingraww2.sti": {
+  "size": 51904,
+  "sha256": "b23288d2df32767b7be7214b2fe7128151709b6a5c329ccf75accec6b4485674"
+ },
+ "User/PORTRAITS/Medium/MCharlie bowateelfw1.sti": {
+  "size": 13275,
+  "sha256": "e64778c546838dee2e3f4418a59a4e345348baac3359dd50c3f477b5f554cc19"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdracm1.sti": {
+  "size": 16254,
+  "sha256": "b1f4712b7da8923ba1c292170ff0da75d5dd8b0b4d7fb1098a8fe73c491bb91d"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdracm2.sti": {
+  "size": 18782,
+  "sha256": "857b0653e1847cff5d19d50e22d62ef4a65e787bdf5d36f85bbbe929e6b10335"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdracw1.sti": {
+  "size": 14131,
+  "sha256": "583a0a4553ad25b516dd5be5eefcd55ac775f7f136bd622a33dd7df453dab893"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdracw2.sti": {
+  "size": 17204,
+  "sha256": "f3074124c862374c237fac168e328952b95050321b8b79b24363121b6a31b66e"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfm1.sti": {
+  "size": 16937,
+  "sha256": "8684a4433d63de02d8092ca013f340dc3c7ad35f545d6103c5eeb794bea0bd25"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfm2.sti": {
+  "size": 17531,
+  "sha256": "4f3e641100db335087caad2f8b4f8ccc2d3aa8f86870f77c8857bfc9d03d7503"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfm3.sti": {
+  "size": 16997,
+  "sha256": "4226065f47d2a5e55e5fa8ee0ba1db9085cf40663e772bd8f46cea57e467b0bb"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfm4.sti": {
+  "size": 17628,
+  "sha256": "a6f0639e1f1a5bf4be2add11e63dcf262f361c0eebd907ff19509fd423fd765e"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfm5.sti": {
+  "size": 15020,
+  "sha256": "2f98b14fc85e66211f69bdc3d3ba8ebecd13cdbd34ba1830f0801214464d598d"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfw1.sti": {
+  "size": 15582,
+  "sha256": "d772a4d20eaf58ed38ece7bc60fe996b950e510505b7121d4c1a786da8a97ef6"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfw2.sti": {
+  "size": 14000,
+  "sha256": "20de0ad74c9c674606f9d4f7abef54d7726ecc28b03abcd6fb73cee0c39de2be"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfw3.sti": {
+  "size": 15334,
+  "sha256": "f3fd34536db9e389349035ee47f41fbf1a3e805b9d8a4c10bfacd038b5dd7537"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfw4.sti": {
+  "size": 17486,
+  "sha256": "e3e7bbff2ddd9867bf86819d47e77142a02cf1bfb72314e0067c2cac263f5d25"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingdwarfw5.sti": {
+  "size": 16942,
+  "sha256": "158f6544bb9d0127af6cf9dd93e8b26ee9e964616fd105412627705810fe6247"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfm1.sti": {
+  "size": 13967,
+  "sha256": "b278f8edb2a93e095c60f7d348c8f3b0b4312c73881baaa03d1b2285356a3c23"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfm2.sti": {
+  "size": 18616,
+  "sha256": "4a79a530bb8d3af05d255e265e3922f58b9a9d4d09a3eec4d5d90f1bc9f8cf09"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfm3.sti": {
+  "size": 16127,
+  "sha256": "63924576fb95cd3f84a57850a7b0f2554cb231ea2490b4654fdfda6389da6c70"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfm4.sti": {
+  "size": 15882,
+  "sha256": "fc7e452b0d3e45d9a206711c4d4cdda9d01ab6a1ed14decc3299e0ecbf178d26"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfm5.sti": {
+  "size": 16560,
+  "sha256": "8e2051453452a5f8be9f8d38e4b55de0df1795e795afec7ad5c77cd6187bbecb"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfm6.sti": {
+  "size": 15842,
+  "sha256": "72906086dacff0449fa8876dfc990abccc37231658045b254360e779a1d6b13d"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfw1.sti": {
+  "size": 14694,
+  "sha256": "be3a3ad0946b37804de6d5d62db3a33b9a698de84c723cf2a8a057ed6e2462ba"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfw2.sti": {
+  "size": 14044,
+  "sha256": "2104b73d22f32b70616c13a1c03d9efe509d49b0a415978253a3699fca34fba1"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfw3.sti": {
+  "size": 16214,
+  "sha256": "7b2c944d32f7d9c4e18c928a6d65604689b14daf2e6d187db4fdcdf5f0298c32"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfw4.sti": {
+  "size": 16886,
+  "sha256": "38bc13958e610c236e3a3f902c304c5f3a0002199f36c7593f3d0d373deb5336"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingelfw5.sti": {
+  "size": 15052,
+  "sha256": "a71ba8f12d750c64ef8526431cbeaddab7ef8d10e8257c2538056ad1e2b83b99"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfairym1.sti": {
+  "size": 14564,
+  "sha256": "8fc23a7fb1f9c118e52672662e0fd07e81dbc29b8d24fd76da5733a1fe82a053"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfairym2.sti": {
+  "size": 17352,
+  "sha256": "5b26653de02ea70c377434873975ea0add2c194cf9f4040c674d17d015d40ac4"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfairym3.sti": {
+  "size": 18424,
+  "sha256": "bb385c4b3ecc58065a69ec4f6839ced821193f371c950bdefd611a505481781d"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfairyw1.sti": {
+  "size": 15148,
+  "sha256": "3e45af192cdeaf93d3597ef18a593456c91e578f37a367a8f5084b48d9861e82"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfairyw2.sti": {
+  "size": 13207,
+  "sha256": "5ee9a452813108635bd4493aa5deff41d20f8d2604d057cb2f7e41a04b100722"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfairyw3.sti": {
+  "size": 13741,
+  "sha256": "ecd2b95f38c95670614074bafd2869d70230100b4c140707ca5d77418ab4b673"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfairyw4.sti": {
+  "size": 16750,
+  "sha256": "d132fc87fde3a02c395f6fc24667b6b18c40a901605d9c42fb1a7568462c84ae"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfairyw5.sti": {
+  "size": 18296,
+  "sha256": "2b73a00e14dca9437dee1a41a8a2f1b5f79d5559e9ad838b90b179a471697b4b"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfelpm1.sti": {
+  "size": 15752,
+  "sha256": "fb5808bba6fc097e84b3c21c48afa599c017ef155c11bea31e0f9494d0639ebd"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfelpm2.sti": {
+  "size": 17654,
+  "sha256": "a702c9e24ee078a16e0586404427bd7e62e204a2558c2e2014f3797223355fb8"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfelpw1.sti": {
+  "size": 18156,
+  "sha256": "fec8ac54c900d1a0c9b10bb00fb7085273255a5bdc7e4862f329d66c03127d5d"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingfelpw2.sti": {
+  "size": 21159,
+  "sha256": "24ebcf2b432a0d97888e47e0bbe56c1f6391b9eb4dd4a0f33ac3b253aebf8b0b"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinggnomem1.sti": {
+  "size": 18194,
+  "sha256": "f67bd9465b50d2bfa7912b1401392a9aa61e2232797c9c95ff2adbb3703dc244"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinggnomem2.sti": {
+  "size": 16438,
+  "sha256": "1a3b406a31467074519cebb914919e8c82ce8a4d71e1774fed85db725b2ac208"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinggnomew1.sti": {
+  "size": 15212,
+  "sha256": "b12dde83aff07d8246fc91eb1649a5bb4e3d4b5512123663130c55a81ee6c090"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinggnomew2.sti": {
+  "size": 16570,
+  "sha256": "2cd3f8709c079494c41262723a1bf56c37bc16dbb36f8808e3880e4df40a2ea9"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghobmm1.sti": {
+  "size": 19837,
+  "sha256": "b9cd9aff0ce0c45f207cbc0e8923fec08a6cd505b1fb7bb30a2fd297508c2dea"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghobmm2.sti": {
+  "size": 14740,
+  "sha256": "7a5dffab5591e92f7f47bd6fcca99ae2c4224b5d64557c9e52d3fb2ad38f0934"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghobmm3.sti": {
+  "size": 15499,
+  "sha256": "4ae437856d677c8362d84699010bb50dc84ae0ca880449c20fd381e110b70347"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghobmm4.sti": {
+  "size": 17012,
+  "sha256": "02bf6f8b33545698bb5f6d1ef7bc135a839f5508aad5584641f0f9d9018dd1f1"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghobmw1.sti": {
+  "size": 15144,
+  "sha256": "c091a1a927128eaf22b7cc4a047721c51bf4c277e98cf1a4ec326e39bc17c7b2"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghobmw2.sti": {
+  "size": 15252,
+  "sha256": "793dfe0ebbb78fce7db068a4e0465802f293437bbf658aaf92ff003e54c0a080"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm1.sti": {
+  "size": 15583,
+  "sha256": "bd60c0049bf2b923c4c5107dd3983a1000e1375e9781be1111aaf22bc9a9dc69"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm10.sti": {
+  "size": 15792,
+  "sha256": "f6eb6ef3bf720506c6804ec2bdc58cc03500af1e2bd03cc6cf4ade3c9fe4495f"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm11.sti": {
+  "size": 17056,
+  "sha256": "8f8a99cbb667151223ca69dd0bbf6aa5789a5de8f7ff405b475b2d08dc391bec"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm12.sti": {
+  "size": 16676,
+  "sha256": "7a5d3b14fbd792a6cea48843c79ae77a765f2e5a74ce5f30c0db4e4fce3ab8cc"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm2.sti": {
+  "size": 16211,
+  "sha256": "8b1fbdbdbfa75b4cc8d9a191de8f9cd5a27dbcbbc24b93eb40782732c2336ba6"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm3.sti": {
+  "size": 19429,
+  "sha256": "8d105e96b8e14b434dae4f853eaa21c7b9849ad90c361854b1add40af6445f67"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm4.sti": {
+  "size": 17216,
+  "sha256": "e63bbce345200d6ffb8f20cc02542b15fadb1faa19285037731a3c224f3c25d3"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm5.sti": {
+  "size": 16754,
+  "sha256": "eb649f298558c1a2326a92051492e28573454d62ad0d11b793761540fbcc2365"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm6.sti": {
+  "size": 16297,
+  "sha256": "360d8fd66cce84ad61f4457711e6acef7101b92a347ce8ed81819ba2db4a76f8"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm7.sti": {
+  "size": 16406,
+  "sha256": "400588202348f45460150ee71b0e65e390a3cdcc3c1ae1f244f5243cf630980a"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm8.sti": {
+  "size": 18328,
+  "sha256": "ea27e66189ec5a58c8b0467a23df7416bd3e1373a428cfa68ceb817807fc0e71"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumm9.sti": {
+  "size": 16759,
+  "sha256": "5b897cd8af8bf090ffe12711156a0e43178134c3f488a9ac5731a3319e6bdfc1"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw1.sti": {
+  "size": 13880,
+  "sha256": "0cde9fc75857a8bb37df8d898977208ea246dee9de8f461881bc8d98f9106656"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw10.sti": {
+  "size": 15024,
+  "sha256": "8470feb3058377df3258a7ee3481311a693698d9a5b53aaf6bc9416217c00a26"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw11.sti": {
+  "size": 16648,
+  "sha256": "94c677b0caff5040686b3b31338f410653c01482cbacea4dedbbbe363a855980"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw12.sti": {
+  "size": 14796,
+  "sha256": "21e12bce3539acbe484c6e434ab70a73d9395653f0af9a6a1df09d3a973cd126"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw2.sti": {
+  "size": 15956,
+  "sha256": "c4b552909a2a6aedf93a4292a4d071227ebf2cbc90e4e8ebe2dcd672d7fe908c"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw3.sti": {
+  "size": 14942,
+  "sha256": "a7760afd5863377c8291abf90e11b4de8950ce84131542512ff175a5c3a1af57"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw4.sti": {
+  "size": 15630,
+  "sha256": "d1609ed279f202881632c22b1014247b929d53c3caa9f6a5e7e2c4facefcb0ba"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw5.sti": {
+  "size": 16467,
+  "sha256": "fe6ff71f07ad7d867b626ef40106b42c51a14ec7473ba34af2e0d819b0d4bdaa"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw6.sti": {
+  "size": 14792,
+  "sha256": "38d4c33aeb96d99b9bf5fc5a31a7e20b7c19d6cf87dd6c100f8dbdea923fcd10"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw7.sti": {
+  "size": 16171,
+  "sha256": "b25ce9fe39999e4d5797358b6834d8d8a85f1ea94f5449c770a1120e6c6bfc58"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw8.sti": {
+  "size": 16560,
+  "sha256": "d302201c3ab14fcea78759b24b7cbbf8f806900c6b96207477e608b2748433d4"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinghumw9.sti": {
+  "size": 15470,
+  "sha256": "4bd683bc1a674fb1aed7278389850fe07bf911d02d473e5c76acf9788557dee4"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinglizm1.sti": {
+  "size": 16270,
+  "sha256": "7cf7607a258055253a321219dbcccbfb3836e8528b93dad462c2a72f51072449"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinglizm2.sti": {
+  "size": 14478,
+  "sha256": "4f2f08ea4e0aa9007f3f149727877fa5afba92b92012fe9a31ae948a74450e03"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinglizm3.sti": {
+  "size": 17406,
+  "sha256": "1f29e380398564b72e773937e2610ac725d2a60abfc9b1dda4783171898f2014"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinglizw1.sti": {
+  "size": 17112,
+  "sha256": "f65cd3151633c46d1895787d183d13471544d86a7fa23bc1795bef800f32fae0"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefinglizw2.sti": {
+  "size": 15854,
+  "sha256": "37afaa0b2971242c0d5d34fa83b8b17e07293773995794e10a9b38a8bb51cec9"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingrawm1.sti": {
+  "size": 16800,
+  "sha256": "325bf98a00c4cd9b417e00d08aec21a760ab5bfc3223bb40b9a6baa3ad3d180e"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingrawm2.sti": {
+  "size": 15452,
+  "sha256": "3828c9911fe76619fc17423bffe83410aefff4194cd8d8f0b10e758f12771cd7"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingraww1.sti": {
+  "size": 15093,
+  "sha256": "4b8de3eaa99b0646e7899b618dd3dfc9a08e3fecb5eff633e2479c5d3704f74b"
+ },
+ "User/PORTRAITS/Medium/MGrayTiefingraww2.sti": {
+  "size": 16667,
+  "sha256": "b9a1bec139c45a1b078b25cee4a0fd4f68615b77dcd3b4a6bdf02138b923c8ab"
+ },
+ "User/PORTRAITS/Small/SCharlie bowateelfw1.sti": {
+  "size": 2576,
+  "sha256": "5aa492b7a6535dac76139a7c36c7a1f8efd14afadfa2b0ec235860aed040e5e9"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdracm1.sti": {
+  "size": 2577,
+  "sha256": "09143811a25368463428dc423f5f36b0b7cec7351ca416b0a9f04f9a752bd031"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdracm2.sti": {
+  "size": 2579,
+  "sha256": "c2e86c17a529b9b8309456631398bcd7d334df7678a67050d7afb9d85965d9bf"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdracw1.sti": {
+  "size": 2583,
+  "sha256": "6d08f304ab47c68860790818e8844844e93d9efc4e3cc36e5929bbf4487e6c4b"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdracw2.sti": {
+  "size": 2576,
+  "sha256": "dc3d48a14e60ae789ecc97a616b933b1ac540d792033ca0a01e8c61ea4217bd8"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfm1.sti": {
+  "size": 2540,
+  "sha256": "6666559758b71a486bc5eb04869abb0e477e2d954fec57e1439fde2d176e1d39"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfm2.sti": {
+  "size": 2540,
+  "sha256": "93c355a7a9b6c7c156213d98140aadd361db52563b13433cb3c885f1cdeb5713"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfm3.sti": {
+  "size": 2540,
+  "sha256": "5095a7b15a239fc889d110b69130e4487d62127f91aaf042b7314e8ce9183a85"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfm4.sti": {
+  "size": 2579,
+  "sha256": "2aca770438e14d18dc9b2baafa7b4e02435cd25542dcfefd60f5a1e4a4fa4f35"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfm5.sti": {
+  "size": 2578,
+  "sha256": "0ae82bd17b85d67a9e3f3c653b135a90456d0284a970af70f8dcae22a6925721"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfw1.sti": {
+  "size": 2540,
+  "sha256": "1f4dc1406a4ec53cced03a8f3c7fc74ea287edf4fe8547145cc1f81a83e4e8fe"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfw2.sti": {
+  "size": 2544,
+  "sha256": "87ad356b97a2a1b4ddc3052a7ada9c5e7abad1b962e11801ec4e47e93aeaa89b"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfw3.sti": {
+  "size": 2541,
+  "sha256": "04dbcfe31fed1ee942d36f9e56718cb6c7208574ce377e2891bd8a508f2431d9"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfw4.sti": {
+  "size": 2578,
+  "sha256": "214694e58cd60c71f9b040841aae741269bd53c450e8cee92aeddfc3d1b7c31e"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingdwarfw5.sti": {
+  "size": 2577,
+  "sha256": "2c87d5842663a8e2e452896c994d09ba37202816d33d8b45b97d7061e5c13c6d"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfm1.sti": {
+  "size": 2542,
+  "sha256": "3dee6461bc9c8f26b4f174557829c294533aee5466c141922ca8478cc6388b2d"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfm2.sti": {
+  "size": 2541,
+  "sha256": "aa587a34dc116255b147deb8927bb56621fcc948a0042bfa44947759be3ebd71"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfm3.sti": {
+  "size": 2542,
+  "sha256": "ad8027d51d162750ffdd48674df018247b37440ae114a1a945687a21e0a7ae7f"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfm4.sti": {
+  "size": 2543,
+  "sha256": "a2d48ceafbd48ddd1a6ca962092ed58c83884414eadb557ed15feb0b8784a681"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfm5.sti": {
+  "size": 2577,
+  "sha256": "1f8d98e71a2a832e3a49b420f4402966bfc0de9c8aa9972b971ae1f776e6590d"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfm6.sti": {
+  "size": 2577,
+  "sha256": "a05fe9e03d091a8a65c248c6fc5be30c2d68329629e794ac82848fb6ed451654"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfw1.sti": {
+  "size": 2541,
+  "sha256": "c1fa444823ac54145ae10db25e660284c70645090a4824318011777b7c220465"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfw2.sti": {
+  "size": 2541,
+  "sha256": "efdb118a69251f9808f42a184f9105caa396a5b0ef03a3b606af7e5582e77501"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfw3.sti": {
+  "size": 2540,
+  "sha256": "b635f012790908ae750c3ba59587bbed7cb3b535c148c830271f1d45f15b4b96"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfw4.sti": {
+  "size": 2541,
+  "sha256": "b9965af07aaacba5b9aa0e26d4460c89e69cc29d6d399a8903346aa9aa7434b6"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingelfw5.sti": {
+  "size": 2579,
+  "sha256": "e3b0ac34e5f6a70abdfa6153575b076c01315723edfe20b3f3e8af795215f663"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfairym1.sti": {
+  "size": 2546,
+  "sha256": "67dd5a25232ee8aa190fffe711658ecae8479ad3f7934c9be6ed61b3f6c773e3"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfairym2.sti": {
+  "size": 2540,
+  "sha256": "a2946865e08192cdeb3e324d3358eee97c6735e72f76c615c8acc683e7d06c9e"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfairym3.sti": {
+  "size": 2579,
+  "sha256": "0c89133256918527e7d84aa847a33aace9493b7da3515f107fda68aa50f02c2a"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfairyw1.sti": {
+  "size": 2540,
+  "sha256": "6e281728e73f190de56ec2836ea29f184c8a7c905a0fd4285642c3999bcf93d4"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfairyw2.sti": {
+  "size": 2540,
+  "sha256": "c1afe9ca0bd34425eac6ca21f309a6fbc69cd7d40238c335775e7e023b3bf5e2"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfairyw3.sti": {
+  "size": 2540,
+  "sha256": "b93528a3ba8d11d7152457c1cc83a48c8bcf7f77566f2c445896617fbcf02bff"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfairyw4.sti": {
+  "size": 2577,
+  "sha256": "d6667ce1f2b57733ca874807eea91f0718d7cc5280991f440e4b89a94cdbfacc"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfairyw5.sti": {
+  "size": 2578,
+  "sha256": "efbbfc03b95e42883589a72ac7434687641743d000aa57702072052ff6eeb53d"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfelpm1.sti": {
+  "size": 2609,
+  "sha256": "57388b67efefc6e29ef3069e066aba9da36ec622b45d37c7cc100fde0c840ae5"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfelpm2.sti": {
+  "size": 2577,
+  "sha256": "250a92581a3f462b27f84b8d6acf4d1e772c44d0fbcee450c0836522ba39b9e5"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfelpw1.sti": {
+  "size": 2577,
+  "sha256": "78aacb7056f74d482527efd6617cafc04cd4790e75c0d32603f4526771da11fa"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingfelpw2.sti": {
+  "size": 2579,
+  "sha256": "e17794be988a54ef0c03ad804e31cd40f5a9909785ee035881ce135fdc3853de"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinggnomem1.sti": {
+  "size": 2542,
+  "sha256": "2df0c5e9b026e9c093ed15637147808a2fa10aba9173c05f037f9043f999c82a"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinggnomem2.sti": {
+  "size": 2577,
+  "sha256": "139564549c6afc2423f5300b9e40874da01b648f3748ae21779bb8c2b647b6e1"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinggnomew1.sti": {
+  "size": 2541,
+  "sha256": "c227e7950b6262206004e96fc3f805174c6cdf0f1686c2d4444043dc10c8fcad"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinggnomew2.sti": {
+  "size": 2541,
+  "sha256": "90184ca0b19b1a78e6d00d01d68ec1143a076467b34cc650292f1f8d8421d84a"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghobmm1.sti": {
+  "size": 2542,
+  "sha256": "b5812466c51b1e8552de8d66603a1a78108145aadbd1053af923be9a5cf31cbb"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghobmm2.sti": {
+  "size": 2551,
+  "sha256": "e06e488512ba4d87ea2dc3b84f31ebea0edd751f3c4f88a6423c4641095ee40e"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghobmm3.sti": {
+  "size": 2578,
+  "sha256": "eaa1ccecd371ff7f5e712b47e34749f7ba084a01550796b49548d9dfba732f65"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghobmm4.sti": {
+  "size": 2578,
+  "sha256": "f395eaec7df2504fa285c62b9da540647590ac85b9ae96b6cfdc81bec3ef3b1a"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghobmw1.sti": {
+  "size": 2541,
+  "sha256": "0886b03415ff867bb9f799cfcf5f6c40e946112e926794d7670eb6cf488cb70d"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghobmw2.sti": {
+  "size": 2541,
+  "sha256": "c3e0697b41994f8e64eb3570affdbf626e7472dc0e7f277607061ede0c72cde7"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm1.sti": {
+  "size": 2540,
+  "sha256": "1f2f4d48a69940fe30cd5032993680baa9fa2b953b2bd26269b9bc3577e54ada"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm10.sti": {
+  "size": 2577,
+  "sha256": "42f51bbfa46d0d33ab0b160a2d21aaf0525cca354d0265f413fce5a3da4b29a2"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm11.sti": {
+  "size": 2577,
+  "sha256": "9b7f6c64f5c01b9b9e8a45742d27ac656257e10558bb6332f351d1bc4f301716"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm12.sti": {
+  "size": 3304,
+  "sha256": "2cc0b2a2d4b0ac91797417a28178a12b6637ebf83910c20ce2bdf2817f51b5b3"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm2.sti": {
+  "size": 2540,
+  "sha256": "c724423d4ccd2bab664652c25b711f39d6773be4ae684feb121ed9ea0464c4b7"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm3.sti": {
+  "size": 2540,
+  "sha256": "1c622ce7333204b874e45c9e8e31917b0db98b653970bd05b296b36c6f9ba6e9"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm4.sti": {
+  "size": 2540,
+  "sha256": "5aded178d6bd3eb753584594654f702ba11229d07ba8b90854bd7cbc4dba2248"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm5.sti": {
+  "size": 2540,
+  "sha256": "3e430a633bdfbbdc16b9162afff809b285d148b45b6bf31a3c2932b118136876"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm6.sti": {
+  "size": 2577,
+  "sha256": "a1cf40bed17611a1facd1b63ffc9fb76501642a36c8a465b3c4d31dae9e059c0"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm7.sti": {
+  "size": 2540,
+  "sha256": "05d38bafdf7045a5cea01f1b17293a3b6c105efd58c3d69ae46eb1c02115f45e"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm8.sti": {
+  "size": 2581,
+  "sha256": "f509fc7062971c12741759fb1de44c9cb8b1a230d417f6190e1f9ff7582def6d"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumm9.sti": {
+  "size": 2576,
+  "sha256": "e750dc869ea83c5504a7bc23c629b3d22cb6385ac3871c68ccf2e697706618de"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw1.sti": {
+  "size": 2540,
+  "sha256": "8e6f3cf60f8d5d926ff15b1492152d66eec14f53564421f00522f39f79e98ed6"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw10.sti": {
+  "size": 2579,
+  "sha256": "1e273f68bdaeeb894b57a58a96ad05541c996bc74049226db555896e17e511bc"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw11.sti": {
+  "size": 3376,
+  "sha256": "1f1bf34ec94a04bfb29ae4b7c418a5e50f5dfc9c588937bcfb59bb1de0712c00"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw12.sti": {
+  "size": 3304,
+  "sha256": "1d349c8d67d4292c0cfd7ea979acd7406f0916e141d6ff9e3e6b60ed0722e5a6"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw2.sti": {
+  "size": 2540,
+  "sha256": "7cdf465c62232922016de3e7434d1c861bc4554f8f252fcc30a7d2a965bfe1ac"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw3.sti": {
+  "size": 2577,
+  "sha256": "84c6e2c3c1a8adf6a34ce476626fe14b0dbfca414637aaf2cfdd1e80b7dea7c5"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw4.sti": {
+  "size": 2540,
+  "sha256": "fdedaabd077ca96234f434c6bc13e2a08c80b593238a7efb54fd05cc0bba82ff"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw5.sti": {
+  "size": 2576,
+  "sha256": "f6eee216e06363f42349854203f840e63bfc89757a6bc14873907e9e3c24ece8"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw6.sti": {
+  "size": 2540,
+  "sha256": "32bf7322f93e86dbae00eabe0863e89077d2cd463c10e7418ad39d89994dce6f"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw7.sti": {
+  "size": 2540,
+  "sha256": "676557859a0bd5aeb7ce7ef2b452b24410e06a71ec15ba9001fb839a8a1c8eca"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw8.sti": {
+  "size": 2540,
+  "sha256": "168d9ab1d43ff89ea692ef975c0420457a2b774e8d6d42f7b9263956c6f091e0"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinghumw9.sti": {
+  "size": 2577,
+  "sha256": "744d9912242b1117ef8f1e9567c7fdd1d9d590afe1a8d686d071319d44e46af5"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinglizm1.sti": {
+  "size": 2579,
+  "sha256": "406403a0d26a696c64317ed100bb94d5e26001d06e47496e26115f63ddf70302"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinglizm2.sti": {
+  "size": 2540,
+  "sha256": "4d557d46d8776ca1d605f5b6f4fc1ccd2817c597003d567fd03febb5a64c8ada"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinglizm3.sti": {
+  "size": 2578,
+  "sha256": "ec7ee894c742bfe1231d683465f94ecf399fc736e62488aae162c4fde056be06"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinglizw1.sti": {
+  "size": 2540,
+  "sha256": "8901ffd390416c778d6722d1bdff78cfa392728636931649d84ffe250f10019f"
+ },
+ "User/PORTRAITS/Small/SGrayTiefinglizw2.sti": {
+  "size": 2540,
+  "sha256": "ecb02da408314fd1f34a74924fddea2037a2cb4ebb55d4bb28eced1052474870"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingrawm1.sti": {
+  "size": 2577,
+  "sha256": "5d28bc6c6eb9c9ed61c9136db659eab05e4bf691bd8771c47934290cda5ebab6"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingrawm2.sti": {
+  "size": 2577,
+  "sha256": "91d63743fd94600e27e9ce856772bd8406c8ac241b8eb66bd576b53026ffb011"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingraww1.sti": {
+  "size": 2577,
+  "sha256": "19b1f6a7bf405a22d94560396d83e243138aad13070980f2a4acaf037f01be55"
+ },
+ "User/PORTRAITS/Small/SGrayTiefingraww2.sti": {
+  "size": 2578,
+  "sha256": "62c6917b7e4bff42045a9a4aa5f6a645b0cb0f9e463cfacc97d79dcec081e376"
+ },
+ "User/PortraitsSTI.dat": {
+  "size": 15467,
+  "sha256": "07ba9350cb3973b7dd7fc9ce4115ebdfa9c1966e6742ab0ef5a0bdbc07c8c865"
+ },
+ "Wiz8.CFG": {
+  "size": 2063,
+  "sha256": "f5ad8d1727210a8aa0aa9744e14a5c6c249609538df518f037b8652b8c657e21"
+ },
+ "Wiz8.dll": {
+  "size": 354304,
+  "sha256": "702851cf5bc09d9d5c749f11c5c058e62a27f4be8975718f54cceb6c127da612"
+ },
+ "Wiz8.exe": {
+  "size": 3580513,
+  "sha256": "18a74ff61c65b8a2d4cfa11ffce82ad7fef022a94eaf0c2f217e479e981420d2"
+ },
+ "Wiz8.ico": {
+  "size": 2238,
+  "sha256": "99314ba01d1a914a0d3a65606cf5cb391d628a1dd36ef74b0565fa013586749a"
+ },
+ "Wiz8_v128.exe": {
+  "size": 3299840,
+  "sha256": "fdca6d9cd0940034191e82b8e2900de26bb25e381c74128dcb8967360a9fb824"
+ },
+ "Wizardry 8 - Manual (printer friendly).pdf": {
+  "size": 42093557,
+  "sha256": "2fb7761c0cacfa0e0bea92028d2de1cc8dbf3f3071a836aac1b54674d1948ed7"
+ },
+ "Wizardry 8 - Manual.pdf": {
+  "size": 33313549,
+  "sha256": "6bcfb489b7d4e43f1e8f1c048bbfa8f5e4a20d44122892f5cbe753974feb184b"
+ },
+ "Wizardry 8 Fan-Patch 1.28  Beta  build 6719 Mini-Update.exe": {
+  "size": 346258,
+  "sha256": "b22fc5f76725b32fa3b872966b8fe6f5473f7b0bf94fdbe46bbb9fd9fc55119d"
+ },
+ "Wizardry 8 Fan-Patch 1.28  build 6735 Mini-Update.exe": {
+  "size": 434552,
+  "sha256": "a2c718f4d28d2e5b0cb38ce5c2b2e111c4111ee0e6decc2850e493f78114ae86"
+ },
+ "Wizardry 8 Starter.jpg": {
+  "size": 88034,
+  "sha256": "daa657fd8926e6a57a3396c2c7c5140905d59bfd37da1a62b30bcfc19d580ae7"
+ },
+ "Wizardry 8 with NVIDIA.jpg": {
+  "size": 855706,
+  "sha256": "ca4ed08d14d832a7dc51aa5a111d085388b647c68a6ba6d88c3768fe53da8042"
+ },
+ "binkw32.dll": {
+  "size": 286208,
+  "sha256": "1fd7ef7873c8a3be7e2f127b306d0d24d7d88e20cf9188894eff87b5af0d495f"
+ },
+ "cfagent.log": {
+  "size": 3713,
+  "sha256": "4b6e49d0aaaebdbc1e19067789b961882b8ee181105f2d4eef877df53d651298"
+ },
+ "cfagent1.28.dll": {
+  "size": 131072,
+  "sha256": "5a801041a36b5acda9c7c754d27402d57a0407e86d64eff81397b7794ba5f6ba"
+ },
+ "d3dim700.dll": {
+  "size": 797184,
+  "sha256": "ee11dc706b2f28eb7031dc2b4ad4801fb7aa6706300fccdc67f91822c1f77de4"
+ },
+ "glide.dll": {
+  "size": 1527808,
+  "sha256": "57fd08de7adb9268027d79a3c28c49aa29970c752cab4d50e31425e4d9d089f0"
+ },
+ "glide2x.dll": {
+  "size": 1617920,
+  "sha256": "7ff40975fee4016e029abb45732cdd06b54c23e8778c77bce50806c11c6e23fa"
+ },
+ "glide3x.dll": {
+  "size": 1712128,
+  "sha256": "db1630a50eb481bc86702a8fcc2e4e5e67f7f4c34f9707ad325424d24acb1381"
+ },
+ "nGlideEULA.txt": {
+  "size": 227,
+  "sha256": "3d779c24adecd1ffc7daf67354d5510d7b3e908235a07b58e434ba299ec61546"
+ },
+ "nglide_config.exe": {
+  "size": 348160,
+  "sha256": "7445dc0a2a63b8532457e17795ca4f264035b90c49ca457673556bdfc3c31d00"
+ },
+ "nglide_readme.txt": {
+  "size": 23016,
+  "sha256": "f2e041f3b68435abf4b7eb09bb5ed78866440ad56ddf6475ce7a36699fac2740"
+ },
+ "sr.dll": {
+  "size": 688191,
+  "sha256": "cec1caf85861c34bc4583ef1c69209e96a6930bdfc9af545c429f7470a8b6165"
+ },
+ "steam_appid.txt": {
+  "size": 8,
+  "sha256": "729c06997ef098657fb76793cea156629d76bd0b4159407d221659c2235868ab"
+ },
+ "wiz8.ini": {
+  "size": 7674,
+  "sha256": "129f061ef0c5952fb007af0bd2640bd9799d34bd025661537e61fb2f8ca3c05c"
+ },
+ "wiz8_backup.ini": {
+  "size": 7567,
+  "sha256": "33f357cbc1c373afc967348e5aa127ad4c52a6028cad7fdf9b28622f104167bf"
+ },
+ "wizardry8_installscript.vdf": {
+  "size": 750,
+  "sha256": "b07457ff42aa32d944c343656018d7cacefc2ea22e0e0a595b449b6cfa8480d5"
+ }
+}

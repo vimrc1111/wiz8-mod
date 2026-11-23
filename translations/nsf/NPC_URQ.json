@@ -1,0 +1,557 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "dbcbce7cde342bd12cdd076b71651cc7d74505e8dcfd3ca8fc696781631d03fb",
+  "zh": "嗯。我不認為你們是這顆星球的原生種。不過你們確實是非常迷人的標本。是 Screg 派你們來的，對吧？來協助我的探索……"
+ },
+ {
+  "id": 1,
+  "src_sha256": "ab9003972176a199291950660ee9aa697677723892010f713659a56368351017",
+  "zh": "我們又見面了。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "be59e6c20dff03a7d39482b7ff4017045503d15da2b6a5e2129026602904fd94",
+  "zh": "繼續談下去是徒勞的。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "5f8219e6f15c803d9e2924ba07b44b5f499b3d228d7c585b70355f2933cbbb64",
+  "zh": "你們的不誠懇顯而易見。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "419bdf1364228ffdc4e9dc2011c8ed39e3a4dd4f9a18511f755e6bddc582861f",
+  "zh": "恕我直言，威脅我是不合邏輯的。或許你們沒注意到，我的相對體重和你們隊伍的平均體型比起來是什麼狀況。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "4d2283fb4ca3f27db82dac1e673d0dd54b4fbb6b815c0e9924f794f26da8b2b3",
+  "zh": "你們的賄賂企圖動搖不了我。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "ddad935e469dc54443dc2bd57391b7cb3ae0bdc7ec9515d883c1a6a315421f49",
+  "zh": "我在這裡的研究全部完成了。我不再需要你們的服務。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "e0bc952af4f8c4819acdf8c0dce9ecccb92fd16c39b1b95d9bcd44effcee2a88",
+  "zh": "是的，我很樂意加入你們，但我看到你們目前正在護送（ escort ）另外兩位。我偏好精簡的隊伍。"
+ },
+ {
+  "id": 10,
+  "src_sha256": "0ca39b7090e57fd8f339caa9181d8fa1cfbceb60732e4e71184c8d1371ae3205",
+  "zh": "等我們抵達我的各個目的地，你們會得到報酬（ compensated ）。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "2706afd973e0a39960b099656c6898a3dcd15f1f17729e5bb9e38575c41ccd4b",
+  "zh": "你們真是太好心了。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "c4ee09c469f883d0dacabfce5ec5ede697c2d3e99b0667aa532d2edd6fe29d31",
+  "zh": "這東西或許有用處，但我看不出來。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "2421ac243eb2eb4b1a0f13d6f7a33851255364c9811b09668960382f533de087",
+  "zh": "你們願意付一筆象徵性的費用，好讓我繼續研究……"
+ },
+ {
+  "id": 14,
+  "src_sha256": "ff8eff9972283be1f8426c837497245cab0a7ba49b2bc188b6dbc07913ce0600",
+  "zh": "這個討價還價（ barter ）的概念？我想我已經參與得夠多了。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "300224656dc1f6a3c0257d1e38ddadd5610dc8d9c2e72487b0f4ffdf0cfa5edf",
+  "zh": "我算不出這裡有足夠的資金。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "64a3cdb6b082be67b382711bc5d32693075119d1dd1916fe6ed24f240cfac3b5",
+  "zh": "你們從我身上偷了那個東西。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "d62dfeb1c066beadc604c078a0734819d09f058d3a5d51e4805a667edbfc7ea9",
+  "zh": "你們的行為非常令人不快。或許這正是你們這個種族的典型作風。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "1b5b873d4d9ffbfaf9e5b66a92cf8ac46f03f85261e60e55fe95d9ce11505700",
+  "zh": "真有意思！在對方人就在場、神智又清醒的情況下，是什麼驅使你們偷走他人的財物？非常怪異的行為。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "40180b4f4e6f8a283d37a7d3fbee640c19ef5521d131dafe515463bd9054996e",
+  "zh": "很遺憾，你們活該挨我打算給你們的那一頓揍。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "2363e71655ee0cf885fec6d0a006caf7cd5fba7d85d662a150623f6d07ff1046",
+  "zh": "真有意思。謝謝你們。"
+ },
+ {
+  "id": 21,
+  "src_sha256": "cd1212efc555773608020b727b25172d410fa7b7750d295223abba1a205cf9af",
+  "zh": "或許我該研究一下那個……"
+ },
+ {
+  "id": 22,
+  "src_sha256": "1976368980a2579cd5bd50931211d569028aaea8c25e174e3b4d50e03906c43e",
+  "zh": "我還沒研究過它。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "f9b58464b0928998c927cb09050ec30c32c040df7dc689ccddb40941f9f9f8ce",
+  "zh": "我無法提供你們那項資訊。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "71f5447dcb76713d5cd0fca1a3bde099f267a9c0eee38a72dabab3f526d7350d",
+  "zh": "這部分資料我已經講過了。不過……"
+ },
+ {
+  "id": 25,
+  "src_sha256": "8fa52a939d7264316858b2f6919f6b0447ab3d0bc04f487fe284bd172142bde5",
+  "zh": "如果我們談的是聚焦的主題，這場對話對雙方都會更有益處。"
+ },
+ {
+  "id": 26,
+  "src_sha256": "db94dbdd2a4341b1c0f50eeb17be93fe22b6b525b662185f5fa260aa115d388e",
+  "zh": "嗯，另外那個也很有意思。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "8c0fe2615e44db7e0f9708047193f6eea5e90331873812d64a08baec7fd89757",
+  "zh": "真有意思。"
+ },
+ {
+  "id": 28,
+  "src_sha256": "6ed312b3c88db38e4e444875df329a0560247ba706184b8ee184d0cf8a65beea",
+  "zh": "你們的好奇心，真有意思。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "9aedba8cb2ec319fac7544aed2859aa160319b0684d0ef7331b854bf40769cc1",
+  "zh": "如果就這些，我還有研究要做……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "3bdf5f0c8c8be70b544af392500fbad1deda182fbeb937938eaeedf99abb0ddc",
+  "zh": "是的，我發現這是個多樣化的生態圈。我們已經繪製了遠超過百分之三十五的地形。"
+ },
+ {
+  "id": 31,
+  "src_sha256": "a9c8cc2e8149b3532857808dec9abd9fe65492f5ce883bfac19b66d2805181b9",
+  "zh": "沒錯！那是分派給我調查的地區，當然，也是我們研究基地所在地。當地原住民 Higardi 擁有最迷人的信仰體系，叫做 Ascension 。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "eea5f5bb69aa0fa53d8626824d559c5d7d563c555fd2dd297e4eeb875e99e30f",
+  "zh": "我對這一帶的了解很有趣。這裡住著相當好戰的水生生物。不過更有意思的是我們從一位 Trynnie ， Burz 那裡得到的消息。他說有一艘太空船墜毀在那附近。我們懷疑這可能是真的。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "117aa3d4406fbbc2be4af2cf48e7e55358dbf62b80c93782e99194ee5b860708",
+  "zh": "那是我打算研究的棲地。我想它在 Arnika 南邊，樹冠層裡。經過詳細分析，我已確定這個叫 Marten 的人物和 Trynnie 之間確實有關聯。此外，我相信他們知道他的遺骸在哪裡。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "37e950ddd7dafedc5c0538b54ac41868a8754e420dbb2c16cd852c6cab842d02",
+  "zh": "透過聲納成像技術，我們偵測到一些地下河流，似乎通往 Bayjin 附近的區域。我們相信有朝一日能利用這些河流去探索那個特定的生態系。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "47301cc46a878ace78f730549957985412038f724254b95000c86171dd49f21f",
+  "zh": "如你們所知，這個地區是以一位名叫 Marten 的 Higardi 命名的。我們有理由相信這裡會產出關於他下落的重要線索。令人費解的是 T'Rang 對此所知不多，他們目前就住在那裡。我們懷疑他們沒有徹底搜索過那些建築。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "204ae8d03dfba395eea14fa9a365f88e056c48c9aa41b69fa253bc8efb1d75f3",
+  "zh": "當我們的精神探測員（ psionic ）和各個原住民談論 Marten 時，他們總會在想法裡浮現這個答案。不過尚未獲得證實。"
+ },
+ {
+  "id": 39,
+  "src_sha256": "c6f6de4a0267fbcf26d33e0295db9c2fa0e13926647a89cdf236ed893dd5340e",
+  "zh": "當地一種靈性信仰的中心，內容是升上 Cosmic Circle 成為 Cosmic Lord 。 Higardi 相信 Ascension 將在那裡發生。因此得名 Ascension Peak 。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "73715ce7ad70b31bf07f0b5571e9135eccb141ba216f561015abc8af22987401",
+  "zh": "Dominus 的人相信有這樣一個地方，是的。據信那是 Cosmic Lord 們居住的地方。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "9418769e4eccdad51060b1eda5687fb827a150249edb7cf353c40b4b329c8202",
+  "zh": "我們所有水域相關的研究都由其他團隊負責。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "6bc3aaa5dfeb6a7ee6a3b3030b96b143aa415b8e9d54d6d8fd3c03e1abf1d3bc",
+  "zh": "事實上，就在我們說話的此刻，我正在研究他們這個種族。依他們自己的說法，他們認為自己是 Cosmic Lord 的孩子。顯然，這是個重大事件的時期，也就是 Ascension 。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "f667eee8397d63c043491a3f0f1ed3863d3bd078dee39cebf71270ae77504a99",
+  "zh": "迷人的生物！遵循物種生存的基本定理， Trynnie 在掠食者天然搆不到的高處建起了一整座城市。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "6b5cc657922e2e508d8398c0263fc682f2e73c798c866cd37d54319350747e90",
+  "zh": "Umpani 在整個銀河系都很出名。我有充分的機會研究他們。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "ba0e55db3644d638b6db6d64cbeaaa875b799ae5935e72065053ebeb47ca6c2b",
+  "zh": "所有見多識廣的種族都知道 T'Rang 。他們無疑是高度發展的節肢類生物。"
+ },
+ {
+  "id": 48,
+  "src_sha256": "a7a73426b497927ccdbeeab6625653b01467723b39e0863f1583ca24c2e38e65",
+  "zh": "一種相當好戰的魚……"
+ },
+ {
+  "id": 49,
+  "src_sha256": "16824e7ecf5e9cea10bca6ff7e293c25d5e591976b5940846ec402d40451020c",
+  "zh": "不值得理會。就我們所聽到的，他們狡猾又善於操弄。"
+ },
+ {
+  "id": 50,
+  "src_sha256": "2232d7dc88edbc3a0458421ae07f1bd4a07ec4e00acbaae75fb8d4fbab13648c",
+  "zh": "我們？我向你們保證，我們已經被研究得徹底了，不過如果對你們有益，我看沒什麼不可以。我們來自 8696 號星系的 Trea 星。我們來這裡的目的是調查 Chaos Moliri 的起源。我還以為 Screg 已經告訴過你們了。"
+ },
+ {
+  "id": 51,
+  "src_sha256": "5fb04aa4d712ca1e3a4703115837bae1c95afb0e2ab8d8992bdcc9ec2cf5fc13",
+  "zh": "當地人似乎對這些 Cosmic Lord 特別著迷。 Ascension 是這些信仰一個有趣的具體呈現。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "d96d73b67ad3ed192408965b4a1090b659ab2c3587260336daa5850175054760",
+  "zh": "是的， Guardia 星。我們對那裡的研究已經沒有進一步的興趣了。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "6c9a22312266751508c09dde402ba1b803956404a787d0edfe51d7ed76e30f99",
+  "zh": "你們說 Dark Savant ？恕我直言，我建議對此人極度小心。我們聽說他替自己訂下了相當特別的目標：宇宙支配。當然，以統計而言，這將證明是極難達成的。我們希望如此。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "1ce47637b8567ecc53ec3c26e9dd67975746646d535d33c42c71be0eef98cc8a",
+  "zh": "我們才剛開始研究她。純屬推測，但這位女性似乎在這場 Ascension 裡扮演關鍵角色。我們不確定是如何、為何，只知道她必須在場。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "f19fbd87703ff5d8a852445ca87f234301a481aa49277f87f57b4c0bea87ac6f",
+  "zh": "既然她就在這裡，問我她自己就能回答的問題是不合邏輯的。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "e2c01feae11335604821671706ff1964c97645349996e80ac4d6ba5992a62632",
+  "zh": "Phoonzang ，是的，我知道這個名字。據信他是父，是 Cosmic Lord 。他的名字並不限於 Dominus 使用，在已知的宇宙各地都很常見，這讓他的存在更有說服力。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "c0fa3eca872c5c3c0965c7081c2f3d7cf5a6c0e7d0ad684712bde175a3c7e8b8",
+  "zh": "我的專長。我抵達這裡不久就發現了這位 Higardi 的傳說。他偷走了原本存放在安全地點的 Destinae Dominus 。據信他經由 Trynton 帶走，然後到了 Marten's Bluff 。再往後，我就只能推測它最終的安放處了。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "dbb83db578e5a03c3b796bc125630bce9e812811edabe5dd19329d9dc151d755",
+  "zh": "這當然就是我想繼續研究的原因。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "0792dda52e7937939978b99bd62c19a77d89f4fcf182ac16376d58bf907e7ec5",
+  "zh": "Umpani 的領袖……"
+ },
+ {
+  "id": 65,
+  "src_sha256": "4ae4f12488dc38cf713ee275fa6ec6acc1b22bb9d616f0626b1686d1eee7f5a5",
+  "zh": "我推測，是指領頭節肢類生物的名字。"
+ },
+ {
+  "id": 66,
+  "src_sha256": "45ff4cf2760d9df39f89083c29a381ae452ace5ce62c8330fd961ed4f1352e5d",
+  "zh": "領頭的 Rattkin 。"
+ },
+ {
+  "id": 67,
+  "src_sha256": "a1548e797ed0526f4898ed97d6fc9464d70c0185528ec6cf32d87521f4de7d6a",
+  "zh": "Astral Dominae 。是的。它和我們的 Chaos Moliri 有關。根據我的紀錄，它是由 Phoonzang 創造的。顯然它蘊含生命的能量，不過要證實這個說法，需要大量的實驗室測試。"
+ },
+ {
+  "id": 68,
+  "src_sha256": "cc6dd6a0b450c9af76d5c41607553b9eed43df400a9750aad489c0f625b67611",
+  "zh": "我想研究它。或許我的探索會引領我找到它。它一定和 Marten 的遺骸在一起，不論遺骸在哪裡。"
+ },
+ {
+  "id": 69,
+  "src_sha256": "90ea98917cbb7b9aa4ca9cb2f3d5951b8a50dd416d738cf01ef691f882fc8195",
+  "zh": "是的，當然。 Chaos Moliri 。你們沒有問過 Screg 嗎？他是我們這裡對這項裝置最權威的人。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "96c296cfa514f7cfc6d2e71c19f2ce36c5aa95a4d4e814831bcde405b0268f61",
+  "zh": "一種絕對迷人的當地信仰。如果它真的發生，將是宇宙歷史上前所未有的事。細節我只有個大概，但我確實知道它發生在 Ascension Peak ，最終前往 Cosmic Circle 。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "679b24eeddbe7e38e55e9c121e1cfa7a94eea81f8b4f8728c4ac46629520207c",
+  "zh": "我偏好事實。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "467043e98461a2689d744bbca71f0ef875c063892278685d52b177aad3647716",
+  "zh": "我是 Urq 。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "b5502f3fe7c42997bf2bd3a32987d35b1ccf51a6b5ee6809802ddc47ff13c642",
+  "zh": "就信仰體系而言，命運（ destiny ）並不是 Mook 會認同的東西。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "ff1459ac2558d0674c683a10fe092f0e83d7aba335ec2e2974cc93bc8c8588af",
+  "zh": "我向你們保證，我已經徹底研究過了。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "62e4da590724103e5f488b7b240d083ee775bab7aebde4d502a85667f661a11d",
+  "zh": "那是不合邏輯的。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "4f1b0407bbaf670dec2293998074ba18d6499c7768e6fc14831976212089ac34",
+  "zh": "也向你們問好。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "71f8970026e37340938af8b3452eb8d818275d6dc6d3f00a65d7103b41cbba4a",
+  "zh": "這是我的榮幸。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "06a6bb67526d92d560372b2e35b780244b3e224e435e39fe4329eeb69548f25c",
+  "zh": "你們可以護送（ escorting ）我，那就是幫忙（ help ）了。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "b59e0e37a57bb0178e4f59b7bdc06c743616df1f6a41f8d83d2959859b38e996",
+  "zh": "我不參與這種討價還價的習俗。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "d46221c42727991f14f57abcf5d0b04b52eca3d06ac85eb3182be02025441fe2",
+  "zh": "我會做我的身心讀數，然後向你們回報。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "010782225790464a9863590f895f455b7266a333db61eda0cc60293830c25687",
+  "zh": "恕我直言，我們是科學的 Mook 。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "cd82f0591ff917b1c035f9f4bc177f845a2bb8f20162755c96a1e26c63e25f2b",
+  "zh": "我偵測到這裡有數處對峙。 T'Rang 與 Umpani 的衝突尤其長久。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "761237b5fae1e41a19835c7d02c808e680307508b837cb6a4577e3ba647543f8",
+  "zh": "你們知道這個？那是 Dark Savant 的船。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "4ef73b34398be35bda6ce25cf52134f443c83e19cceee395c05e70d0ed0754f0",
+  "zh": "你們也發展出讀心能力了？真有意思。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "e2f4e9860b9c3fd4d2bfa3bc6c8a53ba685b5644139ae2bb7e00fd138856dfe1",
+  "zh": "我原以為你們會讀我的心……"
+ },
+ {
+  "id": 89,
+  "src_sha256": "5816db18744c8f8d7d192b1b8a2dd321e8282d433dd7c5c70ac53d49946b5114",
+  "zh": "你們對讀心這行還挺生疏的，不是嗎……"
+ },
+ {
+  "id": 90,
+  "src_sha256": "16a87da96b87842a8c05f3522383397473367dd4d3a1276138e9cd6f2376efe2",
+  "zh": "就在這裡，在 Arnika 。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "baed03a6942158bfd30f2e75683ed006144bea1a4a4c5cefdbac722528cecc98",
+  "zh": "證據指向 Trynton 。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "bb7b33c2f0bb0e560072781c00e8a1892c5d548026d56ff5a779366537cbcf1d",
+  "zh": "你們試過沼澤了嗎？"
+ },
+ {
+  "id": 93,
+  "src_sha256": "c0577e2edd206340e43069e6febaf5ef26b7137e0696ff1b0ffacd4834d2da06",
+  "zh": "去調查 Marten's Bluff 。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "35f7b2672eb659e7b86c0639c475d83b9ed18adfc5620bebe14ca04d103c504e",
+  "zh": "是的，傳聞 Rapax 有一座前進營地（ Away Camp ）。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "a6a68f43f1cf957df76da27f4dc073ba5f452ba9b828d41991e8d5535803c815",
+  "zh": "Mt. Gigas 是可能的選擇。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "18da77ca1e16846367d6ef461983d64cb06ce8d9a4dbab3ab4bc5a45dbec8c5d",
+  "zh": "其他調查員提過海蝕洞（ Sea Caves ）。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "824db5a933180a1b892154c703ebf2529d2165b666ab36d95c2fc9f5ba6f73b3",
+  "zh": "我只是推測，不過我聽人提到過 Rapax Rift 。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "77dcf33cbcc02e4b2c48beb2c7aabb52c2dc8813a4b108f8892c5c20ac8ec3b0",
+  "zh": "也許是 Rapax Castle ？"
+ },
+ {
+  "id": 99,
+  "src_sha256": "08051f39b923df42afcf8716452dbf69bafb5582df014682f49955ddb5d5a538",
+  "zh": "Ascension Peak 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "52b5aa5084069061ec6dd601e26d784ddce13a064ce83ef62b8e366244218419",
+  "zh": "據稱，是 Cosmic Circle 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "b04aa09ea27bca4ffd06e145bf42f1b3d6c3144adcd6a636c0351a60fb10b8a5",
+  "zh": "那個問題不合邏輯。它就在這裡。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "c94fff0c2db9592a522053d2a0715a3536321bb78e9630c4604149b172234af6",
+  "zh": "那個答案需要研究……"
+ },
+ {
+  "id": 103,
+  "src_sha256": "b87aa747e73dccd13fb8dc6f843121c340788714f2a305769a1351de0cb510e0",
+  "zh": "Bayjin 是首要人選。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "b701d26b1fd8318b65780b9b9df925b71822f8471b9481dcacebe8bbb6b327c0",
+  "zh": "8696 號星系的 Trea 星。當然，那是我們的原生星球。離這裡有一段距離。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "a0cf6e1a152bb0a7a8bd47263b9e12337d8c2d05bd2983510137242d0ad99c50",
+  "zh": "當然。藉由運用人們的想法而非言語，我們能對討論的主題得到更為真實的評估。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "9583d09e401fd91ecbd85ac9bfa12d0e8318bf871841d776332d43f93dca09cb",
+  "zh": "要讓我的研究被認真看待，這是必要的。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "f48dccf8ee9eac7106250570fc383f19a0410505c82428ecafdfb1eeccf4a131",
+  "zh": "是的，有人護送（ escort ）會很有幫助。我很樂意加入你們。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "b02ff708887fa0128b246c2a66a947a520c56e56f3cd08cbe82f3c2965e70d0e",
+  "zh": "你們就別操心，交給我。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "10098a147d1dcba37be30c3ef538b271c886ee78b4ffef30ef60bf694a2c919b",
+  "zh": "是的， Higardi Lunar Legion 。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "1caf10b0392b8a1cf720c93fbc0d75b1d0734985666ebb55d61fb20a69726522",
+  "zh": "是的，那位旅行的 Trynnie 。我是在 Monastery 初次遇見他的。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "7abb3b3a184ec41ddc7bf0319e2892d2d4c5e88565009f7ac55bda6e31a710ea",
+  "zh": "是的， Higardi 的兄弟會所在之處，或者說曾經所在之處。我建議你們去問問 Higardi 。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "3ee8d4d213f097f1f0d1eb645aa0838199b67178990f4d1b35b2ef73c51d469e",
+  "zh": "所有研究都顯示他們是機器，由 Dark Savant 大量製造來保護他。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "c7c198485663feb852c7f8cd3f2ba7977fef3e975601a6a8e18874700d7ce4e3",
+  "zh": "實地造訪會有用得多。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "d45271fa11843849b3efca11bac9df78ff702d844a00a593c11ca9a61c5cd219",
+  "zh": "我是 Mook 最頂尖的生態系歷史學家之一。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "a827b5cc97043711dacb28b40d45053996432239d8d2a017d016afe35a3da544",
+  "zh": "我確定他就在營區裡。他領導我們在這裡的探險隊。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "d818713bcb6bbfd0f6cd5c3d89ac584db1bc6c347273808e8773ec33b5ad220e",
+  "zh": "好幾處地點……"
+ },
+ {
+  "id": 117,
+  "src_sha256": "6b686d402238c4ad751eed65f98505606564a5ab971d6351f5710b4e0e109701",
+  "zh": "我們相信 Dark Savant 擁有它。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "d7eaa184520880c65d739af0e2753d95bc476b91a3ce83c5642a75f4ee711a4c",
+  "zh": "我們相信它和 Marten 的遺骸在一起。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "78005f528da5d50e8fff63ad1403bd1e54769621783e1451f7836684fd76995c",
+  "zh": "我沒有他的消息。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "f53b94c8ae99c38fbf238b23ef70885bbbf737dc7c4821dcb63b7c9e6f99ffa8",
+  "zh": "你們一定知道我的意思。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "696af7a4ab4ef1a7addee4799595cc491641cb42ad2922fdf32198638b45c850",
+  "zh": "往北。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "0fe22ed18ba3022adac3885cecace0f0a27278636c2f6e23b50a7d80f824c628",
+  "zh": "往南。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "f729bfbf71b90a984b50c0062141de095096f07a4cddb8708eb7ecc5248fbc10",
+  "zh": "往東。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "a83715e02c3dc402955f9fa8e451e73f89b312cac1a3feaebdc40bae05189018",
+  "zh": "往西。"
+ }
+]

@@ -1,0 +1,86 @@
+# 位址樁（D4 公式，回傳／寫回取自 case 輸入，引數與呼叫次數成為輸出；F 以真 Go 函數在停泊列上重算）：4e79a0、524a10、547310、4e9f90、4ebfe0、53e250、52c240、5323f0、523c00、4f0480。
+# 位址樁（D4，只記錄引數與次數，本節點不讀其結果）：4e6ce0、4e8000、4e8370、4e9490、4ea5c0、4eac90、4eae20、4eb5a0、5049c0（經 505760）。
+# 位址樁（排除類，記錄引數與次數）：4f01d0、4c6200、4c5eb0、5554a0、52e690、56ee20、587a30、58a860、5b3100、596cf0、592e60、53a320、50b2f0、41f0d0、55ee70、5299b0、4bf970（vtable +0xc，回傳取自輸入）；MSS 匯入 AIL_sample_status／AIL_stream_status／AIL_3D_sample_status（回傳取自輸入）。其餘子呼叫在 calc 內嵌重現。
+# case 範圍：八個隊伍槽、怪物清單 0..2 筆、快取模板 0..3、效果清單 0..2 筆、500e50 清單 0..2 筆、物品清單 0..3 筆、群組清單各 0..2 組、每組 0..2 名、每槽待處理 ID 0..4 筆、堆積 0x80 位元組；超出上限 calc 報錯。雙重索引欄位的非作用槽與非作用怪物放誘餌值。
+# 覆蓋：4e90e0、4e9103、4e91a1、4e91a7、4e924b、4e93e2 為 srAssertFail 塊（行動狀態與行動者欄位不一致），case 不重放 assert 輸入，登記 cov-exempt，calc 報錯；其餘基本塊皆由合法輸入命中。D4 不宣稱子函式全部塊皆覆蓋。
+call	2b6	assertFailureIndirectCall	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，只在 cov-exempt 的塊裡出現
+call	406c00	timeLeft	距目標時刻的剩餘時間：目標大於現在時刻 [0x6eb70c] 時回差值，否則 0；calc 的 left
+call	408ef0	soundStillPlaying	聲音控制碼仍在播放：在 32 個 MSS 槽中找控制碼，依三種匯入狀態判定（狀態非 2／8 為播放中）；calc 的 sound
+call	420e10	sceneBusyFlag	讀 [0x65a0f8]+0x88 位元組；非零時本節點返回
+call	4a2760	effectListNext	走訪效果清單 [[0x659ab4]+0xb8]，游標 0x65bde4；calc 的 fxNext
+call	4a5790	effectUnfinished	效果物件 +0x1e0 為零且動畫狀態不為 1 時回 1；calc 的 fxBusy
+call	500e50	allEntriesReady	清單 [0x689b64] 每筆 +4 皆非零才回 1；calc 的 ready
+call	505760	monsterRedraw	對怪物以旗標 1、0 各呼叫 5049c0（樁）；calc 內嵌
+call	52c070	monsterFatigueApply	扣除怪物行動耐力、重算疲勞等級 +0x242，耐力歸零時經 523c00 施加狀態 0x11；calc 的 fatigue
+call	53ac30	releaseActionMarks	清除隊員行動所指怪物的標記位元並呼叫 4c5eb0（樁）；calc 的 release
+call	53bc10	attackContextSelect	攻擊情境選擇；calc 的 lsW.resolve
+call	55ee30	memberPanelRefresh	隊員面板更新旗標；calc 的 cgW.refresh
+call	565420	selectedPanelRefresh	模式 7 時併入介面更新位元 0x20000；calc 的 cgW.ui
+call	5e2c70	listCount	取怪物清單 [0x683fad] 元素數
+data	4e9460	actionStateJumpTable	行動狀態 0..3 的跳躍表（exe 內，執行時以 vauExeU32 讀）
+data	4e9470	actionKindJumpTable	隊員動作種類 0..5 的跳躍表（exe 內，執行時以 vauExeU32 讀）：決定重複階段是否重建動作記錄
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import；只在 cov-exempt 塊呼叫
+data	609b24	assertMessage	assert 訊息字串位址；只在 assert 失敗時使用
+data	61738c	assertSourceFile	assert 來源檔名字串位址；無規則效果
+data	617400	assertMessage	assert 訊息字串位址（狀態 0 怪物行動者非空）；只在 assert 失敗時使用
+data	617428	assertMessage	assert 訊息字串位址（狀態 0 隊員行動者非 -1）；只在 assert 失敗時使用
+data	65bde0	effectSlotTable	效果槽表，每筆 0x1e5，+0x154 為作用旗標
+data	6836a8	battleContext	戰鬥上下文；+0 戰鬥進行、+8 行動階段下限、+0x7a8／+0x7ac 等待時刻、+0x7b0 行動狀態、+0x7b4 行動隊員、+0x7b8 行動怪物、+0x7bc／+0x7c0 聲音控制碼與旗標、+0x8c0 待結算效果、+0x910／+0x918 模式欄、+0xa48..+0xa59 旗標；每隊員 0xd4 記錄
+data	683f94	partyModeF94	隊伍模式旗標；非零時檢查前兩槽的物品使用與錐形更新
+data	683fa5	pendingStartCounter	非零且 +0xa48 未設時呼叫 4e6ce0（樁）
+data	683fad	monsterList	怪物清單物件（5e2c70／4e5620 用）
+data	683fc5	phaseSuspended	非零時本節點立即返回
+data	6840bc	phaseSuspended2	非零時本節點立即返回
+data	6850d2	sceneModeFlag	非零且等待時刻已到且有可行動隊員時呼叫 4e8370（樁）
+data	685117	turnStartFlag	非零時行動者回合開始設 +0xa57
+data	685174	characterTable	角色記錄基底，每角色 0x1862
+data	685178	partySlotTable	隊伍槽基底，每槽 0x106
+data	68518d	selectedMember	選取隊員（-1 無）；與行動隊員相同時併入介面更新位元
+field	eax*4+0x4e9460	actionStateJumpTable	同 data 4e9460
+field	eax*4+0x4e9470	actionKindJumpTable	同 data 4e9470
+field	eax+0x0	monsterActive	戰鬥上下文 +0 戰鬥進行位元組（閒置分支）；怪物資料 +0 ID 傳給 523c00
+field	eax+0x151	monsterRedrawFlag	怪物行動資料 +0x151，非零時重繪並清零
+field	eax+0x1d8	effectSlotIndex	效果物件 +0x1d8 槽索引（效果槽表）
+field	eax+0x7b0	actionState	戰鬥上下文 +0x7b0 行動狀態（0..3），重複階段結束清零
+field	eax+0x7b4	actingMember	戰鬥上下文 +0x7b4 行動隊員（-1 無）
+field	eax+0x7b8	actingMonster	戰鬥上下文 +0x7b8 行動怪物指標（0 無）
+field	eax+0x7bc	pendingSoundHandle	戰鬥上下文 +0x7bc 聲音控制碼
+field	eax+0x7c0	pendingSoundFlag	戰鬥上下文 +0x7c0；非零時等聲音結束才清零
+field	eax+0x8c0	pendingEffect	戰鬥上下文 +0x8c0 待結算效果物件
+field	eax+0x910	partyActionMode	戰鬥上下文 +0x910 本回合隊伍模式（1／2 移動時呼叫 4f01d0）
+field	eax+0x918	battleMode918	戰鬥上下文 +0x918，==1 時跳過每幀閘門
+field	eax+0xa48	startCalledFlag	戰鬥上下文 +0xa48，呼叫 4e6ce0 後設 1
+field	eax+0xa52	forceNextRound	戰鬥上下文 +0xa52，非零時呼叫 4e8370（樁）
+field	eax+0xa54	defeatFlag	戰鬥上下文 +0xa54，決定 4e9f90 的旗標引數
+field	ecx+0x0	battleActiveOrCondition	戰鬥上下文 +0 戰鬥進行位元組；角色 +0xb01 狀態碼（<0xf 才算可行動）
+field	ecx+0x10	characterHp	角色 +0xb11 HP（以 +0xb01 為基底），0 視為倒下
+field	ecx+0x151	monsterRedrawFlag	同 eax+0x151，清零
+field	ecx+0x1e2	effectSettled	效果物件 +0x1e2，結算時設 1
+field	ecx+0x7a8	roundWaitTime	戰鬥上下文 +0x7a8 下回合等待時刻
+field	ecx+0x7ac	turnWaitTime	戰鬥上下文 +0x7ac 行動者回合等待時刻
+field	ecx+0x7b0	actionState	同 eax+0x7b0
+field	ecx+0x7b4	actingMember	同 eax+0x7b4
+field	ecx+0x7b8	actingMonster	同 eax+0x7b8
+field	ecx+0x7c0	pendingSoundFlag	同 eax+0x7c0，清零
+field	ecx+0xa48	startCalledFlag	同 eax+0xa48，設 1
+field	ecx+0xa57	turnStartedFlag	戰鬥上下文 +0xa57，685117 非零時設 1
+field	ecx+eax*4+0xbf	memberActionDone	每隊員 0xd4 記錄 +0xbf：非零時重複階段不重建動作記錄；雙重索引
+field	edi+0x0	monsterPhasePercent	怪物行動資料 +0 行動階段百分比：重選動作後累加，超過 100 或未重選時清零
+field	edi+0x4	monsterRepeatEnabled	怪物行動資料 +4，非零才嘗試重選動作
+field	edi+0x9	monsterRepeatCount	怪物行動資料 +9 剩餘次數，分母為其加一
+field	edi+eax*1+0x6d	memberActionArg1	隊伍槽 +0x6d，傳給 4e8000（樁）；雙重索引
+field	edi+eax*1+0x71	memberActionArg2	隊伍槽 +0x71，傳給 4e8000（樁）；雙重索引
+field	edi+edx*1+0x3d	memberActionKind	隊伍槽 +0x3d 動作種類（查跳躍表 4e9470）；雙重索引
+field	edx+0x0	partySlotPresent	隊伍槽 +0 在場位元組；雙重索引
+field	edx+0x7b8	actingMonster	同 eax+0x7b8
+field	edx+0x8	phaseFloor	戰鬥上下文 +8 行動階段下限（累加量為 100 減此值）
+field	edx+0x8c0	pendingEffect	同 eax+0x8c0
+field	edx+eax*2+0x1	memberAttackMode	隊伍槽 +1：0／1 呼叫 53e250、2 呼叫 4ebfe0、其餘狀態 3；雙重索引
+field	edx+ecx*1+0x154	effectSlotActive	效果槽表 +0x154 作用旗標；雙重索引
+field	esi+0x10	monsterActionData	怪物 +0x10 行動資料指標
+field	esi+0x14	monsterPresent	怪物 +0x14 在場位元組
+field	esi+0x15	monsterVisible	怪物 +0x15 位元組
+field	esi+0x2b	monsterHp	怪物 +0x2b HP，0 不重繪
+field	esi+0x2e1	monsterActionCode	怪物 +0x2e1 動作碼，0 才嘗試重選動作
+field	esi+0xc	monsterVisual	怪物 +0xc 外觀物件，傳給 4c6200（樁）
+field	esi+eax*1+0xa58	itemUsedFlag	戰鬥上下文 +0xa58+槽，前兩槽物品使用後設 1；雙重索引

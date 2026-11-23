@@ -1,0 +1,38 @@
+call	4ed900	copyIdList	id 名單的複製建構子：新緩衝 new(count*4)、容量設為 count、逐筆複製；原生執行，calc 以同一配置規則重現堆位址與內容
+call	53be00	makeCharacterSource	來源描述十三個雙字清零後寫種類 1、角色索引、怪物欄 -1；原生執行
+call	547120	hostileGroupMark	未登記；原生執行：0x547080（oppositeDispositionNode）為真時對怪物名單每個非 -1 的 id 查記錄，群組字 +4 非零則呼叫 0x5471d0（排除，case 位址樁只記次數）
+call	5e1c10	無關	operator delete：釋放兩個 id 名單緩衝，emu 堆不回收，無規則輸出
+call	5e1ce0	無關	operator new：兩個容量五的 id 名單初始緩衝與怪物名單複本的 count*4 緩衝；emu bump 堆，calc 以同一規則重現複本位址
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5e6e28	無關	例外展開處理資訊，正常遊戲規則沒有讀取
+data	5ebfe0	無關	id 名單的虛函數表，屬容器生命週期；以參數 4、8 交給 0x5560a0（樁記錄）
+data	6836a8	battleObject	戰鬥物件指標；+0xa4c 指向吐息效果物件
+data	685174	partyCharacterRecords	角色記錄陣列基址，步長 0x1862；讀 +0xb19 最大體力
+data	685178	partySlotRecords	角色副記錄陣列指標，步長 0x106；+0x1d 目標描述交給 0x4fd030 與 0x5560a0
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	ffffffffffffff7c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff80	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff84	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff88	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffbc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	ecx+0x1e4	effectReady	吐息效果物件就緒位元組；零則釋放名單回 2
+field	ecx+0x1e6	effectBusy	吐息效果物件位元組，就緒時寫 1
+field	ecx+eax*4	idListEntry	來源 id 名單第 i 筆（怪物名單複本迴圈的讀取）
+field	edx+0xa4c	battleEffect	戰鬥物件內的吐息效果物件指標
+field	edx+eax*4	idListCopyEntry	怪物名單複本緩衝第 i 筆（複本迴圈的寫入）
+field	edx+ecx*2+0xb19	maxStamina	角色最大體力 u32；除以 5 交給 0x52af50
+field	esi+0x0	idListVtable	傳值名單複本的虛函數表欄
+field	esi+0x4	idListCount	傳值名單複本的筆數
+field	esi+0x8	idListCapacity	傳值名單複本的容量，設為筆數
+field	esi+0xc	idListData	傳值名單複本的資料緩衝指標（堆位址，0x5560a0 參數 11）

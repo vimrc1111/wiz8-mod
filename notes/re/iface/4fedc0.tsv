@@ -1,0 +1,24 @@
+call	40efa0	randomBelow	依可選目標數擲骰；唯一乱數呼叫。
+call	4ac9d0	spellTargetKind	讀載入法術紀錄 +0x137，4 表示群體目標；本呼叫不轉換種類 1。spellIndex 選 fixture 150 筆（原版 0x96 筆）之一。
+call	4e5620	monsterAtListIndex	按怪物列表序號取實例；不是按怪物 ID 查找。
+call	53bea0	sourceIsCharacter	第二參數為零，只有來源種類 1 為角色；排除同角色索引。
+call	53bf10	sourceIsMonster	第二參數為零，只有來源種類 2 為怪物；排除同實例 ID。
+call	5e2c70	monsterListCount	空列表指標回零，否則取列表 +8 的成員數。
+data	683fad	monsterList	在場怪物列表全域指標。
+data	685178	partyAuxiliaryRecords	八個隊員副表的全域指標，每筆 0x106 bytes。
+data	4	targetCharacterIndexOffset	目標紀錄 +4 的角色索引；抽取器將欄位位移列為資料引用。
+data	8	targetMonsterIDOffset	目標紀錄 +8 的怪物 ID；抽取器將欄位位移列為資料引用。
+data	c	targetMonsterGroupOffset	目標紀錄 +0xc 的怪物群組；抽取器將欄位位移列為資料引用。
+field	eax+0x0	targetKind	輸出 1 單角色、2 全隊、3 單怪物、4 怪物群組。
+field	eax+0x4	targetCharacterIndex	選中隊員的槽索引，群體目標保留原值。
+field	eax+0x8	targetMonsterID	選中怪物的實例 ID，群組目標保留原值。
+field	eax+0xc	targetMonsterGroup	群體法術寫入選中怪物的群組 ID。
+field	ebp+0x4	sourceCharacterIndex	來源種類為角色時，用來排除原施法者。
+field	ebp+0x8	sourceMonsterID	來源種類為怪物時，用來排除原施法者 ID。
+field	esi+0x0	monsterID	怪物實例 ID；供來源排除及單體輸出。
+field	esi+0x4	monsterGroup	怪物群組 ID；供群體輸出。
+field	esi+0x14	monsterPresent	在場旗標非零才可選。
+field	esi+0x15	monsterActive	啟用旗標非零才可選。
+field	esi+0x2b	monsterCurrentHP	目前 HP 非零才可選，原版使用 unsigned 判斷。
+field	esi+eax*1	partyPresentDuringCount	副表 +0 非零才納入計數。
+field	esi+ecx*1	partyPresentDuringSelection	副表 +0 非零才納入第二輪選取。

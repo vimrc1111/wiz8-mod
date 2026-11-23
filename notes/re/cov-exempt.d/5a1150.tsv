@@ -1,0 +1,1 @@
+5a1150	5a11de	力量類別為 -1 時的專屬 srAssertFail 分支（Magic.cpp 行 2100）；失敗即停止、沒有可差分的正常返回，case 輸入範圍排除 -1，calc 以 panic 表示無正常輸出。

@@ -1,0 +1,76 @@
+call	428e20	availablePhysicalMemory	讀記憶體使用量，僅供生成診斷訊息的前後差值；來源 0x50f2ea、0x50f472。
+call	4be5c0	spawnFacingAngle	由生成座標與隊伍位置計算朝向，傳入群體場景配置；來源 0x50f39e。
+call	4e3930	monsterMemberInitialize	每個成員配置記錄並擲模板 HP/SP 骰，加入怪物與群體成員清單；來源 iface/4e3930.tsv、0x50f304。
+call	4e3c70	monsterActivate	啟用尚未在場的成員、建立場景模型並重建衍生規則；來源 iface/4e3c70.tsv、0x50f36f。
+call	4e5550	monsterIndexFromInstanceId	從普通／特殊怪物清單將實例識別碼解析為索引；來源 0x50f359。
+call	4e5620	monsterRecordFromIndex	取得普通／特殊怪物索引的記錄；來源 0x50f35f。
+call	4e57c0	monsterTemplateFromSpecies	查模板快取，未載入時嘗試讀怪物資料庫；來源 0x50f1e5、0x50f3f7。
+call	510590	groupUpdateMemberSpacing	取得群體領隊模型，更新其他成員相對領隊的間距；來源 0x5105bf..0x5106ba。
+call	510cc0	groupPlaceInScene	以位置、朝向及成員模型半徑在場景配置群體；來源 iface/511050.tsv、0x50f3a8。
+call	511250	groupInitialDisposition	從模板陣營／NPC 關聯計算群體初始態度；來源 0x51127a..0x511396。
+call	547570	groupSetDisposition	設定群體與成員的態度並處理相關場景狀態；來源 0x50f3c2、0x5475b7..0x54769e。
+call	58aad0	spawnDiagnosticMessage	輸出生成數量、名称、單複數文字及記憶體差值；來源 0x50f48f。
+call	5e2480	groupAppendToRegistry	新增群體指標至普通或特殊群體清單，回傳新增索引；來源 0x50f2cc。
+call	5e2900	groupMemberIdListCreate	建立初始容量十筆的識別碼清單；來源 0x50f23f、0x5e2964..0x5e2976。
+call	5e2c70	groupMemberIdCount	取得群體成員識別碼清單筆數；來源 0x50f336、0x50f37c。
+call	5e2c80	groupMemberIdAt	以成員序號取得識別碼；來源 0x50f347。
+call	5f	無關	抽取工具誤認的非函式目標，低於 PE ImageBase；本入口实际呼叫沒有此位址，與遊戲規則無關。
+call	65	無關	抽取工具誤認的非函式目標，低於 PE ImageBase；本入口实际呼叫沒有此位址，與遊戲規則無關。
+call	86	無關	抽取工具誤認的非函式目標，低於 PE ImageBase；本入口实际呼叫沒有此位址，與遊戲規則無關。
+data	5eb188	spawnNameFormatImport	swprintf 匯入槽，用於 NPC 名稱格式化；來源 0x50f440。
+data	5eb1a0	groupAllocateImport	malloc 匯入槽，配置 299 bytes 群體記錄；來源 0x50f1ba。
+data	5eb224	groupFreeImport	free 匯入槽，生成失敗時釋放群體；來源 0x50f1f4、0x50f24c、0x50f2da。
+data	614b44	npcNameFormat	NPC 名稱的格式字串；僅生成診斷使用，來源 0x50f436。
+data	619f8c	spawnDiagnosticFormat	生成診斷格式字串；來源 0x50f488。
+data	619fbc	spawnPluralVerb	生成數量不為一時的文字；來源 0x50f3ee。
+data	619fcc	spawnSingularVerb	生成數量為一時的文字；來源 0x50f3e7。
+data	619fdc	monsterGroupSourceFile	子函式斷言用來源檔名，與遊戲數值規則無關；來源 0x50f34f。
+data	683fb1	normalMonsterGroupRegistry	普通怪物群體指標清單；來源 0x50f2c5。
+data	683fbd	specialMonsterGroupRegistry	特殊怪物群體指標清單，模板特殊分類非零時使用；來源 0x50f2bc。
+data	685174	npcDatabaseRecords	NPC 記錄基址，診斷特殊模板名稱取選定 NPC 的名稱欄；來源 0x50f427。
+data	686a48	worldTime	生成時間，複製至群體 +0xcf；來源 0x50f2a8。
+data	6874ba	nextMonsterGroupId	群體識別碼計數器，零跳過並遞增；來源 0x50f204..0x50f213。
+data	6874be	nextMonsterInstanceId	個體識別碼計數器，生成後減一成為群體領隊識別碼；來源 0x50f319..0x50f324。
+data	6875c3	spawnNpcNameScratch	格式化後 NPC 名稱暫存區；來源 0x50f43b、0x50f449。
+data	6875ef	selectedNpcRecordIndex	診斷名稱用的 NPC 記錄索引，記錄步長 0x1862；來源 0x50f417..0x50f431。
+data	689b32	spawnDiagnosticsEnabled	非零且呼叫者要求回報時輸出生成診斷；來源 0x50f3d6。
+data	4	無關	抽取工具將堆疊參數／暫存槽位移列作資料位址；不是靜態遊戲資料表引用，實際參數與座標欄位另列。
+data	8	無關	抽取工具將堆疊參數／暫存槽位移列作資料位址；不是靜態遊戲資料表引用，實際參數與座標欄位另列。
+data	c	無關	抽取工具將堆疊參數／暫存槽位移列作資料位址；不是靜態遊戲資料表引用，實際參數與座標欄位另列。
+data	10	無關	抽取工具將堆疊參數／暫存槽位移列作資料位址；不是靜態遊戲資料表引用，實際參數與座標欄位另列。
+data	14	無關	抽取工具將堆疊參數／暫存槽位移列作資料位址；不是靜態遊戲資料表引用，實際參數與座標欄位另列。
+data	18	無關	抽取工具將堆疊參數／暫存槽位移列作資料位址；不是靜態遊戲資料表引用，實際參數與座標欄位另列。
+data	ffffffffffffffdc	無關	抽取工具將堆疊參數／暫存槽位移列作資料位址；不是靜態遊戲資料表引用，實際參數與座標欄位另列。
+field	eax+0x14	monsterPresent	成員在場旗標，零才呼叫啟用。 來源 0x50f1a0..0x50f49d。
+field	eax+0x187	templateNpcNameMarker	模板名稱識別值 397 時使用選定 NPC 的名稱。 來源 0x50f1a0..0x50f49d。
+field	ebp+0x26a	templateSpecialMonster	模板特殊分類 byte，決定群體登記清單。 來源 0x50f1a0..0x50f49d。
+field	ebp+0xd0	templateBehaviorFlags	模板行為旗標 bit 0x10 使名稱識別旗標為真。 來源 0x50f1a0..0x50f49d。
+field	edi+0x0	groupZeroInitializeDestination	群體配置後的清零目的指標。 來源 0x50f1a0..0x50f49d。
+field	esi+0x0	groupInstanceId	新配置群體的非零識別碼。 來源 0x50f1a0..0x50f49d。
+field	esi+0x4	groupMemberCount	個體初始化累加的群體成員數；診斷亦據此選名稱單複數。 來源 0x50f1a0..0x50f49d。
+field	esi+0x8	groupMemberIdList	新配置的成員識別碼清單。 來源 0x50f1a0..0x50f49d。
+field	esi+0xc	groupAuxiliaryCount	建立時清零的群體附加計數，本入口沒有額外判斷。 來源 0x50f1a0..0x50f49d。
+field	esi+0x10	groupAuxiliaryState	建立時清零的群體附加狀態，本入口沒有額外判斷。 來源 0x50f1a0..0x50f49d。
+field	esi+0x14	groupTotalCreated	建立時清零、每個成功個體建立後累加的總成員計數。 來源 0x50f1a0..0x50f49d。
+field	esi+0x18	groupTemplateId	呼叫者傳入的怪物模板索引。 來源 0x50f1a0..0x50f49d。
+field	esi+0x28	groupActive	建立初期零，成員啟用完成後設為一以允許群體場景配置。 來源 0x50f1a0..0x50f49d。
+field	esi+0x29	groupDisabled	建立時清零的群體禁用旗標。 來源 0x50f1a0..0x50f49d。
+field	esi+0x2b	groupInitialBehavior	新群體的初始行為碼，固定為三。 來源 0x50f1a0..0x50f49d。
+field	esi+0x2c	groupNameIdentified	呼叫者要求或模板旗標使名稱已識別，診斷選用識別名稱。 來源 0x50f1a0..0x50f49d。
+field	esi+0x2d	groupInitialControlFlag	建立時清零的群體控制旗標，本入口沒有額外判斷。 來源 0x50f1a0..0x50f49d。
+field	esi+0x2e	groupInitialSecondaryFlag	建立時清零的第二群體控制旗標，本入口沒有額外判斷。 來源 0x50f1a0..0x50f49d。
+field	esi+0x2f	groupInitialTargetId	初始目標識別碼為無效值 -1。 來源 0x50f1a0..0x50f49d。
+field	esi+0x9b	groupPreviousLeaderId	建立後設為無效識別碼 -1。 來源 0x50f1a0..0x50f49d。
+field	esi+0x9f	groupLeaderMonsterId	最後成功建立的怪物識別碼，由個體計數器減一取得。 來源 0x50f1a0..0x50f49d。
+field	esi+0xa3	groupParentId	關聯主群識別碼，建立時清零；用途見 0x5105bf。 來源 0x50f1a0..0x50f49d。
+field	esi+0xcf	groupSpawnTime	從全域世界時間複製的生成時間。 來源 0x50f1a0..0x50f49d。
+field	esi+0xa7	groupLinkedId1	第 1 個關聯群體識別碼，建立時清零；場景配置子函式會讀取。 來源 0x50f1a0..0x50f49d。
+field	esi+0xab	groupLinkedId2	第 2 個關聯群體識別碼，建立時清零；場景配置子函式會讀取。 來源 0x50f1a0..0x50f49d。
+field	esi+0xaf	groupLinkedId3	第 3 個關聯群體識別碼，建立時清零；場景配置子函式會讀取。 來源 0x50f1a0..0x50f49d。
+field	esi+0xb3	groupLinkedId4	第 4 個關聯群體識別碼，建立時清零；場景配置子函式會讀取。 來源 0x50f1a0..0x50f49d。
+field	ecx+0x0	spawnPositionX	群體座標目的欄，將 X 座標原樣複製。 來源 0x50f1a0..0x50f49d。
+field	ecx+0x4	spawnPositionY	群體座標目的欄，將 Y 座標原樣複製。 來源 0x50f1a0..0x50f49d。
+field	ecx+0x8	spawnPositionZ	群體座標目的欄，將 Z 座標原樣複製。 來源 0x50f1a0..0x50f49d。
+field	edx+0x0	spawnPositionX	呼叫者生成座標來源欄，將 X 座標原樣複製。 來源 0x50f1a0..0x50f49d。
+field	edx+0x4	spawnPositionY	呼叫者生成座標來源欄，將 Y 座標原樣複製。 來源 0x50f1a0..0x50f49d。
+field	edx+0x8	spawnPositionZ	呼叫者生成座標來源欄，將 Z 座標原樣複製。 來源 0x50f1a0..0x50f49d。

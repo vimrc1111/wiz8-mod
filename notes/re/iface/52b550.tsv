@@ -1,0 +1,9 @@
+call	52b590	character_random_realm_sp_drain	依隊伍槽位順序對有效角色呼叫隨機領域 SP 削減；每人收到相同原始需求與通知旗標，calc 組合既有 characterRandomRealmSpDrainNode，子函式原樣重放；case 沿用子節點 wcslen 固定回傳 1 的 cdecl 樁，合成姓名長度為 1，但訊息長度也簡化為 1，僅驗 SP、RNG 與刷新旗標，不驗文字長度或畫面排版
+data	4	drain_amount_argument	第一個 cdecl 參數為無號 DWORD SP 削減需求；此引用是堆疊參數位置，非資料表
+data	8	show_prompt_argument	第二個 cdecl 參數低 byte 控制扣 SP 提示；此引用是堆疊參數位置，非資料表
+data	685178	party_character_aux_records	角色副表指標，共八筆、每筆 0x106 bytes；首 byte 判斷槽位是否有效，case 提供獨立有效位，並合成子函式提示所需肖像欄位
+field	esi+eax*1	party_character_active	角色副表每筆首 byte，0 跳過角色、任何非零值皆交給隨機領域 SP 削減；case 含八名角色獨立有效位與 1、255 邊界
+data	685174	party_character_records	子函式讀八名角色各自 HP 與六領域 SP；case 逐筆配置，輸出全部 48 個 SP 並帶兩種 UI 刷新旗標，calc 重用子節點，不複製領域文字索引表
+data	6eb704	無關	提示排版用字型管理物件；case 合成零字元索引目錄及單一寬度 1 的字形，僅供戰鬥 UI 存在時原版提示子函式安全排版，不影響 SP 或 RNG
+data	6eb6a0	無關	提示字型指標目錄；case 合成字型 0，所有字元使用合成預設字形，未複製 exe 字型表
+data	686905	無關	戰鬥訊息目前選取的頁籤；case 固定為 3，SP 訊息屬頻道 0，避免提示觸發畫面捲動；不影響削減需求、SP 或 RNG

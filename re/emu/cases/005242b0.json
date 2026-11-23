@@ -1,0 +1,3067 @@
+{
+  "cc": "cdecl",
+  "steps": 20000,
+  "path_limit": 512,
+  "samples": 64,
+  "objects": {
+    "monster": 0,
+    "list": 4096,
+    "entries": 4128,
+    "render": 8192,
+    "renderState": 12288,
+    "visualList": 16384,
+    "rules": 20480,
+    "classNode": 32768,
+    "palette": 36864,
+    "filter": 40960,
+    "meshModel": 45056,
+    "modelInstance": 49152,
+    "visualManager": 53248,
+    "template": 57344,
+    "core": 61440,
+    "registry": 65536
+  },
+  "args": [
+    123,
+    0,
+    0,
+    0,
+    0
+  ],
+  "setup": [
+    {
+      "at": {
+        "global": "0x683fad"
+      },
+      "size": 4,
+      "value": "@list"
+    },
+    {
+      "at": {
+        "object": "list"
+      },
+      "size": 4,
+      "value": "@entries"
+    },
+    {
+      "at": {
+        "object": "list",
+        "offset": 8
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "entries"
+      },
+      "size": 4,
+      "value": "@monster"
+    },
+    {
+      "at": {
+        "object": "monster"
+      },
+      "size": 4,
+      "value": 123
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 12
+      },
+      "size": 4,
+      "value": "@render"
+    },
+    {
+      "at": {
+        "object": "render",
+        "offset": 472
+      },
+      "size": 4,
+      "value": "@renderState"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1512
+      },
+      "size": 4,
+      "value": "@visualList"
+    },
+    {
+      "at": {
+        "global": "0x65be1c"
+      },
+      "size": 4,
+      "value": "@rules"
+    },
+    {
+      "at": {
+        "object": "meshModel"
+      },
+      "size": 4,
+      "value": "0x5ec4b0"
+    },
+    {
+      "at": {
+        "global": "0x659ab4"
+      },
+      "size": 4,
+      "value": "@visualManager"
+    },
+    {
+      "at": {
+        "global": "0x6840c7"
+      },
+      "size": 4,
+      "value": "@template"
+    },
+    {
+      "at": {
+        "global": "0x5eb70c"
+      },
+      "size": 4,
+      "value": "@core"
+    },
+    {
+      "at": {
+        "object": "core",
+        "offset": 44
+      },
+      "size": 4,
+      "value": "@registry"
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 8
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 16
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 20
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 21
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 39
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 43
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 47
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 267
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 87
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 91
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 95
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 99
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 103
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 107
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 111
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 115
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 119
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 123
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 127
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 131
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 135
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 139
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 143
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 147
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 151
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 155
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 159
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 163
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 271
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 272
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 276
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 280
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 288
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 289
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 293
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 297
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 305
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 306
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 310
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 314
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 322
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 323
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 327
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 331
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 339
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 340
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 344
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 348
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 356
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 357
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 361
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 365
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 373
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 374
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 378
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 382
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 390
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 391
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 395
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 399
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 407
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 408
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 412
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 416
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 424
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 425
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 429
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 433
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 441
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 442
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 446
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 450
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 458
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 459
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 463
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 467
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "template",
+        "offset": 209
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "template",
+        "offset": 210
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "template",
+        "offset": 211
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "template",
+        "offset": 212
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "template",
+        "offset": 213
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "classNode",
+        "offset": 0
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "classNode",
+        "offset": 4
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "meshModel",
+        "offset": 308
+      },
+      "size": 4,
+      "value": 0
+    }
+  ],
+  "in": [
+    {
+      "name": "effectIndex",
+      "at": {
+        "arg": 1
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "newStrength",
+      "at": {
+        "arg": 2
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "newDuration",
+      "at": {
+        "arg": 3
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "newPercent",
+      "at": {
+        "arg": 4
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "oldStrength0",
+      "at": {
+        "object": "monster",
+        "offset": 167
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldPercent0",
+      "at": {
+        "object": "monster",
+        "offset": 171
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "oldDuration0",
+      "at": {
+        "object": "monster",
+        "offset": 175
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldStrength1",
+      "at": {
+        "object": "monster",
+        "offset": 179
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldPercent1",
+      "at": {
+        "object": "monster",
+        "offset": 183
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "oldDuration1",
+      "at": {
+        "object": "monster",
+        "offset": 187
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldStrength2",
+      "at": {
+        "object": "monster",
+        "offset": 191
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldPercent2",
+      "at": {
+        "object": "monster",
+        "offset": 195
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "oldDuration2",
+      "at": {
+        "object": "monster",
+        "offset": 199
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldStrength3",
+      "at": {
+        "object": "monster",
+        "offset": 203
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldPercent3",
+      "at": {
+        "object": "monster",
+        "offset": 207
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "oldDuration3",
+      "at": {
+        "object": "monster",
+        "offset": 211
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldStrength4",
+      "at": {
+        "object": "monster",
+        "offset": 215
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldPercent4",
+      "at": {
+        "object": "monster",
+        "offset": 219
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "oldDuration4",
+      "at": {
+        "object": "monster",
+        "offset": 223
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldStrength5",
+      "at": {
+        "object": "monster",
+        "offset": 227
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldPercent5",
+      "at": {
+        "object": "monster",
+        "offset": 231
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "oldDuration5",
+      "at": {
+        "object": "monster",
+        "offset": 235
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldStrength6",
+      "at": {
+        "object": "monster",
+        "offset": 239
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldPercent6",
+      "at": {
+        "object": "monster",
+        "offset": 243
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "oldDuration6",
+      "at": {
+        "object": "monster",
+        "offset": 247
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldStrength7",
+      "at": {
+        "object": "monster",
+        "offset": 251
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldPercent7",
+      "at": {
+        "object": "monster",
+        "offset": 255
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "oldDuration7",
+      "at": {
+        "object": "monster",
+        "offset": 259
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "oldAbsorptionPool",
+      "at": {
+        "object": "monster",
+        "offset": 197
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "Z",
+      "at": {
+        "object": "rules",
+        "offset": 9468
+      },
+      "size": 2,
+      "signed": true
+    },
+    {
+      "name": "N",
+      "at": {
+        "object": "rules",
+        "offset": 9470
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "S",
+      "at": {
+        "object": "rules",
+        "offset": 9471
+      },
+      "size": 1,
+      "signed": false
+    }
+  ],
+  "out": [
+    {
+      "name": "strength0",
+      "at": {
+        "object": "monster",
+        "offset": 167
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "percent0",
+      "at": {
+        "object": "monster",
+        "offset": 171
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "duration0",
+      "at": {
+        "object": "monster",
+        "offset": 175
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "strength1",
+      "at": {
+        "object": "monster",
+        "offset": 179
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "percent1",
+      "at": {
+        "object": "monster",
+        "offset": 183
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "duration1",
+      "at": {
+        "object": "monster",
+        "offset": 187
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "strength2",
+      "at": {
+        "object": "monster",
+        "offset": 191
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "percent2",
+      "at": {
+        "object": "monster",
+        "offset": 195
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "duration2",
+      "at": {
+        "object": "monster",
+        "offset": 199
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "strength3",
+      "at": {
+        "object": "monster",
+        "offset": 203
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "percent3",
+      "at": {
+        "object": "monster",
+        "offset": 207
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "duration3",
+      "at": {
+        "object": "monster",
+        "offset": 211
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "strength4",
+      "at": {
+        "object": "monster",
+        "offset": 215
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "percent4",
+      "at": {
+        "object": "monster",
+        "offset": 219
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "duration4",
+      "at": {
+        "object": "monster",
+        "offset": 223
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "strength5",
+      "at": {
+        "object": "monster",
+        "offset": 227
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "percent5",
+      "at": {
+        "object": "monster",
+        "offset": 231
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "duration5",
+      "at": {
+        "object": "monster",
+        "offset": 235
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "strength6",
+      "at": {
+        "object": "monster",
+        "offset": 239
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "percent6",
+      "at": {
+        "object": "monster",
+        "offset": 243
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "duration6",
+      "at": {
+        "object": "monster",
+        "offset": 247
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "strength7",
+      "at": {
+        "object": "monster",
+        "offset": 251
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "percent7",
+      "at": {
+        "object": "monster",
+        "offset": 255
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "duration7",
+      "at": {
+        "object": "monster",
+        "offset": 259
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "absorptionPool",
+      "at": {
+        "object": "monster",
+        "offset": 197
+      },
+      "size": 2,
+      "signed": false
+    }
+  ],
+  "boundary": [
+    [
+      0,
+      1,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      6
+    ],
+    [
+      2,
+      1,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      6
+    ],
+    [
+      6,
+      1,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      6
+    ],
+    [
+      7,
+      1,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      6
+    ],
+    [
+      0,
+      1,
+      10,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      6
+    ],
+    [
+      0,
+      1,
+      10,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      6
+    ],
+    [
+      0,
+      0,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      0,
+      1,
+      4294967295,
+      -2147483648,
+      1,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      0,
+      4294967294,
+      4294967295,
+      -2147483648,
+      4294967295,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      0,
+      4294967295,
+      4294967295,
+      -2147483648,
+      2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      1,
+      0,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      1,
+      1,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      1,
+      4294967294,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      1,
+      4294967295,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      2,
+      0,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      2,
+      1,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      2,
+      4294967294,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      2,
+      4294967295,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      3,
+      0,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      3,
+      1,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      3,
+      4294967294,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      3,
+      4294967295,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      4,
+      0,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      4,
+      1,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      4,
+      4294967294,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      4,
+      4294967295,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      5,
+      0,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      5,
+      1,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      5,
+      4294967294,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      5,
+      4294967295,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      6,
+      0,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      6,
+      1,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      6,
+      4294967294,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      1,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      6,
+      4294967295,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      7,
+      0,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      7,
+      1,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      4294967295,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      7,
+      4294967294,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      1,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      7,
+      4294967295,
+      4294967295,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2147483648,
+      0,
+      0,
+      65535,
+      -32768,
+      0,
+      255
+    ],
+    [
+      2,
+      4294967295,
+      1,
+      2147483647,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      32767,
+      3,
+      255
+    ],
+    [
+      2,
+      65536,
+      1,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -32768,
+      255,
+      0
+    ],
+    [
+      2,
+      65535,
+      1,
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      32767,
+      0,
+      0
+    ],
+    [
+      2,
+      2147483648,
+      1,
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -1,
+      1,
+      1
+    ],
+    [
+      2,
+      1,
+      1,
+      -100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      -1,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535,
+      0,
+      0,
+      0
+    ]
+  ],
+  "random": {
+    "seed": 5242,
+    "count": 64,
+    "ranges": [
+      [
+        0,
+        7
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        -2147483648,
+        2147483647
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        -32768,
+        32767
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        8
+      ]
+    ]
+  },
+  "stubs": {
+    "?getClassNode@srRegistry@@QAEPAVClassNode@1@K@Z": {
+      "ret": "classNode",
+      "pop": 4
+    },
+    "?registerInstance@srRegistry@@QAEXPAVClassNode@1@PAVsrRuntimeClass@@@Z": {
+      "ret": 0,
+      "pop": 8
+    },
+    "?getPalette@srCore@@QBEPAVsrPalette@@XZ": {
+      "ret": "palette",
+      "pop": 0
+    },
+    "?addReference@srClass@@QBEXXZ": {
+      "ret": 0,
+      "pop": 0
+    },
+    "?getFilter@srCore@@QBEPAVsrFilter@@XZ": {
+      "ret": "filter",
+      "pop": 0
+    },
+    "?mapPixelFormat@srPixelConvert@@SAXW4e_surfaceType@1@AAUPixelFormat@1@@Z": {
+      "ret": 0,
+      "pop": 0
+    },
+    "??0srMeshModel@@QAE@JJ@Z": {
+      "ret": "meshModel",
+      "pop": 8
+    },
+    "?reset@srMeshModel@@QAEXJJ@Z": {
+      "ret": 0,
+      "pop": 8
+    },
+    "?updateAllClients@srModel@@UAEXW4e_update@Client@1@@Z": {
+      "ret": 0,
+      "pop": 4
+    },
+    "?getDimensions@srTexture@@UAEXAAUDimensions@srTextureIFace@@@Z": {
+      "ret": 0,
+      "pop": 4
+    },
+    "?createGrid@srModeler@@QAEXJJ@Z": {
+      "ret": 0,
+      "pop": 8
+    },
+    "?planarMap@srModeler@@QAEXJJABUMappingInfo@1@@Z": {
+      "ret": 0,
+      "pop": 12
+    },
+    "?scale@srModeler@@QAEXABV?$srVector3T@M@@@Z": {
+      "ret": 0,
+      "pop": 4
+    },
+    "?convert@srModeler@@QAEXAAVsrMeshModel@@H@Z": {
+      "ret": 0,
+      "pop": 8
+    },
+    "?discard@srModeler@@QAEXXZ": {
+      "ret": 0,
+      "pop": 0
+    },
+    "?setMaterial@srMeshModel@@QAEXPAVsrMaterialIFace@@JW4e_side@1@@Z": {
+      "ret": 0,
+      "pop": 12
+    },
+    "?setTexture@srMeshModel@@QAEXPAVsrTextureIFace@@JJ@Z": {
+      "ret": 0,
+      "pop": 12
+    },
+    "?setShader@srMeshModel@@QAEXVsrShader@@J@Z": {
+      "ret": 0,
+      "pop": 8
+    },
+    "??0srModelInstance@@QAE@PAVsrNode@@@Z": {
+      "ret": "modelInstance",
+      "pop": 4
+    },
+    "?setModel@Client@srModel@@UAEXPAV2@@Z": {
+      "ret": 0,
+      "pop": 4
+    },
+    "?release@srClass@@QBEHXZ": {
+      "ret": 0,
+      "pop": 0
+    },
+    "?getModel@Client@srModel@@UBEPAV2@XZ": {
+      "ret": "meshModel",
+      "pop": 0
+    },
+    "?relocateVertices@srMeshModel@@QAEXABV?$srVector3T@M@@@Z": {
+      "ret": 0,
+      "pop": 4
+    },
+    "?getBoundingBox@srMeshModel@@UAEHAAV?$srVector3T@M@@0@Z": {
+      "ret": 0,
+      "pop": 8
+    },
+    "?clearFlag@srNode@@QAEXW4e_flag@1@@Z": {
+      "ret": 0,
+      "pop": 4
+    },
+    "?setParent@srNode@@QAEHPAV1@H@Z": {
+      "ret": 0,
+      "pop": 8
+    },
+    "?setLocation@srNode@@QAEXABV?$srVector3T@N@@@Z": {
+      "ret": 0,
+      "pop": 4
+    },
+    "?setRotation@srNode@@QAEXABV?$srMatrix3T@M@@@Z": {
+      "ret": 0,
+      "pop": 4
+    }
+  }
+}

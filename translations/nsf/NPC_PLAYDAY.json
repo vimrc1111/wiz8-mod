@@ -1,0 +1,227 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "36617fe599b53190be573a0f3c5a1457192a64a0ad1748593d8673333bffaca8",
+  "zh": "嗨。我是為 Play Day 建立的 NPC。你們正在玩的這一段遊戲，也就是 T'Rang 區域，劇情推進非常依賴 Umpani 區域。因為 Umpani 區域還沒做好，我就在這裡當它的代表。 Z'Ant 永遠不會發現差別。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "c85bf5fd191a2d65954124390ebd47cbdd75a578e4b99e01e12d0c1f365d6b18",
+  "zh": "嗨。等一下，我要先侵入你們的事實資料庫……"
+ },
+ {
+  "id": 8,
+  "src_sha256": "3c32b0e656210c974249e7f28128846d0a01e2f9f2a64cad0db446c6775e381b",
+  "zh": "先把那場仗打完……"
+ },
+ {
+  "id": 9,
+  "src_sha256": "1ee16a3f4db33a608f39a4ad70d2dfbca5ff2f309a37250b259bd2dc92f3bcae",
+  "zh": "噢，不了，謝謝。我希望加入 Asheron's Call 的公會。我隨時都在等他們打電話來。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "8569efc4ed5a6273140c2b6ec0ab8d99f4398210808fbb7c0cbbae4fbcc21350",
+  "zh": "謝謝。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "f3d0e3059aacefae9f1fbd2a707eceb0acfcd20759fe1eec9a47abb225774b3c",
+  "zh": "那是屁話。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "a731f893afc0121bd4ac46085cb75b39eb0af4470061c68f896cd5517e0db6bb",
+  "zh": "你們惹毛我了。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "befa2cf22ec0f1e5497b4a98697adaa7d4c6781c5516bb31ad5270dfa185abbf",
+  "zh": "看！你們剛剛測試了 Emmons 的偷竊程式碼。你們被抓到了！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "72bc72bb24dd22b2ff36f1baca782ff710693c974585384778482a059616d34b",
+  "zh": "你們這些混蛋！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "47da3700c2731de7722a8f9226fd97b54310226e5fdf8cb25909dc433f6a3df9",
+  "zh": "謝謝你們的捐款。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "078dba2e2a89621e1914445754b66211269dfdc539b98b251cb7d39ceb03aa3b",
+  "zh": "去問真正的 NPC 吧。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "a6fb5b18ccf21c1c1110eaa09e62b1c4390f19a09a52906131835d232b1245f9",
+  "zh": "我只是個替身 NPC。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "bab6372d4491d024c18761ad4e27840495de8b5e00254eb083b7b2caf1ccb3ca",
+  "zh": "再來一次……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "318cb3150b87b319a390fecfd080053b9944eb66d8963a1ac24c9ce15f1e878a",
+  "zh": "嘰嘰喳喳。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "b7f232d0fcf86ab4b7710e46e254049b3c5a0788ea55f9fdc8aca40b1bc5bd48",
+  "zh": "還有……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "9cbb3ef55b7125bf2d1720f35d08c1e2a45e9f1ca0e87bb4cd21792cbca48e56",
+  "zh": "隨便。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "a4949e2c96de26681c9519749e57bfb362bbac2a8f40c89b24c35d1de111336d",
+  "zh": "什麼？"
+ },
+ {
+  "id": 30,
+  "src_sha256": "55c3e5daec20a64dcc70fbed694d58b7b529e567f03b0c43f0d6ac23630f7c4e",
+  "zh": "嗯？"
+ },
+ {
+  "id": 65,
+  "src_sha256": "09cf1fe3da04d5ceb654ac2bd7ccc11914bea6f371b7e6677b790a7bb9752c82",
+  "zh": "他是 T'Rang 的領袖。穿過我右邊那道門就是了。他就在裡面某處。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "dc723d9ccc466a0a119c32f71eedea810fcb5c3d2dd9b067bcf10338e1dd7e2c",
+  "zh": "我是暫時的。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "f13226874d5717abd15b74f31ff3052273d2130e6ef58128fef55146fa816747",
+  "zh": "我昨晚就做完了！"
+ },
+ {
+  "id": 76,
+  "src_sha256": "2682205bf1b65753eb6f013a707ac0c4426fc23bc6afd42853b0155644153c2a",
+  "zh": "Play Day 一結束我就走。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "2d8bd7d9bb5f85ba643f0110d50cb506a1fe439e769a22503193ea6046bb87f7",
+  "zh": "哈囉。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "2b687db6298b629d3bcb482f16aa774a55eb5ae768407b8fba9982387b6c6f81",
+  "zh": "再見。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "38178a20b470cfd18299fb1593dd4ba706f1a83321dac051d01086efd8b7a96f",
+  "zh": "不。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "176e19fa5e1fce7346d832115b1ab953f208ab42ba2e9849472df6529da3594c",
+  "zh": "什麼都賣完了。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "e4383618e44faf25843ea47a405387e0090bae5c576aa834f18c14a46d221610",
+  "zh": "我很快樂。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "8d56a5318fd3688484fa5f3b0a6063265e7a7be85b96f42cd71f060023aa22b7",
+  "zh": "賣完了。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "f7c80c67b739a26c551bc428065a1fce7c8de2f5eaa8c28586bd5d7fc15533be",
+  "zh": "Z'Ant 派你們執行「偷旗」任務。如果 Umpani 區域在這裡，你們就得想辦法從他們的旗桿上偷旗子（還不能被殺）。聰明的玩家會發現裡面就能買到旗子。在 Play Day 中，旗子被藏在這個關卡的某處。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "3c7348e4920d4561bc362a3641719f358f7c6006ba91fa32c0e22e1303ef95dc",
+  "zh": "Z'Ant 要你們去殺 Raven Rapax 。他就在這一帶的某處。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "a133fe64ec18ffc76c9d1a891a55a88729e2c7b5c2f4e7ea873f270e37eed893",
+  "zh": "Z'Ant 派你們去 Arnika 與 Mook 會面。他給了你們一封信，能讓你們進入他們的建築，而且他預期你們進去之後會偷走一件長得像 Astral Dominae 的裝置。所以，請把信交給我……"
+ },
+ {
+  "id": 107,
+  "src_sha256": "a193cb9382d9d45d627a6610ead0ce34244533bd58b3ee10c00a789d0717cea4",
+  "zh": "Z'Ant 要你們取得 Savant 飛船的軌道座標。要完成這項任務，你們得前往 Bayjin ，從 Helazoid 太空船取得黑盒子。然後把它帶到 Arnika ，用太空港的電腦處理。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "b619fe1327200d673d02a9f8ab3b38ffd2cbd3453a5881ca122a9d101599baca",
+  "zh": "最終，你們會得出這些數字：10:24"
+ },
+ {
+  "id": 109,
+  "src_sha256": "e5f57882463f0d0b2ccc6405e6596addc487e569eb8100d20d3d871aa38a02d5",
+  "zh": "Z'Ant 要你們把 Umpani 烤了。他和你們這些玩家都不知道的是，另外兩個 NPC，Rodan（一個 Umpani）和 Drazic（一個 T'Rang）已經開始為兩族之間的和平努力。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "790390979064feaf14d1bee71771e182b8bbaccd36bad8de1d72aa9934cf647e",
+  "zh": "這兩個 NPC 被 Rapax 俘虜，目前被關在 Rapax Away Camp。在那裡，他們得知 Savant 和 Rapax 已經結盟。對他們來說，Umpani 或 T'Rang 要活下去，*唯一*的辦法就是團結起來對抗 Dark Savant 。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "0d4126d99a0e3b7831d8f5cd56b5b887a1a0bd908f8cd830ac4080c0c464a496",
+  "zh": "身為玩家，你們要嘛找到這兩個傢伙走和平路線，說服 Z'Ant 和 Yamir （Umpani 的領袖）這樣對大家最好……要嘛當個變態混蛋，找到 Umpani 的線人，把 Umpani 營地炸掉。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "51f9f740cff024e02d359009e6ae4b324f6445b42c19ca03aff8897d4c916ee7",
+  "zh": "不過你們到不了那些區域，所以我們就假裝你們是群變態混蛋吧。來嘛，你們知道你們是。你們的事實剛剛被修改了。回去找 Z'Ant 。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "e2b0487d79ae482e3e85f472811c2cba13b193b69eda7a1010fc960d59adfca5",
+  "zh": "Z'Ant 告訴你們他會在 Ascension Peak 跟你們會合。他現在就是往那裡去。恭喜。你們剛剛玩完了 T'Rang 陣營路線最精簡的版本。玩真正的遊戲時，我強烈建議走和平任務路線。滿好玩的。謝謝你們的遊玩。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "618ca88b22a76a18d5a27754401ebcd9cfae08a55310dabadc8b661b9e258988",
+  "zh": "第一步，我建議你們去 Marten's Bluff，與 T'Rang 結盟。當然，在真正的遊戲裡，你們不會被迫與任何人結盟。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "3caaf96c9370cd8d48c26d69bf7f25500202f998006f4deb82b38656bf399e91",
+  "zh": "我對你們一無所知，就算知道，我也不會告訴任何人。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "25a17e9bc2c36e4ba175e48aaa7c9ebbf7bce0560c23b1ec73481d0b88c6c141",
+  "zh": "謝謝。在真正的遊戲裡，Screg 現在會讓你們進入 Mook 的營地。然後你們會找到那個裝置。不過偷它並不像 Z'Ant 讓你們以為的那麼簡單。既然你們到不了 Arnika ，我就直接把裝置給你們……"
+ },
+ {
+  "id": 117,
+  "src_sha256": "425af509481111e8e928122de48aa4784253e69f646fa44b6c6e24ad424377a5",
+  "zh": "北。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "89f85d51886091ca4aae86247e5e57b07b8268c3b7051dedae5a4c2e58c41af6",
+  "zh": "南。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "dff594118d30d9d4a81789b241eeb4ea1cd282833135b155612fb97e399ddeda",
+  "zh": "東。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "665ac509754c3d7f395c3280e80de0ff676d3065dd50bb3a7beb85c7562602a4",
+  "zh": "西。"
+ }
+]

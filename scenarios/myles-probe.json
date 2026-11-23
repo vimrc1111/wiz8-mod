@@ -1,0 +1,100 @@
+{
+ "id": "myles-probe",
+ "duration": 95,
+ "files": [
+  {
+   "src": "hook/ddraw/out/ddraw.dll",
+   "dst": "ddraw.dll"
+  },
+  {
+   "src": "build/zh/PATCH.002",
+   "dst": "Patches/PATCH.002"
+  }
+ ],
+ "steps": [
+  {
+   "t": 38,
+   "keys": "{DOWN}"
+  },
+  {
+   "t": 39,
+   "keys": "{DOWN}"
+  },
+  {
+   "t": 41,
+   "keys": "{ENTER}"
+  },
+  {
+   "t": 46,
+   "click": [
+    735,
+    498
+   ]
+  },
+  {
+   "t": 48,
+   "click": [
+    735,
+    498
+   ]
+  },
+  {
+   "t": 50,
+   "click": [
+    735,
+    498
+   ]
+  },
+  {
+   "t": 52,
+   "click": [
+    735,
+    498
+   ]
+  },
+  {
+   "t": 55,
+   "shot": "page5"
+  },
+  {
+   "t": 56,
+   "click": [
+    556,
+    67
+   ]
+  },
+  {
+   "t": 58,
+   "click": [
+    701,
+    555
+   ]
+  },
+  {
+   "t": 76,
+   "shot": "dialog"
+  },
+  {
+   "t": 78,
+   "click": [
+    629,
+    369
+   ]
+  },
+  {
+   "t": 79,
+   "click": [
+    682,
+    520
+   ]
+  },
+  {
+   "t": 82,
+   "shot": "reply"
+  },
+  {
+   "t": 86,
+   "shot": "reply2"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+call	2b6	無關	分析器把 srAssertFail 匯入（IAT 0x5ebaf4）的間接呼叫誤列為相對目標；只在 50f1a0 回 NULL 的 assert 塊 556b89，該塊 cov-exempt，calc panic
+call	4e57c0	monsterTemplateGet	物種模板指標：快取 0x6840c7+4*物種；未命中需讀模板檔（模擬器限制），物種 >= 1000 assert；calc 只接受物種 0..0x3f、0x94..0x99 的快取，其餘 panic
+call	505810	combatParticipantsRefresh	原生執行：一般怪物清單 0x683fad 每筆呼叫 5049c0(rec,1,0)，戰鬥中（0x683f94）再呼叫 593330、53bf80，再每筆 5049c0(rec,0,0)；5049c0／593330／53bf80 為位址樁，case 記錄次數與參數
+call	50f5d0	groupRemoveMembers	原生執行：成員由後往前取索引（4e5550）呼叫 4e3af0(idx,1)，回 al 為 0 即停；4e3af0 為排除位址樁，回傳取自 case 輸入（n=4）
+call	511ce0	groupClearBusy	原生執行：每個成員的視覺物件 +0xb4 清 0（呼叫參數 0）
+call	547570	groupDispositionSet	原生執行：群體態度設為 1 或 2（來源怪物 +0x16 為 2 才 2）；全成員 act15 或怪物視覺凍結即返回；寫 +0x2a、+0xca、+0xcb＝世界時間 0x686a48；需要時以 58aad0 記錄訊息（字串索引表 0x61ec0c 從 exe 讀）；每個成員 5477d0 設態度並視戰鬥狀態清目標或呼叫 4eb7f0／531540；最後 565420 設 UI 旗標 0x20000
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表（[esp+0x8] 來源怪物；[eax+0x8] 見欄位）
+data	c	無關	立即值 0xc（種類 0x1f 對應的物種編號）與參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	堆疊位移／種類減 0x18 的立即值被分析為資料引用，非遊戲資料或表
+data	556c98	kindSpeciesJumpTable	種類 0x18..0x1f 的 switch 跳轉表：0x99、0x95、0x96、0x97、0x98、0x94、種類本身、0xc；其餘種類用本身；calc 以常數表重現
+data	5ebaf4	無關	斷言失敗處理的匯入位置；只在 50f1a0 回 NULL 的 assert 塊呼叫
+data	61e32c	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	61f1b8	sourceFileName	原始檔名字串位址：4e5840 查怪物的 assert 參數（找不到才用），值本身不影響結果
+data	68c09c	stringTable	訊息字串表指標；+0x9a8 為放置失敗訊息，傳給 58ac00（排除位址樁，case 記錄）
+field	eax*4+0x556c98	kindSpeciesJumpTable	種類 0x18..0x1f 的跳轉表索引
+field	eax+0x8	monsterId	來源怪物物件 +8 的怪物編號，用 4e5840 查記錄
+field	ebx+0x16	monsterDisposition	來源怪物記錄的態度位元組：為 2 時新群體態度設 2，否則 1
+field	ebx+0x34c	monsterPlacedFlag	來源怪物記錄 +0x34c 位元組：為 1 時用 511050 三段距離重放，否則用 4be5c0 朝向＋510cc0 放置
+field	edx+0x9a8	placeFailMessage	字串表 +0x9a8：群體放置失敗時給 58ac00 的訊息
+field	esi+0x9f	groupLeaderMonsterId	新群體 +0x9f 的怪物編號，4e5840 查記錄（結果未用，找不到 assert）

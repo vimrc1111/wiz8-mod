@@ -1,0 +1,38 @@
+call	2b6	無關	抽取器把 0x5592b6 的指令位移（函式前一段的填充或相鄰碼）誤列為呼叫目標，函式內沒有對 0x2b6 的 call；實際子呼叫只有 0x40efa0 與 srAssertFail import
+call	40efa0	randomAttributeSlot	抽籤器 R(7)，回傳 0..6；正分配分支每輪呼叫一次但回傳值被丟棄（只推進亂數），負分配分支回傳值是被扣屬性的槽號
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	559590	attributeSwitchJumpTable1	0x5592d0 內 switch(索引0..6) 的跳轉表，把來源屬性序號對應到區域陣列槽；0..5 對應自身，只是 ConvertAttribute 斷言的 switch，無規則數值
+data	559594	attributeSwitchJumpTable1	同 0x559590 跳轉表的後續項，來源屬性序號到槽的恆等映射，無規則數值
+data	5595ac	attributeSwitchJumpTable2	0x5592d0 內第二個 switch 的跳轉表，累加時重選同一槽；恆等映射，無規則數值
+data	5595b0	attributeSwitchJumpTable2	同 0x5595ac 跳轉表的後續項，恆等映射，無規則數值
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；只供屬性序號超過 6 的斷言分支，該分支在 0..5 迴圈下走不到
+data	609b24	無關	斷言字串 FALSE，只供 srAssertFail 訊息
+data	614cf0	raceBaseAttributeTable	種族初始七項屬性表，每族 7 個 u32（力量、智力、虔誠、體質、敏捷、速度、感知），從使用者 Wiz8.exe 讀；種族索引 0..10
+data	614e24	classMinimumAttributeTable	職業七項屬性最低值表，每職業 7 個 u32，從使用者 Wiz8.exe 讀；職業索引 0..14
+data	614fc8	classPrimaryAttributeTable	職業三項主屬性索引表，每職業 3 個 u32 屬性槽（0..6），該槽權重加 40；從使用者 Wiz8.exe 讀
+data	614fcc	classPrimaryAttributeTable	同 0x614fc8 表第二、三項（每職業 12 bytes 內的偏移）
+data	62a760	無關	斷言檔名字串，只供 srAssertFail 訊息
+data	62a794	無關	斷言函式名字串 ConvertAttribute，只供 srAssertFail 訊息
+data	ffffffffffffffe0	無關	區域暫存的負位移被分析為資料引用；對應七槽權重陣列與累計值的堆疊位置，非外部位址
+data	ffffffffffffffe4	無關	區域暫存的負位移被分析為資料引用，非外部位址
+data	ffffffffffffffe8	無關	區域暫存的負位移被分析為資料引用，非外部位址
+data	fffffffffffffffc	無關	區域暫存的負位移被分析為資料引用，非外部位址
+field	eax+0x0	localWeightSlot	區域七槽權重陣列的槽（職業主屬性加 40 的寫回點），非角色欄位
+field	ebp*4+0x614cf0	raceBaseAttributeTable	負分配分支以(種族×7+槽)索引種族初始屬性表，作為扣點下限
+field	ebx*4+0x614e24	classMinimumAttributeTable	提升至最低值迴圈以(職業×7+槽)索引職業最低值表
+field	ebx-0x75	無關	函式前方緊接的資料位元組被反組譯成指令產生的偽欄位，函式入口實際為 sub esp,0x20，不是欄位存取
+field	ecx+0x0	classPrimaryEntryOrAttributeSlot	兩用指標讀取：職業主屬性表項（取槽號）；以及目標屬性槽（+0xe5 起間隔 0x14）的 u32 目前值，按比例分配時讀取
+field	edi*4+0x614cf0	raceBaseAttributeTable	以(種族×7+槽)索引種族初始屬性表，寫入目標屬性槽
+field	edi+0x0	localWeightSlot	區域七槽權重（來源六項屬性、第七項為六項平均，職業主屬性槽加 40）的讀取，用於按比例分配
+field	edx*4+0x614e24	classMinimumAttributeTable	負分配分支以(職業×7+隨機槽)索引職業最低值表，非零才可扣點
+field	edx+0x0	attributeSlotValue	目標屬性槽的 u32：以種族表初始化寫入、提升到職業最低值時讀寫
+field	esi*4+0x559590	attributeSwitchJumpTable1	讀第一個 switch 的跳轉表項，恆等映射，無規則數值
+field	esi*4+0x5595ac	attributeSwitchJumpTable2	讀第二個 switch 的跳轉表項，恆等映射，無規則數值
+field	esi+0x0	attributeSlotValue	隨機補點迴圈以游標指到的目標屬性槽 u32：小於 100 才加 1；游標依序前進（不依亂數結果），可走出七個屬性槽到後方角色欄位
+field	esi+0x199	attributeOverflowDebt	目標角色 +0x199 的 i32：負分配分支寫入負的剩餘值（70 減提升量）；正分配分支不寫，且它正好是游標第 10 格（0xe5+9×0x14）
+field	esi+0x69	characterClass	目標角色職業索引 u32，0..14，索引職業最低值與主屬性表
+field	esi+0x71	characterRace	目標角色種族索引 u32，0..10，索引種族初始屬性表
+field	esi+0xe1	attributeInitializedFlag	目標角色 +0xe1：負分配分支寫 1；正分配分支不寫
+field	esi+ecx*1+0x170	sourceBaseAttribute	來源（隨機生成參考）角色 +0x170 起六個 u8 基礎屬性，第七、八個位元組（索引 6、7）被迴圈略過
+field	esi+ecx*4+0xe5	attributeSlotValue	目標屬性槽（+0xe5 起間隔 0x14）的 u32，負分配分支讀值並減 1

@@ -1,0 +1,62 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "d140f8eb64a8159d99888bc135a96ea947632236d41ba46eed5299e578f49f07",
+  "zh": "我擋到你們了嗎？抱歉啊……"
+ },
+ {
+  "id": 3,
+  "src_sha256": "5e654e8b52c6c7ae630ae3c88f6617da85b079a042d5d29b75ba64a26b1afcbc",
+  "zh": "我盯著你們呢。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "018a34016f06db0c6d15961eda054fb203c630fc4b17a1f20cb8dffa9f5f5357",
+  "zh": "請忙你們的事去吧。"
+ },
+ {
+  "id": 5,
+  "src_sha256": "831d60a1a2db668d6b2e246c6a308279df90aece38e5c475f5d8f6447ea77492",
+  "zh": "歡迎光臨 Arnika 社區銀行。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "b776875e42eb48076b20bbc5336bb1e213b99afb6089838fe908f0d520eac721",
+  "zh": "最好別打什麼歪主意。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "407db7345761ddf28fdc36839c91675b28eaee02133eeb3fccaccf09e74be3dd",
+  "zh": "這個月這裡已經遭過一兩次搶了。別想耍花樣。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "38554be0a4c6e06c7df85783b6c97f098480c48d633190373c9f61b40f651015",
+  "zh": "是你們先動手的！你們來收場！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "01e1dc0524f1360f46266dfd7ac5fbf2dc2fe4fd6aa854318252fe4d92683521",
+  "zh": "小偷！！你們哪兒也別想去！活著離開是不可能的……"
+ },
+ {
+  "id": 10,
+  "src_sha256": "503a1b4f7cdc3c7cb51bac7eb2d9ce7a64e4bc7880a22ad5ff0bb807868a6902",
+  "zh": "警衛！警衛！銀行裡有入侵者！"
+ },
+ {
+  "id": 11,
+  "src_sha256": "117cea166b8d4cc7df3512677d403480be18b215baed92eb731af4be5e5eea73",
+  "zh": "喔不，你們休想！我們知道你們想幹什麼。搶劫！"
+ },
+ {
+  "id": 12,
+  "src_sha256": "4fe4bb337143e7f295ee85d8c13d02fb202124951f1a5aeeebe31c3f70e4f5f9",
+  "zh": "原來你們在這裡！我抓到他們了！"
+ },
+ {
+  "id": 13,
+  "src_sha256": "2bc71afe8671aec9c62ec80e6bbce9238cf5ac4eb4d0a1e97049edaafd67216a",
+  "zh": "那個爛警報器又壞了。"
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "b2b537ca7d9ee5f57128b85dc0abaf743dbb2b4d3b4eb1c9b399a3f15fcbce81",
+  "zh": "誰派你們來的？"
+ },
+ {
+  "id": 3,
+  "src_sha256": "76d501cd789b7558eab2d2ee87f5dee013b601376b84f2b8820a40ec10966985",
+  "zh": "原來如此。你們想進入這裡，她的入門者聖殿（ Temple of the Initiate ）。 Al-Sedexus 會歡迎你們。不過首先……"
+ },
+ {
+  "id": 4,
+  "src_sha256": "237ef6f16cdbf4acbabbf2576fe53a9e0cab610875cf60b040e571fadaded787",
+  "zh": "你們沒說實話。是你們自己派自己來的。"
+ },
+ {
+  "id": 5,
+  "src_sha256": "18a6056cc737fc137d3a057df6672d6dbeba2f1b161c6ffbde8834ec8a1c9df3",
+  "zh": "你們獻上了配得上 Al-Sedexus 的供奉……於是你們身為入門者（ Initiate ）在她聖殿中的角色就此開始。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "b91a81c9ec61ff143ac3b3ef42fd89e7883c57911df57f03d344cba613b6ec58",
+  "zh": "別浪費我的時間……"
+ },
+ {
+  "id": 7,
+  "src_sha256": "721003512713e8a8e2fcae95ca38ff69261f58fa45799373a29a9c747e40921a",
+  "zh": "你們在這裡有太多更刺激的事要做，何必跟我說話，入門者（ Initiate ）！"
+ },
+ {
+  "id": 8,
+  "src_sha256": "05b1ecc8d5c2ccf144794b78f5eaf70544ee03152162ca93df571c21bb8faf56",
+  "zh": "依我看，你們有更要緊的事要辦……"
+ },
+ {
+  "id": 9,
+  "src_sha256": "9c0f7571d83f83843cdd08d098822413f775c1155082c7908c7bd6f1476f9378",
+  "zh": "你們準備好為你們的入會儀式付出代價了嗎？"
+ },
+ {
+  "id": 10,
+  "src_sha256": "e195828449d7696cc3ac7c1c053bacab7c517d68fe9a787d3ec9feceec84caf7",
+  "zh": "你們的供奉不夠。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "23650a59b91b3233ae1d66387e96bd4d907ce10ace07aeaed368ea4f9fb56ef3",
+  "zh": "衛兵！！！！"
+ },
+ {
+  "id": 12,
+  "src_sha256": "76ec250bc9dd6b0e0db324f5c789687637db27d7b6389aea953194fc94738d04",
+  "zh": "你們將死得極其痛苦！"
+ }
+]

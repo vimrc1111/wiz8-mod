@@ -1,0 +1,894 @@
+{
+  "cc": "cdecl",
+  "steps": 50000,
+  "path_limit": 256,
+  "samples": 32,
+  "objects": {
+    "effect": 0,
+    "monster": 4096,
+    "template": 8192,
+    "rules": 12288,
+    "party": 28672,
+    "source": 32768,
+    "messages": 36864,
+    "text": 40960,
+    "render": 45056,
+    "renderData": 49152,
+    "list": 53248,
+    "entries": 53312,
+    "effects": 57344,
+    "timer": 61440,
+    "frameSlots": 65536,
+    "frame": 65600,
+    "animation": 66000,
+    "eventEntries": 70000
+  },
+  "args": [
+    "@monster",
+    "@source",
+    0
+  ],
+  "setup": [
+    {
+      "at": {
+        "global": "0x65be1c"
+      },
+      "value": "@rules",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x6836a8"
+      },
+      "value": "@party",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x6840c7"
+      },
+      "value": "@template",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x68510c"
+      },
+      "value": 0,
+      "size": 1
+    },
+    {
+      "at": {
+        "global": "0x683f94"
+      },
+      "value": 0,
+      "size": 1
+    },
+    {
+      "at": {
+        "global": "0x68ec78"
+      },
+      "value": 0,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x68c09c"
+      },
+      "value": "@messages",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 8
+      },
+      "value": 0,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "source",
+        "offset": 28
+      },
+      "value": 1,
+      "size": 1
+    },
+    {
+      "at": {
+        "object": "messages",
+        "offset": 1608
+      },
+      "value": "@text",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "messages",
+        "offset": 1612
+      },
+      "value": "@text",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 0
+      },
+      "value": 123,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 12
+      },
+      "value": "@render",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "render",
+        "offset": 472
+      },
+      "value": "@renderData",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "render",
+        "offset": 476
+      },
+      "value": 1024,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "renderData",
+        "offset": 164
+      },
+      "value": 21,
+      "size": 1
+    },
+    {
+      "at": {
+        "object": "renderData",
+        "offset": 167
+      },
+      "value": 20,
+      "size": 1
+    },
+    {
+      "at": {
+        "object": "renderData",
+        "offset": 1512
+      },
+      "value": "@effects",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x683fad"
+      },
+      "value": "@list",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "list",
+        "offset": 0
+      },
+      "value": "@entries",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "list",
+        "offset": 8
+      },
+      "value": 1,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "entries",
+        "offset": 0
+      },
+      "value": "@monster",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 155
+      },
+      "value": 9999,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x6598b8"
+      },
+      "value": "@timer",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "timer",
+        "offset": 0
+      },
+      "value": "0x5ec078",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "render",
+        "offset": 0
+      },
+      "value": "0x5ed22c",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "renderData",
+        "offset": 520
+      },
+      "value": "@frameSlots",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "frameSlots",
+        "offset": 0
+      },
+      "value": "@frame",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "frame",
+        "offset": 24
+      },
+      "value": "@animation",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "animation",
+        "offset": 0
+      },
+      "value": 4,
+      "size": 1
+    },
+    {
+      "at": {
+        "object": "party",
+        "offset": 2570
+      },
+      "value": "@eventEntries",
+      "size": 4
+    }
+  ],
+  "in": [
+    {
+      "name": "damage",
+      "at": {
+        "arg": 2
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "dynamicAbsorption",
+      "at": {
+        "object": "monster",
+        "offset": 481
+      },
+      "size": 1,
+      "signed": true
+    },
+    {
+      "name": "baseAbsorption",
+      "at": {
+        "object": "template",
+        "offset": 207
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "HP",
+      "at": {
+        "object": "monster",
+        "offset": 43
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "partyDamage",
+      "at": {
+        "object": "party",
+        "offset": 2590
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "damageShield",
+      "at": {
+        "object": "monster",
+        "offset": 197
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "shieldDuration",
+      "at": {
+        "object": "monster",
+        "offset": 199
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "maxStamina",
+      "at": {
+        "object": "monster",
+        "offset": 47
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "stamina",
+      "at": {
+        "object": "monster",
+        "offset": 51
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "fatigue",
+      "at": {
+        "object": "monster",
+        "offset": 578
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "specialMode",
+      "at": {
+        "global": "0x68510c"
+      },
+      "size": 1
+    },
+    {
+      "name": "eventCount",
+      "at": {
+        "object": "party",
+        "offset": 2562
+      },
+      "size": 4
+    },
+    {
+      "name": "eventCapacity",
+      "at": {
+        "object": "party",
+        "offset": 2566
+      },
+      "size": 4
+    }
+  ],
+  "out": [
+    {
+      "name": "HP",
+      "at": {
+        "object": "monster",
+        "offset": 43
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "partyDamage",
+      "at": {
+        "object": "party",
+        "offset": 2590
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "damageShield",
+      "at": {
+        "object": "monster",
+        "offset": 197
+      },
+      "size": 2,
+      "signed": false
+    },
+    {
+      "name": "shieldDuration",
+      "at": {
+        "object": "monster",
+        "offset": 199
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "stamina",
+      "at": {
+        "object": "monster",
+        "offset": 51
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "fatigue",
+      "at": {
+        "object": "monster",
+        "offset": 578
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "eventCount",
+      "at": {
+        "object": "party",
+        "offset": 2562
+      },
+      "size": 4
+    },
+    {
+      "name": "eventCapacity",
+      "at": {
+        "object": "party",
+        "offset": 2566
+      },
+      "size": 4
+    }
+  ],
+  "boundary": [
+    [
+      -2147483648,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      99,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      9999,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2147483647,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      -128,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      127,
+      255,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      100,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      101,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      -1,
+      1,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      255,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      100,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      1,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      2,
+      2
+    ],
+    [
+      100,
+      0,
+      0,
+      1,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      2,
+      8
+    ],
+    [
+      100,
+      0,
+      0,
+      1,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      100,
+      0,
+      255,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      1000,
+      10,
+      100,
+      1,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      1000,
+      10,
+      99,
+      1,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      1,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      1000,
+      10,
+      0,
+      0,
+      100,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      100,
+      0,
+      0,
+      1000,
+      4294967295,
+      0,
+      0,
+      100,
+      100,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "random": {
+    "seed": 553770,
+    "count": 48,
+    "ranges": [
+      [
+        -2147483648,
+        2147483647
+      ],
+      [
+        -128,
+        127
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        65535
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        1,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        4,
+        4
+      ]
+    ]
+  },
+  "stubs": {}
+}

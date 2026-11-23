@@ -1,0 +1,292 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "386bf978cf0e8afed6b1f2b53945fbabb468b57ad40ef7c1fc1d9a8d6129754c",
+  "zh": "United Mook Alliance 歡迎各位來到 Arnika 。您現在是在與互動式全像模擬對話。這當然是為了您的安全。只有與 UMA 結盟者才能入內。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "021f4dea4bd427b38d772e1e04a235eaa1ac58e71e0c82c19430b3457d5b1719",
+  "zh": "依邏輯，您應當先處理危及性命的狀況。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "63a47cf161bbca2b55656a93bdd7662976223607c0913824131453ee3e1e6b5f",
+  "zh": "不可能。這只是全像影像。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "8569efc4ed5a6273140c2b6ec0ab8d99f4398210808fbb7c0cbbae4fbcc21350",
+  "zh": "謝謝。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "6612796210c3bbde24031c0923faf1ce936b2f6a5eab08cb48295f40f1d93194",
+  "zh": "我無法接受。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "3e6782e8c788c01fabe56a6f7ecc0e4c3f67001dd451d441832a7b9551393984",
+  "zh": "我們目前不會購買任何物品。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "36dde5e1d4e9ccd5ce2911bba91e52beda0d1a7c4ab55c13a55c39459e68a7e1",
+  "zh": "您讓 Mook 感到相當困擾。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "b3fabd574db7bf2ee4e0040a511ebdfed54656ff3661c5f59cb89fda35354847",
+  "zh": "此類行為可能導致嚴重後果。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "56350729a765b8fc57c7e952a8e72a0f390818362bf8701bf308f345803dea6f",
+  "zh": "Mook 對金錢沒有興趣。"
+ },
+ {
+  "id": 21,
+  "src_sha256": "05a2f6f74dea213f0e91eedf1d594e75297b155410919c99a5732055b5a79e42",
+  "zh": "我無法回答。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "816710cc04361286ed9cdd6182e04e9941a51eff0c82b1a4498e49695525dc7e",
+  "zh": "現在說還為時過早。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "1769b5e805f7887fe31dd03b067efb86debbfebf51e0b43b2d1b1a65e9361590",
+  "zh": "我們目前無可奉告。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "435cbe0d0190645e617f4e85223c9eec638826b8b7d3c77607c4bde093599059",
+  "zh": "我再重複一次。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "15f4bf2464fb1c313e20b752a0c55cd2ffc6b6277de8c5326700f161093afdc7",
+  "zh": "您想先知道哪一項？"
+ },
+ {
+  "id": 26,
+  "src_sha256": "212aa8c6cfc388c67d7c36a6ecca3e8cbe552d021fa240d68210517fa2022a14",
+  "zh": "還有您的另一項詢問……"
+ },
+ {
+  "id": 27,
+  "src_sha256": "78e228e7c9a31d8a3e8b2a18dc4f825abc14c0b3f6e7a3ddff227dc7d1875a89",
+  "zh": "我不知道這件事。"
+ },
+ {
+  "id": 28,
+  "src_sha256": "40e4fa34ed45376e9c9872965d09bc9ac749e870d02a6bd20dfb02e9095fd3e2",
+  "zh": "嗯。翻譯上有困難。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "6d3fdd2ab35f557e099a0ec9357ee8bcbe6b65c3c13a0f05c20c1d4b4aa38470",
+  "zh": "如果您沒有重要的事要說……"
+ },
+ {
+  "id": 50,
+  "src_sha256": "b3d2ec44c0c4c692daf67ca7c902f3679eaee707bff1c6527785d0a5b140bc5e",
+  "zh": "Mook 是一群愛好和平的太空調查者。請勿驚慌。"
+ },
+ {
+  "id": 68,
+  "src_sha256": "1fd56a553b523a4606ba98359bb754b97fa5367a9c26ddb37cd9dfc52adfcff0",
+  "zh": "是的，確實如此。我們持有星圖（ map ）。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "cd303f63c3aec06cac48026a820d86df779f4d4945a7446129670fee97d55736",
+  "zh": "我是 Screg 的全像投影， Screg 是這次前往 Dominus 的探險隊領袖。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "8a313fe7b5f51eb47d0a2bde47ceb22fa276e5fef8d75777082cd6529e4c7a7f",
+  "zh": "你們這些生物養成的習慣真奇怪……"
+ },
+ {
+  "id": 75,
+  "src_sha256": "38178a20b470cfd18299fb1593dd4ba706f1a83321dac051d01086efd8b7a96f",
+  "zh": "不。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "07de6adc4ef0f8c3908d15e9fe864fe92c9ff49b71d6950ba6d10064b50ed159",
+  "zh": "是的，哈囉。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "2b687db6298b629d3bcb482f16aa774a55eb5ae768407b8fba9982387b6c6f81",
+  "zh": "再會。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "3859619abcdd02c905756d06c690b20f391ab48b00e48307a1e4c4c45435ecb4",
+  "zh": "我們不是來提供人道援助的。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "af0abf67e3608fa7516ac62a4ece134c898e772702bc1b5890cb5022c7e4961d",
+  "zh": "我們並未設立此類設施。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "aad6d271912782d7821553529859801aab38d20fe46f29dedc0230ccc637e773",
+  "zh": "所有感測器與讀數都顯示我狀況良好。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "49e9e230955898bd5f1eb88ba2ff13e9968e2ff1a102115d41bb2152bf619061",
+  "zh": "Mook 對此毫無興趣。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "701427b30c63d81525570f96fe62b612a5ad4f00be40ebf72661a0f9133acbe7",
+  "zh": "在您讀取我們心思之前，請先知道我們也能讀取您的。您知道的， Mook 是{{Psionic}}。"
+ },
+ {
+  "id": 89,
+  "src_sha256": "5f6428e90eda4a4e726b2172e4c975769d7ced07a19417753b5ca1f9ec1baadf",
+  "zh": "我們不會透露位置。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "4104d9233c06d755db0c01e58beb6018c468a9c1330ae05a05f8ab7b5e2a4463",
+  "zh": "對您而言不是很明顯嗎？"
+ },
+ {
+  "id": 101,
+  "src_sha256": "1bc2c6cbb5721d856ddef6cd0d1d2d0d336c0042dfb94ac8f8cf1c6f1fb9ff0a",
+  "zh": "我不知道。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "981fa346142aa427b4422d21c76352d82a8372ea9e38741768241d5f84bc3f77",
+  "zh": "在這些生物當中見到您，真是令人愉快（ pleasant ）的驚喜。我們將為您準備一個地方。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "e5f1957cf3017a391256899238817939445f2455606d5403820fb9c9be883d4b",
+  "zh": "任何人都不得進入此建築群。 Chaos Moliri 已被偷走。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "1b148c9ee5f4d5fbe298e4bbb1723185a04610423b0f9f34974c5b2f20854ac3",
+  "zh": "再次問候。我們一直期盼您能回到我們這裡。我們十分欣賞您在 Dominus 上的行動，並希望與您合作。請進。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "9c9d8b3454b00d815ebe0694193e9c7cad661f118cfa56770dcd504dd09ac89d",
+  "zh": "問候。您的朋友狀況良好，很快就會回到您身邊。沒有理由驚慌。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "a259cd3f9ab8403ecfb3ade0b5aa0be29ed83b74e9e16f5303a18934cb318ab6",
+  "zh": "我們是 United Mook Alliance 。我們為和平而來到 Dominus 。請讓我們安寧。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "b6926646454088f0771f7b2689b558d3b1b1ad75fabedafafd7c332c0388f972",
+  "zh": "United Mook Alliance 正在 Dominus 行星上執行探索任務。我們對您並無惡意。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "c99914f129436a5810decf3471ef76185e0bdd8d57b692f2a3af1211b4829cec",
+  "zh": "您現在是在與 United Mook Alliance 的全像代表對話。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "27009e32f039f6fd398707a2ca1414e226082cac4912cd035abbcc716570260c",
+  "zh": "這裡是 United Mook Alliance 。我們是來自 Trea 星球的和平探險者。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "592f7daef703ab7d95facca678841e0f368d214643fe1ac9c79db64486deff05",
+  "zh": "正在將物品傳送至內部接收器。檢視中……有意思。這是您從 Umpani 那裡帶來的？請進，讓我們進一步討論。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "1716e59d4a976bfb55dc2a113f3a97ff12d534dbd9d216a30dce4b0f5b7bc224",
+  "zh": "正在將物品傳送至內部接收器。檢視中…… T'Rang ？是的，請進。讓我們進一步討論。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "550ed606a1c9713b82fbbf9e8f73b58d2c782a399cfc5a9b72eb7f31b083c8b7",
+  "zh": "目前任何人皆不得進入。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "067c128f7f18af1cc307f7db6c92a5c9c834592cdabb80d01f10c5a19b06c514",
+  "zh": "United Mook Alliance 。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "3cdfc29979622b7580a1bf1df4dbbb675524b6c637030be12c816f69ffdc5887",
+  "zh": "您指的是我們的船艦（ ship ）？與您無關。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "bfd066a66e9272d6f9632901e1242c6e33cf4f7ae427a2292fb36365e42e693e",
+  "zh": "您沒有任何能讓結盟（ ally ）變得有吸引力的東西可以提供。無意冒犯。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "15bad262f27e2fe0c21cce60270aa75125cec88d41bacd65a442ad8daeaf6fcc",
+  "zh": "Mook 目前不需要任何東西。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "b30cf0bf291b2111f7ab354c61d9a0224e1c3b05f0f10457653fd7666223aabb",
+  "zh": "是的，星圖（ map ）。那裝置上有一張地圖，引領我們來到 Dominus 。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "865b6b28523b647bc10e6ab693ab09b871905f698f202b6780c7dca35633bd17",
+  "zh": "不，我們不會交出那張地圖（ map ）。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "5beb700e6a2e25c30700e4b15d896483babfd6db929a04a209e1b03d81fb1b13",
+  "zh": "是的，一顆星球，大約在 1.48 兆英里外，往那個方向。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "93cc127f5e3f7a907362ee0b05db8176c7538b68da26323a2e4536b68790b0fd",
+  "zh": "是的，我原本預期他現在應該已經到了。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "be0264670d4587846fd2de1ca013099a72499626082c73ea1de3b7af0237e264",
+  "zh": "嗯。此話當真？我會派出一隊調查人員。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "f13b4f9caf2fb1d4e64faa131b97bea27f7556134378ee82e099241f459555b8",
+  "zh": "Mook 無可奉告。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "696af7a4ab4ef1a7addee4799595cc491641cb42ad2922fdf32198638b45c850",
+  "zh": "在北方。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "0fe22ed18ba3022adac3885cecace0f0a27278636c2f6e23b50a7d80f824c628",
+  "zh": "在南方。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "f729bfbf71b90a984b50c0062141de095096f07a4cddb8708eb7ecc5248fbc10",
+  "zh": "在東方。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "a83715e02c3dc402955f9fa8e451e73f89b312cac1a3feaebdc40bae05189018",
+  "zh": "在西方。"
+ }
+]

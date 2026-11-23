@@ -1,0 +1,67 @@
+call	2b6	無關	srAssertFail 匯入的分析標記（實際經 IAT 0x5ebaf4）；只在前置條件違反時停止，沒有正常輸出可差分。
+call	40efa0	boundedRandom	有界亂數 R(n)：開場閘與第二段閘各 R(100)，角色旗標每名角色 R(100)，挑中的角色每名 R(2)；TestEmu 以錄下的 rng 序列逐次對齊。
+call	53d4b0	monsterAttackAllowed	逐攻擊類別檢查是否仍可發動（類別索引不小於 3 即斷言）；非零表示此類別不可用。calc 重現其前段四個閘門，通過後在模式 0 下取 519c00 的可用結果。
+call	545bd0	monsterMayIntercept	判斷怪物此刻能否做攔截行動：存活旗標、對戰旗標、非零 +0x2b、+0x107 小於 12、模板 +0xd0 位 2、模板 +0xe7 非零。
+call	5e22c0	newVisibleMonsterAssociationList	配置候選行動清單，初始容量十、筆數零；回傳指標。
+call	5e23e0	monsterListHasData	判斷清單資料指標是否非零；非零時舊清單欄位被清為空再重配。
+call	5e2c70	monsterListCount	空列表指標回零，否則取列表 +8 的筆數；迴圈每次重讀。
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；清單配置失敗、目標編號為 -1 時停止，沒有可差分的返回。
+data	6191bc	無關	怪物 ID 為 -1 的 assert 訊息；合法輸入排除此無效 ID。
+data	6191e0	無關	角色索引為 -1 的 assert 訊息；合法角色索引是 0..7。
+data	61cc3c	無關	斷言來源檔名字串，只在 assert 時使用，不參與規則。
+data	61cd78	無關	assert 診斷：清單配置結果不得為空的條件文字；不參與規則計算。
+data	683fad	normalMonsterList	普通怪物列表指標；攔截者迴圈及行動目標掃描都由它取成員。
+data	685174	partyCharacterRecords	隊伍角色記錄基址，stride 0x1862；案例以角色索引尋址，其他槽填誘餌值。
+data	685178	partyActionRecords	行動記錄基址，stride 0x106；讀 +0x106c 起的槽位旗標，須非零才算在場。
+data	ffffffffffffffcb	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffdc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff1	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff5	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff7	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff9	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffd	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffff	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x11	combatRecord.attackKindFrom	戰鬥記錄 +0x11：指定攻擊類別時的起點，終點為起點加一
+field	eax+0x15	combatRecord.groupFlag	戰鬥記錄 +0x15：非零表示整隊行動，影響通用路徑與所需配對值
+field	eax+0x16	combatRecord.candidateList	戰鬥記錄 +0x16：候選行動清單指標，入口先重配
+field	eax+0x24a	template.skipFlag	怪物模板 +0x24a：非零的怪物不能成為目標
+field	eax+esi*1+0x34d	monster.sideAllowed	怪物 +0x34d 起按陣營側索引的允許旗標
+field	ebp+0x0	monster.id	怪物實例 +0x0：怪物編號
+field	ebp+0x14	monster.alive	怪物實例 +0x14：存活旗標
+field	ebp+0x15	monster.engaged	怪物實例 +0x15：對戰旗標
+field	ebp+0x2b	monster.f2b	怪物實例 +0x2b：非零才算有效目標
+field	ecx+0x0	list.dataPtr	清單標頭 +0x0：資料指標
+field	ecx+0x16	combatRecord.candidateList	戰鬥記錄 +0x16：候選行動清單指標
+field	ecx+eax*1	party.slotFlag	行動記錄槽位旗標，按角色索引
+field	ecx+eax*1+0xb01	character.reachClass	角色 +0xb01：可達類別，須小於 18
+field	ecx-0x12	template.attackMask	由模板 +0xfc 後退得到的攻擊類別欄位基址：類別編號
+field	edi+0x0	targetRecord.kind	目標記錄 +0x0：目標種類，1 角色、3 怪物
+field	edi+0x1bf	template.f1bf	怪物模板 +0x1bf：行動模式輔助值，3 時不走第二段
+field	edi+0x1c0	template.f1c0	怪物模板 +0x1c0：行動模式，2 時走第二段
+field	edi+0x4	targetRecord.characterIndex	目標記錄 +0x4：角色目標索引，-1 為無效
+field	edi+0x8	targetRecord.monsterId	目標記錄 +0x8：怪物目標編號，-1 為無效
+field	edi+edx*1+0x345	character.actionChance	角色 +0x345：百分比，乘 75 再除 100 後與 R(100) 比較
+field	edx+0x0	list.dataPtr	清單標頭 +0x0：資料指標
+field	edx+0x15	combatRecord.groupFlag	戰鬥記錄 +0x15：非零表示整隊行動
+field	edx+0x16	combatRecord.candidateList	戰鬥記錄 +0x16：候選行動清單指標
+field	edx+eax*1+0xb11	character.f11	角色 +0xb11：非零才可被選為目標
+field	esi+0x10	monster.combatRecord	怪物實例 +0x10：戰鬥記錄指標
+field	esi+0x15	monster.engaged	怪物實例 +0x15：對戰旗標
+field	esi+0x248	monster.actionChance	怪物實例 +0x248：行動機率，與 R(100) 比較
+field	esi+0x249	monster.f249	怪物實例 +0x249：不小於 0x4b 時走通用路徑
+field	esi+0x2be	monster.targetCharacter	怪物實例 +0x2be：目標記錄的角色欄
+field	esi+0x2c2	monster.targetMonster	怪物實例 +0x2c2：目標記錄的怪物欄
+field	esi+0x2e1	monster.phase	怪物實例 +0x2e1：階段值，攔截掃描期間為 8，其後為 0

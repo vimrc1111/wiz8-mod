@@ -1,0 +1,29 @@
+call	4e8000	setCharacterAction	公式 D4 節點；以 emu 位址 stub 取代（記錄參數 1-5 與呼叫次數入輸出）；calc 的 Emu 版同樣記錄，F 版直接呼叫 cgW.setAction
+call	536170	queryStructInit	初始化來源查詢描述符，非公式；原生執行
+call	53ac30	clearSourceMasks	清除舊動作在怪物上的來源遮罩位元；calc 的 clearMasks 重現
+call	53bc10	resolveSourceIndex	把動作來源解析成實際來源；calc 的 resolve 重現
+call	55ee30	markInterfaceRefresh	依介面模式 6／7 標記刷新位；calc 的 refresh 重現
+call	565420	battleSceneContentsDirty	模式 7 且戰鬥 UI 存在時設 +0xf4 的 0x20000；calc 的 ui 重現
+data	6836a8	battleContext	戰鬥上下文指標；每角色記錄的行動／待處理欄位
+data	685174	characterRecords	角色記錄陣列指標
+data	685178	slotRecords	槽位記錄陣列指標
+data	68518d	selectedIndex	目前選中的槽位索引
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+ebp*1+0x181b	戰鬥上下文每角色欄位 +0x181b（待處理旗標，清零）	雙重索引欄位；差分輸入與輸出包含
+field	eax+ebp*1+0x181f	戰鬥上下文每角色欄位 +0x181f	雙重索引欄位；差分輸入與輸出包含
+field	eax+ebp*1+0xb01	戰鬥上下文每角色欄位 +0xb01（動作有效旗標）	雙重索引欄位；差分輸入與輸出包含
+field	eax+ebp*1+0xb11	戰鬥上下文每角色欄位 +0xb11	雙重索引欄位；差分輸入與輸出包含
+field	edx+ebp*1+0x1817	戰鬥上下文每角色欄位 +0x1817	雙重索引欄位；差分輸入與輸出包含
+field	edi+eax*1+0xa4	待處理列表第 4 欄 +0xa4	雙重索引欄位；差分輸入與輸出包含
+field	edi+ecx*1+0x9c	待處理列表 +0x9c	雙重索引欄位；差分輸入與輸出包含
+field	edi+edx*1+0x4c	待處理列表 +0x4c	雙重索引欄位；差分輸入與輸出包含
+field	edi+edx*1+0xa0	待處理列表 +0xa0	雙重索引欄位；差分輸入與輸出包含
+field	esi+eax*1+0x6d	槽位記錄 +0x6d	雙重索引欄位；差分輸入與輸出包含
+field	esi+eax*1+0x71	槽位記錄 +0x71	雙重索引欄位；差分輸入與輸出包含
+field	esi+ecx*1	槽位記錄 +0（動作）	雙重索引欄位；差分輸入與輸出包含
+field	esi+ecx*1+0x1	槽位記錄 +0x1	雙重索引欄位；差分輸入與輸出包含
+field	esi+ecx*1+0x5	槽位記錄 +0x5	雙重索引欄位；差分輸入與輸出包含
+field	esi+edx*1+0x9	槽位記錄 +0x9	雙重索引欄位；差分輸入與輸出包含
+call	4c5eb0	monsterSelectionMarker	轉呼叫 4c4de0 的選取標記建立／銷毀（排除）；emu 位址 stub，記錄參數 1-3（槽位、怪物 id、旗標）與呼叫次數；calc 的 paiMark 重現

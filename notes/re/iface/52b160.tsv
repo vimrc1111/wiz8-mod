@@ -1,0 +1,9 @@
+call	517970	dice_roll	以局部骰結構（基值 Z、骰數 N、面數 S）擲體力回復量；D4 公式節點，calc 直接呼叫其 F，亂數序列進差分
+call	52b1c0	character_stamina_heal	對在場角色套用回復量（D4 公式節點）；case 以位址樁記錄呼叫次數與最後一次的三個參數（角色序號、回復量、通知旗標），回傳值呼叫端不用
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	e	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	f	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	685178	party_presence_records	隊伍在場記錄陣列，八筆、每筆 0x106 bytes，第 0 個 byte 非零代表在場；case 逐槽輸入該 byte，其餘 byte 放非零誘餌
+field	esi+eax*1	party_presence_flag	在場記錄陣列基址加槽位偏移所讀的在場旗標 byte（首 byte），非零才擲骰並呼叫回復

@@ -1,0 +1,562 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "495568a475f43588176b6458cdb5c63992d16fe4f74bcc8709af76006314ab56",
+  "zh": "啊啊啊！哎呀我的天！"
+ },
+ {
+  "id": 1,
+  "src_sha256": "785fd68645c6db71fe9fe1fa9b634670526973229a54be1c9e7ad161652c7ca6",
+  "zh": "嗯，又見面了，朋友們。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "da255cae817e823d37bdf6cc0db54d627ccc1e94460d5a38b0079169978351dc",
+  "zh": "哼！對你們來說， Fuzzfas 藥水宮「永遠」都打烊了！"
+ },
+ {
+  "id": 3,
+  "src_sha256": "f28eefe23c88b2072aa64c21fc44ce8220e11384d05f29f747f3a7d5da2e529c",
+  "zh": "噢，我知道那笑容底下藏著什麼！我可不信任它。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "98a336535e603c1578846169e6b2537a82baed05de22e5f2656319e6578fad51",
+  "zh": "什麼？等等……噢，等等！我還以為你們是，呃，別人。抱歉啦。不用生氣嘛。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "e6637953d7333f60463d0fced0be0adc848c3f1bae541fd2f829b1309fa8ce39",
+  "zh": "我才不怕你們……"
+ },
+ {
+  "id": 7,
+  "src_sha256": "00a6ac379ce0e9ff68ce15b4868d4ed907a87b8ce04a844cda4fe13724d20c0b",
+  "zh": "唉呀……這好像不太划算。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "2da6ef42858560e4e86de747c338d29de3bd99d934e0e4403d848adef1a21b7a",
+  "zh": "住手！快住手啦！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "b7165b6f260e037a47edaebe41e460a8e17ce8ad1d16e1d0e8c889c0f26f1a56",
+  "zh": "我？嘿！你們要我去？那誰來顧店呢？不行，我得留在這裡。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "7ef15d4705f5f7f568fafe3e2b93f8b034238fd29768c0587088cb4122ce4240",
+  "zh": "噢！你們人真好。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "420611a3baf759cacba1a799318960ab47d691537c8c30b163b4dabdfbc59dc7",
+  "zh": "噢，不用了。我不需要那個。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "dfe1c09e68c74fc8fa83b5ce5c44ca3ffde7c62358ddf19e238cf9f4921cb96c",
+  "zh": "我現在再也買不起了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "51d722e30df65485b9ec973eab7addaaaf55f800ff94cffb64054b96ae3e54a5",
+  "zh": "你們需要的錢比這個多！"
+ },
+ {
+  "id": 17,
+  "src_sha256": "c262752566c178d686f694abffc7df7b425767730761d0e3c8cf5b45eeb94787",
+  "zh": "真好笑。我以前也有一個跟這個一模一樣的。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "2f3e84ecc5cf8b5207062644023cdc266565d6e80ffa416776fc60414c6035c8",
+  "zh": "喂、喂、喂，喂喂喂喂！別鬧了！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "e45d80891baba78021bbef693960a291db0ff5c986f503dcb7bbd7aab404e124",
+  "zh": "什麼……？！？這輩子沒見過！至少最近沒有！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "089b9fabbbc50c23089ed2f39eb7c47c886b9ada3778fff8847b4e9007b4797f",
+  "zh": "Trynnie 就不該信任你們！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "e7e34c663ea52a3566f8a655f78f2b373ceb01cae3fe5a13aff9d4be8424ce9b",
+  "zh": "我喜歡錢。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "c4d852d306f659b8985299393f23b2e7c6264436400ab1ac5d035443c7482909",
+  "zh": "這對我來說是新聞。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "da66536182ef272197c7f801c1a04eedbe5c8197a977b415086b4a20dfc99469",
+  "zh": "我不知道。我過的是相當與世隔絕的生活。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "859250470792e3dce4ed49b35505d0dd804087d59670bf1c31b8ba080f5dc35c",
+  "zh": "也許你們該去問問 Shaman ……"
+ },
+ {
+  "id": 25,
+  "src_sha256": "87bde044d8996117b576578b58bf70a619c9afeeb54600d185ddf88ba5b2f51e",
+  "zh": "我跟你們說過了……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "9d1fc08a42bdb964b02ff376524889a289cb63f50885985149b908a2962fbb90",
+  "zh": "我們可以慢一點嗎？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "5eef1b486c8d2bad41a4f257c73f9599f08972024c8d59f051a353789de190bd",
+  "zh": "還有另一件事是……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "776877d53b172a3bda87f06e44b455257d85ccf5601d3672940697c3b4c53bfb",
+  "zh": "嗯，現在我知道了。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "a02b45851ff329652d873e197a466286d6c6f48847ebcf0cb088e0e776c2bb69",
+  "zh": "我該回去弄我的藥水了……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "503f76136a89a2a472a2d21c7dc3e6d36484883a5559f86a23fc94959836496d",
+  "zh": "我相信你們有一大堆事要做，我可不想耽誤你們！"
+ },
+ {
+  "id": 31,
+  "src_sha256": "d7932caa8571a302fba3d76f11b0ba5a2a92d1c7222831136122caf3ae9c66df",
+  "zh": "這是個美好的星球！"
+ },
+ {
+  "id": 32,
+  "src_sha256": "77903d61aca06a6ef96ec268a51dd169513cf93179f7d013638ce2badab1e898",
+  "zh": "大城市（ city ）。我以前常去那裡採買。我的藥水可是全世界（ world ）都搶著要呢！可是我不能再去了……有 Rapax 又有他們在那邊被發現的突擊兵（ Troopers ），對我這種小個子來說不安全。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "150ef92f699d145b70e58e0c7aebe4c1adc4d495ca993d9f6d25305b5a480fea",
+  "zh": "噢！你們不會想去那裡的！很危險。 Rynjin 會吃 Trynnie ！"
+ },
+ {
+  "id": 34,
+  "src_sha256": "b2327834c0dcbd1b0052ca19b797ecbaaa743740157e1c75dfd44cfe90b373b4",
+  "zh": "嗯對啊！你們就在這裡！當然，這裡可大了。 Trynton 比大多數人想的還要大。從地面看，你只看到一棵樹……可是一旦爬到高處，哎呀，那是一整座城市（ city ）！"
+ },
+ {
+  "id": 35,
+  "src_sha256": "5b9757440ab950a778cf3c9bbaea010ece37e2e7d0bdb6f1c7168e76ece0537f",
+  "zh": "Rapax Castle ！你們絕對不會看到我去那裡……不過如果你們要去，一定要帶一顆我做的大火焰彈！我討厭那個地方。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "a81f39204de46c95095bd8acf7bfdc59fa4876cb938bcc3ba31003eeda98c3df",
+  "zh": "只要跟 Rapax 沾邊的，我都不碰……"
+ },
+ {
+  "id": 37,
+  "src_sha256": "cbc4625a6819bb06d80fd6bf1c51846ea86054c56b97db34abbd7129c6ef381a",
+  "zh": "噢，我們以前會把很多東西藏、呃、存放在 Mount Gigas 裡。那裡面有好多洞穴，你們知道的。現在 Umpani 住在那裡。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "1cae12f0a3e9de41fc41cd160dea848dcb034a787d494627ee82a8f01d802c18",
+  "zh": "噢，嗯，在那些大個頭 thing-rang 占領之前，那裡本來是個好地方！要是 Marten 還活著，絕對不會發生那種事。我是說，也許是我在評斷人家，但是手腳那麼多的東西讓我很緊張……"
+ },
+ {
+  "id": 39,
+  "src_sha256": "279e266fc6e774675e7526db8822a872f9e6bec379b94e17e2b745955dbeca1d",
+  "zh": "Mt. Gigas 的洞穴很棒，但也很嚇人！你永遠不知道裡面會碰到什麼。我在裡面找到過黃金（ gold ）……不過有時候，是東西找上我！"
+ },
+ {
+  "id": 40,
+  "src_sha256": "65fafc9dea5633d53a7434251730c37964a373bc005e1c081f1578288ac1f27c",
+  "zh": "Ascension Peak 是個聖地。那是通往 Cosmic Circle 的路。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "1280b282a4bc7b95e2822ba777b2c7199ec3f1177fda6fc0427ec9d73aac226c",
+  "zh": "Cosmic Circle 是 Cosmic Lords 的家。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "285f36ddc997160e70d4708dcfb60db7523970576904f6a76d0d1d9f36b47a76",
+  "zh": "我自己是絕不靠近的。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "eb6e3d304dcb092c9e12f719e6e198a44d9256504d8139da2909fa790de1b019",
+  "zh": "Higardi ！他們是 Cosmic Lords 的好子嗣（ sons ）與女兒，就跟 Trynnie 一樣！他們也是很多好東西的來源！我們常去 Arnika 採買！只要他們沒在看，什麼都免費！"
+ },
+ {
+  "id": 44,
+  "src_sha256": "048d5b66d994acb4b7d7c954da01e98a56e1a75aed8ca8e77919272c5c0f252d",
+  "zh": "我們註定要繼承這個星球！"
+ },
+ {
+  "id": 45,
+  "src_sha256": "bbb86104695479b13f96a5e8b3f6eba13213553f376fb85210a5ba12ab3716d8",
+  "zh": "你們見過他們嗎？！？邪惡又卑鄙的傢伙！他們只在乎自己！ Chief Gari 會保護我們不受他們的軍隊侵害。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "5dede425459f427c2674cd38df415490abf74e1bbc7bba711fe1c96e91ff7441",
+  "zh": "就是住在 Mt. Gigas 的那些。我想他們不太喜歡 thing-rang 。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "8fd44482a8be780d1ce83aaf6791753ba09e92a3b483ce0fd0f798d866d5a7ba",
+  "zh": "噁！你們想知道他們什麼事？！他們很醜……我只知道這個。"
+ },
+ {
+  "id": 49,
+  "src_sha256": "0353c239113b669d1076dee9d7bfde54707dd6437705d248bcd7af77a5d254ee",
+  "zh": "我從沒見過 Rynjin ……要是見過，我就不會在這裡了！這是肯定的。他們會吃 Trynnie 。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "84ea5f118ab98f5e9bd9d3175d2bee4473dab97ed55bf56b336abe428274d031",
+  "zh": "沒錯， Cosmic Lords ！ Phoonzang ！所有的{{Magic}}都是從他們而來。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "91fb1292b4c30f167d48c4efb9ca7fe0150a981ad2e05406a2bced0d090858d9",
+  "zh": "我聽我們的 Shaman 提過那個名字。我自己不認識他，而且就我所聽到的，這樣反而是好事。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "88c38042cd340333d0f6b0c4e503ba4e0784e26ef856bcc8933080c99c39b730",
+  "zh": "我知道那個女孩的事……但我不能說！我聽 Shaman 說她可能是 Phoonzang 本人的孫女！"
+ },
+ {
+  "id": 56,
+  "src_sha256": "c99b6dd488e30e1a0cf7715b5338809a89e89f24381d0c165dae2175b6a7738d",
+  "zh": "呃，那不是她嗎……就在那裡？"
+ },
+ {
+  "id": 57,
+  "src_sha256": "07a2b6821a63901b0195847b7e3a119e15028fdf1f0076a8baea7a03e601bbe7",
+  "zh": "Phoonzang 是 Cosmic Lords 之一！他是所有 Trynnie 的父親。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "52876a545a6e3fb4b09b926e5eee70e405a038dd3ed4bb3812fc27dce6c4af00",
+  "zh": "Marten ？很多年前，他來到 Trynton ……你們知道他帶著什麼嗎？ Destinae Dominus ！他從 Higardi 那裡偷來的。不過傳說他沒有在我們這裡待多久。他留了東西給 Shaman ，還說會派人來取。不過那是很久很久以前的事了。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "8b7d9d768f6ca2ce26161303d625b99f293321564a5e6a74c52385ec9b3dc2c2",
+  "zh": "我想他可能是那些 Umpani 之一。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "35caaa02bee70e1622f0bdfc5724da6852bdf2d5f94d4e72b9893d1495749ffc",
+  "zh": "骯髒的 Rapax King ！他想奪取 Trynton 的計畫不會得逞的！"
+ },
+ {
+  "id": 62,
+  "src_sha256": "5eb157eaa970d7145694eec2530ba3776818652326aed0a937efa58f9d56211d",
+  "zh": "跟其他所有 Rapax 一樣！"
+ },
+ {
+  "id": 65,
+  "src_sha256": "64b9fde69822572a36405c189380a58cb0eda5aadcebe897d5be9ee597c33677",
+  "zh": "他可能是那些 thing-rang 之一。我聽過這個名字。"
+ },
+ {
+  "id": 66,
+  "src_sha256": "3a87a83767cf60d2042e0519c33d0fe2a73e0af9eab06293ee697f75b5cdbfc6",
+  "zh": "Don Barlone ？ Barlone ？那是那些老鼠發出的聲音！我不知道是什麼意思，但聽了就心煩……"
+ },
+ {
+  "id": 68,
+  "src_sha256": "e244a8f4f53c7293f2c1b91017a1f9d7f7473a6ff5e8b3d49127c64c8470432a",
+  "zh": "我自己沒見過。那是遠在我出生之前的事。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "1bd5a2434ea158b11025ade1fcbf7fca74ba9c4b0df6f370cdb78034d7af535d",
+  "zh": "沒錯，Ascension！就在這裡！ Higardi 會去 Cosmic Circle ，而我們就能獨占整個世界（ world ）了！"
+ },
+ {
+  "id": 72,
+  "src_sha256": "555519c716bb370afba527ca187a511d3321ad477b8c6850af8af40a9e4bfe6a",
+  "zh": "我聽到一則關於 Vi Domina 的傳聞……"
+ },
+ {
+  "id": 73,
+  "src_sha256": "f66fef0c66be9cd82c2d9ff4d9247b61318d705dd43b8c8d749844166d092d96",
+  "zh": "我是 Fuzzfas ！偉大與不太偉大藥水的製作者。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "bd33513c8ec5ca4ff6c41bb1505b43ca5a25371a59f0677f4bad0cbf58d14214",
+  "zh": "命運（ destiny ）對 Trynnie 非常重要。你們可以在第七枝幹（ Seventh Bough ）發現你們自己的命運！"
+ },
+ {
+  "id": 75,
+  "src_sha256": "c540faff83667371422a1a39ccd83e803798219a8e46d2a6b2de45e65d92b7b0",
+  "zh": "給你們鼻子塞顆火焰彈怎麼樣……"
+ },
+ {
+  "id": 76,
+  "src_sha256": "cf73c895c1498d073484bdd5f4ff2c1b17edb71320b80ceab33a91ce70fc446f",
+  "zh": "我差一點就成功了！我再也不會試著做那種藥水了，嘿。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "fc95c3807e3344fe7a82437feaeb9941dfe1be1d7a9a1d345c3b809545378806",
+  "zh": "你們好。隨便看看吧。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "1ce29a8437f9bf90d493c0fb3ecf70cb21acf11418467d5395b2cf2698b79fba",
+  "zh": "謝謝光臨！"
+ },
+ {
+  "id": 79,
+  "src_sha256": "41d9d96a3597a41502c2b54d5b9914513ca35b0f68a83eab0bcb07497984bdcf",
+  "zh": "我這裡確實有各式各樣的藥水，足以應付大多數需求。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "54ddcca2432d6a2792f505d2151970d803b7654ae9e70b1cc3897317bffc1ef4",
+  "zh": "那要看你們在找什麼補給品。如果是藥水，我就是你們要找的 Trynnie 。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "3efee8c629ab246b0e45581f95a56d8785f7b32543cdda12dbf2533546384704",
+  "zh": "我有過更好的時候。也有過更糟的。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "34bff94b0948f432f88cb6994a5ad6cea186164c1c7caabae6d19efec151708d",
+  "zh": "對對對！你們來對地方了！"
+ },
+ {
+  "id": 83,
+  "src_sha256": "09b7bf7364b03420275f8768be94d595c56e4062e6f83bca428c83518cc6af7a",
+  "zh": "一場可怕的戰爭（ war ）！ Rapax 打算殺光我們！我們不會倒下的！至於那些老鼠（ rats ）……牠們也有苦頭吃了！"
+ },
+ {
+  "id": 87,
+  "src_sha256": "b08b15fe41a83c82c1a3069e674a43dc992c667c4457a15dd4977ed7995713d8",
+  "zh": "只要我把這些藥水準備好，老鼠（ rats ）就要後悔了……"
+ },
+ {
+  "id": 88,
+  "src_sha256": "6605a1bacbddfe4b9440fc9aa33c4429156034fff8c9666c557a4c27f1bdfce6",
+  "zh": "He'li 應該會來拿那些藥水。不知道她在哪裡？"
+ },
+ {
+  "id": 89,
+  "src_sha256": "5c90cb1eb8a6ce7a9a544cac8a19984e7bc1ebf121c120b2150d3d53c7c8984c",
+  "zh": "嗯，我在想……如果把綠色糖漿和藍色氣泡粉混在一起……"
+ },
+ {
+  "id": 90,
+  "src_sha256": "bae2f584694a045717ccf44fc4762ea1fbf3ff3acd7aff906f3caf7b6eca59c6",
+  "zh": "你們得去 Arnika 。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "9aeb76d133d9d041bf63a69cdedd1c9031cfad829379c85634ddf48c0383aed6",
+  "zh": "就在 Trynton 這裡。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "24a335750489b593df44098ca1deba2f99fd51e32119fa8e1e7ff6041cb65813",
+  "zh": "大概在沼澤裡。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "917d1214942e72ea3630874bfdcc024f24b605a7725f60c0ddb3cb18b5de6dde",
+  "zh": "可能是 Marten's Bluff 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "9af71bf93181eaee72b69578670d6393507e0e606db33c57608eb60cdc51083b",
+  "zh": "你們有找過 Mt. Gigas 嗎？"
+ },
+ {
+  "id": 97,
+  "src_sha256": "fdfc0fbd2062456ff48249aa0e4e74624e280b27f6bb8541fbe8f3f38c3007c3",
+  "zh": "跟 Rapax 在一起！"
+ },
+ {
+  "id": 98,
+  "src_sha256": "fdfc0fbd2062456ff48249aa0e4e74624e280b27f6bb8541fbe8f3f38c3007c3",
+  "zh": "跟 Rapax 在一起！"
+ },
+ {
+  "id": 99,
+  "src_sha256": "1feb9b80ddfb1a9b7ba67eafa96706dd54eb6ba83be4d8fc12431194eaca5f9a",
+  "zh": "噢對！在 Ascension Peak！"
+ },
+ {
+  "id": 100,
+  "src_sha256": "37dd420c323c09c25992bfe4f7b45a74acfa59cffdec74d11f87e800c0b07f29",
+  "zh": "在 Cosmic Lords 的家……"
+ },
+ {
+  "id": 101,
+  "src_sha256": "611daa31a30e8ec4ffb813a336fe19739321cb5e30428aca0fa4d89e33080764",
+  "zh": "哎呀，就在這裡！"
+ },
+ {
+  "id": 102,
+  "src_sha256": "07702d8e0700d76b972a0d631d88cdb5f7418569fffe08d9ec8dfde20ab0b514",
+  "zh": "Shaman 也許知道……"
+ },
+ {
+  "id": 103,
+  "src_sha256": "7ab49ac6c247fd8986ccc6d3f59582694ee23ae562f2670823c640b2e74b6539",
+  "zh": "我想大概是 Bayjin 。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "e76f9faa886d9b5542e20e34aa61d4e3b50b505bdece277a0c810207fd9c3975",
+  "zh": "我喜歡。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "603f8868750af7a9c5daece9cde12d8b6d91eb32668d2e931e52b05ac39a4653",
+  "zh": "Trynton 由許多枝幹構成，總共七根，最後一根是聖潔的！那是一種幻境，每個人都會在那裡遇見自己的 shaman ，得知自己的命運（ destiny ）。嗯，大多數時候是這樣。 shaman 會來找那些準備好的人。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "d9e609a3fffb82cd2393873b75b90a416ea329a2c23aaa0d945a3ce08212afd4",
+  "zh": "那在第六根枝幹上。你們過了那邊，往上走，再往下一點。不會找不到的。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "7a87b61d11a05823f6bce1940bd18b23ec61aab94fb9841dc6b8aa4707c244d2",
+  "zh": "對，電擊彈！可是我再也做不出來了。它的秘密材料，一根藍色羽毛的油脂，已經找不到了。那種鳥已經絕種了！"
+ },
+ {
+  "id": 108,
+  "src_sha256": "fdf4afeb7242162c22808d3b1f4769b361266490bcc7865092d1c6736939674d",
+  "zh": "老鼠（ rats ）！對對對！這就是我們需要你們的原因！我們試過要趕牠們走，可是牠們已經在我們這裡氾濫成災了！我以前會調一種很凶的藥，可以把牠們炸上天，可是我再也弄不到材料了。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "d842a57f2bd02b60e04ab1f0de9ff9f44af68a5f82ae51fe067afe145cdb5f6c",
+  "zh": "謝天謝地，老鼠（ rats ）都死了！"
+ },
+ {
+  "id": 112,
+  "src_sha256": "fea1f463aaf726984d0bf71a052864c18f6bc87587c6c6e756379547986c9d6e",
+  "zh": "噢，噢我的天……這是……"
+ },
+ {
+  "id": 113,
+  "src_sha256": "d40b0a9fcb3286903b92f366fe61a0e67d0e6e2f88d8718ec895ea857fdfe890",
+  "zh": "啊，什、什麼……發生什麼事了？噢，看看這地方！看看我！*嘿*……我剛剛在試著做新藥水，一定是漏了一兩步……或五步。噢噢！剩下的東西你們儘管拿。我是 Fuzzfas ，{{Magic}}大師，大部分時候啦，這裡是我的店舖。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "d4bc4d5154cee7475370e7f9883c44b2712a4af54fe4998e43c9908df5dfe4ba",
+  "zh": "哎呀，你們哪來的這個！？我還以為這種鳥早就絕種了！加一點這個、加一點那個，當然還有羽毛，我就能調出一種可以把任何人炸上天的藥水。對了，要不要我幫你們做這種藥水？當然，我會收合理的價錢。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "f882eab101eef649cb8b0112a61545edbfaa301a74857f272ded2ec000dd2ead",
+  "zh": "好！好！噢，這會非常刺激！你們過一陣子再回來。我會全部準備好。有別人在旁邊我沒辦法工作。這裡有時候會變得有點危險。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "c096078a48f568465e9af7473c55b228a288da61157ab2889f61d57680c6c6b6",
+  "zh": "嗯，我、呃……這是你們的選擇。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "74cc5cabdf5c7b4cd4c5f9f57b49a4d86612fe77193c56276088a0c251a11178",
+  "zh": "藥水都準備好了，我會用很棒的價錢賣（ sell ）給你們。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "93d1d3c5bc56597fe0bd2db3b89c16e5c3689eaf81c1fc19c5ceb3bb14155877",
+  "zh": "沒錯，第七枝幹（ seventh bough ）是一種幻境！那不是你們的身體去的地方，而是你們的精神！從我有記憶以來， Trynnie 就會去那裡看見未來，得知自己的命運（ destiny ）。也許你們該試試！很簡單，但你們必須做好準備……"
+ },
+ {
+  "id": 119,
+  "src_sha256": "fa632f20116fdc1f3279cb4eaba3da4402f232fc930644c5ef1b44b94f6cd2d0",
+  "zh": "你們需要兩樣東西。首先是 Zuzu 花瓣。它們在這裡野生野長。你們自己去摘。你們還需要一種特殊的藥水，神秘藥水。 shaman 不會對每個人現身，但或許他會對你們現身……"
+ },
+ {
+  "id": 120,
+  "src_sha256": "4106e577689383afa56d1c8d501952dfdc34bdb4517fbf46798969388f45cbbc",
+  "zh": "我本來要告訴你們關於第七枝幹（ Seventh Bough ）的事。我覺得你們該試試。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "cc7f278bcabd0bcbed6638276580a81db0429b3a35ef448713990146e4976794",
+  "zh": "在 Arnika ！我想它們是機器。聽說沒有什麼東西對它們有用。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "8914ecc302428c6ddfefa52b6dbfef1201b4a52306ea0db3ca556697bccd9b02",
+  "zh": "我嗎？嗯，我是{{Magic}}大師，大部分時候啦。我的藥水在整個 Dominus 都很有名。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "84566a3d5821738bc455a73995f4836c057054af5b7bd43929465ab0fc17d482",
+  "zh": "太好了！我一直在等你們！她通常每兩週來拿一次補給，可是我一直沒看到她！總之……拿去吧。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "c765413e4074f34c579c7b862c69405bab69e18d5b83218a2dd044438b842765",
+  "zh": "嗯……她什麼都沒訂。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "1d589f6e2aa35b47b8ed26cfe123515254e63312ea2a0cde9b4688af47abcada",
+  "zh": "我的一位朋友！"
+ },
+ {
+  "id": 127,
+  "src_sha256": "5f828fb86fbbec31700724438bd9fec534dc75a40d3b472a7df8933df218963f",
+  "zh": "你們不知道他是誰？那你們要學的還多著呢！他是 Marten 寶藏（ treasure ）的守護者。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "640f64c22f8b9222c058d46f702681c72f325fcbeed0a04094b4dd4a200135b9",
+  "zh": "他在第六根枝幹上。他大概已經知道你們來了。消息在 Trynton 傳得很快。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "6ba7451af88a98ff47e16c69d4042e128f9a94a7f4d0b1f0d7ae2a27c8aee104",
+  "zh": "對，沒錯！"
+ },
+ {
+  "id": 131,
+  "src_sha256": "338bc5f5e66a0497b45921f272796fea02f1b57f6be71ae9484dccea18532a67",
+  "zh": "往這裡的北邊找。"
+ },
+ {
+  "id": 132,
+  "src_sha256": "76d90a64cc8b936578b1b0225601aeab7c1333777f2d944ada3c5d643c217b21",
+  "zh": "噢對。那在 Trynton 的南邊。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "b2919f87b2a1f599b86c6fce418ae8b4b84573acb7d6bb5c05a62acafe538546",
+  "zh": "在 Trynton 的東邊。"
+ },
+ {
+  "id": 134,
+  "src_sha256": "de1726425683c0ab1b1df6df2dfcd4cc808391287af95e877258796308a740d0",
+  "zh": "在 Trynton 的西邊。"
+ }
+]

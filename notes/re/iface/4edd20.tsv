@@ -1,0 +1,44 @@
+call	4ee000	baseAttackRebuild	分類變動的角色重算基礎攻擊 +0xe81；讀總級 +0x89、SEN +0x161、SPD +0x14d、旗標 +0x767、加成 +0x76d、修正 +0x1770 與新分類 +0xbc9；分類大於 4 走斷言，合法分類 0..4 不觸發
+call	4ee220	attackHandsRebuild	分類變動的角色重建雙手攻擊快取；既有 calcAttacksNode；子函式原樣重放
+call	4ee9d0	armorClassesRebuild	分類變動的角色重算 AC 分項；既有 calcArmorClassesNode；子函式原樣重放
+call	51bfd0	sharedStackWeight	共用背包單槽重量；既有 itemWeightNode；讀槽指標的物品 ID 與數量，乘物品定義 +0x8a 單位重量
+call	562a50	battlePanelRefresh	模式 7 且戰鬥物件非空時對其 +0xf4 併入 0xff；其他模式直接返回
+data	5ebcd0	percentScale	百分比乘數 float32 100.0；剩餘容量百分比與分配份額的乘數；從使用者 exe 讀取，不內嵌
+data	5ed510	initialBestShare	分配掃描起始基線 float32 -999999.0；任何合法份額都更大故首個合格槽必獲選；從使用者 exe 讀取，不內嵌
+data	683f94	combatActive	戰鬥中旗標 u8；非零則置延遲旗並直接返回，不做分配
+data	683f97	otherModeFlag	模式 7 分支的次級旗標 u8；非零則跳過面板刷新呼叫
+data	683fa0	deferredRefresh	負重延遲刷新旗 u8；戰鬥中置 1，正常完成清 0，早退路徑保持原值；亦為 case 輸出
+data	685174	partyCharacters	角色記錄陣列基址；八筆、步長 0x1862；arena 接線
+data	685178	partyPresence	角色在場副表基址；每筆步長 0x106，首 byte 非零為在場；arena 接線
+data	68517c	gameStarted	遊戲開始旗標 u8；零則直接返回，不寫任何欄位
+data	685191	sharedSlot0	共用背包第一槽；每槽 12 bytes，物品 ID i32 與數量 u8；-1 為空槽
+data	68519d	sharedSlot1	共用背包第二槽；第一槽加 12 bytes；案例提供兩槽，槽數上界為 2
+data	686901	sharedSlotCount	共用背包槽數 u32；單槽重量累加迴圈上界；零則跳過累加
+data	68ec78	interfaceMode	介面模式 u32；7 走戰鬥面板刷新，6 置顯示物件旗標，其他僅清延遲旗；亦為 case 輸入
+data	69c0f4	screenObject	顯示物件指標；模式 6 時對其 +0xf8 先後併入 0x2000 與 0x100；arena 接線
+data	ffffffffffffff8c	無關	堆疊區域變數的負位移表示，不是遊戲全域；保存分配份額浮點快取
+data	ffffffffffffff90	無關	堆疊區域變數的負位移表示，不是遊戲全域；保存分配份額浮點快取
+data	ffffffffffffff94	無關	堆疊區域變數的負位移表示，不是遊戲全域；保存分配份額浮點快取
+data	ffffffffffffff98	無關	堆疊區域變數的負位移表示，不是遊戲全域；保存分配份額浮點快取
+data	ffffffffffffff9c	無關	堆疊區域變數的負位移表示，不是遊戲全域；保存分配份額浮點快取
+data	ffffffffffffffa4	無關	堆疊區域變數的負位移表示，不是遊戲全域；保存剩餘容量整數快取
+data	ffffffffffffffc0	無關	堆疊區域變數的負位移表示，不是遊戲全域；保存容量整數快取與分配計數器
+data	ffffffffffffffc4	無關	堆疊區域變數的負位移表示，不是遊戲全域；保存浮點除數快取
+data	ffffffffffffffe4	無關	堆疊區域變數的負位移表示，不是遊戲全域；保存迴圈索引與中間值
+field	eax+0x0	selectedSharedWeight	獲選角色的共用負重欄寫回；游標已偏移角色 +0xbbd
+field	eax+0xf8	screenRefreshFlags	顯示物件 +0xf8；模式 6 併入 0x2000 與 0x100；亦為 case 輸出
+field	eax+ebp*1	presenceCheck	在場副表按槽索引尋址；首 byte 零為缺席，跳過該槽
+field	eax+ebx*1+0xb01	mainStatusCheck	角色主狀態 u32；無號值小於 0x12（18）才參與分配與重算
+field	eax+ebx*1+0xbb9	personalWeight	角色個人負重 u32；減容量得剩餘量，決定分配份額
+field	eax+ebx*1+0xbbd	sharedWeightClear	八槽共用負重欄先清零；分配再逐單位累加；亦為 case 輸出
+field	eax+ebx*1+0xbc5	capacity	角色負重容量 u32；在場槽為零會觸發整數除零錯誤，案例限定在場槽容量非零
+field	ebp+0x0	scanStatusCheck	分配掃描的角色主狀態 u32；小於 0x12 才比較其份額
+field	ebx+edx*2+0xbbd	selectedSharedRead	按獲選槽索引讀其共用負重欄；加一後寫回
+field	ecx+0xbc1	totalWeight	個人加共用負重 u32 寫回；亦為 case 輸出
+field	ecx+0xbc5	capacityDivisor	總負重百分比的整數除數；在場槽為零會錯誤，案例限定非零
+field	ecx+0xbc9	loadCategory	負重分類 u32 寫回；百分比 under 50／70／85／100 分級為 0／1／2／3，其餘為 4；變級才刷新攻擊與 AC；亦為 case 輸出
+field	edi+0x0	scanPresenceCheck	分配掃描的在場旗標；零為缺席，跳過該槽
+field	edi+ebx*1+0xbb9	loopPersonalWeight	第二迴圈的個人負重 u32 讀取；與共用欄相加得總負重
+field	edi+ebx*1+0xbbd	loopSharedWeight	第二迴圈的共用負重 u32 讀取；參與總負重
+field	edi+ecx*1	refreshCharPointer	分類變級角色的記錄指標；游標為角色位元組偏移加陣列基址，供三個重算子呼叫
+field	esi+0x0	storedShareFloat	已存分配份額 float32 讀取；與目前最佳做 x87 比較，範圍含無窮與 NaN 時按 C0 語意更新

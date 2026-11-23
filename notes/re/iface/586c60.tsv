@@ -1,0 +1,38 @@
+call	408860	playUiSound	無關：只播放音效（落銷、開鎖成功），音效關閉時直接返回；呈現用，回傳值不是規則輸入
+call	40efa0	randomBelow	亂數 R(n)：每個符合條件的鎖銷擲 R(100)，另擲一次 R(5)
+call	439b80	dialogTimerSet	無關：鎖銷對話框結尾動畫計時器（D+0x80）設定，只寫計時欄位，不進規則輸出
+call	439d80	dialogTimerStart	無關：同一計時器取起點，只寫計時欄位，不進規則輸出
+call	4457a0	practiceChanceCounter	對話框所屬物件 +0x368 起的計數欄（+0x1c）：大於 0 則減一並回真；calc 內聯重現
+call	4f30f0	dialogWidgetShow	無關：對話框子物件顯示切換（參數 0），只影響畫面；子物件指標為空會 srAssertFail
+call	553f10	naturalSkillGrowth	技能 10（開鎖）自然成長，參數（角色，10，1，0）；Emu 以位址樁取代、F 呼叫真實 naturalSkillGrowthNode
+call	585ed0	dialogTextRefresh	無關：重繪對話框說明文字，只寫介面欄位，不進規則輸出
+call	58ac00	logOrUiPrint	無關：開鎖成功時的畫面／日誌輸出，回傳值不讀，不進規則輸出
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	64babc	unlockSuccessSoundName	開鎖成功音效名稱字串；音效不影響規則輸出
+data	64bae8	pinFallSoundName	鎖銷掉落音效名稱字串；音效不影響規則輸出
+data	6850d5	difficultySetting	難度設定，鎖銷臨界值減 5 倍此值
+data	685174	characterRecords	角色記錄陣列基址，每人 0x1862 bytes
+data	68c09c	uiContext	畫面上下文指標；+0x1eb0 只當 0x58ac00 的畫面參數，不進規則輸出
+data	fffffffffffffffb	無關	參數堆疊位移或本地暫存位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移或本地暫存位移被分析為資料引用，非遊戲資料或表
+field	eax+0x0	無關	物件虛函式表指標之類的零位移取值，或指標解參考，非獨立規則欄位
+field	ebp+0x0	pinOwnerSlot	對話框鎖銷擁有者 dword（D+0x38+4i），迴圈指標解參考；-1 無人，等於施放角色索引時才擲骰；雙重索引欄位；差分輸入與輸出包含
+field	ecx+0x0	無關	指標解參考，非獨立規則欄位
+field	eax+0x74	pinsChangedFlag	鎖銷容器位元組 +0x74，任一鎖銷掉落時設 1
+field	eax+edx*2+0x31f	lockPickSkillValue	角色欄位 C+0x31f：開鎖（技能 10）有效值，臨界值的基底；差分輸入與輸出包含
+field	ecx+edx*2+0x31f	lockPickSkillValue	同 C+0x31f：成長前後比較，不同則刷新說明文字；差分輸入與輸出包含
+field	ebx+esi*1+0x58	pinSettledByte	對話框位元組 D+0x58+i：鎖銷 i 已設定，非零則不擲骰；雙重索引欄位；差分輸入包含
+field	ecx+0x1eb0	無關	畫面上下文 +0x1eb0，只當 0x58ac00 的畫面參數，不進規則輸出
+field	ecx+0x34	pinUnlockedFlag	鎖銷物件位元組 +0x34，掉落時清零；差分輸入與輸出包含
+field	ecx+0x36	pinOpenedFlag	鎖銷物件位元組 +0x36，掉落時設 1；差分輸入與輸出包含
+field	ecx+eax*1	pinObjectTable	鎖銷容器 P+0x54+4i 的鎖銷物件指標（i 為鎖銷索引）；case 固定八個互異鎖銷物件
+field	esi+0x10	pinContainer	對話框的鎖銷容器物件 P
+field	esi+0x14	textRefreshPanel	對話框的說明文字面板，由 0x585ed0 刷新；只影響畫面
+field	esi+0x18	completionWidget	對話框的結尾子物件，成功時隱藏；只影響畫面
+field	esi+0x2c	castingMember	施放角色索引 who（0..7）：對照鎖銷擁有者、取角色記錄、計數器索引
+field	esi+0x30	currentPinIndex	本次剛設的鎖銷索引 wr（0..7）：寫入擁有者表
+field	esi+0x34	dialogState	對話框完成狀態，所有鎖銷都有擁有者時寫 8；差分輸入與輸出包含
+field	esi+0x8	skillPracticeOwner	對話框所屬物件，+0x368+0x1c 為技能練習次數計數器（0x4457a0）；差分輸入與輸出包含
+field	esi+0xc	pinCount	對話框鎖銷數，最多八；非正數時迴圈不跑、直接視為全部設完
+field	esi+eax*4+0x38	pinOwnerSlot	對話框 dword D+0x38+4i：-1 或設鎖角色索引；本次寫入 D+0x38+4*wr；雙重索引欄位；差分輸入與輸出包含
+field	esi+edx*4+0x60	pickCounter	對話框 dword D+0x60+4*who：該角色的開鎖嘗試計數，加一；雙重索引欄位；差分輸入與輸出包含

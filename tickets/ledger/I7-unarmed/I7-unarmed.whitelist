@@ -1,0 +1,5 @@
+internal/calc/fight.go
+internal/calc/fight_unarmed_test.go
+internal/calc/rank.go
+tools/calc/main.go
+notes/calc-fight.md

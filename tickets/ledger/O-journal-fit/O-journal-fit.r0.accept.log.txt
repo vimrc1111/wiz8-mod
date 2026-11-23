@@ -1,0 +1,21 @@
+PASS clipped id=734
+PASS clipped id=1224
+PASS clipped id=1226
+PASS clipped id=1230
+PASS clipped id=1274
+PASS clipped id=1285
+PASS clipped id=1289
+PASS clipped id=1382
+PASS clipped id=1544
+PASS fits id=1232
+PASS short id=1289
+ok journal-fit.test：截圖校準 11 項皆符
+PASS baseline
+PASS inject:over
+PASS inject:reason
+PASS inject:stale
+PASS inject:lines
+ok check-fit.test：4 種注入皆紅
+ok fitcheck: 2345 條；寬度內 2161、登記溢出 184
+ok journal: 337 條；寬度內 314、登記溢出 23
+ok  	wiz8-mod/tools/fitcheck	0.023s

@@ -1,0 +1,39 @@
+call	2b6	無關	抽取器把偏移當成呼叫目標；低於 PE ImageBase，並非遊戲函式（同 4e4280 的處理）
+call	40efa0	rand_n	旗標路徑的一次 R(100)，小於模板兩個控制機率之和的一半才排事件；Rand 重放原呼叫次序
+call	517a90	無關	控制成功訊息的 vsprintf 格式化，只產生顯示文字，回傳字串交給訊息框，不改規則狀態；emu 原生執行
+call	517f90	percent_increase	威力的百分比加成：乘積保留低 32 位並以無號值除 100，結果加回原值；calc 內聯
+call	528830	無關	事件佇列加入一筆（類型 0x16）；佇列在進入時為空，加入後筆數加一，筆數 0x68c4c0 是輸出；非公式事件輔助，emu 原生執行
+call	529570	無關	訊息框外包：設通知旗標與計時全域後轉呼叫 576030；訊息內容只是顯示，emu 原生執行，576030 以位址樁記錄引數
+call	590b40	無關	怪物名字格式化後送訊息框的抵抗／控制通知；只動顯示，不改本節點輸出，case 使用無訊息視窗狀態，emu 原生執行
+call	4e5840	monster_by_id_checked	依怪物 ID 取得即時怪物記錄；找不到時的診斷不是公式
+call	4e5720	monster_template_by_record	依怪物記錄的模板索引取得模板的抗性與等級
+call	4e5550	monster_index_by_id	依目標記錄的怪物 ID 搜尋即時怪物列表
+call	4e5620	monster_record_by_index	將列表索引解成即時怪物記錄
+call	5520d0	status_resist_roll	怪物是否抵抗控制狀態（領域 4、強度 [效果+0xc8]、狀態 0）；D4 公式節點，case 以位址樁換掉，回傳值取自 case 輸入，calc 的 F 另行呼叫 statusResistRollNode
+call	552250	resistance_quantity_reduction	威力經怪物心靈抗性縮減；D4 公式節點，case 原生執行，calc 直接呼叫同一個 Go 函式
+call	4acd80	monster_visual_effect	控制從 0 變成非 0 時對怪物視覺物件播放效果 0x26；位址樁記錄三個引數與呼叫次數，輸出不被本節點讀回
+data	4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；效果目標種類不是怪物、怪物 ID 為 -1 時停止，沒有可差分的返回，合法輸入走不到
+data	617584	無關	控制成功訊息的格式字串，只供顯示文字
+data	61e2c4	無關	assert 用的來源檔名字串，不參與規則
+data	61e334	無關	目標種類不是怪物時 assert 使用的訊息字串，不參與規則
+data	61e360	無關	怪物 ID 為 -1 時 assert 使用的訊息字串，不參與規則
+data	68510c	notice_flag	顯示通知旗標 u8；非零時改走通知訊息分支，為零時把效果記錄 +0x125 設 1
+data	68c09c	message_controller	訊息控制器基址；+0x6b0、+0x6cc 取格式字串指標，只供顯示
+field	esi+0x78	control_chance_flag	效果記錄旗標 u8；非零時只擲一次機率，不改控制時間
+field	esi+0x90	target_kind	效果記錄的目標種類；必須是怪物 3，否則 assert
+field	edi+0x0	target_kind	目標記錄類型；怪物 3，其餘 assert 或走不到的非怪物訊息分支
+field	edi+0x4	target_character_index	目標記錄角色索引；只在不可達的非怪物訊息分支使用
+field	edi+0x8	target_monster_id	目標記錄中的怪物 ID，交給怪物列表搜尋，只供通知訊息
+field	esi+0x98	target_monster_id	效果記錄的怪物 ID u32；-1 assert，其餘交給怪物列表搜尋
+field	esi+0xc8	effect_strength	效果強度 u32；交給抵抗判定與抗性縮減
+field	esi+0xd0	effect_power	效果威力 u32；乘七後加成再縮減
+field	esi+0xd4	effect_percent_bonus	效果百分比加成 u32；交給 517f90
+field	esi+0x1	notice_byte	效果記錄 +0x125 通知位元組 u8；通知旗標為零且控制時間增加時設 1
+field	ecx+0xd2	template_control_a	模板控制機率之一 u8；旗標路徑與 +0xd5 相加後減半
+field	ecx+0xd5	template_control_b	模板控制機率之二 u8
+field	ebp+0x2de	monster_control_duration	怪物即時控制時間 i8；新值有號大於舊值才更新
+field	ebp+0xc	monster_visual_object	怪物即時記錄指向視覺物件的指標；case 以固定視覺物件提供，只交給 4acd80 與顯示函式
+field	ecx+0x6b0	message_format_a	訊息控制器 +0x6b0 的格式字串指標，只供顯示文字
+field	edx+0x6b0	message_format_a	訊息控制器 +0x6b0 的格式字串指標，只供顯示文字
+field	edx+0x6cc	message_format_b	訊息控制器 +0x6cc 的格式字串指標，只供顯示文字

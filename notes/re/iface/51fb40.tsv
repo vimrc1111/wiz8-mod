@@ -1,0 +1,27 @@
+data	0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+call	51fe30	moveItemInstance	把暫存實例搬進新的共用槽並清空來源；本函式原樣重放（不登記成節點），calc 重現其效果：12 bytes 複製、位元組 +0xa 清零
+call	5e1da0	無關	編譯器的堆疊探測（本函式 0x1788 bytes 區域變數），與規則無關
+call	4edd20	sharedEncumbrance	共用負重刷新（D4 節點），以位址樁取代；輸出為呼叫次數（每拆出一疊一次）
+data	68516c	itemDefinitions	物品定義庫基址；索引以 269-byte 記錄定位，讀 +0x66 種類、+0x6b 堆疊上限
+data	685191	sharedItemSlots	共用物品實例槽陣列基址（12-byte 記錄，上限 500 筆）；新拆出的疊寫在第 slotCount 筆
+data	685195	sharedItemSlots	同陣列第 0 筆的 +4（槽內數量欄）位址
+data	685199	sharedItemSlots	同陣列第 0 筆的 +8（尾端 dword）位址
+data	68519d	sharedItemSlots	同陣列第 1 筆起點（槽位移 +0xc）；僅在不可達的搬移分支以偏移形式出現
+data	686901	sharedSlotCount	共用物品實例槽的使用筆數（u32）；達 500 即不再拆，把數量夾到堆疊上限
+field	ebp+0x0	itemIndex	物品實例的 i32 定義索引；-1 表示空物品並直接返回
+field	ebp+0x4	quantity	物品實例的 u8 堆疊數量；校正後可被拆分並扣減
+field	ebp+0x5	sideQuantity	物品實例的 u8 副數量；種類 1 時併入 quantity 後清零，種類 2..4 時接收 quantity
+field	eax+esi*1+0x66	itemKind	所選物品定義 +0x66 的 u8 種類：1 為可堆疊，2..4 搬到副數量，其餘不處理；步長 269
+field	eax+esi*1+0x6b	stackLimit	所選物品定義 +0x6b 的 u8 堆疊上限；零表示數量歸零；步長 269
+field	edx+esi*1+0x6b	stackLimit	同上，以實例索引重新定位所選定義後再讀（拆分量計算）
+field	eax+0x0	stackLimit	指向所選定義 +0x6b 的指標解參考，同上
+field	edx+0x0	itemIndex	複製暫存實例時讀實例 dword +0（定義索引）
+field	edx+0x4	itemInstanceTail4	複製暫存實例時讀實例 dword +4（數量、副數量與兩個無規則位元組）
+field	edx+0x8	itemInstanceTail8	複製暫存實例時讀實例 dword +8（原樣帶入新槽，+0xa 由搬移函式清零）
+field	edi+0x0	sharedItemSlots	以 12-byte 為步長的共用槽 dword 寫入位置（清零新槽用）
+field	esi+0x0	itemIndex	新槽的 dword +0；先設 -1 再由搬移函式填入實例索引

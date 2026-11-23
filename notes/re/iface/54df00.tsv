@@ -1,0 +1,63 @@
+call	40efa0	rollPercentDie	R(100)：角色／怪物解除判定各一次（門檻 100 或威力×15），角色解除成功後再一次（低於 50 才呼叫語音事件）
+call	517f90	percentAdjustInPlace	原地把削減量加上 削減量×百分修正÷100（乘積取低 32 位、無號除）；非公式輔助，由本節點原生執行
+call	50b800	objectTableLookup	依隊員記錄 +0xfa 的物件 id 取 0x689f94 物件表項（id 不小於筆數取第 0 項，表或項為空、旗標 +0xc7 非零視為無）；結果的 word +4 清零；calc 的 carObject 重現
+call	523f40	monsterConditionRemove	怪物解除判定成功時以怪物編號解除狀態：HP 非零才清時間，狀態 7 另清毒強度，重選最高有效狀態；case 原樣執行，calc 以 monsterConditionDecayNode（削減量無上限）重現
+call	5905e0	getCombatMessageEnabled	訊息續接旗標 0x69b7b8；非零時先輸出前綴訊息
+call	5905f0	無關	輸出回復訊息；case 畫面模式 0 不渲染，wcslen 回傳值在此模式不被使用（ret=0 樁）
+call	5905c0	回復訊息待續旗標設定	把 0x69b7b8 設為一（顏色參數 −1 保留）；0x69b7b8 為輸出
+call	517a90	無關	格式化彙總回復訊息到共用緩衝；只供顯示，不參與規則
+call	2b6	assertFailureIndirectCall	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，只在 cov-exempt 的塊裡出現
+data	5ebaf4	無關	斷言失敗入口的 IAT 槽（srAssertFail），只在斷言分支被呼叫，無返回值可差分
+data	61a944	無關	斷言用的條件字串（角色 ID 不為 -1），只傳給斷言入口
+data	60f4f8	無關	斷言用的條件字串（怪物記錄存在），只傳給斷言入口
+data	61e2c4	無關	斷言用的原始檔名字串，也作為 4e5550 的來源檔名參數，不參與規則
+data	619788	無關	回復訊息首段前綴文字，只影響顯示
+data	619794	無關	回復訊息續接前綴文字，只影響顯示
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）
+data	685178	partyPresenceBase	隊員在場／行動記錄基址（每人 0x106 bytes），+0xfa 為物件 id
+data	68510c	逐目標回復通知模式	非零時逐角色以 0x590950 通知且不彙總；零則本節點在結尾彙總訊息並設 +0x124；case 輸入
+data	68c09c	messageTable	文字資源表指標：項 0x6c4/4、0x6c8/4 與 word(0x61e576+8×狀態) 項作訊息參數；case 每項指向不同字串以驗索引
+data	61e576	conditionMessageIndex	每狀態 8 bytes 記錄的 word 欄：該狀態的訊息文字索引；calc 執行時從玩家 exe 讀
+data	68c55c	voiceEventArg2	語音事件（52e690，排除）第二參數，全域；case 輸入、記錄於樁參數
+data	5ed8c8	voiceEventArg4	語音事件（52e690，排除）第四參數，全域；case 輸入、記錄於樁參數
+data	5ed914	voiceEventArg5	語音事件（52e690，排除）第五參數，全域；case 輸入、記錄於樁參數
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff3	無關	分析器把負的立即值／堆疊位移列為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	分析器把負的立即值／堆疊位移列為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	分析器把負的立即值／堆疊位移列為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	分析器把負的立即值／堆疊位移列為資料引用，非遊戲資料或表
+field	ebx+0xd0	effectPower	效果威力：削減量 = 威力² ，判定門檻 = 威力×15
+field	ebx+0xd4	effectPercentBonus	削減量的百分修正
+field	ebx+0xe4	effectMonsterCount	怪物目標數（有號，不大於 0 不處理）
+field	ebx+0xec	effectMonsterIdArray	怪物目標 ID 陣列指標
+field	ebx+0xf4	effectCharacterCount	角色目標數（有號，不大於 0 不處理）
+field	ebx+0xfc	effectCharacterIdArray	角色目標 ID 陣列指標
+field	ebx+0x90	effectNoticeKind	單一目標通知種類：1 角色、3 怪物，其餘走彙總訊息
+field	ebx+0x94	effectNoticeCharacter	種類 1 時通知的角色 id，交給 0x590950
+field	ebx+0x98	effectNoticeMonster	種類 3 時通知的怪物 id，查得記錄後交給 0x590b40
+field	ebx+0x124	effectCured	有目標被完全解除或結尾輸出訊息時設 1；輸出
+field	ebx+0x125	effectTouched	有目標被處理（削減或解除）時設 1；輸出
+field	eax+0x0	characterTargetId	角色 ID 陣列元素，-1 為斷言，其餘作記錄索引
+field	edx+0x0	characterConditionSlot	角色 +0xa01+4×狀態 的狀態時間（經保存的指標於 0x5236a0 之後重讀）；9999 為永久
+field	esi+0x0	monsterRecordId	怪物記錄首 DWORD，即怪物編號，傳給 0x523f40
+field	esi+ebp*4+0x57	monsterConditionDuration	怪物 +0x57+4×狀態 的時間；直接削減時寫回
+field	esi+ebp*1+0x111	characterResurrectBaseA	復活時 s = (+0x111 + +0x125)>>2 的第一項
+field	esi+ebp*1+0x125	characterResurrectBaseB	復活時 s 的第二項
+field	esi+ebp*1+0xb0d	characterMaxHp	復活時 +0xb11 = max(1, 本欄×s÷100)
+field	esi+ebp*1+0xb11	characterHp	復活寫入；輸出
+field	esi+ebp*1+0xb19	characterMaxStamina	復活時 +0xb1d = max(1, 本欄×s÷100)
+field	esi+ebp*1+0xb1d	characterStamina	復活寫入；輸出
+field	edx+ecx*2+0xfa	characterObjectId	隊員記錄 +0xfa 的物件 id，-1 無；交給 0x50b800
+field	eax+0x4	objectWord4	0x50b800 回傳物件的 word +4，復活時清零；輸出
+field	ebp*8+0x61e576	conditionMessageIndex	exe 表：狀態的訊息文字索引（word）
+field	eax+edx*4	messageTableEntry	文字資源表項（索引來自 0x61e576）
+field	ecx+edx*4	messageTableEntry	文字資源表項（索引來自 0x61e576）
+field	eax+ecx*4	messageTableEntry	文字資源表項（索引來自 0x61e576）
+field	eax+0x6c4	messageTableEntry433	文字資源表項 433，通知訊息格式
+field	ecx+0x6c4	messageTableEntry433	文字資源表項 433，通知訊息格式
+field	eax+0x6c8	messageTableEntry434	文字資源表項 434，彙總訊息格式
+native	G6	原生世界夾具	re/emu/native/0054df00.json 補訊息索引 579/840..842、畫面與行動記錄、空陣形、角色有效位及空裝備／背包；不改原 62 條 boundary、160 條 random 或範圍。52f790 是排除類，原生夾具另裝該語音樁。
+native	523330	G6b callee 副作用	54df00 與 523330 F 共用 ccrWorld，傳遞狀態、毒強度、HP／體力上限及現值、有效屬性；同一角色重複目標與死亡巢狀解除都看到前次更新。復活依重建後屬性與上限計算，死亡／復活物件 word+4 依順序寫 1／0。未改類別、原始屬性或原生 setup 來避開重建；原 boundary 3 與 random 19 均保留。證據 build/wiz8.asm:394989、318884、404258、404339、453632。
+native	52e690	G6b 記錄上界 24	原目標夾具上限 8 不變。每次目標處理最多一次 52a2f0 導致的死亡、一次狀態語音及一次解除語音；52f110 經 517fb0 的要求筆數為 1，至多回應一次。原生世界原始屬性／等級為零，屬性重建後下限 1，HP 上限固定；死亡內再清槽不會再次降低上限，故每次目標的上界 3、全陣列上界 8×3=24。證據 build/wiz8.asm:378662、404258、405118、411601、411898、453632。記錄移至獨立 voiceRecords，容量守衛保留；前 8 筆與 count 保留原輸出索引，額外 16×5 參數追加為輸出，全納入差分。沒有刪除 62 條 boundary 或改動 160 條 random 的種子、範圍、輸入欄位與路徑設定。

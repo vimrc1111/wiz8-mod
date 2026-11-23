@@ -1,0 +1,39 @@
+call	40efa0	rand_n	亂數 R(n)：先 R(360) 取方向角度，距離足夠才再 R(100) 取命中擲骰，由 Rand 重放；來源 exe 0x545587、0x54577d
+call	5e1c22	朝零截斷轉整數	距離乘 0.002 取整，作為準確度的距離折減百分點；來源 exe 0x545700
+data	5ebb40	零常數	double 0.0，向量長度平方為零時略過正規化；來源 exe 0x5455c9、0x54561c、0x545806
+data	5ebc30	最小瞄準距離	double 1.0，起點到瞄準點距離小於此值就不修改瞄準點；來源 exe 0x545693
+data	5ebf50	距離折減係數	double 0.002，距離乘它取整得準確度折減百分點；來源 exe 0x5456fa
+data	5ec150	失明旗標距離基準	double 500.0，旗標非零時散布半徑倍率 = 500 除以距離（上限 1.75）；來源 exe 0x5456ab
+data	5ec300	度轉弧度因子	double 1/180，與 π 相乘後乘 R(360) 得隨機方向角；來源 exe 0x5455a5
+data	5ee7a0	圓周率	double π；來源 exe 0x54559f
+data	5ee7c0	低準確度命中係數	double 0.01，準確度非正且擲骰扣掉後仍正時，(100-餘值) 乘它作插值權重；來源 exe 0x5457c6
+data	5ee7c8	準確度插值係數	double 1/300，準確度 1..299 的插值權重 (300-準確度) 乘它；來源 exe 0x545751
+data	5ee7d0	準確度插值上限	double 300.0，準確度達 300 以上散布縮到最小；來源 exe 0x54574b
+data	5ee7d8	旗標為零的最大散布倍率	double 0.08，旗標為零時的倍率；來源 exe 0x5456da
+data	5ee7e0	旗標非零的最大散布倍率	double 1.75，旗標非零時倍率上限；來源 exe 0x5456c3
+field	ebx+0x0	起點X	射手起點世界座標 X（float32）；來源 exe 0x5454d9
+field	ebx+0x4	起點Y	射手起點世界座標 Y（float32）；來源 exe 0x5454e6
+field	ebx+0x8	起點Z	射手起點世界座標 Z（float32）；來源 exe 0x5454f8
+field	edi+0x0	瞄準點X	輸入目標 X，輸出為加入散布後的瞄準點 X（float32）；來源 exe 0x5454d2、0x54587b
+field	edi+0x4	瞄準點Y	輸入目標 Y，輸出為加入散布後的瞄準點 Y（float32）；來源 exe 0x5454df、0x54587d
+field	edi+0x8	瞄準點Z	輸入目標 Z，輸出為加入散布後的瞄準點 Z（float32）；來源 exe 0x5454f1、0x545888
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffbc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffdc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表

@@ -1,0 +1,24 @@
+call	5010f0	spellTargetClass	將法術 ID 的目標規則轉成資格類別；法術 0 回 0，攻擊情境參數決定是否保留特殊類別。來源 0x537230、0x5010f0。
+call	519180	characterTargetReachability	目標相容後檢查目標存在、角色隊形、怪物可達性與座標射程；參數為角色索引、0、攻擊情境。來源 0x537240、0x519180。
+call	537160	spellTargetKindCompatibility	將目標描述與法術資格類別比較，再依目標種類檢查存活、復活、怪物或群組資格；回傳 AL。來源 0x53723b、0x537160、0x536190。
+data	4	無關	參數堆疊位移 4 被分析為資料引用，非遊戲資料或表。
+data	8	無關	參數堆疊位移 8 被分析為資料引用，非遊戲資料或表。
+data	c	無關	參數堆疊位移 0xc 被分析為資料引用，非遊戲資料或表。
+call	53b7f0	actionTargetDescriptor	依攻擊情境與動作來源取目標描述；情境 6 依戰鬥記錄動作種類、特殊選擇、戰鬥模式決定來源 0..5 或 7（空描述）。來源 0x53b7f0、0x53b920。
+call	53b920	actionSourceResolve	情境 6 轉成動作來源；階段種類 7 且戰鬥記錄存在時讀記錄動作種類與旗標，否則看選中角色與特殊模式、戰鬥模式。來源 0x53b920。
+call	5194e0	monsterTargetAttackRange	怪物目標的攻擊可達判定，吃戰鬥階段、模式旗標、隊形與座標；由 n_5194e0.go 的公式重放。來源 0x5194e0。
+call	5199f0	actionAttackRange	依動作來源與 hand 取射程枚舉；特殊模式讀特殊選擇的法術與物品。來源 0x5199f0。
+call	51b000	partyFormationRangePenalty	攻擊者與角色目標的隊形象限差決定射程懲罰；目標 -1 讀 0x687519，與象限槽表別名。來源 0x51b000。
+call	53a8d0	coordinateTargetSpell	座標目標由動作來源導出法術；種類 5／6／8 才有座標射程，其餘為原版 assertion。來源 0x53a8d0。
+call	537780	groupMemberDistance	群組目標走訪成員取最近距離。來源 0x537780。
+data	683f94	combatMode	非零表示戰鬥模式，情境 6 選來源 1；也餵進隊形射程懲罰。
+data	683f95	specialSpellMode	非零表示特殊法術選擇；與選中角色相符時情境 6 選來源 2。
+data	683f96	specialItemMode	非零表示特殊物品選擇；與選中角色相符時情境 6 選來源 2。
+data	683fe7	combatPhase	戰鬥階段值，怪物目標可達判定分支使用。
+data	68ec78	combatPhaseType	階段種類；7 且戰鬥記錄存在時情境 6 由記錄決定來源。
+data	68518d	selectedCharacterSlot	選中角色槽，-1 為無；與施法者相同才走特殊選擇來源。
+data	68408b	specialTargetDescriptor	來源 2 的目標描述全域（種類、角色、怪物、群組、座標）。
+data	69b9a4	specialItemOverridePointer	特殊物品覆蓋項指標；非零時覆蓋項的物品索引優先。
+data	686a40	partyHeadingDegrees	隊伍朝向角度，隊形象限計算使用。
+data	687511	formationQuadrantSlots	五區各三個 u8 角色槽，255 為空；與目標 -1 的象限讀取別名。
+data	68edcc	battleRecordPointer	戰鬥記錄指標；階段種類 7 時讀動作種類 +0x2f0 與旗標 +0x2f8。

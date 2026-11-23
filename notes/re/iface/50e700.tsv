@@ -1,0 +1,32 @@
+call	483e30	setPartyEffectDisplayStrength	隊伍顯示物件存在時寫入效果強度加顯示基值；本案例配置顯示管理物件但其效果視窗為空，子呼叫照常執行且無寫入（build/wiz8.asm:176437）
+call	483e50	setPartyEffectDisplayEnabled	依隊伍效果強度是否非零切換效果顯示；顯示視窗不存在時無副作用；不是能力計算輸出（build/wiz8.asm:176453）
+call	4ed9d0	rebuildCharacterRuleAbilities	總修正生成後重算角色屬性、技能、生命／耐力／法力、抗性與負重等快取；原版照常執行；本節點差分輸出為完整隊伍及八個角色修正緩衝，衍生快取不納入輸出（build/wiz8.asm:318884；既有 50e650 節點採部分快取介面）
+call	50edc0	applySharedSpellRuleModifiers	十二筆共享法術記錄的啟用旗標、法術碼、強度及百分比倍率生成隊伍修正；分派表從使用者 exe 執行時讀取（build/wiz8.asm:365899）
+call	50ef50	applyCombatAuraRuleModifiers	六筆戰鬥光環記錄依啟用、法術碼、強度與倍率修正護甲／命中及六領域抗性（build/wiz8.asm:366051）
+call	50f090	mergeRuleModifierBuffers	裝備、狀態與符合在隊條件的隊伍修正組合；byte 相加回繞，六旗標正規化聯集，三強度取無號最大值（build/wiz8.asm:366184）
+call	547940	characterHasRuleFeature	依目前職業與種族表判定能力 0x0a；需在場、生命非零、主狀態為零才查；不臆測此能力的正式名稱（notes/re/abilities.md:49）
+data	5ec0b0	partyEffectDisplayStrengthBase	效果顯示強度的浮點基值；僅作用於存在的顯示物件，本案例顯示視窗為空，因此不讀值作 calc 常數
+data	6836a8	combatPartySpellRecordBase	戰鬥隊伍物件指標；九笔法術從 +0x7c1 起、六筆光環從 +0x85a 起，步長均為 17 bytes
+data	683f94	combatActive	非零才讀戰鬥隊伍法術與光環；原版能力重算亦使用此旗標
+data	685174	partyCharacterBase	八個角色物件陣列基址，步長 0x1862
+data	685178	partyPresenceRecordBase	八個在場記錄陣列基址，每槽 0x106 bytes；各槽首 byte 判定是否參與此次能力掃描與重建
+data	68691f	sharedPartySpellRecords	十二筆共享隊伍法術記錄；每筆啟用 byte、法術 u32、強度 byte、倍率 u32 對應 +0、+1、+5、+9
+data	687453	partySharedRuleModifiers	103-byte 隊伍共享修正輸出；入口清零，全部輸出納入差分
+data	687457	partyEffectAdjacentModifierStorage	隊伍修正 +4 的命中修正欄；資料掃描同時將相鄰 +5 byte 合併標在此引用（build/decomp/cand-b03.c 的符號邊界），實際扣減為 +5
+data	687458	partyPhysicalDamageReductionModifier	隊伍修正 +5；戰鬥九筆法術中啟用且法術碼 49 時扣除其 byte 強度，允許回繞
+data	687459	partyArmorModifier	隊伍修正 +6；與此次隊伍緩衝同時清零，後續傳給角色修正合併；掃描的符號資料引用不代表獨立額外輸入
+data	687495	partyFeature10FlagA	隊伍修正 +0x42；任一合格角色有能力 0x0a 即置 1，正式效果名稱尚未取得
+data	687496	partyFeature10FlagB	隊伍修正 +0x43；能力 0x0a 的第二個共同旗標，原版一併置 1
+data	687497	partyFeature10FlagC	隊伍修正 +0x44；能力 0x0a 的第三個共同旗標，原版一併置 1
+data	68749a	partyEffectDisplayStrength	隊伍修正 +0x47；共享法術生成的 byte 強度，非零啟用顯示並加顯示基值
+data	fffffffffffffff8	無關	掃描器將堆疊負位移列為資料引用；用途為呼叫暫存與堆疊管理，不是遊戲欄位或資料表
+data	fffffffffffffffc	無關	掃描器將堆疊負位移列為資料引用；用途為呼叫暫存與堆疊管理，不是遊戲欄位或資料表
+field	eax+0x0	combatSpellStrength	戰鬥法術目前記錄 +5 的 byte 強度，啟用且碼 49 時從隊伍物理減傷修正扣除
+field	eax+0xb01	characterPrimaryState	角色主狀態 u32；非零不能提供能力 0x0a 的隊伍旗標
+field	eax+0xb11	characterCurrentHitPoints	角色當前生命 u32；零不能提供能力 0x0a 的隊伍旗標；最高位不代表負生命。案例以 also 同步 C+0xb0d 最大生命（沿用 n_50db50.go 的滿血介面），保留完整 u32 範圍；能力重算依最大生命差額調整當前生命，不引發另一次死亡／狀態修正重建
+field	eax+edx*1	partyPresenceForRebuild	隊伍在場記錄首 byte；以槽步長 0x106 檢查，非零才重建該角色總修正
+field	eax-0x4	combatSpellCode	戰鬥九筆法術記錄的 u32 法術碼，49 才扣除物理減傷修正
+field	eax-0x5	combatSpellActive	戰鬥九筆法術記錄的 byte 啟用旗標，非零才檢查法術碼
+field	edi+0x0	modifierBufferClearDestination	隊伍與角色修正緩衝初始化的寫入目的；完整清零 103 bytes，非額外輸入
+field	esi+0x4	characterInParty	角色在隊旗標；非零才將隊伍共享修正合併到角色總修正。戰鬥能力重算子函式要求此旗標非零，非戰鬥可測試零值
+field	esi+eax*1	partyPresenceForFeatureScan	能力掃描使用的隊伍在場記錄首 byte；與重建掃描讀同一槽但分別控制兩階段

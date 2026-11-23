@@ -1,0 +1,19 @@
+call	2b6	assertFailureIndirectCall	D1 將 0x5458f4 的間接呼叫列為此目標；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，手索引的防禦性檢查，不參與合法輸入資格計算。
+call	519ac0	characterAttackRange	讀手攻擊種類、可用旗標、裝備索引及物品射程；先檢查任一手可用，最後固定查主手射程，包含主手停用回 -1 的邊界。
+call	547940	characterHasBerserkAbility	目前職業三項能力與種族五項能力的聯集，要求能力 0x14；來源 notes/re/abilities.md:11、0x5458c0。
+data	4	無關	堆疊角色索引參數的偏移，非絕對規則資料。
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 IAT 槽；不可達的手索引防禦性錯誤分支。
+data	61d298	validHandAssertionText	手索引必須小於 2 的檢查診斷字串，不含資格數值或資料表。
+data	61d2ac	berserkSourceFilename	防禦性檢查的來源檔名字串，不影響資格布林值。
+data	685174	partyCharacterRecords	角色陣列基址，索引乘 0x1862；案例以 index 選擇八筆之一，診斷子函式亦按此表尋找角色。
+field	ebx+eax*1+0x114d	characterHandAttackAvailable	角色主手可用旗標 C+0x114d，副手加 0x5b；零略過該手，至少一手啟用才查主手射程。
+field	C+0x69	currentClass	0x547940 子函式讀目前職業；-1 跳過職業能力表，其他合法索引讀三項能力。
+field	C+0x71	race	0x547940 子函式讀種族；-1 跳過種族能力表，其他合法索引讀五項能力。能力 0x14 不讀吐息效果欄。
+field	C+0x4	characterInParty	主手停用而副手啟用時，0x517ec0 診斷讀在隊旗標；案例提供非零 byte 且角色位於八個隊伍槽之一。
+field	C+0x1149	characterHandAttackKind	0x519ac0 主副手攻擊種類，副手加 0x5b；1/3 用裝備射程，其他 u32 值回近距離 0。
+field	C+0xfa5	mainEquippedWeaponItemIndex	0x519ac0 讀主手裝備索引，物品 stride 0x10d；案例使用四筆獨立射程。
+field	C+0xfb1	offEquippedWeaponItemIndex	0x519ac0 讀副手裝備索引，與主手可獨立選擇或共享物品。
+field	I+0x47	itemAttackRangeClass	0x519ac0 將物品射程 byte 零擴展；本節點最後固定要求主手射程有號值 <=1。
+data	68516c	itemDefinitions	子函式的動態物品陣列基址，案例置四筆 arena 記錄，不需怪物記錄。
+data	61507c	currentClassAbilityTable	子函式讀執行檔職業能力表；模擬器映射原表，calc 共用執行時載入器。
+data	615130	raceAbilityTable	子函式讀執行檔種族能力表；模擬器映射原表，calc 共用執行時載入器。

@@ -1,0 +1,75 @@
+call	519ba0	handAttackRange	手 h 的攻擊距離：取角色記錄後轉呼 0x519ac0（D4）；calc attackRange()
+call	52c320	spellRecord	法術記錄 [0x65be1c]+0x1bf*法術；原生，calc 對法術 8 以上 panic（夾具上限）
+call	538670	slotTargetSet	(who, 目標, 0)：把隊員副記錄 +0x1d 目標描述寫成 {1, 目標, -1, -1, 0…}；calc 直接寫入，欄位進輸出
+call	53be00	makeCharacterSource	堆疊上的來源描述填種類 1 與角色索引，只供 0x4ec1e0／0x5471d0 讀；原生，無規則效果
+field	eax+0x4eac4c	overrideJumpIndex	狀態覆寫結果 0..10 對應跳躍表索引的 byte 表，執行時從 exe 讀
+field	ecx*4+0x4eac3c	overrideJumpTable	狀態覆寫結果分派的跳躍表，執行時從 exe 讀
+field	eax*4+0x4eac58	actionJumpTable	動作 -1..9 分派的跳躍表
+field	eax+0x58	battleMember58	戰鬥塊隊員記錄 +0x58：已有動作且 +0x99 時清零
+field	eax+0x5c	battleMember5c	戰鬥塊隊員記錄 +0x5c：同 +0x58
+field	eax+0x80	battleMember80	戰鬥塊隊員記錄 +0x80：同 +0x58
+field	eax+0x99	battleMemberReset	戰鬥塊隊員記錄 +0x99：非零時把已有的攻擊動作改回 -1
+field	eax+edx*1+0x4c	battleMemberHasAction	戰鬥塊隊員記錄 +0x4c：為零時取排隊的下一個動作；非 4／5 時設 1
+field	ecx+eax*4+0x4c	battleMemberHasAction	同上（寫入）
+field	edx+ecx*1+0xbf	battleMemberBf	戰鬥塊隊員記錄 +0xbf：取下一個動作時清零
+field	edx+ecx*4+0x98	battleMemberForced	戰鬥塊隊員記錄 +0x98：覆寫 8 設 1；非零時不呼叫 0x5471d0
+field	edx+ecx*4+0xbc	battleMemberDefendMsg	戰鬥塊隊員記錄 +0xbc：動作 4 時非零才顯示防禦訊息
+field	eax+0x7b0	battlePhase	戰鬥塊 +0x7b0：戰鬥中結尾設 2
+field	eax+0xa55	battleFlagA55	戰鬥塊 +0xa55 byte：動作非 4／5 時清零
+field	edx+0xa5c	battleFlagA5c	戰鬥塊 +0xa5c：攻擊允許且目標種類 3..6 時清零
+field	eax+0x8d0	strDefend	字串表項 0x234（防禦訊息格式）
+field	eax+edx*4	stringPointer	字串表 [0x68c09c]+4i
+field	edx+eax*4	stringPointer	同上
+field	ecx*2+0x61e658	overrideMessageId	狀態覆寫結果對應字串編號的 word 表，執行時從 exe 讀
+field	edi*2+0x61e988	actionNameId	動作對應字串編號的 word 表（未知動作訊息），執行時從 exe 讀
+field	eax+ecx*1+0x1	queueAction	隊員副記錄 +1：目前動作（有號）
+field	eax+edx*1+0x1	queueAction	同上
+field	ecx+eax*1+0x1	queueAction	同上
+field	ecx+edx*1+0x1	queueAction	同上
+field	esi+eax*1+0x1	queueAction	同上
+field	esi+ecx*1+0x1	queueAction	同上
+field	esi+edx*1+0x1	queueAction	同上
+field	eax+ecx*1+0x5	queueSpell	隊員副記錄 +5：法術
+field	esi+eax*1+0x5	queueSpell	同上
+field	eax+ecx*1+0x9	queueF9	隊員副記錄 +9：取下一個動作時設 -1
+field	esi+ecx*1+0x15	queuePower	隊員副記錄 +0x15：施法等級（8 時可連續施放）
+field	ecx+0x15	queuePower	同上
+field	esi+edx*1+0x19	queueItem	隊員副記錄 +0x19：使用的物品
+field	ecx+0x19	queueItem	同上
+field	esi+ecx*1+0x1d	queueTarget	隊員副記錄 +0x1d：8 dword 目標描述
+field	eax+ecx*1+0x3d	queueNextAction	隊員副記錄 +0x3d：排隊的下一個動作
+field	eax+ecx*1+0x41	queueNextSpell	隊員副記錄 +0x41：排隊的法術
+field	ecx+eax*1+0x45	queueNextPower	隊員副記錄 +0x45：排隊的施法等級
+field	eax+ecx*1+0x49	queueNextItem	隊員副記錄 +0x49：排隊的物品
+field	esi+0x0	queueNextTarget	rep movs 來源：隊員副記錄 +0x4d 的 8 dword 排隊目標
+field	edi+0x0	queueTarget	rep movs 目的：隊員副記錄 +0x1d
+field	ecx+0xb1d	charSpellPoints	角色 +0xb1d：連續施放時須不小於法術 +0x56 成本加已用加 1
+field	edi+edx*4+0xb45	charSchoolPoints	角色 +0xb45 起四個領域點數，以法術 +0x133 為索引
+field	eax+ecx*1+0x133	spellSchool	法術 +0x133：領域索引
+field	ecx+0x49	spellSchoolCost	法術 +0x49：連續施放所需領域點數
+data	4eac3c	overrideJumpTable	狀態覆寫結果分派的跳躍表，執行時從 exe 讀
+data	4eac4c	overrideJumpIndex	狀態覆寫結果 0..10 對應跳躍表索引的 byte 表，執行時從 exe 讀
+data	4eac58	actionJumpTable	動作 -1..9 分派的跳躍表
+data	6174cc	unknownActionFormat	未知動作的除錯訊息格式（0x5182e0 排除樁的參數，記錄進輸出）
+data	61750c	noTargetFormat	找不到隨機目標的除錯訊息格式（0x5182e0 排除樁的參數，記錄進輸出）
+data	61e658	overrideMessageId	狀態覆寫結果對應字串編號的 word 表，執行時從 exe 讀
+data	61e988	actionNameId	動作對應字串編號的 word 表，執行時從 exe 讀
+data	65be1c	spellTable	法術記錄表指標
+data	6836a8	battleRecord	戰鬥塊指標；戰鬥中為 0 時 calc panic
+data	683f94	inCombat	戰鬥中旗標 byte
+data	683fa5	turnUndeadEnabled	動作 3 前的全域開關，為 0 時動作失敗
+data	68510c	showDefendMessage	防禦訊息開關 byte
+data	685174	charBase	角色記錄陣列指標（stride 0x1862）
+data	685178	queueBase	隊員副記錄陣列指標（stride 0x106）
+data	68c09c	stringTable	字串指標表
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff7e	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff7f	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff80	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff84	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff88	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff8c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff90	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表

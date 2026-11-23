@@ -1,0 +1,33 @@
+call	4e77b0	resolveCharacterAttackAction	依角色槽與情境解析動作種類、法術 ID 與物品來源；存在、HP、主要狀態決定可用性。來源 0x4e77b0..0x4e796d。
+call	519ac0	characterHandAttackRange	主副手攻擊種類及啟用旗標選裝備射程，hand=2 取已啟用兩手最大值；沿用 charAttackRangeNode。
+call	5207e0	itemEmbeddedSpellRange	所選物品索引讀物品 +0x63 法術 ID，再讀法術 +0x12f 射程；空索引列表或零法術回 -1。來源 0x5207e0..0x520875。
+data	4	無關	堆疊區域與參數偏移，非绝對資料位址。
+data	8	無關	堆疊參數偏移與清理大小，非規則資料。
+data	c	無關	堆疊參數偏移，非規則資料。
+data	fffffffffffffffc	無關	區域堆疊位移的符號延伸表示，非資料指標。
+data	519a9c	actionAttackRangeDispatch	動作種類索引的射程来源分派表；calc 執行時從使用者 exe 讀，不在 repo 複製表。來源 0x519a36。
+data	65be1c	spellDefinitions	動態法術記錄基址；stride 447，+0x12f 為有號 32 位射程。case 提供十筆獨立合成法術，含零 ID。
+data	685174	partyCharacterRecords	八個角色記錄，stride 6242；原版依入口角色槽選手部與裝備欄位。case 使用 index 對應所選槽。
+field	eax*4+0x519a9c	actionAttackRangeDispatchEntry	動作種類 0..8 選射程來源；超過上限含負值直接回 -1，來源 0x519a31..0x519a36。
+field	eax+0x4	actionItemIndexList	解析後物品來源的 +4 指向物品索引列表；取第一筆物品的嵌入法術射程，來源 0x519a74..0x519a7c。
+field	ecx+edx*1+0x12f	spellRangeClass	法術 ID 乘 447 加法術記錄基址，再取 +0x12f 有號射程；ID 零回 -1，來源 0x519a4e..0x519a6a。
+field	C+0x4	characterInParty	未啟用手診斷的角色槽查找要求非零；八個槽皆配置為實際隊伍記錄，非射程數值。
+field	C+0xb11	characterHP	非零才能解析有效動作，來源 0x53c29d..0x53c2a9。
+field	C+0xb01	characterCondition	主要狀態以無號值比較，小於 18 才可行動，來源 0x53c2ab。
+field	C+0x1149	mainHandAttackKind	種類 1/3 讀主手裝備物品射程，其他種類固定短射程；副手加 91，來源 0x519b53..0x519b75。
+field	C+0x114d	mainHandAttackAvailable	主手攻擊啟用旗標；零回 -1，hand=2 跳過未啟用手。副手加 91，來源 0x519af2..0x519b53。
+field	C+0xfa5	mainHandEquippedItemIndex	主手物品索引；副手在 +0xfb1，來源 0x519b6f..0x519b75。
+field	I+0x47	itemAttackRangeClass	物品記錄 stride 269 的無號射程 byte，來源 0x519b7c..0x519b92。
+field	I+0x63	itemEmbeddedSpellId	物品記錄內嵌法術的無號 byte ID；零無射程，來源 0x520833..0x520867。
+field	A+0x0	characterPresent	角色動作記錄 stride 262 的存在旗標，來源 0x53c283。
+field	A+0x1	mainActionKind	主動作種類；副動作在 +0x3d，來源 0x4e77fa..0x4e7813。
+field	A+0x5	mainActionSpellId	主動作法術 ID；副動作在 +0x41，排隊法術在 +0x75，來源 0x4e77fe..0x4e7890。
+field	A+0x19	mainActionItemEntries	主動作物品索引列表指標；副動作 +0x49、物品情境 +0xa5；同一合成列表共享指標，獨立於裝備選擇。
+field	B+0x2f0	battleActionKind	戰鬥動作種類，+0x2f4 法術 ID、+0x2f8 特殊選取旗標；context 6 依此轉為排隊法術、物品或戰鬥來源。context 7 的來源沒有物品列表，因此 kind 8 必須走 context 4，否則原版在 0x519a78 解引用空指標。
+data	683f94	combatMode	context 6 一般動作選取：零用主動作、非零用副動作，來源 0x53bd14..0x53bd18。
+data	683f95	specialSpellSelectionMode	特殊情境優先取法術，來源 0x4e7824..0x4e7837。
+data	683f96	specialItemSelectionMode	特殊情境無法術模式時要求物品模式，來源 0x4e7848..0x4e787a。
+data	68518d	selectedCharacterSlot	context 6 的特殊選取角色槽，來源 0x53bcfc..0x53bd12。
+data	68ec78	battlePhaseType	值 7 且戰鬥動作非無效時用戰鬥來源，來源 0x53bcb1..0x53bcfa。
+data	69bf3c	specialSpellSelection	物件 +0x104 覆寫法術 ID，零則取 +0x100 基底 ID，來源 0x5a1350..0x5a1366。
+data	69b9a0	specialBaseItemEntries	特殊物品基底索引列表；+4 全域為非零時優先選取的覆寫列表，來源 0x59e0d0..0x59e0de。

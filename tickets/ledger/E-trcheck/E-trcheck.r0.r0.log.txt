@@ -1,0 +1,67 @@
+ok  	wiz8-mod/tools/atlas	0.464s
+ok  	wiz8-mod/tools/hashdir	0.012s
+ok  	wiz8-mod/tools/shot	0.009s
+ok  	wiz8-mod/tools/slf	47.732s
+ok  	wiz8-mod/tools/strings	0.039s
+--- FAIL: TestGood (0.00s)
+    trcheck_test.go:129: 好輸入要 rc=0、ok 行；得 rc=2：
+        未實作
+--- FAIL: TestClassesMissing (0.00s)
+    trcheck_test.go:136: 要 rc=1 且有 "FAIL classes id=7"；得 rc=2：
+        未實作
+--- FAIL: TestClassesBadClass (0.00s)
+    trcheck_test.go:142: 要 rc=1 且有 "FAIL classes id=7"；得 rc=2：
+        未實作
+--- FAIL: TestKeepNeedsReason (0.00s)
+    trcheck_test.go:148: 要 rc=1 且有 "FAIL classes id=7"；得 rc=2：
+        未實作
+--- FAIL: TestUntranslated (0.00s)
+    trcheck_test.go:154: 要 rc=1 且有 "FAIL coverage id=7"；得 rc=2：
+        未實作
+--- FAIL: TestKeepTranslated (0.00s)
+    trcheck_test.go:160: 要 rc=1 且有 "FAIL coverage id=2"；得 rc=2：
+        未實作
+--- FAIL: TestShaMismatch (0.00s)
+    trcheck_test.go:166: 要 rc=1 且有 "FAIL sha id=2"；得 rc=2：
+        未實作
+--- FAIL: TestPrintfOrder (0.00s)
+    trcheck_test.go:172: 要 rc=1 且有 "FAIL printf id=6"；得 rc=2：
+        未實作
+--- FAIL: TestPrintfCount (0.00s)
+    trcheck_test.go:178: 要 rc=1 且有 "FAIL printf id=2"；得 rc=2：
+        未實作
+--- FAIL: TestPrintfType (0.00s)
+    trcheck_test.go:184: 要 rc=1 且有 "FAIL printf id=5"；得 rc=2：
+        未實作
+--- FAIL: TestPrintfPercentEscape (0.00s)
+    trcheck_test.go:190: 要 rc=1 且有 "FAIL printf id=6"；得 rc=2：
+        未實作
+--- FAIL: TestPctLiteralNeedsRegistry (0.00s)
+    trcheck_test.go:196: 要 rc=1 且有 "FAIL printf id=4"；得 rc=2：
+        未實作
+--- FAIL: TestPctLiteralNoNewSpec (0.00s)
+    trcheck_test.go:202: 要 rc=1 且有 "FAIL printf id=4"；得 rc=2：
+        未實作
+--- FAIL: TestUnknownCode (0.00s)
+    trcheck_test.go:208: 要 rc=1 且有 "FAIL code id=1"；得 rc=2：
+        未實作
+--- FAIL: TestBrokenCode (0.00s)
+    trcheck_test.go:214: 要 rc=1 且有 "FAIL code id=1"；得 rc=2：
+        未實作
+--- FAIL: TestRawTerm (0.00s)
+    trcheck_test.go:220: 要 rc=1 且有 "FAIL raw-term id=1"；得 rc=2：
+        未實作
+--- FAIL: TestPronounForms (0.00s)
+    trcheck_test.go:226: 要 rc=1 且有 "FAIL pronoun id=728"；得 rc=2：
+        未實作
+--- FAIL: TestPronounTemplateDoubled (0.00s)
+    trcheck_test.go:232: 要 rc=1 且有 "FAIL pronoun id=3"；得 rc=2：
+        未實作
+--- FAIL: TestPronounTemplateUntranslated (0.00s)
+    trcheck_test.go:239: 要 rc=1 且有 "FAIL pronoun id=3"；得 rc=2：
+        未實作
+--- FAIL: TestExpand (0.00s)
+    trcheck_test.go:248: expand rc=2：未實作
+FAIL
+FAIL	wiz8-mod/tools/trcheck	0.031s
+FAIL

@@ -1,0 +1,38 @@
+call	40efa0	rand_n	亂數 R(n)，n 為候選目標數；模擬器樁接、calc 以 Rand 介面重放
+call	547010	characterDisposition	以兩角色魅惑狀態判友方 2／敵方 1；與期望值（第二參數低位元組）相等才算候選。重用 characterDispositionNode
+call	53d2a0	handAttackAvailable	攻擊者該手是否可攻擊；零則換下一手。重用 handAttackAvailableNode
+call	4e77b0	resolveCharacterAttackAction	情境 0 取攻擊者動作記錄的種類、法術 ID、物品清單指標；情境 0 不進 0x53bc90，只讀記錄 +1／+5／+0x15。其後 0x53c270 判攻擊者可用性（existing characterTargetableNode）
+call	519ac0	characterHandAttackRange	種類 0/1 時查該手射程。重用 charAttackRangeNode
+call	5207e0	itemEmbeddedSpellRange	種類 8 時由物品清單指標指向的索引讀物品 +0x63 法術的射程；空指標或零法術回 -1。本檔內聯
+data	4	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	51b2d4	actionKindDispatchTable	動作種類 0..8 的跳轉表（編譯器產生），位址不含規則數值；各種類的行為在 n_51b0a0.go 逐項註明
+data	65be1c	spellDefinitions	法術記錄表基址，stride 0x1bf；射程在 +0x12f（種類 7 與物品法術用）。case 擺三筆合成記錄（ID 1..3），不複製 exe 表
+data	685174	partyCharacterRecords	隊伍角色記錄基址，stride 0x1862；case 擺八筆
+data	685178	partyActionRecords	角色動作記錄基址，stride 0x106；+0 存在旗標、+1 動作種類、+5 法術 ID、+0x19 指向物品索引的指標；case 擺八筆
+data	68751d	partyOrderBytes	三個隊形位置的角色槽位元組（0xff 為空），逐個查該角色 +0x17b5 旗標；來源 0x51b221..0x51b24c
+data	68751e	partyOrderBytes	同 68751d 表的後續位元組（Ghidra 把逐位元組索引拆成多個位址）
+data	687525	partyTeamBytes	每槽 12 bytes 結構的第一個位元組＝陣營；來源 0x51b1e4、0x51b0c3
+data	687531	partyTeamBytes	同 687525 表第 1 槽（Ghidra 將基址加 stride 解成獨立位址）
+data	68753d	partyTeamBytes	同 687525 表第 2 槽
+data	687585	partyTeamBytesEnd	687525 表（八槽×12）的結尾位址，迴圈終止比較；非資料讀取
+field	eax*4+0x51b2d4	actionKindDispatchTable	動作種類跳轉表索引，見 data 51b2d4
+field	ecx+eax*1+0xb11	characterHP	角色 C+0xb11 生命，零不可作目標；來源 0x51b0ec
+field	ecx+eax*1+0xb01	characterMainStatus	角色 C+0xb01 主要狀態，須小於 18；來源 0x51b0fb
+field	edx+0x68751d	partyOrderBytes	隊形位置位元組，見 data 68751d
+field	edx*4+0x687525	partyTeamBytes	攻擊者陣營位元組，見 data 687525
+field	esi+eax*2+0x17b5	characterNotDownedFlag	角色 C+0x17b5 旗標；隊形位置上的角色此旗標為零者計數，計數為零才放行；來源 0x51b23d
+field	ecx+edx*1+0x12f	spellRange	法術記錄 +0x12f 射程（u32，-1 為不可用，0 為短射程）；來源 0x51b1b1
+field	eax+0x4	actionItemListPtr	動作記錄物品清單的 +4 欄，指向物品索引；交 0x5207e0；來源 0x51b1be
+field	eax+0x0	無關	Ghidra 在寫出候選清單時的指標解參（[eax]=ebp），為區域陣列寫入，非遊戲欄位
+field	eax+edx*1	partyActionPresence	動作記錄 +0 存在旗標（byte），零則略過該槽；來源 0x51b0dd
+data	ffffffffffffffbc	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd0	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd8	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffdc	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe0	無關	參數堆疊位移或棧框架立即值，被分析為資料引用，非遊戲資料或表

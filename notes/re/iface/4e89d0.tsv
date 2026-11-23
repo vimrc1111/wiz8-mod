@@ -1,0 +1,32 @@
+call	40efa0	boundedRandom	R(4) 加進先攻（隊員與怪物各一次）、R(5) 決定是否呼叫自然成長；由 Rand 重放，依執行順序。
+call	5179d0	signedClamp	對先攻總和做有號限幅 -10..89（上限先判）；calc 內聯為 cipClamp。
+call	5e2c70	monsterListCount	列表指標為空回零，否則讀列表 +8 的筆數；每輪迴圈重讀，calc 折入怪物數。
+data	6836a8	combatState	戰鬥狀態指標；讀 +0x910 隊伍模式、+0xa52／+0xa53 失去行動旗標，寫每隊員 +0x18 階段與 +0x4c 旗標。
+data	683fa5	combatFlag	非零才可能觸發自然成長呼叫的旗標（語意名稱未取得）。
+data	683fad	monsterListPointer	戰場怪物列表指標；+0 指向實例指標陣列，+8 是筆數。
+data	685174	characterRecords	角色主記錄基址；八筆、步幅 0x1862。
+data	685178	partySlotTable	八個隊伍槽位的表，步幅 0x106；位元組 0 為啟用旗標。
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0xa53	battleFlag53	怪物狀態位元組為 1 時使用的失去行動旗標。
+field	eax+ebp*1	partySlotActive	槽位啟用位元組，零表示該隊員不參與。
+field	eax+ebp*1+0x1	partySlotWord1	不可行動隊員被寫入 -1 的 dword（槽位表 +1）。
+field	eax+ebp*1+0x3d	partySlotKind	槽位種類 dword；0 或 1 才加入選手攻擊的先攻值。
+field	eax+ecx*1+0x1166	characterHandInitiative	所選手的先攻值（主手 +0x1166，副手加 0x5b）。
+field	ecx+0x0	無關	怪物階段指標 +0 的階段 dword（寫入點，與 edx+0x0 同欄）；本檔記為怪物階段輸出。
+field	ecx+0x910	partyActionMode	戰鬥狀態 +0x910 隊伍行動模式；非零時呼叫隊伍行動階段並使階段取整。
+field	ecx+0xa52	battleFlag52	失去行動旗標；非零時全隊與一般怪物都不重算先攻。
+field	edi+0xe4	templateRollBonus	怪物模板 +0xe4 位元組，加到怪物先攻的 R(4)。
+field	edi+eax*1+0x4c	phaseFlag4c	不可行動隊員階段記錄 +0x4c 旗標，寫 1。
+field	edi+edx*1+0x18	partyPhase	隊員階段記錄 +0x18，寫 90 減限幅先攻後再取整。
+field	edx+0x0	monsterPhase	怪物階段指標（怪物 +0x10）指向的階段 dword。
+field	edx+0x4	monsterPhaseByte4	怪物階段指標 +4 位元組，不可行動時寫 1。
+field	esi+0x10	monsterPhasePointer	怪物實例 +0x10 的階段記錄指標。
+field	esi+0x107	monsterField107	怪物 u32，須小於 15 才重算先攻（語意名稱未取得）。
+field	esi+0x15	monsterActive	怪物啟用旗標，零則整隻不處理。
+field	esi+0x16	monsterState	怪物狀態位元組，等於 1 時改用 battleFlag53。
+field	esi+0x2b	monsterCurrentHP	怪物目前生命 u32，須非零。
+field	esi+0x2e1	monsterField2e1	怪物不可行動時寫 -1 的 dword（語意名稱未取得）。
+field	esi+ecx*1+0xb01	characterLimit0xb01	角色 u32，須小於 15 才算可行動（語意名稱未取得）。
+field	esi+ecx*1+0xb11	characterCurrentHP	角色目前生命 u32，非零才算可行動。
+field	esi+edx*1+0x767	characterGrowthFlag	角色位元組，非零且 combatFlag 時才擲 R(5) 決定自然成長。
+field	esi+edx*1+0xe81	characterInitiative	角色先攻 i32，與 R(4) 相加。

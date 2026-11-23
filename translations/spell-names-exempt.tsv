@@ -1,0 +1,28 @@
+# 法術名機檢（scripts/spell-names.py）例外登記：原文的英文詞與法術同形但不是指法術。欄：譯文檔	id	英文	理由。登記了卻沒命中會紅（過期）
+msg/F_INTELL20.json	47	Light	Realm of Light，地名式說法
+msg/M_CHAOS10.json	4	Sleep	睡覺
+msg/M_CHAOS10.json	135	Slow	Slow down，放慢
+msg/M_CHAOS20.json	4	Sleep	擬人的睡眠
+msg/M_KIND20.json	15	Haste	諺語 Haste makes waste
+nsf/NPC_BARLONE.json	26	Slow	Slow down，放慢
+nsf/NPC_MILANO.json	26	Slow	Slow down，放慢
+nsf/NPC_RATTUS.json	26	Slow	Slow down，放慢
+nsf/NPC_RUBBLE.json	26	Slow	Slow down，放慢
+nsf/NPC_SPARKLE.json	26	Slow	Slow down，放慢
+nsf/NPC_MADRAS.json	40	X-Ray	Memor-X-Ray，NPC 自創裝置名
+stringdata.json	169	Stamina	屬性耐力
+stringdata.json	318	Stamina	屬性耐力
+stringdata.json	604	Stamina	屬性耐力
+stringdata.json	605	Stamina	屬性耐力
+stringdata.json	606	Stamina	屬性耐力
+stringdata.json	607	Stamina	屬性耐力
+stringdata.json	612	Stamina	屬性耐力
+stringdata.json	808	Stamina	屬性耐力
+stringdata.json	1342	Stamina	屬性耐力
+stringdata.json	1709	Stamina	屬性耐力
+stringdata.json	2267	Stamina	屬性耐力
+stringdata.json	2268	Stamina	屬性耐力
+stringdata.json	2335	Stamina	屬性耐力
+stringdata.json	1222	Light	武器 Light Sword（輕劍）
+stringdata.json	1291	Light	輕重的輕
+stringdata.json	1330	Sleep	怪物攻擊效果，不是法術

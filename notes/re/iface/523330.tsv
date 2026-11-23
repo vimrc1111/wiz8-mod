@@ -1,0 +1,48 @@
+call	2b6	無關	掃描器的非函式呼叫目標；實際指令是斷言失敗的 srAssertFail 間接呼叫，防禦性診斷，合法呼叫不進入。
+call	42b740	itemUseSelectorKey	以選擇值查 exe 內的每項 107 bytes 表取 1 byte 鍵；0x10/0x26 先依持有的 0x242..0x244 件數或 0x1ce 旗標改成 0x10 或 0x26，超出 0..0x2f 回 0。條件 9 用鍵 9 或 0xa 判斷是否繼續；本函式內以既有 npcRecruit 的 exe 表重現。
+call	520f90	characterHasItem	在角色 +0xf5d 的 12 筆（模式非零再加 +0x1029 的 8 筆）找物品編號；條件 0xb 用模式 0 只查前 12 筆確認持有 0x239。本函式內重現。
+call	538d10	memberEffectWrapper	條件 0xd 的第一個動作，對成員與參數 1 組出參數表後呼叫 538e00（已登記公式、case 以位址樁記錄參數與次數）；本函式內只重現這個呼叫。
+call	53a930	memberTailRefresh	尾段在戰鬥中、主狀態回到 0xd 以下且 4e79a0 回非零時呼叫，帶成員與在場副表 +0x4d；更新呈現與效果畫面，不在本節點宣告輸出，case 讓它原樣跑。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	523674	conditionJumpTable	依 (條件-1) 的類別分派到各條件的後續動作；類別對應見 conditionClassTable。
+data	52368b	conditionClassTable	0x52368c 起 13 個 byte，由條件編號-1 查出類別，供跳表選動作；位址 52368b 是該表前一位元組的掃描邊界引用。
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import 槽；只在成員不在場或狀態槽為空且容忍旗標為零時呼叫，合法案例到不了。
+data	61a710	無關	斷言訊息字串位址，只供診斷停止時顯示，不影響規則輸出。
+data	61ad64	無關	斷言來源檔名字串位址，只供診斷停止時顯示，不影響規則輸出。
+data	61ada4	無關	斷言訊息字串位址，只供診斷停止時顯示，不影響規則輸出。
+data	61e570	conditionNoticeIndex	exe 內每條件 8 bytes 的表，前 2 bytes 是通知文字在文字表的索引；只決定通知文字，不影響狀態輸出。
+data	6836a8	memberCombatRecords	每成員 0xd4 bytes 的記錄陣列基址；+0x98 是 u8 旗標，條件 0xb 在戰鬥中且旗標非零時複製在場副表 +0x4d..+0x6c 到 +0x1d。case 以 arena 物件接線，旗標為輸入。
+data	683f94	combatActive	戰鬥中旗標 u8；條件 0xb 的複製、尾段的 4e79a0 判斷都要求它非零；亦為 case 輸入。
+data	6840bb	conditionClearMark	條件 9 與 12 清除後設為 1 的旗標 u8；case 輸入與輸出。
+data	685174	partyCharacters	角色記錄陣列基址；八筆、步長 0x1862；arena 接線，case 以輸入讀出基址給 calc 算指標。
+data	685178	partyPresence	角色在場副表基址；每筆步長 0x106，首 byte 零表示不在場；+0x4d 與 +0x1d 各 8 個 u32 為條件 0xb 的複製來源與目的。
+data	686a70	itemUseSelector	條件 9 傳給 42b740 的選擇值 u32；case 輸入。
+data	6874cb	cursorItemId	滑鼠游標上拿著的物品編號（旗標在 0x6874ca）；521060 命中游標時以此位址當位置回報，條件 0xb 命中游標就不做持有檢查。
+data	687500	emptySlotTolerated	非零時狀態槽為空直接返回，零時走斷言；case 固定為 1。
+data	68c09c	noticeTextTable	通知文字指標表基址；+0x90c 是通知格式字串；只決定通知，不影響狀態輸出。
+field	eax+0x52368c	conditionClassByte	由條件編號-1 查出的類別 byte。
+field	eax+0x90c	noticeFormatText	文字表 +0x90c 的通知格式字串指標，傳給通知函式；不影響規則輸出。
+field	eax+ecx*1+0xa01	stateSlot	角色 +0xa01+4×條件的 u32 狀態槽；非零才有東西可清；清除後寫 0。case 輸入與輸出。
+field	eax+edx*1+0xa01	stateSlot	同上，以空槽斷言的檢查形式出現。
+field	eax+ecx*4	noticeText	通知文字指標（文字表按索引取）；不影響規則輸出。
+field	ebx+eax*1+0xb01	primaryCondition	角色主狀態 u32（+0xb01）；低於 0xd 且 +0xb11 非零時該成員視為可行動；5237e0 重算後寫入新值。case 輸入與輸出。
+field	ebx+eax*1+0xb11	memberActiveGate	角色 +0xb11 u32；非零才使尾段判斷成立。case 輸入。
+field	ebx+ecx*1+0xa29	stateSlot10	狀態槽 10（+0xa29）；條件 9 在它非零時才查 42b740 鍵。
+field	ebx+ecx*1+0xb21	conditionAuxB21	角色 +0xb21 u32；條件 1 清為 0。case 輸入與輸出。
+field	ebx+edx*1+0xb09	conditionAuxB09	角色 +0xb09 u32；條件 7 清為 0。case 輸入與輸出。
+field	ebx+edx*1+0xb15	conditionAuxB15	角色 +0xb15 u32；條件 1 清為 0。case 輸入與輸出。
+field	ecx*4+0x523674	conditionJumpEntry	跳表項目，依類別分派。
+field	ecx+eax*4+0x98	combatRecordFlag	成員戰鬥記錄 +0x98 的 u8 旗標；條件 0xb 在戰鬥中決定是否複製在場副表資料。case 輸入。
+field	edi+0x0	presenceCopyDestination	條件 0xb 複製的目的：在場副表 +0x1d 起 8 個 u32。case 輸出。
+field	esi+0x0	presenceCopySource	條件 0xb 複製的來源：在場副表 +0x4d 起 8 個 u32。case 輸入。
+field	edi+eax*1	partyPresenceByte	在場副表按角色編號（步長 0x106）尋址，首 byte 零表示不在場；case 輸入。
+field	edi+edx*1	partyPresenceByte	同上，尾段與前段各讀一次。
+field	edx*8+0x61e570	noticeIndexEntry	exe 內每條件 8 bytes 的通知索引表項；不影響規則輸出。
+native	50e650	G6b 共享資源重建	F 的 ccrRun 在清槽、主狀態與副欄更新之後，經 ccrWorld 呼叫既有 statusEffectRebuildNode（50e650）取得有效屬性，再重用 rcraC.f52a2f0／f52a3e0（4ed9d0 的 D4 實作）更新 HP／體力上限及現值；52a2f0 的 522fe0 呼叫先處理，再續跑體力。callee 記錄用私有記憶體，避免與角色欄位重疊。證據 build/wiz8.asm:394989、365210、318884、404258、404339。
+native	522fe0	死亡共享世界接線	既有 522fe0 公開介面沒有其他成員 HP，52abf0 公開介面不回傳狀態槽或重建上限；ccrWorld 用既有 ccaS.primary／characterPrimaryConditionNode 完成死亡主狀態，先以同一世界遞迴解除 0..17（跳過 10）的有效槽，再呼叫 characterDeathApplyNode 的 F 處理清 HP／體力與 52f110 回應。狀態改變語音接續其後；完整保留 R(n)／R(3)，語音參數的全域值取執行時資料。證據 build/wiz8.asm:405085、405118、411601、411898。
+native	fixture	資源世界範圍與上限	八人、20 狀態、15 職業等級、7 屬性沿原版固定陣列；等級依 4ed9d0 夾至 50（build/wiz8.asm:318884 起）。沒有新增背包或目標容量。原有 F 呼叫端仍走 characterConditionRemoveNode；未提供的角色欄位沿其零值世界，類別為 0，正常執行重建，沒有改為跳過重建的哨兵。54df00 另傳入既有 HP／體力等七個欄位並共享更新；其原生夾具裝備、原始屬性、職業等級與增益皆為零，故無死亡抵抗特徵。獨立 TestEmu 維持 50e650 位址樁契約，使用 Emu 入口。

@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+5227d0	非公式	-	item_quote		依物品與角色選擇回應事件並設物品已回應旗標，價格比值只決定台詞，末端交語音事件入口；build/wiz8.asm:394088。
+522a00	非公式	-	item_type_tag		只把物品 +0x3e 是否為 0x17／0x19 轉為類型標記，呼叫端用於物品操作分流而無數值計算；build/wiz8.asm:394111。
+522a30	公式	D4	item_use_eligibility	itemUseEligibilityNode	讀物品 +0x3e／+0x63、實例識別欄與角色 +0xa21，結合施法目標及戰鬥旗標輸出能否使用物品的布林值；build/wiz8.asm:394211，使用端 build/wiz8.asm:346758。
+522b80	公式	D4	item_use_rejection	itemUseRejectionNode	讀物品 +0x3e／+0x63、角色 +0xa21 與模式旗標，檢查使用／施法限制並輸出拒絕布林值，同時顯示拒絕原因；build/wiz8.asm:394366。
+522d40	非公式	-	spell_item_button		搜尋裝備 +0xf5d、背包 +0x1029 與隊伍物品中的可用指定法術物品，輸出的布林值交 UI 控件設定；build/wiz8.asm:394408（入口）、build/wiz8.asm:497713，build/wiz8.asm:497718。
+522e80	公式	D4	item_count_normalization	itemCountNormalizationNode	不確定：讀物品定義 +0x66 與實例 +0x4／+0x5，搬移或清零兩個數量欄並在類型 1 雙零時寫 +0x4=1，尚未確認這是純格式整理還是恢復可用數量的規則；build/wiz8.asm:394578。
+522ef0	公式	D4	inventory_rule_refresh	inventoryRuleRefreshNode	不確定：讀角色副表 +0、角色 +0xf5d／+0x1029 與隊伍物品，先交 0x51d960 檢查裝備資格，再經 0x522e80 更新實例 +0x4／+0x5，規則刷新與格式整理的界線待核；build/wiz8.asm:394596，build/wiz8.asm:394616。
+522fe0	公式	D4	character_condition_apply	characterConditionApplyNode	讀狀態索引、時間、毒強度、能力免疫與角色 +0xa01+4×索引／+0xa45／+0xb09，取較強狀態寫回狀態槽與毒強度並重算 +0xb01；build/wiz8.asm:394864，notes/re/formulas-2.md:51，notes/re/abilities.md:25，notes/re/abilities.md:27，notes/re/speed.md:70。
+523330	公式	D4	character_condition_remove	characterConditionRemoveNode	讀狀態索引、角色 +0xa01+4×索引 與物品解除限制，清除狀態槽及相應 +0xb09／+0xb15／+0xb21 並重算主狀態 +0xb01；build/wiz8.asm:395133。
+5236a0	公式	D4	character_condition_decay	characterConditionDecayNode	讀削減量、狀態時間 +0xa01+4×索引、毒時間 +0xa1d 與毒強度 +0xb09，按比例及百分骰捨入減毒強度並減少時間或解除狀態；build/wiz8.asm:395316。
+5237e0	公式	D4	character_primary_condition	characterPrimaryConditionNode	讀角色 +0xa01 至 +0xa4d 的狀態槽，從索引 0x13 向下選最高有效狀態寫 +0xb01，並更新戰鬥可行動標記；build/wiz8.asm:395392。
+523940	公式	D4	character_effect_apply	characterEffectApplyNode	讀效果索引、強度、時間、百分修正及原 +0xa65+0xc×索引，保留較強效果寫 +0xa65／+0xa69／+0xa6d，效果 2 擲基量並修正吸收池 +0xa83、重算 +0xb05；build/wiz8.asm:395508。
+523a80	公式	D4	character_effect_remove	characterEffectRemoveNode	讀效果索引與其餘 +0xa65+0xc×索引 的效果強度，清除指定效果三欄並選最高有效效果寫主效果 +0xb05；build/wiz8.asm:395588。
+523b30	公式	D4	character_effect_decay	characterEffectDecayNode	讀削減量與效果時間 +0xa6d+0xc×索引，減時間寫回該欄或清除 +0xa65／+0xa69／+0xa6d 並重算 +0xb05；build/wiz8.asm:395678。
+524110	公式	D4	monster_condition_decay	monsterConditionDecayNode	讀怪物狀態 +0x57+4×索引、毒時間 +0x73、毒強度 +0x10b 與削減量，比例削毒含百分骰捨入，寫回強度與時間或解除狀態；build/wiz8.asm:396193。
+5242b0	公式	D4	monster_effect_apply	monsterEffectApplyNode	讀怪物 +0xa7+0xc×索引 的舊強度及新強度、時間、百分修正，寫 +0xa7／+0xab／+0xaf，效果 2 擲基量後計算吸收池寫 +0xc5；build/wiz8.asm:396368。
+5244a0	公式	D4	all_condition_remove	allConditionRemoveNode	讀角色副表有效位、角色 +0xa01+4×索引 與怪物 +0x57+4×索引，對所有持有該狀態的單位呼叫解除入口，輸出為清除狀態與重算主狀態；build/wiz8.asm:396526，build/wiz8.asm:396549。
+524540	公式	D4	all_effect_remove	allEffectRemoveNode	讀角色效果時間 +0xa6d+0xc×索引 及怪物 +0xaf+0xc×索引，清除八類效果三欄並依剩餘槽重算角色 +0xb05；build/wiz8.asm:396606，build/wiz8.asm:396657。
+5246c0	公式	D4	party_condition_remove	partyConditionRemoveNode	讀角色副表有效位與指定狀態 +0xa01+4×索引，對隊伍持有者解除該狀態，輸出為清零槽及更新 +0xb01；build/wiz8.asm:396710。
+524720	公式	D4	party_conditions_clear	partyConditionsClearNode	讀角色有效位及 +0xa01+4×索引，遍歷 0 至 0x11 且保留索引 10，對其餘有效狀態呼叫解除並重算 +0xb01；build/wiz8.asm:396756。
+524780	公式	D4	condition_dependency_apply	conditionDependencyApplyNode	不確定：讀角色索引、依賴種類、怪物 ID 與地圖，寫怪物 +0x24c 位元及角色 +0x1817／+0x181b／+0x181f 的依賴記錄，此記錄會影響後續狀態解除但是否僅關聯資料維護待核；build/wiz8.asm:396858。
+5248a0	非公式	-	condition_dependency_flag		只按角色索引與依賴種類回傳角色 +0x181f+0x11×種類 的原始旗標，無推導或更新規則值；build/wiz8.asm:396880，notes/re/combat-2.md:83。
+5248d0	公式	D4	condition_dependency_remove	conditionDependencyRemoveNode	讀怪物 +0x24c、角色 +0xa4d 與 +0x1817／+0x181b 的地圖及來源關聯，清除依賴旗標並解除符合來源的狀態 0x13，或清怪物 +0x344 關聯；build/wiz8.asm:396943。
+524a10	公式	D4	character_action_eligibility	characterActionEligibilityNode	不確定：讀角色索引、副表 +0、HP +0xb11 與主狀態 +0xb01，輸出 HP 非零且主狀態小於 0xd 的有效角色布林值，既有筆記只確證一個 UI 操作開關用途，保守保留為可行動條件候選；build/wiz8.asm:397026，notes/re/abilities.md:74。
+524eb0	非公式	-	dialogue_update		依對話與劇情旗標推進佇列、恢復對話前狀態及播放／停止環境聲，狀態解除是固定劇情流程；build/wiz8.asm:397458，build/wiz8.asm:397504。
+5251f0	非公式	-	dialogue_branch_select		讀腳本條件後產生範圍內的亂數台詞 ID，唯一直接呼叫端將結果排入對話事件而不寫規則量；build/wiz8.asm:397753，build/wiz8.asm:398805，build/wiz8.asm:399287。
+525350	非公式	-	dialogue_present		格式化對話文字與聲音資源名、播放聲音及設定顯示時間，亂數只在未知台詞時選兩種回應事件；build/wiz8.asm:398020，build/wiz8.asm:398400。
+525fa0	非公式	-	dialogue_script_dispatch		腳本亂數結果作後續對話 ID，排入事件後呼叫對話呈現，其他分支分派劇情、文字與 UI 操作；build/wiz8.asm:399287，build/wiz8.asm:399296。
+526810	非公式	-	dialogue_action_dispatch		按對話命令切換 NPC、取得或移除指定物品並顯示通知，末端清角色副表 +0xff 的台詞記錄，屬腳本動作分派；build/wiz8.asm:399752。
+526e90	非公式	-	dialogue_event_queue		消費對話事件佇列並按事件種類分派字幕、語音、NPC 移動、固定劇情狀態與 UI，技能比例只用於通知文字；build/wiz8.asm:400273，build/wiz8.asm:401755。
+528ff0	公式	D4	item_consume_one	itemConsumeOneNode	讀指定物品指標／ID、角色 +0x1029 與隊伍物品的實例數量 +0x4，減一後寫回，歸零時刪除物品並顯示消耗通知；build/wiz8.asm:402646，build/wiz8.asm:402661。
+529be0	非公式	-	script_party_sequence		設定劇情與輸入暫停旗標，按已佔角色逐一呼叫序列控制入口，沒有計算 HP、SP 或狀態強度；build/wiz8.asm:403632。
+529ef0	非公式	-	script_party_sleep		按固定劇情角色例外與有效位對其他隊員套用狀態 0x11、常數 9999，並控制對話／視角，屬特定腳本流程；build/wiz8.asm:403903。
+52a820	公式	D4	party_damage_roll	partyDamageRollNode	讀傷害骰參數、角色有效位及主狀態 +0xb01，逐角色擲傷害並交扣血入口，輸出為 HP +0xb11 及相關狀態的變化；build/wiz8.asm:404752，build/wiz8.asm:404756。
+52a890	公式	D4	character_damage_apply	characterDamageApplyNode	讀傷害量、HP +0xb11、吸收池 +0xa83／+0xa85、能力與 +0xa45，扣吸收後限制實際扣血並扣體力、處理死亡，另以 +0x161 及百分骰決定解除 +0xa3d 狀態；build/wiz8.asm:404970，build/wiz8.asm:405055，notes/re/abilities.md:19，notes/re/abilities.md:25，notes/re/speed.md:61，notes/re/speed.md:70。
+52abf0	公式	D4	character_death_apply	characterDeathApplyNode	讀角色有效位、狀態槽與隊伍行動記錄，增加死亡次數 +0x9fd、清 HP +0xb11／體力 +0xb1d 及除索引 10 外的存續狀態，取消行動；build/wiz8.asm:405135，notes/re/speed.md:60，notes/re/speed.md:70。
+52ad70	公式	D4	party_hp_heal_roll	partyHpHealRollNode	讀回復骰參數與角色副表有效位，逐角色擲回復量交 0x52add0，輸出為依最大 HP +0xb0d 限制後的當前 HP +0xb11；build/wiz8.asm:405226，build/wiz8.asm:405230。
+52add0	公式	D4	character_hp_heal	characterHpHealNode	讀回復量、當前 HP +0xb11 與最大 HP +0xb0d，存活且未滿血才相加並封頂寫 +0xb11，HP 百分比另控制受傷回應事件清理；build/wiz8.asm:405284。
+52af50	公式	D4	character_fatigue_apply	characterFatigueApplyNode	讀消耗量、負重級 +0xbc9、狀態 +0xa15／+0xaa9、HP +0xb11 與體力 +0xb19／+0xb1d，百分修正消耗並限制在現有量內，寫 +0xb1d、疲勞級 +0x169e 並可能套狀態 0x11；build/wiz8.asm:405448，build/wiz8.asm:405468。
+52b160	公式	D4	party_stamina_heal_roll	partyStaminaHealRollNode	讀回復骰參數及角色副表有效位，逐角色擲體力回復量交 0x52b1c0，輸出為限制後 +0xb1d 與重算的疲勞級 +0x169e；build/wiz8.asm:405556，build/wiz8.asm:405560。
+52b1c0	公式	D4	character_stamina_heal	characterStaminaHealNode	讀回復量、HP +0xb11、狀態 +0xb01、最大／當前體力 +0xb19／+0xb1d，相加封頂寫 +0xb1d、重算 +0x169e，足夠體力時解除狀態 0x11；build/wiz8.asm:405602，notes/re/abilities.md:23。
+52b2f0	公式	D4	character_action_fatigue_cost	characterActionFatigueCostNode	讀行動類型、隊伍 +0x84／+0x88、副表 +0x5 行動資料、角色裝備 +0xf5d、最大體力 +0xb19、狀態 +0xa09 與物品重量 +0x8a，輸出隨行動及重量擲骰且可倍增的體力消耗量；build/wiz8.asm:405732，build/wiz8.asm:405783。
+52b480	公式	D4	character_sp_spend	characterSpSpendNode	讀領域索引、消耗量與當前 SP +0xb45+4×領域，檢查足額後相減寫回該 SP 欄；build/wiz8.asm:405840。
+52b4f0	公式	D4	character_realm_sp_heal	characterRealmSpHealNode	讀領域索引、回復量、當前 SP +0xb45+4×領域 與最大 SP +0xb25+4×領域，相加並封頂寫回當前 SP；build/wiz8.asm:405876。
+52b550	公式	D4	party_sp_drain	partySpDrainNode	讀 SP 削減量、通知旗標及角色副表有效位，逐角色交隨機領域耗 SP 入口，輸出為六領域 +0xb45 至 +0xb59 的扣量；build/wiz8.asm:405908。
+52b590	公式	D4	character_random_realm_sp_drain	characterRandomRealmSpDrainNode	讀削減量、HP +0xb11 與六領域當前 SP +0xb45+4×領域，最多 50 次隨機選六領域並按該領域存量扣除及更新剩餘需求；build/wiz8.asm:405967，build/wiz8.asm:405993。
+52b6d0	公式	D4	character_realm_sp_drain	characterRealmSpDrainNode	讀領域索引、削減量、HP +0xb11 與 +0xb45+4×領域，把削減量限制在現有 SP 內再寫回扣量；build/wiz8.asm:406093，notes/re/combat-2.md:59。
+52b7e0	公式	D4	character_hp_deficit_apply	characterHpDeficitApplyNode	讀損耗量、最大／當前 HP +0xb0d／+0xb11 與 +0xb15／+0xa05，減少 +0xb15 並重算 HP 狀態、扣損耗量的三分之二體力且套狀態 1；build/wiz8.asm:406183。
+52b910	公式	D4	character_sp_heal_distribute	characterSpHealDistributeNode	讀回復總量與六領域最大／當前 SP +0xb25／+0xb45，按缺口排序逐點分配，寫對應 +0xb45+4×領域 並輸出實際回復通知；build/wiz8.asm:406298。
+52ba00	公式	D4	party_sp_heal	partySpHealNode	讀回復量、角色有效位、HP +0xb11 與主狀態 +0xb01，負數輸入時累加六領域最大 SP +0xb25 作回復量，再分配寫當前 SP +0xb45；build/wiz8.asm:406375。
+52ba80	公式	D4	radius_monster_damage_roll	radiusMonsterDamageRollNode	讀中心、半徑、傷害骰參數與怪物 +0x14 有效位和位置，三維距離在半徑內才擲傷害交 0x52bb60，輸出為怪物 HP 扣量及傷害結果；build/wiz8.asm:406445，build/wiz8.asm:406454。
+52beb0	公式	D4	monster_hit_condition_response	monsterHitConditionResponseNode	讀怪物 +0x93／+0x24b／+0x8b、攻擊來源旗標及抵抗結果，百分骰決定解除狀態 0xf，特定抵抗結果又使狀態 0xd 的時間 +0x8b 減一；build/wiz8.asm:406802，build/wiz8.asm:406865。
+52c240	公式	D4	monster_action_fatigue_cost	monsterActionFatigueCostNode	讀怪物行動 +0x2e1、子動作 +0x2e5 與狀態 +0x5f，按行動擲體力成本，狀態有效時倍增，輸出成本整數；build/wiz8.asm:407139，build/wiz8.asm:407181。
+52c350	公式	D4	lowest_hp_ratio_target	lowestHpRatioTargetNode	讀角色副表 +0、主狀態 +0xb01、HP +0xb11 與最大 HP +0xb0d，輸出最低 HP 百分比的角色索引，呼叫端用其作回復目標；build/wiz8.asm:407250，build/wiz8.asm:455037，build/wiz8.asm:455068。
+52c3b0	公式	D4	lowest_sp_ratio_target	lowestSpRatioTargetNode	讀角色有效位、主狀態 +0xb01 與六領域最大／當前 SP +0xb25／+0xb45，忽略負當前值後求總量比例並輸出最低比例角色索引作 SP 回復目標；build/wiz8.asm:407316，build/wiz8.asm:455029。
+52c480	公式	D4	condition_item_target_select	conditionItemTargetSelectNode	不確定：讀角色有效位、主狀態 +0xb01 與 +0xf21，輸出 +0xf21 最小的有效角色指標，解除狀態入口用此決定物品限制的對象，但 +0xf21 的確切名稱待核；build/wiz8.asm:407369，build/wiz8.asm:395081。
+52ca60	非公式	-	character_quote_dispatch		依台詞與角色狀態分派語音／文字並記錄播報，亂數加 2000 或 300000 後轉成台詞重試時間寫事件管理器 +0x60；build/wiz8.asm:408223，build/wiz8.asm:408228。
+52cfb0	非公式	-	character_quote_eligibility		讀 HP、主狀態與台詞播放遮罩，回傳指定角色是否可播該台詞，遮罩用來避免重複語音而無規則數值輸出；build/wiz8.asm:408506。
+52d0b0	非公式	-	character_quote_text		按角色聲音型別格式化 Quotes 資源名，載入台詞並整形文字緩衝區，輸出僅為文字存在旗標；build/wiz8.asm:408601。
+52d260	非公式	-	character_quote_audio		按角色與台詞格式化 Sound 資源名、計算音量並播放，寫語音句柄及播放長度，缺音檔時改用文字顯示長度；build/wiz8.asm:408777，build/wiz8.asm:408814。

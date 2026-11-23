@@ -1,0 +1,42 @@
+call	2b6	無關	srAssertFail 匯入的分析標記（實際經 IAT 0x5ebaf4）；只在 M+0x27 為零時停止，沒有正常輸出可差分。
+call	53	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+call	65	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+call	86	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+call	4c7cb0	monsterPartyDistance	怪物場景到隊伍的距離（含身高修正、扣半徑、下限），存成 float32 作為排序的最後鍵；calc 以 monsterAttackTargetDistance 重現。
+call	4e5620	monsterListGetAt	取列表第 i 個怪物指標；本節點由 i 遞增走完整份列表。
+call	4e5720	monsterTemplateByMonster	以怪物種類（M+8，小於 1000）取已快取的物種模板；case 以快取命中配線。
+call	4e5af0	monsterQuadrant	怪物相對隊伍朝向的象限 0..3；calc 重現 0x51aec0 的同一套角度換算。
+call	51a800	templateMaxRangeClass	物種模板三個攻擊項中、啟用且射程類不大於 1 者的最大射程；全無則 -1。
+call	51a9a0	rangeBandLength	射程帶長度（1000、2000、12500、25000）；只用來填距離帶欄位，該欄位排序和回傳都不讀。
+call	5e2c70	monsterListCount	空列表指標回零，否則讀列表 +8 的筆數。
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	區域暫存的堆疊位移，非全域資料引用。
+data	ffffffffffffffec	無關	區域暫存的堆疊位移，非全域資料引用。
+data	fffffffffffffff4	無關	區域暫存的堆疊位移，非全域資料引用。
+data	fffffffffffffff8	無關	區域暫存的堆疊位移，非全域資料引用。
+data	fffffffffffffffc	無關	區域暫存的堆疊位移，非全域資料引用。
+data	53c920	attackTargetRowComparator	qsort 比較函式：鍵（無號）升冪、旗標者先、float32 距離升冪；calc 的 attackSearchCmp。
+data	5eb158	qsortImport	CRT qsort 匯入槽；對候選列以 28 位元組為單位排序，同鍵順序由 msvcrt 演算法決定（n 不大於 8 為 shortsort）。
+data	5eb1a0	allocateRowBuffer	CRT malloc 匯入槽；配置 筆數*28 位元組的候選列緩衝。
+data	5eb224	releaseRowBuffer	CRT free 匯入槽；沒有候選時釋放緩衝。
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；M+0x27 為零時停止。
+data	61d18c	無關	assert 診斷來源檔名；不是遊戲規則資料。
+data	61d268	無關	assert 診斷：M+0x27 必須大於零的條件文字；不參與規則計算。
+data	683fad	monsterList	怪物列表指標；空指標視為零成員。
+field	edi-0x8	rowId	候選列 +0：怪物 id，回傳值取排序後第一列。
+field	edi-0x4	rowOrderKey	候選列 +4：M+0x107，無號，排序主鍵。
+field	edi+0x0	rowTemplateFlag	候選列 +8：模板旗標位元組，排序第二鍵（旗標者先）。
+field	edi+0x4	rowRangeBand	候選列 +0xc：射程帶序號；排序與回傳都不讀。
+field	edi+0x8	rowHp	候選列 +0x10：M+0x2b 的複本；排序與回傳都不讀。
+field	edi+0xc	rowSameFaction	候選列 +0x14：M+4 是否等於呼叫端第二參數；排序與回傳都不讀。
+field	edi+0x10	rowDistance	候選列 +0x18：float32 距離，排序第三鍵。
+field	esi+0x0	monsterId	怪物 id。
+field	esi+0x4	monsterFaction	M+4：只與呼叫端第二參數比較後存入不被讀的欄位。
+field	esi+0xc	monsterScene	怪物場景指標（位置與半徑所在）。
+field	esi+0x14	monsterActiveA	M+0x14：非零才成為候選。
+field	esi+0x15	monsterActiveB	M+0x15：非零才成為候選。
+field	esi+0x27	monsterMaxHp	M+0x27：必須大於零（assert），其值不影響輸出。
+field	esi+0x2b	monsterHp	M+0x2b：無號，大於零才成為候選。
+field	esi+0x107	monsterOrderKey	M+0x107：排序主鍵。

@@ -1,0 +1,2 @@
+4f0af0	4f0afc	新行動模式為 0 的 srAssertFail 防禦性斷言；srAssertFail 停止、無可差分返回，合法呼叫不進入（同 4f0480 先例）。
+4f0af0	4f0c49	隊伍門檻取整後不在 1..100 的 srAssertFail 防禦性斷言；srAssertFail 停止、無可差分返回，合法狀態不進入（同 4f0480 先例）。

@@ -1,0 +1,103 @@
+call	5e1c10	無關	釋放暫存目標名單儲存，沒有改變資格規則
+call	5e1ce0	無關	配置暫存目標名單（容量五），不制定規則
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	532fe0	無關	switch 跳躍位址表（法術編號分派），與規則分派同義，非遊戲資料
+data	53305b	無關	switch 位元組索引表（法術編號到分支），與規則分派同義，非遊戲資料
+data	5e7283	無關	SEH 處理常式標籤；非遊戲資料
+data	5ebfe0	無關	暫存目標名單的虛函數表，屬容器生命週期
+data	616d00	無關	分析器標記的位址；函式指令中找不到對應存取，非遊戲資料
+data	616d01	無關	分析器標記的位址；函式指令中找不到對應存取，非遊戲資料
+data	616d84	blockedByStatusSpells	12 個法術編號（exe 唯讀表）；命中者再看目標的 0x11 步距狀態槽，字元讀 0x68692c 起、怪物讀 +0x11c 起
+data	616d88	blockedByStatusSpells	同 616d84 表的迴圈步進
+data	616db4	blockedByCombatStatusSpells	9 個法術編號（exe 唯讀表）；戰鬥中查目標的 ctx+0x7ce 或怪物 ext+0x4b 狀態槽
+data	616db8	blockedByCombatStatusSpells	同 616db4 表的迴圈步進
+data	616dd8	blockedByGroupEffectSpells	9 個法術編號（exe 唯讀表）；戰鬥中查目標的 ctx+0x867 或怪物 ext+0xe4 狀態槽
+data	616ddc	blockedByGroupEffectSpells	同 616dd8 表的迴圈步進
+data	616dfc	blockedByGroupEffectSpells	616dd8 表的結束位址（迴圈終點）
+data	61cc3c	無關	斷言原始碼檔名，只供錯誤診斷
+data	61cd48	無關	斷言原始碼檔名，只供錯誤診斷
+data	61cdac	無關	斷言原始碼檔名，只供錯誤診斷
+data	65be1c	spellRecords	法術定義庫基址，記錄長度 447（0x1bf）；讀 +0x48、+0x126、+0x133、+0x137
+data	6836a8	battleContext	戰鬥物件指標；狀態槽表起於 +0x7ce、+0x867
+data	683f94	combatActive	戰鬥中旗標 u8；為零時狀態槽類法術一律可施放
+data	685174	partyCharacterRecords	角色主記錄陣列指標，每筆步長 0x1862
+data	68692c	partyStatusSlots	隊伍狀態槽起點，每槽 0x11 bytes；與 616d84 表搭配
+data	68693d	partyStatusSlots	68692c 狀態槽迴圈的下一槽
+data	68d524	monsterCastLogged	u8 旗標；怪物模板無可施放法術時記一次後設為 1，之後不再記
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	ffffffffffffff70	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff74	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff78	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff7c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff80	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff84	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff88	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff8c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff90	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x0	tableSpellId	見名稱；案例逐欄放不同值並對照原版
+field	eax+0x10	targetStatusA_0x10	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x14	targetStatusA_0x14	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x18	targetStatusA_0x18	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x1c	targetStatusA_0x1c	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x20	targetStatusA_0x20	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x24	targetStatusA_0x24	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x2c	targetStatusA_0x2c	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x30	targetStatusA_0x30	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x34	targetStatusA_0x34	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x38	targetStatusA_0x38	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x3c	targetStatusA_0x3c	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0x40	targetStatusA_0x40	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	eax+0xc	targetStatusA_0xc	目標狀態群 A（角色 +0xa01 起、怪物 +0x57 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	ebp+0x0	targetType	見名稱；案例逐欄放不同值並對照原版
+field	ebp+0x4	targetCharacterIndex	見名稱；案例逐欄放不同值並對照原版
+field	ebp+0x8	targetMonsterId	見名稱；案例逐欄放不同值並對照原版
+field	ebx*4+0x532fe0	spellDispatchJumpTable	見名稱；案例逐欄放不同值並對照原版
+field	ebx+0xcb	templateKind	見名稱；案例逐欄放不同值並對照原版
+field	ebx+0xe0	templateCastFlag	見名稱；案例逐欄放不同值並對照原版
+field	ebx+ecx*1+0x4b	monsterExtraStatusSlot	見名稱；案例逐欄放不同值並對照原版
+field	ebx+edi*1+0x14d	templateSpellList	見名稱；案例逐欄放不同值並對照原版
+field	ecx+0x0	statusSlotValue	見名稱；案例逐欄放不同值並對照原版
+field	ecx+0x20	targetStatusB_0x20	目標狀態群 B（角色 +0xa65 起、怪物 +0xa7 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	ecx+0x2c	targetStatusB_0x2c	目標狀態群 B（角色 +0xa65 起、怪物 +0xa7 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	ecx+0x38	targetStatusB_0x38	目標狀態群 B（角色 +0xa65 起、怪物 +0xa7 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	ecx+0x44	targetStatusB_0x44	目標狀態群 B（角色 +0xa65 起、怪物 +0xa7 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	ecx+0x50	targetStatusB_0x50	目標狀態群 B（角色 +0xa65 起、怪物 +0xa7 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	ecx+0x5c	targetStatusB_0x5c	目標狀態群 B（角色 +0xa65 起、怪物 +0xa7 起）的欄位；非零代表該狀態存在，案例逐欄放不同值
+field	ecx+0xe0	templateCastFlag	見名稱；案例逐欄放不同值並對照原版
+field	ecx+eax*2+0xb0d	characterMaxHP	見名稱；案例逐欄放不同值並對照原版
+field	ecx+eax*2+0xb11	characterHP	見名稱；案例逐欄放不同值並對照原版
+field	ecx+ebp*1+0x4b	monsterExtraStatusSlot	見名稱；案例逐欄放不同值並對照原版
+field	ecx+ebp*1+0xe4	monsterExtraGroupSlot	見名稱；案例逐欄放不同值並對照原版
+field	ecx+edx*1+0x48	spellRecordFlag48	見名稱；案例逐欄放不同值並對照原版
+field	edi+0x0	targetType	見名稱；案例逐欄放不同值並對照原版
+field	edi+0x36b	characterFlag36b	見名稱；案例逐欄放不同值並對照原版
+field	edi+0x57f	characterFlag57f	見名稱；案例逐欄放不同值並對照原版
+field	edi+0xb19	characterMaxStamina	見名稱；案例逐欄放不同值並對照原版
+field	edi+0xb1d	characterStamina	見名稱；案例逐欄放不同值並對照原版
+field	edx+0x0	statusSlotValue	見名稱；案例逐欄放不同值並對照原版
+field	edx+0x10	monsterExtraRecord	見名稱；案例逐欄放不同值並對照原版
+field	edx+0x15	monsterFlag15	見名稱；案例逐欄放不同值並對照原版
+field	edx+0x152	monsterExtraFlag152	見名稱；案例逐欄放不同值並對照原版
+field	edx+0x16	monsterDisposition	見名稱；案例逐欄放不同值並對照原版
+field	edx+0x53305c	spellDispatchByteTable	見名稱；案例逐欄放不同值並對照原版
+field	edx+0xcb	templateKind	見名稱；案例逐欄放不同值並對照原版
+field	esi+0x10	monsterExtraRecord	見名稱；案例逐欄放不同值並對照原版
+field	esi+0x15	monsterFlag15	見名稱；案例逐欄放不同值並對照原版
+field	esi+0x16	monsterDisposition	見名稱；案例逐欄放不同值並對照原版
+field	esi+0x27	monsterMaxHP	見名稱；案例逐欄放不同值並對照原版
+field	esi+0x2b	monsterHP	見名稱；案例逐欄放不同值並對照原版
+field	esi+0x2da	monsterFlag2da	見名稱；案例逐欄放不同值並對照原版
+field	esi+0x2f	monsterMaxStamina	見名稱；案例逐欄放不同值並對照原版
+field	esi+0x33	monsterStamina	見名稱；案例逐欄放不同值並對照原版
+field	esi+0xc	monsterAnimationObject	見名稱；案例逐欄放不同值並對照原版

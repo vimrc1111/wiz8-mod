@@ -1,0 +1,18 @@
+{
+  "id": "menu-b1",
+  "duration": 70,
+  "files": [
+    {"src": "hook/ddraw/out/ddraw.dll", "dst": "ddraw.dll"},
+    {"src": "build/zh/PATCH.002", "dst": "Patches/PATCH.002"}
+  ],
+  "steps": [
+    {"t": 36, "shot": "title"},
+    {"t": 38, "keys": "{DOWN}"},
+    {"t": 39, "keys": "{ENTER}"},
+    {"t": 46, "shot": "party"},
+    {"t": 50, "keys": "{F10}"},
+    {"t": 53, "shot": "menuopen"},
+    {"t": 55, "keys": "{F10}"},
+    {"t": 58, "shot": "menuclosed"}
+  ]
+}

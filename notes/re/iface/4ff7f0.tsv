@@ -1,0 +1,55 @@
+call	2b6	srAssertFail	輸入不滿足角色、難度或候選學派前置條件時停止。
+call	4acba0	spellRequiredCasterLevel	法術等級2至7對應最低施法等級，其餘回傳1。
+call	4ff3b0	classEffectiveCasterLevel	指定職業等級加exe修正，非施法職業回傳-1。
+call	517a70	formatSpellSelectionDiagnostic	無關：只在無可用學派斷言前格式化錯誤文字。
+call	517ec0	partyCharacterIndex	由已存在角色位址查隊伍索引，供戰鬥行動進度記錄選擇。
+data	10	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	14	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	4	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	5ebaf4	srAssertFail	非法角色、難度或無學派時停止的診斷 import。
+data	609b24	assertFalseText	非法難度斷言文字。
+data	616310	classCasterLevelAdjustment	十五職業的施法等級修正；-255 表示非施法職業。
+data	61634c	classSchoolMask	十五職業對應的四學派資格位元。
+data	61634d	classSchoolMaskSecondByte	職業學派資格表第二筆；抽取器引用。
+data	616df0	spellDifficultySkillThreshold	法術等級加半施法成本，最高索引16的技能門檻。
+data	616e30	spellDifficultySkillThresholdLast	技能門檻表的索引16。
+data	61920c	assertSourceFile	無關：只供斷言訊息的來源檔名，不參與選擇規則。
+data	619620	assertValidProfession	無關：無職業斷言文字。
+data	619634	assertSelectedSchool	無關：無候選學派斷言文字。
+data	619654	unusableSpellDiagnostic	無關：無候選學派診斷格式。
+data	65be1c	spellRecords	法術記錄基址，每筆447 bytes；原版 0x96 筆（0x5001e0 拒收 ≥0x96），fixture 為 150 筆獨立合成記錄（索引 0..149），並非 exe 表。
+data	6836a8	partyCombatRecords	角色戰鬥記錄基址，每筆212 bytes。
+data	683f94	battlePresent	戰鬥期間才套用行動進度風險。
+data	6850d5	difficultySetting	0/1/2 使用行動進度門檻80/60/40。
+data	8	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	c	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	ffffffffffffffe8	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	ffffffffffffffec	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	fffffffffffffff0	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	fffffffffffffff4	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	fffffffffffffff8	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+data	fffffffffffffffc	無關	抽取器將堆疊參數、暫存候選技能與風險工作變數位移列成絕對引用；不是遊戲資料表。
+field	eax*4+0x616df0	spellDifficultySkillThreshold	法術等級加半施法成本，最高索引16的技能門檻。
+field	eax+0x9c	characterActionProgress	角色行動進度；戰鬥角色記錄+0xb4，基準已含+0x18；與0x501910的縮放欄位相同。
+field	ebp+0x69	currentClass	角色目前職業索引，選施法等級表。
+field	ebp+0xa21	verbalCastingBlocked	角色言語施法受限狀態，非零且法術支援煉金時直接選Alchemy技能26；同欄位亦限制吟唱與物品使用（0x4fae70、0x522a30），具體狀態名稱未確證。
+field	ebp+eax*2+0x1a3	schoolBaseSkill	C+0x1a3+38*技能索引，供可訓練學派的風險加權。
+field	ebp+eax*2+0x5cb	realmEffectiveSkill	C+0x5cb+38*領域索引，風險加權為四倍。
+field	ebp+edi*4+0x8d	classLevel	C+0x8d+4*職業索引，合計可用其他職業施法等級。
+field	ecx+0x0	classLevel	角色十五職業等級迴圈目前記錄，C+0x8d+4*class。
+field	edi*4+0x616310	classCasterLevelAdjustment	十五職業的施法等級修正；-255 表示非施法職業。
+field	edi+0x61634c	classSchoolMask	十五職業對應的四學派資格位元。
+field	edx+0x0	schoolTrainingEnabled	角色四學派啟用欄位，C+0x52d+38*school。
+field	edx+0x2	schoolEffectiveSkill	角色四學派技能，C+0x52f+38*school，有號比較。
+field	edx+ecx*1+0x48	alchemyUsable	法術煉金學派資格；mask位元4。
+field	esi+eax*1+0x11f	divinityUsable	法術神術學派資格；mask位元2。
+field	esi+eax*1+0x120	psionicUsable	法術靈能學派資格；mask位元8。
+field	esi+eax*1+0x48	alchemyUsable	法術煉金學派資格；mask位元4。
+field	esi+eax*1+0x5a	wizardryUsable	法術魔法學派資格；mask位元1。
+field	esi+ecx*1+0x11f	divinityUsable	法術神術學派資格；mask位元2。
+field	esi+ecx*1+0x120	psionicUsable	法術靈能學派資格；mask位元8。
+field	esi+ecx*1+0x133	spellRealm	法術領域索引，選角色領域技能。
+field	esi+ecx*1+0x48	alchemyUsable	法術煉金學派資格；mask位元4。
+field	esi+ecx*1+0x49	spellCost	法術施法成本；朝零除2後加法術等級形成門檻索引。
+field	esi+ecx*1+0x56	spellLevel	法術等級，施法等級不足時增加風險。
+field	esi+ecx*1+0x5a	wizardryUsable	法術魔法學派資格；mask位元1。

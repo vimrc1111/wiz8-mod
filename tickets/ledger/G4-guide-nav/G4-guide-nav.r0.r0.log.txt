@@ -1,0 +1,123 @@
+/tmp/tmp.b4Brf3tkWK/m.c: In function ‘main’:
+/tmp/tmp.b4Brf3tkWK/m.c:10:12: error: implicit declaration of function ‘guide_nav’; did you mean ‘guide_wrap’? [-Werror=implicit-function-declaration]
+   10 |     EXPECT(guide_nav(&g, GUIDE_DOWN, 5) == 0 && g.layer == 0, "關著時方向鍵交給遊戲");
+      |            ^~~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:10:26: error: ‘GUIDE_DOWN’ undeclared (first use in this function)
+   10 |     EXPECT(guide_nav(&g, GUIDE_DOWN, 5) == 0 && g.layer == 0, "關著時方向鍵交給遊戲");
+      |                          ^~~~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:10:26: note: each undeclared identifier is reported only once for each function it appears in
+   10 |     EXPECT(guide_nav(&g, GUIDE_DOWN, 5) == 0 && g.layer == 0, "關著時方向鍵交給遊戲");
+      |                          ^~~~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:11:26: error: ‘GUIDE_ESC’ undeclared (first use in this function)
+   11 |     EXPECT(guide_nav(&g, GUIDE_ESC, 5) == 0 && g.layer == 0, "關著時 Esc 交給遊戲");
+      |                          ^~~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:12:26: error: ‘GUIDE_TOGGLE’ undeclared (first use in this function)
+   12 |     EXPECT(guide_nav(&g, GUIDE_TOGGLE, 5) == 1 && g.layer == 1 && g.page == 0, "F7 開在第 1 層第 0 頁");
+      |                          ^~~~~~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:12:68: error: ‘GuideState’ has no member named ‘page’
+   12 |     EXPECT(guide_nav(&g, GUIDE_TOGGLE, 5) == 1 && g.layer == 1 && g.page == 0, "F7 開在第 1 層第 0 頁");
+      |                                                                    ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:13:26: error: ‘GUIDE_UP’ undeclared (first use in this function)
+   13 |     EXPECT(guide_nav(&g, GUIDE_UP, 5) == 1 && g.layer == 1, "第 1 層再按上仍吃鍵、停在第 1 層");
+      |                          ^~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:14:26: error: ‘GUIDE_RIGHT’ undeclared (first use in this function)
+   14 |     EXPECT(guide_nav(&g, GUIDE_RIGHT, 3) == 1 && g.page == 1 && guide_nav(&g, GUIDE_RIGHT, 3) == 1 && g.page == 2, "右翻頁");
+      |                          ^~~~~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:14:51: error: ‘GuideState’ has no member named ‘page’
+   14 |     EXPECT(guide_nav(&g, GUIDE_RIGHT, 3) == 1 && g.page == 1 && guide_nav(&g, GUIDE_RIGHT, 3) == 1 && g.page == 2, "右翻頁");
+      |                                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:14:104: error: ‘GuideState’ has no member named ‘page’
+   14 |     EXPECT(guide_nav(&g, GUIDE_RIGHT, 3) == 1 && g.page == 1 && guide_nav(&g, GUIDE_RIGHT, 3) == 1 && g.page == 2, "右翻頁");
+      |                                                                                                        ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:15:51: error: ‘GuideState’ has no member named ‘page’
+   15 |     EXPECT(guide_nav(&g, GUIDE_RIGHT, 3) == 1 && g.page == 2, "最後一頁再右不動");
+      |                                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:16:66: error: ‘GuideState’ has no member named ‘page’
+   16 |     EXPECT(guide_nav(&g, GUIDE_DOWN, 3) == 1 && g.layer == 2 && g.page == 0, "下：層 +1、頁歸 0");
+      |                                                                  ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:18:26: error: ‘GUIDE_LEFT’ undeclared (first use in this function)
+   18 |     EXPECT(guide_nav(&g, GUIDE_LEFT, 3) == 1 && g.page == 0, "第 0 頁再左不動");
+      |                          ^~~~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:18:50: error: ‘GuideState’ has no member named ‘page’
+   18 |     EXPECT(guide_nav(&g, GUIDE_LEFT, 3) == 1 && g.page == 0, "第 0 頁再左不動");
+      |                                                  ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:20:51: error: ‘GuideState’ has no member named ‘page’
+   20 |     EXPECT(guide_nav(&g, GUIDE_RIGHT, 0) == 1 && g.page == 0, "npages 0 視為 1 頁");
+      |                                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:21:26: error: ‘GUIDE_OTHER’ undeclared (first use in this function)
+   21 |     EXPECT(guide_nav(&g, GUIDE_OTHER, 3) == 0 && g.layer == 1, "開著時其他鍵交給遊戲");
+      |                          ^~~~~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:22:65: error: ‘GuideState’ has no member named ‘page’
+   22 |     EXPECT(guide_nav(&g, GUIDE_ESC, 3) == 1 && g.layer == 0 && g.page == 0, "Esc 關");
+      |                                                                 ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:24:68: error: ‘GuideState’ has no member named ‘page’
+   24 |     EXPECT(guide_nav(&g, GUIDE_TOGGLE, 3) == 1 && g.layer == 0 && g.page == 0, "開著再按 F7 關");
+      |                                                                    ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:25:68: error: ‘GuideState’ has no member named ‘page’
+   25 |     EXPECT(guide_nav(&g, GUIDE_TOGGLE, 3) == 1 && g.layer == 1 && g.page == 0, "重開從第 1 層第 0 頁");
+      |                                                                    ^
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+/tmp/tmp.b4Brf3tkWK/m.c:29:12: error: implicit declaration of function ‘guide_paginate’ [-Werror=implicit-function-declaration]
+   29 |     EXPECT(guide_paginate(step, 6, 48, ps, 8) == 3 && ps[0] == 0 && ps[1] == 2 && ps[2] == 4, "貪婪分頁、層間距算進高度");
+      |            ^~~~~~~~~~~~~~
+/tmp/tmp.b4Brf3tkWK/m.c:5:35: note: in definition of macro ‘EXPECT’
+    5 | #define EXPECT(c, why) do { if (!(c)) { printf("FAIL guide-rule %s\n", why); bad = 1; } } while (0)
+      |                                   ^
+cc1: all warnings being treated as errors
+FAIL guide-rule 編譯失敗（guide.h 缺或介面不符）

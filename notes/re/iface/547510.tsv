@@ -1,0 +1,4 @@
+data	6836a8	combatState	戰鬥工作區 G 的指標；0x547519 經此讀取開場阻擋旗標與回合數，案例以 arena 物件連接
+data	683f94	combatActive	戰鬥中旗標 u8；0x547510 讀取，零值直接回傳不合資格；建立與退出證據見 notes/re/combat-timing.md:35
+field	eax+0x4	combatRound	戰鬥回合數 u32；0x547528 以無號值判定 0 或 1 為開場回合，高位設定位亦不合資格
+field	eax+0xa54	combatOpeningBlocked	戰鬥開場資格阻擋旗標 u8；0x54751e 讀取，任意非零值阻擋；0x546ef9 在戰鬥中敵對怪物計數非零時設為 1，名稱描述本節點用途，尚不推定特定職業或技能規則

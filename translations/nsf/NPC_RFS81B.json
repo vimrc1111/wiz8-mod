@@ -1,0 +1,477 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "e6eab18d3a3fe33a7ca86ecfb766c925867d0803b77d7225cdbd44e2b54f5cdd",
+  "zh": "RFS-81 Savant {{Android}} Trooper 前來報到，主人。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "bc1756c9c406f4a6fc3e5f763da3ab5877a169b4687443674bfed26d4364e48f",
+  "zh": "RFS-81 Savant {{Android}} Trooper 前來報到。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "1f453fc78ea62a1d569523b0a7fcb927b8197f081a0d05e99c1e7ee27d94474a",
+  "zh": "RFS-81 正在判定生命體（ lifeform ）意圖。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "31bf52c513f385d87d4fcb0ce69cd8262fbab2d2d186fa4839dc6fcabd2e4170",
+  "zh": "RFS-81 準備消滅生命體（ lifeform ）。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "4edc8f1a9345ff7e630f58d1c9426ce2ff8fc47b998942c8ef56a10d21f7ced5",
+  "zh": "不需要貨幣。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "9ee0b44076997662a42aa797867dffc581188152074f2bcd1b51331d4f8a01c3",
+  "zh": "衝突期間不允許交談。"
+ },
+ {
+  "id": 10,
+  "src_sha256": "6634ea91afd535055eaef074ae9c20615d16cb4101859ef4f563058d61de2861",
+  "zh": "RFS-81 偵測到八個生命體（ lifeform ）。程式設定最多保護七個生命體（ lifeform ）。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "3811dda4177f190a46299a7aa5a0aa25b4ad14a471f54b98c7d8ead7981bb459",
+  "zh": "RFS-81 啟動參與程序。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "e0021a60482ecfc0153610db9bcb39d3a2bd5d61f46e8a3f3b59feca293624e0",
+  "zh": "加入物品清單記錄。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "9319833592af02c8ccf27fbdcea1a3c1a178865a343b6d4643d33c0ec2da552f",
+  "zh": "RFS-81 的成功運作不需要該物件。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "0bf8ee685635f8d6f4afc19aef2c5ee27f3832e0071b27cf2cc7fe29a88110ac",
+  "zh": "RFS-81 不需要額外物件。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "b2fd8a02917dc5ae2dbc9c2f2adee0558e9e4accaa7906f77ac09441c817fa5e",
+  "zh": "核心電路溫度上升。肇因為惱人的生命體（ lifeform ）。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "7b74af5bfcfc790d98b02c7aeb930f7886728f7740e2466bc78ae623b8609285",
+  "zh": "RFS-81 偵測到核心外殼遭入侵。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "d25f6badaaeecd44f0fc3b64e2880fc994d45f856671955358ece3727de8ede6",
+  "zh": "準備被消滅！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "992dac9d70054ec555ee574478e79a985c35856337093e93952d01ec84a203b0",
+  "zh": "金幣加入物品清單。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "0fb340f45243d915732d97862fbb0bec8802058b26f753bae52a9858aa39e3a3",
+  "zh": "輸入錯誤。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "1b5c6b97a67dc6404e1f4a68f18a60fa404388e6e817da47444c69518f2ec024",
+  "zh": "無對應資料。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "e1f77b9e6aef02a4ac84ddb6b6de70962b3e0f860fa7d3c150066c187755d510",
+  "zh": "資料已加密。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "ac83e9c481ee0fe300e29b00cd1952276caec7cd371df84c41ec4984e573d87c",
+  "zh": "重複資料……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "864528e3d2179818dd0f8f8b8e3722b2d1b9fd0d4699cf5c8b0a9d7f17287ff5",
+  "zh": "輸入錯誤。資料過多。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "2a6adb18bddb4e467d85c5913fce28cd8ef5b15cd4f37307f4b062fccd492648",
+  "zh": "額外搜尋顯示……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "ff36c797a41fd0a68e8dcf4880436e7baa74f35810cf3687df67e3ce16906f72",
+  "zh": "正在彙整對話……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "b9be795ec8233ceaaa3d22fbe5f6fa58d1644078659c021d3565952434360805",
+  "zh": "正在執行記憶體維護……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "bc88cd45609720ab8f57b19176569c7abdbdbf82df847f1e864e79f451eafa8c",
+  "zh": "正在掃描區域危險……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "30c74f015b5c8606accf3c862b50de82660a62d272c952320646b581fd24fa76",
+  "zh": "Dominus 是 Cosmic Circle 星系的主要行星。是眾多生命體（ lifeform ）的家園。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "266e9b1530b0b67be612356d1931532fa4bea13dcd369cabdb5285ae21997e89",
+  "zh": "Savant Tower 所在地。 Higardi 的舊居所。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "413bd5755525dec49452059cd47473c3dd9019234c0fb258b70f2f3a5c5ac509",
+  "zh": "被液體環繞。 Rynjin 的家園。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "7f5c0a87661c5f1caa14585e8b9d9022bd6b605e3ffcff95261d3dc564445e46",
+  "zh": "Trynnies 的家園。目前掃描顯示地表層無存在跡象。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "a0b1949b06d2bbd98d6de41bc738f87f075befa98c32c29c81e4fb6181573e27",
+  "zh": "Mt. Gigas 。目前掃描顯示有 Umpani 存在。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "1bdede445167a41c8301099d4b554db6362b4a554a9a628185ea5bf41dba1197",
+  "zh": "偵測到 T'Rang 存在於 Bluff 內部。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "58125a92f4885a7a68c202be8eeb5cda03f77464cb379fe744cc813751d91eae",
+  "zh": "RFS-81 尚未完成對水域環境的掃描。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "3c5e781d8018f2d0d69bc6b868a1c28c399a1b3f55b059ef5bdf0b04adea8509",
+  "zh": "資料：友善\n行動：阻止進入 Ascension Peak 。企圖進入者將被消滅（ destroy ）。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "0e44a450bf0f91e44b26161f1095e2366937bb93f3cdb70b0ef1eb4379e7db1e",
+  "zh": "資料：友善。腦波微弱。\n行動：忽略。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "b40b49580901e1042343753ef429119cb5e1c77a666cca70612ef70086dd21b9",
+  "zh": "資料：敵對。危險。有智慧。\n行動：等待新指令。可能結盟。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "4420594e1dbccf93ccfe2787013661c9bece94eed06486a968f41be3a97bc683",
+  "zh": "資料：目標與首要目標衝突。\n行動：持續掃描。不得允許進入 Ascension Peak 。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "0ce59d7eb20aca3bca5531c978797921e507ad4c5d02926da86abd61242f8bc5",
+  "zh": "資料：目標與首要目標衝突。對 Dark Savant 敵對。\n行動：見到即消滅。"
+ },
+ {
+  "id": 48,
+  "src_sha256": "fa8f1e49ff08efd02ef449a062373518421dbf45c480ad4cd9681b30b82cb445",
+  "zh": "資料：居所 Guardia 。 Higardi 的後裔。瀕臨絕種。僅餘一個生命體（ lifeform ）。\n行動：忽略。"
+ },
+ {
+  "id": 49,
+  "src_sha256": "37dc31b83ab13b62bd992b31efb187eee2b96b4d0755b31445efcbb7b00dd8dc",
+  "zh": "資料：尚未彙整。\n行動：持續掃描。"
+ },
+ {
+  "id": 50,
+  "src_sha256": "2bbd63680f15634193b41e0bc694e3a114cbdc24399ac157fff6f6929ba5bd77",
+  "zh": "資料：居所 Guardia 。可能存在於 Dominus 。\n行動：持續掃描。見到即消滅（ destroy ）。"
+ },
+ {
+  "id": 51,
+  "src_sha256": "cebd04fb71b005fdc0946b8ea8daf6383eaec2d63e30fe2f366d5e5c0c7ec6b5",
+  "zh": "資料：居所不明。偵測到於 Dominus 的 Arnika 存在。\n行動：等候指令。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "0a1bf8db0ab027dfc734addadd5f33295328c17bff710ed74c3a5d633ddf05fc",
+  "zh": "資料：存在於 Cosmic Circle 。\n行動：消滅。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "4e8a66bdc5858f4a31a392fc9492d206c3e11bac6047100b57c571d079d8dcdb",
+  "zh": "資料：居所 Guardia 。\n行動：已取得 Astral Dominae 。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "232b9ab2462fccddefb2d53c2e00b210df35199b3ffae89a198559798daea3c6",
+  "zh": "主人。全能者。 RFS-81 的首要目的（ primary purpose ）。我該如何為您效勞，主人？"
+ },
+ {
+  "id": 55,
+  "src_sha256": "bd3a118f171c63e99f4b39285316d305776ec02cd551f2af2845b9e5be01b522",
+  "zh": "Cosmic Lords 的後裔。過去紀錄顯示缺乏服從命令的意願。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "bd3a118f171c63e99f4b39285316d305776ec02cd551f2af2845b9e5be01b522",
+  "zh": "Cosmic Lords 的後裔。過去紀錄顯示缺乏服從命令的意願。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "a12adbf4af09f0590ea8a0663ae892cb405ac58170cdc3d008edc60c4fa5481f",
+  "zh": "Cosmic Lord 。目標。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "4255876f852453a36867df2bee9e070719375a4955cb6f907b7e9849e89a5e20",
+  "zh": "正在掃描過期記錄。找到資料。 Bela 與 Cosmic Lords 有關聯。人格不穩定。知曉 Cosmic Forge 。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "8ba51073e68a9b8c1b4d5ce126c0bbc460ce6a56007a0f6dbddbe2dd458ff8d9",
+  "zh": "Umpani 的新任將軍。取代在 Guardia 被 T'Rang 於戰鬥中殺死的 Yamo 。"
+ },
+ {
+  "id": 65,
+  "src_sha256": "697f370546dd4c399d536247a32af6bfd5599eb08025646bbbfdba39c1606312",
+  "zh": "T'Rang 的新領袖。見到即消滅。"
+ },
+ {
+  "id": 66,
+  "src_sha256": "26d6782e75b56eff5e4ffdb686c2f8dd74de591c32d47fcabbadab05c46d3887",
+  "zh": "Rattkin Razuka 的首領。可能存在於 Dominus 。見到即消滅。"
+ },
+ {
+  "id": 67,
+  "src_sha256": "c6c69286365e78dbcdf575278e71999709723d6357168bd0162d1a29cb574d81",
+  "zh": "Astral Dominae 屬於 Dark Savant 。"
+ },
+ {
+  "id": 70,
+  "src_sha256": "0160f7ec11e85b245d139ae42942f4a2c2519871c1258de438524f552175ebc2",
+  "zh": "Cosmic Forge ，書寫宇宙一切法則的筆。位於 Cosmic Circle 。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "37f6d5f8d8e2129630e330be4b5152f32a7f6975abaec46aaebaa3dc455e3880",
+  "zh": "Ascension ， Dark Savant 的歸來，宇宙未來的領導者，新的 Cosmic Lord ！"
+ },
+ {
+  "id": 72,
+  "src_sha256": "4dcd419dcb9551e692c4c5d8ea1321eb08ab050a5319231d6fb9bf0dd2194d1e",
+  "zh": "RFS-81 對謠言沒有興趣。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "069d30503508202cad73fb5cd4b2350a89e61e475f74e51f1e836bde23fbc3a8",
+  "zh": "RFS-81 型號 Savant Trooper 。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "bbd5bc36f8921577cd27b19b9d114eec057aa6bf62c1a65046e2ff8ac6d7b039",
+  "zh": "若您高興的話，主人。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "d40c64c5979d3256323d1f1b2e5a6833d7c3762b2d98e674c50cf1d0c6012c78",
+  "zh": "問候您，主人。我在此為您效勞。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "41c9022b89d210bd5ea5bcade1c93a3fdc0712e0f65807da671545abe03ce30b",
+  "zh": "RFS-81 返回掃描模式。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "93fab75acc0476de36d25183f9afb2b932b4fc23578d34b22f83e161ff422aa4",
+  "zh": "RFS-81 的程式設定為消滅、掃描與保存資訊。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "1eec432f9ade0eddbd923569cf5db759dc76867c0675f399ad85ffc5fad45e4c",
+  "zh": "正在執行系統掃描。所有系統皆在線且運作正常。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "b610c8e6852d0d31d1bc6ef08c6198f452c415cfac49365df4effb656bd13168",
+  "zh": "RFS-81 偵測到一場戰爭（ war ）： Umpani 對 T'Rang 、 Rapax 對 Trynnie 、 Rapax 對 Rynjin 、 Rapax 對 Higardi ，以及 Dark Savant 對前述所有生命體（ lifeform ）。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "dcde042f32cc3c73d36c56501a004b88e96b58ee6d3bea2ac8269a254adbbfcc",
+  "zh": "T'Rang 種族的太空船。掃描顯示其在 Dominus 軌道上。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "5c918d49d1804cc0d82167db796f8baf38a2b56fc312d2363e43cc515b488a82",
+  "zh": "該資料為機密。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "a55f249612952fe23de6c34d40d83b26a596bc96210abfcb39e6b894a34a398f",
+  "zh": "Umpani 種族的太空船。掃描顯示其在 Dominus 上。位置尚未得知。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "eba830f3238018aa31b76bc24f30ab40d231e6516fd5c8f0dbddb5229db83f97",
+  "zh": "任務：找出 Vi Domina 。向 Dark Savant 回報位置。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "b847d73791d6f68d0f03017b099ad392b6f979174d8301b022398be7754ed46c",
+  "zh": "任務：找出 Destinae Dominus 。向 Dark Savant 回報位置。"
+ },
+ {
+  "id": 89,
+  "src_sha256": "d7dad3e4385bc84ccb1ff769468dae47d20baf1317591128578cb9044a7b35cb",
+  "zh": "任務：找出 Chaos Moliri 。向 Dark Savant 回報位置。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "68231099ba5266148a109a64d26394e7eece55b377d8f8a0cdf6cde38a459e16",
+  "zh": "Arnika 。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "9ce2a2f61869632ae3b97c283f3a8da2ebfd6a41137dd020b104d3532e9ec5dd",
+  "zh": "Trynton 。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "5e1c21446df69db52a1549d5cdb1e9132ec97c00b1568f7afe7bcf35870c5f9c",
+  "zh": "沼澤。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "741fbbd4400e41e2b4b5c97cd4f7071c43725868c5cea71423f9d5ec290aaafb",
+  "zh": "Marten's Bluff 。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "7f07681a812eae73c1537a281ead9ae7b2b3fb17d9c3c3d2312453bdcce9097c",
+  "zh": "Rapax Away Camp 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "070171c020a3900f5bfae08d3862144117c3700821bb0ec45992b23e988c9db0",
+  "zh": "Mt. Gigas 。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "ac5b0510d8b61e2af96697e62c3a9a18d6feb5ff7a91b640bbdc20f1ea3230a1",
+  "zh": "Rapax Rift 。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "5d099f22ef13f802b6a573cb8ec27fd9fc0ed15e87abffe3310a4c7b4b5022ba",
+  "zh": "Rapax Castle 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "08051f39b923df42afcf8716452dbf69bafb5582df014682f49955ddb5d5a538",
+  "zh": "Ascension Peak 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "f0986368b732e136c7054f9c42e6bb9f069964b2c9723050a49998d22a892136",
+  "zh": "Cosmic Circle 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "6c639f692fd1ef05b11a69ee5e6bc97611368ba699a8c01c1cd7f1f3177ff151",
+  "zh": "就在此地。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "a3e076d4fd8693454cc30b2ff2e1bea770cae489669cd29cd4dec91029351d81",
+  "zh": "我無法判定。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "82beac29d736c4b125bd8a4dc6ce880f418e6bcad360c37262b856b60243a08a",
+  "zh": "Bayjin 。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "e720cdc21b584a1b6133f111c72e7aa1051e1ed733868768927aa45c7f100182",
+  "zh": "首要目標：在一切事務上協助 Dark Savant 。取得進入 Cosmic Circle 的權限。消滅 Dark Savant 的所有敵人。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "642bbf182dc8f9b7d374eed079999a96414168c404399a87cbd3fbffb3596d7c",
+  "zh": "生命體（ lifeform ）定義為任何可能與首要目標有關的活物。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "17e151bc671b2a181cee1cf593d5f1fbb3c63a1bd3c7e9ff2018edda1e70158d",
+  "zh": "鬆散組織的 Rattkin 團夥。目標為偷竊、欺騙與受雇殺人。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "5259d632601e2ab84d658bbf5dfc8bbb878eee5361ef3a9c12e017ebb621efc3",
+  "zh": "A 級 Savant Troopers 。戰鬥就緒。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "4769a6388a3bb5443c8aa574a54fdcc1af72e5846e15481d3c847205d0344e17",
+  "zh": "維護液。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "1d66e28ffac8a208cc26fdbf3f3139565d6ff4017ef3514f11323f94bf56dc5a",
+  "zh": "維護液加入物品清單。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "64fd3f927acf130b6e1b505e35d7eb34f3e38c4ad3298bcce51d843bcadc922e",
+  "zh": "您就站在我面前，主人。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "3e5335580ab4b203a16029f3eeba042245d2c2671a40710d0b6e1f734f7172c6",
+  "zh": "Tower 在 Arnika 。它很安全，主人。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "2000c76f41a357192988b06283afab56929b8d831a82605c94afb6ff3bffc38e",
+  "zh": "鎖定中……正在傳送訊號給其他 Troopers 。群組已鎖定。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "cfd5c3cd2bb3c9d31167b8dbdbfebd4ae41a5e40954d8484f4cce48a7f8b1b90",
+  "zh": "該請求不符合首要目的（ primary purpose ）。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "1a405676a6ee89ee023a63411eb0309d841f04fd0087b0c2f9b8430adc048424",
+  "zh": "無更多可用資訊。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "425af509481111e8e928122de48aa4784253e69f646fa44b6c6e24ad424377a5",
+  "zh": "北。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "89f85d51886091ca4aae86247e5e57b07b8268c3b7051dedae5a4c2e58c41af6",
+  "zh": "南。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "dff594118d30d9d4a81789b241eeb4ea1cd282833135b155612fb97e399ddeda",
+  "zh": "東。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "665ac509754c3d7f395c3280e80de0ff676d3065dd50bb3a7beb85c7562602a4",
+  "zh": "西。"
+ }
+]

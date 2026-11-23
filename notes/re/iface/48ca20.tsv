@@ -1,0 +1,22 @@
+call	40efa0	randomBelow	R(n) 亂數：洗牌每輪抽兩次 R(生成器數)；emu 亂數樁記 n/value，calc 以 r.R(n) 重放
+call	48b200	encounterSpawnCheck	生成檢查（thiscall，參數 1）：五個阻擋旗標任一非 0 或生成器 +0x44 啟用位元組為 0 不生成；作用中群數 >= 額度 0x60a6c0 時呼叫 48c8e0 剔除後再比，仍 >= 不生成；參數 1 時距離不參與判斷。emu 原樣執行，calc 重現
+call	48cfd0	generatorListCopy	生成器清單複製（thiscall）：operator new(4*筆數)、抄筆數與指標陣列到區域清單物件；emu bump 堆位址 0x50000000，輸出讀洗牌後順序
+call	5e1c10	無關	operator delete：釋放洗牌用的複製緩衝，emu 堆不回收，無規則輸出
+data	5e5648	無關	SEH 例外處理程序位址（函式序言），非遊戲資料
+data	5ec284	無關	區域清單物件的 vtable 位址，非遊戲資料
+data	5ec288	無關	區域清單物件的 vtable 位址（釋放前寫回），非遊戲資料
+data	659ab4	currentScene	目前場景物件指標；+0xc4 是生成器清單
+data	65ba14	activeGroupCount	作用中群體清單筆數：解散迴圈的條件與生成檢查的額度比較對象
+data	65ba1c	activeGroupData	作用中群體清單資料指標：解散時取最後一筆群體
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	ffffffffffffffe0	無關	靜態掃描所列的負堆疊位移；為本函式區域清單物件、迴圈計數或 SEH 框架的區域暫存，並非外部資料位址或欄位
+data	ffffffffffffffe4	無關	靜態掃描所列的負堆疊位移；為本函式區域清單物件、迴圈計數或 SEH 框架的區域暫存，並非外部資料位址或欄位
+data	ffffffffffffffe8	無關	靜態掃描所列的負堆疊位移；為本函式區域清單物件、迴圈計數或 SEH 框架的區域暫存，並非外部資料位址或欄位
+data	fffffffffffffff0	無關	靜態掃描所列的負堆疊位移；為本函式區域清單物件、迴圈計數或 SEH 框架的區域暫存，並非外部資料位址或欄位
+data	fffffffffffffff4	無關	靜態掃描所列的負堆疊位移；為本函式區域清單物件、迴圈計數或 SEH 框架的區域暫存，並非外部資料位址或欄位
+data	fffffffffffffffc	無關	靜態掃描所列的負堆疊位移；為本函式區域清單物件、迴圈計數或 SEH 框架的區域暫存，並非外部資料位址或欄位
+field	eax+0x0	groupListEntry	清單條目讀寫：解散時取作用中群體指標、洗牌與逐一生成時取生成器指標
+field	ecx+0x0	groupListEntry	清單條目：生成器指標（洗牌交換與取生成器）
+field	ecx+0xc4	sceneGeneratorList	場景物件的生成器清單指標（清單 +4 筆數、+0xc 指標陣列）
+field	edi+0x0	groupListEntry	清單條目：洗牌交換的第二個生成器指標
+field	edx+0x0	groupListEntry	清單條目：洗牌交換的第一個生成器指標

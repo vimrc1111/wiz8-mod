@@ -1,0 +1,104 @@
+call	2b6	無關	Ghidra EXTERNAL 位址空間的 srAssertFail 匯入（IAT 0x5ebaf4），同 re/Cands.java:25；前例見其他 iface 的 2b6 列。只在 cov-exempt 的 assert 塊出現，calc panic。
+call	5f	無關	Ghidra EXTERNAL 位址空間的 swprintf 匯入（IAT 0x5eb188，經 call ebx 於 0x546659、0x546749），非 exe 內位址；re/Cands.java:25 取 getToAddress().getOffset() 不分位址空間。證據：build/re/funcs.tsv 全 6633 函式中「呼叫含 5f」與「資料引用含 5eb188」完全同現（83 對 83，無例外）。只組訊息文字。
+call	78	無關	Ghidra EXTERNAL 位址空間的 wcscpy 匯入（IAT 0x5eb1ec，0x5461e2、0x546223），非 exe 內位址；同 re/Cands.java:25。證據：build/re/funcs.tsv 全 6633 函式中「呼叫含 78」與「資料引用含 5eb1ec」完全同現（81 對 81，無例外）。只複製名稱入訊息。
+call	40efa0	interceptRolls	R(n)：成功者數多於一時 R(成功數) 選攔截者；角色攔截成功後 R(武器重量/40+1) 決定耐力消耗。
+call	52a7d0	fatiguePenalty	疲勞等級 0..4 換成 0、5、10、20、40，其餘原樣；用於攔截者分數與目標分數的耐力懲罰。calc 重現。
+call	52c070	monsterStaminaSpend	怪物攔截成功後扣體力、重算疲勞等級；體力歸零時回呼 523c00（地址 stub）。calc 重現。
+call	53be00	characterSourceDescriptor	建立角色候選描述（種類 1、角色索引），供候選清單比對與複製；無規則效果。
+call	546df0	interceptCandidateListGrow	候選清單容量不足時擴容（每筆 0x34 bytes）；只搬移暫存，不制定規則。
+call	5e1c10	無關	operator delete：釋放候選／成功者清單暫存緩衝，無規則輸出。
+call	5e1ce0	無關	operator new：配置候選／成功者清單暫存緩衝，emu bump 堆。
+call	5e2c70	listCount	取怪物清單 [0x683fad] 元素數，決定掃描的怪物候選數。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5e7406	無關	SEH 例外處理常式位址；只在例外展開時使用，非遊戲資料或表。
+data	5eb188	swprintfImport	swprintf 匯入槽；組攔截成功／失敗的訊息字串，只影響訊息文字。
+data	5eb1ec	無關	寬字串複製匯入槽；把攔截者名稱放進訊息緩衝，只用於訊息。
+data	5ebaf4	srAssertFail	assert 匯入槽；非法種類或越界時停止，所在塊列 cov-exempt，calc panic。
+data	5ee7e8	無關	暫存清單物件的 vtable 位址；只用於緩衝管理，非遊戲資料或表。
+data	609b24	assertMessage	assert 訊息字串位址；只在 assert 失敗時使用。
+data	61d284	attack_types_half_fatigue	18 項攻擊類型表：目標動作類型命中時疲勞懲罰減半；執行時由使用者自己的 Wiz8.exe 讀。
+data	61d285	attack_types_half_fatigue	同 0x61d284 表的迴圈索引位址（含索引的第二個引用）。
+data	61d2ac	無關	怪物查找診斷用的來源檔名稱字串；有效目標必在列表中，內容不影響規則。
+data	61dc28	assertMessage	成功選擇越界 assert 的訊息字串；只在 assert 失敗時使用。
+data	6836a8	combatState	戰鬥狀態物件指標；+0x4c+0xd4*c 防守旗標、+0xb8+0xd4*c 攔截次數、+0x9a4/+0x9a5 攻擊加成旗標、+0x6b8 訊息緩衝。
+data	683fad	normalMonsterList	普通怪物列表指標；掃描怪物攔截候選。
+data	68510c	interceptFailMessageOn	無人攔截成功時是否輸出逐一失敗訊息的旗標。
+data	68516c	item_definition_records	物品定義庫指標；以角色武器物品編號取重量（+0x8a），步距 269 bytes。
+data	685174	characterRecords	角色主記錄全域指標；依角色索引及 0x1862 步長定位。
+data	685178	partyPresence	隊伍在場旗標陣列指標，步距 0x106；角色候選資格。
+data	68c09c	stringTable	遊戲字串表指標；+0x864 攔截失敗、+0x868 攔截成功訊息格式。
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料。
+data	fffffffffffffeb4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffeb8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffebc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffec0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffec4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffec8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffecc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffed0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffed4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffed8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffedc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffee0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffee4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffee8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffeec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffef0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff20	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff54	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+ebp*1+0xb01	characterMainStatus	角色主狀態；小於 12 才可當攔截候選。
+field	eax+ebp*1+0x114d	characterInterceptOn	角色攔截開關（技能／姿態）；非零才可當候選。
+field	edi+0x114d	characterInterceptOn	角色攔截開關；候選分數計算時再確認，為零走 cov-exempt 塊。
+field	ecx+eax*1+0xb8	characterInterceptsUsed	combatState 中角色本回合已攔截次數，步距 0xd4。
+field	edx+ecx*4+0xb8	characterInterceptsUsed	combatState 中角色已攔截次數；成功後加一。
+field	ecx+ebp*1+0x115e	characterInterceptBudget	角色每回合攔截上限；已用次數須小於它。
+field	edx+eax*1+0x4c	characterInterceptPostureSet	combatState 中角色攔截姿態已套用旗標，步距 0xd4；決定比對隊伍槽的目前行動（+0x1d）或待定行動（+0x4d）目標，為零時套用姿態並設為 1。
+field	eax+edx*1+0x4c	characterInterceptPostureSet	combatState 中角色攔截姿態已套用旗標；選擇比對的行動目標區。
+field	edi+0x114e	characterInterceptMode	角色攔截模式值，加入攔截分數。
+field	edi+0x115a	characterInterceptBonusA	角色攔截加成 A，加入攔截分數。
+field	edi+0x116a	characterInterceptBonusB	角色攔截加成 B，加入攔截分數。
+field	edi+0x14d	characterSpeed	角色速度，加入攔截分數。
+field	edi+0x169e	characterFatigueLevel	角色疲勞等級，經 52a7d0 轉懲罰。
+field	edi+0x1771	characterInterceptModifier	角色攔截修正（有號 byte），加入分數。
+field	ecx+eax*2+0xfa5	characterWeaponItem	角色武器物品編號；取重量決定耐力消耗。
+field	edx+eax*1+0x8a	itemWeight	物品定義重量（word）；/40+1 為耐力消耗亂數上限。
+field	ebp+0x14	monsterActive	怪物啟用旗標；為零不當候選。
+field	ebp+0x15	monsterVisible	怪物可見旗標；候選資格。
+field	ebp+0x2b	monsterHP	怪物目前 HP；為零不當候選。
+field	ebp+0x107	monsterMainState	怪物主狀態；小於 12 才可當候選。
+field	ebp+0x2e1	monsterAction	怪物本回合動作；須為 8（攔截姿態）才當候選。
+field	ebp+0x10	monsterCombatData	怪物戰鬥資料指標；+0x147 為攔截次數。
+field	edi+0x10	monsterCombatData	攔截者怪物戰鬥資料指標；成功後攔截次數加一。
+field	edx+0x147	monsterInterceptsUsed	怪物已攔截次數；須小於模板上限。
+field	eax+0x147	monsterInterceptsUsed	怪物已攔截次數；成功後加一。
+field	esi+0xe5	templateInterceptLimit	怪物模板攔截次數上限。
+field	eax+0xd0	templateFlags	怪物模板旗標；bit 2 為零不當攔截候選。
+field	eax+0xe7	templateInterceptOn	怪物模板攔截開關；為零不當候選。
+field	edi+0xe7	templateInterceptOn	模板攔截開關；非零才讀其後攔截值。
+field	edi+0x4	templateInterceptValueOrNewTargetCharacter	同運算元兩處：讀模板 +0xe7+4 攔截值加入分數；成功後寫輸出新目標的角色索引。
+field	edi+0x1	templateAttackType	模板 +0xe7+1 的攻擊類型，查 0x61d284 表決定疲勞懲罰是否減半。
+field	ecx+0x61d284	attack_types_half_fatigue	攻擊類型表元素（迴圈索引）。
+field	ebp+0x1dc	monsterInterceptModifier	怪物攔截修正（有號 byte），加入分數。
+field	ebp+0x242	monsterFatigueLevel	怪物疲勞等級，經 52a7d0 轉懲罰。
+field	ebp+0x24a	monsterSpeed	怪物速度，加入分數。
+field	eax+0x9a4	attackBonusA	combatState 攻擊加成旗標 A；非零目標分數加 10。
+field	eax+0x9a5	attackBonusB	combatState 攻擊加成旗標 B；非零目標分數加 10。
+field	ecx+0x9a4	attackBonusA	攔截成功後清零。
+field	edx+0x9a5	attackBonusB	攔截成功後清零。
+field	edx+0x864	interceptFailText	字串表攔截失敗訊息格式。
+field	eax+0x868	interceptSuccessText	字串表攔截成功訊息格式。
+field	ecx+0x0	descriptorKind	候選描述種類（1 角色、2 怪物）。
+field	ecx+0x4	descriptorCharacter	候選描述的角色索引。
+field	ecx+0x8	descriptorMonsterID	候選描述的怪物 ID。
+field	eax+0x0	targetKind	攻擊目標描述種類（1 角色、2 怪物）。
+field	eax+0x8	targetMonsterID	攻擊目標描述的怪物 ID。
+field	esi+0x0	interceptorKind	選中攔截者描述種類。
+field	esi+0x4	interceptorCharacter	選中攔截者的角色索引。
+field	esi+0x8	interceptorMonsterID	選中攔截者的怪物 ID。
+field	edi+0x0	newTargetKind	輸出新目標種類，寫 1（角色）。
+field	ebx+0x0	newTargetKind	輸出新目標種類，寫 3（怪物）。
+field	ebx+0x8	newTargetMonsterID	輸出新目標怪物 ID。

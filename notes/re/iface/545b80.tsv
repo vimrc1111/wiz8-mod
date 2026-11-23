@@ -1,0 +1,9 @@
+call	524a10	characterActionEligibility	角色行動資格：i32 索引須在 0..7，角色副表占用旗標非零、目前 HP 非零且 u32 主狀態小於 13；來源 0x524a10..0x524a67，calc 使用既有 characterActionEligibilityNode
+data	4	無關	0x545b8b 清理子呼叫的一個堆疊參數，立即值 4 不指向遊戲資料；入口參數另命名 characterIndex
+data	685174	characterRecords	角色主記錄陣列指標，0x545b94 讀取，角色步長 0x1862；arena 接線，非靜態資料表
+field	eax+0xb01	mainStatus	角色主狀態 u32；0x545bac 要求小於 12，狀態 12 通過子呼叫但無守衛資格，高位值以無號比較
+field	eax+0x114d	mainHandEnabled	角色主手啟用旗標 u8；0x545bb9..0x545bc1 判斷非零，不檢查副手或射程；手部欄位語意另見 notes/re/formula-graph.d/b07.tsv 的 53d2a0
+data	685178	characterSlotRecords	子呼叫 0x524a2d 使用的角色副表陣列指標，步長 0x106；arena 接線
+field	eax+edx*2	characterSlotActive	子呼叫 0x524a32 讀角色副表 +0 的 u8 占用旗標，非零才讀角色主記錄；案例依 characterIndex 寫入選中記錄，其餘記錄保持零
+field	eax+edx*2+0xb11	currentHP	子呼叫 0x524a4f 讀角色目前 HP u32，僅要求非零，最高位為 1 仍可通過；案例涵蓋零與高位邊界
+field	return:al	guardAvailable	cdecl 單一 i32 characterIndex 參數，無 this；僅 AL 為布林值，EAX 高 24 位保留記錄指標等暫存結果，無規則語意，out 讀 1 byte

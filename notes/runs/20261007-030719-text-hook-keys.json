@@ -1,0 +1,246 @@
+{
+  "run_id": "20261007-030719-text-hook-keys",
+  "commit": "b4f60c9fd63bae440985e524793f50a798be1ed0",
+  "scenario": {
+    "id": "text-hook-keys",
+    "duration": 60,
+    "files": [
+      {
+        "src": "hook/ddraw/out/ddraw.dll",
+        "dst": "ddraw.dll"
+      }
+    ],
+    "steps": [
+      {
+        "t": 36,
+        "shot": "menu"
+      },
+      {
+        "t": 38,
+        "keys": "{ENTER}"
+      },
+      {
+        "t": 43,
+        "shot": "k1"
+      },
+      {
+        "t": 44,
+        "keys": "n"
+      },
+      {
+        "t": 49,
+        "shot": "k2"
+      },
+      {
+        "t": 50,
+        "keys": "{ESC}"
+      },
+      {
+        "t": 52,
+        "keys": "c"
+      },
+      {
+        "t": 57,
+        "shot": "k3"
+      }
+    ]
+  },
+  "before_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [
+    "0.1 start pid=7908",
+    "37.0 shot menu rect=0,0,3840,2160",
+    "38.1 keys {ENTER}",
+    "43.2 shot k1 rect=0,0,960,720",
+    "44.1 keys n",
+    "49.1 shot k2 rect=0,0,960,720",
+    "50.5 keys {ESC}",
+    "52.1 keys c",
+    "57.9 shot k3 rect=0,0,3840,2160",
+    "60.1 alive",
+    "60.2 killed"
+  ],
+  "modules": [
+    "Wiz8.exe",
+    "ntdll.dll",
+    "KERNEL32.DLL",
+    "KERNELBASE.dll",
+    "apphelp.dll",
+    "GDI32.DLL",
+    "win32u.dll",
+    "gdi32full.dll",
+    "msvcp_win.dll",
+    "ucrtbase.dll",
+    "DDRAW.DLL",
+    "USER32.dll",
+    "MSVCRT.DLL",
+    "MSVCP60.DLL",
+    "BINKW32.DLL",
+    "MSS32.DLL",
+    "WINMM.dll",
+    "SR.DLL",
+    "comdlg32.dll",
+    "combase.dll",
+    "RPCRT4.dll",
+    "VERSION.dll",
+    "shcore.dll",
+    "SHLWAPI.dll",
+    "SHELL32.dll",
+    "COMCTL32.dll",
+    "ADVAPI32.dll",
+    "sechost.dll",
+    "IMM32.DLL",
+    "ddraw.dll",
+    "dxgi.dll",
+    "DCIMAN32.dll",
+    "powrprof.dll",
+    "dxcore.dll",
+    "UMPDC.dll",
+    "uxtheme.dll",
+    "MSCTF.dll",
+    "kernel.appcore.dll",
+    "bcryptPrimitives.dll",
+    "OLEAUT32.dll",
+    "textinputframework.dll",
+    "CoreMessaging.dll",
+    "CoreUIComponents.dll",
+    "wintypes.dll",
+    "CRYPTBASE.DLL",
+    "ole32.dll",
+    "clbcatq.dll",
+    "weasel.dll",
+    "dbghelp.dll",
+    "gdiplus.dll",
+    "d2d1.dll",
+    "DWrite.dll",
+    "dbgcore.DLL",
+    "SspiCli.dll",
+    "atidx9loader32.dll",
+    "AMDXN32.DLL",
+    "SETUPAPI.dll",
+    "windows.storage.dll",
+    "BCrypt.dll",
+    "amdihk32.dll",
+    "srVP_PentiumII.dll",
+    "srEXT_Default.dll",
+    "srDD_Glide2x.dll",
+    "glide2x.dll",
+    "d3d9.dll",
+    "dwmapi.dll",
+    "directxdatabasehelper.dll",
+    "cfgmgr32.dll",
+    "dcomp.dll",
+    "Microsoft.Internal.WarpPal.dll",
+    "mscms.dll",
+    "Windows.Internal.Graphics.Display.DisplayColorManagement.dll",
+    "3dfxSpl2.dll",
+    "srEXT_JPEGImporter.dll",
+    "Mp3dec.asi",
+    "Mssv12.asi",
+    "Mssv24.asi",
+    "Mssv29.asi",
+    "Mssa3d.m3d",
+    "Mssa3d2.m3d",
+    "Mssdolby.m3d",
+    "Mssds3dh.m3d",
+    "Mssds3ds.m3d",
+    "Mssdx7sh.m3d",
+    "Mssdx7sl.m3d",
+    "Mssdx7sn.m3d",
+    "Msseax.m3d",
+    "Msseax2.m3d",
+    "Mssfast.m3d",
+    "Mssrsx.m3d",
+    "MSACM32.dll",
+    "DSOUND.DLL",
+    "winmmbase.dll",
+    "ResampleDmo.DLL",
+    "msdmo.dll",
+    "MMDevApi.dll",
+    "DEVOBJ.dll",
+    "AUDIOSES.DLL",
+    "resourcepolicyclient.dll",
+    "Windows.UI.dll",
+    "avrt.dll"
+  ],
+  "powershell": "",
+  "placed": [
+    {
+      "dst": "ddraw.dll",
+      "sha256": "868a0aeab24bfb1f1246ac99fbfc4c9ddadebab14aba7337b8bc5564f3b6828b"
+    }
+  ],
+  "shots": {
+    "k1.screen": {
+      "sha256": "574d0c5260e686ead5ec99cbfc58fc4ba06b53dab292267be44a89bb5e10a4c8",
+      "w": 960,
+      "h": 720,
+      "mean": 19.233228289928995,
+      "stddev": 23.588734056489926,
+      "uniform": false
+    },
+    "k1.window": {
+      "sha256": "8235318f4cee6403b7f54319b95e9c1dc84247a9aa9caa8ddb7710adbfe6a403",
+      "w": 960,
+      "h": 720,
+      "mean": 19.220846043111624,
+      "stddev": 23.565692201566435,
+      "uniform": false
+    },
+    "k2.screen": {
+      "sha256": "ee379ad3613993d49d957c3d84d7626de61198d5ff3ac278a724788b951f0487",
+      "w": 960,
+      "h": 720,
+      "mean": 19.849985475980304,
+      "stddev": 24.37407358524803,
+      "uniform": false
+    },
+    "k2.window": {
+      "sha256": "5c99022eb4d08224dbb15198027761fad7211de3c219132c3c873b2df3863d9d",
+      "w": 960,
+      "h": 720,
+      "mean": 20.43395186342432,
+      "stddev": 25.222220424290477,
+      "uniform": false
+    },
+    "k3.screen": {
+      "sha256": "2393639e24fa4462992a82a459c442c922a706c3fc87087aa4391141f3d91e7b",
+      "w": 3840,
+      "h": 2160,
+      "mean": 64.81913119665725,
+      "stddev": 53.47198874034843,
+      "uniform": false
+    },
+    "k3.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "menu.screen": {
+      "sha256": "2393639e24fa4462992a82a459c442c922a706c3fc87087aa4391141f3d91e7b",
+      "w": 3840,
+      "h": 2160,
+      "mean": 64.81913119665725,
+      "stddev": 53.47198874034843,
+      "uniform": false
+    },
+    "menu.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    }
+  },
+  "ddraw_log": [
+    "2026-10-07 03:07:40.540 pid=7908 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe attach real=C:\\WINDOWS\\SysWOW64\\ddraw.dll missing=0",
+    "2026-10-07 03:07:40.540 pid=7908 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked A 0x00407650",
+    "2026-10-07 03:07:40.541 pid=7908 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked B 0x004077d0"
+  ],
+  "text_log_lines": 1
+}

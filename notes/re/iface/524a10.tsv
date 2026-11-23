@@ -1,0 +1,6 @@
+data	4	無關	入口參數的堆疊位移；非遊戲資料引用，參數另命名 characterIndex
+data	685174	characterRecords	角色主記錄陣列指標；0x524a45 讀取，角色步長 0x1862
+data	685178	characterSlotRecords	角色副表陣列指標；0x524a2d 讀取，角色步長 0x106
+field	eax+0xb01	mainStatus	角色主狀態 u32；0x524a60 以無號比較判斷是否小於 13，不推定各狀態碼名稱
+field	eax+edx*2	characterSlotActive	角色副表 +0 的 u8 有效旗標；0x524a32 判斷非零，索引乘 0x106
+field	eax+edx*2+0xb11	currentHP	角色目前 HP 的 32 位值；0x524a4f 讀取並判斷非零，索引乘 0x1862

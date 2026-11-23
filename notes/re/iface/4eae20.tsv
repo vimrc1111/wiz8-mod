@@ -1,0 +1,94 @@
+call	2b6	無關	登記器把 assertion 的 IAT 間接呼叫（0x5ebaf4）誤列為相對目標，實際為 srAssertFail；只在不在戰鬥時（0x683f94 為 0）到達，calc panic，cov-exempt 登記
+call	4eb980	monsterSpecialAttackReady	特殊攻擊（樣板 +0xe3）可用與瞄準：0x534a40 樁、0x534cb0（位置目標或 0x5326f0），成功時寫戰鬥塊 +0x145 並記錄；calc special()
+call	4fb0a0	monsterSpellReady	施法前檢查：+0x126 斷言、+0x77 限制、目標類別 0x5011c0／0x537160、0x519f80 樁、0x4d9080 樁、0x5327e0（D4）、0x5330e0 區域阻擋；calc ready()
+call	51a800	templateAttackReach	已 D4 函式（mchWorld.rangeOf）；樣板 +0x1b9 為 0 時取攻擊距離類別
+call	51a840	monsterBestReachClass	樣板攻擊、特殊、可施放法術中最遠的距離類別與移動模式；calc reachClass()
+call	523f40	monsterConditionClear	解除怪物狀態 14（狀態覆寫結果 7），重算主狀態、群組計數與外觀；calc clear14()
+call	534290	monsterSpellTargetPick	法術類型 5..6 走 0x5326f0（D4），+0x13f 非零走 0x53c630 樁，否則真；calc targetFor()
+call	535150	monsterBusy	已 D4 函式（mchWorld.busy）；真時清戰鬥塊 +0x14c
+call	545b20	monsterInterceptReady	攔截可用：在場、可行動、HP、主狀態 <0xc、樣板旗標與攻擊槽，再問 0x545cf0（D4）；calc intercept()
+call	547440	actionUsesSpell	動作 0／3 為真、動作 2 依 mstSpellFits(法術)；calc spellUsable()
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4eb548	overrideJumpTable	狀態覆寫結果分派的跳躍表（4 bytes 目標），執行時從 exe 讀
+data	4eb560	overrideJumpIndex	狀態覆寫結果 0..12 對應跳躍表索引的 byte 表，執行時從 exe 讀
+data	4eb570	actionJumpTable	動作 0..9 分派的跳躍表，執行時從 exe 讀
+data	5ebaf4	無關	srAssertFail 的 IAT 槽；只在斷言區塊使用
+data	5ebccc	nearReachScale	近距離類別（≤1）的 f32 倍率，乘以 0x51a9a0(0) 得接近距離
+data	5ed300	farReachScale	遠距離類別（>1）的 f32 倍率，乘以 0x51a9a0(1)
+data	6149e8	無關	斷言的來源檔名字串；只在斷言區塊使用
+data	61738c	無關	0x4e5550 查找的來源檔名字串（除錯參數）
+data	617544	無關	0x5182e0 錯誤訊息格式字串（覆寫結果 8 選不到目標時）
+data	617584	無關	戰鬥 log 格式字串（0x58aad0）
+data	61e434	combatActionNames	樣板 +0xcc 攻擊動詞的字串 id 表（每項 8 bytes，取 u16）
+data	61e658	overrideResultNames	狀態覆寫結果的字串 id 表（每項 2 bytes）
+data	6836a8	combatState	戰鬥全域狀態指標：+0x918 模式、+0xa55 旗標、+0x7b0 階段
+data	683f94	inCombat	戰鬥中旗標；0 時斷言
+data	683fa5	combatOutdoorFlag	動作 6 中與怪物 +0x16==2 合判是否放棄
+data	68510c	combatAltLog	選擇 log 格式與移動後訊息是否顯示
+data	68c09c	stringTable	字串指標表（fixture 2048 項）
+data	ffffffffffffff44	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff48	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff4c	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff6a	無關	索引器將堆疊負位移辨識為資料引用；局部旗標（覆寫 8 的選擇旗標），不是規則全域
+data	ffffffffffffff6b	無關	索引器將堆疊負位移辨識為資料引用；局部結果 byte，不是規則全域
+data	ffffffffffffff6c	無關	索引器將堆疊負位移辨識為資料引用；已試動作旗標陣列，不是規則全域
+data	ffffffffffffff70	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff74	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff78	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff7c	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff80	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff84	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff88	無關	索引器將堆疊負位移辨識為資料引用；移動距離局部，不是規則全域
+data	ffffffffffffff89	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff8d	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff91	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	ffffffffffffff94	無關	索引器將堆疊負位移辨識為資料引用；接近距離局部，不是規則全域
+data	ffffffffffffff98	無關	索引器將堆疊負位移辨識為資料引用；位置局部，不是規則全域
+data	ffffffffffffffcc	無關	索引器將堆疊負位移辨識為資料引用；局部描述子，不是規則全域
+field	eax*4+0x4eb570	actionJumpTable	動作分派表項
+field	eax+0x14b	combatAttackDone	戰鬥塊 +0x14b：動作 4 成功時設 1
+field	eax+0x15	combatForcedTarget	戰鬥塊 +0x15：非零時改走 0x5323f0 選目標，覆寫 8 會設 1
+field	eax+0x152	combatRetryMove	戰鬥塊 +0x152：移動失敗時若非零清零並重試
+field	eax+0x4	combatTurnFlag	戰鬥塊 +4：非零時不再選動作，結尾設 1
+field	eax+0x8e4	stringEntry	字串表項 0x8e4/4：移動後訊息（有怪物目標）
+field	eax+0x8f0	stringEntry	字串表項 0x8f0/4：放棄行動 log
+field	eax+edx*4	stringEntry	字串表項，依攻擊動詞 id
+field	ebp*2+0x61e658	overrideResultNames	覆寫結果字串 id
+field	ebp+0x4eb560	overrideJumpIndex	覆寫結果跳躍索引
+field	ebx+0x1b9	templateCaster	樣板 +0x1b9：0 用攻擊距離，1 含特殊與法術
+field	ebx+0xcb	templateMoveKind	樣板 +0xcb：0xc 時忽略 +0x87 的移動限制
+field	ebx+0xcc	templateAttackVerb	樣板 +0xcc：攻擊動詞索引
+field	ecx*4+0x4eb548	overrideJumpTable	覆寫分派表項
+field	ecx*8+0x61e434	combatActionNames	攻擊動詞字串 id
+field	ecx+0x0	無關	把三維位置複製到呼叫參數區（堆疊），非遊戲欄位
+field	ecx+0x4	無關	三維位置的第 2 分量（堆疊參數區）；或戰鬥塊 +4（TAIL 判斷）
+field	ecx+0x7b0	combatPhase	戰鬥狀態 +0x7b0：結尾設 2
+field	ecx+0x8	無關	三維位置的第 3 分量（堆疊參數區）
+field	ecx+0x8d8	stringEntry	字串表項 0x8d8/4：移動後訊息
+field	ecx+0x8e8	stringEntry	字串表項 0x8e8/4：動作 6 成功 log
+field	ecx+0x918	combatMode	戰鬥狀態 +0x918：1 時先呼叫 0x4efd30
+field	ecx+0xa55	combatPendingFlag	戰鬥狀態 +0xa55：動作不為 1／8 時清零
+field	edi+0x0	targetMonsterId	目標怪物記錄 +0：id
+field	edi+0xc	targetMonsterVisual	目標怪物記錄 +0xc：外觀物件，傳給 0x4c60d0
+field	edx+0x0	無關	把三維位置複製到呼叫參數區（堆疊），非遊戲欄位
+field	edx+0x14c	combatBusyWord	戰鬥塊 +0x14c：0x535150 為真時清零
+field	edx+0x4	無關	三維位置的第 2 分量（堆疊參數區）
+field	edx+0x8	無關	三維位置的第 3 分量（堆疊參數區）
+field	edx+0x8dc	stringEntry	字串表項 0x8dc/4：移動後訊息
+field	edx+0x8e0	stringEntry	字串表項 0x8e0/4：移動後訊息（有怪物目標）
+field	edx+0x8ec	stringEntry	字串表項 0x8ec/4：動作 4 log
+field	edx+0x8f0	stringEntry	字串表項 0x8f0/4：放棄行動 log
+field	edx+ecx*4	stringEntry	字串表項，依覆寫結果字串 id
+field	esi+0x0	monsterId	怪物記錄 +0：id
+field	esi+0x10	monsterCombatBlock	怪物記錄 +0x10：戰鬥塊指標
+field	esi+0x16	monsterSide	怪物記錄 +0x16：1 才走 0x4c6070、2 參與動作 6 放棄判斷
+field	esi+0x2ba	monsterTargetKind	目標描述子 +0：3 為怪物目標
+field	esi+0x2c2	monsterTargetMonster	目標描述子 +8：怪物 id
+field	esi+0x2da	monsterTargetLocked	+0x2da：非零時動作 6 放棄
+field	esi+0x2e0	monsterCastPending	+0x2e0：施法成立時清零
+field	esi+0x2e1	monsterAction	+0x2e1：動作 -1..9
+field	esi+0x2e5	monsterSubaction	+0x2e5：法術 id
+field	esi+0x2e9	monsterSpellPower	+0x2e9：施法成立時寫 0x500330 的威力
+field	esi+0x87	monsterMoveLimit	+0x87：非零且樣板 +0xcb≠0xc 時不移動
+field	esi+0xc	monsterVisual	+0xc：外觀物件

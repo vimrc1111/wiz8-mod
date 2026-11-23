@@ -1,0 +1,30 @@
+call	2b6	無關	抽取器將間接 assert 呼叫誤列成目標；合法角色或怪物不走此錯誤分支
+call	41efb0	scene_defensive_posture	戰鬥外查詢目前場景旗標 bit8，控制防禦修正
+call	4e5550	monster_id_to_slot	由目標怪物 id 找出已載入列表位置
+call	4e5620	monster_instance	由列表位置取得即時怪物記錄
+call	4e5720	monster_template	由怪物模板 id 取得已載入模板
+call	4ed2b0	current_battle_posture	依行動完成選擇器取目前或待執行姿態
+call	4ed2d0	character_posture_matches	查詢角色是否符合姿態6；本次不套用姿態、不進行裝備或施法查詢
+call	52a7d0	fatigue_penalty	疲勞分類轉懲罰值，除10後加到防禦調整
+data	4	無關	立即值攻擊模式4被抽取為資料引用，沒有該位址的資料讀取
+data	8	無關	立即值攻擊模式8被抽取為資料引用，沒有該位址的資料讀取
+data	5ebaf4	無關	SR assert import，只在不合法目標類型時停止，非規則計算
+data	609b24	無關	assert 診斷條件字串，非規則資料
+data	61d2ac	無關	來源檔名供怪物查找與 assert 診斷，非規則資料
+data	6836a8	battle_state	戰鬥狀態物件指標；提供突襲旗標及姿態查詢資料
+data	683f94	combat_active	是否戰鬥，控制戰鬥專用防禦調整
+data	685174	character_records	角色陣列指標，依目標角色索引尋址
+field	eax+0x9a4	ambush	戰鬥突襲旗標；notes/re/combat-2.md:26
+field	eax+0x9a5	surprise	戰鬥奇襲旗標；notes/re/combat-2.md:26
+field	ebp+0x17b5	character_defense_suppressed	角色防禦姿態修正抑制旗標；notes/re/combat-2.md:32
+field	ebp+0xd0	monster_ambush_defense_mask	模板bit1允許突襲防禦扣2；notes/re/combat-2.md:30
+field	ebp+0xe91	speed_defense_bonus	角色速度產生的防禦加成，正值突襲時扣除；exe 0x4eeab3..0x4eeae5
+field	ebp+0xe99	shield_defense_bonus	角色盾牌及盾技能彙總防禦加成，正值突襲時扣除；exe 0x4eea6e..0x4eeb6e
+field	esi+0x0	target_kind	目標種類1角色、3怪物，其他進assert
+field	esi+0x1df	monster_hit_defense_modifier	怪物即時命中防禦有號修正；notes/re/combat-2.md:30
+field	esi+0x220	monster_defense_suppressed	怪物狀態抑制防禦姿態扣4；notes/re/combat-2.md:30
+field	esi+0x226	monster_defense_modifier	怪物即時防禦有號修正；notes/re/combat-2.md:30
+field	esi+0x242	monster_fatigue	怪物疲勞分類或直接懲罰值；notes/re/combat-2.md:30
+field	esi+0x2e1	monster_posture	怪物姿態1加2、4啟用防禦扣4；notes/re/combat-2.md:30
+field	esi+0x4	target_character_index	目標記錄角色索引，角色大小0x1862
+field	esi+0x8	target_monster_id	目標記錄怪物id，經列表查找實例

@@ -1,0 +1,128 @@
+{
+  "cc": "thiscall",
+  "steps": 20000,
+  "path_limit": 512,
+  "samples": 64,
+  "objects": {
+    "trigger": 0,
+    "core": 4096,
+    "registry": 8192,
+    "baseClassNode": 12288,
+    "triggerClassNode": 16384
+  },
+  "args": [],
+  "ecx": "@trigger",
+  "in": [
+    {
+      "name": "nextTriggerID",
+      "at": {
+        "global": "0x6874c6"
+      },
+      "size": 4
+    }
+  ],
+  "out": [
+    {
+      "name": "treasureSeed",
+      "at": {
+        "object": "trigger",
+        "offset": 852
+      },
+      "size": 4
+    },
+    {
+      "name": "triggerID",
+      "at": {
+        "object": "trigger",
+        "offset": 156
+      },
+      "size": 4
+    },
+    {
+      "name": "nextTriggerID",
+      "at": {
+        "global": "0x6874c6"
+      },
+      "size": 4
+    },
+    {
+      "name": "treasureGenerated",
+      "at": {
+        "object": "trigger",
+        "offset": 848
+      },
+      "size": 1
+    },
+    {
+      "name": "triggerFlags",
+      "at": {
+        "object": "trigger",
+        "offset": 160
+      },
+      "size": 4
+    }
+  ],
+  "boundary": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2147483647
+    ],
+    [
+      2147483648
+    ],
+    [
+      4294967295
+    ]
+  ],
+  "random": {
+    "seed": 4438544,
+    "count": 24,
+    "ranges": [
+      [
+        0,
+        4294967295
+      ]
+    ]
+  },
+  "tick": 4294960000,
+  "setup": [
+    {
+      "at": {
+        "global": "0x5eb70c"
+      },
+      "size": 4,
+      "value": "@core"
+    },
+    {
+      "at": {
+        "object": "core",
+        "offset": 44
+      },
+      "size": 4,
+      "value": "@registry"
+    }
+  ],
+  "stubs": {
+    "?getClassNode@srRegistry@@QAEPAVClassNode@1@K@Z": {
+      "ret": 0,
+      "pop": 4
+    },
+    "?sGetClassNode@srClass@@SAPAVClassNode@srRegistry@@XZ": {
+      "ret": "baseClassNode",
+      "pop": 0
+    },
+    "?registerClass@srRegistry@@QAEPAVClassNode@1@PBDPAV21@KH@Z": {
+      "ret": "triggerClassNode",
+      "pop": 16
+    },
+    "?registerInstance@srRegistry@@QAEXPAVClassNode@1@PAVsrRuntimeClass@@@Z": {
+      "ret": 0,
+      "pop": 8
+    }
+  }
+}

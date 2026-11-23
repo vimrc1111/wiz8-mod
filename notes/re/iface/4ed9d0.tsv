@@ -1,0 +1,33 @@
+call	4edc60	recomputeCarriedWeight	加總背包與手持共 20 格的堆疊重量寫入 +0xbb9；超過負重上限時另呼叫通知，回傳是否與舊值不同。
+call	4ee000	rebuildBaseAttackBonus	由等級、兩項屬性、加成位元組與負重分級算出 +0xe81。
+call	502b50	rebuildMultiplierFloats	由 +0xb0d、+0xb19 及六個職業池 +0xb25 算出 float32 乘數寫入 +0xb69、+0xb71、+0xb79。
+call	52a2f0	rebuildRatingOne	由各職業等級與屬性算出 +0xb0d，並維護 +0xb11；歸零時呼叫狀態套用。
+call	52a3e0	rebuildRatingTwo	由等級與屬性算出 +0xb19，維護 +0xb1d，並把剩餘比例分成 0..4 級寫入 +0x169e。
+call	52a500	rebuildSpellSchoolMax	施法職業才重算六個法術派系上限；結果寫入 +0xe7d。
+call	547940	hasClassRaceFeature	查職業列與種族列是否含指定特性碼；碼 0x1c 另看 +0xa79。
+call	5479b0	classFeatureScaledLevel	職業等級乘 15 的比例值；等級超過 20 時回傳參數原值。
+call	551a60	rebuildResistances	由六項技能、種族表與加成位元組算出 +0xedd、+0xee1 兩組抗性。
+call	5539e0	rebuildEffectiveAttributes	七項屬性加成位元組後夾在 1..0x7d 寫入有效值，並算 41 項技能的屬性平均。
+call	553a60	rebuildEffectiveSkills	41 項技能加職業偏好加成與加成位元組後夾在 0..0x7d。
+call	55ee30	requestInterfaceRefresh	依介面模式置位畫面更新旗標，不是規則輸入。
+call	5e1c22	truncateToInteger	x87 數值向零截斷為整數。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	68517c	partyLoaded	非零表示隊伍已載入，才重算共享負重。
+data	68ec78	interfaceMode	介面模式；6 與 7 時置畫面更新旗標，3 時不更新。
+field	eax+0x0	classLevelCap	各職業等級欄位，逐一夾在 0x32。
+field	esi+0x125	effectiveAttribute3	第四項屬性的有效值。
+field	esi+0x1776	abilityBonusByte	直接加到 +0xed9 的有號加成位元組。
+field	esi+0x4	inUse	角色欄位是否使用中。
+field	esi+0x69	characterClass	職業索引；-1 為無。
+field	esi+0x71	characterRace	種族索引；-1 為無。
+field	esi+0x71b	extraFlag	非零時 +0xed9 加上 +0x721 之四分之一再加 5。
+field	esi+0x721	extraValue	+0x71b 非零時使用的數值。
+field	esi+0x75	characterState	0xffffffff 時本函式不處理。
+field	esi+0x89	characterLevel	角色總等級，夾在 0x32。
+field	esi+0xbb9	carriedWeight	背包與手持重量總和。
+field	esi+0xbbd	sharedWeight	共享背包分到的重量。
+field	esi+0xbc1	totalWeight	carriedWeight 加 sharedWeight。
+field	esi+0xbc5	carryCapacity	負重上限。
+field	esi+0xbc9	loadCategory	負重佔比分級 0..4。
+field	esi+0xe9	effectiveAttribute0	第一項屬性的有效值。
+field	esi+0xed9	abilityValue	特性加總欄位，本函式先歸零再累加。

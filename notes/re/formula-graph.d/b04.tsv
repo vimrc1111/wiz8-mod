@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+51b910	非公式	-	item_subtype		只讀物品定義 +0x3f 並回傳，沒有規則運算；build/wiz8.asm:383988。
+51b940	非公式	-	item_type_equal		比較兩物品的 +0x3e 類別，僅提供資料相等查詢；build/wiz8.asm:384022。
+51b990	非公式	-	item_subtype_equal		比較兩物品的 +0x3f 子類別，僅提供資料相等查詢；build/wiz8.asm:384060。
+51bc00	非公式	-	inventory_transfer		依接收者與背包空間呼叫移轉助手，成功後清除原實例並整理陣列；build/wiz8.asm:384385。
+51be50	非公式	-	item_drop_dispatch		依物品 +0x41 的旗標選擇丟棄流程或顯示提示，未算數值；build/wiz8.asm:384483。
+51bfd0	公式	D4	item_weight	itemWeightNode	讀物品定義 +0x8a 與實例 +0x4 數量，相乘後回傳整疊重量，數量為零則回傳單件值；build/wiz8.asm:384610。
+51c020	公式	D4	item_stack_charge_init	itemStackChargeInitNode	讀物品 +0x66 與 +0x67 至 +0x6a 的骰子資料及最大值選項，將擲骰或最大數量寫到實例 +0x4 或 +0x5；build/wiz8.asm:384755、build/wiz8.asm:384764；notes/re/loot.md:9、notes/re/loot.md:19。
+51c300	非公式	-	character_inventory_insert		調用裝備資格、合併與搬移助手將實例放入裝備或背包槽，末端是取得物品事件通知；build/wiz8.asm:385007、build/wiz8.asm:385040。
+51c4e0	公式	D4	item_default_equip_slot	itemDefaultEquipSlotNode	讀物品 +0x3e 與遊戲開始旗標 0x68517c，映射並回傳預設裝備槽編號；build/wiz8.asm:385082。
+51c5a0	公式	D4	item_auto_equip_slot	itemAutoEquipSlotNode	讀角色 +0x44b、+0xfa5 至 +0xfc9 與物品 +0x3e、+0x41，依雙手占用和配套條件回傳可自動裝備槽，必要時移動既有手部實例；build/wiz8.asm:385209、build/wiz8.asm:385259。
+51c8f0	公式	D4	compatible_partner_items	compatiblePartnerItemsNode	讀兩物品 +0x3e、+0x3f、+0x47 與特殊物品 ID／配套表，回傳遠程武器與彈藥或配套物品是否相容；build/wiz8.asm:385480、build/wiz8.asm:385549。
+51cc40	公式	D4	compatible_hand_items	compatibleHandItemsNode	讀兩物品 +0x41、+0x3e、+0x47，排斥雙手占用衝突並檢查配套種類，回傳兩手是否相容；build/wiz8.asm:385739、build/wiz8.asm:385773。
+51cce0	公式	D4	weapon_damage_bonus_item	weaponDamageBonusItemNode	讀物品 +0x3f，回傳是否屬特殊武器集合以控制傷害百分點匯入；build/wiz8.asm:385807；notes/re/formulas.md:71。
+51cdb0	非公式	-	item_multi_type_four		只將物品 +0x66 是否等於 4 作為欄位查詢回傳；build/wiz8.asm:385907。
+51cea0	公式	D4	item_equip_slot_allowed	itemEquipSlotAllowedNode	讀角色 +0xfa5、+0xfb1、+0xfbd、+0xfc9、物品 +0x41 與目標槽／忽略占用參數，生成槽遮罩後回傳目標槽是否可用；build/wiz8.asm:386043。
+51cf80	公式	D4	item_equip_slot_mask	itemEquipSlotMaskNode	讀物品 +0x3e、+0x41、+0x46 與四個手部可用旗標，回傳允許裝備槽的位元遮罩；build/wiz8.asm:386094、build/wiz8.asm:386114。
+51d0d0	公式	D4	item_curse_activation	itemCurseActivationNode	讀物品 +0x8c、槽適用表與角色裝備實例 +0xf67，將適用槽的啟用旗標 +0xf68 設為 1 並可能提示詛咒；build/wiz8.asm:386219。
+51d180	公式	D4	item_curse_known	itemCurseKnownNode	讀物品 +0x8c 與實例 +0xb，兩者成立時回傳詛咒已知的布林值；build/wiz8.asm:386259、build/wiz8.asm:386264。
+51d1c0	公式	D4	item_removal_allowed	itemRemovalAllowedNode	讀物品 +0x8c、角色槽 +0xf67、槽適用表及角色 +0xa49，回傳當前是否允許移除裝備；build/wiz8.asm:386308。
+51d230	非公式	-	party_hand_swap_command		遍歷角色副表後派發換手操作，最後顯示操作訊息；build/wiz8.asm:386359、build/wiz8.asm:386372。
+51d2c0	非公式	-	character_hand_swap_command		處理戰鬥中命令限制與提示，呼叫換手助手後清副表 +0x105 並要求刷新；build/wiz8.asm:386444、build/wiz8.asm:386455。
+51d3b0	公式	D4	weapon_set_swap_allowed	weaponSetSwapAllowedNode	讀角色 +0xfa5 至 +0xfc9、+0xa49、實例 +0xa 與物品 +0x8c，受詛咒與配套相容條件控制換手，輸出成功旗標並交換裝備槽；build/wiz8.asm:386525、build/wiz8.asm:386593。
+51d610	公式	D4	item_use_requirements	itemUseRequirementsNode	讀角色 +0x69、+0x71、+0x75、+0xe9 屬性列、+0x1a3 技能列、+0xad／+0xb1 與已學法術，對照物品 +0x76 至 +0x84、+0x42、+0x63 後回傳資格；build/wiz8.asm:386694；notes/re/combat-2.md:85、notes/re/combat-2.md:95。
+51d7a0	公式	D4	party_item_use_eligible	partyItemUseEligibleNode	讀角色副表占用、角色 +0xb11 HP、+0xb01 狀態與物品使用需求，回傳隊伍是否至少有一名存活且合資格使用者；build/wiz8.asm:386833、build/wiz8.asm:386840。
+51d800	公式	D4	item_activation_allowed	itemActivationAllowedNode	讀使用資格、物品 +0x41、+0x42、+0x63、+0x66、實例 +0x5 與角色裝備槽位置，回傳是否能啟動物品效果；build/wiz8.asm:386986、build/wiz8.asm:386989。
+51d960	公式	D4	invalid_equipment_removal	invalidEquipmentRemovalNode	讀物品 +0x7d 至 +0x84 需求及角色 +0xe9 屬性／+0x1a3 技能列，需求不足時將裝備槽移回背包或隊伍物品；build/wiz8.asm:387030、build/wiz8.asm:387148。
+51db60	非公式	-	item_action_record		將物品指標、ID、槽位置和既有動作資料抄入角色副表 +0xa1 至 +0xce，再派發使用事件；build/wiz8.asm:387215、build/wiz8.asm:387220。
+51dde0	公式	D4	item_use_power_selection	itemUsePowerSelectionNode	讀角色技能 +0x1a3 列、物品 +0x3e、+0x42、+0x63、+0x64 與充能，按技能風險及 100 範圍亂數逐級降低使用強度，輸出效果結果與動作成本參數；build/wiz8.asm:387810、build/wiz8.asm:387812。
+51e760	公式	D4	item_use_consumption	itemUseConsumptionNode	讀物品 +0x66、+0x3e、實例 +0x4／+0x5 與耗盡移除參數，扣一件或一充能並寫回，耗盡時依保留性質判定刪除實例；build/wiz8.asm:388208、build/wiz8.asm:388220。
+51e920	公式	D4	item_charge_increment	itemChargeIncrementNode	讀實例 +0x5、增加量及物品 +0x67、+0x69、+0x6a，將新增充能限制於骰子最大值並寫回實例 +0x5；build/wiz8.asm:388343、build/wiz8.asm:388351。
+51e9f0	公式	D4	item_charge_transfer	itemChargeTransferNode	讀兩實例 +0x4／+0x5 與目標物品 +0x67、+0x69、+0x6a，按剩餘容量限制轉入量，寫目標 +0x5 並逐件扣除來源；build/wiz8.asm:388433、build/wiz8.asm:388466。
+51ea90	非公式	-	item_reload_command		依配套表查找來源物品後呼叫充能轉移助手並播放提示／失敗回應，本體是重新裝填流程；build/wiz8.asm:388539、build/wiz8.asm:388548。
+51eb90	非公式	-	ammo_equip_command		查找相容彈藥後搬移至指定裝備槽並顯示提示，未計算數量或效果；build/wiz8.asm:388634、build/wiz8.asm:388643。
+51ed30	公式	D4	thrown_stack_hand_split	thrownStackHandSplitNode	讀手部物品 +0x3e 與角色實例 +0xfa9／+0xfb5 的件數，按左右手方向取一半或向上取半，寫兩手堆疊數量；build/wiz8.asm:388811、build/wiz8.asm:388832。
+51ee70	公式	D4	item_spell_execution	itemSpellExecutionNode	讀物品 +0x42、+0x63、實例 +0x6、角色技能列及 +0x89／+0xad／+0xb1 等級，計算使用風險與效果參數交給法術執行器，輸出效果結果、實例 +0x7 與技能訓練；build/wiz8.asm:388920、build/wiz8.asm:389015。
+51f900	公式	D4	item_stack_merge	itemStackMergeNode	讀同 ID／識別狀態兩實例 +0x4 與物品 +0x6b 堆疊上限，取來源量和剩餘容量較小者，寫雙方 +0x4 並刪除空來源；build/wiz8.asm:389822、build/wiz8.asm:389823。
+51fb40	公式	D4	item_stack_normalize	itemStackNormalizeNode	讀物品 +0x66、+0x6b 與實例 +0x4／+0x5，校正數量欄位並把超過堆疊上限的數量拆成隊伍新實例，寫原 +0x4；build/wiz8.asm:389974、build/wiz8.asm:390052。
+5201b0	公式	D4	hand_type_from_item	handTypeFromItemNode	讀角色兩手物品 ID、物品 +0x3e、+0x3f 與手槽編號，映射攻擊手型寫角色 +0x1149 加手序乘 0x5b；build/wiz8.asm:390536、build/wiz8.asm:390550。
+520600	非公式	-	inventory_sort_compare		依物品 +0x3e、+0x3f、識別旗標、+0x86 及件數排序，僅回傳排序比較值；build/wiz8.asm:390922。
+520750	公式	D4	depleted_item_retention	depletedItemRetentionNode	讀物品 +0x4e、+0x62、+0x6c 至 +0x74、+0x8c 的其他效果性質，回傳耗盡充能後是否保留物品，供消耗入口決定刪除；build/wiz8.asm:390990、build/wiz8.asm:388211。
+5207e0	非公式	-	item_spell_field		讀物品 +0x63 法術 ID 後直接回傳法術表 +0x12f 欄位，只有資料查詢；build/wiz8.asm:391089。
+520880	非公式	-	item_spell_id		檢查實例有效性後直接回傳物品 +0x63 法術 ID，沒有運算；build/wiz8.asm:391139。
+5208f0	公式	D4	item_identification	itemIdentificationNode	讀角色 +0xb11、+0xb01、+0x49b 與物品 +0x85，技能除以 6 對照需求後寫實例 +0x6 至 +0x8／+0xb 的識別旗標，並按差距訓練技能；build/wiz8.asm:391169、build/wiz8.asm:391196。
+5209f0	公式	D4	party_item_identification	partyItemIdentificationNode	讀角色副表占用、角色 +0xb11／+0xb01 與實例 +0x6，對存活可行動成員施行識別判定，寫實例識別旗標並回傳是否成功；build/wiz8.asm:391265。
+520a70	公式	D4	identify_power_required	identifyPowerRequiredNode	讀物品 +0x85 與百分比調整參數，從需求除以 3 向上取整開始逐級測試調整後門檻，回傳所需識別強度；build/wiz8.asm:391339、build/wiz8.asm:391348。
+520b40	公式	D4	identify_power_apply	identifyPowerApplyNode	讀識別強度、百分比調整量與物品 +0x85，調整強度乘 3 後通過門檻則寫實例 +0x6、+0x7、+0x8、+0xb 為已識別；build/wiz8.asm:391379、build/wiz8.asm:391403。
+520bc0	公式	D4	remove_curse_power_apply	removeCursePowerApplyNode	讀解除強度、調整量、角色裝備列與物品 +0x8c／+0x85，達門檻時寫實例 +0xa 並回傳無解除／部分／全部解除；build/wiz8.asm:391460、build/wiz8.asm:391464。
+520c70	公式	D4	remove_curse_power_required	removeCursePowerRequiredNode	讀角色裝備列、實例 +0xa 與物品 +0x8c／+0x85，取尚未解除項的最高需求除以 3 向上取整並回傳；build/wiz8.asm:391532、build/wiz8.asm:391543。
+520d10	公式	D4	equipment_action_refresh	equipmentActionRefreshNode	不確定：混合刷新與行動資格更新，讀變更槽、角色 +4、角色副表 +0x3d／+0x6d／+0x104 及武器可用性，寫副表 +0x3d／+0x6d 並重建手部數值，保守保留；build/wiz8.asm:391599、build/wiz8.asm:391646。
+521060	非公式	-	party_item_find		按物品 ID 搜尋游標、角色與隊伍背包，只回傳存在旗標及實例／持有者指標；build/wiz8.asm:391930、build/wiz8.asm:392000。
+521240	公式	D4	party_item_count	partyItemCountNode	不確定：未確定總數是否供規則消耗或僅供腳本查詢，讀物品 ID、搜尋範圍、角色背包及隊伍實例 +0x4，將零件數視為單件並累加回傳總數，另輸出首筆指標；build/wiz8.asm:392155、build/wiz8.asm:392159。
+521360	非公式	-	all_characters_have_item		遍歷占用角色並呼叫物品搜尋助手，只彙整每人是否持有指定 ID；build/wiz8.asm:392211。
+5213c0	非公式	-	character_item_subtype_find		按物品 +0x3f 搜尋角色裝備及背包，只輸出匹配實例指標；build/wiz8.asm:392255、build/wiz8.asm:392298。
+521480	非公式	-	party_item_subtype_find		遍歷角色、游標與隊伍物品按 +0x3f 查找，只輸出實例及持有者指標；build/wiz8.asm:392361、build/wiz8.asm:392387。
+5215d0	非公式	-	party_item_delete		按指定 ID 清除實例與整理隊伍陣列，未計算消耗件數或數值效果；build/wiz8.asm:392509、build/wiz8.asm:392634。
+521ef0	非公式	-	party_inventory_insert		調用合併助手或插入既有實例至隊伍背包，更新陣列與取得事件，本體是資料搬移流程；build/wiz8.asm:393276、build/wiz8.asm:393301。
+522090	排除	-	party_inventory_overflow_drop		隊伍背包搬移流程（放不下時暫存／丟棄、插入陣列移位，並經 522640 劇情旗標與 5227d0 語音台詞；結果以呼叫紀錄與 case 輸入代之，非數值規劃），cc 判斷（MG 2026-10-10 排除委任；2026-10-11 數值規劃範圍），原非公式。原描述：隊伍背包放不下時暫存游標物品並派發丟棄或提示，再恢復原游標資料；build/wiz8.asm:393351、build/wiz8.asm:393379。
+522180	非公式	-	item_slot_pointer		依角色、槽類型及索引回傳裝備／背包實例位址，只算資料位置；build/wiz8.asm:393473。
+5222d0	非公式	-	item_pointer_slot_location		比較實例指標與各槽位址，輸出槽類型和索引以保存位置，沒有規則數值運算；build/wiz8.asm:393557、build/wiz8.asm:393558。
+5223a0	公式	D4	character_equipment_removal	characterEquipmentRemovalNode	讀物品 +0x8c、實例 +0xa、槽適用表及角色 +0xa49，決定哪些裝備可移至隊伍背包或丟棄，輸出更新後角色裝備／背包槽；build/wiz8.asm:393614、build/wiz8.asm:393628。

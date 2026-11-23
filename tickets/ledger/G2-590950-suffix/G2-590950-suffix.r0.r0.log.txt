@@ -1,0 +1,2 @@
+bash: scripts/nodes/g2-probe.sh: No such file or directory
+FAIL g2-probe

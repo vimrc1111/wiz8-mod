@@ -1,0 +1,6 @@
+call	523330	characterConditionRemove	對在場成員解除一個狀態槽（成員索引、狀態索引、旗標 1）；D4 公式，case 以位址樁記錄最後一次的三個參數與呼叫次數。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	685174	partyCharacterRecords	角色主記錄陣列基址，步距 0x1862；case 以 chars 物件擺放，其餘狀態槽放誘餌值。
+data	685178	partyPresenceRecords	成員在場記錄陣列基址，步距 0x106，+0 為在場位元組；case 以 pres 物件擺放。
+field	ecx+edx*1+0xa01	characterConditionSlot	角色記錄 +0xa01+4×狀態索引 的 u32 狀態槽，非零才解除；步距 0x1862 乘成員索引。
+field	esi+eax*1	memberPresenceByte	成員在場記錄 +0 的位元組，非零才處理；步距 0x106 乘成員索引。

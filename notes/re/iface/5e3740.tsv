@@ -1,0 +1,6 @@
+call	40efa0	trap_type_candidate_roll	抽取陷阱類型候選 R(15)，既有模擬器 RNG 樁記錄每次呼叫，calc 以 Rand 原序重放
+data	4	無關	分析器列出的立即值，供清理呼叫參數及四級容許差使用，並非資料位址；四級規則見 0x5e3775
+data	6504ac	trap_type_level_thresholds	玩家 exe 的十五筆有號 32 位陷阱類型門檻，calc 執行時讀取，不內嵌表
+field	eax*4+0x6504ac	trap_type_level_threshold	候選類型的門檻；只接受門檻不高於等級且加四不低於等級者
+field	edi+0x14	trigger_trap_type	觸發物件 +0x37c 的有號 32 位陷阱類型輸出；每次重抽都覆寫，原值不被讀取
+field	edi+0x4	trigger_trap_level	觸發物件 +0x36c 的有號 32 位等級輸入，低於一視為一；有效物件參數為 cdecl 指標，edi 對應其 +0x368 陷阱記錄

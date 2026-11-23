@@ -1,0 +1,16 @@
+call	40efa0	rand_n	亂數 R(n)，模擬器樁接、calc 以 Rand 介面重放
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	52b458	actionCostBranchTable	行動類型 0..9 的跳躍表（函式本體內位址）；0／1 走武器重量分支，3／6 走最大體力分支，8、9 固定擲骰，2、4、5、7 與大於 9 為零
+data	6836a8	partyActionRecords	隊伍動作記錄陣列基址，步長 212；讀所選行動槽索引 +0x84 與裝備槽索引 +0x88
+data	685174	partyCharacterRecords	角色主記錄陣列指標，步長 0x1862；讀裝備欄 +0xf5d、狀態 +0xa09、最大體力 +0xb19
+data	685178	partySlotRecords	角色副記錄陣列指標，步長 0x106；讀行動資料 +0x5
+data	68516c	itemTable	物品表指標，步長 269；讀物品重量 +0x8a
+field	ebx*4+0x52b458	actionCostBranchTable	依行動類型（0..9）取跳躍位址，與規則分派同義
+field	ecx+eax*4+0x84	selectedActionSlot	隊伍動作記錄的行動槽索引（u32）
+field	ecx+edx*4+0x5	actionKind	副記錄中依行動槽索引取得的行動資料；5 為輕擲（3 面骰+2），6 為（3 面骰+3），其他走裝備重量
+field	eax+0x70	selectedEquipSlot	隊伍動作記錄 +0x88 的裝備槽索引
+field	eax+edx*4+0xf5d	equippedItemId	角色裝備欄的物品編號（有號），-1 為未裝備
+field	ecx+eax*1+0x8a	itemWeight	物品重量（u16），每 40 一級決定骰面數
+field	edx+ecx*2+0xb19	maxFatigue	角色最大體力（u32），行動 3／6 的消耗為其五分之一，下限 20
+field	edx+ecx*2+0xa09	fatigueStatus	角色疲勞狀態（u32），非零時消耗加倍

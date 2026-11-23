@@ -1,0 +1,30 @@
+call	40efa0	rollPercentDie	亂數骰 R(n)：每項補貨先 R(3) 決定缺額加半、減半或不變；來源 exe 0x55b136
+call	5e1c10	deleteListEntryObject	刪除被移出清單的條目物件；模擬器內無操作，結果不影響清單內容與其他輸出，來源 exe 0x55b207
+call	5e27c0	removeListEntryAt	自清單移除第 i 筆並把後面條目前移、筆數減一，來源 exe 0x55b201
+call	5e2870	getListEntry	取清單第 index 筆條目；清單指標為空或 index 不小於筆數回空，來源 exe 0x5e2870
+call	5e2c70	getListCount	清單筆數，清單指標為空回 0，來源 exe 0x5e2c70
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	68516c	itemDefinitions	物品定義表基址，步長 0x10d，堆疊型態位於 +0x66，來源 exe 0x55aff4
+data	686a48	gameClockNow	目前遊戲時間（u32 秒），逾 0xa8c0 秒補固定貨、逾 0x15180 秒做每日補貨，來源 exe 0x55b01d、0x55b1a3
+field	esi+0x6	merchantShopRecord	商人物件 +0x6 的商店記錄指標
+field	esi+0xa	merchantStockList	商人物件 +0xa 的庫存清單指標（可為 0）
+field	esi+0xe	lastTimedRestockTime	商人物件 +0xe 上次固定貨補貨時間（u32），補貨時寫為現在，來源 exe 0x55b040、0x55b241
+field	esi+0x12	lastDailyRestockTime	商人物件 +0x12 上次每日補貨時間（u32），每日補貨結束寫為現在，來源 exe 0x55b1a8、0x55b22c
+field	edx+0x2ca	shopOfferList	商店記錄 +0x2ca 的貨單清單指標
+field	ecx+0x2ca	shopOfferList	商店記錄 +0x2ca 的貨單清單指標
+field	eax+0x2ca	shopOfferList	商店記錄 +0x2ca 的貨單清單指標
+field	ecx+0x0	offerItemId	貨單條目 +0 物品編號
+field	eax+0x0	offerItemId	貨單條目 +0 物品編號（比對同編號首個條目的數量）
+field	eax+0x4	stockEntryItemId	庫存條目 +4 物品編號（與貨單物品編號比對；亦為 0x522e80 的正規化對象）
+field	eax+0x5	offerTimedFlag	貨單條目 +5 旗標 byte：為 0 者不在固定貨補貨中處理
+field	eax+0x10	stockEntryOnHand	庫存條目 +0x10 現有件數 byte：大於貨單數量一半則不補；為零的條目於每日補貨後移出清單
+field	edi+0x8	stockEntryQuantity	庫存條目 +8 數量 byte：堆疊型態 1 時改為件數
+field	edi+0x10	stockEntryOnHand	庫存條目 +0x10 現有件數 byte：為零略過，堆疊型態 1 且大於 +8 時改寫並把件數設為 1
+field	ebp+0x0	stockEntryItemId	庫存條目 +4 物品編號（0x522e80 正規化後重讀），用來索引物品定義表
+field	edx+eax*1+0x66	itemStackKind	物品定義 +0x66 堆疊型態 byte：等於 1 才做件數換算

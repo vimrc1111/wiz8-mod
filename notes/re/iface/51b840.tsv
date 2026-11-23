@@ -1,0 +1,7 @@
+data	4	無關	參數堆疊槽位移被列為資料引用，並非規則資料或全域讀取
+data	68516c	itemDefinitions	已載入的物品模板庫指標；實例編號以 269-byte 步長選取模板（0x51b846..0x51b858）；模板欄位作為 calc 輸入，不內嵌資料表
+field	edx+0x0	itemDefinitionIndex	物品實例的 u32 模板編號；用於選取模板，沒有空物品特例（0x51b844）
+field	edx+0x4	quantity	物品實例的 u8 數量；類型 4 按比例計價，其他可堆疊物品在數量大於 1 時乘基價（0x51b862、0x51b884）
+field	eax+0x3e	itemType	物品模板的 u8 類型；類型 4 優先使用比例計價，不受堆疊旗標影響（0x51b85a）
+field	eax+0x66	stackable	物品模板的 u8 堆疊旗標；只有值 1 啟用數量乘算，其他值返回基價（0x51b87c）
+field	eax+0x86	baseValue	物品模板的 u32 基價；比例分支以 32 位乘加後除以 25，堆疊分支保留乘積低 32 位，其他返回原值（0x51b865、0x51b88c、0x51b89c）

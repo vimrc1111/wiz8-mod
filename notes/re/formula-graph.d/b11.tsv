@@ -1,0 +1,60 @@
+addr	class	depth	node	calc	evidence
+5a1eb0	公式	D4	movement_stamina_cost	movementStaminaCostNode	讀移動參數、C+0xbc9 負重分類、C+0xa09 狀態、C+0xb01/+0xb1d 與 Q+0/+0xf6，按倍率累積 Q+0xf6 並換算消耗量交 0x52af50 更新 C+0xb1d；build/wiz8.asm:563998、build/wiz8.asm:564009、build/wiz8.asm:405448。
+5a24a0	排除	-	formation_overlay_init		陣形 overlay 重建（UI；非公式→排除，cc 判斷）；build/wiz8.asm:564416。
+5a2800	非公式	-	nearby_object_overlay		依物件位置與視距更新可點選物件的投影圖示，將位置交給圖示配置函式而非遠程彈道命中流程；build/wiz8.asm:564860、build/wiz8.asm:565502。
+5a4570	非公式	-	selected_character_button		讀 Q+0xfa 是否有選中物件，只切換編號 0xf2 的介面按鈕；build/wiz8.asm:566856。
+5a45b0	非公式	-	review_panel_switch		按檢視頁籤重設刷新旗標並呼叫物品欄按鈕更新，沒有產生角色規則數值；build/wiz8.asm:566913。
+5a6020	非公式	-	item_recipient_selection		檢查選中 NPC 是否接受物品後只設定 0x69c104 與 0x69c100 的介面接收者標記供選角及提示使用；build/wiz8.asm:568995、build/wiz8.asm:568996、build/wiz8.asm:566185。
+5a6090	公式	D4	combat_action_change_allowed	combatActionChangeAllowedNode	不確定：讀 C+0xa3d/+0xa41/+0xa45/+0xa49、G+0xa50、G+0x4c+0xd4×角色索引與 Q+1/+0x3d，輸出允許變更行動的布林值並建立拒絕提示，但行動限制與純 UI 防呆的界線待 D1 核對；build/wiz8.asm:569021、build/wiz8.asm:569186、build/wiz8.asm:569190。
+5a6310	公式	D4	combat_item_type_exception	combatItemTypeExceptionNode	不確定：讀 I+0x3e 類型，輸出類型為 2 或 4 的布林值，呼叫端用它決定戰鬥中是否可走物品拆分流程，可能是操作規則而非純 UI 篩選；build/wiz8.asm:569216、build/wiz8.asm:569220、build/wiz8.asm:597793。
+5a6340	公式	D4	direct_spell_resolution	directSpellResolutionNode	讀施法角色、法術與目標參數，寫 Q+1/+5/+9/+0x15/+0x19/+0x1d 的施法行動並經 0x4fa4d0 解算效果與 SP 成本、0x52af50 扣 C+0xb1d，輸出成功或失敗碼；build/wiz8.asm:569264、build/wiz8.asm:569278；Q+5/+9 的既有模式描述見 notes/re/backstab.md:33。
+5ad950	非公式	-	shop_item_text		讀物品類型並取得價格或名稱後排版繪出物品與價格文字，價格計算在子函式內，本函式只用於顯示；build/wiz8.asm:579970、build/wiz8.asm:580003。
+5adbe0	非公式	-	shop_inventory_text		枚舉角色或隊伍物品，取得名稱與報價後繪出交易清單，未更新金錢或價格規則欄位；build/wiz8.asm:580195、build/wiz8.asm:580319。
+5ae2a0	非公式	-	npc_item_dialog_flow		依物品交付檢查的既有回傳碼選擇交付、拒絕提示或腳本事件並刷新物品清單，本身沒有計算機率或價格；build/wiz8.asm:580736、build/wiz8.asm:580754。
+5aefc0	非公式	-	party_spell_icons		讀 G+0x7c1 與 G+0x85a 的既有法術狀態，建立兩列法術圖示按鈕；build/wiz8.asm:581907、build/wiz8.asm:581978。
+5b1670	非公式	-	character_name_validation		比對角色姓名與檔案是否重名，失敗時顯示命名提示，沒有屬性或技能計算；build/wiz8.asm:585256。
+5b1f40	非公式	-	formation_portrait_draw		讀隊形位置與 Q+0xf1 圖像索引，按是否選中繪出兩種肖像；build/wiz8.asm:586026、build/wiz8.asm:586036。
+5b207f	非公式	-	formation_mouse_selection		以滑鼠矩形命中選擇隊形角色並切換介面狀態，這是 UI 點選而非彈道碰撞；build/wiz8.asm:586156、build/wiz8.asm:586162。
+5b2600	非公式	-	formation_button_refresh		將肖像索引轉為按鈕各狀態圖像並更新選取與可見狀態，輸出僅落在 UI 物件；build/wiz8.asm:586648、build/wiz8.asm:586651。
+5b2860	非公式	-	formation_edit_apply		比較並交付編輯後隊形、清理舊行動及刷新隊形面板，本身為編輯流程而無數值或機率計算；build/wiz8.asm:586796。
+5b4000	非公式	-	character_review_draw		依刷新旗標讀姓名、職業、狀態與肖像並繪出檢視面板；build/wiz8.asm:588676、build/wiz8.asm:588762。
+5b4790	非公式	-	resource_bar_draw		把既有 HP、耐力與 SP 比例換成長度 0x2d 的圖像遮罩，只影響資源條顯示；build/wiz8.asm:589366、build/wiz8.asm:589393。
+5b4bd0	非公式	-	wielded_item_draw		讀主副手物品與數量，繪出武器圖像、數量及既有防禦文字；build/wiz8.asm:589609、build/wiz8.asm:589649。
+5b65a0	非公式	-	character_review_button_enable		依角色與戰鬥旗標開關檢視按鈕，再呼叫按鈕虛擬更新方法，未寫遊戲規則結果；build/wiz8.asm:591730、build/wiz8.asm:591741。
+5b6b30	非公式	-	review_character_selection		切換被檢視角色指標與頁面內容並設定刷新旗標，沒有改變角色數值；build/wiz8.asm:592222。
+5b6d20	非公式	-	portrait_available_tint		讀角色狀態與戰鬥行動後輸出肖像是否可用的布林值，唯一直接呼叫端據此暗化肖像；build/wiz8.asm:592377、build/wiz8.asm:589052。
+5b8440	非公式	-	backpack_slots_draw		依物品可用性與鑑定旗標繪出背包格、圖像及選中框；build/wiz8.asm:594328、build/wiz8.asm:594380。
+5b8690	非公式	-	equipment_slots_draw		讀裝備槽與物品旗標後繪出裝備、不可用遮罩及拖曳提示，判定結果僅用於顯示；build/wiz8.asm:594552、build/wiz8.asm:594615。
+5b8b20	非公式	-	party_inventory_draw		分頁讀隊伍物品與金錢並繪出物品格及既有金錢字串；build/wiz8.asm:594900、build/wiz8.asm:594984。
+5b8ec0	非公式	-	item_quantity_charge_text		依 I+0x66 類型選擇堆疊數或充能文字與字色，輸出交繪字函式；build/wiz8.asm:595169、build/wiz8.asm:595245。
+5b9270	非公式	-	inventory_toggle_buttons		讀 Q+0xf5 旗標並更新兩個物品欄切換按鈕的啟用與選中狀態；build/wiz8.asm:595432、build/wiz8.asm:595435。
+5ba400	非公式	-	item_split_popup_open		依物品堆疊與類型開啟拆分數量對話框，尚未實際修改堆疊；build/wiz8.asm:596986。
+5ba740	公式	D4	identify_item_cast	identifyItemCastNode	不確定：讀施法角色與物品實例的索引、+6 鑑定旗標及可鑑定檢查，呼叫法術 0x17 並依成功碼處理該物品，輸出經子呼叫更新鑑定結果與施法消耗，但本層也可能只屬 UI 事件調度；build/wiz8.asm:597281、build/wiz8.asm:597287、build/wiz8.asm:597288。
+5baa50	非公式	-	item_split_button_filter		只按 I+0x41 的位元 2 與 I+0x66 堆疊類型決定拆分按鈕可用，未算拆分數量或任何規則數值；build/wiz8.asm:597494、build/wiz8.asm:590392。
+5be340	非公式	-	character_roster_load		列舉角色檔案並讀入 0x1862 大小紀錄，過濾已在隊伍中的同名角色以建立選角清單；build/wiz8.asm:602465、build/wiz8.asm:602481。
+5be4d0	非公式	-	character_roster_restore		從角色檔重載紀錄，失敗則整塊複製原紀錄，並把離隊角色替換為清單快照；build/wiz8.asm:602653、build/wiz8.asm:602668。
+5be5f0	非公式	-	character_roster_slot_lookup		比對清單紀錄指標與佔位角色指標後回傳隊伍槽索引，僅做身分查找；build/wiz8.asm:602719、build/wiz8.asm:602721。
+5bf520	非公式	-	party_roster_widget_init		建立六個選角元件並依 Q+0 佔位旗標呼叫元件可見狀態方法；build/wiz8.asm:604157。
+5c1680	非公式	-	roster_selection_refresh		同步候選清單與隊伍選角元件的指標及選中狀態，再更新按鈕標籤；build/wiz8.asm:607112。
+5c2010	非公式	-	roster_panel_mode		按選角或匯入模式開關面板、列舉匯入檔並配置捲動範圍，輸出為介面狀態；build/wiz8.asm:608036、build/wiz8.asm:607973。
+5c2970	非公式	-	roster_add_remove_flow		加入或移除所選角色，透過讀檔與整塊複製保存離隊角色，再同步選角按鈕，沒有數值公式；build/wiz8.asm:608774、build/wiz8.asm:608784。
+5c2c60	非公式	-	character_import_flow		組合匯入存檔路徑並調用匯入流程，最後更新佔位角色按鈕；build/wiz8.asm:609034。
+5c2de0	非公式	-	roster_screen_open		建立角色與匯入清單以及選角對話介面，最後載入主選單資源；build/wiz8.asm:609260。
+5c33c0	非公式	-	roster_portrait_draw		依肖像種類與槽位選擇圖像方向旗標，將螢幕座標交肖像繪圖；build/wiz8.asm:609595。
+5c4d40	非公式	-	item_positive_detail_count		累計裝備物品的正面屬性項目，回傳值由呼叫端組成說明清單的列數與分類標記，不進角色加成運算；build/wiz8.asm:611779、build/wiz8.asm:612110、build/wiz8.asm:612130、build/wiz8.asm:612136。
+5c4e20	非公式	-	item_negative_detail_count		累計負面屬性與詛咒說明項目，回傳值只供介面清單列數及分類旗標；build/wiz8.asm:611877、build/wiz8.asm:612113、build/wiz8.asm:612130、build/wiz8.asm:612136。
+5c54a0	非公式	-	effect_detail_text		讀既有狀態或裝備加減益，按列座標逐項繪出說明並更新文字列索引；build/wiz8.asm:612421、build/wiz8.asm:612541。
+5c5d80	非公式	-	skill_review_draw		比較技能基值、有效值及隊伍最高值，結果僅決定技能條長度與字色；build/wiz8.asm:613226、build/wiz8.asm:613249。
+5cdc70	非公式	-	item_list_dialog_draw		配置清單元件位置並繪出物品圖像、名稱及由 I+0x8a 轉換的重量文字，未修改負重；build/wiz8.asm:624489、build/wiz8.asm:624560。
+5ce4c0	非公式	-	selected_item_transfer_flow		把勾選物品交給既有角色或隊伍物品搬移函式，成功後移除清單項目並刷新視窗，本身只做搬移流程；build/wiz8.asm:624906。
+5d7310	非公式	-	item_description_build		將物品傷害、屬性、限制與效果等既有欄位格式化為物品說明段落，計算結果僅進文字介面；build/wiz8.asm:637700、build/wiz8.asm:637742。
+5d8fb0	非公式	-	item_description_header		建立文字元件並把物品名稱、類型和重量格式化為說明標題；build/wiz8.asm:639970、build/wiz8.asm:640060。
+5d9330	非公式	-	item_profession_restriction_icons		讀 I+0x76 職業位元遮罩，逐一設定說明視窗的職業圖示狀態而非判定實際裝備資格；build/wiz8.asm:640247。
+5d9460	非公式	-	item_race_restriction_icons		讀 I+0x78 種族遮罩與 RPC 種族映射，結果只用於說明視窗圖示；build/wiz8.asm:640383。
+5dced0	非公式	-	item_split_dialog_init		載入拆分對話框資源並按堆疊上限給預選數量 1 或半堆，只寫對話框暫存欄位；build/wiz8.asm:645838、build/wiz8.asm:645871。
+5e0410	非公式	-	character_dialog_rollback		關閉對話框時把備份角色、隊伍片段與副表整塊抄回，屬取消編輯資料還原；build/wiz8.asm:650357、build/wiz8.asm:650366。
+5e0600	非公式	-	character_dialog_voice_labels		從角色語音物件取得標籤並建立文字元件，沒有產生規則結果；build/wiz8.asm:650569。
+5e3740	公式	D4	trap_type_roll	trapTypeRollNode	讀觸發物件+0x36c 的等級與 0x6504ac 類型門檻表，反覆抽 0..14 直到門檻落在等級前四級範圍，寫物件+0x37c 的陷阱類型供效果選取；build/wiz8.asm:655350、build/wiz8.asm:655351、build/wiz8.asm:655356。
+5e3780	非公式	-	trap_disarm_feedback		亂數 100 小於 40 時只啟動角色語音，再顯示拆除陷阱訊息與完成觸發器流程，沒有用抽籤決定拆除成敗；build/wiz8.asm:655370、build/wiz8.asm:655380。
+5e3800	公式	D4	trap_spell_targets	trapSpellTargetsNode	讀效果編號、威力、指定目標數及 C+0xb11/+0xb01、Q+0 以建立合格角色集合，亂數刪除非選中角色至指定數量，輸出目標清單與位置交 0x4fb4c0 套用陷阱法術；build/wiz8.asm:655553、build/wiz8.asm:655574、build/wiz8.asm:655600。
+5e3ab0	公式	D4	trap_power_target_count	trapPowerTargetCountNode	讀觸發物件+0x36c 等級、+0x37c 類型與 0x6504ac/0x650514 查表，將等級限於 1..7 後抽受影響人數並算威力上限 7，輸出位置、效果、威力及人數交 0x5e3800；build/wiz8.asm:655666、build/wiz8.asm:655681、build/wiz8.asm:655757。

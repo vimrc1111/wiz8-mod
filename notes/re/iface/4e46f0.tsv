@@ -1,0 +1,60 @@
+call	2b6	無關	擷取器把怪物欄位位移誤列為呼叫目標，低於 PE ImageBase，並非遊戲函式。
+call	65	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+call	86	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+call	535cf0	factionStandingEvent	陣營聲望事件分派：第二參數為 1 且陣營不為 0／1 時，種類 0 走擊殺扣聲望（535d50），種類 1..3 走直接加減（535ea0）；calc 原樣模型化。
+call	53bea0	deathSourceIsParty	死亡來源類型為 1（隊伍成員）時為真，並檢查 +4 的成員格不為 -1。
+call	53bf10	deathSourceIsMonster	死亡來源類型為 2（怪物）時為真，並檢查 +8 的怪物識別不為 -1。
+call	5e1c22	無關	CRT _ftol：平均等級浮點結果截斷為整數；calc 以整數截斷除法重現。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	區域暫存（模板指標、索引）的堆疊位移，非全域資料引用。
+data	5eb1a0	allocateMonsterStorage	CRT malloc 匯入槽；模板快取未命中時配置模板緩衝（cov-exempt，模板檔 I/O）。
+data	5eb224	releaseMonsterStorage	CRT free 匯入槽；模板載入失敗時釋放緩衝（cov-exempt）。
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；怪物指標、種類、擊殺者格、實體索引的 assert。
+data	5ed8c8	voiceEventArg4	語音事件（52e690，排除）第四參數，全域；case 以 exe 初值記錄於樁參數。
+data	5ed914	voiceEventArg5	語音事件（52e690，排除）第五參數，全域；case 以 exe 初值記錄於樁參數。
+data	5ee61c	killVoiceId	擊殺強敵時的語音編號全域；只當語音樁參數記錄。
+data	6147e0	無關	assert 診斷來源檔名；不是遊戲規則資料。
+data	614840	無關	assert 診斷：怪物種類小於 1000 的條件文字。
+data	614910	無關	assert 診斷：怪物指標必須存在的條件文字。
+data	614a00	無關	除錯日誌（5182e0，排除）格式字串：模板無經驗值時；只當樁參數記錄。
+data	614a20	無關	assert 診斷：實體指標必須存在的條件文字。
+data	614a3c	無關	MonGen 日誌（58aad0，排除）格式字串；只當樁參數記錄。
+data	614a4c	無關	assert 診斷：擊殺者必須是在場隊員的條件文字。
+data	61e602	無關	字串表索引字；選日誌第四參數字串，樁不記錄該參數，不參與規則。
+data	6836a8	battleStats	戰鬥統計物件指標；+0xc 隊伍擊殺數、+0x10 累計經驗。
+data	6840c7	monsterTemplateCache	按怪物種類索引的模板指標快取，種類小於 1000。
+data	685174	characterRecords	角色記錄陣列指標，步距 0x1862。
+data	685178	partyPresence	隊伍在場旗標陣列指標，步距 0x106。
+data	686a70	currentMap	目前地圖編號；索引地圖擊殺計數。
+data	686b77	mapKillCounts	每地圖 16 位擊殺計數，步距 33 位元組，地圖小於 0x2f 才計。
+data	688291	speciesSeen	按種類索引的「已見過」旗標，擊殺後設 1。
+data	68c09c	stringTable	遊戲字串表指標；取日誌用字串。
+field	eax*4+0x688291	speciesSeenEntry	以種類索引的已見過旗標；為 0 時設 1。
+field	eax+0x0	partyMemberLevel	在場隊員等級（角色 +0x89）逐格讀取，加總求平均。
+field	eax+0x10	battleExperience	戰鬥統計 +0x10 累計經驗，加模板經驗值。
+field	eax+0xc	battleKills	戰鬥統計 +0xc 隊伍擊殺數，加 1。
+field	eax+edx*2	killerPresent	擊殺者成員格的在場旗標（0x685178 陣列，步距 0x106）；必須非 0。
+field	ebp+0x0	monsterId	怪物識別，用於實體索引查詢。
+field	ebp+0x15	monsterCountsForParty	怪物 +0x15 計入隊伍統計旗標；為 0 不計擊殺與經驗。
+field	ebp+0x16	monsterAllegiance	怪物 +0x16 陣營別（1／2）；與 +0x8b 配對決定是否計入。
+field	ebp+0x253	monsterSilentDeath	怪物 +0x253 旗標；非 0 不發訊息且不給獎勵。
+field	ebp+0x28a	monsterAnnounce	怪物 +0x28a 旗標；非 0 才記擊殺訊息。
+field	ebp+0x2da	monsterNoReward	怪物 +0x2da 為 1 時不給獎勵。
+field	ebp+0x308	killerSlot	死亡來源為隊伍時的擊殺者成員格 0..7。
+field	ebp+0x30c	killerMonster	死亡來源為怪物時的兇手識別。
+field	ebp+0x8	monsterSpecies	怪物種類 ID，小於 1000，索引模板快取與已見旗標。
+field	ebp+0x8b	monsterOwner	怪物 +0x8b；與 +0x16 配對決定是否計入隊伍統計。
+field	ebx*4+0x6840c7	monsterTemplateCacheEntry	以種類索引的模板指標快取項。
+field	ebx+0x181	templateExpAlt	模板 +0x181 備用經驗值；+0x26b 為 0 時使用。
+field	ebx+0x187	templateId	模板編號；交給死亡事實分派（5090c0），0x18d 另有顯示名稱。
+field	ebx+0x25f	templateFaction	模板所屬陣營；擊殺時扣該陣營聲望。
+field	ebx+0x268	templateLevelVoice	模板旗標；非 0 時比較強度與隊伍平均等級決定語音。
+field	ebx+0x26b	templateExp	模板經驗值；加入戰鬥統計累計經驗。
+field	ecx+0x0	memberPresent	平均等級迴圈逐格的在場旗標；非 0 才計入。
+field	edx+0x24f	templateStrength	模板 +0x24f 強度等級；不小於隊伍平均等級加 2 時觸發擊殺語音。
+field	edx+eax*1+0x686b77	mapKillCount	地圖擊殺計數 16 位，加 1。
+field	edx+ecx*2+0x4	characterActive	角色記錄 +4 存在旗標；擊殺者必須非 0。
+field	edx+ecx*4	stringTableEntry	字串表項目（以 0x61e602 索引）；日誌第四參數，樁不記錄。
+field	esi+0x16	killerMonsterAllegiance	兇手怪物 +0x16；為 2 時也扣陣營聲望。
+field	esi+eax*1+0x9f9	characterKills	擊殺者角色 +0x9f9 擊殺數，加 1。

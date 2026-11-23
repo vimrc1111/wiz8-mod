@@ -1,0 +1,168 @@
+call	2b6	srAssertFail	IAT 0x5ebaf4 的 srAssertFail 分析標記；只在攝影機遠裁距離非正、NPC 記錄缺失、視線查詢前置失敗時停止，合法輸入不達（cov-exempt 七塊）。
+call	40efa0	遭遇喊聲二選一亂數	R(2) 決定非 NPC 群被發現時播音效 67 或 68；F 與 Emu 共用同一 Rand。
+call	451280	visualManager	取得全域 659ab4 的視覺管理器（攝影機）；參數不影響回傳。
+call	453970	objectFacing	讀物件 +0xd4（場景物件 +0xec）的朝向角，float32。
+call	46e440	cameraFarClip	呼叫 srCamera::getClipRange 取遠裁距離（double）；case 由樁輸入 clipLo/clipHi 給值，calc 轉 float32 並重做非正斷言。
+call	46e490	partyView	跳到 420dd0 取得全域 65a0f8 的隊伍視點物件（朝向 +4、位置 +0x8c）。
+call	482760	發現觸發全域浮點	讀全域浮點 0x60a390；等於 12.0（0x5ec254）時才寫發現旗標並播發現音效。遊戲語意未取得。
+call	5058a0	monsterSeesMonster	怪物群看見另一怪物群的判定：本群可行動且狀態 <0xf 時以 505a40 視距與表面距離比較。calc 為 sees()。
+call	505a40	sightReach	視距公式：方位角差決定正面/背面，背面時依屬性差與距離比例縮放，再加光照、潛行、感知加成並夾在 2..100，乘遠裁距離 ×0.01。calc 為 sight()。
+call	506280	任務旗標查詢	本函式只問旗標 0x2ee：回全域旗標陣列 0x689b78 的該位元組（0x689e66）；決定 NPC 打招呼音效 57 或 38；0x5080f0 除錯記錄受 0x688290 控制，不影響回傳。
+call	50b830	npcFindByTemplate	NPC 清單 *0x689f94 依 [[e+6]+0x58] 等於模板 +0xcd 找記錄；找不到回 0（隨後斷言）。
+call	536110	怪物發現旗標表	寫 byte[0x68d6f2+14*int8(id)]=1，記錄此模板種類已被隊伍發現。
+call	5e1c22	truncateTimerValue	x87 數值向零截斷為整數（視距背面比例、時鐘毫秒）；超出 int64 calc panic。
+call	5e2480	appendSightEntry	可見關聯清單滿時容量加 5 重配，再附加新條目。
+call	5e2870	monsterListGetAt	取怪物清單第 i 個指標，超界回空。
+call	5e2c70	monsterListCount	清單指標為空回零，否則讀 +8 筆數；每輪重讀。
+call	65	無關	抽取器列出的低於 PE ImageBase 目標；實際為 malloc 匯入（0x5eb1a0）的分析標記，配置可見關聯條目，不制定規則；case 為零填 bump 配置器。
+call	a	noticeVoiceTick	GetTickCount 的 u32 時鐘；寫入語音控制 +0x34，case.tick=4660 固定。
+data	4	呼叫參數與向量位移	小位移是堆疊參數或三維向量內的相對位置，不是絕對資料位址；語意依本列相關 call 與 field 記錄。
+data	8	呼叫參數與向量位移	小位移是堆疊參數或三維向量內的相對位置，不是絕對資料位址；語意依本列相關 call 與 field 記錄。
+data	c	呼叫參數與向量位移	小位移是堆疊參數或三維向量內的相對位置，不是絕對資料位址；語意依本列相關 call 與 field 記錄。
+data	5eb02c	noticeVoiceTickImport	GetTickCount 匯入槽；見 call a。
+data	5eb1a0	mallocSightEntryImport	malloc 匯入槽；見 call 65。
+data	5ebaf4	無關	srAssertFail 的 IAT 位址，非遊戲資料。
+data	5ebb34	零視距	隊伍成員目盲且非特定狀態時視距為 0.0。
+data	5ec254	發現觸發值	0x60a390 必須等於 12.0 才觸發發現旗標與音效。
+data	5ec3a0	NPC 招呼距離上限	NPC 群在隊伍形狀點 25000 世界單位內才打招呼（嚴格小於）。
+data	5ed7f8	全域視距縮減	全域 0x6874ff 非零時隊伍視距乘此值（約 2/3）。
+data	5ed8c8	招呼音效參數四	0x52e690 第四參數，exe 常數。
+data	5ed914	招呼音效參數五	0x52e690 第五參數（音量 127），exe 常數。
+data	5ee620	NPC 一般招呼音效	音效編號 38。
+data	5ee66c	NPC 特殊招呼音效	模板種族 +0x2e 為 0x18 且旗標 0x2ee 成立時用 57。
+data	5ee694	遭遇喊聲一	R(2) 非零時音效 67。
+data	5ee698	遭遇喊聲二	R(2) 為零時音效 68。
+data	6198ec	無關	srAssertFail 訊息字串（NPC 記錄缺失），非遊戲資料。
+data	6198fc	無關	srAssertFail 訊息字串，非遊戲資料。
+data	619910	無關	srAssertFail 訊息字串（視線查詢前置），非遊戲資料。
+data	619924	無關	srAssertFail 訊息字串（遠裁距離非正），非遊戲資料。
+data	61993c	無關	srAssertFail 原始檔名字串，非遊戲資料。
+data	6598a4	cameraSettings	攝影機/裁切設定物件指標（case 指向樁區）。
+data	6598bc	gameClock	遊戲時鐘物件，+0x30 float 毫秒；訊息冷卻用。
+data	659c0c	partyShape	隊伍形狀物件：+0x174 碰撞半徑、+0x100..0x108 NPC 招呼距離的基準點。
+data	683f94	怪物互看開關	非零時才更新怪物群間可見清單；隊伍視距光照項在此為零時才計入。
+data	683f97	招呼靜音旗標	非零時 NPC 不播招呼語音。
+data	683fad	monsterGroupList	全域怪物群清單。
+data	683fc5	訊息靜音旗標	非零時不送「察覺/失去」訊息。
+data	685174	characterArray	角色陣列，步距 0x1862。
+data	685178	presenceArray	隊伍在場記錄，步距 0x106。
+data	686a48	gameTime	遊戲時間 u32；可見與察覺時戳、淡出期限 0xf0/0x78。
+data	686a70	遊戲模式	等於 4 時 NPC 不播招呼語音。
+data	68749b	場景光照	隊伍被看見的光照扣分（每點 -10，已察覺時 -5）。
+data	68749d	隊伍隱匿旗標	非零時隊伍視距不套背面比例。
+data	6874ff	視距縮減旗標	非零時隊伍視距乘 0x5ed7f8。
+data	689b6c	遭遇喊聲冷卻時戳	時鐘毫秒；0xc8 內不重播。
+data	689b70	察覺訊息冷卻時戳	時鐘毫秒；0xc8 內不重送。
+data	689b74	失去訊息冷卻時戳	時鐘毫秒；0xc8 內不重送。
+data	68c09c	gameText	遊戲文字表；+0x774/+0x778 為察覺/失去訊息字串指標（case 固定）。
+data	68ec78	遊戲狀態	等於 7（探索中）才更新可見與察覺。
+data	ffffffffffffff4c	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffff50	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffff54	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffff58	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffff5c	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffff60	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffff9c	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffa0	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffa4	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffa8	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffac	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffb0	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffb4	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffb8	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffbc	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffc0	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffc4	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffc8	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffcc	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffd0	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffd4	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffd8	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffdc	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffe0	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffe4	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	ffffffffffffffe8	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+data	fffffffffffffff4	無關	靜態掃描所列的堆疊相對位移；為座標、距離、浮點運算或指標的區域暫存，並非獨立遊戲資料欄位。
+field	ecx+edx*1	隊伍在場旗標	在場記錄陣列（步距 0x106）第 i 筆首位元組；零者不計入最弱屬性。
+field	edi+0x0	物件識別碼	怪物群 +0 識別碼，與可見關聯條目 +0 比對。
+field	edi+0x190	物件身高	場景物件 +0x190，加到 Y 得視線點。
+field	edi+0x248	潛行值	模板 +0x248；未察覺時扣視距，非零時送察覺/失去訊息。
+field	edi+0x24f	感知值	模板 +0x24f；背面視距的屬性差項（×2），擴音項 ×5 上限 0x7d。
+field	edi+0x2d	NPC 已招呼	NPC 記錄 +0x2d；設 1 後不再招呼。
+field	edi+0x2e	NPC 種族	NPC 記錄 +0x2e；0x18 時改用特殊招呼音效。
+field	edi+0x6	NPC 子記錄	NPC 記錄 +6 指向子記錄（+0x54 禁止招呼、+0x58 模板鍵）。
+field	edx+0x0	世界座標X	三維向量分量；依位置為隊伍、怪物視線點或清單資料指標。
+field	edx+0x4	世界座標Y	三維向量分量；或清單容量。
+field	edx+0x8	世界座標Z	三維向量分量；或清單筆數。
+field	edx+0x54	NPC 禁止招呼	NPC 子記錄 +0x54；非零不招呼。
+field	edx+0x774	察覺訊息字串	遊戲文字表 +0x774（+0x778 失去訊息）。
+field	esi+0x0	物件識別碼	可見關聯條目 +0 為被看怪物群識別碼。
+field	esi+0x100	隊伍基準點X	隊伍形狀 +0x100；NPC 招呼距離基準。
+field	esi+0x104	隊伍基準點Y	隊伍形狀 +0x104。
+field	esi+0x108	隊伍基準點Z	隊伍形狀 +0x108。
+field	esi+0x190	物件身高	場景物件 +0x190，加到 Y 得視線點。
+field	esi+0x28	條目在範圍內	可見關聯條目 +0x28：遠裁範圍內且基本可見檢查通過。
+field	esi+0x30	語音持續毫秒	語音控制 +0x30 設 0x5dc。
+field	esi+0x34	語音起始時戳	語音控制 +0x34 設 GetTickCount。
+field	esi+0x4	可見狀態	可見關聯條目 +4：1 看見、2 淡出中、0 失去（期限 0xf0）。
+field	esi+0x6	直線視線	可見關聯條目 +6：視線查詢無阻擋。
+field	esi+0x8	視線查詢二	可見關聯條目 +8：第二次視線查詢結果。
+field	esi+0xb	怪物看見怪物	可見關聯條目 +0xb：5058a0 結果。
+field	esi+0xc	最後看見時戳	可見關聯條目 +0xc：遊戲時間。
+field	esi+eax*1+0x161	角色感知值	角色 +0x161；隊伍視距背面比例的屬性項。
+field	esi+eax*1+0x3dd	角色視覺加成	角色 +0x3dd；視距乘 (100+值)/100。
+field	esi+eax*1+0x69	角色狀態	角色 +0x69；等於 6 時目盲例外不歸零視距。
+field	esi+eax*1+0xa31	角色目盲	角色 +0xa31；非零且非狀態 6 時視距 0。
+field	esi+eax*1+0xb01	角色狀態等級	角色 +0xb01；需 <0xf 才能察覺。
+field	esi+eax*1+0xb11	角色可行動	角色 +0xb11；非零才計入。
+field	eax+0x0	最弱屬性候選／座標X	角色 +0x89 屬性（eax 指向該欄，取在場可行動者最小值）；或三維向量 X 分量。
+field	eax+0x4	世界座標Y	三維向量分量；隊伍或怪物視線點。
+field	eax+0x8	世界座標Z	三維向量分量；隊伍或怪物視線點。
+field	eax+0x178	物件身高	場景物件基底 +0x18 起算的 +0x178（物件 +0x190），加到 Y 得視線點。
+field	eax+0xa88	角色可行動	自角色 +0x89 起算的 +0xa88（角色 +0xb11）；非零才計入最弱屬性。
+field	eax+0x248	潛行值	模板 +0x248；未察覺時扣視距。
+field	eax+0x24f	感知值	模板 +0x24f；擴音項 ×5 上限 0x7d、背面視距屬性項。
+field	eax+0xcb	怪物類別	模板 +0xcb；4 時有擴音項、0xc 時目盲例外。
+field	eax+0xcd	NPC 模板鍵	模板 +0xcd；與 NPC 子記錄 +0x58 比對。
+field	eax+0xd0	NPC 旗標	模板 +0xd0 bit0；成立時走 NPC 招呼／離開路徑。
+field	eax+0xe9	NPC 對話中	NPC 記錄 +0xe9；未察覺時非零則呼叫 50cf70 結束。
+field	ebp+0x0	群識別碼	本怪物群 +0；視線查詢參數與清單比對。
+field	ebp+0x107	群狀態等級	本群 +0x107；需 <0xf 才能看見。
+field	ebp+0x14	群啟用	本群 +0x14；零則不更新。
+field	ebp+0x15	群現身	本群 +0x15；零時潛行值計入隊伍視距。
+field	ebp+0x16	群喊聲類別	本群 +0x16；0 或 1 才播遭遇喊聲。
+field	ebp+0x24b	群感知值	本群 +0x24b；看見隊伍/他群的屬性項。
+field	ebp+0x24d	隊伍在遠裁內	本群 +0x24d：隊伍距離不超過遠裁距離。
+field	ebp+0x28a	隊伍察覺狀態	本群 +0x28a：1 察覺、2 淡出、0 未察覺（期限 0x78）。
+field	ebp+0x28b	察覺附加一	本群 +0x28b：4c4a20 寫入。
+field	ebp+0x28c	察覺附加二	本群 +0x28c：4c4a20 寫入。
+field	ebp+0x28d	本次被察覺	本群 +0x28d：本次有角色察覺此群。
+field	ebp+0x28e	最後被察覺時戳	本群 +0x28e：遊戲時間。
+field	ebp+0x2aa	察覺查詢參數	本群 +0x2aa：arg3（已察覺時低位元組強制 1）。
+field	ebp+0x2ab	可被察覺	本群 +0x2ab：4c4920 結果。
+field	ebp+0x2b	群存活數	本群 +0x2b；零則不更新、不看見。
+field	ebp+0x2b6	可見關聯清單	本群 +0x2b6：對其他怪物群的可見條目清單。
+field	ebp+0x34c	看見隊伍狀態	本群 +0x34c：1 看見、2 淡出、0 失去（期限 0xf0）。
+field	ebp+0x34d	隊伍視線附加一	本群 +0x34d：4c4870 寫入。
+field	ebp+0x34e	隊伍直線視線	本群 +0x34e：視線查詢無阻擋。
+field	ebp+0x350	隊伍視線查詢二	本群 +0x350：第二次視線查詢結果。
+field	ebp+0x353	本次看見隊伍	本群 +0x353：視距不小於距離。
+field	ebp+0x354	最後看見隊伍時戳	本群 +0x354：遊戲時間。
+field	ebp+0x370	隊伍可見前置	本群 +0x370：4c4810 結果。
+field	ebp+0x37a	啟用直線視線查詢	本群 +0x37a；非零時做第一次視線查詢。
+field	ebp+0x37c	啟用視線查詢二	本群 +0x37c；非零時做第二次視線查詢。
+field	ebp+0x87	群目盲	本群 +0x87；非零且非類別 0xc 時視距 0。
+field	ebp+0xc	群場景物件	本群 +0xc：場景物件（位置、朝向、半徑、身高）。
+field	ebx+0x0	他群識別碼	他怪物群 +0；可見條目鍵。
+field	ebx+0x14	他群啟用	他群 +0x14；零則略過。
+field	ebx+0x15	他群現身	他群 +0x15；零則略過。
+field	ebx+0x2b	他群存活數	他群 +0x2b；零則略過。
+field	ebx+0xc	他群場景物件	他群 +0xc：場景物件。
+field	ebx+0x248	潛行值	模板 +0x248；非零時送察覺/失去訊息與 4c4f80/4c5150。
+field	ebx+0x25f	發現旗標索引	模板 +0x25f（有號）；536110 旗標表索引。
+field	ebx+0xcd	NPC 模板鍵	模板 +0xcd；NPC 記錄查找鍵。
+field	ebx+0xd0	NPC 旗標	模板 +0xd0 bit0。
+field	ecx+0x0	世界座標X	三維向量分量；或清單資料指標。
+field	ecx+0x4	世界座標Y	三維向量分量；或清單容量。
+field	ecx+0x8	世界座標Z	三維向量分量；或清單筆數。
+field	ecx+0x778	失去訊息字串	遊戲文字表 +0x778。

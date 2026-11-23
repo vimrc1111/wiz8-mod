@@ -1,0 +1,45 @@
+call	198	registryFindRecord	SR 註冊表依大寫名稱找已登記的 Trigger 記錄；case 樁以輸入 findPtr 回傳（零＝無、非零＝case 的唯一記錄），名稱字串與規則無關
+call	2a9	heapAllocateTrigger	SR 堆積配置 0x38c bytes 供建構未登記記錄的暫時 Trigger；模擬器內建樁不會失敗，配置成敗不影響輸出
+call	404ea0	saveStreamRead	存檔串流讀取（handle, 緩衝, 長度, 實讀數）；case 以 stream 樁依序供位元組，讀到哪些欄位見 calc 的 read 次序
+call	40efa0	lockCodeRoll	鎖碼每一位 R(4)，取低位元組寫入 +0x371 起八個鎖碼位元組
+call	445f30	triggerClassNodeLookup	取（必要時登記）Trigger 類別節點，只作 find 的參數，與規則欄位無關
+call	46	upperCaseName	_strupr 把記錄名稱轉大寫供 find 比對；名稱不進輸出，case 樁直接略過
+call	65	mallocNameCopy	malloc 名稱副本；模擬器內建樁不失敗，與規則無關
+call	86	freeNameCopy	free 名稱副本；內建 no-op，與規則無關
+data	ffffffffffffff50	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	ffffffffffffff54	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	ffffffffffffff58	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	ffffffffffffff5c	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	ffffffffffffff60	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	ffffffffffffff64	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	ffffffffffffff68	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	ffffffffffffff6c	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	ffffffffffffff70	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	ffffffffffffff74	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	fffffffffffffff4	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	fffffffffffffffc	無關	堆疊負位移被分析為資料引用；區域變數或 SEH 狀態，不是遊戲全域
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5e440e	無關	SEH 清理處理入口；正常載入不影響輸出
+data	5eb124	upperCaseNameImport	_strupr 匯入槽；見 call 46
+data	5eb1a0	mallocNameCopyImport	malloc 匯入槽；見 call 65
+data	5eb224	freeNameCopyImport	free 匯入槽；見 call 86
+data	5eb67c	registryFindRecordImport	srRegistry::find 匯入槽；見 call 198
+data	5eb70c	runtimeCore	SR 核心物件匯入；case 指向 arena core，其 +0x2c 指向 registry
+data	5ebabc	runtimeHeap	SR 堆積物件匯入；配置與釋放的 this，與規則無關
+data	5ebac0	heapAllocateImport	srHeap::allocate 匯入槽；見 call 2a9
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+field	eax+0x2c	runtimeClassRegistry	核心物件的 SR registry 指標；case arena core 提供
+field	eax+0x4	linkObjectType	Trigger +0x234 所指連結物件的類型位元組；等於 10 才同步旗標
+field	eax+0x8	linkObjectFlags	連結物件旗標；bit 2 由 +0x370 是否為 0 改寫，其餘位元保留
+field	eax+0xa	linkObjectWord	連結物件的 16 位值；旗標 bit 2 已設且值非 0xffff 時不覆寫，否則取 Trigger +0x380 低 16 位
+field	edi+0x0	triggerDispatchTable	暫時 Trigger 的虛擬方法表指標；只用來呼叫第 +0x14 槽的刪除方法
+field	edx+0x14	triggerDeleteMethod	方法表第 +0x14 槽（刪除暫時 Trigger）；無規則欄位運算，與輸出無關
+field	esi+0x0	triggerType	esi 已加 0x368：Trigger 類型（+0x368）；長格式讀入，等於 1 才重擲鎖碼
+field	esi+0x4	triggerDifficulty	Trigger 難度（+0x36c）；長格式讀入，限制到 2 至 8 後乘 3 寫 +0x384
+field	esi+0x8	triggerLockedFlag	Trigger 狀態旗標位元組（+0x370）；重擲時清零，也決定連結物件的旗標
+field	esi+0x1c	triggerLockCost	Trigger +0x384：難度乘 3 的結果（或存檔值）
+field	esi+0x20	triggerLockExtra	Trigger +0x388：重擲時設為 -1，存檔版本大於 1 時讀入
+field	esi+0x234	triggerLinkObject	Trigger 的連結物件指標；非零才同步旗標
+field	esi+0x370	triggerLockedFlag	Trigger +0x370：狀態旗標位元組（短格式與找到記錄後的連結同步讀它）
+field	esi+0x380	triggerLinkWord	Trigger +0x380：存檔讀入的 16 位連結值來源
+field	esi+edi*1+0x9	triggerLockCode	Trigger +0x371 起八個鎖碼位元組，各為 R(4) 的低位元組

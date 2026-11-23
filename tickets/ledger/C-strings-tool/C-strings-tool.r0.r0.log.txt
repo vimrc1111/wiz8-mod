@@ -1,0 +1,16 @@
+ok  	wiz8-mod/tools/hashdir	0.010s
+ok  	wiz8-mod/tools/shot	0.008s
+ok  	wiz8-mod/tools/slf	48.523s
+--- FAIL: TestFixtureDecode (0.00s)
+    strings_test.go:70: decode /tmp/TestFixtureDecode2266405768/001/f.dat: code=2 err=未實作
+--- FAIL: TestFixtureRoundTrip (0.00s)
+    strings_test.go:81: decode: code=2 err=未實作
+--- FAIL: TestEncodeFromJSON (0.00s)
+    strings_test.go:89: encode: code=2 err=未實作
+--- FAIL: TestRealRoundTrip (0.01s)
+    strings_test.go:161: decode: code=2 err=未實作
+--- FAIL: TestRealKnownStrings (0.01s)
+    strings_test.go:165: decode /tmp/TestRealKnownStrings1564770274/001/s.dat: code=2 err=未實作
+FAIL
+FAIL	wiz8-mod/tools/strings	0.024s
+FAIL

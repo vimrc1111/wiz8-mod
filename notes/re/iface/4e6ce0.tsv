@@ -1,0 +1,68 @@
+call	406c00	deadlineRemaining	期限減去全域時鐘 0x6eb70c，已過期回零；此處只問是否尚未到期
+call	48fc10	messageOutput	登記簿排除（訊息輸出）：以 MPL 檔名字串、0、1 呼叫；case 以位址樁記錄三個參數與呼叫次數
+call	4e5620	monsterListGetAt	由編號取怪物列表（0x683fad）成員，超界或空成員為 assert；此處編號小於列表筆數
+call	4e5720	monsterTemplateOf	由怪物 +8 物種編號取模板快取 0x6840c7[物種]；未命中會讀模板檔，case 前置條件為已快取
+call	4e6780	monsterStrength	模板 +0x26b 大於零用它，否則用 +0x181
+call	50b800	npcObjectByIndex	由隊員的 NPC 編號取 NPC 物件表成員；編號不小於表筆數時讀第 0 筆，成員旗標 +0xc7 非零視為無
+call	510180	npcMemberTemplate	取 NPC 列表成員物種（+0x18）的模板
+call	5101b0	npcListGetAt	由編號取 NPC 列表（0x683fb1）成員
+call	52e5c0	voiceEvent	登記簿排除（語音事件）：四個參數（語音編號、-1、0、全域 0x5ed8c8）；case 以位址樁記錄參數與呼叫次數
+call	556000	threatLevelFromStrength	強度總和換算威脅等級：((總和的 0.29 次方) 減 3.5) 乘 0.5 取整，低位元組負值為 0、超過 50 為 50
+call	5e1c22	ftol	x87 數值轉整數（朝零截斷），非遊戲規則
+call	5e1f6c	pow	x87 冪運算（_CIpow）；平均等級除以 sqrt(6×人數)、威脅強度的 0.29 次方
+call	5e2c70	listCount	空列表指標回零，否則讀列表 +8 的筆數
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	負堆疊位移，區域暫存（強度總和、人數、等級總和、威脅等級），非外部資料
+data	fffffffffffffff0	無關	負堆疊位移，區域暫存（強度總和、人數、等級總和、威脅等級），非外部資料
+data	fffffffffffffff4	無關	負堆疊位移，區域暫存（強度總和、人數、等級總和、威脅等級），非外部資料
+data	fffffffffffffff8	無關	負堆疊位移，區域暫存（強度總和、人數、等級總和、威脅等級），非外部資料
+data	fffffffffffffffc	無關	負堆疊位移，區域暫存（強度總和、人數、等級總和、威脅等級），非外部資料
+data	5ebca0	partyCountScale	f32 6.0；平均等級的分母為 sqrt(6×人數)；來源 exe 0x4e6eb9
+data	5ebe80	roundHalf	f64 0.5；平均等級的冪指數與四捨五入加數，也用於威脅等級式的乘數
+data	5ed8c8	voiceEventArg4	語音事件第四參數（全域，執行時可變），case 以輸入涵蓋
+data	5ee5fc	voiceEasy	難度狀態 0 的語音編號（全域），case 以輸入涵蓋
+data	5ee600	voiceMid	難度狀態 1 的語音編號（全域），case 以輸入涵蓋
+data	5ee604	voiceHard	難度狀態 2 的語音編號（全域），case 以輸入涵蓋
+data	617320	messageEasyName	訊息 MPL 檔名字串位址（狀態 0），只當立即值傳給 48fc10
+data	617330	messageMidName	訊息 MPL 檔名字串位址（狀態 1），只當立即值傳給 48fc10
+data	61733c	messageHardName	訊息 MPL 檔名字串位址（狀態 2），只當立即值傳給 48fc10
+data	6836a8	battleState	戰鬥物件指標；+0xa52 旗標非零時直接播語音
+data	6837a1	partyFlagTable	八筆、間隔 0x118 的位元組旗標表第 0 筆；隊員在場且 +0xa49 為零時寫 +0xa4d 是否非零
+data	6838b9	partyFlagTable	旗標表第 1 筆（0x6837a1 加 0x118）
+data	6839d1	partyFlagTable	旗標表第 2 筆（0x6837a1 加 0x230）
+data	683fad	monsterList	怪物列表指標，+0 成員陣列、+8 筆數
+data	683fb1	npcList	NPC 列表指標，+0 成員陣列、+8 筆數
+data	684061	partyFlagTableEnd	旗標表結尾（第 8 筆之後）的迴圈界限，非資料
+data	6850b0	lastMusicTime	上次的期限值，交給 406c00 判斷尚未到期
+data	6850b4	previousDifficultyState	上次的難度狀態位元組；本函式寫入新狀態
+data	685174	partyCharacters	隊員記錄陣列基址，每位間隔 0x1862
+data	685178	partyRoster	隊員名冊陣列基址，每位間隔 0x106；+0 在場旗標、+0xfa NPC 編號
+data	689aef	difficultyStateCounters	三個 u32 計數器（每種難度狀態一個），本函式遞增當前狀態那個
+field	eax+0x0	無關	通用基址暫存器的偏移 0：列表成員陣列指標或物件首個欄位，指標讀取本身，與規則數值無關
+field	eax+0x25f	templateClass	模板類別欄；與隊員 NPC 的類別相同者視為已在 NPC 列表
+field	eax+0x28	listNpcFlagA	NPC 列表成員旗標 +0x28，非零才參與比對
+field	eax+0x29	listNpcFlagB	NPC 列表成員旗標 +0x29，非零才參與比對
+field	eax+0x2a	listNpcFlagC	NPC 列表成員 +0x2a，須等於 1 才參與比對
+field	eax+0x2e	npcKind	NPC 物件種類；0x10、0x11、0x18 設 +0xf0，其餘設 +0xf1
+field	eax+0x6	npcClassRecordPointer	NPC 物件指向類別記錄的指標；+0x5f 為類別
+field	eax+0xa52	battleFlag	戰鬥物件旗標，非零時直接播語音
+field	eax+0xf0	npcFlagF0	NPC 物件旗標 +0xf0，種類為 0x10／0x11／0x18 時設 1
+field	eax+0xf1	npcFlagF1	NPC 物件旗標 +0xf1，隊員狀態 0x12 時清零、其他種類設 1
+field	ebx+eax*1+0x89	characterLevel	隊員等級（u32），計入平均等級
+field	ebx+eax*1+0xb01	characterStatus	隊員狀態（u32），不小於 0x12 的不計入
+field	ebx+eax*1+0xb11	characterHp	隊員目前 HP（u32），零不計入
+field	ecx+0x0	無關	通用基址暫存器的偏移 0：旗標表或名冊的首位元組／dword 讀取，與 ecx+ebp 或 +0xa4d 為同一類寫法，語意見各專名
+field	ecx+0x5f	npcClass	NPC 類別記錄的類別位元組；0 與 1 不做列表比對
+field	ecx+ebp*1	partyPresent	隊員名冊在場旗標（名冊 +0）
+field	ecx+ebp*1+0xfa	npcId	隊員名冊 +0xfa 的 NPC 編號，只有前兩位使用
+field	ecx-0x4	characterFlag49	隊員記錄 +0xa49，為零才更新旗標表
+field	edi+edx*1+0xb01	characterStatus	隊員狀態（u32），0x12 時清 NPC 旗標 +0xf1
+field	esi*4+0x689aef	difficultyStateCounter	依難度狀態遞增的 u32 計數器
+field	esi+0x0	partyPresentOrFlag	名冊在場旗標（名冊基址 esi 的 +0）
+field	esi+0x107	monsterState	怪物狀態（u32），不小於 0x12 的不計入
+field	esi+0x15	monsterPresent	怪物在場旗標，零不計入
+field	esi+0x16	monsterKind	怪物種類位元組，須等於 1 才計入
+field	esi+0x27	monsterMaxHp	怪物最大 HP（u32），血量百分比的分母
+field	esi+0x2b	monsterHp	怪物目前 HP（u32），零不計入
+field	esi+eax*1	partyPresent	隊員名冊在場旗標（名冊基址加 ebp 偏移）
+field	esi+eax*1+0xfa	npcId	隊員名冊 +0xfa 的 NPC 編號，供 NPC 旗標迴圈使用

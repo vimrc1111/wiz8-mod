@@ -1,0 +1,49 @@
+call	2b6	無關	objdump 把 0x51991f 前一函式尾端跨界錯解成子呼叫；funcs 入口 bytes 與原版重放從 0x519920 開始均沒有此呼叫，並非遊戲 helper。
+call	5100b0	findMonsterGroupIndex	依群體 ID 搜尋活動與備用群體列表；找不到回 -1，備用索引加 10000。來源 0x5100b0..0x510176。
+call	5101b0	monsterGroupAtIndex	將活动或備用索引轉成群體指標；正常列表查找成功必有非空記錄。來源 0x5101b0..0x51026c。
+call	52e690	queueCharacterFailureMessage	無效且 showFailure 非零時送提示；回傳值被忽略，不影響有效旗標。案例提供已包含該角色的提示遮罩，使原版重複提示抑制路徑照常執行。來源 0x5199a1..0x5199d5、0x52d638..0x52d663。
+call	537780	monsterGroupMemberInAttackRange	逐成員計算隊伍至怪物表面距離，任一成員在含端點射程內即有效；不讀群體活躍、HP、可見或遮擋欄。來源 0x537853..0x537924。
+call	53be00	makeCharacterAttackSource	清空 52-byte 攻擊來源記錄，設來源種類 1、角色槽與未選怪物 -1。來源 0x53be23..0x53be44。
+data	10	無關	參數區清理的大小被資料引用分析列出，非規則資料。
+data	4	無關	堆疊參數及區域偏移，非絕對資料位址。
+data	8	無關	堆疊區域攻擊來源與參數的偏移，非規則表。
+data	c	無關	參數清理／堆疊偏移，非規則資料。
+data	ffffffffffffffcc	無關	52-byte 區域攻擊來源所需的堆疊配置量被符號延伸列出，非資料指標。
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail；群體指標為空時停止，正常列表不會到該分支。
+data	61a010	groupPointerAssertionText	非空群體指標的診斷字串，沒有規則數值。
+data	61a604	attackTargetSourceFilename	查找與 assertion 的診斷來源檔名，不參與群體目標規則。
+data	5ed8c8	failureMessagePriority	提示佇列參數，回傳被忽略；沿用 exe 初值，與有效旗標無關。來源 0x5199a7、0x52e6e4。
+data	5ed914	failureMessageTiming	提示時間參數，回傳被忽略；沿用 exe 初值，與有效旗標無關。來源 0x5199a1、0x52c829。
+data	685174	partyCharacterRecords	角色槽乘 0x1862；本函式失敗提示與射程子函式讀同一角色。案例以索引欄位配置八槽，沒有把所有槽複寫成一人。
+data	68c530	groupOutOfRangeMessageId	射程失敗提示 ID，沿用 exe 資料；訊息 helper 不參與有效旗標。
+data	685178	characterActionRecords	角色副表 stride 0x106；存在旗標與 context 分別選擇主手、副手、法術、物品或特殊動作。來源 0x4e77b0、0x53c270。
+field	C+0xb11	characterHitPoints	角色生命非零才可取有效攻擊類別；保持完整 u32。
+field	C+0xb01	characterMainCondition	主要狀態小於 18 才可取有效攻擊類別。來源 0x53c2ab。
+field	Q+0x0	characterPresent	角色副表存在旗標，非零表示在場。來源 0x53c283。
+field	Q+0x1,Q+0x5	mainActionKindAndIndex	主手動作種類獨立輸入 0..8，索引同步所選法術 ID；種類 0/1 的武器選擇依種類而非索引。來源 0x4e77fa。
+field	Q+0x3d,Q+0x41	offActionKindAndIndex	副手動作種類獨立輸入 0..8，索引同步所選法術 ID。來源 0x4e780f。
+field	Q+0x75	queuedSpellId	排程法術 ID，亦同步主副手動作索引及兩物品嵌入法術；零無射程，非零讀取該法術記錄射程。來源 0x4e7890、0x519a4e。
+field	Q+0xa5	queuedItemTargetList	context 4 的物品目標清單指標；Q+0x19、Q+0x49 另供主副手動作種類 8，首筆使用合成物品 0。來源 0x4e78b5、0x519a74。
+field	C+0x1149,C+0x11a4	weaponAttackKinds	兩攻擊槽種類；1/3 讀物品射程，其他種類回短射程。來源 0x519b53。
+field	C+0x114d,C+0x11a8	weaponAttackAvailable	兩攻擊槽是否可用；所選槽不可用時子函式送錯誤訊息。本節點 context 8 的默认動作類別 0 仍選主手，沒有使用雙手最大射程。來源 0x519a3d、0x519b2d。
+field	C+0xfa5,C+0xfb1	weaponItemIndices	固定分別指向 arena 合成物品 0、1，屬記錄配線；兩物品射程分別輸入。來源 0x519b75。
+data	68516c	itemDefinitions	物品記錄 stride 269；兩個合成物品分別提供武器射程與嵌入法術 ID，沒有複製 exe 資料。
+field	I+0x47	weaponRangeClass	主手與副手物品的 u8 射程類別，分別輸入。來源 0x519b92。
+field	I+0x63	itemSpellId	物品嵌入法術 ID；案例同步所選法術 ID，零表示沒有法術。來源 0x52084a。
+data	65be1c	spellDefinitions	法術 stride 447，案例依 spellId 索引寫合成法術射程，無 exe 表入庫。
+field	F+0x12f	spellRangeClass	有號射程類別 -1..3，法術與物品共用所選記錄。來源 0x519a6a、0x520867。
+data	683fb1,683fbd	activeAndReserveMonsterGroups	兩個群體列表可獨立有或無同一合成記錄，均執行原版查找；找不到提前無效。
+field	G+0x0	monsterGroupId	記錄 ID 與參數 ID 獨立輸入，不固定查找成功。
+field	G+0x8	monsterGroupMembers	指向合法成員列表，0..2 筆，兩筆為不同怪物 ID 與不同位置。來源 0x537861。
+data	683fad	monsterRecords	原版怪物查找列表，兩笔 ID 123、124 及各自位置指標是 arena 配線。來源 0x4e5950。
+field	M+0xc	monsterPositionRecord	每個成員分別指向一個 arena 位置物件；其座標與半徑分別輸入。
+field	position+0x118..0x120	monsterWorldPosition	兩成員三維 float32 位元座標；群體檢查不採用怪物可見性或遮擋。來源 0x4534c0、0x4c7cb0。
+field	position+0x18c	monsterCollisionRadius	兩成員各自碰撞半徑 float32 位元，計距離時扣除。來源 0x4c7d28。
+data	65a0f8	partyWorldPosition	隊伍三維 float32 位元座標 +0x8c..0x94，垂直高度扣 exe 常數後存成 float32。來源 0x421070、0x4c7cf4。
+data	659c0c	partyCollisionShape	+0x174 隊伍半徑，獨立輸入並从距離扣除。來源 0x4c7d2f。
+data	68edcc	battleActionRecord	context 7 使用戰鬥動作類別 7 與輸入法術 ID；案例配置合法物件。來源 0x4e78cf。
+data	683f94,683f95,683f96	combatActionModes	普通模式固定 0、特殊法術選擇為輸入、特殊物品模式固定 1，使 context 2 兩條來源均合法；context 6 固定普通動作解析。來源 0x4e7824、0x53bc90。
+data	68518d,68ec78	selectedCharacterAndActionMode	案例選角 -1、動作模式 0；context 6 解析到普通主手動作。來源 0x53bcaa..0x53bd18。
+data	69bf3c,69b9a0,69b9a4	selectedSpecialSpellOrItem	特殊法術物件的 +0x100/+0x104 同步法術 ID；特殊物品的首選指標空、後備指標為物品列表。來源 0x5a1350、0x59e0d0。
+data	683fd7	characterMessageState	提示管理物件 +0x68 指向既有重複提示遮罩；此子系統不改有效旗標，案例使訊息不重複排入。來源 0x52d640。
+data	603ac8,5ebb34,5ebc40	groupRangeGeometryConstants	高度偏移、最小表面距離、射程單位由既有 runtime loader 從使用者 exe 讀；不將表或原版 bytes 寫入 repo。來源 0x4c7ce5、0x4c7d35、0x51aa05。

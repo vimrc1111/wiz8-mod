@@ -1,0 +1,2 @@
+ok node-native 54df00 cases=1450
+FAIL g6b-emu

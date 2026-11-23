@@ -1,0 +1,34 @@
+PASS dbsname 往返逐 byte 相同（items 819×1、monsters 595×4）
+PASS dbsname 改一欄只動該欄
+PASS dbsname 超長拒絕（31 units 可、32 拒；怪物 24 拒）
+PASS dbsname 整合：兩條建置路相同、PATCH.002 內為譯文、sha 不符被拒
+ok dbsname.test
+PASS zhpatch：逐 byte 相同（bfa6766836110183…）
+PASS zhpatch：nsf/NPC_MYLES.json sha 不符被拒
+PASS zhpatch：msg/ARNIKA.json sha 不符被拒
+PASS zhpatch：stringdata.json sha 不符被拒
+PASS zhpatch：fact.json sha 不符被拒
+ok zhpatch.test
+?   	wiz8-mod/internal/dbsname	[no test files]
+?   	wiz8-mod/internal/fact	[no test files]
+?   	wiz8-mod/internal/glossary	[no test files]
+?   	wiz8-mod/internal/nsf	[no test files]
+?   	wiz8-mod/internal/slf	[no test files]
+?   	wiz8-mod/internal/stringdata	[no test files]
+?   	wiz8-mod/internal/strlib	[no test files]
+ok  	wiz8-mod/tools/atlas	0.596s
+?   	wiz8-mod/tools/dbsname	[no test files]
+ok  	wiz8-mod/tools/fact	0.067s
+ok  	wiz8-mod/tools/fitcheck	0.030s
+ok  	wiz8-mod/tools/hashdir	0.016s
+ok  	wiz8-mod/tools/nsf	0.485s
+ok  	wiz8-mod/tools/shot	0.019s
+--- FAIL: TestRealArchives (0.01s)
+    slf_test.go:294: 只找到 1 個封存檔：[/mnt/c/Program Files (x86)/Steam/steamapps/common/Wizardry8_Uninstall/Localization/Fan-Patch1.28/POL/Lang.SLF]
+FAIL
+FAIL	wiz8-mod/tools/slf	0.052s
+ok  	wiz8-mod/tools/strings	0.048s
+ok  	wiz8-mod/tools/strlib	0.189s
+ok  	wiz8-mod/tools/trcheck	0.067s
+?   	wiz8-mod/tools/zhpatch	[no test files]
+FAIL

@@ -1,0 +1,52 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "002ab410cb1205f0ab621aed754f4b342496678b09ec98401a732b71ea1b0d70",
+  "zh": "我會留意 Rapax 的動靜。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "baac8000603fb32bb8e338bd85acda439470f99bc083aed19ae96f8b29f1a222",
+  "zh": "這裡一切正常。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "9bb1df28db4bb135cef6562a3b727ecc675993a70a8ec2cb5e385be0c87d8995",
+  "zh": "小心別從樹枝上掉下去！"
+ },
+ {
+  "id": 5,
+  "src_sha256": "f0a2c4ebe0527680264718b2f90301e13202a12b02b669862270f80f0c12f9ae",
+  "zh": "這邊沒有 Rapax ……"
+ },
+ {
+  "id": 6,
+  "src_sha256": "5ab3b14c4eec80205b2cdcbae2c211d0afd04fe2aea5a91fc215c21bdb78f553",
+  "zh": "這裡沒看到半隻 Ratts 。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "919a884f6002d990b05c63c940b750255f792478c61044faaa7324ce0d3e6a3e",
+  "zh": "呼。上面好熱，對吧？"
+ },
+ {
+  "id": 8,
+  "src_sha256": "2589e3082ff038ca7a26d05162fb9bc95a2aeb4b370ac916b61e4c2c6cdc3ffe",
+  "zh": "喂！喂！別打了！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "3d4c69af6cd2ce2606b3d475242a3106ef924a313b8baede587485b30f62c9f2",
+  "zh": "我就知道不該相信你們！"
+ },
+ {
+  "id": 10,
+  "src_sha256": "2f4845b34fea6a78fdc6f8ed7211f3df0437a491e2b25b4004bd6d552ec2ea7c",
+  "zh": "你們是替 Rapax 做事的！我就知道！"
+ },
+ {
+  "id": 11,
+  "src_sha256": "69477d87d23caffb659a4f14bb99c8c4b76b709ac1dd6fd7e93f61e5fc223fc4",
+  "zh": "原來你們在這！上，幹掉他們！"
+ }
+]

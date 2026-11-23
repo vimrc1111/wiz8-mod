@@ -1,0 +1,17 @@
+call	2b6	無關	反組譯把 srAssertFail import 的識別值當成呼叫位址；只在角色不在場的斷言路徑（cov-exempt 的塊）
+call	52a2f0	characterMaxHpRecompute	由等級、法術等級欄與 +0xb15 重算最大 HP 並調整現有 HP，HP 歸零時套狀態 0x12；未登記，emu 原樣執行，calc 以 x87 64 位元有效位數重現
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import；只在角色不在場的斷言路徑呼叫，stop 無返回值可差分
+data	61a710	無關	斷言檔名字串位址，僅 srAssertFail 路徑使用
+data	61c8ac	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	685174	characterRecords	角色記錄陣列基址（每人 0x1862 bytes）
+data	685178	partyPresenceRecords	在場旗標記錄陣列基址（每人 0x106 bytes，第 0 byte 為在場旗標）
+data	68c09c	messageTextTable	訊息文字表指標；+0x710 的字串指標原樣交給 58aad0，case 當輸入、calc 原樣輸出
+field	eax+0x710	訊息文字表項 +0x710	旗標非零時交給 58aad0 的字串指標
+field	ecx+eax*2	在場旗標	第 who×0x106 byte 的記錄首 byte，為零是斷言路徑
+field	edi+0xa05	角色狀態槽 +0xa05	為零時套狀態 1（持續 0x270f）
+field	edi+0xb0d	角色最大 HP +0xb0d	為零時不處理
+field	edi+0xb11	角色 HP +0xb11	為零時不處理；重算後仍非零才進受傷反應 52f2c0
+field	edi+0xb15	最大 HP 加成 +0xb15	減去 amount（32 位元回繞）後交給 52a2f0 重算

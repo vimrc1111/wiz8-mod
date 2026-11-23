@@ -1,0 +1,16 @@
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	68516c	itemDefinitions	物品定義庫基址指標；索引乘 269 取得定義記錄，讀 +0x3e 類型（須為 2 才可拆）
+call	51c020	initNewItem	建立新物品實例（D4 節點）；本函式原樣重放並直接呼叫其 F 重現：把實例 id、擲骰或最大數量與旗標寫進暫存實例；骰子回傳取自 case 輸入 diceRet
+call	51fd20	swapHandRecords	兩手記錄互換（數量為 1 時）；原樣重放（不登記成節點），calc 重現：任一手為空則搬過去，皆有物品則經暫存記錄三次搬移，結束把該角色的忙碌旗標寫 0
+call	51fe30	moveItemInstance	把來源記錄搬進空目的記錄、來源清空並兩次呼叫手部刷新；原樣重放（不登記成節點），calc 重現：+0xa 先清零、12 bytes 複製、來源改為空
+call	520d10	equipmentActionRefresh	裝備／行動刷新（D4 節點）；case 位址樁，記錄擁有者與旗標參數與呼叫次數，第一參數多為堆疊暫存記錄故不比對，回傳無人使用
+field	edi+0xfa5	handA	角色手 A 物品記錄（12 bytes：id、數量、旗標）；方向 7 的來源、方向 6 的目的
+field	edi+0xfb1	handB	角色手 B 物品記錄（12 bytes）；方向 6 的來源、方向 7 的目的
+field	eax+edx*1+0x3e	itemType	所選物品定義 +0x3e 類型 byte；須為 2 才可拆分或互換
+field	edx+eax*1+0x3e	itemType	同上（方向 7 分支重新定位定義後讀取）
+field	esi+0x4	handCount	來源手記錄 +4 的數量 byte；1 為互換或不動，其他拆成一半
+field	esi+0x6	handFlag6	來源手記錄 +6 旗標 byte；非零時新記錄 +6 置 1
+field	esi+0xb	handFlagB	來源手記錄 +0xb 旗標 byte；非零時新記錄 +0xb 置 1

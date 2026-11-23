@@ -1,0 +1,25 @@
+call	2b6	invalid_spell_assert	IAT 0x5ebaf4 的 srAssertFail；僅卷軸或裝置／樂器法術編號為零的非法資料，非資格公式子呼叫。
+call	4acba0	spell_item_minimum_class_level	由法術記錄 +0x56 的等級求裝置／樂器最低職業等級；原版子函式直接重放，calc 讀 exe 0x4acbf8 分派表。
+data	4	無關	分析器把子呼叫後的參數清理量誤列為資料引用，沒有讀取規則資料。
+data	8	無關	分析器將函式第二個參數的堆疊位移列為資料引用，實際是物品索引參數。
+data	5ebaf4	invalid_spell_assert_import	srAssertFail 匯入槽，只處理零法術編號的非法資料。
+data	61a5ec	invalid_spell_assert_condition	assert 的條件文字，非公式資料。
+data	61a758	invalid_spell_assert_source	assert 的原始檔名文字，非公式資料。
+data	68516c	item_definition_records	物品定義陣列指標；第二參數選第 i 筆，記錄長 269 bytes，case 以 indexed arena 提供。
+field	eax+0x0	required_attribute_id	兩組屬性需求的編號；255 表示略過，其餘合法索引 0..6。
+field	eax+0x1	required_attribute_minimum	屬性需求的 u8 下限，與角色有效屬性作 u32 比較。
+field	ebp+0x69	current_profession	當前職業索引，允許職業遮罩只測此職業。
+field	ebp+0x71	race	種族索引，測允許種族遮罩。
+field	ebp+0x75	gender	性別索引；物品遮罩為 3 時直接允許，否則測對應 bit。
+field	ebp+0xad	bard_instrument_class_level	角色職業歷史級數列第 8 筆（0x8d+4×8）；物品種類 8 的樂器等級門檻，職業列序見 notes/re/growth.md:133。
+field	ebp+0xb1	gadgeteer_device_class_level	角色職業歷史級數列第 9 筆（0x8d+4×9）；物品種類 6 的裝置等級門檻，職業列序見 notes/re/growth.md:133。
+field	ebp+eax*2+0x1a3	effective_skill_value	有效技能列 u32，技能索引每筆 38 bytes；兩組需求比較都讀入。
+field	ebp+ecx*4+0xe9	effective_attribute_value	有效屬性列 u32，每筆 20 bytes，STR INT PIE VIT DEX SPD SEN，見 notes/re/growth.md:11。
+field	ebp+esi*4+0xbcd	learned_spell_state	法術編號索引的 u32 已學狀態，種類 3 卷軸僅在值恰為 1 時拒絕。
+field	ecx+0x0	required_skill_id	兩組技能需求編號；255 略過，合法索引 0..40。
+field	ecx+0x1	required_skill_minimum	技能需求 u8 下限，對有效技能值作 u32 比較。
+field	esi+edx*1+0x42	item_kind	物品種類；3 卷軸、6 裝置、8 樂器額外檢查，其餘種類不加此條件。
+field	esi+edx*1+0x63	item_spell_id	物品法術編號 u8；卷軸／裝置／樂器必須非零，同時選擇已學狀態或子呼叫法術記錄。
+field	esi+edx*1+0x76	allowed_professions	允許職業 u16 遮罩，見 notes/re/combat-2.md:95。
+field	esi+edx*1+0x78	allowed_races	允許種族 u32 遮罩，見 notes/re/combat-2.md:95。
+field	esi+edx*1+0x7c	allowed_genders	允許性別 u8 遮罩，值 3 直接放行，見 notes/re/combat-2.md:95。

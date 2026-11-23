@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+556b10	公式	D4	group_spawn_selection	groupSpawnSelectionNode	不確定：依輸入種類轉換群組模板並建立群組，可能屬召喚／遭遇規則而非單純腳本流程；讀種類參數、來源+0x8及群組記錄+0x16、+0x34c，輸出新群組並依定位結果登錄或刪除，build/wiz8.asm:465655、build/wiz8.asm:465737。
+5592d0	公式	D4	npc_attribute_initialization	npcAttributeInitializationNode	讀來源+0x170起的屬性、目標+0x69職業及+0x71種族查表，分配70點並以100為上限及亂數調整，寫目標+0xe5起間隔0x14的七項屬性及+0x199、+0xe1，build/wiz8.asm:469457、build/wiz8.asm:469463。
+559650	公式	D4	npc_starting_equipment	npcStartingEquipmentNode	讀來源+0x40起物品清單、物品+0x3c、+0x3f、+0x86、+0x8c及角色+0x69、+0x71與技能欄，按物品評分與可用性挑選初始裝備，透過裝備／背包加入呼叫寫角色+0xf5d起裝備槽與背包，build/wiz8.asm:469792、build/wiz8.asm:469867、build/wiz8.asm:470023。
+559bc0	公式	D4	npc_skill_conversion	npcSkillConversionNode	讀技能索引、角色+0x69、+0xded起與+0xe5d起領域值及來源+0x178起技能，取最大值、職業限制與亂數縮減後回傳最多20的技能初值，無直接欄位寫入，build/wiz8.asm:470153、build/wiz8.asm:470343、build/wiz8.asm:470348。
+55a630	公式	D4	shop_initial_stock	shopInitialStockNode	讀商人+0x6所指記錄的+0x2ca貨單、每項數量+0x4與旗標+0x5及物品等級分類，逐件比較百分骰並將成功數寫入商人+0xa庫存清單，build/wiz8.asm:471108、build/wiz8.asm:471124；notes/re/loot.md:27。
+55a7b0	公式	D4	shop_stock_add	shopStockAddNode	讀物品+0x3e類別、+0x66堆疊型態與加入數量，決定拆成獨立條目或累加，寫商人+0xa清單條目的+0x8數量及+0x10件數，build/wiz8.asm:471260、build/wiz8.asm:471268、build/wiz8.asm:471275；notes/re/loot.md:27。
+55a930	公式	D4	shop_sold_stock_merge	shopSoldStockMergeNode	讀待售物品索引、物品+0x3e與+0x66及售出件數，依堆疊型態合併庫存並保證另一計數至少1，写商人+0xa清單條目的+0x8及+0x10，build/wiz8.asm:471425、build/wiz8.asm:471431、build/wiz8.asm:471442。
+55aad0	公式	D4	shop_stock_level_class	shopStockLevelClassNode	讀物品+0x85有號等級與平均隊伍等級，窄化換算並限制上下界後回傳0至3的庫存機率分類，無直接欄位寫入，build/wiz8.asm:471502、build/wiz8.asm:471543、build/wiz8.asm:471556；notes/re/loot.md:27。
+55ab80	公式	D4	shop_optional_restock	shopOptionalRestockNode	讀貨單數量+0x4、旗標+0x5、現有庫存+0x10及物品等級分類並檢查物品508的fact，百分骰決定補貨、三分骰變動缺額的一半，輸出新增庫存數至商人+0xa清單，build/wiz8.asm:471705、build/wiz8.asm:471715、build/wiz8.asm:471738；notes/re/loot.md:27。
+55ae00	公式	D4	shop_stock_remove	shopStockRemoveNode	讀庫存條目+0x8、+0x10、物品+0x66與移除量，按堆疊型態扣減並限制最低為0，寫條目+0x8或+0x10及耗盡標誌，build/wiz8.asm:471843、build/wiz8.asm:471854。
+55ae70	公式	D4	shop_stock_turnover	shopStockTurnoverNode	讀條目+0x0、+0x10、物品+0x41與貨單+0x5旗標，對允許流出的庫存逐件擲百分骰並將計數交扣庫存函式，輸出条目+0x8／+0x10的減量，build/wiz8.asm:471933、build/wiz8.asm:471949。
+55afa0	公式	D4	shop_timed_restock	shopTimedRestockNode	讀時間0x686a48與商人+0xe、+0x12、貨單基準量、庫存+0x8與+0x10及物品+0x66，依0xa8c0／0x15180間隔與強制旗標補貨、流出及正規化計數，寫商人庫存與兩個時間戳，build/wiz8.asm:472112、build/wiz8.asm:472144、build/wiz8.asm:472167；notes/re/loot.md:27。
+55b250	公式	D4	shop_can_sell_item	shopCanSellItemNode	讀物品+0x41的0x2旗標及商人類別接受結果，拒絕禁止出售物品並回傳交易可行布林值，無直接欄位寫入，build/wiz8.asm:472239、build/wiz8.asm:472246。
+55b290	公式	D4	shop_accepts_item_category	shopAcceptsItemCategoryNode	讀物品+0x3e類別與商人+0x6所指記錄+0x2d6接受類別位元，回傳是否接受該類物品以限制交易，無直接欄位寫入，build/wiz8.asm:472270、build/wiz8.asm:472276。
+55b5e0	公式	D4	shop_transaction_price	shopTransactionPriceNode	讀物品估值、物品+0x86、+0x66、+0x3e、實例+0x4數量與+0x6辨識旗標、商人定義+0x2ce／+0x2d2倍率及議價技能，算買賣價並對未辨識價除4且最低1，輸出整數價格，build/wiz8.asm:472528、build/wiz8.asm:472579、build/wiz8.asm:472597。
+55b730	公式	D4	shop_sell_transaction	shopSellTransactionNode	讀物品+0x41、商人接受類別與出售數量／免付款旗標，算交易價後增加隊伍金錢並合併商人庫存，輸出金錢及商人清單+0x8／+0x10計數，build/wiz8.asm:472675、build/wiz8.asm:472682、build/wiz8.asm:472695。
+55b7e0	公式	D4	shop_buy_transaction	shopBuyTransactionNode	讀庫存+0x8、物品+0x66／+0x6b與購買量，依堆疊上限分批給物、算價並扣庫存與隊伍金錢，寫物品實例、庫存+0x8／+0x10及可選剩餘量輸出指標，build/wiz8.asm:472757、build/wiz8.asm:472820、build/wiz8.asm:472834。
+55cc00	公式	D4	difficulty	difficultyNode	讀難度0x6850d5、角色+0xa35及輸入數值指標，依難度乘140%或60%且狀態非零交換倍率，寫回該數值指標，build/wiz8.asm:474772、build/wiz8.asm:474787；notes/re/formulas.md:51、notes/re/combat-2.md:34、notes/re/formulas-2.md:25。
+55ce80	非公式	-	item_icon_resource		讀物品+0xcd圖檔名稱與+0x3f種類以組合資源路徑，載入圖示並快取資源編號，build/wiz8.asm:475081。
+560e10	非公式	-	character_screen_switch		切換目前角色指標、關閉既有視窗並重設畫面模式與重繪旗標，最後要求畫面更新，build/wiz8.asm:480454、build/wiz8.asm:480481。
+561ec0	非公式	-	portrait_controls_refresh		角色副表只用來檢查佔位，依介面模式更新頭像按鈕的顯示、啟用與高亮狀態，build/wiz8.asm:481576、build/wiz8.asm:481596。
+562e40	非公式	-	main_screen_redraw		依介面+0xf4重繪旗標派送狀態面板、頭像及文字框绘製，隊伍資料僅用於畫面分支，build/wiz8.asm:483027、build/wiz8.asm:483257。
+563fc0	非公式	-	character_popup_frame		讀角色姓名寬度與頭像位置計算提示框尺寸，結果只供邊框貼圖、繪字及高亮圖形，build/wiz8.asm:484124、build/wiz8.asm:484259。
+564710	非公式	-	character_summary_popup		把角色數值與名稱格式化、量測文字寬度後畫到提示框，沒有回寫角色規則欄位，build/wiz8.asm:484684、build/wiz8.asm:484717。
+564ba0	非公式	-	status_popup		遍歷角色+0xa01狀態只為計算提示框行數與寬度，再繪狀態圖示和名稱，build/wiz8.asm:484961、build/wiz8.asm:484990。
+564d80	非公式	-	combined_status_popup		讀角色+0xa01及+0xa6d狀態清單，限制顯示行數並绘製名稱與數字，輸出僅是提示框，build/wiz8.asm:485189、build/wiz8.asm:485218。
+5651f0	非公式	-	secondary_status_popup		讀角色+0xa6d起狀態計數，計算顯示行數後繪圖示與格式化數字，build/wiz8.asm:485454、build/wiz8.asm:485486。
+565740	非公式	-	active_character_select		檢查角色佔位與狀態後變更介面選中角色、刷新子面板並設重繪旗標，build/wiz8.asm:485845、build/wiz8.asm:485916。
+569c00	非公式	-	portrait_input_dispatch		角色副表只用來辨認有效頭像，對指定輸入事件呼叫按鈕處理器，build/wiz8.asm:491184。
+56a770	非公式	-	character_action_panel		讀角色副表的既有行動種類以切換攻擊、施法或物品操作面板及目前選項，沒有產生行動機率或數值，build/wiz8.asm:492109、build/wiz8.asm:492268。
+56ae20	非公式	-	item_description_dialog		把物品與可選角色指標傳給資訊視窗建構器，配置視窗位置及回呼，build/wiz8.asm:492638、build/wiz8.asm:492657。
+56af80	非公式	-	main_action_button_available		依目前子視窗、戰鬥模式及角色既有可用狀態判斷主畫面按鈕能否操作，輸出是介面啟用值，build/wiz8.asm:492892、build/wiz8.asm:492905。
+56b270	非公式	-	main_action_dispatch		按輸入動作碼開關面板或把固定行動種類交行動登錄器，再刷新介面，屬玩家指令流程，build/wiz8.asm:493030、build/wiz8.asm:493035。
+56c6d0	公式	D4	dialogue_status_cleanup	dialogueStatusCleanupNode	讀互動對象+0x2e、角色副表+0xfa所指對象種類與角色+0xb01、+0xa01狀態，在特定對象下移除狀態並將+0xb11設10，輸出角色狀態及其附屬值，build/wiz8.asm:494756、build/wiz8.asm:494761。
+56d030	公式	D4	dialogue_party_representative	dialoguePartyRepresentativeNode	不確定：對話初始化依角色欄位選代表，但該索引是否進入社交規則尚待確認；讀角色副表佔位與角色+0x4e7，比較後寫互動物件+0xf4代表索引，build/wiz8.asm:495474、build/wiz8.asm:495482。
+56e800	排除	-	dialogue_close		關閉互動 UI、還原按鈕與畫面並釋放資源；[0x683f97]==0 即返回；呼叫點 50777b、507bdc 不讀 eax（呈現／UI；506670 票子 agent 實測走到；cc 判斷）；build/wiz8.asm:497410、497431（原列證據行；入口處 objdump 線性解碼錯位）。
+56ee20	排除	-	dialogue_character_refresh		對話角色面板刷新；565740 依 byte 0x683f97 呼叫，呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:497630、485887。
+56fac0	非公式	-	dialogue_item_selection_display		讀選中物品與交易價格以設定購售按鈕、物品名稱及價格文字，沒有執行交易或扣款，build/wiz8.asm:498808、build/wiz8.asm:498822。
+570cf0	非公式	-	keyword_panel_open		建立對話關鍵字面板、設定文字與回呼並切換頭像按鈕顯示，角色資料僅用於名稱和佔位，build/wiz8.asm:500056、build/wiz8.asm:500299。
+571370	非公式	-	keyword_panel_close		清除關鍵字面板與背景區域並還原已佔位角色的頭像按鈕，build/wiz8.asm:500436、build/wiz8.asm:500460。
+571660	非公式	-	keyword_add		比對輸入文字與物品／NPC名称以分類關鍵字，加入對話詞表後刷新控制項並播放提示音，build/wiz8.asm:500688、build/wiz8.asm:500750。
+572590	非公式	-	selected_item_info_dialog		把目前選中的物品與角色指標交物品資訊視窗建構器，再登錄視窗回呼，build/wiz8.asm:501741、build/wiz8.asm:501756。
+5729c0	非公式	-	trade_item_select		遍歷角色／隊伍／商人既有物品以選中清單項目，增減的+0x254是介面待交易數量並更新圖示和數量文字，build/wiz8.asm:502170、build/wiz8.asm:502211。
+573190	非公式	-	trade_item_filter		依互動物件+0x1d0篩選旗標與角色物品可用性決定清單是否隱藏該物品，回傳列表過濾值，build/wiz8.asm:502589、build/wiz8.asm:502611。
+573ae0	非公式	-	dialogue_action_panel_open		初始化對話行動面板文字、回呼與按鈕，角色技能結果只用於啟用控制項，build/wiz8.asm:503369、build/wiz8.asm:503452。
+573f80	非公式	-	usable_item_select_display		遍歷角色裝備與背包的既有可用物品，回傳選中實例並更新圖示及數量文字，build/wiz8.asm:503693、build/wiz8.asm:503758。
+5743b0	非公式	-	dialogue_keyword_response		剖析玩家文字並派送既有對話腳本，亂數只選未識別輸入的回應台詞或腳本分支，未產生規則數值，build/wiz8.asm:504472、build/wiz8.asm:504504、build/wiz8.asm:504530。
+575810	排除	-	dialogue_offer_item_flow		物品交付對話流程；唯一 56c6d0 呼叫點 56c876 後 jmp 56c8a3 覆寫 eax，回傳不讀（UI；非公式→排除，cc 判斷）；build/wiz8.asm:505584、494841。
+576060	非公式	-	dialogue_message_box		格式化角色技能等數字為通知文字並管理訊息框、佇列及升級音效，數值換算結果只送顯示函式，build/wiz8.asm:506327、build/wiz8.asm:506492。
+576850	非公式	-	dialogue_input_mode_toggle		切換關鍵字输入模式、頭像及對話控制項顯示／啟用，設定介面+0x228模式旗標，build/wiz8.asm:506984、build/wiz8.asm:507004。
+577290	公式	D4	dialogue_greeting_status_reset	dialogueGreetingStatusResetNode	讀NPC初見與定義+0x54、+0x2ea、+0x56、角色佔位及+0xb11／+0xb01，在首度招呼的特定條件下呼叫狀態更新器，以狀態碼0x16、值0xf及0更新角色狀態，build/wiz8.asm:507712、build/wiz8.asm:507721。
+5775d0	非公式	-	dialogue_keyword_cache		比對物品／NPC名称與輸入文字以分類並去除重複關鍵字，配置文字緩衝後加入快取，build/wiz8.asm:507979、build/wiz8.asm:508110。
+577cb0	非公式	-	debug_item_prompt		把選中物品名稱和建立數量、可見旗標輸出為開發介面提示文字，build/wiz8.asm:508610、build/wiz8.asm:508639。
+578850	非公式	-	debug_item_browser		處理開發介面分類及翻頁按鍵，建立符合物品類別的列表並顯示選中名稱，build/wiz8.asm:509762、build/wiz8.asm:509913。
+578d00	非公式	-	debug_item_create_input		解析開發介面輸入的數量與可見旗標，按確定後照指定數量建立物品，數量是人工設定而非掉落公式，build/wiz8.asm:510072、build/wiz8.asm:510082、build/wiz8.asm:510301。
+579ff0	非公式	-	debug_prop_edit_menu		開啟選中物件的鎖／陷阱或寶物表編輯選單，讀物品基址只為顯示鑰匙名稱，build/wiz8.asm:511563、build/wiz8.asm:511583。
+57b880	非公式	-	debug_lock_trap_edit		依開發介面按鍵直接改鎖型與人工設定難度並限制0至10，再重畫編輯提示，屬參數編輯而非開鎖／陷阱判定，build/wiz8.asm:513663、build/wiz8.asm:513725。
+57c230	非公式	-	debug_editor_input_dispatch		按鍵與編輯模式派送建立物件、移動、鎖陷阱及遭遇參數編輯器，讀物品資料只作提示文字，build/wiz8.asm:515142、build/wiz8.asm:515583、build/wiz8.asm:515715。
+57d740	非公式	-	debug_editor_toggle		開關開發用物件編輯介面、複製資料庫名稱作列表並初始化人工選中物品，build/wiz8.asm:516040、build/wiz8.asm:516127、build/wiz8.asm:516341。
+585ed0	非公式	-	character_special_action_display		讀角色欄位換算特殊行動的顯示數字並格式化進文字控制項，結果僅寫介面啟用欄與文字而不進入規則記錄，build/wiz8.asm:526804、build/wiz8.asm:526808、build/wiz8.asm:526862、build/wiz8.asm:526866。

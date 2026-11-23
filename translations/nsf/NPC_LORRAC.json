@@ -1,0 +1,322 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "353e2157fbdf51d2eb69b19cd8a4c830fbc0113cb8f23f9c5c4f2264d06b4415",
+  "zh": "歡迎光臨 Arnika Community Bank 。有什麼我能幫忙（ help ）的嗎？您是來存款還是提款？或者有其他業務？"
+ },
+ {
+  "id": 1,
+  "src_sha256": "db1557298a01fded5cdd0fa8badcf85de1f38a8ecbe33dcc3448ec03fd6be5ea",
+  "zh": "是的，有什麼我能幫忙（ help ）的嗎？"
+ },
+ {
+  "id": 2,
+  "src_sha256": "1104153cc9b99ac72e37e52e9aaa3a9701ee665171ffd02093af9fae760e6e84",
+  "zh": "抱歉。我正要去休息了。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "c9f9865813e2daf71ab0aaa96dd5d948e5fd4681f62e20aa3d6ac769b5b1bbc7",
+  "zh": "我正在休息……"
+ },
+ {
+  "id": 4,
+  "src_sha256": "4b3f01f9bd5a00f2518c5aca6312fd130315d3da01c4e2b09c887ef053cd8cea",
+  "zh": "警衛！！"
+ },
+ {
+  "id": 5,
+  "src_sha256": "cd9b8e680471bd873fca8a5fd8a325b3ebfcded47a80558c236b0e935d074c68",
+  "zh": "救命（ Help ）！"
+ },
+ {
+  "id": 6,
+  "src_sha256": "6c6631dc67f0a51bc7e78320c1dc312c82de4fb7672022771680968013d32d84",
+  "zh": "門口有警衛，以防你們沒注意到……"
+ },
+ {
+  "id": 7,
+  "src_sha256": "efdfb04bd4b9124a33ca63a124cb20316dfc3e043c06527ca84842b782c63f74",
+  "zh": "我只收存款，不收賄賂。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "7e0ed955bfecfa4fa336014bd96bb06614558372b6b15af97b640a06170f21fa",
+  "zh": "通通給我住手！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "3b4e5069b6d344bf1e6e248d342b7de48a4e11c3f598476ed8117fb3f974d406",
+  "zh": "跟客戶約會違反我們的規定。而且你們人還這麼多……"
+ },
+ {
+  "id": 12,
+  "src_sha256": "8569efc4ed5a6273140c2b6ec0ab8d99f4398210808fbb7c0cbbae4fbcc21350",
+  "zh": "謝謝。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "87502711b3c6c07db27a787e5d8746be4291b97d5eb950a03cd787ed01a73ebc",
+  "zh": "那個我不能收進存款。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "c080d043db58e978ab276e8cbee71c8f8cee212d71628a4437e9499d6228ee44",
+  "zh": "不用了，謝謝。我不需要更多了。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "1d5ce96ba51e4d0e0952e9f3f6715171d4e7e31c1c7c7a5feb7d467a3c19d5a7",
+  "zh": "成天都是你們這種人……"
+ },
+ {
+  "id": 19,
+  "src_sha256": "172a6c29ef07501d3fff3848623d3ec2bd63be3d9ed02bf27c1ba474ead13aa7",
+  "zh": "警衛！！！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "9c453911e5b56fc366aa2bee8d6d0e8530ce01575e66002ee6676867f6fce6bd",
+  "zh": "警衛！他們在那裡！！！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "8569efc4ed5a6273140c2b6ec0ab8d99f4398210808fbb7c0cbbae4fbcc21350",
+  "zh": "謝謝。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "07f8e11a29b33b7c7f3457a73b89b0f17fb0b95067be93adc070db40b11901f3",
+  "zh": "這件事我幫不上忙（ help ）。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "13148fd3be93d15882794b7f8f16bec1d3ad56be8dbb1774d5a1ea5e359e71cf",
+  "zh": "這真讓人費解。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "b1dd3391a8a225db95fc0fcd7030809c92c1fb97894fa83e0ebba92578acfe91",
+  "zh": "沒什麼，真的。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "666ca3ddbad378593a7fe87a36b277a2506fe15b9197bb5a2dd8e5d84c642c33",
+  "zh": "聽我說……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "9986725b22e8971ca2b6acead022cfa5a12007ae0e8059f98789101a1a0a475e",
+  "zh": "我一次只能回答兩個問題。這是工會（ union ）的規定。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "b7f232d0fcf86ab4b7710e46e254049b3c5a0788ea55f9fdc8aca40b1bc5bd48",
+  "zh": "還有……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "68217c11213c9482d7ed5d2c742b25f2ddf5c5aa1fd11c8408f833c5b658ecd2",
+  "zh": "你們參加派對一定很搞笑。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "444dfbc70a0f53b41bde8a5ba90babecc6d83f2f7340bd2c96ac6d92061b090c",
+  "zh": "你們說什麼？"
+ },
+ {
+  "id": 30,
+  "src_sha256": "316112be40c8a6267acd244cc7ba260ee134d8441afa7b9062da8408bc462306",
+  "zh": "麻煩再說一次？"
+ },
+ {
+  "id": 32,
+  "src_sha256": "852801598619b0b2e66089d0ff3e04029b58daf76aa0961a385b8205d48895eb",
+  "zh": "我這裡不提供導覽資訊。這是工會（ union ）的規定。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "cc8508412ffe8c0e51ca56a5fb49bc664001406d3354b787ce434f604ebf729e",
+  "zh": "呃，我真的不想談他。他不是我們這裡的客戶。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "cbdccb591f6903f547c8af31a1f87f72d3af5512ec2946d9e8b6c38937951a1f",
+  "zh": "我當然知道他，但你們總不會以為「祂」會在我們這裡開戶吧！"
+ },
+ {
+  "id": 68,
+  "src_sha256": "dfdb6346fdc1ec97a2756bee7e3f3b3af4f9d94764059524dcfb761b58623bdd",
+  "zh": "噢，如果你們在找那個東西，那你們來錯地方了！"
+ },
+ {
+  "id": 71,
+  "src_sha256": "fec0a0a5f09c5f8b8ae838edaf12c595eb7cbf54cb00c3c63335e3e9b40dd6e3",
+  "zh": "這件事去問神殿裡的人。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "482ba165fdb668b69fe94014c62ee4737ba3e8e7d72beb941d2499574a0b72f9",
+  "zh": "我是你們親切的銀行（ bank ）櫃員。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "64d67314d3927cc6af86fbae0962a076417677e8e496bd41beee223bd01b24e5",
+  "zh": "我們這裡不提供那個。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "0d0f402fdacb5ff630092723fbacc08de6f31e78d535c78571922d7583a66613",
+  "zh": "如果你們再待久一點，我就會的。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "e43e5a36e61f0482725193d40f0a7cfe317f5e1e82e578569a83171d1abfb165",
+  "zh": "您好。有什麼我能幫忙（ help ）的嗎？"
+ },
+ {
+  "id": 78,
+  "src_sha256": "55fe74d813e09d70ce14a906ac9d03400887fb48fa1167cd47eb366aab4bf727",
+  "zh": "再見，感謝您蒞臨 Arnika Community Bank 。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "f7e48a90d5d76cfc49d378535781243d1f222928f2b3636c798b3278130cc41b",
+  "zh": "有什麼我能幫忙（ help ）的嗎？"
+ },
+ {
+  "id": 80,
+  "src_sha256": "52f9d8bce9b7f415105abedde3afbe8c70293036b67752b5f50129bbeaa76bd3",
+  "zh": "來錯地方了。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "5112d951320760074fd88ba8840715152d0989cf510d22ae5958a777dd822091",
+  "zh": "好像你們真的在乎一樣……"
+ },
+ {
+  "id": 87,
+  "src_sha256": "fe57cd70ebc6390b37854738b92b0066c601b6f9163238f1042eaeb20e015d17",
+  "zh": "我討厭這份工作。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "60e32ade0b4d0502e8d2514dbdc8f937041378f0087070362527ab9bfb723eef",
+  "zh": "我這裡有一筆存款要給你們……"
+ },
+ {
+  "id": 89,
+  "src_sha256": "f5d47a7eb660ce8e6436f3eaca751eb8e1c3876b3ed9b832179fc2b10efb6908",
+  "zh": "再十分鐘就好……"
+ },
+ {
+  "id": 90,
+  "src_sha256": "fc9848dffe5fcd8948eca9c61c1ad985b076bf7063ae7c73195f2e6cee2dd200",
+  "zh": "我不指路。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "211d39c377590a2d987f075b29da7c6756184df7bec2468a78b87e12784b8d59",
+  "zh": "就在這裡。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "ecb4320f2c34c6e03d23d85458ac20b34289628a23fe644c88a6ffde22c26c5c",
+  "zh": "很抱歉，我不知道。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "ad3509091b2fb1dc05e07c6a3985883f16809412e7f1c63f0de9ec6e475ab39b",
+  "zh": "你們找到了！哎呀，這是一個多星期前被偷的……可惡的小偷。而且老是挑在「我」值班的時候！當然，會有一筆賞金……"
+ },
+ {
+  "id": 105,
+  "src_sha256": "95bd4418383b5f8097cc0d56f04010acf98c09ec4bb82c60882add02a6b6e80f",
+  "zh": "幸好警衛把他們擋在外面。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "fc9848dffe5fcd8948eca9c61c1ad985b076bf7063ae7c73195f2e6cee2dd200",
+  "zh": "我不指路。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "44e68d451c328ba3f8254ff1897b1a8343724e8c4a3dc484788ec2f3c716654b",
+  "zh": "提供我們客戶的個人資訊違反規定。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "bc706938b6c26d42c5f149f148ca368938f227b8ac06f04cd7ff09f78d94a1f4",
+  "zh": "嗯。我……我明白了。噢。呃。請給我一分鐘……呃……"
+ },
+ {
+  "id": 109,
+  "src_sha256": "172a6c29ef07501d3fff3848623d3ec2bd63be3d9ed02bf27c1ba474ead13aa7",
+  "zh": "警衛！！！"
+ },
+ {
+  "id": 110,
+  "src_sha256": "82ac3aab57111204662847435dd35a847b6c2dcf3c0d68af57139c48dc004ced",
+  "zh": "噢……噢不……警衛！！！！！！！！"
+ },
+ {
+  "id": 111,
+  "src_sha256": "2eec6ea2142bfe3ff35e0ed2b4fbc6996a93f6609fa15dba651b45971684123a",
+  "zh": "當然可以，不過在讓您進入保險箱區之前，我需要先看您的銀行卡（ bank card ）。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "45c2095797f380fda856337af8d20c959a43fd246550da234f2b0a05c9fad58d",
+  "zh": "很抱歉。金庫（ vault ）只有銀行（ bank ）人員才能進入。而您當然不是銀行（ bank ）人員。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "8f2f70bc2fc6f8e3b908b16c661b64244453d91a970bbfaa8d056d49e101bf2e",
+  "zh": "謝謝。都辦好了。 Safety Deposit 的入口就在走廊盡頭。請進。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "27794563f4a0ff4e332a6298631af331bdf20bbf0b7a3a8f3f75d40ee8fea0ef",
+  "zh": "當然。您是想存款還是提款？"
+ },
+ {
+  "id": 115,
+  "src_sha256": "2f11c8363792798e269e0bdc70a729fc740329236a7c64907f68319ec992bb0b",
+  "zh": "很抱歉。也許您想等經理回來……他預計是從咖啡休息時間回來，呃，昨天。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "1b8c30da86fab8bf7f04b1b3f9c9ef46be0acd4717aa8a19b4ccb9f1aeed3d57",
+  "zh": "那你們要拿什麼當抵押品？幾把生鏽的劍和一個舊背包嗎？嗯……"
+ },
+ {
+  "id": 117,
+  "src_sha256": "c42ca88e54cad40b8170c814b6bac6267cf6f3f558768cf8f6bb91a39b968eaf",
+  "zh": "當然！ Local 549 。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "3fe805fdcead60e7326811ace15ddedddf0ec626cc6979cd81b0c87f2e4d8dfd",
+  "zh": "如果你們有帳戶，你們就會有卡（ bank card ）……"
+ },
+ {
+  "id": 119,
+  "src_sha256": "fc9848dffe5fcd8948eca9c61c1ad985b076bf7063ae7c73195f2e6cee2dd200",
+  "zh": "我不指路。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "fc9848dffe5fcd8948eca9c61c1ad985b076bf7063ae7c73195f2e6cee2dd200",
+  "zh": "我不指路。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "fc9848dffe5fcd8948eca9c61c1ad985b076bf7063ae7c73195f2e6cee2dd200",
+  "zh": "我不指路。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "fc9848dffe5fcd8948eca9c61c1ad985b076bf7063ae7c73195f2e6cee2dd200",
+  "zh": "我不指路。"
+ }
+]

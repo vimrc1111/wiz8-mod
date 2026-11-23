@@ -1,0 +1,17 @@
+506670	5067c3	事件 0x22 帶旗標時 NPC 0x48 不在 NPC 清單的 assert（srAssertFail，無可差分返回）；calc 在此 panic。
+506670	506ada	事件 0x37 的除錯記錄塊，只在除錯位元組 0x688290 非 0 時執行；依 4e46f0 前例除錯／UI 旗標固定 0，不可達；calc 在 0x688290 非 0 時 panic。
+506670	506ade	同 506ada：事件 0x37 除錯記錄（0x688290 非 0）；calc panic。
+506670	506aea	同 506ada：事件 0x37 除錯記錄（0x688290 非 0）；calc panic。
+506670	506af4	同 506ada：事件 0x37 除錯記錄（0x688290 非 0）；calc panic。
+506670	506d31	事件 0x89 帶旗標時 NPC 0x29 不在清單的 assert（srAssertFail）；calc 在此 panic。
+506670	506d37	同 506d31：NPC 0x29 缺席 assert 的呼叫塊（事件 0x21e 也跳到此）；calc panic。
+506670	506d6e	事件 0x3a 觸發物件查找回空指標的 assert（srAssertFail）；calc 在此 panic。
+506670	506fb5	事件 0xcd／0xe0 的除錯記錄塊，只在除錯位元組 0x688290 非 0 時執行；旗標固定 0（4e46f0 前例），不可達；calc 在 0x688290 非 0 時 panic。
+506670	506fb9	同 506fb5：事件 0xcd／0xe0 除錯記錄（0x688290 非 0）；calc panic。
+506670	506fc5	同 506fb5：事件 0xcd／0xe0 除錯記錄（0x688290 非 0）；calc panic。
+506670	506fcf	同 506fb5：事件 0xcd／0xe0 除錯記錄（0x688290 非 0）；calc panic。
+506670	50763f	事件 0x203 的除錯記錄塊，只在除錯位元組 0x688290 非 0 時執行；旗標固定 0（4e46f0 前例），不可達；calc 在 0x688290 非 0 時 panic。
+506670	507643	同 50763f：事件 0x203 除錯記錄（0x688290 非 0）；calc panic。
+506670	50764f	同 50763f：事件 0x203 除錯記錄（0x688290 非 0）；calc panic。
+506670	507659	同 50763f：事件 0x203 除錯記錄（0x688290 非 0）；calc panic。
+506670	50771d	事件 0x21e 帶旗標時 NPC 0x29 不在清單的 assert 入口（跳到 506d31）；calc panic。

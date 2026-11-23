@@ -1,0 +1,22 @@
+call	2b6	無關	SR.DLL srAssertFail 匯入序號；只拒絕違規參數，合法規則不呼叫
+call	4e5550	monsterIndexByID	依怪物唯一 ID 搜尋當前或備用清單；後者索引加 10000
+call	4e5620	monsterRecordByIndex	將當前或備用清單索引解析為怪物記錄
+call	50e650	statusEffectRebuild	重建狀態修正、總修正及角色有效能力；串接既有純函數與完整差分介面
+call	5100b0	monsterGroupIndexByID	以怪物所屬群 ID 搜尋當前或備用物件群清單
+call	5101b0	monsterGroupRecordByIndex	解析物件群清單索引
+call	510a10	deactivateMonsterGroup	沿父群找到領導群；領導群啟用時停用領導群與四個子群並標記 dirty
+data	4	無關	清理子呼叫參數的堆疊位元組數，不是遊戲資料
+data	8	無關	清理子呼叫參數的堆疊位元組數，不是遊戲資料
+data	c	無關	清理子呼叫參數的堆疊位元組數，不是遊戲資料
+data	5ebaf4	無關	srAssertFail IAT 槽，只供參數合法性診斷
+data	61ad64	無關	斷言與查找失敗的來源檔名字串，不參與規則
+data	61ae50	無關	怪物 ID 不得為 -1 的斷言訊息，不參與合法規則
+data	61ae64	無關	依賴種類必須小於 2 的斷言訊息，不參與合法規則
+data	61ae88	無關	角色索引必須小於 8 的斷言訊息，不參與合法規則
+data	685174	partyCharacterRecords	角色記錄基址，角色步長 0x1862
+data	686a70	currentMapID	目前地圖 ID，寫入選定依賴記錄；也供狀態控制者同地圖判定
+field	eax+0x24c	monsterConditionDependenceBits	怪物依賴旗標，保留原位元並設種類對應位元；案例分別輸入兩怪物旗標
+field	eax+0x4	monsterGroupID	怪物所屬物件群 ID，種類 1 用它找到停用群；案例兩怪物均屬群 0
+field	ecx+eax*1	characterDependencyMonsterID	C+0x181b 加角色步長與種類乘 17；保存怪物唯一 ID
+field	edx+ecx*1+0x1817	characterDependencyMapID	依賴記錄的來源地圖；種類 1 同時為狀態控制者地圖
+field	edx+ecx*1+0x181f	characterDependencyActive	依賴記錄有效旗標設為 1；種類 1 同時為狀態控制者有效旗標

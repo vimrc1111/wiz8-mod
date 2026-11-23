@@ -1,0 +1,31 @@
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffed	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	62a80c	無關	傳給音效函式的音效檔名字串；呈現，不影響規則輸出。
+data	68516c	item_definition_records	物品定義庫指標；以實例編號選記錄（每筆 269 bytes），+0x66 堆疊型態、+0x6b 單次購買上限。
+data	6874ca	手持標記	手持物已設定的標記；手持路徑成功後必為 1（emu 全部失敗列皆為 1），為 0 才呼叫游標提示。
+data	68c09c	messageController	UI 控制器指標；僅在手持標記為 0 時取 +0x1ac4 交給游標提示，不影響返回碼。
+call	408860	playSound	無關：播放現金交易音，旗標為 exe 初值時第一個判斷即返回；呼叫端忽略回傳。
+call	51bf40	payGold	付款：持有金幣扣掉價格，價格大於持有時歸零；只在付款旗標低位元組為 0 時呼叫，原樣跑。
+call	529570	handCursorHint	無關：手持標記為 0 時顯示游標提示；該分支不可達，不影響規則輸出。
+call	5e1c10	heapFree	釋放被摘除的庫存條目緩衝；無規則輸出。
+call	5e27c0	removeStockEntry	把庫存清單第 index 筆摘除並回傳條目指標，後面的條目前移一格。
+call	5e2870	getStockEntry	取庫存清單第 index 筆條目；清單指標為空或 index 不小於筆數回空，來源 exe 0x5e2870。
+call	5e2c70	listCount	清單指標為空回零，否則讀清單 +8 的筆數，來源 exe 0x5e2c70。
+field	eax+0x0	outRemaining	輸出指標指向的 dword：寫入購買前庫存數減實際買到數，輸出指標為空則不寫。
+field	eax+0x10	stockUnits	庫存條目的單位數（u8）；為 0 的條目在交易後從清單剔除。
+field	eax+0x1ac4	無關	UI 控制器 +0x1ac4，只交給游標提示（不可達分支），不影響規則輸出。
+field	eax+0x66	stackType	物品定義的堆疊型態位元組：0 單件、1 依需求量分批、其餘取條目 +9 的批量。
+field	eax+0x6b	purchaseCap	物品定義的單次購買上限（u8），堆疊型態 1 時限制每批數量。
+field	ebp+0xa	stockListPointer	商店物件的庫存清單指標，交給 5e2870、5e2c70、5e27c0。
+field	esi+0x4	itemIndex	庫存條目的物品編號，用來索引物品定義表與傳給實例建立。
+field	esi+0x8	stackQuantity	庫存條目的堆疊數量（u8）；購買量上限與回報剩餘量的來源。
+field	esi+0x9	batchByte	庫存條目 +9 位元組；堆疊型態非 0／1 時寫入實例記錄的批量位元組。

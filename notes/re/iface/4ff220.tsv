@@ -1,0 +1,38 @@
+call	40efa0	boundedRandom	能力免疫與維持原目標各擲 R(100)，子節點另抽候選與位置；notes/re/emu.md。
+call	4ac9d0	spellTargetKind	從目前載入法術記錄取目標類別，決定重選單體／群體或地點；0x4ac9e8。
+call	4e5840	resolveSourceMonster	依來源怪物 ID 取已載入怪物，缺失時原版 assert；0x4ff246。
+call	4fedc0	confusedSpellRandomTarget	排除施法者，從在場角色與存活啟用怪物抽候選；沿用節點 004fedc0。
+call	4fef90	confusedSpellRandomLocation	以法術射程與來源位置重選目標座標；沿用節點 004fef90。
+call	53bea0	isCharacterCaster	來源種類 1 且角色索引有效；第二參數零，不採接受混合目標的分支。
+call	53bf10	isMonsterCaster	來源種類 2 且怪物 ID 有效；第二參數零，不採接受混合目標的分支。
+call	547940	characterHasConfusionProtection	目前職業與種族能力聯集，檢查能力 7；正式能力名稱未證實，abilities.md:11。
+call	5479b0	confusionProtectionChance	目前職業等級縮放最大 50 的能力免疫門檻；abilities.md:13、combat-2.md:13。
+call	590950	characterConfusionNotice	重選成功後格式化角色名字與混亂通知，不改目標描述；case 使用空通知與空名字。
+call	590b40	monsterConfusionNotice	重選成功後格式化來源怪物名字與混亂通知，不改目標描述；case 提供已載入群組名字。
+call	5e1c22	truncateProtectionChance	能力值經 CRT _ftol 朝零截斷，保留 f32 縮放常數精度；notes/re/emu.md。
+data	4	無關	介面掃描將位移常數視為資料引用；實際為來源／目標描述角色索引，不是絕對全域。
+data	8	無關	介面掃描將位移常數視為資料引用；實際為來源／目標描述怪物 ID，不是絕對全域。
+data	c	無關	堆疊清理量 12；不參與遊戲機率或目標規則。
+data	4ff388	spellRedirectDispatch	八種法術目標類別的重選分派表；calc 執行時讀使用者 exe。
+data	61920c	無關	怪物查找 assert 的原始檔名字串；只作診斷，不影響合法來源的規則。
+data	685174	characterRecords	角色陣列基址，索引步距 6242，讀混亂狀態、目前職業／種族及職業等級。
+data	68c09c	messageController	訊息控制器指標，成功重選後取混亂通知格式。
+field	eax*4+0x4ff388	spellRedirectDispatchEntry	法術類別減一後查八筆分派；非法或無重選的種類保持原目標。
+field	ebp+0x87	monsterConfusionDuration	來源怪物混亂持續狀態；零直接返回。
+field	ebx+0x0	targetKind	目前目標種類；1 角色、3 怪物用于自我目標短路。
+field	ebx+0x4	targetCharacterIndex	目前角色目標索引，與來源角色相同直接保持。
+field	ebx+0x8	targetMonsterID	目前怪物目標 ID，與來源怪物相同直接保持。
+field	ecx+0x644	confusionNoticeFormat	控制器的混亂通知格式指標；只影響通知文字，case 固定空格式。
+field	edi+0xa31	characterConfusionDuration	來源角色混亂持續狀態；零直接返回。
+field	esi+0x0	sourceKind	施法者種類：1 角色、2 怪物，其餘直接返回。
+field	esi+0x4	sourceCharacterIndex	來源角色索引，選角色混亂與能力欄位，成功重選後用于通知；i32：來源為怪物時為 −1 哨兵（0x53be50 寫 +4），來源為角色時須 0..7。
+field	esi+0x8	sourceMonsterID	來源怪物 ID，用于查找怪物及自我目標判定；i32：來源為角色時為 −1 哨兵（0x53be00 寫 +8），轉給 0x4fedc0 時按 u32 0xffffffff。
+field	C+0x69	currentClass	能力資格及目前職業等級選擇；case 與 calc 接受合法職業索引與無職業標記。
+field	C+0x71	race	能力 7 的種族資格表索引；case 與 calc 讀所選角色的獨立記錄。
+field	C+0x8d+4*p	currentClassLevel	能力免疫門檻的等級；case 納入十五個職業等級，未以總等級取代。
+field	spell+0x137	spellTargetKind	載入法術的目標類別，輸入按 spellIndex 選獨立記錄（原版 0x96 筆，fixture 150 筆，0..149）。
+field	spell+0x12f	spellRange	地點重選子函式的射程類別，輸入按 spellIndex 選記錄。
+field	target+0xc	targetMonsterGroup	群體法術抽到怪物時改写群組；沿用 004fedc0 的輸出。
+field	target+0x10	targetXBits	地點重選的 X 座標 f32 位元；其他路径完整保留。
+field	target+0x14	targetYBits	地點重選的 Y 座標 f32 位元；其他路径完整保留。
+field	target+0x18	targetZBits	地點重選的 Z 座標 f32 位元；其他路径完整保留。

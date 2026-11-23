@@ -1,0 +1,8 @@
+call	52b910	character_sp_heal_distribute	逐角色呼叫六領域 SP 分配；calc 呼叫既有 characterSpHealDistributeNode，原版子函式與通知照跑
+data	4	heal_amount_argument	cdecl 第一參數的堆疊位移；有號 32 位，負數代表以該角色六領域最大 SP 總和作需求
+data	685174	party_character_records	八名角色主記錄陣列指標，每筆 0x1862 bytes；case 分別配置每名角色的主狀態、HP、六格最大與目前 SP
+data	685178	party_slot_records	八格隊伍欄位陣列指標，每筆 0x106 bytes；首 byte 是有效旗標，非零才檢查角色
+field	ecx+0x0	character_maximum_realm_sp	負數需求時 ecx 指向角色 +0xb25，逐格讀取六領域最大 SP；加總保留 u32 回繞
+field	edi+eax*1	party_slot_active	隊伍欄位首 byte 有效旗標；edi 為角色索引乘 0x106，零時略過該角色
+field	esi+ecx*1+0xb01	character_main_status	角色主狀態 u32，僅小於 18 的角色接受 SP 回復；esi 為角色索引乘 0x1862
+field	esi+ecx*1+0xb11	character_current_hp	角色目前 HP，32 位非零即通過資格檢查；不作正數或有號大小比較

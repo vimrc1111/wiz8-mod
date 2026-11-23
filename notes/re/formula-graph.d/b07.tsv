@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+53cd60	公式	D4	pending_equipment_update	pendingEquipmentUpdateNode	不確定：讀 C+0xb11/0xb01、Q+0/0x105/0xf5 與 0x685115 決定是否呼叫裝備處理並清 Q+0x105，裝備處理對規則數值的影響尚未追清；build/wiz8.asm:430810。
+53cdf0	公式	D4	action_target_available	actionTargetAvailableNode	不確定：讀行動種類、物品 I+0x63 與角色／怪物目標資格，回傳是否有可用目標，尚未確定是行動限制還是介面啟用條件；build/wiz8.asm:430955。
+53d010	公式	D4	spell_target_available	spellTargetAvailableNode	不確定：讀法術／物品的目標種類、C+0xa49/0xa4d/0xb11 與怪物可達性，回傳可用目標布林值，呼叫端是否只供介面尚未追清；build/wiz8.asm:431050、build/wiz8.asm:431229。
+53d2a0	公式	D4	hand_attack_available	handAttackAvailableNode	讀 C+0x114d+0x5b*h 與手的射程判定，停用或射程回值為 -1 時回傳不可攻擊；build/wiz8.asm:431302。
+53d310	公式	D4	any_hand_attack_available	anyHandAttackAvailableNode	讀兩手 C+0x114d+0x5b*h 與射程判定，回傳是否至少一手可攻擊；build/wiz8.asm:431341。
+53d390	公式	D4	choose_attack_hand	chooseAttackHandNode	讀兩手啟用旗標、射程、C+0x115e 攻擊數及 0x1166 先攻值，先比較攻擊數再比較先攻，回傳最佳手索引或 -1；build/wiz8.asm:431417。
+53d590	公式	D4	player_turn_intercept	playerTurnInterceptNode	讀 C+0xb11/0xb1d/0xb01/0xa31/0x161、行動與 T+0x90 嘗試次數，以亂數比較遞減門檻並增加 T+0x90，回傳本次轉身攔截是否成功；build/wiz8.asm:431642；notes/re/backstab.md:27。
+53d680	公式	D4	attack_budget_prepare	attackBudgetPrepareNode	讀兩手 C+0x114d/0x115e/0x1166 與射程，選優先手並將可用手的攻擊預算寫入 T+0x38/0x3c/0x40/0x44，手索引寫 T+0x6c；build/wiz8.asm:431753。
+53d7f0	非公式	-	cached_hand_attacks		通過手啟用及射程檢查後直接回傳已存在的 C+0x115e，否則回傳零，沒有重算攻擊數；build/wiz8.asm:431829。
+53d870	公式	D4	attack_swings	attackSwingsNode	讀手別、C+0x1162、物品 I+0xad、職業等級及 T+0x82，抽取基本揮擊並加 Lightning Strikes 揮擊寫 T+0x68，同時建立 G+0x9a4/0x9a5 攻擊旗標；build/wiz8.asm:432002；notes/re/formulas.md:33、notes/re/backstab.md:7。
+53e250	公式	D4	melee_attack_resolution	meleeAttackResolutionNode	讀手攻擊值、目標防禦、G+0x9a4/0x9a5 及目標描述，以共用亂數判命中與穿甲並計傷害及效果，更新目標 C+0xb11 或 M+0x2b、狀態及 T+0x68；build/wiz8.asm:432799；notes/re/combat-2.md:36、notes/re/formulas-2.md:19。
+53fb00	非公式	-	player_attack_report		整理本次玩家攻擊的既有結果並呼叫戰鬥文字輸出，未抽取或修改傷害與命中；build/wiz8.asm:434430。
+53fea0	公式	D4	monster_attack_swings	monsterAttackSwingsNode	讀怪物攻擊模板 D+0xe6 與 M+0x10 指向的剩餘攻擊數，抽取 1 加亂數作為揮擊數寫戰鬥資料 +0x0d，並消耗 +0x09 攻擊預算；build/wiz8.asm:434825；notes/re/backstab.md:17。
+53ffe0	公式	D4	monster_attack_range_normalize	monsterAttackRangeNormalizeNode	不確定：雖主要選攻擊動畫，仍讀攻擊模式與模板 D+0xea+0x22*k，按動畫種類將該射程欄位改為 0 或 3 並可能清 M+0x2df，其規則影響待追；build/wiz8.asm:434918、build/wiz8.asm:434926。
+540170	公式	D4	monster_attack_resolution	monsterAttackResolutionNode	讀怪物等級 M+0x1dc、攻擊模板、目標防禦與戰鬥旗標，以共用亂數判命中／穿甲及技能效果，更新目標 HP、狀態並消耗怪物戰鬥資料 +0x0d 揮擊；build/wiz8.asm:435106；notes/re/backstab.md:19、notes/re/speed.md:56。
+5412b0	非公式	-	monster_attack_report		彙整怪物已算好的攻擊結果並輸出戰鬥敘述，未產生新的規則數值；build/wiz8.asm:436269。
+541630	公式	D4	monster_attack_flags	monsterAttackFlagsNode	讀模板 D+0xcb、攻擊射程及目標 C+0x161 或 M+0x24b 與轉身次數，設定 G+0x9a4/0x9a5，並以亂數決定目標轉身結果及增加嘗試次數；build/wiz8.asm:436864；notes/re/backstab.md:17。
+541c00	公式	D4	player_arhit	playerArhitNode	讀手 C+0x115a/0x116a、全域加成 0x1771、屬性、目標防禦與 T+0x94，組合狀態及模式修正後回傳 ARhit；build/wiz8.asm:437044；notes/re/combat-2.md:26。
+541ec0	公式	D4	player_arpen	playerArpenNode	讀手 C+0x115a/0x116a/0x116e、C+0x1771/0x1772/0x169e、目標部位防禦及模式，回傳穿甲用 ARpen；build/wiz8.asm:437253；notes/re/combat-2.md:34。
+5420b0	公式	D4	weapon_damage	weaponDamageNode	讀武器骰 I+0x4a 或徒手骰、模式、背刺旗標、C+0x1172/0x1773 與目標吸收值，累加多組武器骰再套百分比與取整，回傳傷害並寫骰組數及效果旗標輸出；build/wiz8.asm:437710；notes/re/formulas.md:55、notes/re/abilities.md:17。
+542720	公式	D4	monster_arhit	monsterArhitNode	讀 M+0x1dc/0x242、模板攻擊加成、模式、目標屬性及防禦，以等級及狀態修正組合後回傳怪物命中攻擊值；build/wiz8.asm:437999、build/wiz8.asm:438001。
+542960	公式	D4	monster_damage	monsterDamageNode	讀攻擊模板骰 +0x17、模式與目標狀態、物理吸收值，按骰組數累加傷害後作吸收取整，回傳傷害並寫骰組數輸出；build/wiz8.asm:438221；notes/re/abilities.md:17。
+542ca0	公式	D4	choose_hand_attack_mode	chooseHandAttackModeNode	讀徒手 C+0x117a 或武器 I+0x4e 的模式遮罩，以 R(9) 決定循環掃描啟用位元的計數門檻，回傳本次攻擊模式；build/wiz8.asm:438378；notes/re/combat-2.md:94、notes/re/backstab.md:35。
+542db0	公式	D4	choose_attack_mode	chooseAttackModeNode	讀輸入的模式遮罩，以 R(9) 決定循環掃描啟用模式的計數門檻，回傳模式索引，亂數用於規則選擇；build/wiz8.asm:438425。
+542ee0	公式	D4	defhit	defhitNode	讀玩家 C+0xe85 或怪物模板 D+0x15d 及 M+0x220，加入防禦修正 U 後回傳 defHit；build/wiz8.asm:438575；notes/re/combat-2.md:28。
+542fc0	公式	D4	defpen	defpenNode	讀玩家 C+0xec1 的部位防禦與 0xe85，或怪物 M+0x1e0 及模板部位／模式防禦，合併 U 與 defHit 後回傳 defPen；build/wiz8.asm:438677、build/wiz8.asm:438682；notes/re/combat-2.md:28。
+543110	非公式	-	blocked_miss_presentation		依既有命中差值與盾牌防禦區分未中／擋下的文字及音效，呼叫聲音變體而未重新擲命中骰或扣 HP；build/wiz8.asm:438814；notes/re/combat-2.md:36。
+543270	公式	D4	attack_effects	attackEffectsNode	讀效果資料 +0x08 至 +0x17 的機率、+0x18 強度、+0x1c 數量及目標狀態，以 R(100) 觸發狀態或 HP／耐力／SP 吸取並寫回目標規則欄位；build/wiz8.asm:438978；notes/re/formulas-2.md:13、notes/re/formulas-2.md:49。
+543dc0	公式	D4	fumble_target_list	fumbleTargetListNode	讀原目標 Q+0x1d/0x21/0x25、角色 HP／狀態及怪物存活／射程資格，排除原目標後寫失手候選清單與數量，改變後續抽取目標的分布；build/wiz8.asm:439821；notes/re/combat-2.md:38。
+544010	公式	D4	monster_fumble_target_list	monsterFumbleTargetListNode	讀怪物原目標 M+0x2ba、角色 C+0xb11/0xb01 及其他怪物存活／可達性，寫失手候選清單與數量以供隨機改打目標；build/wiz8.asm:440007。
+544250	非公式	-	fumble_message		依攻擊者與被誤擊目標組合名稱、代詞及字色，呼叫文字顯示而未改動攻擊數值；build/wiz8.asm:440371。
+544530	非公式	-	fumble_voice		R(2) 只選攻擊者或被誤擊角色的語音反應，未參與目標、傷害或機率判定；build/wiz8.asm:440397。
+544630	排除	-	missile_launch_ray		遠程發射流程以起點與目標位置呼叫射線判定，再建立彈道，屬遠程射線／遮擋流程；build/wiz8.asm:440613；notes/re/combat-2.md:44。
+544b60	公式	D4	ranged_attack_effect_pack	rangedAttackEffectPackNode	讀角色等級、投射物／武器骰及 I+0x50/0x60 效果機率，合併效果機率並計等級加成強度及 ARhit，寫發射用傷害／效果資料；build/wiz8.asm:440967、build/wiz8.asm:441007；notes/re/formulas-2.md:15、notes/re/combat-2.md:44。
+544d30	公式	D4	missile_effect_resolution	missileEffectResolutionNode	讀投射物 +0x1fc 效果包、+0x214 強度、+0x260 目標與範圍半徑，經抗性及傷害計算更新單體或範圍內目標 HP 並施加狀態；build/wiz8.asm:441321、build/wiz8.asm:441335。
+545090	公式	D4	missile_penetration_resolution	missilePenetrationResolutionNode	讀投射物攻擊值／模式與效果包、目標部位 AC，以部位抽樣及 R(100) 決定穿甲後計傷害及狀態，更新目標 HP／狀態；build/wiz8.asm:441619、build/wiz8.asm:441663。
+5454c0	公式	D4	missile_aim_dispersion	missileAimDispersionNode	讀起點／瞄準點座標、準確度參數及失明旗標，結合距離、R(360) 方向與 R(100) 偏移量寫回瞄準點三軸座標，亂數影響實際命中而非碰撞檢查；build/wiz8.asm:441775、build/wiz8.asm:441921；notes/re/combat-2.md:44。
+5458a0	公式	D4	berserk_available	berserkAvailableNode	讀能力 0x14、兩手可用性及主手射程，要求可用且射程小於 2，回傳狂暴資格布林值；build/wiz8.asm:442083；notes/re/abilities.md:31。
+545a00	公式	D4	fumble_damage_cap	fumbleDamageCapNode	讀原傷害與被誤擊角色 C+0xb0d 或怪物 M+0x27 的最大 HP，回傳原傷害與至少 1 的最大 HP 五分之一兩者較小值；build/wiz8.asm:442208、build/wiz8.asm:442215。
+545aa0	公式	D4	guard_attack_available	guardAttackAvailableNode	不確定：讀角色 C+0xb01/0x114d、行動資格與目前目標，回傳守衛攻擊是否可用，尚未追清此資格是否只用於介面；build/wiz8.asm:442245。
+545b80	公式	D4	guard_available	guardAvailableNode	不確定：讀行動資格、C+0xb01 與主手 C+0x114d，要求狀態低於 12 且手啟用後回傳布林值，守衛規則與介面用途待確認；build/wiz8.asm:442332。
+545c20	公式	D4	intercept_target_available	interceptTargetAvailableNode	讀角色目標資格或怪物 M+0x14/0x15/0x2b、模板 D+0x24a 及 G+0x4c+0xd4*c 射程參數，回傳該目標能否被攔截；build/wiz8.asm:442453。
+545cf0	公式	D4	monster_intercept_available	monsterInterceptAvailableNode	讀陣營、可達性、攔截者模板等級、目標 C+0x89 或 D+0x24f 與 HP 比例／狀態，按等級及低於 40% HP 等條件回傳攔截資格；build/wiz8.asm:442518。
+545e50	公式	D4	attack_intercept	attackInterceptNode	讀攻擊者及候選者速度、攻擊值、疲勞與攔截預算，以分數差形成限制於 5 至 95 的機率並隨機選成功者，寫新目標、G+0xb8+0xd4*c 或怪物戰鬥資料 +0x147 次數及耐力消耗；build/wiz8.asm:443099。
+5468d0	公式	D4	defense_adjustment	defenseAdjustmentNode	讀 C+0xe91/0xe99/0x17b5 或 M+0x226/0x1df/0x242/0x2e1/0x220、攻擊模式與 G+0x9a4/0x9a5，組合姿態、疲勞及背刺修正後回傳 U；build/wiz8.asm:443393；notes/re/combat-2.md:28。
+546b40	非公式	-	spell_target_string		根據角色／怪物目標描述取名稱及代詞、格式化法術目標文字，未計算效果強度；build/wiz8.asm:443668。
+546e70	公式	D4	hostile_monster_count	hostileMonsterCountNode	不確定：讀怪物 M+0x14/0x15/0x16/0x8b，計數寫 0x683fa5、0x6850be 並設定 G+0xa54，計數及旗標對規則或純戰鬥流程的影響尚未追清；build/wiz8.asm:443952、build/wiz8.asm:443968。
+546f10	公式	D4	target_disposition	targetDispositionNode	讀角色 C+0xa35 與怪物 M+0x16，按角色魅惑狀態交換敵友代碼 1／2，回傳實際目標陣營；build/wiz8.asm:444012、build/wiz8.asm:444014。
+547010	公式	D4	character_disposition	characterDispositionNode	讀雙方角色 C+0xa35，兩者魅惑狀態相同回傳友方 2，狀態不同回傳敵方 1，提供攻擊目標關係；build/wiz8.asm:444116。
+547080	公式	D4	opposite_disposition	oppositeDispositionNode	讀角色 C+0xa35 或怪物 M+0x16/0x8b，依魅惑及召喚歸屬決定相反陣營，回傳代碼 0／1／2；build/wiz8.asm:444157、build/wiz8.asm:444193。
+547310	公式	D4	offensive_action_allowed	offensiveActionAllowedNode	不確定：讀行動種類、法術編號／目標類型及物品 I+0x63，排除法術 3 與 0x29 後回傳攻擊性行動判定，呼叫端用途尚未確認；build/wiz8.asm:444454。
+547510	公式	D4	combat_opening_condition	combatOpeningConditionNode	不確定：讀戰鬥旗標 0x683f94、G+0xa54 與 G+0x04 回合數，回傳首兩回合且旗標未設的資格值，對何種規則生效尚未追清；build/wiz8.asm:444585。
+5477d0	非公式	-	disposition_change_flow		把指定陣營寫入 M+0x16，刷新戰鬥名冊並清除或重建待執行動作，屬陣營切換流程而非計算敵友機率或攻擊值；build/wiz8.asm:444835、build/wiz8.asm:444874。
+547a50	公式	D4	cheat_death_hp	cheatDeathHpNode	讀 C+0xa45、目前／最大 HP 與戰鬥使用旗標 G+0xbe+0xd4*c，抽取保命後 HP 寫 C+0xb11 並調整狀態持續時間，首次戰鬥使用有不同回復分支；build/wiz8.asm:445139；notes/re/abilities.md:25。
+547bf0	公式	D4	turn_undead_available	turnUndeadAvailableNode	讀能力 0x11、G+0xb1+0xd4*c 使用旗標及怪物存活／敵對狀態與模板 D+0xcb，要求存在類型 20 的敵人，回傳驅散不死資格；build/wiz8.asm:445236；notes/re/abilities.md:33。
+547cb0	公式	D4	turn_undead_power	turnUndeadPowerNode	讀 C+0xb5/0xbd、目標數與模式，以亂數削減可用力量後按目標數算施法強度，設定 G+0xb1+0xd4*c 並輸出消耗與法術效果；build/wiz8.asm:445405；notes/re/abilities.md:33。
+547f40	公式	D4	prayer_available	prayerAvailableNode	讀能力 0x0b、G+0xb0+0xd4*c 使用旗標與存活敵對怪物，回傳本場戰鬥能否祈禱；build/wiz8.asm:445501；notes/re/abilities.md:35。
+547fe0	公式	D4	battle_prayer	battlePrayerNode	讀角色等級／耐力、難度、回合與權重表 0x61dd38，以亂數選祈禱結果及強度並檢查耐力，寫 G+0xb0+0xd4*c 與選中法術、HP／狀態或金錢等結果；build/wiz8.asm:445702；notes/re/abilities.md:35。
+548e60	公式	D4	potion_creation	potionCreationNode	讀 C+0xb01/0xb9、能力 0x12 與等級區間表 0x616fe0，隨機選符合等級的藥品並限制數量為 1，寫角色物品欄及 C+0xb65 的 360 計時；build/wiz8.asm:446737、build/wiz8.asm:446785；notes/re/abilities.md:37、notes/re/loot.md:41。
+5499d0	排除	-	combat_sound_variant		戰鬥音效：亂數只決定音效檔名後綴（變體數 >1 時一次 40efa0），經 404bf0 fopen／封存索引查找後播放；呼叫點 549ef0、549f50 只轉傳回傳，53e3d7、53fa06、53ee18、53f335 隨即覆寫 eax，543110 回傳 bl 不取它（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md；原歸非公式，改排除以便位址樁；樁掉後該次音效亂數不進 trace，規則亂數彼此獨立不受影響）；build/wiz8.asm:447769、build/wiz8.asm:447840。

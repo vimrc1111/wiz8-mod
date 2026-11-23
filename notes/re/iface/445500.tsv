@@ -1,0 +1,31 @@
+call	4f6c50	itemContainerCreate	以物品編號 0x23c 建立物品物件（寶物容器）：51c020 建記錄、4f6b90 建物件並遞增序號 0x6874c2、4f93d0 放置；case 以 51c020／4f93d0 位址樁記次數與參數，序號為輸出
+call	4f8340	containerAppend	把生成物附到容器 +0x31 的後繼鏈尾（空鏈則掛在容器 +0x31）並把該物 +0x31 清零；calc 直接重現，鏈指標為輸出
+call	4f88a0	tableNameLookup	依表名（_stricmp，C 區域只折 A-Z）掃 ITEMTABLES 前 0x683f7c 張表，回第一個同名者的索引，無則 -1；calc 重現
+call	5e1c10	heapFree	釋放生成物清單的緩衝；無規則輸出
+call	5e1ce0	heapAlloc	為生成物清單配置 0x14 bytes 緩衝；容量欄不外露，無規則輸出
+call	73	無關	分析器對 call 運算元的識別值（低於 PE ImageBase）；本函式實際沒有此子呼叫，與規則無關
+call	4f88f0	item_pool_selection	物品池抽取（D4 公式節點）；case 以位址樁取代，樁回傳不被讀，清單筆數由 case 輸入寫出，收到的選表索引與抽取數 K 為輸出
+call	517970	dice_roll	骰式求值（D4 公式節點）；case 以位址樁取代，第 1 次回傳為物品抽取數 K、第 2 次為金錢，皆為 case 輸入，兩次參數指標為輸出
+data	5eb1d8	srandImport	MSVCRT srand 的 IAT 槽；以 +0x354 的種子呼叫，case 以 import 樁記次數與種子（重設 seed 的用途為推測，notes/re/loot.md:35）
+data	6836b0	ITEMTABLES指標陣列	ITEMTABLES 載入後的表指標陣列，以選中索引乘 4 取表；notes/re/loot.md:13
+data	5e4538	無關	SEH 處理表位址（建構例外框架），非遊戲資料
+data	5ec15c	無關	生成物清單區域物件的虛表指標，只供解構，不是規則資料
+data	5ec160	無關	生成物清單區域物件的虛表指標，只供解構，不是規則資料
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	ffffffffffffffd8	無關	負堆疊位移，區域暫存（清單物件、例外框架、位置暫存），非外部資料
+data	ffffffffffffffe4	無關	負堆疊位移，區域暫存（清單物件、例外框架、位置暫存），非外部資料
+data	ffffffffffffffe8	無關	負堆疊位移，區域暫存（清單物件、例外框架、位置暫存），非外部資料
+data	ffffffffffffffec	無關	負堆疊位移，區域暫存（清單物件、例外框架、位置暫存），非外部資料
+data	fffffffffffffff0	無關	負堆疊位移，區域暫存（清單物件、例外框架、位置暫存），非外部資料
+data	fffffffffffffff4	無關	負堆疊位移，區域暫存（清單物件、例外框架、位置暫存），非外部資料
+data	fffffffffffffffc	無關	負堆疊位移，區域暫存（清單物件、例外框架、位置暫存），非外部資料
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+field	esi+0x24c	寶物表名	物件 +0x24c 的 ASCII 表名（256 bytes 緩衝，NUL 結尾）；空字串則不生成；case 取前 32 bytes
+field	esi+0x34c	物品容器指標	物件 +0x34c；0 時以 4f6c50 建立；輸入 contPtr
+field	esi+0x350	完成旗標	物件 +0x350；非零則不再生成，生成後寫 1；輸入／輸出 doneFlag、done
+field	esi+0x354	亂數種子	物件 +0x354，交給 srand；輸入 seed
+field	esi+0x358	金錢	物件 +0x358，寫入第二次骰（表 +0x1d5）的結果；輸入 money0、輸出 money
+field	eax+0x0	表名首位元組	表指標陣列元素指向的表 +0（256 bytes 表名）；4f88a0 比對對象
+field	edi+0x0	生成物指標	生成物清單資料指標的第 i 項（物品物件指標），逐項交 4f8340 附進容器
+field	eax+ebp*4	選中表指標	ITEMTABLES 指標陣列[選中索引]，加 0x1cd 為物品數骰、加 0x1d5 為金錢骰；notes/re/loot.md:13
+field	edx+ebp*4	選中表指標	同上，物品數骰處

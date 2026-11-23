@@ -1,0 +1,507 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "a54171d5d31f3f597e38465fbc79b086c085bbab93c3ef044e9e107ae1d95696",
+  "zh": "立刻離開這個設施，對你們最有利。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "86f97aa5f3c89ca245347f8199abe50ac4599d62fa600c217476b1277347ec56",
+  "zh": "你們的威脅，頂多算有趣。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "bee1f8c39c480e42a2353cc7c4efdc404a4537a3fa9e78f53fde10c2d5bac61a",
+  "zh": "現金賄賂動搖不了我的看法。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "021f4dea4bd427b38d772e1e04a235eaa1ac58e71e0c82c19430b3457d5b1719",
+  "zh": "依邏輯而言，你們應該先處理危及性命的狀況。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "9baecfc9c1eef19f586402d9bd718d3c6474746f3181dda39fc8f1acd9ab9bf9",
+  "zh": "不可能。很遺憾，我必須留在這裡。這是我的外交職責。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "8569efc4ed5a6273140c2b6ec0ab8d99f4398210808fbb7c0cbbae4fbcc21350",
+  "zh": "謝謝。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "6612796210c3bbde24031c0923faf1ce936b2f6a5eab08cb48295f40f1d93194",
+  "zh": "我無法接受。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "3e6782e8c788c01fabe56a6f7ecc0e4c3f67001dd451d441832a7b9551393984",
+  "zh": "我們目前不打算購買任何物品。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "8f6d04f50dc1ce98f3c69e7dfce0d72a17da74befb41c5e468b6bb5542e8ec61",
+  "zh": "你們提供的資金不足。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "a906ca1d27911ccb84dff741ac02bb41444ef2f2374dec70c7c44fa83abb44a8",
+  "zh": "我認得這件物品。這一刻，不會被記成你們最聰明的時候……"
+ },
+ {
+  "id": 18,
+  "src_sha256": "36dde5e1d4e9ccd5ce2911bba91e52beda0d1a7c4ab55c13a55c39459e68a7e1",
+  "zh": "你們讓 Mook 十分挫折。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "1379d6c716c8a4af3b1b3b786ab0d0e6e33d58fc3bcbf24d60eb6205d6aac415",
+  "zh": "這類行為會帶來嚴重後果。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "fedbbfb662b784ae716db2ea6e2f71e06dc21391d6298c0284b6d192305bfa44",
+  "zh": "我現在必須殺了你們，勢在必行。"
+ },
+ {
+  "id": 21,
+  "src_sha256": "56350729a765b8fc57c7e952a8e72a0f390818362bf8701bf308f345803dea6f",
+  "zh": " Mook 對金錢沒有興趣。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "5d29526f81b818b067bb2c05876f4ceac436bd7826bd83413a8e43a8117a41fd",
+  "zh": "調查目前正在進行中。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "f052d3714aaa5d59cee32a20cc20be210dea611c0b023911ad35d59410b127ed",
+  "zh": "我們仍在蒐集資料。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "1769b5e805f7887fe31dd03b067efb86debbfebf51e0b43b2d1b1a65e9361590",
+  "zh": "我們目前無可奉告。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "435cbe0d0190645e617f4e85223c9eec638826b8b7d3c77607c4bde093599059",
+  "zh": "我再重複一次。"
+ },
+ {
+  "id": 26,
+  "src_sha256": "15f4bf2464fb1c313e20b752a0c55cd2ffc6b6277de8c5326700f161093afdc7",
+  "zh": "你們想先知道哪一項？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "212aa8c6cfc388c67d7c36a6ecca3e8cbe552d021fa240d68210517fa2022a14",
+  "zh": "還有你們的另一個問題……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "78e228e7c9a31d8a3e8b2a18dc4f825abc14c0b3f6e7a3ddff227dc7d1875a89",
+  "zh": "我不知道這件事。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "8c698c5a1d3523bccef85f8f389a63f80bcefd640eb09660cf555ef5ced38418",
+  "zh": "嗯，我確實還有些計算要完成。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "2c485fe53f1590cbbb64ec202e3fe575ffb65939c40105198c1e6a64bab92028",
+  "zh": "如果你們沒有更重要的話要說……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "5a9dc7254fc22ff701564324815256d8330dcf24a05dec69619eb73c6530f21f",
+  "zh": "我確信，只要用標準方法研究這顆行星，你們自己就能查明所需的一切。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "24546282e84d839dfd396e53d253e600eff0e53e7c3ca29714d87ad63f419f8c",
+  "zh": "這是一座極度動盪的城市，主因是一個名為 Dark Savant 的存在所採取的手段。無疑你們已經注意到那座 Tower 了。我們尚未決定行動方針，如果有的話。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "8b3ed47492dbe2734222fc0eced2dc4657593aad24cdf16a66a75c0163c284fe",
+  "zh": "我方一組探險隊在這裡以南發現了它的所在。看來 Trynnie 主要棲居在樹上。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "380c9a3cefa8862bc75b78b81b6fe70c0fbcea6518a40481685bcb3ebf2315dd",
+  "zh": "我們知道那是 Umpani 的作戰中樞。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "4c3345a060cc922ec0c373f18fe518f286ad4901290cbc79a1522b515fdef6e2",
+  "zh": "我們得知 T'Rang 把那裡當作行動基地。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "c16887de30ba8365fe05bfbcdd38ef62b6c8d23e8fb6fbefbb6afe749e727d7c",
+  "zh": "最有參考價值的答案，會來自 Higardi 。他們對那一帶的地形相當熟悉。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "2f3632a6c614784a995a83436dc35bb27f503970ba1834b0c3c4cb9587b8f10f",
+  "zh": "容我建議，你們改問 Higardi 吧？他們對這個話題遠比我熟悉。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "ab7947884b0d93a9940cf80d548fb6e7e08313e413a080565a74650a24de0cf2",
+  "zh": "是的，就是棲居在 Arnika 的生物。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "b47998a0d5aaf77151624062fccb266618b5122bf2d228f8c9c7e87a4846e323",
+  "zh": "我們對這些生物已有初步報告，顯示他們有偷竊傾向。事實上，我們認為太空港遺失的一件裝置就是他們所為，一個金屬的球形物體。或許你們能在 Trynton 找到它。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "8d91dc3f7c8f447a4cd7f77f78d5c70e78b03e9d84214d6208e78450b5633491",
+  "zh": "所有報告都指出，這是一種極度聰明且充滿敵意的生物。"
+ },
+ {
+  "id": 51,
+  "src_sha256": "ee73feb14c195f55cbe22843e43b5330abeb2e02a1659620d88a4f581bc2b2c7",
+  "zh": "我們是愛好和平的生物，前來調查 Dominus 這顆行星。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "b842c0cd457018c35e737f62aabda12d4cad03ba248ab0ae4ab586c4c07cbb5c",
+  "zh": "他在整個宇宙裡都是已知的存在。事實上， Mook 數十年前就知道他了。不過，他出現在此地，令我們有些憂慮。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "f4e99bbe72a25323331eddcc3f7a9d8ef27cb4f32920e97add9b4f217b2bf4cc",
+  "zh": "我們有理由相信，他持有一件與 Chaos Moliri 相似的物品，並計畫取得 Destinae Dominus 。幸好，那件裝置已經遺失得相當徹底。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "e77415c5325c81fe17d6fc193e2add9baea40d2e82b2e5e2b58f3e23860def22",
+  "zh": "儘管如此，如果我們的推測屬實，也就是這類裝置共有三件，那麼他很快就會注意到我們。我真希望能在那之前完成我們在此的調查。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "faa27d9c6a4e8c737e372fe3082629b1b7cd3c63760df53af39fe640166f3a3b",
+  "zh": "是的，有許多文獻稱他為宇宙的領導者、{{Lord}}或統治者。然而更有意思的是，我們手上的裝置似乎指向他就是它的創作者。上面刻著他的名字。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "a21a91f309a33eb388ba820d738a5ce1a74863676f71d3bc07fbda065403f88c",
+  "zh": "根據 Higardi 的說法， Destinae Dominus 失竊一事是他幹的。"
+ },
+ {
+  "id": 69,
+  "src_sha256": "ce95efad884e7db9eabf23f0b196804fd0ba05cadcc25ed4b7b0ebf0456bdf92",
+  "zh": "我們相信它是三件之一。歷史紀錄顯示，它曾一度引發 Umpani 、 T'Rang 與 Dark Savant 之間的慘烈戰爭（ war ），而 Dark Savant 贏了那場戰爭。我們相信他現在就帶著那件物品在 Dominus 上。"
+ },
+ {
+  "id": 70,
+  "src_sha256": "589d7340463c8c05d4150f81f8535e321edb3d52e4dacecb2ee72d6caff349e1",
+  "zh": "我們相信這件物品與我們手上的那件有關，但需要進一步研究。遺憾的是，該物品已從原處被盜，使研究無從進行。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "2128f76a0a892bcd274e0f2074f55440ada828e2a6fb0221ebefe457c825cfe5",
+  "zh": "其實，就是那件裝置把我們帶到 Dominus 的。仔細研究後發現，它表面刻有一張詳細的星圖（ map ），還顯示另有兩件來源相似的物品。我可以告訴你們它的發現經過（ discovery ），或者你們更想聽我對它真正用途的理論（ theory ）。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "8bf754ac392173d3f68f0941fa8f2e8d65e50009c06e024fcd08794f8268f0ae",
+  "zh": "理論。沒錯。我正在努力證明或推翻其中幾個。一個圍繞著 Dark Savant ，另一個則是 Chaos Moliri 。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "3b359605f6a33a079a836141b33eaf5b3c79e6c6e0f4f26e1dd5e9a0089ec21f",
+  "zh": "我是 Screg ，這次 Dominus 遠征隊的領隊。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "8a313fe7b5f51eb47d0a2bde47ceb22fa276e5fef8d75777082cd6529e4c7a7f",
+  "zh": "你們這些生物養成的習慣真是古怪……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "38178a20b470cfd18299fb1593dd4ba706f1a83321dac051d01086efd8b7a96f",
+  "zh": "不。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "07de6adc4ef0f8c3908d15e9fe864fe92c9ff49b71d6950ba6d10064b50ed159",
+  "zh": "是的，你好。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "2b687db6298b629d3bcb482f16aa774a55eb5ae768407b8fba9982387b6c6f81",
+  "zh": "再會。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "3859619abcdd02c905756d06c690b20f391ab48b00e48307a1e4c4c45435ecb4",
+  "zh": "我們不是來提供人道援助的。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "af0abf67e3608fa7516ac62a4ece134c898e772702bc1b5890cb5022c7e4961d",
+  "zh": "我們並未設立那樣的設施。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "aad6d271912782d7821553529859801aab38d20fe46f29dedc0230ccc637e773",
+  "zh": "所有感測器與讀數都顯示我狀況良好。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "40e5bda2171b0815102f1f7416fc72d96c5c8dc046bf12ea4b7d12768a1bb3fe",
+  "zh": "那與 Mook 無關。我們是愛好和平的民族。"
+ },
+ {
+  "id": 89,
+  "src_sha256": "701427b30c63d81525570f96fe62b612a5ad4f00be40ebf72661a0f9133acbe7",
+  "zh": "在你們讀取我們的心思之前，先知道我們也能讀你們的。你們知道的， Mook 是{{Psionic}}。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "33380f8cecda41d5778627e9475e3bbdc61afd93fdf2583d25520df8b0c555f1",
+  "zh": "你們管那叫讀心？頂多是業餘水準……"
+ },
+ {
+  "id": 91,
+  "src_sha256": "40d7e868c35c85e549e8c1455d61eaca47fea9015922976e0adcd4e49e0f965b",
+  "zh": "對我施放讀心術？你們心裡正在想的事情有趣多了。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "9da506b59fb35333b2f8c42c00e2511169ffedf9c4a0fb1c238555d9730d9381",
+  "zh": "就在這裡，在 Arnika 。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "634f1f66b489c4b651f8f300d3989503ba80f1e44f1b8a7ac3e494412e678c73",
+  "zh": "或許你們該去 Trynton 看看。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "eccb80d501657e6047139a841bc9c6bd0ce22a66aa222fc35c9fb0639ce59018",
+  "zh": "我建議去 Swamp 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "741fbbd4400e41e2b4b5c97cd4f7071c43725868c5cea71423f9d5ec290aaafb",
+  "zh": " Marten's Bluff 。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "a6a68f43f1cf957df76da27f4dc073ba5f452ba9b828d41991e8d5535803c815",
+  "zh": " Mt. Gigas 很可能就是了。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "398816cf575de97776b24175c43d27c89779a7914880ff309976ec206fba2f42",
+  "zh": "我傾向 Rapax 的領地，不過據稱前往那裡相當危險。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "16d7920b870250cbb65617f3b47800ee41db6760b95eeb865f8ba01b4f6a09d5",
+  "zh": "我們相信是 Ascension Peak 。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "d9967d09ed1f63ba0fbded2dd65f7511db042ee118bc9b7d08cecb1397da3923",
+  "zh": " Cosmic Circle ，儘管它在很大程度上仍屬理論。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "4104d9233c06d755db0c01e58beb6018c468a9c1330ae05a05f8ab7b5e2a4463",
+  "zh": "這對你們來說不是很明顯嗎？"
+ },
+ {
+  "id": 104,
+  "src_sha256": "1bc2c6cbb5721d856ddef6cd0d1d2d0d336c0042dfb94ac8f8cf1c6f1fb9ff0a",
+  "zh": "我不知道。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "08321b5114e674144898e218bf4680e8e3e7700d6415e09e87993ce0e071b869",
+  "zh": "那很可能在 Bayjin 。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "aefd12cf81dba91775b72557f1b66bfcd99d133781e34ce16f415316cde33501",
+  "zh": "容我正式歡迎你們，作為 Imperial Umpani Federation 的代表。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "2bcf4a92fdec99ebdc274e6b4aa75f30f9e59c352d49b12713c7c9dc78e1cee3",
+  "zh": "容我正式歡迎你們，作為 T'Rang Empire 的代表。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "af17fe8a9a33b0869efeaab096dbd878c4a0e455f7d5d8fdb6fd0e9b2d1a845d",
+  "zh": "請轉告你們的領導者，我們來此只為和平的探索任務，一項旨在了解 Chaos Moliri 本質的任務。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "4f0d108de23bff6f212f933c81c2f753d391244c02cabd7f7a20e64598079c80",
+  "zh": "你們的公文提到，貴方領袖有意親眼檢視這件裝置。當然可以。在你們右手邊，沿走廊走到底。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "3cc4beeaa88249013f70e99fa6a28e339b95c42fed8c776bf8bf6058092a8994",
+  "zh": "容我正式歡迎你，作為 United Mook Alliance 的大使。很遺憾，我們沒能早點讓你入內。安全考量，你懂的。有許多勢力想藉由「解放」我們手上的 Chaos Moliri 來獲利。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "0cc3de398b82f9ccfa7e4c4562f7697a46c8656546ae38929be5ba608f83c813",
+  "zh": "當然，如果你們願意，歡迎親眼檢視。就在你們右手邊，沿走廊走到底。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "8d7cb3258242a16cda9328ca6abe45e9300342a0621ab3148445eb37e2dd5c15",
+  "zh": "再次問候。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "b3405bd2cb2b3ed8b0a8dbbe838239a44655b82f4729d0fdc3b3eb62de5a257c",
+  "zh": "我確信你的遠征會很有啟發性， Urq 。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "93cc127f5e3f7a907362ee0b05db8176c7538b68da26323a2e4536b68790b0fd",
+  "zh": "是的，我原本預期他現在就該到了。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "be0264670d4587846fd2de1ca013099a72499626082c73ea1de3b7af0237e264",
+  "zh": "嗯。這是真的嗎？我會派出一隊調查人員。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "3b26a842ee588b8f3738284932174f1dd734a777e07672f763f503126e97bb27",
+  "zh": "我們的掃描顯示，裡面確有一枚爆裂裝置，與它的宣稱相符。看來無法進入，但我們發現內部有兩個傳送場，分別源自不同地點。我們推測其中一個就在 Dominus 這顆行星上。至於在哪裡，是我們希望查明的。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "18333441c6dd521aee128467db1fe98fda84c9185f7f94e14bbb118367764070",
+  "zh": "我建議你們去問 Urq ……"
+ },
+ {
+  "id": 118,
+  "src_sha256": "fbd39361eafbab38137d91a3e5c8ca47afc5dddcb0f123ee618b70f0308615b8",
+  "zh": "或許你們能協助我們這項工作。我們有一名野外探險員需要護送（ escort ）。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "1bb90cbdbe0c9a0fd0d074c0b4c59590218492d8ae7c03bd41cdd05646cdb8cd",
+  "zh": "或許你們願意改為護送（ escort ）一名野外探險員？"
+ },
+ {
+  "id": 120,
+  "src_sha256": "ce45ae58730770ffb3b32c041db44fb3e4511000c88df4f35fb49dda25681b45",
+  "zh": "我們的科學家發現， Trea 的一顆衛星中心冒出一連串奇特的伽瑪粒子。還來不及進一步調查，一連串地震活動就演變成火山爆發。我們推論，那件裝置就是在這次爆發中被拋出的。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "ddfaf6d23cc73da56ac06439564f417805f7877487f60f2fc7cf1f45309ac0a6",
+  "zh": "它只花了六個小時就抵達 Trea ，全程每一吋都在我們系統的追蹤之下。降落時，撞擊坑將近有 45 呎寬。兩天後，我們取回了物體本身。經過大量研究，終於發現了星圖（ map ）。這就是我們來到此地的原因。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "bea349a8fe03386ad489c4c2a4ba3083ab7d4bf5e219134eac7d4a5c8234262f",
+  "zh": "請注意，這只是個理論（ theory ）。綜合多方資訊後，我開始相信，我們這件物體正是 Higardi 所說的「 Ascension 」所需的三件之一。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "59a2ebbe040ad92ec88337884a0c62510917f1d0d2699bf325c1541ca201404f",
+  "zh": "聽說在 Ascension Peak 的山頂，有三個奇異而發光的承接座，我們相信其中一個與我們的物體吻合。或許等初步調查結束後，我們會試著驗證這個理論（ theory ）。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "81c0f6004d10ed99e20dbc62c82cc36b39c2423d5f606c3e463de085695cfefd",
+  "zh": "是的， United Mook Alliance 。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "75521b5b9defabd62f085b28eb318bf4311e632445e562d0fa04c074e474c5ab",
+  "zh": "你們是指我們的艦艇？那與你們無關。就算有關，也請從你們的思緒中移除。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "e91f291e0b9cc3020f5f7b64a04aafee09f9ddc21e6a232309a278f15a80dd58",
+  "zh": "我們很榮幸被視為你們的盟友。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "30bca8298cbf83a45e0dcb301ac0950e117461119c524dd1f2fa3b9765526f1b",
+  "zh": " Urq 是我們駐地的野外探險員之一。相當有科學天分。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "be4be201146ddad17e691ff7798d8ed1a9b415e36f109def4e06f3ed832ab7a4",
+  "zh": "是的， Chaos Moliri 表面的一張星圖（ map ）。它指引我們來到 Dominus 。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "276ac1cd771fa2088aa1c824b64dd6f661a15e739edba75cce079548f07e8276",
+  "zh": "歡迎你們檢視這件物品，僅限檢視。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "5beb700e6a2e25c30700e4b15d896483babfd6db929a04a209e1b03d81fb1b13",
+  "zh": "是的，一顆大約在 1.48 兆英里外的行星，往那個方向。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "8284363bd1233a03c34f0081893149cc0cb05933247bcc5d01860e9a08b3fe44",
+  "zh": "是的。我們的部分野外人員進入較危險的地區時確實需要護送（ escort ）。我建議你們去問他們。 Urq 就在我們這裡的營區內。"
+ },
+ {
+  "id": 132,
+  "src_sha256": "846a523055a3f56857a70eade4dda0257ba04ae69c7f405c843dbf8cb57a371e",
+  "zh": "他在這裡，在營區內。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "e6a092289381a00e41febd13cfe088e709a9f42f43b14217968ad405b83b3434",
+  "zh": "當然。自從發現（ discovery ） Chaos Moliri 與其表面的星圖（ map ），我們對探究它背後的意義與歷史深感著迷。我們打算徹底調查這顆行星與這件物品。"
+ },
+ {
+  "id": 134,
+  "src_sha256": "bce04598bbbb5f57263a6ac33ea5e9952d89e8875efdb50cee59478ccb68eb97",
+  "zh": "我是這次遠征隊的領隊。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "9be2fc5248bf6ac70ed7064c6f1a99f2c79139b8b1771dbf3ca3054bfc8df4dc",
+  "zh": "到處都是。"
+ },
+ {
+  "id": 139,
+  "src_sha256": "004cb3c1fad17973a7213af09fd2c8b1e22bad1e7a645a02cf877387ef353fe4",
+  "zh": "正是。"
+ },
+ {
+  "id": 140,
+  "src_sha256": "696af7a4ab4ef1a7addee4799595cc491641cb42ad2922fdf32198638b45c850",
+  "zh": "往北。"
+ },
+ {
+  "id": 141,
+  "src_sha256": "0fe22ed18ba3022adac3885cecace0f0a27278636c2f6e23b50a7d80f824c628",
+  "zh": "往南。"
+ },
+ {
+  "id": 142,
+  "src_sha256": "f729bfbf71b90a984b50c0062141de095096f07a4cddb8708eb7ecc5248fbc10",
+  "zh": "往東。"
+ },
+ {
+  "id": 143,
+  "src_sha256": "a83715e02c3dc402955f9fa8e451e73f89b312cac1a3feaebdc40bae05189018",
+  "zh": "往西。"
+ }
+]

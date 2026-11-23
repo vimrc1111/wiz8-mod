@@ -1,0 +1,2 @@
+5592d0	559343	第一個 switch 的 default（srAssertFail）：迴圈索引 0..7 且 6、7 在 0x559301/0x55930a 已略過，進到 switch 的索引只有 0..5，索引大於 6 的條件任何輸入都達不到。
+5592d0	5593a0	第二個 switch 的 default（srAssertFail）：同一個索引 0..5，與第一個 switch 之間沒有改動索引，索引大於 6 任何輸入都達不到。

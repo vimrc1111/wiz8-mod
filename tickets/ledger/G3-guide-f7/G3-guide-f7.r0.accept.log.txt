@@ -1,0 +1,8 @@
+PASS guide-rule
+PASS menu-rule
+PASS wrap-rule
+PASS atlas-cover: 譯文 2811 字全在圖集
+ok check-sigs：67 條簽章相符（18a74ff61c65）
+atlas: 2816 字 × 字高 7–24 → ~/Projects/games/wiz8-mod-G3/hook/ddraw/out/atlas.h
+build: ~/Projects/games/wiz8-mod-G3/hook/ddraw/out/ddraw.dll（22 個匯出）
+PASS ddraw-proxy: pei-i386, 22 個匯出與系統一致, imports: GDI32.dll KERNEL32.dll USER32.dll 

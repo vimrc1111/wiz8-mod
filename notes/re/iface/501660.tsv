@@ -1,0 +1,14 @@
+call	4ac9d0	spellTargetKind	法術 ID 的目標種類；法術 0 回 0，其餘讀法術記錄的種類欄。
+call	5001e0	spellContextAllowed	法術情境欄與戰鬥、鎖定、模式旗標比較，回傳此刻可否施放；calc 內以 qimSpellUsable 另寫。
+call	5207c0	itemSelfUseType	物品類型是否屬自用類型（0x10、0x15、0x16）；是則目標種類 1 當成 0。
+data	4	無關	參數堆疊位移 4 被分析為資料引用，非遊戲資料或表。
+data	683f94	combatMode	戰鬥旗標；佇列種類 2 與直接施放目標檢查都看它。
+data	68516c	itemRecords	物品定義表指標。
+data	685174	characterRecords	角色記錄表指標。
+data	685178	queueRecords	每角色佇列記錄表指標。
+field	ebx+0xa5	queuedPointer	佇列記錄中的實例指標，檢查前先寫入。
+field	ebx+0xad	characterTargetCtx4	佇列記錄中的角色目標；自用法術必須等於角色自己。
+field	ebx+0xc9	expectedItem	佇列記錄中預期的物品定義索引，須等於實例的索引。
+field	ebx+0xcd	queueKind	佇列記錄種類位元組，0x80 以上結束，0..2 選實例位置。
+field	ebx+0xce	queuePosition	佇列記錄實例位置，0x8000 以上結束。
+field	esi+0x0	itemIndex	實例記錄的物品定義索引；全 1 表示空。

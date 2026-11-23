@@ -1,0 +1,123 @@
+# 術語表（MG 2026-10-07 逐一選定；中文版說明書拍到後以它為準覆蓋）。欄：英文	中文	類別	STRINGDATA 索引。對話關鍵字（NPC 對白檔有列）一律留英文，中文欄＝英文
+Human	人類	種族	644
+Elf	精靈	種族	645
+Dwarf	矮人	種族	646
+Gnome	地精	種族	647
+Hobbit	半身人	種族	648
+Faerie	仙靈	種族	649
+Lizardman	蜥蜴人	種族	650
+Dracon	龍人	種族	651
+Felpurr	貓人	種族	652
+Rawulf	犬人	種族	653
+Mook	Mook	種族	654
+Trynnie	Trynnie	種族	655
+Android	機器人	種族	659
+Fighter	戰士	職業	676
+Lord	領主	職業	677
+Valkyrie	女武神	職業	678
+Ranger	遊俠	職業	679
+Samurai	武士	職業	680
+Ninja	忍者	職業	681
+Monk	武僧	職業	682
+Rogue	盜賊	職業	683
+Gadgeteer	工匠	職業	684
+Bard	吟遊詩人	職業	685
+Priest	牧師	職業	686
+Alchemist	鍊金術士	職業	687
+Bishop	主教	職業	688
+Psionic	靈能者	職業	689
+Mage	法師	職業	690
+Strength	力量	屬性	628
+Intelligence	智力	屬性	629
+Piety	虔誠	屬性	630
+Vitality	體質	屬性	631
+Dexterity	靈巧	屬性	632
+Speed	速度	屬性	633
+Senses	感知	屬性	634
+STR	力	屬性縮寫	635
+INT	智	屬性縮寫	636
+PIE	虔	屬性縮寫	637
+VIT	體	屬性縮寫	638
+DEX	巧	屬性縮寫	639
+SPD	速	屬性縮寫	640
+SEN	感	屬性縮寫	641
+HP	命	屬性縮寫	642
+STM	耐	屬性縮寫	643
+FIG	戰	職業縮寫	706
+LOR	領	職業縮寫	707
+VAL	女	職業縮寫	708
+RAN	遊	職業縮寫	709
+SAM	侍	職業縮寫	710
+NIN	忍	職業縮寫	711
+MON	僧	職業縮寫	712
+ROG	盜	職業縮寫	713
+GAD	工	職業縮寫	714
+BAR	詩	職業縮寫	715
+PRI	牧	職業縮寫	716
+ALC	鍊	職業縮寫	717
+BIS	主	職業縮寫	718
+PSI	靈	職業縮寫	719
+MAG	法	職業縮寫	720
+Weaponry	武器	技能分類	733
+Physical	體能	技能分類	734
+Academia	學識	技能分類	735
+Magic	魔法	技能分類	736
+Expert	專精	技能分類	737
+Sword	劍	技能	738
+Axe	斧	技能	739
+Polearm	長柄武器	技能	740
+Mace & Flail	錘與連枷	技能	741
+Dagger	匕首	技能	742
+Staff & Wand	杖與魔杖	技能	743
+Shield	盾	技能	744
+Modern Weapon	現代武器	技能	745
+Bow	弓	技能	746
+Throwing & Sling	投擲與投石索	技能	747
+Locks & Traps	開鎖與陷阱	技能	748
+Stealth	潛行	技能	749
+Music	音樂	技能	750
+Pickpocket	扒竊	技能	751
+Martial Arts	拳法	技能	752
+Scouting	偵察	技能	753
+Close Combat	近身戰鬥	技能	754
+Ranged Combat	遠程戰鬥	技能	755
+Dual Weapons	雙持武器	技能	756
+Critical Strike	致命一擊	技能	757
+Artifacts	器物學	技能	758
+Mythology	神話學	技能	759
+Communication	溝通技巧	技能	760
+Engineering	工程學	技能	761
+Wizardry	巫術	技能	762
+Divinity	神學	技能	763
+Alchemy	鍊金術	技能	764
+Psionics	靈能	技能	765
+Fire Magic	火系魔法	技能	766
+Water Magic	水系魔法	技能	767
+Air Magic	風系魔法	技能	768
+Earth Magic	土系魔法	技能	769
+Mental Magic	心靈魔法	技能	770
+Divine Magic	神聖魔法	技能	771
+Power Strike	強力打擊	技能	772
+Power Cast	強力施法	技能	773
+Iron Will	鋼鐵意志	技能	774
+Iron Skin	鋼鐵之膚	技能	775
+Reflextion	反射	技能	776
+Snake Speed	蛇速	技能	777
+Eagle Eye	鷹眼	技能	778
+Fire	火	法術領域	779
+Water	水	法術領域	780
+Air	風	法術領域	781
+Earth	土	法術領域	782
+Mental	心靈	法術領域	783
+Divine	神聖	法術領域	784
+FIR	火	法術領域縮寫	785
+WAT	水	法術領域縮寫	786
+AIR	風	法術領域縮寫	787
+EAR	土	法術領域縮寫	788
+MEN	心	法術領域縮寫	789
+DIV	神	法術領域縮寫	790
+Trynton	Trynton	地名	-
+# MG 2026-10-07：有星號框起來的是光劍／光盾（ITEMS.DBS 的物品名），沒有星號的才是輕劍
+Light Sword	輕劍	物品	1222
+*LIGHT* *SWORD*	光劍	物品	
+*Light* *Shield*	光盾	物品	

@@ -1,0 +1,467 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "70ed444686db8e6ede8270508d7b8d3bc6ed28f003c9a1ff49e3296baa2a6c69",
+  "zh": "嘿！你們不是 Rapax ！你們怎麼……喔，算了！快帶我離開這裡！"
+ },
+ {
+  "id": 2,
+  "src_sha256": "e5e72423bb7735f8d2dfd5976c3d860f4c411f54096bd1c2abeb1f4ce856b872",
+  "zh": "我不信任你們……"
+ },
+ {
+  "id": 3,
+  "src_sha256": "2f852add375cccc0b026044b47e4badbc51d9fbffcfc081dbed362c4a59df7df",
+  "zh": "算了。你們跟他們根本一個樣。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "7d84e99a513f140f1f6786e31c2c570010ecba278cc8721e154a429e9a0cfdec",
+  "zh": "省省吧！你們以為這種話我每天聽得還少嗎！"
+ },
+ {
+  "id": 7,
+  "src_sha256": "f8fb393f6509c7634c0722623352832d3da1071208339f970ce2408c07ac44d0",
+  "zh": "差遠了！"
+ },
+ {
+  "id": 8,
+  "src_sha256": "5680e881a7faae2f38268ce6ed60e9c85d3e33ee0425f3f38e51da7378eb03a9",
+  "zh": "先把你們開始的事做完！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "35e05ebccc7af32422c582826cc24b686be065f365bc814a83648c2d2fad82e4",
+  "zh": "這對我們兩個都不安全。要是他的衛兵看到我們在一起？我們就全完了。再說，我自己一個人走比較快。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "1aa7b1c1d5fb1fd6d299eae251a665c7898baeb43d48fb6b8a5b76da6c6ef739",
+  "zh": "謝啦！"
+ },
+ {
+  "id": 13,
+  "src_sha256": "6775d033d1f4100e9e5848b2010fb4903cdd98c48af64450865d41801785e11b",
+  "zh": "聽著，我不需要你們的東西。我只想離開這裡。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "254dfa6699d2ae5867eb501cfa9ef4009de50617236482760e2f94d6274f44e3",
+  "zh": "我想我不需要別的了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "b5885b8258e8ba10da7bc14ab2ab6bc2af5b1693f8e98ea27fecef6121314448",
+  "zh": "還不只這樣！"
+ },
+ {
+  "id": 17,
+  "src_sha256": "7d90231858abd140c3a823ba6c51712c9f5b0ee279e6cc40f0701bfa340d2351",
+  "zh": "嘿！你們以為我會買我自己的東西！？你們是哪種冤大頭啊？"
+ },
+ {
+  "id": 18,
+  "src_sha256": "0f5334f8386cc3899c25b195b257c5a3fa31f7e7a07f7a5a9c478c64228f3d46",
+  "zh": "我早該想到的！你們回來這裡就是要折磨我的，對吧?！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "80107144a95492473c1aec1fb8ab155d706ec2e26804c00f3afa0de1d3c21615",
+  "zh": "聽好了，聰明人！把你們的手從我口袋裡拿開！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "092110b3d30173459c9bab57971da2de64a780819362f7667f4e59fa90a27ad1",
+  "zh": "跟其他人一模一樣！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "13c80d45c413cc89978237b0d25f7803fcd59e546ab8d98377d85b462a7b3669",
+  "zh": "謝謝。說不定哪天派得上用場。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "e1f401b8ab03b7f7eda158254f415fb633e0730905909f59e731f683dcefe3a1",
+  "zh": "這是我最不擔心（ worries ）的事……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "db65e0dd82eebc7c0b87db2c3bc028eca222150a98f1c030aebfb718e97d6be8",
+  "zh": "我有更重要的事要處理……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "d3e76195601f01b2991e6adab4143093a5610f30af57dd5ae9c3b69a1405da07",
+  "zh": "相信我，你們不會想知道的。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "93aa3135a92981a2ed8236ebb100d5e5d8c283b81a3236c544a7a296a7a6bf94",
+  "zh": "聽著！我說……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "36514eaf8a30210e93c04817a39fdff8553af1ca8b40502cfea5f9ea17fca374",
+  "zh": "你們需要先知道什麼？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "e590dd195b352ef692b5b9295aac822198b2db4c8ba11e87194ad2fda653d078",
+  "zh": "然後……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "a729322b9ab67f564d5764a1cfd5cb013c5e330b36eb3e589d611e4cc6bc5e8b",
+  "zh": "真是太好了……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "6c454c4a87313cc889720dcb5e519bfb78aae87497436d36f952a2c955650724",
+  "zh": "聽著，我們最好快一點……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "b2c145c6bf62e26da7548d2c3f5c1b2575d46e8319463d3ae5477fb6013d2ecb",
+  "zh": "我們真的該動身了……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "d73a800f3ff4f7a85833a96a1de51335ed640f112a136651bebdf6c7ae253882",
+  "zh": "Dominus ——我們的 Dominus ！你們肯定知道國王與 Savant 結盟（ alliance ）的事……"
+ },
+ {
+  "id": 32,
+  "src_sha256": "1c2dd71f846493d7e0149730c3608ca9e098abe3758b8f95171ca7d994566777",
+  "zh": "Arnika ？你們知道那裡有什麼嗎？我丈夫稱之為「裝置」。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "d2466d1f725cdd6353cc842a9e1bb98aacc1b39bb277bc56c7969f43209c951b",
+  "zh": "我的 Castle ……我好想念它。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "20636d69f1f13610d3c52941ade17144699377b761af042248439ed38c9340f3",
+  "zh": "是的，我很想念它。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "3dbab480031a4822566c47f3df85cd14648bbff9bb993bb1dd87a9edae72f057",
+  "zh": "Rapax Army 會把它踏平。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "0ca61cd92c8b1e8651ee4a97b98c9653e2aec40bd9c9ab78b729e2c0bdc5040c",
+  "zh": "Dark Savant 的戰利品……"
+ },
+ {
+  "id": 41,
+  "src_sha256": "535dce6ccd188e40aeeee69230a608294c262d9b29eb6d446633307a2e3910e4",
+  "zh": "Dark Savant 希望把它據為己有。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "7bdce37ee0af5944dffe6cd71cb0fa8ef6d14364da427022088aab5045ff4d30",
+  "zh": "他們已經不重要了……"
+ },
+ {
+  "id": 45,
+  "src_sha256": "8d9b6d6edffc38e9e00daa337d3c8c645078b25a7fe1a2bc2c7c6eb12ca00747",
+  "zh": "我就是其中一個，那又怎樣？我整個種族都和我斷絕關係，就只因為我不同意國王的作法……"
+ },
+ {
+  "id": 62,
+  "src_sha256": "536ec05d34d95e78ec3588827b23133b81294b7d12c9a76bbe2cfefc7b3a7def",
+  "zh": "你們找到我了！"
+ },
+ {
+  "id": 63,
+  "src_sha256": "e761e65ed7bf3914444d43394264cfd4a90e308d7f6dc1d5ec52cf56e4eaa633",
+  "zh": "我不想談他。"
+ },
+ {
+  "id": 67,
+  "src_sha256": "9fbe3291ac00593ccd028e87bb0c31fd831298d3e92f69abbf4c60bae9d2618d",
+  "zh": "Savant 會為了它殺人！"
+ },
+ {
+  "id": 73,
+  "src_sha256": "9074dc5a1bb80dc7d19d84540e21f6e1262815126616416f7942dacdd45f15e2",
+  "zh": "我是 Rapax Queen ……至少在國王背叛我之前是。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "7429e6d850ced6809f5f862b25a4e3f844353bb629d593d401895c3b82d20567",
+  "zh": "這輩子不可能！"
+ },
+ {
+  "id": 76,
+  "src_sha256": "15732b3d26eaa692e9e0bc9c0cddf7d7a0d21e87583ccebed53b78355d2f7ac3",
+  "zh": "還沒輪到我。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "ee41f1d916e5a3e5bb640c8112cf899288e6b97cd3ec13d327851fa8e39de5a6",
+  "zh": "歡迎來到我的人生……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "97e9a96f633a4e2a400895f4543c45000075d1c9c5e9e5d85cdede4ccbb2413c",
+  "zh": "也許不用太久，我們就會再見面了……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "7e15a25455992b4e187be9840bee0f71f01333203bf3ecec751f347d77776781",
+  "zh": "我現在沒辦法幫上忙（ help ）……"
+ },
+ {
+  "id": 81,
+  "src_sha256": "e8198533128fdb7f5aa36e4f39de3571776aa1fd61c3d2d86de9934c9cd930bc",
+  "zh": "不太好……"
+ },
+ {
+  "id": 87,
+  "src_sha256": "e5309bad7b45e6b9a032d38976e3a2e4eb20fbd8cb78a90b07d172479c2012be",
+  "zh": "我希望他們能阻止他……"
+ },
+ {
+  "id": 88,
+  "src_sha256": "4cebf5b4014b214397482adb6abc9b56090132554cf6c4474c2fb8d35a32b019",
+  "zh": "我知道一定有辦法停用（ deactivate ）那顆炸彈（ bomb ）。"
+ },
+ {
+  "id": 89,
+  "src_sha256": "51ad03c9617562128d15b443a9727d9c1398e2434c4a3b51413d49cfd19f94b6",
+  "zh": "至少他們還沒殺了我……"
+ },
+ {
+  "id": 90,
+  "src_sha256": "2e45503366fa17e70b33a5dc698c2c70f97452776e92dfd26ffebe6998e273dd",
+  "zh": "在 Arnika 。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "f440802e979f630109b35fdba09ecc26cb48d164d05d2797096bd71df8947433",
+  "zh": "Trynton ……或者說，剩下的那一部分。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "dea2ade3366b6471941b2bc0cacbf5dd0c3c3faf72071f6ba7a920be06a23c2c",
+  "zh": "沼澤。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "741fbbd4400e41e2b4b5c97cd4f7071c43725868c5cea71423f9d5ec290aaafb",
+  "zh": "Marten's Bluff 。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "292fb8db8945acce72e2b0e7617092461ed0c907006ad58509568412419c8581",
+  "zh": "就在這個 Away Camp 裡！"
+ },
+ {
+  "id": 95,
+  "src_sha256": "a3a714592da98a257aa1c47ea00554fd48f4f6f8d358d1486b3133f54f5dd9b3",
+  "zh": "在 Mt . Gigas 。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "9a426cabf2e7dea5f34298541b953f6b31b42005750aa098f7193b20ba7176d9",
+  "zh": "大概在 Sea Caves 。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "33ea68e8680965cf1d9bdfbb75c67a6ff9725990743a05927c0593b80f21df82",
+  "zh": "去 Rift 看看。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "354ada7fa0e6218b4595ce2f9f04a999e731f85bc0100027ae474ca13740cfec",
+  "zh": "在 Castle 裡。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "edba30a3515e1ce169fb351f9fccabfd654cd2989af55b7623f219a48540c452",
+  "zh": "在 Ascension Peak 上。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "5c4338c1ba74cf323303d7c2e44c22ca8736637acecf29cb215e5cf2acb5d1d3",
+  "zh": "在 Cosmic Circle 裡。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "c9d8ac717601e625c3ea487bddeeefbb9ad137e48431e0f1495ff43282747ccd",
+  "zh": "就我所知，就在這裡！"
+ },
+ {
+  "id": 102,
+  "src_sha256": "5f845e0adbd7c297167bb0f2228aeef9f3c1e11c39a1bb38e47b40dfcf8f19df",
+  "zh": "我沒一直在追蹤……"
+ },
+ {
+  "id": 103,
+  "src_sha256": "c44322967a0d8352e7a4ee1460ab4c62d4a2823077c8ca2887e8d8eefb5d8df1",
+  "zh": "在 Bayjin ……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "a1a257e75ad52917aefeb906a6f9ca6e5585fb83b3cf2c54cc5f85b0f9fcee39",
+  "zh": "既然他已經死了，這就不是問題了。我知道他是我丈夫什麼的，但我們就說你們幫世界做了件好事吧。當初把我關起來的就是他！全都為了那個愚蠢的同盟（ alliance ）！"
+ },
+ {
+  "id": 105,
+  "src_sha256": "963e500e216f23596dad613b35662b2aab24be6b1f353a8a0c679804490d7f61",
+  "zh": "而且也請安靜點。我不想讓國王回到這裡來。當初把我關起來的就是他！全都為了那個愚蠢的同盟（ alliance ）！"
+ },
+ {
+  "id": 106,
+  "src_sha256": "10c58535612c33976f615fc3cd4e60db614793ae7b7ff3a6c5738190c925bdf1",
+  "zh": "快把門打開吧！拜託？那些 Templar 衛兵會納悶你們回來這裡幹嘛……"
+ },
+ {
+  "id": 107,
+  "src_sha256": "a76825f6c396cb7e1ad7ce8919fe7c6fac0d4d9ed2ee360e5355035a64acf37f",
+  "zh": "好吧，聽著，我會讓你們不白忙一場，好嗎？你們幫我離開這裡，我就透露一些內幕消息給你們。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "23f70274a1a61be4cc5fccfeb6ce60a0ac92880684b4c048c0ccb5af772588bc",
+  "zh": "謝謝！你們不知道這對我有多重要。現在我可以回 Rapax Castle 警告其他人，國王已經瘋（ mad ）了！不過在那之前，我有消息要告訴你們！"
+ },
+ {
+  "id": 109,
+  "src_sha256": "15543f36c88d3053bfe8379866a93a21e1964eff7bf17fcf4d9afb53f500a711",
+  "zh": "我想我現在可以順利脫身了。你們出去，引開你們看到的任何衛兵。再次謝謝你們……"
+ },
+ {
+  "id": 110,
+  "src_sha256": "d6f094588aefa84f9fa94c53345cffb76f9b220cf4d32a8e3b42d3f10a371fdd",
+  "zh": "你們不好奇炸彈（ bomb ）的事嗎？"
+ },
+ {
+  "id": 111,
+  "src_sha256": "c3e1e4d111e0b9dcc9f459f701fe62237f61de762db6ea76a133b2e9b260fa7f",
+  "zh": "你們真的不想知道他們結盟（ alliance ）的事嗎？"
+ },
+ {
+  "id": 112,
+  "src_sha256": "0255e3e111dd53d8287312287779305b25d9934e1e23ba26144c59f1f9d3e8ff",
+  "zh": "真希望他和 Savant 當初從未見過面……"
+ },
+ {
+  "id": 116,
+  "src_sha256": "aae72221c7207a54c250a8db8dc72c11d66787f1279cc14e52a2b82f9d465c82",
+  "zh": "喔，不。你們開門？我開口。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "3f26e276dc7a799b410b07ec66cbb1c4115cff1f07d705a5ff18cd0c19cf3250",
+  "zh": "你們在 Arnika 看過 Savant 的 Tower 了吧？那東西根本就是一顆百呎高的炸彈（ bomb ）！但我查到了一件事……怎麼進去！就我所知有兩條路。一條是從 Savant 的船上進去，我們連*靠近*都辦不到。但另一條就在我們的 Castle 裡！"
+ },
+ {
+  "id": 118,
+  "src_sha256": "9277bc4a5404db9f2610145759c2663302e378f07fe4ae53036ab5904c4f1cee",
+  "zh": "不過只有國王有鑰匙（ key ）。傳送器（ transporter ）在他的寢室裡。也許你們能潛進去拆掉炸彈（ bomb ）？那就能殺殺他們的銳氣！我會回 Castle ，在 Army 毀掉 Dominus 的一切之前設法煞住它。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "3aead9621238a4518989058b636f14e0b42927390c6ac444d75ff27e192d66bd",
+  "zh": "不過，嘿，要是你們還想知道 Savant 的事、他們那愚蠢的同盟（ alliance ）或炸彈（ bomb ），儘管問！我已經沒什麼好失去的了！"
+ },
+ {
+  "id": 120,
+  "src_sha256": "fdb9e2ec550578efc82bc1b41ab5c5c3f294ae04b88b6be57d7e9571dc454da0",
+  "zh": "你們知道嗎，我甚至不記得我們是什麼時候第一次見面的。我想是在 Rapax Castle ， Antone 送來你們抵達的消息後沒多久。 Savant 就這麼出現，要求見國王。我們能怎麼說？"
+ },
+ {
+  "id": 121,
+  "src_sha256": "ceac9767cf14983d8eb8d1387fd59380b372a84716b1560da398e5556120c2e4",
+  "zh": "Savant 看出了我們的實力，這讓我丈夫很得意。他想讓我們合作，他的 Troopers ，我們的 Army 。同盟（ alliance ）就這麼誕生了。但我不信任 Savant ……"
+ },
+ {
+  "id": 122,
+  "src_sha256": "47f999ac71948ca52151a4eeb15b795f03ae9230b8bea352693706dd80572180",
+  "zh": "別搞錯，這個同盟（ alliance ）是致命的。我們的軍隊（ army ）加上他的 Troopers ，會毀掉 Dominus 上所有的生命。我們得到這顆星球，他得以 Ascend ——而我們誰都不會遇到任何抵抗。很完美，不是嗎？"
+ },
+ {
+  "id": 123,
+  "src_sha256": "7ef820baa289d87a3cd9f73a710aff8839d6dcf3cb2aa7311a63cd098990af2e",
+  "zh": "看起來是這樣……但我不信任 Savant 。他利用我們的實力來滿足他自己的目標——沒有我們站在他那邊，這些目標他根本達不到！而國王呢？他被自己的貪婪蒙蔽了。原本我們該與 Ascension 之後留下來的人共享這顆星球……"
+ },
+ {
+  "id": 124,
+  "src_sha256": "edb34456584e187bd2080c309f51c7a5ee4133a612d88f1e677af2c8fd327c7a",
+  "zh": "現在他想獨吞一切！而這一切都是因為 Dark Savant 。為什麼血要沾在我們手上？"
+ },
+ {
+  "id": 125,
+  "src_sha256": "fc34ceb2f7a12e360847c80e2cf1b6c024fd7b232239fd4aab35ca352e0338c3",
+  "zh": "那座塔（ tower ）？它從上到下、從左到右都是一顆炸彈（ bomb ）。等 Savant 一聲令下，它會把這顆星球震到核心。也許你們能拆除它？希望渺茫，但或許是我們唯一的希望。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "7ceca87e84ae0a699035cf0d1a346350d03a600a6d8cad78bdd5529ad9af4729",
+  "zh": "Ascension …… Higardi 永遠都在等它，盼著有一天他們能升上 Cosmic Circle 。對像我們這樣只想要這個世界的人來說，它毫無意義。但對 Dark Savant 來說意義重大。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "4614c20faafa5924d1fcf0fe91c56a5441231c12222245b2f2023a66f16a3942",
+  "zh": "如果 Higardi 的信念是真的，也就是 Ascend 的那一位會成為這個宇宙新的主宰，那我希望在 Dark Savant 抵達那裡之前我就已經死（ die ）了。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "edc71a13d951c0a06ade164a73432f1b4e260a8e5285d6837bc10bc00483acd8",
+  "zh": "國王拿著它（ key ）……"
+ },
+ {
+  "id": 129,
+  "src_sha256": "e7ec34c1003292ae046fbf3e047a94c145a4793ff4de0d2eeac339b1ad7bbf28",
+  "zh": "我不知道它怎麼運作的……他走進去，人就不見了！"
+ },
+ {
+  "id": 130,
+  "src_sha256": "3883a95233a596c95c0a6a9283dd6253ec7bd9f36a044279545b522d72a0fd6d",
+  "zh": "國王要是以為能信任 Dark Savant ，那他就是瘋了（ mad ）！他會把我們全都拖下水。我們注定完蛋。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "835d6e5205b76235566aafc6d1881d05e4493b6fbddea442068ca02c0ecb2112",
+  "zh": "我告訴國王，我不同意這個同盟（ alliance ），我不信任 Savant 。他把我關起來！現在所有 Rapax 都認為我才是瘋子！"
+ },
+ {
+  "id": 132,
+  "src_sha256": "c6c5e8f026910e91556b7f3f116391d65a3ca5b8a7a831b26375305d17ebe132",
+  "zh": "Rapax Army 非常強大，比這個星球上任何軍隊都強。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "fb72e79ba1860ca672c40885608923f0b958499b98c916c2f02be0b85d481ceb",
+  "zh": "他們可能在任何地方。正前往 Trynton ？不然就是在替 Savant 守著 Ascension Peak 。如果我能回到 Castle ，也許能說服 Templars 協助（ help ）我阻止他們！"
+ },
+ {
+  "id": 134,
+  "src_sha256": "d1d4efda425d8675d83df6567def104004f1b056a29bf0d0b1d9b65f725a6729",
+  "zh": "當然是 Rapax 的 Templars ！我們最忠誠的子民。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "84e53e010d1979e9a3eb54db664f192d0a431872ab76d1bc4b5bc43f036f27ad",
+  "zh": "我從沒親眼見過炸彈（ bomb ）本身，所以不知道你們要怎麼做。但我希望你們辦得到！"
+ },
+ {
+  "id": 136,
+  "src_sha256": "7f3b5c1413da5ad955c7330cd36dfb91cea1a17ed16428a09041770e7cccc9f6",
+  "zh": "當然是 Arnika 的 Tower 。它根本就是一顆巨大的炸彈（ bomb ）。"
+ },
+ {
+  "id": 137,
+  "src_sha256": "494cec76d63c0de5ba3fc1e3f0b52a2296206261f4c2f516330d51aacc9b7f9d",
+  "zh": "當初把我關起來的是國王。鑰匙（ key ）在他手上。"
+ },
+ {
+  "id": 138,
+  "src_sha256": "59c9c399f838d2e25a0df172db92ab196f3d42c02e4707060f2ad70e44bdfa15",
+  "zh": "我就是這個意思。"
+ }
+]

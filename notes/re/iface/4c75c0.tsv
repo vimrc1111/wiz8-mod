@@ -1,0 +1,49 @@
+data	5ebaf4	無關	srAssertFail 的 IAT 位址，非遊戲資料
+data	60ee2c	無關	怪物查找呼叫的來源檔名診斷字串，非規則資料
+data	60f578	無關	戰鬥記錄格式字串，非規則資料
+data	60f5a0	無關	攻擊類別錯誤記錄格式字串，非規則資料
+data	60f5d8	無關	攻擊類別錯誤記錄的檔名診斷字串，非規則資料
+data	65bddc	attack_class_count	攻擊類別總數；攻擊槽類別欄不小於它時視為 0
+data	6836a8	battle_state	戰鬥狀態指標；讀 +0x7b0 與 +0x7b8 判斷是否為此怪物的待放投射物
+data	683f94	combat_active_flag	戰鬥進行中旗標位元組；非零才可能走待放投射物路徑
+data	ffffffffffffff93	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+call	2b6	srAssertFail	IAT 0x5ebaf4 的 srAssertFail 分析標記；只在攻擊槽索引大於2時停止，合法輸入以外不達
+call	4e5550	monster_id_to_slot	由怪物代號查找已載入實例列表位置
+call	4e5620	monster_instance	由列表位置取得即時怪物記錄
+call	4e5720	monster_template	由怪物實例取得其模板記錄
+call	4ed260	無關	戰鬥記錄輸出（0x542720 結果格式化寫入記錄）；只留 log，不回饋規則
+call	5182e0	無關	攻擊類別超出類別數時的錯誤記錄呼叫；只寫 log，不影響規則輸出
+call	53be50	projectile_target_record	把怪物實例組成 13 個 dword 的目標記錄（kind 2、索引 -1、實例代號）供投射物發射使用
+call	543260	projectile_attack_pack_init	以攻擊槽 +3 的位元組初始化投射物攻擊包；其餘欄位由本節點填入
+field	eax+0x0	無關	由 0x53be50 目標記錄或 0x543260 攻擊包指標別名產生的欄位引用，本節點只寫入，不當規則欄位
+field	eax+0x24f	attacker_template_level	攻擊者模板等級位元組；等級加上不超過15的等級作為攻擊包第七欄
+field	eax+0x4	無關	同 eax+0x0 的別名欄位引用
+field	eax+0x7b0	battle_projectile_state	戰鬥狀態待放投射物階段；等於2才可能走旗標路徑
+field	eax+0x7b8	battle_projectile_owner	戰鬥狀態待放投射物擁有者怪物記錄指標；須等於此怪物
+field	eax+0x8	無關	同 eax+0x0 的別名欄位引用
+field	eax+0xc	無關	同 eax+0x0 的別名欄位引用
+field	eax-0x15	attack_slot_active	攻擊槽啟用位元組（槽記錄 +0）
+field	ebp+0x17	attack_slot_d17	攻擊槽 +0x17 dword，複製進攻擊包第二欄
+field	ebp+0x1b	attack_slot_b1b	攻擊槽 +0x1b 位元組，放進攻擊包第八欄
+field	ebp+0x3	attack_slot_b3	攻擊槽 +3 位元組，初始化攻擊包並作為投射物第六參數
+field	ebp+ecx*2+0x104	無關	攻擊槽類別欄的索引化位址（槽記錄 +0x1d，含索引的第二個引用）
+field	ebp+edx*2+0xfc	無關	攻擊槽旗標欄的索引化位址（槽記錄 +0x15，含索引的第二個引用）
+field	ecx+0x11	player_attack_slot	旗標路徑下待放槽索引（模板指標所指記錄 +0x11 dword）；大於2時停止
+field	ecx+0x1e4	monster_handle	怪物物件上存的實例代號，用來查找怪物記錄
+field	esi+0x10	monster_template_ptr	怪物記錄的模板指標
+field	esi+0x2ba	target_type	怪物攻擊目標種類；非旗標路徑設 1
+field	esi+0x2be	target_character_index	怪物攻擊目標角色索引；由 0x518150 選出，無人則為 -1
+field	esi+0x2c2	target_monster_id	怪物攻擊目標怪物代號；非旗標路徑設 -1
+field	esi+0x2df	projectile_released	投射物已放出旗標位元組；呼叫發射前設 1
+field	esi+0x2e5	attack_mode	怪物攻擊模式；非旗標路徑由 0x542db0 依攻擊槽旗標字擲出

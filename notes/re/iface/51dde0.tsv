@@ -1,0 +1,92 @@
+call	2b6	assertFailureIndirectCall	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，只在 cov-exempt 的塊裡出現
+call	5f	無關	分析器列出的例外展開輔助目標；正常返回不執行
+call	65	無關	同上：例外展開輔助目標
+call	40efa0	powerLevelRoll	卷軸／藥水選定等級後逐級擲 R(100)，不小於 7×等級才用該級，否則降一級；calc 用 w.r.R(100)
+call	5061a0	setStoryFact	特殊物品 0x29f 設事實 0x44＝1、0x284＝0；值改變時記事件（5588f0 事件記錄、日誌提示），再呼叫 506670（D4，位址樁）；calc iupFact／iupLog
+call	50b800	npcObjectByIndex	隊員副記錄 +0xfa 的 NPC 編號取 NPC 物件；編號不小於表筆數時讀第 0 筆，旗標 +0xc7 非零視為無；calc iupNpc
+call	51dcd0	itemCastRisk	物品施法失敗率；卷軸／藥水由等級 7 往下找第一個失敗率小於 16 的等級；calc ieRisk
+call	538670	slotTargetSelf	(idx, idx, 0)：戰鬥中把隊員副記錄 +0x1d 目標描述改成指向自己 {1, idx, -1, -1, 0…}；calc 直接寫入，欄位進輸出
+call	53be00	characterDescriptorInit	堆疊上目標描述清零並填種類 1、索引、−1；calc marCharSource
+call	53bea0	sourceIsCharacter	目標描述為角色：顯示角色使用物品訊息；calc isChar
+call	53bf10	sourceIsMonster	目標描述為怪物：顯示對怪物使用訊息；calc isMon
+call	5905c0	messageWindowMode	(1,−1)：只設 0x69b7b8＝1；calc 直接 put8，欄位進輸出
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffdc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe5	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5eb188	無關	swprintf import；未鑑定名稱快取格式化，calc 以 ieName 重現
+data	5eb1a0	無關	malloc import；名稱快取 0x78 位元組，calc 以 alloc 重現
+data	5ebaf4	assertImport	srAssertFail import，失敗停止而無規則結果；所在塊登記 cov-exempt
+data	5ed8cc	無關	52e690 音效參數常數（排除類位址樁的記錄參數）；calc 執行時讀 exe
+data	5ed914	無關	同上：52e690 音效參數常數
+data	5ee624	chargeUseVoice	物品使用方式 4 的語音 id（52e690 第二參數）；calc 執行時讀 exe
+data	609b24	無關	斷言條件文字，僅供診斷
+data	612f4c	無關	斷言條件文字，僅供診斷
+data	616e84	itemKindSkill	物品種類 0..11 對應技能索引；非卷軸類對應技能 9 時行動成本 10，卷軸／藥水選 51dcd0 技能
+data	617584	無關	角色目標使用訊息格式字串；只當 590950 參數
+data	61a758	無關	斷言來源檔名字串，僅供診斷
+data	61a9f0	無關	斷言條件文字（517a70 名稱前綴），僅供診斷
+data	61aa28	無關	怪物目標使用訊息格式字串；只當 58aad0 參數（記錄進輸出）
+data	61aa3c	無關	斷言條件文字，僅供診斷
+data	61aa60	無關	斷言條件文字，僅供診斷
+data	61e810	itemWordText	名稱字 0..n 對應訊息目錄索引；未鑑定物品名稱用
+data	61e956	itemKindText	物品種類對應訊息目錄字索引（步距 4 取 word）；只當訊息參數
+data	65be1c	spellTable	法術記錄表（步距 0x1bf）；等級 +0x56 決定卷軸／藥水成本 等級×8＋20
+data	683f94	combat_active_flag	戰鬥中旗標；非零時施法類物品目標改為自己（538670）
+data	68510c	messageMode	訊息輸出模式：為 0 時設 5905c0
+data	68516c	itemTable	物品記錄表基底（步距 0x10d）
+data	685174	characterRecords	角色記錄陣列指標（步距 0x1862）
+data	685178	partySlotRecords	隊員副記錄陣列（步距 0x106）；+0x1d 目標描述、+0xfa NPC 編號
+data	68c09c	messageCatalog	訊息目錄指標；只取字串指標當訊息格式參數，文字無規則效果
+data	68c108	itemNameCache	未鑑定物品名稱快取（以名稱字索引），空時配置並格式化
+data	68c558	fizzleVoice	物品使用方式 2 的語音 id（52e690 第二參數）
+field	eax+0x0	costOut	*pcost 寫出行動成本（否決時 0）
+field	ecx+0x0	costOut	*pcost 寫出 −1（51d610 不可用）
+field	edx+0x0	costOut	*pcost 寫出最終成本
+field	eax+0x3e	itemClass	物品記錄 +0x3e 類別：0xd 卷軸、0xe 藥水、0x10／0x15／0x16 用隊員目標描述
+field	ebp+0x3e	itemClass	同上
+field	eax+0x4	targetCharacter	目標描述 +4：角色索引（種類 1）
+field	eax+0x8	targetMonster	目標描述 +8：怪物 id（種類 3）
+field	eax+edx*2+0x1d	slotTarget	隊員副記錄 +0x1d 目標描述種類（1 角色、3 怪物）
+field	eax+edx*2+0xa21	scrollBlocked	角色記錄 +0xa21：非零時不能讀卷軸（類別 0xd）
+field	eax+edx*2+0xfa	npcIndex	隊員副記錄 +0xfa：NPC 編號，特殊物品 0x29f 用
+field	eax+ecx*1+0x3f	itemWord	物品記錄 +0x3f 名稱字；未鑑定名稱快取索引
+field	ecx+edx*1+0x3f	itemWord	物品記錄 +0x3f 名稱字；未鑑定名稱快取索引
+field	edx+eax*1+0x3f	itemWord	物品記錄 +0x3f 名稱字；未鑑定名稱快取索引
+field	eax+ecx*1+0x56	spellLevel	法術記錄 +0x56 等級；卷軸／藥水成本 等級×8＋20
+field	eax+edx*1+0x63	itemSpell	物品記錄 +0x63 法術 id；0 觸發斷言
+field	ebp+0x63	itemSpell	同上；0x58／0x74 不套種類技能
+field	ebp+0x0	casterSkill	角色技能值（+0x1a3＋技能×0x26）；傳給 51dcd0
+field	ebp+0x42	itemKind	物品記錄 +0x42 種類；索引 0x616e84、0x61e956，不小於 10 觸發斷言
+field	ebp+0x64	itemPowerLevel	物品記錄 +0x64：非卷軸／藥水的施法等級
+field	ebp+0x66	itemUseMode	物品記錄 +0x66 使用方式：2／4 且實例 +5 為 0 時只播語音、不使用
+field	ebx+0x2e	npcKind	NPC 物件 +0x2e 必須為 0x20，否則斷言
+field	ecx*4+0x616e84	itemKindSkill	物品種類索引技能表
+field	edx*4+0x616e84	itemKindSkill	同上
+field	edx*4+0x61e956	itemKindText	物品種類索引訊息字表
+field	ecx+0x598	無關	訊息目錄字串指標，只當 590950 格式參數
+field	edx+0x590	無關	訊息目錄字串指標，只當 590950 格式參數
+field	edx+0x594	無關	訊息目錄字串指標，只當 590950 格式參數
+field	edx+0x7c4	無關	訊息目錄字串指標，只當 590950 格式參數
+field	edx+0x7c8	無關	訊息目錄字串指標，只當 590950 格式參數
+field	edx+0x7cc	無關	訊息目錄字串指標，只當 590950 格式參數
+field	ecx+0x79c	無關	訊息目錄字串指標，只當名稱快取格式參數
+field	ecx+eax*4	無關	訊息目錄依字索引取字串指標，只當訊息參數
+field	ecx+edx*4	無關	同上
+field	edi*2+0x61e810	itemWordText	名稱字索引訊息目錄表
+field	esi*2+0x61e810	itemWordText	名稱字索引訊息目錄表
+field	edi*4+0x68c108	itemNameCache	名稱字索引名稱快取
+field	esi*4+0x68c108	itemNameCache	名稱字索引名稱快取
+field	esi+0x0	itemId	物品實例第 0 dword：物品記錄索引
+field	esi+0x5	itemCharged	物品實例 +5：為 0 時使用方式 2／4 不能使用
+field	esi+0x6	itemIdentified	物品實例 +6：已鑑定；0 時名稱走快取

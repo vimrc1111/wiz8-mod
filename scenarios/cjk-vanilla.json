@@ -1,0 +1,28 @@
+{
+  "id": "cjk-vanilla",
+  "duration": 60,
+  "files": [
+    {
+      "src": "hook/ddraw/out/ddraw.dll",
+      "dst": "ddraw.dll"
+    }
+  ],
+  "steps": [
+    {
+      "t": 36,
+      "shot": "menu"
+    },
+    {
+      "t": 38,
+      "keys": "{DOWN}"
+    },
+    {
+      "t": 39,
+      "keys": "{ENTER}"
+    },
+    {
+      "t": 46,
+      "shot": "party"
+    }
+  ]
+}

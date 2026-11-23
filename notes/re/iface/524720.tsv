@@ -1,0 +1,5 @@
+call	523330	characterConditionRemove	對成員（參數 1）與狀態槽（參數 2）、通知旗標 1 解除狀態；已 D4，case 以位址樁記錄最後一次參數與呼叫次數，F 另跑真 Go 函式
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）
+data	685178	partyPresenceRecords	隊伍在場記錄陣列基址（每人 0x106 bytes，第 0 個 byte 為在場旗標）
+field	ecx+edx*1+0xa01	characterConditionSlot	角色 +0xa01 起每槽 4 bytes 的狀態字（槽 0..0x11），非零才解除
+field	esi+eax*1	partyPresenceFlag	在場記錄第 0 byte，非零為在場

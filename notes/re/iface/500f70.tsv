@@ -1,0 +1,27 @@
+call	5905c0	messagePendingSet	訊息模式 0x68510c 為零時呼叫 (1, −1)：寫 0x69b7b8＝1、顏色參數 −1 保留 0x64bd54；兩欄進輸出
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	603ac8	partyTargetDrop	隊伍目標點 y 的下修量（float32），calc 經 n_545cf0.go 的 runtime loader 從使用者 exe 讀；不內嵌
+data	61920c	無關	原始檔名字串，只當 0x4e5840 斷言訊息參數，不參與規則
+data	68510c	messageMode	訊息輸出模式 byte；為零才呼叫 0x5905c0
+data	685174	characterRecords	角色主記錄陣列指標（stride 0x1862），讀 +0xb11 HP
+data	68c09c	messageCatalog	訊息目錄指標；只取 +0x654 字串指標當訊息參數（0x590b40、0x590950），文字無規則效果
+data	ffffffffffffffd4	無關	靜態掃描所列的堆疊相對位移；目標位置向量的區域暫存，值經 cast.target 指的目標記錄輸出
+data	ffffffffffffffd8	無關	靜態掃描所列的堆疊相對位移；目標位置向量的區域暫存，值經目標記錄輸出
+data	ffffffffffffffdc	無關	靜態掃描所列的堆疊相對位移；目標位置向量的區域暫存，值經目標記錄輸出
+data	ffffffffffffffe0	無關	靜態掃描所列的堆疊相對位移；目標記錄種類（6＝位置），值以 targetKind 輸出
+data	fffffffffffffff0	無關	靜態掃描所列的堆疊相對位移；目標記錄 +0x10 x 的區域暫存，值以 targetXBits 輸出
+data	fffffffffffffff4	無關	靜態掃描所列的堆疊相對位移；目標記錄 +0x14 y 的區域暫存，值以 targetYBits 輸出
+data	fffffffffffffff8	無關	靜態掃描所列的堆疊相對位移；目標記錄 +0x18 z 的區域暫存，值以 targetZBits 輸出
+field	eax+0x178	monsterVisualLift	怪物視覺物件 +0x190 y 抬升量；加到 y 後交給地面高度查詢 0x420bd0（排除，樁），其結果覆寫 y，抬升後的值不進任何輸出
+field	ecx+0x654	messageCatalogText	訊息目錄字串指標，0x590b40／0x590950 的格式參數；無規則效果
+field	ecx+eax*2+0xb11	characterCurrentHP	角色 +0xb11 HP（u32），零＝死亡才觸發後續法術；雙重索引，其他槽擺誘餌
+field	edi+0x2b	monsterCurrentHP	怪物 +0x2b HP（u32），零＝死亡才觸發後續法術
+field	edi+0xc	monsterVisual	怪物視覺物件指標，位置欄在其 +0x118
+field	edx+0x0	monsterX	怪物視覺 +0x118 x（float32 bits），原樣成為目標 x
+field	edx+0x4	monsterY	怪物視覺 +0x11c y；加抬升後交 0x420bd0，被地面高度覆寫
+field	edx+0x8	monsterZ	怪物視覺 +0x120 z（float32 bits），原樣成為目標 z
+field	esi+0x90	effectTargetType	效果結果目標種類：3 怪物、1 角色，其他不做事
+field	esi+0x94	effectTargetCharacter	目標角色索引 0..7
+field	esi+0x98	effectTargetMonsterID	目標怪物 id，經 0x4e5840 找記錄
+field	esi+0xd0	effectLevel	原效果 PL，原樣當 0x4fb4c0 的 level 參數
+field	esi+0xd4	effectBonus	原效果加成，原樣當 0x4fb4c0 的 bonus 參數

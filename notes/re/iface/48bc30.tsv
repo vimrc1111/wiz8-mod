@@ -1,0 +1,14 @@
+call	4efb60	partyAverageLevel	隊伍（第 2–7 槽）有效隊員平均總等級，x87 浮點回傳；與怪物等級相除得等級比
+call	517970	rollDice	擲怪物模板 +0xc1 起的骰記錄（Z、N、S），回傳整數；本函式最初擲一次，依分支可能重擲
+data	4	無關	參數與堆疊清理的立即值，非資料存取
+data	5ebb30	ratioLowThreshold	float32 常數 0.8；等級比不高於此值為低比值分支
+data	5ebc7c	halfFactor	float32 常數 0.5；骰最小值與最大值之和乘以它得中點
+data	5ec394	ratioHighThreshold	float32 常數 1.2；等級比低於此值走中低分支，不低於走高比值分支
+data	6850d5	difficulty	難度全域，0／1／2 有特定行為，其餘值同 1；影響回傳取骰最小值、最大值或重擲方向
+data	fffffffffffffff8	無關	資料引用掃描將堆疊配置的負位移列為地址；此處只是局部浮點暫存，非規則資料或全域
+data	fffffffffffffffc	無關	資料引用掃描將堆疊配置的負位移列為地址；此處只保存暫存器，非規則資料或全域
+field	esi+0x0	Z	怪物模板 +0xc1 起的骰記錄基值，i16 有號；min 為 Z+N、max 為 Z+N*S
+field	esi+0x2	N	骰數，u8，位於模板 +0xc3
+field	esi+0x3	S	面數，u8，位於模板 +0xc4
+field	esi+0x251	monsterLevel	怪物模板 u8 等級；除以隊伍平均等級得等級比
+field	esi+0xc1	groupSizeDiceBase	生成隻數骰記錄的起點（模板 +0xc1），其 Z 以有號 16 位讀入

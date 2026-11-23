@@ -1,0 +1,14 @@
+call	2b6	無關	函式邊界掃描產生的假子呼叫；從 0x53d310 正確入口僅有射程查詢與間接 assertion 呼叫，沒有此目標，不參與可攻擊判定。
+call	519ac0	charAttackRange	查詢已啟用手的射程；主副手分別傳 0/1，非 -1 即回 true。重用既有 charAttackRangeNode；原版子函式照常執行。
+data	4	無關	入口第一個堆疊參數的偏移，代表隊伍槽索引位置，不是絕對資料位址。
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import 槽；手別超出兩手範圍的防禦性診斷，合法迴圈到不了此呼叫。
+data	61d298	validHandAssertionText	手別小於 HAND_COUNT 的 assertion 訊息；不是規則數值或資料表，合法迴圈不讀。
+data	61d2ac	attackAvailabilitySourceFilename	assertion 來源檔名字串；不是規則數值或資料表，合法迴圈不讀。
+data	685174	partyCharacterRecords	隊伍角色記錄基址，角色槽 stride 0x1862；案例提供八筆空間並以 partySlot 尋址填寫所選角色，避免固定槽造成錯讀漏驗。
+field	ebx+eax*1+0x114d	characterHandAttackAvailable	所選角色 C+0x114d 的主手攻擊啟用旗標，副手加 0x5b；u8 非零才查射程。來源 0x53d350、0x53d36d。
+field	C+0x1149	characterHandAttackKind	子呼叫讀主手攻擊種類，副手加 0x5b；種類 1/3 查物品，其餘回短射程 0。來源 0x519b53..0x519b63。
+field	C+0xfa5	characterMainWeaponItemIndex	子呼叫讀裝備欄 6 的物品索引，欄 stride 12；案例選四筆獨立物品之一。來源 0x519b6f..0x519b75。
+field	C+0xfb1	characterOffWeaponItemIndex	子呼叫讀裝備欄 7 的物品索引；主副手索引分別變動。來源 0x519b6f..0x519b75。
+data	68516c	itemDefinitions	子呼叫讀動態物品基址；案例提供四筆 stride 0x10d 的合成記錄，不複製 exe 表。來源 0x519b8a。
+field	I+0x47	itemAttackRangeClass	子呼叫讀裝備物品的 u8 射程枚舉，零擴展至 0..255；即使 255 也不是不可攻擊 sentinel -1。來源 0x519b92。
+field	C+0x4	無關	在隊旗標只在子函式的未啟用手診斷讀取；外層先跳過未啟用手，因此任何合法組合輸入均不讀取，案例不需要此欄。

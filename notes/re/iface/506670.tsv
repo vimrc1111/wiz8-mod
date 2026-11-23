@@ -1,0 +1,163 @@
+# 506670 scriptAttributeSkillGain：NPC 劇本「事實改變」分派（cdecl，void；ev u32、flag u8），依事件號跳表到各處理段。
+# 位址樁（排除類）：408860 4ae080 4512c0 4f6c50 4f6cf0 4d8f00 420f90 547570 56e800 50c560 509aa0 49acd0 498d90 5299b0 58aad0 483fd0 41f0d0 408ad0 451080 5b1af0 5b1b30 569a50 56aab0 55ee70 4add30 4f21e0 4f2380 43d940 4c7f10 4c2cf0 4e4db0 4e3af0 55a0a0 524ca0 52e690 506280；引數與呼叫次數都是輸出，多次呼叫用 n 保留每次引數；回傳被讀的取自 case 輸入。
+# 位址樁（D4 公式）：523330 51d960 4ed9d0 522fe0 55a7b0。前四個呼叫端不讀回傳（回傳設 0x5a5a5a5a 時 TestEmu 仍 diff=0）；55a7b0 的回傳取自 case 輸入。F 對 55a7b0 呼叫 Go 的 shopStockAddNode 並把結果寫回（Emu／F 分流，同 n_524720／n_55ab80）。
+# 偏離（已核准）：除錯／UI 旗標 0x688290 0x683f8c 0x68edcc 0x68de44 0x6850d5 固定 0（4e46f0 前例），0x688290 非 0 時 calc 報錯；thiscall 樁不記 ecx；553cd0 法術學派須 0..5，否則 calc 報錯（n_553f10 前例）；_strupr 匯入為不變動的樁；F 路徑的 55a7b0 把新項寫進 fixture 槽，清單指標為 0 時對應該 NPC 的 fixture 清單。
+# 事件記錄值：5588f0 只把 506280 回傳的 al 存進 4 位元組區域變數、再整個 dword 抄進記錄，高 3 bytes 是該堆疊槽的殘值。一般為 0（值＝低位元組零擴充，原樣比對）；事件 0xcd／0xe0 先 set(0xe2) 再 set(0x24d) 時，前一次 5061a0 呼叫 506670 的返回位址 0x506218 留在該槽，高位為 0x005062，calc 照此重現（case 有 24 列專測）。
+# 上限：NPC 清單、怪物／記錄清單、觸發物件與商店 fixture 筆數有上限，超過 calc 報錯；商店清單長到超過 6 筆 fixture 時 F 報錯。職業須 0..14（n553 前例）；目前角色 0x68760c 須 0..7（寫入點 4de8ad／4de8fb 只寫 0..7）。
+# 不可達／assert：NPC 0x48／0x29 缺席、觸發物件查無（0x3a）的 srAssertFail，以及 0x688290 除錯記錄塊，見 cov-exempt；calc 皆報錯。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	區域暫存（效果物件參數、查找結果）的堆疊位移，非全域資料引用。
+data	ffffffffffffffd0	無關	區域暫存（效果物件參數、查找結果）的堆疊位移，非全域資料引用。
+data	ffffffffffffffd4	無關	區域暫存（效果物件參數、查找結果）的堆疊位移，非全域資料引用。
+data	ffffffffffffffe0	無關	區域暫存（效果物件參數、查找結果）的堆疊位移，非全域資料引用。
+data	ffffffffffffffe4	無關	區域暫存（效果物件參數、查找結果）的堆疊位移，非全域資料引用。
+data	ffffffffffffffe8	無關	區域暫存（效果物件參數、查找結果）的堆疊位移，非全域資料引用。
+data	fffffffffffffff8	無關	區域暫存（效果物件參數、查找結果）的堆疊位移，非全域資料引用。
+call	2b6	無關	分析器列出的低於 PE ImageBase 目標（跳表內容誤判），本函式沒有此子呼叫。
+call	78	無關	分析器列出的低於 PE ImageBase 目標（跳表內容誤判），本函式沒有此子呼叫。
+call	443780	triggerFind	以名稱查觸發物件（strdup、_strupr、類別節點 0x10008 查詢）；回傳物件指標或 0，calc 模型化（case 的查找結果為輸入）。
+call	443dc0	namedCounterAdd	具名計數器新增：已存在不動作，否則複製鍵並附加到三張表（名稱、值、擁有者）。
+call	444030	namedCounterSet	具名計數器設值。
+call	4440d0	namedCounterGet	具名計數器取值。
+call	444170	namedCounterFind	具名計數器索引查找，查無回 -1。
+call	5061a0	setStoryFact	設定事實位元組（0x689b78+id），值改變時記事件（5588f0），並以新值重入本函式分派。
+call	50a3c0	npcMonsterObject	已放置 NPC 的怪物物件（+0x1a 與 +0x25 皆非 0 時以 +0x16 查怪物清單），否則 0。
+call	50b830	npcFindById	NPC 清單中定義 id（定義 +0x58）相符者，否則 0。
+call	50ba80	npcClearWordSlot	在 NPC +0x30 的 40 個 i16 中找值，命中改 0xffff 並回 1（本函式第三參數為 0，不呼叫 51c020）。
+call	50c1c0	npcArrive	NPC 移到指定地圖／區位並設狀態位元組。
+call	50c440	npcLeave	NPC 離開目前地圖（同地圖時走 50c680 本體）。
+call	50c680	npcRemove	移除 NPC：放置中則清怪物物件（4e3af0 樁）並清旗標。
+call	50ca30	npcSetFlag	NPC +0xe9 設 1。
+call	510b60	recordFindById	兩張記錄清單（*0x683fb1、*0x683fbd）中 +0x18 相符的第一筆，否則 0。
+call	528830	queueMessageBlank	附加一則全零、帶時間戳 0x68c4ac 的訊息到佇列 0x68c4c0。
+call	5289b0	queueMessage	附加訊息（種類、參數、時間戳）到佇列 0x68c4c0。
+call	529560	setUiByte68c4f4	設 0x68c4f4 = 1，calc 直接寫。
+call	529bc0	setUiByte68c4f7	設 0x68c4f7 = 1，calc 直接寫。
+call	535b40	factionStandingReset	陣營聲望設為 0x19／0x37／0x4b，類別改變時寫時間並記陣營記錄（58aad0 樁）；陣營須 < 0x15 否則 assert。
+call	536110	factionFlagSet	陣營記錄 +0xa 位元組設值（本函式只用 0x10, 1）。
+call	553ad0	refreshAttribute	角色屬性 1（+0xf9）重算：≥100 時設技能旗標並通知（5b1af0／569a50 樁，視模式 0x68ec78），夾 1..0x7d 寫有效值；依 n_553f10 語意。
+call	553c10	refreshSkill	角色技能 7 有效值重算（n553State），並呼叫 51d960、4ed9d0（D4 位址樁）。
+call	55aa80	shopStockFind	商店存貨清單中物品 id 相符的項；查無原版崩潰，calc 報錯。
+data	507c7c	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507c90	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507cbc	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507cf1	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507d49	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507d60	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507d9c	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507dc0	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507dc3	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507ef4	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507f24	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507fc0	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	507fe8	無關	本函式 switch 的跳表／索引表（程式碼段內），非遊戲資料。
+data	5092c0	無關	效果參數區預設的程式碼指標（觸發回呼），寫入區域變數後交 408860 樁，非遊戲資料。
+data	5092d0	無關	寫進效果物件 +0x48 的回呼程式碼位址，非遊戲資料；calc 原樣寫入。
+data	5eb1ec	無關	MSVCRT wcscpy 匯入槽：只在除錯記錄（0x688290 非 0）時用，cov-exempt。
+data	5ebaf4	無關	SR.DLL srAssertFail 匯入槽：assert 塊，cov-exempt，calc 報錯。
+data	5ed8c8	emptyText	傳給 52e690 樁的空字串指標（樁引數比對）。
+data	5ed914	emptyWideText	傳給 52e690 樁的空寬字串指標（樁引數比對）。
+data	606e00	無關	assert 運算式字串 "pTrigger"。
+data	612f4c	無關	assert 運算式字串 "pNPC"。
+data	619d4c	無關	assert 原始檔路徑字串。
+data	619a54	無關	除錯記錄寬字串 "FALSE"（0x688290 非 0 才用）。
+data	619a60	無關	除錯記錄寬字串 "TRUE"（0x688290 非 0 才用）。
+data	619a74	無關	除錯記錄格式寬字串（0x688290 非 0 才用）。
+data	619ab0	無關	音效檔名字串（408ad0 樁引數）。
+data	619af4	無關	音效檔名字串（408860 樁引數）。
+data	619ad4	無關	.msf 檔名字串（4c7f10 樁引數）。
+data	619c54	無關	.msf 檔名字串（4c7f10 樁引數）。
+data	619ae8	無關	物件名稱字串（451080 樁引數）。
+data	6159e4	classHasSkill7Table	職業表（每職業一 dword，0x6159e4+4*職業），非 0 時事件 0x195 把技能 7 原值補到 10。
+data	659ab4	worldObjectRoot	451080 樁的第一引數（全域物件根），calc 讀出傳入。
+data	6836ac	levelTable	地區記錄表基底（步距 0x1d8，+0x37 為記錄等級，>2 時 5588f0 不再查第二次事實）。
+data	685174	characterArray	角色記錄陣列指標（步距 0x1862）。
+data	685178	partyPresence	隊伍在場陣列指標（步距 0x106；+0 在場、+0xfa NPC 索引）。
+data	68760c	currentCharacter	目前角色索引（寫入點只寫 0..7），事件 0x39 用。
+data	688290	debugFactLog	除錯位元組，固定 0（4e46f0 前例）；非 0 時 calc 報錯。
+data	689afb	scriptFlag689afb	劇本旗標 dword，事件 0x2f4 設 1。
+data	689aff	scriptFlag689aff	劇本旗標 dword，事件 0x219 設 1。
+data	689b03	scriptFlag689b03	劇本旗標 dword，事件 0x21c 設 1。
+data	68c09c	stringTable	遊戲字串表指標（索引×4），訊息與樁引數取字串。
+data	612588	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	612620	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	6126b8	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	612c7c	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	6134c4	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	6134cc	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	6134dc	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619b1c	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619b30	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619b44	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619b58	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619b6c	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619b7c	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619b94	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619bac	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619bc0	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619bd0	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619be0	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619bf0	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c00	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c18	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c30	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c3c	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c48	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c60	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c70	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c7c	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c8c	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619c9c	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619cb0	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619cbc	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619ccc	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619cd4	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619cdc	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619ce4	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619cec	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619cfc	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619d08	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619d14	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619d2c	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619d38	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+data	619d88	無關	觸發物件／計數器／地區名稱字串常數（查找鍵），calc 以位址常數傳入查找。
+field	eax*4+0x507c7c	無關	跳表索引（switch 分派），非遊戲資料。
+field	eax*4+0x507c90	無關	跳表索引（switch 分派），非遊戲資料。
+field	eax*4+0x507fc0	無關	跳表索引（switch 分派），非遊戲資料。
+field	ecx*4+0x507cbc	無關	跳表索引（switch 分派），非遊戲資料。
+field	ecx*4+0x507dc0	無關	跳表索引（switch 分派），非遊戲資料。
+field	ecx*4+0x507f24	無關	跳表索引（switch 分派），非遊戲資料。
+field	ecx*4+0x507fe8	無關	跳表索引（switch 分派），非遊戲資料。
+field	edx*4+0x507ef4	無關	跳表索引（switch 分派），非遊戲資料。
+field	eax+0x507d24	無關	switch 位元組索引表，非遊戲資料。
+field	eax+0x507e24	無關	switch 位元組索引表，非遊戲資料。
+field	eax+0x507f14	無關	switch 位元組索引表，非遊戲資料。
+field	eax+0x507f78	無關	switch 位元組索引表，非遊戲資料。
+field	eax+0x50801c	無關	switch 位元組索引表，非遊戲資料。
+field	edx*4+0x6159e4	classHasSkill7	職業表項（見 data 6159e4）。
+field	eax+0x0	recordHead	記錄首 dword：效果物件旗標（|0x20）、記錄清單項目指標等。
+field	eax+0x1d	npcAwayFlag	NPC +0x1d；事件 0x259 為 0 時移除 NPC 0x57。
+field	eax+0x2a9	rawSkill7	角色技能 7 原值（+0x19f+0x26*7）。
+field	eax+0x48	effectCallback	效果物件 +0x48 回呼指標，寫 0x5092d0。
+field	eax+0x69	characterClass	角色職業。
+field	eax+0x770	stringTableEntry1dc	字串表索引 0x1dc 的字串指標（5299b0 樁引數）。
+field	eax+0x9f	recordMonsterId	記錄 +0x9f 的怪物 id（事件 0x322）。
+field	eax+0xa0	triggerFlags	觸發物件 +0xa0 旗標（0x100 開關、0x80000 bit19）。
+field	eax+0xa7	monsterRecordByte	怪物記錄 +0xa7 位元組，交 4c2cf0 樁判斷。
+field	eax+0xb01	characterCondition	角色狀態碼（<0xf／<0x12 判斷能否行動）。
+field	eax+0xc	listData	清單 +0xc 項目陣列指標。
+field	eax+edx*2+0xa4d	characterFlagA4d	目前角色 +0xa4d，非 0 時事件 0x39 呼叫 523330。
+field	ecx+0x1d8	monsterTemplatePtr	怪物物件 +0x1d8 模板指標。
+field	edi+0x0	recordHead	清單／記錄首 dword。
+field	edi+eax*1	listItem	清單項目（索引×步距）。
+field	esi+0x0	recordHead	記錄首 dword。
+field	esi+0x188	worldObject188	451080 回傳物件 +0x188，事件 0x234／0x235 清 0。
+field	esi+0x26	npcFlag26	NPC +0x26，事件 0x44 用。
+field	esi+0x264	worldObject264	451080 回傳物件 +0x264，事件 0x234／0x235 清 0。
+field	esi+0x2e	npcIdByte	NPC +0x2e（NPC id 低位元組）。
+field	esi+0xc	listData	清單 +0xc 項目陣列指標。
+field	esi+eax*1	listItem	清單項目（索引×步距）。
+field	esi+edx*1+0xb01	characterCondition	角色狀態碼（逐格掃描）。
+field	esi+edx*1+0xb11	characterAlive11	角色 +0xb11，非 0 才受事件 0x195 影響。
+field	esi+edx*1+0xf9	attribute1	角色屬性 1（+0xf9），事件 0x195 加 5、上限 100。

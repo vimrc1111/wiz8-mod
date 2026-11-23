@@ -1,0 +1,7 @@
+ok  	wiz8-mod/tools/hashdir	0.007s
+ok  	wiz8-mod/tools/slf	47.562s
+ok   good
+ok   nosrc
+ok   notag
+ok   nosec
+ok   empty

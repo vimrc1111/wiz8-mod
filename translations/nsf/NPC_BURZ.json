@@ -1,0 +1,487 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "a1048e64ee3b3b95a3a7ee503d9c846641687efe6e288a562e71ee28318e3363",
+  "zh": "噓……嘿！"
+ },
+ {
+  "id": 1,
+  "src_sha256": "4d024d90d2f399203e7c7e105ca1cd5f2b3e41eb7dbc860073bcecf7b39f576b",
+  "zh": "進了一批新貨喔！"
+ },
+ {
+  "id": 2,
+  "src_sha256": "26c40c22ca954c907853882476c0f07415c3c06a1d5cde57970a422ef3890800",
+  "zh": "想想看，我以前還挺喜歡你們的。我當時在想什麼啊？"
+ },
+ {
+  "id": 3,
+  "src_sha256": "4d83a5cb93761ed2ad5403eb34669bad9e05e056d908dbb363b7f2597ab8ec2f",
+  "zh": "我很忙……"
+ },
+ {
+  "id": 4,
+  "src_sha256": "1db4657cc6125bba24a75c00c7c342afff0125c8e881336ac3c3284589ada2ac",
+  "zh": "嘿！什麼？好啦！好啦！好啦！"
+ },
+ {
+  "id": 5,
+  "src_sha256": "c3da7604a550b23e878609e0650527a5a9e37fece404290a9363245b0a357cbf",
+  "zh": "我開玩笑的啦。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "dd5eeebfc8ba61d8c97a4c05411f1234057de6ca60154ba20009f97528c6dcc2",
+  "zh": "跟其他人一個樣！以後別想我再賣（ sell ）你們東西！哼！"
+ },
+ {
+  "id": 8,
+  "src_sha256": "8d9f1bc4b3f05e796e1c039d6ce46fd9a191a6b7ed4fe4fc59bcc89d23d73761",
+  "zh": "這種時候免談！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "e325084bb59cb372d11a7461ce83566a32e49e94b044311cfcdeee3fb14b8cbd",
+  "zh": "哦，不了。我一個人跑比較好。這樣可以壓低開銷、多囤貨。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "89faf3bc56b4cd1b5053452db4dcd8036226b177ce2191a1daa1a6f9e2b22c5f",
+  "zh": "隨時歡迎……"
+ },
+ {
+  "id": 13,
+  "src_sha256": "94ccb45907c899bdb4cd1525bd8141b82a0cb03bfffdbb754281a7ae2c64dcbf",
+  "zh": "不，我想我沒辦法把它賣（ sell ）出去。"
+ },
+ {
+  "id": 14,
+  "src_sha256": "ab95f714a47d93f3d07052580231a5614c37712336acaeaac14aff9a0e805e80",
+  "zh": "這情報可是值點錢的……"
+ },
+ {
+  "id": 15,
+  "src_sha256": "14f4438ccf813ecb88de0cac7dd75635781a5b820272d10d9a8d71538efcc10f",
+  "zh": "我收購的量一向壓到最低……而且我已經收到了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "5cc90f5275263a6c2a13d989c2b260ad7f230afd463a63cd021992486dcc2521",
+  "zh": "沒到我開的價……"
+ },
+ {
+  "id": 17,
+  "src_sha256": "aa0ee50d04abe01fc070413a33a9b6f9302f19031ed09dad14df205a5b2d3f6f",
+  "zh": "你們要是直接把這個交給我，也許就沒問題……可是既然你們是「偷」來的！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "b8d7db143efc56aa07b52f038ef16c1d71bd4747ea424018f00252042cd0281b",
+  "zh": "我想我以後不會再賣東西給「你們」了！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "9900b3893954004f872b66c96632f074252fd24104fb9d5ea5d34099b6c6ad27",
+  "zh": "什麼？！嘿，那是我的工作耶！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "ab81142143e01ff76011637d7eba6a3ad558921d67c44c4c7ecd180a220980ac",
+  "zh": "這下你們完蛋了！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "5707eb02309613907800f9a7198fc30f26b91a9338aa4663938e8c209e3d86b3",
+  "zh": "真是慷慨又善良啊……"
+ },
+ {
+  "id": 22,
+  "src_sha256": "10aab0ac33d7533d59e707197b822d301c0f9c3fcb968c3c5fdeb71173951c02",
+  "zh": "這是個謎。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "be694ffcb4af7600e13628412bf92c6014a7fb6d0baad748452cd0737643c56e",
+  "zh": "我對這個不太清楚。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "178726f9febadd9be5e8cccc0c41a05a3d6daef922b66f072eb0fc66184fba62",
+  "zh": "這是個祕密。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "a13caa6e314642dbdcd51b13a0e57307b320203e22f143fb5c4852379f413500",
+  "zh": "當然，就像我說的……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "ddbf0c00d0d503f7a507a44128902ad9626b12b8bc4b1b71973242cf8ed55447",
+  "zh": "哇……你們把我搞糊塗了！"
+ },
+ {
+  "id": 27,
+  "src_sha256": "e590dd195b352ef692b5b9295aac822198b2db4c8ba11e87194ad2fda653d078",
+  "zh": "然後呢……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "bd6c56067bd5cb04c78fa4743e43a8b176b180dfefedfc7baa64a4966b8cccef",
+  "zh": "我會記住的。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "5257db07e1e0934edb090477b3a54bdb51fbbde9021bc6dc63a632871cbc9eae",
+  "zh": "那麼，嘿，我的新貨你們看過了沒？"
+ },
+ {
+  "id": 30,
+  "src_sha256": "de443285179c5af7f6fd6fa4ee430e172e404b52c31b533fccfc92b7457dd4aa",
+  "zh": "嗯，我差不多該走了……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "00b0f3d4858d6523594e497cd7d5e0a87b56c0baa3252d7cc10d58fdd7390d41",
+  "zh": "當然啦，這星球很大。我來自 Trynton ，離這裡有一段距離。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "dd0b09a3d8f22651745cc5293eac4827df4d16d358e911efac96adaabcd5c7d9",
+  "zh": "哦， Arnika 是 Higardi 的城市。就在海岸邊。其實我大部分的貨都是從那裡進的。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "06b062e2320b2f388dcffb9efe2b5bd33e93b22c9166b6b838e3acbaea865770",
+  "zh": "離這裡太遠了，不用操心（ worry ）。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "8c08ced9adc39452fe473ec77cdc56128ff09ebd6e0bdaa5a1eeb09873eaf312",
+  "zh": "你們只要找 Arnika 南邊森林裡最大的那棵樹，就到了。你們會喜歡的。那是個很棒的地方。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "0f62af82d670a52a751a4262e205a2a704e0a71a95ced1d3161fd840799486e9",
+  "zh": "沒去過……"
+ },
+ {
+  "id": 38,
+  "src_sha256": "c46120d58518ccabe1e6b82bd44c476720c9327c5c83e67ddde5a4ed1fe45b70",
+  "zh": " Marten's Bluff ？嗯，就在 Trynton 南邊。 T'Rang 現在在那裡。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "af41e6055403588cb825f143a90844b554ace087decdf481a16c9bcb6734d71b",
+  "zh": "這件事去跟 Shaman 談。他什麼都知道。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "64d2e16606241870ad6a9cca4f733af7964a2788479639aa01bc7315fb66a2a3",
+  "zh": "沒什麼好說的。他們人不錯。其實，我大部分的貨都是從他們那裡偷……呃，拿來的。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "24a88073371fe4ebbd282236b852ad173672642d3df07054bf88d09a9bf3cdfc",
+  "zh": "天選之人！當然，我不知道我們被選來幹嘛，不過要是有什麼事冒出來……先說了也沒壞處。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "bdda25b3a2452556428a66aa52be42e26d2c67d082506a1d9d9cdce149753c5a",
+  "zh": " Rapax ！ Trynnie 不共戴天的死敵！"
+ },
+ {
+  "id": 46,
+  "src_sha256": "b73852648a50a35f200c6e5e7f010b56ed120b0a092ee3ebe8a5f3e65f610923",
+  "zh": "我對他們（ 'em ）不太熟。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "dec890fbb04f8dfc20e37256de63c44711d1c3c1d1a006fc87c7824ea8a34a44",
+  "zh": "我對他不太清楚，不過他似乎讓 Higardi 都很不安！也許你們可以去問他們其中一個。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "83b7a657b34596d0ba44df4c6b025611b57df3418af1b9f3ac278d24e0eb3f83",
+  "zh": " Cosmic Lord ……"
+ },
+ {
+  "id": 58,
+  "src_sha256": "d8e0ba102df7a72d6e8d1a9f1232b060db9a6ae979d3a8465c8028f283fe2273",
+  "zh": "這你們問錯人了。我只知道他死了。不過 Shaman 大概知道得比較多。 Marten 在這一帶簡直是傳奇。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "c9f4ebaa8e155ebd52589b692f735db1e72908cb2c8582f6e8f9c60e9115fce0",
+  "zh": "沒見過他們（ 'em ）。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "17c21bffe8f85e1a3b9478da6833b64cc087b4949c5b6616f2812e7a8b94cf17",
+  "zh": "這件事正在發生！隨便問哪個 Higardi ，保證你們會聽到一大堆！"
+ },
+ {
+  "id": 72,
+  "src_sha256": "1fe2e5d6fcdf3998f3b6dd99f2b933dbf53ddafd4220b70c21289d76e01bc964",
+  "zh": "嗯，有傳言說你們可能是第三位信使（ messenger ）……"
+ },
+ {
+  "id": 73,
+  "src_sha256": "683d02a309e177065b37d13ab435be1fedc00d0b2ad7173a03b35f6862fd3a86",
+  "zh": "我是 Burz ，你們這一帶友善的商人。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "291e478f3e061a4599c144d69982d1270ade431b261f4fae55b4ea497119fe53",
+  "zh": "這樣不太好。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "411099251433aa697a7bb37da5897b9fc36fe9c6f2ef36d015885aadc8e83278",
+  "zh": "我不急……"
+ },
+ {
+  "id": 77,
+  "src_sha256": "2734c5cf446c2dd368994491b7b68c97db16ae872720ab94ff9255876ff53226",
+  "zh": "今天真是個好天氣！"
+ },
+ {
+  "id": 78,
+  "src_sha256": "72079a29b4a76d4c4599c7b064b0c05be4dd2f591e4a6ea5bc927ff8f4d4371f",
+  "zh": "需要什麼再回來找我。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "e4bb03b399c07eeda658d87305435a58818cb5e0c3b76ae054d99564cf14ef6b",
+  "zh": "你們需要什麼幫忙（ help ）？"
+ },
+ {
+  "id": 80,
+  "src_sha256": "2178df2c242c83ba032227b8204c38d73ea6aad0952113ee0d1550a8373627ab",
+  "zh": "我的貨大多是從以前的主人手上「解放」出來的，所以價格很漂亮。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "3f8b6b77411d32245695f0221e4a293ea03864075083bd4dc89c66b12d0d6ed5",
+  "zh": "太好了……"
+ },
+ {
+  "id": 82,
+  "src_sha256": "dcff66ca43341b543be4d84a7d0d69f381d7a1ab06116dea94329c415d073e42",
+  "zh": "我有幾個。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "cca9afffbc474fd21b96c43d14b7882ab296b88f6cb908c02d5cffd070726ec9",
+  "zh": "我們跟 Rapax 永遠都在打仗（ war ）！"
+ },
+ {
+  "id": 87,
+  "src_sha256": "f8c290ab729104c68b361b9dd4540af091b3f6f8fec4402f1f9c44d217ab8e54",
+  "zh": "我在想這些人會不會就是 Marten 的信使（ messenger ）！"
+ },
+ {
+  "id": 88,
+  "src_sha256": "ce0ba427f734b79feda10cd1c57276cc28b61bbcf6b5fabd0039d0cd3ae913bb",
+  "zh": "我賭那艘船（ ship ）降落在 Bayjin ！"
+ },
+ {
+  "id": 89,
+  "src_sha256": "3b31dc8db1ccee455de925774234b550b949866ecb3e8e10a9046649a22ad9e8",
+  "zh": "這些人我隨隨便便就能扒光他們的口袋。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "b4ecec62aac37b7f994de664f933fea7153934bc130202bdaea5fd3a764d4484",
+  "zh": "在 Arnika 。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "b1e98138f9980e3d0534ca88aa6b03af06ed7b71b92ffea01496ea63b5e69cb7",
+  "zh": "你們得去 Trynton 。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "7a995234f95197bd35d8727e4044a99fd43c0ee7020808d469250e27cd717f0a",
+  "zh": "在沼澤裡。不然還能在哪？"
+ },
+ {
+  "id": 93,
+  "src_sha256": "75872fda30b1fbaeff1a4601c8c32c43378a2fc8c400ed9f6b038aba6c660ed3",
+  "zh": "在 Swamp 南邊的 Marten's Bluff 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "7a2e080b217f13a776fda77c7c7811e95d43aeaeac270294d9e8f9ee75c893f9",
+  "zh": "在 Mt. Gigas 。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "531b5cc033b40cf8adcf36e5ff25763ad5fa53e2c61591ba18d39ac536da91b6",
+  "zh": "大概是 Sea Caves ，不過那裡在水底下。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "c338bcfc1193554ac80bfa5eb4ee776127f823e24736f48e90ff13b40a137352",
+  "zh": "在 Rapax Rift 。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "dda18c3a8353db6dbb12628d994cfc0ab42cad63be73b91edbbc57782a1f051e",
+  "zh": "在 Rapax Castle 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "259c36f9e7bd69e10c1155c074ed9003910669cc9ec27044e51a52c7fc94655e",
+  "zh": "當然是在 Ascension Peak 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "5c4338c1ba74cf323303d7c2e44c22ca8736637acecf29cb215e5cf2acb5d1d3",
+  "zh": "在 Cosmic Circle 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "2e86e513584893be1712fc76f27fbe4b12402ab86f1b4fe2d35a06bf77a54e71",
+  "zh": "睜開眼睛看看吧，老兄！"
+ },
+ {
+  "id": 102,
+  "src_sha256": "ecd1937374871533e26542bdbd5755ac38f4102af806d7744bf86eb3b72ee836",
+  "zh": "我不太確定。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "94cf6a825cdee30dbd2ab4f5af0a251e70fcde620de0969062a084851d404bcd",
+  "zh": "我猜在 Bayjin 。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "f6d1761ad876680e1b2faffd8a2dc4baa277cf12b62cf8aaa4cc7b96c17c83d1",
+  "zh": "欸……你們是那種，呃，坐船來的人（ ship people ）吧？我看到你們降落了。比那艘撞進海裡的好多了！他們大概是被擊落的。各種船（ ship ）都在往這裡來。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "2ea8826e4f885ee4a185211f1c67f5d8c5a08bdaa70f9fceb26ae25adde6ae69",
+  "zh": "那是你們嗎？那艘船墜毀？哇！我還以為你們肯定沒命了。要我說，真的有很糟的事正在發生……因為你們的船（ ship ）不是第一艘從天上掉下來的……"
+ },
+ {
+  "id": 106,
+  "src_sha256": "85865d6ef94b26ae3e39edf2aca230289181e6822f3e5e96c42af29eba5dc20c",
+  "zh": "Marten 的信使（ messenger ）？你們問的是這個嗎？"
+ },
+ {
+  "id": 107,
+  "src_sha256": "d2a09c2cd03b751c30ef00ae74f6ddb679a4d5e0273f843d9b688851d9362603",
+  "zh": "嗯，是這樣，你們可能還沒聽說太多，不過有個叫 Marten 的傢伙？這星球上幾乎每個人都在找他。我不知道他在哪裡，但我知道找到他的路。你們得穿過 Trynton 。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "f106b30d31065931718b860a940f93f7c8a770e96f9bb6ec667474d55b432e14",
+  "zh": "哦，好吧，那就好。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "74a81a7753f509781f99b0693ea446169ee0af856c029aa65672bd1e57c846cd",
+  "zh": "行商小販，隨時為您服務。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "67469f4d227566d9c69838e6448f90102d1720c58067dab9ae8b164e5589690f",
+  "zh": "嗯，我看到兩艘船（ ship ）撞進海裡，不過誰知道還有多少艘！它們看起來像是被什麼東西打中，某種火（ fire ）。真的很可怕！第一艘掉進 Monastery 外頭的海（ ocean ）裡，第二艘看起來墜在遠遠的南邊。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "961d9d11b9db2410ebbe55ac4f65581048d6b55dd9848961bc65bd9bfdc824de",
+  "zh": " Monastery ？那是 Higardi 的， Brotherhood 的。我猜是他們的神殿。現在裡面沒人。他們不久前就走了。不過他們在 Arnika 還有另一座神殿。一個叫 Braffit 的傢伙在管。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "79dc159e5b5bf6eebb772e09cbab9e30c2c79c5e413dc04b87f7ab3735231dce",
+  "zh": "大部分都在水底下！"
+ },
+ {
+  "id": 113,
+  "src_sha256": "0dde399650666e91d43d25149106b782b130ef4eb524b18954f40ea7946e21a6",
+  "zh": "欸，你們去過 Arnika 了嗎？"
+ },
+ {
+  "id": 114,
+  "src_sha256": "9d3665301f8f42e344f7eaa35b9976efdf1532c9c6f9fc7b5fc1813af78c9d0e",
+  "zh": "嗯，要是你們沒別的計畫，那是個好去處。現在那裡什麼事都在發生。就在這裡的南邊……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "ac29fd3ffa5104956a5325dc72b6221b0871477acefb2cb642aa4d2146f8bfc8",
+  "zh": "只是好奇。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "9c9879b8e3051b6324db74b583438ec4fa8e4c3e7ef4518682503afc8a9e91a0",
+  "zh": "當然，到目前為止已經有四、五批像你們這樣的人了。我數不清了。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "574d6c7f5b845a78e2bbcda90b5e217c842fb039d00b540d75ff860ccce646cc",
+  "zh": "我們跟他們有過麻煩，不過現在沒事了！"
+ },
+ {
+  "id": 118,
+  "src_sha256": "7a9579f102e5b80ad6b681e3b90c07e5f8f1d6cd7b9218322d69659a9e50e4dc",
+  "zh": "我不太喜歡他們。其實我離開 Trynton 的原因之一，就是他們到處都是。我最後知道的是 Chief Gari 還在想辦法擺脫他們。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "8457000f67718ebe5c5be01615a283e71480628bff8f253bf5ee5ea2ef699f17",
+  "zh": "他是我們無所畏懼的領袖。好吧，大部分時候無所畏懼啦。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "b4bc102c7699f7d2cec88e8b73fc4e97bb5f013a1395684fde1a3f15c1226e63",
+  "zh": "對，看起來像是正常降落。直到那聲轟隆……然後就是火（ fire ）……然後就墜毀了。不過在那之前，一切看起來都沒問題。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "53efa355f584c7d8d202df944452d2ee9b1c56929f554adc4c6f10096098dc36",
+  "zh": "你們去 Trynton ……就會找到他。他是整個 Trynton 最聰明的人。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "772345c63b61d09a4d79f4d11bd5aee97338ee3d7c92a3808598dbc93e005094",
+  "zh": "我認識他們（ 'em ）……"
+ },
+ {
+  "id": 123,
+  "src_sha256": "40d323bbc5b66781ebcb8efa92764426148eeba4f22341681297ccb40e7e09b5",
+  "zh": "嚴格來說，被抓到才叫偷。至少我是這麼想的。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "cbd573ae71adcc28f82ca49691ab00c27711d2da8df2e860817a0a44ea9ed7ad",
+  "zh": "看過了。解釋不來。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "4ecfbdea9cb524e8dd801bac581e5b979656d047637dd1c8b5d40569401ec3aa",
+  "zh": "沒錯，你們沒聽錯！"
+ },
+ {
+  "id": 126,
+  "src_sha256": "0b7e7d9c1ce3cefba8c21686e43f8134ae2ec3dc2492a053a364c1a590e1add7",
+  "zh": "你們現在就在它的南邊。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "12bb1bd35f9a558e00b1451cd870c696c3b5478522805af770c907fb4ea47b42",
+  "zh": "你們得往南走。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "04b98c7c0e88b8e1566d40cfbf06283390c12c65218ed6c955598c1d2296c138",
+  "zh": "往東走有一段路。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "12fefe641e048f10d049c64d57ed486556621e96c8072a712e3646fd731fc84d",
+  "zh": "就在這裡的西邊。"
+ }
+]

@@ -1,0 +1,8 @@
+data	5ebb34	averageZero	浮點零常數；初始化等級合計與有效人數，並判斷空隊伍；來源 exe 0x4efb65、0x4efb71、0x4efbb8
+data	5ebb38	memberCountUnitAndEmptyAverage	浮點一常數；每個有效隊員使人數增加一，空隊伍回傳一；來源 exe 0x4efba4、0x4efbca
+data	685174	partyCharacters	角色記錄陣列指標；只掃描索引 2–7，總等級位於角色 +0x89，記錄步長 0x1862；起始偏移 0x314d = 2*0x1862+0x89；來源 exe 0x4efb6b、0x4efb80、0x4efbaf
+data	685178	partySlots	隊員副表陣列指標；只掃描索引 2–7，有效旗標位於各記錄 +0，步長 0x106；起始偏移 0x20c = 2*0x106；來源 exe 0x4efb60、0x4efb7a、0x4efbaa
+data	fffffffffffffff8	無關	資料引用掃描將堆疊配置的負位移列為地址；此處只配置八位元組的局部數值轉換暫存，並非規則資料或全域；來源 exe 0x4efb77
+data	fffffffffffffffc	無關	資料引用掃描將堆疊配置的負位移列為地址；此處只保存暫存器，並非角色欄位或規則資料；來源 exe 0x4efb7f
+field	eax+0x0	slotActive	隊員副表 +0 的 u8 有效旗標；非零均計一人，固定掃描索引 2–7 共六槽；來源 exe 0x4efb86、0x4efb8b
+field	ecx+0x0	totalLevel	游標指向角色 +0x89 的 u32 總等級；僅合計有效隊員，以浮點合計除以有效人數，無 u32 合計回繞或整數截斷；無參數、無子呼叫，回傳 x87 ST0，空隊伍為一；差分輸出依既有介面編碼成 double 的 int64 位元；來源 exe 0x4efb90、0x4efb9e、0x4efba2、0x4efbc6、0x4efbd4

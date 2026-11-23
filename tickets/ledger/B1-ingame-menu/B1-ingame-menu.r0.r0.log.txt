@@ -1,0 +1,5 @@
+/tmp/tmp.XcEqxp8Wvt/m.c:3:10: fatal error: menu.h: No such file or directory
+    3 | #include "menu.h"
+      |          ^~~~~~~~
+compilation terminated.
+FAIL menu-rule 編譯失敗（menu.h 缺或介面不符）

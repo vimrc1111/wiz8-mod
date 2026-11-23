@@ -1,0 +1,42 @@
+call	4f34d0	無關	對話文字元件排版（版面欄位與字寬計算），結果只進顯示元件，不進本函式任何規則輸出；case 以固定字型夾具與 wcscspn 樁跑過，輸出欄不含版面。
+call	4f4650	無關	對話文字元件的顯示更新（對子元件的虛擬呼叫），只影響畫面；case 持有物件子元件為空，輸出欄不含畫面效果。
+call	50a3c0	npcMonsterRecord	取 NPC 物件連結且可用時對應的怪物記錄，記錄首個字是怪物編號；未連結或不可用回空。
+call	50a500	npcAttitudeClass	NPC 態度分級：態度（有號 byte）低於 0x21 為 2、低於 0x42 為 1、其餘 0；內部是 npcAttitudeNode（0050a280），本節點直接重用。
+call	525110	selectDialogueNpc	（第二參數 0）清選擇全域；物件未連結時依物件編號認領 NPC 清單項，寫其 +0x16=-1、+0x25=0、+0x1a=1；最後記錄選中物件。本函式內重現。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	649f1c	dialoguePanel	對話面板物件指標；本函式寫其代表編號、目前物件、怪物編號等欄位，並讀面板模式與文字元件持有物件；case 以 arena 物件接線。
+data	683664	無關	對話文字元件的字型索引參數，只餵 4f34d0 排版；case 限 0..1 並提供字型夾具，不進規則輸出。
+data	6836b8	portraitRecords	角色呈現記錄陣列基址；每筆 280 bytes；交給 52f000 更新表情編號（+0x8d）與清旗標（+0x99）。
+data	6837d0	無關	本函式指令未直接引用此位址（掃描範圍外溢列出，位於呈現記錄陣列內部）；與規則無關。
+data	683f78	portraitRecordsEnd	呈現記錄陣列結尾位址（八筆之後），迴圈終止比較用常數。
+data	683f97	dialogOpen	對話視窗開啟旗標 u8；面板模式 2 或 3 且此旗標非零才重排對話文字。
+data	685174	partyCharacters	角色記錄陣列基址；八筆、步長 0x1862；+0x4e7 是代表選擇比較欄、+0xb01 是主狀態（經 52f000 讀）。
+data	685178	partyPresence	角色在場副表基址；每筆步長 0x106，首 byte 非零表示在場。
+data	68ef84	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68ef88	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68ef8c	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68ef9c	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f064	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f0cd	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+field	eax+0x0	monsterRecordId	50a3c0 回傳的怪物記錄首字，怪物編號；寫入面板 +0xf8。
+field	eax+0x10c	dialogueTextHolder	面板的對話文字元件持有物件指標；只餵 4f34d0／4f4650 版面，與規則無關。
+field	eax+0x1c	npcAttitudeCachedFlag	NPC 物件「態度已快取」旗標；結尾時若快取的分級與當前不符就清零。
+field	eax+0x1d	npcClearsFlag84	NPC 物件旗標；非零時本函式清零物件 +0x84。
+field	eax+0x1d4	dialogueCurrentNpc	面板記錄的目前對話 NPC 物件指標。
+field	eax+0x22	npcFlag22	NPC 物件 +0x22 byte；開啟對話時清零。
+field	eax+0x23d	panelFlag23d	面板 +0x23d byte；本函式清零。
+field	eax+0x84	npcFlag84	NPC 物件 +0x84 byte；+0x1d 非零時清零。
+field	eax+0xf8	dialogueMonsterId	面板記錄的對話怪物編號，預設 -1，有怪物記錄時取其編號。
+field	eax+0xfc	dialoguePanelMode	面板模式 u32；2 或 3 才可能重排對話文字。
+field	ebx+0x55	無關	反組譯對齊錯位（函式入口 push ebx 後的指令位元組被當成運算元），不是實際欄位。
+field	ecx+0x1d4	dialogueCurrentNpc	同 eax+0x1d4：面板記錄的目前對話 NPC 物件指標。
+field	edi+eax*1	partyPresenceByte	在場副表按成員序號索引的 byte；非零才參與代表選擇與表情更新。
+field	edx+0x0	characterRepresentativeStat	角色記錄 +0x4e7 的 u32，代表選擇比較欄（無號比較）。
+field	edx+0x10c	dialogueTextHolder	同 eax+0x10c：面板的對話文字元件持有物件指標。
+field	edx+0x1d4	dialogueCurrentNpc	同 eax+0x1d4：面板記錄的目前對話 NPC 物件指標。
+field	edx+0x23	npcFlag23	NPC 物件 +0x23 byte；開啟對話時清零。
+field	edx+0x6	npcTemplate	NPC 物件 +6 的範本記錄指標；加 4 後作為文字元件排版輸入，與規則輸出無關。
+field	edx+0xf4	dialogueRepresentative	面板記錄的代表成員序號，-1 表示無人在場。
+field	esi+0x0	partyPresenceByte	在場副表目前成員 byte（步長 0x106 遞增指標）。
+field	esi+0x1c	npcAttitudeCachedFlag	同 eax+0x1c：NPC 物件態度快取旗標。
+field	esi+0xef	npcCachedAttitudeClass	NPC 物件 +0xef byte：快取的態度分級（0..2）。

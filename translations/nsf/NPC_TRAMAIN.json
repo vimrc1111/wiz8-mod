@@ -1,0 +1,397 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "67219293e41ec6b2f6bb1f198030bd9bad67c5bb4421feff6a4939d35dd4ddce",
+  "zh": "Marten ，是吧？想想看，居然把你們這一夥人錯認成 Marten ！"
+ },
+ {
+  "id": 1,
+  "src_sha256": "22abb08ca3702b099cc8ff81ab4464b80a9634ed2a9cb8c898fccfe4b6b62f8a",
+  "zh": "哎呀，這不是那些環遊世界的旅人嘛。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "e1d12bfa7c979f6250ae38880f5dafdb392d68bbc4d33fbed875782f64075986",
+  "zh": "我改變主意了。我覺得你們是麻煩。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "0ce9a45abadf777cdb451b424ce3926662827afab8301fbff11d8335c54cc9cb",
+  "zh": "你們「現在」表現得很友善，但我不信任你們的動機。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "2d78d7a4036d70f62c4ec66ed5edd3ed790dcaf7a62db3719fce6b14ebbce38a",
+  "zh": "活到我這把年紀，連死都嚇不倒人了。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "f44262b775954d9bfd051647d5a93c2d52776b4f61691d81681294400396d4c7",
+  "zh": "我看你們的問題比較嚴重吧！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "ef1e857b079deacf6b638e1e52c029167711c92dd209e662fcd89070b4d8e773",
+  "zh": "我只會拖累你們。腿不像以前靈光了。手臂……眼睛，呃，幾乎全身都是。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "920a9eb76a585791589cca040c77719742784dbbde05912ec3614ba762f15358",
+  "zh": "噢，你們真是好心。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "0d23b5ee736c54919e1f075a71bac3a51789ffea97d4798daeb043c179aa4135",
+  "zh": "不不，那種東西我不要。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "26af7f91e513133b62111e7b4cae69ad7d8484af49c942edf8f6ba88584a945c",
+  "zh": "我現在不想要更多東西了。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "d40970fa6e7dd1857807cd16d9dc34504c935c03cb815403f078a2aa32e8791a",
+  "zh": "我當初就該讓他們殺了你們！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "76b71c9a36e01229b03fb4a8776cfab10c645a50f73af4a1bc33bc34349349b6",
+  "zh": "你們以為自己是誰啊？！？我早該把警報留著！小偷！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "85b11d86db3ab7c904cdb9d224ebd00d8a9778f24f3b45163196d39eed991da4",
+  "zh": "你們這些跨星球的小麻煩精！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "1314b1e01d22453b3bf67d4a62a68a8b53b5387cc5708f2feb515fa4f87e68a1",
+  "zh": "錢你們留著吧……"
+ },
+ {
+  "id": 22,
+  "src_sha256": "cdb4c0f7b36932495e573c8ffe516942a2bf9718b97843ffb9e5eff8096b5c73",
+  "zh": "我不是最適合問的人。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "be694ffcb4af7600e13628412bf92c6014a7fb6d0baad748452cd0737643c56e",
+  "zh": "我對這個不太清楚。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "2ca5473d726704c844721d36721b84cdf0452bdde12b7f2329d1b2676c6e4690",
+  "zh": "我不能透露 HLL 的機密資訊。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "6cc110dd45033bd4254de3ab07b37643e58dda95ccece4a7d1b0e0314798bdbb",
+  "zh": "你們耳朵聾啦？我說……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "4cb230cb3ee7bdabad0cad7ae22292f0920939273aa83608457b8810e9186ab0",
+  "zh": "你還真好奇。你對哪個最有興趣？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "329e241ecb64aa938a8f811407814a38d76c999f6dd83b76a4e0e9c296248221",
+  "zh": "還有另外那件事……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "6bdbe47e19f628db43e6a5dff88d000e0c07d04adc4278ce8e11bd5d79faff07",
+  "zh": "是這樣啊。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "6569c6584df225898a02b421683efab454a0418d19b110cf5925e54652fc0c68",
+  "zh": "我聽不懂你們在說什麼。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "3f6e14822311aec9f7e2143f182b719075b49d64bdd84128362ab1767acd4415",
+  "zh": "你們說什麼？"
+ },
+ {
+  "id": 31,
+  "src_sha256": "1138ebd3797d02aaf81a3237a16aa2cfff32505e226f0111cd50f06f656de8f9",
+  "zh": "沒錯，你們人就在這裡。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "f1be440ac1a0064a4b223bbac48ca594b1925b439b6cca79439989066319429f",
+  "zh": " Marten 經過了那裡。我一直懷疑那些 Trynnie 知道的比他們肯說的多……至少，對我們是這樣。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "84d71ca9cb4685512e14207694e436474ac00ce0893dc737e7d74d62a8b11110",
+  "zh": "我們就是在那裡跟 Marten 來了一場大對決……雖然我想我們根本沒機會露面！他把我們擋在外面！他設下各種陷阱和詭計。唉，根本沒辦法進去。到後來我們損失的人手已經多到承受不起。"
+ },
+ {
+  "id": 39,
+  "src_sha256": "3e831f3becff7c43cca64edfac0673bcce03e4e0ee2e62745a87693b5212ef36",
+  "zh": "他們撤退下來商量對策……而 Marten 大概就是在那時候徹底逃走的。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "188bad128c04b6574875bbd45b7dbab2584420de6e8e63c20118da17427060f4",
+  "zh": "這種事真的該去 Temple 問問。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "6532ea4c5cd1f803ed4deb6a099932e4ac9826b3cbdb36c66535194b135a61ef",
+  "zh": "你們眼前所見的……"
+ },
+ {
+  "id": 45,
+  "src_sha256": "a8d3329922502bfe1834a19fd38eed68d2f5ce173a0faf2a437a26a71b5e1b5f",
+  "zh": "別相信他們。經過他們對 Marten 做的事，把他那樣藏起來，我們有理由不信任。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "b254a8a62ae08db5118fb259f54fd1c0d11481625763032af9537fde0ecbbf10",
+  "zh": "離他們遠一點。"
+ },
+ {
+  "id": 51,
+  "src_sha256": "129bc9bb714c030254f722bbea9c42c694597d7c3e9a60a8869f42138e603462",
+  "zh": "沒聽說過。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "85766c4490f70fa87ef3d88b0fd8cfdea87331d2d61bfc724fab0a20caa807e7",
+  "zh": "你們離他和那座 Tower 遠一點。讓我們來處理。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "4a88bd3f7736654db9cec8d1e329ae4b18695b611c09f45d5985243c981d8610",
+  "zh": "名字聽起來耳熟，但我不認識她。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "293a6775151d10858cc8cdd1e08419d1cdd705cd2f6635fe985d11dfba957c9a",
+  "zh": "很高興認識你們。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "054efc6bc1aeb5599fb23d66044d1ea91be8fde4d8e6360e035acbcf15e4ffa6",
+  "zh": "好個 Marten ， Dominus 上最大的傳奇人物！那大概是一百年前的事了，他帶著 Destinae Dominus 溜了。你們知道，我們本來是要保護它的。它不見了，沒有人高興。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "7855578ad571de230915a84036d52f280da1a503a227ae9b14c7658909e69720",
+  "zh": "我們把帳算到 Marten 頭上，一路追到 Trynton ，可是等我們趕到，他已經不見了。後來，我們在山稜高處的一座舊 HLL 堡壘追到了他的行蹤。不過他八成早知道我們會來。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "509f184c7e8c13a97228dfeca6fc9c9818fae0ac0040f85d59731748aea1491c",
+  "zh": "他設的陷阱足夠擋我們好一陣子，夠他再次脫身。而我們始終沒找到他……也沒找到 Destinae Dominus 。"
+ },
+ {
+  "id": 63,
+  "src_sha256": "19a1b3d7d06bac80865cd5ac9edc85081b7ef1c6ebb37f1c6ff7f9390f7c6f38",
+  "zh": "我們沒見過面。"
+ },
+ {
+  "id": 70,
+  "src_sha256": "ddfc6418976193e0b79c1129c4882d1b18c69c4fe776022becd724dfcac90e63",
+  "zh": "我不知道你們在說什麼。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "4b8a2e31e9d69a2d1c853603c3254d5e8c642af604f74d98c53d024dbe0a5ac3",
+  "zh": "不過就是有史以來最重要的聖物！ Monastery 的 Monk 們說，它是 Phoonzang 本人所造的，他可是一位 Cosmic Lord 呢！我可不敢打包票，不過他們說它蘊含了眾 Lord 的全部知識。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "02be497e946abdd90fb71abbe8f2a2958e1032e2d061aa6bb5effac621e4cc59",
+  "zh": "其實沒什麼好告訴你們的。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "c51b4a0f66993b1fdefaa1973c28bec3db2489149764a10084bef6ee3a870899",
+  "zh": "我是 Tramain 警官， HLL 的。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "a475370069ec1de4799c670c3f66f8f6c0c109311653a0fecee4214db6b48564",
+  "zh": "我年紀太大，不適合那種事了。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "a509d2a1e985a4d7c7cf86c2895eed64be44f019dae53a8d49ae6cde6482fdf2",
+  "zh": "你們沒看起來那麼聰明，是吧？"
+ },
+ {
+  "id": 80,
+  "src_sha256": "23ea498e82f4435b1c135324eedef4ba64061600897077bf76082a50b41a9c13",
+  "zh": "你好啊。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "9a9610ff80e6fbd816a0bd2482890b37494c08a091a4216b4ecda2e6dafdbc69",
+  "zh": "祝你好運，呃， Marten 。呵！"
+ },
+ {
+  "id": 83,
+  "src_sha256": "b8ecf50b8f1cfbde81c03d3e6a63c4fadc92c076b441e7f2d06e5f096727b0af",
+  "zh": "你們或許可以去 He'li 或 Antone 那裡試試。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "7ce88e930c563c3e54da6dcca4510ed10afc596891e2cf1a8cf2305a09bce1a8",
+  "zh": "我沒事，謝謝。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "6f96e784e38e401d76f86e34c674071f53d1b6a2f112848de05c4490d8a96edc",
+  "zh": "就在這裡的 Arnika 。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "47586cd9c8fc69ec94c0c0fc2a42d8236c95da06c4a3be571602c8c289243718",
+  "zh": "肯定是 Trynton 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "054d553eafc6efd79c6be4c9900eb227272b0135fb0a35c2daeab461618224e7",
+  "zh": "沼澤。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "a68eaf4af9f721003ca08e61491dfefe33325caeb10a23b89ce7df734b0a2013",
+  "zh": "你們得去 Marten's Bluff 。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "4554a216a53e329bb2de37271c76e404fd60ae18663ddab28a0057ecb63dbd76",
+  "zh": "我猜 Rapax 有個前進營地。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "070171c020a3900f5bfae08d3862144117c3700821bb0ec45992b23e988c9db0",
+  "zh": " Mt. Gigas 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "d9107d7c4e2002cd5147deeec7d3856821e5f001f9c829134428d211ad29f929",
+  "zh": "Sea Caves 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "3b9b6fb4dcaf8d2b7a23018bccc0b70e780e4f231268a0a321f4ebbf2a52b132",
+  "zh": "大概是 Rapax Rift 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "d9538a55d80c13ce9d9e8bde2096f92fd49e671e94ca4ec7ad557a09da9af563",
+  "zh": "大概是 Rapax Castle 。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "edba30a3515e1ce169fb351f9fccabfd654cd2989af55b7623f219a48540c452",
+  "zh": "就在 Ascension Peak 上。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "aaeb054760ae4d4819270fe79773a335b73c328888998f19a5e5819afd8e7a62",
+  "zh": "就是 Cosmic Circle 本身。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "211d39c377590a2d987f075b29da7c6756184df7bec2468a78b87e12784b8d59",
+  "zh": "就在這裡。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "e1b35f3b089200b622432604dda83f960f328c316990b007ac8d382c957fd647",
+  "zh": "嗯，我不太確定。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "0e985b62d6a88b1e73a0de06f9cafe24594fed2a0614ed641d54f0194fffc765",
+  "zh": "嗯，要找的話，我會去 Bayjin 找。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "e0c5a38aaa657aff0f0485b8405edef328994a32f957dd30a2428e08f475bf3c",
+  "zh": "Marten 和 Destinae Dominus 。我猜它們在同一個地方。有些人認為他死在 Bluff 了。我嗎？我不這麼想。我覺得他可能還活著。 Destinae Dominus 的威力大到足以辦到。我不知道他可能在哪裡，不過你們可以去問問那個老怪人 Crock ，他或許知道。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "864d360221acd453ebb9668852545d5c8c0620e0c0676eacac7561bcc16fc209",
+  "zh": "他在沼澤裡，就在 Marten's Bluff 附近。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "769ede23a030a085a85efe35888fe40afaa823ce0a5408e20bbb2bba14aba0d2",
+  "zh": "你們現在知道自己人在哪裡了吧？我是 HLL 的，嗯，至少是個軍官。 Higardi Lunar Legion 。我們照顧 Arnika 的百姓，並剷除那些不守規矩的人。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "a1b4b57e7ad259c46f89a2d441fe4999542a5714abea6b15e477e4047eb59f0f",
+  "zh": "他是個老怪人，而且我真的是說「老」！"
+ },
+ {
+  "id": 111,
+  "src_sha256": "396f211fec60cf3929668bdf5053c312e35003bdd8690683981d8525ab4cded1",
+  "zh": "他們當然在 Temple 裡啊。你們知道的，就是在 Monastery 和 Temple 工作的那些人。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "1e8009f51e094395597941fe6328df242abf3ecd02cebb42ae0a627a865e063e",
+  "zh": " Monastery 嗎？我自己不太信教，所以你們最好還是去 Temple 問問。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "310f8d4fa0168ba5492d073d6217924cb4a213142215f09a4976e9494f0ebc10",
+  "zh": "在市中心。找 Monk 們就對了……"
+ },
+ {
+  "id": 114,
+  "src_sha256": "f20f1bc653a3f37bed9e5ab48d9ef341f94d682dc3b7ec3a4fbfc62f3cfca02d",
+  "zh": "那些東西很危險！你們離它們遠一點，讓我們來處理。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "f01f636600443108c3b333f67f10963777507ab81aa0e4ac41e0d6e9076aa4fb",
+  "zh": "真希望我們知道……"
+ },
+ {
+  "id": 116,
+  "src_sha256": "b8bd505444b0841baf7fddf8035b86081a9ca062ddbc5895ceddaeb9b7a9a86b",
+  "zh": "噢，不。我不喜歡談論自己。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "0c9a60433c9ca15e70cda5abb20ffc07bb54dd43a682b100092b26090bfe6a44",
+  "zh": "真希望我們對它知道得更多。我們正在了解中……"
+ },
+ {
+  "id": 118,
+  "src_sha256": "21ee3ad233679df5847f1c766d30f8f5387d83e192867c26194545726229fa4b",
+  "zh": "我就是這麼說的啊！"
+ },
+ {
+  "id": 119,
+  "src_sha256": "9814bcb30e36159b9c3d7829f9d62aa961ddd221bf3d15730e082defac8d719b",
+  "zh": "你們得往這裡的北邊找。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "dd5a295daf00e5e39e1a4f5a23b6de025cfd0fb1ea162b7138faef2dfddcc8e1",
+  "zh": "那你們得往南走。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "7a35a0d38f074172981c34a9be72e6cd2ccd319f06e6901a43a165cf141b6d52",
+  "zh": "那在東邊有一段距離。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "066848884d2547a4a325563ce959ca7cf98096d06912d7e5abcf59a39cb1f49a",
+  "zh": "你們往西邊試試。"
+ }
+]

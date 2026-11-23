@@ -1,0 +1,47 @@
+call	4ed260	無關	把命中值寫入戰鬥記錄文字用的紀錄呼叫，只格式化日誌，不改規則狀態
+call	5182e0	無關	物品分類超出物品數時的診斷記錄；之後分類重設為0，診斷本身不入規則
+call	53be00	makeCharacterAttackSource	清空攻擊來源記錄，設來源種類1與角色槽；來源 0x53be23..0x53be44
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff80	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff84	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff88	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff8c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff90	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	60f578	無關	日誌文字格式字串位址，不入規則
+data	61dbd4	無關	物品分類越界的診斷訊息字串，不入規則
+data	65bddc	itemDefinitionCount	已載入物品定義數量；分類位元組以無號比較此數
+data	68516c	itemDefinitions	物品定義陣列指標，stride 0x10d；case 以 arena 提供合成記錄，不複製 exe 表
+data	685178	characterActionRecords	角色動作副表，步長0x106；+0x1d 起為目標描述，+5 起為各手攻擊模式
+field	eax+0x0	attack_source_word0	攻擊來源記錄第0個dword，被複製進目標描述
+field	eax+0x4	attack_source_word1	攻擊來源記錄第1個dword，被複製進目標描述
+field	eax+0x8	attack_source_word2	攻擊來源記錄第2個dword，被複製進目標描述
+field	eax+0xc	attack_source_word3	攻擊來源記錄第3個dword，被複製進目標描述
+field	eax+0xcc	item_class	物品定義分類位元組（帶號延伸，無號對照物品數）；越界時重設為0
+field	ebp+0x60	item_effect_extra	物品定義+0x60位元組，七號欄位為各裝備此值之和
+field	ebp+0x89	attacker_level	攻方等級dword；第6欄=等級+min(等級,15)
+field	ebp+eax*4+0xf5d	attacker_item_slot_a	攻方物品欄位A的物品定義編號
+field	ebp+ecx*4+0xf5d	attacker_item_slot_b	攻方物品欄位B的物品定義編號
+field	ecx+0x60	item_effect_extra	物品定義+0x60位元組，累加進第7欄
+field	ecx+eax*1	item_effect_byte	物品定義+0x50起16個效果位元組，逐位元組相加
+field	ecx+edi*1+0x4a	item_weapon_dword	武器定義+0x4a dword，填入第1欄
+field	ecx+edx*1+0x5	item_effect_byte	物品定義效果位元組（0x50起，偏移已合併）
+field	edi+0x0	effect_pack_word	效果包暫存陣列元素，逐位元組累加
+field	edi+eax*1-0x1	effect_pack_byte	效果包位元組暫存，逐位元組累加
+field	esi+0x6c	descr_hand	目標描述的手別索引
+field	esi+0x70	descr_item_slot_a	目標描述的物品欄位A，-1為無
+field	esi+0x74	descr_item_slot_b	目標描述的物品欄位B，-1為無；有值時效果位元組相加
+field	esi+0x7c	descr_weapon_item	目標描述的武器物品定義編號

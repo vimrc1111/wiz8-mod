@@ -1,0 +1,23 @@
+PASS zhpatch：逐 byte 相同（bfa6766836110183…）
+PASS zhpatch：nsf/NPC_MYLES.json sha 不符被拒
+PASS zhpatch：msg/ARNIKA.json sha 不符被拒
+PASS zhpatch：stringdata.json sha 不符被拒
+PASS zhpatch：fact.json sha 不符被拒
+ok zhpatch.test
+?   	wiz8-mod/internal/fact	[no test files]
+?   	wiz8-mod/internal/glossary	[no test files]
+?   	wiz8-mod/internal/nsf	[no test files]
+?   	wiz8-mod/internal/slf	[no test files]
+?   	wiz8-mod/internal/stringdata	[no test files]
+?   	wiz8-mod/internal/strlib	[no test files]
+ok  	wiz8-mod/tools/atlas	0.578s
+ok  	wiz8-mod/tools/fact	0.066s
+ok  	wiz8-mod/tools/fitcheck	0.023s
+ok  	wiz8-mod/tools/hashdir	0.016s
+ok  	wiz8-mod/tools/nsf	0.495s
+ok  	wiz8-mod/tools/shot	0.012s
+ok  	wiz8-mod/tools/slf	50.870s
+ok  	wiz8-mod/tools/strings	0.048s
+ok  	wiz8-mod/tools/strlib	0.184s
+ok  	wiz8-mod/tools/trcheck	0.066s
+?   	wiz8-mod/tools/zhpatch	[no test files]

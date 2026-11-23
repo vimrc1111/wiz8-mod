@@ -1,0 +1,402 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "b2b537ca7d9ee5f57128b85dc0abaf743dbb2b4d3b4eb1c9b399a3f15fcbce81",
+  "zh": "誰派你們來的？"
+ },
+ {
+  "id": 2,
+  "src_sha256": "f2a48b35ef8e82fbca0a6e98e3159175aec698c3b0170abf52982434430c5451",
+  "zh": "我不確定我想不想跟你們說話……"
+ },
+ {
+  "id": 6,
+  "src_sha256": "0f0ad08c876dde32b8cfe516ce335190d8344e7f099a3d519d0b6a8a6a9df259",
+  "zh": "你們嚇不倒我。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "2bb5c3fa82e48049043c58e9fc360af31d904f846986a2f0d0ca3be6eafdd5c0",
+  "zh": "我不需要你們的金子。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "f7fe7640f5798e9be1035f9cb476603d7bb841dbd78638763287ce806ab612ec",
+  "zh": "這不是我的命運（ destiny ）……"
+ },
+ {
+  "id": 12,
+  "src_sha256": "9222c0a58b7fd916bc335bb1c4c49f6edf3e5f893bc9c7155e651625dba4740d",
+  "zh": "感謝你們的好意。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "2a2a695aac14f304419658e4fe7972bbabac4a7a12be18f3c76236a0b59757b2",
+  "zh": "我什麼都不需要……"
+ },
+ {
+  "id": 16,
+  "src_sha256": "8c3d229ad2b074668e6e84eecdb50262317422274a147b5186ced30b7fcbb851",
+  "zh": "我這裡的金子不夠數……"
+ },
+ {
+  "id": 17,
+  "src_sha256": "be80b70a94e3cfb62b7e1b007543fb969f2d6787bb0388f8d8cc99a42a4e071e",
+  "zh": "這可是我的東西啊……"
+ },
+ {
+  "id": 18,
+  "src_sha256": "3c79b67d8f802524963217861acdbf576d948532e43a130e1429ff447b54dafa",
+  "zh": "這可不是你們比較明智的時刻。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "d494a287310cea82a6c8e1f55c1f2c38986178dc271e00961b211ac865ae03ef",
+  "zh": "你們想偷我的東西？嗯……"
+ },
+ {
+  "id": 20,
+  "src_sha256": "31a154677a7aa132aea006b990b50c20d834981d6f53727c96b6d67eb7fb1d8f",
+  "zh": "你們的命運（ destiny ）就是死亡！"
+ },
+ {
+  "id": 22,
+  "src_sha256": "969c6eabd9db63c9165aaf1fe43cbcb432bf104cf81dc4a359a74df27c6af47a",
+  "zh": "你們可以去問問別人……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "cce3228ac61e0099f8f10e99f1ad1360fb2779a72d0781e10472069b88eaec5b",
+  "zh": "這些事不需要我們討論。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "bbc3f78a691169932f44273610f4c1644fe20064a42e423282616efd95bd180f",
+  "zh": "該揭曉這件事的人不是我。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "c97582cb69b08a0b44cd767e6e2675fb8b56e12e398f0012b5539a0a8d87d41f",
+  "zh": "我再說一遍。"
+ },
+ {
+  "id": 26,
+  "src_sha256": "829bce8bd27ac3fcdec2e555cc88a9a0b2507bead4d1980c53570d8f31687094",
+  "zh": "每件都很重要。你們想先聽哪一件？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "dba740983460a3ff3543febae6d0bf15fd6bc5d1fa4cb1c4c80141ad3d34fada",
+  "zh": "還有另外一件……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "5a33665846df7902e3962eef95911331bdf68d28793d0cbe29ebe2a7f8d5d516",
+  "zh": "我會想一想。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "d868f6a2070f2a4d42fc351d579bcd323bdd0423737a1d51cc3ab28555e42c48",
+  "zh": "別讓它困擾你們。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "60053b8a37b08a8e24ea67e6ee0da7635f92154549b87c54870075938d241f4e",
+  "zh": "我不想再佔用你們更多時間了……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "1ead4584f212fbe57872d751e7c3e5dae292315ade867e8a7b84cf6978d543f8",
+  "zh": "現在 Dominus 上發生了太多事……"
+ },
+ {
+  "id": 34,
+  "src_sha256": "445d73a41c44691d084f1fa8f0a2039ee542f3d5ff181a73dc6f36399e39bd9b",
+  "zh": "我相信你們在我們之間已經學到了許多。 Rapax 是我們面臨的巨大威脅，但我信賴 Cosmic Lords ，相信我們的祈禱會被聽見。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "f20960639e493e563ac090a8634c8b0496af6148dbf73c935c4bb77ab371433f",
+  "zh": "是的。我相信那將成為許多人的轉捩點。就是在那裡，會有人升上 Cosmic Circle 。我不知道會是誰，但我知道你們將是競爭者之一。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "0c6460016037d1561272f1f3a4a0e977aeb6680f7156c8b3a0b20a539c9fb677",
+  "zh": "Cosmic Circle 是 Cosmic Lords 的家。不久的將來，新的 Lords 將從 Ascension Peak 升起。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "65ec14b03407f699495353ddd3ef15b48ad7e2602797406fc2bdc17090a74f71",
+  "zh": "我把他們交在 Cosmic Lords 手中……"
+ },
+ {
+  "id": 44,
+  "src_sha256": "45f94cec36d11576c839af8fef0b6a45386d05568bfa53f94b8bdb922e6cfdd1",
+  "zh": "我們將在 Ascension 中盡我們的本分。"
+ },
+ {
+  "id": 50,
+  "src_sha256": "1b01f0b6f38c0c2adb97c0ab2b2da653c5aa5a16b0a57452ba3350ab1bcea95f",
+  "zh": "他們的命運已經註定……"
+ },
+ {
+  "id": 54,
+  "src_sha256": "6fb190dd6afa7a0a46ff53d85a9854e8ba73a9fd91f776373d6305a7144b0424",
+  "zh": "是的， Marten 預言過會有人抵達 Dominus 。他相信他的使者（ messengers ）會與這個邪惡的存在為敵，而我相信他是對的。 Dark Savant 已經用他造的那顆炸彈威脅要殺死 Higardi ，但它最終會帶走我們所有人。不過你們也許能改變這一切……"
+ },
+ {
+  "id": 55,
+  "src_sha256": "2ebc9501f5d2186ff05d7a0d4478befdbc4003efe4da66a4dea2a9c780da2f4a",
+  "zh": "我只聽過一些傳聞，是 Higardi 修道院（ Monastery ）裡的同伴在談論，但我相信他們只是在猜測。猜測她， Vi Domina ，和 Cosmic Lords 有某種關係，和 Phoonzang 本人有某種關係。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "165f809fe745069340b724eee705e6ae642a73ea4e79823dc03b93b5b9f78eb2",
+  "zh": "我只聽過一些傳聞，是 Higardi 修道院（ Monastery ）裡的同伴在談論，但我相信他們只是在猜測。猜測你， Vi Domina ，和 Cosmic Lords 有某種關係，和 Phoonzang 本人有某種關係。你應該去問問他們， Vi 。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "9e95b153a82cb255e68c3db6d9211c88ea72b00477bc2838dc7ce3e0fc89c0b8",
+  "zh": "Phoonzang ， Cosmic Lord ，父親， Destinae Dominus 的創造者。我把一切善行都交在他手中。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "919a48fc1da633b683280315e9693316940ddb3b4724b385b50669a46909c24d",
+  "zh": "多年來，我們守護著他的秘密（ secret ）（ secret ），為那位知曉他訊息的人保管 Helm of Serenity 。如今你們終於來了，他的頭盔就是你們的。很快你們就會找到 Marten 本人，還有他身邊的 Destinae Dominus 。"
+ },
+ {
+  "id": 68,
+  "src_sha256": "f831532ddf20caf9978d1cc5517368d60f5af7d05b0af116aa585e3a463da0cf",
+  "zh": "很多年前， Marten 從 Higardi 手中偷走了它，也帶著它死去（ died ）。據說它蘊含了 Cosmic Lords 所有的知識，對宇宙萬物的理解。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "56910bc50e01d8d992d9930db1cec7366965c4049faa45814c4542d7d96407ef",
+  "zh": "登昇者將成為新的 Cosmic Lord 。這一點 Marten 說得非常清楚。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "9724f44fbe9dfab1f59707b49b8fa8e528c27f084855f1eeb4e0b16684b6b492",
+  "zh": "對我們 Trynnie 來說，情況確實不同。 Cosmic Lords 答應把這顆星球，也就是大地，給我們。等 Higardi 登昇之後，它就會是我們的。本來我們要與其他人分享，但現在似乎成了問題……"
+ },
+ {
+  "id": 74,
+  "src_sha256": "e2af15d2068213e4e90144599b14b01bd91955221660e8e81029ccb4633d40bc",
+  "zh": "我是 Shaman Das 。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "db7f7a64073cc56248d990ad473252dae869cb487e84bcc6ff32393934e23c4c",
+  "zh": "我們每個人都有許多命運（ destiny ）。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "37a28760ffff79b8dee0a272cc1b78e188a1a607bbe646a42b161e3585161c13",
+  "zh": "這種想法不值得我浪費時間……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "7fe0a5c9d1a6e4bbc6caf36994cd3104df322b5314c66762f233c8e2bc071364",
+  "zh": "歡迎。我等了你們很久很久了。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "2b687db6298b629d3bcb482f16aa774a55eb5ae768407b8fba9982387b6c6f81",
+  "zh": "再見。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "4b333a9de6fa1196167074d84a54c07b090aa210ff10a7eb3013fcdaabc5e68a",
+  "zh": "還有別人可以幫（ help ）你們。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "0918350d02ddd9fb6e84e9bacc0bce04c1e37431263cf34d2b6df35d680dff4e",
+  "zh": "我很好。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "2e45503366fa17e70b33a5dc698c2c70f97452776e92dfd26ffebe6998e273dd",
+  "zh": "在 Arnika 。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "68e323b25e24273fec6a76b59720282ec12529848c30cf6354d286ab99472ba0",
+  "zh": "看這裡，在 Trynton 。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "27e22dd0864c20919de92b70622fd0908287f13c716a336f162223bcc5fde36f",
+  "zh": "在沼澤。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "cbc57f55189a807a7c8a3cac9d251d98cd0dc5186e16deb5300ce70fcfa4c52d",
+  "zh": "在 Marten's Bluff 。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "070171c020a3900f5bfae08d3862144117c3700821bb0ec45992b23e988c9db0",
+  "zh": "Mt. Gigas 。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "eeb032713ae5094ddc8f1e13d6ee578964ae2e5c63e65a32b431c8d2cbe51448",
+  "zh": "Rapax Rift 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "028c34fe95267e7b12963df134ec5af4403ebd296626a410eb0b60ba765b87f3",
+  "zh": "在 Rapax Castle 裡面。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "31cc0c814aee4641eb8b4a7503249ccc0f5757264dcf4fba7bc0f1a7ed61879a",
+  "zh": "在 Ascension Peak 上。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "5c4338c1ba74cf323303d7c2e44c22ca8736637acecf29cb215e5cf2acb5d1d3",
+  "zh": "在 Cosmic Circle 裡。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "d1376287af2bfcde5e102e8d18c703ed190fac4f31b3292c14dd00472cd75c9e",
+  "zh": "就在你們眼前。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "ea8935a502404baef04a1f6f86ee1b00ec7f613b512060ab8209e3fa9eab8be6",
+  "zh": "我不需要知道。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "8df847ff94d0250a38d70eafcae1de59f327ad0d891ea8c5661659f007328b4e",
+  "zh": "在 Bayjin 。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "9da80650ec553685679717d99df5d7abd7fb5108b1874a130242e87ddca1c947",
+  "zh": "你們走過了他被放逐的過往之路。現在我們來到你們的現在。這個我等了多年才要問的問題……"
+ },
+ {
+  "id": 106,
+  "src_sha256": "293bf167ed372db73bf4aeba304342d7bfe4e3dcb82fecaaead8afb72db64f1b",
+  "zh": "如果你們是 Marten 的使者（ messengers ），告訴我，他為你們準備了什麼訊息？"
+ },
+ {
+  "id": 107,
+  "src_sha256": "8aa522e69a79917e4faf7d4555ca4f6be417db61622e47a94410a670960d6f57",
+  "zh": "那麼我對你們就毫無用處了。我只等一位的使者。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "00c8bbbdd5aa11394180d621bb199982c0d6cdeb55b889e364b30dcd99000d49",
+  "zh": "許多人都想成為他命運（ destiny ）的使者（ messengers ），但你們不是他所預言的使者……"
+ },
+ {
+  "id": 109,
+  "src_sha256": "edbc5bed9c013de6f977004b56bb9119d9754cfb1f612e7f81c8796bdd4e139b",
+  "zh": "它留存下來了。 Marten 託付給我們的信任：有朝一日他的使者會回來取走 Helm of Serenity 。你們就是那些使者，命運（ destiny ）的第三批使者（ messengers ）。我們等你們等了好久好久。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "d5709d77e6f86a20905420d79f049a7c3b5b993dcddb41db5d59841345a0c0cd",
+  "zh": "十代以來，守護頭盔的鑰匙一手傳過一手，現在它將落入你們手中。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "3f2531dcdb600423f542c5daf847cf2c49e1af17463eee2ecc4be211e6d10b1d",
+  "zh": "在下一根樹枝（ bough ）上，你們會發現入口已經備妥……他的頭盔是你們的。使者啊，你們現在已準備好去找 Marten 本人了。這是你們的命運（ destiny ）。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "e956b2720565892968d6fb2629f2576895d0983532de3834e83bc05c6e6b0b0c",
+  "zh": "我的答案恐怕不是你們所希望聽到的。我不知道。 Marten 離開 Trynton 時，搬到了現在以他命名的 Bluff 。但之後呢？他沒留下任何去向的消息。 Higardi 正在追捕他，他不想冒被抓的風險，所以誰也沒告訴。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "97403de39792f7c7882610b9e47e638e50927450bf09ea6184b3da67c5e55927",
+  "zh": "我知道他是誰，但我並不認識他。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "f07b4babdc4dcabb1ca0d124d34a519e12011582b9ad5e5a67be531b51b03588",
+  "zh": "那是一座老橋（ bridge ）……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "4b3f4fb418f538118a721692af6d138234f2c2b53ca955d460c87a2aaa639314",
+  "zh": "也許你們可以用一些藤蔓（ vines ）來修補它。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "c061b964ddf8b42bbd3a94cc8aae91732d23c6668762d028dfa12c39ff1e7870",
+  "zh": "下一根樹枝（ bough ），就在橋（ bridge ）的對面。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "3f5ecc97a866766f9ef82359dbe318f50279c6424a522110d7ffa901ad028e6e",
+  "zh": "你們就是使者（ messengers ）。你們帶來了訊息。我們等了許多年，就是為了聽到有人說出那些話。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "a38636abcb4054f7ed9a90a2b7fe60b25350b9504a0289b2565d633d100ab344",
+  "zh": "就在我門外，不遠。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "1e6955d0b0a1f40241b52e703fa155b6b93c5ee6af75d6c9de29aac04dddaf63",
+  "zh": "不過是 Dark Savant 的工具。他正如 Marten 所預言的，是個邪惡的存在。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "6d4a6628f23fa9882dba81e2e606cdde749e89139de696e9eed7b7c1de9ce257",
+  "zh": "Marten 的秘密（ secret ）在於沉默——沒有人該知道 Helm of Serenity 的存在，更別說它在 Trynton 的位置，乃至在這個世界上的位置。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "3330b0bb643ff6ea8bd723093613f53fa3001c5928c3539fc220599a8376d094",
+  "zh": "是的， Trynton 有許多樹枝（ bough ）。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "0ee491742a737b7924e263720a4f32911b1a176430ee3c740c29d099739a65af",
+  "zh": "很多年前，在他消失之前，他確保他的使者（ messengers ）會收到它。取得 Destinae Dominus 的人也必須戴上 Helm of Serenity 。也許 Marten 本人會知道原因。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "0ec5ccd221acef2f95f8a18f0ae690d6b9acdc15dad8f26ab7e7a02901849f41",
+  "zh": "Marten 的徽章……來自很久以前的人生。朋友們，我們常在一生之中活過許多人生。 Marten 在來到我們這裡之前是什麼樣的人，與我無關……"
+ },
+ {
+  "id": 124,
+  "src_sha256": "f4f48c51f1a68ff1a639a6f086b1620cd00a87ab6ce764f118bde377e9356b9f",
+  "zh": "我是漫長傳承中的最後一人。許多人等待著 Marten 的使者（ messengers ），卻在你們到來之前就死去（ died ）了。他們的知識傳給了我，而我的命運（ destiny ）似乎就是與你們相遇。我的任務現在完成了。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "122c7fc6c40ceaf54ba3f817a760c213687b1915711d46818f0795ee41a6c809",
+  "zh": "關於這個，我所知道的就這麼多了。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "425af509481111e8e928122de48aa4784253e69f646fa44b6c6e24ad424377a5",
+  "zh": "北方。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "89f85d51886091ca4aae86247e5e57b07b8268c3b7051dedae5a4c2e58c41af6",
+  "zh": "南方。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "dff594118d30d9d4a81789b241eeb4ea1cd282833135b155612fb97e399ddeda",
+  "zh": "東方。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "665ac509754c3d7f395c3280e80de0ff676d3065dd50bb3a7beb85c7562602a4",
+  "zh": "西方。"
+ }
+]

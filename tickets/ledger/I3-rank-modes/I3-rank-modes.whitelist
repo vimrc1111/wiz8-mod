@@ -1,0 +1,7 @@
+internal/calc/rank.go
+internal/calc/rank_test.go
+internal/calc/rank_mode_test.go
+internal/calc/rank_loadout_test.go
+internal/calc/rank_skillprio_test.go
+tools/calc/main.go
+notes/calc-rank.md

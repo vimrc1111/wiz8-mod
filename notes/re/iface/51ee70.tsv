@@ -1,0 +1,61 @@
+call	5f	無關	分析器列出的例外展開輔助目標；正常返回不執行，與施法規則無關
+call	65	無關	同上：例外展開輔助目標
+call	404b50	itemSoundPath	sprintf(0x61aa9c, 物品音效名) 進 0x6ee440 起 8 格×0x200 環狀緩衝（索引 0x650dec）；calc ieSound，緩衝與索引進輸出
+call	4ff790	spellPowerFromStat	(值>>1)＋PL＋(成本/2＋等級)/2，型別 7 減 3，下限 0；calc spcWorld.power，寫來源描述 +0x1f
+call	517a90	無關	把訊息目錄字串格式化進 0x689fd0 供 590950 顯示；純訊息文字，calc 不建模（同 spcWorld.cast 的 58ac00 路徑）
+call	51dcd0	itemCastRisk	物品施法失敗率：4ff410 門檻（技能 9×0.8、20×0.9、12/23 加等級落差與職業技能不足 4acba0）；calc ieRisk
+call	53be00	characterDescriptorInit	把堆疊上來源描述符清零並填入種類 1、自身索引、−1；calc marCharSource
+call	5905c0	messageWindowMode	(1,−1)：只設 0x69b7b8＝1；calc 直接 put8，欄位進輸出
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffbc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe5	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffeb	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5eb188	無關	swprintf import；名稱快取格式化，calc 以 srdFormat/srdPutW 重現
+data	5eb1a0	無關	malloc import；名稱快取 0x78 位元組，calc 以 alloc 重現
+data	616e84	itemKindSkill	物品種類 0..11 對應技能索引（−1＝不加失敗率）；選 51dcd0 技能與 4fb4c0 模式
+data	61aa9c	無關	音效路徑格式字串（只有 %s）；calc 執行時讀 exe
+data	61e810	itemWordText	名稱字 0..n 對應訊息目錄索引；未鑑定物品名稱用
+data	65be1c	spellTable	法術記錄表（步距 0x1bf）；等級 +0x56、名稱 +0x9b
+data	68510c	messageMode	訊息輸出模式：選 58ab60 的名稱來源與是否設 5905c0
+data	68516c	itemTable	物品記錄表基底（步距 0x10d）
+data	685178	partySlotRecords	隊員副記錄陣列（步距 0x106）；+0x1d 起為目標描述
+data	68c09c	messageCatalog	訊息目錄指標；只取字串指標當訊息格式參數，文字無規則效果
+data	68c108	itemNameCache	未鑑定物品名稱快取（以名稱字索引），空時配置並格式化
+field	eax*4+0x616e84	itemKindSkill	物品種類索引技能表
+field	eax+0x0	itemId	物品實例第 0 dword：物品記錄索引
+field	ebx+0x0	itemId	同上
+field	edi+0x0	itemId	同上
+field	eax+0x6	itemIdentified	物品實例 +6：已鑑定；0 時失敗率 +30、名稱走快取
+field	ebx+0x6	itemIdentified	同上
+field	edx+0x6	itemIdentified	同上
+field	ebx+0x7	itemUsedFlag	物品實例 +7：成功施放後設 1；進輸出
+field	ebx+0x3e	itemClass	物品記錄 +0x3e 類別：0xe、0x15、0x16 時 4fac40 旗標為 1
+field	ebx+0x42	itemKind	物品記錄 +0x42 種類，索引 0x616e84
+field	ebx+0x63	itemSpell	物品記錄 +0x63 法術編號；0 時 4fac40 旗標為 1
+field	ecx+0x63	itemSpell	同上
+field	edx+0x63	itemSpell	同上
+field	ecx+edx*1+0x63	itemSpell	同上（以物品索引定址）
+field	ecx+edx*1+0x3f	itemNameWord	物品記錄 +0x3f 名稱字索引：快取槽與 0x61e810
+field	ecx+edx*4	messageCatalogText	訊息目錄字串指標（名稱字）；格式參數，無規則效果
+field	ecx+0x79c	messageCatalogText	同上：名稱快取格式
+field	eax+0x7d0	messageCatalogText	同上：58ab60 訊息格式
+field	edx+0x7d0	messageCatalogText	同上
+field	edx+0x6a4	messageCatalogText	同上：法術效果訊息（517a90，不建模）
+field	ecx+eax*1+0x56	spellLevel	法術等級：技能經驗量（＋PL>>1）
+field	edi+0x89	characterStat89	角色 +0x89：模式 1/4 的威力來源值（4ff790）
+field	edi+0xad	characterStatAd	角色 +0xad：技能 23 的威力來源與 51dcd0 等級
+field	edi+0xb1	characterStatB1	角色 +0xb1：技能 12 的威力來源與 51dcd0 等級
+field	edi+eax*2+0x1a3	characterSkill	角色技能（步距 0x26，以物品種類技能索引）；51dcd0 的技能值
+field	esi*2+0x61e810	itemWordText	名稱字索引 → 訊息目錄索引
+field	esi*4+0x68c108	itemNameCache	名稱快取槽

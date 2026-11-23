@@ -1,0 +1,43 @@
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd3	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+call	2b6	無關	分析器把立即值當子呼叫目標，非函式
+call	73	無關	分析器對 call 運算元的識別值（低於 PE ImageBase）；本函式實際沒有此子呼叫，與規則無關
+call	40efa0	rand_n	亂數 R(n)：丟棄 n 次 R(100)、模式 R(100)、選物 R(count)、結果 R(100)、金額 R(100)；模擬器 RNG 樁記錄，calc 以 Rand 重放
+call	4addf0	listGrow	物品索引清單（容量 5）滿時擴容到 count+1 個 u32 槽並搬舊資料，恆回 1；配置失敗分支不建模，清單內容不外露
+call	5e1ce0	allocateIndexList	配置容量五的物品索引清單；模擬器 bump heap 不失敗，清單內容不外露
+call	5e1c10	heapFree	釋放物品索引清單緩衝；模擬器無操作，無規則輸出
+call	517ec0	character_pointer_slot	以角色指標找隊伍槽索引（0..7），非公式，case 原樣執行；槽加進丟棄亂數次數
+call	50baf0	pickpocketChance	偷竊成功門檻；D4 公式節點，case 原樣執行，calc 重用 pickpocketChanceNode
+call	51c020	item_stack_charge_init	初始化暫存物品實例（物品編號、數量）；D4 公式節點，case 以位址樁取代，回傳值呼叫端忽略，樁寫出的物品編號等於記錄的參數，各次呼叫參數與次數記入輸出
+call	553f10	natural_skill_growth	偷竊成功後技能成長；D4 公式節點，case 以位址樁取代，回傳值呼叫端忽略，記錄參數與次數
+data	5eb1d8	srandImport	MSVCRT srand 的 IAT 槽；以角色種子和呼叫，case 以 import 樁記次數與種子
+data	685174	characterRecords	角色記錄陣列基址；八筆、步幅 0x1862，case 以 arena 物件接線
+data	685178	presenceBlock	隊伍在場資訊區塊指標；+0x20c 起步幅 0x106 的六個在場位元組決定種子加總項
+data	5e6f88	無關	SEH 處理表位址，只供例外展開，非規則資料
+data	5ebaf4	無關	assertion 失敗訊息文字
+data	5ebaf4	srAssertFailImport	srAssertFail 匯入槽；只在不可達的斷言分支使用，停止後無返回
+data	5ec0e0	無關	本地物件虛表指標，只供解構，不是規則資料
+data	612f4c	無關	斷言診斷字串位址，只在 cov-exempt 斷言塊使用，非遊戲資料
+data	619ebc	無關	斷言來源檔名字串；不參與偷竊規則
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+field	edi+0x2e	npcByte2e	NPC 記錄 +0x2e（u8）；乘 11 加進丟棄亂數次數
+field	edi+0x80	npcMoney	NPC 金錢（u32）；偷錢模式扣除，零時不成功
+field	edi+0x84	npcStealAttempts	NPC 有號計數 byte（i8）；乘 7 加進丟棄亂數次數，結算前遞增到 100
+field	edi+esi*2+0x30	npcItem	NPC 40 個物品字（u16，+0x30 起）；0xffff、0x242、0x243、0x244 不可偷，偷到後改 0xffff
+field	edx+0x0	seedValue	角色記錄 +0x9ed 的 u32（槽 2+j 的種子項）；在場位元組非零者相加後交給 srand
+field	ecx+0x0	無關	指標解參考的基底偏移 0（清單項或物品暫存），本身非獨立規則欄位
+field	eax+0x0	無關	指標解參考的基底偏移 0（清單項或物品暫存），本身非獨立規則欄位
+field	ebp+0x0	無關	指標解參考的基底偏移 0（清單項或物品暫存），本身非獨立規則欄位
+field	edi+0x0	無關	指標解參考的基底偏移 0（清單項或物品暫存），本身非獨立規則欄位
+field	ecx+edx*4	物品索引清單	索引清單 u32 槽（容量五，滿時擴容）；內容為 NPC 物品槽編號，選物時以 R(count) 取

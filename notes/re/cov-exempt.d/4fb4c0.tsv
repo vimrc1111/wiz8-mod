@@ -1,0 +1,28 @@
+4fb4c0	4fb636	法術實例（0x1c8）配置失敗（new 回 NULL）專屬分支；合法輸入不能控制配置器失敗，模擬器 heap 配置不回 NULL（同 4f8cb0 前例）。calc 的配置只在超出 fixture heap 視窗時 panic
+4fb4c0	4fb644	法術實例（0x1c8）配置失敗（new 回 NULL）專屬分支；合法輸入不能控制配置器失敗，模擬器 heap 配置不回 NULL（同 4f8cb0 前例）。calc 的配置只在超出 fixture heap 視窗時 panic
+4fb4c0	4fbc0e	來源既非角色（53bea0）、非怪物（53bf10）、也不是型別 3 的 srAssertFail 塊（0x6b2）；來源型別只有 1／2／3（4fea50 同樣斷言），srAssertFail 停止、沒有可差分的返回。calc 對此 panic（power source of unknown type）
+4fb4c0	4fbe20	飛彈清單 inst+0x110 由 501e50(5) 剛建、容量 5，本分支只 append 一次；4addf0 擴充只在 5 格配置失敗（容量 0）時才到，合法輸入不能控制配置器失敗。calc push1 在需擴充時 panic
+4fb4c0	4fc174	視覺清單 inst+0x100 由 501f80(5) 剛建、容量 5，此 append 點每次施法只跑一次；4addf0 擴充只在 5 格配置失敗（容量 0）時才到，合法輸入不能控制配置器失敗。calc visual1／push1 在需擴充時 panic
+4fb4c0	4fc1f5	視覺清單 inst+0x100 由 501f80(5) 剛建、容量 5，此 append 點每次施法只跑一次；4addf0 擴充只在 5 格配置失敗（容量 0）時才到，合法輸入不能控制配置器失敗。calc visual1／push1 在需擴充時 panic
+4fb4c0	4fc270	視覺清單 inst+0x100 由 501f80(5) 剛建、容量 5，此 append 點每次施法只跑一次；4addf0 擴充只在 5 格配置失敗（容量 0）時才到，合法輸入不能控制配置器失敗。calc visual1／push1 在需擴充時 panic
+4fb4c0	4fc63c	視覺清單 inst+0x100 由 501f80(5) 剛建、容量 5，此 append 點每次施法只跑一次；4addf0 擴充只在 5 格配置失敗（容量 0）時才到，合法輸入不能控制配置器失敗。calc visual1／push1 在需擴充時 panic
+4fb4c0	4fc6f1	法術 0x62 的視覺 append（inst+0x100，剛建容量 5，只 append 一次）的內嵌擴充（新配置、搬移、釋放舊塊）；只在 5 格配置失敗時才到，合法輸入不能控制配置器失敗。calc visual1 在需擴充時 panic
+4fb4c0	4fc711	法術 0x62 的視覺 append（inst+0x100，剛建容量 5，只 append 一次）的內嵌擴充（新配置、搬移、釋放舊塊）；只在 5 格配置失敗時才到，合法輸入不能控制配置器失敗。calc visual1 在需擴充時 panic
+4fb4c0	4fc71c	法術 0x62 的視覺 append（inst+0x100，剛建容量 5，只 append 一次）的內嵌擴充（新配置、搬移、釋放舊塊）；只在 5 格配置失敗時才到，合法輸入不能控制配置器失敗。calc visual1 在需擴充時 panic
+4fb4c0	4fc72e	法術 0x62 的視覺 append（inst+0x100，剛建容量 5，只 append 一次）的內嵌擴充（新配置、搬移、釋放舊塊）；只在 5 格配置失敗時才到，合法輸入不能控制配置器失敗。calc visual1 在需擴充時 panic
+4fb4c0	4fc745	法術 0x62 的視覺 append（inst+0x100，剛建容量 5，只 append 一次）的內嵌擴充（新配置、搬移、釋放舊塊）；只在 5 格配置失敗時才到，合法輸入不能控制配置器失敗。calc visual1 在需擴充時 panic
+4fb4c0	4fc957	類別 10 的視覺 append（inst+0x100，剛建容量 5，只 append 一次）的內嵌擴充；只在 5 格配置失敗時才到，合法輸入不能控制配置器失敗。calc visual1 在需擴充時 panic
+4fb4c0	4fc977	類別 10 的視覺 append（inst+0x100，剛建容量 5，只 append 一次）的內嵌擴充；只在 5 格配置失敗時才到，合法輸入不能控制配置器失敗。calc visual1 在需擴充時 panic
+4fb4c0	4fc97f	類別 10 的視覺 append（inst+0x100，剛建容量 5，只 append 一次）的內嵌擴充；只在 5 格配置失敗時才到，合法輸入不能控制配置器失敗。calc visual1 在需擴充時 panic
+4fb4c0	4fc991	類別 10 的視覺 append（inst+0x100，剛建容量 5，只 append 一次）的內嵌擴充；只在 5 格配置失敗時才到，合法輸入不能控制配置器失敗。calc visual1 在需擴充時 panic
+4fb4c0	4fc7fa	視覺清單內嵌擴充時 new 回 NULL 的還原分支；合法輸入不能控制配置器失敗，模擬器 heap 配置不回 NULL（同 4f8cb0 前例）
+4fb4c0	4fc8d8	視覺清單內嵌擴充時 new 回 NULL 的還原分支；合法輸入不能控制配置器失敗，模擬器 heap 配置不回 NULL（同 4f8cb0 前例）
+4fb4c0	4fcbcf	施法佇列（0x689b64）內嵌擴充時 new 回 NULL 的還原分支；合法輸入不能控制配置器失敗，模擬器 heap 配置不回 NULL（同 4f8cb0 前例）
+4fb4c0	4fbf9e	清單存取子的索引越界退回第 0 筆分支；所在迴圈以 i < 筆數為條件，索引永遠在範圍內，任何輸入都到不了。calc 迴圈同樣以筆數為界，沒有對應分支
+4fb4c0	4fc4f0	清單存取子的索引越界退回第 0 筆分支；所在迴圈以 i < 筆數為條件，索引永遠在範圍內，任何輸入都到不了。calc 迴圈同樣以筆數為界，沒有對應分支
+4fb4c0	4fc589	清單存取子的索引越界退回第 0 筆分支；所在迴圈以 i < 筆數為條件，索引永遠在範圍內，任何輸入都到不了。calc 迴圈同樣以筆數為界，沒有對應分支
+4fb4c0	4fc78d	清單存取子的索引越界退回第 0 筆分支；所在迴圈以 i < 筆數為條件，索引永遠在範圍內，任何輸入都到不了。calc 迴圈同樣以筆數為界，沒有對應分支
+4fb4c0	4fcb12	清單存取子的索引越界退回第 0 筆分支；所在迴圈以 i < 筆數為條件，索引永遠在範圍內，任何輸入都到不了。calc 迴圈同樣以筆數為界，沒有對應分支
+4fb4c0	4fcd8b	模式 2 失敗訊息的來源非角色 srAssertFail 塊（0x8c2）；srAssertFail 停止、沒有可差分的返回。calc 對此 panic（fizzle message for a non-character source）
+4fb4c0	4fcdb8	模式 3 失敗訊息的來源非角色 srAssertFail 塊（0x8c6）；srAssertFail 停止、沒有可差分的返回。calc 對此 panic
+4fb4c0	4fce5b	失敗收尾的怪物來源 id 為 -1 的 srAssertFail 塊（0x1504）；同一條件先在 53bf10 內斷言（0x53bf21）停止，到不了此塊。calc isMon 對 id -1 panic

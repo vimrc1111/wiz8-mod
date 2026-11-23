@@ -1,0 +1,16 @@
+call	40efa0	候選筆數亂數	抽 R(候選筆數)，均勻選出第幾筆合格目標；筆數為零不抽
+call	5e1c10	無關	釋放候選列表儲存，不改變選擇規則
+call	5e1ce0	無關	配置五筆（0xa0 bytes）候選列表的初始儲存，不制定規則
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5e7258	無關	SEH 例外處理描述位址，非遊戲資料或表
+data	5ee778	無關	SEH 展開狀態用的物件位址，非遊戲資料或表
+data	8	無關	複製目標欄位的雙字數（八個），為結構大小常數，非遊戲資料或表
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	ffffffffffffffe4	無關	索引器將堆疊負位移辨識為資料引用；函式局部暫存，不是規則全域
+data	ffffffffffffffe8	無關	索引器將堆疊負位移辨識為資料引用；函式局部暫存，不是規則全域
+data	ffffffffffffffec	無關	索引器將堆疊負位移辨識為資料引用；函式局部暫存，不是規則全域
+data	fffffffffffffff0	無關	索引器將堆疊負位移辨識為資料引用；函式局部暫存，不是規則全域
+data	fffffffffffffff4	無關	索引器將堆疊負位移辨識為資料引用；函式局部暫存，不是規則全域
+data	fffffffffffffffc	無關	索引器將堆疊負位移辨識為資料引用；函式局部暫存，不是規則全域
+field	edi+0x0	monsterTargetWords	怪物 +0x2ba 起的八個目標欄位（複製目的地）
+field	esi+0x0	chosenCandidateRecord	被選中的 32 bytes 候選目標記錄（複製來源）

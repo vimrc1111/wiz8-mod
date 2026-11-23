@@ -1,0 +1,77 @@
+call	2b6	srAssertFail	IAT 0x5ebaf4 的 srAssertFail 分析標記；只在區域名單 ID 不在已載入怪物清單時停止（553082 cov-exempt）
+call	86	freeKillEvent	free 擊殺事件；內建 no-op，與規則無關
+call	516950	combat_event_list_init	初始化容量五的擊殺事件清單（累計器 +0x58），元素數從零開始
+call	517a90	formatAreaDamageSummary	把總傷害或命中數／平均傷害格式化到 0x689fd0；case 以 summary 輸出比對
+call	52bb60	monster_lose_hp	生命扣除入口：傷害護盾、累計總傷害與命中數、致命時清 HP 與耐力並排擊殺事件、非致命連動耐力與疲勞；原生執行，calc 照式重算
+call	536150	damage_source_init	清空 0x34 位元組傷害來源記錄並把 +4／+8 設 -1；非角色來源不記功
+call	5905c0	message_gate_set	把訊息待續旗標 0x69b7b8 設為一；case 以 messageGate 輸出比對
+call	5905e0	message_gate_query	讀訊息待續旗標，決定是否先輸出分隔訊息
+call	5905f0	無關	輸出戰鬥訊息；文字與呈現不影響傷害規則
+call	5e1c10	無關	釋放區域名單與事件清單的暫存緩衝區，屬容器生命週期
+call	5e1ce0	無關	配置區域名單緩衝區，屬容器生命週期
+data	4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	5e7486	無關	SEH 處理常式位址，屬例外框架，非遊戲資料
+data	5eb224	freeKillEventImport	free 匯入槽；見 call 86
+data	5ebaf4	無關	斷言失敗處理的匯入位置；只在怪物記錄缺失的 assert 塊呼叫
+data	5ebfe0	無關	區域名單的虛函數表，屬容器生命週期
+data	5ebfec	combat_event_list_base_type	清單釋放時的基底型別，沒有數值規則
+data	5ece4c	combat_event_list_type	擊殺事件清單的型別，沒有數值規則
+data	60f4f8	missingMonsterAssertionText	怪物記錄缺失的斷言文字；不參與遊戲數值
+data	614a3c	無關	MonGen 日誌（58aad0，排除）格式字串；樁只計次
+data	6175c0	無關	類型 1 事件的訊息格式字串；本函式只排類型 3 事件，該塊不可達
+data	619788	無關	分隔訊息文字；只供 5905f0 呈現
+data	61e2c4	spellSourceAssertionFile	斷言來源檔名字串；不參與遊戲數值
+data	61e602	無關	字串表索引字；選日誌第四參數字串，樁不記錄該參數，不參與規則
+data	659c0c	party_world_object	隊伍世界物件：+0x84 半徑併入查詢範圍，+0x100 位置只傳給排除的 539e70
+data	65be1c	combat_rules	戰鬥規則記錄指標：+0x6c93 持續區域法術骰、+0x6d75 抗性領域、+0x6cdd 日誌參數
+data	68510c	combat_message_flag	訊息旗標：非零時不傳累計器、不出總結、改走護盾訊息 0x192，零傷害時出怪物訊息
+data	68c09c	message_table	訊息字串指標表；+0x664／+0x668 總結格式、其他只供呈現
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	fffffffffffffea4	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffebf	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffec0	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffec4	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffec6	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffec8	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffecc	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffed0	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffed4	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffed8	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffedc	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffee0	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffee4	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffee8	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffeec	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffef0	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffef4	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffef8	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff10	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff14	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff68	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff6c	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff74	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	堆疊區域變數的負位移，被分析為資料引用，非遊戲資料或表
+field	eax+0x0	area_list_monster_id／party_position_x	區域名單第 i 筆怪物 ID（539e70 排除樁由 case 寫入），查已載入怪物記錄；另一處為隊伍位置第一座標，只傳給排除的 539e70（幾何）
+field	eax+0x4	party_position_y	隊伍位置第二座標，只傳給排除的 539e70（幾何）
+field	eax+0x6cc	無關	不可達的非怪物目標訊息字串指標（553148）
+field	eax+0x8	party_position_z	隊伍位置第三座標，只傳給排除的 539e70（幾何）
+field	ebp+0x0	effect_power	持續效果威力 u32：低八位乘骰數（保留低八位），乘三為抗性強度
+field	ebp-0x4	effect_type	持續效果類型 u32；只處理 0x3e
+field	ebp-0x5	effect_active	持續效果啟用旗標 u8；零則略過該槽
+field	ecx+0x664	summaryHitsAverageFormat	多目標總結格式（命中數、平均傷害＝總傷害÷命中數，無號除法）
+field	ecx+0x6b8	無關	日誌格式字串指標；58aad0 樁只計次
+field	ecx+0x6cc	無關	零傷害怪物訊息的字串指標；590b40 樁只計次
+field	ecx+0x6d75	spell_realm	抗性領域 0..5，傳給 552250 選怪物模板抗性與修正
+field	ecx+0x84	party_radius	隊伍半徑 binary32；加上 4×500.0 以 x87 64 位尾數相加後存成 binary32 傳給 539e70
+field	ecx+eax*4	event_list_shift	擊殺事件清單出列時左移元素，屬容器操作
+field	ecx+eax*4+0x4	event_list_shift_next	擊殺事件清單出列時左移元素的來源，屬容器操作
+field	edi+0x0	無關	rep stos 清空累計器的目的位址，非遊戲資料
+field	edx+0x668	summaryTotalFormat	單目標總結格式（總傷害）
+field	edx+0x694	無關	無命中訊息字串指標；只供 5905f0 呈現
+field	edx+0x6c93	ongoing_area_spell_dice	四位元組骰記錄：i16 基值、u8 骰數、u8 面數
+field	edx+ecx*4	無關	訊息表依 0x61e602 索引取日誌字串，樁不記錄
+field	esi+0x0	monster_id／kill_event_type	怪物記錄 +0 為 ID（目標描述子）；事件出列時為事件類型（只有 3）
+field	esi+0x4	無關	類型 1 事件的參數，不可達塊（55328c）

@@ -1,0 +1,26 @@
+call	40efa0	rand_n	有界亂數 R(n)：開關 0x687499 開啟且已有候選時 R(2) 決定該槽是否被強制為 100%；Rand 重放原呼叫次序
+call	517080	explorationTargetPosition	取得持有者（ecx 物件）的世界座標：節點 A（高度加 100）、節點 B（getLocation）或模型包圍盒中心；輸出三個 float
+call	547940	characterHasAbility	角色職業列與種族列是否含能力碼；此處查能力 0xc（搜尋），即 n_548e60.go 的 potionFeature
+data	5ed490	無關	浮點常數 0.01：把百分比換成距離單位的比例；常數值寫在 n_517560.go
+data	61a364	無關	浮點常數 10000：搜尋百分比換成距離單位的比例；常數值寫在 n_517560.go
+data	652dac	searchModeFlagsPtr	指向旗標雙字的指標；位元 0x100 開啟時搜尋基礎值再減半
+data	685174	characterRecords	角色陣列基址；槽索引乘 0x1862 得到角色記錄，也是傳給技能成長的角色指標
+data	685178	characterSlotFlags	每槽一個位元組的啟用旗標陣列，槽 k 在位元組 k*0x106；零時該槽不參與搜尋
+data	687499	searchForceFlag	開啟時（作弊）候選槽可被強制成 100% 搜尋
+data	6874ff	searchAlwaysFlag	開啟時（作弊）沒有搜尋能力的槽也參與，且基礎值為零時仍可套加成
+data	ffffffffffffffdb	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffdc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x0	searchModeFlags	旗標雙字（652dac 指向）：位元 0x100 為搜尋減半
+field	eax+0xb01	characterSearchLevelGate	角色 +0xb01 的 u32：小於 13 才參與搜尋
+field	eax+ecx*1	characterSlotActive	啟用旗標陣列 +0x106*槽 的位元組，零時略過該槽
+field	edi+eax*1+0x3dd	characterSearchBase	角色 +0x3dd 的 u32：搜尋基礎值，右移一位（旗標 0x100 時再一位）
+field	edi+edx*1+0x161	characterSearchSkill	角色 +0x161 的 u32：技能值，分段換成加成
+field	edi+edx*1+0xb11	characterSearchEnabled	角色 +0xb11 的 u32：零時略過該槽

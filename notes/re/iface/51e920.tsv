@@ -1,0 +1,8 @@
+data	4	無關	入口第一個堆疊參數的位移，取得物品實例指標，非全域資料
+data	8	無關	入口第二個堆疊參數的位移，取得增加量，非全域資料
+data	68516c	物品模板表指標	依實例物品編號定位每筆 0x10d 位元組的模板，取得充能骰式；case 的 templates 位於 arena offset 4096，保留 101×269=27169 bytes，與 offset 0 的 item 實例不重疊
+field	eax+0x0	物品實例的模板編號	u32 輸入 itemIndex，case 範圍 0..100，選擇物品模板表記錄；輸出確認編號保持不變
+field	eax+0x5	物品實例的目前充能	u8，增加量先按位元組回繞，再以上限夾制並寫回
+field	ecx+0x67	物品充能骰式基值	有號 i16 輸入 chargeBase，上限的固定項；依 itemIndex 寫入模板，stride=269、count=101
+field	ecx+0x69	物品充能骰數	u8 輸入 chargeDice，與面數相乘形成充能上限的可變項最大值；依 itemIndex 寫入模板，stride=269、count=101
+field	ecx+0x6a	物品充能骰面數	u8 輸入 chargeSides，與骰數相乘；依 itemIndex 寫入模板，stride=269、count=101；此入口不擲骰

@@ -1,0 +1,51 @@
+call	2b6	無關	分析器列出的例外展開輔助目標；正常返回不執行，與行動選擇規則無關
+call	40efa0	boundedRandom	有界亂數 R(n)：放棄回合、特殊攻擊、施法三處各擲一次 R(100) 與門檻比較；TestEmu 以錄下的 rng 序列逐次對齊。
+call	511cb0	groupEngagedFlag	以怪物 +0x4 群組識別碼取群組記錄的 +0xc8 旗標；收尾時怪物不忙且旗標非零則行動改為 6。
+call	51a800	templateMaxRangeClass	物種模板三個攻擊項中、啟用且射程類不大於 1 者的最大射程類；全無則 -1，-1 時略過遠距判斷。
+call	51ac30	nearestTargetDistance	怪物到可及目標的最短距離（以浮點回傳，存成單精度）；與射程類換算距離比較決定是否走受傷判斷。
+call	531c00	monsterGiveUpChance	怪物放棄本回合的百分機率；R(100) 小於它時行動寫 4。
+call	534a40	monsterSpecialAttackAimed	特殊攻擊（模板 +0xe3）可否瞄準：模板機率與編號非零、模型支援循環 0x12、戰鬥中蓄力、HP 門檻、特殊攻擊類型 6 時看與隊伍距離，否則候選清單非空。
+call	535150	monsterBusy	怪物本回合是否已在進行中動作；為真時不做收尾改寫。
+call	53d450	monsterAttackReady	怪物逐一檢查三個攻擊槽，有目標返回 0，否則回最大狀態值；0 走隨機行動挑選，3 走受傷判斷，其他寫行動 6。
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	srAssertFail 匯入槽，僅 5326f0 回假時的斷言分支使用（cov-exempt 登記）。
+data	5ee770	hurtRatioThreshold	單精度常數 0.95（exe 0x5ee770，執行時讀 exe）；目前 HP／最大 HP 不大於它算受傷。
+data	6069a4	無關	斷言運算式字串，只傳給 srAssertFail。
+data	61cc3c	無關	斷言原始檔名字串，只傳給 srAssertFail。
+data	61cd48	無關	除錯訊息字串：模型不支援施法動畫循環 0x19 時給除錯記錄 5182e0，只寫 log。
+data	61eefc	specialAttackKindTable	每筆 8 位元組的特殊攻擊表，首個雙字為攻擊類型；以模板 +0xe3 為索引，類型 6 時目標設為怪物自身位置。
+data	68d524	spellAnimWarnedOnce	只記一次的旗標：首次因模型不支援施法循環寫 log 後設 1，之後不再記錄；不影響行動結果。
+data	ffffffffffffffc8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表（區域暫存）
+data	ffffffffffffffcc	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表（區域暫存）
+data	ffffffffffffffd0	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表（區域暫存）
+data	ffffffffffffffd4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表（區域暫存）
+data	ffffffffffffffe0	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表（區域暫存）
+field	eax+0x0	worldPosition.x／combatAction.state	4534c0 回傳的世界座標 X（類型 6 目標點）；閒置分支中為戰鬥行動狀態 +0x0（清零）
+field	eax+0x4	worldPosition.y／combatAction.doneFlag	4534c0 回傳的世界座標 Y；閒置分支中為戰鬥行動狀態 +0x4 位元組（設 1）
+field	eax+0x8	worldPosition.z	4534c0 回傳的世界座標 Z，寫到怪物 +0x2d2
+field	ecx+0x1b9	template.noHurtRetreat	怪物模板 +0x1b9：非零時不做遠距受傷判斷，且受傷時行動取 5 而非 7
+field	ecx+0x4	combatAction.doneFlag	戰鬥行動狀態 +0x4 位元組：無行動時設 1
+field	edi+0x0	monster.targetKind	怪物 +0x2ba 目標記錄首個雙字：類型 6 特殊攻擊時寫 6
+field	edi+0x1b9	template.noHurtRetreat	怪物模板 +0x1b9：非零時跳過射程／距離與受傷判斷
+field	edi+0x249	template.idleWhenInactive	怪物模板 +0x249：怪物 +0x16 為零時，零寫行動 6、非零改為無行動（-1）
+field	edi+0xcb	templateClass	怪物模板類別；0xc 時即使 +0x87 非零也走受傷判斷
+field	edi+0xe0	template.spellChance	怪物模板 +0xe0：施法百分機率；攻擊槽未就緒時視為 100
+field	edi+0xe1	template.specialAttackChance	怪物模板 +0xe1：特殊攻擊百分機率；攻擊槽未就緒時視為 100
+field	edi+0xe3	template.specialAttackId	怪物模板 +0xe3：特殊攻擊編號，索引 0x61eefc 表
+field	edi+ebp*1+0x14d	template.spells[i]	怪物模板 +0x14d 起十個法術編號；第一個可施放者決定是否擲施法機率
+field	edx*8+0x61eefc	specialAttackKindTable.kind	特殊攻擊表第 n 筆的攻擊類型（n＝模板 +0xe3）
+field	edx+0x0	combatAction.state	戰鬥行動狀態 +0x0 雙字：無行動時清零
+field	esi+0x10	monsterCombatActionState	怪物戰鬥行動狀態物件指標
+field	esi+0x107	monsterMainCondition	怪物主狀態碼；不小於 0xf 時無行動
+field	esi+0x16	monsterState	怪物狀態位元組；零時依模板 +0x249 寫行動 6 或無行動
+field	esi+0x27	monsterMaximumHP	怪物最大 HP，受傷比例的有號 32 位分母
+field	esi+0x2b	monsterCurrentHP	怪物目前 HP，受傷比例的分子（無號 32 位擴成 64 位）
+field	esi+0x2ca	monster.targetPoint.x	怪物目標記錄 +0x10：類型 6 特殊攻擊時寫自身世界座標 X
+field	esi+0x2ce	monster.targetPoint.y	怪物目標記錄 +0x14：自身世界座標 Y
+field	esi+0x2d2	monster.targetPoint.z	怪物目標記錄 +0x18：自身世界座標 Z
+field	esi+0x2e1	monster.actionType	怪物本回合行動：-1 無、1 隨機挑選失敗或特定物種、2 施法、3 特殊攻擊、4 放棄、5／7 受傷判斷、6 預設
+field	esi+0x2e5	monster.attackIndex	怪物 +0x2e5：施法時寫 533260 選出的法術編號
+field	esi+0x4	monsterGroupId	怪物所屬群組識別碼，給 511cb0
+field	esi+0x8	monsterSpecies	模板快取種類索引；0x224 物種直接寫行動 1
+field	esi+0x87	victimStun	怪物受害者暈眩計數；非零且模板類別非 0xc 時行動 6
+field	esi+0xc	monsterModel	怪物模型指標；查動畫循環 0x19 與取世界座標

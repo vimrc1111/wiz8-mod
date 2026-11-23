@@ -1,0 +1,16 @@
+call	590950	stamina_heal_notice	顯示體力回復通知（滿值或回復量）；非公式，不改規則狀態；case 以合成格式字串、wcslen 固定 0、wcscpy 樁觀察所選格式的首字元，通知子函式照跑
+call	4ee9d0	calc_armor_classes	疲勞級改變後重算 AC；D4 公式節點，case 以位址樁記錄呼叫次數與角色指標
+call	523330	character_condition_remove	體力足夠時解除狀態 0x11；D4 公式節點，case 以位址樁記錄呼叫次數與三個參數
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	685174	party_character_records	八名角色主記錄陣列指標，每筆 0x1862 bytes；case 以 who 尋址所選角色，其餘七筆放相異的有效值作對照
+data	68c09c	game_notification_text_directory	訊息目錄指標；本節點取 +0x970（體力已滿）與 +0x978（回復 N）兩個通知格式；case 配置合成文字，不複製 exe 表
+field	esi+0xb01	character_primary_condition	主狀態；無號 >= 0x12 時不回復
+field	esi+0xb11	character_hit_points	目前 HP；為零時不回復
+field	esi+0xb19	character_maximum_stamina	最大體力；也是封頂值與疲勞百分比的除數，為零且目前體力非零時原版除零
+field	esi+0xb1d	character_current_stamina	目前體力；加回復量後以有號比較封頂至最大值
+field	esi+0x169e	character_fatigue_level	疲勞級 0..4，由體力百分比重算；與舊值不同才重算 AC
+field	esi+0xa45	character_stamina_condition_gate	等於 0x270f 且體力至少 10 時解除狀態 0x11
+field	edx+0x970	stamina_full_notice_format	訊息目錄內「體力已滿」通知格式指標；case 輸入其首字元
+field	ecx+0x978	stamina_heal_notice_format	訊息目錄內「回復 N 體力」通知格式指標；case 輸入其首字元，消耗回復量參數

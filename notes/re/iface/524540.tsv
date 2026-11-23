@@ -1,0 +1,27 @@
+call	4acd80	怪物效果視覺標記移除	清除後以怪物呈現物件（M+0xc）、效果索引加 0x10、0 呼叫；已登記排除（呈現），case 以位址樁記錄每次三個參數與次數，返回值不讀
+call	4e5550	怪物識別碼查找列表索引	以 M+0 識別碼重查怪物列表，回第一筆同識別碼的索引；原樣執行，calc 以「第一筆同 id」重現（重複 id 時清的是較前那筆）
+call	4e5620	怪物列表索引取記錄	怪物列表第 i 筆記錄指標（i 小於 5e2c70 回的數量）；原樣執行，calc 取 entries 的第 i 筆
+call	505760	怪物戰鬥呈現更新	效果 6 清除後對該怪物呼叫，內部依序呼叫 5049c0(M,1,0)、5049c0(M,0,0)；5049c0 已 D4，case 以位址樁記錄每次參數與次數；本節點不讀返回值
+call	50e650	rebuildCharacterStatusAndAbilities	角色清除效果後重建狀態修正與能力（已 D4）；case 以位址樁記錄每次成員參數與次數，本節點不讀其返回值與寫入
+call	50e8c0	怪物狀態修正快取重算	以識別碼重查怪物並重建 +0x1db 修正緩衝區及屬性；原樣執行；同 5242b0，修正快取不在本介面輸出，本節點之後只讀持續時間、識別碼與呈現物件
+call	55ee30	markCharacterInterfaceRefresh	模式 6 設物品介面刷新位 0x100（*0x69c0f4+0xf8）；模式 7 把 1<<成員送 562a50；其他模式不寫（build/wiz8.asm:478051）
+call	562a50	markCombatInterfaceRefresh	模式 7 且戰鬥介面物件存在時把位元 OR 進物件 +0xf4；本節點另送 0x200000 與 0x8000（build/wiz8.asm:482405）
+call	5e2c70	monsterListCount	容器元素數（+8），空指標回 0；每輪重讀，控制怪物遍歷範圍
+data	61ad64	無關	查找怪物失敗時 assert 用的來源檔名字串；不參與效果計算
+data	683fad	monsterList	怪物列表容器指標，+0 為記錄指標陣列、+8 為元素數；0 表示尚未建立
+data	6840bb	magicBuffRefreshPending	清除效果 6 的角色後設為 1；其他索引保留原 byte 值
+data	685174	partyCharacterRecords	角色陣列基址（每人 0x1862 bytes）
+data	685178	partySlotRecords	隊伍槽副表基址（每槽 0x106 bytes），+0 byte 為在場旗標
+data	68ec78	interfaceMode	模式 7 時要求效果與能力面板刷新；子呼叫也讀模式 6 的物品介面分支
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x0	characterTimedEffectStrength	C+0xa65+0xc×效果的 u32 強度，清除時歸零；同運算元在 0x52463e 讀怪物記錄 +0 識別碼（monsterId，傳給 4e5550／50e8c0 重查）
+field	eax+0x4	characterTimedEffectMultiplier	C+0xa69+0xc×效果的 u32 倍率欄，清除時歸零
+field	eax+0x8	characterTimedEffectDuration	C+0xa6d+0xc×效果的 u32 剩餘時間，清除時歸零
+field	eax+edx*1+0xa6d	characterTimedEffectDuration	角色效果剩餘時間（u32）；非零才清除該效果
+field	ecx+0x0	characterTimedEffectDuration／monsterEffectStrength	主效果掃描讀 C+0xac1 起往下每筆 u32 剩餘時間；怪物側為 M+0xa7+0xc×效果的 u32 強度，清除時歸零
+field	ecx+0x4	monsterEffectPercent	M+0xab+0xc×效果的 u32 欄（低 16 位為百分修正，效果 2 的高 16 位為吸收池 +0xc5），清除時歸零
+field	ecx+0x8	monsterEffectDuration	M+0xaf+0xc×效果的 u32 剩餘時間，清除時歸零
+field	eax+ebp*1+0xaf	monsterEffectDuration	怪物效果剩餘時間（u32）；非零才重查並清除該效果
+field	edi+eax*1	partySlotPresent	隊伍槽 +0 在場 byte；零則略過該成員
+field	esi+0xc	monsterVisualNode	怪物呈現物件指標，只傳給 4acd80；不決定效果數值
+field	esi+edx*1+0xb05	characterPrimaryTimedEffect	角色主效果索引；每次清除後從 7 往下選 u32 剩餘時間非零的最高索引，全空寫 0

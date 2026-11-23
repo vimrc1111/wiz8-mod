@@ -1,0 +1,17 @@
+# assets 與 dll 內嵌素材的來源與授權
+
+ddraw.dll 內的 CJK 點陣圖集（hook/ddraw/out/atlas.h，建置時產生、不入版控）
+  來源字型：Noto Sans TC Regular 2.004（notofonts/noto-cjk tag Sans2.004，Sans/SubsetOTF/TC/NotoSansTC-Regular.otf）
+    https://raw.githubusercontent.com/notofonts/noto-cjk/Sans2.004/Sans/SubsetOTF/TC/NotoSansTC-Regular.otf
+    sha256 5bab0cb3c1cf89dde07c4a95a4054b195afbcfe784d69d75c340780712237537（tools/atlas/atlas_test.go 檢查）
+  授權：SIL Open Font License 1.1，全文 assets/OFL-NotoSansTC.txt（sha256 6a73f954…，同 tag 的 LICENSE）
+  字型檔本身不入版控；本機放在 ~/.local/share/wiz8-mod/fonts/noto-sans-tc-2.004/（或 WIZ8_FONT 指定）。
+
+charset-common.txt：cc 手列，本專案自有。
+
+ddraw.dll 內的 CJK 點陣圖集，點陣部分（MG 2026-10-07「中文不小於 12 級字」，取代 5.4 E 版 BoutiqueBitmap9x9）
+  來源字型：Fusion Pixel Font 12px proportional zh-TW 2026.09.25（TakWolf），release zip 內的 fusion-pixel-12px-proportional-zh_tw.ttf
+    https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.25/fusion-pixel-font-12px-proportional-ttf-v2026.09.25.zip（zip sha256 47585b9c…）
+    ttf sha256 1dc1db84d42d8d918ea617f5976b5f519e24efcf110d156fc715407357215ceb（tools/atlas/atlas_test.go 檢查）
+  授權：SIL Open Font License 1.1；收錄 Ark Pixel、Cubic 11、Galmuri 字源，全文合併在 assets/OFL-FusionPixel.txt（release zip 內的 OFL.txt 與 LICENSES/）
+  字型檔本身不入版控；本機放在 ~/.local/share/wiz8-mod/fonts/fusion-pixel-12px-2026.09.25/（或 WIZ8_PXFONT 指定）。

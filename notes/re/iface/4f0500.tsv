@@ -1,0 +1,2 @@
+data	6836a8	combatState	目前戰鬥資料物件指標；原版 0x4f0500 透過它讀取隊伍行動模式，arena 固定指標只作連接
+field	eax+0x910	partyActionMode	戰鬥資料的隊伍行動模式，32 位；原版 0x4f0505 讀取，零使用階段步長 1，任何非零值使用 10

@@ -1,0 +1,30 @@
+call	2b6	無關	srAssertFail 匯入的分析標記（實際經 IAT 0x5ebaf4）；只在列表成員為空或種類不小於 1000 時停止，沒有正常輸出可差分。
+call	4c57a0	monsterModelSizeApply	把縮放後的大小套到怪物模型；只動模型／場景狀態，不影響 HP、SP、耗竭級別與 +0x24f 縮放欄。
+call	4c5810	monsterModelRefresh	刷新怪物模型狀態；只動動畫／場景狀態，不影響本節點輸出欄位。case 以自造 vtable 取代動畫引擎虛擬函式。
+call	4c5ed0	monsterModelAnimationReset	重設怪物模型動畫；只動動畫／場景狀態，不影響本節點輸出欄位。
+call	52a780	staminaDepletionTier	以（當前 SP，最大 SP）求耗竭級別存 +0x242；此處兩者同為新擲的 SP，原版 SP 為零會除以零。
+call	54a8a0	loadMonsterTemplate	模板快取未命中時從遊戲資料庫讀入物種模板檔；本節點前置條件是模板已在快取，case 以快取命中配線，未命中塊登記為模擬器限制。
+call	5e2870	monsterListGetAt	取列表第 i 個怪物指標，超界回空；本節點由 i 遞增走完整份列表。
+call	5e2c70	monsterListCount	空列表指標回零，否則讀列表 +8 的筆數；入口及每次迴圈都重新讀取。
+call	65	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+call	86	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	5eb1a0	allocateMonsterStorage	CRT malloc 匯入槽；快取未命中時配置 0x297 位元組的模板緩衝。
+data	5eb224	releaseMonsterStorage	CRT free 匯入槽；模板載入失敗時釋放緩衝。
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；列表成員為空或種類不小於 1000 時停止。
+data	6147e0	無關	assert 診斷來源檔名；不是遊戲規則資料。
+data	614840	無關	assert 診斷：怪物種類小於 1000 的條件文字；不參與規則計算。
+data	614910	無關	assert 診斷：列表成員必須存在的條件文字；不參與規則計算。
+data	683fad	normalMonsterList	普通怪物列表指標；先處理，空指標視為零成員。
+data	683fb9	specialMonsterList	特殊怪物列表指標；在普通列表之後處理，空指標視為零成員。
+data	6840c7	monsterTemplateCache	按怪物種類索引的模板指標快取，種類小於 1000；本節點前置條件：處理到的種類已快取（指標非零）。
+data	fffffffffffffffc	無關	區域暫存的堆疊位移，非全域資料引用。
+field	ebx*4+0x6840c7	monsterTemplateCacheBySpecies	按怪物種類索引模板指標；命中時直接取用，未命中才回填（模擬器限制，未涵蓋）。
+field	esi+0x8	monsterSpecies	模板快取種類索引，合法範圍 0..999。
+field	esi+0xc	monsterModel	怪物模型指標；縮放結果及模型刷新的對象。
+field	esi+0x27	monsterMaxHpA	新擲的 HP，寫入最大 HP 的第一份副本。
+field	esi+0x2b	monsterHpA	新擲的 HP，寫入當前 HP 副本。
+field	esi+0x2f	monsterMaxSpA	新擲的 SP，寫入最大 SP 的第一份副本。
+field	esi+0x33	monsterSpA	新擲的 SP，寫入當前 SP 副本。
+field	esi+0x242	monsterSpDepletionTier	SP 耗竭級別（0..4），由新擲的 SP 求得。
+field	esi+0x24f	monsterSizeScale	依 HP 在模板骰範圍的位置縮放的模型大小，float32。

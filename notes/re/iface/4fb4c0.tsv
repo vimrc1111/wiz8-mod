@@ -1,0 +1,261 @@
+call	2b6	無關	分析器列出的例外展開輔助目標；正常返回不執行，與施法規則無關
+call	40efa0	R(n) 亂數	失敗判定 R(100)、失敗語音 R(100)<0x46、反噬語音二選一 R(2)；calc 以同序 Rand 呼叫重現
+call	421150	無關	法術 0x76 視覺位置的向量建構（1.0f）；只決定特效擺位，不進規則（數值規劃範圍外）
+call	421680	無關	非角色非怪物來源的類別 5 視覺矩陣運算；只決定特效朝向，不進規則
+call	421750	無關	同 421680，視覺矩陣運算；不進規則
+call	467430	無關	同 421680，視覺矩陣運算；不進規則
+call	489bb0	newIdList	建 {vt 0x5ebfe0, 筆數 0, 容量 5, 資料} 的目標 id 清單；calc newList
+call	4a5ab0	無關	同 421680，視覺矩陣運算；不進規則
+call	4aca00	spellNoDiceScale	法術 0x30..0x5d 查 .text 表 0x4aca2c：為真時不改骰（不乘 PL）；calc aca00
+call	4aca60	spellCanBackfire	依法術 +0x137 類別查 0x4acad8／0x4acaec：失敗是否可能反噬；為假時反噬門檻 0；calc aca60
+call	4addf0	growList	清單容量不足時擴成所需筆數並保留內容；calc grow
+call	4e6020	releaseMonsterMode	法術 0x26 時把各怪物 +0x2fd 狀態設 0（必要時清 +0x255）並重算群體活躍數；calc release
+call	4ecc80	engageTarget	施法後的戰鬥選定（依 0x6850e5 模式選怪物／群體／位置）；callee 皆排除樁；calc engage
+call	4ed260	無關	除錯 log（0x68d810 為 0 時不做事）；返回值不用
+call	4ed950	無關	類別 5 視覺矩陣運算；不進規則
+call	4fb360	castSpell26Visual	法術 0x26 的兩個視覺物件（原生跑）；calc 於 visuals 類別 8 重現 append
+call	4fea50	backfireSwap	反噬：依法術類別交換來源與目標（類別 1/4 呼叫 4fe740 樁，5/6 交換位置）；calc reflect
+call	4ff790	spellPower	威力＝技能值/2＋PL＋((SP 成本/2)+難度)/2，類別 7 再減 3，下限 0；calc power
+call	4ffbd0	casterSkillSum	主技能值（含 0x616310 修正）加上遮罩相符的其他正技能；calc skills
+call	501e50	newMissileList	建 inst+0x110 飛彈清單（容量 5）；calc newList
+call	501f80	newVisualList	建 inst+0x100 視覺清單（容量 5）；calc newList
+call	501fd0	無關	inst+0x124 子物件建構；其欄位隨即被清零，不影響結果
+call	517950	setDice	法術 0x4aca00 為真時把效果骰設為 0（三欄）；calc 不寫 blk+4 即保持 0
+call	517a90	無關	訊息字串格式化（失敗／反噬訊息）；結果只交給排除的訊息輸出
+call	517f90	percentBonus	威力 += 威力×(加成/2)/100（u32）；calc spcPct
+call	53bea0	isCharacterSource	來源型別 1（或旗標 1 時型別 3 有索引）；calc isChar／sdmSource
+call	53bf10	isMonsterSource	來源型別 2（或旗標 1 時型別 3 有 id）；calc isMon
+call	543260	clearEffectBlock	效果區塊 12 dword 清零；calc local 區塊初值 0
+call	5e1c10	無關	free：釋放舊清單緩衝；不影響規則值
+call	5e1ce0	無關	new：配置清單緩衝；失敗分支已登記 cov-exempt
+call	5e2c70	listCount	怪物清單 [0x683fad] 筆數（法術 0x26 逐一釋放怪物）
+data	10	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	1c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	20	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	24	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	28	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	2c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	4fcfd0	powerSubJumpTable	法術 0x46..0x5e 威力扣減的跳躍表（扣 2/4/6/0）
+data	4fcfe0	powerSubIndexTable	法術 −0x46 → 跳躍表索引的 .text 位元組表
+data	4fcffc	visualClassJumpTable	非飛彈法術依類別（0..10）選視覺分支的跳躍表
+data	4fd008	visualClassJumpTable	同 0x4fcffc 跳躍表內的項目
+data	5e6f48	無關	SEH 例外處理器位址；非遊戲資料
+data	5ebaf4	assertImport	srAssertFail import；斷言塊停止、無規則結果（cov-exempt）
+data	5ebc40	radiusPad	法術 0x3c 落點半徑的浮點加量
+data	5ebc64	castHeightDrop	目標 y 座標下移量（浮點）；calc drop
+data	5ebc7c	missileLift	類別 6 飛彈目標 y 的浮點乘數
+data	5ebfe0	無關	id 清單 vtable；結構標記，非規則值
+data	5ebfe4	無關	視覺清單基底 vtable；結構標記
+data	5ebfe8	無關	飛彈清單基底 vtable；結構標記
+data	5ebfec	無關	inst+0x17e 子物件基底 vtable；結構標記
+data	5ec280	無關	視覺清單 vtable；結構標記
+data	5ed8c8	voiceArg	角色語音呼叫參數（交排除的 52e690／52e5c0）
+data	5ed914	voiceArg	同 0x5ed8c8，語音參數
+data	5ee5c8	backfireVoice	反噬語音 id（52e690）
+data	5ee5cc	backfireVoice2	反噬語音 id（52e5c0）
+data	6035a4	無關	除錯 log 字串（4ed260）
+data	603ac8	missileLift	類別 6 飛彈與 0x76 視覺的 y 浮點量
+data	616ec8	levelRadiusTable	法術 0x3c 依 PL 查的 double 半徑表（步距 0x30）
+data	616f40	levelRadiusIndex	PL → 半徑表索引（int8）
+data	61920c	無關	斷言原始檔名字串
+data	619308	無關	斷言條件字串
+data	619328	無關	斷言條件字串
+data	61934c	無關	訊息格式字串（交排除的訊息輸出）
+data	61935c	無關	未知類別的音效名字串（交排除的 408860）
+data	619380	無關	未知類別的視覺名字串（交排除的 4ad080）
+data	619388	無關	斷言條件字串
+data	6193b0	無關	失敗音效名字串（408860）
+data	6193d4	無關	反噬音效名字串（408860）
+data	6193f8	無關	除錯 log 字串
+data	61941c	無關	除錯 log 字串
+data	652da4	noManaMode	旗標設定且法術領域 +0x133 為 0 時失敗率 100、反噬門檻 0
+data	6598a4	無關	地形碰撞物件（437f30 thiscall）；幾何，數值規劃範圍外，樁回傳
+data	65bde0	missileTable	飛彈記錄表（步距 0x1e5）：+0x150、+0x155 讀入效果區塊
+data	65be1c	spellTable	法術記錄表（步距 0x1bf）
+data	6836a8	combatState	戰鬥狀態物件 G：+0x7b0／+0x7b8 失敗時的施法怪物標記
+data	683f94	inCombat	戰鬥中旗標：失敗收尾檢查 G+0x7b0
+data	683f97	combatPaused	設定時直接分派並把視覺物件 +0x1e6 設 1，不入佇列
+data	683f9b	combatPaused2	同 0x683f97
+data	683fad	monsterList	怪物清單（法術 0x26 逐一釋放）
+data	68510c	messageMode	訊息輸出模式：選 590950/58ac00 或 5905f0
+data	685174	characterBase	角色記錄基底（步距 0x1862）
+data	689b5c	castQueueCount	施法佇列筆數
+data	689b60	castQueueCap	施法佇列容量
+data	689b64	castQueueData	施法佇列資料指標
+data	689b68	cheatFail	設定時（法術 0x76 以外）失敗率 100 且不減半
+data	68c09c	stringTable	訊息字串表（+0x658、+0x65c）
+data	68c558	fizzleVoice	失敗語音 id（52e690）
+data	68ec78	gameMode	值 7 且未暫停時法術實例入佇列，否則立即分派 54ba00
+data	8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	fffffffffffffeec	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffef8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffefc	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff00	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff04	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff1c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff21	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff22	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff23	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff24	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff28	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff2c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff30	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff34	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff38	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff3c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff40	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff44	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff48	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff4c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff50	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff54	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff58	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff5c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff60	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff64	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff68	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff6c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff70	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff74	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff78	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff7c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff80	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff84	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff88	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff8c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff90	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9a	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9d	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb0	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffbc	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd0	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffdc	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe0	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+field	eax*4+0x4fcffc	visualClassJumpTable	依類別索引跳躍表
+field	eax+0x0	listOrRecordHead	清單 vtable 或記錄第 0 dword（來源／目標型別、佇列項法術）
+field	eax+0x10	target.x	目標座標 x（浮點，視覺位置）
+field	eax+0x14	target.y	目標座標 y（浮點，扣 0x5ebc64 後寫回）
+field	eax+0x18	target.z	目標座標 z（浮點）
+field	eax+0x1c	source.reflected	來源 +0x1c 已反噬旗標（決定 59af40 旗標與回傳 3）
+field	eax+0x24f	monsterTemplate.castPower	怪物模板施法技能值（4ff790 輸入）
+field	eax+0x4	vector.y	三維向量第 2 分量（目標位置複製到參數）
+field	eax+0x65c	stringTable.backfireMsg	反噬訊息字串
+field	eax+0x8	vector.z	三維向量第 3 分量
+field	eax+ebx*1+0x11f	spell.skillMask2	法術 +0x11f：技能遮罩位 2
+field	eax+ebx*1+0x120	spell.skillMask8	法術 +0x120：技能遮罩位 8
+field	eax+ebx*1+0x12f	spell.missileArg	法術 +0x12f：飛彈建立參數（544630）
+field	eax+ebx*1+0x133	spell.realm	法術領域；0 且 0x652da4 時失敗 100
+field	eax+ebx*1+0x48	spell.skillMask4	法術 +0x48：技能遮罩位 4
+field	eax+ebx*1+0x5a	spell.skillMask1	法術 +0x5a：技能遮罩位 1
+field	eax+ecx*4	list.data[i]	清單第 i 筆
+field	eax+edx*4	list.data[n]	清單 append 寫入位置
+field	eax+esi*4	stringTable[k]	失敗訊息字串表項（0x1aa／0x1ab）
+field	ebp+0x0	inst.spell	法術實例：法術 id
+field	ebp+0x100	inst.visuals	法術實例視覺清單（vt）
+field	ebp+0x104	inst.visuals.count	視覺清單筆數
+field	ebp+0x108	inst.visuals.cap	視覺清單容量
+field	ebp+0x10c	inst.visuals.data	視覺清單資料
+field	ebp+0x110	inst.missiles	飛彈清單（vt）
+field	ebp+0x114	inst.missiles.count	飛彈清單筆數
+field	ebp+0x118	inst.missiles.cap	飛彈清單容量
+field	ebp+0x11c	inst.missiles.data	飛彈清單資料（失敗收尾釋放）
+field	ebp+0x120	inst.repeat	重施旗標（參數 7）
+field	ebp+0x121	inst.spell26	法術 0x26 旗標
+field	ebp+0x122	inst.isMissile	類別 6 飛彈旗標
+field	ebp+0x124	inst.silent	訊息已出旗標
+field	ebp+0x17e	無關	子物件 vtable（失敗收尾解構）
+field	ebp+0x18a	無關	子物件資料（失敗收尾釋放）
+field	ebp+0x4	inst.spell26State	法術 0x26：5519c0 回傳
+field	ebp+0xe0	inst.monsterTargets	怪物目標 id 清單（vt）
+field	ebp+0xe8	inst.monsterTargets.cap	怪物目標清單容量
+field	ebp+0xec	inst.monsterTargets.data	怪物目標清單資料
+field	ebp+0xf0	inst.charTargets	角色目標 id 清單（vt）
+field	ebp+0xf8	inst.charTargets.cap	角色目標清單容量
+field	ebp+0xfc	inst.charTargets.data	角色目標清單資料
+field	ebx+0x1c	source.reflected	來源 +0x1c 開頭清零
+field	ebx+0x1e6	visual.hidden	視覺物件 +0x1e6 清 0
+field	ebx+0x4	source.charIndex	來源角色索引（施法者）
+field	ebx+eax*1+0x133	spell.realm	法術領域（59af40 參數）
+field	ebx+eax*4	visuals.old[i]	擴充時搬移舊視覺清單
+field	ecx+0x0	listOrRecordHead	清單或記錄第 0 dword
+field	ecx+0x4	vector.y / queue.f4	參數向量第 2 分量；佇列項 +4 清 0（法術 0x26）
+field	ecx+0x616f40	levelRadiusIndex[PL]	PL → 半徑表索引
+field	ecx+0x658	stringTable.fizzleMsg	失敗訊息字串
+field	ecx+0x65c	stringTable.backfireMsg	反噬訊息字串
+field	ecx+0x8	vector.z	參數向量第 3 分量
+field	ecx+eax*4	list.data[i]	清單第 i 筆讀寫
+field	ecx+ebx*1+0x12f	spell.missileArg	法術 +0x12f：飛彈建立參數
+field	ecx+ebx*1+0x133	spell.realm	法術領域；4 時不呼叫 4ff220
+field	ecx+ebx*1+0x13f	spell.isMissile	法術 +0x13f：飛彈分支
+field	ecx+ebx*1+0x140	spell.missileId	法術 +0x140：飛彈記錄索引
+field	ecx+ebx*1+0x44	spell.duration	法術 +0x44 → 效果區塊 +0x2c
+field	ecx+ebx*1+0x49	spell.spCost	法術 SP 成本（威力公式）
+field	ecx+ebx*1+0x4d	spell.f4d	法術 +0x4d → 效果區塊 +0x28
+field	ecx+ebx*1+0x51	spell.dice	法術效果骰（第 3 位元組乘 PL）
+field	ecx+ebx*1+0x56	spell.difficulty	法術難度（威力公式）
+field	edi+0x0	source.type	來源型別
+field	edi+0x18	source.f18	來源 +0x18：非 0 時不呼叫 4ff220
+field	edi+0x19	source.fixedPower	來源 +0x19：以 +0x1f 位元組當技能值
+field	edi+0x1b	source.reflectCast	來源 +0x1b：反射重送旗標
+field	edi+0x1c	source.reflected	來源 +0x1c 已反噬旗標
+field	edi+0x1e6	visual.hidden	視覺物件 +0x1e6 清 0
+field	edi+0x1e7	visual.f1e7	角色類別 5 視覺 +0x1e7 設 1
+field	edi+0x1f	source.fixedPowerValue	來源 +0x1f：固定技能值
+field	edi+0x4	source.charIndex	來源角色索引
+field	edi+0x8	source.monsterId	來源怪物 id
+field	edi+eax*4	list.old[i]	擴充時搬移舊清單
+field	edi+ecx*4	queue.old[i]	佇列擴充時搬移
+field	edx*4+0x4fcfd0	powerSubJumpTable	威力扣減跳躍表
+field	edx+0x0	listOrRecordHead	清單或記錄第 0 dword
+field	edx+0x1c	source.reflected	來源 +0x1c（59af40 旗標）
+field	edx+0x1e6	visual.hidden	暫停時視覺 +0x1e6 設 1
+field	edx+0x658	stringTable.fizzleMsg	失敗訊息字串
+field	edx+0x7b0	combatState.f7b0	失敗收尾：施法怪物相符時設 3
+field	edx+0x7b8	combatState.f7b8	失敗收尾：比對的怪物記錄
+field	edx+eax*4	list.data[i]	清單第 i 筆
+field	edx+ebx*1+0x133	spell.realm	法術領域；4 時不呼叫 4ff220
+field	edx+ecx*4	list.data[n]	清單 append 寫入位置
+field	esi+0x0	listOrRecordHead	清單 vtable 或實例第 0 dword
+field	esi+0x10	target.x / list	目標座標 x（0x3c 落點）
+field	esi+0x120	inst.repeat	實例 +0x120 清 0
+field	esi+0x121	inst.spell26	實例 +0x121 清 0
+field	esi+0x122	inst.isMissile	實例 +0x122 清 0
+field	esi+0x123	inst.f123	實例 +0x123 清 0
+field	esi+0x14	target.y	目標座標 y（扣 0x5ebc64）
+field	esi+0x150	missile.f150	飛彈記錄 +0x150 → 效果區塊 +0x1c
+field	esi+0x18	target.z	目標座標 z
+field	esi+0x1c	source.reflected	來源 +0x1c：反噬收尾訊息
+field	esi+0x4	list.count / inst.f4	清單筆數；實例 +4 清 0
+field	esi+0x4fcfe0	powerSubIndexTable	法術 −0x46 → 跳躍表索引
+field	esi+0x8	list.cap / inst.source.monsterId	清單容量；失敗收尾的來源怪物 id
+field	esi+0xc	list.data	清單資料指標
+field	esi+ecx*1+0x155	missile.f155	飛彈記錄 +0x155 16 位元組 → 效果區塊 +8
+# G3 follow-up 4a：recast 固定次數硬上限 [未取得]。build/wiz8.asm:451548-451644（54c575..54c696）只見效果結果、來源、stamina 與 SP/cost 的停止條件，未見固定深度計數器。
+# 夾具工作上限取既有 4fa4d0 輸入的 SP 上限 60 ÷ 最小正 cost 1＝60 次；這是夾具範圍，遊戲全域 SP 硬上限 [未取得]，不宣稱 60 是原版輸入域上限。原有 cost=0 與所有 random 範圍完整保留。
+# 每個原 4 次呼叫組擴為 61 次（60 次施放，加一次終止資格檢查）；原每輪多筆序列同比擴充。record/ret 使用 notes/re/emu.md 的 n，超量仍報錯，禁止截斷或循環重放。所有既有 boundary 保留、舊輸入欄順序不變，新欄只追加。
+# 原版 SP 扣除在巢狀施法返回之後（build/wiz8.asm:337721-337733，4fab67..4fab89），故 SP/cost 不是所有巢狀遞迴的數學上界；亦可能由效果進度與 stamina 終止。需另票確認全域合法上限與擴大 emulator 堆疊，才能證明完整輸入域。
+# 驗證：4fa4d0 新 boundary 與 g3-probe 使用合成 HP 差額 5、每次恢復 1、cost 1、SP 60；原版 replay 與 F 各實際走 5 次施法。g3-probe.sh 60 另檢查 F 的 60 層，HP 100→160，資格/效果/SP 扣除各 60 次。
+# 54ba00 新 boundary 走 60 次 fizzle 重試：sound 60、資格檢查 61（最後回拒絕）、SP 扣除 60。這驗證上限呼叫次數而非 60 層巢狀堆疊；原版 60 層在 emulator 的固定 32 KiB 向下可用堆疊觸界，白名單禁止改 emu.py，沒有放寬其驗證或隱藏故障。
+# F 組合介面修正：4fac40 的目標物件連到 partySlotRecords+0x1d；4fd030 的回傳清單及配置區指標搬回呼叫者位址空間，避免遞迴讀到空清單或覆寫外層 instance。SCC 的 alloc 採 emulator 相同 1 MiB 配置區，仍有超界檢查。

@@ -1,0 +1,2 @@
+52af50	52afd7	負重級 +0xbc9 超出 0..4 的 srAssertFail 防禦分支；stop 無正常返回可差分，calc 在此 panic。
+52af50	52b138	只能由 0x52b12f 進入，而該處前提是疲勞級 >= 3（0x52b0fd），故 +0x169e <= 1 的清旗標永遠不成立；calc 在此 panic。

@@ -1,0 +1,16 @@
+{
+  "id": "overlay-slash",
+  "duration": 45,
+  "files": [
+    {
+      "src": "build/overlay/slash/PATCH.002",
+      "dst": "Patches/PATCH.002"
+    }
+  ],
+  "steps": [
+    {
+      "t": 40,
+      "shot": "menu"
+    }
+  ]
+}

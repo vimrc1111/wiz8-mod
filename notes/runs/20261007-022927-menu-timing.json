@@ -1,0 +1,396 @@
+{
+  "run_id": "20261007-022927-menu-timing",
+  "commit": "6db2902f124087769fb9e5bad7bc020f7c88901f",
+  "scenario": {
+    "id": "menu-timing",
+    "duration": 95,
+    "steps": [
+      {
+        "t": 30,
+        "shot": "t30"
+      },
+      {
+        "t": 35,
+        "shot": "t35"
+      },
+      {
+        "t": 40,
+        "shot": "t40"
+      },
+      {
+        "t": 45,
+        "shot": "t45"
+      },
+      {
+        "t": 50,
+        "shot": "t50"
+      },
+      {
+        "t": 55,
+        "shot": "t55"
+      },
+      {
+        "t": 60,
+        "shot": "t60"
+      },
+      {
+        "t": 65,
+        "shot": "t65"
+      },
+      {
+        "t": 70,
+        "shot": "t70"
+      },
+      {
+        "t": 75,
+        "shot": "t75"
+      },
+      {
+        "t": 80,
+        "shot": "t80"
+      },
+      {
+        "t": 85,
+        "shot": "t85"
+      },
+      {
+        "t": 90,
+        "shot": "t90"
+      }
+    ]
+  },
+  "before_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [
+    "0.1 start pid=4592",
+    "30.3 shot t30 rect=0,0,960,720",
+    "35.4 shot t35 rect=0,0,3840,2160",
+    "40.3 shot t40 rect=0,0,3840,2160",
+    "45.3 shot t45 rect=0,0,3840,2160",
+    "50.4 shot t50 rect=0,0,3840,2160",
+    "55.4 shot t55 rect=0,0,3840,2160",
+    "60.4 shot t60 rect=0,0,3840,2160",
+    "65.3 shot t65 rect=0,0,3840,2160",
+    "70.4 shot t70 rect=0,0,3840,2160",
+    "75.3 shot t75 rect=0,0,3840,2160",
+    "80.3 shot t80 rect=0,0,3840,2160",
+    "85.3 shot t85 rect=0,0,3840,2160",
+    "90.4 shot t90 rect=0,0,3840,2160",
+    "95.1 alive",
+    "95.1 killed"
+  ],
+  "modules": [
+    "Wiz8.exe",
+    "ntdll.dll",
+    "KERNEL32.DLL",
+    "KERNELBASE.dll",
+    "apphelp.dll",
+    "GDI32.DLL",
+    "win32u.dll",
+    "gdi32full.dll",
+    "DDRAW.DLL",
+    "msvcp_win.dll",
+    "msvcrt.dll",
+    "ucrtbase.dll",
+    "USER32.dll",
+    "MSVCP60.DLL",
+    "BINKW32.DLL",
+    "MSS32.DLL",
+    "dxgi.dll",
+    "DCIMAN32.dll",
+    "WINMM.dll",
+    "dxcore.dll",
+    "powrprof.dll",
+    "RPCRT4.dll",
+    "SR.DLL",
+    "comdlg32.dll",
+    "combase.dll",
+    "VERSION.dll",
+    "shcore.dll",
+    "SHLWAPI.dll",
+    "SHELL32.dll",
+    "COMCTL32.dll",
+    "ADVAPI32.dll",
+    "sechost.dll",
+    "IMM32.DLL",
+    "UMPDC.dll",
+    "uxtheme.dll",
+    "MSCTF.dll",
+    "kernel.appcore.dll",
+    "bcryptPrimitives.dll",
+    "OLEAUT32.dll",
+    "textinputframework.dll",
+    "CoreMessaging.dll",
+    "CoreUIComponents.dll",
+    "wintypes.dll",
+    "CRYPTBASE.DLL",
+    "ole32.dll",
+    "clbcatq.dll",
+    "weasel.dll",
+    "dbghelp.dll",
+    "gdiplus.dll",
+    "DWrite.dll",
+    "d2d1.dll",
+    "dbgcore.DLL",
+    "SspiCli.dll",
+    "atidx9loader32.dll",
+    "AMDXN32.DLL",
+    "SETUPAPI.dll",
+    "windows.storage.dll",
+    "BCrypt.dll",
+    "amdihk32.dll",
+    "srVP_PentiumII.dll",
+    "srEXT_Default.dll",
+    "srDD_Glide2x.dll",
+    "glide2x.dll",
+    "d3d9.dll",
+    "dwmapi.dll",
+    "directxdatabasehelper.dll",
+    "cfgmgr32.dll",
+    "dcomp.dll",
+    "Microsoft.Internal.WarpPal.dll",
+    "mscms.dll",
+    "Windows.Internal.Graphics.Display.DisplayColorManagement.dll",
+    "3dfxSpl2.dll",
+    "srEXT_JPEGImporter.dll",
+    "Mp3dec.asi",
+    "Mssv12.asi",
+    "Mssv24.asi",
+    "Mssv29.asi",
+    "Mssa3d.m3d",
+    "Mssa3d2.m3d",
+    "Mssdolby.m3d",
+    "Mssds3dh.m3d",
+    "Mssds3ds.m3d",
+    "Mssdx7sh.m3d",
+    "Mssdx7sl.m3d",
+    "Mssdx7sn.m3d",
+    "Msseax.m3d",
+    "Msseax2.m3d",
+    "Mssfast.m3d",
+    "Mssrsx.m3d",
+    "MSACM32.dll",
+    "DSOUND.DLL",
+    "winmmbase.dll",
+    "ResampleDmo.DLL",
+    "msdmo.dll",
+    "MMDevApi.dll",
+    "DEVOBJ.dll",
+    "AUDIOSES.DLL",
+    "resourcepolicyclient.dll",
+    "Windows.UI.dll",
+    "avrt.dll"
+  ],
+  "powershell": "",
+  "shots": {
+    "t30.screen": {
+      "sha256": "24893481636cf56f882914ad29f3085cf45fc1b0bf1929a6422fd5b7a35895c6",
+      "w": 960,
+      "h": 720,
+      "mean": 1.4547271079282798,
+      "stddev": 10.810215249786275,
+      "uniform": false
+    },
+    "t30.window": {
+      "sha256": "24893481636cf56f882914ad29f3085cf45fc1b0bf1929a6422fd5b7a35895c6",
+      "w": 960,
+      "h": 720,
+      "mean": 1.4547271079282798,
+      "stddev": 10.810215249786275,
+      "uniform": false
+    },
+    "t35.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t35.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t40.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t40.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t45.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t45.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t50.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t50.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t55.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t55.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t60.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t60.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t65.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t65.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t70.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t70.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t75.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t75.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t80.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t80.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t85.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t85.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    },
+    "t90.screen": {
+      "sha256": "d0dab22169c5fa866f51fd14f6e58bc15a2d6c0bcd97e9f4ecaf2e89854a7a50",
+      "w": 960,
+      "h": 720,
+      "mean": 81.87252510558876,
+      "stddev": 27.641369373177955,
+      "uniform": false
+    },
+    "t90.window": {
+      "sha256": "044a718705f5785fc4f4813ed41acd2906e770b1a2d92db0d8bbdd8c006e59cd",
+      "w": 3840,
+      "h": 2160,
+      "mean": 0,
+      "stddev": 0,
+      "uniform": true
+    }
+  }
+}

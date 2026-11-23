@@ -1,0 +1,20 @@
+{
+  "id": "overlay-p23",
+  "duration": 45,
+  "files": [
+    {
+      "src": "build/overlay/p23/PATCH.002",
+      "dst": "Patches/PATCH.002"
+    },
+    {
+      "src": "build/overlay/p23/PATCH.003",
+      "dst": "Patches/PATCH.003"
+    }
+  ],
+  "steps": [
+    {
+      "t": 40,
+      "shot": "menu"
+    }
+  ]
+}

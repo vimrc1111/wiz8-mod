@@ -1,0 +1,12 @@
+4e6370	4e63a3	列表成員指標為空的 assert；列表筆數來自同一列表，走訪到的成員必須存在，合法輸入不會取到空成員；srAssertFail 停止、無可差分返回。
+4e6370	4e63c7	怪物種類不小於 1000 的 assert；srAssertFail 停止、沒有可差分的返回。
+4e6370	4e63ec	模擬器限制：模板快取未命中，54a8a0 讀物種模板檔（CreateFileA/ReadFile），emu 無檔案 I/O 樁。
+4e6370	4e6400	模擬器限制：模板快取未命中，54a8a0 讀物種模板檔（CreateFileA/ReadFile），emu 無檔案 I/O 樁。
+4e6370	4e641c	模擬器限制：模板快取未命中，54a8a0 讀物種模板檔（CreateFileA/ReadFile），emu 無檔案 I/O 樁。
+4e6370	4e6513	模擬器限制：模板快取未命中，54a8a0 讀物種模板檔（CreateFileA/ReadFile），emu 無檔案 I/O 樁。
+4e6370	4e6527	模擬器限制：模板快取未命中，54a8a0 讀物種模板檔（CreateFileA/ReadFile），emu 無檔案 I/O 樁。
+4e6370	4e6543	模擬器限制：模板快取未命中，54a8a0 讀物種模板檔（CreateFileA/ReadFile），emu 無檔案 I/O 樁。
+4e6370	4e640e	模擬器限制：模板快取未命中，54a8a0 讀物種模板檔（CreateFileA/ReadFile），emu 無檔案 I/O 樁後載入失敗、釋放緩衝並以空記錄繼續的塊；繼續後第一個動作是讀空記錄 +0xd6，位址低於任何映射，無返回值可差分。
+4e6370	4e6535	模擬器限制：模板快取未命中，54a8a0 讀物種模板檔（CreateFileA/ReadFile），emu 無檔案 I/O 樁後載入失敗、釋放緩衝並以空記錄繼續的塊；繼續後第一個動作是讀空記錄 +0xd6，位址低於任何映射，無返回值可差分。
+4e6370	4e64ca	列表成員指標為空的 assert（特殊列表）；同 4e63a3。
+4e6370	4e64ee	怪物種類不小於 1000 的 assert（特殊列表）；同 4e63c7。

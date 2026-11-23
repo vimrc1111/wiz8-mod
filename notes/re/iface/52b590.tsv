@@ -1,0 +1,23 @@
+call	2b6	無關	D1 掃描的 SR assert import ordinal；只在存量不足的防禦性斷言呼叫，合法單執行緒輸入不達，不是削減公式
+call	40efa0	random_realm_index	每次以 6 為支集選六領域之一；空或負 SP 仍耗一次選取，總計最多 50 次
+call	55ee30	character_sp_ui_refresh	SP 扣除後標記 UI；模式 6 設角色 UI+0xf8 的 0x100，模式 7 且戰鬥 UI 存在則設 UI+0xf4 的角色槽位 bit；case 輸入與輸出包含兩旗標
+call	58aad0	sp_drain_message	第三參數非零時格式化類別 8 的扣 SP 訊息；傳入的是該次扣除前剩餘需求及領域名稱，對 SP 和刷新旗標無影響；case 使用合成格式與無訊息視窗，原版子函式照跑
+call	590950	character_sp_drain_preview_message	全域 previewOnly 非零時只顯示角色與削減需求，不消耗 RNG、不扣 SP；case 給角色姓名、肖像資料與合成文字，UI 模式 6、無訊息視窗，原版子函式照跑；MSVCRT wcslen 未內建，case stub 固定回 1，對應全部合成角色姓名長度 1，cdecl pop=0
+data	4	characterIndex_argument	第一個 cdecl 參數是隊伍角色索引，此值為堆疊位移而非表位址
+data	8	drainAmount_argument	第二個 cdecl 參數是無號 32 位需求，此值為堆疊位移而非表位址
+data	c	showPrompt_argument	第三個 cdecl 參數的低 byte 控制訊息，此值為堆疊位移而非表位址
+data	fffffffffffffffc	無關	掃描所得負堆疊位移，保存迴圈計數的局部空間，非全域資料
+data	5ebaf4	無關	srAssertFail IAT 槽，只供存量不足斷言，沒有合法可達公式行為
+data	61c8ac	無關	斷言來源檔名文字，只供診斷，不參與 SP 算法
+data	61c93c	無關	斷言條件文字，只供診斷，不參與 SP 算法
+data	61e518	realm_name_text_indices	六領域名稱的文字目錄索引；只用於提示，模擬器讀使用者 exe 映射的表，不在 repo 複製
+data	685174	party_characters	八名隊伍角色陣列指標；每筆 6242 bytes（0x52b598 至 0x52b5aa），HP 用 characterIndex 索引；case 輸入輸出逐筆包含全部 48 個 SP，驗證未選角色不變
+data	687500	sp_drain_preview_only	非零時只呼叫角色提示後返回，case 包含 0、1、255
+data	68c09c	game_text_directory	預覽及扣除提示格式與領域名稱指標目錄；case 合成目錄全部指向空文字，兩個格式欄使用合成 %u，不保存 exe 文字表
+field	eax+0x980	character_sp_drain_preview_format	角色 SP 削減預覽格式指標；無公式副作用，case 提供合成無號整數格式
+field	eax+0x98c	realm_sp_drain_message_format	領域 SP 削減訊息格式指標；case 提供合成無號整數格式，原版格式化照跑
+field	eax+ecx*1+0xb45	character_current_realm_sp	所選角色的所選領域目前 SP，先以有號比較跳過零與負數，再以無號需求封頂
+field	eax+edx*4	realm_name_text_pointer	從文字目錄按領域名稱索引取指標，只供訊息；合成空字串不影響公式
+field	ebx+eax*1+0xb11	character_current_hp	所選角色 HP，0 時立即返回，任何非零值都進入後續路徑；case 包含有號 DWORD 邊界
+field	edi+esi*4+0xb45	character_current_realm_sp	所選角色領域 SP 寫回欄位；扣掉需求與正存量的較小值，同步刷新 UI
+field	esi*2+0x61e518	realm_name_text_index	領域索引選擇 16 位文字目錄索引；只供提示，表由模擬器映射使用者 exe

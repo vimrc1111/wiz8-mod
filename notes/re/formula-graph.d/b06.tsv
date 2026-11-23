@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+52d8d0	非公式	-	voice_event_remove		移除呈現事件後，亂數只形成 2000／300000 起算的語音等待期限並存事件管理物件 +0x60；build/wiz8.asm:409322。
+52ddd0	非公式	-	voice_event_update		亂數刪減同類角色回應事件，後續依事件 +0x30 延遲與 +0x34 時戳排程播放，未計算角色規則值；build/wiz8.asm:409920、build/wiz8.asm:410033；notes/re/speed.md:50。
+52e160	非公式	-	voice_event_deadline		依事件種類與管理旗標，把亂數加固定毫秒後轉成絕對期限寫管理物件 +0x60，只控制語音排程；build/wiz8.asm:410197。
+52e1c0	非公式	-	party_idle_voice		亂數只選 0xe／0xf 回應事件，角色指標交 0x52e690 建立閒聊事件，並重設呈現期限；build/wiz8.asm:410256。
+52e3b0	排除	-	voice_event_pop		語音事件佇列出列與釋放，亂數只更新等待期限；56c6d0 呼叫點 56c7ae 後覆寫 eax（呈現層；非公式→排除，cc 判斷）；build/wiz8.asm:410395、494778。
+52e480	非公式	-	selected_character_voice		把選中角色副表 +0xff 的事件編號交 0x52e690，角色記錄只供回應事件建立；build/wiz8.asm:410511。
+52e590	非公式	-	party_voice_idle		掃角色副表存在旗標與呈現記錄活動旗標，只回傳是否沒有角色正在播放回應，供事件佇列繼續；build/wiz8.asm:410614。
+52e5c0	排除	-	voice_event_create		語音事件屬呈現，改歸排除以便位址樁（2026-10-09 cc 決策 A，原歸非公式）；檢查回應編號與可發聲角色後，把角色指標和呈現參數轉交事件建立端 0x52e690；build/wiz8.asm:410712；notes/re/speed.md:48。
+52e750	非公式	-	portrait_animation_update		亂數變成肖像狀態轉換與待機動畫的毫秒期限，寫入呈現記錄而非 HP 或技能欄位；build/wiz8.asm:410999、build/wiz8.asm:411002。
+52eb00	非公式	-	portrait_draw		依戰鬥與角色狀態選肖像覆蓋效果，交影像繪製 0x548f90，未改規則數值；build/wiz8.asm:411080。
+52ebe0	非公式	-	portrait_frame_draw		讀角色 HP 與呈現影格只為決定肖像影像，繪製後更新重繪矩形與舊影格；build/wiz8.asm:411271。
+52f000	非公式	-	portrait_expression_set		角色狀態只決定呈現記錄 +0x8d 的表情編號，未修改角色狀態或 HP；build/wiz8.asm:411526。
+52f060	非公式	-	critical_health_voice		HP 比例只篩選瀕死回應，亂數選兩個語音事件之一並交 0x52e690；build/wiz8.asm:411577。
+52f110	非公式	-	death_teammate_response		依死者與隊友資料建立死亡回應事件，輸出是事件 +0x30 的 3000 毫秒延遲，沒有死亡判定計算；build/wiz8.asm:411662；notes/re/speed.md:60。
+52f1d0	非公式	-	party_voice_broadcast		遍歷可回應角色，只將角色記錄指標交 0x52e690 建立相同語音事件；build/wiz8.asm:411707。
+52f240	非公式	-	party_survivor_voice		讀角色 +0xa49 篩選發聲角色，唯一輸出是 0x52e690 建立的隊伍回應事件；build/wiz8.asm:411764。
+52f2c0	非公式	-	injury_response		角色 +0xb11／+0xb0d 的比例只選受傷語音，亂數再選回應變體，事件延遲設 1500 毫秒；build/wiz8.asm:411858、build/wiz8.asm:411863；notes/re/speed.md:61。
+52f430	非公式	-	status_voice_response		按角色 +0xb01 狀態選回應事件，亂數只在同類語音間選變體，未產生狀態效果；build/wiz8.asm:411943。
+52f890	非公式	-	portrait_speech_bubble		建立角色語音提示框並算畫面座標，同時切換肖像呈現旗標；角色資料只供名稱和表情；build/wiz8.asm:412425。
+52fe00	非公式	-	party_speech_bubble_draw		讀角色存在、HP 與狀態來篩選提示框，實際輸出交提示框繪製 0x5cf620；build/wiz8.asm:412766。
+52fe80	非公式	-	character_acknowledgement		依介面旗標把角色指標交 0x52e690，僅建立選擇目標時的角色回應；build/wiz8.asm:412808。
+52fee0	非公式	-	voice_speaker_random		亂數回傳能發指定語音的角色索引，呼叫端只把結果交語音事件建立端，並非戰鬥目標抽選；build/wiz8.asm:412870、build/wiz8.asm:291865、build/wiz8.asm:291884。
+530110	非公式	-	monster_update_dispatch		僅重設更新旗標並依戰鬥資料 +4 是否為零分派 0x505780／0x5354e0，沒有自行計算或選擇規則輸出；build/wiz8.asm:413048。
+530150	排除	-	monster_group_activation		實體世界（怪物群到隊伍距離門檻的啟用），依 MG 2026-10-11 數值規劃範圍改歸排除（decisions/2026-10-11-numeric-only-scope.md），原 D0。原描述：讀怪物群 +0x28／+0x29、成員到隊伍距離與隊伍位置，按距離門檻呼叫群組啟用／解除並決定接戰資格，輸出群組活動狀態；build/wiz8.asm:413253、build/wiz8.asm:413265。
+5308c0	排除	-	monster_movement_choice		實體世界（路徑／移動），依 MG 2026-10-11 數值規劃範圍改歸排除（decisions/2026-10-11-numeric-only-scope.md），原未取得。原描述：讀怪物行動 +0x255、路徑 +0x43 及模型 +0x28e／+0x2a0，亂數挑巡邏節點或漫遊方向，輸出行動 byte 與模型 +0x2ac、+0x2bc 至 +0x2c4 移動向量；build/wiz8.asm:414137、build/wiz8.asm:413978。嘗試: 2026-10-09 cc 子 agent 節點票，經 434220→4604b0 拉進與 461960 同一棵未登記尋路子樹（>5KB），回傳值決定可達塊而不能樁，退件；影響: 怪物巡邏／漫遊移動選擇 calc 無法重現。
+531540	公式	D4	monster_action_choice	monsterActionChoiceNode	讀怪物 HP +0x27／+0x2b、狀態 +0x107 與模板 +0xe0／+0xe1 的機率，擲百分骰決定動作，寫怪物 +0x2e1 行動、+0x2e5 法術及 +0x2ba 目標；build/wiz8.asm:414686、build/wiz8.asm:414882。
+531ce0	公式	D4	monster_action_candidates	monsterActionCandidatesNode	讀角色 +0x345、+0xb11／+0xb01 與怪物攻擊模板，按 75% 的 +0x345 值擲骰排除角色目標並建立可用行動；輸出行動清單，另以二選一亂數觸發角色技能使用更新；build/wiz8.asm:415493、build/wiz8.asm:415790。
+532360	公式	D4	monster_action_roll	monsterActionRollNode	不確定：讀動作／攻擊／目標參數，生成 1 至 100 的亂數寫新行動記錄 +0x2c 並加入怪物戰鬥清單；此亂數的後續消費尚未確認，保守視為規則擲骰；build/wiz8.asm:415877。
+5323f0	公式	D4	monster_action_random_pick	monsterActionRandomPickNode	讀候選行動清單及模板 +0xe5，亂數挑一筆，寫怪物 +0x2e1／+0x2e5、+0x2ba 目標及戰鬥物件 +5／+9 攻擊次數；build/wiz8.asm:415923、build/wiz8.asm:415937。
+5326f0	公式	D4	monster_spell_target_random	monsterSpellTargetRandomNode	讀怪物及法術參數所產生的合格目標清單，亂數均勻選一筆，輸出到怪物 +0x2ba 的八個目標欄位並回傳成功；build/wiz8.asm:416224、build/wiz8.asm:416238。
+5327e0	公式	D4	monster_spell_target_ok	monsterSpellTargetOkNode	讀法術編號、目標型別、角色 +0xb0d／+0xb11、+0xb19／+0xb1d 與狀態／增益欄位，判斷治療或狀態法術是否有用；輸出布林，群體目標要求至少半數適用；build/wiz8.asm:416300、build/wiz8.asm:416784。
+533260	公式	D4	monster_spell_weighted_choice	monsterSpellWeightedChoiceNode	讀模板 +0x14d 起十個法術與 0x61cc14 權重，累計可施放項目的權重後抽樣；輸出選中的法術編號，不寫角色欄位；build/wiz8.asm:417159、build/wiz8.asm:417173。
+533320	公式	D4	monster_spell_target_candidates	monsterSpellTargetCandidatesNode	讀法術目標類別、角色 +0xb11／+0xb01、存在旗標及敵我／射程資格，經 0x5327e0 排除無用目標；輸出參數清單 +4 筆數及 +0xc 指向的目標記錄，供 AI 抽選；build/wiz8.asm:417448。
+534690	公式	D4	monster_action_clearance	monsterActionClearanceNode	讀怪物 +0x28a／+0x34c、角色存在／+0xb11／+0xb01 和敵我關係，遇符合條件的敵對目標即否決；輸出可採行動的布林，未寫記錄；build/wiz8.asm:418809。
+534850	公式	D4	monster_target_in_range	monsterTargetInRangeNode	讀怪物 +0x34c／+0x34f、攻擊射程、角色存活狀態與敵我類別，算可用距離門檻並比較目標距離；輸出是否存在合格目標的布林；build/wiz8.asm:419004、build/wiz8.asm:419086。
+534ef0	公式	D4	monster_party_spell_usefulness	monsterPartySpellUsefulnessNode	讀角色存在旗標、+0xb11／+0xb01、敵我關係及法術編號，累計 0x5327e0 判為適用的人數；輸出至少半數合格的群體施法布林；build/wiz8.asm:419593、build/wiz8.asm:419614。
+535200	公式	D4	monster_group_action_state	monsterGroupActionStateNode	不確定：讀戰鬥資料 +0xa5c、怪物戰鬥物件 +0x14c、群組關聯與群組 +0xc9 門檻，輸出 0／1 傳給 0x511be0 更新群組狀態；該旗標的確切規則語意尚未確認；build/wiz8.asm:419951、build/wiz8.asm:419979。
+536190	公式	D4	combat_target_valid	combatTargetValidNode	讀目標型別與索引、角色副表存在旗標、角色 +0xb11／+0xb01／+0xa49／+0xa4d，並檢查怪物 HP／活動狀態；輸出一般或死亡角色是否可作目標的布林；build/wiz8.asm:421262、build/wiz8.asm:421301。
+536400	公式	D4	party_target_revalidate	partyTargetRevalidateNode	讀角色存在、HP +0xb11、狀態 +0xb01、已選動作與物品 +0x63 所指法術，判目標型別及可達性；不合格時呼叫 0x536570，輸出改選後的副表 +0x4d 戰鬥目標記錄；build/wiz8.asm:421532。
+536570	公式	D4	character_target_fallback	characterTargetFallbackNode	讀角色 +0xb11／+0xb01、動作／法術目標型別及戰鬥模式，搜尋可攻擊目標或清空目標；輸出經 0x5387f0 寫目標記錄，探索自動更換時另更新戰鬥資料每角色 +0xac 計數；build/wiz8.asm:421785、build/wiz8.asm:421815。
+536a20	公式	D4	action_target_type	actionTargetTypeNode	讀動作種類、法術編號或物品 +0x63 及其效果參數，將普通攻擊／施法／物品使用映射到合法目標類別；輸出類別整數，未寫記錄；build/wiz8.asm:422021。
+536ad0	公式	D4	character_monster_target_ok	characterMonsterTargetOkNode	讀角色動作／物品 +0x63、怪物 +0x14／+0x2b／+0x9f 及模板 +0x24a，結合目標種類與攻擊可達性；輸出可指定該怪物的布林；build/wiz8.asm:422239。
+536d60	公式	D4	character_group_target_ok	characterGroupTargetOkNode	讀群組模板 +0x24a、角色動作與物品 +0x63，檢查群體目標或逐一統計可攻擊成員；輸出至少一個合格成員時為真的布林；build/wiz8.asm:422431、build/wiz8.asm:422443。
+536f60	公式	D4	character_current_target_ok	characterCurrentTargetOkNode	讀角色動作、目前目標與物品 +0x63 法術資料，先判目標型別再檢查 0x519180 的可達性；輸出兩條件都成立的布林；build/wiz8.asm:422616、build/wiz8.asm:422629。
+5372b0	公式	D4	item_target_compatible	itemTargetCompatibleNode	讀目前目標與物品 +0x63／效果參數，將物品法術映射成目標種類並判相容，另有類別 2 的介面模式豁免；輸出目標資格布林；build/wiz8.asm:422855。
+537330	公式	D4	item_spell_target_type	itemSpellTargetTypeNode	讀物品索引與物品 +0x63 法術編號、效果參數，經 0x5010f0 推導可用目標類別；輸出類別整數，無效物品為零，未寫記錄；build/wiz8.asm:422889。
+537380	公式	D4	character_action_target_type	characterActionTargetTypeNode	讀目前模式、角色動作、法術或物品 +0x63／效果參數，依動作種類推導目標資格類別；輸出類別整數供目標選擇，未寫記錄；build/wiz8.asm:423016。
+5387f0	非公式	-	character_target_store		比較八欄目標記錄後原樣拷貝到動作目標欄，並更新標示與介面；沒有自行計算命中、傷害或目標抽選；build/wiz8.asm:424821。
+538e00	公式	D4	combat_target_relation_revalidate	combatTargetRelationRevalidateNode	讀角色 +0xb11／+0xb01、+0xa35 敵我屬性、已選目標與動作要求，及怪物 +0x2e1／+0x2e5；關係不符時改選角色目標或清空怪物 +0x2ba 目標，輸出重定目標結果；build/wiz8.asm:425441、build/wiz8.asm:425449。
+53a440	非公式	-	ui_target_mode_set		依使用者目標選擇種類建立目標描述、轉交儲存，並重設游標／選擇模式與介面旗標；build/wiz8.asm:427319。
+53a700	非公式	-	spell_target_picker_needed		讀副表 +0x75 法術類別與介面旗標，回傳是否需要打開手動選擇目標模式，僅由目標選擇介面使用；build/wiz8.asm:427408、build/wiz8.asm:492128。
+53a770	非公式	-	item_target_picker_needed		取得副表 +0xcd／+0xce 所選物品的法術類別，回傳是否需要手動目標選擇介面，不抽選或計算法術效果；build/wiz8.asm:427481、build/wiz8.asm:492174。
+53a830	非公式	-	ui_target_copy		將 0x68408b 的八欄目標描述原樣複製到副表 +0x1d 或 +0x4d，再觸發角色語音回應；build/wiz8.asm:427572。
+53b050	非公式	-	ui_target_selection_clear		清除模型中該角色的目標標示位元，重設選擇模式、游標與介面並刷新戰鬥目標顯示；build/wiz8.asm:428324、build/wiz8.asm:428344。
+53b7f0	非公式	-	character_target_pointer		依探索／戰鬥／施法／物品模式只回傳副表 +0x1d／+0x4d／+0x81／+0xa9／+0xd1 等目標記錄指標，不計算目標資格；build/wiz8.asm:428949。
+53bf80	公式	D4	party_auto_target_update	partyAutoTargetUpdateNode	讀角色存在、+0xb11／+0xb01、動作及副表 +0x105，判行動／目標是否可用後清空或重新挑選；輸出副表戰鬥／探索目標記錄，必要時經 0x53c990 更換攻擊配置；build/wiz8.asm:429589、build/wiz8.asm:429649。
+53c270	公式	D4	character_targetable	characterTargetableNode	讀角色副表存在旗標與角色 +0xb11／+0xb01，要求有 HP 且狀態小於 0x12；輸出該角色可成為目標的布林，未寫記錄；build/wiz8.asm:429812、build/wiz8.asm:429816。
+53c3f0	公式	D4	combat_target_effect_selector	combatTargetEffectSelectorNode	不確定：讀來源型別／反噬旗標與目標型別，角色目標取副表 +0xf1，其他類別產生 8／9／12 的選擇值；輸出 byte，已見攻擊／法術處理呼叫但尚未確認是規則效果類別或純呈現類別；build/wiz8.asm:429985、build/wiz8.asm:440286。
+53c490	公式	D4	combat_target_allegiance_mismatch	combatTargetAllegianceMismatchNode	讀來源與目標的角色 +0xa35、怪物 +0x16 或群組 +0x2a，與動作敵我要求比較；輸出目標關係不符需重選的布林，未寫記錄；build/wiz8.asm:430073。
+53c990	公式	D4	character_auto_attack_configuration	characterAutoAttackConfigurationNode	讀角色裝備 +0xfbd／+0xfc9、副表 +0xf5／+0x105 與戰鬥每角色 +0x4c／+0x18，條件成立才搜尋攻擊目標；輸出目標索引，翻轉副表 +0x105 並更新角色 +0xfa5／+0xfb1 的攻擊配置；build/wiz8.asm:430542、build/wiz8.asm:430724、build/wiz8.asm:430731。

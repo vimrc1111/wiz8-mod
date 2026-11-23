@@ -1,0 +1,8 @@
+call	55ee30	character_sp_ui_refresh	SP 變更後依 UI 模式標記角色或戰鬥畫面刷新；模式 6 更新角色 UI+0xf8 的 0x100，模式 7 經 562a50 更新非空戰鬥 UI+0xf4 的角色位元；差分包含兩個旗標
+data	4	characterIndex_argument	第一個 cdecl 參數是隊伍角色索引；此值是堆疊位移而非資料表
+data	8	realmIndex_argument	第二個 cdecl 參數是六領域索引；此值是堆疊位移而非資料表
+data	c	healAmount_argument	第三個 cdecl 參數是 SP 回復量；此值是堆疊位移而非資料表
+data	685174	party_characters	角色陣列指標，每個角色占 0x1862 bytes；case 給八名角色各六領域目前 SP（character<i>CurrentSP<r>，逐筆欄位），maximumSP0..5 以 characterIndex 尋址（stride=6242、count=8），只覆寫所選角色
+field	eax+0x0	character_current_realm_sp	所選角色與領域的目前 SP 寫入位置；先寫 32 位相加結果，再以有號比較封頂
+field	edx+esi*4+0xb25	character_maximum_realm_sp	所選角色六領域 maximumSP0..5，領域索引為第二參數，每領域 4 bytes；只讀所選角色，未選角色的不讀
+field	edx+esi*4+0xb45	character_current_realm_sp	八名角色各六領域目前 SP（輸入 character<i>CurrentSP<r>），讀寫所選角色那一格，領域索引為第二參數，每領域 4 bytes；未選角色的值由輸入給、原樣保留

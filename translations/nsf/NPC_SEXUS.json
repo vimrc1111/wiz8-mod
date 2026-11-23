@@ -1,0 +1,382 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "cbef258ac4a8a099cf9682af465ee72a759a1648d44e71c1514c0814e0a1cc8b",
+  "zh": "Ferro ，我……噢……"
+ },
+ {
+  "id": 1,
+  "src_sha256": "b1f4a649d9a0b1ccaf320a2b9d7d404900a0760ac409a78c97cda245b0c782e9",
+  "zh": "抱歉。我原本在等 Ferro 。我想我們還沒見過面。我是 Sexus ，聽候差遣。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "4cc84e69cf1728acca7e3a0899a3333a30bacd1013d980f5f3050789a9a4d3a6",
+  "zh": "我們之間沒什麼好談的。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "095322641d66c54c61ac59f8ee612c87e91b8008414e946676abf6579f62e404",
+  "zh": "我相信另有別人更有興趣……"
+ },
+ {
+  "id": 7,
+  "src_sha256": "a70a977a150222f5cbc8b49905a9ff0a9954dd2a91adb15b655290faa0148705",
+  "zh": "你們得多下點功夫……"
+ },
+ {
+  "id": 8,
+  "src_sha256": "503fc89ee675e8f3d5406708e0578f369eed7673a9c3fd2810bc95bb2cac646b",
+  "zh": "沒有必要……"
+ },
+ {
+  "id": 9,
+  "src_sha256": "40a8384382005f5bc47e28883f175b1b4d5743cdadc151457a9b24e2c0ae1536",
+  "zh": "我看不必了……"
+ },
+ {
+  "id": 10,
+  "src_sha256": "fecabe858b1241b8b5240bce2b968ba13baf039a498bd18f5b7a4b19e8a2e7f8",
+  "zh": "Rapax 信奉隱匿行動，而你們這麼一大群人，對我來說太多了！"
+ },
+ {
+  "id": 11,
+  "src_sha256": "f177325caca72561e8c66f01b15e4b241b628db7b94bfabf14bae05922e4d99a",
+  "zh": "當然！沒有什麼能擋在我們前面！"
+ },
+ {
+  "id": 12,
+  "src_sha256": "ced71dc5020b0d77d81e75cda5a4c633d27ad2f202cf17832385a7709bd6a4a6",
+  "zh": "心領了。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "821a10568a302caa42e1cefe8a6972bc84763ea9ff7f16409290d3836eaf585e",
+  "zh": "你們留著吧……"
+ },
+ {
+  "id": 14,
+  "src_sha256": "5e14f024097805030c87bc301c800d66516817ae4f3d6b8b53cabf49adf22139",
+  "zh": "請先付酬金（ price ）。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "c0eaf433f5b15cdac696af51700b0647a33badbc3fbc213bb8adccbd65d1a421",
+  "zh": "你們沒有我想要的東西。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "112974da9badae7d8a4a8c2041bacb7fcef09456821c656f395b887ebb0ce8c5",
+  "zh": "恐怕這不夠。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "acb3deb9c2698ecdcb052515da7fe20f7ed90c1869e59ac8736bde0c65d8936d",
+  "zh": "你們是哪門子的蠢材？！？竟敢從我這裡偷東西！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "68aa3845abd17fce6efbd903adeca03b789486dc096f7caa588e2f94a7a686a5",
+  "zh": "你們是在拿自己的性命冒險……"
+ },
+ {
+  "id": 19,
+  "src_sha256": "25cf5dc884872baa9ef663efe4d7ef366f7d6324896ef0ea7fdb22fb2f06982e",
+  "zh": "你們得拿你們的命來償還！但願這一切值得！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "9adec47aa6de24d73c9c9717eb63ccdebf9e24022b8700b801a9e34fcf226662",
+  "zh": "原來你們在這裡，你們這些小混混！"
+ },
+ {
+  "id": 22,
+  "src_sha256": "f60dfad2b6afb3e75d2780f3f7edae9b4a8c5cb8a2f37bc921dec3db2732d578",
+  "zh": "我的興趣沒那麼廣泛……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "3b41ab165b44bf40acf49b15e6f13e74c5d86889600af03b0bbc2c1489739d99",
+  "zh": "我不是愛聊天的人……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "6768228032bb5ab30bbd8c3805e44cbe71e93de1880303c2ab098dd4b1fc2c3b",
+  "zh": "我不能洩漏我們的機密（ secrets ）。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "6d9ce627e7f52ca843f8789abc050c0daa3314f44f7a67c61b75cfb565496264",
+  "zh": "仔細聽好……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "8a6bd50900ec51dff503e0d2b3bab6360be114520a42f10f5418e33bce130df7",
+  "zh": "我們一個一個來。先問哪個？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "2b6d3ad7f1a49b5ca8eef6f05c39e333fa94824a3af6dfeb739c28514544a718",
+  "zh": "再想想……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "c8f339b47ff7fa3e1d6a1cfddf1ee695e22de8075fbb4b201cf09f7fbc341dc9",
+  "zh": "是這樣嗎……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "712661cb5c5f20ec03f8b4eaa9637baabef942d6f716d4ba8bd39ef001e08a05",
+  "zh": "我確實還有些技藝需要磨練……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "979f6a16793d92d8e9b99e042d5bc64e4eb9e15c3b265edd18fde111e8343f3e",
+  "zh": "我相信你們還有更重要的事要做。"
+ },
+ {
+  "id": 31,
+  "src_sha256": "35cc85644762e0aaacc39f865c3ac40c7c0d615fcb6c2e469a7787d1e34abc6d",
+  "zh": "我寧可不要……"
+ },
+ {
+  "id": 32,
+  "src_sha256": "5b81a6ee426d650b1e5b1cef3578f7de70d5a307e9248e717512e31ebacd2ce2",
+  "zh": "不值得浪費我的時間……"
+ },
+ {
+  "id": 54,
+  "src_sha256": "374e94acfcc70ea24d66704de665a7396ba444c8568850736b3dc34844c5df2c",
+  "zh": "Dark Savant ？是的， Rapax 知道他。事實上，我們與這位最尊貴的存在結成了同盟！我們聯手，無可否認、無法擊敗、勢不可擋！等他把 Arnika 炸上天，他就能*拿走*他的 Ascension ，而我們將奪取整個世界！"
+ },
+ {
+  "id": 56,
+  "src_sha256": "9c3bf65dc2224303fd274adcd60993a1871bac8f7237006439681212b115cb06",
+  "zh": "嗯嗯嗯……你不想知道我知道些什麼嗎，小姐。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "2ad8806759400cda12b03e3275de4631f4059abaac1af56168a64cc79d23b7ec",
+  "zh": "謠言……何必多費心。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "bb4e49f3ce34e090bc912ac6c2b4304ecb2d4d64111443f834ff5c02203849a1",
+  "zh": "我是 Sexus ，聽候差遣。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "6feb91bfca6597cde75a718aaf9ecca535d460c53080b08e868e532877fba3dd",
+  "zh": "那不在我的服務（ services ）範圍之內。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "de87d661d93ec53d2529e27442d82ebef14d3ba91bb43b887da831c3b4bdc9fb",
+  "zh": "我寧可不要。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "8cf86ac5d14096f522d90ed0214492fd1d7eed29ba6090c1fced4f5046f46429",
+  "zh": "歡迎。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "ca39399801813b6e9a1570854c7a62683d5e32ef5c6505e26965c7b12c0adb05",
+  "zh": "你們知道去哪找我。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "0aba00782296bc66c3d3192c5a3ea109bb52d618b1bbb9324300f308aedff4b3",
+  "zh": "幫忙（ help ）？若你們雇用（ hire ）我，或許可以。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "20d37ebf24af9e78288728af62f2f1b273fc1a538b9090603753cb10b969d04a",
+  "zh": "也許你們該去拜訪 Ferro ……"
+ },
+ {
+  "id": 81,
+  "src_sha256": "1788bd2c9262db2f145e9d123c97ccb42cca3998ce69ecb393f01dbbd536d037",
+  "zh": "我很好，一直都很好。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "0267dc14dd330bb4bfe83f2d14a181ef85a951de557321b84af6608d436f11eb",
+  "zh": "我還真好奇 Al-Sedexus 對這些生物作何感想……"
+ },
+ {
+  "id": 88,
+  "src_sha256": "0310b13c02b2bfbd52335da34816b910b4e719f79b5c1a6d1efc46d7871c0a36",
+  "zh": "我得記得去 Ferro 那裡取我的護甲。"
+ },
+ {
+  "id": 89,
+  "src_sha256": "a3c319f20733c91eddf6d3eed089fd52fcc37f19df5833c084156a22b6392985",
+  "zh": "說啊說啊說。如今大家就只想做這個！"
+ },
+ {
+  "id": 90,
+  "src_sha256": "cebdc6ea836e9dc9ade548b44c319e00e98208ff27d1039b504e55dc70abff97",
+  "zh": "噢，去 Arnika 看看……"
+ },
+ {
+  "id": 91,
+  "src_sha256": "e10dab2cde3b51fd4bb18c916d691cc18dd70019c520cc45142975da4f9663e7",
+  "zh": "你們和我一樣清楚，就在 Trynton 。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "7b69e7183eeafba49ef3933dbf2555bd870c2d702503e1bcb8fa7c4a719cf8c9",
+  "zh": "我會去 Swamp 找找。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "1ed40c2356672a070a52acec514d6834e5f684dc191adb7a2c23e12c37790298",
+  "zh": "在那個可怕的 Marten's Bluff 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "30446bbf3b91289a502603d21af3b620b4cd699d6be6f0769eb3ad5215055d65",
+  "zh": "Mt . Gigas ……四面漏風的老地方。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "1d0511f58b48fef81bc95ad8f2049eb25175ff871e7a4ef0c4016b357b52a22e",
+  "zh": "當然就在這裡的 Castle 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "bc0da38a52d3d2906df044537c13c1e020f5b8979c4b300581d3527cd8ae921c",
+  "zh": "去 Ascension Peak 找找看……"
+ },
+ {
+  "id": 100,
+  "src_sha256": "04bebced63062dab0d56be5449cdc1ae2774389faecf009ace314cb2e228eb2b",
+  "zh": "Cosmic Circle 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "8176e21852d1d0792483acf20e8e36d37c950e78c8e0d0d931445b8fe450dc83",
+  "zh": "你們沒瞎吧，是嗎？"
+ },
+ {
+  "id": 102,
+  "src_sha256": "021065a5ef77b556cda0b00b3506945fee010926e9da993466881757ea00f6aa",
+  "zh": "我懶得管它在哪。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "c44322967a0d8352e7a4ee1460ab4c62d4a2823077c8ca2887e8d8eefb5d8df1",
+  "zh": "在 Bayjin ……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "e5bb7830d75bc79c53847de166fd3ede4240c232284173c61e992b9fcfe447ef",
+  "zh": "那你們呢？你們想必就是我聽說的新任 Templars 。是啊……所以，你們想雇用（ hire ）我？"
+ },
+ {
+  "id": 105,
+  "src_sha256": "ddc38616b919592324a0006011d14e61dcc1159dc06bd8363ceb6f460c00654f",
+  "zh": "那你們呢？聽說是來造訪我們星球的。是啊，與你們合作應該很有意思，但以你們現在的樣子不行……去 Temple 拜訪 Al-Adryian 。然後再回來找我。到時我會考慮為你們效力。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "7c92a8f15441f1be1e815c5cce9967359109cb8e524a44d4d3923114ea230989",
+  "zh": "看來你們回心轉意了。我可以假設你們是來雇用（ hire ）我的嗎？"
+ },
+ {
+  "id": 107,
+  "src_sha256": "25ca34878d9879feff4586f1376c406f1845b7afd27639108bab545ad9adea06",
+  "zh": "一切都還順利吧，我想？"
+ },
+ {
+  "id": 108,
+  "src_sha256": "f026a05e8df2d6992478c08f30b2f2fda23147f26d849ac716020b99f97edbad",
+  "zh": "我看你們還沒成為 Templar 。否則我無法受雇（ hire ）於你們，你們應該明白。說真的，你們現在花在我身上的時間是白費的……"
+ },
+ {
+  "id": 109,
+  "src_sha256": "d744ecc3a2664711178d9dd57c1f2a5a7e73b943b23b0cec72bd46c6c3a5c0d7",
+  "zh": "你們準備好時，我隨時可以出發。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "c254403981799e113d917caa890e8aca0525d6f12e0f0b28a09fda35a261f256",
+  "zh": "那麼一切就緒了。你們準備好就說一聲。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "45a48ac92cedfa07525e79a9e9bb6f12fe1e6a0a179cb96d976e0e7c8b4712f6",
+  "zh": "是你們的損失……不過我理解。不是每個人都付得起我的服務（ services ）。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "daedfa77eea1fc958c1ed60656c27c7526ad492a44dcf304937da7c5add0582e",
+  "zh": "當然。你們來這裡不就是為了這個嗎？只要有酬金（ price ），我樂意為任何人效勞，而我值得這個價碼。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "4bfa13682c60e8a3d595673b795f0d946f1e9cc6624685c2d122dfd274bea145",
+  "zh": "無意冒犯，但我頭上這對角裡的施法造詣，比你們全部加起來還多。當然，我可是練了好多年。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "2e62325ae5f06c776f7f57c2f091f9d7f16203f9d29ef7572547f0ec062828a0",
+  "zh": "付得起的人，從不多問……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "b0085aca9be00944faa01a6e64dee653e807f93e3bed90f02393e0d209741df1",
+  "zh": "我的服務（ services ）可雇（ hire ），我的機密（ secrets ）不賣。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "63d37c60bae879983aed5509bd27742222bee9512f10b263325eb3901d7d6814",
+  "zh": "我建議你們去找出 Temple ，自己弄清楚。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "c89b99c4e11791f0c679ff5f03739cefad92c313268c0120c5d0c534e83394ff",
+  "zh": "大多數人雇用（ hire ）我，是想確保對手死（ die ）得很悽慘。無論你們與誰為敵，我都會站在你們身邊。我的忠誠只屬於我自己。我何時離開由我決定，而且我不容忍無能。你們只能雇用我一次，所以在開口之前，務必確認你們真的需要我……"
+ },
+ {
+  "id": 118,
+  "src_sha256": "53d856bfd3507c5a76266aadbe8b8da2a6a81317cc6624becafd03d21fde1c7f",
+  "zh": "真可惜……"
+ },
+ {
+  "id": 119,
+  "src_sha256": "d66ccb9a15eb509f705b457e06d38192b7fb2efa042f1a68560a0ef2b9904e42",
+  "zh": "很高興聽到……"
+ },
+ {
+  "id": 120,
+  "src_sha256": "018106b0681700e9756bf8ef9dead579514fc05b1c553b59ce5aab4324d30bf0",
+  "zh": "Ferro ？是的，他是這裡的鑄甲匠。我經常請他為我設計訂製品。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "3265bf8f17ca774d854f35fadb9fc1b656d7004dd6fa0dbb4cdfdc3de6c7927e",
+  "zh": "沒錯……"
+ },
+ {
+  "id": 122,
+  "src_sha256": "5f7e57bd96b2b17d1f9e79de7020399c7cf75c5ad06c9b8f069f49e80eb1e977",
+  "zh": "在這裡以北。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "1143f2db91baa2d21b105b724f336a73558f0a07af9d4978b0ae430a61f1296f",
+  "zh": "我會往南走。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "67f6fc5d8da29eb878d6abc0caeef0ac38465ec6bf91813fe7ac7240e30875d6",
+  "zh": "若是我，我會往東走。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "e2929a09818dd030a26dc8a78d6f0e279232d7feab9e61dbefa884f506ee365b",
+  "zh": "往西走你們就會經過它。"
+ }
+]

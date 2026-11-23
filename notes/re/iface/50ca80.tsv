@@ -1,0 +1,69 @@
+# 50ca80 npcRegionStatusNode：NPC 同伴區域狀態檢查（cdecl，無參數，void）。戰鬥／休息中不做；A 段處理 0x6875b6 待決（找 class 0x42 的 NPC，不在時對 *0x6875ef 角色施加狀態 10、期限 9999 並設劇情事實 0x2a6）；B 段每 60 時鐘以上查區域表，NPC 同伴（槽 0、1）依種類抱怨或記住區域、區域命中時開罰並重建該角色能力。
+# 位址樁（排除類）：52e690（語音）、41f0d0、55ee70（577520 內的畫面更新）；引數與呼叫次數都是輸出，多次呼叫用 n 保留每次引數；呼叫端不讀回傳。
+# 位址樁（D4 公式）：522fe0、50e650、506670（5061a0 內）。呼叫端不讀回傳（樁回傳設 0x5a5a5a5a 時 TestEmu 仍 diff=0）。F 對 522fe0 跑 Go 的 characterConditionApplyNode 並把角色欄位寫回（B 段之後讀該角色 +0xb01／+0xb11；Emu／F 分流，同 n_524720／n_503100）；50e650 寫的能力修正與 506670(0x2a6, 1) 不被本節點再讀，F 與 Emu 同樣只記錄。
+# 偏離（同 506670 前例）：除錯／UI 旗標 0x688290 0x683f8c 0x68edcc 0x68de44 0x6850d5 固定 0，calc 讀到非 0 報錯。
+# 上限：隊伍槽 0..7、NPC id 不得為負、NPC 元素 fixture 4 筆、事件記錄與訊息佇列 fixture 各 4 筆（長出後改用堆積，堆積 0x100 bytes）、背包 6 格；超過 calc 報錯。原版會當掉的情形（A 段 NPC 表為空、空／已移除 NPC 被取欄位）calc 也報錯。
+call	42b740	regionKeyOfMap	地圖 0x686a70 → 區域鍵（ctrsC.selKey 重現，含地圖 0x10／0x26 依持有物與事實 0x1ce 改判）。
+call	5061a0	storyFactSet	設劇情事實位元組 0x689b78+id；值改變時在事件記錄 *0x68de40 追加 {地圖, id, 值}，再呼叫 506670（位址樁）。
+call	50b800	npcById	NPC 表 *0x689f94 依 id 取 NPC；id 不小於筆數時取元素 0；表為空或 NPC +0xc7 已移除時回 0。
+call	50c9e0	npcRegionAffinity	依區域鍵查區域表，回傳 NPC 模板 +0x68 區域遮罩與該列遮罩是否相交；查無回 0。
+call	5289b0	partyMessagePost	配置 0x24 bytes 訊息（種類、隊伍槽、時間戳 0x68c4ac）並追加到訊息佇列 0x68c4c0；calc 重現配置與佇列成長。
+call	577520	npcComplaintRefresh	設 0x6875a5=1 後呼叫 41f0d0、55ee70(9)（皆排除位址樁）；只有該旗標是狀態。
+call	5c3790	npcSlotById	NPC 表元素槽位址（id 不小於筆數時為元素 0）；50b800 的底層。
+data	5ed8c8	語音參數乙	52e690 第四引數（exe 常數 0）；排除樁記錄引數。
+data	5ed914	語音參數丙	52e690 第五引數（exe 常數 127）；排除樁記錄引數。
+data	5ee638	驅逐語音編號	A 段對角色播放的語音號（exe 常數 44）；排除樁記錄引數。
+data	619df8	區域表語音	區域表（stride 12）每列語音位元組；B 段區域列語音。表從 exe 讀。
+data	619dfc	區域表鍵	區域表每列區域鍵，-1 結束。
+data	619e08	區域表語音（第 2 列起）	同 619df8，編譯器展開的下一列位址。
+data	619e0c	區域表鍵（第 2 列起）	同 619dfc，編譯器展開的下一列位址。
+data	619e14	區域表遮罩（第 2 列起）	區域表每列區域遮罩（同 619e00），與 NPC 模板 +0x68 比對。
+data	683f94	inCombat	戰鬥中旗標；非 0 直接返回。
+data	683fc5	isResting	休息中旗標；非 0 直接返回。
+data	685174	partyCharacters	角色記錄陣列指標（每筆 0x1862）。
+data	685178	partyPresence	隊伍成員在場記錄指標（每筆 0x106；+0xfa NPC id、+0xfe 區域懲罰開關）。
+data	686a48	gameClock	遊戲時鐘；與 0x68759a 相差超過 60 才做 B 段，懲罰時刻寫入 NPC +0xeb。
+data	686a70	currentMap	目前地圖；42b740 的輸入。
+data	68759a	regionCheckTime	上次區域檢查時鐘。
+data	68759e	regionCheckPending	B 段待決旗標；結束時清除，NPC 狀態 15..17 時保留。
+data	6875b6	npcLeavePending	A 段待決旗標。
+data	6875ef	npcLeaveSlot	A 段被施加狀態的隊伍槽（calc 上限 0..7）。
+data	689f94	npcTable	NPC 表指標（+4 筆數、+0xc 元素指標陣列）。
+data	ffffffffffffffeb	無關	區域暫存（迴圈槽號、指標、區域列）的堆疊位移，非全域資料引用。
+data	ffffffffffffffec	無關	區域暫存（迴圈槽號、指標、區域列）的堆疊位移，非全域資料引用。
+data	fffffffffffffff0	無關	區域暫存（迴圈槽號、指標、區域列）的堆疊位移，非全域資料引用。
+data	fffffffffffffff4	無關	區域暫存（迴圈槽號、指標、區域列）的堆疊位移，非全域資料引用。
+data	fffffffffffffff8	無關	區域暫存（迴圈槽號、指標、區域列）的堆疊位移，非全域資料引用。
+data	fffffffffffffffc	無關	區域暫存（迴圈槽號、指標、區域列）的堆疊位移，非全域資料引用。
+field	eax+0x0	NPC 元素／槽 0 在場	NPC 表元素指標解參考，以及隊伍槽 0 在場位元組。
+field	eax+0x106	槽 1 在場	隊伍槽 1 在場位元組（在場記錄 +0x106）。
+field	eax+0x200	槽 1 NPC id	隊伍槽 1 的 NPC id（在場記錄 0x106+0xfa）。
+field	eax+0x2e	npcKind	NPC 種類（0x10、0x11 決定抱怨語音）。
+field	eax+0x4	npcAlive	NPC 在世／在場位元組（A 段 class 0x42 的 NPC）。
+field	eax+0x6	npcTemplate	NPC 模板指標。
+field	eax+0x75	characterVoiceMuted	角色 +0x75；為 0 時 A 段先播語音。
+field	eax+0xb01	characterCondition	角色主狀態（小於 15 才算可行動）。
+field	eax+0xc7	npcRemoved	NPC 已移除旗標；為真時查找回 0。
+field	eax+0xfa	presenceNpcId	在場記錄 NPC id。
+field	eax+ebp*1	presencePresent	迴圈槽 k 的在場位元組（在場記錄 +0x106k）。
+field	eax+ebp*1+0xfa	presenceNpcId	迴圈槽 k 的 NPC id。
+field	ebx+0x2e	npcKind	迴圈槽 NPC 種類。
+field	ebx+0x58	npcTemplateClass	NPC 模板類別（0x42 為 A 段要找的 NPC）。
+field	ebx+0xe8	npcRegionPenalty	NPC 區域懲罰位元組：狀態 15..17 設 1，其餘處理後清 0。
+field	ecx*4+0x619e00	區域表遮罩	區域表每列區域遮罩（索引 3×列）。
+field	ecx+0x4	npcTableCount	NPC 表筆數。
+field	ecx+0xc	npcTableElems	NPC 表元素指標陣列。
+field	edi+0x0	區域表鍵	區域表當前列的區域鍵（搜尋迴圈指標）。
+field	edi+0xfe	npcRegionPenaltyEnabled	在場記錄區域懲罰開關，區域命中時設 1。
+field	edi+edx*1+0xb01	characterCondition	迴圈槽 k 角色主狀態。
+field	edi+edx*1+0xb11	characterHitPoints	迴圈槽 k 角色 +0xb11；為 0 時跳過。
+field	edx*4+0x619df8	區域表語音	區域表當前列語音位元組（索引 3×列）。
+field	edx+0x2363	槽 1 角色主狀態	角色 1 的 +0xb01（0x1862+0xb01）。
+field	edx+0x68	npcTemplateRegions	NPC 模板區域遮罩。
+field	edx+ebp*1+0xfa	presenceNpcId	迴圈槽 k 的 NPC id。
+field	esi+0x4	npcTableCount	NPC 表筆數（A 段迴圈上限）。
+field	esi+0x6	npcTemplate	NPC 模板指標。
+field	esi+0xc	npcTableElems／區域表下一列	NPC 表元素陣列；區域表搜尋時為下一列的鍵。
+field	esi+0xc7	npcRemoved	NPC 已移除旗標。
+field	esi+0xeb	npcRegionPenaltyTime	區域懲罰開始時鐘（寫入 0x686a48）。
+field	esi+edi*1+0xd4	npcRegionSeen	NPC 已到過區域旗標（每區域表列一位元組）。

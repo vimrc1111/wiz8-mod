@@ -1,0 +1,512 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "23879bdaf17c00d4accb5dc440a0c4f1b35441f95e4cb2a4f5ddb286e80f9d75",
+  "zh": "多謝各位，陌生人。要不是你們出手相助， Rapax 肯定已經擊敗我們了。我是 Anselm ， Brotherhood of the Ascension 的領袖。我聽說了你們在我們這個世界上的冒險（ adventure ），現在命運把我們帶到一起。我相信你們註定要協助（ help ）我們完成使命（ quest ）。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "8cad680498172c09077e9be02456a264581307d6f7c8a96be7881e971c2e403d",
+  "zh": "嗯，朋友們？"
+ },
+ {
+  "id": 2,
+  "src_sha256": "d907481538d2e2d1883d25dd8d6485e30da347eeb259a3b74bdbecda2fa0aef7",
+  "zh": "我只對信得過的人吐露心事。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "13880ae94538cb4c91b6ad3ac24ec7094245563d7b6709b11c4be6f50fc5e220",
+  "zh": "請別浪費我的時間。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "873c90665805b110b6da51f6d8df44f98f4b6d603ae6d334e7212681c8ae231d",
+  "zh": "好吧，既然你們堅持。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "845b66217b6ea1296ac6b264531e63c46c3b2dd9b7fe8256e47d090b25dc3ddd",
+  "zh": "Dark Savant 在 Arnika 。 Rapax 正在蹂躪我世界的其餘地方。你們憑什麼認為我會理會你們和你們那些小小的威脅？"
+ },
+ {
+  "id": 8,
+  "src_sha256": "9409b438ef115aad16ad6bf7a749fb3ab82a0c4df80f7db5458d0b2c11a2fc25",
+  "zh": "這裡不安全……"
+ },
+ {
+  "id": 9,
+  "src_sha256": "533d7dd28876409227ecdd12b4de67bbe218d912e7bdd165d449058e0a7e1c12",
+  "zh": "我們目標相同，但分開行動能做得更多。自從我離開 Monastery 以來， Savant 一直緊盯著我的一舉一動。我若加入你們，只會害你們落得同樣下場，等於是在定你們的罪（ condemning ）。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "3b66b2a8ce5c1c02c7ed84f556d9e6ec25636d0cbd968194dd900b9d106a51a7",
+  "zh": "也許用得上。謝謝。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "b617ff795a2ab4f72a0eb43b15f874531a92076c115550052c8d0e492d1a3226",
+  "zh": "我只帶我需要的東西。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "babf91e9cc8cfed528a3bf5bf01340dccd9d4a896826bb23bfa3b9ad48d14910",
+  "zh": "我再也負擔不起了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "a95e2b89c947c3085ea5f8c5c8bd2d1747652bcb5f5787bf311c9213aeba7298",
+  "zh": "恐怕你們需要更多資金。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "8280cfe8a1809b00247696bb6d500fb91a220d38a709dc5af065b858306bbde5",
+  "zh": "說真的，你們把我當成什麼人了？"
+ },
+ {
+  "id": 18,
+  "src_sha256": "1f06b48b6631fe6c063b8ad2d09cfde90172d525d5e06bea1746145d90f0859b",
+  "zh": "我不需要這個。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "3d1de78b864511f82b9516d0d87442dbae6594029f4baa19823bdcdf5f361e6f",
+  "zh": "簡直不可思議！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "7cf390cc5cb20afa8b9c9b0bfb275da24f84ba0019266aebd9cf4c8326b3d6c1",
+  "zh": "好吧，那我們就是敵人了！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "9764be545a2eb6afc17670dc050d4c98097700d62a57cacd25748676837f61bc",
+  "zh": "也許用得上。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "1bc2c6cbb5721d856ddef6cd0d1d2d0d336c0042dfb94ac8f8cf1c6f1fb9ff0a",
+  "zh": "我不知道。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "a23920a0c686059459e7ea21a90b8584632033fb183b864602f52f1d5a577bc9",
+  "zh": "不重要。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "5e44c682b0c37c7f4d8908cf13557f5c078273c17144545dd656a7a11ebb31df",
+  "zh": "我不能說。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "6d9ce627e7f52ca843f8789abc050c0daa3314f44f7a67c61b75cfb565496264",
+  "zh": "仔細聽好……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "c7945084ab1e24c283aedec9752211087a8d6b4585e9cf3cfc16fb84e09b4079",
+  "zh": "先聽哪一個？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "51e1be3bff0a37c5f1e31d41396c5dc5aa66306d72a5de9a6bbd24440334a487",
+  "zh": "至於另一個……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "46b29e752b3d61d5de5a315cf3734f30e1792666600c75a793bf6ee12e59b6b0",
+  "zh": "是啊，我也聽說了……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "e624d6db4bc49687dce0461d3987a3b4a8f4285a7282e9be96e2015beb1474b6",
+  "zh": "我們還有很多事要做……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "81a2fdebd4f7c7050156b35758b627fbefa1b0fab6f39ec4a65c62edcd321452",
+  "zh": "我們說話的這段時間， Dark Savant 正步步進逼！"
+ },
+ {
+  "id": 31,
+  "src_sha256": "011f9542cd6b4aaf34df9f9032ad29f4ea28eb7a23ea83a3cf268ee9e79c655c",
+  "zh": "這裡是 Dominus ，由 Cosmic Lords 創造的第一個世界，也是離 Cosmic Circle 最近的世界。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "9b8b68156cc4b4124ed665babbd9f03f27d249e17647edbb59ec8abaf7366552",
+  "zh": "Arnika 是我族人 Higardi 的首都，現在被 Dark Savant 佔據了。幸好大部分僧侶（ monks ）在 Savant 接管之前就逃進鄉間了。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "3763eaa0d211baa95e95c5f3e8a917f703241a0867c5c5d69870038a93570eda",
+  "zh": "Bayjin 是兇猛的 Rynjin 的島嶼家園。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "7b3ccfa3ed598c308bf6f57c8835f3b8bf4166692abf7768151d3c54664648cf",
+  "zh": "那是 Trynnie 的家。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "0c4b4cf3c5b39a9eab64e857971573c7038bd83d81dd51151a2785a85721971c",
+  "zh": " Rapax 的家園。很久以前， Higardi 把 Rapax 逼退到 Dominus 最荒涼的地方，一片火與灰燼的不毛之地。說也奇怪， Rapax 在那裡反而興盛起來。他們建了一座大要塞（ stronghold ），從那裡發動對 Higardi 與 Trynnie 的突襲。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "0c31dae60600df78811d643a648a86820430d498e8f0a533c3312e5c875281bb",
+  "zh": "看來我祖先的計畫反過來害了我們。原本空蕩蕩的火山裂谷（ rift ），如今成了 Dominus 上最致命的地方。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "add81da7e31b54f6059debe3f75a5b7d79ed87cd11d569189e2eb23499fdf19a",
+  "zh": "一些叫做 Umpani 的古怪異星生物在那裡紮營了。"
+ },
+ {
+  "id": 39,
+  "src_sha256": "a9c07f8fe0352c02f190328fe8a5501f2610a06f1ac0dc46772a454c6d107719",
+  "zh": "一座古老的堡壘，現在住著叫做 T'Rang 的異星生物。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "5a07ebedfbe3431085359fe20d3b1af10bb6321180fcdebce98c74b012e2d719",
+  "zh": "通往 Cosmic Circle 的連結，也是 Ascension 將要舉行的地點。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "f105806916b4bb6617a806cc5820c492aee4503b4a1883c4a9755ef3c77632bf",
+  "zh": "Cosmic Lords 的家。登昇者將從 Ascension Peak 前往 Circle 。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "04820804e27763a83d1d9ea701edecde240210a5c4b0463559a43bc278adba9c",
+  "zh": "很少有 Higardi 敢出海。海洋（ ocean ）是 Rynjin 的領域，而 Rynjin 並不喜歡訪客。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "bd7bd78ac1c32b81ddf4c6286d6293bd28bb0ecc0400bd75255a0882b0f07ba1",
+  "zh": "我們是 Higardi ，被 Cosmic Lords 選中要登昇的人。至少我們曾經這麼以為，直到 Dark Savant 出現，用毀滅威脅我們。現在很難說了。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "351aa7bacc04bd35f829d1f36b8015a305b0ddbd48a9d4ee1a7752e22c6af7d8",
+  "zh": "愚蠢的生物，看到什麼俗氣的東西就可能拿了就走。不過大致上還算無害。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "baf4e06f65581c973014bd1617d2094c415787857e690cd3a480fe02e4dad703",
+  "zh": "虛榮又暴力的生物。我們 Higardi 很久以前就擊敗過他們，但他們依然興盛。 Rapax 偶爾會攻擊落單的 Higardi ，也常常突襲 Trynton 。幸好他們的魯莽讓他們成了自己最大的敵人。"
+ },
+ {
+  "id": 49,
+  "src_sha256": "45f722cf9ab05f57d994d9457198fa6af6ce94fb06a213949a61e0ca1651109f",
+  "zh": "你們知道他們？他們是我們的後裔，來自我們的殖民地 Guardia 。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "f9d1780e88f361680a66b0017c009a017d2468ed5384940e2ff9abb7c98bf7f2",
+  "zh": " Mook ？他們在 Dark Savant 降臨前不久抵達 Dominus 。我想他們在 Arnika 有住處。看起來還算和平。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "0ce5bf630a33432b776abaa888e35fb3ba61957eb50a38868b357915a522125e",
+  "zh": "你們若想找他們，得自己去找。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "7f339852e8930c2ed17e6a8716c5a9cc1692af45aeff27b669d10dcfa817772e",
+  "zh": "Savant 把 Ascension 從慶典的時刻變成了恐懼的惡夢。有一天夜裡， Arnika 沉睡的市民被一道刺眼的強光與一聲巨吼驚醒。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "4183c31e3ec74bb4303f85cb93d447520502a70af55bc664a4e2a9a33f17635c",
+  "zh": "他們衝出去查看發生什麼事，只見一座巨大而不祥的高塔（ tower ）矗立在城市上空。 Savant 來了。他宣布只要有任何 Higardi 試圖進入 Ascension Peak ，那座塔就會爆炸，威力大到足以毀滅整座城市。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "a44dd20f6348a8b17451ed794520cd23226cb94114210d8581515557d578a605",
+  "zh": "從那時起，他擊落了所有接近 Dominus 的太空船，還派手下來恐嚇我們的人民。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "1ceb8857cb977c5a3f2aac9ccd98d2b27f9a796f687ab57e4ae8825a55368de6",
+  "zh": "他讓我們的處境非常艱難。如果我們試著登昇， Savant 就會引爆他的炸彈，殺死我們的朋友、家人，以及我們珍視的一切。若代價是這樣，進入 Circle 還有意義嗎？我不禁懷疑……"
+ },
+ {
+  "id": 59,
+  "src_sha256": "a804bf37e4013105554da3c7c79eafc2856318bea9f6420efc94e0cf74df2fbd",
+  "zh": "那個女孩？她和她的家人我們都很熟。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "a3648a863a83741cf4058d139a21fdac178b5ab55d1f6d3fb1abd25c06bcffa5",
+  "zh": "是的，當然。她是我們大家都熟知的人。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "7fba0f38b91e1e2fd64badd41f4b1d964e92c82f8f7e103a28d9566eb2aaeba5",
+  "zh": "創造了 Dominus 的 Cosmic Lord ，他也造出了三件神器： Astral Dominae 、 Destinae Dominus 與 Chaos Moliri 。"
+ },
+ {
+  "id": 62,
+  "src_sha256": "f8121e397cad4e7708723eb8b339ffe1cd586cc5f77f337a7198f927acc72770",
+  "zh": "Marten 很久以前從我們的 Monastery 偷走了 Destinae Dominus 。 Higardi 追了他好多年，始終沒抓到。多數人說他瘋了，也有人說他是受神啟示。不管怎樣，他可能害了 Higardi 。因為沒有 Destinae Dominus ，我們就無法登昇！"
+ },
+ {
+  "id": 71,
+  "src_sha256": "175082b755722701af760b00906295bc966df642b09236094f7d87f0e8cf381f",
+  "zh": "Astral Dominae 蘊含生命本身的能量。 Phoonzang 在我們世界誕生之初造出了它。現在 Dark Savant 宣稱他擁有它。生命的能量落在最糟糕的人手裡了。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "fc09dd3388db1ac7f93e8d624eeb426cfed1d834e9657a631224097979ca31ec",
+  "zh": "Cosmic Lords 把他們所有的知識都封入 Destinae Dominus 。接著 Lords 把它交給 Higardi ，作為永恆的信物，象徵 Higardi 有朝一日會登昇，到 Cosmic Circle 與 Lords 同列。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "6707c59a72b002a2085531177826bcd96e6c983b621e807db6c41b8b382d7e00",
+  "zh": "它被一個名叫 Marten 的人偷走，他帶著它消失了。現在 Destinae Dominus 已湮沒在歷史中——我苦苦尋找了很久，毫無所獲。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "eaa1dceff2c04447fc8869b53e17eef3b4de5bbe9d09966174c7809e7b4508f2",
+  "zh": "一件蘊含變化與混沌的能量的物品。 Cosmic Lords 創造了它，並把它藏在遠離這個世界的地方。預言說 Chaos Moliri 會在 Ascension 之時回到 Dominus 。那個時刻已經到了，所以我正在尋找這件珍貴的神器。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "124dba8f2d38e75c0c384c06d541a1d0d759c4c6114087c62828f6bd0bd46378",
+  "zh": "預言指出，終有一天凡人將進入 Cosmic Circle ，獲得 Cosmic Lords 的能量。那個時刻稱為 Ascension 。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "92c90d637ad9e574f834a7b63ecd9030a71967a54ae85edb270c57965475ba5d",
+  "zh": "我對這種事沒興趣。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "5e4659645d9d7d33d8fc7f4f9637508b367af8d33a4d6dde0d982ed8cc41414f",
+  "zh": "我是 Anselm ， Brotherhood of the Ascension 的成員。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "0e330a6f7054f521f5a2d15cd1d3f30ba8ed79b97a076f66bd8a1530aa6b0b01",
+  "zh": "真是奇特的命運（ destiny ）。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "aeae95b5aa499858133cbf26026d191dc56543e4852765e0d9e9bf0c98ad6c54",
+  "zh": "我不會回應那個。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "08c18e3a7f00b895fc10909829d675e3b8fdebc5b2c93e83613dab207b450a87",
+  "zh": "我辦不到，因為靈魂是不滅的。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "2d8bd7d9bb5f85ba643f0110d50cb506a1fe439e769a22503193ea6046bb87f7",
+  "zh": "你好。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "d69d05c391f8e736bb55a1527937abfd612acc90f1b35ab3d92cd1b8730dc96f",
+  "zh": "我們會再見面的。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "2052275a555354048a164633ec29d970cf95452402b7c341e16ee5307cb0f3ea",
+  "zh": "現在我只能幫助（ help ）我的族人。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "dc46cad9f93c52fa01672c3f918c12ad60f002861c66ebeba65b31a4d5a4295e",
+  "zh": "我真的沒什麼可以給你們的。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "bc92847b7d93edc3873681e53371806ed73e6109bb40086c67b1742c84b669e0",
+  "zh": "以眼前這種危急情勢來說，我已經算很好了。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "b58675e41fb70b9bd0aeea7bde349f6435361dd15e8dba84b581e82bd184fede",
+  "zh": "如果你們有什麼東西……"
+ },
+ {
+  "id": 92,
+  "src_sha256": "7f776be0b545e1335befe7b63fada17f5af842d7ed47faf38556c78df710c40d",
+  "zh": "Savant 肯定有什麼弱點。也許他的 Rapax 盟友知道……"
+ },
+ {
+  "id": 93,
+  "src_sha256": "fb41a2dbdb78fa858a50d2ff0edb917fa279b7c84b37536fbce524f02fc889cf",
+  "zh": "要是我能到達 Ascension Peak ……但那樣 Arnika 就會被毀了。也許他們能代替我們到達那裡……"
+ },
+ {
+  "id": 94,
+  "src_sha256": "2497229493a75073590e569e68dd5d7f436d7c82949842a40808b722c12cc8a0",
+  "zh": "我祈禱 Braffit 和其他人平安無事。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "2e45503366fa17e70b33a5dc698c2c70f97452776e92dfd26ffebe6998e273dd",
+  "zh": "在 Arnika 。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "0a536f745614e68be07bdcab0ae2d10912ca60da37a17681ba8cc334006c9d5a",
+  "zh": "在 Trynton 。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "6a21b812a3e28630b99d86d1a29a1111eaed06c46ae17496eb8614626a2a6532",
+  "zh": "去沼澤找找。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "7ff0d965bee5fb2615dc8283418d0ae1a5e47a1ce5e4548c4db16a8287fd48ab",
+  "zh": "去 Marten's Bluff 找找。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "b103ed8a241c0ac7ef7c958878b6edab4f00c374a68178f64979811d93bf5a55",
+  "zh": "我相信 Rapax 有一座 Away Camp 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "8941570a08b6fdfc6208e1b4a74f7c98b2a445f4adf3007011aca32ca6491617",
+  "zh": "我建議去 Mt. Gigas 。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "eeb032713ae5094ddc8f1e13d6ee578964ae2e5c63e65a32b431c8d2cbe51448",
+  "zh": "Rapax Rift 。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "a6dbd8f6a09e25c9f756bfdd4a34db734cd880f87f98dde6c10a3534a1bcaa88",
+  "zh": "Rapax Castle 。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "edba30a3515e1ce169fb351f9fccabfd654cd2989af55b7623f219a48540c452",
+  "zh": "在 Ascension Peak 上。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "5c4338c1ba74cf323303d7c2e44c22ca8736637acecf29cb215e5cf2acb5d1d3",
+  "zh": "在 Cosmic Circle 裡。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "60a364878171577e681147c4d072f2b347d963bad4dc6cb7218cc5e4fef9f322",
+  "zh": "就在這裡。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "這無關緊要……"
+ },
+ {
+  "id": 108,
+  "src_sha256": "0962c922b2d51df29d6aa25d141aecc426360de3b19262ed5aeb7e68d1f6bdf2",
+  "zh": "在 Bayjin 。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "585f5702a86920c005746bdb7f6fc6c1aa44ba8e3d7f82401aec5915b35bbcbd",
+  "zh": "是的，我是 Brotherhood of the Ascension 的領袖。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "b4e965c9292c437b6d40fb9571d687e823b6b35248477754b7caf269e5ba2a16",
+  "zh": "我們奉獻給 Cosmic Circle 的 Lords 。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "0a02e9ca0c4c9ad758f1347261a90c36560fbb911ff4c837cead29adfec6b655",
+  "zh": "真是好消息！我已經開始失去希望，以為我們永遠找不到它了。可是…… Savant 發誓只要有任何 Higardi 試圖把神器帶到 Ascension Peak ，他就要毀滅 Arnika ！如果我們登昇，就等於害死自己的族人。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "7b2324f88c70f20c448d8af0845b81336f1b61d039fe968dfe322c5c5c5814df",
+  "zh": "不，我們自己的手被綁住了。你們是我們唯一的希望。我真心相信是 Lords 派你們來阻止 Savant 登昇的。因為如果他登昇了，後果將是橫跨百萬個世界的無盡惡夢！"
+ },
+ {
+  "id": 114,
+  "src_sha256": "aa8b43faf6dce11b6e9732de81cf6770ef14acc956af4f3d7dd1363fa967e539",
+  "zh": "你們最好自己留著。而且千萬別讓人看見！"
+ },
+ {
+  "id": 115,
+  "src_sha256": "8280ee0e5c54e134cffa274d014fd2921f8c886f2e50edfbf59d7a4b488eee5e",
+  "zh": "是的，一顆離這裡非常非常遙遠的星球。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "703d5cbfdcac75352f9cf01f30b34eedbb015190a5ee90a7bcaa669bfef1dbb4",
+  "zh": "我們是個古老的教團。我們守望並等待 Ascension 的徵兆。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "d2089a79349eba63ad1eb19f3c202b18fc7f9f5078bfb6e6b5ee80445ca70132",
+  "zh": "據我所知，他最後是在 Arnika 。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "14e84343bfe376f81c3a469d138c2caa4b69c61eb1701228a1518cad42c1e26d",
+  "zh": "我們正在尋找 Destinae Dominus 、 Chaos Moliri 與 Astral Dominae 。一切跡象都顯示現在就是 Ascension 之時，預言也說我們將集齊神器，帶到 Ascension Peak 。但是事情卻出了可怕的差錯。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "bc1d4cd1d19e9c95085e2bf69b60c6714c3b5026c2603813363f39cd9fb32d43",
+  "zh": "Dark Savant 出現了，宣稱他擁有 Astral Dominae 。現在 Savant 掌控了 Arnika 城！預言中對此隻字未提……而如果預言是錯的，誰知道會發生什麼事……"
+ },
+ {
+  "id": 120,
+  "src_sha256": "6d02d1b02907ed8f50a0110dbaddde625c6ca648408acebfd737218f53ab6c88",
+  "zh": "預言指出，有一天 Higardi 將登昇，到 Cosmic Circle 與 Cosmic Lords 同列。 Lords 把 Destinae Dominus 交給 Higardi ，作為他們承諾的信物。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "2d2e27bbd30aa463308077220dc6bbb46e269e942bebe87ccf8017f3486554a2",
+  "zh": "是的， Brotherhood 一直興致勃勃地關注著你們的事蹟！"
+ },
+ {
+  "id": 122,
+  "src_sha256": "a55aa890c60a96af266951d01d4d0786dfe136da374916458f47368ceb10a739",
+  "zh": "我擔心它會毀了我們所有人……"
+ },
+ {
+  "id": 123,
+  "src_sha256": "9229a9cddec532b568a4de6e988b6863841614754106671881011f82d62c5e33",
+  "zh": "Savant 派他們來折磨我們！"
+ },
+ {
+  "id": 124,
+  "src_sha256": "fb3f7bfa081a0d49a86b6d8d4827cd13bf1e6d3258005dc04ec2b311f12cb44b",
+  "zh": "是的，如我所說……"
+ },
+ {
+  "id": 125,
+  "src_sha256": "5f7e57bd96b2b17d1f9e79de7020399c7cf75c5ad06c9b8f069f49e80eb1e977",
+  "zh": "在這裡的北邊。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "d1a225fd7ff3d7b759d029ce91c360b1721a081aed3bfb611aef01b5092d971a",
+  "zh": "在這裡的南邊。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "23fda7526d97fe0c615ee3a9456074022de4723f64566a5eb98de55bca076c92",
+  "zh": "在東邊。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "7dd2e3c56dfc35026e84bf36443c8363dc0a606956f08c20f71c1f960b3b7d8b",
+  "zh": "在西邊。"
+ }
+]

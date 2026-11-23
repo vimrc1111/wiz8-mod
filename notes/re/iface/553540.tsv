@@ -1,0 +1,15 @@
+call	4e5720	monster_template	依怪物模板索引取得已載入的模板；模板提供基本物理吸收率
+call	517970	dice	投擲週期傷害骰；效果威力只縮放骰數並保留低八位
+call	5459b0	monster_physical_absorption	動態有號吸收率加模板無號吸收率；百分比傷害取整並把負結果歸零
+call	52bb60	monster_lose_hp	生命扣除入口；先處理傷害護盾，非致命傷害連動耐力與疲勞
+data	4	無關	清理呼叫參數的堆疊大小，非遊戲資料
+data	8	無關	堆疊上的區域顯示旗標位置，非絕對資料位址
+data	c	無關	堆疊保存位置，非絕對資料位址
+data	e	無關	解碼產物中的位移，沒有獨立的絕對遊戲資料存取
+data	fffffffffffffffc	無關	堆疊區域變數的負位移，非絕對遊戲資料位址
+data	65be1c	combat_rules	戰鬥規則記錄指標，週期物理傷害骰位於記錄的 0x2f76
+data	6836a8	party_state	隊伍狀態指標；累計本次吸收後、護盾前的傷害
+data	68510c	combat_message_flag	傳給生命扣除入口的兩個訊息旗標，不更改本案例的數值規則
+field	eax+0x0	effect_power	效果威力 i32；全值決定是否觸發，低八位縮放骰數
+field	eax+0xa1a	party_periodic_monster_damage	隊伍累計週期怪物物理傷害 u32，加法保留低三十二位
+field	ecx+0x2f76	periodic_monster_physical_dice	四位元組骰記錄：i16 基值、u8 骰數、u8 面數

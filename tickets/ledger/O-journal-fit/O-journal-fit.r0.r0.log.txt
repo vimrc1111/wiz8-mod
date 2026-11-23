@@ -1,0 +1,1 @@
+FAIL journal-fit：截圖被切的譯文、空登記仍綠

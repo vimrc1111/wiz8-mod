@@ -1,0 +1,26 @@
+call	2b6	character_slot_must_be_occupied	srAssertFail 的分析標記；所選隊伍角色的 occupied 位元組必須非零，否則停止於前置條件斷言（0x52adff）
+call	52dd20	character_injury_event_clear	以事件 ID 與角色索引清除事件表中的單一角色位元；其他角色的事件位元保留（子函式 0x52dd5b–0x52dd82）
+call	52dd90	character_injury_event_present	檢查事件表是否含所選角色位元，決定是否清除；事件 ID 經 0x5ee718 分界與 0x5ee70c 第二區基址換算（0x52dd90）
+call	590950	character_healing_notification	滿血選全回復訊息，未滿血選含回復量的訊息；子函式格式化角色名稱與姓名色彩，不改 HP 或事件表（0x52ae61、0x52ae79）
+data	4	characterIndex_argument	第一個 cdecl 參數為隊伍角色索引；分析器列出的堆疊位移，不是資料表
+data	8	healAmount_argument	第二個 cdecl 參數為 32 位回復量；加法保留無號溢位
+data	c	notify_argument	第三個 cdecl 參數低位元組控制回復訊息
+data	5ebaf4	occupied_slot_assert_import	srAssertFail 匯入槽；不允許對空角色槽回復 HP
+data	5ed900	majorInjuryClearPercent	第二層 HP 百分比門檻；達標才檢查第二及第三種受傷回應事件（0x52aee7）
+data	5ed904	minorInjuryClearPercent	第一層 HP 百分比門檻；達標才檢查第一種受傷回應事件（0x52aeb0）
+data	5ee590	majorInjuryEventId	第二層門檻達標後清除的第一個事件 ID；名稱描述本節點角色，未宣稱已知顯示文字
+data	5ee594	minorInjuryEventId	第一層門檻達標後清除的事件 ID；名稱描述本節點角色，未宣稱已知顯示文字
+data	5ee5f8	injuryResponseEventId	第二層門檻達標後清除的另一個事件 ID；與前兩者同用角色位元表
+data	61a710	無關	空角色槽斷言的條件診斷文字；不參與回復計算
+data	61c8ac	無關	斷言的原始碼檔名；不參與回復或事件清理
+data	683fd7	party_event_state	事件管理物件指標；子函式讀 +0x68 的事件位元表指標
+data	685174	party_characters	角色主記錄陣列指標；以索引乘 0x1862 選取角色
+data	685178	party_character_slots	角色槽陣列指標；以索引乘 0x106 選取 occupied 與姓名色彩記錄
+data	68c09c	healing_message_catalog	訊息字串指標物件；+0x960 是全回復格式，+0x968 是部分回復格式
+field	eax+0x968	partialHealingMessageFormat	訊息目錄中的部分回復格式指標；以角色索引和回復量格式化
+field	eax+edx*2	character_slot_occupied	所選角色槽的 occupied 位元組；edx*2 等於角色索引乘 0x106，非零才能呼叫本節點
+field	ebx+0xb0d	character_maximum_hp	所選角色最大 HP，u32；回復後封頂值
+field	ebx+0xb11	character_current_hp	所選角色目前 HP，u32；零與等於最大 HP 時直接回傳，其他值相加後無號封頂
+field	ecx+0x960	fullHealingMessageFormat	訊息目錄中的全回復格式指標；回復後 HP 等於最大 HP 時選用
+field	edi+ecx*1+0xb0d	character_maximum_hp	事件判定時重新讀最大 HP；百分比以 u32 乘 100 後除以此值
+field	edi+ecx*1+0xb11	character_current_hp	事件判定時重新讀回復後目前 HP；edi 是所選角色主記錄的相對位移

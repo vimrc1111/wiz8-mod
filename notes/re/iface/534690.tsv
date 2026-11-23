@@ -1,0 +1,19 @@
+call	4e5620	monsterRecordByHandle	依列表索引取得怪物即時記錄，子函式原樣執行；案例列表項皆為有效記錄。來源 0x534725。
+call	505d20	monsterRelationBlock	在行動怪物的關係列表中找第一筆指名該怪物的記錄，回傳其記錄或空；子函式原樣執行，calc 以關係迴圈重現。來源 0x534761。
+call	546f80	monsterMonsterHostility	兩怪物陣營相異且皆非零、非特殊模板，且無同派系同魅惑狀態時回 1（敵對）；calc 以 hostile 閉包重現，含模板派系 +0x25f 與魅惑 +0x8b。來源 0x546f80..0x547006。
+call	5e2c70	listCount	取列表項數（空指標為 0）；案例列表由計數輸入。來源 0x53471d、0x534784。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	683fad	activeMonsterList	目前活動怪物列表全域指標；arena 配線，項數與項目由輸入決定。來源 0x53470f、0x534778。
+data	685174	characterRecords	隊伍角色記錄陣列全域指標，步長 0x1862；arena 配線。來源 0x5346b3。
+data	685178	characterSlotRecords	隊伍角色副表，步長 0x106 的占用旗標；arena 配線。來源 0x5346be。
+field	ebp+0x28a	monsterBusy	行動怪物忙碌旗標 u8，非零即不可行動，回傳 0。來源 0x534696。
+field	ebp+0x34c	monsterPartyScan	行動怪物是否檢查隊伍角色旗標 u8，非零才掃八名角色。來源 0x5346a9。
+field	edi+eax*1+0xb11	characterCurrentHP	角色目前 HP u32，須大於 0 才參與否決。來源 0x5346ca。
+field	edi+eax*1+0xb01	characterMainStatus	角色主狀態 u32，18 起不參與否決。來源 0x5346d5。
+field	esi+ecx*1	characterSlotActive	角色副表占用旗標 u8，零則略過該角色。來源 0x5346c4。
+field	esi+0x14	monsterActive	列表怪物啟用旗標 u8，零則略過。來源 0x534733。
+field	esi+0x2b	monsterCurrentHP	列表怪物目前 HP u32，零則略過。來源 0x53473a。
+field	esi+0x107	monsterMainStatus	列表怪物主狀態 u32，18 起略過。來源 0x534741。
+field	esi+0x15	monsterVisible	列表怪物可見旗標 u8，零則略過。來源 0x53474a。
+field	eax+0x4	relationBlocks	關係記錄的阻擋旗標 u8，非零否決行動；記錄由 505d20 回傳。來源 0x53476d。

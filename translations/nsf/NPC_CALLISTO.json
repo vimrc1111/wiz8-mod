@@ -1,0 +1,92 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "5dcf40ce3b9c17c96238a0ea6430723eb2d90f43644e7851236cd0f3b7de9b68",
+  "zh": "您好。這裡是 Mook 船艦 Callisto 。目前保全（ security ）緊急狀態生效中。請勿干擾本船，否則本艦將被迫啟動防禦程序。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "48eeed501bff229bd5a0f7112efdfa664f1f8406f502d20e2587875aec3b0f12",
+  "zh": "這裡是 Mook 船艦 Callisto 。請勿驚慌。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "48eeed501bff229bd5a0f7112efdfa664f1f8406f502d20e2587875aec3b0f12",
+  "zh": "這裡是 Mook 船艦 Callisto 。請勿驚慌。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "90ca2c6c19af84a151da91ff369ecc357be34cfbd4c1d3aaaa650502faa45fb7",
+  "zh": "那不是需要關切的事項。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "df57ca0c0ccc3801b6d92f2c851a0d40cf653789cc51b3bbb9144d8a88231360",
+  "zh": "該議題與本艦防禦無關。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "ccfee5a7d83328a70460bb8286f494678da188c4c7107057e105feab2afcb38c",
+  "zh": "你們說的毫無道理。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "4aa8419578ad3b6649d0ea94c05c115d81b9f98d3a763dba6af89f91ad57bc5d",
+  "zh": "你們在胡言亂語。"
+ },
+ {
+  "id": 51,
+  "src_sha256": "b7e591f9ffb9ef51f69eb2bc0aa51aae8995b56d793c4daa180d9d6c22da8664",
+  "zh": "Mook 此行是為了和平探索。請勿驚慌。請勿干擾。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "91a8fd426d85e71f93057601181461f17b5f19c3db3a17fc3707588ec7a685c3",
+  "zh": "那位名為 Dark Savant 的存在在城裡擁有大批部隊，並有一艘強大的星際戰艦—— Black Ship ——在這顆行星軌道上。與該存在打交道時，務必極度謹慎。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "9df95d6bc73e2b66eda97f1ebbf883bb982e06fef3fcb71e4b13940621ef627e",
+  "zh": "我是 Callisto Mook 船艦。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "5eb3ac8f810effbb5af481021798bf9c97dc55995622cbf970059efe3c98ae30",
+  "zh": "您好。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "3a90396ad94b5c221fcb20016efd560b429c61b76fcf726b691e4979cdcfb132",
+  "zh": "正在關閉使用者介面。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "9ab2aa06579300b355297691fe17f3b1956ba9e379682815dbe238fcd0f296cb",
+  "zh": "我正以最高效率運作。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "af0eb3b3f6046b75ee7d0cb88fbedf25fc1540ff403e5d37e9309cb538d722f8",
+  "zh": "Black Ship 在整個宇宙無人不曉。若得知該艦在領域內，請極度謹慎。警告：該艦已知位於領域內。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "7d1d992d2b56cff17bca90a0ffd62c6b97eb909a1cf4708b4cda4d6c0db52e58",
+  "zh": "我沒有那個答案。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "d4ccefa98b296520ad4335b30b95d96aaa3f662837f5d3a1adfc5c5c3fc56c91",
+  "zh": "Dark Savant 的敵對部隊就在附近，因此本艦已進入保全（ security ）警戒狀態。你們「不得」進入本艦。擅自動本艦將導致死亡或意外肢解。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "5e7be3caa6b1f769f5eb5bd5a821bdadfdbf446086b641b442ebb7f89f3d4063",
+  "zh": "本艦已準備好動用最大武力自衛。為了你們自身的安全，請退開。真的。我是認真的。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "a9900284e26b3ed4677a405672905484ee5648de6d7cd1689558ba1dbff55746",
+  "zh": "這裡是 Mook 船艦 Callisto 。"
+ }
+]

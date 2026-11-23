@@ -1,0 +1,17 @@
+call	51d800	item_activation_allowed	逐一檢查裝備與背包實例的物品是否可啟動（職業、種族、性別、屬性、技能、裝備位置、剩餘次數）；calc 直接呼叫既有節點 itemActivationAllowedNode，選中記錄欄位皆為輸入。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff68	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff69	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	68516c	item_definition_records	物品定義庫指標；依實例的定義編號選記錄，stride 269，arena 提供合成資料，不複製 exe 表。
+data	687610	spell_use_count_table	每筆 16 bytes、共 150 筆；+0 為以角色索引計的使用次數，函式結尾加一。
+data	687614	spell_available_count_table	每筆 16 bytes、共 150 筆；+4 為各法術的可用計數，本函式對已旗標的法術加一。
+data	687624	spell_available_count_table_entry1	同 687614 表的第二筆（迴圈計數起點旁的位址常數），欄位語意相同。
+data	687f74	spell_available_count_table_end	可用計數表的結尾界限，共 150 筆。
+field	edi+0x0	instance_item_definition_index	裝備／背包實例的有號定義編號，-1 為空位略過。
+field	edi+0x5	instance_remaining_charges	實例剩餘使用次數 u8；充能類型 2 或 4 且為零時不計入。
+field	esi+0x63	item_spell_id	物品定義的法術編號 u8；零表示無法術，作為旗標陣列索引。
+field	esi+0x66	item_charge_mode	物品定義的充能類型 u8；值 2 或 4 時要求實例剩餘次數非零。
+field	esi+ecx*1+0x63	item_spell_id	同 esi+0x63，第二輪（背包）以另一暫存器取同一欄位。
+field	eax+0x0	spell_available_count_entry	可用計數表的一筆（迴圈指標），旗標成立時加一。
+field	edx+0x687610	spell_use_count_entry	以角色索引左移四位定位的使用次數，函式結尾加一。

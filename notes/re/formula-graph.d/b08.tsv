@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+549ef0	非公式	-	attack_sound		讀物品+0xc5選攻擊音效後播放，輸出是聲音呈現；build/wiz8.asm:448262；notes/re/combat-timing.md:53。
+549f50	非公式	-	weapon_hit_sound		讀武器與角色裝備材質選命中音效，亂數只選聲音變體；build/wiz8.asm:448385。
+54a0e0	排除	-	monster_hit_sound		命中音效：讀物品 +0x165 材質與角色 +0xf5d／怪物 +0x263 護甲材質選音效，經 5499d0→404bf0 播放（fopen 音效檔、0x68d850 名稱表由 549b00 從檔載入），次數參數 1 不抽亂數；545090 兩呼叫點 0x5453f7、0x54548b 回傳皆不讀（0x545408 即覆寫 eax；0x5454b2 後直接返回）（呈現副作用 helper，MG 2026-10-09 decisions/2026-10-09-io-and-presentation-stubs.md；原歸非公式，改排除以便位址樁）；build/wiz8.asm:448501。
+54a270	非公式	-	impact_sound		依物品材質選碰撞音效，亂數結果送往音效播放；build/wiz8.asm:448629。
+54a400	非公式	-	item_database_load		讀ITEMS.DBS筆數與每筆0x10d位元組至物品庫，是資源I/O；build/wiz8.asm:448746；notes/re/combat-2.md:85。
+54a4f0	非公式	-	item_database_free		釋放物品定義庫記憶體，沒有規則量計算；build/wiz8.asm:448769。
+54af30	非公式	-	character_storage_allocate		配置角色主表與副表並清零，僅建立資料容器；build/wiz8.asm:449843。
+54b100	公式	D4	starting_party_resources	startingPartyResourcesNode	讀新隊伍初始化情境，建立起始物品並將隊伍金錢0x685189設為500，輸出初始可用資源；build/wiz8.asm:450052。
+54b300	非公式	-	portrait_state_initialize		角色主狀態只選呈現狀態，亂數5000再加5000轉為頭像狀態+0x95的計時值；build/wiz8.asm:450184，build/wiz8.asm:450189。
+54b470	非公式	-	character_aux_initialize		清零角色副表並設定有效旗標與未選索引，屬資料初始化；build/wiz8.asm:450247。
+54ba00	公式	D4	spell_effect_dispatch	spellEffectDispatchNode	讀效果編號、+0xb4骰與+0xd4加成等參數分派規則，其中金錢損失由骰量計算後寫回0x685189；build/wiz8.asm:451409，build/wiz8.asm:451428。
+54c930	公式	D4	spell_reflection	spellReflectionNode	讀角色+0xa95/+0xa9d或怪物+0xd7/+0xdf反射效果，限制效果+0xd0強度並重送法術，消耗對應反射強度欄位；build/wiz8.asm:452065。
+54cbf0	公式	D4	party_buff_duration	partyBuffDurationNode	讀效果+0xd0威力、+0xd8/+0xdc時間與+0xd4加成，含亂數修正後寫隊伍0x68691f或怪物+0x10f的0x11步長效果槽之強度與時間；build/wiz8.asm:452150，build/wiz8.asm:452183。
+54cdd0	公式	D4	combat_spell_duration	combatSpellDurationNode	讀效果威力、時間與加成，計算持續時間並寫隊伍+0x7c1或怪物戰鬥副結構+0x3e的0x11步長法術槽，另累加施法貢獻；build/wiz8.asm:452290，build/wiz8.asm:452359。
+54d100	公式	D4	dispel_combat_spell	dispelCombatSpellNode	讀威力、骰量、加成與法術定義+0x56等級差，削減或移除隊伍+0x7ce及怪物戰鬥副結構+0x4b效果剩餘時間；build/wiz8.asm:452593。
+54d380	公式	D4	combat_buff_duration	combatBuffDurationNode	讀效果+0xd0/+0xd8/+0xdc/+0xd4計算含亂數的時間，寫隊伍+0x85a或怪物戰鬥副結構+0xd7效果槽之強度與時間；build/wiz8.asm:452792。
+54d5c0	公式	D4	spell_status_application	spellStatusApplicationNode	讀發動率、效果威力時間與法術+0x133領域，先擲百分骰再交免疫抗性入口，輸出角色+0xa01或怪物+0x57起的狀態時間及效果+0x125成功旗標；build/wiz8.asm:452903，build/wiz8.asm:452996。
+54dbe0	公式	D4	spell_status_fallback	spellStatusFallbackNode	讀發動率、時間與強度，百分骰通過後先試主要狀態再於抵抗時試替代狀態，輸出目標狀態時間與效果成功旗標；build/wiz8.asm:453399，build/wiz8.asm:453493。
+54df00	公式	D4	cure_and_resurrection	cureAndResurrectionNode	讀威力、狀態時間及角色+0xb0d/+0xb19上限與+0x111/+0x125屬性，計算解除率或時間減量，復活時寫+0xb11生命與+0xb1d體力且至少1；build/wiz8.asm:453739，build/wiz8.asm:453766。
+54e3f0	公式	D4	spell_timed_buff	spellTimedBuffNode	讀效果威力與時間加成，算亂數持續時間並抵銷角色+0xa15或怪物+0x6b相反效果，再將餘量與威力交增益套用入口；build/wiz8.asm:454024，build/wiz8.asm:454040。
+54e610	公式	D4	random_spell_effect	randomSpellEffectNode	讀效果威力時間與目標，以百分骰40/80/90/95分界選狀態、體力回復或增益，輸出所選規則效果與目標資源變動；build/wiz8.asm:454229，build/wiz8.asm:454231。
+54e950	公式	D4	spell_damage	spellDamageNode	讀效果+0xb4骰、+0xd4加成、+0xc8強度與法術+0x133領域，抗性削減後交生命扣除入口，輸出角色+0xb11或怪物+0x2b生命；build/wiz8.asm:454528，build/wiz8.asm:454578；notes/re/formulas-2.md:35；notes/re/combat-2.md:61。
+54ec80	公式	D4	spell_drain_resources	spellDrainResourcesNode	讀效果骰強度領域及目標生命，傷害以現有生命為上限並依效果編號回饋施法者，輸出目標生命與施法者生命、體力或法力；build/wiz8.asm:454827，build/wiz8.asm:454849。
+54f190	公式	D4	spell_hp_heal	spellHpHealNode	讀效果骰與加成及角色+0xb0d/+0xb11或怪物+0x27/+0x2b，回復量不超過生命缺額，寫現有生命並回傳是否全滿；build/wiz8.asm:455201。
+54f520	公式	D4	spell_stamina_restore	spellStaminaRestoreNode	讀效果骰與加成及角色+0xb19/+0xb1d或怪物+0x2f/+0x33，計算體力缺額與回復量後寫現有體力；build/wiz8.asm:455490。
+54f8c0	公式	D4	spell_stamina_drain	spellStaminaDrainNode	讀效果+0xb4骰與+0xd4加成，將正值交體力消耗入口，輸出角色+0xb1d或怪物+0x33體力下降；build/wiz8.asm:455754。
+54fa30	公式	D4	random_status_or_damage	randomStatusOrDamageNode	讀效果骰威力與時間，百分骰及0x61e208權重表選狀態或傷害，輸出目標狀態時間或生命並累加效果+0x12e起的計數；build/wiz8.asm:455900，build/wiz8.asm:455932。
+5500c0	公式	D4	summon_selection	summonSelectionNode	讀角色+0x5cb/+0x5f1/+0x617/+0x63d技能與效果威力，以技能加20作權重亂數選召喚類別，再由0x616f4c選生成組，輸出召喚怪物與+0x344歸屬；build/wiz8.asm:456499，build/wiz8.asm:456566。
+5507d0	排除	-	recall_location_transfer		召回傳送／位置轉移：子樹經 5611a0→56e800 UI 約 80KB；54ba00:54c1a6 回傳不讀（移動／放置，MG 2026-10-11 decisions/2026-10-11-numeric-only-scope.md；原歸非公式，改排除以便位址樁）；build/wiz8.asm:456996。
+5508e0	公式	D4	monster_spell_interaction	monsterSpellInteractionNode	不確定：事件0x69與0x16的規則效果未完整追到；讀目標、效果強度領域或怪物模板+0xd2/+0xd5，抗性或百分骰後輸出事件選擇與成功分支；build/wiz8.asm:457140，build/wiz8.asm:457148。
+550a00	公式	D4	monster_control_duration	monsterControlDurationNode	讀效果+0xd0威力、+0xc8強度與怪物抗性，對7倍威力做領域4抗性削減後將較強控制量寫怪物+0x2de；build/wiz8.asm:457314，build/wiz8.asm:457330。
+550c10	公式	D4	spell_resource_drain	spellResourceDrainNode	讀效果骰強度領域與加成，抗性後交角色法力消耗或怪物傷害入口，輸出角色+0xb15法力及+0xb1d體力或怪物+0x2b生命；build/wiz8.asm:457465，build/wiz8.asm:406168。
+5510b0	公式	D4	spell_item_destruction	spellItemDestructionNode	讀效果威力、物品+0x3e類別及角色隊伍物品數量，每單位以威力乘10的百分率判損失，遞減物品槽+4數量並移除空堆疊；build/wiz8.asm:457837。
+5517c0	公式	D4	spell_remove_curse	spellRemoveCurseNode	讀效果+0x94角色索引、+0xd0威力與+0xd4加成，解除狀態9並比較物品+0x85門檻以寫裝備槽+0xa解除旗標，輸出解除成功結果；build/wiz8.asm:458336，build/wiz8.asm:391464。
+5519c0	公式	D4	effect_duration	effectDurationNode	讀效果+0x20威力、+0x28/+0x2c時間與+0x24百分加成，保留9999特值，含四面亂數修正後回傳持續時間；build/wiz8.asm:458526，build/wiz8.asm:458542；notes/re/formulas-2.md:47。
+551a20	公式	D4	effect_quantity	effectQuantityNode	讀效果+4骰與+0x24百分加成，擲骰並套用量加成後回傳規則效果量；build/wiz8.asm:458559，build/wiz8.asm:458568；notes/re/formulas-2.md:35。
+551ba0	公式	D4	status_immunity_and_resist	statusImmunityAndResistNode	讀目標主狀態、能力與怪物模板+0x1be/+0xcb及0x6171a8類別表，先判硬免疫再擲抗性，通過時輸出角色+0xa01或怪物+0x57起的狀態時間並回傳抵抗布林；build/wiz8.asm:458812，build/wiz8.asm:458918；notes/re/formulas-2.md:27；notes/re/abilities.md:27。
+551eb0	公式	D4	status_duration_after_resist	statusDurationAfterResistNode	讀目標等級抗性、領域與時間強度，削減時間並抵銷角色+0xaa9或怪物+0xeb相反效果，將有效時間交套用入口寫+0xa01/+0x57狀態陣列；build/wiz8.asm:459008；notes/re/formulas-2.md:47。
+5520d0	公式	D4	status_resist_roll	statusResistRollNode	讀角色+0x89/+0xee1或怪物模板+0x24f/+0x176與實例+0x217及0x6172a0狀態加值，難度調整後限制5至95擲百分骰，回傳抵抗布林且可能觸發技能成長；build/wiz8.asm:459281，build/wiz8.asm:459304；notes/re/formulas-2.md:25。
+552250	公式	D4	resistance_quantity_reduction	resistanceQuantityReductionNode	讀輸入量、領域、強度與目標等級抗性，兩次亂數構成至多100的削減百分比，寫回量指標且9999原樣保留；build/wiz8.asm:459394；notes/re/formulas-2.md:45；notes/re/combat-2.md:71。
+552410	公式	D4	monster_mental_resist_roll	monsterMentalResistRollNode	讀怪物+0x107主狀態、模板+0xcb類別與+0x24f等級及+0x17a和實例+0x21b抗性，硬免疫後將抵抗率限制5至95擲骰，回傳抵抗布林；build/wiz8.asm:459534。
+552530	公式	D4	clear_combat_buffs	clearCombatBuffsNode	讀隊伍+0x7c1/+0x85a及怪物戰鬥副結構+0x3e/+0xd7效果槽，清強度時間與啟用狀態後重算效果，輸出戰鬥暫時增益消失；build/wiz8.asm:459618。
+5526f0	公式	D4	ongoing_spell_tick	ongoingSpellTickNode	讀持續法術槽編號威力加成、法術骰及目標抗性，逐目標結算生命體力法力扣除或狀態套用，輸出角色與怪物資源及狀態欄位；build/wiz8.asm:459855，build/wiz8.asm:460155。
+552ef0	公式	D4	ongoing_area_spell_damage	ongoingAreaSpellDamageNode	讀持續法術0x3e威力與法術定義骰，對區域目標計算威力縮放傷害並抗性削減，交生命扣除入口寫怪物+0x2b；build/wiz8.asm:460583。
+553350	公式	D4	periodic_character_physical_damage	periodicCharacterPhysicalDamageNode	讀效果威力、0x65be1c所指資料+0x2f76骰與角色物理減傷，擲骰扣吸收後寫角色+0xb11生命並累計隊伍+0xa1a傷害；build/wiz8.asm:460779；notes/re/abilities.md:19。
+553540	公式	D4	periodic_monster_physical_damage	periodicMonsterPhysicalDamageNode	讀效果威力、0x65be1c所指資料+0x2f76骰與怪物物理減傷，吸收後傷害交生命扣除入口寫怪物+0x2b並累計隊伍+0xa1a；build/wiz8.asm:460905。
+5535d0	公式	D4	character_physical_damage	characterPhysicalDamageNode	讀指定傷害量與角色物理減傷，吸收後正值交生命扣除入口寫角色+0xb11並累計隊伍+0xa1e傷害；build/wiz8.asm:460973；notes/re/abilities.md:19。
+553770	公式	D4	monster_physical_damage	monsterPhysicalDamageNode	讀指定傷害量與怪物物理減傷，吸收後正值寫怪物+0x2b生命並累計隊伍+0xa1e傷害；build/wiz8.asm:461103。
+553910	非公式	-	status_field_get		只回傳角色+0xa01或怪物+0x57指定狀態欄位，附帶搬出毒量欄位，沒有轉換或新判定；build/wiz8.asm:461216。
+553f10	公式	D4	natural_skill_growth	naturalSkillGrowthNode	讀角色+0x69職業、+0x19f技能裸值與+0x1a7資質，百分骰成功累積+0x1ab至8才增裸值，再合成上限125的+0x1a3有效值；build/wiz8.asm:461807；notes/re/growth.md:19。
+554170	非公式	-	skill_growth_message		讀角色名稱與技能值作格式化文字，職業加成只用於訊息顯示，輸出字串緩衝；build/wiz8.asm:461980，build/wiz8.asm:462027。
+5542e0	非公式	-	skill_growth_notification		掃描成長提示旗標並呼叫文字格式化與訊息顯示入口，清除通知旗標；build/wiz8.asm:462112。
+554490	公式	D4	best_party_skill	bestPartySkillNode	讀角色副表有效旗標、角色+0xb11生命、+0xb01主狀態與+0x1a3技能，選可行動隊員最大技能，回傳技能量並寫最佳角色索引；build/wiz8.asm:462215，build/wiz8.asm:462222。
+5545f0	公式	D4	formation_reconcile	formationReconcileNode	不確定：隊形重排可能是UI同步，未完整追到規則消費端；讀角色生命主狀態與隊形槽，依每區至多3人的容量重安置隊員並寫隊形區位及槽號；build/wiz8.asm:462508，build/wiz8.asm:462576。
+5549e0	公式	D4	formation_movable	formationMovableNode	不確定：此資格判定可能只控制隊形UI操作；讀角色+0xb11生命與+0xb01主狀態，輸出生命非零且主狀態低於13的可移動布林；build/wiz8.asm:462658，build/wiz8.asm:462662。
+554a20	非公式	-	formation_copy_to_party		將0x687511的132位元組隊形直接搬入隊伍+0x920，沒有重排或容量判定；build/wiz8.asm:462690。
+554a60	非公式	-	formation_copy_to_ui		比較並搬移隊伍+0x920隊形至0x687511，變動後更新顯示，屬資料同步；build/wiz8.asm:462717。
+554e70	公式	D4	formation_restore_after_status	formationRestoreAfterStatusNode	不確定：狀態改變後隊形維護可能只屬UI整理；讀角色+0xb01與隊形容量，主狀態至少18時記先前區位至槽+0x15並移除，恢復時按空位寫回區位與槽號；build/wiz8.asm:463097，build/wiz8.asm:463144。
+555fa0	非公式	-	formation_roster_cleanup		按角色副表有效旗標移除不存在隊員的隊形記錄，未計算生命狀態或新容量規則；build/wiz8.asm:464685。
+5560a0	公式	D4	special_ability_effect	specialAbilityEffectNode	讀角色+0x89等級與+0xb19/+0xb1d體力或怪物模板等級和+0x2f/+0x33，依體力比與等級算強度並擲效果量與發動骰，輸出目標生命體力法力或狀態；build/wiz8.asm:464819，build/wiz8.asm:465172。

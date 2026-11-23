@@ -1,0 +1,22 @@
+call	40efa0	rollPercentDie	持續時間加 1 後擲一次 R(4)，決定是否再加 1
+call	517f90	percentAdjustInPlace	原地把持續時間加上 持續時間×百分修正÷100（乘積取低 32 位、無號除）；非公式輔助，由本節點原生執行
+call	2b6	無關	擷取器誤判：斷言是經 IAT 槽 5ebaf4 的間接呼叫，2b6 非函式位址；斷言路徑 cov-exempt
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）
+data	5ebaf4	無關	斷言失敗入口的 IAT 槽（srAssertFail），只在斷言分支被呼叫，無返回值可差分
+data	61a944	無關	斷言用的條件字串，只傳給斷言入口
+data	61e2c4	無關	斷言用的原始檔名字串，也作為 4e5550 的來源檔名參數，不參與規則
+data	60f4f8	無關	斷言用的條件字串（怪物記錄存在），只傳給斷言入口
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	esi+0xd0	effectPower	效果威力，傳給角色／怪物增益套用入口的第 3 參數，也是持續時間乘數
+field	esi+0xd4	effectPercentBonus	百分修正，持續時間調整與套用入口的第 5 參數
+field	esi+0xd8	effectDurationBase	持續時間基量
+field	esi+0xdc	effectDurationPerPower	每點威力的持續時間加成
+field	esi+0xe4	effectMonsterCount	怪物目標數（有號，不大於 0 不處理）
+field	esi+0xec	effectMonsterIdArray	怪物目標 ID 陣列指標
+field	esi+0xf4	effectCharacterCount	角色目標數（有號，不大於 0 不處理）
+field	esi+0xfc	effectCharacterIdArray	角色目標 ID 陣列指標
+field	edx+eax*2+0xa15	characterConditionSlot5	角色 +0xa15（狀態槽 5 的時間），類型 5 時為待抵銷的相反效果時間
+field	ebx+0x6b	monsterConditionDuration5	怪物 +0x6b（狀態槽 5 的時間），類型 5 時為待抵銷的相反效果時間
+field	ebx+0x0	monsterRecordId	怪物記錄首 DWORD，即目標 ID，傳給怪物入口
+field	eax+0x0	characterTargetId	角色 ID 陣列元素，-1 為斷言，其餘作記錄索引

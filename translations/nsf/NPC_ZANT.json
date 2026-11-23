@@ -1,0 +1,1012 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "223e1cbed2f136e39bef2225c753e15b0fdce898e16544204cbb858594c7f942",
+  "zh": "是的……嘶……我一直在等你們到來。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "453e78d65bcc1214fd01882cc797a0f9ccdb2493f1bd2009c713342b279ea343",
+  "zh": "我沒什麼好對你們說的。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "ce68417528c8e0648b21163cfb244adfbd33089c0487366ef0d11c73bc9370df",
+  "zh": "我可沒那麼容易被說動。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "860e529eaf09ac0bc7a998299684d11af64feee4184f1763a0884cbb7fd4d3bb",
+  "zh": "你們的舊恐懼露出來了，朋友。也許你們聽說我們是暴力又殘忍的種族，所以覺得受到威脅。事實並非如此。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "55ad58478fb8c56f23cd6d42053f3cd8dec7e015c93dd973b81069caf06c1e08",
+  "zh": "我會等……"
+ },
+ {
+  "id": 8,
+  "src_sha256": "3630d6769bc4da9cfb372d6ab5bf40a4c40e320a757cb4050a96837f82a40f93",
+  "zh": "我會等到你們全心專注為止……"
+ },
+ {
+  "id": 9,
+  "src_sha256": "029066bdae1f6a0d6eaed94bb59d2d00f76b7e8d3dd883bac4c59b0d90a23486",
+  "zh": "我以為你們會很樂意加入我們……"
+ },
+ {
+  "id": 12,
+  "src_sha256": "296527a5d97d3e4dd4ecf74546b5a30e3ee8bfae8dbf88a8d10c64333d3c504b",
+  "zh": "是的……嘶……"
+ },
+ {
+  "id": 13,
+  "src_sha256": "ef78c885c2a03e8cb5fda576782e51b323415df1ec2376e5abea7dd80cc7dfbb",
+  "zh": "有你們在比較好……"
+ },
+ {
+  "id": 15,
+  "src_sha256": "a09591847510638322de7d88bb4b98059cbf638465ea41ca05f6d402fce73895",
+  "zh": "也許 Sadok 會有興趣。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "1e7cabefb1f2cb0c7c83c956de56fbf5dca0600ac918ccfb28e0a99025abd77c",
+  "zh": "想坑我，是嗎？！"
+ },
+ {
+  "id": 17,
+  "src_sha256": "86a51bb08281e386abffb2231b9a961a4537e930c314dcb3d34a2a891950c70c",
+  "zh": "這是我的東西！你們還想賣回給我？！小偷！！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "c83a79cdb42dccc2623559b034deda5a1a8afbbe033253fd1b495d1a87497eac",
+  "zh": "放尊重點，蠢貨！放尊重點！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "bffa83b13bf6a78be5ec97e3720e8c415bdb71a649ce00ef95f2e0bf440ac074",
+  "zh": "我佩服你們的勇氣，但建議你們把本事練好一點！小偷！！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "373c120ac8e13a81f2cf65cf24335770168acad718bbb3a04d8aee1e08a47457",
+  "zh": "我本來希望永遠不會走到這一步！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "8277b4957003ab2b74077a4880af97411352468a1f9840d4bedecf694d76d2e4",
+  "zh": "T'Rang 帝國已經受夠了……"
+ },
+ {
+  "id": 22,
+  "src_sha256": "d78baba771da1fd384221da65c54ef758ad2d3f6ec4fd82be54cc9aa9bdc1ca4",
+  "zh": "尚不確定……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "7020b4a9e1ea413e4e02fb60f5a314e1c59df99ddf49b6f2600dd08d9bde6712",
+  "zh": "那不重要……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "ed640cfafe661b540974d3f0ba6266075004c92f89157b25fd951683774ead95",
+  "zh": "耐心點。時機到了我自然會告訴你們……"
+ },
+ {
+  "id": 25,
+  "src_sha256": "ae7e66efac8d75062cbf3f4a27432d2114cd3ff763676d64a643ba8fedae9d68",
+  "zh": "這值得再說一遍……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "263a617e9c9e4aedf6d4976b795525634e5cc319818724134cf51635bb71d65f",
+  "zh": "一次專心做一件事比較好……"
+ },
+ {
+  "id": 27,
+  "src_sha256": "ca3cd2e1b41787d9249b25f3a54bf4dfc9e5e1c786392620067d2512f7aa2aeb",
+  "zh": "嘶嘶嘶……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "b72562d2da4e87a3ff9aca60a075fb8a8e977d058e8061ab22f6ac9a0c66a2e2",
+  "zh": "我在聽……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "31bcbf9fbeedd896571882ac794a9daf742b7f59e46fc6ee0ea3624fb010fd46",
+  "zh": "我們來談重要的事吧。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "0c1fbd14fd4007b2d16b0adaa8ac8adfe98437f959e0f356f575caa0db042077",
+  "zh": "我們有很多事要做。別浪費時間。"
+ },
+ {
+  "id": 31,
+  "src_sha256": "3388a9466d86e91809a96ee4486aba681ed923bbb6c2164c91dc68f19211f579",
+  "zh": "對 T'Rang 來說， Dominus 並不重要……只不過我們要在這裡阻止敵人（ enemies ）罷了。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "b3d015b98557df50aa20d3418f465b53296da98c75b8201ce85c37e271528a86",
+  "zh": "這是我們問題的一部分。 Dark Savant 的禍根就在其中……"
+ },
+ {
+  "id": 33,
+  "src_sha256": "2842ff4734747f829a99c8db0bccad46d76e6136af034c8ec86356fde84538f5",
+  "zh": "這與我們在此的任務無關。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "070a042fbdbf424aef1297bc6283fd73b0a46a1f224ec12850b6b654f8d7473c",
+  "zh": "Watchers 正在調查……我們相信這個 Marten 可能在那裡留下了某樣東西。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "6ad21641c6c788976c0cf45730f24bdad65d7386245ce132dfbc037b525a46bb",
+  "zh": "Rapax Castle 很危險……已經派去四批人，沒有——一個——回來……"
+ },
+ {
+  "id": 36,
+  "src_sha256": "03e13568bd43172a5bc0c7be86692227a7461b87324f9f6706d463a52c8f200c",
+  "zh": "它通往 Rapax Castle ……"
+ },
+ {
+  "id": 37,
+  "src_sha256": "0a266910ee498749102bebabe1ebeeb3b682d66894fcbb87d7863bbd72490922",
+  "zh": "Mount Gigas 離這裡很遠，不過你們一路上會很安全。這個世界到處都是 Watchers 。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "8eb70654e4a87b36093e844ce56eed7078c1d314cf95a859e6d27eb828ddd1c1",
+  "zh": "是的…… Marten's Bluff 。那是一座相當堅固的要塞。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "e0b187f4f1377a4146d8fc6bfc2323cc2a39859241531478dd89ae7931473f3d",
+  "zh": "Ascension Peak ……嘶……我相信這座山峰就是通往 Cosmic Circle 的入口，若真是如此，我也相信 Dark Savant 會拚上性命防守它……我擔心那裡將成為我們的戰場。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "8aa0d898a45f230d3ea2a07b4b14fd3608f9780624dc399746344f7960f22c98",
+  "zh": "Cosmic Circle 是傳說，但我們相信它也是真實存在的。我們這麼多人， Umpani 、 Dark Savant 、 Higardi ，都在尋找那個圈子。據說飛升者會成為下一個命運（ destiny ）的 {{Lord}} ……"
+ },
+ {
+  "id": 43,
+  "src_sha256": "2b96da7baf956febf8e444a6ccb0bbe2c7f879ea1b8f7ef61939acabf252ccba",
+  "zh": "Higardi 不認識我們，只知道害怕我們。這當然……非常不幸。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "972fb809f5dbb8779fa8c70917ed15a611bdac382a4b8ef2c25eae3c1309ab9a",
+  "zh": "我相信他們對這個 Ascension 略知一二。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "00faa9c394a4f9b7aa1cc2ac5ff53f0512bd0c1d45ff1cb00bab49c7f5c6bc86",
+  "zh": "他們是危險的殺手……"
+ },
+ {
+  "id": 46,
+  "src_sha256": "aa14b03ae8c5bb00e1386e1316d20a88dc5392cdebb859e5728c95e7171e1b99",
+  "zh": "是的…… Umpani 。我們與他們有很長的歷史，比我自己的壽命還長。我們毀滅他們，他們毀滅我們，卻始終誰也沒佔到便宜。也許有一天，我們雙方都會承認真正的敵人，就是 Dark Savant 。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "ce47b87d6ba871040258553715017bdc562cc9d1c970dfaa34c3583df41843db",
+  "zh": "不論你們聽過什麼傳聞，我們在整個宇宙中都備受尊敬。你們對我們立下誓約的效忠，將保證你們成功。"
+ },
+ {
+  "id": 50,
+  "src_sha256": "91f538c8b0528b1d70093f0e91fab2aeb7191917cd418d3d478773b9efcd11ba",
+  "zh": "他們才更配得上我聽說的那些關於我們的謠言……卑劣的生物……"
+ },
+ {
+  "id": 51,
+  "src_sha256": "2250f8a3423eef9f738f87ab26e3743f82671d5a6c9c78fb79159226319d8087",
+  "zh": "是的， Mook 。 Watchers 告訴我，他們持有一件極為重要的物品。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "af3ad379d0ac813c86eac189b4ba68403e03a6d0791cc723ecae541010358afa",
+  "zh": "Cosmic Lords 。我聽過他們被稱為許多名字，但我相信只有一位，而那位 {{Lord}} ，他累了。這就是命運（ destiny ）把我們帶到這裡的原因……嘶……為了替下一代挑選新的 {{Lord}} 。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "40c31e540b08af23388f7efa279187bd69515565fa6832eb4d317f3d6efc7faa",
+  "zh": "Guardia 不是我們比較光彩的時刻……"
+ },
+ {
+  "id": 54,
+  "src_sha256": "d878edf9a374e2f169d262128527728746373f35a305e7cf70d5a074c25a4521",
+  "zh": "多年前，他是我們的盟友。我們相信他的目標就是我們的目標，所以我們合作，以為雙方的共同勝利會帶來共享的報酬。但他卻利用我們去摧毀他的敵人（ enemies ），替他自己無窮的貪婪清路！"
+ },
+ {
+  "id": 55,
+  "src_sha256": "8d38730282970275e134cdf119535e647410bf553436f848e72fd89d2ec13ed9",
+  "zh": "當我們的勝利終於近在眼前，他卻背叛我們，奪走了 Astral Dominae ！為了這些以及其他的背叛，不久的將來， Dark Savant 必死（ die ）。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "d166ec6a87e2f3848a18aaef9f3a6e164614da6340b7d51e24717b6a64515840",
+  "zh": "啊……嘶……她和我們一樣，都是 Dark Savant 的棋子。她的故事我不盡知，但聽過不少。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "3c185e9ece34bcb989a2987daa277aad59b3aad2f811a36290a655a415d4b3ca",
+  "zh": "是的…… Vi Domina ，我知道你……嘶……和我們一樣，你也是 Dark Savant 的棋子。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "cf3be244a0972355feee0bf022f99219447845fafbcabcfeaca6b22f105074da",
+  "zh": "Cosmic Lords 、 {{Lord}} 、 Phoonzang 。是他召喚我們所有人來到這裡……"
+ },
+ {
+  "id": 59,
+  "src_sha256": "acabeeda364122d2a243b1e5e0b2305857a07e5a70f693c40dc0152d19f28eb7",
+  "zh": "Watchers 正在調查他。這裡以前是他的要塞。我們相信他是 Higardi 。也許他們在 Arnika 會知道更多。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "c52fac512edaf3035767d1d6a8da2be67ac4efc7e0ead4bc54c89e78315cccb7",
+  "zh": "Umpani 將軍，是的……"
+ },
+ {
+  "id": 62,
+  "src_sha256": "2a0d368f13ae3854fb1beca70b3b932b33ff13a17349ab9080df3e3c6784f05a",
+  "zh": "Rapax King 對我來說無足輕重。他被自己的權力蒙蔽，而他和所有同類一樣，終有一天會因此送命。嘶……"
+ },
+ {
+  "id": 63,
+  "src_sha256": "0165dbb13d281595fa91a18a2f355bafe690a51518721c32251cd7b5cb41e4e2",
+  "zh": "被 King 控制著……"
+ },
+ {
+  "id": 64,
+  "src_sha256": "9b98896ff9de07e4e6081a55156fb3906ad057ad57771170f955dbe12706cf9b",
+  "zh": "他在等 King 死（ die ）……總有一天 Watchers 會毀滅他。"
+ },
+ {
+  "id": 66,
+  "src_sha256": "dbe463c200a0674eace3d961bf5732d339e62eca9085dafc06f3a01c11375675",
+  "zh": "是的……我有幸帶領 T'Rang 帝國來到 Dominus ……"
+ },
+ {
+  "id": 67,
+  "src_sha256": "5f5f4730ebcfd310b3ab5a3ae43909b46c00e473e019d69449586e8c7b26110c",
+  "zh": "是的， Rattkin 的領袖。我聽說過他。他背叛了 T'Rang 帝國……"
+ },
+ {
+  "id": 68,
+  "src_sha256": "ac671be68f54ceb488684ad2a1d0af06b616c384064546d3a1eaa930e3f9de15",
+  "zh": "是的…… Astral Dominae 。曾經失去過一次，我們多麼渴望得到它。誰不想呢？！它蘊含生命本身的能量。我們相信它是飛升所必需，但它必須回到我們手中，並且留在我們手中！"
+ },
+ {
+  "id": 69,
+  "src_sha256": "ce3e3f68a5bf8c0cf702b8c497bfdb155091c38f192233be16112fe57e848f92",
+  "zh": "是的……我們知道它。它就在這裡的 Dominus 。"
+ },
+ {
+  "id": 70,
+  "src_sha256": "25ca64f6395b284b9e807ccb5b6cd280f71b5e0ce1db8d05a83988a155c7949d",
+  "zh": "我們的 Watchers 隨時掌握它的所在……我們相信是 Mook 把它帶到這裡的。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "2eb24cca0763214cc355a53750ca5c42081f721efcb3e6b051e0ebfad30bd28b",
+  "zh": "Ascension ，是的。 Cosmic Circle 的入口。那將是我們在此的戰利品。如果 Watchers 聽到關於 Ascension 的消息屬實，整個宇宙都可能屬於我們。聽說 Arnika 的 Higardi 對此知道得更多。去找他們談談，盡你們所能打探。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "988ae2496350eb24f5ec39b0749a352f591e7ebdc0225e821bef8144f1aba758",
+  "zh": "你我之間，讓我們只談事實……"
+ },
+ {
+  "id": 74,
+  "src_sha256": "9d39869a095427a404fa41541e7f4284b910a682461afdc09f926963145ae150",
+  "zh": "我是 Z'Ant T'Rang ……"
+ },
+ {
+  "id": 76,
+  "src_sha256": "cdd42315368c79aca73a86d94af6a82ffdd75cb0fd926bf95a13e2bfaa5fd510",
+  "zh": "嘶嗤！"
+ },
+ {
+  "id": 77,
+  "src_sha256": "e634ed5d74be206ed2748d02ef2e8ecc8fde10f65e9d2c83a41628c09c9ba6a7",
+  "zh": "這麼簡單的請求……我已經考慮過了。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "d75d293cf1466c64730beaeda563491e5bf5b8e1e36838db4c3513922469af94",
+  "zh": "嘶嘶嘶……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "da3160759c1e5f98ddcd0fdf6a5b2cab99c8b044ead64aa39d6e1250cb522492",
+  "zh": "我會等你們回來……"
+ },
+ {
+  "id": 80,
+  "src_sha256": "3c7fb6b397614011f881f3fb444c2c89e963bfd284b32c3d08477866aba8f244",
+  "zh": "是的，我們希望你們能幫助（ help ）我們。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "bc9d9a1ed63a2ef1936a19245881e5e4ed0e0f52a6f67dc2a096db2606a0f83d",
+  "zh": "Sadok 準備好提供你們所需要的一切。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "a0d48e802f1232046e5e6eb243b3d312c199cb8238d66fb85d51e55d906eb02c",
+  "zh": "我還活著……"
+ },
+ {
+  "id": 85,
+  "src_sha256": "ffd81ab0804e3814f9f3135fbea8e6854ea2a5bd8ba5dcbb3e7c91824d0af0e8",
+  "zh": "你們不需要知道我們的船（ ship ）的事。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "f22cbaf79e30bf2f3c6df90bb89c854a74fd2ccf9b7a2f40a87626253ee6f6e7",
+  "zh": "那艘令人聞風喪膽的黑船（ black ship ）……"
+ },
+ {
+  "id": 87,
+  "src_sha256": "19de02bf17c5aad37bae714b08534d54e9dc5078af3ce74a821301d7d31b9357",
+  "zh": "是的，它就在 Mt. Gigas 山頂。時機成熟時，我們會再詳談。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "9be7183c7f9908994ba98bae52175234e05d231f54a21961c41c3c4ee82ceb19",
+  "zh": "你們說的是哪艘船（ ship ）？"
+ },
+ {
+  "id": 89,
+  "src_sha256": "b2ba3646005612d2cdbc7059d663694c5bbe10a5742244da0acea4f56403cd07",
+  "zh": "Watchers 回報說 Marten 安息在海洞（ sea caves ）裡……"
+ },
+ {
+  "id": 90,
+  "src_sha256": "06cb9d83a5b3dbe3285463e17f952fb06d0e9d44d501146c9f8dcb495aa50aa5",
+  "zh": "有人在西邊發現了 Rapax ……"
+ },
+ {
+  "id": 91,
+  "src_sha256": "eff24d8a35b66831edc7ce4eeb2dd9b9bff56d003b8f4eb42f5253d116a0f685",
+  "zh": "Drazic 什麼時候才會回來？！？"
+ },
+ {
+  "id": 92,
+  "src_sha256": "31829d418c53205556caff9231d7ae61e2e0dd1d85d7228c3cf0d7635d8f8143",
+  "zh": "Arnika ……"
+ },
+ {
+  "id": 93,
+  "src_sha256": "d0b235735a0a98fb412d02ebd52d7a52323132d9c5d05a0cbe045d05b0348c88",
+  "zh": "在 Trynton ……"
+ },
+ {
+  "id": 94,
+  "src_sha256": "ac0ce64db8eb20d0f12de3f5f43933c93b9ee11880c71bcbd50aa659cf3cc27d",
+  "zh": "沼澤……"
+ },
+ {
+  "id": 95,
+  "src_sha256": "6a5ec8de08839a3d913cb8ab5c3d7db9fe7dc2c329389132c366753efd3862e3",
+  "zh": "這裡……在 Martens Bluff ……"
+ },
+ {
+  "id": 96,
+  "src_sha256": "b26ec83c550f2e55d971781610d714bfa45b39db5fb8b6eb28f868d14bd017a8",
+  "zh": "我擔心那是 Rapax Away Camp 。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "1c5a37f8f79b51b835d0935c6f2505efd37273c5857301eb6d7754de3dc9adde",
+  "zh": "在 Mount Gigas ……"
+ },
+ {
+  "id": 98,
+  "src_sha256": "5fcc0113892ff3e53559f90d74934757a4eac97c0a3168f4f8743919834eff90",
+  "zh": "海洞（ Sea Caves ）……"
+ },
+ {
+  "id": 99,
+  "src_sha256": "17c6bf10de21abb3dd782ad674376f1e2cceb4a37307dcd1c42e11c79e70b032",
+  "zh": "在 Rapax Rift 裡……"
+ },
+ {
+  "id": 100,
+  "src_sha256": "ccd8284a2b73fb2af22ba71dbe3fb747713fd9b9fe27476daae3eb9d56f297d7",
+  "zh": "那是 Rapax Castle ……"
+ },
+ {
+  "id": 101,
+  "src_sha256": "be6c3a1a0f0952d88c18b73c5cf59ae038e4045b4d17365b7220589bbb7af374",
+  "zh": "Ascension Peak ……"
+ },
+ {
+  "id": 102,
+  "src_sha256": "c6ca89ff090e3bf54e53007b3c35fb886cac25e402de5943edd482ea1c9b3bd3",
+  "zh": "只在 Cosmic Circle 裡……"
+ },
+ {
+  "id": 103,
+  "src_sha256": "6d46bbaf43628784c442b59ae8c83f958a148ece70dfe5b6bd738d940462ee55",
+  "zh": "睜開你們的眼睛……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "11df6712a10701289771cdd023e86b4db678592150ef72dd87a4602f25f626f7",
+  "zh": "我不知道答案……"
+ },
+ {
+  "id": 105,
+  "src_sha256": "8e06d1695cc76c1eefdfb3e1c3702bb6d3c65f6d3477dac9b46a80d829c28b39",
+  "zh": "是的， Watchers 說那是 Bayjin 。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "8e7b2f76c95c37af07fb508b0538ee2b868d3841b8ca9e9735b6163c593dca29",
+  "zh": "所以，你們改變心意了？你們對與 T'Rang 合作（ partnership ）有興趣了？"
+ },
+ {
+  "id": 107,
+  "src_sha256": "140126c1f88e69e52c8f6b632b40fd48a022441bdf29e0f3e8aefa6107726902",
+  "zh": "我就知道你們會回來……"
+ },
+ {
+  "id": 108,
+  "src_sha256": "c0b8289fdc1babb05cd16f0ecf58ceb7f05581f5c214696f2886214a0e7695f2",
+  "zh": "我沒時間理這種事……"
+ },
+ {
+  "id": 109,
+  "src_sha256": "ce3c59f695485940719e88c7487d68c41a0460cbf283fd87ffe6f338e8a9b691",
+  "zh": "我懂了……也許你們還不明白這樣的合作（ partnership ）能提供什麼。我們願意補償你們所有的努力，這是你們在別處找不到的交易。那麼，你們有興趣與我們合作嗎？"
+ },
+ {
+  "id": 110,
+  "src_sha256": "c5764e2c8cf4cc711e251e7d106d55c284648b97b70c7bdee36940eb1f1b0c73",
+  "zh": "我們彼此之間已經無話可說。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "ea90c5753bb05565cf9c10e6d6a224f9b1c4002dc414d7a113c2ee64f289d957",
+  "zh": "是的， Watchers 得知有三件裝置…… Astral Dominae 、 Chaos Moliri 和 Destinae Dominus 。我們必須找齊三件……"
+ },
+ {
+  "id": 112,
+  "src_sha256": "fbc11cb5879876a28c0bfa5598840edeed3f953bd94382c615cefb12e84a9c24",
+  "zh": "你們會喜歡的……嘶。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "f18e7e7abb1dc1ad1aaaea44073f52924786f03ab591c10e9a5bcedd3aba99a6",
+  "zh": "你們知道她？她逝世後深受 T'Rang 愛戴，雖然她與 Dark Savant 的結盟差點讓我們全毀……"
+ },
+ {
+  "id": 114,
+  "src_sha256": "8041a64b386068d6a83d6c06ec3bcae260a4d0db98cda982b826304d8a899c7c",
+  "zh": "也許我們現在該討論你們的任務了……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "22f43e82907d52bc59f2c8f8aae52a97fcbe3c5efb9d54475c623a11bd5f3c37",
+  "zh": "我不明白你們的意思……你們想與我們建立合作關係（ partnership ）嗎？"
+ },
+ {
+  "id": 116,
+  "src_sha256": "80a0d8288598665e266991f1108391a71fd8d921803322ef0a6df5ffdca2a9c3",
+  "zh": "我不明白你們的意思……你們想與我們建立合作關係（ partnership ）嗎？"
+ },
+ {
+  "id": 117,
+  "src_sha256": "4d6ff2ebdd27efdd7f8071ee3425f470692b66bb5a1ecc53be3d7d2250e75bdc",
+  "zh": "是的……他們知曉一切發生的事，也讓我消息靈通……大部分時候。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "91a4b6562976a398bb0026181c778154ea1b7eee768850d16bcc93a6475c3e22",
+  "zh": "T'Rang 有數百萬人，一個人或一群人的故事（ story ），對整體而言毫無意義。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "8e9b8a8946157a2aa49ce45f9702d442b17b4669a88e55770ecfe299975dbd85",
+  "zh": "我看你們平安走完了旅程。終於見到你們，我很榮幸。你們在 Guardia 的事蹟為你們贏得好名聲。告訴我，既然我們已經把你們帶到這裡，你們打算繼續與我們同行嗎？"
+ },
+ {
+  "id": 120,
+  "src_sha256": "51d0123ab83056c26503b3fd9ede09c98e82508b58bcedf9b4bcf27bff8cf8cc",
+  "zh": "我以前見過你們的臉……在 Umpani 那邊。現在你們來找我。也許你們有興趣改變立場？"
+ },
+ {
+  "id": 121,
+  "src_sha256": "9d7349dd8a422a70ee59f7b08c3fbe8db0f88c76767f98cd0fbad4e3521fe93c",
+  "zh": "自從你們抵達 Dominus ，我就聽說過你們。我相信我們為同樣的目標而戰。告訴我，你們有興趣與我們合作嗎？合作關係（ partnership ）？"
+ },
+ {
+  "id": 122,
+  "src_sha256": "e996651c55492c2c215805d1d65df6ecc8b57d2e81b64764cd6943f5c4bc381d",
+  "zh": "你們是令人欽佩的生物。經過 Guardia 之後，你們的決定最令人意外。那次任務沒有照我們的計畫進行，但這是新的一天正在破曉……"
+ },
+ {
+  "id": 123,
+  "src_sha256": "5a63d7416d4c09e9c2e30e706b58971604b819f98b547051a4184f6ec6c68c1e",
+  "zh": "你們有權做這樣的決定。經歷了 Guardia 的事之後，我不怪你們。你們可以走了……但若你們改變主意，我會非常歡迎。不過現在……我真的有事要處理。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "4b838d15a6442fc68cd28ef0d90310a5f3284b06f3f5a8f43f12b339c9cea6e6",
+  "zh": "是的……正如我所盼望的。 T'Rang 會好好照顧你們。是的……"
+ },
+ {
+  "id": 125,
+  "src_sha256": "4aa91a907c3f7af05f9f2da1415736b9ba53bd258828754ec1d47417a77f9054",
+  "zh": "你們有權做這樣的決定，但若你們改變主意，在我們之中會非常受歡迎。現在失陪，我還有其他事要處理……"
+ },
+ {
+  "id": 126,
+  "src_sha256": "b8cf895ccacdd4a49aa0506e0976f407bca777eec9b2a2241c961571e29f6882",
+  "zh": "容我正式自我介紹。我是 Z'Ant ，我將帶領 T'Rang 帝國在 Dominus 贏得勝利。你們的努力會以現金支付，你們受的任何傷都會免費治療。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "599a1157abd04ad1140f23ccd9f3156adfe22ba2bfbe3038d561b1658d09864b",
+  "zh": "我相信你們渴望開始與我們的第一個任務，但也許你們想先了解我們在 Dominus 的策略（ strategy ）……"
+ },
+ {
+  "id": 128,
+  "src_sha256": "dceea76fefeeb21816b11ca2d9477ac202e57a5469a7fd3c920e594eab7c994d",
+  "zh": "那我們開始吧。先從簡單的……一個探查任務，但對我們的防禦至關重要。嘶—— Watchers 告訴我，這裡北方有一座基地，他們相信可能是 Umpani 的。他們發現了一面旗幟（ flag ）。我要你們去確認。把那面旗幟（ flag ）拿來給我。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "30dd84508266af1fceb17e50ef32b4320b22f14b6ea9586f2bfe161828c4a4b3",
+  "zh": "如果那 *是* Umpani ，不要以任何方式與他們交戰……我們不能冒險讓你們被拘留、暴露我們的存在。你們回來後會得到豐厚的獎賞。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "8e1d9613785f596dcd608af877d0eb3d4ecbbfc93db1dea2669f111d27887d47",
+  "zh": "是的……我希望你們帶著旗幟（ flag ）回來了……"
+ },
+ {
+  "id": 131,
+  "src_sha256": "fbf0e937c087af71079a3e4d6af0c1a531681d40233fbcad56458786d7fe9322",
+  "zh": "所以是真的。 Umpani 確實在這裡，而且還有基地……我會派 Drazic 進一步探查那個地點。我有更具挑戰性的事要交給你們。但首先，是我們說好的獎賞……"
+ },
+ {
+  "id": 133,
+  "src_sha256": "c619e3c18c903d29d84604cab5e803bd4e9cd58b59d208dc636c1b92f7003200",
+  "zh": "是的，你們的任務有許多細節。值得再說一遍……"
+ },
+ {
+  "id": 134,
+  "src_sha256": "bdf3c1b2e76f6d646a7a12259f7827a6bde02e5430d02660c67a7378385a1baa",
+  "zh": "你們問得明智。知道自己為何而戰，與知道該如何成功同樣重要。我們戰鬥——你們戰鬥——為了權力、為了征服。這並不會讓我們成為怪物，不論某些人怎麼對你們說。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "de012d7498780ac2ef34e03fc44bf10fabbe05980aca1fc9c2153ae026ce79be",
+  "zh": "因為如果我們不戰鬥，如果我們不時時警惕 Umpani 和 Dark Savant ，我們肯定會成為他們的下一個受害者。我們絕不會讓這種事發生。"
+ },
+ {
+  "id": 136,
+  "src_sha256": "412515d01d83fa3e87be8ca3e7416f143071e8f3fb39a70054e3978405b14a28",
+  "zh": "我們的策略很簡單：首先，消滅 Umpani ，兩個威脅中較小的那個。然後，我們會專注對付 Dark Savant ……也把他毀滅。"
+ },
+ {
+  "id": 137,
+  "src_sha256": "8cacbfe3c942ef9b7083750c4b48340ce8ca5a2159316317db85e1f480ed6836",
+  "zh": "T'Rang 、 Umpani 與 Dark Savant 之間的鬥爭歷史（ history ）悠久，但很快就會結束，而我們將獲得勝利！"
+ },
+ {
+  "id": 138,
+  "src_sha256": "80e16fc9212b12395183f6fafe3932529cea43758f62d1b198b9043ee4b63745",
+  "zh": "你們的下一個任務至關重要！一名 Rapax 刺客正在潛伏於我們的要塞。他已經殺了我七名 Watchers ！我們在樓上的房間為他設了陷阱……但那個 Rapax 還活著！"
+ },
+ {
+  "id": 139,
+  "src_sha256": "c52ebbf343c6913863acd20aa9265d475b45d9278b9da1927f192425a6030d33",
+  "zh": "我們知道 Rapax 靠視覺和嗅覺狩獵，所以我們試著用一個 Rapax 人像把刺客引進陷阱。然而他不肯上鉤！一定有某樣東西能引誘（ lure ）他進去……我要你們去找出來。然後，我才幹過人的僕人們，你們就能把他的首級帶來給我！我知道你們不會讓我失望。"
+ },
+ {
+  "id": 140,
+  "src_sha256": "698863469cb63d31dba9fd0322901d905166735b46a66029e7be0597da5b00c2",
+  "zh": "我的 Elders 在設計上給了我建議。首先，把某樣東西困在房間裡，並鎖上門。他們相信有開關能達成這個目的。"
+ },
+ {
+  "id": 141,
+  "src_sha256": "bacac796fbaca9f051dcadd41140f55d8234287a07d05e48a6dece066ee72b1c",
+  "zh": "接著，一旦毫無逃脫的機會，就用開關把牆壁關起來，受害者就會被消滅！真是絕妙。"
+ },
+ {
+  "id": 142,
+  "src_sha256": "abbd2ecd290a4abcc17baa3e9303223b0ff77d686c25ed8226ff4f4baccadadf",
+  "zh": "是的，我希望你們已經殺了那個 Rapax ……"
+ },
+ {
+  "id": 144,
+  "src_sha256": "d149baffa74d3422bd34dd69436bd74dcd48d9584c8e2f9fa3a05378fb50bc5c",
+  "zh": "那 Rapax 的首級！！所以你們成功了！是的，你們值得任何代價。"
+ },
+ {
+  "id": 145,
+  "src_sha256": "4f795280ee7204be655fee5c0c18c1d3937c737f593bcdba3fae86f334959c2b",
+  "zh": "這是什麼？ Raven Rapax 的首級！你們怎麼知道的？我幾天前才派 Watchers 去消滅他！"
+ },
+ {
+  "id": 146,
+  "src_sha256": "cd4b9b9396e88556d8cd95ba7f26788406df02107d28d0fce2e7570649f07296",
+  "zh": "你們能把 Raven 引向毀滅，救了我——他想要的是我的命——你們的本事非常高明。從今以後，你們將是我最信任的盟友……我下一個任務，不會交給任何別人……"
+ },
+ {
+  "id": 147,
+  "src_sha256": "30cc9e0fefeacbb670497971dcebc4fd3d2869b66e598af3454e3a008212ec49",
+  "zh": "但首先，我需要你們把旗幟（ flag ）帶給我……"
+ },
+ {
+  "id": 148,
+  "src_sha256": "e954e0b8943643b9c5f79d0e598afe4c4356ac469e09e84470f7eb7f3d3fa782",
+  "zh": "也許你們知道 Mook ，是吧？ Watchers 傳來消息，他們持有一件類似 Astral Dominae 的裝置（ device ）。我們必須立刻取得它，雖然我不認為他們會輕易放手。所以，我為你們準備了這封信。把它交給他們的領袖。"
+ },
+ {
+  "id": 149,
+  "src_sha256": "5d8543b46220aa849484fe30232700bb28532e76aa45970790b74f8d0ef9f5da",
+  "zh": "我的話能讓你們進去，但行動，那件裝置，就要靠你們了。我希望你們回來時，我能看到它。"
+ },
+ {
+  "id": 150,
+  "src_sha256": "d8dddbec8032cd3131a4a7c1dbdc34c4495779b899a7634519f770d8e13edc78",
+  "zh": "真奇怪……我的 Watchers 回報說，那件裝置還在那裡……"
+ },
+ {
+  "id": 152,
+  "src_sha256": "d9865d445601b1d64eda4b867f98ac9d19f0acd6482f11d91afe371fb242c5b0",
+  "zh": "Chaos Moliri ！我的懷疑是對的。你們不在的時候，我們得知這件裝置是進入 Cosmic Circle 所需三件之一。據說是某種三部曲（ trilogy ）。"
+ },
+ {
+  "id": 153,
+  "src_sha256": "d359159d463cd978d981512f4520c91cda07c30743fdf932aded437d20486477",
+  "zh": "它們是我們對抗 Dark Savant 進入的保險。把這件裝置為帝國妥善保管。需要它時，你們自然會知道。幹得太出色了！ Watchers 該向你們學習……"
+ },
+ {
+  "id": 154,
+  "src_sha256": "a4eae3e21e431febfcc066424caf3922e2435c9b325c537e58ee8cdf60673616",
+  "zh": "我希望你們保管它……"
+ },
+ {
+  "id": 156,
+  "src_sha256": "bf85bbd00db66e052c5898146140cbaeb9b131652f0e3121f60e40986717ec3d",
+  "zh": "確實， Watchers 最近讓我失望了……無法取得我需要的重要情報。所以，我再次求助於你們。"
+ },
+ {
+  "id": 157,
+  "src_sha256": "04de6827788c137fed60738182d3b9b25a2daf6376977ebccb4100455006b1fc",
+  "zh": "帝國希望摧毀 Dark Savant 的船（ ship ）……也就是摧毀 Savant 本人。然而我們找不到他的船。我們相信它處於隱形狀態（ cloaked ）。你們肯定看得出這是個問題。"
+ },
+ {
+  "id": 158,
+  "src_sha256": "838bf04c5ac71259e0f85869eb8b0fc62832de8a09b288ac970e99249f88c1da",
+  "zh": "但我隨後想到一件事。他至少擊落了兩艘在 Dominus 上空的船。也許這些船記錄了攻擊者的座標？如果你們能找到這些船並加以調查，也許我們真的能發動攻擊！"
+ },
+ {
+  "id": 159,
+  "src_sha256": "0ea597fdf5e34db2c05452f74b578df98ef5930f04d2edbb3987c2e76470c822",
+  "zh": "朋友們，成功的話，會有極大、極大的獎賞。請把座標帶來給我。"
+ },
+ {
+  "id": 160,
+  "src_sha256": "d331cc31217e0488560d508994d181b6d51305b908c71b458923492820f3d571",
+  "zh": "你們找到了什麼……"
+ },
+ {
+  "id": 161,
+  "src_sha256": "88cb28447dc8be03e660320c1d569b021cdaeece1737746bba0392c7d7fa8436",
+  "zh": "嘶……這個已經燒成焦炭了！我們無法從這裡面得到任何資訊！"
+ },
+ {
+  "id": 162,
+  "src_sha256": "0d84bb1f55e338ed89600f07f14cedc20b88132c8fcef1b3f1804e3807e9a9b1",
+  "zh": "有意思，一台飛行記錄器。但我們無法在這裡讀取裡面的資訊。 Watchers 告訴我， Arnika 有一座廢棄的飛行場（ flightfield ）。也許那裡有裝置能讀取它……嘶。"
+ },
+ {
+  "id": 163,
+  "src_sha256": "22b32065c8a743d791b0dca6bc647ecfaed286e0168641f02fe1112dd845764c",
+  "zh": "是的，是的！這些就是 Savant 的船（ ship ）的座標？太棒了！"
+ },
+ {
+  "id": 165,
+  "src_sha256": "b27ee78b67b4a7d5a7304cc3ebbdd07f90fa7bc7074169e0314c675bf35c4ab9",
+  "zh": "是的……我們在 Arnika 見過它。它在兩扇巨大上鎖的門後面。"
+ },
+ {
+  "id": 166,
+  "src_sha256": "1a7ed10375ca70cbcfe8d5c0e500840959d1d86e7ffb0e614c2f74236cc5642f",
+  "zh": "它的軌道接近我們原先的猜測……很快我們就要出擊了！現在唯一能擋在我們與 Ascension 之間的，就是 Umpani ！幸好，我們在 Umpani 陣線後方有一名線人。"
+ },
+ {
+  "id": 167,
+  "src_sha256": "db347251fff28bf7f51cb10d67cb7f2cf0ef82dbe9912b275e98301f87f0d0f8",
+  "zh": "找出這名間諜，告訴他 Drazic 本來要帶去的暗語：「 Destiny Arrives Tonight 。」這名間諜會帶你們上他們的船（ ship ），毀滅就是你們的獎賞！為了整個帝國，為了僅僅數日之遙的勝利，你們必須成功！"
+ },
+ {
+  "id": 168,
+  "src_sha256": "484b90c15b412bc2bb803ed187d6faa3622c64048727acefe5d5c0ea51267de6",
+  "zh": "Watchers 沒有向我回報任何事。也許 Drazic 在完成任務前就被殺了。嘶。我本來還希望在 Umpani 營地裡有一名間諜……"
+ },
+ {
+  "id": 169,
+  "src_sha256": "b192e30b83bd8754f0f28d1e2e910e46752e51be4dd5871b7c87df67bf2334cd",
+  "zh": "是的……我一直熱切等待你們到來。我們的 Watchers 回報你們成功摧毀了 Umpani 母艦。為此，你們將在 T'Rang 的歷史（ history ）上贏得令人稱羨的一席之地。沒有任何事能阻擋我們統治一切！"
+ },
+ {
+  "id": 170,
+  "src_sha256": "bdb1118ecb5058c41f469fc35bf66b860bacef235a2f06f0465414c7875b83ca",
+  "zh": "我曾經希望， Umpani 與 T'Rang 能攜手合作，不管聽起來多奇怪，一起擊敗我們雙方共同的敵人， Dark Savant 。然而，他們的道路已經決定……於是，我們的道路也已決定。"
+ },
+ {
+  "id": 171,
+  "src_sha256": "991eae5bf0f6efd9117027705f77fe9f0996865307f9fd5f8c5dea4d6ccf3b54",
+  "zh": "終於，是時候前往 Ascension Peak 了……然後 Cosmic Circle 就會是我們的！ Watchers 告訴我，我們需要三件裝置： Astral Dominae 、 Chaos Moliri 和 Destinae Dominus 。"
+ },
+ {
+  "id": 172,
+  "src_sha256": "93f6893a880e7dd80e61e5e0936e7c808e23cafa15d857fdccb690ab88853fc0",
+  "zh": "我會讓你們去尋找這些裝置，並把它們帶到 Ascension Peak 。我會集結 T'Rang 大軍防守，並在那裡與你們會合。到最後，我信任的是——你們。"
+ },
+ {
+  "id": 173,
+  "src_sha256": "690bcea77be62c489a7af350592dafcda2134d50afc53afaf15af9afca663e29",
+  "zh": "你們對我和 T'Rang 帝國忠誠不二，滿足了我們所有的需求，在某些方面比我自己的種族還要出色，那些為了服侍我而生的僕從。你們有我永遠的感激。願我們一同崛起……"
+ },
+ {
+  "id": 174,
+  "src_sha256": "7489146c7934343f6cc173dd81165b919d6f6553912065ef89ecc219c2b9594c",
+  "zh": "等等！你們把什麼帶到我面前！？一個 Umpani ？我沒有命令你們帶俘虜來！！"
+ },
+ {
+  "id": 175,
+  "src_sha256": "bc4ad9342ebfff2b62050d3f4c4406103ccd8ab6de8423fa3157a5e544b68364",
+  "zh": "Drazic ！這是什麼意思？！我現在就要解釋！"
+ },
+ {
+  "id": 176,
+  "src_sha256": "26fab79a448e2f8eb0ebdaae440721ce2f64c45e2bd791f962965b5cd3d96010",
+  "zh": "Drazic ……你的不忠，我應該把你處死！衛兵，我命令你們……"
+ },
+ {
+  "id": 177,
+  "src_sha256": "c5806f5d23cda7d5cdf43d0b0ad517af35907b803fe32e0a2e01c5460228753f",
+  "zh": "你剛好有一分鐘……"
+ },
+ {
+  "id": 178,
+  "src_sha256": "45cf69914aee1baf5c9634d5d87850813b70353e9514335925efa151c0c09107",
+  "zh": "聯手？偉大的 T'Rang 帝國不需要 Umpani 的任何東西！他們聲稱我們是他們的敵人，但防禦與侵略之間只有一線之隔……而我們從未越過那條線。我絕不會考慮這種事！"
+ },
+ {
+  "id": 179,
+  "src_sha256": "7ee3f70a6742a06597f37e854b71db7ba2b5d8ca8437ff4bb9b8c8eaee7e38fa",
+  "zh": "你說 Umpani 有一把槍？這是真的嗎？對我說謊， Umpani ，我就把你毀滅……"
+ },
+ {
+  "id": 180,
+  "src_sha256": "87b4b545c2413b8b9115b8055e6b395822704bc681084ff8f84ec06b6f7fa9bf",
+  "zh": "你說你能說服你的領袖？ Yamir ？"
+ },
+ {
+  "id": 181,
+  "src_sha256": "5e09cbdd8224365a7f03a29f034a47621f11768710eaa825baed3fa97e76e640",
+  "zh": "這……你的說詞非常有說服力， Umpani 。而且 Drazic 一直是我最忠誠的部下之一。所以，是的……我會給你所要求的，但若你辜負我，我將把餘生都奉獻給緩慢地、一寸一寸地毀滅你……"
+ },
+ {
+  "id": 182,
+  "src_sha256": "867155501063631a5fc199ee82d25624511d535b2ffd0daa7705f5c88a86cf7c",
+  "zh": "現在我們來看看 Yamir 是否同意我慷慨的提議。若 Umpani 背叛我們，這場戰爭（ war ）將重新開始，並體驗前所未見的暴力……記住這點， Umpani ……"
+ },
+ {
+  "id": 183,
+  "src_sha256": "5e1db4c50c86a6f7823c9875764e4faa040bba47ce31687123738eae2e351816",
+  "zh": "你們是優秀的士兵……最後我會信任你們。你們對我和 T'Rang 帝國忠誠不二，滿足了我們所有的需求，在某些方面比我自己的種族還要出色，那些為了服侍我而生的僕從。"
+ },
+ {
+  "id": 184,
+  "src_sha256": "c86abada05d42f00385d74eb33f93e86c21473712a4784ff73fe9cd82ec2ba1b",
+  "zh": "你們有我永遠的感激。願我們一同崛起……"
+ },
+ {
+  "id": 185,
+  "src_sha256": "e58044155ae0df8153d11a682513cc61d0d2a01b890815037a2db40035d592b1",
+  "zh": "已經同意了？我不相信……向我證明……"
+ },
+ {
+  "id": 186,
+  "src_sha256": "763a21e7d7296603e24cf14276c65414be8debe0bd924f20bffc5c4b2e55755e",
+  "zh": "讓我讀一讀。看來你們說的是實話， Umpani 。你的領袖同意了。而他在這裡所說的……非常有意思……而且屬實！我們之間的這場戰爭（ war ）已經持續太久。雙方都以為對方才是侵略者——一直防守，直到雙方都撐不住，各自死去。"
+ },
+ {
+  "id": 187,
+  "src_sha256": "31e42131e559b2486dc2007f6ccb37c2872b56c5f4f4101bd47e89252fc85c55",
+  "zh": "我願意讓一些新的事物在這裡開始，一件我以為永遠看不到的事， Umpani 與 T'Rang 攜手合作，消滅我們真正的共同敵人。那麼，你可以拿走這個……但要用性命守護它……"
+ },
+ {
+  "id": 188,
+  "src_sha256": "2d6afc0600eab47ac824bba76cef070a87cac3d4306c47d420b83de227d160f7",
+  "zh": "對於這個同盟，是的，告訴你的領袖 T'Rang 同意……當你們消滅 Dark Savant 之後，我會在 Ascension Peak 與你們會合……"
+ },
+ {
+  "id": 189,
+  "src_sha256": "fbca9fad26c1a8e0d1741a45f97d782e8335a0b182bdcf9f925cb19d7ee6f167",
+  "zh": "現在去吧……我們有很多事要做。我會在 Ascension Peak 與你們會合。"
+ },
+ {
+  "id": 190,
+  "src_sha256": "96a028aca1bedd624aeac36ce55c82ba27aec1c140af79ddc9f98a47cabe3acc",
+  "zh": "有件事引起了我的注意，我想與你們分享，我忠誠的僕人們。如你們所知，我把我們帝國的祕密託付給你們。這份信任從來不是輕易得來的。"
+ },
+ {
+  "id": 191,
+  "src_sha256": "9408ace4ac046d66cce595269c6aaa8fae75f6c9ee534518fc97b2225c49ff8d",
+  "zh": "所以，你們可以想像，當我聽說你們一直在為 Imperial …… Umpani …… Federation 效力時，有多麼驚訝！間諜！間諜！殺了他們！"
+ },
+ {
+  "id": 192,
+  "src_sha256": "5c46ed01da3fb365ad458809c91a21593ef19126c775a5a0f4dfc091d7ff0392",
+  "zh": "你們走之前還有一件事…… Drazic 還沒從探查 Umpani 基地回來。我很擔心。也許你們的眼睛能看見 Watchers 看不到的東西。小心別讓同樣的事發生在你們身上……"
+ },
+ {
+  "id": 193,
+  "src_sha256": "cb18299e9e183846d8a6e13ab14bdef916a634ba29728866e6ce81f2350eba9b",
+  "zh": "你們不在的時候，請留意 Drazic 。他還沒回來。我只希望他確實完成了任務。留意他。"
+ },
+ {
+  "id": 194,
+  "src_sha256": "4ba3d9d0b770b66cbc12dfd4afd93f22ecace51e8920970905b576349cbb1000",
+  "zh": "你們離開前還有一件事…… Watchers 回報說，沼澤裡有一隻生物，可能知道這些 Rapax 的一些事。他對 T'Rang 帝國似乎不太友善，不過他或許會跟你們談。也許這對 Rapax 的事有幫助（ help ）……"
+ },
+ {
+  "id": 196,
+  "src_sha256": "84d3fe917530678aaf2c5324bb36536d800563ec5ba0c3d22cc136796f22907c",
+  "zh": "是的……嘶……我希望能告訴你們更多，但我已經把所知道的都告訴你們了。"
+ },
+ {
+  "id": 197,
+  "src_sha256": "1389a5ade3db18be5b8fc6088a5342774ecab452c6db67c4c87e371de965a7bd",
+  "zh": "在北邊。"
+ },
+ {
+  "id": 198,
+  "src_sha256": "10d6528779cf765359eecf47e6f3e2252ae6efa62044e707c401e43153e34cc7",
+  "zh": "我相信是在南邊。"
+ },
+ {
+  "id": 199,
+  "src_sha256": "710dea5447fbce93ee34a79361b1b47936661cb29547d75f2f653c21a6581ddc",
+  "zh": "在東邊……"
+ },
+ {
+  "id": 200,
+  "src_sha256": "c1117287f56341f7e9053cee9e236fcc94fd755dbea5434d0444521cb6c74fac",
+  "zh": "在這裡的西邊。"
+ },
+ {
+  "id": 201,
+  "src_sha256": "9211f83a19c77480c1b647a5057711ad93b45585be5fe4899801efc5171edc7f",
+  "zh": "是的……你我合作。"
+ },
+ {
+  "id": 202,
+  "src_sha256": "9bd3332a0024eed8121906f049bf2131338eb05392b0abbc2f1a890d1c82cd1e",
+  "zh": "你們對這個合作關係（ partnership ）有興趣嗎？"
+ },
+ {
+  "id": 203,
+  "src_sha256": "edd209a996b21a83b8c06d3184cb5a7d8fb74ab09a8d669298c1eec844b595c3",
+  "zh": "是的…… Drazic 非常寶貴。我很擔心他……"
+ },
+ {
+  "id": 204,
+  "src_sha256": "8430db0fcd568eef81256fe1f3e9a1e8ec8fb3c8992f1b8344df45ab423ff052",
+  "zh": "Sadok 會處理你們所有的需求。"
+ },
+ {
+  "id": 205,
+  "src_sha256": "f7758610f58448a38883d61a4ef93f2ed9146e68d69082785455d24342004d31",
+  "zh": "是的……這不成問題。"
+ },
+ {
+  "id": 206,
+  "src_sha256": "245a6d3b5a68207b1c22f48c8a8739f841405cf34bfd8044abb0bfefb08d463e",
+  "zh": "幾年前， T'Rang 帝國試圖取得名為 Astral Dominae 的裝置……並非為了自身利益，而是為了不讓它落入奸詐的 Umpani 手中。就在我們逼近這件強大的物品時，它被 Dark Savant 從我們手中奪走了。"
+ },
+ {
+  "id": 207,
+  "src_sha256": "a3c097bf657b46706690a47d4946ad9779751652bb1dc6345e099bbfb1e39885",
+  "zh": "是的，直到那一刻之前，他都自稱是我們的盟友。"
+ },
+ {
+  "id": 208,
+  "src_sha256": "0b19939f80c58dc319f60de4da99fb0f4c974c5b7814f70d379d14fe463983eb",
+  "zh": "為了奪回這件裝置，我們一路追著 Savant 到 Dominus 。 Umpani 也跟著來了。自從我們抵達，已經學到許多。這件裝置可能只是三件之一——而這三件能賜予我們無限的能量！ Watchers 很快就會得知更多這些物品的消息……"
+ },
+ {
+  "id": 209,
+  "src_sha256": "f17abb775333053af418338a3e36dc3bf5f1e29a72036c734fd0fd741d31d014",
+  "zh": "也許我們該在某個時候討論我們的歷史（ history ）……"
+ },
+ {
+  "id": 210,
+  "src_sha256": "0f151a86a2d17b6f982851b485cd5a8e0ae387723a67c955a296dcacff4effa2",
+  "zh": "也許我們該討論我們在 Dominus 的策略（ strategy ）……"
+ },
+ {
+  "id": 211,
+  "src_sha256": "e6b12191334d6d1bf02d37be5e27beea23c9f9bf7258c0193e17eebdf192a836",
+  "zh": "Umpani 與 Dark Savant 是 T'Rang 帝國的死敵（ enemies ）！"
+ },
+ {
+  "id": 212,
+  "src_sha256": "8d4daed2e9576e812ae64465ed1c1eff284c204c4bdbac7da719c787a37adf8a",
+  "zh": "是的，船的位置。如果你們把這些數字給我們，我們就能找到 Dark Savant 。"
+ },
+ {
+  "id": 213,
+  "src_sha256": "584674121c1a0b10bfc7e61faf29efcf2e591f019556b12020ac2bbbe614f6bb",
+  "zh": "是的，那就是他要告訴線人的話。那是我們的暗語。"
+ },
+ {
+  "id": 214,
+  "src_sha256": "792b3995b3b95c7d58da10743cecbba840fe6f3d312b24c08323014bd51778f5",
+  "zh": "我確信你們會很滿意。"
+ },
+ {
+  "id": 215,
+  "src_sha256": "d93b3c6bf50f8d91a14ca6deea25b22cf4a655218f2430027321a6903710e1b0",
+  "zh": "沒有人能突破我們的防禦。 Watchers 會確保這一點。"
+ },
+ {
+  "id": 216,
+  "src_sha256": "97eefe43773b4cf16889847bed1b9cac73dc54cd237c194d818db16b9f64371a",
+  "zh": "是的……我們知道它在那裡，但我們看不見它。"
+ },
+ {
+  "id": 217,
+  "src_sha256": "204c88c247bdf25c09cafe2399b44ac45004394939d6bb033574a4a2d6ee901a",
+  "zh": "是的， Watchers 在 Mount Gigas 發現了它。我必須親眼看見才能確定。"
+ },
+ {
+  "id": 218,
+  "src_sha256": "7b55f1c60e143ea2e51432278e237cd7b5d33b5d6a8adac64223b13f43eec432",
+  "zh": "在我看來，你們的任務掌握在你們自己手中。畢竟，提議和平的是你們，不是我。我們走著瞧。"
+ },
+ {
+  "id": 219,
+  "src_sha256": "028e3a6498aeca58b5c15dc57f5f9d1817e040c69b7c78670c0f2b2d4a31d28c",
+  "zh": "我相信 Yamir 掌握這項任務的細節。我只聽說，不久的將來， Dark Savant 必死（ die ）……"
+ },
+ {
+  "id": 221,
+  "src_sha256": "ad5fc2827ff0219119dc9c762398447ee382e0b395121daf4f2f6726f953628d",
+  "zh": "你們有什麼毛病！？我不要這個！"
+ },
+ {
+  "id": 222,
+  "src_sha256": "a29934bd9e15a4a9983ee02e018ea9130eb11274476b20615850f33e190abf45",
+  "zh": "是的，我們相信 Rapax 往這個方向狩獵……"
+ },
+ {
+  "id": 223,
+  "src_sha256": "d7441440898dd12d63cf835c1d15a4b5e4a31300595f75d1bbaec3de96d59bf5",
+  "zh": "是的，我們希望你們能把他引進（ lure ）陷阱……"
+ },
+ {
+  "id": 224,
+  "src_sha256": "d92c2ce2a4ceef8782cc0d4e75d2e4c8d803f89cbf38fcc239d0de067b120123",
+  "zh": "如果你們需要聽聽你們的任務，我們可以再談一次。"
+ }
+]

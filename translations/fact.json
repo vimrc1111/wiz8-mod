@@ -1,0 +1,1687 @@
+[
+ {
+  "id": 18,
+  "src_sha256": "cb3f0078f082a1653168c9e38052e5818f1f1610ad8a67c94cdf2319be33441c",
+  "zh": "交給 Antone 一個毒液蟹殼"
+ },
+ {
+  "id": 20,
+  "src_sha256": "b029b82655456f37639ba6bcf8b1a158f93bf652f6069b530fa57f67c20d928b",
+  "zh": "交給 Antone 一顆 Skull"
+ },
+ {
+  "id": 22,
+  "src_sha256": "0fd59132441f0741f82181cdefbfecd9ebb17dc14bb3a19c205b50c4c3076155",
+  "zh": "交給 Antone 蜘蛛絲"
+ },
+ {
+  "id": 24,
+  "src_sha256": "98ba0ae21e1d8d1e4d62ba61d877d257cc4dec53e6a1794af0cb4373740a0d9f",
+  "zh": "交給 Antone Steelhide Croc 的獸皮"
+ },
+ {
+  "id": 26,
+  "src_sha256": "2e6327c4fddca50e6d317f13074b730a582e70d99dd959cdc53a394831ad1de9",
+  "zh": "交給 Antone 一個毒囊"
+ },
+ {
+  "id": 28,
+  "src_sha256": "0d01c28a0a6d15bc4eebcff3ff1019cd5ebcf8c34cbbd27981161b276cda537b",
+  "zh": "交給 Antone 一根 Iron Weed 荊棘"
+ },
+ {
+  "id": 30,
+  "src_sha256": "2efe85a7d6d76a6d8cbeeb09fd1ae2cb521ac566cb2ea52fd1df7eb3ec58585e",
+  "zh": "交給 Antone 黃蜂翅膀"
+ },
+ {
+  "id": 32,
+  "src_sha256": "c57eceb8c8fd1e6a0fddb6748d803b5641e4711a59e0078a7d18c78a16c125ed",
+  "zh": "交給 Antone 一根 Plumed Serpent 的羽毛"
+ },
+ {
+  "id": 36,
+  "src_sha256": "4980e504147a1cb2286ab22f8d881f55205a738716733654be6f51d27ed9e381",
+  "zh": "交給 Antone 一把切肉刀。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "9bbc6d9cb104cdc5346cac712c3880e4c66536968060ade6c291d1ebd45f9c54",
+  "zh": "交給 Antone 一根 Wood Spirit's Staff"
+ },
+ {
+  "id": 42,
+  "src_sha256": "bdc38c6716ae5bf036de05ce846f9489e1db131e1707b4741bed05b4ac3c08e9",
+  "zh": "交給 Antone 一顆 Ebon 寶石"
+ },
+ {
+  "id": 44,
+  "src_sha256": "858930883305b620bf6a290ece91bb78073513415cadab10f2cc46dd9064fb4c",
+  "zh": "交給 Antone 木乃伊粉末"
+ },
+ {
+  "id": 60,
+  "src_sha256": "06d28e42a3637dbed936c68cf5afc72eaa56c6083e9a72a9cf3e9537d5e82f0b",
+  "zh": "把 Myles 從 Rapax 監獄救出來了。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "5f6dde952c7c88aa0255558b9d43c384bc89b79a09803b79efbd1d2655430d58",
+  "zh": "隊伍裡有人被綁架了！"
+ },
+ {
+  "id": 103,
+  "src_sha256": "4b47d56a9c3159ade7ca2a2218f2561c5aa96dade5aabdd842f975d44d71b250",
+  "zh": "綁架案解決了！"
+ },
+ {
+  "id": 116,
+  "src_sha256": "38dae29d6c73100abf3865931e1ea1614f4f7bfb33dd748600de5c7e42d47c2d",
+  "zh": "與 T'Rang 結盟。見到了 Z'Ant。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "ea72a84b1a4337583fd6a07632f68d9e42ba2cbc3c57697e805c975b75376467",
+  "zh": "我們與 Umpani 結盟了。"
+ },
+ {
+  "id": 216,
+  "src_sha256": "b33feab89913f81cff614bc0020877670ea0f01ae1d66dbba3705ba9ecd06351",
+  "zh": "取得 IUF 第 5 級通行證"
+ },
+ {
+  "id": 220,
+  "src_sha256": "9329ba7e79df96ec4e97269659eddcb2b97dffd97843e6914b58311b66bec5b7",
+  "zh": "取得 IUF 第 1 級通行證"
+ },
+ {
+  "id": 222,
+  "src_sha256": "ac1d7f055d1b3a6b8965608bb4ec63ad7f7981d5d77618f5042e5380d4899b91",
+  "zh": "取得 IUF 第 3 級通行證"
+ },
+ {
+  "id": 234,
+  "src_sha256": "e8324e45ef7f1d52bb0b7790bc51cff0a17ac7bc0790a39a42724473779e10e1",
+  "zh": "匯入的隊伍獲得 4 級經驗。"
+ },
+ {
+  "id": 274,
+  "src_sha256": "59860e87550d5660b702ff9f36a7440e065ff4fb66aa3a2854d93794c6214b30",
+  "zh": "取得 IUF 第 4 級通行證"
+ },
+ {
+  "id": 306,
+  "src_sha256": "b0da8dc5a7ccd08887323b89804fc94a9b9d7c472293b48d0b976e45c5964a68",
+  "zh": "取得 IUF 第 6 級通行證"
+ },
+ {
+  "id": 314,
+  "src_sha256": "6c9a411208e003603daeed42008906c429acdb23f7364125b50291190ac7a157",
+  "zh": "取得 IUF 最高級通行證"
+ },
+ {
+  "id": 320,
+  "src_sha256": "abed98b49629a1b1a2d08c4dcb663c6ae054c4b5a5527cfe55d2b501e9eccb97",
+  "zh": "取得 IUF 第 2 級通行證"
+ },
+ {
+  "id": 348,
+  "src_sha256": "268db1b733f6a52c914f205d9bae0e0b92961e30e780ebc5a170f5b7b14500a2",
+  "zh": "交給 Antone 一根 Modai Claw"
+ },
+ {
+  "id": 350,
+  "src_sha256": "0dc45ccd6f4729dde651e1fe0e8c5c30bdc4e4780cb95b3778fbd714134764f1",
+  "zh": "交給 Antone 一顆 Picus Egg"
+ },
+ {
+  "id": 352,
+  "src_sha256": "7c5ce5fd1980c3e4fa16c82c3e52df28b6f24d766f23ab4dad73a1cd12da19ff",
+  "zh": "Antone 大概做好 Zynaryx 板甲了。"
+ },
+ {
+  "id": 354,
+  "src_sha256": "21b2461e07afd3f6be8dccb018c237221f5e658cc6a35bbb5a02eb5eeb08bf13",
+  "zh": "Antone 大概做好 Steelhide 板甲了。"
+ },
+ {
+  "id": 356,
+  "src_sha256": "de6ab95191194d29e6504527bf6f8e63dfebf4a1561f65be515cb4528ed590b6",
+  "zh": "Antone 大概做好 Featherweight 護甲了。"
+ },
+ {
+  "id": 358,
+  "src_sha256": "c2da802d31799cc0a06430bdf24482b9a7d5c79f36631133a8167d8c55e08453",
+  "zh": "Antone 大概做好 Beastslayer 了。"
+ },
+ {
+  "id": 360,
+  "src_sha256": "ecc48703352846a1c9df4d2791cfdbebaa37d833cbd53f990d71af2a317dbc9f",
+  "zh": "Antone 大概做好 Ebon Staff 了。"
+ },
+ {
+  "id": 366,
+  "src_sha256": "a8a648cd3689fc8a7cafaf4f9946789db9f6297b6f771d8aab7547ef9c95bfb2",
+  "zh": "Mook 離隊了！"
+ },
+ {
+  "id": 367,
+  "src_sha256": "22a24428b792c856677e977f694aa3d99a8e4ec12ab0a174a038496848392270",
+  "zh": "Mook 回隊了……來查查他學到什麼。"
+ },
+ {
+  "id": 400,
+  "src_sha256": "ac390ea6b4b2bbbe05d2dc98b6dfeaff4e1d1cc1d58416ea157a55f7e5cb18f7",
+  "zh": "交給 Antone 一顆巨靈之眼"
+ },
+ {
+  "id": 422,
+  "src_sha256": "a811519e84b67551410ecddc7c20dc02e8a3ac25953eb5d5cef39cddfe9c4e00",
+  "zh": "Myles 還欠著一筆酒錢……"
+ },
+ {
+  "id": 423,
+  "src_sha256": "37ae3b32b352ee497d2a7dde6d323fa8602fd890bfbc624a7c0f44b9ec15ebbd",
+  "zh": "替 Myles 還了債。我們會讓他做工抵債。"
+ },
+ {
+  "id": 464,
+  "src_sha256": "402abe0e6caeb58dd4a5d8ec9e228f2da90ffec4276b2865af7b66fd6d1bafe4",
+  "zh": "在 Marten's Bluff 找到秘密區域！"
+ },
+ {
+  "id": 524,
+  "src_sha256": "06545f7009177ce44ba9ef2c93a49f2228806936aab18943e56bc930beb4dd4c",
+  "zh": "雙面間諜身分被發現了！"
+ },
+ {
+  "id": 525,
+  "src_sha256": "4a4e95d700d34593cd439e2b71ff44c45765cc82374a594549649cf6114f680a",
+  "zh": "雙面間諜？花錢封口。"
+ },
+ {
+  "id": 600,
+  "src_sha256": "085d295abf7f1bb161f9aa42a869a215a92da6cf048de7fd20b60651262b67cb",
+  "zh": "到 Umpani 基地拿 Umpani 旗幟。"
+ },
+ {
+  "id": 601,
+  "src_sha256": "7adb2da7ce09272361e3b616b23f6f894946abce28e12cd3fe0b324587efcaa6",
+  "zh": "拿到 Umpani 旗幟！找到基地了！"
+ },
+ {
+  "id": 602,
+  "src_sha256": "bf4c4c1403ffec0e73b22bdd5a96729fd5248ec23336983e7f80f9aff0ea3f2b",
+  "zh": "幹掉跟蹤 T'Rang 的 Rapax 刺客。"
+ },
+ {
+  "id": 603,
+  "src_sha256": "3f7922520d9b668cc396acf70ca02e8e2d534bc703429e4c0cf335060ebd821c",
+  "zh": "Rapax 刺客已死！"
+ },
+ {
+  "id": 604,
+  "src_sha256": "2b384560b555e2d4aa08cdcd5d790090efa54e7d6b6fda2d1aaa5b9b11b5b90d",
+  "zh": "把 Z'Ant 的信交給 Mook。取得裝置。"
+ },
+ {
+  "id": 605,
+  "src_sha256": "20869938b933e70ff9fb3bee8d7656daa4f140c31ce5cb03d9087d0b368e3d2a",
+  "zh": "替 T'Rang 帝國拿到 Callisto 裝置！"
+ },
+ {
+  "id": 606,
+  "src_sha256": "394a36ef344e34d70c5886db95cbf20eb182ef47b13cbb623fe2afbe56368093",
+  "zh": "找出 Savant 的軌道座標。"
+ },
+ {
+  "id": 607,
+  "src_sha256": "4e33a3d5ecbf6205183a252adc5bc3bcda6032210c91fd63ef5abb1daa88d9e3",
+  "zh": "找到 Savant 的軌道座標了！"
+ },
+ {
+  "id": 608,
+  "src_sha256": "5ea0981e61e8ee013b38f90924edd18e349fe18ef8621265fed1988dc7ed8515",
+  "zh": "滲透並摧毀 Umpani。"
+ },
+ {
+  "id": 609,
+  "src_sha256": "2bdd80bea16326539ea922598a0efb37833d97ceaa7e6ee32d19b70bb464e614",
+  "zh": "Umpani 已被滲透摧毀！"
+ },
+ {
+  "id": 610,
+  "src_sha256": "dfb6d85ccb6e6c38261163334b642f81ed0c6827b1ff83ae72e892dfb897813b",
+  "zh": "收集物品。到 Ascension Peak 與 Z'Ant 會合。"
+ },
+ {
+  "id": 611,
+  "src_sha256": "df2c2c291969b2525722f4e5284a6c507268bcc535997c1867ad559fff7ded4a",
+  "zh": "找到 Z'Ant。他死了。"
+ },
+ {
+  "id": 612,
+  "src_sha256": "49563f5049454a2ccffc681b6f976d676e8ac30c9f477829966b1eea07c43749",
+  "zh": "把 Z'Ant 的結盟書交給 Yamir。"
+ },
+ {
+  "id": 613,
+  "src_sha256": "331098d6f285c64abe737f3421a52e9449b68d4d213959edda65739cd03b1b18",
+  "zh": "T'Rang 與 Umpani 和解了！"
+ },
+ {
+  "id": 614,
+  "src_sha256": "689734c37749ec971f257b1662fc54d243ae7ceceebac6c92ec2a57d8edba56a",
+  "zh": "到 Ascension Peak 與 Z'Ant 和 Yamir 會合。"
+ },
+ {
+  "id": 616,
+  "src_sha256": "c09c1e31321d5ae98d960462341c8ee5b7edec5ba8298608be40532783788d6f",
+  "zh": "把 Yamir 的結盟書交給 Z'Ant。"
+ },
+ {
+  "id": 617,
+  "src_sha256": "331098d6f285c64abe737f3421a52e9449b68d4d213959edda65739cd03b1b18",
+  "zh": "T'Rang 與 Umpani 和解了！"
+ },
+ {
+  "id": 618,
+  "src_sha256": "ff6909ae166240e9e75eba799be125dd605ce70dad4596f3a39b614879e2840a",
+  "zh": "Z'Ant 要我留意 Drazic。"
+ },
+ {
+  "id": 624,
+  "src_sha256": "e58005c91714fae70a7c6816299dfbcbf5512507f66d42a6c0025a8ad7fe5e66",
+  "zh": "Umpani 營地在 Mt. Gigas。"
+ },
+ {
+  "id": 626,
+  "src_sha256": "d9b2e6c019bd8b713c75d0f1437629d744b6c8c08755d7bc342b08745690bb5c",
+  "zh": "試著不動武拿到旗子。"
+ },
+ {
+  "id": 628,
+  "src_sha256": "0a0ecad369d0c204a313a3bf79395f17e4805351a35825ed343cfdb4165990f4",
+  "zh": "沼澤裡有人知道 Rapax 的事。"
+ },
+ {
+  "id": 630,
+  "src_sha256": "dbddd1200966de69be95d27e986e9540c4c042705ceb0e2c3bba343a2e00e065",
+  "zh": "Rapax 人像大概需要點氣味……"
+ },
+ {
+  "id": 632,
+  "src_sha256": "4f4666481dc235aed336bf176f4902286b6503337a44047bcf75b681823091d8",
+  "zh": "Mook 在 Arnika。"
+ },
+ {
+  "id": 634,
+  "src_sha256": "d1ab7943bf2a1bc7b84c781df6c8a40a6f7d75eeacb687fcd17498bb59eee992",
+  "zh": "那個裝置大概裝了警報……"
+ },
+ {
+  "id": 638,
+  "src_sha256": "ec7ee8f8c896d3b87a61d548fa1ea8cbeb37bacc5a276b11f1945e3b19fbfd0f",
+  "zh": "看看墜毀的船上有沒有飛行記錄器……"
+ },
+ {
+  "id": 640,
+  "src_sha256": "2e8f49f7f17f7045db0773ea1fab9c0415a7979526dfd98c0f5e4d253bec7106",
+  "zh": "Bayjin 那次墜機損毀大概比較輕……"
+ },
+ {
+  "id": 642,
+  "src_sha256": "ba76d7337cc124c0c1ef76e501f48b62da390bdc036f25953dacba2c0450dae4",
+  "zh": "Arnika 的 Flightfield 也許能讀黑盒子。"
+ },
+ {
+  "id": 644,
+  "src_sha256": "c0c11b93acfbd98a783c0cece12266e1763972c6531e11d3d1e1c6a2cd91662b",
+  "zh": "線人大概在營區邊緣附近。"
+ },
+ {
+  "id": 646,
+  "src_sha256": "0086d9dbc0a88acb841624f4c5ee462809fd0fad5c987e8929c28cce6cb527fc",
+  "zh": "我會把這句話轉告所有 Umpani……"
+ },
+ {
+  "id": 648,
+  "src_sha256": "b62570f95674c5e32f5f96272ceb11c33486d0191afe636807b7da0c892ace53",
+  "zh": "需要 A.Dominae、D.Dominus 和 C.Moliri。"
+ },
+ {
+  "id": 656,
+  "src_sha256": "b62570f95674c5e32f5f96272ceb11c33486d0191afe636807b7da0c892ace53",
+  "zh": "需要 A.Dominae、D.Dominus 和 C.Moliri。"
+ },
+ {
+  "id": 714,
+  "src_sha256": "5e1957fe0375a85d2d59388d98bd60b0a02790532b3fa7be616cf9f1e341cfd0",
+  "zh": "取得 Astral Dominae"
+ },
+ {
+  "id": 715,
+  "src_sha256": "14a3a919368cda49de2202712e5c8bed76365d8f8dd7ca2a4e2d04c9855c2afc",
+  "zh": "找到 Astral Dominae 了！"
+ },
+ {
+  "id": 716,
+  "src_sha256": "4834cf6215a882e57573bec6ef0b77a61f1a992b220f6fe442952bf135297d54",
+  "zh": "取得 Destinae Dominus"
+ },
+ {
+  "id": 717,
+  "src_sha256": "46f94140f5af611f818cb376a17cbd16709223bb4414f419492d843e3bbb126b",
+  "zh": "找到 Destinae Dominus 了！"
+ },
+ {
+  "id": 718,
+  "src_sha256": "b7ba2938bab7bd3f392b4cfaf18c89b7cfc491f4730b86e4a7f79c828b631d7c",
+  "zh": "取得 Chaos Moliri"
+ },
+ {
+  "id": 719,
+  "src_sha256": "35a4c4d5c56c65d034722f760e36e908c7ff78c39450f676724bad9c5e9189d5",
+  "zh": "找到 Chaos Moliri 了！"
+ },
+ {
+  "id": 720,
+  "src_sha256": "2425a936d5fa9c03a9252cdccdb81042f5e98fd34b3e794ba4d7e1764fbf0733",
+  "zh": "找到 Temple of Knowledge"
+ },
+ {
+  "id": 721,
+  "src_sha256": "710aee3f69240b6cb708244fe429e98d19a59d6d724c6d794f23b622f25e5095",
+  "zh": "Temple of Knowledge 解開了！"
+ },
+ {
+  "id": 722,
+  "src_sha256": "e853d38f92e72b041718101652fef28f05bab7052451ffd70ed8c755d30ec6c3",
+  "zh": "找到 Temple of Chaos"
+ },
+ {
+  "id": 723,
+  "src_sha256": "d1dd1389ca77950614f78e4a9ed36241a35b54bb8e398f58005dc4adcefc9bc2",
+  "zh": "Temple of Chaos 解開了！"
+ },
+ {
+  "id": 724,
+  "src_sha256": "250028b54668e710ea5c9973acd4538f135d886ae28cda88572d87def3f4a053",
+  "zh": "找到 Temple of Life"
+ },
+ {
+  "id": 725,
+  "src_sha256": "493db0c9bd6e8576ff88d6309df2d7a2985276cb4ba0b5692439776d10c7d780",
+  "zh": "Temple of Life 解開了！"
+ },
+ {
+  "id": 726,
+  "src_sha256": "67d1af9f71cbd9180f7dc7f9dd2cb0b67391a3b0a01ae03dfc09cad6c21f2b3b",
+  "zh": "見到 Dark Savant 的使者…… "
+ },
+ {
+  "id": 734,
+  "src_sha256": "3af87aa52fbc70e97f9320c036a7198d9b483beffc7a391d3fc58c62b06d102e",
+  "zh": "找到 Jan-ette 已遲。Savant 擊落她們的船。"
+ },
+ {
+  "id": 772,
+  "src_sha256": "18bd70ef14d5e64d1c12c0109690c115510735f471093b3a8f470fe407aedff8",
+  "zh": "找到一顆假的金屬球。很像那些神器。"
+ },
+ {
+  "id": 912,
+  "src_sha256": "a1a84f2f52939398ef76191ddb84a77b4f7a3b82d6be01311515c5899130e1e3",
+  "zh": "救出 Rafe，除去 Mark of Death。"
+ },
+ {
+  "id": 913,
+  "src_sha256": "887f4c8c60b40e8e9dbc9b30c78e829dbb28f255051f0e88c0a389cf33fd20d2",
+  "zh": "Rafe 得救！得知前往 Al-Sedexus 祭壇的路。"
+ },
+ {
+  "id": 916,
+  "src_sha256": "dab9fd42e37413e3f7f7279c38d1710d394fc42cf25e517d8d8cbb5671d29486",
+  "zh": "Ferro 應該做好 Mirror Armor 了……"
+ },
+ {
+  "id": 918,
+  "src_sha256": "3a5013cea4917d405bb024c2b623009819768d466ec8105dd64a1e439a11e663",
+  "zh": "Ferro 應該做好 Ivory Blade 了……"
+ },
+ {
+  "id": 920,
+  "src_sha256": "653c6dc5914fc7d34602d8f5abf5dd14b1b0f383e2764d3fae3975f1d098fe03",
+  "zh": "Ferro 應該做好 Vampire Chain 了……"
+ },
+ {
+  "id": 934,
+  "src_sha256": "31709211485a422166230aaa81ea00cbe87e464e209dc3c061ea61bbaa1c3987",
+  "zh": "交給 Ferro Silver Ore"
+ },
+ {
+  "id": 936,
+  "src_sha256": "a4536c4927bce6684ae10c6b185b59a3bad8a6c922e4bebee9dee31bf747b7f9",
+  "zh": "交給 Ferro Rift 的 Obsidian"
+ },
+ {
+  "id": 938,
+  "src_sha256": "3e8d1735d946e41b726fe426d25f615d7742675031b9f1f962a18f63847d0afd",
+  "zh": "交給 Ferro 一個映照墜盒"
+ },
+ {
+  "id": 940,
+  "src_sha256": "49ce2189bccd033e72cf3316fbf21317770107bdc3d068e6bd9c01e846a6d9a5",
+  "zh": "交給 Ferro 一根 Hogar's Tusk"
+ },
+ {
+  "id": 942,
+  "src_sha256": "df5f58df5159462dd09a725b98d219bdaa08e6bf4bf3c92d277e72f9fb3d4bd7",
+  "zh": "交給 Ferro Sea Caves 的 Coral"
+ },
+ {
+  "id": 944,
+  "src_sha256": "1e8f9fdf561d80d59f672053c0a9e1ab4b62b9fb8b4580a4f032612fdd825e46",
+  "zh": "交給 Ferro 一枚守護之戒"
+ },
+ {
+  "id": 946,
+  "src_sha256": "57b174b97c6e0e96f3424e857cd014c6c5ee5c33c734abdf38a1cad4ef16e094",
+  "zh": "交給 Ferro 一片 Vampire Bat Wing"
+ },
+ {
+  "id": 948,
+  "src_sha256": "6824e08f95e0ab39bb72cdda5ceefa9748404f81f322dcbb523c6a24b9af98f3",
+  "zh": "交給 Ferro 一條 Prisoner's Chain"
+ },
+ {
+  "id": 950,
+  "src_sha256": "74c35e1b290bb362d19a8a3cb6638799833c5c715872b000b4f210aad66dfb8d",
+  "zh": "交給 Ferro 女術士之心"
+ },
+ {
+  "id": 976,
+  "src_sha256": "2a1b0b0443f7257c2991012f67402d3c61bf0f1ff86bd3fc1e46e2150134a8c6",
+  "zh": "我們殺了 Rapax King！"
+ },
+ {
+  "id": 1106,
+  "src_sha256": "99d59a320b38cedfbb95267d323e001af39825b2f6f5437653988f6e914482bf",
+  "zh": "Rapax 毀了 Trynton……"
+ },
+ {
+  "id": 1154,
+  "src_sha256": "d185fd6118645dce94693eb7a87a97a35326f8325b28c6aafc3b382fb37a194c",
+  "zh": "Rapax 山崩擋住通往 Ascension Peak 的路。"
+ },
+ {
+  "id": 1156,
+  "src_sha256": "7a85892403c44e4e692ad4ed2a8a69b583d0e620c182e7ab7ba65c51e589b7e8",
+  "zh": "用 Crypt 的輪盤鑰匙取得 Cierdan 的{{Weaponry}}。"
+ },
+ {
+  "id": 1157,
+  "src_sha256": "3e9e6b056fe00bcf4e7c1ac9d29baa52e2e8174db023df4df52eb6bd7f10e5e6",
+  "zh": "找到 Cierdan 的{{Weaponry}}！Rapax 有麻煩了……"
+ },
+ {
+  "id": 1158,
+  "src_sha256": "b66212bb64fda8e130b754390d206dcdb7c8bcb2678d900ef59a04611e8ac020",
+  "zh": "Zynaryx Plate：毒液蟹殼、Tomb Skull "
+ },
+ {
+  "id": 1160,
+  "src_sha256": "3fa0df165cb0e106af9a748cc3110bc76d5bbb535ffc998adcb1ae550cbc1276",
+  "zh": "Steelhide Armor：Steelhide Croc 獸皮、Poison "
+ },
+ {
+  "id": 1162,
+  "src_sha256": "1b0845127b8f7132b9495fd42291fd632ab8068af4277ac4d4f9227a8897cf50",
+  "zh": "Featherweight：黃蜂翅膀、Plumed Serpent "
+ },
+ {
+  "id": 1164,
+  "src_sha256": "13d87d4c9a1e6880f8b3ea027a979c6e22b07924fffa107620d56ddf22f7fbce",
+  "zh": "Beastslayer：穿刺 Modai 之爪、切肉刀寬刃"
+ },
+ {
+  "id": 1166,
+  "src_sha256": "16563860761b9cc19af960f940c1a632fe13d48a6ec1d2d45b5158efd47e6b2e",
+  "zh": "Ebon Staff：Wood Spirit Staff、Ebon 寶石和"
+ },
+ {
+  "id": 1168,
+  "src_sha256": "9be73f1b46478181cbbaccdc42021348b313ff8fd70e51bba31c0cece1806f51",
+  "zh": "轉告 Fuzzfas：He'li 向他問好……"
+ },
+ {
+  "id": 1169,
+  "src_sha256": "5e6acda0660814acba782a59a18c29219f7218d1593b989b37b675eaaa5ac8c6",
+  "zh": "He'li 的話帶到了。拿了藥水。"
+ },
+ {
+  "id": 1172,
+  "src_sha256": "80a39801c9956dc75bff9b1592914c9219865100bcdd59dc8df9c38e5aab76d7",
+  "zh": "Dark Savant 與 Rapax 結盟了！"
+ },
+ {
+  "id": 1174,
+  "src_sha256": "2ea19e4ecf824b334eeb5ee8dd542642132eabd387ab78365fa88d57eb8cfb84",
+  "zh": "把失竊的鑽石還給銀行。"
+ },
+ {
+  "id": 1176,
+  "src_sha256": "780f49eb427922f90906ac61f138c6c5afeb928fffa540e279b63eafb39490bb",
+  "zh": "救人賺錢任務。找 Vi Domina。"
+ },
+ {
+  "id": 1177,
+  "src_sha256": "72cd604e11cb46133cc11df6b431081722caecf4b818471ed279aeaf2541118f",
+  "zh": "從 Savant Troopers 手中救出 Vi Domina！"
+ },
+ {
+  "id": 1178,
+  "src_sha256": "61165a74f79936cbe08656841086afc151ae677804fc6abb53cdfd7c41558e3b",
+  "zh": "資產解放行動。找監獄通金庫的隧道。"
+ },
+ {
+  "id": 1179,
+  "src_sha256": "75d9bacfd14c576aa8d33f0d52586bd7335cd9fb5fbc827e08e547ac2388ba90",
+  "zh": "成功！闖進銀行金庫，搶到財寶。"
+ },
+ {
+  "id": 1180,
+  "src_sha256": "64d26367b18d5175783da27a84e097fcd8348bdc8b267503c8ed0d7332b94374",
+  "zh": "在 Monastery 和 Mt. Gigas 之間找鑽石。"
+ },
+ {
+  "id": 1181,
+  "src_sha256": "7024259cc9f02331051af34a3782b98b5382a0abab0c21588b76dda6c6bb3d75",
+  "zh": "找到鑽石了！"
+ },
+ {
+  "id": 1182,
+  "src_sha256": "bf774e59ffa7aca02e3999eb7386742d558fa9d1f8df577fa96d0cbc400ca1be",
+  "zh": "到 Rift 附近洞穴找 Myles 的{{Weaponry}}庫。"
+ },
+ {
+  "id": 1183,
+  "src_sha256": "8c1c8abdc7cdf268ce4a1fc9c29b0e3d5ff9418e5eece54c6a9ada1f83782b84",
+  "zh": "找到{{Weaponry}}庫了！"
+ },
+ {
+  "id": 1184,
+  "src_sha256": "bda19d0d74aa0b802ec899494488045ab47a66acf68dbb8ad724cd8499bf80e8",
+  "zh": "Spaceport 電腦少了追蹤裝置。"
+ },
+ {
+  "id": 1185,
+  "src_sha256": "a27796f0090af0744e3542b928aee6212a0adfffea9039191239db9d5953049d",
+  "zh": "找到追蹤裝置。修好 Spaceport 電腦！"
+ },
+ {
+  "id": 1186,
+  "src_sha256": "3c3c5ed800def15b443e0beb0d185b1f30377abf54636622fb5b7c3f3137bb35",
+  "zh": "需要與 Mook 結盟……"
+ },
+ {
+  "id": 1187,
+  "src_sha256": "8fc520e51c4a5f8f614e2a886ff14fbde3a948a26026d8314765f89e643ab6fc",
+  "zh": "與 Mook 結盟了！"
+ },
+ {
+  "id": 1188,
+  "src_sha256": "e41fece61b7f392d46cb8c2c760e46a6997ac85a2813b8ca99ad9a4d3c861201",
+  "zh": "Mook 懷疑 Trynnie 從 Spaceport 偷了裝置。"
+ },
+ {
+  "id": 1190,
+  "src_sha256": "9564076b957054190e6649e025f6b65d487b82660586d6926b172d23971f32e0",
+  "zh": "Mook 需要有人護送一名野外探員。"
+ },
+ {
+  "id": 1191,
+  "src_sha256": "cbb86d5652a8231e43612352ada1d59d75995352b06e84d312260096928b3631",
+  "zh": "我們受雇護送 Urq。"
+ },
+ {
+  "id": 1192,
+  "src_sha256": "3f1f4ef1ede7a31a0717fd8e85d3438ee87112ea8eeb0efbb1817c2694db2ad9",
+  "zh": "Mook 得知 Bayjin 附近有太空船墜毀。"
+ },
+ {
+  "id": 1194,
+  "src_sha256": "aa11f33e3002739b557d310f7bbb4f48cef6cc3f2f25e60d71dcb7e27ac18745",
+  "zh": "Mook 認為 Marten 在 Sea Caves。"
+ },
+ {
+  "id": 1196,
+  "src_sha256": "9cc8030eb1474ee8d47e1365c66d887121220a9b8b65ff4778997cf5e1f623b7",
+  "zh": "Monastery 裡的{{Weaponry}}是用來對付 Al-Sedexus 的。"
+ },
+ {
+  "id": 1198,
+  "src_sha256": "0f5a8dfce41603ad6326efdee007568ed78c6f30c405af9ac45c42310cc2dd96",
+  "zh": "Savant 船艦的目標座標：1X 1Y 2Z"
+ },
+ {
+  "id": 1200,
+  "src_sha256": "cf6ccd21633b46f217c8c326a85b6d803cbcbecad5d4fcab45aec8ba75b336da",
+  "zh": "找到 Savant 的塔。裝置警告有爆裂物。"
+ },
+ {
+  "id": 1202,
+  "src_sha256": "6a0a6f39ee7abcdd02ed53a48e6c8e1954bf5e08076a7540630c005faf30838e",
+  "zh": "Arnika 的 Tower 裡有危險裝置……"
+ },
+ {
+  "id": 1203,
+  "src_sha256": "7b6d7a17b2db5eb336325b86418c43a825b03801490e52e53b3172d9a2577824",
+  "zh": "拆除了 Savant 的炸彈！"
+ },
+ {
+  "id": 1204,
+  "src_sha256": "dc99aa937796efe084f4275b73240bda06157980fa6edf56e0f4353c75623f17",
+  "zh": "今天見到孩子了。不再和惡魔有染。"
+ },
+ {
+  "id": 1206,
+  "src_sha256": "03881313e4b5f455889e007acc304ee4926b46bdbcb9f388acb26de4c725ebc3",
+  "zh": "從 Ascension Peak 登上 Cosmic Circle。"
+ },
+ {
+  "id": 1207,
+  "src_sha256": "c24533aee4ddc8343b009b82211aaca13ab55b78b5acc4da2e743ed0c34768c7",
+  "zh": "我們終於到了 Cosmic Circle！"
+ },
+ {
+  "id": 1208,
+  "src_sha256": "248486a9260838954708dbab52abf0e6e9f3c5cbf212c6c6635749e663bcc1f3",
+  "zh": "在 Ascension Peak 與 Yamir 和 IUF 部隊會合。"
+ },
+ {
+  "id": 1210,
+  "src_sha256": "ba199356f15e848554b8ec4c157cc1604cc3b1f258476f735330612437d70fb0",
+  "zh": "Burz 說要穿過 Trynton 才找得到 Marten。"
+ },
+ {
+  "id": 1212,
+  "src_sha256": "389b4e2d28738ac31586c7b0cbe607e47fef5fd63a356374560ae4aceeea56ed",
+  "zh": "Burz 說兩艘船墜毀，這裡和南邊各一。"
+ },
+ {
+  "id": 1214,
+  "src_sha256": "443bfd625ec4a490b9defdf631cd2947c2e720589c6458c008a62d4ae5d1bb18",
+  "zh": "接了一個叫 Rattus 的傢伙的銀行案……"
+ },
+ {
+  "id": 1215,
+  "src_sha256": "a56177e8262debf080c55f0fd0fb1a0134367a84132b0b210b24288f46faa4bb",
+  "zh": "銀行搶案完成。不是我們最光彩的事。"
+ },
+ {
+  "id": 1216,
+  "src_sha256": "c21c3f8729a2432da559385ff0507cd1aab21ff19f74b3fe1e05bb7bb4f1fb6a",
+  "zh": "Rattus 建議我問 Milano 關於 Dark Savant 的事。"
+ },
+ {
+  "id": 1218,
+  "src_sha256": "520074bd202ad11f87ce255e0eaf66494150fd6b09c02e5622083b864be727d7",
+  "zh": "Milano 說 Rattkin 會向 Savant 討債。"
+ },
+ {
+  "id": 1220,
+  "src_sha256": "783a4aacdecd8b258a2414e0c1518bf9e7f21857572fe2ff11699f6bb51a3993",
+  "zh": "Milano 說 Savant 在 Guardia 拿到 Astral Dominae。"
+ },
+ {
+  "id": 1222,
+  "src_sha256": "ce0b9acae917ba2cdf3ccbc858cc46248af92e00ef23fd93b1596a724818a68b",
+  "zh": "Barlone 會賣 Astral Dominae……等他拿到之後。"
+ },
+ {
+  "id": 1223,
+  "src_sha256": "0db79b3a865b4c44004066286046d6072d9931b55886493a8a6246554b9c571a",
+  "zh": "Rattkin 從 Savant 手上偷走 Astral Dominae！"
+ },
+ {
+  "id": 1224,
+  "src_sha256": "94682fc3d3016182bfdaaa7f22a6a08b8d88f26c351b8d3ba6957d3bdf5c0acc",
+  "zh": "第 7 枝……命運要我們找到 Destinae Dominus"
+ },
+ {
+  "id": 1226,
+  "src_sha256": "a9452bdf85cbf7ce0a5ffcf55456728bb66f945771f280e32083eda78f002be1",
+  "zh": "第 7 枝……去 Marten's Bluff 拿神像和話語。"
+ },
+ {
+  "id": 1227,
+  "src_sha256": "978a195e597cc3fb8e239790b1cdd7b229f8c7ad7c24627ca6d9e8c1412c61bd",
+  "zh": "拿到神像！拿到 Marten 的日記！"
+ },
+ {
+  "id": 1228,
+  "src_sha256": "aadb3c20d9044ff84c4bcd97fe9d9fb95ffd70f45fcab3dde1faa0af1620c96f",
+  "zh": "話語？Shaman 說的大概是日記……"
+ },
+ {
+  "id": 1230,
+  "src_sha256": "0200a6fdb2ddf1a89b49ae1fd01c916d8dc56dc269b64b1831c572cbab7bb7ef",
+  "zh": "第 7 枝……過 Bluff 後到第 6 枝見 Shaman。"
+ },
+ {
+  "id": 1231,
+  "src_sha256": "9a7a1613ab508775853922635013e2bf833fdc8612dfe85913964a69b2232c05",
+  "zh": "拿到寧靜之鑰！"
+ },
+ {
+  "id": 1232,
+  "src_sha256": "c08d1d1db6eca1cedec200319186fd15d3e93f2add74792ee2fe268cc951d7e2",
+  "zh": "Marten 的日記：「Eternal Trust Survives the Soul」"
+ },
+ {
+  "id": 1234,
+  "src_sha256": "fd82fdc1bcf21ed301c5fea83976abfecf691cb4a20da0c8b331fe393ba295eb",
+  "zh": "取得 Helm of Serenity。"
+ },
+ {
+  "id": 1235,
+  "src_sha256": "69dfa59d17a2d26dc98f7c837d14419a75b1003b971d4b6975dec82181cf401c",
+  "zh": "拿到 Helm of Serenity 了！"
+ },
+ {
+  "id": 1236,
+  "src_sha256": "6544c2cc090b4687525673b6b213cd428ecc686d4eb1014c9adf90d61115b83c",
+  "zh": "用 Gooda Vines 搭橋。"
+ },
+ {
+  "id": 1238,
+  "src_sha256": "6d045065cae0d50ae9bdf2dc8e735e0baf789e1ec40943d5c22b5f9ead40c365",
+  "zh": "要拿 Destinae Dominus，得戴 Helm of Serenity。"
+ },
+ {
+  "id": 1240,
+  "src_sha256": "06e36eaa72a53fcc265459a23f967ba82190a2aa2c4a115adf7f0c74b5fd0a06",
+  "zh": "找 Marten……他很久很久以前就失蹤了。"
+ },
+ {
+  "id": 1241,
+  "src_sha256": "f318b3a910b780734ba0f8624c1165a1f990b839e274406c37af167585264d5f",
+  "zh": "找到 Marten 了！"
+ },
+ {
+  "id": 1242,
+  "src_sha256": "b916fece863fab87353c06abcb35b617f787a47604f04c349246326f8c1f3647",
+  "zh": "Chief Gari 說了與 Marten 的盟約，見 Shaman。"
+ },
+ {
+  "id": 1244,
+  "src_sha256": "f35045d167bb1196a8937c5cdbbec8f24868e0250459774100ac0835aea95373",
+  "zh": "到第 4 枝找 Madras。跟老鼠有關？"
+ },
+ {
+  "id": 1245,
+  "src_sha256": "354e4651d5de1d85ac63c9a961d6fac836294039c56020da1f444979b595b6df",
+  "zh": "找到 Madras 了！"
+ },
+ {
+  "id": 1246,
+  "src_sha256": "498e9197a8d3fe095b4218b4f044b3b10c00a9356d4e96e9b225f0254e494dc3",
+  "zh": "到第 4 枝找 Madras。"
+ },
+ {
+  "id": 1247,
+  "src_sha256": "354e4651d5de1d85ac63c9a961d6fac836294039c56020da1f444979b595b6df",
+  "zh": "找到 Madras 了！"
+ },
+ {
+  "id": 1248,
+  "src_sha256": "26e8cee66567fb2aed71c0592f7a5dc8c789e2a77d4a21325a7cd0dcf5e83eea",
+  "zh": "Madras 認為 Marten 可能在 Sea Caves"
+ },
+ {
+  "id": 1250,
+  "src_sha256": "20536a7d7ad96f8cc8acfc2317c4c81a7dc71ccb13d9165fb589e5e0737e21f3",
+  "zh": "Madras 認為 Mook 想與 Umpani 或 T'Rang 結盟。"
+ },
+ {
+  "id": 1252,
+  "src_sha256": "5f868ffab1cd280ab80d85f40bd6325550d0408bdc264adfd1523251038f3344",
+  "zh": "Madras 說在第 7 枝能得知我們的命運。"
+ },
+ {
+  "id": 1254,
+  "src_sha256": "314fe9126a7110b78a642c1617b0c132cdc8487f54e82c1a8559d6cae0393e16",
+  "zh": "殺掉 Breeder Rats——拯救 Trynton！"
+ },
+ {
+  "id": 1255,
+  "src_sha256": "6764b2a0c40e0780ca9c99081649de0b7f45b4ff8b8cb21b74bea14cdedaba1d",
+  "zh": "摧毀了 Rattkin 繁殖者！救了 Trynton！"
+ },
+ {
+  "id": 1256,
+  "src_sha256": "d8783dbf9888fc16d77b8f5853d9c235e55a1d2166d7c6246b6a8a4d5463b272",
+  "zh": "Madras 認為 Crock 知道 D.Dominus 在哪"
+ },
+ {
+  "id": 1258,
+  "src_sha256": "ea773de7ebff59d6aac2c9a0ba70cb5c71e275416fc6e40a7d94d059b38266ca",
+  "zh": "到第 7 枝。用 Zuzu 花瓣和神秘藥水。"
+ },
+ {
+  "id": 1259,
+  "src_sha256": "e2b9ba18857968dfb07ed01a6f68400e8d7dc2b4ba8fe1062bcdb45ee27a5de8",
+  "zh": "第 7 枝完成！命運揭曉！"
+ },
+ {
+  "id": 1260,
+  "src_sha256": "c1b8b75ca7109dc4c4ccd8bf822be159de0d3a76fdb26cf9d75dbcf45a03d249",
+  "zh": "據說 Marten 偷走了 Destinae Dominus。"
+ },
+ {
+  "id": 1266,
+  "src_sha256": "6bec5eef60493a5b358198c79058237cc41b1091cbc456433d99ca9cea9976ee",
+  "zh": "你們的船墜毀了，Grimpak 死了。"
+ },
+ {
+  "id": 1268,
+  "src_sha256": "535bcb5ac823081899b09b8328cfe44da72586c70f11b0e59c30185b4f675b7d",
+  "zh": "但你們總算來到了 Dominus。"
+ },
+ {
+  "id": 1270,
+  "src_sha256": "3befffd7a9ea13c9c455be024ee2dec9b5f8401d98d69b563bcd70059c1e0910",
+  "zh": "開頭不太順。總會好轉的，對吧？"
+ },
+ {
+  "id": 1274,
+  "src_sha256": "4da90bf588651c93a923f2181ea13cd10ffb3fda936ab1ab6cb6a2796570eda8",
+  "zh": "見到 Dark Savant……一下子。他就消失了。"
+ },
+ {
+  "id": 1276,
+  "src_sha256": "05d59ce394c62e42d0e73ba3b7ff9e89e26cacdc74f0f776b1c6c7d85ce7cf97",
+  "zh": "他說我們偷了 Astral Dominae！"
+ },
+ {
+  "id": 1278,
+  "src_sha256": "3c7cc33fd2f68b0eb1900da5ab2dc5e640e52b4eabb93514557c61bc596c95a4",
+  "zh": "*我們*沒偷，但懷疑是 Rattkin……"
+ },
+ {
+  "id": 1280,
+  "src_sha256": "83e4caa55816b5969e2d5b871262d035298234b50f9aabe058e6a0e8756ab809",
+  "zh": "Crock 說穿過 Bayjin 可到 Sea Caves。"
+ },
+ {
+  "id": 1282,
+  "src_sha256": "ce2ff95f223e3cc78e4e88324015ebbc9d860e7bc6e0180cdabd08c9a6372d54",
+  "zh": "據 Crock 說，Marten 在 Sea Caves！"
+ },
+ {
+  "id": 1284,
+  "src_sha256": "cfa6a8072f026d5c9016e5ff2cf0415d45f28ccf8160dfdd400fb8618f66de91",
+  "zh": "殺掉 Brekek，帶證據回去找 Crock！"
+ },
+ {
+  "id": 1285,
+  "src_sha256": "36db5fe3da431087ba4bb3af1a0ea1b4521133c7189de39287490b43590b5536",
+  "zh": "Crock 的突變沼蛙死了。這裡東西長真大。"
+ },
+ {
+  "id": 1286,
+  "src_sha256": "2fb686c6bb93875ec5adf5ff8cc749486bae9630eb4b2e879bb8cc6f920ef976",
+  "zh": "找到一個像是 Savant Trooper 的東西。"
+ },
+ {
+  "id": 1288,
+  "src_sha256": "c4f8415779af0c52af180df8ca96f3c04563c7f3f8cfdb786774917c3fbc3ead",
+  "zh": "這台 Android 好像不太正常……"
+ },
+ {
+  "id": 1289,
+  "src_sha256": "c2c17bf7065c8edd19608c2d24c77abf41f9b9fad676bb43343dc2e82e11e57c",
+  "zh": "修好 Android 了！好想知道它知道什麼……"
+ },
+ {
+  "id": 1290,
+  "src_sha256": "4ab24cd3bfc84397a24bc29b683e7fa736cbbdf73a94ccad392cd4212f1d4e97",
+  "zh": "Jan-ette 的船可能有 Savant 下落的線索。"
+ },
+ {
+  "id": 1292,
+  "src_sha256": "4f03e56fb486f77118f84b85177312e49cc2f75af9fefd6be9605f59d55fc34e",
+  "zh": "找 Glumph 中士！在 Bayjin 任務中失蹤。"
+ },
+ {
+  "id": 1293,
+  "src_sha256": "9bc74ccf4ec2bd914ae3cc130ee7b3fbdbe1a4f0476970a74ae8e483d7fed24a",
+  "zh": "找到 Glumph 中士。任務完成。"
+ },
+ {
+  "id": 1294,
+  "src_sha256": "4b619d91e4f4c0425525a4797f6ec36134795aac1bed091da8a4a1ed82450134",
+  "zh": "護送 Glumph 中士去見 Yamir 將軍。"
+ },
+ {
+  "id": 1295,
+  "src_sha256": "574c1e72d2a3ccb6717421795b34433d7fe52cd00297e5bcc0f24e3d849a38f3",
+  "zh": "任務完成！平安帶回 Glumph 中士。"
+ },
+ {
+  "id": 1296,
+  "src_sha256": "16593046375ed05754bd687c407a56de073b20326490a7f40c25854fe55617a2",
+  "zh": "在 Bayjin 救出 Umpani 士兵 Glumph 中士。"
+ },
+ {
+  "id": 1298,
+  "src_sha256": "26e03c34f643d855c0324f70972e9d07db26b6973ebbee2b76504467e23a06b0",
+  "zh": "救出 Umpani 士兵 Glumph 中士。"
+ },
+ {
+  "id": 1300,
+  "src_sha256": "960e258969cb4aecbef91552f3f0d79b01a51f8522efe4a1387fa4e49d4faaab",
+  "zh": "Marten 說我們的命運是對抗 Savant。"
+ },
+ {
+  "id": 1302,
+  "src_sha256": "fabb372b878ea01749e70e4db032d67581241e38bf9c43b554c3775ed597e75d",
+  "zh": "Marten 說 Cosmic Forge 本身就在書寫命運！"
+ },
+ {
+  "id": 1304,
+  "src_sha256": "e0a4067cf20c8719731575a223775c77195720d951a7e864385c583dcc7f8364",
+  "zh": "Marten 說我們需要 Helm of Serenity。"
+ },
+ {
+  "id": 1306,
+  "src_sha256": "4075d41faed541ccdfd7f5cc1c43c78492ca5969950a56b20213aff2bd37e857",
+  "zh": "見到 Anselm。他相信我們就是飛升之人！"
+ },
+ {
+  "id": 1308,
+  "src_sha256": "0566d25f8453e7440346c10cac891c356f41bcae5d51382af3bedfec9d9f8bde",
+  "zh": "對 Rapax King 用讀心術……Queen 被關在這。"
+ },
+ {
+  "id": 1310,
+  "src_sha256": "bbda3e630001a5a1f9da7e540cbd45f5c824b65f1de7c0f4366107080e4ac302",
+  "zh": "Ferro 說 Rapax King 想見我們。"
+ },
+ {
+  "id": 1311,
+  "src_sha256": "fcf15fd4273d289eeaa95b3cd8b7a5cd12226290f5786875887e31ebf2403865",
+  "zh": "我們現在是 Rapax 的正式審訊官了！"
+ },
+ {
+  "id": 1312,
+  "src_sha256": "d8e4097b11cde0ce976134aa8a5aa28b57de8454c5b96613b05bd657be7299fb",
+  "zh": "審訊 Umpani 和 T'Rang 俘虜。"
+ },
+ {
+  "id": 1313,
+  "src_sha256": "06073cf44308701b907c639c39da0dece65597a18bc0ec1198f5e0102b701d77",
+  "zh": "找到俘虜。算是審訊完了。"
+ },
+ {
+  "id": 1314,
+  "src_sha256": "7f4de978d85092e339fd8f1d9ac8701352b308b089dcca0b46f4632c1abffcfc",
+  "zh": "King 證實了 Savant 與 Rapax 結盟。"
+ },
+ {
+  "id": 1316,
+  "src_sha256": "ba6e3d7cd73c00c70c987cf3f8ee18260338c1d01dbff2e84f4dbbbd4ebd449c",
+  "zh": "Rapax 打算先毀 Trynton，再毀 Bayjin。"
+ },
+ {
+  "id": 1318,
+  "src_sha256": "0026f298b5aaed50883bb627e7fcee1dbfaef7a77ad2632e233e5cabf1a542a4",
+  "zh": "Queen 透露 Rapax Castle 裡通往 Tower 的入口。"
+ },
+ {
+  "id": 1320,
+  "src_sha256": "4cf68e793fdf9d4d4bc85052803e754d1593f974d1730323d99eea250c0e914b",
+  "zh": "讓 Umpani 與 T'Rang 和解！"
+ },
+ {
+  "id": 1321,
+  "src_sha256": "391801688892436b8162722f9a2738e27ab495e36f374e994482a5d47ac98da2",
+  "zh": "Umpani 與 T'Rang 和解了！"
+ },
+ {
+  "id": 1322,
+  "src_sha256": "1e596cab9ac4a2f83f8ce37c1ac2d862ae38f241f86b07d981a05311f677df63",
+  "zh": "從 Rapax 衛兵拿鑰匙。救出 Rodan 和 Drazic。"
+ },
+ {
+  "id": 1323,
+  "src_sha256": "77f86b60d70e198c3cf0d776b6a635b85ab4f4410db50fdfab2d33dad58cb69f",
+  "zh": "把 Rodan 和 Drazic 從籠子救出來了！"
+ },
+ {
+  "id": 1324,
+  "src_sha256": "6c0dc71841ee28ded62c426478aa4dcdea7311a3f3ce43718d65584893ef35d4",
+  "zh": "BLACK SHIP：時間 2:21。追蹤受干擾。"
+ },
+ {
+  "id": 1326,
+  "src_sha256": "9990e8fbe4402278b00ea656093ef355871d74722d265e203edc31cb158dad50",
+  "zh": "GUARDIA：時間 11:34。系統故障。"
+ },
+ {
+  "id": 1328,
+  "src_sha256": "7bafd4f1bf64afe263d422a8010bb58900e06d56f5a5893743665a89528e3e7a",
+  "zh": "DEFENDER：時間 11:37。攔截任務……"
+ },
+ {
+  "id": 1330,
+  "src_sha256": "e1ad9017a8eb4d52ad6c975ce0b2205b4c8c6a04a050ec62bc42989edd049d7b",
+  "zh": "CALLISTO：已降落。"
+ },
+ {
+  "id": 1332,
+  "src_sha256": "089fb973cfb4215bfe51c3b1bf0aa325efa19a78ebc102350bdcb6f2d16f5d53",
+  "zh": "BLACKSHIP：追蹤在源頭受干擾。"
+ },
+ {
+  "id": 1334,
+  "src_sha256": "b53eaf34fc9aabb5f63b02d6b3d9918368713320a6e99ccc4db928d039463d42",
+  "zh": "NARGISST：時間 141:24。航跡：2X 4Y 10Z"
+ },
+ {
+  "id": 1336,
+  "src_sha256": "abb4a8019ceab220bf8520b2e25b9e7fc74402006bb6b6c1c36e1628e61e6831",
+  "zh": "GALLEON：時間 141:25。降落於 Mt. Gigas。"
+ },
+ {
+  "id": 1338,
+  "src_sha256": "9e4e634a2a8619559ada1be21e6d0dfd6ba2d5867c5cd0c7acadb25ef1c975fa",
+  "zh": "BLACK SHIP：----船艦已毀----"
+ },
+ {
+  "id": 1340,
+  "src_sha256": "09644bc376eee1d0905b8956823a41b26374cf2958e8820f6dafee4695dd7b88",
+  "zh": "BLACKSHIP：軌道座標：10:24"
+ },
+ {
+  "id": 1342,
+  "src_sha256": "a03abe70c8314c5d9484e6410aa104f94c052c8e139a0ec878fd9f9bddde2418",
+  "zh": "NARGISST：軌道座標：7:17"
+ },
+ {
+  "id": 1344,
+  "src_sha256": "22317944409284ad2189170c90f7bb0fe33a1375eaa46ce5ab157c2a31f248d7",
+  "zh": ". . . 和蜘蛛絲"
+ },
+ {
+  "id": 1346,
+  "src_sha256": "8f5ddf61dccb110211d2185126d75eddda1c2f169a413b1744dbcd75af753f93",
+  "zh": ". . . Seeker Sac 和一根 Iron Weed 荊棘。"
+ },
+ {
+  "id": 1348,
+  "src_sha256": "d9aeea8dea9812cc60902921663d06eb97c5276d2f2af5f6efd6e0ab01ace56a",
+  "zh": ". . . 羽毛和一顆巨靈之眼。"
+ },
+ {
+  "id": 1350,
+  "src_sha256": "e7f8722561e8fc38eda749deb17f29356908d8f6516d42fc401428c11ab596b4",
+  "zh": ". . . 和一顆巨型 Picus 蛋。"
+ },
+ {
+  "id": 1352,
+  "src_sha256": "eacf683a7274110d41d2d1e13ba9ef318507a06226501b2d76a47cf8d9c68f8f",
+  "zh": ". . .  木乃伊粉末。"
+ },
+ {
+  "id": 1356,
+  "src_sha256": "f07553e4e2622335b1d9a63048f229f8f6138dfa3f3a38d349c5df9e9b67b960",
+  "zh": "要治好這狀況，必須殺了 Al-Sedexus……"
+ },
+ {
+  "id": 1357,
+  "src_sha256": "fe466de47efaa47e8c6a7c3fd65e58b51ffd298933a3d71cde6c344c1a4fc604",
+  "zh": "Al-Sedexus 終於死了！"
+ },
+ {
+  "id": 1358,
+  "src_sha256": "ca03fbba4cf4c4ce8d457c51fc9eaa9e16af5f2a9bc8c6bd047f569b31df877f",
+  "zh": "Mirror Armor：Silver Ore、Rapax Rift 的 Obsidian……"
+ },
+ {
+  "id": 1360,
+  "src_sha256": "c59f50ea1514d8a1c2162db1e07cf9418064a6576cc378646af8082f4811b2bd",
+  "zh": "……和一個映照墜盒。"
+ },
+ {
+  "id": 1362,
+  "src_sha256": "7dd256cf44f58e18133e1f49b685add19cd75765f6b2cb07be533640660e4c03",
+  "zh": "Ivory Blade：Hogar tusk、一塊 Sea"
+ },
+ {
+  "id": 1364,
+  "src_sha256": "c986b81407bb508dde56acb5d23adedbfa49142a1d917f838fc8ae1bd33a5a49",
+  "zh": "……Caves 的 Coral 和一枚守護之戒。"
+ },
+ {
+  "id": 1366,
+  "src_sha256": "503ab93e1c57de754f462cac5be0ffdb5af34bd9b8a129d1ade24d53a2999e3a",
+  "zh": "Vampire Chain：Vampire Bat Wing、Rift 的"
+ },
+ {
+  "id": 1368,
+  "src_sha256": "1b9adcee329031d3ec6cb8adf684bb15ac9ac8ece5f770578d3fd1cee438a7c4",
+  "zh": "……Prisoner's Chain 和女術士之心。"
+ },
+ {
+  "id": 1370,
+  "src_sha256": "01157742ab835b84cb07692e95b80cf5d8d9857042e556cf2262b0ad3a80758e",
+  "zh": "入會儀式在 Temple of the Initiate 開始。"
+ },
+ {
+  "id": 1371,
+  "src_sha256": "60536fac31391f9b733ee4970fecb2a522ed4b4643bac43d9c1fe01e962a89f5",
+  "zh": "入會完成，我們回到 Al-Adryian 那裡。"
+ },
+ {
+  "id": 1372,
+  "src_sha256": "199efcde75681b49d06b430b6f408f715495b3e76b763e5c5cf96402b966edfe",
+  "zh": "完成 Templar 入會儀式。"
+ },
+ {
+  "id": 1373,
+  "src_sha256": "0bc61a1e2b8f1634a57402f552ba3a2e5e5dfcc171c742cd7f918d5c44dd53db",
+  "zh": "Templar 入會完成！ "
+ },
+ {
+  "id": 1376,
+  "src_sha256": "189e526ae705d65830f24369536b057ad7c9d7c01ab1f9a39b85cc3c72842754",
+  "zh": "把 Rapax Queen 從籠子裡救出來。"
+ },
+ {
+  "id": 1377,
+  "src_sha256": "a37c12fa4d35287d30906253a1c1816a93025c2c516c674ee6a95a7bb200f26c",
+  "zh": "Rapax Queen 已獲釋，正返回 Castle。"
+ },
+ {
+  "id": 1378,
+  "src_sha256": "850b3c4425a84bcd69d1c4e9876c61aef3142954cc52c9438bb0a6be950441cb",
+  "zh": "召喚石能打開 Al-Sedexus 祭壇的門"
+ },
+ {
+  "id": 1380,
+  "src_sha256": "9b98673d1a4e2cf1dedc8ecf61debe44a50ea33901c01a6a12692c35867be976",
+  "zh": "成為 Templar Rapax。"
+ },
+ {
+  "id": 1381,
+  "src_sha256": "52ba04cab66502d8cc62c673e0bd6a78c31f420cceecce968e2cf9ccc835133b",
+  "zh": "我們成為 Templar Rapax 了！"
+ },
+ {
+  "id": 1382,
+  "src_sha256": "bfbea5df82ab3b3572bbd2eb930c15741f20ce2b2f7011dde758cb42cd6e8c96",
+  "zh": "……入會：說是 Al-Adryian 派我們來的。"
+ },
+ {
+  "id": 1384,
+  "src_sha256": "eddc786c9232da3bd740c51912ede96d791087f388208c56aed728e9901b2627",
+  "zh": "……入會：取得 3 件 Al-Sedexus Canezou。"
+ },
+ {
+  "id": 1386,
+  "src_sha256": "77034ac43504118c500dac2b59bf5d52268649df6c5fa93ada7babd991cd816f",
+  "zh": "完成 Ceremony of the Initiate"
+ },
+ {
+  "id": 1387,
+  "src_sha256": "0fb8fa5dd38fd07fee3e352e7d6b960bb447b0d306ee22b15d1eace1514d5bd6",
+  "zh": "儀式完成了！"
+ },
+ {
+  "id": 1388,
+  "src_sha256": "5f2feb475e0ef5a73b2165db3dd92641826c9ae27c871d4f4203cbcc0f47147d",
+  "zh": "……入會：最後，回去找 Al-Adryian。"
+ },
+ {
+  "id": 1394,
+  "src_sha256": "799a28a397744b41e016585be21bbfb1e0d73a491c26b03c8ab4ea32c3cf2200",
+  "zh": "……儀式：讓一名隊員穿上 Canezou。"
+ },
+ {
+  "id": 1396,
+  "src_sha256": "7ad07f057253c5a5e373c3a9740b1042904fc947889e27051d816673ef4439d8",
+  "zh": "……儀式：在祭壇上使用 Dark Nectar。"
+ },
+ {
+  "id": 1400,
+  "src_sha256": "7811134bcf461f4e21b84d38e66b51141d1eaba0dba8dca6b1f9c698d21a5acd",
+  "zh": "找 Umpani 情報員。「Destiny Arrives Tonight.」"
+ },
+ {
+  "id": 1401,
+  "src_sha256": "fd7a5e0e91d076ab0473fccf1eee0c12986ee700b857685244d57d7ef3352cac",
+  "zh": "找到 Umpani 情報員：Kunar 中士！"
+ },
+ {
+  "id": 1402,
+  "src_sha256": "5225d292cf7ff0ff5cbdd3a64fdfb20e2143b5b55aec1695b4c864bbd71cdd7f",
+  "zh": "……但我已經給過了。他還給我了。"
+ },
+ {
+  "id": 1404,
+  "src_sha256": "5225d292cf7ff0ff5cbdd3a64fdfb20e2143b5b55aec1695b4c864bbd71cdd7f",
+  "zh": "……但我已經給過了。他還給我了。"
+ },
+ {
+  "id": 1406,
+  "src_sha256": "a142e75d59953a579a23c7d73b5a5644431a1c671805a9cb86d079d783458fcd",
+  "zh": "把 Yamir 的信交給 Arnika 的 Mook。 "
+ },
+ {
+  "id": 1407,
+  "src_sha256": "39d9cc2eba5e49f903c85d0d1572f3854ed67ab16c920c33fcee947cb3561f3e",
+  "zh": "將軍的信送到了。回報 Balbrak。"
+ },
+ {
+  "id": 1408,
+  "src_sha256": "8aba4043717eb16446c8722f0238d1ae8b1e974cd86375783ae3782f8ffb77d6",
+  "zh": "把 Mook 的信交給 Balbrak 中士。"
+ },
+ {
+  "id": 1409,
+  "src_sha256": "2030bda23d25aedefb51887f1822d71e13396772e2597751ff4ee2bd0eff05da",
+  "zh": "把 Mook 的信交給了 Balbrak。"
+ },
+ {
+  "id": 1410,
+  "src_sha256": "159128922284183d01f67299ed5de9ce51c784a2979aaf6aabf69da48dedfaea",
+  "zh": "找出 T'Rang 傳送器。破壞它。摧毀船艦！"
+ },
+ {
+  "id": 1411,
+  "src_sha256": "8391fea25a99c901ea47f1418f3be1ad37ce8b774b0a7d620b2836453a95c756",
+  "zh": "成功！T'Rang 船艦已毀！回報 Yamir。"
+ },
+ {
+  "id": 1412,
+  "src_sha256": "88d39a91a969d9019a494b2ba0549759a3798a57edf52dad05d523146dabe73e",
+  "zh": "摧毀 Savant 的船。用 Gigas 山頂的大砲。"
+ },
+ {
+  "id": 1413,
+  "src_sha256": "9a228f66c25d7e63f73be318264e13f0bb3221ec720cb1446207716239a816ba",
+  "zh": "Savant 的船毀了！！回報 Yamir。"
+ },
+ {
+  "id": 1414,
+  "src_sha256": "a54c1bcb97b4fd404c1feb198484ffa95626b0887d784b0a8b2be78743ec68fb",
+  "zh": "Bildublu 中士說他聽說 Trynton 有 Rattkin。"
+ },
+ {
+  "id": 1416,
+  "src_sha256": "1981c48a1b3c1dd88973697ca35ba5aa1aa491857a3a5d77c0ff2d4e2d1d6078",
+  "zh": "Bildublu 中士相信 Cosmic Circle 真的存在。"
+ },
+ {
+  "id": 1418,
+  "src_sha256": "f493a210e2f63e7836c3ac892b0e007edff95642961dd5f5df7ab4e4764418f1",
+  "zh": "Sparkle 二兵說去問 Shaman 關於 Marten 的事。"
+ },
+ {
+  "id": 1420,
+  "src_sha256": "823b37f4a947141d1322ce4a7e44cf8278fb52f14c2f1ed3df9ab037e69f84e1",
+  "zh": "Sparkle 二兵說去問 Shaman 關於飛升的事。"
+ },
+ {
+  "id": 1422,
+  "src_sha256": "614c603b982d4c08c078a52d163b90c77436818b3270696472221c5e398c308f",
+  "zh": "Sparkle 二等兵說 Trynnie 有鼠患。"
+ },
+ {
+  "id": 1424,
+  "src_sha256": "ad82bedcafed984d7cfe3a79a9a79531fea837a2b2a4b1dbc85ab7adb3b708f3",
+  "zh": "去 Commissary 領裝備。"
+ },
+ {
+  "id": 1425,
+  "src_sha256": "750b70ec1e35970368dca912cc3454d2eb09847c98c5a2587c3eaabae5c3c198",
+  "zh": "拿到 Commissary 額度。"
+ },
+ {
+  "id": 1426,
+  "src_sha256": "520a22e9ecd92d158b091f4088fe7b353098b8c8652d45b24702d08b0059fffb",
+  "zh": "從 Kunar 拿到假的最高通行證。用它進入"
+ },
+ {
+  "id": 1428,
+  "src_sha256": "3864d956f9e5ea364065b0eceb9fb07df726fdac7865f2d782dfe0c714be7504",
+  "zh": "……Mt. Gigas。到頂層。登上船後"
+ },
+ {
+  "id": 1430,
+  "src_sha256": "9c186f00e1780bc4db6b1a220148af67ffb64c1f4dcb7685971472134f3849b5",
+  "zh": "……切斷固定索。暗號：「Transfer to Base.」"
+ },
+ {
+  "id": 1432,
+  "src_sha256": "d752ec0add15b7baf6f524d098dcf97d05bda895325a2046b957cde183bc19e8",
+  "zh": "完成 Umpani Obstacle Course。"
+ },
+ {
+  "id": 1433,
+  "src_sha256": "f90b8d1884dc0872b4a560639e87e70eaf065f1999021084091114e55faa1459",
+  "zh": "Obstacle Course 完成。回報 Balbrak。"
+ },
+ {
+  "id": 1434,
+  "src_sha256": "782fa8ad96d46e577aadc334a235990ab3f44bb929f30a8f4cbb5b1ca5610379",
+  "zh": "到 Obstacle Course 向 Rubble 中士報到。"
+ },
+ {
+  "id": 1435,
+  "src_sha256": "d2953749e226f6982aeeca6494b973938b78f17c55459a5d8ac16bf16f2b5ae9",
+  "zh": "已到 Obstacle Course 報到受訓。"
+ },
+ {
+  "id": 1436,
+  "src_sha256": "6d9bf088fbf4f5b0a2eb650d2c4d22a81c088164aefb1213c98b486118914099",
+  "zh": "Panrack 中士說可以在 Commissary 拿到旗子。"
+ },
+ {
+  "id": 1438,
+  "src_sha256": "bd67e4cec9e6ebfd70d104e8b2711266547598ac251dcd6ab77eae704b4bb20e",
+  "zh": "向 Yamir 將軍報到。"
+ },
+ {
+  "id": 1439,
+  "src_sha256": "3acc4ca6a379c4ca3aed06b5935acd54bed4ccea7e6bd37d83014f0617cf46b6",
+  "zh": "已依令向 Yamir 將軍報到。"
+ },
+ {
+  "id": 1440,
+  "src_sha256": "1a193bfbfac82e07efc59407d4e5ee707ace7a07345caf9eb0a9abbeb91c5667",
+  "zh": "將軍說了 Cosmic Forge——命運之筆。"
+ },
+ {
+  "id": 1442,
+  "src_sha256": "5be8c48030cbf2d62190bac76ac2bd0d32512f1c8086489973aff9d80d079716",
+  "zh": "去 Bayjin 把我們的部隊帶回家！"
+ },
+ {
+  "id": 1443,
+  "src_sha256": "3f07aa86f19330dfd0ef5ce25b0784c34b0d259dfa06db2ebfea1fc55ef8bc80",
+  "zh": "把我們的士兵從 Bayjin 帶回來了。 "
+ },
+ {
+  "id": 1444,
+  "src_sha256": "79c5e97038cf84513240aa3884369903752bcc72d1f02d375c7910bf6003a070",
+  "zh": "向 Rubble 中士報到，接受 UTU 訓練。"
+ },
+ {
+  "id": 1445,
+  "src_sha256": "ffa1deb6ab01168d1d1fd521f6876e0d3351b0a5eb70e4af0f4872d55b46b23e",
+  "zh": "已依令向 Rubble 中士報到。"
+ },
+ {
+  "id": 1446,
+  "src_sha256": "c70f82bae53e21e6608312177dd20386ae220cd549dd5ed19b7f309159d1100d",
+  "zh": "把 Glumph 帶到將軍那裡。他終於安全了。"
+ },
+ {
+  "id": 1448,
+  "src_sha256": "1482d62a0cd0b868b3f46ff1cdac3eedb24d5e2af283a7fb8919ad7803bb34ba",
+  "zh": "Balbrak 中士說去問 Higardi 關於飛升的事。"
+ },
+ {
+  "id": 1450,
+  "src_sha256": "ab8e4603172be275092cd43203592e6fe630036f88f486fc3fd26a080c2b8b62",
+  "zh": "我們的船被 Dark Savant 打下來了……"
+ },
+ {
+  "id": 1452,
+  "src_sha256": "5de3631c0a2ab14fada146402758cc9625614f83eef41ebc1622f2851b6d7f87",
+  "zh": "……我們都活了下來。行李？我們猜"
+ },
+ {
+  "id": 1454,
+  "src_sha256": "4f1a5042a86fe9af797a3031d55bbee54e3b0cab2d10b4091c0d47c1b2a53ba0",
+  "zh": "……成碎片了。Umpani 把我們救出來，"
+ },
+ {
+  "id": 1456,
+  "src_sha256": "2ee40292857d78266292304e6d96738a81397995e42b2c056a8ddf02a2359433",
+  "zh": "……帶到 Mt. Gigas。還沒決定要不要"
+ },
+ {
+  "id": 1458,
+  "src_sha256": "1acca54566341c9bd103cda0ce3e4364e75d4bd24ce54d5bb6b786fdf7aad7a8",
+  "zh": "……再入伍。世界好大，可能好多。"
+ },
+ {
+  "id": 1460,
+  "src_sha256": "974446ee9ef42c93d4bd1f2fc694465b4741b80f5d40e4fbb2536a30532bfe4e",
+  "zh": "Balbrak 中士把我們踢出 IUF 了！ "
+ },
+ {
+  "id": 1462,
+  "src_sha256": "5c95c333af2bc6c22b081fb70d1bc26f7b786290a43157ae07d6cda7427f3c51",
+  "zh": "確認 Marten's Bluff 有 T'Rang 出沒。"
+ },
+ {
+  "id": 1463,
+  "src_sha256": "eb0c8e61a49dbcc4865aef494ebd9cb084e0934c3fd86351fa709901f439953c",
+  "zh": "確認有 T'Rang 營地！ "
+ },
+ {
+  "id": 1464,
+  "src_sha256": "5ebef5436fe7444a68b671df87c655a1ac8c58d5aceb5b277f1cf2f62f36999b",
+  "zh": "……帶回 100% T'Rang 的物品。"
+ },
+ {
+  "id": 1466,
+  "src_sha256": "62eb7b2a74a2b2a5d2d33043a166c33e8d250a65e16422a45a575d9006b0ecc5",
+  "zh": "斥候：有 2 個類似 Astral Dominae 的物體"
+ },
+ {
+  "id": 1470,
+  "src_sha256": "fd055a416cff9630099228056db8373e70e0d7e82a6412824ba74636b8c9c8ec",
+  "zh": "進去向 Rubble 中士報到，接受更多訓練。"
+ },
+ {
+  "id": 1471,
+  "src_sha256": "89b078f88b0743c502f3bd03ea43970fe7fc35bf42c9c2d86640e06dfddd8290",
+  "zh": "已向 Rubble 報到受訓。"
+ },
+ {
+  "id": 1472,
+  "src_sha256": "d63b541560f723274658987c74c02c4d6bd8f1e0bbc035883780526444bbc91b",
+  "zh": "EWAXX：登入：STORM。密碼：BIGBADMAMA。"
+ },
+ {
+  "id": 1474,
+  "src_sha256": "161fc74012c64a46f8b7a200d8a69f75a7fb3298bb159e88cfa9cf64631bb102",
+  "zh": "好像漏了一個：Bayjin 的 Glumph。"
+ },
+ {
+  "id": 1476,
+  "src_sha256": "c051ab3de38981cfd4448b79ae5f58ab0c5bc94603a965d81105407e52f83549",
+  "zh": "Balbrak 要我們和 Glumph 去見將軍。"
+ },
+ {
+  "id": 1478,
+  "src_sha256": "62ebc321aec61615c4cd9bce231fc6fa353fafc50c858933ba1d6675881703d8",
+  "zh": "Rubble 中士說我得先去見 Balbrak……"
+ },
+ {
+  "id": 1480,
+  "src_sha256": "00f5cf1169904c6ee23d483459cf22ad9532d1f18e91faffca88c1b98e43ae40",
+  "zh": "拿到火箭發射器。到靶場練技能。"
+ },
+ {
+  "id": 1482,
+  "src_sha256": "cf29ff1776cd6111044374f97d8b10997d03408efa0f25a8bba9b17643f3c277",
+  "zh": "到 Covert Ops 向 Rubble 報到。"
+ },
+ {
+  "id": 1483,
+  "src_sha256": "4173dbe77d65a94d7060eb34e66d50f233e3045de273ee3b51225a84dd3c0e8d",
+  "zh": "已依要求到 Covert Ops 報到。"
+ },
+ {
+  "id": 1484,
+  "src_sha256": "5560281d396cbeefcd6a16c6d2977b8f70dcf279cd2d356eab5d11a9c5a93b3f",
+  "zh": "完成 Covert Ops。"
+ },
+ {
+  "id": 1485,
+  "src_sha256": "433b2a00adf0c8ccc54f135b26a0ad8cb25a034e78f8abb221ba4b0328966273",
+  "zh": "Covert Ops 完成。回報 Balbrak。"
+ },
+ {
+  "id": 1486,
+  "src_sha256": "f33178c01ccc81be6932c900ab488dc83d5036bca312abdabdf78f47ab7cdd86",
+  "zh": "……拿五面旗。活著出來。回報 Rubble。"
+ },
+ {
+  "id": 1488,
+  "src_sha256": "3c9c2b6bb5491f015dc9a5860ed630d9a73e9efd940ff38a400406f6ab4c2ba6",
+  "zh": "受 Underwater Tactical Unit 訓練。穿潛水服。"
+ },
+ {
+  "id": 1489,
+  "src_sha256": "ad975a2d9a01b1928fecd76e544aefb7d3095a7c0947e7cef3073c85bfee6e9f",
+  "zh": "訓練完了……算是吧。邊做邊學！"
+ },
+ {
+  "id": 1490,
+  "src_sha256": "a47a881daff1b919e96fded3b38fa8d2fcd6bc70669e4314e7252eb9f0c71a0f",
+  "zh": "……UTU：{{Magic}}可能無效。潛水服要"
+ },
+ {
+  "id": 1492,
+  "src_sha256": "773111a91d68b5851d9ea39b13e564c34242a32f010f468eb3d71d431eaf31ea",
+  "zh": "……一直穿著。下方隧道通往 Bayjin。"
+ },
+ {
+  "id": 1514,
+  "src_sha256": "83d20c15b7af01f78e27f49145a3b8be6b57599dd85d8207a72106ff984f89ed",
+  "zh": "Vi 想見 Lord Braffit……"
+ },
+ {
+  "id": 1515,
+  "src_sha256": "8de2df5ea61c6f241133dd0cf9b1b67e903a38ccf953d7c78f107b46bab99660",
+  "zh": "平安帶 Vi 見到 Braffit。"
+ },
+ {
+  "id": 1516,
+  "src_sha256": "20db6f23b9c62fc021853c83a5170da69d2af6e90f306a4e88509d7945d0c0a8",
+  "zh": "Vi 想去 He'Li 的酒吧看她。"
+ },
+ {
+  "id": 1517,
+  "src_sha256": "490628d60dcc289b4b57331d1c707bd638a3439ff58bbaceb0d6ab8b22dc767e",
+  "zh": "和 Vi 一起拜訪了 He'Li。"
+ },
+ {
+  "id": 1522,
+  "src_sha256": "779d458dcea1b866309cc999307b2774ea8530609f9f2f65b5d5e2264d249464",
+  "zh": "Bela 長久以來對 Cosmic Circle 很感興趣。"
+ },
+ {
+  "id": 1524,
+  "src_sha256": "d80399dbfa328fb9d4f93edf9280f4f62aa90afa5dda499997fd1cd0d9379ab2",
+  "zh": "Cosmic Forge 在 Cosmic Circle 裡。"
+ },
+ {
+  "id": 1526,
+  "src_sha256": "f891c16b1089cb3636db63d9b1c3856dfd00baa8fe8250ce56886e90fe286b33",
+  "zh": "見到 Bela。他說他一直在等我們。"
+ },
+ {
+  "id": 1528,
+  "src_sha256": "5f4b3dbeabe993b34d4501def8403d66e376e6bcf21a16265693f822a7004563",
+  "zh": "Bela 請我們幫忙，我們答應了。"
+ },
+ {
+  "id": 1530,
+  "src_sha256": "5c5a255c29a222ad0edf46bcf12bd967534a828ac2af3eb94182b1c6866a05fe",
+  "zh": "Bela 的計畫：我們去 Arnika，拆除"
+ },
+ {
+  "id": 1532,
+  "src_sha256": "94b10876def75b839191d4ad673223d28b5678ae20d9b2c12793c8409cbec56b",
+  "zh": "……Tower 裡的炸彈。然後收集 3 件"
+ },
+ {
+  "id": 1534,
+  "src_sha256": "ed1d34d1aaabc4484fc5188e3c98bd654cf7fbee8f4d3399cabcd53ddbef1f75",
+  "zh": "……神器，到 Ascension Peak 與他會合。"
+ },
+ {
+  "id": 1536,
+  "src_sha256": "e3f09a9f628b8406534d6980a3fb0d49eb8a46dab78941db9d034874d7f167e8",
+  "zh": "我們終於把 Becky 的戒指還回去了。"
+ },
+ {
+  "id": 1538,
+  "src_sha256": "59bd11b2ef0d50ddd6e54344a089446312bb9424f277a8f79561613e3366d97a",
+  "zh": "很多年前，Forge 從 Cosmic Circle"
+ },
+ {
+  "id": 1540,
+  "src_sha256": "9d7e52ada6f76aa85ddc81f67da2531d31e8f29c9655251ada8a7a118c52c6db",
+  "zh": "被偷走。這一團亂就是這樣開始的。"
+ },
+ {
+  "id": 1542,
+  "src_sha256": "c132dd2cc6e6ccfd5353609ea041551fbee7540c30f7acb23fb262d24b42315d",
+  "zh": "見到 Aletheides，他自稱是"
+ },
+ {
+  "id": 1544,
+  "src_sha256": "78e53b933ad0e1332733d7d1ce5787cf346e6217a3d2154af8e2c33f80c61c28",
+  "zh": "……Cosmic Lords 之僕。他說這還有別人："
+ },
+ {
+  "id": 1546,
+  "src_sha256": "a84e3cda0fe390cbe40bb4c551024239f8f68435e22c1af7b87830c2668c5bc9",
+  "zh": "……Umpani、T'Rang、Mook 和 Dark Savant，"
+ },
+ {
+  "id": 1548,
+  "src_sha256": "7e8dfa30c405eb4ea6bb3e48c88c0feb63e7edc6786a7d945e612a4d3dd4950d",
+  "zh": "……都為同一個目的：登上 Cosmic Circle。"
+ },
+ {
+  "id": 1552,
+  "src_sha256": "dc0ed93dd0389e31134b1a5c504e31d1d61052593bb213612778cd9d4e38ffe2",
+  "zh": "我們的 Mook 說這些 Mook 有 Chaos Moliri！"
+ },
+ {
+  "id": 1566,
+  "src_sha256": "8eeb9fc0b9929e9c5338b7bd99c1a82bef25e6bc2aaa02fa073dd07bb0be4126",
+  "zh": "Balbrak 提到有個叫 Rodan 的人失蹤了……"
+ },
+ {
+  "id": 1567,
+  "src_sha256": "d0fe74fe233b3642fa322783b6db83862009964cfb65a9eb76098aa7e0023e9d",
+  "zh": "找到 Rodan 了！"
+ },
+ {
+  "id": 1570,
+  "src_sha256": "75a1ca39440d9a1a045ceccb2301a471f53df5baac7e81c4af84bd7395abb16a",
+  "zh": "用 Orbit Tracker 取得軌道座標"
+ },
+ {
+  "id": 1596,
+  "src_sha256": "167f3cbd25598db42f325ca173216f2c2f65ab8c3ee5f23a2d6f15926422af90",
+  "zh": "……也許能用這個騙過別人！"
+ },
+ {
+  "id": 1610,
+  "src_sha256": "a523eab668837bc5466b478eb636ba1114407a393a7741c8c4e3faedcd01dba9",
+  "zh": "當然，我們已經殺了她……"
+ }
+]

@@ -1,0 +1,20 @@
+call	4e77b0	resolveCharacterAttackAction	依角色槽與情境解析動作種類、法術 ID 與物品來源；存在、HP、主要狀態決定可用性。來源 0x4e77b0..0x4e796d。
+call	519ac0	characterHandAttackRange	動作種類 0/1 時依 hand 選主手、副手或兩手最大射程；沿用 charAttackRangeNode（經 actionAttackRangeNode）。
+call	5207e0	itemEmbeddedSpellRange	動作種類 8 時由物品索引讀嵌入法術的射程；空索引回 -1。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5198fc	partyTargetActionKindDispatch	動作種類 0..8 的分派表：0/1 手部射程、2 必可攻擊、3/4/6 不可、5 短射程、7 法術射程、8 物品法術射程；calc 執行時從使用者 exe 讀並驗證，不複製表。來源 0x519811..0x519816。
+data	65be1c	spellDefinitions	動態法術記錄基址；stride 447，+0x12f 為有號 32 位射程。case 提供十筆獨立合成法術。
+data	685174	partyCharacterRecords	八個角色記錄，stride 6242；原版依角色槽讀手部、裝備與隊形不可用旗標。case 以 index 對應所選槽。
+data	687525	characterFormationQuadrants	每角色隊形象限的 u8 記錄，步長 12；中央為 4。來源 0x519874..0x519881。
+data	68751d	formationCenterSlots	中央三個隊形槽的角色索引，255 為空槽；來源 0x5198bb。
+data	68751e	formationCenterSlot1	中央第二槽，隨中央迴圈讀取。
+field	eax*4+0x5198fc	partyTargetActionKindDispatchEntry	動作種類選分派目的；超過 8（含 -1）直接回不可攻擊，來源 0x519811..0x519816。
+field	eax*4+0x687525	characterFormationQuadrant	第一角色槽的隊形象限，步長 12。
+field	ecx*4+0x687525	characterFormationQuadrant	第二（目標）角色槽的隊形象限，步長 12。
+field	ecx+0x4	actionItemIndex	解析後物品來源的 +4 為所選物品索引，再交 5207e0。來源 0x519855。
+field	edx+0x68751d	centerSlotCharacterIndex	三個中央槽，255 空槽，其他是角色索引 0..7。
+field	edx+eax*1+0x12f	spellRangeClass	法術 ID 乘 447 加法術記錄基址，再取 +0x12f 有號射程；ID 零回不可攻擊。來源 0x51982d..0x519848。
+field	esi+eax*2+0x17b5	characterFormationUnavailable	中央槽所指角色的隊形不可用旗標，零表示可用（可擋住對向攻擊）；角色步長 0x1862。

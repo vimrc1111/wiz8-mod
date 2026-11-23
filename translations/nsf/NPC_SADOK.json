@@ -1,0 +1,517 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "71694502ff596b98cbc71d653af9453b9664fd7996d38157530eb18e82a6bc6d",
+  "zh": "這裡不歡迎你們……"
+ },
+ {
+  "id": 3,
+  "src_sha256": "6ab54a8e5cda82d6621021ce31d7344628196bc9cf22a6b45fb66f446f57e7e2",
+  "zh": "真正的朋友，就是與 T'Rang 帝國站在一起的人！"
+ },
+ {
+  "id": 6,
+  "src_sha256": "f491996d110c9de3ef5b73fc142a3e55735b6c7c697dbceeb78c59d8dec5d781",
+  "zh": "你們敢威脅我？！這才叫威脅！"
+ },
+ {
+  "id": 7,
+  "src_sha256": "93a2e70b6fbbe2c197fb56dced56171a667ef877b891fa613c5dd16abb0db243",
+  "zh": "這麼一點小錢，是在侮辱我。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "e79a5857a8215e72e3bc4180e911e44df35b775bad0f681f60a80da666a63dfb",
+  "zh": "嘶！這裡是怎麼回事！？！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "7563254ea023d234d34de9e082a2ec8c9580edc8839baef5ee6456099e43ce4c",
+  "zh": "若是 Z'Ant 需要我與你們同行，我相信他自會表明他的意願。在那之前，我會留在這裡。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "1ba24920983baec2b145ad7b0fea5c592378aefbcae53e22cdfbb55eae34d1c4",
+  "zh": "一如既往，是我的榮幸。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "dca582a8d27ace9b6c87da4096f0ff2a00ea8e1ee85db0be0a0b3a38dc007e55",
+  "zh": "還是你們留著比較好。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "664f8ed0b75e0a182eb3ea8a92d6e94af75624626bbb557682095a5fe72e8fb7",
+  "zh": "也許我晚一點可以向你們買下它……"
+ },
+ {
+  "id": 16,
+  "src_sha256": "220006a41a3678b11c72ebd1ee031cfbb4f4a25eb67507a27c4a955dd4ae8e59",
+  "zh": "這……不夠……"
+ },
+ {
+  "id": 17,
+  "src_sha256": "526ab680cc979dd2050c4b95ff183176ba09b2a55e18d3cb4c0ca27e34115b71",
+  "zh": "這東西好眼熟。我想它以前是我的！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "6aac43038bc6e80b2e394616bf32a45b8c32fcd2666a8ee676cd16665bea5cd1",
+  "zh": "嘶！我萬萬沒想到你們竟會如此不忠！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "503a98624456bd991d37af20831cb8d476f42ce9344d34698f6ed999ee2cd7db",
+  "zh": "嘶！你們會後悔的！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "b55bc2112d19a5d3c466ee7b55ceb8e6f9b880e11bd5b93f18528304a20fd367",
+  "zh": "T'Rang 帝國信任你們，真是愚蠢！！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "d9442cbaea5aa9256d85724e4f94712b774f738c9251b9d4c125991927682b97",
+  "zh": "多麼慷慨的贈禮……"
+ },
+ {
+  "id": 22,
+  "src_sha256": "e6423a0579887064d5d8b49081627097222c0601ac89742250610b3efbe114c6",
+  "zh": "Z'Ant 或許知道……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "5683cd285affff3078519a9189299e79f1b9cd24ef19403b42a5dcbd260d9516",
+  "zh": "去問 Z'Ant 吧……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "4ccb6c9aa72a2f51910fb7973afc9369b88b44072e5eb89a903ba5487402ba8a",
+  "zh": "我沒有被授權透露那項情報……"
+ },
+ {
+  "id": 25,
+  "src_sha256": "322f3744bc367b0d8f1014460d29df68402464a2d9bf8fb72fe99a4b6f190aa4",
+  "zh": "聽著……我說過了，"
+ },
+ {
+  "id": 26,
+  "src_sha256": "3925a9dcd4fed91401f390d0973ef195d708e0b14463261deb8b7265bb750a5b",
+  "zh": "你們覺得哪一個比較重要？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "70e84734503132864e22b96bec666a4cd3464848fd38cf3a352caddaa40ca023",
+  "zh": "是的，還有你們的另一個問題……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "db7bc1f31775266ac036e77ace9fae6a179425b3807eaedf7362aeebad08cd1e",
+  "zh": "真是奇怪……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "4cef3d9321bc9ceff4113d7a8216a3293936ad57412bbbc2ae447eb01b0599da",
+  "zh": "也許我們晚點再談這件事。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "5e99dbc8de2779f2fb5991ef8a7f554fda44d8dc6032d777d753bc7fbb382c96",
+  "zh": "我該回頭處理這裡的事務了……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "fce39c228ef27d08d36e2c44a4d14bbb4352d3a414f02c43002dac85c48fa4a5",
+  "zh": "我沒去過多遠的地方……"
+ },
+ {
+  "id": 32,
+  "src_sha256": "e47ae658926124de41306a221a71d2d3060692d2e2a97a8e3a5d5e5c84b4fccc",
+  "zh": "除了 Watchers 告訴我的，我所知不多。它在這裡以北， Higardi 就住在那裡。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "fce39c228ef27d08d36e2c44a4d14bbb4352d3a414f02c43002dac85c48fa4a5",
+  "zh": "我沒去過多遠的地方……"
+ },
+ {
+  "id": 34,
+  "src_sha256": "fce39c228ef27d08d36e2c44a4d14bbb4352d3a414f02c43002dac85c48fa4a5",
+  "zh": "我沒去過多遠的地方……"
+ },
+ {
+  "id": 35,
+  "src_sha256": "64115b28ab6c038299d210a4c2ac91860b1d4a7449a8d666b7af3c131463d079",
+  "zh": "Watchers 說那是個危險的地方。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "64115b28ab6c038299d210a4c2ac91860b1d4a7449a8d666b7af3c131463d079",
+  "zh": "Watchers 說那是個危險的地方。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "893ef9a528ffae6c448bdeed1d87a33860d8958ddfc6d797a4aa537c4fc537be",
+  "zh": "聽說那裡是可怕的 Umpani 的老巢！"
+ },
+ {
+  "id": 38,
+  "src_sha256": "25ddcd6cdb3212859534f33661cfd9b822ab0571bec0e5634861b20eaf4c1357",
+  "zh": "是的，那是座令人欽佩的堡壘，比我們以往攻下的任何一座都好得多。"
+ },
+ {
+  "id": 39,
+  "src_sha256": "fce39c228ef27d08d36e2c44a4d14bbb4352d3a414f02c43002dac85c48fa4a5",
+  "zh": "我沒去過多遠的地方……"
+ },
+ {
+  "id": 40,
+  "src_sha256": "c1ca84b13053253564cf2ab599a9e83e7e910a425572a855e36e0ffc2650c70f",
+  "zh": "Watchers 說那是通往 Cosmic Circle 的道路。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "bb8e5afc138218460482e8dc50e3dfbba6f74dbb3fb68e36c2db689ddd1702e0",
+  "zh": "Cosmic Lords 的故鄉。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "fce39c228ef27d08d36e2c44a4d14bbb4352d3a414f02c43002dac85c48fa4a5",
+  "zh": "我沒去過多遠的地方……"
+ },
+ {
+  "id": 43,
+  "src_sha256": "af0dacb13142d7cc159f2c7b983d81feaccaea41024376e10d3f304d9c27565e",
+  "zh": "我只知道我聽來的那些……"
+ },
+ {
+  "id": 44,
+  "src_sha256": "af0dacb13142d7cc159f2c7b983d81feaccaea41024376e10d3f304d9c27565e",
+  "zh": "我只知道我聽來的那些……"
+ },
+ {
+  "id": 46,
+  "src_sha256": "0b60d239685219b9cc20f2c1921dbc626f68b6bdf46379ca0f36ae444e4153cc",
+  "zh": "Umpani 不可信任！"
+ },
+ {
+  "id": 47,
+  "src_sha256": "5f3a1e991f0eb1229aa322fc018e9acd7c4ac0b8fb84df3aeedccf95e0737a7c",
+  "zh": "偉大的 T'Rang 帝國？當然，既然你們選擇成為我們的盟友，想必你們對我們的原則（ principles ）、對我們的領袖 Z'Ant 已有幾分信心。這一點值得讚許。多年來， Umpani 到處散播謊言，硬說我們才是該被畏懼……該被屠殺的一方。"
+ },
+ {
+  "id": 48,
+  "src_sha256": "014150d1ca82b762b2db2213954d2d15d740eccc4c7bde9b6ec6addfb5a2a1ea",
+  "zh": "然而根本沒什麼好怕的。我們和他們一樣！我們開拓，我們從宇宙中獲利。若真要指責，就讓它落在 Umpani 頭上吧，他們屠殺了成千上萬的 T'Rang ，還有天曉得多少其他種族，從我記憶所及的年代就是如此。"
+ },
+ {
+  "id": 51,
+  "src_sha256": "f5d863f8467d0c582b7f6236235fb642a6bc9c333105bc87ec4183cc2676c14f",
+  "zh": "Rattkin ？嘶……他們不可信任……"
+ },
+ {
+  "id": 55,
+  "src_sha256": "a1dc6afd7dd320d1835178136e4feca3f822ced3c414f1675b6d06ac224b0e42",
+  "zh": "說他的名字要當心場合！他曾經騙過（ tricked ） T'Rang 一次，他的名字會激怒我們所有人！不久的將來，我們會毀了他！"
+ },
+ {
+  "id": 59,
+  "src_sha256": "9846296d09409c5433717b3504cf315c034037412f30d112e13f9669c7c50cd1",
+  "zh": "是的，就是那位 Marten's Bluff 的 Marten 。我想這裡西邊的牆上有一幅他的畫像（ painting ）。除此之外我對他所知不多。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "2a624e41ba5ee038782fdc74a40b25e9210a1ca8d3ffc023a977491c9878e743",
+  "zh": "嘶！ Z'Ant 對他另有安排……"
+ },
+ {
+  "id": 62,
+  "src_sha256": "906c89db797840d62ec0c954a6a49e5bdb670bc8586b8491a0cec8666ad79327",
+  "zh": "Watchers 看見他帶著軍隊從 Rapax Rift 往南走了！"
+ },
+ {
+  "id": 66,
+  "src_sha256": "4e916167d52a4393a8d004f2459c79400f7b0aec549e99fb2cadfe86672ba572",
+  "zh": "是的，偉大的 Z'Ant T'Rang ！他在 T'Rang 之中備受尊崇……"
+ },
+ {
+  "id": 68,
+  "src_sha256": "76c16dce16215785ebd772950638afbbadcf3f5ce8bc1d2340ab84853a926dd1",
+  "zh": "那個裝置給我們惹了不少麻煩。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "cdd9e1dcec728b34c35f8dc3f1f103f642f306e0f36f25f21ab85223e0bdea9b",
+  "zh": "你們當然比我更清楚我們在此的目標，也就是 Ascension 。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "3c9f6797b94e66267e5428f833688ef7e3b3ac71a35b57260cf414038c84f035",
+  "zh": "我什麼也沒聽說……"
+ },
+ {
+  "id": 74,
+  "src_sha256": "8dcb80402498a701aed469300290bebea0969e451882826ceaa9cd8af18f5147",
+  "zh": "我是 Sadok T'Rang 。 Z'Ant 要我滿足你們的一切需求……"
+ },
+ {
+  "id": 76,
+  "src_sha256": "ce3bc51933535ef5a366eb9f43a369b7ced994db4755b70619920142e1b9e89f",
+  "zh": "很遺憾，那個需求我無法滿足。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "ceee3ccf7edf162b2f2952725e820b0e539b9e9eb50eddea55a98e57369f7652",
+  "zh": "我的職責是治療，不是傷害。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "3703ae3cc15cf7ad9bf004f6dbb45ccbad97369fe9072a9424030e893d5063fb",
+  "zh": "T'Rang 帝國向你們致意……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "4cb1cc72578333978446ed1eb72052e7d9f69a72c85046b319d73ebce8ef7804",
+  "zh": "我們會再見面的，我確信。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "c45182765dadafaeed21e27dd9a194b0d37a621c76978c19f8087eba51e8b753",
+  "zh": "你們需要什麼幫助（ help ）？"
+ },
+ {
+  "id": 81,
+  "src_sha256": "37a26540d2f9dac9b506e6a6a4a81dd03ae008efa4ca3caeddcb17a0aac4789a",
+  "zh": "你們需要的一切，我這裡都有。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "e939eb0640345830491386c5f053dc8d0ae8bc4350e04b0c208c8d33206e51b3",
+  "zh": "我很滿足……"
+ },
+ {
+  "id": 83,
+  "src_sha256": "37a26540d2f9dac9b506e6a6a4a81dd03ae008efa4ca3caeddcb17a0aac4789a",
+  "zh": "你們需要的一切，我這裡都有。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "ff2fc99d348893d7513a5b47a903a688f22626e9234433164ff8b50ad1b16a01",
+  "zh": "畫像（ painting ）後面有東西……我很確定。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "af4c4d0a48e66809211a72f98f746079e8692782f2fa3c674fb7e74d19f2c812",
+  "zh": "不知為何，我原本以為 Z'Ant 的僕從會更……更……令人生畏。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "1b0ba5f24b8f3f6529c7b32a894f4032af6f163e04d66accd448ba608fd10be0",
+  "zh": "是的，在 Arnika ……"
+ },
+ {
+  "id": 93,
+  "src_sha256": "04ab037deedbe7086a43b065a11a2b2ff8dab3fd4c0671d6bed74ba252e8f83d",
+  "zh": "我想就在附近。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "30e9dc74b06d694f44933ac26f184b18e7091f750be2ae881f1790bce8b53c65",
+  "zh": "是的，就在這個 Bluff 裡。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "8fc6903a270547dad7a4ac6e382216a7ccf8bd01f8024d065816b291e9aa3bff",
+  "zh": "是的，在 Rapax Rift ！"
+ },
+ {
+  "id": 102,
+  "src_sha256": "24c2b1e8f31346d5e95c1d1cf45bc6cd20c10e52c5a8758c96d1381974abfd8a",
+  "zh": "就在這裡， Marten's Bluff ……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "d28e4ec540d71ea3d4a63b7031f979fa1f506e55ea0e722a68060787052bd25e",
+  "zh": "是的，我想是 Bayjin 。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "372e93eda9bddf7f64ed2e4f0be907f64a95a360778586c7dba2f1c4c85bb061",
+  "zh": "嘶，原來你們就是帝國的新夥伴！我是 Sadok 。很高興認識你們。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "4cb8ce0e8094c94f49981e99c5bc8357529e6b8082efd11ebda44ceae830b832",
+  "zh": "很高興再見到你們……"
+ },
+ {
+  "id": 107,
+  "src_sha256": "1b74eafec09c9acc63b4c0dbde356f76cd0150d8a06b689843a59ae239df267d",
+  "zh": "我說得更清楚些：我與你們無怨無仇。不過，若你們希望我把你們當盟友看待，我建議你們先成為盟友！去找 Z'Ant 談談。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "c014ec3ee45e332fe30acbd2ca18ad5759ca9a7e6b379cb5af557e24462c1812",
+  "zh": "Z'Ant 似乎對你們信心十足！他要我照顧你們的一切需求。若需要治療、兵器或護具，我都會提供。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "36bcc8130ebd1a1518b68f167a046e21c70a90e91ff591163b71e04ce29437c0",
+  "zh": "Z'Ant 還要我向你們說明一些新家 Marten's Bluff 的詳情（ details ）。這地方有時可說是相當、嗯，複雜。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "5bf0e96d4ad22b7bd9e4992fce582f3d4af96c744c0e7ff46c54bf748487d42c",
+  "zh": "你們離開後我想起一件事，想跟你們談談。你們或許已經注意到，這裡有幽靈。起初我懷疑它們是某種生物……後來才明白它們根本不是活的！"
+ },
+ {
+  "id": 111,
+  "src_sha256": "bea8fb77239f20070c63c03bed6463c6659c6d69a6281aa16fff8e6a39fe2adb",
+  "zh": "我懷疑它們和 Marten 本人有關。我猜這些幽靈在守護這裡的某樣東西。也許你們可以去調查看看。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "478abecce6b2a9059c454c35d2c249f55ff726c19e9679a8f1c508480c066ee7",
+  "zh": "我一直希望能早點見到你們。你們知道這裡有傳送機（ teleporter ）吧？也許你們可以替我們修好它們。我真想知道是什麼害它們出問題。其實，旅途中你們會發現它們相當好用。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "da71802f622865266ed2d114612e5294d4d217924293a9b584d37b7b32b6d2db",
+  "zh": "我一直希望能早點見到你們。 Watchers 告訴我， Rapax 正在遠北方集結一支軍隊。他們看見了帳篷與衛兵，並相信連 Rapax King 本人也在其中。他們正往南行進。朋友們，在外頭務必小心。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "fb2bd33073651f267df2aae8716e0dc738f8cd0f34630504a172d9dec78fca4e",
+  "zh": "是啊！我一直希望你們出發前能見上一面。你們準備去阻止 Umpani ，是吧？我正好有東西給你們。實驗室裡有一支電擊棒（ shock rod ）……可不是普通的電擊棒！我一直為你們留著。進那個房間需要這組密碼：7-4-0。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "c98accdecefc069ba22221fd1fae90978b33cceced2454e4300324962d382d9f",
+  "zh": "能在你們面前，是無上的榮耀。你們今日已成為偉大的傳奇。需要什麼就從我這裡拿，然後去 Ascension Peak 協助 Z'Ant 吧。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "76c01c4087801cd91f0cc164d65237508c9d6210b02345dcdfa941a50d9501b0",
+  "zh": "我收到消息，你們為 T'Rang 取得了 Chaos Moliri ！雖然你們是一群模樣奇特、又非我族血脈的人，你們仍是我們種族的光榮。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "d1336f7e35bc4e0c6ec7cfea28eec5880a734d9c83c0b64a2d17e4a6cf9460ff",
+  "zh": "Astral Dominae ！是真的嗎？你們拿到了！當初 Z'Ant 選中你們，我從未懷疑。多年前從我們正當手中被奪走的東西，如今由你們奪回，真是痛快！"
+ },
+ {
+  "id": 118,
+  "src_sha256": "007a7c113c662f3e13b008a40d7a4c8e4202ee3015d6e3db6c787ecf2ead6746",
+  "zh": "Watchers 告訴我，你們找到了傳說中的 Destinae Dominus ！是的， T'Rang 帝國在你們身上找到了一位偉大的盟友！"
+ },
+ {
+  "id": 119,
+  "src_sha256": "6aec3c234ec97646f65eda9ee36843f91c7146c17c0b4e898f17e5adce44a70a",
+  "zh": "我幾乎不敢相信發生了什麼事。和平。 Umpani ？ T'Rang ？若是一週前有人跟我提起，我一定會笑出來。然而你們……你們為這個帝國成就了這麼多，依然令我驚訝。這是天大的好消息。我們將並肩作戰！"
+ },
+ {
+  "id": 120,
+  "src_sha256": "8852a9d29b358b323d1786d55448c646a78ca66af510922a541812f4e27dd2d1",
+  "zh": "你們會對它非常滿意的。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "b0b478944aabd9c2518ef80835b198504a7ce5f953993c46e6b4f23bc87e8463",
+  "zh": "某種機器。我猜它們可能是相當有用的機械人偶。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "72c44cd6ad2b5d4eb9449bfe5d3c372710d1a1a219bcb23f5c3a678a9033097f",
+  "zh": "當然，比你們少。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "2854ed917de3763632c3f5d386a07ce5d27b0a5d4e99670afc4b5406bbd88dbe",
+  "zh": "這座古老的堡壘比我們來得早得多。據我們所知，它以前是 Higardi 的 Marten 的家。我猜 Marten 不希望有訪客。除了這裡那裡的陷阱之外，嗯，這地方並不好走。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "c8862f83b5ae51b01740e27e3025c796b54c76cecfc45a2808d21b64b1ad60ed",
+  "zh": "這裡有兩層，我偏愛下層。它讓我想起家鄉。這就是我們選它來放置 Nargisst Monitor 的原因。年輕的 Youngers 似乎適應得很好。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "20158ef048b14fc4a5d52c0f22bf5d940e77e4c3ada4d7250037ce13ac54a6a9",
+  "zh": "Monitor ？當然。這台 Monitor 把 Youngers 從我們的船上送到地表。它們在太空中繁殖得驚人地快……而且不受任何外來入侵的威脅。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "454650bfc9991600b2e448a9626b04e1ba4739862e813733759096afa61d194f",
+  "zh": "Mine Tunnels ，是的。 Tantris 負責守衛那裡。我們在那邊的 Troopers 出了些問題。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "49878d86e9edf4e9be8101b318087aa7dd381d3bc88ddf0f85542f500f674ac6",
+  "zh": "我寧可你們自己去問他們。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "7cbf03cee467f8c98d2ab6d98baaac081e1d0132e998ca1f8da5fffff338c2e7",
+  "zh": "嘶……你們遲早會學會像我們一樣說話。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "3e331b5c182c7f2b157de2d81c0314406dafa32b5df02f1a504e21e655cd2925",
+  "zh": "是的， Marten 的畫像（ painting ）。我猜那就是他。很奇怪，它會說話，你知道，不過我不知道它期待什麼樣的回答。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "9c43d3605abce75af9348b014986604c17bc0c94a64f114fe7cb8ffff3cbc216",
+  "zh": "我建議你們去問 Z'Ant 。"
+ },
+ {
+  "id": 132,
+  "src_sha256": "ddaa4030fd49f702b9ccf12061aa4fa6a9f9186ad264ccb5d46b5959b8474c2d",
+  "zh": "我們的原則（ principles ）和你們很像，朋友們。你們與我們同行，並非出於什麼崇高的道德信念，而是因為想要贏、想要掌控、想要獲取。我們的原則並無不同。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "f73de5532ef4d38dbef36e80d94e8e00fc0c89d269808e46103e7ff5d71843cf",
+  "zh": "當然，是年輕的 T'Rang 。"
+ },
+ {
+  "id": 134,
+  "src_sha256": "a9a6d15042931d25000ecfc7b8028aaabf722454833448be8c8f3e4a5c5a8623",
+  "zh": "他們是我們最大的資產！是的， T'Rang 受過訓練，能看透一切、刺探、滲透。他們向 Z'Ant 回報。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "15452b375ff69ec14179d42b8f46458d98128730820e2f4886025cdb30156e71",
+  "zh": "我長久以來都是 T'Rang 帝國忠誠的僕人，我會照料你們的一切需求。"
+ },
+ {
+  "id": 136,
+  "src_sha256": "51981d5c7bf0b4e803649aba226b1fc98721d892130464b72bf2209288c6b167",
+  "zh": "嘶，所以你們加入我們了？我早猜到了。你們看起來是明智之人。我是 Sadok 。"
+ },
+ {
+  "id": 137,
+  "src_sha256": "95f8252f6019c817e86d1573f7edddf1b419d09e2d2da8f37dce634ad66ce894",
+  "zh": "你們需要知道的，我都已經告訴你們了……"
+ },
+ {
+  "id": 138,
+  "src_sha256": "5473efe489d608e038b9d830ac2024d5abaffe6207a867bdf16e0e0ba0982144",
+  "zh": "我想，在這裡以北。"
+ },
+ {
+  "id": 139,
+  "src_sha256": "4ad29045e14fd6ede193ef3a126e7d9cbe2734c4bed2bc655dfb82d8613bb631",
+  "zh": "也許在這裡以南。"
+ },
+ {
+  "id": 140,
+  "src_sha256": "1b2899e48ce4459bc72a9b09f67fea1effe347eb26b7e6452b0d11dd46f8070e",
+  "zh": "是的，在這裡以東。"
+ },
+ {
+  "id": 141,
+  "src_sha256": "bf906652a99665692b83125c1a74b5d252c3f59033e46fab39467dee76eaad9a",
+  "zh": "在這裡以西，不過我無法確定。"
+ }
+]

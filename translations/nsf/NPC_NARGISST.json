@@ -1,0 +1,132 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "b98ac3b43fa6f6f5a696d71967b450a9ce90a1528ee5681e6f17d2cd7a00ccf4",
+  "zh": "Nargisst 指揮站。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "9169cd5e2d2c6b9ea1d45ad8bf9acd3c8ea0f8fba99aea40a6a3bbb3072bd490",
+  "zh": "未定義的請求。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "61bc0589b1cbe94c4f05e9ea5b7afb69f2675520daf7ae903807f1e30c74acae",
+  "zh": "檔案中無此答覆。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "272ca982297473b15f349534c387c1fb1d71f832052cfc92c6175b69fd7d90ef",
+  "zh": "找不到關鍵字。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "3c1446e44016de4393ffbc691b81d4ec208c1ea0cd5549537641b6602b2a0fa2",
+  "zh": "該資訊屬機密。"
+ },
+ {
+  "id": 26,
+  "src_sha256": "2a816d397fa1849f1ecf31dc208443eddfbfd562feee22f9a445335aa05eae76",
+  "zh": "請一次輸入一項請求。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "0f54249b532cd7cdbb44b7af036b5e445b4556770b490b9efe44d9d1a5b3a4a2",
+  "zh": "請求編號 2："
+ },
+ {
+  "id": 29,
+  "src_sha256": "7c1dcc7759fb16360036658e1bc9918222b94e866cf4240249936147e000e60d",
+  "zh": "編譯中……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "277e7393b9304f3465466fcf90f8a64542a53cdce4c1fcb2658790deb2904b6f",
+  "zh": "重新校準計時水晶中……"
+ },
+ {
+  "id": 73,
+  "src_sha256": "2dc687660f0ef4d84e4e8f35887ddf9afbfed15dd4c964c99daa51cf5c50c012",
+  "zh": "Nargisst Monitor 。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "400dd55547df4ebe5947858133b6bbafc9492e75f8de5176b5420dcc73a6ede1",
+  "zh": "母艦狀態如下：\n \n 母艦通訊：正常\n Younger Breeding 率：最高\n Younger 傳送率：正常\n 傳送器能量流（ Power ）：正常"
+ },
+ {
+  "id": 87,
+  "src_sha256": "f40a853e58a18759e1f7321d266d63494e320e9651af27d9373ec16380e414b6",
+  "zh": "處理中……"
+ },
+ {
+  "id": 88,
+  "src_sha256": "f40a853e58a18759e1f7321d266d63494e320e9651af27d9373ec16380e414b6",
+  "zh": "處理中……"
+ },
+ {
+  "id": 89,
+  "src_sha256": "f40a853e58a18759e1f7321d266d63494e320e9651af27d9373ec16380e414b6",
+  "zh": "處理中……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "f82ecd7daa4948138105191babd05c27aac39c1cabab98dac7385dbea0d32564",
+  "zh": "系統嚴重錯誤。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "cc3628e4fef940e87b418930d257a28fb41c05c62e4b3ae8e22743aeee91901b",
+  "zh": "無法透過 Nargisst Monitor 更改這些系統。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "5d622cd5bb28c93e2adee02189e3f7dd435d552673506ae4eb689be07f726bca",
+  "zh": "傳送器 Power 流正常。若要提高（ INCREASE ）能量流，請輸入 INCREASE 。若要降低（ DECREASE ）能量流，請輸入 DECREASE 。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "5f6b060768098a401ca23f97d67a3b11e82c0f309d7f90c8444a2c3ac2a6768a",
+  "zh": "錯誤。若 提高（ INCREASE ） Power 流將造成過載。過載抑制器已啟動。 Power 流維持正常。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "dcf5ef5c77d3f7db1df2297834e672fda603a58318f9659a56d97fde62429ba0",
+  "zh": "正在提高傳送器 Power 流。警告。警告。能量過載。錯誤。傳送器故障。嚴重失效。錯誤。傳送器離線。請待命接收 T'Alzar 艦長的來訊："
+ },
+ {
+  "id": 110,
+  "src_sha256": "034b2ba62a4a14cc04e10ec89819bf5eb1b674d4d5da873ccdb809cd58864542",
+  "zh": "錯誤。目前的 breeding 率需要設定等級。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "15796c417c1b10eedcf14a11ea447ab432e7b3e0717cb9f0bd80454c471a4105",
+  "zh": "Younger 正常傳送至行星地表中。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "d6651388ed4e2c420e818f4279a923239b319d6bb8a7fc52eee29a20e919f5c4",
+  "zh": "母艦上的繁殖者正以最高速率產卵。警告：母艦貨艙已近滿載。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "635e290dcc8ad541cc89c09ba1f091c8973069967bf89da00e41de59349faa1d",
+  "zh": "沒有來訊。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "198c24c261578f0d442c3d8ba79ba956a4b5fb58835c5074ac7864af99336cf2",
+  "zh": "訊息結束。與母艦失去聯繫。掃描母艦中。貨艙超出容量。 Breeding 艙超出容量。生命維持系統，耗盡。警告。警告。已達嚴重失效極限。系統關閉中。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "28509f8484281073efbf8d0261da0a05e4c005cf35d0a1310fd9a04f1ecb9bb9",
+  "zh": "想著艦長說的話，你們意識到整艘船和全體船員一定已被年輕的 T'Rang 淹沒、悶死——而牠們原本是要來拯救他們的。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "7fcc335f25c195a6c04714a6283b1247bb4aed78173ba68189c95a8a3c9600ca",
+  "zh": "Nargisst Monitor ，用於控制來自 Nargisst 母艦的進貨。"
+ }
+]

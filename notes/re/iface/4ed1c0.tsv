@@ -1,0 +1,9 @@
+call	40efa0	awarenessSelectionAndPercentileRoll	先 R(1) 選唯一候選（第一位合格隊員），再 R(100) 判定；即使門檻必成或必敗也消耗兩次亂數，来源 exe 0x4ed212..0x4ed223
+data	683fc5	awarenessCheckEnabled	隊伍警覺檢查啟用模式旗標，byte 為零時直接回零；模式事件名稱尚未確認，不臆稱特定技能，來源 exe 0x4ed1c0、notes/re/combat-2.md:79
+data	685174	partyCharacterRecords	角色主記錄陣列執行期指標，八槽、步長 0x1862；讀目前 HP、主狀態及有效 SEN，來源 exe 0x4ed1d4、0x4ed200、notes/re/growth.md:67
+data	685178	partySlotRecords	角色副記錄陣列執行期指標，八槽、步長 0x106；讀槽在場旗標，來源 exe 0x4ed1da、0x4ed1fa
+data	ffffffffffffffe0	無關	靜態分析將配置 32-byte 區域暫存空間的負立即值視作資料引用；不是記憶體位址或遊戲規則資料，來源 exe 0x4ed1c5
+field	ecx+0x0	characterMainStatus	掃描時 ecx 指向 C+0xb01，u32 主狀態小於 11 才合格；來源 exe 0x4ed1e2、0x4ed1f4
+field	ecx+0x10	characterCurrentHP	掃描時為 C+0xb11，32-bit HP 非零才合格，並非有號正數比較；來源 exe 0x4ed1ed..0x4ed1f2
+field	ecx+edx*2+0x161	characterEffectiveSEN	選中角色的有效感知值，位址為角色基址加槽索引乘 0x1862 再加 0x161；按 u32 除二，R(100) 嚴格小於門檻回零；來源 exe 0x4ed228..0x4ed24b、notes/re/formulas.md:84（SEN 名稱依排列與用途推測）
+field	edx+0x0	partySlotActive	角色副記錄 Q+0，u8 非零表示在場；來源 exe 0x4ed1e8

@@ -1,0 +1,57 @@
+call	2b6	srAssertFail	srAssertFail 匯入的分析標記（實際經 IAT 0x5ebaf4）；只在 NPC 記錄查無（模板 +0xcd 為 0xfa）、4f6b90 配置失敗或容器為空時停止，沒有可差分的正常返回，所在塊列 cov-exempt
+call	40efa0	random_below	R(n)：NPC 分支以 R(40) 選槽、R(剩餘權重和) 決定接受；怪物分支每槽 R(100) 與機率比較；calc 直接用 Rand
+call	4addf0	pointerListReserve	生成物指標清單擴容到 count+1（容量不足時配置 n*4 並搬移舊項），恆回 1；calc 重現配置與搬移，heap 為輸出
+call	4f6b90	itemObjectCreate	new(0xad) 建物品物件：重設 +9 實例、+0 序號 0x6874c2 遞增、+0x15 位置、+0x25 種類（掉落物 3、容器 2／3）、+0x39 = -1、4f93d0 放置、51fe30 移入 51c020 實例（清 byte +0xa）；calc 重現，物件 bytes 以 heap 輸出
+call	4f9580	pointerListInit	本地生成物指標清單建構：配置 5 項（0x14 bytes）、count 0；calc 重現
+call	50a4a0	npcRecordLookup	依怪物 +0x2f1 取 NPC 列表 *0x689f94 的記錄（索引不小於筆數時取第 0 筆），模板 +0xcd 為 0xfa 回 0；case 擺兩筆 NPC 記錄
+call	51bea0	partyGoldAdd	金錢不為 0 時加到隊伍金錢 0x685189（u32 繞回），名冊統計索引 0x686a70 有號小於 0x2f 時也加到 0x686b7d+33*索引；訊息與音效為表現層；calc 重現
+call	5e1c10	heapFree	釋放本地生成物清單緩衝；無規則輸出
+call	5e2480	worldListAppend	把物件附到世界物品列表 *0x683fb5（筆數不小於容量時配置 (cap+5)*4 搬移並 cap+=5）；calc 重現，列表三欄與緩衝為輸出
+data	5ebaf4	無關	srAssertFail 的 IAT 槽；只在斷言塊呼叫，非遊戲資料
+data	5ec15c	無關	本地生成物清單物件的虛表指標，只供解構，不是規則資料
+data	5ec160	無關	本地生成物清單物件的虛表指標，只供解構，不是規則資料
+data	612f4c	無關	斷言診斷字串位址，只在 cov-exempt 斷言塊使用，非遊戲資料
+data	618f18	無關	斷言診斷用原始檔名字串位址，只在 cov-exempt 斷言塊使用，非遊戲資料
+data	618f4c	無關	斷言診斷字串位址，只在 cov-exempt 斷言塊使用，非遊戲資料
+data	6190dc	無關	斷言診斷字串位址，只在 cov-exempt 斷言塊使用，非遊戲資料
+data	61915c	無關	交給 517a70 格式化的斷言訊息字串位址，只在 cov-exempt 斷言塊使用，非遊戲資料
+data	683fb5	世界物品列表指標	指向世界物品列表（+0 緩衝、+4 容量、+8 筆數）；單一掉落物直接附入，多件時容器附入；case 輸入 glist.cap／glist.count，輸出三欄與 gdata
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	ffffffffffffffc8	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	ffffffffffffffcc	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	ffffffffffffffd0	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	ffffffffffffffd4	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	ffffffffffffffd8	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	ffffffffffffffdc	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	ffffffffffffffe0	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	ffffffffffffffe4	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	fffffffffffffff0	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	fffffffffffffff4	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	fffffffffffffff8	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+data	fffffffffffffffc	無關	負堆疊位移，區域暫存（清單物件、位置、實例暫存），非外部資料
+field	esi+0xc	怪物位置物件指標	怪物 +0xc；其 +0x18 起三個 dword 由 4534c0 複製為掉落位置；case 輸入 pos0..pos2（位置物件 +0x118 起）
+field	eax+0x0	掉落位置 x／清單項	4534c0 回傳的位置第 1 dword（pos0）；串鏈迴圈中亦為生成物清單第 k 項（物件指標）
+field	eax+0x4	掉落位置 y	位置第 2 dword（pos1）
+field	eax+0x8	掉落位置 z	位置第 3 dword（pos2）
+field	ebx+0xd0	模板 NPC 旗標	怪物模板 +0xd0 bit0：1 走 NPC 物品槽分支，0 走模板掉落槽；輸入 t.flags
+field	ebx+0x0	NPC 物品槽	NPC 記錄 +0x30+2j 的 i16 物品編號，-1 為空；確定掉落後寫 -1；輸入／輸出 npcN.itemJ
+field	ecx+0x0	NPC 物品槽	同上，計算剩餘槽數與權重和時讀取
+field	ebp+edi*2+0x30	NPC 物品槽	同上，加權抽中的槽；掉落後寫 -1
+field	eax+ebp*1+0x115	NPC 掉落權重	NPC 記錄 +0x115+j 的 i8；0 表必掉，其餘加總為抽取權重；輸入 npcN.wJ
+field	edi+ebp*1+0x115	NPC 掉落權重	同上，第一輪必掉判定與加權接受比較（16 位有號）
+field	ebp+0x80	NPC 金錢	NPC 記錄 +0x80 的有號 dword，作為掉落金錢；輸入 npcN.money
+field	edi+0x0	掉落槽機率	模板掉落槽 +5（0x1f8+10j）的 u8；R(100) 大於它則此槽不掉；輸入 sJ.c
+field	edi-0x2	掉落槽物品編號	模板掉落槽 +3 的 u16；種類 0 為物品編號（零延伸），種類 1 為交 4f88f0 的物品池索引；輸入 sJ.id
+field	edi-0x4	掉落槽啟用值	模板掉落槽 +1 的 u16；0 表此槽不用；輸入 sJ.ne
+field	edi-0x5	掉落槽種類	模板掉落槽 +0 的 u8：0 單一物品、1 物品池、其他不掉；輸入 sJ.kind
+field	eax+ecx*4	生成物清單項	本地指標清單 data[count] 寫入新物件；calc 重現，緩衝在 heap 輸出
+field	ecx+edx*4	生成物清單項	同上（NPC 必掉輪）
+field	edx+0x0	生成物清單第 0 項	只有一件時取 data[0] 附入世界列表
+field	esi+0x0	物件位置 x	物件 +0x15 寫入掉落位置（單件附入世界時重寫）；heap 輸出
+field	esi+0x4	物件位置 y	物件 +0x19
+field	esi+0x8	物件位置 z	物件 +0x1d
+field	ebx+0x31	容器後繼鏈頭	容器物件 +0x31；串鏈從這裡往後找尾端；heap 輸出
+field	esi+0x31	後繼鏈指標	鏈上物件 +0x31，0 為尾；找到尾後寫入新物件
+field	edi+0x31	後繼鏈指標	新串入物件 +0x31 清 0

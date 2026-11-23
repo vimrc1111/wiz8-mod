@@ -1,0 +1,13 @@
+call	40efa0	rand_n	有界亂數 R(n)：每次練習先 R(100) 對門檻，再 R(2 或 3) 選技能，第二次 R(100) 對 25；Rand 重放原呼叫次序
+call	553f10	natural_skill_growth	以位址樁換掉的 D4 公式節點（參數：角色記錄、技能、重複次數、安靜旗標）；case 記錄全部呼叫的引數與次數，回傳值被覆寫不讀，寫入在角色記錄、不在戰鬥記錄
+data	4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	685174	characterRecords	角色陣列基址；角色索引乘 0x1862 得到傳給 553f10 的角色記錄指標
+data	6836a8	combatRecords	戰鬥區記錄陣列基址，每角色 0xd4 bytes；case 以 combat 物件擺放並在其他角色的記錄放誘餌值
+data	fffffffffffffff8	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+field	esi+0x0	handSwingCount	手別（主手／副手）戰鬥記錄 +0x60+0x10*h 的練習次數 u32；每輪 -1 直到 0
+field	esi+0x4	handSkillA	同記錄 +4 的技能 ID：門檻判斷（==14）、第一候選技能、第二輪重擲的比對
+field	esi+0x8	handSkillB	同記錄 +8 的技能 ID：第二候選技能，==0x10 時可重擲一次
+field	esi+0xc	handSkillFlag	同記錄 +0xc 的位元組旗標：非零門檻 75 且多一個候選技能 0x12
+field	eax+esi*1+0xc0	pendingGrowthFlag	每角色 0xd4 記錄 +0xc0+技能 ID 的待成長旗標（讀）；技能 6、0xb、0x26 非零時以重複 2 成長
+field	ecx+esi*1+0xc0	pendingGrowthFlag	同一旗標，取旗標位元組（寫入 0 的清除也由它位址）

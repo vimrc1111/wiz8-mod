@@ -1,0 +1,5 @@
+PASS space-rule
+PASS wrap-rule
+atlas: 1459 字 × 字高 7–24 → ~/Projects/games/wiz8-mod/hook/ddraw/out/atlas.h
+build: ~/Projects/games/wiz8-mod/hook/ddraw/out/ddraw.dll（22 個匯出）
+PASS ddraw-proxy: pei-i386, 22 個匯出與系統一致, imports: GDI32.dll KERNEL32.dll USER32.dll 

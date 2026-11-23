@@ -1,0 +1,25 @@
+call	2b6	無關	反組譯把常數誤判成呼叫位址，非函式
+call	408860	soundFlagGate	音效旗標為 0（exe 初值）時直接返回；呈現用，返回值不是規則輸入，calc 不建模
+call	50b800	objectTableLookup	依物件 id 取 0x689f94 物件表項（id 不小於筆數取第 0 項，旗標 +0xc7 非零視為無）；calc 的 cdaObject 重現
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	61a710	無關	斷言檔名字串位址，僅 srAssertFail 路徑使用
+data	61c8ac	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	61c8e8	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	6836a8	battleContext	戰鬥上下文指標；每角色 0xd4 bytes 記錄，死亡列表在 +0x8e8（筆數 +0x908）
+data	683f94	combatFlag	非零為戰鬥中
+data	685174	characterRecords	角色記錄陣列基址（每人 0x1862 bytes）
+data	685178	slotRecords	隊伍在場記錄陣列基址（每人 0x106 bytes，第 0 byte 為在場旗標）
+field	eax+0x4	物件表項 +4	物件表項 word +4，找到物件時設為 1
+field	eax+0x7b0	戰鬥上下文 +0x7b0	目標選取標記，死者為選取目標時清零
+field	eax+0x7b4	戰鬥上下文 +0x7b4	目標選取成員索引，死者為選取目標時設 -1
+field	ecx+0x7b4	戰鬥上下文 +0x7b4	目標選取成員索引，與死者比較
+field	eax+ebp*1	死亡列表項	雙重索引欄位；差分輸入與輸出包含
+field	eax+ebp*1+0xfa	槽位記錄 +0xfa	物件 id（-1 為無）；雙重索引欄位；差分輸入與輸出包含
+field	eax+ecx*1+0x18	戰鬥上下文每角色欄位 +0x18	雙重索引欄位；差分輸入與輸出包含
+field	eax+edx*1+0x4c	戰鬥上下文每角色欄位 +0x4c	雙重索引欄位；差分輸入與輸出包含
+field	ebx+0x9fd	角色死亡次數 +0x9fd	每次死亡加 1
+field	ebx+0xb11	角色欄位 +0xb11	死亡時清零
+field	ebx+0xb1d	角色欄位 +0xb1d	死亡時清零
+field	edx+0x0	物件表指標	0x689f94 所指表的首欄
+field	edx+ebp*1+0x1	槽位記錄 +0x1	死亡時設 -1；雙重索引欄位；差分輸入與輸出包含

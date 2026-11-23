@@ -1,0 +1,26 @@
+call	2b6	srAssertFail	間接呼叫 srAssertFail 的分析標記；只在物品的法術 ID 為 0 時停止（塊 500084），合法輸入不可達，cov-exempt 登記
+call	4ffcb0	spellLearnEligibility	角色能否學這個法術：職業遮罩、特性、職業等級和與法術等級，和學派技能（0x4ff7f0）換算出的可學等級比較；calc 於本檔轉寫，0x4ff7f0 於 Emu 以位址樁取輸入、F 呼叫真函數
+call	4ffe70	spellMarkLearned	標記已學、重算各領域已學數與點數（0x4f96a0、0x52a540）並組出提示文字；calc 轉寫計數與點數，提示文字只出現一次 0x55f260，不建模
+call	517a90	formatLearnFailText	把格式字串與角色名組成提示文字（全域緩衝），只供學習失敗的畫面提示；不參與規則
+call	520070	clearItemInstance	清空物品實例；游標物品走 0x55f1e0，地面清單物品在 0x520d10 後從清單移除並呼叫 0x4edd20；calc 轉寫，0x520d10 於 Emu 以位址樁取寫入值、F 呼叫真函數
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 IAT 槽；法術 ID 為 0 的不可達防禦性斷言
+data	5ed8c8	voiceEventParamB	語音事件第 4 參數（exe 全域），原樣交給 0x52e690；case 當輸入、calc 原樣輸出
+data	5ed914	voiceEventParamC	語音事件第 5 參數（exe 全域），原樣交給 0x52e690；case 當輸入、calc 原樣輸出
+data	61920c	assertSourceFile	無關：只供斷言訊息的來源檔名，不參與規則。
+data	61969c	assertConditionText	無關：斷言訊息的條件文字，不參與規則。
+data	65be1c	spellTable	法術表指標（記錄長 447，共 114 筆）；case 把它指到 arena 的法術記錄
+data	68516c	itemTable	物品表指標（記錄長 269）；case 把它指到 arena 的物品記錄
+data	68c09c	textTable	文字表指標；本節點只取其中的格式字串指標組提示文字，提示文字不建模
+data	68c510	voiceEventParamA	語音事件第 2 參數（全域），原樣交給 0x52e690；case 當輸入、calc 原樣輸出
+field	eax+0x6ec	learnFailFormat	文字表中學習失敗的格式字串指標；只用於提示文字，不參與規則
+field	ecx+eax*1+0x63	itemSpellId	物品記錄的法術 ID 位元組（失敗路徑讀一次，學會路徑讀一次）
+field	ecx+edx*1+0x63	itemSpellId	物品記錄的法術 ID 位元組（失敗路徑讀一次，學會路徑讀一次）
+field	esi+0x0	itemId	物品指標指向的物品編號（dword）
+field	esi+eax*1+0x11f	spellFlag11f	法術記錄旗標，進職業遮罩位 2
+field	esi+eax*1+0x120	spellFlag120	法術記錄旗標，進職業遮罩位 8
+field	esi+eax*1+0x133	spellRealm	法術所屬領域 0..5，決定領域技能 0x1c+領域
+field	esi+eax*1+0x48	spellFlag48	法術記錄旗標，進職業遮罩位 4
+field	esi+eax*1+0x5a	spellSchoolFlag	法術記錄旗標，進職業遮罩位 1；非零時另對四個學派技能 0x18..0x1b 回報成長
+field	esi+ecx*1+0x56	spellLevel	法術等級，技能成長量 2*等級（0x14）與等級（領域、學派）

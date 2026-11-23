@@ -1,0 +1,17 @@
+call	2b6	無關	srAssertFail 的分析標記（實際經 IAT 0x5ebaf4）；僅在行動階段不在 1..100 時停止，合法輸入走不到，無正常輸出。
+call	4e5620	monsterByIndex	依 0 起算的戰場列表索引取怪物實例；索引必小於筆數，列表存取交模擬器直接執行。
+call	5179f0	unsignedClamp	無號限幅，先比上限 100 再比下限（取整後的門檻）；原地回寫，calc 內聯同順序。
+call	5e2c70	monsterListCount	列表指標為空回零，否則讀列表 +8 的筆數。
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 IAT 槽；階段不在 1..100 的防禦性斷言，合法輸入不呼叫。
+data	61793c	無關	斷言訊息字串，只供錯誤診斷，非公式資料表。
+data	617974	無關	斷言來源檔名字串，只供錯誤診斷，非公式資料表。
+data	6836a8	partyCombatState	隊伍戰鬥資料指標；讀 +0x8 門檻、+0x910 模式，讀寫 +0x914 行動階段與八筆隊員行動。
+data	683fad	monsterListPointer	戰場怪物列表指標；列表 +0 指向實例指標陣列，+8 是筆數。
+field	eax+0x10	monsterActionPointer	怪物實例 +0x10 指向其行動記錄（+0 階段 u32、+4 已行動位元組）。
+field	eax+0x15	monsterActive	怪物啟用旗標，非零才處理。
+field	eax+0x8	partyThreshold	隊伍 +0x8 門檻 u32；階段小於它的行動不處理，取整時向上進位到十的倍數作為下限。
+field	eax+0x910	partyActionMode	隊伍行動模式 u32；非零才取整。
+field	ebx+eax*1+0x18	slotAction	隊員行動階段 u32，步幅 0xd4、共八筆。
+field	ebx+eax*1+0x4c	slotDone	隊員行動已完成位元組，非零則略過。
+field	esi+0x0	actionPhase	就地讀寫的行動階段 u32（隊伍 +0x914、隊員或怪物行動 +0）。
+field	esi+0x4	monsterDone	怪物行動記錄 +4 已行動位元組，非零則略過。

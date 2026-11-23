@@ -1,0 +1,43 @@
+call	50ddc0	npcItemsReturn	複本裝備 12 格（0x51d1c0 允許卸下）與背包 8 格，NPC 不保留者經 0x522090（排除樁）處理；依結果發 0x58aad0 訊息（排除樁）；calc ndsWorld.items 原生執行，0x50dc50 保留判定同檔
+call	5241e0	monsterConditionsFromChar	0x536150 清空來源記錄後，對角色 20 個非零狀態逐一呼叫 0x523c00（狀態 7 帶 +0xb09 懲罰）；calc ndsWorld.conditions，F 跑 monsterConditionApplyNode
+call	547570	groupCalmJoin	群組（及 +0xa3/+0xa7/+0xab 連結群組）解除敵對：清 +0x2a/+0xca、記時間 +0xcb、成員 0x5477d0；0x58aad0／0x538e00／0x546e70 為樁；calc ndsWorld.joinGroup
+call	54a880	templateBufferFree	釋放 0x54a760 給的模板緩衝；無可觀察效果，calc 不做事
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	619ebc	無關	斷言原始碼檔名，只作 0x4e5550 斷言診斷參數
+data	6836b8	partyAux	每隊員 0x118 bytes 記錄基址，離隊時清零
+data	6836bc	partyAux	同 6836b8 記錄的分析器切分位址（+4），非另一張表
+data	683f84	templateCount	怪物模板數；掃描模板緩衝的上限（無號）
+data	685174	characters	角色記錄指標，每筆 0x1862 bytes
+data	685178	partySlots	隊伍槽指標，每格 0x106 bytes；+0xfa 為 NPC 編號（-1 空）
+data	689f94	npcVector	NPC 物件向量：+4 數量、+0xc 元素陣列；越界取元素 0
+field	eax+0x0	npcObject / tmpl.key	向量元素（NPC 物件指標）；模板掃描時為記錄 +0xcd 種類鍵 byte
+field	eax+0x3	tmpl.flags	模板記錄 +0xd0 旗標 bit0（自 +0xcd 基準 +3）
+field	eax+0x4	npcVector.count	向量元素數（有號比較）
+field	eax+0xc	npcVector.data	向量元素陣列指標
+field	eax+0x26	obj.f26	NPC 物件旗標 byte，離隊時清零（0x50dc50 據此判保留）
+field	eax+0x27	obj.charCopy	NPC 物件內的角色記錄複本指標
+field	eax+0xc7	obj.gone	NPC 物件已不在旗標 byte；非零即回 0
+field	eax+0xb19	C.maxSP	角色複本最大體力
+field	eax+0xb1d	C.SP	角色複本體力
+field	eax+ebp*1+0xfa	slot.npc	隊伍槽 NPC 編號（-1 空）	雙重索引欄位；差分輸入與輸出包含
+field	ecx+0xb01	C.class	角色複本職業；0x12 不生成怪物
+field	ebx+0x9f	group.leader	生成群組的領袖怪物 ID
+field	ebx+0xca	group.fca	joinGroup 為真時設 1
+field	edi+0x0	M.id	領袖怪物 ID
+field	edi+0x33	M.SP	領袖體力；+0x9b 為 0x270f 時設為 min(C.SP, C.maxSP)
+field	edi+0x9b	M.f9b	0x270f 時套用角色體力
+field	esi+0x0	obj.model	0x55a0a0（排除）參數，之後清零
+field	esi+0x1c	obj.f1c	結尾設 1
+field	esi+0x1e	obj.f1e	結尾清零
+field	esi+0x27	obj.charCopy	角色記錄複製目的地
+field	esi+0x2e	obj.key	比對模板 +0xcd 的種類鍵
+field	esi+0xe9	obj.fe9	結尾設 1

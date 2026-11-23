@@ -1,0 +1,27 @@
+call	2b6	無關	登記器把 assertion 的 IAT 間接呼叫誤列為相對目標，實際為 srAssertFail；來源 exe 0x53fea0 內 0x5ebaf4 引用
+call	40efa0	randomRoll	R(n) 亂數；揮擊數取 R(模板 +0xe6)+1，來源 exe 0x53ffa4..0x53ffb4，先於 541630 的亂數
+call	5182e0	無關	攻擊預算為 0 時的戰鬥訊息，只寫訊息緩衝，不影響返回值與輸出
+call	519f80	monsterStoredTargetInRange	怪物已存目標（角色）是否在本次攻擊射程內：依模式取射程級別與可用旗標、陣型扣減、距離；移植為 monsterAttackSwingsNode 內的段落；來源 exe 0x519f80
+call	537160	targetCategoryCompatible	已存目標類別與存在條件；怪物受害者類別在 case 釘為無，角色類別走 combatTargetValidNode；來源 exe 0x537160
+call	5369f0	clearMonsterTarget	清空已存目標（八個 dword 歸零，後三個設 -1），返回 0；移植為失敗分支的輸出；來源 exe 0x5369f0
+call	53d4b0	monsterAttackAllowed	攻擊紀錄／文字／閘門／揮擊數檢查後，以模式 0 檢查是否有可打的隊員在射程內；移植為 monsterAttackSwingsNode 前段；來源 exe 0x53d4b0
+call	53ffe0	monsterAttackRangeNormalize	既有節點 monsterAttackRangeNormalizeNode，成功路徑的射程正規化與動畫啟動
+call	541630	monsterAttackFlags	既有節點 monsterAttackFlagsNode，成功路徑的背後／特殊／攔截旗標
+data	4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	assertion 失敗函式指標（srAssertFail）
+data	614910	無關	assert 診斷：怪物指標必須存在；文字不參與規則計算
+data	61d2ac	無關	assert 的來源檔名診斷文字，不參與規則
+data	61d65c	無關	攻擊預算為 0 的戰鬥訊息格式字串
+data	61d6a4	無關	assert 診斷：戰鬥資料指標必須存在；文字不參與規則計算
+data	61d6b4	無關	assert 診斷：怪物資訊指標必須存在；文字不參與規則計算
+data	6836a8	戰鬥狀態記錄指標	+0x9a6 起 162 bytes 暫存區每次進入先清零；case 以 combatState 物件擺放並輸出清零後的值
+field	ebp+0xe6	怪物模板的揮擊數上限	R(此值)+1 為揮擊數；來源 exe 0x53ffa6
+field	ebx+0x11	怪物行動記錄的攻擊槽索引	0..2 選模板三組攻擊
+field	ebx+0x5	無關	只進預算為 0 時的訊息參數
+field	ebx+0x9	剩餘攻擊預算	為 0 則失敗；否則先減 1
+field	ebx+0xd	本回合揮擊數	成功時寫 R+1；其他路徑原值保留
+field	edi+0x0	無關	登記器把寄存器 edi 的函式指標呼叫誤列為欄位運算元，非資料
+field	esi+0x0	無關	只進預算為 0 時的訊息參數
+field	esi+0x10	怪物目前行動記錄指標	指向剩餘預算、攻擊槽、揮擊數所在的戰鬥資料
+field	esi+0x2e5	怪物法術編號／攻擊類別	暫存後交給 53ffe0 作攻擊種類，亦為模式 2 的法術射程索引

@@ -1,0 +1,19 @@
+call	4e7ca0	anyPartyMemberEligible	成員 0..7 依序呼叫 0x524a10（characterActionEligibilityNode），任一成立回 1；只在 0x683fc6 非零時選休息通知文字 +0x1e54 或 +0x1e48；模擬器原樣執行，calc 以 characterActionEligibilityNode 逐人重現（F 用 0x5029e0 之後的 +0xb01／+0xb11）。
+call	5061a0	storyFactSet	劇情旗標設定 (id, val, 0)：寫 0x689b78+id、值改變時 0x5588f0 記入事件日誌 *0x68de40，再交 0x506670；本節點固定 (0xb6, 1, 0)；模擬器原樣執行（0x506670 位址樁），calc 重現旗標、日誌 count／capacity／項目與 heap 重配置；除錯文字 0x683f8c／0x688290 關閉。
+data	5ed8c8	voiceEventArg4	0x52e690 語音事件的第 4 參數（全域 dword，原樣轉交）；排除類位址樁記錄，case 輸入 g8c8。
+data	5ed914	voiceEventArg5	0x52e690 語音事件的第 5 參數（全域 dword，原樣轉交）；case 輸入 g914。
+data	5ee658	voiceEventArg2	0x52e690 語音事件的第 2 參數（全域 dword，原樣轉交）；case 輸入 g658。
+data	683fc5	restVoiceGate	入口清為 0 的 byte（0x5029e0 讀它決定表情）；case 輸入 fc5，輸出 ofc5。
+data	683fc6	restInterruptedFlag	非零時清除並以 0x4e7ca0 選通知文字 +0x1e54／+0x1e48；case 輸入 fc6，輸出 ofc6。
+data	683fc7	restWakeTime	休息結束時刻 dword；0 選 +0x1e4c，否則時鐘大於它（無號）選 +0x1e44、不大於選 +0x1e48；case 輸入 fc7。
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）；0x52e690 第 1 參數為基址＋0x1862×who（32 位回繞），0x4e7ca0 讀 +0xb01／+0xb11；case 夾具。
+data	686a48	gameClock	遊戲時鐘 dword；與 0x683fc7 比較選通知，減 0x6875f7 的 byte 後大於 0x15180 才解除狀態；case 輸入 clock。
+data	6875f7	timedStatusMark	定時狀態標記 byte：非零且 u32(時鐘−該 byte)>0x15180 時清零並解除狀態 0x13；case 輸入 f7，輸出 of7。
+data	6875f8	timedStatusReleased	解除時寫 1 的 byte；case 輸入 f8，輸出 of8。
+data	6875ff	timedStatusMember	要解除狀態 0x13 的隊伍索引 dword，交 0x523330 並推出 0x52e690 的角色指標；case 輸入 who（全 u32）。
+data	68c09c	restTextTable	文字表物件指標；+0x1e44／+0x1e48／+0x1e4c／+0x1e54 是休息通知字串指標，只交 0x58ac00；case 夾具，四欄為輸入、鄰欄放誘餌。
+field	eax+0x1e48	restTextNormal	文字表 +0x1e48 通知字串指標（無人可行動，或時鐘未過休息結束時刻）；case 輸入 t1e48。
+field	eax+0x1e54	restTextInterrupted	文字表 +0x1e54 通知字串指標（休息中斷且有成員可行動）；case 輸入 t1e54。
+field	ecx+0x1e4c	restTextNoWake	文字表 +0x1e4c 通知字串指標（休息結束時刻為 0）；case 輸入 t1e4c。
+field	edx+0x1e44	restTextWakeReached	文字表 +0x1e44 通知字串指標（時鐘已過休息結束時刻）；case 輸入 t1e44。
+field	edx+0x1e48	restTextNormal	同 eax+0x1e48，0x683fc7 非零且時鐘不大於它的分支；case 輸入 t1e48。

@@ -1,0 +1,16 @@
+call	51e760	itemUseConsumption	消耗一件實例的一個數量或一次充能（耗盡則移除）；既有 itemUseConsumptionNode（D4）；case 位址樁，記錄三個參數（擁有者、來源實例、0）與呼叫次數，回傳值無人使用
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	68516c	itemRecordTable	物品定義表指標；實例 id 乘 269 取得物品記錄
+field	ebp+0x0	targetItemId	目標實例的物品 id（i32），選出容量記錄與計數／充能位元組的種類
+field	ebp+0x4	targetCountByte	目標實例的數量位元組；目標記錄 +0x66 為 1 時是剩餘容量的現有量
+field	ebp+0x5	targetChargeByte	目標實例的充能位元組；記錄 +0x66 非 1 時是現有量；轉入量一律加在這裡（mod 256）；亦為 case 輸出
+field	ebx+0x0	sourceItemId	來源實例的物品 id（i32），選出來源記錄的 +0x66
+field	ebx+0x4	sourceCountByte	來源實例的數量位元組；來源記錄 +0x66 為 1 時是可轉出量
+field	ebx+0x5	sourceChargeByte	來源實例的充能位元組；來源記錄 +0x66 非 1 時是可轉出量
+field	ecx+0x66	targetRecordKind	目標物品記錄 +0x66：1＝以數量位元組計，其他＝以充能位元組計
+field	ecx+0x67	capacityBase	目標物品記錄 +0x67（i16）：容量加項
+field	ecx+0x6a	capacityFactorB	目標物品記錄 +0x6a（u8）：容量乘積因子
+field	ecx+edi*1+0x69	capacityFactorA	目標物品記錄 +0x69（u8）：容量乘積因子；容量＝+0x69×+0x6a＋+0x67
+field	esi+edi*1+0x66	sourceRecordKind	來源物品記錄 +0x66：1＝以數量位元組計，其他＝以充能位元組計

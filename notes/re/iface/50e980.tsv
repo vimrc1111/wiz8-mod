@@ -1,0 +1,26 @@
+data	4	無關	第一個參數在入口堆疊的位置；指向角色，非遊戲資料表
+data	8	無關	第二個參數在入口堆疊的位置；指向修正緩衝，非遊戲資料表
+data	ffffffffffffffe8	無關	配置 24 bytes 的六項抗性暫存空間；為堆疊調整立即值，非資料位址
+data	68516c	itemRecordBase	可變物品記錄基址；裝備物品 ID 選取步長 0x10d 的記錄，案例使用合成資料，非 exe 靜態表（0x50e9c2..0x50e9d5）
+field	ebp+0x0	characterEquipmentItemID	角色 C+0xf5d 起十二槽，每槽 12 bytes 的 i32 物品 ID；-1 空槽，槽 8/9 不參與；槽 6/7 不加行動與命中修正（0x50e99e..0x50e9df）
+field	eax+0x48	itemInitiativeModifier	物品行動先攻修正，與緩衝 +0 相加並 byte 回繞；武器槽 6/7 排除；語意見 notes/re/formulas.md F28
+field	eax+0x49	itemToHitModifier	物品命中修正，與緩衝 +1 相加並 byte 回繞；武器槽 6/7 排除；語意見 notes/re/formulas.md F28
+field	eax+0x6c	itemHitPointRecoveryModifier	生命回復修正，加到緩衝 +9；後續角色合計 +0x1779 供 0x503100 生命回復使用
+field	eax+0x6d	itemStaminaRecoveryModifier	體力回復修正，加到緩衝 +a；後續角色合計 +0x177a 供 0x504730 體力回復使用
+field	eax+0x6e	itemSpellPointRecoveryModifier	法力回復修正，加到緩衝 +b；後續角色合計 +0x177b 逐領域使用（notes/re/combat-2.md）
+field	eax+0xb1	itemBonusSkillID	有號技能索引，-1 不加；合法技能 0..40 選取緩衝 +13..3b（0x50ea16..0x50ea34）
+field	eax+0xb2	itemBonusSkillDelta	加到指定技能的 byte 修正，保留 byte 回繞（0x50ea2c）
+field	eax+0xb3	itemBonusAttributeID	有號屬性索引，-1 不加；0..6 對應力量、智力、虔誠、體質、靈巧、速度、感知（0x50ea36..0x50ea54）
+field	eax+0xb4	itemBonusAttributeDelta	加到指定屬性的 byte 修正，保留 byte 回繞（0x50ea41）
+field	eax+ecx*1+0x6f	itemRealmResistanceModifier	物品 +6f..74 六項有號抗性，各自累加到 32-bit 暫存，再夾限 -125..125（0x50ea5c..0x50ea9c）
+field	esi+0x0	initiativeModifier	呼叫者原有行動先攻修正，以 byte 累加；不清零（0x50e9e4）
+field	esi+0x1	toHitModifier	呼叫者原有命中修正，以 byte 累加；不清零（0x50e9e8）
+field	esi+0x9	hitPointRecoveryModifier	生命回復修正輸入／輸出，物品增量以 byte 累加（0x50e9f8）
+field	esi+0xa	staminaRecoveryModifier	體力回復修正輸入／輸出，物品增量以 byte 累加（0x50ea00）
+field	esi+0xb	spellPointRecoveryModifier	法力回復修正輸入／輸出，物品增量以 byte 累加（0x50e9fb）
+field	edx+esi*1+0x13	skillModifier	呼叫者四十一項技能修正的選定項，加入物品指定技能增量（0x50ea24..0x50ea34）
+field	ecx+esi*1+0xc	attributeModifier	呼叫者七屬性修正的選定項，加入物品指定屬性增量（0x50ea4a..0x50ea54）
+field	ecx+0x0	selectedSkillOrAttributeModifier	指向剛選定的技能／屬性修正 byte，寫回相加結果（0x50ea34、0x50ea54）
+field	esi+eax*1+0x3c	realmResistanceModifier	六項抗性輸出 +3c..41，覆蓋原值，以有號 byte 表示 -125..125（0x50ea9c）
+field	edx+0x0	realmResistanceAccumulator	堆疊內當前領域抗性 i32 暫存；累加有號物品修正後讀取夾限（0x50ea61、0x50ea7f）
+field	edi+0x0	realmResistanceAccumulatorInitialization	六項堆疊抗性暫存初始化為零；與原有輸出緩衝抗性無關（0x50e996）

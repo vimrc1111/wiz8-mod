@@ -1,0 +1,5 @@
+tools/fitcheck/fitcheck.go
+tools/fitcheck/fitcheck_test.go
+scripts/check-fit.sh
+translations/journal-overflow.tsv
+notes/re/journal.md

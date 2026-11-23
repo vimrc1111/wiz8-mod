@@ -1,0 +1,5 @@
+hook/ddraw/menu.h
+hook/ddraw/proxy.c
+hook/ddraw/speed.h
+hook/ddraw/build.sh
+notes/re/menu.md

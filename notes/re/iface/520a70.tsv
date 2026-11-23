@@ -1,0 +1,10 @@
+call	2b6	無關	抽取器將斷言呼叫的間接匯入標成此目標；空物品指標的診斷，不參與識別需求公式
+call	517f90	apply_unsigned_percentage_bonus	調整候選識別門檻；乘積截成 u32，除以 100 向下取整再加回門檻
+data	4	無關	堆疊參數位置的立即位移，不是規則資料
+data	5ebaf4	item_pointer_assertion_import	SR.DLL 的 srAssertFail 匯入槽；空物品指標只觸發診斷
+data	61a758	無關	斷言來源檔名字串，不參與識別需求計算
+data	61a9e4	無關	斷言物品指標名稱字串，不參與識別需求計算
+data	68516c	item_definition_records	已載入物品定義陣列指標；依物品索引與 0x10d 記錄間距取得需求；case 用 arena 模擬可變記錄，非固定 exe 表
+data	8	無關	子呼叫後清理堆疊的立即大小，不是規則資料
+field	ebp+0x0	item_definition_index	物品實例的 i32 定義索引；-1 表示空物品並回傳最低識別強度 1
+field	ecx+eax*1+0x85	item_identify_requirement	物品定義的 u8 識別需求；初值除以 3 向上取整，再與調整後候選門檻比較

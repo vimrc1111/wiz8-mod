@@ -1,0 +1,27 @@
+call	40efa0	rand_n	亂數 R(n)，n=5 取一次（偷竊懲罰骰 0..4 加 10），模擬器樁接、calc 以 Rand 介面重放
+call	4e5550	findMonsterIndexByIdentity	依 NPC 連結的怪物識別碼搜尋活動與備用怪物列表，回記錄索引；非公式，case 原樣執行，calc 以「找到該筆」建模，找不到走斷言
+call	4e5620	monsterRecordAtIndex	依索引取怪物記錄指標；非公式，case 原樣執行
+call	4e5720	monsterTemplateForRecord	依怪物記錄 +8 的種類索引取模板指標快取；非公式，case 擺好快取項，空指標入口走斷言
+call	50a280	npc_attitude	NPC 態度（byte，有號用）；D4 公式節點，case 以位址樁取代，回傳值是 case 輸入 attitude，呼叫次數記入輸出
+call	517ec0	character_pointer_slot	以角色指標找隊伍槽索引；非公式，case 原樣執行，供難度節點選角色
+call	51b840	item_value	暫存物品實例的價值；D4 公式節點，case 以位址樁取代，回傳值是 case 輸入 itemValue，呼叫次數記入輸出
+call	51c020	item_stack_charge_init	初始化暫存物品實例（物品編號、數量）；D4 公式節點，case 以位址樁取代，記錄物品編號參數與呼叫次數
+call	55cc00	difficulty	依難度與角色反轉狀態把門檻值乘 140% 或 60%；D4 公式節點，因會就地改寫數值指標而位址樁無法由 case 輸入給值，case 原樣執行，calc 重用 difficultyNode
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	619ebc	無關	怪物查找失敗時 assert 的來源檔名字串；不參與偷竊規則
+data	68516c	itemTable	物品表指標，步長 269；讀所選物品 +0x8a 的單件重量
+field	edi+0x69	characterClass	角色目前職業索引（i32）；7 時敏捷加成較大且不受基礎值正負限制
+field	edi+0x391	stealBaseRating	角色 +0x391 有號偷竊基礎值，名稱依本節點行為；同時除以 4 成為物品懲罰的上限基準
+field	edi+0x139	effectiveDexterity	角色有效敏捷（u32）；職業 7 除 40，其餘基礎值為正才除 80
+field	edi+0x89	characterTotalLevel	角色總等級（u32）；與怪物模板等級差乘 5 加進門檻
+field	esi+0x16	linkedMonsterIdentity	NPC 連結的怪物識別碼；與怪物記錄 +0 比對
+field	esi+0x1a	monsterLinkEnabled	NPC 怪物連結旗標；零時原版把空指標交給 4e5720 而斷言，無可重放的返回，calc 遇零 panic
+field	esi+0x25	linkedMonsterAvailable	NPC 已連結怪物可用旗標；零時同樣斷言，calc 遇零 panic
+field	esi+0x84	npcStealAttempts	NPC 有號計數 byte（呼叫端每次偷竊後遞增到 100）；乘 (亂數 0..4 + 10) 從門檻扣除
+field	eax+0x24f	monsterTemplateLevel	怪物模板等級（u8）；總等級減它後乘 5 加進門檻；來源 notes/re/combat-2.md:115
+field	eax+ebx*1+0x8a	unitWeight	所選物品定義 +0x8a 的 u16 單件重量，記錄步長 269；乘數量除 40 從懲罰扣除

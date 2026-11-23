@@ -1,0 +1,32 @@
+call	2b6	無關	分析器列出的例外展開輔助目標；正常返回不執行，無規則輸出
+call	40efa0	randomRoll	R(100) 重新考慮擲骰；小於 100 減完成百分比則重選動作
+call	4eba70	monsterBreathAttack	動作 3 吐息：case 內原生執行整棵子樹（只位址樁 0x4fd030、0x5560a0、0x523c00），calc 以 0x4ecc80／0x547120／0x52c070 的模型重現
+call	505810	無關	表現層：兩輪 0x5049c0 走訪現役怪物名單、旗標開時 0x593330／0x53bf80；返回值在 0x4eb668 被 x87 狀態字存入 eax 覆寫、未被讀取；case 原生執行並記錄樁呼叫
+call	5e1c22	ftol	x87 數值向零截斷為整數（完成百分比）
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	4eb7c8	actionJumpTable	動作字 0..9 的分派跳躍表（程式碼位址），calc 以 switch 表達
+data	5ebaf4	assertImport	施法待決為零的斷言 import，失敗停止而無規則結果（cov-exempt 4eb76e）
+data	5ebb34	floatZero	float32 0.0：總量比較基準與總量非正時的分子；從使用者 exe 讀取，不內嵌
+data	5ebcd0	percentScale	float32 100.0 百分比乘數；從使用者 exe 讀取，不內嵌
+data	61738c	無關	斷言的來源檔名字串（除錯參數）
+data	617590	無關	斷言的運算式字串（除錯參數）
+data	6836a8	battleObject	戰鬥物件指標；+0x8 階段步進、+0x7b0 分派結果、+0x7b8 分派中的怪物
+data	ffffffffffffffe0	無關	負堆疊位移，為本函式區域暫存，非外部資料
+data	ffffffffffffffe8	無關	負堆疊位移，為本函式區域暫存，非外部資料
+field	eax*4+0x4eb7c8	actionJumpEntry	跳躍表第 action 筆
+field	eax+0x3e	presShown	表現物件位元組；零則回 2
+field	eax+0x8	phaseStep	戰鬥物件 +0x8 階段步進（交給 0x4f0480 的第三參數）
+field	ebx+0x130	presTotal	表現物件 float32 總量；大於 0.0 才做除法
+field	ebx+0x134	presDone	表現物件 float32 完成量；除以總量乘 100
+field	ecx+0x7b0	dispatchResult	戰鬥物件分派結果；分派中怪物為 M 且不同時寫回結果
+field	ecx+0x7b8	dispatchMonster	戰鬥物件分派中的怪物指標
+field	edi+0x0	combatPhase	怪物戰鬥狀態的階段 u32；加步進後上限 100，再交 0x4f0480 取整
+field	edi+0x4	phaseFlag	怪物戰鬥狀態位元組；重選後清零
+field	edx+0x8	phaseStep	戰鬥物件 +0x8 階段步進（相加）
+field	esi+0x10	combatState	怪物戰鬥狀態指標
+field	esi+0x107	topStatus	怪物最重狀態 u32；小於 0xe 才重新挑目標
+field	esi+0x2b	hp	怪物 HP；非零才重新挑目標
+field	esi+0x2e0	castPending	施法待決位元組；動作 2 時為零即 assert
+field	esi+0x2e1	action	怪物動作字；分派依據，重選後重讀
+field	esi+0x87	moveLimit	怪物移動限制；為零才重新挑目標
+field	esi+0xc	presentation	怪物表現物件指標

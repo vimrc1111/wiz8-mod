@@ -1,0 +1,30 @@
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+call	4e5990	怪物縮放半徑基準	由怪物模板縮放欄（T+0x1ba）取得的半徑基準，再乘 exe 浮點常數；calc 以 x87 精度自行重算，不跳 stub（內部細節未逐行核對，差分已涵蓋）
+call	51a840	怪物最長攻擊射程類別	旗標 1：取模板三個攻擊記錄、特殊欄與十個法術的最大射程類別，-1..3；calc 自行重算
+call	51b300	怪物門檻下限	回傳 exe 浮點常數（0x5ec360），與 0x5ee77c 相加為門檻下限；calc 自 exe 讀入
+call	5e2c70	activeMonsterCount	活動怪物清單的怪物數；指標為空時為 0
+data	5ebc64	templateScaleMul	浮點常數，模板縮放欄的第二個乘數；執行期自 Wiz8.exe 讀入，不內嵌
+data	5ee77c	limitFloorExtra	浮點常數，加在下限上；執行期自 Wiz8.exe 讀入，不內嵌
+data	683fad	activeMonsterList	活動怪物清單指標（未對齊的全域）；其筆數由 5e2c70 讀取，案例以固定清單接線
+data	685174	partyCharacterRecords	角色主記錄陣列的執行期指標；每筆步長 0x1862
+data	685178	partySlotRecords	隊伍槽記錄陣列的執行期指標；每槽步長 0x106，首位元組為槽啟用旗標
+field	eax+0x4	monsterRelationActive	0x505d20 回傳關係記錄 +4 的啟用旗標；須恰為 1
+field	eax+0x7	monsterRelationReach	關係記錄 +7 的可達旗標；非零才算
+field	ebx+0x34c	monsterState	自身怪物 +0x34c 狀態位元組；須為 1 才走隊員迴圈
+field	ebx+0x34f	monsterFlag	自身怪物 +0x34f 旗標；非零才走隊員迴圈
+field	ebx+0xc	monsterPositionRecord	自身怪物位置記錄指標；座標與半徑自其內讀取
+field	edi+eax*1+0xb01	characterStatus	角色 +0xb01 狀態；不小於 0x12 略過
+field	edi+eax*1+0xb11	characterHP	角色 +0xb11 生命值；為零略過
+field	esi+0x107	listMonsterStatus	清單怪物 +0x107 狀態；不小於 0x12 略過
+field	esi+0x14	listMonsterActive	清單怪物 +0x14 啟用旗標；為零略過
+field	esi+0x15	listMonsterVisible	清單怪物 +0x15 可見旗標；為零略過
+field	esi+0x2b	listMonsterHP	清單怪物 +0x2b 生命值；為零略過
+field	esi+0xc	listMonsterPositionRecord	清單怪物位置記錄指標；座標與半徑自其內讀取
+field	esi+ecx*1	partySlotActive	隊伍槽首位元組啟用旗標；為零略過
+# 覆蓋：本函式 38 個基本塊皆由合法輸入命中，無 cov-exempt；D4 不宣稱子函式全部塊皆覆蓋。
+# case 範圍：清單筆數 0..4、關係記錄 0..3 筆、模板五個（含種類 548）、法術 ID 0..149、八個角色槽皆由 arena 建立，不讀寫遊戲目錄；超出上限 calc 報錯。
+# 位址樁：0x546f10（D4 公式，回傳取自輸入 ret0..7，記錄兩個引數與呼叫次數成為輸出）。其餘子函式原樣執行。

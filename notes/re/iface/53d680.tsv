@@ -1,0 +1,20 @@
+call	2b6	無關	objdump 在前一函式資料尾跨界錯解的呼叫；入口重放不執行，與攻擊預算規則無關。
+call	5182e0	formatNoUsableHandDiagnostic	兩手皆不可用時格式化診斷訊息（附角色名），之後直接返回；不改任何預算欄位。
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 IAT 槽；手別迴圈索引超出兩手的防禦性斷言，合法輸入不呼叫。
+data	61d298	attackBudgetSourceFilename	手別斷言的來源檔名字串，不含規則值。
+data	61d2ac	attackBudgetAssertionText	手別斷言的診斷字串，不含規則值。
+data	61d35c	noUsableHandDiagnosticFormat	無可用手診斷的格式字串，結果不參與預算。
+data	6836a8	turnRecordTable	每角色回合記錄陣列基址，stride 212；預算寫入其中的 +0x50/+0x54/+0x58/+0x5c 與偵選手索引 +0x84。
+data	685174	partyCharacterRecords	隊伍角色記錄陣列基址，stride 0x1862。
+data	fffffffffffffff4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+field	eax+ebp*1+0x114d	handAttackAvailable	第二輪逐手讀角色該手攻擊啟用旗標（副手加 0x5b）；零則預算為 0。
+field	eax+edx*1+0x84	turnPreferredHand	回合記錄 +0x84：優先手索引，無可用手時不寫。
+field	ecx+ebp*1+0x115e	handAttackRank	該手攻擊優先序（無號 dword，副手加 0x5b），同時是寫入回合記錄的預算值。
+field	edi+ecx*1	turnHandBudgetCopy	回合記錄 +0x58/+0x5c：各手預算第二份。
+field	edi+edx*1-0x8	turnHandBudget	回合記錄 +0x50/+0x54：各手預算。
+field	esi+eax*1+0x114d	handAttackAvailable	第一輪選優先手：該手攻擊啟用旗標，零則跳過。
+field	esi+eax*1+0x115e	handAttackRank	第一輪選優先手：主要比較鍵（無號，大者優先）。
+field	esi+eax*1+0x1166	handAttackTieBreak	第一輪選優先手：優先序相同時比較的有號 dword，大者優先（初值 -999）。

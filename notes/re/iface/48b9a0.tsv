@@ -1,0 +1,33 @@
+call	40efa0	randomBelow	R(100) 決定本次類別（3／7／20／70），之後多於一筆時再 R(筆數) 選出移到最前的一筆；兩次都是 Rand.R。
+call	4addf0	growTargetList	結果名單容量不足時擴成新增後的筆數，保留既有成員及順序；calc 以位址建模，不呼叫原函式。
+call	5e	無關	間接呼叫匯入 floor（IAT 0x5eb184）的位址碎片；對應規則是平均等級加 0.49 後取整，見 data 5eb184。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5eb184	floorImport	匯入 floor 的 IAT 槽；平均等級加 0.49 後取整，結果存成 float32 當等級比的除數；來源 exe 0x48b9ed
+data	5ebb38	oneConstant	float32 常數 1.0；等級比與 1 的差取絕對值，以及 1 減偏差乘係數的基準；來源 exe 0x48ba4c、0x48ba79
+data	5ebc7c	ratioDeviationLimit	float32 常數 0.5；等級比偏離 1 達此值（含）以上的列不入選；來源 exe 0x48ba54
+data	5ebc88	weightScoreMid	float32 常數 10.0；加權分數不高於它（且高於 3）為類別 7；來源 exe 0x48ba9f
+data	5ec52c	weightScoreLow	float32 常數 3.0；加權分數不高於它為類別 3；來源 exe 0x48ba89
+data	5eca84	weightScoreHigh	float32 常數 30.0；加權分數不高於它（且高於 10）為類別 20，其餘為 70；來源 exe 0x48bab5
+data	5eca88	deviationWeight	float32 常數 1.8；偏差乘它後從 1 扣除再乘權重位元組；來源 exe 0x48ba6f
+data	5eca8c	averageLevelRounding	float32 常數 0.49；加到隊伍平均等級後取整；來源 exe 0x48b9e3
+data	6874f7	gameTime	遊戲時間 u32，無號比較：高於 0x112a880 且不高於 0x4b87f00 時時段旗標為 0（夜），否則為 1；時段位元組等於 2 或等於旗標的列才入選；來源 exe 0x48b9ad..0x48b9cd
+data	ffffffffffffffe4	無關	資料引用掃描將堆疊配置的負位移列為地址；此處是局部暫存（時段旗標與 float32 等級除數），非規則資料或全域
+data	fffffffffffffffc	無關	資料引用掃描將堆疊配置的負位移列為地址；此處只保存暫存器，非規則資料或全域
+field	eax+0x0	tableByteElement	遭遇表三個 u8 陣列（等級 +0x3c、權重 +0x1c、時段 +0x2c）的元素；索引不小於該陣列長度時改讀第 0 個元素
+field	eax+edx*4	resultListEntry	結果名單 +0xc 指向的 i32 索引陣列，第 count 格寫入入選的表列索引
+field	ebx+0x4	resultCount	結果結構 +4 的筆數；函式開頭清零，每入選一列加一；回傳值也是它
+field	ebx+0x8	resultCapacity	結果結構 +8 的容量；不足時由 0x4addf0 擴成新增後筆數
+field	ebx+0xc	resultListPointer	結果結構 +0xc 的索引陣列指標；擴容後換成新配置
+field	ecx+0x0	tableByteElement	同 eax+0x0，等級與時段 u8 陣列元素（含索引越界時的第 0 個元素）
+field	ecx+eax*4	resultListEntry	結果名單的第 eax 格；選一筆移到最前時搬移與寫入
+field	ecx+eax*4+0x4	resultListEntry	結果名單的下一格；移除被選中的一筆時往前補位
+field	ecx+eax*4-0x4	resultListEntry	結果名單的前一格；把被選中的一筆插到最前時往後搬
+field	edx+0x0	resultListEntry	結果名單被選中的那一格（R(筆數) 的結果）的值，之後移到最前
+field	esi+0x14	weightLength	遭遇表權重陣列長度，有號；索引不小於它時改讀第 0 個元素
+field	esi+0x1c	weightPointer	遭遇表權重 u8 陣列指標；與等級偏差相乘決定類別
+field	esi+0x24	timeLength	遭遇表時段陣列長度，有號；索引不小於它時改讀第 0 個元素
+field	esi+0x2c	timePointer	遭遇表時段 u8 陣列指標；2 為任何時段，否則要等於時段旗標
+field	esi+0x34	levelLength	遭遇表等級陣列長度，有號；索引不小於它時改讀第 0 個元素
+field	esi+0x3c	levelPointer	遭遇表等級 u8 陣列指標；除以隊伍平均等級得等級比
+field	esi+0x4	recordCount	遭遇表筆數，有號；迴圈上限，每圈重讀

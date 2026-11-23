@@ -1,0 +1,2 @@
+dbsname: /tmp/tmp.BbqZyOiPiK/spells: unknown kind "spells": expected items or monsters
+FAIL dbsname spells decode 失敗

@@ -1,0 +1,92 @@
+call	2b6	無關	分析器把 srAssertFail 匯入（IAT 0x5ebaf4）的間接呼叫誤列為相對目標；只在 assert 塊（55030c、5503e5、55045a、550718），各塊 cov-exempt 或 calc panic
+call	40efa0	randomBelow	亂數 0..n-1：權重和選召喚類別、加成機率 R(100)、持續時間微調 R(4)；calc 用 Rand.R 依同順序重現
+call	505810	combatParticipantsRefresh	原生執行：一般怪物清單每筆 5049c0(rec,1,0)，戰鬥中再 593330、53bf80，再每筆 5049c0(rec,0,0)；三者為位址樁，case 記錄次數與參數（calc gsRun.refresh）
+call	50e8c0	monsterCacheRebuild	原生執行：加成增益寫入後重算召喚首領的條件規則與戰鬥欄位（calc monsterCacheRebuild，n_523c00.go）
+call	511ce0	groupClearBusy	原生執行：每個成員視覺物件 +0xb4 清 0（參數 0）（calc gsRun.release）
+call	517f90	durationPercentAdjust	原生執行：以 543260 清零的結構 +0x24 百分比調整持續時間；該值恆為 0，持續時間不變
+call	53bea0	casterIsCharacter	原生執行：施法者種類 [P+0x5c]==1 即角色；種類 1 而角色索引 -1 時 assert（calc panic）
+call	53bf10	casterIsMonster	原生執行：施法者種類 [P+0x5c]==2 即怪物；種類 2 而怪物編號 -1 時 assert（calc panic）
+call	543260	effectModifierInit	原生執行：區域結構 12 個 dword 清 0，只供 517f90 的百分比（恆 0）
+call	547570	groupDispositionSet	原生執行：召喚群體態度設為 bl 位元組（calc gsRun.setDisposition，n_556b10.go）
+call	5905c0	messageOverlaySet	原生執行：寫位元組 0x69b7b8＝1；第二參數 -1 時不寫 0x64bd54
+call	5e2c80	memberListItem	原生執行：群體成員清單第 i 個怪物編號
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	550770	bonusJumpTable	召喚類別 0..3 的加成分派表：類別 0／1 法術增益（5242b0），類別 2／3 怪物增益欄位；calc 執行時從 exe 讀
+data	550780	effectIdJumpTable	法術減 0x13 經位元組表 0x5507a0 後的分派表，各目標載入效果編號；calc 從 exe 讀目標位址與其後的效果編號
+data	5507ca	無關	Ghidra 把位元組表 0x5507a0（effectIdIndexTable）中間位址列為引用；表本身由欄位 esi+0x5507a0 命名
+data	5ebaf4	無關	斷言失敗處理的匯入位置；只在 assert 塊呼叫
+data	609b24	無關	assert 運算式字串（效果編號分派落空，550718）
+data	60cffc	buffVisualEffectTable	法術編號 → 視覺效果編號（每項 8 bytes 的首 dword），怪物增益欄位尚未持有該法術時以 4acd80 播放；calc 從 exe 讀
+data	60f4f8	無關	assert 運算式字串（成員記錄 NULL，5503e5／55045a）
+data	616d84	monsterBuffSpellSlots	12 個怪物增益法術編號；索引即記錄 +0x10f+0x11*i 的增益欄位；calc 從 exe 讀
+data	616d88	無關	同表 0x616d84 第二項（迴圈起點的位址運算）
+data	616db4	無關	同表 0x616d84 的結尾界（迴圈終止比較）
+data	616f4c	summonSpeciesTable	召喚物種表：威力 0..7 列 × 類別 0..3 欄的物種編號；calc 從 exe 讀
+data	619788	summonMessageText	非即時訊息模式時先以 5905f0 顯示的固定字串指標
+data	61e2c4	無關	原始檔名字串，assert 與 4e5840 的除錯參數
+data	61e32c	無關	assert 運算式字串（50f1a0 回 NULL，55030c）
+data	652da4	noFirstCategory	位元組旗標：非 0 時類別 0 的權重設 0
+data	65be1c	spellTable	法術記錄表指標，每筆 0x1bf bytes；+0x44 每威力持續、+0x4d 基礎持續
+data	68510c	messageMode	位元組：非 0 時角色訊息走 590950（名字＋格式），否則 5905f0 兩次
+data	685174	characterTable	角色記錄表指標，每筆 0x1862 bytes
+data	68c09c	textTable	字串表物件指標；+0x6a0 為召喚訊息格式字串
+data	ffffffffffffff80	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffff84	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffff88	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffa4	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffa8	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffac	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffb0	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffb4	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffb8	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffbc	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffc0	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffc4	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	ffffffffffffffd0	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	fffffffffffffff0	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	fffffffffffffff4	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	fffffffffffffff8	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+data	fffffffffffffffc	無關	Ghidra 堆疊變數位移，非遊戲資料或表
+field	eax*4+0x550780	effectIdJumpTable	效果編號分派表索引（位元組表 0x5507a0 的值）
+field	eax+0x0	monsterId	召喚首領記錄 +0 的怪物編號（低 word 傳給 54ff20；整個 dword 傳給 50e8c0）
+field	eax+0x344	summonedMonsterId	怪物施法者的召喚物編號：-1 才召喚；完成後寫入首領編號
+field	eax+0x44	spellDurationPerPower	法術記錄每威力持續時間
+field	eax+0x4d	spellDurationBase	法術記錄基礎持續時間
+field	eax+ecx*1+0x4d	spellDurationBase	法術記錄基礎持續時間（表基址＋0x1bf*法術）
+field	eax+0x63d	summonSkill3	角色第 4 項召喚技能，加 0x14 為類別 3 權重
+field	eax+0xc	monsterVisual	召喚首領記錄的視覺物件指標，傳給 4acd80
+field	ebp+0x4	groupMemberCount	召喚群體成員數
+field	ebp+0x8	groupMemberList	召喚群體成員清單
+field	ebp+0x9f	groupLeaderId	召喚群體首領怪物編號，用 4e5840 查記錄
+field	ecx+0x0	monsterId	召喚首領記錄 +0 的怪物編號；增益表掃描時為表項（法術編號）
+field	ecx+0x6a0	summonMessageFormat	字串表 +0x6a0 的召喚訊息格式字串指標
+field	ecx+eax*2+0x5cb	summonSkill0	角色第 1 項召喚技能，加 0x14 為類別 0 權重
+field	ecx+eax*2+0x5f1	summonSkill1	角色第 2 項召喚技能，加 0x14 為類別 1 權重
+field	ecx+eax*2+0x617	summonSkill2	角色第 3 項召喚技能，加 0x14 為類別 2 權重
+field	ecx+eax*2+0xa35	characterAllegianceFlag	角色 +0xa35 為 0 時召喚物態度 2，否則 1
+field	edi*8+0x60cffc	buffVisualEffectTable	法術編號對應的視覺效果編號
+field	edi+0x60	casterCharacterIndex	效果記錄施法角色索引
+field	edi+0x78	reverseAllegiance	效果記錄位元組：非 0 時態度 1↔2 對調
+field	edi+0xa4	targetPosY	效果記錄目標位置 Y，傳給 50f1a0／54ff20
+field	edi+0xa8	targetPosZ	效果記錄目標位置 Z，傳給 54ff20
+field	edi+0xd0	effectPower	效果威力：召喚物種表的列、持續時間乘數、增益威力
+field	edi+0xd4	bonusChance	加成機率（百分比）：R(100) 小於它才給首領加成
+field	edx*4+0x616f4c	summonSpeciesTable	召喚物種表索引（類別＋4×威力）
+field	edx+0x0	summonWeight	類別權重陣列項（區域變數，依序比較並相減）；同一運算元另為 54ff20 堆疊參數位置 X 的寫入與首領編號讀取
+field	edx+0x16	monsterDisposition	怪物施法者態度位元組，作為召喚物態度
+field	edx+0x4	無關	54ff20 堆疊參數位置 Y 的寫入（targetPosY 的副本）
+field	edx+0x60	casterCharacterIndex	效果記錄施法角色索引（技能讀取）
+field	edx+0x8	無關	54ff20 堆疊參數位置 Z 的寫入（targetPosZ 的副本）
+field	edx+0xc	monsterVisual	召喚首領記錄的視覺物件指標；+0x18 為 4538f0 的 this
+field	esi*4+0x550770	bonusJumpTable	召喚類別的加成分派表索引
+field	esi+0x0	targetPosX	效果記錄目標位置 X（P+0xa0）；增益欄位的持有旗標寫 1
+field	esi+0x1	buffSlotSpell	怪物增益欄位法術編號：不同即播放視覺效果，之後寫入
+field	esi+0x124	messageShown	效果記錄位元組：角色訊息路徑寫 1
+field	esi+0x2da	summonedFlag	成員記錄召喚標記：0 時依態度設 1（態度 2）或 2
+field	esi+0x5	buffSlotPower	怪物增益欄位威力（寫入效果威力）
+field	esi+0x5507a0	effectIdIndexTable	法術減 0x13 的位元組索引表，值為 0x550780 的索引
+field	esi+0x60	casterCharacterIndex	效果記錄施法角色索引（5248a0 訊息旗標、590950）
+field	esi+0x64	casterMonsterId	效果記錄施法怪物編號，用 4e5840 查記錄
+field	esi+0xc	monsterVisual	成員記錄視覺物件指標，傳給 4acd80（效果 0x27）
+field	esi+0xd	buffSlotDuration	怪物增益欄位持續時間
+field	esi+edx*1+0x10f	buffSlot	首領記錄第 i 個增益欄位（+0x10f+0x11*i）

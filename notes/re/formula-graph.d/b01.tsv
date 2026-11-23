@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+4e7cc0	非公式	-	action_request		將傳入動作與參數搬到副表 +0x1/+0x5/+0x15 或 +0x6d/+0x71 再分派，屬動作登記流程；build/wiz8.asm:311331。
+4e7e70	非公式	-	action_edit_gate		依戰鬥模式與可操作旗標回傳介面是否接受動作，消費端為動作介面，未計算規則數值；build/wiz8.asm:311443、build/wiz8.asm:563592。
+4e7ee0	非公式	-	party_action_request		分派普通或隊伍動作並清除目前動作狀態，屬流程控制與介面刷新；build/wiz8.asm:311520。
+4e8000	公式	D4	action_phase_adjust	actionPhaseAdjustNode	讀副表 +0x3d、隊伍 +0x8 及角色戰鬥區 +0x18/+0xb4，動作變更時將階段差加到 +0x18 後夾制，並重算 AC；build/wiz8.asm:311701。
+4e8290	非公式	-	saved_action_set		將傳入動作與參數存到副表 +0x6d/+0x71，+0x104 只標示動作是否為 1，屬欄位登記；build/wiz8.asm:311767。
+4e82e0	非公式	-	saved_action_restore		清理動作描述並將副表 +0x6d/+0x71 的保存動作交回登記函式，屬資料恢復與介面刷新；build/wiz8.asm:311834。
+4e8370	公式	D4	lightning_strikes_round_prepare	lightningStrikesRoundPrepareNode	讀副表 +0/+0x1、角色 feature 0x10、+0x114e 與職業等級，擲亂數後將 Lightning Strikes 抽籤結果寫入角色戰鬥區 +0x9a；build/wiz8.asm:312029、notes/re/formulas.md:19、notes/re/formulas.md:21。
+4e89d0	公式	D4	combat_initiative_phase	combatInitiativePhaseNode	讀角色 +0xe81、手部 +0x1166 與動作，加入範圍 4 的亂數後限幅，寫角色戰鬥區 +0x18 的先攻階段，怪物分支也重算階段；build/wiz8.asm:312351。
+4e8c30	非公式	-	combat_animation_busy		比較目前影格與總影格一半及動畫釋放旗標，回傳呈現是否忙碌，未產生命中或傷害數值；build/wiz8.asm:312542、notes/re/combat-anim.md:29。
+4e8da0	非公式	-	auto_select_character		輪巡可操作角色並呼叫選角介面，輸出是目前選中角色，屬 UI；build/wiz8.asm:312681。
+4e8ea0	公式	D4	monster_repeat_action_phase	monsterRepeatActionPhaseNode	除戰鬥分派外，讀隊伍 +0x8、怪物尾表 +0/+0x9 與動作 +0x2e1，計算剩餘攻擊間隔並寫尾表 +0 的下一階段；build/wiz8.asm:313056、notes/re/combat-timing.md:39。
+4e9490	公式	D4	combat_action_selection	combatActionSelectionNode	讀隊伍 +0x8、角色戰鬥區 +0x18、怪物階段與存活狀態選下一行動，寫 +0x7b4/+0x7b8，無行動時將階段步長加到隊伍 +0x8；build/wiz8.asm:313332、notes/re/combat-timing.md:39、notes/re/combat-timing.md:41。
+4e99c0	公式	D4	combat_skill_growth	combatSkillGrowthNode	讀角色戰鬥區 +0x60 起的次數與技能 ID、+0xc0 起待成長旗標，亂數決定練習事件並交 0x553f10 更新角色技能，同時遞減次數；build/wiz8.asm:313561、build/wiz8.asm:313589。
+4e9b20	公式	D4	round_stamina_recovery	roundStaminaRecoveryNode	讀動作、主狀態、最大體力 +0xb19、當前體力 +0xb1d、feature 0 與職業等級，產生回復骰並按能力倍率調整後交 0x52b1c0 更新 +0xb1d，另推進時間 120000；build/wiz8.asm:313815、notes/re/abilities.md:23、notes/re/combat-2.md:83。
+4e9f90	公式	D4	combat_defeat_resolution	combatDefeatResolutionNode	讀隊伍存活判定與角色 +0xb11/+0xb01，無存活者時將主狀態 0x12 與持續量 9999 交 0x522fe0 套用，輸出寫回角色狀態；build/wiz8.asm:314156、notes/re/speed.md:54。
+4ea1f0	非公式	-	post_combat_dialogue		依 NPC 與角色狀態挑選台詞並建立對話事件，未計算狀態數值；build/wiz8.asm:314218。
+4ea310	公式	D4	combat_xp_distribution	combatXpDistributionNode	讀戰鬥區 +0x10/+0x14 與合資格人數，將 +0x10 除以人數後加 +0x14，交 0x4eef10 累加到角色 +0x9ed；build/wiz8.asm:314344、notes/re/growth.md:24、notes/re/combat-timing.md:35。
+4ea5c0	公式	D4	character_action_prepare	characterActionPrepareNode	讀副表 +0x1/+0x5/+0x1d、角色體力 +0xb1d 與法術需求，累計可負擔的施放成本，按結果交 0x52af50 扣體力並寫執行動作或取消標記；build/wiz8.asm:314947、notes/re/combat-timing.md:39。
+4eac90	公式	D4	character_repeat_attack_phase	characterRepeatAttackPhaseNode	讀角色戰鬥區 +0x58/+0x5c/+0x84/+0xb4、當前階段與兩手 +0x1166，選剩餘攻擊的手並計算下次間隔，寫 +0x18 與 +0x84；build/wiz8.asm:315083。
+4eae20	公式	D4	monster_action_prepare	monsterActionPrepareNode	不確定：部分 AI 權重子呼叫未展開，但依尾表 +4、動作 +0x2e1、異常判定與嘗試記錄重選行動，寫 +0x2e1/+0x2e9 與尾表 +4，可能包含規則選擇；build/wiz8.asm:315565、build/wiz8.asm:315573、notes/re/combat-timing.md:39。
+4eb5a0	公式	D4	monster_action_reconsider_chance	monsterActionReconsiderChanceNode	讀怪物呈現物件 +0x130、移動量、動作 +0x2e1 與隊伍 +0x8，亂數決定是否重選 AI 行動並調整尾表 +0/+4 的下一階段；build/wiz8.asm:315820、notes/re/combat-anim.md:31。
+4eb7f0	公式	D4	monster_next_attack_phase	monsterNextAttackPhaseNode	讀怪物動作 +0x2e1、尾表 +0/+4/+0x9、隊伍 +0x8 與攻擊可行性，計算剩餘攻擊間隔後寫尾表 +0，失敗則清零；build/wiz8.asm:315951。
+4ebc80	公式	D4	breath_stamina_eligibility	breathStaminaEligibilityNode	讀角色 feature 0x1c、最大體力 +0xb19 與當前體力 +0xb1d，回傳是否達最大體力五分之一的吐息資格，無直接寫入；build/wiz8.asm:316333、notes/re/abilities.md:45。
+4ebce0	公式	D4	breath_target_prepare	breathTargetPrepareNode	不確定：主要建立效果與朝向，但讀來源描述與副表 +0x1d，按法術 0x77 求可用目標，回傳有無目標並寫戰鬥區 +0xa4c，目標資格 helper 未完全解析；build/wiz8.asm:316407、notes/re/abilities.md:45。
+4ebfe0	公式	D4	breath_stamina_cost	breathStaminaCostNode	讀效果 +0x1e4 與角色最大體力 +0xb19，就緒後以最大體力五分之一交 0x52af50 扣當前體力 +0xb1d，另處理效果目標；build/wiz8.asm:316719、notes/re/combat-anim.md:37、notes/re/combat-timing.md:53。
+4ec1e0	公式	D4	status_action_override	statusActionOverrideNode	讀角色 +0xa01 起或怪物 +0x57 起的狀態計數、角色 +0xe9 或怪物 +0x247 與武器可用性，擲亂數後回傳取消、攻友或強制行動的覆寫代碼，無直接寫入規則數值；build/wiz8.asm:316881、build/wiz8.asm:316959。
+4ec610	非公式	-	combat_progress_percent		將完成與預計行動數換成百分比，唯一直接呼叫端將結果換成畫面矩形尺寸，屬戰鬥進度 UI；build/wiz8.asm:317303、build/wiz8.asm:482996、build/wiz8.asm:483018。
+4ec860	非公式	-	combat_progress_action_count		累加兩手攻擊預算供 0x4ec610 進度百分比使用，回傳僅進入進度條分母，未改攻擊預算；build/wiz8.asm:317374、build/wiz8.asm:317191、build/wiz8.asm:482996。
+4ecdd0	非公式	-	combat_event_append		將傳入值追加到戰鬥區 +0x8e8 陣列並增加 +0x908，屬記錄搬移；build/wiz8.asm:317816。
+4ece00	非公式	-	low_hp_dialogue_chance		讀 HP 比率後擲亂數，結果僅決定是否建立台詞事件，未修改 HP 或規則狀態；build/wiz8.asm:317850、build/wiz8.asm:317872。
+4eceb0	公式	D4	action_phase_rebase	actionPhaseRebaseNode	讀隊伍 +0x8 與傳入戰鬥記錄 +0/+0x9c，把階段差加到 +0 並夾制，再將當前階段寫到 +0x9c；build/wiz8.asm:317901。
+4ecf00	非公式	-	cancel_party_action		將副表動作 9 清為 -1 並清戰鬥區 +0xa50/+0xa51，屬取消指令的流程清理；build/wiz8.asm:317927。
+4ecf50	公式	D4	combat_surprise_flags	combatSurpriseFlagsNode	讀模式、怪物 +0x28a/+0x34c 與隊伍姿態，擲 100 面亂數以 20 門檻決定失去本輪行動的旗標，寫戰鬥區 +0xa52/+0xa53；build/wiz8.asm:318023、build/wiz8.asm:318028。
+4ed1c0	公式	D4	party_awareness_check	partyAwarenessCheckNode	不確定：技能檢查事件名稱未確認，讀有效角色主狀態與 +0x161，將其除二與 100 面亂數比較，回傳結果決定戰鬥區 +0xa52，無直接寫入；build/wiz8.asm:318192、build/wiz8.asm:318184、build/wiz8.asm:318002。
+4ed2b0	非公式	-	combat_mode_get		依 +0x918 直接回傳 +0x90c 或 +0x910，屬模式讀取，即使呼叫端用於命中修正仍未自行計算；build/wiz8.asm:318248、notes/re/combat-2.md:32。
+4ed2d0	公式	D4	character_posture_eligibility	characterPostureEligibilityNode	讀角色 +0xb11/+0xb01、戰鬥區 +0x4c 與副表 +0x1/+0x3d，結合動作可行性回傳姿態資格供命中修正使用，要求套用時交 0x4ed390 寫動作；build/wiz8.asm:318300、notes/re/combat-2.md:32。
+4ed390	非公式	-	character_posture_set		將傳入防禦或保護動作存入副表並拷貝目標描述，再設完成旗標與刷新 UI，屬姿態資料設定；build/wiz8.asm:318352。
+4ed460	非公式	-	combat_turn_ready		檢查可操作角色與已填動作是否就緒，回傳用於主更新啟動回合與介面就緒判斷，屬流程 gate；build/wiz8.asm:318460、build/wiz8.asm:313106。
+4ed550	公式	D4	combat_pending_effects	combatPendingEffectsNode	不確定：持續效果 enum 未取得，讀角色 +0xa6d 起、怪物 +0xaf 起及戰鬥區 +0x7c1/+0x85a，回傳是否有待處理效果以決定戰鬥能否結束，無直接寫入；build/wiz8.asm:318499、build/wiz8.asm:314106。
+4ed710	非公式	-	npc_combat_script		依 NPC 身分與場上怪物觸發提示及腳本事件，寫 +0xa58 表示已觸發，屬劇情流程；build/wiz8.asm:318780、notes/re/combat-timing.md:39。
+4edd20	公式	D4	shared_encumbrance	sharedEncumbranceNode	讀角色 +0xbb9/+0xbc5 與共用物品重量，將負重配到角色 +0xbbd，重算 +0xbc1 與 +0xbc9 負重級別，變級再刷新攻擊與 AC；build/wiz8.asm:319282、build/wiz8.asm:319301、notes/re/formulas.md:37。
+4ee220	公式	D4	calc_attacks	calcAttacksNode	讀職業歷史、屬性 +0xe9/+0x139/+0x14d/+0x161、技能、負重 +0xbc9 與物品 +0x46/+0x48/+0x49，計算兩手合成技能、BAR、attack／swing 上限與命中傷害加成，寫 H+0xd/+0x11/+0x15/+0x19/+0x21/+0x29；build/wiz8.asm:319705、notes/re/formulas.md:29、notes/re/formulas.md:31、notes/re/formulas.md:33。
+4ee9d0	公式	D4	calc_armor_classes	calcArmorClassesNode	讀裝備 +0x62、角色 +0x14d/+0x287/+0x345、能力、負重與姿態，重算 AC 分項 +0xe8d 起、部位 AC +0xec1 起與加權 AC +0xe89；build/wiz8.asm:320410、notes/re/abilities.md:39。
+4eee80	公式	D4	xp_eligible_count	xpEligibleCountNode	讀八個角色副表 +0、HP +0xb11 與主狀態 +0xb01，回傳合資格存活人數作為戰後 XP 分配除數，無直接寫入；build/wiz8.asm:320549、build/wiz8.asm:314344。
+4eeec0	公式	D4	party_survival_check	partySurvivalCheckNode	讀八個角色副表 +0、HP +0xb11 與主狀態 +0xb01，回傳是否仍有存活者，結果直接控制團滅狀態套用，無直接寫入；build/wiz8.asm:320578、build/wiz8.asm:313978。
+4eef10	公式	D4	xp_award_saturating	xpAwardSaturatingNode	讀輸入 XP 與角色 +0xb11/+0xb01/+0x9ed，累加獎勵到合資格角色 +0x9ed，溢位飽和為 0xffffffff；build/wiz8.asm:320619、build/wiz8.asm:320621、notes/re/growth.md:24。
+4ef1f0	非公式	-	level_up_notification		比較 XP 與門檻後僅建立升級提示及介面事件，改的是通知旗標，未實際提高等級或技能；build/wiz8.asm:320924。
+4ef3c0	公式	D4	level_up_eligibility	levelUpEligibilityNode	不確定：已見消費端主要是升級介面，但讀副表 +0、HP +0xb11、主狀態 +0xb01、XP +0x9ed 與門檻 +0x9f1，回傳能否升級的資格而非搬欄位，無直接寫入；build/wiz8.asm:320997。
+4ef420	公式	D4	party_average_level	partyAverageLevelNode	讀有效隊員副表 +0 與總等級 +0x89，回傳整數平均供掉落價值篩選，無直接寫入；build/wiz8.asm:321021、notes/re/loot.md:23。
+4ef460	非公式	-	empty_party_slot		在指定範圍查副表 +0 的空欄並回傳空角色槽索引，屬資料管理；build/wiz8.asm:321043。
+4ef4a0	排除	-	party_member_add		查空槽後將 0x1862 bytes 角色資料整筆搬入並登記隊伍位置（54b470 清副表、54b300 以 R(5000)+5000 配編號、554ae0／554bd0／554dd0 排隊形格），重算交 4ed9d0（其中規則數值由已 D4 的 4edd20／4ee220／4ee9d0 節點各自覆蓋），屬資料載入與隊伍編成流程，本身不算規則數值；回傳為隊伍槽號或 -1（滿），呼叫端只作流程分支與記錄槽號，不當規則輸入；原歸非公式，改排除以便 50b160 位址樁（cc 依 MG 2026-10-10 授權判斷）；build/wiz8.asm:321061、build/wiz8.asm:321106、build/wiz8.asm:360404。
+4ef610	排除	-	party_member_remove		隊伍成員移除流程：自隊伍與隊形格卸下成員（554bd0、50f030、515090、518230），清世界事件清單相關項（52d970，其下有音效停播 408ef0／408f70、事件佇列 5289b0、頭像對話泡 52f890）並呼叫 590950／561ec0 介面更新與 4ed9d0 重算；本身不算規則數值，8 個呼叫點，4ef841 後直接覆寫 esi／ecx 做整筆拷貝、不讀 eax；原歸非公式，改排除以便 4ef7e0 位址樁（cc 依 MG 2026-10-10 授權判斷）；build/wiz8.asm:321188、build/wiz8.asm:321379。
+4ef7e0	公式	D4	character_replacement_gold_cost	characterReplacementGoldCostNode	除拷貝替換角色外，讀付費旗標、新角色估價及隊伍金錢 0x685189，扣除 0x558640 回傳成本並寫回隊伍金錢；build/wiz8.asm:321443、build/wiz8.asm:321445。
+4efad0	非公式	-	unique_character_voice		亂數僅改角色 +0x81/+0x85 以避開相同性別與語音組合，消費端以兩欄組合文字資源路徑，屬語音呈現變體；build/wiz8.asm:321631、build/wiz8.asm:321634、build/wiz8.asm:408561、build/wiz8.asm:408579。
+4efb60	公式	D4	party_average_level_float	partyAverageLevelFloatNode	不確定：部分下游用途未完全解析，從第 2 至第 7 槽讀有效旗標與角色 +0x89，回傳浮點平均或空隊伍預設值，下游與亂數配合選數量，無直接寫入；build/wiz8.asm:321681、build/wiz8.asm:187321。
+4efc00	非公式	-	movement_phase_enter		播放移動條提示並切換介面與 +0x918，+0x91c 是呈現等待期限，屬模式轉換流程；build/wiz8.asm:321720。
+4efd30	排除	-	movement_phase_leave		呈現／模式切換（UI 虛擬呼叫與移動介面相位），依 MG 2026-10-11 數值規劃範圍改歸排除（decisions/2026-10-11-numeric-only-scope.md），原非公式。原描述：顯示提示並切換移動介面，將 +0x918 設為 2，屬模式退出流程；build/wiz8.asm:321806。
+4efda0	非公式	-	movement_phase_resume		切換移動介面並建立 1000 的等待期限，寫 +0x91c 與 +0x918，未重算行動或移動能力；build/wiz8.asm:321854、build/wiz8.asm:321860。
+4efe70	公式	D4	party_action_phase	partyActionPhaseNode	讀有效隊員 HP +0xb11、先攻 +0xe81 與隊伍模式 +0x910，加入範圍 4 的亂數後取最慢者，限幅及按模式取整再寫隊伍 +0x914；build/wiz8.asm:321907、build/wiz8.asm:321923。
+4effa0	公式	D4	party_movement_allowance	partyMovementAllowanceNode	不確定：輸出量的單位未證實，讀隊伍模式 +0x910 與 0x4f0010 回傳值，以 1 或 1.5 加權後乘常數，浮點回傳交隊伍移動準備並保存於 0x683fcf，無直接寫角色欄位；build/wiz8.asm:321990、build/wiz8.asm:311924。

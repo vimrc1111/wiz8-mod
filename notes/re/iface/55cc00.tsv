@@ -1,0 +1,6 @@
+data	4	無關	第一參數的堆疊偏移，分析器列作資料引用；不是規則全域或資料表
+data	8	無關	第二參數（待調整数值指標）的堆疊偏移，分析器列作資料引用；不是規則全域或資料表
+data	6850d5	遊戲難度	32 位難度：0 容易、1 普通、2 困難；其他值保留輸入數值，notes/re/combat-2.md:34
+data	685174	角色陣列基址	執行期角色陣列指標，依第一參數索引及 0x1862 stride 定位角色，notes/re/growth.md:67
+field	ecx+eax*2+0xa35	角色難度反轉狀態	角色 C+0xa35 的 32 位狀態，零用通常倍率，任何非零值交換容易與困難倍率；case 先以 rosterReverseDifficultyState0..7 初始化八人，再以 reverseDifficultyState 依 characterIndex（0..7、stride 6242、count 8）覆寫所選角色；其他七人採相反零／非零狀態，讓讀錯人可測；Go 僅使用所選狀態，notes/re/formulas.md:89
+field	esi+0x0	待調整数值	第二參數指向的有號 32 位數值，倍率乘法按 32 位回繞再除以 100 朝零截斷，寫回同址；原版 0x55cc34..0x55cca4

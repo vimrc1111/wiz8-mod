@@ -1,0 +1,15 @@
+call	2b6	無關	匯入呼叫的分析標記；實際為 5ebaf4 的 srAssertFail，不是公式子節點
+call	40efa0	rand_n	整數比例削毒量為零才擲 R(100)，包含零強度與零削減量
+call	4e5550	monster_index_from_id	以怪物 ID 搜尋已配置列表，case 含不同 ID 的前置記錄確認查找
+call	4e5620	monster_record_from_index	取回怪物記錄，直接執行原版列表讀取
+call	523f40	monster_condition_remove	時間不大於削減量時解除；清時間，毒狀態另清強度，重新選最高有效狀態並重建快取
+data	4	無關	呼叫後的堆疊參數清理大小，不讀取規則資料
+data	8	無關	解除 helper 的堆疊參數清理大小，不读取規則資料
+data	c	無關	入口堆疊參數位置，不是資料表
+data	5ebaf4	assert_failure_import	無效的零狀態時間會停止於 SR.DLL 的 srAssertFail
+data	61ad64	無關	斷言診斷來源檔名，字串內容不參與時間或強度規則
+data	61ae24	無關	狀態必須有效的斷言文字，字串內容不參與公式
+field	esi+0x10b	monster_poison_strength	u32 毒強度；比例削減採低 32 位乘積，解除毒時歸零
+field	esi+0x2b	monster_current_hp	u32 當前 HP，零時整個衰減流程略過
+field	esi+0x73	monster_poison_duration	u32 毒時間，同狀態索引 7 的時間欄；比例計算分母
+field	esi+edi*4+0x57	monster_condition_duration	20 筆 u32 狀態時間；輸入輸出列含每筆，索引 7 為毒

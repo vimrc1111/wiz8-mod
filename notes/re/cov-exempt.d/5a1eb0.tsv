@@ -1,0 +1,1 @@
+5a1eb0	5a1f84	負重級 +0xbc9 超出 0..4 的 srAssertFail 防禦分支；stop 無正常返回可差分（emu 報 srAssertFail stop），calc 在此 panic。

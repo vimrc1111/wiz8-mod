@@ -1,0 +1,42 @@
+call	2b6	無關	srAssertFail 間接匯入的分析序號；只停止配置失敗或非法清單新增的錯誤路徑，不產生合法候選。
+call	65	allocateFumbleCandidate	malloc 匯入的分析序號；每個候選配置 32 bytes，既有 heap 樁原樣保留配置順序。來源 0x544085、0x544152、0x5441ce。
+call	4e5620	monsterRecordByHandle	將活動列表的迴圈索引轉為怪物即時記錄；案例有獨立攻擊者與另一怪物，列表子函式原樣執行。來源 0x54411d。
+call	51a2f0	monsterCanReachCharacter	以攻擊者、模板、攻擊索引與角色索引判斷可達性；使用既有 interceptReach 組合，模板射程、動作旗標與幾何為輸入。來源 0x544079。
+call	51a510	monsterCanReachMonster	查攻擊者對另一怪物的關係列表、模板排除旗標與表面距離；使用既有 interceptReach，攻擊者自身則在呼叫前直接加入。來源 0x5441c0、0x544148。
+call	5e2480	appendFumbleCandidate	候選描述加入清單並回新增索引；容量不足加五、複製既有成員，calc 重現配置與舊緩衝區覆寫。來源 0x5440c1、0x54418e、0x54420a、0x5e2480。
+call	5e2c70	activeMonsterCount	讀活動怪物列表筆數，迴圈每次再讀；案例提供 0..2 筆，零筆及一筆也有邊界。來源 0x54410c、0x544235。
+data	10	無關	子呼叫參數回收的 16-byte 大小；不是遊戲資料引用，不決定候選資格。
+data	4	無關	參數回收與堆疊槽位移；非絕對記憶體中的規則資料。
+data	8	無關	參數回收與堆疊槽位移；非絕對記憶體中的規則資料。
+data	c	無關	堆疊暫存與參數槽位移；非絕對記憶體中的規則資料。
+data	fffffffffffffffc	無關	分析器將 -4 的堆疊相對位移列為資料引用；非遊戲欄位或查表位址。
+data	5eb1a0	candidateAllocationImport	malloc IAT 槽，成功配置候選與清單擴容緩衝區；配置不是亂數或遊戲資料表。來源 0x544087。
+data	5ebaf4	無關	srAssertFail IAT 槽；只用於防禦性錯誤診斷，合法輸入無候選輸出可比較。
+data	61d1bc	無關	候選配置失敗的診斷訊息字串；內容不影響候選規則。來源 0x5440a1。
+data	61d2ac	無關	斷言的來源檔名稱字串；只有錯誤訊息使用，與資格和排序無關。
+data	61db24	無關	清單新增索引非法的診斷字串；合法非負清單筆數無法令新增索引為 -1。
+data	683fad	activeMonsterList	活動怪物清單指標，列表 +0 是記錄指標陣列，+8 是筆數；arena 提供零至兩筆有效物件。來源 0x544104、0x54422d。
+data	685174	characterRecords	角色主記錄陣列，八筆、步長 0x1862，HP 與主狀態逐筆獨立輸入。來源 0x544035..0x544052。
+data	685178	characterSlotRecords	角色副表陣列，八筆、步長 0x106，逐筆占用旗標皆為輸入。來源 0x544025、0x5440e8。
+field	eax+0x0	attackerMonsterID	怪物原目標種類為 3 時，原目標 ID 比較的是攻擊者自身 ID，並非正在枚舉的另一怪物 ID。來源 0x5441aa..0x5441b2。
+field	eax+0x2ba	originalTargetType	攻擊者原目標種類；1 排除原角色，3 且目標 ID 為自身時排除所有其他怪物。來源 0x54405c、0x5441a1。
+field	eax+0x2be	originalCharacterTarget	原角色目標索引，與八人迴圈索引比較；只有種類為 1 時使用。來源 0x544065。
+field	eax+0x2c2	originalMonsterTarget	原怪物目標 ID；與攻擊者 ID 比較，保留原版的自身目標排除行為。來源 0x5441aa。
+field	eax+ecx*1+0xb01	characterMainStatus	目前角色主狀態 u32，必須小於 18；18、19 與高位邊界不作有號比較。來源 0x54404a。
+field	eax+ecx*1+0xb11	characterCurrentHP	目前角色 HP 的 32-bit 值；只判非零，負數的原始位元也通過。來源 0x54403b..0x544044。
+field	ecx+ebp*1	characterSlotActive	目前角色副表占用 u8，非零才讀主表；不將八個角色同步成同一人。來源 0x54402b。
+field	esi+0x0	candidateKindOrMonsterID	配置後是候選種類（角色 1、怪物 3）；配置前的怪物物件則是 ID，分別用在自身與其他怪物候選。來源 0x5440b1、0x544150、0x5441cc、0x544200。
+field	esi+0x4	candidateCharacterIndex	角色候選保存迴圈索引；怪物候選設 -1。來源 0x5440b7、0x544184、0x544200。
+field	esi+0x8	candidateMonsterID	角色候選設 -1；怪物候選保存該怪物 ID。來源 0x5440ba、0x54418b、0x544207。
+field	esi+0x14	monsterActive	怪物即時記錄啟用 u8，非零才繼續；攻擊者及另一怪物分別輸入。來源 0x544124。
+field	esi+0x15	monsterVisible	怪物可見／行動參與 u8，非零才符合候選資格。來源 0x54413d。
+field	esi+0x2b	monsterCurrentHP	怪物目前 HP 32-bit 值，非零才符合；沒有有號正數限制。來源 0x544132。
+field	M+0x2e1,M+0x2e5	currentActionAndSpell	可達子函式讀動作種類及法術索引；原版以索引直接定位法術表、不檢上界，唯一呼叫端 540170 傳攻擊模式 0..8（notes/re/iface/540170.tsv:139），故域為 0..8；arena 九筆互不重疊、未選中的筆放不同背景值，所選筆的射程是輸入。來源 0x51a308、0x51a3e1、0x51a55d、0x51a64a、呼叫點 0x5403a2。
+field	D+0xe7,D+0xea,D+0x24a	attackPresenceRangeAndSpecialTemplate	三個合法攻擊槽的存在旗標固定 1，選中射程獨立輸入；模板特殊旗標排除另一怪物可達性。來源 0x51a3b7、0x51a3d9、0x51a519。
+field	M+0x34c..0x350,M+0x37a,M+0x37c	characterReachActionFlags	角色可達啟用須等於 1；四個動作可達旗標及副手／替代動作各自為 u8 輸入。來源 0x51a2f8、0x51a363、0x505e60、0x505e80。
+field	M+0x2b6,relation+0..8	monsterReachRelation	關係清單零至一筆，ID 隨候選怪物 ID 更新；啟用須等於 1，四個可達旗標分別輸入。來源 0x505d20、0x51a553..0x51a5bc。
+field	position+0x118..0x120,position+0x18c	monsterPositionAndRadius	攻擊者與另一怪物三維位置、碰撞半徑各自為 float32 位元輸入。來源 0x4c7cb0、0x4c7dd0。
+data	65a0f8,659c0c	partyPositionAndRadius	隊伍位置與半徑物件在 arena，三維 float32 位元與半徑各自輸入；角色距離包含原版垂直修正。來源 0x4c7cf4..0x4c7d35。
+data	51a4d8,51a6f0,603ac8,5ebb34,5ebc40	monsterReachRuntimeTables	可達動作分派、垂直修正、最小表面距離及射程倍率共用 n_545cf0.go 初始化從使用者 exe 讀出的資料，不內嵌表或原版 bytes；純節點不做 IO。
+data	683f94	combatFormationRangeMode	案例明列固定 0 的冒險模式；角色可達性不做戰鬥隊形射程扣減，D4 僅聲明本函式基本塊覆蓋，未聲明子函式全部情境。
+field	list+0,list+4,list+8	candidateListStorageCapacityCount	既有緩衝區、容量及成員數；容量 0..16、合法筆數 0..4，輸出保留舊區覆寫與所有新配置內容，驗證擴容與候選順序。來源 0x5e2480..0x5e252d。

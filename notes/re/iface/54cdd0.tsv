@@ -1,0 +1,70 @@
+call	2b6	無關	掃描器的非函式呼叫目標；477-byte 入口範圍沒有此子呼叫，與效果時間規則無關（build/wiz8.asm:452150..452302）
+call	40efa0	randomDurationAdjustment	非永久時間呼叫 R(4)，保留完整呼叫順序及所有分支
+call	4acd80	attachMonsterCombatSpellVisual	槽原本未啟用或法術碼不同才附加；原版從exe查視覺描述、照常跑子函式，SR資源用case stubs；calc保留R(20)視覺相位亂數，顯示列表不納入規則輸出
+call	4e5550	findMonsterByIdentity	用目標列表的識別碼在已載入怪物列表找索引；case 配置兩個不同識別碼的獨立記錄
+call	4e5620	getMonsterRecord	由怪物索引取得完整記錄；case 配置有效列表與模板，原版直接執行
+call	50e700	rebuildPartyCombatModifiers	覆寫隊伍戰鬥槽後重建103-byte修正；calc組合既有dispelSharedModifiers；共享法術、戰鬥槽、光環均列輸入，八個角色固定不在場
+call	50e8c0	rebuildMonsterCombatModifiers	原版清零後重建狀態、條件、共享與戰鬥修正，再更新五項屬性；calc組合dispelMonsterModifiers，所有來源列輸入，次級浮點攻擊快取不納入規則輸出
+call	517f90	addDurationPercentage	以低32位時間乘加成後無號除100，再回繞相加；不是有號百分比，也不作四捨五入
+call	562a50	requestCombatSpellDisplayRefresh	套用隊伍效果後請求0x800100刷新；case畫面模式固定0，子函式返回且不修改顯示物件，與時間數值無關
+call	4e5720	getMonsterTemplate	取已載入怪物模板，+0x24f 等級乘施法威力累加到指定角色貢獻
+call	4eee80	countContributingPartyMembers	統計在場、HP非零且主要狀態小於18的隊員；本案例八個角色固定不在場，回傳零
+call	50f720	ensureNpcCombatRecord	怪物未進戰鬥時嘗試載入其NPC戰鬥資料；case提供NPC列表與停用旗標，子函式照常執行
+call	5100b0	findNpcByIdentity	用怪物NPC識別碼查已載入NPC列表
+call	5101b0	getNpcRecord	從NPC列表索引取得記錄供載入判斷
+call	517a90	formatSpellContribution	以訊息格式與累計貢獻產生訊息；數值來自效果+0x12a，格式固定%d，純函數輸出貢獻值
+call	53bea0	hasCharacterCaster	直接角色type1；怪物NPC type3要求角色索引不為-1且帶角色或隊伍旗標；兩個旗標亦列case輸入
+call	5905c0	setCombatMessageEnabled	開始新訊息段後保留啟用狀態，輸入輸出納入此旗標
+call	5905e0	getCombatMessageEnabled	訊息啟用byte決定是否輸出分段前綴
+call	5905f0	appendCombatMessage	輸出前綴及貢獻訊息；case畫面模式固定0，訊息顯示不生效，wcslen回傳值在此情境不被規則使用，case用ret=0樁
+data	4	無關	立即值與stack調整誤列為資料引用；不是資料表或遊戲記錄
+data	5ebaf4	assertInvalidBuffReference	SR斷言import槽；不合法法術或怪物參考才呼叫，合法案例不進此分支
+data	60cffc	spellMonsterVisualDescriptor	每法術8-byte記錄的怪物視覺描述索引；原版子呼叫直接讀exe映射，不內嵌；沒有視覺描述的法術僅測隊伍套用或同碼怪物槽刷新
+data	60f4f8	missingMonsterAssertionText	怪物記錄缺失的斷言文字；不是時間規則輸入
+data	6149e8	combatModeAssertionText	合法呼叫要求戰鬥模式，文字本身不參與規則
+data	616db4	combatSpellSlotOrder	九筆17-byte戰鬥效果槽的法術順序；沿用既有執行時exe讀表，不內嵌
+data	616db8	combatSpellSlotOrderNext	槽序表第二筆位址；與前述同一張表
+data	616dd8	combatSpellSlotOrderEnd	九筆槽序表末端，不合法法術會斷言
+data	619788	firstContributionMessagePrefix	首次訊息前綴文字；與時間和貢獻數值無關
+data	619794	continuedContributionMessagePrefix	後續訊息前綴文字；由messageStarted區分
+data	61e2c4	spellSourceAssertionFile	斷言來源檔名字串；不參與遊戲數值
+data	61e2f8	unknownBuffAssertionText	法術不在共享槽序表的斷言文字；不參與遊戲數值
+data	6836a8	partyCombatState	指向隊伍戰鬥結構；+0x7c1起九筆戰鬥效果槽
+data	683f94	combatMode	合法呼叫非零；子函式戰鬥修正分支也讀此byte
+data	68c09c	spellMessageContext	訊息內容物件指標；+0x690為貢獻格式字串
+data	800100	partyBuffRefreshMask	刷新位元立即值，來源0x54ccc8；不是物件指標或exe資料表
+data	fffffffffffffff0	無關	堆疊暫存負位移掃描產物，不是遊戲物件或資料表
+data	fffffffffffffff4	無關	堆疊暫存負位移掃描產物，不是遊戲物件或資料表
+data	fffffffffffffff8	無關	堆疊負位移掃描產物；呼叫暫存，不是遊戲規則欄位
+data	fffffffffffffffc	無關	堆疊負位移掃描產物；呼叫暫存，不是遊戲規則欄位
+field	eax*8+0x60cffc	spellMonsterVisualDescriptor	每法術8-byte視覺描述，原版從exe映射讀取
+field	eax+0x0	partyCombatEffectActive	隊伍戰鬥槽啟用byte，套用置1
+field	eax+0x1	partyCombatEffectSpell	隊伍戰鬥槽法術碼u32
+field	eax+0x5	partyCombatEffectPower	隊伍戰鬥槽威力u32；子函式重建取低byte
+field	eax+0xd	partyCombatEffectDuration	隊伍戰鬥槽時間u32
+field	eax+0x24f	monsterTemplateLevel	模板等級byte，用於施法角色貢獻乘威力
+field	ebp+0x0	combatSpellIdentity	本次法術碼，查槽序表與視覺表
+field	ebp+0x60	casterCharacterIndex	角色施法者索引；每怪物戰鬥結構+0x1a起8筆貢獻值
+field	ebp+0x124	contributionMessageStarted	是否已開始訊息，用來選前綴，貢獻非零後置1
+field	ebp+0x125	combatSpellApplied	任一隊伍或怪物成功套用置1；無目標保留舊值
+field	ebp+0x12a	spellContributionCount	隊伍有效施法隊員數加成功怪物數；u32累加
+field	ebp+0xd0	combatSpellPower	威力u32，參與線性時間和角色施法貢獻
+field	ebp+0xd4	durationBonusPercent	時間加成百分比；先u32乘法再除100
+field	ebp+0xd8	baseDuration	基本時間u32
+field	ebp+0xdc	durationPerPower	每單位威力的時間u32
+field	ebp+0xe4	monsterTargetCount	有號目標數，零或負數跳過怪物迴圈
+field	ebp+0xec	monsterTargetIdentities	目標識別碼列表指標，case兩筆不同ID
+field	ebp+0xf4	applyToParty	非零覆寫隊伍對應戰鬥槽
+field	ecx+0x690	spellContributionMessageFormat	固定%d格式；輸出文字非規則介面，貢獻數值已納入
+field	edi+0x0	monsterCombatEffectActive	怪物戰鬥槽啟用byte，決定視覺附加
+field	edi+0x1	monsterCombatEffectSpell	舊法術碼不同時附加視覺，再覆寫
+field	edi+0x5	monsterCombatEffectPower	覆寫本次威力u32
+field	edi+0xd	monsterCombatEffectDuration	覆寫本次合成時間u32
+field	esi+0x0	monsterIdentity	怪物識別碼，傳入修正重建再次查同一記錄
+field	esi+0x4	monsterNpcIdentity	未在战鬥時用此碼找NPC記錄
+field	esi+0xc	monsterRenderObject	原版視覺附加物件，case提供列表與SR資源樁
+field	esi+0x10	monsterCombatState	指向戰鬥槽與角色貢獻陣列的子結構
+field	esi+0x15	monsterInCombat	無战鬥資料先嘗試NPC載入；仍未在場則跳過套用
+field	ebp+0x5c	casterTargetType	施法者目標類型供53bea0辨識角色或怪物NPC
+field	ebp+0x77	casterNpcCharacterFlag	type3施法者帶角色關聯旗標，原版子函式讀取
+field	ebp+0x78	casterNpcPartyFlag	type3施法者帶隊伍關聯旗標，原版子函式讀取

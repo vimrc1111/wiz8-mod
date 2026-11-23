@@ -1,0 +1,9 @@
+call	524a10	characterActionEligibility	檢查角色索引 0..7、副表占用旗標、非零目前 HP 與主狀態小於 13；失敗回傳 -1，calc 重用已驗證節點
+call	4ff7f0	lockSpellSchoolSelection	固定開鎖法術 39、施法模式 1、訓練模式 0、威力 7；取可用學派中最大有號有效技能，同值保留先出現學派；語言施法受阻且煉金可用時直接選煉金；來源 0x586aad..0x586abb 與 0x4ff7f0..0x4ffbcc
+data	4	無關	入口第一個堆疊參數的位移，表示角色索引參數位置，並非遊戲資料或規則常數
+data	65be1c	spellRecords	法術記錄表指標；開鎖法術為第 39 筆，每筆 447 bytes，子函式讀學派可用旗標，本函式讀領域索引；case 使用合成記錄，不複製 exe 表
+data	685174	partyCharacterRecords	隊伍角色主記錄表指標；每筆 6242 bytes，依輸入角色索引取得技能、法術旗標與資格欄位
+field	eax+esi*1+0x1a3	selectedSchoolBaseSkill	角色選定學派的基礎技能值，學派索引 24..27，每筆技能 38 bytes；以 u32 參與加權，來源 0x586abb..0x586adb
+field	ecx+0x454c	lockSpellRealm	法術表第 39 筆的領域索引，39×447+307=0x454c；case 以輸入 0..5 指定，來源 0x586abe..0x586aca
+field	edx+esi*1+0x5cb	lockRealmEffectiveSkill	角色開鎖法術領域的有效技能值，領域記錄每筆 38 bytes；權重 4，與學派基礎值以 u32 相加後除以 5，來源 0x586aca..0x586aea
+field	esi+0xc69	lockSpellKnown	角色開鎖法術可用／已學旗標，只有值恰為 1 才計算能力；其他值回傳 -1，來源 0x586a9f..0x586aac

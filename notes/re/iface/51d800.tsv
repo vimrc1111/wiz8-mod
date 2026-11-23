@@ -1,0 +1,20 @@
+call	2b6	invalid_activation_input_assert	IAT 0x5ebaf4 的 srAssertFail；僅非法角色／實例指標或超界定義索引，合法啟動規則不呼叫。
+call	51d610	item_use_requirements	檢查職業、種族、性別、屬性、技能及卷軸／裝置／樂器資格；calc 使用既有節點，選中記錄完整欄位皆為輸入。
+call	51c4e0	item_default_equipment_slot	物品類型與遊戲開始狀態求預設裝備槽；回 -1 可略過裝備位置檢查，calc 使用既有節點及其執行時 exe 表。
+data	4	無關	分析器將呼叫後參數清理量列為資料引用，並非規則資料。
+data	8	無關	分析器將堆疊參數位置列為資料引用，實際為角色／實例參數傳遞。
+data	5ebaf4	invalid_activation_input_assert_import	非法輸入的 srAssertFail 匯入槽，合法輸入不執行。
+data	61a758	assert_source_filename	assert 原始檔名文字，不參與啟動資格。
+data	61a994	assert_definition_index_below_count	定義索引須小於已載入物品數的 assert 條件文字。
+data	61a9cc	assert_definition_index_at_least_empty	定義索引至少為 -1 的 assert 條件文字。
+data	61a9e4	assert_instance_present	物品實例指標非空的 assert 條件文字。
+data	61a9ec	assert_character_present	角色指標非空的 assert 條件文字。
+data	683f78	loaded_item_definition_count	已載入物品定義數，entry 用有號比較檢查索引上界；case 與 calc 都明列此輸入。
+data	68516c	item_definition_records	物品定義庫指標；依實例的定義編號選記錄，stride 269，arena 提供合成資料，不複製 exe 表。
+field	eax+0x63	item_spell_id	物品效果法術 u8，零不能啟動；物品定義 671 例外。来源 0x51d927..0x51d934。
+field	eax+0x66	item_charge_mode	值 2 時要求實例剩餘次數非零；來源 0x51d93c..0x51d947。
+field	eax+ebx*1+0x42	item_effect_kind	效果種類 u8，0 與 3 禁止啟動；也是子節點的 itemKind。來源 0x51d90c..0x51d91f。
+field	ecx+edx*1+0x41	item_activation_flags	bit 0x40 強制檢查角色裝備位置；未設且預設槽為 -1 時略過位置檢查。來源 0x51d8b3..0x51d8c6。
+field	edi+0x0	instance_item_definition_index	實例的有號定義編號，-1 為空物品直接拒絕；其餘需位於已載入定義庫。來源 0x51d844..0x51d88c。
+field	edi+0x5	instance_remaining_charges	剩餘使用次數 u8，charge mode 2 且零時拒絕；來源 0x51d942..0x51d949。
+field	C+0xf5d	character_equipment_instances	12 個裝備實例、stride 12，以實例地址而非物品編號比對；槽 8／9 禁止啟動，外部實例亦拒絕。來源 0x51d8ce..0x51d8ef；case 明列角色與實例地址，可走各槽及槽外位置。

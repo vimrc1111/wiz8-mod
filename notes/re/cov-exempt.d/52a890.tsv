@@ -1,0 +1,1 @@
+52a890	52a8ca	成員在場位元組為零的 srAssertFail 防禦分支；stop 無正常返回可差分，合法輸入（成員 0..7 皆在場）不到，calc 在此 panic。

@@ -1,0 +1,133 @@
+call	2b6	無關	srAssertFail 匯入識別；施法頂點不存在時停止，沒有正常規則輸出。
+call	421070	partyAimPosition	讀隊伍視點三維座標，作為角色施法起點及隊伍射線終點。
+call	434f20	spellLineOfSight	場景射線阻擋判定；案例使用空碰撞世界，原版子函式仍完整執行。
+call	4534c0	modelWorldPosition	取得隊伍或怪物模型位置，作距離計算中心。
+call	4ac9d0	spellTargetSelectionMode	讀所選法術 +0x137，決定單體、群組、錐形或範圍選取。
+call	4addf0	growTargetList	需要時將 ID 名單容量擴為新增後數量，保留原成員及顺序。
+call	4be420	spellAzimuth	從施法起點與目標座標計水平角，供錐形選取。
+call	4be490	spellElevation	從施法起點與目標座標計仰角，供錐形選取。
+call	4c78e0	monsterCastingVertex	取得怪物施法頂點；精靈模型使用縮放包圍盒中高，經原版虛擬函式派送。
+call	4e5550	monsterIndexByID	依怪物識別碼查列表索引，非法 ID 會斷言。
+call	4e5620	monsterRecordByIndex	依有效索引取怪物記錄。
+call	4e5720	loadedMonsterTemplate	取怪物種類模板，提供目標免疫與種類篩選。
+call	4e5840	monsterRecordByID	組合怪物 ID 查找與記錄取得；群組成員逐筆執行。
+call	4eee20	hasActiveHostileMonster	判斷是否仍有可行動的敵方怪物，控制無目標時的擴大陣營搜尋。
+call	501b70	filterSpellMonsterTargets	刪除無效怪物，並按法術 22、77、129 的怪物種類與特殊狀態限制篩選。
+call	5100b0	monsterGroupIndexByID	按目標群組 ID 找群組索引。
+call	5101b0	monsterGroupRecord	由群組索引取得群組及成員名單。
+call	5182e0	無關	不相容來源或目標的診斷記錄；此路徑返回，不新增名單成員。
+call	51aa30	sourceAdjustedSpellRange	射程類別換算世界距離，再加入角色或怪物的射程偏移。
+call	51b4e0	sourceCanReachTarget	非特殊来源先檢查來源當前行動的目標可達性，不可達則保留輸出。
+call	539b70	insideSpellCone	距離扣除兩端半徑後向下取整，並檢查水平角及仰角窗。
+call	539ca0	appendConeMonsters	遍歷符合存活、免疫、陣營、錐形及可見性條件的怪物，順序加入 ID。
+call	539e70	appendAreaMonsters	按球形範圍、怪物半徑、陣營與視線條件加入 ID。
+call	53bea0	sourceIsCharacter	角色來源；第二參數允許特殊來源追溯角色擁有者。
+call	53bf10	sourceIsMonster	怪物來源；第二參數允許特殊來源追溯怪物擁有者。
+call	5474b0	spellBlockedByPartyProtection	法術 3、41 不受此限制，其餘目標模式 3..7 受角色 +0xa35 保護阻擋，混合陣營例外。
+call	5e1c10	releaseOldTargetStorage	名單擴容完成後釋放舊儲存區，順序及計數不變。
+call	5e1ce0	allocateTargetStorage	配置新增後 ID 數乘四 bytes；成功後複製既有成員。
+call	5e2c70	groupMemberCount	取得群組成員容器數量。
+call	5e2c80	groupMemberID	依序讀群組成員的怪物 ID。
+data	10	無關	分析器將堆疊參數或局部欄位位移列為資料位址；實際介面由七個參數、來源描述及名單欄位命名。
+data	14	無關	分析器將堆疊參數或局部欄位位移列為資料位址；實際介面由七個參數、來源描述及名單欄位命名。
+data	18	無關	分析器將堆疊參數或局部欄位位移列為資料位址；實際介面由七個參數、來源描述及名單欄位命名。
+data	1c	無關	分析器將堆疊參數或局部欄位位移列為資料位址；實際介面由七個參數、來源描述及名單欄位命名。
+data	4	無關	分析器將堆疊參數或局部欄位位移列為資料位址；實際介面由七個參數、來源描述及名單欄位命名。
+data	4fdf10	targetModeDispatch	目標模式 0..7 的分派表，原版 exe 映射；calc 以各模式遊戲規則實作。
+data	5ebaf4	無關	srAssertFail 匯入槽，僅非法模型頂點進入停止分支。
+data	5ebb34	zeroRange	範圍零值比較，判定是否要加入施法者半徑。
+data	5ebc40	spellDistanceWorldScale	法術距離換算世界座標的尺度；由使用者 exe 執行時載入。
+data	5ebc64	areaTargetHeightOffset	落點型範圍中心的垂直偏移；由使用者 exe 執行時載入。
+data	61920c	無關	斷言與查找診斷的來源檔名稱，不參與目標選取。
+data	619434	無關	不相容法術目標的診斷文字，不參與有效名單。
+data	6194ac	無關	施法頂點缺失的斷言文字，失敗停止。
+data	6194bc	無關	不相容法術來源的診斷文字，不參與有效名單。
+data	6598a4	worldCollisionScene	視線碰撞世界，案例設置合法空幾何及格網。
+data	659c0c	partyWorldModel	隊伍位置、半徑及射程偏移的物件。
+data	65be1c	spellRecords	447 bytes 的法術記錄；索引及範圍、目標模式、射程皆由輸入指定。
+data	6836a8	battleContext	可為空的戰鬥物件；+0xa54 可禁用無目標時的陣營擴搜。
+data	685174	characterRecords	6242 bytes 的角色記錄，讀取 HP、狀態與法術保護。
+data	685178	partyActionRecords	262 bytes 的隊員行動記錄；首 byte 決定隊員是否存在。
+data	8	無關	分析器將堆疊參數或局部欄位位移列為資料位址；實際介面由七個參數、來源描述及名單欄位命名。
+data	c	無關	分析器將堆疊參數或局部欄位位移列為資料位址；實際介面由七個參數、來源描述及名單欄位命名。
+data	ffffffffffffff9b	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffff9c	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffa0	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffa4	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffa8	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffac	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffb0	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffb4	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffb8	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffbc	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffc0	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffc4	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffc8	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffcc	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffd0	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffd4	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffd8	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffdc	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffe0	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffe4	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffe8	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	ffffffffffffffec	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	fffffffffffffff0	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	fffffffffffffff4	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	fffffffffffffff8	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+data	fffffffffffffffc	無關	分析器列出的負堆疊位移，屬局部位置向量、角度、範圍及迴圈暫存，不是外部資料位址。
+field	eax*4+0x4fdf10	targetModeDispatch	依目標模式選取規則，與 0x4ac9d0 的結果對應。
+field	eax+0x0	worldPositionXOrTargetListBase	位置複製階段為三維世界座標；名單操作階段的 +4 與 +8 分別是目前數量及容量，按所在物件解讀。
+field	eax+0x16	monsterFaction	來源或群組成員怪物的敵我陣營。
+field	eax+0x37c	monsterHasCastingVertex	來源怪物是否使用模型施法頂點。
+field	eax+0x4	worldPositionYOrTargetListCount	位置複製階段為三維世界座標；名單操作階段的 +4 與 +8 分別是目前數量及容量，按所在物件解讀。
+field	eax+0x8	worldPositionZOrTargetListCapacity	位置複製階段為三維世界座標；名單操作階段的 +4 與 +8 分別是目前數量及容量，按所在物件解讀。
+field	eax+0x84	partyCollisionRadius	隊伍半徑加入角色來源的範圍距離。
+field	eax+0x9c	monsterCollisionRadius	怪物模型半徑加入來源範圍或錐形判定。
+field	eax+0xa54	battleSuppressFactionFallback	戰鬥狀態是否禁止無目標後擴大陣營。
+field	eax+ebp*1+0x121	spellAreaBase	所選法術的基礎範圍，float32。
+field	eax+ebp*1+0x127	spellAreaPerPower	所選法術每 PL 增加的範圍，float32。
+field	eax+ebp*1+0xa35	characterMagicProtection	角色法術保護狀態；有害模式排除該角色，混合陣營例外。
+field	eax+ebp*1+0xb01	characterCondition	角色狀態碼必須小於 18 才可加入。
+field	eax+ebp*1+0xb11	characterCurrentHP	角色目前 HP 必須非零。
+field	eax+edx*1	partyMemberPresent	每 262 bytes 的隊員行動記錄首 byte，零為未在隊伍。
+field	eax+edx*4	characterTargetIDSlot	將單體角色索引写入角色目標名單。
+field	ebp+0x16	sourceMonsterFaction	怪物來源陣營，決定隊伍是否納入範圍。
+field	ebp+0x178	monsterCastingHeight	模型 +0x18 基址下的垂直施法高度偏移，即模型物件 +0x190。
+field	ebp+0x2a	targetGroupFaction	群組成員的怪物陣營必須與此 byte 相同。
+field	ebp+0x4	monsterTargetCount	怪物目標名單目前數量。
+field	ebp+0x8	monsterTargetCapacityOrGroupMembers	新增怪物時為名單容量；群組遍歷時為成員容器指標。
+field	ebp+0xc	monsterTargetStorage	怪物目標名單 backing array 指標，擴容後會更新。
+field	ebp+eax*4+0x0	previousCharacterTargetID	擴容時按原序複製旧角色 ID。
+field	ebx+0xc	sourceMonsterModel	來源怪物的世界模型物件，位置與施法頂點由它取得。
+field	ecx+0x16	sourceMonsterFaction	來源怪物的敵我陣營。
+field	ecx+0x4	worldPositionYOrTargetListCount	位置複製階段為三維世界座標；名單操作階段的 +4 與 +8 分別是目前數量及容量，按所在物件解讀。
+field	ecx+0x8	worldPositionZOrTargetListCapacity	位置複製階段為三維世界座標；名單操作階段的 +4 與 +8 分別是目前數量及容量，按所在物件解讀。
+field	ecx+0x84	partyCollisionRadius	錐形與球形使用的隊伍碰撞半徑。
+field	ecx+0x9c	monsterCollisionRadius	錐形來源怪物的碰撞半徑。
+field	ecx+0xc	monsterModelOrTargetStorage	範圍來源時為怪物模型；加入目標時為 ID 名單儲存區。
+field	ecx+eax*4	copiedCharacterTargetID	名單擴容後複製舊角色 ID 到新儲存區。
+field	ecx+edx*1+0x12f	spellRangeCategory	所選法術的射程類別，-1..3 轉世界距離。
+field	edi+0x0	targetKindOrMonsterID	目標描述首欄為目標種類；怪物列舉時為怪物識別碼。
+field	edi+0x10	targetWorldX	輸入目標 X；來源中心模式會改寫成施法起點 X。
+field	edi+0x14	targetWorldY	輸入目標 Y；來源中心模式會改寫成施法起點 Y。
+field	edi+0x18	targetWorldZ	輸入目標 Z；來源中心模式會改寫成施法起點 Z。
+field	edi+0x4	targetCharacterIndex	單體角色或復活目標的角色索引。
+field	edi+0x8	targetMonsterID	單體怪物目標的怪物 ID。
+field	edi+0xc	targetGroupID	群組目標的群組 ID。
+field	edx+0x0	worldPositionXOrTargetListBase	位置複製階段為三維世界座標；名單操作階段的 +4 與 +8 分別是目前數量及容量，按所在物件解讀。
+field	edx+0x16	groupMemberFaction	群組候選怪物的敵我陣營。
+field	edx+0x4	worldPositionYOrTargetListCount	位置複製階段為三維世界座標；名單操作階段的 +4 與 +8 分別是目前數量及容量，按所在物件解讀。
+field	edx+0x8	worldPositionZOrTargetListCapacity	位置複製階段為三維世界座標；名單操作階段的 +4 與 +8 分別是目前數量及容量，按所在物件解讀。
+field	edx+ebp*1+0x34d	monsterPartyVisibility	依施法頂點種類選怪物對隊伍的可見性 byte。
+field	edx+ecx*1+0x34d	monsterPartyVisibility	依施法頂點種類選怪物對隊伍的可見性 byte。
+field	edx+ecx*4	characterTargetIDSlot	將角色索引寫入名單目前計數的槽位。
+field	esi+0x0	spellSourceKind	來源種類 1 角色、2 怪物、3 特殊位置來源。
+field	esi+0x10	sourceWorldY	特殊來源保存的施法位置 Y。
+field	esi+0x14	sourceWorldZ	特殊來源保存的施法位置 Z。
+field	esi+0x1b	sourceSpecialCast	特殊施法標記；略過一般可達性並影響敵我選取。
+field	esi+0x1c	sourceEnvironmentalCast	環境施法標記；略過一般可達性並影響敵我選取。
+field	esi+0x1d	sourceUseModelCenter	非零時不用模型施法頂點，改取模型位置加施法高度。
+field	esi+0x4	sourceCharacterOrTargetCount	來源描述為角色索引；角色名單物件為目前數量。
+field	esi+0x8	sourceMonsterOrTargetCapacity	來源描述為怪物 ID；角色名單物件為容量。
+field	esi+0xc	sourceWorldXOrTargetStorage	來源描述為特殊施法 X；名單物件為 ID 陣列指標。

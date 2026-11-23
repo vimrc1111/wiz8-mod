@@ -1,0 +1,2 @@
+5508e0	55091d	第一個目標記錄不是角色（種類非 1）時 0x53bea0 回 0、此塊呼叫 srAssertFail；施法效果的第一目標只會是已選定的角色，其餘不是合法輸入，且 srAssertFail 在模擬器停止、沒有可差分的返回；calc 對 firstTargetKind≠1 panic。
+5508e0	550944	第二個目標記錄不是怪物（種類非 3）時的 srAssertFail 塊；本函式只處理落在怪物上的效果，其餘種類不是合法輸入，且 srAssertFail 在模擬器停止、沒有可差分的返回；calc 對 secondTargetKind≠3 panic。

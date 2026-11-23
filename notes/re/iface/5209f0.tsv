@@ -1,0 +1,8 @@
+call	5208f0	item_identification	對符合條件的成員（參數 1）與物品實例（參數 2）施行識別；已 D4，case 以位址樁記錄各次呼叫的兩個參數與呼叫次數，回傳值取自輸入，F 另跑真 Go 函式
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）
+data	685178	partyPresenceRecords	隊伍在場記錄陣列基址（每人 0x106 bytes，第 0 個 byte 為在場旗標）
+field	eax+0xb11	character_realm_sp_pools_enabled	角色 +0xb11 的技能池啟用字；為零則該成員不參與識別
+field	eax+0xb01	character_state	角色 +0xb01 狀態字；>= 11 則該成員不參與識別
+field	ebp+0x6	item_identified_flag_a	物品實例 +6 的識別旗標；非零則整個函式直接回 0
+field	esi+eax*1	partyPresenceFlag	在場記錄第 0 byte，非零為在場

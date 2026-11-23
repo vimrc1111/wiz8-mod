@@ -1,0 +1,31 @@
+call	2b6	無關	srAssertFail 間接匯入的分析序號；只停止配置失敗或清單新增失敗的錯誤路徑，不產生合法候選。
+call	65	allocateFumbleCandidate	malloc 匯入的分析序號；每個候選配置 32 bytes，既有 heap 樁原樣保留配置順序。來源 0x543e12、0x543e8f、0x543f91。
+call	4e5620	monsterRecordByHandle	將活動怪物列表的迴圈索引轉為怪物即時記錄；列表子函式原樣執行。來源 0x543f26。
+call	5e2480	appendFumbleCandidate	候選描述加入清單並回新增索引；容量不足加五、複製既有成員，calc 重現配置與舊緩衝區覆寫。來源 0x543e4c、0x543ec9、0x543fcb。
+call	5e2c70	activeMonsterCount	讀活動怪物列表筆數，迴圈每次再讀；案例提供 0..2 筆。來源 0x543f15、0x543ff6。
+data	4	無關	參數堆疊位移；被分析為資料引用，非遊戲資料或表。
+data	8	無關	參數堆疊位移；被分析為資料引用，非遊戲資料或表。
+data	c	無關	參數堆疊位移；被分析為資料引用，非遊戲資料或表。
+data	fffffffffffffffc	無關	-4 堆疊相對位移被分析為資料引用；非遊戲欄位或查表位址。
+data	5eb1a0	candidateAllocationImport	malloc IAT 槽，成功配置候選與清單擴容緩衝區；配置不是亂數或遊戲資料表。來源 0x543e12。
+data	5ebaf4	無關	srAssertFail IAT 槽；只用於防禦性錯誤診斷，合法輸入無候選輸出可比較。
+data	61d1bc	無關	候選配置失敗的診斷訊息字串；內容不影響候選規則。來源 0x543e2c。
+data	61d2ac	無關	斷言的來源檔名稱字串；只有錯誤訊息使用，與資格和排序無關。
+data	61db24	無關	清單新增索引非法的診斷字串；合法非負清單筆數無法令新增索引為 -1。
+data	683fad	activeMonsterList	活動怪物清單指標，列表 +0 是記錄指標陣列，+8 是筆數；arena 提供零至兩筆有效物件。來源 0x543f0c、0x543fee。
+data	685174	characterRecords	角色主記錄陣列，八筆、步長 0x1862，HP 與主狀態逐筆獨立輸入。來源 0x543de5..0x543dfa。
+data	685178	characterSlotRecords	角色副表陣列，八筆、步長 0x106，占用旗標、原目標種類與原目標逐筆獨立輸入。來源 0x543dd5、0x543f55。
+field	edx+ebp*1	characterSlotActive	角色副表占用 u8，非零才讀主表；八個角色逐筆獨立。來源 0x543ddb。
+field	eax+ecx*1+0xb01	characterMainStatus	目前角色主狀態 u32，必須小於 18；18、19 與高位邊界不作有號比較。來源 0x543dfa。
+field	eax+ecx*1+0xb11	characterCurrentHP	目前角色 HP 的 32-bit 值；只判非零。來源 0x543deb。
+field	eax+edx*1+0x1d	originalTargetType	攻擊者原目標種類；1 排除原角色目標，3 排除原怪物目標。來源 0x543e6b、0x543f67。
+field	eax+edx*1+0x21	originalCharacterTarget	原角色目標索引，與八人迴圈索引比較；只有種類為 1 時使用。來源 0x543e72。
+field	eax+ecx*1+0x1d	originalTargetType	攻擊者原目標種類；3 時才比較原怪物目標 ID。來源 0x543f67。
+field	eax+ecx*1+0x25	originalMonsterTarget	原怪物目標 ID，與正在枚舉的怪物 ID 比較。來源 0x543f6e。
+field	esi+0x0	candidateKindOrMonsterID	配置後是候選種類（角色 1、怪物 3）；配置前的怪物物件則是 ID，寫進怪物候選。來源 0x543e3c、0x543f8d、0x543fbb。
+field	esi+0x4	candidateCharacterIndex	角色候選保存迴圈索引；怪物候選設 -1。來源 0x543e42、0x543fc1。
+field	esi+0x8	candidateMonsterID	角色候選設 -1；怪物候選保存該怪物 ID。來源 0x543e45、0x543fc8。
+field	esi+0x14	monsterActive	怪物即時記錄啟用 u8，非零才繼續。來源 0x543f2d。
+field	esi+0x15	monsterVisible	怪物可見／行動參與 u8，非零才符合候選資格。來源 0x543f46。
+field	esi+0x2b	monsterCurrentHP	怪物目前 HP 32-bit 值，非零才符合；沒有有號正數限制。來源 0x543f3b。
+field	list+0,list+4,list+8	candidateListStorageCapacityCount	既有緩衝區、容量及成員數；容量 0..16、筆數不超過容量，輸出保留舊區覆寫與所有新配置內容，驗證擴容與候選順序。來源 0x5e2480。

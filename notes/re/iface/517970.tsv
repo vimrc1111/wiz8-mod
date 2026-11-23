@@ -1,0 +1,5 @@
+call	40efa0	rand_n	亂數 R(n)，模擬器樁接、calc 以 Rand 介面重放
+data	4	無關	Ghidra 把清堆疊的立即值 4 當資料引用，非記憶體存取
+field	esi+0x0	Z	骰記錄基值，i16 有號
+field	esi+0x2	N	骰數，u8
+field	esi+0x3	S	面數，u8

@@ -1,0 +1,7 @@
+5049c0	504a0e	遠裁距離非正的 srAssertFail 分支；getClipRange 合法回傳為正，失敗停止且無可差分正常返回；calc 對 clip<=0 panic。
+5049c0	504d1a	4c77f0 視線查詢前置失敗的 srAssertFail 分支；case 樁固定回 1，失敗停止無正常返回；calc 不建模此失敗。
+5049c0	504d5c	4c78e0 視線查詢前置失敗的 srAssertFail 分支；case 樁固定回 1，失敗停止無正常返回。
+5049c0	505055	NPC 旗標模板找不到 NPC 記錄的 srAssertFail 分支；失敗停止無正常返回；calc panic。
+5049c0	5053fa	NPC 旗標模板找不到 NPC 記錄的 srAssertFail 分支（未察覺路徑）；失敗停止無正常返回；calc panic。
+5049c0	50565d	怪物分支 4c77f0 前置失敗的 srAssertFail 分支；case 樁固定回 1，失敗停止無正常返回。
+5049c0	50569e	怪物分支 4c78e0 前置失敗的 srAssertFail 分支；case 樁固定回 1，失敗停止無正常返回。

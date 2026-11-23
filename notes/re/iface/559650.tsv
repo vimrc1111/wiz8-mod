@@ -1,0 +1,63 @@
+call	50e540	裝備效果重算前置	非公式，case 原樣執行；與 50e5c0 同屬裝備效果重算，calc 經 equipmentEffectRebuildNode 重現
+call	51c280	placeNewItem	把暫存物品實例放入角色背包空格，滿了放隊伍共用包；非公式，case 原樣執行，calc 以插入路徑建模
+call	520310	清空裝備與背包記錄	把 12 筆裝備與 8 筆背包記錄逐筆清成 -1 並呼叫 520d10；非公式，case 原樣執行
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	61635c	classStartingEquipmentTable	職業起始裝備表，每職業 0x18 bytes、6 筆各 4 bytes 物品 ID，-1 結束；案例輸入 ct{r}_{k} 供值
+data	616360	classStartingEquipmentTable	同表第二筆起的讀取偏移（基址+4），由 51c020 呼叫前取出
+data	6164c4	classStartingEquipmentTable	同表另一段讀取（職業索引 15 之後的列），案例輸入 ct{r}_{k} 供值
+data	683f78	loaded_item_definition_count	已載入物品定義數，邊界檢查；case 與 calc 明列此輸入（defCount）
+data	68516c	itemRecordBase	物品定義庫基址，每筆 0x10d bytes；案例使用合成資料，非 exe 靜態表
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	資料引用	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+field	eax+0x0	itemId	物品實例的定義索引 i32，-1 為空格
+field	eax+0x3f	itemTypeByte	物品定義 +0x3f 型別位元組
+field	eax+0x86	baseValue	物品模板的 u32 基價；5227d0 的價格來源
+field	ebp+0x0	itemId	物品實例的定義索引 i32，-1 為空格
+field	ebx+0x69	C+0x69 職業	角色職業，查起始裝備表
+field	ebx+0x71	C+0x71 種族	角色種族
+field	ecx+0x0	itemId	物品實例的定義索引 i32；暫存實例清零或讀取
+field	ecx+0x4	itemField4	物品實例 +4（數量或次數），清零或讀取
+field	ecx+0x8	itemField8	物品實例 +8（狀態旗標），清零或讀取
+field	ecx+eax*4+0xf5d	characterEquipSlotItemId	C+0xf5d 起每槽 12 bytes 的裝備欄物品索引
+field	ecx+edx*1+0x41	item_activation_flags	物品定義 +0x41 占用旗標
+field	ecx+edx*1+0x8c	itemDefinitionField8c	物品定義 +0x8c，價格分支讀取
+field	edi+0x0	itemId	物品實例的定義索引 i32，-1 為空格
+field	edx+0x0	itemId	物品實例的定義索引 i32
+field	edx+0x4	itemField4	物品實例 +4
+field	edx+0x8	itemField8	物品實例 +8
+field	edx+eax*1+0x3f	itemTypeByte	物品定義 +0x3f 型別位元組
+field	esi+0x1a3	C+0x1a3 屬性	角色屬性欄，開局屬性判斷
+field	esi+0x1c9	C+0x1c9 屬性	角色屬性欄，開局屬性判斷
+field	esi+0x215	C+0x215 屬性	角色屬性欄，開局屬性判斷
+field	esi+0x261	C+0x261 屬性	角色屬性欄，開局屬性判斷
+field	esi+0x69	C+0x69 職業	角色職業
+field	esi+0xfa5	characterEquippedWeaponItemIndex	主手裝備欄物品索引 C+0xfa5
+field	esi+eax*1+0x86	baseValue	物品定義 +0x86 u32 基價
+field	esi+edx*1+0x86	baseValue	物品定義 +0x86 u32 基價
+data	fffffffffffffdec	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffdf0	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffdf4	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffdf8	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe04	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe08	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe0c	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe10	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe14	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe18	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe1c	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe20	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe24	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域
+data	fffffffffffffe28	無關	索引器將堆疊負位移辨識為資料引用；局部暫存，不是規則全域

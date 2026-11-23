@@ -1,0 +1,12 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "d1b5a6e625581ec4b524cd15bad6bbfb7e20866f91eb94c15f683db1465a75d3",
+  "zh": "目標： NARGISST\n 位置：未偵測到\n 狀態：失蹤或已摧毀\n 命中機率： NA\n 損傷機率： NA\n"
+ },
+ {
+  "id": 3,
+  "src_sha256": "05c334c0b45efd2ba5cf202cc40611afa633b17f783583113560a5663e768a81",
+  "zh": "目標： NARGISST\n 位置： DOMINUS 軌道\n 狀態：護盾全滿\n 命中機率：98%\n 損傷機率：0%（護盾）"
+ }
+]

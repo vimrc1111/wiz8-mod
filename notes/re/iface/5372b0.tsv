@@ -1,0 +1,11 @@
+call	5010f0	spell_target_category	依物品法術、使用者目標旗標與戰鬥狀態映射目標種類；重用 itemSpellTargetTypeNode
+call	5207c0	item_uses_caster_target	物品類型 16、21、22 將單一友方目標改為施術者；只讀回傳低位元組
+call	537160	target_category_compatible	檢查目前目標種類、索引與角色／怪物／群組／物品資格；分派表執行時由使用者 exe 載入
+call	53b7f0	current_source_target_record	依來源槽、介面狀態、待執行動作與戰鬥模式選取目前目標記錄，可能為空
+data	4	無關	分析器將堆疊參數位置或參數回收長度當資料引用；不是規則資料表
+data	8	無關	分析器將參數回收長度當資料引用；不是規則資料表
+data	685116	interface_target_exemption	非零時允許目標類別 2，不再檢查目前目標資格
+data	68516c	item_definition_records	物品資料陣列基址，每筆 269 bytes，以物品实例的定義索引選取
+field	eax+0x0	item_definition_index	物品实例第一欄為定義索引，-1 代表空物品；空指標也無法術
+field	esi+0x63	item_spell_id	物品附帶法術 ID，u8；與物品類型、法術目標參數共同映射種類
+field	esi+ecx*1+0x63	item_spell_id	陣列基址加物品定義索引乘 269 後的法術欄位；0 表示無法術

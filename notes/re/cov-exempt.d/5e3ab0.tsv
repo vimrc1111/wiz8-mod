@@ -1,0 +1,1 @@
+5e3ab0	5e3b7b	srAssertFail 斷言塊：trap+0x10c 不是 2（陷阱物件類別）時呼叫 import 0x5ebaf4，模擬器視為終止；唯一呼叫點 0x589cf9 傳陷阱物件 [esi+0x8]；calc 對 trapKind≠2 panic

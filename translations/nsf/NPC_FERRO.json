@@ -1,0 +1,642 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "3e1027842cb41c76676bab371ef04613a3ba73e35458b2c5fee5f379ad9a3cc0",
+  "zh": "原來你們長這個樣子！啊，對了，你們一到這裡，就成了 Rapax Castle 的熱門話題，你們知道嗎。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "4e58829fc1695f5cd5a7c0c74a0d9da4cb36b6531463e725454aba9fb8364b48",
+  "zh": "滾出我的店。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "6dc32d043a9f26f42fad2bb4621c5cec28e940db3f60dc0cf49de27e85dbdd32",
+  "zh": "你們真是讓人提不起勁……"
+ },
+ {
+  "id": 6,
+  "src_sha256": "40bb82b8c26aa2d0a07de7489b997e136e0ff79f44454199afda2d302e590721",
+  "zh": "請三思……別忘了，你們可是在一個擁有無盡強力武具的 Rapax 店裡。我可不是那麼容易被嚇倒的。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "8973a3047b337f7c2f7f45e1e60e5328cc62ece214991da26001ae1606f708c4",
+  "zh": "這麼一點錢……"
+ },
+ {
+  "id": 8,
+  "src_sha256": "f172b90541d8324a07181775168676b673a493bb3112f123ea13b9d0bec107b1",
+  "zh": "天哪！你們竟然把這些東西拖進來！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "512743f4a61534c846506fc2b8116caa2163106aa22b6cf77ea2d055328ded54",
+  "zh": "喔，不，我不可能加入你們。我是皇家（ Royal ）鎧匠。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "89faf3bc56b4cd1b5053452db4dcd8036226b177ce2191a1daa1a6f9e2b22c5f",
+  "zh": "隨時歡迎……"
+ },
+ {
+  "id": 13,
+  "src_sha256": "b40b4761f27132da034899c6f6f1b70e027ad72f69e991772110da11b54ef21d",
+  "zh": "這種東西我們這裡用不到……"
+ },
+ {
+  "id": 15,
+  "src_sha256": "b6bbc744bc0e112c7abc0c32112edd7ade504bd4d84bc1706cd8ae0d62e805c9",
+  "zh": "我是要賣（ sell ）我有的東西，不是買一堆我早就不需要的。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "b17a09bf821aa043a15e7b6898f6ff7acd23acbb771126e392e65521ecabd3f0",
+  "zh": "你們買不起。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "b9221d93980c7c389f54a0dcce9cc976923e8e4f7b016fdb9573dc512f14b501",
+  "zh": "真不敢相信你們的膽子！這是你們從我這裡偷走的！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "b86a558577b9fb84f6a8a03ac74f2baf709ca6d254f64b00e6deab150d5284d6",
+  "zh": "你們骨子裡有叛逆的性子啊！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "c8eb0931f7fa7f95438fd07b7b8bcbecfa5b62857563f4cab57cd5b1f29c9853",
+  "zh": "大錯特錯，小偷。大大的錯誤！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "3f64bfdfa8cff24fa0e6115169b9ed008191e4b38b82f73c10556776c7316dc6",
+  "zh": "現在你們看到我的劍有多好用了吧！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "0ca0480700334d0ab6afb64f72727b11425eee911fbdf3d48d0c23d3a51b6db2",
+  "zh": "不必把錢給我。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "b6ecfe58f78b9b7b1be10e384a65cf1f5c53b6a970ee1d124aa229ddef68e909",
+  "zh": "我相信該知道的你們都已經知道了……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "8d13f6a9b105077e489ac785dd04399f94eb7a792c6c23c16945811b203283fe",
+  "zh": "別放在心上……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "fb88f79efdb096cddc66f61d102c3ee562b1f63e13654878184303b88570d29d",
+  "zh": "時候到了……自然就到了……"
+ },
+ {
+  "id": 25,
+  "src_sha256": "81bc1e8f6d4c15d0dcc5fd68851fe26ce261902d281a34f45f9710078b88909f",
+  "zh": "你們沒聽到嗎？我說……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "da0cb015dd534325929487b66c03acd2ba19560d72f8093544eec61a2af7c0f1",
+  "zh": "我們一次談一件，最多兩件吧。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "631956b50d150ae874c29579d0ec022f23cacecb8075cb977ac1f01e5f8cd408",
+  "zh": "這個你們剛才也問過了……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "6b69f0fc752d94a33cf178569569a003826980b1cc8f7b958a363270890b6b8b",
+  "zh": "我倒是沒想到這點。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "55fb241261c562acbd98da2876acfc1bd5624e809018818b123f48eba1169131",
+  "zh": "嗯，我該去照看鍛造爐（ forge ）了……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "5c389e1d1bbb8b682efbe4c8525efa5830011420e6424b97b1c2978ff6e92eef",
+  "zh": "我想我們都有事要忙……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "0e563bb10aee897598d9e6d803c060876eff71c099ed7f9d39cc817eaeaae60d",
+  "zh": "沒錯，這顆光輝的星球，將屬於我們！等 Ascension 一過，我們終於能當自己的主人。 Higardi 、 Trynnie 、 Rynjin 都將不復存在……"
+ },
+ {
+  "id": 34,
+  "src_sha256": "fbe4a726ea4826e31cef49e76e088c2ffd8744e3056ea258ee8ca37cafc50969",
+  "zh": "Trynnie 的日子不多了……"
+ },
+ {
+  "id": 35,
+  "src_sha256": "54a8756b286a54aa5969b872ed8876e6765a1bca6be64f7da06741cc3054c5d5",
+  "zh": "自己四處看看吧！與其聽人說，不如親身體驗。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "27512bf3242da665b6175ceb91b2824a21d8412c9b8d5afa80212b1285d9d7d5",
+  "zh": "是啊，我喜歡那裡的熱度……"
+ },
+ {
+  "id": 39,
+  "src_sha256": "9d95272f18c3709868b2f01657a00ced0f1cf3e8a3055d01ec2e5a696fa93bf8",
+  "zh": "沒錯，海邊的洞窟。那裡到處是 Higardi 的鬼魂。有人說老 Marten 就葬在那裡。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "3ea797d6ec38b90b5daca65913ea5be05064bb9d81864f6693b2d23b43608c76",
+  "zh": "Ascension Peak ？那會是一場血洗！凡是擋在 Dark Savant 面前的人，必死（ die ）無疑。再說，誰會想要那種地方？我們 Rapax 早就在這裡找到天堂了……"
+ },
+ {
+  "id": 41,
+  "src_sha256": "8d1958f842f4452e788859e5130bbbdc143b58d5b9960e202ea49d1d2472226b",
+  "zh": "Dark Savant 會得到它的。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "154f737f309b509f0408ba3f90eb9f6303179c016bd629bc3cb7f46e6a3120b2",
+  "zh": "海很大。我相信你們找得到的……"
+ },
+ {
+  "id": 43,
+  "src_sha256": "6fe43f3f5ac1ec9d18541d6fd5f364477bb535e5643f08fc037f9447a1df346a",
+  "zh": "他們的日子會來的……"
+ },
+ {
+  "id": 45,
+  "src_sha256": "541a57be6d13ee442e5e5be3ec8ab34ec137e29b35baf9c4adf53b7eb60b0775",
+  "zh": "你們要一個 Rapax 談 Rapax ？你們想我會說什麼。我們是眾人欽羨的對象。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "4d5f7edb6c5186572354405dd9fb729581083f0403acf9201f3a5bf7c727aa52",
+  "zh": "他們的時間有限。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "f7bdf5d36ba3b3b526b4b19fd34515b866a7e39906900971a4e0df0883c5ab79",
+  "zh": "眾王能給你們的，在 Dominus 這裡你們全都找得到。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "eb404675e8bd7aebdb9942d44e44009596107e925d5f9f3ff1bc040fcbb10ae7",
+  "zh": "我該說，真是位傑出的領袖。我敢發誓他血管裡流的是 Rapax 的血！ Ascension 降臨時，我們的國王曾猶豫不決，不確定該走哪條路、下一步怎麼走。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "0034e5873dbc4bf1df9078cc4ff4130d53bdae592858c4123d2988198816f4e1",
+  "zh": "我們該自己爭奪 Ascension 嗎？還是讓 Higardi 去拿，我們改拿下這顆星球？還有這些新來的， T'Rang 、 Mook 和 Umpani ，又該怎麼辦？"
+ },
+ {
+  "id": 56,
+  "src_sha256": "55d1bfd3a60c93f5ee717b2841dffecca6ea29120782568dafb554e51d4b1328",
+  "zh": "和 Dark Savant 結盟，我們找到了答案。我們拿下 Dominus ，他拿下 Cosmic Circle 。我們的目標大致相同。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "c1d77d24c90d3d5f544067c63f0b1c8a9abad5188e72351db21be68946414e03",
+  "zh": "是啊，那個女孩，那個有名的女孩。她對 Savant 的價值遠高於對我們……"
+ },
+ {
+  "id": 60,
+  "src_sha256": "2da0e2456f3a73e5d2cefad8ccf0a39034d4e50086033436bab0fc590a2f2e60",
+  "zh": "偷走 Destinae Dominus 的就是他。我想你們現在應該聽說過他了……"
+ },
+ {
+  "id": 62,
+  "src_sha256": "c176a14611f294c2e8c9ee2366fc4ff06a3dfb43cfa6a4dbbe29f9eb64434d38",
+  "zh": "他的時候會到的……"
+ },
+ {
+  "id": 63,
+  "src_sha256": "5ea0056e74b5a8967b50528646cf01ffbe3feff0b4864d56ba95db6f5ded8834",
+  "zh": "Rapax King ？他得到我全部的敬意。"
+ },
+ {
+  "id": 64,
+  "src_sha256": "d586e1576c732e8ec81690caf852b7d9afd646de4159ec6fa962e0052aeb5812",
+  "zh": "我不想談她。"
+ },
+ {
+  "id": 65,
+  "src_sha256": "16bbc13382779bcf7a2e208c85b87a0afe235ea215f31369f6a766b4808700de",
+  "zh": "他踏著他父親的腳步前進。"
+ },
+ {
+  "id": 66,
+  "src_sha256": "0f9aa5142bd9941c8a10bd744828f095123e6af843763bc8b3405b81fdb27772",
+  "zh": "我說什麼都無法形容她的萬分之一。要了解她，只能親自去認識她……"
+ },
+ {
+  "id": 69,
+  "src_sha256": "e723c505e226ba6927836033c847c53f9311922026340a5b1595d93369ab74be",
+  "zh": "讓 Savant 拿去吧……"
+ },
+ {
+  "id": 72,
+  "src_sha256": "d67af52ea3f77e5590125bdf428b5a4efa933a9f94dcaf696d4846f7f494f3e2",
+  "zh": "每個好鎧匠都需要一個。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "a19d04c32f41ca2f0e017ac5c5e81bfb20cbf9b999aea65360d3d4eba00d4e6b",
+  "zh": "Dark Savant 的領地。他將會飛升。擋在他路上的人愚蠢至極。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "0cd6f5ea0f828be8d41b2b4c14cc4f7ee7efea4af7aa110df63977e0e06f6f7a",
+  "zh": "這種東西我用不太到。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "97d768186060deb6478d21368063b4686c4463a8485521fe720662335a25a77c",
+  "zh": "我叫 Ferro 。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "673ad35c4cfe479a362908c566d35ff467fcdb03dea5604608e14b47e4157e86",
+  "zh": "你們不覺得厭倦嗎……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "21bfef65c4b06db864925cff705f723896e0b74360c4707c2731e85408063074",
+  "zh": "歡迎……"
+ },
+ {
+  "id": 80,
+  "src_sha256": "a4f05ec4fb0c8bb6ed4b137e0aee3d353a3305f57612030023b4a40616b9afa6",
+  "zh": "需要什麼的話，你們知道上哪找我。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "6b7465e3cdb6017a2ef34781ad18a9d7d2c206b78c9e040da0350472bc02d78c",
+  "zh": "我有很多方式可以幫（ help ）你們……大多是鋼鐵打造的。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "fce1586cedd913aa77ca1fdff8c6d2358a0b46709727c979eeda8ada238f47ac",
+  "zh": "這就是我在這裡的原因！"
+ },
+ {
+  "id": 83,
+  "src_sha256": "aa7f2d083b6fcc4eaabd6d24085dca4a273a53aaf9f5aae74bae90d8fe7eb1ce",
+  "zh": "一向很好，謝謝。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "56bb2fc61fcb867a6923f48f0e20cd72d34980cb16d3157bd1e6a5085f2adb33",
+  "zh": "我確實有一些……"
+ },
+ {
+  "id": 85,
+  "src_sha256": "fb2164cea45c43b1c2d710cc4d6c640c62148097ec802c2affbe25e04350e182",
+  "zh": "這可是生活的調味料呢！"
+ },
+ {
+  "id": 89,
+  "src_sha256": "5e62df059851a42db6c96cea47aa1086fef03a513cfac17ce48fd98da01c2981",
+  "zh": "當然，我得為軍隊（ Army ）準備劍……"
+ },
+ {
+  "id": 90,
+  "src_sha256": "5ed224908e51b3551aebf87229ad6953d3d13de20c0579f84e0ae4353d11a491",
+  "zh": "Sexus 倒是願意受雇於他們……"
+ },
+ {
+  "id": 91,
+  "src_sha256": "94d67ff4168a69f54531e4dea8990cec146791c39a4961bb333f15a6bc5bbc56",
+  "zh": "而 Antone 還以為他的武具比我的好……"
+ },
+ {
+  "id": 92,
+  "src_sha256": "3526bc3dcda0e624c2f0c088551f15a1e7eb0822006890db09236aceaaa788f9",
+  "zh": "當然是在 Arnika 。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "d04d0af8082de78d6cdcfac7b2f768e6d0675d3c9165e24a1d47f16b41fbeaed",
+  "zh": "Trynton 是個骯髒的小地方。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "f6cf18b6456ab364106952ab96162acee309aca8690223a7e738f46d0e6608af",
+  "zh": "大概是 Swamp 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "298fd4d91504e5c192e8f745f973256d72566cc3d93826ba0bc0d2e7f5f04187",
+  "zh": "在 Marten's Bluff 。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "4f605723d54498ec87efbddb9372ef11c7cdb379d823ce443f35236785628a8b",
+  "zh": "當然是在我們的前進營地（ Away Camp ）。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "2e42d311193100ec512b65a1ec396b33b0652efdc406add694241a4c1946b541",
+  "zh": "看看 Mt. Gigas 。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "d9107d7c4e2002cd5147deeec7d3856821e5f001f9c829134428d211ad29f929",
+  "zh": "Sea Caves 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "755ed84a9839545cbb50ee301776125a04a00792cb493545e0f482d625ff1b5c",
+  "zh": "你們應該知道。就在 Rift ！"
+ },
+ {
+  "id": 100,
+  "src_sha256": "1291fd999d2855d1ed997856ee5a87e103c018ba79161c7bb0f58c60d9cb499a",
+  "zh": "就在這裡，城堡裡。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "a825dba450df1d4c4c225023d6a5fd401b85c3f357a4dc3ae29c46b5a1749004",
+  "zh": "沒錯， Ascension Peak 。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "04bebced63062dab0d56be5449cdc1ae2774389faecf009ace314cb2e228eb2b",
+  "zh": "Cosmic Circle 。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "b27dc46cd075684562deda86a7c171f75ad769d40af0939eb8b6d8d3f06bc8a1",
+  "zh": "睜開你們的眼睛看吧！"
+ },
+ {
+  "id": 104,
+  "src_sha256": "0cee1e102d9e86ecaffde390a606a45234b8db7e6b2335bcb1f624f2e129e709",
+  "zh": "我確信你們會找到的。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "8df847ff94d0250a38d70eafcae1de59f327ad0d891ea8c5661659f007328b4e",
+  "zh": "在 Bayjin 。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "862ee81eafb01d29c6324e0dedceb7f7423330951dee5ee736dd3a7e90547f19",
+  "zh": "這件我構想了很久。它會把本該落在你們身上的傷害反彈給攻擊你們的人！我需要大量的銀礦，最好跟你們的身材一樣大塊。然後，從 Rift 帶黑曜石（ Obsidian ）給我。最後，我還需要一個映照墜盒。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "cce8731733531ee4fc3db749cb77ae3a1264b52ab0e26158c78fd5e8b8a1bd79",
+  "zh": "我的招牌作品， Ivory Blade 。我需要一根 Hogar 的獠牙、一塊來自 Sea Caves 的珊瑚，還有一枚守護之戒。最後那樣應該不難找。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "bba71f0c3df9f10db7b8381e8b064a7992375fa4cfaa91e4d9ba839d80895a7f",
+  "zh": "你們會讓對手大吃一驚！ Vampire Chain 是件難做的作品，但絕對值得。我需要一片 Vampire Bat 的翅膀（ Wing ），以及一條來自 Rift 的 Prisoner's Chain 。這材料需要勇氣：我要一顆女巫的心臟。成品一定會讓你們滿意。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "a12dfecc8d3f397a27030bebd62db4e5e804dd26d7e6aba17dc93eec4965d158",
+  "zh": "當然，這正是我出名的地方。我看看。給你們的話？我建議 Mirror Armor 、 Vampire Chain 或 Ivory Blade 。都是上乘之作……"
+ },
+ {
+  "id": 110,
+  "src_sha256": "0e3a070c7b57a5476d348345167a45b3c883c0a5b3e44f784dd80b47c72b6971",
+  "zh": "沒錯，那正是我需要的。找到它，再拿來給我。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "6fbf80dbc593619b7211311fb2a350be4a1f790628e68d3e5d209629e998b91a",
+  "zh": "你們對哪件物品有興趣？"
+ },
+ {
+  "id": 112,
+  "src_sha256": "2c70da3931d98d72deb9f557cd7615bb831719ebcff34edf4a40ed48cf31bdf7",
+  "zh": "你們把這個給我，真有意思。我能用它做出我最棒的作品之一。 Mirror Armor 。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "a00f3404098bfe4e7ed04aba2e1920ff42ee90a2c44278451010b3883e2e8eb0",
+  "zh": "它會把本該落在你們身上的傷害反彈給攻擊你們的人！需要大量銀礦，以及來自 Rift 的黑曜石（ Obsidian ）。最後我再加上一個映照墜盒。把另外兩樣帶來給我……"
+ },
+ {
+  "id": 114,
+  "src_sha256": "44ff0844e20d3522814260efb18ff58e95ee519a437323eb1b238ca9723dd3fc",
+  "zh": "所以你們知道了？不然你們為什麼把這個給我。這正是打造 Ivory Blade 所需要的。沒錯，一根 Hogar 的獠牙、一塊來自 Sea Caves 的珊瑚，還有一枚守護之戒。不多，但做出來的武具可不得了！把另外兩樣帶來，我就為你們打造。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "1f85d868bca6914256aaa5725e91d283c4ef989bb54ddaac58d37f6e8de1efe4",
+  "zh": "我很清楚你們在找什麼。 Vampire Chain 。喔，我做得出來。只希望你們有勇氣去湊齊所需的東西！ Vampire Bat 的翅膀（ Wing ）、一條 Prisoner's Chain ，還有一顆女巫的心臟。三樣東西。其中兩樣得由你們提供。"
+ },
+ {
+  "id": 145,
+  "src_sha256": "5c29fbe7705275613d567f9161951c6eaff6957849c29ccf78f4ad9481523154",
+  "zh": "這次我不需要再多一個了。"
+ },
+ {
+  "id": 147,
+  "src_sha256": "2bee9728cabbd166bd3ef05b8d3bba5469d9c42bf863bd3fec8c4d8e5085980f",
+  "zh": "太好了！東西都齊了。我馬上開始做你們的 Mirror Armor 。晚點再來找我。"
+ },
+ {
+  "id": 148,
+  "src_sha256": "5317d5de8a206cf8ef9bbe4832959f58b0c25710180a62574497622333cb2c7f",
+  "zh": "我要的都在這裡了。你們會對你們的 Ivory Blade 滿意的。晚點再來，我會交給你們。"
+ },
+ {
+  "id": 149,
+  "src_sha256": "b1fb808c435e816a6a2071bbff9266a02aacff5f1675da79e94d30163a02dec6",
+  "zh": "我現在可以開始做你們的 Vampire Chain 了。晚點再來，到時就做好了。"
+ },
+ {
+  "id": 150,
+  "src_sha256": "38104c98a3555ac2eb19b21e18b0acb5a6b78cdf4f77e3db5c16e0cd7bb1f488",
+  "zh": "完美的樣本。現在把其他的帶來。"
+ },
+ {
+  "id": 151,
+  "src_sha256": "e91ba217d4004071d243954da21e22c152a43e286178982491c6a83180bef4a1",
+  "zh": "等你們把其餘的材料（ ingredients ）帶來，我就開工。"
+ },
+ {
+  "id": 152,
+  "src_sha256": "3078266680e432c48d9ac3cb866c5b5446b0309f01ae4b2dda17f7d752273fbc",
+  "zh": "我還缺更多才能做出來。去湊齊其他材料（ ingredients ）。"
+ },
+ {
+  "id": 153,
+  "src_sha256": "36ce982c8e24960b94d02a7e8c08d7d9e80555af2e7be245b396666e6c29555d",
+  "zh": "等所有材料（ ingredients ）都到齊之前，這個我先收著。"
+ },
+ {
+  "id": 154,
+  "src_sha256": "1422d9220f9aefd6f495b50728ed939e153ea2625beae89879e290ac2425dbb6",
+  "zh": "幹得好。我等著你們很快帶剩下的來。"
+ },
+ {
+  "id": 155,
+  "src_sha256": "c1c7e994b90ecf4dccdf421c031aebf04fd2de23ddb24c2f2b61c94d409e8fbe",
+  "zh": "我有好消息！你們的 Mirror Armor 完成了！不是我自誇，真是一件藝術品（ work of art ）。你們準備好時就可以向我買下它。"
+ },
+ {
+  "id": 156,
+  "src_sha256": "815aebe56e4dfc6a8d059b59a01d57b0f18933a96084a93b3f76da4f18cd5c49",
+  "zh": "如我所承諾，你們的 Ivory Blade 好了。我把它磨得特別利！你們現在可以向我買下它。"
+ },
+ {
+  "id": 157,
+  "src_sha256": "c91918f3c14d98629c1b17fa1efec916babee65feaa5582f931f9abb5076b4b2",
+  "zh": "你們的 Vampire Chain 成品完美！成果一定不會讓你們失望。我現在就準備賣（ sell ）給你們。"
+ },
+ {
+  "id": 158,
+  "src_sha256": "54bb7f90b4d59482839d9e0cca5aa2c413645721b5bfbe1dc84d554191674736",
+  "zh": "我本來就預期你至少會成為 Templar 。你該去 Temple 加入。有我的兄弟姊妹 Rapax 在，你會輕鬆得多。"
+ },
+ {
+  "id": 159,
+  "src_sha256": "6d45e86bf5b2fedd934f559a0514ed0b200e8e69f75815affd4bdd2c2204443d",
+  "zh": "你成為 Templar 我一點也不意外。 Al-Sedexus 喜歡多樣性……現在你是我們的一份子了！"
+ },
+ {
+  "id": 160,
+  "src_sha256": "1a010058aa176c9c7b459ff35e83ec8b594f4a3e2d7fb79e4bc7cb60e728c787",
+  "zh": "好了，閒話少說！你們一定是為了我的武具和防具而來。當然，你們也聽說我還接訂製品（ custom work ）……"
+ },
+ {
+  "id": 161,
+  "src_sha256": "f5129f3f7c867957286c675b21d8c8911aaa0ce5daa4bb386068842f4b4dabdc",
+  "zh": "請原諒我過分好奇，你們原本是被 Rapax King 派來這裡的嗎？我知道他要求派一批新的 Templar 去 Away Camp 。聽說他們抓了一個 T'Rang 和一個 Umpani 當人質，卻問不出話來。我只是猜想你們就是審訊官（ interrogators ）。"
+ },
+ {
+  "id": 162,
+  "src_sha256": "b605e9b8c7c409b8e2e2c8cac9103221b77cd012a59cf8e0a1af61e2ec45bba2",
+  "zh": "我很意外你還沒成為 Templar ……"
+ },
+ {
+  "id": 163,
+  "src_sha256": "8aefdda66a7e95c5ca573fafcc5e17f79427fd5c8ba68a4720b4cf2c8dea67a5",
+  "zh": "你們一進來就讓我想起 Away Camp 。你們當然去過了。那裡發生的事真是可怕。我一直在想，要是有我的武具也許就能避免。嗯。"
+ },
+ {
+  "id": 164,
+  "src_sha256": "7ffa07b121313b15078374ff548011a989aea5f992dd16080338edd745a574ae",
+  "zh": "至少我們與 Savant 的同盟依然穩固。 Ascension 結束後， Templar 將擁有這顆星球，那些擋過我們路的人將付出慘痛代價……"
+ },
+ {
+  "id": 165,
+  "src_sha256": "23eca5ac370a8df2742ab0284623180633f9b0f84f0764ff94e6d208c70593bc",
+  "zh": "歡迎。要買點什麼？可惜我還沒有任何訂製品做好。"
+ },
+ {
+  "id": 166,
+  "src_sha256": "d1bc3e1e119c4a25ddea5e70b92052c638b7274762cdbc98e1e4c9b6bbac0a4f",
+  "zh": "那在 Ascension Peak 應該派得上用場。我們預期會遇到抵抗，但不會太多。只有一些 Umpani 和 T'Rang 。他們不是我們軍力的對手。 Dark Savant 會順利飛升……"
+ },
+ {
+  "id": 167,
+  "src_sha256": "9fa4ba7a97ed89d316ef4dd2ac51bbf5e9bb887c2125bad39cf3f665aeb194a4",
+  "zh": "我會通知你們……"
+ },
+ {
+  "id": 168,
+  "src_sha256": "4fcd221f832b8e5acd549a4c6d03a5d87dc1a020ccc395c6fb3ebe01712ddc72",
+  "zh": "不然你們以為我們要怎麼毀滅（ destroy ）所有人？寄邀請函請他們過來嗎！*嘿！* 不，你們得親自去找他們！營地現在已經在這裡的南邊了。我不確定它的確切位置。不過很快， Trynnie 和 Rynjin 就會知道了！"
+ },
+ {
+  "id": 169,
+  "src_sha256": "1bae1d6d00d1f0b5192a5656cb84c298c168ff9428b866e3bef81f874dccc812",
+  "zh": "你們看， Rapax 想獨佔 Dominus ——全部——不受 Higardi 、 Trynnie 或 Rynjin 打擾，更別提 T'Rang 、 Mook 和 Umpani ！ Dark Savant 呢？他也希望擺脫他們。他們擋著他的 Ascension 。合作對我們雙方都有利。"
+ },
+ {
+  "id": 170,
+  "src_sha256": "8ace32d1c5823bb5a2800ddada166a8d37b4e81aa51da3306090986d629bfeb3",
+  "zh": "毀滅效率高得多。他得到他要的，我們得到我們要的。"
+ },
+ {
+  "id": 171,
+  "src_sha256": "1063df8ceffe2ddfba6b2ce2e046bb38bea4c0f76dcf6e9ec67572a0e0ca62c4",
+  "zh": "當然。你們看起來連死人的嘴都撬得開！我確定你們就是他要的人。當然，我明白你們不能談這件事。我只希望你們能查出 Umpani 和 T'Rang 在這裡搞什麼！"
+ },
+ {
+  "id": 172,
+  "src_sha256": "0719041268eb409a837d38dd51a8371d73e01f9bbd2bede0f2a264d37eee359c",
+  "zh": "我對他們所知甚少。我相信國王會給你們更多資訊。"
+ },
+ {
+  "id": 173,
+  "src_sha256": "1ce9f051575cf132c3cd8d4e975b37accfc73788fd9e0a0b3c2d9de8ff7321c0",
+  "zh": "喔， Temple 。我有多麼美好的回憶。所有 Templar 都得經過那裡——而且無人後悔。"
+ },
+ {
+  "id": 174,
+  "src_sha256": "c18b386e9e6b5dcf05cf1485e035738795f884ffbcf502992c77184e3628d5eb",
+  "zh": "更忠誠？這是形容我們的好說法嗎。嗯。我們效忠我們的種族、我們的國王。不是生來就有 Rapax 血統的人也能成為 Templar 。那個過程、那個儀式，實在令人無法抗拒。"
+ },
+ {
+  "id": 175,
+  "src_sha256": "acf1bd07b7ebe9460dee941b1b7fb7ff6878d3b3a763dfbb30b5afa9248896a0",
+  "zh": "但首先，你們得去 Temple 找 Al-Adryian 談談。他會告訴你們該怎麼做。"
+ },
+ {
+  "id": 176,
+  "src_sha256": "1d2e53eb3960bc7ea59ac6132c5ff31b66e773646007fedecff97feb3f4aded4",
+  "zh": "是的，我有一些。"
+ },
+ {
+  "id": 177,
+  "src_sha256": "67bdeef549a4c931770a1509f466e5de6fa72a057f4b130b2403a3eb14e3e54b",
+  "zh": "喔，是啊， Savant 自從抵達之後就一直忙個不停……"
+ },
+ {
+  "id": 178,
+  "src_sha256": "32029c60e15ef408aa171ba9bfe3945a1d93a298a80b615d2db1a6d70a28c265",
+  "zh": "不。我們別談得太私人。"
+ },
+ {
+  "id": 179,
+  "src_sha256": "bbe91f80de64c5c2694a61d8897b37301da858db7f84b090dd02812a602b43bc",
+  "zh": "是的，那是我的工作。"
+ },
+ {
+  "id": 180,
+  "src_sha256": "82bc7e0fddf83f2569371392619a294725d3a21d33a6e3cb8b93a7e03ea76737",
+  "zh": "Rapax Army 惡名昭彰，或者說，我們比較喜歡說「備受尊敬」。"
+ },
+ {
+  "id": 181,
+  "src_sha256": "864f43ccfdec45be1e1897adf952eb40893838520cb8717924246b7ab9274e3a",
+  "zh": "他們自己會說話的……"
+ },
+ {
+  "id": 182,
+  "src_sha256": "fdeef662b944b08c6e47f26b87681eeef3b14bce7f5387ee6753c30bf98a0df0",
+  "zh": "正是……"
+ },
+ {
+  "id": 183,
+  "src_sha256": "5f7e57bd96b2b17d1f9e79de7020399c7cf75c5ad06c9b8f069f49e80eb1e977",
+  "zh": "在這裡的北邊。"
+ },
+ {
+  "id": 184,
+  "src_sha256": "d1a225fd7ff3d7b759d029ce91c360b1721a081aed3bfb611aef01b5092d971a",
+  "zh": "在這裡的南邊。"
+ },
+ {
+  "id": 185,
+  "src_sha256": "435390dec0f8983699c9227fb1fb666aa1443edec273c1c0459347c1a3a87196",
+  "zh": "當然是在這裡的東邊。"
+ },
+ {
+  "id": 186,
+  "src_sha256": "43362182fd107bc3745ce74f4ec5427b941c2c0e123a382b3761765c535267b4",
+  "zh": "你們得往城堡的西邊走。"
+ }
+]

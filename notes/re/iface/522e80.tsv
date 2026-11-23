@@ -1,0 +1,6 @@
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	68516c	物品定義陣列指標	全域指標，索引乘 269 取物品定義（formulas.md 的 I）
+field	eax+0x0	itemId	物品實例的定義索引，-1 為空格
+field	eax+0x4	count4	物品實例第一個數量欄，u8
+field	eax+0x5	count5	物品實例第二個數量欄，u8
+field	edx+ecx*1+0x66	itemType	物品定義 +0x66 的類型位元組

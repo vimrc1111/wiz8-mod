@@ -1,0 +1,5 @@
+4fa4d0	characterSpellCastNode
+4fb4c0	spellFailureBackfireAndEffectNode
+54ba00	spellEffectDispatchNode
+54c930	spellReflectionNode
+4fac40	spellCastEligibilityNode

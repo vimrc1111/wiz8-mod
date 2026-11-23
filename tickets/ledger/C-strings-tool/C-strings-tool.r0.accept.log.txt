@@ -1,0 +1,10 @@
+ok  	wiz8-mod/tools/hashdir	0.010s
+ok  	wiz8-mod/tools/shot	0.009s
+ok  	wiz8-mod/tools/slf	48.839s
+ok  	wiz8-mod/tools/strings	0.028s
+ok   good
+ok   nosrc
+ok   notag
+ok   nosec
+ok   empty
+ok wiz8-run --check：8 出貨情境＋7 壞情境

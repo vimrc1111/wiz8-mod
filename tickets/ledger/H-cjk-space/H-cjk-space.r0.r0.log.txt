@@ -1,0 +1,5 @@
+/tmp/tmp.2gbsh1gJo8/m.c:4:10: fatal error: space.h: No such file or directory
+    4 | #include "space.h"
+      |          ^~~~~~~~~
+compilation terminated.
+FAIL space-rule（編譯）

@@ -1,0 +1,7 @@
+call	40efa0	durationVariationRoll	持續時間四面亂數 R(4)，由 Rand 重放；9999 特值不呼叫
+call	517f90	applyEffectDurationBonusPercent	將持續時間與 E+0x24 百分加成的低 32 位乘積視為無號值除以 100，再加回時間
+data	4	無關	分析器將呼叫後清理堆疊的立即值 4 列為資料引用，並非記憶體中的規則資料
+field	esi+0x20	effectPower	效果威力 PL，乘以每級持續時間；來源 notes/re/formulas-2.md:47
+field	esi+0x24	durationBonusPercent	效果百分加成，9999 以外交由持續時間加成子函式使用
+field	esi+0x28	durationBase	效果基礎持續時間，與威力乘積相加並保留 32 位結果
+field	esi+0x2c	durationPerPower	效果每級威力增加的持續時間，乘以 E+0x20

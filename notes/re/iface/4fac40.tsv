@@ -1,0 +1,53 @@
+call	41eff0	scene_blocks_return	場景旗標 bit 9；限制法術 75
+call	41f070	scene_allows_return	場景旗標 bit 4；法術 75 必須具有此旗標
+call	4ac9d0	spell_target_mode	讀取法術記錄 +0x137 的目標模式
+call	4d9080	scene_spell_event	掃描場景事件，成功處理事件則拒絕施法
+call	4fd030	spell_hit_lists	依角色與排程目標生成怪物及角色命中名單
+call	517a90	format_cast_failure	格式化無有效目標時的訊息；不改判定
+call	52e690	character_cast_feedback	拒絕施法時安排角色顯示回饋；不改判定
+call	53be00	character_spell_source	初始化角色施法來源描述，包含角色索引
+call	5474b0	spell_is_harmful	排除法術 3、41，目標模式 3 到 7 為有害法術
+call	590950	show_cast_failure	輸出角色施法失敗訊息；不改判定
+call	5e1c10	release_hit_buffer	釋放暫存命中名單；不改判定
+call	5e1ce0	allocate_hit_buffer	配置每份五筆的暫存命中名單
+data	10	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	14	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	4	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	5e6ed0	無關	例外清理入口；正常施法規則不使用例外處理
+data	5ebfe0	無關	暫存名單虛函數表；不是遊戲規則資料
+data	5ed8c8	cast_feedback_duration	拒絕施法時角色回饋參數
+data	5ed914	cast_feedback_style	拒絕施法時角色回饋參數
+data	5ee65c	cast_feedback_amount	拒絕施法時角色回饋參數
+data	652dac	scene_state	場景物件指標；bit 0、4、9 決定法術 75 可用性
+data	65be1c	spell_records	法術定義表，記錄長度 447；目標模式在 +0x137
+data	6836a8	battle_state	戰鬥狀態物件；+0xa54 決定拒絕施法回饋是否省略
+data	683f94	in_combat	是否正在戰鬥
+data	683fa5	combat_pending_count	待處理戰鬥數量；以無號數與零比較
+data	685174	character_records	角色主記錄表，步幅 0x1862
+data	685178	character_cast_queue	角色副表，步幅 0x106；+0x1d 是排程目標
+data	68c09c	cast_message_catalog	訊息目錄；+0x6dc 是一般訊息、+0x6e0 是替代訊息
+data	8	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	c	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffdff000	無關	執行緒例外鏈存取的分析位址；非遊戲規則資料
+data	ffffffffffffff9f	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffffffffffffffa0	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffffffffffffffa4	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffffffffffffffa8	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffffffffffffffac	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffffffffffffffb0	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffffffffffffffb4	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffffffffffffffb8	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffffffffffffffbc	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	ffffffffffffffc0	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	fffffffffffffff4	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+data	fffffffffffffffc	無關	堆疊區域位移或呼叫參數大小；非遊戲資料記錄
+field	eax+0x0	無關	objdump 在前一節點的跳躍表後未對齊本函式入口，誤解碼例外鏈前置區；不是實際角色欄位讀寫
+field	eax+0x64	無關	objdump 在前一節點的跳躍表後未對齊本函式入口，誤解碼例外鏈前置區；不是實際角色欄位讀寫
+field	eax+0x6e0	alternate_cast_failure_text	訊息目錄的替代失敗格式
+field	eax-0x30	無關	objdump 在前一節點的跳躍表後未對齊本函式入口，誤解碼例外鏈前置區；不是實際角色欄位讀寫
+field	ecx+0x0	scene_flags	場景旗標 bit 0；其他 bit 由子呼叫读取
+field	ecx+eiz*4+0x0	無關	objdump 在前一節點的跳躍表後未對齊本函式入口，誤解碼例外鏈前置區；不是實際角色欄位讀寫
+field	edx+0x6dc	cast_failure_text	訊息目錄的一般失敗格式
+field	edx+0xa54	party_cast_feedback_suppressed	戰鬥物件的施法回饋抑制旗標
+field	esi+0x0	無關	objdump 在前一節點的跳躍表後未對齊本函式入口，誤解碼例外鏈前置區；不是實際角色欄位讀寫
+# G3 follow-up 4a：本節點本身沒有 recast 遞迴或次數計數器；上限是四個 SCC case 對本節點的 record/ret 容量。現擴為 n=61（60 次施放加一次拒絕）；本節點單次 case/公式保持原有輸入域。原版固定 recast 次數上限 [未取得]，界限推導與測試限制見 iface/4fa4d0.tsv。

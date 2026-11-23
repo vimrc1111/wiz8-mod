@@ -1,0 +1,16 @@
+{
+  "id": "overlay-probe",
+  "duration": 45,
+  "files": [
+    {
+      "src": "build/overlay/probe/PATCH.002",
+      "dst": "Patches/PATCH.002"
+    }
+  ],
+  "steps": [
+    {
+      "t": 40,
+      "shot": "menu"
+    }
+  ]
+}

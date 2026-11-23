@@ -1,0 +1,31 @@
+# 位址樁：0x4eeec0、0x546e70、0x4ed550（D4 公式，回傳／寫出取自 case 輸入；F 跑 partySurvivalCheckNode、hostileMonsterCountNode、combatPendingEffectsNode）；0x4ea310、0x522fe0（D4 公式，回傳不被讀，0x5a5a5a5a 檢查 diff=0）；0x58ac00、0x58ab60、0x48fc10、0x42b770、0x52e690（排除，記錄引數與次數成為輸出；0x52e690 回傳取自 case 輸入）。0x517fb0、0x48f9e0 原樣執行（音樂旗標 0x65ba7e 為零，0x48f9e0 立即返回）。
+call	a	defeatVoiceTick	GetTickCount 的 u32 時鐘；寫入語音事件 +0x34，取自 case 輸入 tick
+data	5eb02c	getTickCountImport	GetTickCount 匯入槽；見 call a
+data	5ed8cc	語音參數常數 C	u32，.rdata；0x52e690 第四引數，執行期自 exe 讀
+data	5ed8d8	語音參數常數 B	u32，.rdata；0x52e690 第三引數，執行期自 exe 讀
+data	5ed914	語音參數常數 D	u32，.rdata；0x52e690 第五引數，執行期自 exe 讀
+data	5ee614	勝利語音編號	u32，.rdata；0x52e690 第二引數，執行期自 exe 讀
+data	6174a4	勝利曲檔名	字串 CombatWin.MPL，0x48fc10 排除樁引數
+data	6174b4	擊殺複數字串	字串 kills，擊殺數非 1 時交 0x58ab60
+data	6174c0	擊殺單數字串	字串 kill，擊殺數為 1 時交 0x58ab60
+data	6836a8	戰鬥狀態記錄指標	擊殺數、開戰阻擋旗標、閒置回合數所在記錄
+data	683fa5	敵對怪物數	0x546e70 寫出；與強制旗標合判是否略過閒置回合門檻
+data	6850b4	勝利語音開關	byte；非零才挑隊員發語音
+data	6850be	受魅惑怪物數	0x546e70 寫出；與強制旗標合判
+data	685174	角色記錄基底	角色 i 記錄＝基底＋0x1862×i
+data	685178	隊伍欄位基底	欄位 i＝基底＋0x106×i；+0 在場
+data	68c09c	字串表指標	+0x8b0..+0x8c0 戰鬥結束訊息字串
+field	eax+0x8b0	勝利訊息字串	字串表項，排除樁 0x58ac00 引數
+field	eax+0x8b4	擊殺數訊息字串	字串表項，排除樁 0x58ab60 引數
+field	eax+0x8c0	全滅訊息字串	字串表項，排除樁 0x58ac00 引數
+field	ecx+0x8bc	殘留效果訊息字串	字串表項，0x4ed550 為真時交 0x58ac00
+field	edx+0x8b8	無擊殺結束訊息字串	字串表項，排除樁 0x58ac00 引數
+field	eax+0xa54	開戰阻擋旗標	byte；無擊殺且非零時直接 0x42b770(1,1)
+field	eax+0xa56	閒置回合數	byte；<2 且未強制時回 0
+field	eax+0xc	隊伍擊殺數	u32；非零走勝利流程，1 用單數字串
+field	edx+0xc	隊伍擊殺數	同 eax+0xc，0x58ab60 引數
+field	ebx+eax*1+0xb01	角色主狀態	u32；<0x12 才施加狀態 0x12、才可發語音
+field	ebx+eax*1+0xb11	角色生命	u32；非零或主狀態 <0x12 即施加狀態 0x12
+field	edi+edx*1	角色在場	byte，隊伍欄位 +0；零則略過
+field	esi+0x30	語音事件延遲	u32；寫 1500
+field	esi+0x34	語音事件時刻	u32；寫 GetTickCount

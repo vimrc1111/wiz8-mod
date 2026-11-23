@@ -1,0 +1,697 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "ead6b2b09684309eac0745428700a935f93ac94994f508ccf2c1bb17826f02c6",
+  "zh": "給我個台階下……不然我就給你們一個「台階」。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "5a8bcc1aa8dc980c898fa3f365987975fc54e8ef5c04e4886b324c80bde28e42",
+  "zh": "拜託，別煩我了，好嗎？"
+ },
+ {
+  "id": 6,
+  "src_sha256": "d922e2626592909c8e544c98761ce4e44074a078f7a651a2d6098de9356e53c1",
+  "zh": "「噓」你自己啦……"
+ },
+ {
+  "id": 7,
+  "src_sha256": "00495944b87caadc36fa520ec23a76890fd4a2e852e8471560125b9f8fce330f",
+  "zh": "哦，那可要比這個多得多。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "60bf8834315c0e6ec61412f28e781c8712f38bd1eb6a4863cd7bece474b04d64",
+  "zh": "我覺得你們該先把他們處理好！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "4643d967910ebbae65ffb556cd3f0f69167aaf8f5d37e39e014ef55063d25404",
+  "zh": "現在不行。我還有別的事要忙。"
+ },
+ {
+  "id": 10,
+  "src_sha256": "ffb53a64696983218fa89fca07a489f763ee3ddde2c14667876c9fd22041132c",
+  "zh": "看來你們隊伍已經滿了。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "4455be73df06b0d173582d85f4e48a9d5ab9b02279c6d289e09f5c000e28ca29",
+  "zh": "走吧！"
+ },
+ {
+  "id": 12,
+  "src_sha256": "3765ea16037b1bc3a463f8fe8b02e133ab6d3eb72d7cb4748dacec664684bc1f",
+  "zh": "太棒了！"
+ },
+ {
+  "id": 13,
+  "src_sha256": "b395a31e3530941cb2e4d7bfb004dd2b10ff58b690080e5871f37610af20c3c3",
+  "zh": "你們這東西哪來的？我才不要。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "7d5ea5182418eb705caca508c30f1fc5987cc00505365628cf21b2583bfa9519",
+  "zh": "各位，沒有惡意啦，不過這種東西是要去商店賣的，你們懂吧？"
+ },
+ {
+  "id": 16,
+  "src_sha256": "5ad5555c9db58a03122751ca69cfc6f61a103d43565d059a6eda28ada2326a43",
+  "zh": "你們的錢有點不夠。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "35a0517359f1281c621699e07238b3eedee22f39a528804d1959e31ea1789ce4",
+  "zh": "真不敢相信你們！我們可是共患難過的耶！你們到底在想什麼啊！？"
+ },
+ {
+  "id": 19,
+  "src_sha256": "bbddadcae6a95aef6dfde45affbf58099eb43cb7f1242e6ba63358c6a196fd9a",
+  "zh": "什麼？你們為什麼要坑「我」？！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "8306aa98b4848a3fd9df1375a34bd5e6755059efb2e358ab3a472697b4e950ce",
+  "zh": "我真不敢相信會走到這一步……可是偏偏就是這樣！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "214cb69a664cb909e8cfdfa283e35393803ba094b1b86d1e85dcc72513a7f80d",
+  "zh": "有錢我就開心……"
+ },
+ {
+  "id": 22,
+  "src_sha256": "656568a517146479d1526d89f9951df495175c1aa645d43a3ab2b15743e59685",
+  "zh": "嗯。我從沒聽過這個。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "e9bfd8999ecf4755d3ff67da46ab36160d5fda16b94cb1e4ac5e3ee74493ca1c",
+  "zh": "沒什麼印象耶。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "8419c3b9a389c73c529d8297a35d3903e897ebfe0fca0b561bfaae1a4ccb7264",
+  "zh": "有些事還是別說出口比較好。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "b4ab7d0ba6d8b889daec813d1005529312b90c3caaa7baa0a28b782104115ccd",
+  "zh": "你們沒在聽嗎？我說過……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "cbb600d500641dea80b1721761a6b610c79db339b7985616dbed294fc21187c8",
+  "zh": "一次處理一件事吧。先從哪件開始？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "5666e6cf7c05e61f2e6002d20177e5be49d29de0004bd5564f1a494dd9d96d02",
+  "zh": "好，那剛剛那件事……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "b3da590e0d912c9fbd2fbe6c8daa21dd9dfb0bb48d147d72a3499932b54daa78",
+  "zh": "又學到一課了。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "ffc19b79973ee9e740bfc3abdcdc33b5eb83db65c18b5ea2a745ae2278c4f45e",
+  "zh": "嗯，我們要做的事還真不少……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "2d7c92f3c9a7deac8d2a625374e0dd905107279f7979fdbc1c04dd1c152c6b94",
+  "zh": "聽著，我不是故意要催你們，不過時間一直在流逝啊……"
+ },
+ {
+  "id": 32,
+  "src_sha256": "b87aea6ac49121ffaa592f09b675d15b752cdec0bbbb57889f911e8c014df073",
+  "zh": "說都說不完。我就是在這裡長大的，你們知道嗎。當然，那時候不是現在這副德性。我是說，那時候這裡是個真正的城鎮，有……真正的人。看到這裡變成這樣，我真的恨死 Dark Savant 了，恨他，還有那座該死的塔（ tower ）。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "7519a8108b74226c5a487ebcd6e6d481339b8a040eb84717f0f1a97244aa37e1",
+  "zh": "我想只要別待太久，就不用太擔心……那地方很危險。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "4d0a064e799d9be4d75164a1f76bb6d627d98c0e62a1cae006e939c7209dfb80",
+  "zh": "關於 Trynton ，你們要知道兩件事。第一，他們擁有這星球上最厲害的{{Magic}}。第二呢？別看 Trynnie 長得可愛，只要東西沒釘死、沒綁好，他們就會拿走。不過我最近聽說他們那邊出了一些麻煩（ problems ），比平常還多。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "b572dd1b6241e15308f73601b3b1b06406458cf1958a943a619c48a71f92154c",
+  "zh": "Rapax Castle 啊？很少聽到什麼好話，尤其是在 Higardi 之間。哦，當然，我們跟他們「和平相處」很久了，可是「和平相處」跟「平平安安」是兩回事，你們懂嗎？有些生物天生就是為了殺戮，這點可別忘了。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "fec8e19e74a6227a7389ef96d0dba9712835144a807b76b7c8d32d7efd8968b4",
+  "zh": "關於那個地方，你們該知道的是，那裡根本是一片火海。而且火還不是最糟的。我聽過很多傳聞，說那裡有個女惡魔。據說她叫 Al-Sedexus 。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "45797736335584ebe99e74502ee561c6af2f7be62ac1a0e59ac0f2c24e2e7a03",
+  "zh": "我們該去 Temple 問問。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "4fb9f03920bf4fcf16568adb2ff24f9a2298891dadab48da305b9282d61bc55d",
+  "zh": "就在那裡……"
+ },
+ {
+  "id": 44,
+  "src_sha256": "040ca571543db806e8b78ba1df1ec0e34e7bc7ec94a30134a5717f5f09e8242d",
+  "zh": "Dominus 上最友善、也最狡猾的傢伙。不過整體來說， Trynnie 還挺討人喜歡的。他們住在 Trynton 的高高樹上，最有名的是他們的{{Magic}}。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "4a0cee7178e93da2b2d9e63a9aff0d06e16fac28f2cbf90fd300e679abb16077",
+  "zh": "他們可能看起來凶狠、惡毒又致命。那是因為他們「就是」凶狠、惡毒又致命。"
+ },
+ {
+  "id": 49,
+  "src_sha256": "bede9731f94dd58cbec93d364beb476c20f6a291dcfb8f9ca50c4b31c022a0b3",
+  "zh": "我跟他們打交道的經驗不多。我習慣避開那些，嗯，可能會要我命的東西。"
+ },
+ {
+  "id": 51,
+  "src_sha256": "dab56d84033939a4c321335af0a0c4c87c6bec330b0caf8b14359b39af06e1b7",
+  "zh": "我知道的不比你們多。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "7b368a18bc181d83849751390448dabe92c756f242a23b34cfa68dff48e1f163",
+  "zh": "留在我身邊，你們自然會知道所有該知道的事。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "02cb7201a1335601b37e63370296fdee3c63ece02f0ae89f5bd071e83b80aed9",
+  "zh": "我聽說過他。他從 Monastery 偷走了 Destinae Dominus 。那是在我出生以前的事了。他們一路追他穿過 Trynton 、 Marten's Bluff ——那地方就是因此得名的——還有天知道哪些地方。他們始終沒找到他，也沒找回 Destinae Dominus 。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "51e20a0ae5a7a247ef08de2197b7c6eec73b0c606fbac6a94729d5dbede58c6c",
+  "zh": "我猜是一種生物，一半善良、一半邪惡。我聽到的是這樣。"
+ },
+ {
+  "id": 64,
+  "src_sha256": "a094a5ef529c819ce8a56584da8e85383f08f77fd5f3672004a606ef47bed5ac",
+  "zh": "Monks 跟我提過她。他們說，要是她哪天找我們麻煩， Monastery 裡藏了某樣東西，像是一道保險，可以除掉她。不過他們從來沒告訴我是什麼。"
+ },
+ {
+  "id": 68,
+  "src_sha256": "e9300c5debc7f65830348b10c633f15abb7a88afd4f78f534bf9eac9b23280e0",
+  "zh": "那是我們最{{Divine}}的東西。 Phoonzang 本人把它交給了 Higardi ，所以 Marten 偷走它的時候大家有多火大，你們想得到吧！ Monks 相信它代表了眾神（ Gods ）所有的知識。要是我們能參透它——要是我們能找到它——嗯，我想我們幾乎就等於是 Cosmic Lords 了。"
+ },
+ {
+  "id": 69,
+  "src_sha256": "6363c038c52c349f0cf533892272672a2b06059c5bb5c75501245c9bfa576968",
+  "zh": "你們知道的跟我一樣多。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "366e732df850ab26ef66f8537d567496d6c0d0d3cb94f9d1b23d576e9e57fc7e",
+  "zh": "要是我聽到什麼，相信我，我會告訴你們的。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "c7a90d764d9029358450c9a4770190b4336e3278fb93a5bfa4c25fc79a800ece",
+  "zh": " Vitalia ，不過你們可以叫我 Vi 。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "9e6441135588cad7f1d4588c5477b27f7d7809f38fb6451463831bfbc89f0063",
+  "zh": "我的命運（ destiny ）……我越想，就越覺得是別人在改寫它。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "bfaf42b7a83613839a3ca67082a7707200d30067988aa541e0b4a721ede1160e",
+  "zh": "你想不想讓我的高跟靴踹穿你的肋骨啊，老兄？還有，別跟我說你會喜歡。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "cd9727293fe5490061817f488194759cffb5ba88681e66184ddc9e0a43080d70",
+  "zh": "這話說得真蠢。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "ca51ce1fb15acc6d69b8a5700256172fcc507e02073e6f19592e341bd6508ab8",
+  "zh": "嗨！"
+ },
+ {
+  "id": 78,
+  "src_sha256": "7e7de557065295b7a51590cd81ce4494e8b79bf6c544b753afe44c4614e56f54",
+  "zh": "我們很快就會再見面的。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "e4bb03b399c07eeda658d87305435a58818cb5e0c3b76ae054d99564cf14ef6b",
+  "zh": "你們需要什麼幫忙（ help ）？"
+ },
+ {
+  "id": 80,
+  "src_sha256": "0e704d34b58f4df712062c6ef00193e5265f5f4737eefaef9ab412ed7f007b57",
+  "zh": "你們還是去找 He'li 、 Anna 或 Antone 比較好。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "7ce88e930c563c3e54da6dcca4510ed10afc596891e2cf1a8cf2305a09bce1a8",
+  "zh": "我沒事，謝啦。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "83eddeaff8e1ca07a97c0b6e4c4739c90ca13213b81c21ccab2b6b85bb0cc0ed",
+  "zh": "我身上沒有。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "5ea7de701b097b82da69f9e2155032479effeb017f964bd96248cc7e2c0eba48",
+  "zh": "那是 T'Rang 的船。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "e1c48ce0f2dcea789e201740b2a48889c343d383f02bf8a370d6fabef66280d9",
+  "zh": "那是 Dark Savant 的船。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "0de29a11ff0bfe5c524fb82c7ec7bc6afc5f1345d7d7c991cf1010ab7d27c683",
+  "zh": "那是 Umpani 的船。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "ad054b538a49490ef040c6a11f12057f40cfa92ab97051680f93ff4ab475e341",
+  "zh": "當然是在 Arnika ，不然還能在哪……"
+ },
+ {
+  "id": 91,
+  "src_sha256": "a307fd4b246ff08334be2a15d6d657215d2482370999aee17231cd60d06470e8",
+  "zh": "去 Trynton 試試吧。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "41364df6e8f133afa3768ea8e7ca508b97ea4aff01aa034e7df0d28c31a5c940",
+  "zh": "在沼澤裡。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "bdc1644ef61b51e36a561914d5eccd7106d2c2becff7c1d439e1cebfa177d7db",
+  "zh": "我猜是 Marten's Bluff 。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "71bd57de551e4f6314cd424a8e784b89b8a025996579f36f4c996b367ed13e82",
+  "zh": "Rapax 大概有個什麼營地吧。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "1d5aa201260b996d7f07fc36c4a927d8ed478601bd8cc8e2bbb0d8ac73226534",
+  "zh": "那是 Mt. Gigas 。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "4173f3f874f383fa22861e0b90738c716d73cf0b102d77e971aa37cfa9b4e7e2",
+  "zh": "去 Sea Caves 試試。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "5a552ec9dd759bca323d452b18c438038b670db7c36d7e426aa687c2179651fa",
+  "zh": "沒錯，那就是 Rapax Rift 。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "e3ba8096d07969f036ba168a99a4ba2500312d5455bbda53563a0d2a9eef5430",
+  "zh": "我想那是 Rapax Castle 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "ca5611e0ae5590da179e02ec7723ad7d666ffa898acf061d5840897590e06384",
+  "zh": "一定是 Ascension Peak 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "04bebced63062dab0d56be5449cdc1ae2774389faecf009ace314cb2e228eb2b",
+  "zh": "就是 Cosmic Circle 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "d579147794df85b6877307f4f3685dc6d75cb2d998b67e3e4c47e2696bb71f13",
+  "zh": "就在這裡！"
+ },
+ {
+  "id": 102,
+  "src_sha256": "de39874e94d23948d0f38ef3322cf249bc7f2ba98a2a5912ef551f1edb3e2d69",
+  "zh": "我完全不知道。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "c154556d39a2dd31ec7d02eb3f079030b4f8d8c64a1b2469517872ed49fd0435",
+  "zh": "大概在 Bayjin 吧。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "ee9b13e40fd815a219881fafcb4cfdaebb45e1e0d181143bc53a131bd0dccb38",
+  "zh": "我可以帶你們到處逛逛，邊走邊回答你們的問題。這樣可能比較容易。畢竟這星球真的很大！"
+ },
+ {
+  "id": 105,
+  "src_sha256": "08324592d26ab5bd9be24fa5ea10bd6c6875b86204abaa207c2c5b0fe5005744",
+  "zh": "我可以把我知道的全都告訴你們，或者我們乾脆去「探索」它。我們在船上悶了好幾年了！走吧，去看看！有 Trynton 、 Arnika 、 Mt. Gigas ……走啦！"
+ },
+ {
+  "id": 106,
+  "src_sha256": "d8a4c2c8848217af2c360094037957257da70a3225e0f03adc97c3871616e829",
+  "zh": "Mt. Gigas 啊？那是個險惡的地方，到處是洞穴、怪物，還有天知道什麼東西。我最後聽到的消息是， Umpani 在那裡設了一個前哨站。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "bf71e0e7f19bc8cb6d9179fbac3a8ee8f3594ceb1c77719dfe094fc31144e477",
+  "zh": "我想既然現在替 T'Rang 工作，我們大概得去 Mt. Gigas 走個一兩趟！不過要小心。那座老山到處是洞穴，天知道裡面有什麼。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "535d845a84d4ab61e25e27ea62f6d3b166c0101d033c3bf24e1ca8c0d8d52a63",
+  "zh": "現在可以說是回到甜蜜的家了！"
+ },
+ {
+  "id": 109,
+  "src_sha256": "ade2a704ecdf3a0ddf8e0470a6910402b8ed7c690fdeee2a973f6634562c7d94",
+  "zh": "說是堡壘，其實是個很刁鑽的堡壘。你們看，這位 Marten 先生當年想躲 HLL 的時候，就蓋了這個地方。傳說裡面有各式各樣的陷阱，把人擋在外面。我聽說現在 T'Rang 住在那裡。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "3ab7e4f87bfece69f8627c546280b44235c6b44ea7af8bd4d4f50df8fc2b4dda",
+  "zh": "身為 IUF 的一員，我們以後會常去那裡！不過得小心。傳說 Marten's Bluff 到處都是陷阱。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "3eebce80ceb90c6a8ccde9349da8fbc2221a882a4b544068b7fb8842dc3ff817",
+  "zh": " Higardi ？就是我啊……"
+ },
+ {
+  "id": 113,
+  "src_sha256": "e0310d0e7dd858b9e08327bcb9b378dece793b1ba47771ac18a0e112cbc58847",
+  "zh": "你們還記得 Helazoids 吧？嗯， Higardi 就是他們偉大的祖先。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "c7879c275ed8851bef31beaabc795ca79a440646cd76a93150654a8a06754fac",
+  "zh": "他們是宇宙中最大的貿易集團之一——而且「非常」有權勢。當然，除非你們去問 T'Rang ，他們會告訴你們自己才是最有權勢的。你們懂的，就是那一套。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "deed7abfc59053eaa459bb120309559aaf4ee07341997d3af66e754dc245b18e",
+  "zh": "我們跟他們一起搭船走了三兆萬哩路，你們還有問題？"
+ },
+ {
+  "id": 116,
+  "src_sha256": "475182af81a60fc02d2b4c7633eb05f7c00e2eff1302ccb3ab90eb72b1cba8cb",
+  "zh": "我相信 Z'Ant 會把我們需要知道的 Umpani 的事全告訴我們。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "83233971e3cf315f6c53deadaa4ca3eece326e637eb34dc45195f3cf29ba4722",
+  "zh": "宇宙裡沒什麼事是 T'Rang 沒插手的……嗯， Umpani 也是。看來 T'Rang 和 Umpani 老是水火不容，連在 Dominus 上也一樣！"
+ },
+ {
+  "id": 118,
+  "src_sha256": "c39ea4d6d86ca1e1677f82fc5a5e82f1eb640b0c84cca52536b74b91a0ba45d3",
+  "zh": " T'Rang ？你們是說靶子吧！ Balbrak 會告訴我們該怎麼做。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "40099019f26a8dc9796366d184f7fb296bade69c71985c8d6eebbe90340d1371",
+  "zh": "要是你能不去在意他們的長相，其實有很多可愛的地方。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "657a05c2e7b00a1e5ed876f36b21ef664bde18696cd979688c37ad1ed8aa3eff",
+  "zh": "他們應該在這裡……某個地方。我是說， Astral Dominae 被找到的時候， Higardi 本來要把他們帶回 Dominus 的。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "d76d12299b0acd7e13a228feb4afc34b8d299fbf2e2d100b13a8a4907e590381",
+  "zh": " Rattkin ！我怎麼可能不記得他們，可惜啊。我見過最會惹麻煩的長尾巴東西。你們想得到嗎， Savant 居然雇他們去盯著（ keep an eye on ） T'Rang 。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "7df53864955c9cc1f2ffbb6de557baf316e3b6c9ea0b01799704dcb8d77665e4",
+  "zh": "我想這是你們以後會慢慢明白的事。 Cosmic Lords ，我們認識的是 Phoonzang ，是 Dominus 人民和許多其他世界的{{Strength}}與靈感泉源。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "89e5cc2c2858fb5710987a6e23737d71da553abe94624b33a3d23ae4de91d82e",
+  "zh": "你們記得 Phoonzang 吧？他是一位 Cosmic Lord 。既然我們到了 Dominus ，你們會對他多瞭解很多。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "dd192c8d623d10b759d14d0d4cacd670713e76380de3d310c1c23c1de271b1a6",
+  "zh": "這件事要是談過一次，就談過一千次了。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "3ff426657d1e47a9e861121339970e8c024673d3f11ea0c050159444a2bcfe4f",
+  "zh": "你們要是不知道他是誰，很快就會知道了！我是年輕時認識他的，才二十歲出頭。他說他是來 Dominus 進行外交訪問的。他人很好，你們知道，有種父親般的有趣。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "940c8b2563c9a6d39ce9d6c49ae9685a5a24949d154dd2e905bf5b3673685e88",
+  "zh": "他問我想不想搭個便車，風風光光地遊覽銀河，我心想：「有什麼關係？」結果我花了將近七年才回到家，那是我這輩子最漫長的七年。後果可不好看。你們看看他把我的眼睛（ eye ）弄成什麼樣子，那曾經是我的眼睛。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "d819156d4aebbb9993a65b238ba9354ff829bce756676fcb85d15125cd636ecd",
+  "zh": "現在他回到 Dominus 了……天知道他想幹什麼。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "578630ddd05cf8cdb6f30f5f6c861b03c38f0acfad8ae0e4761e5a536d79cdaf",
+  "zh": " Dark Savant 。你們知道嗎，我們的事就是從這裡開始的。在我們來到 Guardia 之前，我就是在這裡認識他的。他人很好，有種父親般的有趣。他問我想不想搭個便車，風風光光地遊覽銀河。而我心想：「有什麼關係？」"
+ },
+ {
+  "id": 132,
+  "src_sha256": "bd65126a8f1492eec7cf31f6d088d28bad2c9ef34592e5f9a1a48a37ec19a61e",
+  "zh": "後面的事你們都知道。你們「就是」後面的故事。這次，他別想逃掉。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "6dd3edb6de62f11a66ae8e5bc6b6c43d8778f072591717d181c0aeb5102ed72c",
+  "zh": " Phoonzang 。沒錯，他是一位 Cosmic Lord 。"
+ },
+ {
+  "id": 134,
+  "src_sha256": "fac1963c3a30ef13335cb77053a2cbc3c556e9f42e7d7f176c07c64273d5fc77",
+  "zh": "沒錯，你們在這裡也會遇到 Phoonzang 。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "74afb72f19e48d0000420d85acd3e8cf73c28eb1e68e49ed0c150370a876a35c",
+  "zh": "你們是說 Umpani 的首領吧。聽說他是個硬角色。"
+ },
+ {
+  "id": 136,
+  "src_sha256": "90267d1712db2efc72245d4b30ff6ee15c1e6f46a8c28df928246c9b68452cc9",
+  "zh": "我敢說我們讓他很驕傲！"
+ },
+ {
+  "id": 137,
+  "src_sha256": "e05b9b1ebd80c3d811949e4f0119ab2bacf4dc96af018e6212bcc72125f0b6a2",
+  "zh": "見到他我們就殺了他。對 Umpani 的將軍，我絕不冒任何風險。"
+ },
+ {
+  "id": 138,
+  "src_sha256": "c101a262a8acab9dc21183d1205af80f9c1051d0e7baa68ab7bec8930f93d258",
+  "zh": "當然，就是 T'Rang 的首領。"
+ },
+ {
+  "id": 139,
+  "src_sha256": "e17395f87fe0a10bc8fe2a1ff4e6fb12132d6bd0fbe615454dbb65a3b0ea575f",
+  "zh": "告訴你們吧。要是我哪天逮到那隻黏滑的八腳怪物，我就掐死他……只要我搞清楚他的脖子在哪裡。"
+ },
+ {
+  "id": 140,
+  "src_sha256": "f89aa80d2525f5897540285ce3011a2a45f5b82116550f4a5eebd4ba80141948",
+  "zh": "他人不錯，是吧？"
+ },
+ {
+  "id": 142,
+  "src_sha256": "290e230119e15ccc58bcc86573b7a02ca472e29dd4a4f20c5722ccddd286482f",
+  "zh": "你們是說那個 Rat 的老大？哇，這可是個值得嚮往的工作……"
+ },
+ {
+  "id": 143,
+  "src_sha256": "9881d42c592364ffe6cf99ca44417a15fe2241f301ec5a43f576731c24940a6f",
+  "zh": " Astral Dominae 啊？嗯，這就是我跟 Dark Savant 分道揚鑣得這麼……呃……激烈的原因之一。他利用我就是為了找到它。上面有張星圖——能讓你從任何地方直接找到這裡。據說它是 Cosmic Lords 創造的，裡面藏著生命本身的祕密。"
+ },
+ {
+  "id": 144,
+  "src_sha256": "b104fe0aba306dddf80528d5da143ee201be2ba569a4686bff22d73a59cfe20f",
+  "zh": "那個蠢東西！它差點害我丟了命。 Dark Savant 就是為了它才利用我！而我一拿到它——他就搶走了。我們會把它拿回來的！到時候呢？ Dark Savant 最好給我小心點！"
+ },
+ {
+  "id": 145,
+  "src_sha256": "15da72e1df6108872bf8e29783e8397ca02b95ac685c315868221617c061f68d",
+  "zh": "我從沒想過 Umpani 和 T'Rang 會成為朋友！"
+ },
+ {
+  "id": 146,
+  "src_sha256": "64e23fb114f4939243604f39253eb1901ed63bd3e912cd8dec5aed5316f8bcf1",
+  "zh": "那座塔（ tower ）毀了 Arnika 的一部分，毀了「我」的一部分歷史！他到底在想什麼？以為他可以為所欲為嗎？！那座塔就蓋在以前 Arnika 的所在地。而我擔心那不只是他在這裡的「落腳處」……我相信它有更邪惡得多的目的。"
+ },
+ {
+  "id": 147,
+  "src_sha256": "d2bbf4c029b7015e70ccc050d1ceef4980e0961ccc4b528d29a1b711cc55bab9",
+  "zh": " He'li ？我有記憶以來，她就一直在 Arnika 開那間酒吧。如果你們還沒自己發現的話， He'li 就是想打聽街頭消息時該找的人。"
+ },
+ {
+  "id": 148,
+  "src_sha256": "307778a3f71226521882b20354c7a2fd222859503991421220d399866a926976",
+  "zh": " Anna 算是鎮上的老招牌吧。她在那座 Marina 待了，天哪，數不清幾年了！我一直很喜歡她一點。你們知道，有些人會把話說得甜甜的，好讓你好入口。 Anna 呢？她有話直說——好壞都說。我喜歡這樣。"
+ },
+ {
+  "id": 149,
+  "src_sha256": "a2762fc80422c5c8f678d94d006abda03fad5fc71023f74be2a7341549ba3fb3",
+  "zh": " Myles ？ Myles ！誰會不認識 Myles ？"
+ },
+ {
+  "id": 150,
+  "src_sha256": "bcfa769f8fd1bfbf7f5f60d9abe69fcf967b2d045fe21a067fde98257ac4e264",
+  "zh": " Antone ？在舊的 Rapax Armory 。你們想不到會在 Arnika 找到 Rapax 吧？嗯，算是一種聯盟。你們看，要弄到更好的兵器，唯一的辦法就是去 Rapax Castle 本人那裡，而願意走那趟路的 Higardi 可不多。"
+ },
+ {
+  "id": 151,
+  "src_sha256": "6e898823184d02c8df0dd7bb72417844338b6359f0632925321a68ba8edbc1e9",
+  "zh": "所以他在這裡工作，賣東西賺得可說是殺人般的暴利，而我們則能拿到周遭最好的訂製防具和兵器。"
+ },
+ {
+  "id": 152,
+  "src_sha256": "ad29b58d0324299411e94be9b04cf181fa702833ee9a7a36189f07dc3ca8a0f0",
+  "zh": "你們要找的答案全在 Temple 的牆裡。就在 Arnika 的正中央。"
+ },
+ {
+  "id": 153,
+  "src_sha256": "01520565639afb1f8d0169c8efaf4f9e8ac88ea4f0787a395b3a1ed1b1e47eb3",
+  "zh": " Mt. Gigas ！真是久違的美景啊。我回家了！"
+ },
+ {
+  "id": 154,
+  "src_sha256": "fc3f42d2d8f261a72f873bf5e2ac97330f255cb7f8e01994ecb9fad3bbea15f4",
+  "zh": " Marten's Bluff ！哦，它從來沒這麼美過！"
+ },
+ {
+  "id": 155,
+  "src_sha256": "2da1621882fb0b936a53afea82f3f8cbe3e928c7d1c3e8a6e33df725a9bf4911",
+  "zh": "到家了！這裡是 Monastery 。我簡直不敢相信！"
+ },
+ {
+  "id": 156,
+  "src_sha256": "6c92b3eee203a7af8fb19c05e22dc6907f45fe44706df87f8abad669bcf2c326",
+  "zh": "終於！哦，謝天謝地是你們……呃，不管你們是誰。我本來在等 Dark Savant ，不是我愛說，跟他比起來你們簡直像一群女學生！他的 Troopers 把我關在這裡，我隨時都在等他來……而且我們已經碰過一次面，多到不能再多了。"
+ },
+ {
+  "id": 157,
+  "src_sha256": "c3fa98422a57bb99f81c74e7b48af9f4d5b3384ed7f91689547a92620a418fdf",
+  "zh": "對了，我們趁他來找我之前快離開這裡吧。哦！我連自我介紹都還沒呢！我叫 Vitalia ，不過你們可以叫我 Vi 。"
+ },
+ {
+  "id": 158,
+  "src_sha256": "b96ff071317726e1c32e4e6232962a8b3239694e795406d6f225069b9d64e4ab",
+  "zh": "回到 Dominus 真是太好了。自從 Dark Savant 把我從這裡拽走以後，我還以為這輩子回不了家了。你們在這裡四處看看的時候，我要去 Arnika 確認那裡一切都好。我們過幾天再碰面，好嗎？"
+ },
+ {
+  "id": 159,
+  "src_sha256": "b686d791496d57751b0ae7cf0d2335ca49132f3eb3f751c9d2112129de6ab781",
+  "zh": "還有，各位，小心點。 Dark Savant 可能在任何地方……"
+ },
+ {
+  "id": 160,
+  "src_sha256": "34ef223ab1cc57e61c0b5aa5fc4bd1d77491cdc2e3e15db2ea2f676a5ad7aac5",
+  "zh": "你們到底跑到這星球的哪個角落去了？！我還以為你們永遠找不到我了！我被關在這裡多久了？好幾天？！好幾週？！我早該料到的。記得我說過我要回 Arnika 看看情況嗎？嗯，猜猜我遇到誰—— Dark Savant ！偏偏是他！"
+ },
+ {
+  "id": 161,
+  "src_sha256": "02da73225fc46669f4d852ba639f1f443ec162a9d04aba4de059df59de1cee1b",
+  "zh": "他叫他的 Troopers 把我關在這裡。天知道他打算做什麼？走吧。我們趁他來找我之前離開這裡。"
+ },
+ {
+  "id": 162,
+  "src_sha256": "c702246343a7e675a04aaadca88c59fc904bdc93c6ee9368d109cc2465dc0c36",
+  "zh": "騎士精神真是活得好好的啊！我不只被關在這裡，連打算來救我的人都拋下我！哼！好吧，我想我不該抱怨。至少你們回來了。算了，謝啦，各位。"
+ },
+ {
+  "id": 164,
+  "src_sha256": "a63db22e5c2b82a3589b18290af832728fb249aaceab658a5334fe3d609d3620",
+  "zh": "很高興見到你們。希望一切都順利……"
+ },
+ {
+  "id": 165,
+  "src_sha256": "bded0a8c30c71fa16e5aa4f3603fa219e752d35dddf1649d4d456b29f84ef65d",
+  "zh": "拜託，各位！我們在一起好幾年了。別跟我說你們已經「那麼」依依不捨了。聽著，我在 Arnika 跟你們會合，好嗎？我迫不及待想出發了……你們也該是吧。"
+ },
+ {
+  "id": 166,
+  "src_sha256": "4327ae9a89b81c0436ff01bd1e7db4b9a50b8277f0c1c8b60d6e0b56225e81d7",
+  "zh": "我真的不想談這件事，好嗎？別提了……"
+ },
+ {
+  "id": 167,
+  "src_sha256": "99176c97d77f95d177c968494b6613168347023bfce4e895298017054e8be493",
+  "zh": " Higardi Lunar Legion 。他們就像警察。"
+ },
+ {
+  "id": 168,
+  "src_sha256": "2b42a7f82abc5c292a8f6ba5685c9b4811217df5284fedeab0f2c952226217f0",
+  "zh": " Dark Savant 的爪牙！其實他們只是機器，你們知道的？不過他們被設定成聽他差遣……而且你們可以確定那絕不是什麼好事。"
+ },
+ {
+  "id": 169,
+  "src_sha256": "eb5ca8a4f2f8b20523d0d89c24df3a131408cf25d2e48dcc8734464e5cda20e9",
+  "zh": "就在 Arnika 。"
+ },
+ {
+  "id": 170,
+  "src_sha256": "e94adbad9141cdaee7b1f7ae156ca0e14eda0eb7a7279aeac2bbc0a3f71521d1",
+  "zh": "沒錯，{{Lord}} Braffit 。我跟他很熟。他在 Arnika 的 Temple 。我年輕的時候，他就像我的父親一樣。"
+ },
+ {
+  "id": 171,
+  "src_sha256": "23e3f7e8cef00082c68e6ddd1b54fbe23717352a29adf044f79bb13afb73e829",
+  "zh": "沒錯， Brotherhood of the Ascension 的兄弟們。他們就像我的父母一樣。"
+ },
+ {
+  "id": 172,
+  "src_sha256": "272e21c3a242c9acee6858d7f62d948d77f8904318061c2754ec9912e6d88979",
+  "zh": "Monastery 嗎？那是 Brotherhood of the Ascension 的家。就在 Arnika 的西北邊。"
+ },
+ {
+  "id": 173,
+  "src_sha256": "2bd1c55c445b4b9544d5c3e7548b5631f2a8fa9f571ef48c4620f3dbde82711c",
+  "zh": "我們得去調查一下。"
+ },
+ {
+  "id": 174,
+  "src_sha256": "c165d5f86dcfc180655c8684431235604ec7bf658b44ba817cd659a4ed36c908",
+  "zh": "沒錯，就是這樣。"
+ },
+ {
+  "id": 175,
+  "src_sha256": "e7674168f91e41476d6436c7c7f042e854c859bffea4e0855fef588b0479f81e",
+  "zh": "在這裡的北邊。"
+ },
+ {
+  "id": 176,
+  "src_sha256": "d1a225fd7ff3d7b759d029ce91c360b1721a081aed3bfb611aef01b5092d971a",
+  "zh": "在這裡的南邊。"
+ },
+ {
+  "id": 177,
+  "src_sha256": "7ff4c440d99d29205db2955c8443b7e18eab155f078941f1969319c42377776d",
+  "zh": "那是東邊。"
+ },
+ {
+  "id": 178,
+  "src_sha256": "e70c269362a404e8972b6cb4f3600d6f36a9e0477a75cdc522bb64f8cfc515b8",
+  "zh": "你們得往西走。"
+ }
+]

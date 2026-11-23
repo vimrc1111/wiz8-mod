@@ -1,0 +1,22 @@
+call	40efa0	rand_n	亂數 R(n)：首次使用路徑 R(t) 加 0x32 乘 +0xb0d 除以 100 的亂數部分，其餘路徑 R(t)+1；Rand 重放，t 為浮點縮放後取整。
+call	5e1c22	ftol	x87 數值轉整數（_ftol，朝零截斷取低 32 位），非遊戲規則；calc 以 big.Float 重現。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebc28	cheatDeathBaseTime	binary32 常數 5.0；存活狀態時間的基準倍率。
+data	5ebc7c	cheatDeathHalf	binary32 常數 0.5；首次使用路徑把 +0xb0d 折半再縮放。
+data	5ed490	featureScale	f32 常數 0.01；等級列縮放 (2n+60)*0.01 的百分比係數，與 statusRebuildTables 共用。
+data	5ee800	featureBase	浮點常數 60.0；等級列縮放的基數，與 statusRebuildTables 共用。
+data	6836a8	memberCombatRecords	每成員 0xd4 bytes 的戰鬥記錄陣列基址；+0xbe 是首次使用旗標 u8（已用則 +0xb11 走重擲路徑）；指標為空時視為已用；case 以 arena 物件接線。
+data	685174	characterRecords	0x1862 bytes 的角色記錄陣列基址；case 以 arena 物件接線。
+data	68c09c	noticeTextTable	文字表物件指標；+0x5cc 是存活通知格式字串指標，只決定通知文字。
+field	ebp+0x69	characterClass	角色職業索引 i32，-1..14；選等級列 n 的欄位，-1 讀 +0x89。case 輸入。
+field	ebp+eax*4+0x8d	classRank	角色等級列 n（u32，+0x8d+4×職業）；n>20 時時間用 5.0，n<=20 乘 (2n+60)*0.01。case 輸入，其餘職業槽放誘餌值。
+field	ebp+ecx*4+0x8d	classRank	同上，首次使用路徑的取法。
+field	ebp+edx*4+0x8d	classRank	同上，重擲路徑的取法。
+field	ebp+0xb0d	memberMaxHp	角色 u32 +0xb0d；首次使用路徑 HP＝(R(t)+50)*此值/100。case 輸入。
+field	ebp+0xb11	memberHp	角色 u32 +0xb11 目前 HP；重擲路徑以 R(t)+1 取代，首次使用路徑覆寫。case 輸入與輸出。
+field	ecx+0x5cc	noticeFormatText	文字表 +0x5cc 的通知格式字串指標，傳給通知函式；不影響規則輸出。
+field	esi+eax*1+0xbe	firstUseFlag	戰鬥記錄 +0xbe u8 首次使用旗標，為 0 時走首次使用路徑並寫 1。case 輸入與輸出。
+field	esi+ecx*1+0xbe	firstUseFlag	同上，檢查形式。
+field	esi+ecx*1+0xa45	stateSlot17	狀態槽 0x11（+0xa45）；存活狀態時間＝此槽 - ftol(f) + 7。case 輸入。

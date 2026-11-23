@@ -1,0 +1,34 @@
+call	2b6	無關	分析誤判的跳躍目標，不是呼叫的函式入口
+call	4ac9d0	spellKind	依法術紀錄 +0x137 取法術種類，只決定 UI 子呼叫分支，不影響四個輸出
+call	5010f0	spellCursorMode	法術種類轉游標模式，僅 UI 用，不影響輸出；種類 0..10 以外會觸發其斷言
+call	5179f0	clampUnsignedPhase	無號比較先檢查上限，calc 以 uint32(v)>7 夾到 7
+call	52a710	spellPowerRead	讀取角色指定領域的法術力，calc 以 sp0..sp5 輸入並將負值視為 0
+call	52e690	無關	建立戰鬥訊息效果，只寫 UI 與訊息物件，不影響面板四個輸出
+call	53a440	無關	建立游標或指令結構，只寫 UI，不影響面板四個輸出
+call	562a50	無關	刷新 UI 並帶旗標，不影響面板四個輸出
+call	59f710	無關	重建法術面板 UI，不影響面板四個輸出
+call	59ffa0	無關	更新法術按鈕紀錄，UI 專用，不影響面板四個輸出
+call	5a06f0	無關	顯示或隱藏控制項，UI 專用，不影響面板四個輸出
+call	5a14d0	無關	取消選擇時的法術選擇回饋，UI 與訊息專用，不影響面板四個輸出
+data	4	無關	堆疊位移被分析為資料引用，非遊戲資料或表
+data	5ebaf4	srAssertFail	斷言失敗匯入函式；失敗即停止，沒有正常輸出
+data	5ed8c8	無關	訊息旗標全域，只供 UI 子呼叫的訊息顯示
+data	5ed8e4	無關	訊息旗標全域，只供 UI 子呼叫的訊息顯示
+data	5ed914	無關	訊息旗標全域，只供 UI 子呼叫的訊息顯示
+data	5ee65c	無關	訊息旗標全域，只供 UI 子呼叫的訊息顯示
+data	64c858	無關	斷言訊息字串位址，非遊戲資料
+data	64c94c	無關	斷言訊息字串位址，非遊戲資料
+data	65be1c	spells	法術紀錄表基址，紀錄長 0x1bf；arena 固定接線
+data	685174	characters	角色陣列基址，長 0x1862；arena 固定接線
+data	68518d	activeCharacter	目前操作角色索引，有號
+data	69bf3c	spellPanel	法術面板物件指標；arena 固定接線
+field	eax+0x4f8	previousSlot	面板目前選中格，有號；進函式時讀作舊值，輸出為 selectedSlot
+field	ecx+0x4f8	selectedSlot	面板選中格寫入點：新格、-1 取消
+field	eax+ecx*4+0x584	slotSpell	面板各格法術編號，0 為空格
+field	eax+esi*1+0xafc	slotState	面板各格狀態位元組，0 與 4 為取消選擇
+field	esi+eax*1+0x12b	spellPowerClass	法術紀錄的力量類別；-1 觸發斷言
+field	esi+eax*1+0x133	spellRealm	法術紀錄的領域，選擇法術力 sp0..sp5
+field	esi+eax*1+0x49	spellBaseCost	法術紀錄的基礎耗力，除數
+field	edx+0x100	panelSpell	面板輸出：選中法術編號
+field	edx+0x10c	panelPowerClass	面板輸出：力量類別
+field	eax+0x110	panelMaxPower	面板輸出：可負擔最大力量，1..7

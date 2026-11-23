@@ -1,0 +1,50 @@
+call	2b6	assertFailureIndirectCall	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，只在 cov-exempt 的塊 5e3851（目標數<=0）
+call	40efa0	R(n) 亂數	清單長於保留數時 R(目前筆數) 選要刪的筆；calc 以同序 Rand.R 重現
+call	4addf0	growList	id 清單容量不足時擴成筆數+1 並複製；calc 以 bump heap 模型重現新區塊與複製
+call	536150	sourceRecordInit	來源記錄 13 dword 清零、+4/+8＝-1；calc source.* 初值
+call	5e1c10	無關	free：結束時釋放清單緩衝（4addf0 內亦釋放舊區塊）；emu no-op，不影響規則值
+call	5e1ce0	newListBlock	operator new：清單 5 筆初始區塊；失敗時容量 0（無分支），emu bump heap 不失敗；calc list.data／heap*
+data	4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	5ea378	無關	SEH 例外處理器位址；非遊戲資料
+data	5ebaf4	assertImport	srAssertFail import；只在 cov-exempt 斷言塊
+data	5ebfe0	無關	id 清單 vtable；結構標記，以 list.vt 輸出
+data	650550	無關	斷言訊息字串（原始檔名／條件）；只當 srAssertFail 參數
+data	650560	無關	斷言訊息字串；只當 srAssertFail 參數
+data	659c0c	partyObject	隊伍物件指標；0x4534c0 取其 +0x100..+0x108 位置當目標記錄 +0x10..+0x18
+data	685174	characterRecords	角色主記錄陣列指標（stride 0x1862），讀 +0xb11 HP、+0xb01 狀態
+data	685178	partySlots	隊伍槽陣列指標（stride 0x106），+0 在場位元組
+data	68518d	selectedCharacter	目前選中角色索引（dword）；清單中等於它的成員不會被亂數刪除
+data	ffdff000	無關	靜態掃描所列的 SEH 鏈相對值；非遊戲資料
+data	ffffffffffffff78	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffff7c	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffff80	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffff84	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffff90	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffff94	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffff98	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffff9c	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffffa0	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffffb0	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffffb4	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffffb8	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffffc0	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffffcc	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffffd0	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	ffffffffffffffd4	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	fffffffffffffff4	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+data	fffffffffffffffc	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（id 清單、來源／目標記錄、位置向量），值經 source.*／target.*／list.* 輸出
+field	eax+0x0	partyX	0x4534c0 回傳的位置向量 x（float32 bits），成為目標記錄 +0x10
+field	eax+0x4	partyY	位置向量 y，成為目標記錄 +0x14
+field	eax+0x8	partyZ	位置向量 z，成為目標記錄 +0x18
+field	eax+edx*4	targetListAppend	id 清單 data[count]＝合格角色槽索引
+field	ecx+eax*4	targetListEntry	id 清單第 r 筆（亂數選中者），與選中角色比對、刪除時被覆寫
+field	ecx+eax*4+0x4	targetListShift	刪除時後一筆往前移
+field	edi+eax*1+0xb01	characterCondition	角色 +0xb01 狀態（u32），<0x12 才合格；8 槽皆為輸入
+field	edi+eax*1+0xb11	characterCurrentHP	角色 +0xb11 HP（u32），非零才合格；8 槽皆為輸入
+field	esi+0x0	targetListEntry	亂數選中的清單成員，等於 0x68518d 選中角色時不刪
+field	esi+ecx*1	slotOccupied	隊伍槽 +0 在場位元組，非零才合格；8 槽皆為輸入

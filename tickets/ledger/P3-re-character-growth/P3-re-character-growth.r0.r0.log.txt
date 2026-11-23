@@ -1,0 +1,2 @@
+notes/re/growth.md: 不存在
+FAIL research:growth

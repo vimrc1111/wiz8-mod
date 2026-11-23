@@ -1,0 +1,8 @@
+call	4f0010	partyMovementEffectAverage	八名有效且未被狀態排除的隊員須全部有移動增益，成功輸出整數平均；失敗時本節點只用模式基值；沿用已差分的 calc 子節點
+data	5ec0a8	movementAllowanceScale	f32 常數 10000，將模式基值與平均增益換算成移動準備所保存的量；物理單位未證實；來源 0x4efff0、0x4efffe
+data	5ed490	movementBuffPercentScale	f32 常數 0.01，先將子函式的 u32 平均增益轉成百分比倍率；來源 0x4effe6
+data	6836a8	partyCombatState	隊伍戰鬥資料指標，從 +0x910 讀取行動模式；來源 0x4effa3
+data	fffffffffffffff4	無關	局部堆疊基值的位移，非遊戲資料位址
+data	fffffffffffffff8	無關	子函式局部輸出與轉換暫存的堆疊位移，非遊戲資料位址
+data	fffffffffffffffc	無關	u32 轉浮點時補零的局部高半部堆疊位移，非遊戲資料位址
+field	eax+0x910	partyActionMode	隊伍行動模式 u32，等於 2 的基倍率 1.5，其他值 1；來源 0x4effa8，命名同 notes/re/iface/4f0500.tsv

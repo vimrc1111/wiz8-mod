@@ -1,0 +1,26 @@
+call	2b6	無關	分析器列出的例外展開輔助目標；正常返回不執行，與保留行動機率無關
+call	40efa0	retentionRoll	擲 R(100)；小於保留機率才保留行動
+call	562a50	markMovementEventFlags	全域移動事件模式為 7 時，把 0x1000ff 併入共用狀態旗標（process+0xf4）；calc 在節點內重現
+call	5e1c22	truncateScaledMiss	x87 數值向零截斷為整數；模式 2 時把未保留百分比乘 1.5 後取整
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	srAssertFail 匯入槽，只供剩餘移動百分比超界的斷言，沒有公式數值
+data	5ec3b8	hurriedMissScale	f32 倍率（1.5），從使用者 exe 讀；隊伍行動模式 2 時放大未保留百分比，不內嵌
+data	617974	無關	斷言來源檔名字串，只供錯誤診斷
+data	617a78	無關	剩餘移動百分比大於 100 的斷言訊息字串，只供錯誤診斷
+data	617aa0	無關	剩餘移動百分比小於 0 的斷言訊息字串，只供錯誤診斷
+data	6836a8	combatState	隊伍戰鬥狀態物件指標；arena 固定接線，欄位另列數值輸入
+data	685174	characters	角色記錄陣列基址（每人 0x1862 bytes）；arena 固定接線
+data	685178	actionQueue	每人行動佇列記錄基址（每人 0x106 bytes）；arena 固定接線
+data	68edcc	movementProcess	移動／行進處理物件指標；arena 固定接線，欄位另列數值輸入
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x2dc	remainingMovePct	剩餘移動百分比，0..100，超界即斷言；輸入欄位 remainingMovePct
+field	ecx+0x2dc	remainingMovePct	同一剩餘移動百分比（斷言上界檢查）
+field	edx+0x2dc	remainingMovePct	同一剩餘移動百分比（用於算未保留百分比）
+field	ecx+0x910	partyActionMode	隊伍行動模式，u32；2 時放大未保留百分比，同時是行動重定位子函式讀取的模式
+field	eax+ebp*1+0xb11	hp	角色目前 HP，u32；為 0 的角色不參與
+field	eax+ebp*1+0xb01	status	角色主狀態碼，u32；15 以上不參與
+field	edi+edx*1	present	行動佇列記錄第一個 byte，非零表示該位置有成員
+field	esi+0x34	invalid	戰鬥行動記錄的已失效旗標；已失效者不擲骰直接再次失效
+field	esi+0x0	actionPhase	戰鬥行動記錄的行動階段，u32；保留時交重定位，失效時清零
+field	edi+ecx*1+0x1	queueSlot	行動佇列記錄 +1 的 u32；失效時寫 0xffffffff

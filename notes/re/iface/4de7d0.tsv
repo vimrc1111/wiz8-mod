@@ -1,0 +1,16 @@
+call	40efa0	boundedRandom	有界亂數 R(n)：n＝與最低優先度同順位的成員數，回傳加 1 為第幾個；模擬器 RNG 樁記錄，calc 以 Rand 重放。
+call	5061a0	setStoryFact	設定故事事實（0x689b78+id）：本函式以 (0x33, 1, 0) 呼叫；值改變時經 5588f0 記事件日誌與日誌通知，再呼叫 506670 腳本分派；case 原樣執行（506670、506280、58aad0、58ac00、408860 位址樁），calc 重現事實位元組、事件日誌、訊息佇列與樁參數。
+data	4de91c	classPrioritySwitchTargets	職業優先度 switch 的跳躍目標表（5 個 dword）；calc 執行時從使用者 exe 讀取，目標塊各存一個立即數優先度。
+data	4de930	classPrioritySwitchIndex	職業 0..14 對應跳躍目標索引的位元組表；calc 執行時從使用者 exe 讀取。
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）；+0x69 職業；case 以夾具接線。
+data	685178	partyPresenceRecords	隊伍在場記錄陣列基址（每人 0x106 bytes，第 0 byte 在場旗標）；case 以夾具接線。
+data	68760c	questStatusTarget	被選中成員索引寫入處；case 輸入與輸出 sel（未選中時保留原值）。
+data	ffffffffffffffe0	無關	靜態掃描所列的堆疊相對位移；為本函式 8 個成員優先度的區域陣列，並非獨立遊戲資料欄位。
+data	ffffffffffffffe4	無關	靜態掃描所列的堆疊相對位移；同上，優先度區域陣列的槽位。
+field	eax+0x0	memberPriority	區域優先度陣列元素（10＝不參選，否則依職業 1..5）；calc 重現。
+field	ebp+0x0	memberPresent	在場記錄第 0 byte；為零或成員 0、1 時優先度 10；case 輸入 pres0..7。
+field	ecx*4+0x4de91c	classPrioritySwitchTargets	職業 switch 跳躍目標表讀取；見 data 4de91c。
+field	ecx+0x0	memberPresent	後備掃描（不可達，見 cov-exempt）讀在場記錄第 0 byte。
+field	edi+0x0	characterClass	角色 +0x69 職業 u32：0 戰士→2、7 盜賊→3、14 法師→4、10 祭司→5、其他（含 >14）→1；case 輸入 cls0..7。
+field	edx+0x0	memberPriority	選取迴圈讀區域優先度陣列找第 k 個同順位成員；後備掃描（不可達，見 cov-exempt）另以它讀角色主狀態 +0xb01 比 0x12。
+field	esi+0x4de930	classPrioritySwitchIndex	職業 switch 索引位元組表讀取；見 data 4de930。

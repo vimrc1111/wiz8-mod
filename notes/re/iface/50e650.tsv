@@ -1,0 +1,16 @@
+call	4ed9d0	rebuildCharacterRuleAbilities	重算有效屬性、技能、生命／耐力／法力、抗性、負重與手部能力；總修正生成後必須執行，不能視為無關；本案例差分輸出選取七項有效屬性、四十一技能及負重規則，其他能力快取尚未納入 calc 輸出（build/wiz8.asm:318884）
+call	50dbf0	applyNpcRegionStatPenalty	依隊伍槽 NPC 副表的地區懲罰旗標，對七屬性及四十一技能各減 20；重用既有 npcRegionStatPenaltyNode（build/wiz8.asm:364260）
+call	50eac0	applyCharacterStatusModifiers	讀角色二十個主狀態計時值及毒強度，生成命中、速度、屬性、技能及狀態旗標修正；特性與控制來源可影響結果（build/wiz8.asm:365618）
+call	50ecc0	applyCharacterTimedBuffModifiers	讀八筆持續增益記錄，依非零持續時間、byte 強度與 u16 百分比倍率生成速度、全屬性、護甲及物理減傷修正；只有第 5、6、7 筆直接改寫本緩衝（build/wiz8.asm:365797）
+call	50f090	mergeRuleModifierBuffers	數值修正以 byte 相加回繞；布林旗標取聯集並正規化為 1；三個強度欄取 unsigned 最大值（build/wiz8.asm:366184）
+data	4	無關	入口第一個隊伍索引參數的堆疊位置，以及呼叫後堆疊清理大小；非遊戲資料表
+data	685174	partyCharacterBase	隊伍角色陣列指標；輸入索引選取步長 0x1862 的角色記錄
+data	687453	partySharedRuleModifiers	在隊角色額外合併的隊伍共同修正緩衝；不能把原版可變全域當成固定常數
+field	edi+0x0	modifierBufferClearDestination	將狀態修正或合計修正緩衝的 103 bytes 歸零；是輸出初始化，非裝備或角色輸入
+field	esi+0x4	characterInParty	角色在隊旗標；非零才合併隊伍共同修正。地區懲罰子呼叫也要求非零，零值會觸發 assertion
+field	esi+0xb09	characterPoisonStrength	毒狀態生成的修正強度；以 32 位輸入傳遞，修正運算使用低 byte（0x50eb8d）
+field	esi+0xa01	characterStatusDurations	二十個主狀態的 u32 剩餘時間；非零啟用該狀態修正；原版分派表執行時從使用者 exe 的 0x50ec74 載入
+field	esi+0xa65	characterTimedBuffs	八筆持續增益記錄；每筆步長 12 bytes，+0 為 byte 強度、+4 為 u16 百分比倍率、+8 為 u32 持續時間
+field	esi+0x16a2	characterStatusRuleModifiers	103-byte 狀態／增益／NPC 地區懲罰修正輸出，先清零再生成
+field	esi+0x1709	characterEquipmentRuleModifiers	103-byte 既存裝備修正輸入，與本次狀態修正合併
+field	esi+0x1770	characterTotalRuleModifiers	103-byte 合計修正輸出，後續能力重算讀取

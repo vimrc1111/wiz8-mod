@@ -1,0 +1,40 @@
+ok  	wiz8-mod/tools/atlas	0.611s
+ok  	wiz8-mod/tools/fitcheck	0.019s
+ok  	wiz8-mod/tools/hashdir	0.012s
+ok  	wiz8-mod/tools/nsf	0.517s
+ok  	wiz8-mod/tools/shot	0.011s
+ok  	wiz8-mod/tools/slf	51.991s
+ok  	wiz8-mod/tools/strings	0.041s
+ok  	wiz8-mod/tools/strlib	0.178s
+ok  	wiz8-mod/tools/trcheck	0.055s
+ok   good
+ok   nosrc
+ok   notag
+ok   nosec
+ok   empty
+ok wiz8-run --check：17 出貨情境＋7 壞情境
+ok check-sigs：30 條簽章相符（18a74ff61c65）
+PASS ddraw-proxy: pei-i386, 22 個匯出與系統一致, imports: GDI32.dll KERNEL32.dll USER32.dll 
+PASS atlas-cover: 譯文 2310 字全在圖集
+PASS bmp-roundtrip
+PASS wrap-rule
+PASS space-rule
+PASS baseline
+PASS inject:printf
+PASS inject:code
+PASS inject:coverage
+PASS inject:pronoun
+PASS inject:pronoun-template
+ok check-translations.test：5 種注入皆紅
+PASS baseline
+PASS inject:over
+PASS inject:reason
+PASS inject:stale
+PASS inject:lines
+ok check-fit.test：4 種注入皆紅
+PASS baseline
+PASS inject:sha
+PASS inject:coverage
+PASS inject:code
+PASS inject:keep
+ok check-lib.test：4 種注入皆紅

@@ -1,0 +1,12 @@
+call	4e5620	monsterEntryAt	怪物列表第 i 筆的記錄指標（i 小於 5e2c70 回的數量）；case 原樣執行，calc 依列表順序取第 i 筆怪物
+call	523330	characterConditionRemove	對在場且持有該狀態的成員解除狀態（成員索引、狀態索引、旗標 1）；D4 公式，case 以位址樁記錄每次呼叫的三個參數（n=8）與呼叫次數，回傳值不被讀
+call	523f40	monsterConditionRemove	對持有該狀態的怪物（以怪物編號）解除狀態：HP 非零才清時間、重選最高有效狀態為主狀態，狀態 7 另清毒強度；case 原樣執行
+call	5e2c70	listCount	容器元素數，空指標回 0；case 原樣執行，calc 以列表指標與數量輸入重現
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	683fad	monsterList	怪物列表容器指標，+0 為記錄指標陣列、+8 為元素數；0 表示沒有列表
+data	685174	partyCharacterRecords	角色主記錄陣列基址，步距 0x1862；case 以 chars 物件擺放，其餘狀態槽放誘餌值
+data	685178	partyPresenceRecords	成員在場記錄陣列基址，步距 0x106，+0 為在場位元組；case 以 pres 物件擺放
+field	eax+0x0	monsterId	怪物記錄 +0 的編號，傳給 523f40 由其再查回同一筆記錄；case 各怪物編號互異
+field	eax+edi*4+0x57	monsterConditionDuration	怪物記錄 +0x57+4×狀態索引 的 u32 狀態時間（20 筆），非零才解除；case 每筆都是輸入
+field	ecx+edx*1+0xa01	characterConditionSlot	角色記錄 +0xa01+4×狀態索引 的 u32 狀態槽，非零才解除；步距 0x1862 乘成員索引
+field	esi+eax*1	memberPresenceByte	成員在場記錄 +0 的位元組，非零才處理；步距 0x106 乘成員索引

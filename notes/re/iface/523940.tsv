@@ -1,0 +1,20 @@
+call	50e650	rebuildCharacterStatusAndAbilities	所有分支都重建角色狀態與能力；沿用 50e650 輸入與輸出介面及使用者 exe 表；0x4edbf5..0x4edbfb 在模式 6／7 也刷新介面，既有 adapter 不輸出旗標，本檔另行組合
+call	517970	rollAbsorptionBase	效果 2 強度增加時擲 spellRecords+0x24fc 的骰子，供吸收池計算
+call	55ee30	markCharacterInterfaceRefresh	成功套用時依模式 6／7 標記物品／角色槽位介面刷新
+call	562a50	markCombatInterfaceRefresh	成功套用且模式 7 時標記效果及能力面板；空介面指標忽略請求
+data	4	無關	參數或暫存器保存的堆疊位移／清理大小，不是遊戲規則資料
+data	8	無關	參數或暫存器保存的堆疊位移／清理大小，不是遊戲規則資料
+data	c	無關	參數或暫存器保存的堆疊位移／清理大小，不是遊戲規則資料
+data	10	無關	參數或暫存器保存的堆疊位移／清理大小，不是遊戲規則資料
+data	14	無關	參數或暫存器保存的堆疊位移／清理大小，不是遊戲規則資料
+data	65be1c	spellRuleRecords	效果 2 讀基量骰；case 在物件 +0x24fc 擺 Z／N／S
+data	6840bb	magicBuffRefreshPending	成功套用效果 6 後設為 1，其他情況保留
+data	685174	partyCharacterRecords	隊伍角色陣列基址；每筆步長 0x1862
+data	68ec78	interfaceMode	模式 7 刷新戰鬥面板，模式 6 子呼叫刷新物品介面
+field	eax+ecx*1+0xa65	characterTimedEffectStrength	角色 +0xa65+12×效果索引；完整 u32 比較，只有新強度較大才覆寫
+field	eax+ecx*1+0xa69	characterTimedEffectMultiplier	百分修正僅寫低 u16，高 u16 保留；效果 2 的高 u16 與吸收池重疊
+field	eax+ecx*1+0xa6d	characterTimedEffectDuration	成功套用寫完整 u32 時間；主效果掃描以時間非零判定
+field	ecx+0x0	characterTimedEffectDuration	從角色 +0xac1（效果 7 時間）逐筆向下掃描到 0，取最高非零時間索引
+field	esi+ecx*1+0xa83	characterAbsorptionPool	效果 2 的基量乘新強度後截斷至 u16；與效果 2 倍率高字重疊
+field	esi+edi*1+0xa83	characterAbsorptionPool	讀 unsigned u16，百分乘积截斷至 u32 再除 100，與基量相加寫回 u16
+field	esi+edx*1+0xb05	characterPrimaryTimedEffect	成功套用後記最高有效時間索引，全空為 0；較弱／同強保留原值

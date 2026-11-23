@@ -1,0 +1,78 @@
+call	2b6	assertFailureIndirectCall	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，只在目標 id -1 時（cov-exempt 塊 556253、556604），calc panic
+call	40efa0	boundedRandom	有界亂數 R(n)：略過效果槽的 R(100)、骰 R(dice)／R(2)，Rand 依執行順序重放
+call	517a90	summaryTextFormat	vswprintf 到全域寬字元緩衝 0x689fd0，組總結文字（次數、平均）；原生執行，緩衝內容為 calc 輸出
+call	52bb60	monsterDamageApply	怪物受傷：死亡不處理、護盾吸收、可見時演出、來源記錄複製、功勞、致死記錄與死亡視覺、否則扣 HP 並經 0x52c070 降體力；原生執行，calc 依 n_54ec80.go 建模（無報告區）
+call	52c070	monsterStaminaDrain	怪物體力扣減、疲勞等級（staminaFatigueLevel），體力歸零且衰竭未滿 9999 時經 0x523c00 施衰竭；原生執行，calc 建模
+call	552070	zeroEffectNotice	notify 位元組設定時印零效果提示（怪物 0x590b40、角色 0x590950→0x58aad0 kind 8）；無規則輸出，calc 記錄呈現樁
+call	552340	effectAmountResist	經 0x552250 抵抗減量（resistanceQuantityReductionNode），結果為零且 notify 時同 0x552070 提示；原生執行，calc 直接呼叫
+call	5905c0	messagePendingSet	把 0x69b7b8 設為一（顏色參數 −1 保留）；0x69b7b8 為輸出
+call	5e1c10	無關	operator delete：釋放兩個目標清單緩衝，emu 堆不回收，無規則輸出
+data	5e7500	無關	SEH 例外處理常式位址，編譯器產物
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 IAT 槽；只在 cov-exempt 塊 556253、556604 呼叫，合法輸入不到
+data	61f17c	無關	斷言運算式字串，只供錯誤診斷
+data	61f19c	無關	斷言運算式字串，只供錯誤診斷
+data	61f1b8	sourceFileName	原始檔名字串位址：4e5840 查怪物與斷言的參數，值本身不影響結果
+data	556ad0	characterEffectTypeDispatch	角色目標效果類型 1..5 的跳躍表，編譯器產物；類型超出 1..5 前已略過
+data	556ae4	monsterEffectTypeDispatch	怪物目標效果類型 1..5 的跳躍表，編譯器產物；類型超出 1..5 前已略過
+data	556af8	summaryTypeDispatch	總結文字效果類型 1..5 的跳躍表，編譯器產物
+data	619778	summaryStatusFormat	"%ld %s" 格式字串（類型 1 的總結：次數與狀態名）
+data	61a3c4	summarySeparator	兩槽總結之間印出的分隔字串
+data	61e574	statusTextIdTable	狀態種類的訊息編號表（步幅 8，u16），執行時由 exe 讀
+data	61eefc	abilityEffectTypes	能力效果類型表 [32][2]（步幅 8），執行時由 exe 讀；類型 6 轉交 0x556b10
+data	61ef04	abilityEffectTypes	0x61eefc 第二筆能力的槽 0；種類 2 來源時與 0x61eefc 比 5（加倍骰），兩值為 0、1，所在塊 5561d1、5561e2 列 cov-exempt，calc 讀到 5 即 panic
+data	61effc	abilityEffectSubKinds	能力效果子種類表 [32][2]（狀態種類；7 時加罰值骰），執行時由 exe 讀
+data	61f0fc	abilityRealms	能力領域表 [32]，執行時由 exe 讀，作 0x551ba0／0x552250 領域參數
+data	68510c	notifyEnabled	u8 訊息旗標；決定子呼叫 notify 參數、零效果提示與是否計數及印總結
+data	685174	characterRecords	角色主記錄基址，步幅 0x1862；來源角色讀等級 +0x89、體力 +0xb1d、最大體力 +0xb19
+data	68c09c	無關	訊息表物件指標，各偏移只取顯示用訊息字串
+field	eax*4+0x556ad0	characterEffectTypeDispatchEntry	角色目標效果類型分派；類型 1..5，來源 0x5562c3..0x5562d3
+field	eax*4+0x556ae4	monsterEffectTypeDispatchEntry	怪物目標效果類型分派；類型 1..5，來源 0x55667f..0x55668f
+field	ecx*4+0x556af8	summaryTypeDispatchEntry	總結文字效果類型分派；類型 1..5，來源 0x5569d6..0x5569e6
+field	eax+0x0	sourceKind	來源記錄 +0 種類：1 角色、2 怪物；決定強度來源與槽 0 略過骰
+field	ecx+0x0	sourceKind	來源記錄 +0 種類（2 時槽 0 擲 R(100) 略過）
+field	ecx+0x4	sourceCharacter	來源角色索引（種類 1）
+field	ecx+0x8	sourceMonsterId	來源怪物 id（種類 2），經 0x4e5840 查記錄
+field	eax+0x24f	templateLevel	來源怪物模板等級位元組，作強度等級
+field	esi+0x2f	monsterMaxStamina	來源怪物最大體力（u32 除數）
+field	esi+0x33	monsterStamina	來源怪物目前體力（u32 被乘數）
+field	eax+edx*2+0x89	characterLevel	來源角色等級（u32），s = L + min(L,15)
+field	eax+0xb19	characterMaxStamina	來源角色最大體力（u32 除數）
+field	eax+0xb1d	characterStamina	來源角色目前體力（u32 被乘數）
+field	eax+edx*4	targetListEntry	目標清單元素：角色清單為隊伍索引、怪物清單為怪物 id
+field	ecx+0x2f9	monsterSp	目標怪物 SP（u32），類型 3 減去量的一半（會繞回）
+field	eax+0x61eefc	abilityEffectType	能力 a 槽 s 的效果類型（0x61eefc+8a+4s）
+field	edi+0x61eefc	abilityEffectType	能力 a 槽 s 的效果類型（0x61eefc+8a+4s）
+field	ebp*8+0x61eefc	abilityEffectType	能力 a 槽 0 的效果類型；6 時整個能力轉交 0x556b10
+field	eax+0x61effc	abilityEffectSubKind	能力 a 槽 s 的子種類；總結時查狀態名
+field	edi+0x61effc	abilityEffectSubKind	能力 a 槽 s 的子種類（狀態種類，7 時加罰值骰）
+field	ebp*4+0x61f0fc	abilityRealm	能力 a 的領域
+field	ecx*8+0x61e574	statusTextId	狀態種類的訊息編號（u16）
+field	edx+0x664	無關	訊息表物件的類型 5 總結格式字串，只供顯示
+field	edx+0x694	無關	訊息表物件的「無效果」訊息，只供顯示
+field	edx+0x704	無關	訊息表物件的類型 2 總結格式字串，只供顯示
+field	ecx+0x708	無關	訊息表物件的類型 3 總結格式字串，只供顯示
+field	eax+0x70c	無關	訊息表物件的類型 4 總結格式字串，只供顯示
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	1c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	24	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	2c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffbc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffdc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表

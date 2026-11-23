@@ -1,0 +1,15 @@
+call	50e650	rebuildCharacterStatusEffects	到期後重算狀態／增益修正、合計修正及有效角色能力；沿用 statusEffectRebuildNode 的具名介面與輸出範圍，其他能力快取不屬本節點差分輸出（notes/re/iface/50e650.tsv）
+call	55ee30	markCharacterPanelDirty	模式 6 設 inventoryRefreshMask 的 0x100；模式 7 把角色槽 bit 加到 adventureRefreshMask；到期及能力重算均可呼叫（0x55ee30）
+call	562a50	markAdventurePanelsDirty	模式 7 且介面物件存在時合併更新旗標；本案例配置有效介面物件，驗證角色槽、0x200000 與 0x8000 的聯集（0x562a50）
+data	4	無關	堆疊參數位置與呼叫後清理大小；不是遊戲規則常數或資料表
+data	8	無關	第三參數取值及兩個介面更新呼叫後的堆疊清理大小；不是遊戲資料
+data	c	無關	保存暫存器後參數的堆疊位移；效果記錄的 12-byte 步長另在欄位語意說明
+data	6840bb	attributeRefreshPending	第 6 筆增益到期時設 1；其他情況保留既存 byte
+data	685174	partyCharacterBase	角色陣列指標；partySlot 選取步長 0x1862 的記錄；arena 配置八個角色槽
+data	68ec78	gameMode	模式 6 更新物品／角色介面，模式 7 更新冒險介面；其他模式不更新兩個介面遮罩
+field	eax+edi*1+0xb05	characterLastActiveBuff	角色最後有效增益索引；由第 7 筆向下掃描非零持續時間，全部空時仍填 0
+field	ecx+0x0	characterTimedBuffStrengthStorage	到期記錄 C+0xa65+12×buffIndex 的完整 u32 強度儲存欄；重算只讀低 byte，到期清空全部四 bytes
+field	ecx+0x4	characterTimedBuffMultiplierStorage	到期記錄 C+0xa69+12×buffIndex 的完整 u32 倍率儲存欄；重算只讀低 u16，到期清空全部四 bytes
+field	ecx+0x8	characterTimedBuffDuration	到期記錄 C+0xa6d+12×buffIndex 的 u32 時間；到期清零
+field	ecx+0xa6d	characterTimedBuffDuration	以 unsigned 比較剩餘時間與 decayAmount；剩餘較大只減時間，含 9999 亦無特殊保留
+field	edx+0x0	characterBuffDurationScan	從 C+0xac1（第 7 筆時間）倒退每筆 12 bytes；第 0 筆無論時間是否非零均終止掃描

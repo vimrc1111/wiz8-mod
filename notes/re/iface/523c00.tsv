@@ -1,0 +1,57 @@
+call	2b6	srAssertFail	IAT 0x5ebaf4 的 srAssertFail 分析標記；只在 penalty 非零且狀態不是 7 時停止（0x523c15），在 cov-exempt 的塊裡，calc panic
+call	4e4690	monsterDowned	狀態 ≥ 0x12 時倒地處理；calc mcaWorld.downed 照原函式呼叫 4e4db0/4e4280/4e46f0/4e3af0 樁，0x4ca4c0 動作 0x15 時跳過
+call	4e60b0	monsterDisabledVisual	M+0x24e 設為 (M+0x107 ≥ 0xe)；4c5a00/4c5aa0/4e4db0 呈現呼叫為排除樁（cc 裁決）
+call	505760	monsterAwarenessRefresh	依序呼叫 5049c0(m,1,0)、5049c0(m,0,0)；calc 在 arg2 1 時跑 visibilityAwarenessUpdate，回寫 M+0x2ab
+call	50e8c0	monsterConditionRebuild	由狀態槽重建 M+0x1db 修正值、M+0x247 屬性、M+0x47/0x4f 浮點；calc 用 monsterActivationRebuildRules 加戰鬥記錄增減
+call	510350	groupLivingCount	群組成員中主狀態 < 13 且 +0x2fd ≠ 1 的數量寫 g+0x14；變動時 0x565420 設 UI 旗標 0x20000
+call	53bea0	sourceIsCharacter	來源記錄型別 1 為角色；索引 -1 斷言（0x53beb1）
+call	53bf10	sourceIsMonster	來源記錄型別 2 為怪物；ID -1 斷言（0x53bf21）
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	523f1c	durationDispatch	switch 跳躍位址表（狀態 2..19 的持續時間分派：0x523c53 固定 0x270f、0x523c5a 用參數）；calc 執行期讀表
+data	523f22	durationDispatch	同 523f1c 跳躍表的分析器切分位址，非另一張表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 IAT 槽；只在 0x523c15 斷言失敗時呼叫，合法輸入不到
+data	614a3c	無關	戰鬥訊息格式字串位址，只作 58aad0（排除）的參數
+data	6171a8	conditionImmunity	免疫表起點：每列 0x52 bytes，列首 -2 為怪物種類 byte，其後 20 個狀態 dword；calc 執行期讀表
+data	6171aa	conditionImmunity	免疫表第一列的狀態 dword 起點
+data	6171ae	conditionImmunity	免疫表列內狀態 dword 的步進
+data	6171fa	conditionImmunity	免疫表第二列的種類 byte
+data	6171fc	conditionImmunity	免疫表第二列的狀態 dword 起點
+data	6172a0	conditionImmunity	免疫表結束位址（迴圈終點）
+data	61ad28	無關	斷言訊息字串，只供錯誤診斷
+data	61ad64	無關	斷言原始碼檔名，只供錯誤診斷
+data	61e572	conditionMessageIds	每狀態 8 bytes 的表，+0 u16 為訊息字串 ID；calc 執行期讀表
+data	683f94	combatActive	戰鬥中旗標 u8；與 M+0x2ab 擇一成立才發狀態訊息
+data	68c09c	stringTable	字串指標表基址；訊息字串只作 58aad0（排除）參數
+field	eax+0x24f	tpl.f24f	模板倍率 byte；角色來源時加 f24f*cond/3 到戰鬥記錄 +0x1a+4*角色索引
+field	eax+0x523f24	durationDispatch	狀態 -2 的 byte 索引表，選 523f1c 跳躍目標
+field	eax+0xcb	tpl.kind	怪物種類 byte，比對免疫表列首
+field	eax+edx*4	stringTable	字串指標表項，訊息 ID 對應的字串指標
+field	ebp+0x10	M.combatRecord	戰鬥記錄指標 T
+field	ebp+0x107	M.mainCond	主狀態：19..1 中最高非零槽
+field	ebp+0x10b	M.attackPenalty	penalty 參數較大時寫入
+field	ebp+0x14	M.active	非零才更新 M+0x24e 失能外觀
+field	ebp+0x15	M.inCombat	戰鬥中旗標；角色來源加仇恨
+field	ebp+0x16	M.morale	狀態 13 新加時依此改士氣（0 則清槽返回）
+field	ebp+0x2ab	M.aware	察覺旗標；與 683f94 擇一成立才發訊息
+field	ebp+0x2b	M.HP	為零（已死）時不加狀態
+field	ebp+0x4	M.groupId	群組 ID，查群組記錄重算存活數
+field	ebp+0x8b	M.cond13	狀態 13 槽；士氣為零時清零
+field	ebp+0xc	M.visual	外觀物件指標；讀 +0x1d8 動作記錄
+field	ebp+esi*4+0x57	M.cond	20 個狀態持續時間槽
+field	ecx+0x0	conditionImmunity	0x523cb4 免疫表列內狀態 dword；0x523d2f 掃 M+0x57 狀態槽 19..1 求主狀態
+field	ecx+0x1d8	visual.actor	外觀物件的動作記錄指標
+field	ecx*4+0x523f1c	durationDispatch	跳躍表項
+field	edi+0x0	T.threat	0x523de9 戰鬥記錄 +0x1a+4*角色索引 仇恨值加 f24f*cond/3；0x523e41 rep movs 目的 M+0x304（13 dword 來源記錄）
+field	edi+0x1b	src.f1b	三個旗標皆為零才複製 13 dword 來源記錄到 M+0x304
+field	edi+0x1c	src.f1c	同 edi+0x1b
+field	edi+0x1e	src.f1e	同 edi+0x1b
+field	edi+0x4	src.charIndex	角色索引，選戰鬥記錄仇恨欄
+field	edx-0x2	conditionImmunity	免疫表列首的怪物種類 byte
+field	edx+0xa7	actor.fa7	動作狀態 byte，作 4c2cf0（排除）參數
+field	esi+0x0	src.record	0x523e41 rep movs 來源：13 dword 來源記錄，複製到 M+0x304
+field	esi*8+0x61e572	conditionMessageIds	狀態訊息 ID u16

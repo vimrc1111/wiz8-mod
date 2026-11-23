@@ -1,0 +1,4 @@
+data	685174	partyCharacters	角色記錄陣列指標；總等級位於各記錄 +0x89，步長 0x1862，來源 exe 0x4ef420、0x4ef432、0x4ef44b
+data	685178	partySlots	隊員副表陣列指標；有效旗標位於各記錄 +0，步長 0x106，來源 exe 0x4ef426、0x4ef43d、0x4ef445
+field	ecx+0x0	totalLevel	游標已偏移角色 +0x89，讀取有效隊員 u32 總等級；加總先以 32 位元回繞，再除以有效隊員數，來源 exe 0x4ef432、0x4ef442、0x4ef456
+field	edx+0x0	slotActive	隊員副表 +0 的 u8 有效旗標；非零均計一人，固定掃描八槽（含招募槽），來源 exe 0x4ef438、0x4ef43d；全零時原版除以零，沒有平均回傳值

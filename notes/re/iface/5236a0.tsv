@@ -1,0 +1,18 @@
+call	523330	characterConditionRemove	狀態量不大於削減量時解除狀態（參數：成員、狀態槽、通知旗標 1）；已 D4，case 以位址樁記錄最後一次參數與呼叫次數，F 另跑真 Go 函式
+call	40efa0	rollPercentDie	毒（槽 7）按比例減量為 0 時擲一次 R(100)，小於百分比門檻則減 1
+call	2b6	無關	擷取器誤判：成員不在場／狀態量為 0 的斷言是經 IAT 槽 5ebaf4 的間接呼叫，2b6 非函式位址；斷言路徑 cov-exempt
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）
+data	685178	partyPresenceRecords	隊伍在場記錄陣列基址（每人 0x106 bytes，第 0 個 byte 為在場旗標）
+data	5ebaf4	無關	斷言失敗入口的 IAT 槽（srAssertFail），只在斷言分支被呼叫，無返回值可差分
+data	61ad64	無關	斷言用的原始檔名字串，只傳給斷言入口
+data	61add8	無關	斷言用的條件字串（狀態量非零），只傳給斷言入口
+data	61ae0c	無關	斷言用的條件字串（成員在場），只傳給斷言入口
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	edx+ecx*2	partyPresenceFlag	在場記錄第 0 byte（成員 who×0x106），非零為在場
+field	ebx+ecx*1+0xa01	characterConditionSlot	角色 +0xa01 起每槽 4 bytes 的狀態字（槽 cond），削減對象；非零才可削減
+field	esi+ecx*1+0xa1d	characterPoisonTime	槽 7（毒）的狀態字，即毒剩餘時間，作比例除數
+field	esi+ebp*1+0xa1d	characterPoisonTime	同上，百分骰門檻計算時重讀（全域指標重載後）
+field	esi+ecx*1+0xb09	characterPoisonStrength	毒強度，依削減量與毒時間之比例遞減
+field	ebx+0x0	characterPoisonStrength	寫回毒強度（ebx 指向 +0xb09）

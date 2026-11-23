@@ -1,0 +1,2 @@
+50bc90	50be08	R(count) 取到 count 以上的分支；R(n) 值域 0..n-1，case 的亂數樁與 calc 的 Rand 皆不給越界值，calc 遇到即 panic。
+50bc90	50bf52	NPC 指標為空的斷言分支；呼叫端永遠傳入有效 NPC 記錄，case 的 npc 物件非空，無可差分的正常返回。

@@ -1,0 +1,19 @@
+call	40efa0	rollPercentDie	對 100 擲一次百分骰，回傳值恆小於 100，每件庫存擲一次，來源 exe 0x55af4b
+call	5e2870	getListEntry	取清單第 index 筆條目；清單指標為空或 index 不小於筆數回空，來源 exe 0x5e2870
+call	5e2c70	getListCount	清單筆數，清單指標為空回 0，來源 exe 0x5e2c70
+data	68516c	itemDefinitions	物品定義表基址，步長 0x10d，旗標位於 +0x41、堆疊型態位於 +0x66，來源 exe 0x55aecd、0x55aed6
+field	edi+0xa	shopStockListPointer	商店物件的庫存清單指標，來源 exe 0x55ae78
+field	edi+0x6	customerPointer	商店物件指向顧客（買方）物件的指標，來源 exe 0x55aeea
+field	ecx+0x2ca	customerStockListPointer	顧客物件的物品清單指標，來源 exe 0x55aeed
+field	ebx+0x0	stockEntryGate	庫存條目首欄（u32）；大於 0 的條目不參與流出，來源 exe 0x55aee1
+field	ebx+0x4	itemIndex	庫存條目的物品編號，用來索引物品定義表與比對顧客條目，來源 exe 0x55aec1
+field	ebx+0x10	stockUnits	庫存條目的庫存單位數（u8）；為零的條目略過，其餘每單位擲一次百分骰，來源 exe 0x55aeb6、0x55af2e
+field	edx+eax*1+0x41	itemFlags	物品定義旗標位元組；位元 0x12 任一成立則該物品不流出，來源 exe 0x55aed6
+field	eax+0x0	customerEntryItemIndex	顧客清單條目的物品編號，與庫存條目物品編號相等才算同一物品，來源 exe 0x55af18
+field	eax+0x5	customerEntryTradeFlag	顧客清單條目的旗標位元組；等於 1 時該物品不流出，來源 exe 0x55af28
+field	eax+0x6	customerPointer	商店物件指向顧客（買方）物件的指標（與 edi+0x6 同一欄位，重讀自參數），來源 exe 0x55af08
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表

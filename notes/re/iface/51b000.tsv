@@ -1,0 +1,11 @@
+data	4	無關	分析器列入的參數堆疊位移；不是絕對資料讀取，來源 exe 0x51b001；規則中的中央象限值另於 0x51b02e 比較
+data	8	無關	分析器列入的參數堆疊位移；用來取角色索引，不讀絕對位址 0x8，來源 exe 0x51b001、0x51b00f
+data	ffffffffffffffff	無關	分析器把空槽哨兵 -1 列為資料位址；不是記憶體引用，槽位值 255 的規則見 centerSlotCharacterIndex，來源 exe 0x51b061
+data	685174	partyCharacterRecords	執行期角色主記錄陣列指標，每筆 0x1862 bytes；case 指向 arena 八筆記錄，來源 exe 0x51b051..0x51b077、notes/re/growth.md:67
+data	68751d	centerFormationSlots	中央象限三個角色槽的起點，u8 隊伍索引或空槽 255；来源 exe 0x51b05b..0x51b088
+data	68751e	centerFormationSlot1	中央象限第二槽；與首槽及第三槽使用相同角色可用規則，來源 exe 0x51b05b..0x51b088
+data	687525	partyCharacterQuadrants	每名角色的隊形象限 byte，步長 12；中央為 4，其餘象限差 2 表對向，來源 exe 0x51b008..0x51b04d
+field	eax*4+0x687525	attackerFormationQuadrant	第一參數指定角色的象限 u8；case 輸入完整八名角色象限以區分索引，來源 exe 0x51b001..0x51b008
+field	edx*4+0x687525	targetFormationQuadrant	第二參數指定角色的象限 byte；先按 byte 比相等及中央，再以有號 byte 與攻擊者無號象限求距離，來源 exe 0x51b00f..0x51b04d
+field	edx+0x68751d	centerSlotCharacterIndex	中央三槽的角色索引，255 表空；其餘以有號 byte 索引角色記錄，合法队伍索引 0..7，來源 exe 0x51b05b..0x51b088
+field	esi+eax*2+0x17b5	characterFormationUnavailable	角色隊形不可用旗標 u8，零表示可阻隔，任意非零排除；不推定為 HP 或主狀態，來源 exe 0x51b065..0x51b082、notes/re/combat-2.md:32

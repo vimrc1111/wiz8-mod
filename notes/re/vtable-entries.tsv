@@ -1,0 +1,3 @@
+# Ghidra 函式表漏掉、只經 vtable 呼叫的入口：addr<TAB>槽位址<TAB>理由。check-formulas 從使用者的 exe 讀槽位 dword 核對，只准登記「排除」類。
+4c72a0	5ed274	怪物模型 vtable 0x5ed22c 的 +0x48 槽；4fea50:4feb91 經 [[怪物+0xc]]+0x48 呼叫（4fa4d0 循環群 agent static_analysis，cc 用 exe 讀槽核對）
+4bf970	5ed20c	動畫序列物件 vtable 0x5ed200 的 +0xc 槽（建構子 4bea20 寫入，build/wiz8.asm:256046）；4c4660:4c468c 經 [[A]]+0xc 呼叫（4e8ea0 agent static_analysis）

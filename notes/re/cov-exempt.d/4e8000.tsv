@@ -1,0 +1,1 @@
+4e8000	4e807d	動作編號不小於 12 的 assert；srAssertFail 停止、沒有可差分的返回。合法動作編號 0–11，由 calc 的 cap panic 對應。

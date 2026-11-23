@@ -1,0 +1,25 @@
+call	40efa0	rand_n	亂數 R(n)，n＝等級區間內可選藥水數，取一次選第 R(n)+1 個；模擬器樁接、calc 以 Rand 介面重放
+call	51c280	placeNewItem	把暫存物品實例放入角色背包空格，滿了放隊伍共用包；非公式，case 原樣執行，calc 以兩條放入路徑建模（背包空格、共用包）
+call	547940	hasFeatureCode	角色職業列（3 格）與種族列（5 格）含指定特性碼；非公式，case 原樣執行，calc 讀同兩表（職業表 0x61507c、種族表 0x615130）建模
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	616fe0	potionLevelTable	藥水等級區間表起點，每筆 12 位元組（物品編號、最低等級、最高等級，最高 -1＝不設上限），以物品編號 -1 結尾；共 37 筆，calc 啟動時從 exe 讀
+data	616fe4	potionLevelTableMin	第一筆的最低等級（有號）
+data	616fe8	potionLevelTableMax	第一筆的最高等級（有號，-1＝不設上限）；兩個迴圈都以此為基準位址
+data	616fec	potionLevelTableRow1	第二筆起第一欄（物品編號），逐筆以 12 位元組遞增
+data	616ff0	potionLevelTableRow1Min	第二筆的最低等級
+data	616ff4	potionLevelTableRow1Max	第二筆的最高等級
+data	685178	rosterPresentTable	名冊在隊旗標表指標，每名角色 262 位元組，第一個位元組非零＝在隊
+data	68c09c	messageContext	訊息脈絡指標，+0x60c 為藥水製作訊息的文字編號
+field	eax+edx*2	rosterPresentByte	名冊在隊旗標（byte），索引＝角色槽號 ×262；零則整個函式不做事
+field	eax+0x0	potionLevelTableMaxCursor	等級表游標所指筆的最高等級（有號）；-1＝不設上限
+field	eax-0x4	potionLevelTableMinCursor	等級表游標所指筆的最低等級（有號）；等級小於它不符
+field	eax-0x8	potionLevelTableIdCursor	等級表游標所指筆的物品編號；-1＝表尾
+field	ecx+0x0	potionPickMax	選藥迴圈游標所指筆的最高等級（有號）；-1＝不設上限
+field	ecx-0x4	potionPickMin	選藥迴圈游標所指筆的最低等級（有號）
+field	ecx-0x8	potionPickId	選藥迴圈游標所指筆的物品編號；第 R(n)+1 個符合者交給物品初始化
+field	ebp+0xb01	characterGate	角色 +0xb01 無號門檻，需小於 0x11 才製作；其餘語意未解
+field	ebp+0xb9	characterLevel	角色等級（i32 有號）；比對等級區間表選藥水，≤0 不在表內域
+field	ebp+0xb65	potionMadeMark	角色 +0xb65，製作成功後設為 0x168（360）；名稱依行為，語意未解
+field	edx+0x60c	potionMessageId	訊息脈絡 +0x60c，製作成功的訊息文字編號（原樣交給訊息函式）

@@ -1,0 +1,2 @@
+notes/research/2026-10-09-R13-combat-speed-community.md: 不存在
+FAIL research:2026-10-09-R13-combat-speed-community

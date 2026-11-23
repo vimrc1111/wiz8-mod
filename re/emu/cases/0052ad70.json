@@ -1,0 +1,1600 @@
+{
+  "cc": "cdecl",
+  "objects": {
+    "chars": 0,
+    "slots": 65536,
+    "events": 69632,
+    "eventBytes": 73728,
+    "messages": 77824,
+    "text": 81920
+  },
+  "setup": [
+    {
+      "at": {
+        "global": "0x685174"
+      },
+      "value": "@chars",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x685178"
+      },
+      "value": "@slots",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x683fd7"
+      },
+      "value": "@events",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x68c09c"
+      },
+      "value": "@messages",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x5ee594"
+      },
+      "value": 3,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x5ee590"
+      },
+      "value": 19,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x5ee5f8"
+      },
+      "value": 27,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x5ee718"
+      },
+      "value": 16,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x5ee70c"
+      },
+      "value": 32,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x68edcc"
+      },
+      "value": 0,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x68ec78"
+      },
+      "value": 0,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "events",
+        "offset": 104
+      },
+      "value": "@eventBytes",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "messages",
+        "offset": 2400
+      },
+      "value": "@text",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "messages",
+        "offset": 2408
+      },
+      "value": "@text",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "text",
+        "offset": 0
+      },
+      "value": 58,
+      "size": 2
+    },
+    {
+      "at": {
+        "global": "0x689b34"
+      },
+      "value": 0,
+      "size": 2
+    },
+    {
+      "at": {
+        "global": "0x683f97"
+      },
+      "value": 0,
+      "size": 1
+    },
+    {
+      "at": {
+        "global": "0x683f9b"
+      },
+      "value": 0,
+      "size": 1
+    },
+    {
+      "at": {
+        "global": "0x683f94"
+      },
+      "value": 0,
+      "size": 1
+    },
+    {
+      "at": {
+        "global": "0x68f105"
+      },
+      "value": 0,
+      "size": 1
+    },
+    {
+      "at": {
+        "object": "chars",
+        "offset": 5
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "slots",
+        "offset": 241
+      },
+      "size": 1,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "chars",
+        "offset": 6247
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "slots",
+        "offset": 503
+      },
+      "size": 1,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "chars",
+        "offset": 12489
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "slots",
+        "offset": 765
+      },
+      "size": 1,
+      "value": 2
+    },
+    {
+      "at": {
+        "object": "chars",
+        "offset": 18731
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "slots",
+        "offset": 1027
+      },
+      "size": 1,
+      "value": 3
+    },
+    {
+      "at": {
+        "object": "chars",
+        "offset": 24973
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "slots",
+        "offset": 1289
+      },
+      "size": 1,
+      "value": 4
+    },
+    {
+      "at": {
+        "object": "chars",
+        "offset": 31215
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "slots",
+        "offset": 1551
+      },
+      "size": 1,
+      "value": 5
+    },
+    {
+      "at": {
+        "object": "chars",
+        "offset": 37457
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "slots",
+        "offset": 1813
+      },
+      "size": 1,
+      "value": 6
+    },
+    {
+      "at": {
+        "object": "chars",
+        "offset": 43699
+      },
+      "size": 2,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "slots",
+        "offset": 2075
+      },
+      "size": 1,
+      "value": 7
+    }
+  ],
+  "stubs": {
+    "wcscat": {
+      "ret": 0,
+      "pop": 0
+    },
+    "wcslen": {
+      "ret": 0,
+      "pop": 0
+    }
+  },
+  "steps": 200000,
+  "path_limit": 64,
+  "samples": 16,
+  "args": [
+    0,
+    0,
+    0
+  ],
+  "in": [
+    {
+      "name": "N",
+      "at": {
+        "arg": 0
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "S",
+      "at": {
+        "arg": 1
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "Z",
+      "at": {
+        "arg": 2
+      },
+      "size": 2,
+      "signed": true
+    },
+    {
+      "name": "minorInjuryClearPercent",
+      "at": {
+        "global": "0x5ed904"
+      },
+      "size": 4
+    },
+    {
+      "name": "majorInjuryClearPercent",
+      "at": {
+        "global": "0x5ed900"
+      },
+      "size": 4
+    },
+    {
+      "name": "minorInjuryCharacters",
+      "at": {
+        "object": "eventBytes",
+        "offset": 3
+      },
+      "size": 1
+    },
+    {
+      "name": "majorInjuryCharacters",
+      "at": {
+        "object": "eventBytes",
+        "offset": 35
+      },
+      "size": 1
+    },
+    {
+      "name": "injuryResponseCharacters",
+      "at": {
+        "object": "eventBytes",
+        "offset": 43
+      },
+      "size": 1
+    },
+    {
+      "name": "occupied0",
+      "at": {
+        "object": "slots",
+        "offset": 0
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "currentHP0",
+      "at": {
+        "object": "chars",
+        "offset": 2833
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "maximumHP0",
+      "at": {
+        "object": "chars",
+        "offset": 2829
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "occupied1",
+      "at": {
+        "object": "slots",
+        "offset": 262
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "currentHP1",
+      "at": {
+        "object": "chars",
+        "offset": 9075
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "maximumHP1",
+      "at": {
+        "object": "chars",
+        "offset": 9071
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "occupied2",
+      "at": {
+        "object": "slots",
+        "offset": 524
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "currentHP2",
+      "at": {
+        "object": "chars",
+        "offset": 15317
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "maximumHP2",
+      "at": {
+        "object": "chars",
+        "offset": 15313
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "occupied3",
+      "at": {
+        "object": "slots",
+        "offset": 786
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "currentHP3",
+      "at": {
+        "object": "chars",
+        "offset": 21559
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "maximumHP3",
+      "at": {
+        "object": "chars",
+        "offset": 21555
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "occupied4",
+      "at": {
+        "object": "slots",
+        "offset": 1048
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "currentHP4",
+      "at": {
+        "object": "chars",
+        "offset": 27801
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "maximumHP4",
+      "at": {
+        "object": "chars",
+        "offset": 27797
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "occupied5",
+      "at": {
+        "object": "slots",
+        "offset": 1310
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "currentHP5",
+      "at": {
+        "object": "chars",
+        "offset": 34043
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "maximumHP5",
+      "at": {
+        "object": "chars",
+        "offset": 34039
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "occupied6",
+      "at": {
+        "object": "slots",
+        "offset": 1572
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "currentHP6",
+      "at": {
+        "object": "chars",
+        "offset": 40285
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "maximumHP6",
+      "at": {
+        "object": "chars",
+        "offset": 40281
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "occupied7",
+      "at": {
+        "object": "slots",
+        "offset": 1834
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "currentHP7",
+      "at": {
+        "object": "chars",
+        "offset": 46527
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "maximumHP7",
+      "at": {
+        "object": "chars",
+        "offset": 46523
+      },
+      "size": 4,
+      "signed": false
+    }
+  ],
+  "out": [
+    {
+      "name": "currentHP0",
+      "at": {
+        "object": "chars",
+        "offset": 2833
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "currentHP1",
+      "at": {
+        "object": "chars",
+        "offset": 9075
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "currentHP2",
+      "at": {
+        "object": "chars",
+        "offset": 15317
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "currentHP3",
+      "at": {
+        "object": "chars",
+        "offset": 21559
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "currentHP4",
+      "at": {
+        "object": "chars",
+        "offset": 27801
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "currentHP5",
+      "at": {
+        "object": "chars",
+        "offset": 34043
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "currentHP6",
+      "at": {
+        "object": "chars",
+        "offset": 40285
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "currentHP7",
+      "at": {
+        "object": "chars",
+        "offset": 46527
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "minorInjuryCharacters",
+      "at": {
+        "object": "eventBytes",
+        "offset": 3
+      },
+      "size": 1
+    },
+    {
+      "name": "majorInjuryCharacters",
+      "at": {
+        "object": "eventBytes",
+        "offset": 35
+      },
+      "size": 1
+    },
+    {
+      "name": "injuryResponseCharacters",
+      "at": {
+        "object": "eventBytes",
+        "offset": 43
+      },
+      "size": 1
+    }
+  ],
+  "boundary": [
+    [
+      1,
+      6,
+      0,
+      25,
+      50,
+      255,
+      255,
+      255,
+      0,
+      10,
+      100,
+      0,
+      11,
+      101,
+      0,
+      12,
+      102,
+      0,
+      13,
+      103,
+      0,
+      14,
+      104,
+      0,
+      15,
+      105,
+      0,
+      16,
+      106,
+      0,
+      17,
+      107
+    ],
+    [
+      1,
+      6,
+      0,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      0,
+      6,
+      -32768,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      0,
+      255,
+      32767,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      1,
+      0,
+      0,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      1,
+      1,
+      0,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      255,
+      1,
+      32767,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      255,
+      0,
+      -32768,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      2,
+      255,
+      0,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      1,
+      1,
+      0,
+      25,
+      50,
+      1,
+      254,
+      255,
+      255,
+      49,
+      100,
+      0,
+      11,
+      101,
+      0,
+      12,
+      102,
+      0,
+      13,
+      103,
+      0,
+      14,
+      104,
+      0,
+      15,
+      105,
+      0,
+      16,
+      106,
+      0,
+      17,
+      107
+    ],
+    [
+      1,
+      1,
+      0,
+      25,
+      50,
+      2,
+      253,
+      255,
+      0,
+      10,
+      100,
+      255,
+      49,
+      100,
+      0,
+      12,
+      102,
+      0,
+      13,
+      103,
+      0,
+      14,
+      104,
+      0,
+      15,
+      105,
+      0,
+      16,
+      106,
+      0,
+      17,
+      107
+    ],
+    [
+      1,
+      1,
+      0,
+      25,
+      50,
+      4,
+      251,
+      255,
+      0,
+      10,
+      100,
+      0,
+      11,
+      101,
+      255,
+      49,
+      100,
+      0,
+      13,
+      103,
+      0,
+      14,
+      104,
+      0,
+      15,
+      105,
+      0,
+      16,
+      106,
+      0,
+      17,
+      107
+    ],
+    [
+      1,
+      1,
+      0,
+      25,
+      50,
+      8,
+      247,
+      255,
+      0,
+      10,
+      100,
+      0,
+      11,
+      101,
+      0,
+      12,
+      102,
+      255,
+      49,
+      100,
+      0,
+      14,
+      104,
+      0,
+      15,
+      105,
+      0,
+      16,
+      106,
+      0,
+      17,
+      107
+    ],
+    [
+      1,
+      1,
+      0,
+      25,
+      50,
+      16,
+      239,
+      255,
+      0,
+      10,
+      100,
+      0,
+      11,
+      101,
+      0,
+      12,
+      102,
+      0,
+      13,
+      103,
+      255,
+      49,
+      100,
+      0,
+      15,
+      105,
+      0,
+      16,
+      106,
+      0,
+      17,
+      107
+    ],
+    [
+      1,
+      1,
+      0,
+      25,
+      50,
+      32,
+      223,
+      255,
+      0,
+      10,
+      100,
+      0,
+      11,
+      101,
+      0,
+      12,
+      102,
+      0,
+      13,
+      103,
+      0,
+      14,
+      104,
+      255,
+      49,
+      100,
+      0,
+      16,
+      106,
+      0,
+      17,
+      107
+    ],
+    [
+      1,
+      1,
+      0,
+      25,
+      50,
+      64,
+      191,
+      255,
+      0,
+      10,
+      100,
+      0,
+      11,
+      101,
+      0,
+      12,
+      102,
+      0,
+      13,
+      103,
+      0,
+      14,
+      104,
+      0,
+      15,
+      105,
+      255,
+      49,
+      100,
+      0,
+      17,
+      107
+    ],
+    [
+      1,
+      1,
+      0,
+      25,
+      50,
+      128,
+      127,
+      255,
+      0,
+      10,
+      100,
+      0,
+      11,
+      101,
+      0,
+      12,
+      102,
+      0,
+      13,
+      103,
+      0,
+      14,
+      104,
+      0,
+      15,
+      105,
+      0,
+      16,
+      106,
+      255,
+      49,
+      100
+    ],
+    [
+      0,
+      6,
+      1,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      0,
+      0,
+      1,
+      100,
+      100,
+      1,
+      0,
+      100,
+      1,
+      101,
+      100,
+      1,
+      4294967295,
+      100,
+      1,
+      4294967294,
+      4294967295,
+      1,
+      42949673,
+      4294967295,
+      1,
+      10,
+      100
+    ],
+    [
+      0,
+      6,
+      -1,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      0,
+      6,
+      0,
+      25,
+      50,
+      255,
+      255,
+      255,
+      1,
+      24,
+      100,
+      1,
+      25,
+      100,
+      1,
+      26,
+      100,
+      1,
+      27,
+      100,
+      1,
+      28,
+      100,
+      1,
+      29,
+      100,
+      1,
+      30,
+      100,
+      1,
+      31,
+      100
+    ],
+    [
+      0,
+      6,
+      1,
+      0,
+      0,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      0,
+      6,
+      1,
+      4294967295,
+      0,
+      255,
+      255,
+      255,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ],
+    [
+      0,
+      6,
+      1,
+      25,
+      50,
+      0,
+      0,
+      0,
+      1,
+      10,
+      100,
+      1,
+      11,
+      101,
+      1,
+      12,
+      102,
+      1,
+      13,
+      103,
+      1,
+      14,
+      104,
+      1,
+      15,
+      105,
+      1,
+      16,
+      106,
+      1,
+      17,
+      107
+    ]
+  ],
+  "random": {
+    "seed": 5426544,
+    "count": 48,
+    "ranges": [
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        8
+      ],
+      [
+        -32768,
+        32767
+      ],
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        1,
+        4294967295
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        1,
+        4294967295
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        1,
+        4294967295
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        1,
+        4294967295
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        1,
+        4294967295
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        1,
+        4294967295
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        1,
+        4294967295
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        1,
+        4294967295
+      ]
+    ]
+  },
+  "description": "Eight separate party records (main stride 0x1862, slot stride 0x106) expose independent occupancy and HP. Every occupied slot rolls even if dead or full. Shared injury event masks and mutable thresholds are inputs and outputs, including unsigned HP overflow. Synthetic event IDs and empty-name notification fixture follow 0052add0: renderer absent, colon format and empty suffix, wcscat/wcslen stubs for these empty strings only. No executable tables are embedded. All five local blocks are reachable; no coverage exemptions."
+}

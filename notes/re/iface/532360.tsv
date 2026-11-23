@@ -1,0 +1,20 @@
+call	40efa0	actionPercentileRoll	以 R(100)+1 生成行動百分骰；後续消費尚未確認，保守保留規則亂數與呼叫次數
+call	536170	initializeActionTarget	清空目標記錄，角色、怪物及其他目標 ID 初始化為 -1；來源 0x536170
+call	5e2480	appendMonsterAction	將新行動加入怪物戰鬥清單，滿時容量加五並保留現有項目；來源 0x5e2480
+call	65	無關	分析器以 import 編號列出 malloc，僅配置 48 bytes 行動記錄，不決定遊戲規則；現有 heap 樁足夠
+data	5eb1a0	無關	malloc 的 IAT 槽，僅配置行動記錄，非規則資料表
+data	4	無關	堆疊參數槽或呼叫後清理大小，非絕對位址的遊戲資料
+data	8	無關	堆疊參數定位位移，非絕對位址的遊戲資料
+data	c	無關	堆疊參數定位位移或清理大小，非絕對位址的遊戲資料
+data	10	無關	堆疊參數定位位移，actionType 另由輸入與行動欄位命名
+data	14	無關	堆疊參數定位位移，attackIndex 另由輸入與行動欄位命名
+data	18	無關	堆疊參數定位位移，attackParameter 另由輸入與行動欄位命名
+field	eax+0x16	monsterActionList	怪物戰鬥記錄中的行動清單指標；清單含緩衝區、容量與項目數，case 顯式配置
+field	edi+0x0	actionTargetType	新行動的目標種類；1 寫角色 ID，3 寫怪物 ID，其餘保留初始化 ID
+field	edx+0x10	monsterCombatRecord	第一參數怪物物件的戰鬥記錄指標，經 +0x16 找行動清單
+field	esi+0x0	actionType	行動種類；0 才保存額外攻擊參數；原版呼叫點包含 0、1、8
+field	esi+0x4	attackIndex	呼叫端提供的攻擊選擇值，完整保留 i32，包括 -1 的缺席值
+field	esi+0x8	attackParameter	行動種類 0 使用的額外攻擊參數，其他種類清零
+field	esi+0x10	characterTargetID	目標種類 1 的角色 ID；未選角色時為 -1
+field	esi+0x14	monsterTargetID	目標種類 3 的怪物 ID；未選怪物時為 -1
+field	esi+0x2c	actionPercentileRoll	新行動的 u8 百分骰，值域 1 至 100

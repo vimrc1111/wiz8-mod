@@ -1,0 +1,1 @@
+500060	500084	物品法術 ID 為 0 時走 srAssertFail（防禦性斷言）；calc 對 spell==0 panic，不是合法遊戲輸入

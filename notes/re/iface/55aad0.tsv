@@ -1,0 +1,3 @@
+data	68516c	itemRecords	物品定義記錄陣列指標；步長 0x10d，+0x85 為有號 byte 物品等級，來源 exe 0x55aad4、0x55aae8
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	ecx+edx*1+0x85	itemLevel	物品記錄 +0x85 的 i8 等級（索引為第二參數，步長 0x10d），來源 exe 0x55aae8

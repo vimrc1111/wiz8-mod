@@ -1,0 +1,19 @@
+call	4e5af0	monsterRelativeFormationQuadrant	從怪物 +0xc 的場景物件讀位置 +0x118，配合隊伍原點與朝向算四方向；子函式照原版執行；來源 exe 0x4e5af0、0x4534c0、0x555f30
+call	2b6	無關	登記器把 assertion 的 IAT 間接呼叫誤列為相對 call 目標；實際為 0x5ebaf4 的 srAssertFail，非公式子呼叫；來源 exe 0x51af62
+data	4	無關	第一參數或局部值的堆疊位移，不是絕對資料位址；來源 exe 0x51aee0、0x51af68
+data	8	無關	局部堆疊空間大小，不參與射程公式；來源 exe 0x51aec0、0x51aff2
+data	fffffffffffffffb	無關	差值取絕對值的符號延伸運算被誤識為資料引用，不讀此位址；來源 exe 0x51af79..0x51af85
+data	fffffffffffffffc	無關	堆疊與位元遮罩的分析產物，不讀此絕對位址；來源 exe 0x51aee0、0x51af07
+data	5ebaf4	srAssertFailImport	怪物方向不得為中央區 4 的防禦 assertion；合法方向 0..3 不呼叫；來源 exe 0x51af4a..0x51af62
+data	61a604	無關	assertion 的來源檔名字串，合法輸入不讀，與射程數值無關；來源 exe 0x51af58
+data	61a6d8	無關	assertion 條件說明字串，合法輸入不讀，與射程數值無關；來源 exe 0x51af5d
+data	685174	partyCharacterRecords	執行期角色陣列指標，步長 0x1862；case 配置八筆 arena 記錄；來源 exe 0x51aef6；notes/re/growth.md:67
+data	687511	formationQuadrantSlots	五區各三個 u8 角色索引，255 為空槽；讀怪物方向區的可用角色；來源 exe 0x51af0d..0x51af43
+data	68751d	formationCenterSlots	中央三個角色槽，在對向且怪物方向區無可用角色時檢查；來源 exe 0x51afa3..0x51afd4
+data	68751e	formationCenterSlot1	中央第二槽，隨中央迴圈讀取；也由五區輸入配置；來源 exe 0x51afa3..0x51afd2
+data	687525	characterFormationQuadrants	每角色隊形象限的 u8 記錄，步長 12；中央為 4；來源 exe 0x51aed2..0x51aee9
+field	ebx+eax*2+0x17b5	characterFormationUnavailable	中央槽所指角色的隊形不可用旗標，零可用、非零排除；角色步長 0x1862；來源 exe 0x51afad..0x51afc8；notes/re/combat-2.md:32
+field	ebx+ecx*2+0x17b5	characterFormationUnavailable	怪物方向槽所指角色的同一隊形不可用旗標；只讀此旗標，不代入 HP 或主狀態；來源 exe 0x51af1c..0x51af37
+field	ecx*4+0x687525	characterFormationQuadrant	第一參數角色索引乘 12 的象限欄，差值比較按有號八位解讀；來源 exe 0x51aed2..0x51aed9、0x51af79
+field	edx+0x68751d	centerSlotCharacterIndex	三個中央槽，255 空槽，其他是角色索引 0..7；來源 exe 0x51afa3..0x51afd2
+field	esi+ebp*1	monsterDirectionSlotCharacterIndex	怪物相對方向的三個隊形槽；區起點 0x687511+3*方向，255 空槽；來源 exe 0x51af0d..0x51af3f

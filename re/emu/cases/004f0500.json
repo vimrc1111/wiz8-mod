@@ -1,0 +1,26 @@
+{
+  "cc": "cdecl",
+  "steps": 32,
+  "path_limit": 1,
+  "samples": 1,
+  "objects": {"combatState": 0},
+  "args": [],
+  "setup": [
+    {"at": {"global": "0x6836a8"}, "size": 4, "value": "@combatState"}
+  ],
+  "in": [
+    {"name": "partyActionMode", "at": {"object": "combatState", "offset": "0x910"}, "size": 4, "signed": false}
+  ],
+  "out": [
+    {"name": "phaseStep", "at": {"reg": "eax"}, "size": 4, "signed": false}
+  ],
+  "boundary": [
+    [0], [1], [2], [3], [255], [256], [65535], [65536],
+    [2147483647], [2147483648], [4294967294], [4294967295]
+  ],
+  "random": {
+    "seed": 5178624,
+    "count": 128,
+    "ranges": [[0, 4294967295]]
+  }
+}

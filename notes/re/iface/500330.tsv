@@ -1,0 +1,19 @@
+call	2b6	無關	srAssertFail 匯入呼叫的分析標記；僅結果不在 1..7 的防禦性斷言，不是公式子節點
+call	40efa0	rand_n	亂數 R(n)，n=4 取一次，模擬器樁接、calc 以 Rand 介面重放
+call	4e5720	monster_template_lookup	由怪物 +8 的模板編號取模板記錄；case 在 arena 擺三筆模板，calc 的 templateBonus 即所選模板 +0x26f
+call	4e5150	monster_display_name	只在模板 +0x26f 為 0 時取怪物名供錯誤訊息，不改變結果
+call	5182e0	資料錯誤訊息格式化	只把「怪物施法資料錯誤」文字格式化進堆疊緩衝區，無回傳也無遊戲狀態寫入；calc 不重現
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 IAT 槽；結果不在 1..7 的防禦性斷言，合法輸入不呼叫
+data	61920c	無關	斷言的來源檔名字串，只供 srAssertFail 診斷
+data	619748	無關	斷言的條件文字字串，只供 srAssertFail 診斷
+data	61924c	無關	資料錯誤訊息格式字串，只供 5182e0 格式化
+data	616df0	monsterSpellRiskThresholds	17 個 u32 的每等級門檻表（索引 0..16），calc 執行時從使用者的 Wiz8.exe 讀，不內嵌
+data	616e30	monsterSpellRiskThresholds	同表索引 16（上限）項；索引超過 16 一律用此項
+data	65be1c	spellRecords	法術記錄基址，stride 447；+0x49 每 PL 成本、+0x56 領域等級；case 擺 160 筆並對其餘槽放誘餌值
+field	ebp+0x2f9	monsterBonus	怪物實例欄位 i32，與模板 +0x26f 相加後下限 0
+field	eax+0x26f	templateBonus	怪物模板欄位 i32（0 時只多一次錯誤訊息）；case 以 templateId 在三筆模板中選一筆，其餘放誘餌
+field	ebx+ecx*1+0x49	spellCostPerLevel	法術記錄 +0x49 i32，除以 2（向零取整）
+field	ebx+ecx*1+0x56	spellRealmLevel	法術記錄 +0x56 i32，與上項一半相加後上限 16 作為表索引
+field	eax*4+0x616df0	monsterSpellRiskThresholds	門檻表項（索引為上兩項之和，上限 16）；負索引讀表前的 bytes

@@ -1,0 +1,84 @@
+# 呼叫端：唯一呼叫點 0x502de7 只對在場隊員（在場記錄位元組非 0）呼叫本函式；case 的 who 0..7、在場位元組 0／1 皆覆蓋。
+# 位址樁：52a890、522fe0、523330、52add0、52b1c0、52af50、52b4f0、52b6d0、5236a0、523a80、548e60、51d960、4ed9d0（D4 公式，呼叫端不讀回傳，0x5a5a5a5a 驗證；引數與呼叫次數成為輸出）；5b1af0、5b1b30、569a50、58aad0（排除類，記錄引數與次數）。590950、58b410、517a90、562a50 原樣執行，不在輸出。
+# F：同樣記錄樁，並以本節點記憶體建 D4 子呼叫的世界執行其 Go，寫回角色、在場、畫面與全域輸出；本節點沒有的子呼叫輸入為 0（同 n_524720）。
+# case 範圍：八個角色記錄（非 who 槽放誘餌值）、八筆在場記錄、背包 0..6 筆（上限，超過 calc 報錯）、職業 -1..14、種族 -1..15；不讀寫遊戲目錄。
+# 不合法狀態：+0xb19 為 0 時 4ed9d0 內除以零（原版 #DE），calc 報錯；debug 位元組 0x688290 非 0 時 506280 會記錄故事旗標讀取，calc 報錯。
+# 覆蓋：5031ec、5031f3 不可達（R(5) 只回 0..4），登記 cov-exempt，calc 報錯；其餘 137 個基本塊皆由合法輸入命中。
+call	2b6	srAssertFail	IAT 0x5ebaf4 的 srAssertFail 分析標記；只在 R(5) 超出 0..4 的不可達分支出現（cov-exempt）。
+call	40efa0	engineRandom	R(n)：狀態 2 的機率與四選一損失、狀態 10 的 R(7)、R(4) 損失量。
+call	42b740	NPC 招募選擇碼轉職業鍵	以全域選擇碼 0x686a70 查表取有號位元組；選擇碼 0x10/0x26 先經 0x4d9700 依故事旗標 0x5b/0x1ce 改寫；狀態 10 依此決定是否計時。
+call	520f90	characterHasItem	在角色 +0xf5d 的 12 筆找物品編號，模式非 0 時再查 +0x1029 的 8 筆；經 0x521060 呼叫。
+call	547940	種族職業能力判定	查職業列（3 項）與種族列（5 項）是否提供能力 0／0x12；-1 略過該列。
+call	5479b0	classFeatureScaledLevel	職業等級比例值（常數 0x5ee800 60.0、0x5ed490 0.01）乘入回復分數。
+call	553ad0	attributeChanged	屬性變動後設旗標位元組、夾制衍生屬性並重算 41 項技能平均；介面模式 7 時記錄訊息（569a50），並呼叫 51d960／4ed9d0。
+call	55ee30	markInterfaceRefresh	介面模式 6 時在畫面物件 +0xf8 設 0x100；calc 的 refresh 重現。
+call	5e1c22	x87 截斷取整	回復分數的整數部分，向零截斷取低 32 位。
+data	4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表。
+data	8	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表。
+data	ffffffffffffffdb	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	ffffffffffffffdc	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	ffffffffffffffe0	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	ffffffffffffffe4	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	ffffffffffffffe8	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	ffffffffffffffec	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	fffffffffffffff0	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	fffffffffffffff4	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	fffffffffffffff8	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	fffffffffffffffc	無關	參數堆疊位移（區域暫存），被分析為資料引用，非遊戲資料或表。
+data	503964	turnLossJumpTable	狀態 2 損失種類 k=0..3 的跳躍表（exe 內，執行時由 exe 讀）。
+data	503974	wardConditionTable	0x243 護符移除的狀態編號表 {3,4,5,0xc,0xb,0x10}（exe 內，執行時由 exe 讀）。
+data	5ebaf4	無關	srAssertFail 的 IAT 位址，非遊戲資料。
+data	5ebb34	regenFactorZero	f32 0.0：回復係數基準。
+data	5ebb38	regenFactorRest	f32 1.0：休息時回復係數。
+data	5ebc7c	regenFactorHalf	f32 0.5：模式 3 非戰鬥時係數、SP 係數下限。
+data	5ebcc8	regenFactorQuarter	f32 0.25：係數乘數。
+data	5ebccc	regenFactorThreeQuarter	f32 0.75：無能力 0 戰鬥時 SP 係數乘數。
+data	5ec340	regenFactorBonus	f32 1.25：能力 0 且戰鬥時 SP 係數乘數。
+data	609b24	無關	assert 檔名字串，只在不可達分支（cov-exempt）。
+data	619864	無關	assert 運算式字串，只在不可達分支（cov-exempt）。
+data	6198bc	無關	assert 訊息字串，只在不可達分支（cov-exempt）。
+data	61e3a4	attributeNameStringIds	七屬性的訊息字串編號（u16，步距 2），索引訊息表 0x68c09c；只作 590950 引數。
+data	683f94	inCombat	戰鬥中旗標位元組。
+data	683fc5	resting	休息中旗標位元組。
+data	685174	characterTable	角色記錄陣列基底，步距 0x1862。
+data	686a70	recruitSelector	全域選擇碼（42b740 的輸入）。
+data	6874cb	cursorItem	游標上的物品格；0x521060 找到的位置等於此位址時表示在游標上。
+data	687509	travelMode	移動模式；3 且非戰鬥時每回合傷害不加半、回復係數 0.5。
+data	68c09c	messageTable	訊息字串表指標；只作 590950 引數。
+field	eax*4+0x503964	turnLossJumpTable	k=0..3 的跳躍表項。
+field	eax*4+0x503974	wardConditionTable	護符移除狀態表項。
+field	eax+0x0	conditionDuration	狀態槽計時（+0xa01+4k）；或回復分數整數部分寫回欄。
+field	eax+0x9b8	messageLostHp	訊息表 +0x9b8：損失 1 點 HP 訊息；只作 590950 引數。
+field	eax+0x9c0	messageLostAttribute	訊息表 +0x9c0：屬性損失訊息；只作 590950 引數。
+field	eax+0xe5	attributeBase	角色 +0xe5+20i：七屬性基礎值，損失時減 1（下限 1）。
+field	eax+0xed	attributeLost	角色 +0xed+20i：屬性損失累計，損失時加 1。
+field	eax+edx*4	messageById	訊息表依屬性字串編號取字串；只作 590950 引數。
+field	ebx+0x0	realmSpMax	角色 +0xb25+4r：六系 SP 上限（與 +0xb45+4r 比較）。
+field	ebx+0x20	realmSp	角色 +0xb45+4r：六系 SP 目前值。
+field	ecx+0x0	realmSpMax	同 ebx+0x0（重設分數迴圈）。
+field	ecx+0x20	realmSp	同 ebx+0x20（重設分數迴圈）。
+field	ecx+0x9c4	messageLostStamina	訊息表 +0x9c4：損失耐力訊息；只作 590950 引數。
+field	edi*2+0x61e3a4	attributeNameStringIds	七屬性字串編號表項。
+field	edi+0x0	realmSpFraction	角色 +0xb7d+8r：六系 SP 回復分數（f32）；或效果計時 +0xa6d+12j。
+field	edi-0x4	realmSpRate	角色 +0xb79+8r：六系 SP 回復速率（f32）。
+field	edx+0x9bc	messageLostHpN	訊息表 +0x9bc：損失 N 點 HP 訊息；只作 590950 引數。
+field	esi+0x125	vitalityDerived	角色 +0x125（衍生屬性 3）：狀態 2 的機率分母 R(10×值)。
+field	esi+0x1778	damagePerTick	每回合傷害位元組（52a890 引數）。
+field	esi+0x1779	hpRatePerTick	有號位元組：每回合 HP 增減。
+field	esi+0x177a	staminaRatePerTick	有號位元組：每回合耐力增減。
+field	esi+0x177b	spRatePerTick	有號位元組：每回合 SP 增減。
+field	esi+0xa09	condition2	狀態槽 2 計時：非 0 時隨機損失。
+field	esi+0xa25	condition9	狀態槽 9 計時；9999 為永久。
+field	esi+0xa29	condition10	狀態槽 10 計時。
+field	esi+0xa2d	condition11	狀態槽 11 計時；與 0x243 護符相關。
+field	esi+0xb0d	hitPoints	目前 HP。
+field	esi+0xb11	hitPointsMax	HP 上限（損失目標）。
+field	esi+0xb15	hitPointsLost	HP 損失累計。
+field	esi+0xb19	stamina	目前耐力；4ed9d0 以其為除數，0 為不合法。
+field	esi+0xb1d	staminaMax	耐力上限（有號）。
+field	esi+0xb21	staminaLost	耐力損失累計。
+field	esi+0xb65	restCounter	能力 0x12 休息計數。
+field	esi+0xb69	hpRegenRate	f32 HP 回復速率。
+field	esi+0xb6d	hpRegenFraction	f32 HP 回復分數。
+field	esi+0xb71	staminaRegenRate	f32 耐力回復速率。
+field	esi+0xb75	staminaRegenFraction	f32 耐力回復分數。

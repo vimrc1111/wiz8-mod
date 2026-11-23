@@ -1,0 +1,62 @@
+call	5010f0	spellTargetClass	法術（或物品法術）的目標分類；calc 的 spellClass 重現（0x536771）
+call	519180	targetReachable	來源記錄的目標是否仍可達；calc 的 reach 重現，種類 6 幾何路徑 cap（0x53690b）
+call	5207c0	itemSpellFlag	由物品定義推得傳給 5010f0 的物品旗標；calc 內嵌於 spellClass 的 itemflag（0x536762）
+call	537160	targetKindMatches	動作記錄是否符合目標分類；calc 的 kindOK 重現（0x5368fa）
+call	53b920	sourceKindResolve	來源索引，6 先解析、種類 6 與大於 7 時 assert；calc 的 kind 重現（0x5368c0）
+call	53bc10	resolveSourceIndex	把來源 6 解析成實際來源 0..4、7；calc 的 resolve 重現，此塊在 cov-exempt（0x536667）
+call	55ee30	refreshModeDisplay	畫面模式 6 或 7 的顯示更新位元；calc 的 refresh 重現（0x536973）
+call	2b6	assertFailureIndirectCall	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，防禦性 assert，合法輸入不到，只在 cov-exempt 的塊裡出現
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import；只在 assert 失敗時呼叫，合法輸入不到，stop 無返回值可差分
+data	4	無關	堆疊參數位移立即值，非資料表或全域記憶體引用
+data	8	無關	堆疊參數位移立即值，非資料表或全域記憶體引用
+data	c	無關	堆疊參數位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffc6	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffc7	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffc8	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffcc	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffd0	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffd4	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffd8	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffdc	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffe0	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffe4	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffe8	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffec	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	536988	switchJumpTable	編譯器為 switch 產生的跳轉表，內容是本函式內的基本塊位址；控制流由 calc 的 switch 重現，不是遊戲資料；來源 exe 0x53667a
+data	536994	switchJumpTable	編譯器為 switch 產生的跳轉表，內容是本函式內的基本塊位址；控制流由 calc 的 switch 重現，不是遊戲資料；來源 exe 0x53667a 表的後半，與 536988 同表
+data	5369a8	switchJumpTable	編譯器為 switch 產生的跳轉表，內容是本函式內的基本塊位址；控制流由 calc 的 switch 重現，不是遊戲資料；來源 exe 0x536701
+data	5369cc	switchJumpTable	編譯器為 switch 產生的跳轉表，內容是本函式內的基本塊位址；控制流由 calc 的 switch 重現，不是遊戲資料；來源 exe 0x5367c9
+data	5369d8	switchJumpTable	編譯器為 switch 產生的跳轉表，內容是本函式內的基本塊位址；控制流由 calc 的 switch 重現，不是遊戲資料；來源 exe 0x5367c3，索引表（位元組）
+data	609b24	assertMessage	assert 呼叫的訊息字串位址；只在 assert 失敗時使用，無規則效果
+data	61d18c	assertSourceFile	assert 呼叫的來源檔名字串位址；只在 assert 失敗時使用，無規則效果
+data	61d1bc	assertMessage	assert 呼叫的訊息字串位址（動作記錄為空）；只在 assert 失敗時使用，無規則效果
+data	683f95	specialSpellMode	非零表示特殊法術選擇；與選中角色相符時來源解析為 2
+data	683f96	specialItemMode	非零表示特殊物品選擇；與選中角色相符時來源解析為 2
+data	68510c	alternateBreathMessage	非零時對自動鎖定成功的怪物目標通知一次；本節點只傳格式參數
+data	68516c	itemDefinitionRecords	物品定義陣列指標，索引乘 0x10d；+0x63 為法術位元組、+0x3e 為類別；case 用 arena 模擬可變記錄，非固定 exe 表
+data	6836a8	battleContext	戰鬥上下文物件指標；+0 啟用旗標、+8 行動階段下限、每角色 0xd4 記錄的 +0x18 行動階段、+0x4c 旗標、+0x99 切換位元組、+0xb4 基準、+0xbf 標記、+0x7b4 選中角色；case 配置合法物件
+data	683f94	combatActiveFlag	戰鬥進行中旗標位元組；非零才走戰鬥分支
+data	68518d	activeCharacterIndex	目前選中角色索引，有號；與目標槽相符才更新選擇相位
+data	68ec78	combatPhaseType	畫面模式；7 且 68edcc 的物件存在時採介面選取狀態
+data	68edcc	uiSelectionObject	介面選取物件指標；+0x2f0 動作碼、+0x2f8 旗標、+0x154／+0x2ca／+0xf4 為顯示狀態；case 配置合法物件
+data	685174	partyCharacterRecords	角色主記錄陣列的執行期指標，索引乘 0x1862；非 exe 常數表
+data	685178	partySlotRecords	槽位記錄陣列的執行期指標，索引乘 0x106；非 exe 常數表
+data	68c09c	messageCatalog	訊息目錄指標；本節點只取其中字串指標當格式參數傳給 590950，文字內容無規則效果，case 配置合成目錄
+field	eax*4+0x536988	switchJumpTable	switch 跳轉表索引；控制流由 calc 的 switch 重現
+field	eax*4+0x5369a8	switchJumpTable	switch 跳轉表索引；控制流由 calc 的 switch 重現
+field	ecx*4+0x5369cc	switchJumpTable	switch 跳轉表索引；控制流由 calc 的 switch 重現
+field	esi+0x5369d8	switchIndexTable	switch 位元組索引表；控制流由 calc 的 switch 重現
+field	eax+0x0	itemIndex	裝備物品指標指向的物品索引，i32；-1 表空；來源 exe 0x53673b
+field	eax+0x4	monsterEntryHandle	怪物清單項 +4 的怪物句柄，i32；傳給 53c720 當搜尋參數；來源 exe 0x53680d
+field	eax+0xb01	mainStatus	角色主狀態碼，u32；無號值小於 0x12 才可成為目標；來源 exe 0x5365bb
+field	eax+0xb11	currentHP	角色目前 HP，i32；非零才可成為目標；來源 exe 0x5365b1
+field	ecx+0x0	actionRecordKindOrCounter	同一運算元三處：動作記錄第一個 dword（種類碼，變更前後比較，0x536781、0x53696e）；戰鬥記錄 +0xac 計數遞增（0x5367b2）
+field	ecx+0x2f0	uiSelectionActionCode	介面選取物件 +0x2f0 動作碼，i32；-1 表無；來源 exe 0x5365f1
+field	ecx+0x2f8	uiSelectionFlag	介面選取物件 +0x2f8 位元組旗標；來源 exe 0x536600
+field	ecx+0x4	actionRecordPointerField	動作記錄指標欄位（物品指標），同 eax+0x4；來源 exe 0x536734
+field	ecx+0x9ac	messageCatalogEntry	訊息目錄 +0x9ac 的字串指標，只當格式參數；來源 exe 0x5368ad
+field	edi+0x0	無關	堆疊區域變數的清零（rep stos 填 0），非記憶體欄位引用；來源 exe 0x536856
+field	edx+0x8	actionRecordId	動作記錄 +8 的怪物 ID，i32；-1 表無；來源 exe 0x5367e2
+field	edx+ecx*2	slotPresent	槽位記錄 +0 存在位元組，索引乘 0x106；為零直接返回 0；來源 exe 0x536589
+field	esi+0x63	itemSpell	物品定義 +0x63 的法術位元組；來源 exe 0x536769
+field	esi+ecx*1+0x63	itemSpell	物品定義 +0x63 的法術位元組，由索引計位址；來源 exe 0x536755

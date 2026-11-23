@@ -1,0 +1,5 @@
+internal/calc/party.go
+internal/calc/party_test.go
+tools/calc/main.go
+tools/calc/main_test.go
+notes/calc-party.md

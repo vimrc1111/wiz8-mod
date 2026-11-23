@@ -1,0 +1,5 @@
+4fa4d0	4fa5cc	法術 +0x12b 模式 >3 的跳表預設分支：其後讀的 keep 位元組（esp+0x10）在此路徑從未寫入（未初始化堆疊）；法術資料的模式只有 0..3，合法輸入到不了。calc 對此 panic（rec+0x12b above 3）
+4fa4d0	4fa881	失敗率 <0 的夾限：skill<m 時 (70m−70skill)/m 落在 (0,70]，m ≤ 110×8/7（表 0x616df0 最大 110、PL ≤ 8），不會溢位為負；合法輸入到不了。calc 對此 panic（failure chance outside 0..100）
+4fa4d0	4fa890	失敗率 >100 的夾限：同上，值不超過 70；合法輸入到不了。calc 對此 panic（failure chance outside 0..100）
+4fa4d0	4fa99d	戰鬥難度 0x6850d5 不在 0..2 的 srAssertFail 塊（0x14e8）；難度只有 0..2，srAssertFail 停止、沒有可差分的返回。calc 經 combatSpellRiskPhaseScalingNode 對此 panic（invalid combat difficulty）
+4fa4d0	4fabaf	經驗等級（法術 +0x56 ＋ 施放等級數）<2 的 srAssertFail 塊（0x3d5）；只在施放等級數 ≥1 時進入，法術等級 ≥1，和必 ≥2；srAssertFail 停止。calc 對此 panic（experience level below 2）

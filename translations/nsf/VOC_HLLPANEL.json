@@ -1,0 +1,22 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "a83820eba2a593e57d91eae89d3d2eb75eef16b2e3ccf9bc24cd4e8f6c560b17",
+  "zh": "掃描中……"
+ },
+ {
+  "id": 1,
+  "src_sha256": "a83820eba2a593e57d91eae89d3d2eb75eef16b2e3ccf9bc24cd4e8f6c560b17",
+  "zh": "掃描中……"
+ },
+ {
+  "id": 2,
+  "src_sha256": "ad299d65975e92a26ffd37d8efc762df2cc23906ba28b9af7b285d169927621e",
+  "zh": "找到 HLL 識別。軍官 Marten。允許存取。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "b42b2cfba032b6ad61cea63c63a18a0d63be025dd537ea73bad43732ec99b7a0",
+  "zh": "無 HLL 識別。拒絕存取。"
+ }
+]

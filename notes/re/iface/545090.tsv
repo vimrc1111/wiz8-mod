@@ -1,0 +1,63 @@
+call	40efa0	亂數 R(n)	兩次 R(100)：先選命中部位（累加權重，無號小於即選中），再加一當穿透擲骰；calc 以 Rand 介面重放
+call	4ed260	穿透檢定除錯輸出	以 ASCII 樣板格式化機率與擲骰值，除錯旗標開時送訊息區（類別 7）；不改規則數值
+call	52bb60	怪物傷害入口	吸收護盾、通知訊息、記錄攻擊來源與隊員功勞、扣怪物生命，致死時倒下處理、未致死時扣體力
+call	53bea0	攻擊來源是否為角色	類型1為角色（索引-1斷言）；回傳值未使用，只剩斷言
+call	53c320	攻擊來源陣營	角色或帶旗標的類型3隊伍來源回 8、怪物來源回 9、其他回 12；索引或識別碼為 -1 時斷言
+call	542e10	攻擊模式穿透修正	第一參數 1 時依攻擊模式 0..8 查表（0,10,-5,-30,5,-5,0,-10,10），超過 8 斷言
+call	57	無關	Ghidra EXTERNAL 位址空間的 wcscat 匯入（IAT 0x5eb168，經 call ebx），非 exe 內位址；build/re/funcs.tsv 中「呼叫含 57」與「資料引用含 5eb168」完全同現（22 對 22）。只組訊息文字。
+call	5f	無關	Ghidra EXTERNAL 位址空間的 swprintf 匯入（IAT 0x5eb188），非 exe 內位址；build/re/funcs.tsv 中與資料引用 5eb188 完全同現（83 對 83）。只組訊息文字。
+call	66	無關	Ghidra EXTERNAL 位址空間的 wcslen 匯入（IAT 0x5eb1a4，經 call ebp），非 exe 內位址；build/re/funcs.tsv 中與資料引用 5eb1a4 完全同現（73 對 73）。只量訊息長度供頭像標示。
+call	78	無關	Ghidra EXTERNAL 位址空間的 wcscpy 匯入（IAT 0x5eb1ec），非 exe 內位址；build/re/funcs.tsv 中與資料引用 5eb1ec 完全同現（81 對 81）。只複製部位名稱入訊息。
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5eb168	無關	wcscat 匯入槽；只組訊息文字
+data	5eb188	無關	swprintf 匯入槽；只組訊息文字
+data	5eb1a4	無關	wcslen 匯入槽；只量訊息長度
+data	5eb1ec	無關	wcscpy 匯入槽；只複製部位名稱
+data	60cc74	無關	寬字串 " "，訊息分隔
+data	60cc78	無關	寬字串樣板 "%s "，訊息開頭
+data	616308	非怪物命中部位權重表	5 個無號位元組（15,40,30,10,5，合計 100），d100 累加選部位；calc 執行期讀 exe
+data	616309	非怪物命中部位權重表（續）	同 616308 表的第二格起，分析器把迴圈位址另列一筆
+data	61d2ac	無關	斷言來源檔名文字；怪物查找的除錯來源參數
+data	61d4f8	無關	ASCII 除錯樣板「TO PENETRATE: Chance %d, Rolled %d」
+data	61d51c	無關	部位擲骰落空的記錄文字（不可達塊）
+data	61d548	無關	怪物部位擲骰落空的記錄文字，交記錄樁
+data	61e7b4	非怪物部位名稱訊息編號表（續）	61e7b0 起每格 4 bytes，取無號16位訊息編號；分析器把 +4 另列一筆
+data	61ea24	怪物部位名稱訊息編號表	無號16位，以（體型 + 6*部位）索引，取訊息表中的部位名稱；calc 執行期讀 exe
+data	65bde0	物品表基址	每筆 485 bytes，+0x144 為攻擊模式
+data	68510c	逐目標訊息模式旗標	非零時報告命中部位與零傷害訊息
+data	685174	partyCharacterRecords	角色記錄陣列基址（每人 0x1862 bytes），+5 為名字
+data	689b34	空部位名稱字串	部位權重 >= 100 時以此字串當部位名稱
+data	68c09c	訊息字串表基址	取各訊息樣板指標
+data	fffffffffffffed4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffedc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffee0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffee4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffee8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffeec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffef0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffef4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff1c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x6fc	訊息開頭樣板	訊息表第 0x1bf 筆
+field	eax+0x700	訊息附加文字	訊息表第 0x1c0 筆，飛行物旗標 +0x322 開時接在目標名稱後
+field	eax+0x838	零傷害訊息	訊息表第 0x20e 筆
+field	eax+0x83c	未穿透訊息	訊息表第 0x20f 筆
+field	eax+ecx*1+0x144	攻擊模式	物品表項 +0x144，0..8，查穿透修正並交防禦穿透
+field	ebp+0x15e	怪物體型	模板 +0x15e，索引部位名稱表
+field	ebx*4+0x61e7b0	非怪物部位名稱訊息編號	表 61e7b0 每格 4 bytes 取無號16位
+field	ebx+0x616308	非怪物命中部位權重	表 616308 第 i 格
+field	ebx+ebp*1+0x15f	怪物命中部位權重	模板 +0x15f 起 7 格；權重 >= 100 時部位名稱為空字串
+field	ecx+0x1d8	飛行物物品索引	飛行物記錄 +0x1d8，索引物品表
+field	ecx+0x322	訊息附加旗標	非零時訊息接訊息表第 0x1c0 筆
+field	ecx+eax*4	訊息樣板指標	以部位名稱訊息編號索引訊息表
+field	edi+0x0	目標類型	3 為怪物，其他走角色
+field	edi+0x4	目標角色索引	角色名稱與角色傷害入口的索引
+field	edi+0x8	目標怪物識別碼	查怪物記錄
+field	edx*2+0x61ea24	怪物部位名稱訊息編號	表 61ea24 以（體型 + 6*部位）取無號16位
+field	edx+0x830	部位報告訊息	訊息表第 0x20c 筆
+field	edx+0x850	中止訊息	訊息表第 0x214 筆，中止旗標開時送出後返回
+fixture	G1 actor+0x1dc	完整旗標輸入	actorFlags0／actorFlags1 為 u32 0..4294967295；移除固定 0x400 的 setup，既有 boundary 列保留原狀態並補兩欄 1024。新增兩旗標同為 0／全位元的既有情境副本，以及每個 actor 的逐位元列；random 原範圍與筆數不變，新增完整 u32 範圍。
+stub	4c6c30	零傷害表現（排除）	循 54e950 位址樁，pop=4、ret=0；新增每次堆疊參數 1（護盾吸收後的傷害量，上限 3 次）與呼叫次數輸出，this 為 monster+0xc 的 actor。僅在傷害尾端且 actor 非空時呼叫；無生命、零傷害與護盾完全吸收時不呼叫。依據 build/wiz8.asm:406760–406770；樁回傳值未讀取。
+verify	G1	位址樁與完整旗標域	boundary=232；原版重放 1732 條路徑 diff=0，node-accept 三節點 D4 通過。新增旗標列未見其他位元改變本夾具的節點輸出。四段注入：移除 550c10 的 4c6c30 樁 → g1-check exit 1 → 副本逐 byte 還原 → exit 0。

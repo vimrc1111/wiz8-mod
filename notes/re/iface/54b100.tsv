@@ -1,0 +1,29 @@
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5eb1a0	allocateResourceBlock	CRT malloc 匯入槽；配置 0xc310 與 0x830 bytes 兩塊並清零，位址不進輸出（模擬器內建 bump 配置不失敗）
+data	5eb224	releaseResourceBlock	CRT free 匯入槽；釋放舊的兩塊與表項指標，內建 no-op，與規則輸出無關
+data	6164dc	startingItemIds	exe 內六個起始物品 id 表（跳過 -1）；calc 讀同一份 exe 表重現，不是 case 輸入
+data	6164e0	startingItemIds	同上，第二項之後的表項（逐項遞增讀取）
+data	6164f4	startingItemIdsEnd	起始物品 id 表結尾（迴圈終止比較位址）
+data	685170	partyResourceBlock	隊伍資源區起點；先整塊清零 0x685170..0x689b32（背包、手持物、隊形等）
+data	685174	partyHeapA	堆積區塊指標 A（0xc310 bytes）；舊值先釋放，新位址不進輸出
+data	685178	partyHeapB	堆積區塊指標 B（0x830 bytes）；舊值先釋放，新位址不進輸出
+data	685189	packSlotLimit	背包槽上限，寫入 500（0x1f4）；亦為 case 輸出
+data	68518d	packFlagResult	0x518230(1,1,-1) 結果；區塊清零後恆為 -1；亦為 case 輸出
+data	685191	instanceTable	物品實例表起點（12 位元組一筆：id、數量、旗標）；先清為 id -1，之後由 0x521ef0 插入或合併
+data	68519d	instanceTableSlot1	實例表第二筆位址；0x521ef0 插入前整表上移一筆
+data	686901	instanceTableCount	實例表筆數 u32；清零後由插入遞增；亦為 case 輸出
+data	686a50	formationTailSlots	八個 dword 寫入 -1；亦為 case 輸出
+data	686a54	formationTailSlots	同上，第二個 dword 起（rep stos 八筆）
+data	686a70	selectionIndex	寫入 -1；亦為 case 輸出
+data	6874cb	heldItemInstance	游標手持物實例；0x520070 清為 id -1、數量零，並重設游標圖像標記
+data	687511	formationBlock	隊形區塊 132 bytes；由 0x554580 初始化；亦為 case 輸出
+call	520070	clearItemInstance	清空物品實例並重設手持物／游標標記；落在手持物位址時走 0x55f1e0（游標圖像釋放，0x427ab0／0x427ff0 為樁，次數與參數為輸出），其餘 500 筆實例各呼叫一次樁 0x520d10；case 重現結果
+call	554580	建立空隊形	五區十五槽填 255、人數歸零、八個成員記錄填 255 且面向 4；calc 以同樣初值重現。
+call	58fd30	clearResourceTable	清空 4 組各 350 筆、每筆 0x24 bytes 的表（0x68f2d8 起）：釋放指標與清單後九個 dword 歸零；原版照跑，calc 重現為整表歸零，case 輸出表項
+call	65	allocateResourceBlockCall	malloc 呼叫點（間接呼叫匯入槽）；模擬器內建樁不失敗，與規則無關
+call	86	releaseResourceBlockCall	free 呼叫點（間接呼叫匯入槽）；內建 no-op，與規則無關
+field	edi+0x0	itemInstanceId	物品實例（暫存實例或背包槽）的 id dword；0x521ef0 取其定義記錄比對種類與合併
+field	esi+0x0	tableEntryPointer	58fd30 表項第一個 dword（配置指標）；非零才釋放，之後整筆歸零

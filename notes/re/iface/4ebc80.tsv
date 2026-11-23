@@ -1,0 +1,10 @@
+call	547940	角色吐息能力資格	合併目前職業與種族能力表，另接受角色動態吐息效果；能力碼 28，來源 abilities.md:11、45
+data	4	無關	入口第一個堆疊參數的位移，被分析器列為資料引用；不是資料表，參數為角色槽位索引
+data	685174	角色主記錄陣列基址	characterIndex（0..7）乘 6242 定位主記錄；case 的 currentClass、race、breathEffect、maxStamina、currentStamina 均以此 index、stride=6242、count=8 寫入所選角色，來源 growth.md:67
+field	esi+ecx*1+0xb19	角色最大體力	角色主記錄 +0xb19 的 u32；除以 5 朝下取整得到吐息資格門檻，來源 abilities.md:45
+field	esi+ecx*1+0xb1d	角色當前體力	角色主記錄 +0xb1d 的 i32；以有號比較判定是否達門檻，來源 abilities.md:45
+field	C+0x69	角色目前職業	子呼叫以 i32 職業索引讀 0x61507c 的三項能力，-1 跳過；來源 abilities.md:11、growth.md:71
+field	C+0x71	角色種族	子呼叫以 i32 種族索引讀 0x615130 的五項能力，-1 跳過；來源 abilities.md:11、growth.md:73
+field	C+0xa79	角色動態吐息效果	子呼叫在職業與種族未授予能力時檢查 u32 非零；來源 abilities.md:11；case 先固定八人背景（職業／種族 -1、效果 0、最大體力 4294967294、當前體力 -2147483647），再覆寫所選角色五欄；背景皆無資格且每列最大／當前體力均與所選角色不同；新增各槽位 [-1,-1,1,10,2] 正例，讀錯角色或讀到背景體力會產生 diff
+data	61507c	目前職業能力表	子呼叫查三項能力；calc 啟動時從使用者 exe 讀取，不內嵌表值；來源 abilities.md:11
+data	615130	種族能力表	子呼叫查五項能力；calc 啟動時從使用者 exe 讀取，不內嵌表值；來源 abilities.md:11

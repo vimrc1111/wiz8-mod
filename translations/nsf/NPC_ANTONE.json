@@ -1,0 +1,537 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "c70f079ab8faea598440c85f556f23520f578ccf70cb9d14c7d9814d3da4b1aa",
+  "zh": "哼，這是誰啊？原來是銀河系來的小小探險家。喔，對了！我聽說過你們。說真的， Rapax 本來期待來的是更……有分量的人物。我想你們是來買我的兵器和護甲，還是想要一件訂製品（ custom piece ）？"
+ },
+ {
+  "id": 1,
+  "src_sha256": "8deb3ff9289bdf88cdfb89b3f0937bcda6efd3ae9a5cbc26b9c73148841cfe59",
+  "zh": "你們又回來了……"
+ },
+ {
+  "id": 2,
+  "src_sha256": "72d1c2372c4fe58b01a86969eb87c4beaeb450eeac3f6d834f4e1d00d90c272d",
+  "zh": "我現在沒空理你們。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "2d2ab2130972d63673f82beff3a054bc6bb70822cc64c3cdbef11ba4788934d6",
+  "zh": "你們讓我很火大……"
+ },
+ {
+  "id": 6,
+  "src_sha256": "3409e0d977f2813a5798963a142aea0cf94eb642ffe972c1cf940ca6da60ae2d",
+  "zh": "不要……威脅……我。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "6d444cd00baea8352f698b78dcbec618aae57b4d937cc8548034bd7e00cff496",
+  "zh": "我被冒犯了。這根本不夠！"
+ },
+ {
+  "id": 8,
+  "src_sha256": "3b73b31703f00ffae4c209ac1d21678597a47d4a54621c020d6926bfc911acc4",
+  "zh": "我想你們有更重要的事該去辦吧！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "0bf98fd1d2962c06161e3be2012010a7edb10138f5b4fdc9ed933d0558a92685",
+  "zh": "讓一個 Rapax 勇士加入你們，那不是太完美了嗎！不行，我不能跟你們走。想要這份榮耀，就去 Rapax Castle 付錢買吧。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "a43de6857ecefcf7aec5dd2dad7f7e750e6e28816f2819cf751754b3593bb660",
+  "zh": "是的……"
+ },
+ {
+  "id": 13,
+  "src_sha256": "f84b511a39cc0588b622fe8fa17b2adcca81e981084582eeedeae8039c45cffa",
+  "zh": "我用不上那個。"
+ },
+ {
+  "id": 14,
+  "src_sha256": "fd42d4ef40caaa19e054bb2c46602406c8782cc6f6a44830b700def71f3db3e7",
+  "zh": "我想你們應該願意為這種情報付錢吧。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "eaabc9c6df040bb79243dfef04ab6bd2160801bd28c54af5489e9d28699158fc",
+  "zh": "這次我不再收購任何東西了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "ad9a6b38b8733376901afaf51e115ca77f7296b9bbd5da0a5cfab769f618e523",
+  "zh": "我要求你們付清欠我的全部款項！"
+ },
+ {
+  "id": 17,
+  "src_sha256": "41c86017fe2deb51adda89a730b520890245d09347ee34785a883c71c113ef9f",
+  "zh": "我相當喜歡這件東西……所以它本來才會在我手上！這是你們從我這裡偷走的！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "f906809fd7bb67916e286a1f17fc82759dc8c93872a33c58b1379874cf5c54a9",
+  "zh": "真是可惜，你們千里迢迢跑到這裡，竟落得這種下場！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "d96903182bca12d7f27242f8567eb6a615b42bdd3ad7774f638208b76a7e1eb9",
+  "zh": "免得你們以為偷東西不用付出代價……"
+ },
+ {
+  "id": 20,
+  "src_sha256": "282dfbe1dbe77cb2bbcec0413d83834cba13ff7780c99c59991e6c57e1b6b402",
+  "zh": "從現在起，我要拿你們來試我的兵器！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "59d31c148be133a0e90ad694151a58bda51fc18e529673c3046ee047e87daf4a",
+  "zh": "如果我需要你們的錢，我自然會開口。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "5e9999f03cf27035436f20bb4d0f83186aa4c63f14278ea9f345de3882bba216",
+  "zh": "不，我不會浪費時間。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "4c27d91069102b3e66bd5e79fc5938be572e05e4b439a73ec169e08e3f8b8e1b",
+  "zh": "我不會回答你們的問題。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "29c28b8539bfad216f6b6c490e7ea0d3f802acb42659042d05c61d37b90ad2fb",
+  "zh": "你們遲早會明白的……"
+ },
+ {
+  "id": 25,
+  "src_sha256": "aa682e17b36c52e140751e728ab69e94899e6d25980a2ad78d491458d507edf9",
+  "zh": "我不喜歡重複說話，不過……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "e6562f3335ed59c624bf4c483d1d1b31c7b3d5bec80bbffc5d6c907eb5efd8c4",
+  "zh": "先處理最重要的那件事。是哪一件？"
+ },
+ {
+  "id": 27,
+  "src_sha256": "e251b5a6ad33e53fb47bf50d9257c1e39ef9d77549409917799c188832d86022",
+  "zh": "好，接著談另一件事……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "bdc6e3f936bb1ba07b4fba21f6b2757b6be93935db9db7a9e24abd738932f17e",
+  "zh": "我沒興趣……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "aca3e5ee0e5f18f628d663b63e0f6a10b105ea94f1d023efc546eedffbc196d8",
+  "zh": "我還有生意（ business ）要處理……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "e29ff3495bdc2cab3e6468265a39a3b79be9f9b8156df3d3343bcefbc29c98f1",
+  "zh": "也許我們晚點再談……"
+ },
+ {
+  "id": 32,
+  "src_sha256": "66f66dcf0036febb56c12d736f7a0b545679c1feeadcebbb01208fa5b67688a1",
+  "zh": "Arnika 。可惜 Higardi 幾乎都走光了。他們害怕那座塔和裡面的東西。但我可不會被嚇跑。事實上，生意（ business ）從來沒這麼好過。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "d2e91818f742e4470a08147022c7bcd6f0976a637eef3b16bd2042317d1ad274",
+  "zh": "喔，我勸你離我們的 Rift 和 Castle 遠一點，小朋友。唉，我那些比較熱情的同伴，大概會很樂意把你大卸八塊。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "4c4540ecbfb7fa7875f225578ff3e6d7468d8eb7f7800e1a8f5ebcb55bdfa00b",
+  "zh": "他們就是那個樣子……"
+ },
+ {
+  "id": 45,
+  "src_sha256": "30e23167c951dd2686a9c9ceb09c50b826940438c42a152bf53f49fd0ae1f535",
+  "zh": "你們一定對 Rapax 有點認識吧？嗯。我想你們很快就會認識了。如果到目前為止你們什麼都沒學到，就把這句話記在心裡……"
+ },
+ {
+  "id": 46,
+  "src_sha256": "058926c268ec0489f932cf7ee56dbaba36e030b7c25d26b13d7c8b65df324ded",
+  "zh": "Rapax 是這顆星球上最偉大、最強大的種族。沒有任何東西能擋住我們的計畫……任何東西都不能。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "f1dc6db3417da900b0126871436739192df7ed25757f39470078ef91feaf3f6f",
+  "zh": "你們自己去問他們……"
+ },
+ {
+  "id": 53,
+  "src_sha256": "cf72cdea8d74b5acedd3a99eb2f8e6ad287c759ae1f7cf62acaed542ce1b6def",
+  "zh": "那是我最不想談的事！"
+ },
+ {
+  "id": 55,
+  "src_sha256": "e531c1ccfdc0fabc692dd8bc3366bc1a1618ed89ad706b54e144d236560817f5",
+  "zh": "喔，是的，我知道他是誰。他也知道我是誰。就到此為止吧。別再拿你們的問題煩我了。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "ef2ba1769c5332b9fc11fec445a00d9fc00d7b2b550a2bfef9ef2ba563965e0b",
+  "zh": "你們自己去問她……"
+ },
+ {
+  "id": 58,
+  "src_sha256": "4ec133eb8f7356cac9a7186da8ed1c6a6adfd68c45aa40c7f5f813d2eef0328a",
+  "zh": "你們要是拿這種問題去煩 Higardi ，我的時間還能少浪費一點。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "f1562592f7ebd31fad2509fabc8986c02acd7c5819b45ae16180984057e8dc40",
+  "zh": "我聽說他已經死透了。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "360d95da78e572c5a95d71c7f470a3aee0bc09df4a0305c1e55ebc0eb6164b5e",
+  "zh": "你們自己去問他……"
+ },
+ {
+  "id": 62,
+  "src_sha256": "685c119ca8bded5e328d7634aed9f7205dbe40b57a9cebff8d7b8b3bdea32d68",
+  "zh": "我倒想知道你們為什麼問……"
+ },
+ {
+  "id": 69,
+  "src_sha256": "075d90c06f22b10ca3c3d4eb55940d6842394e542822203677522d74d46ed201",
+  "zh": "可笑的小玩意兒……"
+ },
+ {
+  "id": 73,
+  "src_sha256": "a7855fe8f1f57dc1f5deae9ebf9cde626c7442f9edae995cf5e2210ee2dcdd2b",
+  "zh": "流言蜚語，我不屑一顧。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "50e71b5dbe2d71c4d44e073944b3531631adef894c885681a2e8930b10180fc6",
+  "zh": "我是 Antone ……"
+ },
+ {
+  "id": 76,
+  "src_sha256": "1c2f1a004b68a1501e302106d682f0492c02a2f0168165e91518d8335bb7248d",
+  "zh": "自己找樂子嗎？"
+ },
+ {
+  "id": 77,
+  "src_sha256": "392b57939325ac346e879babc8d3d60cd000fccb2c435cc7e54a641b6b3711a4",
+  "zh": "有創意。非常有創意。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "3f64edaca03ef935dbe923fc231a075f09f1ee1c814c55122d95c5d7ea3c0d08",
+  "zh": "嗯，歡迎。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "ed25add3a8678204ee1a927e23554d141712ba919ff90afb7741fa9ecf80a14a",
+  "zh": "那麼，等你們回來再說……"
+ },
+ {
+  "id": 80,
+  "src_sha256": "c02bb62d56c4e8860c46d32762044da68d9e9b8b407a688a4c3b4d9aa45e22f1",
+  "zh": "這裡不提供那種東西。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "2934411382ef204bfa194b58bbfd40e39ae7ca72e7ba7a46a60669f1f03d849f",
+  "zh": "你們可以隨意看看我有些什麼，或者我也可以為你們打造一件訂製品（ custom piece ）……"
+ },
+ {
+  "id": 82,
+  "src_sha256": "a51c583308e06a79ab0a792fe4c636716a64318e2b34f960bef591eafea50844",
+  "zh": "別拿這種無聊的問題來煩我。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "9da506b59fb35333b2f8c42c00e2511169ffedf9c4a0fb1c238555d9730d9381",
+  "zh": "就在這裡， Arnika 。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "1e550cd74876063da72787e94d2de7e10070a0a7ff3f33a31bbc86849487d87f",
+  "zh": "我不指路……"
+ },
+ {
+  "id": 98,
+  "src_sha256": "c498736ef281c81098ce7d837e9568915d58f637c397b03100198059b1ee9bdb",
+  "zh": "你們說的是 Rapax Rift 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "b57af905e3a7bcbe6e5d9096b2e274f16583918ad232d4577fdfcc14a53857dc",
+  "zh": "你們說的是 Rapax Castle 。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "2faac6ca03095029eab13ba45d3c572a837c672a0f5e29aaabf15dda66a206a1",
+  "zh": "看看你們四周……"
+ },
+ {
+  "id": 103,
+  "src_sha256": "d30c88f80a566028f96b4bb41a63ab7937502ba95a284567c7d2fbf5d2d19083",
+  "zh": "我不知道。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "4cab2e9ac1f7c33d806734812b127c52496f5e7bb2edb7807c9fcb6a5e56e82d",
+  "zh": "沒錯，訂製是我的拿手絕活，不過你們會發現價格相當昂貴。我可以為你們打造 Zynaryx Plate 、 Steelhide Breastplate 或 Featherweight Armor 。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "79f4002b2b3c927ebe4cbc1741a3de1afb849eb24f896489542329328fe6a7c5",
+  "zh": "或者你們比較想要兵器？我有兩個絕佳的選擇， Beastslayer Axe 或 Ebon Staff 。當然，你們得替我備齊所需的材料（ ingredients ）。完成之後，你們再付我工錢。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "3ac2ed08a0f08dbbcc65062fb434382c76e785abf8bccd6c47b8e716265418fd",
+  "zh": "沒錯，那是一件很棒的護甲，不過只為小不點們打造。就是你們說的 {{Faerie}}。要完成它，我需要下列東西：一個毒液蟹殼、一顆來自 Tomb 的頭骨（ Skull ），還有 Giant Spider 的絲。把這些東西收集來交給我。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "c6df3f200107dd44d0c8f4243f85c87edf1e263367f64b25a5b9ecacd88f5c0c",
+  "zh": "你們想要 Steelhide armor ，是嗎？嗯，我就猜你們會想要。那是最頂級的皮甲。要完成它，我需要這些東西：一張 Steelhide Crocodile 的皮、一個 Poison Seeker 的毒囊，最後是一根 Iron Weed 荊棘。把這些東西收集來交給我。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "d976a5b3ab9b582feb49e9e52ea37f54dcebec5d2c7a0ddcbddb01536a6941ed",
+  "zh": "要做 Featherweight Armor ，我需要 Tanto Wasp 的翅膀、一根 Plumed Serpent 的羽毛，以及一顆巨靈之眼。把這些帶來給我。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "b2b3ae11c20138ae6d7990fe4192726fc73f6810fbd0d55ec08ffa6aa960beef",
+  "zh": "要做 Beastslayer ，我需要 穿刺 Modai 之爪、切肉刀的寬刃，還有一顆 Greater Picus 的蛋。找到之後就交給我。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "783807dc3693a9d812a953afab9e40c0eeb466780d0517d93541dbb32123ac07",
+  "zh": "這種東西我只做過一次。如果你們真能找到我要的東西，我會很驚訝：一根 Wood Spirit 的杖、一顆 Ebon 寶石，還有木乃伊粉末。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "ad6fb3b55cf7b23ea2bc5ea2894586a657a552cc17aeed13723b8f499dc184ae",
+  "zh": "好，找到就交給我……"
+ },
+ {
+  "id": 113,
+  "src_sha256": "2f97dfcd1026db5a1530f5187a04f79345619a4da4b7e8c7a8d19f7c7ded2f0c",
+  "zh": "你們先說出是哪件物品，我再告訴你們需要哪些材料（ ingredients ）。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "f81d1264846a8c8fc24549742aaacc8f94707f11551dff6eec5d5ef79028881f",
+  "zh": "沒錯，我製作訂製的兵器和護甲。你們會找到最上等、也是最致命（ deadly ）的貨色。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "775409f04d7948ae93c273af79ba83e214d241d293af3e58ca065032694addad",
+  "zh": "有意思的東西。你們知道我能用這個打造一件上等護甲嗎？沒錯，就是 Zynaryx Plate ，不過只為小不點們打造，也就是 {{Faerie}}。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "241052f8b9f213e44d46879c928b92178af4441bd438c152c97e25d811ed3ffc",
+  "zh": "要完成它，我需要下列東西：一個毒液蟹殼、一顆來自 Tomb 的頭骨（ Skull ），還有 Giant Spider 的絲。另外兩樣你們帶來給我……"
+ },
+ {
+  "id": 117,
+  "src_sha256": "8fd93ca30c07dd2d9f9b3ba9a38f308e3ef13ddaeb6fcfbc33d364d65cbbadcd",
+  "zh": "這東西可以用來做 Steelhide Armor 。最頂級的皮甲。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "08d743fff3bebce469531d23b3cd8f27fa0e1ddc330b617af1e9bfb25abafb15",
+  "zh": "如果你們要我做出來，我需要這些東西：一張 Steelhide Crocodile 的皮、一個 Poison Seeker 的毒囊，最後是一根 Iron Weed 荊棘。另外兩樣帶來給我。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "e4b3b873b78dabcba8ffb13922fb8ba552490c3eec4e61f899582ec910c8761f",
+  "zh": "我用這個做過 Featherweight Armor 。只需要 Tanto Wasp 的翅膀和一根蛇羽。你們有興趣嗎？我想你們有。那就把另一樣帶來給我。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "eab08500e8b442856cbfdfa65b83094220dd70ef5cbdf4a5e83f3e7d3e0a59f0",
+  "zh": "你們對 Beastslayer 有興趣嗎？那是我最光榮的傑作！要做它需要 穿刺 Modai 之爪、切肉刀的寬刃，還有一顆 Greater Picus 的蛋。如果你們要我替你們打造這把兵器，我建議你們把另外兩樣帶來給我……"
+ },
+ {
+  "id": 121,
+  "src_sha256": "09ebfc4003eac5054a664b238ab76fac7613254111001ce44d9c1a420764cc8e",
+  "zh": "你們在哪裡找到這個的？有意思。你們發現了相當稀有的東西。其實我以前就用它做過一把 Ebon Staff 。很有魔力。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "e5d0b1ece150d630bab5436cebec7c96a1fd8558fbae25ef4f163d6d2b039af5",
+  "zh": "也許你們會想要這個？ Ebon Staff 是用 Wood Spirit 的杖、一顆 Ebon 寶石和木乃伊粉末做成的。如果你們能把另外兩樣給我，我就替你們做一把。"
+ },
+ {
+  "id": 152,
+  "src_sha256": "a93e6ade9c04799f578096bef353314fbc826454ae2fcf8489029994d56f46a1",
+  "zh": "這個你們已經給過我了。"
+ },
+ {
+  "id": 154,
+  "src_sha256": "217499f46bff1ef2282ecc3f417f70b795e9855fd473831509e99414d9f2799a",
+  "zh": "那是我需要的最後一樣東西。我會盡快完成你們的 Zynaryx Plate 。你們晚點再回來買吧。"
+ },
+ {
+  "id": 155,
+  "src_sha256": "2124651fd39e524308aa9d43a6f33d1b9b7bbca75f4200ac7f5b59d3327d72e0",
+  "zh": "我現在可以開始做你們的 Steelhide Breastplate 了。晚點再回來取吧。"
+ },
+ {
+  "id": 156,
+  "src_sha256": "396901b4b004514564447750d4dbe1450bdae70fa69b5c928028be5e1497a09a",
+  "zh": "我要的都齊了。很快就回來取你們的 Featherweight armor 吧……"
+ },
+ {
+  "id": 157,
+  "src_sha256": "e3aa606875c711321a23c3af39d2cf0c9677e7bfb9d92a14d07dc7b42bcb1719",
+  "zh": "你們不會對這把斧頭失望的。我會盡快完成。"
+ },
+ {
+  "id": 158,
+  "src_sha256": "6ab4bd9b04a3818b38ff17b0c0545d2925e447375727753b1cef09dd6d635a03",
+  "zh": "沒錯，你們把製作 Ebon Staff 所需的東西都收集齊了。應該不會花太久就能完成，不過我需要一點獨處的時間。"
+ },
+ {
+  "id": 159,
+  "src_sha256": "8da80899790733c5b4c3e2f27905a743a1d41a49c56e3d3846fcf8a4adc5487a",
+  "zh": "嗯……我先把這個收著，等你們把其餘的帶來。"
+ },
+ {
+  "id": 160,
+  "src_sha256": "552908c35b5a361973bbfc23d4c297153588be60b08c7414ab2750a1aea8d916",
+  "zh": "當然，你們會把其他東西帶來給我……"
+ },
+ {
+  "id": 161,
+  "src_sha256": "1ccbc0beea369a994ba5648714f706e2da3524ed58a9778e4ac2790ffc510c35",
+  "zh": "放在這裡很安全。我期待收到其他的材料（ ingredients ）。"
+ },
+ {
+  "id": 162,
+  "src_sha256": "13bf88436a3dadde09742e6fbc145bb1f70d1bd1dfcd0c5e11ae04b1f39a0221",
+  "zh": "你們去收集這件作品的其他必要材料，這個我先保管。"
+ },
+ {
+  "id": 163,
+  "src_sha256": "65bc0c59f99f3aeb510fc6711b24e1e3e6bf038ae02a74a114c8d234bc0f16a2",
+  "zh": "你們去收集其他東西，這個我先替你們收著。"
+ },
+ {
+  "id": 164,
+  "src_sha256": "ee350c2f7d0265f37544ece6a058b7ebac1d3d0640f015d57906cabb6d5d2f53",
+  "zh": "我已經完成 Zynaryx plate 了。你們想買隨時可以買。"
+ },
+ {
+  "id": 165,
+  "src_sha256": "995a03e14616d8fec672365b76df83027d602e4f9e755f7b4c3db4d12084527a",
+  "zh": "你們的 Steelhide Plate 完成了。準備好要買的時候，我們來交易。"
+ },
+ {
+  "id": 166,
+  "src_sha256": "cb3663d34a2db5dd59d474f88ba52d24c37bf628bd34401034ce8c1437b1cc7e",
+  "zh": "我已經做好 Featherweight armor 了，現在就賣（ sell ）給你們。"
+ },
+ {
+  "id": 167,
+  "src_sha256": "c8cb9faa27dd199cc7c15f1ba2f3b688cc35df6dcd7bca6bc41da5206fda6f0c",
+  "zh": "Beastslayer Axe 完成了。現在你們可以向我購買。"
+ },
+ {
+  "id": 168,
+  "src_sha256": "cd35660457cd0626027e2f65f5393c1c2248020fd9fe567f427cdaba4adcf242",
+  "zh": "你們的 Ebon Staff 終於完成了。我們現在來交易吧。"
+ },
+ {
+  "id": 169,
+  "src_sha256": "25d35e6c03327f6b3940dc6e6137ba3deff4c690fb01bd621dafc6201ba643b8",
+  "zh": "我已經替你們做好一件了。我在等我的錢！"
+ },
+ {
+  "id": 170,
+  "src_sha256": "6ea59db9ed99a7759e361351b9f9bf040a0c42243ae3a5d565c073bc080313a6",
+  "zh": "就在 Arnika 這一帶，我確定。"
+ },
+ {
+  "id": 171,
+  "src_sha256": "49ca4fbbfeb56ae63bb668dadd7d57c8245b3559e102cbdf05b1a3c41a86f2c7",
+  "zh": "你那把劍很有意思。一定是我哥哥 Ferro 替你做的。一件出色的作品……"
+ },
+ {
+  "id": 172,
+  "src_sha256": "b84613b33f8c583968be8b1cf4d84908ac1b4c51694028c34e2b55b3c3ed2063",
+  "zh": "他當然是在 Rapax Castle 。"
+ },
+ {
+  "id": 173,
+  "src_sha256": "c4f3e0c867b4e0315dc3f06abfd9d373d05c9aebd06745e939972de7643061e9",
+  "zh": "我製作的是市面上最頂級的兵器和護甲。"
+ },
+ {
+  "id": 174,
+  "src_sha256": "78e6ca12fa296d75561183321ea5991db36a675a74232d47d203aa3571df8cd7",
+  "zh": "我猜你們很想知道吧，對不對？是啊，當然。可是我不打算告訴你們！你們竟然天真到以為，只要問一個最忠心的臣民，就能探出一個帝國的計畫。"
+ },
+ {
+  "id": 175,
+  "src_sha256": "15f7ed006591559c5a5798e8cb89ac25fc18ef6b1af7d91d1d126af436d8e632",
+  "zh": "你們是怎麼發現的！你好大的膽子！你們休想擋我們的路！"
+ },
+ {
+  "id": 176,
+  "src_sha256": "138ecde8f556b403632de86a701e7d01b055e1390e993524f3dd48bd7af1b956",
+  "zh": "沒錯，你們也許這麼想，但我不是來當你們朋友的。我是 Rapax ，你們不知道嗎？我只效忠我的同胞。"
+ },
+ {
+  "id": 177,
+  "src_sha256": "a0e71e78790ac1246a9ffa612a234af15dde577dc8f09c845f776c86f9be4f53",
+  "zh": "我跟你們說清楚。我有我的生意（ business ）要經營，你們也有你們自己的事務（ business ）要辦。這兩件事沒有交集，不管你們怎麼想。如果你們是來找情報的，那你們來錯地方了。"
+ },
+ {
+  "id": 178,
+  "src_sha256": "a3172c6552cab00f7532b0cf4352935726f0b746426bb958be906665223ff4b7",
+  "zh": "兵器和護甲？可以，我能幫（ help ）你們。先把話說清楚。我既不是你們的盟友，也不是你們的朋友……"
+ },
+ {
+  "id": 179,
+  "src_sha256": "67e3446038f87526bbd0a85992218f83311a380935a38a529a4709e12eb20d2a",
+  "zh": "我就是這麼說的……"
+ },
+ {
+  "id": 180,
+  "src_sha256": "5f7e57bd96b2b17d1f9e79de7020399c7cf75c5ad06c9b8f069f49e80eb1e977",
+  "zh": "在這裡的北邊。"
+ },
+ {
+  "id": 181,
+  "src_sha256": "d1a225fd7ff3d7b759d029ce91c360b1721a081aed3bfb611aef01b5092d971a",
+  "zh": "在這裡的南邊。"
+ },
+ {
+  "id": 182,
+  "src_sha256": "435390dec0f8983699c9227fb1fb666aa1443edec273c1c0459347c1a3a87196",
+  "zh": "當然是在這裡的東邊。"
+ },
+ {
+  "id": 183,
+  "src_sha256": "a64a94acd1674c13981476ebe5ad3728427cab1b6e3722a9b2f44649995c43d5",
+  "zh": "你們得往東走。"
+ },
+ {
+  "id": 184,
+  "src_sha256": "f8e6b38a983617a51a4c5c56ad0a1bb06f6af19df9ff1b87cc2099a951284c26",
+  "zh": "我要的都齊了。很快就回來取你們的護甲吧……"
+ },
+ {
+  "id": 185,
+  "src_sha256": "ddfb8f79e4b15d61eac5ed5f3a509633004970cd58364fbf12299a0e375a9989",
+  "zh": "我還沒做完……"
+ }
+]

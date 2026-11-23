@@ -1,0 +1,34 @@
+{
+  "run_id": "20261008-005832-play-bare",
+  "commit": "e969dd148b664126adba8806b2c3182bdb5bd920",
+  "scenario": {
+    "id": "play-bare",
+    "duration": 600,
+    "files": [
+      {
+        "src": "/tmp/claude-1000/-home-mg-Projects-games-wiz8-mod/d06f7575-86be-46cb-bd4f-47f006a4e13e/scratchpad/bare/ddraw.dll",
+        "dst": "ddraw.dll"
+      }
+    ],
+    "steps": []
+  },
+  "before_diff": "noise A Saves/Ascension Peak.SAV\nnoise A Saves/Ascension Peak2.SAV\nnoise A Saves/Bayjin Shallows.SAV\nnoise A Saves/Cosmic Circle.SAV\nnoise A Saves/Cosmic Circle2.SAV\nnoise A Saves/Ending.SAV\nnoise A Saves/Ending1.SAV\nnoise A Saves/Ending2.SAV\nnoise A Saves/Ending3.SAV\nnoise A Saves/Ending4.SAV\nnoise A Saves/Ending5.SAV\nnoise A Saves/Ending6.SAV\nnoise A Saves/Import/SAVEGAME.GLB\nnoise A Saves/Import/SAVEGAME.GRL\nnoise A Saves/Import/SAVEGAME.TRA\nnoise A Saves/Import/SAVEGAME.UMP\nnoise A Saves/Jan-Ette.SAV\nnoise A Saves/Mountain Wilderness Retro.Fin.SAV\nnoise A Saves/Mt. Gigas Water Caves.SAV\nnoise A Saves/Quick 1.SAV\nnoise A Saves/Quick 2.SAV\nnoise A Saves/Quick 3.SAV\nnoise A Saves/Rapax Castle Main Level.SAV\nnoise A Saves/light shield.SAV\nnoise A Saves/light sword.SAV\nnoise M Saves/CurrentGame.SAV\nnoise M Wiz8.CFG\nsummary: 25 added, 0 removed, 2 changed, 0 non-noise",
+  "after_diff": "noise M Saves/CurrentGame.SAV\nsummary: 0 added, 0 removed, 1 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [
+    "0.1 start pid=25152"
+  ],
+  "modules": [],
+  "powershell": "",
+  "placed": [
+    {
+      "dst": "ddraw.dll",
+      "sha256": "65fca4b7fb5eddcbfcbe840388c68f7ac8bb389206e20529edad825ebc910e9a"
+    }
+  ],
+  "shots": {},
+  "ddraw_log": [
+    "2026-10-08 00:58:54.153 pid=25152 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe attach real=C:\\WINDOWS\\SysWOW64\\ddraw.dll missing=0"
+  ],
+  "text_log_lines": 0
+}

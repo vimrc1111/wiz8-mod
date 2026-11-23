@@ -1,0 +1,13 @@
+call	52c070	monsterFatigueApply	扣 SP（cost ≥ SP 歸零）、M+0x242 = staminaFatigueLevel；SP 為零且狀態 17 槽 < 0x270f 時回呼 523c00(m,0x11,0x270f,0,local,1)
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	6836a8	battleContext	戰鬥物件指標；讀 +8、+0x910，清 +0x7b0、+0x7b8
+field	ecx+0x7b0	G.f7b0	清零
+field	ecx+0x8	G.f8	階段步進基準，(100 - G+8)/(T+9 + 1)
+field	edi+0x0	T.phase	攻擊階段值；超過 100 歸零，否則 4f0480 取整
+field	edi+0x4	T.f4	為零不排下一攻擊
+field	edi+0x9	T.f9	攻擊數；為零或無動作時階段歸零
+field	edx+0x7b8	G.f7b8	清零
+field	edx+0x8	G.f8	同 ecx+0x8
+field	esi+0x10	M.combatRecord	戰鬥記錄指標 T
+field	esi+0x2e1	M.action	非零則不挑新動作
+field	esi+0xc	M.visual	外觀物件指標，作 4c6200（排除）參數

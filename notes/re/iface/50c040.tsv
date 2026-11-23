@@ -1,0 +1,13 @@
+call	40efa0	rollPercentDie	百分骰 R(100)：先丟掉 lead 次（亂數序列前進），最後一次與偷竊門檻比較；模擬器以亂數前綴取代，calc 以 Rand 介面重放
+call	73	srand	間接呼叫 call [0x5eb1d8]（分析器只讀出尾碼 73）：CRT srand，種子是在場隊員的種子欄加總；case 以匯入名樁取代，記錄呼叫次數與種子參數，calc 輸出同樣兩個值
+data	5eb1d8	srandImportSlot	srand 的 IAT 槽；間接呼叫的目標，不是遊戲資料
+data	685174	characterRecords	角色記錄陣列基址（每人 0x1862 bytes）；0x517ec0 用它找角色槽，種子欄在 +0x3ab1 起每人 0x1862 一格
+data	685178	partyActionRecords	角色動作副表指標，每筆 0x106 bytes；+0x20c 起每人一格的在場旗標 byte（零不計入種子）
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	edi+0x2e	npcTargetByte	NPC +0x2e（u8）；乘 11 加進先丟掉的亂數次數
+field	edi+0x84	npcStealAttempts	NPC 有號偷竊嘗試計數 byte；乘 7 加進先丟掉的亂數次數，之後在 100 以下遞增 1，也是門檻節點的輸入
+field	eax+0x0	seedPartPresence	迴圈指標：在場旗標 byte（動作副表 +0x20c 起，步長 0x106，六格）與種子欄 u32（角色記錄 +0x3ab1 起，步長 0x1862，六格）；旗標非零才把種子欄加進 srand 種子
+field	ecx+0x0	seedPartValue	迴圈指標：種子欄 u32（角色記錄 +0x3ab1 起，步長 0x1862，六格）；在場才加進 srand 種子

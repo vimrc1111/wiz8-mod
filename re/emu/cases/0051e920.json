@@ -1,0 +1,323 @@
+{
+  "cc": "cdecl",
+  "steps": 1000,
+  "path_limit": 512,
+  "samples": 64,
+  "objects": {
+    "item": 0,
+    "templates": 4096
+  },
+  "args": [
+    "@item",
+    0
+  ],
+  "setup": [
+    {
+      "at": {
+        "global": "0x68516c"
+      },
+      "size": 4,
+      "value": "@templates"
+    }
+  ],
+  "in": [
+    {
+      "name": "itemIndex",
+      "at": {
+        "object": "item",
+        "offset": 0
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "charges",
+      "at": {
+        "object": "item",
+        "offset": 5
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "increment",
+      "at": {
+        "arg": 1
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "chargeBase",
+      "at": {
+        "object": "templates",
+        "offset": 103,
+        "index": "itemIndex",
+        "stride": 269,
+        "count": 101
+      },
+      "size": 2,
+      "signed": true
+    },
+    {
+      "name": "chargeDice",
+      "at": {
+        "object": "templates",
+        "offset": 105,
+        "index": "itemIndex",
+        "stride": 269,
+        "count": 101
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "chargeSides",
+      "at": {
+        "object": "templates",
+        "offset": 106,
+        "index": "itemIndex",
+        "stride": 269,
+        "count": 101
+      },
+      "size": 1,
+      "signed": false
+    }
+  ],
+  "out": [
+    {
+      "name": "charges",
+      "at": {
+        "object": "item",
+        "offset": 5
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "itemIndex",
+      "at": {
+        "object": "item",
+        "offset": 0
+      },
+      "size": 4,
+      "signed": false
+    }
+  ],
+  "boundary": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      2,
+      4,
+      1,
+      5,
+      0,
+      0
+    ],
+    [
+      3,
+      3,
+      1,
+      5,
+      0,
+      0
+    ],
+    [
+      0,
+      5,
+      1,
+      5,
+      0,
+      0
+    ],
+    [
+      1,
+      255,
+      1,
+      5,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      -1,
+      5,
+      0,
+      0
+    ],
+    [
+      3,
+      255,
+      255,
+      32767,
+      255,
+      255
+    ],
+    [
+      0,
+      0,
+      0,
+      -32768,
+      0,
+      255
+    ],
+    [
+      1,
+      255,
+      0,
+      -1,
+      0,
+      0
+    ],
+    [
+      2,
+      255,
+      1,
+      32767,
+      0,
+      0
+    ],
+    [
+      3,
+      250,
+      5,
+      0,
+      1,
+      255
+    ],
+    [
+      0,
+      255,
+      0,
+      256,
+      0,
+      0
+    ],
+    [
+      1,
+      100,
+      0,
+      -10,
+      2,
+      6
+    ],
+    [
+      2,
+      1,
+      -2147483648,
+      32767,
+      255,
+      255
+    ],
+    [
+      3,
+      0,
+      2147483647,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      200,
+      256,
+      100,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      -256,
+      -32768,
+      255,
+      255
+    ],
+    [
+      2,
+      0,
+      0,
+      -32768,
+      128,
+      255
+    ],
+    [
+      3,
+      0,
+      0,
+      -32768,
+      129,
+      255
+    ],
+    [
+      4,
+      10,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      100,
+      10,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      100,
+      3,
+      1,
+      5,
+      0,
+      0
+    ]
+  ],
+  "random": {
+    "seed": 5368096,
+    "count": 256,
+    "ranges": [
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        -2147483648,
+        2147483647
+      ],
+      [
+        -32768,
+        32767
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ]
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+internal/dbsname/dbsname.go
+tools/dbsname/main.go
+tools/zhpatch/zhpatch.go
+scripts/build-zh-patch.sh
+scripts/check-lib.sh

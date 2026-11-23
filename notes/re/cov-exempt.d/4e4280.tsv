@@ -1,0 +1,2 @@
+4e4280	4e4296	空怪物指標的 srAssertFail 專屬塊；合法呼叫需有效怪物，模擬器依 notes/re/emu.md 遇 assert 即停止，無正常輸出路徑
+4e4280	4e42b9	啟用怪物缺場景物件的 srAssertFail 專屬塊；合法啟用怪物必有場景物件，模擬器遇 assert 即停止，無正常輸出路徑

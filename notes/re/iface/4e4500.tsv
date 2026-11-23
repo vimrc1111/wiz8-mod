@@ -1,0 +1,21 @@
+call	2b6	無關	分析器把 assert 的 IAT 間接呼叫（0x5ebaf4）誤列為相對目標，低於 PE ImageBase；實際為 srAssertFail，只在戰鬥旗標為零、怪物指標為空或怪物未啟用時停止，合法輸入走不到。
+call	86	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+call	532330	releaseMonsterStatusBuffer	若怪物狀態區 +0x16 的指標非空就釋放並清零；對輸出而言非空指標必歸零（0x5e23e0 回 1）；calc 內聯。
+call	546e70	recountHostileAndCharmedMonsters	尾呼叫；只在怪物陣營為 1（敵方）時，清完後重算敵方與魅惑怪物數並更新顯示旗標；直接呼叫既有 calc 函數 hostileMonsterCountNode。
+call	5524e0	clearStatusSlot	狀態槽啟用時清掉槽 +0、+1、+5、+0xd；其中對場景效果清單的移除（0x4acd80）與怪物衍生數值重算（0x50e8c0）不在輸出內，case 的效果清單固定為空且已填模板快取；calc 只重現槽位清零。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5eb224	releaseMonsterStorage	CRT free 匯入槽；釋放怪物狀態區（0x4e45d3）及狀態緩衝；模擬器為 no-op，不影響輸出。
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；戰鬥旗標為零、怪物指標為空、怪物未啟用時停止。
+data	6147e0	無關	assert 診斷來源檔名；不是遊戲規則資料。
+data	614910	無關	assert 診斷：怪物資訊指標必須存在的條件文字；不參與規則計算。
+data	6149d0	無關	assert 診斷：怪物必須啟用的條件文字；不參與規則計算。
+data	6149e8	無關	assert 診斷：必須在戰鬥中的條件文字；不參與規則計算。
+data	6836a8	battlePointer	戰鬥資料物件指標 G；選定怪物指標在 G+0x7b8、旗標在 G+0x7b0（notes/re/combat-timing.md:35）。
+data	683f94	combatActive	戰鬥中旗標 u8；為零時 assert 停止，非零值都等價。
+field	eax+0x0	statusSlotActive	狀態槽 +0 的啟用旗標 u8（槽位於狀態區 +0x3e 起，每槽 0x11 位元組，共 9 槽）；非零才清槽；同一運算元也是 0x4e4587 的槽判斷。
+field	eax+0x7b0	selectedMonsterFlag	G+0x7b0 u32；選定怪物就是本怪物時清零。
+field	eax+0x7b8	selectedMonsterPointer	G+0x7b8 u32 指標；等於本怪物時與 G+0x7b0 一併清零，否則保留。
+field	edx+edi*1+0xd7	statusSlotActive2	狀態區 +0xd7 起的 6 個槽（每槽 0x11 位元組）的啟用旗標 u8，與前 9 槽連續成 15 槽；非零才清槽。
+field	esi+0x10	monsterStatusArea	怪物狀態區指標；槽與 +0x16 緩衝都在其內；結尾釋放並清為零。
+field	esi+0x15	monsterActive	怪物啟用旗標 u8；進入時須非零（否則 assert），結尾清為零。
+field	esi+0x16	monsterDisposition	怪物陣營 u8；等於 1（敵方）才尾呼叫 0x546e70 重算敵方數。

@@ -1,0 +1,57 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "4f73310076781d001f3f9dcd6b92886cbad0974dcbfd5d0b0e14c6abbac65e8c",
+  "zh": "Watchers 知道你們與 Rattkin 的交易。他們不可信任！"
+ },
+ {
+  "id": 3,
+  "src_sha256": "18f6dcf3ec1edac0738a45f4657904f03713acb636fa0aef2a95c912806b4e7e",
+  "zh": "Watchers 回報說你們持有 Astral Dominae 。它是 T'Rang 帝國的財產！"
+ },
+ {
+  "id": 4,
+  "src_sha256": "427ed4b203255c295b3f45a5202106918aa1333078edeca04b3bcda08f57beb1",
+  "zh": "我們知道你們與 Mook 的休戰。只要我們還留在 Dominus ，這對你們毫無好處！"
+ },
+ {
+  "id": 5,
+  "src_sha256": "c2d795cdc7e2ca945f7f6bc65efd80ed90139d98b8eddf97da1ee68a06568d91",
+  "zh": "我們知道你們拿到了 Chaos Moliri ！把它交給我們！"
+ },
+ {
+  "id": 6,
+  "src_sha256": "9ee2267a57028e7b540cedde85515112abdf84fb0b9f2c05019edee1c3ec2016",
+  "zh": "Watchers 回報說你們找到了 Destinae Dominus ……我們就是來收取它的！"
+ },
+ {
+  "id": 7,
+  "src_sha256": "d0e389edcf2e6604c8327334a1b301fb3614b7c31cf1b2d41f42144dd38abe27",
+  "zh": "什麼都逃不過 Watchers 。把你們持有的裝置交出來！"
+ },
+ {
+  "id": 8,
+  "src_sha256": "ba7390cd99108ba683f7a97d99a90e1a1bfcc9a4782c64a049c82318aa477d10",
+  "zh": "我們知道你們已有三件裝置，但你們飛昇時別想活著！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "084e8ffdf725526bd1a9ab1cc51e0364f17a3d35dcb21130d641167564569d0a",
+  "zh": "所以你們就是這裡的威脅？告訴你們的領袖，我們早已去過 Cosmic Circle ，並為 T'Rang 帝國宣告占領了！"
+ },
+ {
+  "id": 10,
+  "src_sha256": "e9d894e1e35f9340ab37add990f47d8a038c16b8fcffc053e43f81f17b03d3b0",
+  "zh": "Rapax 與 Umpani 已結成同盟！這意味著你們為他們打算做的一切都將完蛋。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "1ab99e0e242b5c527dc0544e3cf53a204e671bbc246cd3386166b4e0b48f977c",
+  "zh": "我們看見 Mook 持有 Destinae Dominus 。想要它，就必須先殺了他們。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "e29e7b2ea03948cfe3f0885810aefae3cff849c7160e834b57daabe0439837bf",
+  "zh": "Z'Ant 已下令處死你們！"
+ }
+]

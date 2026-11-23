@@ -1,0 +1,45 @@
+call	2b6	無關	分析器把 srAssertFail 的 IAT 間接呼叫（0x5ebaf4）列為相對目標；只在 cov-exempt 的 54ca76 斷言塊出現，合法輸入不到
+call	4fea50	backfireSwap	反射：依法術類別交換來源與目標的副本（與 4fb4c0 共用，原生跑）；calc reflect
+call	524390	endMonsterBuff	怪物反射次數 +0xd7 歸零時以 (id, 4) 結束第 4 個增益欄：清 +0xd7/+0xdb/+0xdf、4acd80 圖示樁（排除）、50e8c0 重建怪物快取；原生跑，calc 清欄＋w.rebuild
+data	4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertImport	srAssertFail import；斷言塊停止、無規則結果（cov-exempt）
+data	60f4f8	無關	斷言條件字串
+data	61e2c4	無關	原始檔名字串（4e5550 查找與斷言的檔名參數）
+data	685174	characterBase	隊伍角色記錄陣列基址（步距 0x1862）
+data	68c09c	stringTable	字串表指標；+0x660 為怪物反射訊息字串，交給 590b40（排除樁，記錄參數）
+data	ffffffffffffffa0	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe7	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+field	eax+0x0	stringTableHead	[0x68c09c] 字串表第 0 dword（再取 +0x660）
+field	eax+0x660	reflectMessage	怪物反射訊息字串指標（590b40 第 2 參數）
+field	eax+0xa95	char.reflectCount	角色反射剩餘次數／強度：取最大者為反射者，反射後減 1，歸零呼叫 523a80(idx, 4)
+field	eax+0xa9d	char.reflectActive	角色反射效果是否有效（非 0 才是候選）
+field	ebx+0x0	inst.spell	法術實例的法術編號
+field	ebx+0x76	inst.src.b1a	來源旗標 +0x1a（非 0 不反射）
+field	ebx+0x77	inst.src.b1b	來源旗標 +0x1b（已反射過，非 0 不反射）
+field	ebx+0x78	inst.src.b1c	來源旗標 +0x1c（非 0 不反射）
+field	ebx+0xd0	inst.level	施法強度 PL；改成 min(PL, 最佳反射值) 並作為重送施法的 level
+field	ebx+0xd4	inst.bonus	加成，原樣傳給重送的 4fb4c0
+field	ebx+0xe4	inst.monsterTargets.count	怪物目標清單筆數；找不到的 id 移除並減 1
+field	ebx+0xec	inst.monsterTargets.data	怪物目標 id 陣列
+field	ebx+0xf4	inst.partyTargets.count	角色目標清單筆數
+field	ebx+0xfc	inst.partyTargets.data	角色目標索引陣列
+field	ecx+0x660	reflectMessage	同 eax+0x660（另一暫存器取址）
+field	ecx+eax*4	monsterTargets[i]	移除時左移的目的格
+field	ecx+eax*4+0x4	monsterTargets[i+1]	移除時左移的來源格
+field	edi+0x0	list[0]	清單存取越界時的第 0 格（cov-exempt 54c9a0／54ca0e，迴圈內不到）與目標 id 讀取
+field	esi+0x0	monster.id	怪物記錄第 0 dword：id，交給 524390
+field	esi+0x107	monster.reflectSlot	怪物反射效果條件欄：小於 0x12 才是候選
+field	esi+0xa95	char.reflectCount	同 eax+0xa95（角色反射者減 1）
+field	esi+0xd7	monster.reflectCount	怪物反射次數：取最大者，反射後減 1，歸零結束增益欄 4
+field	esi+0xdf	monster.reflectActive	怪物反射效果是否有效（非 0 才是候選）
+field	esi+eax*2+0xb01	char.reflectSlot	角色反射效果條件欄：小於 0x12 才是候選
+# G3 follow-up 4a：recast 固定次數硬上限 [未取得]。build/wiz8.asm:451548-451644（54c575..54c696）只見效果結果、來源、stamina 與 SP/cost 的停止條件，未見固定深度計數器。
+# 夾具工作上限取既有 4fa4d0 輸入的 SP 上限 60 ÷ 最小正 cost 1＝60 次；這是夾具範圍，遊戲全域 SP 硬上限 [未取得]，不宣稱 60 是原版輸入域上限。原有 cost=0 與所有 random 範圍完整保留。
+# 每個原 4 次呼叫組擴為 61 次（60 次施放，加一次終止資格檢查）；原每輪多筆序列同比擴充。record/ret 使用 notes/re/emu.md 的 n，超量仍報錯，禁止截斷或循環重放。所有既有 boundary 保留、舊輸入欄順序不變，新欄只追加。
+# 原版 SP 扣除在巢狀施法返回之後（build/wiz8.asm:337721-337733，4fab67..4fab89），故 SP/cost 不是所有巢狀遞迴的數學上界；亦可能由效果進度與 stamina 終止。需另票確認全域合法上限與擴大 emulator 堆疊，才能證明完整輸入域。
+# 驗證：4fa4d0 新 boundary 與 g3-probe 使用合成 HP 差額 5、每次恢復 1、cost 1、SP 60；原版 replay 與 F 各實際走 5 次施法。g3-probe.sh 60 另檢查 F 的 60 層，HP 100→160，資格/效果/SP 扣除各 60 次。
+# 54ba00 新 boundary 走 60 次 fizzle 重試：sound 60、資格檢查 61（最後回拒絕）、SP 扣除 60。這驗證上限呼叫次數而非 60 層巢狀堆疊；原版 60 層在 emulator 的固定 32 KiB 向下可用堆疊觸界，白名單禁止改 emu.py，沒有放寬其驗證或隱藏故障。

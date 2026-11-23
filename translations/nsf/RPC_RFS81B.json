@@ -1,0 +1,417 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "c033fd09c9eb35d7dc10af6a3af70a43a89d3134de2d702a6f32d139e729db97",
+  "zh": "RFS- 81 報到，隨時待命。"
+ },
+ {
+  "id": 1,
+  "src_sha256": "ea26d5f6d9b21acdf18b23ae2676f15d86d55e9050b73a79703586881c7cd9e1",
+  "zh": "正在彙整效能提升數據。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "6e6db6667c0969f6e5e9fac7e127d6cfd83145b49703e8b9a2e77fdf1841c14d",
+  "zh": "嚴重內部錯誤。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "e2c02c726a42f02be0655bb35ffcc408a62ff4c4114eae3251c6dc6a3dbcfd73",
+  "zh": "可能發生致命錯誤。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "232c68d01376f8909daba08aa625642fad32dae96183ab5472b7f719a6c001d6",
+  "zh": "視訊螢幕關閉。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "2263be0a80ade216037b9214be5e3d2b1e1a19dab169456b8006498d87b0053e",
+  "zh": "已達最大負重。額外重量將影響效能。"
+ },
+ {
+  "id": 10,
+  "src_sha256": "6961ef33c5abaca6fcd6ca1497959d179b6a6fd5a80916b41c53387ddd8bcbcd",
+  "zh": "偵測到 RFS- 81 的重複狀態。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "8911e76fb884a2412ed24bb35560de3d23e23a4ab09c387887c406c21bb1d07b",
+  "zh": "正在彙整敵對事件紀錄。內部組件遭到侵害。啟動報復程序。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "3552a4b16a30499f7b68859c08100cf25d9b0e1808191f1e4f870af4ec547d82",
+  "zh": "RFS- 81 正在重新啟動系統。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "0059c52d493e14b2d6df372a723013f71a68beb12d844db32e54e28aa343fd5c",
+  "zh": "主人，此事件已列入我的重大錯誤紀錄。我有責任告知您，這可能對未來的行動造成毀滅性影響。"
+ },
+ {
+  "id": 14,
+  "src_sha256": "e287c7026177c8dcdd36b5f68acd82f9fd0f7d89688da4f52cf86c037fe1fa90",
+  "zh": "正在掃描區域內是否有生命體。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "c280ae23d62f9b72780d4534b89dad4cb26d7c37119e5746ed62a9828fb5578e",
+  "zh": "正在掃描區域內是否有未見物體。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "c2023e07d7f5a35b271e65fb7670db81fbb922c12b26fb48f36817e9f816d8a1",
+  "zh": "意外發生。 RFS- 81 正在彙整報告。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "0c9bb08fcd71699cb20f9592f08a1a0416e7308d832f34d1725028c02d8d891e",
+  "zh": "意外發生。正在評估損害……"
+ },
+ {
+  "id": 18,
+  "src_sha256": "eaeb96039e557a688ee221eac9dd0e0d9d45cee7dac08b6012fed34780e612b2",
+  "zh": "主人，男性已死亡。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "6b12e3f3543625ce43c4332cddbc1a03916f7064c3e3cc10e48adacd7a0b62b8",
+  "zh": "主人，女性已死亡。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "2c4e9fe7cebdafc645fdb6836c23904d1e0ceb251b934b1272887baae408924d",
+  "zh": "焚毀軀殼。不得向其同族成員提及此事件。"
+ },
+ {
+  "id": 21,
+  "src_sha256": "23b5b001ce2ed47382fe9eb4a3bd7b09b24da1daec9c948b66508668b6edabdf",
+  "zh": "RFS- 81 將會報復！"
+ },
+ {
+  "id": 22,
+  "src_sha256": "6fa36952b70bc5c016b4d255ab555d13027fd8afcfb32f4489da137b47d86ae7",
+  "zh": "RFS- 81 正在啟動自毀機制。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "1a64f49fa4f070bf568d39ae66e6e0b73a4da1883fd1369d8e18d2f0a11875ab",
+  "zh": "物體。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "a07f623e632921c911a48d669f6a5bcccf1a286e0f72a1943175900c4411140d",
+  "zh": "物品。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "9f618e9f8f80b9b85b02373d9ba1453e0a0680b396a2ea493d941a8ec5b85882",
+  "zh": "主人，這個有陷阱。"
+ },
+ {
+  "id": 26,
+  "src_sha256": "b40810b55b87c4021cee401d3f59dfab95ebdd7d1cf9d8895cbe106c1b317c3b",
+  "zh": "偵測隱形物質。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "26a0a4fe9e694a4a86b942006da22d5fc696a3f0236c96b14e525c4e67a92a5c",
+  "zh": "主人，我有責任告知您，我們已進入危險區域。我會保護您。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "1f51e1267c829c5e65c5cc46fd5237df9701f326b40d439b48e93172e6a4e263",
+  "zh": "RFS- 81 演習模式。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "16486fa3839aa99c66369007f6f963bc8f184f09a2cf383c139ccbfd5024878b",
+  "zh": "RFS- 81 戰鬥模式。"
+ },
+ {
+  "id": 31,
+  "src_sha256": "370644b88cba5d86958a76506682910a8aca1a4e5dc64367adb4c34feb1e6f44",
+  "zh": "RFS- 81 殺戮模式。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "6669f925b60ed01098fda495401681dbd300bb5d74092b8d80b90e2c51c8607f",
+  "zh": "需要受害者。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "cf52dc576aa26d47cbeb24e05d9c7cce3ae289689bb90eb65a3cef357ac3ec36",
+  "zh": "敵人無窮無盡！"
+ },
+ {
+  "id": 34,
+  "src_sha256": "2fc36c0648d14ca4d313b4f14bbe4143c3abd90f6b1d6e0e89151b74c938ff1c",
+  "zh": "投射物擦身而過。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "8c491626178e5617296bf08e5965b11ec4115358ba617ca1df543da5f9d811e3",
+  "zh": "生命體已消滅。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "29c171a0293879f2b5f930035a5b087c1f6eb157800a05b2fb9028167cf85d6a",
+  "zh": "生命體已消滅。開始辨識掃描。發現物體。身分： Dark Savant 。任務：消滅所有生命，奪取一切權力。任務中止。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "bae68e1477723fdaab0b456f1ef279cdf87b21550caa8a06dd7ab819b3715d9c",
+  "zh": "將該生物加入絕種物種紀錄。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "14b26d7ed660a919397ececa593b2f0981c6daded96546d4ce5d95c4710ed220",
+  "zh": "生命體。"
+ },
+ {
+  "id": 39,
+  "src_sha256": "60396957da43bc37f78b59afd46c210063c6bcbacd12210d17bed4b070603dbd",
+  "zh": "需要推進裝置。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "87b9deb397ffc41992c5dac0fb1a43bf5874edaed8c883c9cd73af65a2a44037",
+  "zh": "主人，我有責任回報一起生命體失蹤事件。正在彙整失蹤紀錄。生命體目前位置：未知。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "58b626c12f1c9a1a9f3c82e652512186f1c4e7ab49703b35eeee15d9a6595da9",
+  "zh": "位置： Cosmic Circle 。敵對存在：一。生命體：三。資料： Cosmic Forge 的位置、 Cosmic Lords 與 Dark Savant 的目標。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "a6ffc820d0d0486480920a74321e53317fd06db94bf97dc24cadd9e4123f70a0",
+  "zh": "主人，我有責任告知您，您現在是下一個命運的創立者。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "f8204a5b24d0e0e09db018374395be895146a26afd56280f3d63c2ecc682a8c0",
+  "zh": "RFS- 81 型號 Savant Trooper 不具備執行此命令所需的組件。需要 RFS- 99 型號。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "46d59b9c10994b611fecf29d21b1cc3f45787f18b70d44c1c701d2d1dc316f3a",
+  "zh": "物體： Astral Dominae 。意義：生命。用途：進入 Cosmic Circle 的入口。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "ba8b906028070457b01e214d0620791e646a104c337cc1a322d81c27b7df8199",
+  "zh": "物體： Destinae Dominus 。意義：知識。用途：進入 Cosmic Circle 的入口。"
+ },
+ {
+  "id": 48,
+  "src_sha256": "231b78554d72e11de29695f09a60c8c61a0b615a43390de3d98d3c55f612da9e",
+  "zh": "物體： Callisto Device 。意義：混沌。用途：進入 Cosmic Circle 的入口。警示：本區域有 {{Mook}}。建議撤離。"
+ },
+ {
+  "id": 49,
+  "src_sha256": "81adddbdcf61d7143e05c33a1596ed0f31e7933fb0eca4307e90a7f04d4b5ff2",
+  "zh": "物體： Callisto Device 。意義：混沌。用途：進入 Cosmic Circle 的入口。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "0fb340f45243d915732d97862fbb0bec8802058b26f753bae52a9858aa39e3a3",
+  "zh": "輸入錯誤。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "32381fab75ac2811eab48a09e7e95137fc4f2726d66db6cafe82fd7738a9cb27",
+  "zh": "主人，我偵測到欺騙。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "7bb9f9f0eca0314d47df15adcc98ed76399116a325c441cd104fd6e2789dd93e",
+  "zh": "高價值物體。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "f90d5d4905c3db5383ea5e5a0f62f6063abce51b181f9cc59ca63707e1dde844",
+  "zh": "RFS- 81 運作達到巔峰。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "fae0ade4623f270cd8eb529304536edabb1f21a1f79920fc4c82ae7f320a6425",
+  "zh": "偵測到 Vitalia Domina 。主人，請注意。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "f2244af372159c61d994b1a71518c49e1121757ebef26583b532621e6c167331",
+  "zh": "RFS- 81 已抵達安全地點。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "4260e7e5ada2480c8ded1c8fab833b5edfc0fcad9d7c8b896a195bf906fc96fd",
+  "zh": "主人，我有責任告知您， Dark Savant 與 Rapax 結盟極為致命。我會保護您免受可能的傷害。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "e4e50ad6f579a266c0c9c108ef3889d2cce5fbc4cbe25169612280420ac023c5",
+  "zh": "身分： Dark Savant 。任務：搜尋持有 Astral Dominae 、 Chaos Moliri 、 Destinae Dominus 的生命體。警示：高度暴力可能性。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "58a27e24fec55ae0d4ed67babcc5291240b99535be6b89497933ed711e32c723",
+  "zh": "身分： Bela 。任務：尋找 Cosmic Forge 。尋找 Cosmic Lords。阻止未知實體。警示：無警示。"
+ },
+ {
+  "id": 62,
+  "src_sha256": "149c1a7800f4e43a2ad4db2c6d3d6a45488b4db5fd9d7bd70dc969f0ac66c3f5",
+  "zh": "主人，我有責任告知您，雖然任務成功，但 Dark Savant 並不在那艘船上。位置：未知。"
+ },
+ {
+  "id": 63,
+  "src_sha256": "9c249bd57c0546935a73e6bd8b2b7540abe76bc5746ed4e84da385689f6e6c6c",
+  "zh": "各方已達成和平。 Umpani 與 T'Rang 已從衝突資料庫移除。"
+ },
+ {
+  "id": 64,
+  "src_sha256": "3e54f6b371d8182f2e5153c13a7dfca6fb478703ea899c063908bad9ab78eb89",
+  "zh": "生命體錯誤。偵測到謀殺。兇手：未知。"
+ },
+ {
+  "id": 65,
+  "src_sha256": "25b47a0173e229e34923d711f8a04d141cd906ac1358edaf2f90f0c9ee564f71",
+  "zh": "主人，任務完成。"
+ },
+ {
+  "id": 66,
+  "src_sha256": "b336366c18b09410cc27d068e53a057214b36c2019069db105e70159f58d74fa",
+  "zh": "物體： Astral Dominae 的複製品。意義：毫無價值。來源： Rattkin 。用途：欺騙 Dark Savant 。"
+ },
+ {
+  "id": 67,
+  "src_sha256": "78a8c436f1cea9cd517e3c388db8b045b50cee9d1ada84f3e2cef519333bc11c",
+  "zh": "RFS- 81 偵測到敵對生物。"
+ },
+ {
+  "id": 68,
+  "src_sha256": "e617c3b1a0cbf62b5d71470c55557e9b2bcddcbfeb00338471f2b24b68e6b4d8",
+  "zh": "主人，此處偵測到生物。"
+ },
+ {
+  "id": 69,
+  "src_sha256": "a824363e18f214abbac9fe7c8142086ae278c2959dbbda640cf847350bfd2edd",
+  "zh": "RFS- 81 下班。"
+ },
+ {
+  "id": 70,
+  "src_sha256": "226552edce974abf9580cc64365bd85db2ba72cdbce854c9230f461d66a5d1b9",
+  "zh": "位置： Arnika 。敵對存在： Savant Troopers 。可能的 Dark Savant 生命體：大量，多種族。資料： Higardi 之城。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "341839775ec37793f50d437a56d69142f1d2d0c9baf6d12918a734c25b8a8cd3",
+  "zh": "位置： Trynton 。敵對存在：鱷魚、齧齒動物。生命體：大量，多種族。資料：{{Trynnie}} 的家園。可能與 Mad Marten 有關。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "5e41f6afc2cad8e61967e3766695c2cd878be5e0cb48aedab1f0714770935e27",
+  "zh": "位置： Marten's Bluff 。敵對存在： T'Rang 。生命體：大量， T'Rang 。資料： Mad Marten 、 Higardi 的原居地。現由 T'Rang 占據。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "c77e10810ad770fd4f16e7d2f2d775f00232aad40fceaf57e15b649a2ab585b0",
+  "zh": "位置： Sea Caves 。敵對存在：未偵測到。生命體：未偵測到。資料：無可用資料。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "1beb6e32b586073501939402b2202fbc56db3af13026ba86aebfef6948121336",
+  "zh": "位置： Mount Gigas 。敵對存在： Umpani 。生命體：大量，偵測到 Umpani 與 {{Trynnie}}。資料：廢棄洞穴結構；目前作為 Umpani 基地營。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "149cd4c91f91b5ee56f95e81e26c174999a59ab525e7cf819e3eea93b98cbc82",
+  "zh": "位置： Rapax Rift 。敵對存在：大量。生命體：大量。資料：偵測到熔岩，傳聞為 Al-Sedexus 的所在地。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "de561b54ac5a4c16f8e3fa9c86868599570638e526db0cdadb2081fee65ad870",
+  "zh": "位置： Rapax Castle 。敵對存在：大量。生命體：大量。僅限 Rapax 。資料： Rapax 之城。 Templar Rapax 的所在地。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "b106603035d772a7c027975e29433d16530c3174424c6889ae5eebd7ddd421e3",
+  "zh": "位置： Bayjin 。敵對存在： Rynjin 。生命體：大量。 Rynjin 。偵測到 Umpani 。偵測到 Helazoid 。資料： Rynjin 種族所在地。目前社會因內戰而分裂。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "6ff9a948027b69ef31faeab7a63650018a5523c50a0d2d3690f10a80929cda3b",
+  "zh": "位置： Ascension Peak 。敵對存在：未知。生命體：未知。資料：被視為聖地。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "58b626c12f1c9a1a9f3c82e652512186f1c4e7ab49703b35eeee15d9a6595da9",
+  "zh": "位置： Cosmic Circle 。敵對存在：一。生命體：三。資料： Cosmic Forge 的位置、 Cosmic Lords 與 Dark Savant 的目標。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "16282be0195b6219b095436e286ff433df5ae793ed7780b10f04c05912854e31",
+  "zh": "位置： Swamp 。敵對存在：大量。生命體：大量。資料：報告指出沼澤外圍有通往其他區域的入口。可能有組織犯罪活動。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "1abb961c39960f95c1b82f1c5cf16429e6313ab4eb01b037baac9c43b63b79d0",
+  "zh": "警告。 RFS- 81 偵測到高等級敵對存在，禁止我進入位置： Rapax Away Camp 。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "62a1762dd7704692fdd4de3ea180beedf0f104865953cfff0f58c6ac92c64cff",
+  "zh": "RFS- 81 必須終止任務。再見。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "e8621e2d305659653d172fbd54c1f569ea1b6a9710b0328262dc7212da0dd4f8",
+  "zh": "RFS- 81 將維持受護送狀態，直到隊伍抵達安全地點。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "0bcc1df2605e28ca917fde9788e183611a85e09af56c556ddb44f1b8bbff3668",
+  "zh": "正在掃描區域。位置未知。 RFS- 81 需要返回安全區域。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "e51e77e60b115ea2f1e970ff29210eb2f77292cbcbaa2ad5c78d975403e0e628",
+  "zh": "RFS- 81 請求立即改道至安全地點。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "9a9a22d4821585c7df24db9e42d6f44b75e94d670a3e150034bb0136a7cd6f7e",
+  "zh": "RFS- 81 在指定區域以外無法以最高效率運作。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "f256698a604c0e984e6ecc9d9c7fa6e2bd7cd332fa4cbc75b668d6049df862b6",
+  "zh": "該物品為系統正常運作所必需。不得移除。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "ac2fd986677d063f18877598e3b37cd4a7082cb659a2c05235670f9aa1b6ca87",
+  "zh": "RFS- 81 已通知您，此區域禁止進入。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "ca6896ada170730fa1be5a3051e2ebd580363a9188d71d77027ec1429b405fe4",
+  "zh": "RFS- 81 正在彙整 Umpani 領袖的紀錄。修正先前檔案。敵意評等重設為零。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "f21c0ece66fc7483b10b65b62ed441b6609ab5f6a7c4774424835f17959dd9c8",
+  "zh": "RFS- 81 正在更新 T'Rang 領袖的紀錄。修訂敵意評等。評等為零。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "de21364a01dc89d154e29bbbbaa2456d29088cfacdbc45994b721bb056504b0e",
+  "zh": "注意。裝置可執行其功能。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "114e0a7b9983ad16b1878dd7ebb11d10a2af66b5c02dc44d40de200690d7f666",
+  "zh": "物體： Helm of Serenity 。意義：未知。用途：防止瘋狂。"
+ }
+]

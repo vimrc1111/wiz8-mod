@@ -1,0 +1,11 @@
+call	2b6	spend_requires_sufficient_sp	間接呼叫 srAssertFail 的分析標記；非零消耗要求所選領域目前 SP 有號值至少等於消耗量，違反時進入防禦性斷言（0x52b4ac、0x52b4c6）
+call	55ee30	character_sp_ui_refresh	非零消耗寫回 SP 後刷新 UI；模式 6 設角色 UI+0xf8 的 0x100，模式 7 經 562a50 設非空戰鬥 UI+0xf4 的角色位元；輸入與輸出包含兩旗標及模式、戰鬥 UI 指標存在性
+data	4	characterIndex_argument	第一個 cdecl 參數為隊伍角色索引；分析器列出的堆疊位移，不是資料表
+data	8	realmIndex_argument	第二個 cdecl 參數為六領域索引；分析器列出的堆疊位移，不是資料表
+data	c	spendAmount_argument	第三個 cdecl 參數為 SP 消耗量，i32；分析器列出的堆疊位移，不是資料表
+data	5ebaf4	spend_precondition_assert_import	srAssertFail 匯入槽；不足額時報告前置條件違反，不是拒絕消耗後正常回傳的規則
+data	61c8ac	無關	防禦性斷言的原始碼檔名；不參與 SP 計算
+data	61c93c	無關	防禦性斷言的足額條件診斷文字；不是遊戲資料表
+data	685174	party_characters	角色主記錄陣列指標；角色步長 0x1862，第一參數選擇角色（0x52b490–0x52b4a2）
+field	ebx-0x75	無關	objdump 從前方資料延續錯位解碼產生的運算元（build/wiz8.asm:405812）；原版函式入口 0x52b480 重新解碼讀取角色陣列全域，不存取此欄位
+field	edi+ebp*4+0xb45	character_current_realm_sp	所選角色六領域目前 SP，i32；第二參數選領域，非零消耗先有號比較足額，再以 32 位相減寫回（0x52b4ac、0x52b4cf、0x52b4d9）

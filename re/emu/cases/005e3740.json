@@ -1,0 +1,21 @@
+{
+  "cc": "cdecl",
+  "steps": 20000,
+  "path_limit": 128,
+  "samples": 128,
+  "objects": {"trigger": 0},
+  "args": ["@trigger"],
+  "setup": [
+    {"at": {"object": "trigger", "offset": 892}, "size": 4, "signed": true, "value": -1}
+  ],
+  "in": [
+    {"name": "triggerTrapLevel", "at": {"object": "trigger", "offset": 876}, "size": 4, "signed": true}
+  ],
+  "out": [
+    {"name": "triggerTrapType", "at": {"object": "trigger", "offset": 892}, "size": 4, "signed": true}
+  ],
+  "boundary": [
+    [-2147483648], [-1], [0], [1], [2], [3], [4], [5], [6], [7], [8], [9], [10], [11]
+  ],
+  "random": {"seed": 6174528, "count": 32, "ranges": [[-4, 11]]}
+}

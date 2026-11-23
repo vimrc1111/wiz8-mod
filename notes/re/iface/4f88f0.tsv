@@ -1,0 +1,59 @@
+call	2b6	srAssertFail	IAT 0x5ebaf4 的 srAssertFail 分析標記；僅 4f6b90 回傳空（配置失敗）時停止，輸入不可達，在 cov-exempt 的塊裡
+call	40efa0	boundedRandom	有界亂數 R(n)：先 R(候選數) 選候選，再 R(權重和) 判定；TestEmu 以錄下的 rng 序列逐次對齊（W=0 時 R(0)=0 也記）
+call	4addf0	listGrow	列表擴容到恰好 n 個元素槽（不倍增），搬舊資料；out 列表 cap 由 calc 重現，候選列表 A 的 cap 不外露；配置失敗分支輸入不可達
+call	4f6b90	itemObjectCreate	以 51c020 建好的物品記錄建物品物件，序號 0x6874c2 加一；4f93d0 地形放置以樁計次；物件指標是堆位址不入輸出；回空只在配置失敗
+call	5e1c10	heapFree	釋放候選列表 A 的緩衝與擴容舊緩衝；無規則輸出
+call	5e1ce0	heapAlloc	配置候選列表 A 的 5 個元素緩衝與擴容新緩衝；無規則輸出
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffd8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 IAT 槽；僅配置失敗的防禦性斷言，輸入不到
+data	5ec0e0	無關	候選列表 A 的區域物件虛表指標，只供解構，不是規則資料
+data	618f18	無關	srAssertFail 的檔名字串
+data	618f4c	無關	srAssertFail 的條件字串
+data	6836b0	物品池指標陣列	ITEMTABLES 載入後的池指標陣列，以 (sel & 0xffff)*4 索引；notes/re/loot.md:13
+data	68516c	物品定義庫基址指標	每筆 0x10d bytes，+0x86 的 u32 為篩選用的價值；notes/re/loot.md:9
+data	617ce0	等級篩選三元組表	7 組 12-byte（等級下限 a、價值下限 b、價值上限 c），條件 L>=a 且 b<=value<c；執行時從使用者的 Wiz8.exe 讀，不內嵌；notes/re/loot.md:23
+data	617ce4	等級篩選三元組表	同 0x617ce0，第一組的價值下限（迴圈以 +4 起算）
+data	617ce8	等級篩選三元組表	同 0x617ce0，第一組的價值上限
+data	617cec	等級篩選三元組表	同 0x617ce0，第二組的等級下限
+data	617cf0	等級篩選三元組表	同 0x617ce0，第二組的價值下限
+data	617cf4	等級篩選三元組表	同 0x617ce0，第二組的價值上限
+data	617d38	等級篩選三元組表尾	7 組的結束位址（迴圈上界），不讀值
+field	eax+0x0	價值下限b／候選列表A元素	0x4f8b35 讀三元組的價值下限；0x4f8ac4、0x4f8b87 讀 A 列表元素（槽索引）
+field	eax-0x4	等級下限a	三元組第一欄，L 須大於等於它
+field	eax+0x4	價值上限c	三元組第三欄，價值須小於它
+field	eax+0x1cc	物品池篩選旗標	池 +0x1cc；非零時 w 非零槽要過等級／價值三元組，候選不足時整池回退
+field	esi+0x1cc	物品池篩選旗標	池 +0x1cc，同上（逐槽判斷處）
+field	esi+0x0	池指標	pool 指標陣列元素（sel & 0xffff 選池）
+field	eax+esi*1	池槽類別	池 +0x104+5j 的 u16 類別，0 為空槽（回退重建候選時）
+field	eax+ecx*1+0x108	池槽權重	候選槽的 u8 權重 w，加總為 W
+field	eax+edx*4	出列表資料項	out 列表資料指標處第 count 項，存新物品物件指標
+field	ebp+0x4	出列表筆數	out 列表 +4 count
+field	edi+0x4	出列表筆數	out 列表 +4 count
+field	ecx+0x4	出列表筆數	回傳值＝out 列表 +4 count
+field	ebp+0x8	出列表容量	out 列表 +8 cap
+field	edi+0x8	出列表容量	out 列表 +8 cap
+field	ebp+0xc	出列表資料指標	out 列表 +0xc
+field	edi+0xc	出列表資料指標	out 列表 +0xc
+field	ebx+eax*1	池指標	pool 指標陣列[(sel & 0xffff)*4]
+field	ebx+ecx*1	池指標	pool 指標陣列[(sel & 0xffff)*4]
+field	ecx+0x86	物品定義價值	物品定義 +0x86 的 u32，與三元組比較
+field	ecx+eax*4	候選列表A元素	A 列表資料項（刪除位移時的目的）
+field	ecx+eax*4+0x4	候選列表A下一元素	A 列表刪除位移的來源
+field	ecx+edx*4	候選列表A元素	A 列表資料項（寫入新候選）
+field	ecx+edi*1+0x106	池槽物品ID	被選中槽的 u16 item ID
+field	ecx+edi*1+0x108	池槽權重	被選中槽的 u8 權重 w
+field	edi+edx*1+0x106	池槽物品ID	固定槽（w=0）的 u16 item ID
+field	edi+esi*1+0x104	池槽類別	池 +0x104+5j 的 u16 類別，0 為空槽
+field	edi+esi*1+0x106	池槽物品ID	池 +0x106+5j 的 u16 item ID，也用來索引定義庫
+field	edi+esi*1+0x108	池槽權重	池 +0x108+5j 的 u8 權重，0 為固定加入項
+data	ffffffffffffffd4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表

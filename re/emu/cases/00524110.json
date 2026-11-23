@@ -1,0 +1,1688 @@
+{
+  "cc": "cdecl",
+  "steps": 100000,
+  "path_limit": 512,
+  "samples": 64,
+  "objects": {
+    "monster": 0,
+    "decoy": 1024,
+    "list": 2048,
+    "entries": 2080,
+    "group": 4096,
+    "groupList": 5120,
+    "groupEntries": 5160,
+    "emptyList": 5200,
+    "visual": 8192,
+    "visualData": 12288,
+    "template": 16384
+  },
+  "args": [
+    123,
+    7,
+    1
+  ],
+  "setup": [
+    {
+      "at": {
+        "global": "0x683fad"
+      },
+      "value": "@list",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x683fb1"
+      },
+      "value": "@groupList",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x6840c7"
+      },
+      "value": "@template",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "list",
+        "offset": 0
+      },
+      "value": "@entries",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "list",
+        "offset": 8
+      },
+      "value": 2,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "entries",
+        "offset": 0
+      },
+      "value": "@decoy",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "entries",
+        "offset": 4
+      },
+      "value": "@monster",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "groupList",
+        "offset": 0
+      },
+      "value": "@groupEntries",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "groupList",
+        "offset": 8
+      },
+      "value": 1,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "groupEntries",
+        "offset": 0
+      },
+      "value": "@group",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "decoy",
+        "offset": 0
+      },
+      "value": 4294967295,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 4
+      },
+      "value": 456,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 12
+      },
+      "value": "@visual",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "visual",
+        "offset": 472
+      },
+      "value": "@visualData",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "visualData",
+        "offset": 1512
+      },
+      "value": "@emptyList",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "group",
+        "offset": 0
+      },
+      "value": 456,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "group",
+        "offset": 8
+      },
+      "value": "@emptyList",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x683f94"
+      },
+      "value": 0,
+      "size": 1
+    },
+    {
+      "at": {
+        "global": "0x68ec78"
+      },
+      "value": 0,
+      "size": 4
+    }
+  ],
+  "in": [
+    {
+      "name": "monsterID",
+      "at": {
+        "arg": 0
+      },
+      "size": 4,
+      "also": [
+        {
+          "name": "monsterID",
+          "at": {
+            "object": "monster",
+            "offset": 0
+          },
+          "size": 4
+        }
+      ]
+    },
+    {
+      "name": "condition",
+      "at": {
+        "arg": 1
+      },
+      "size": 4
+    },
+    {
+      "name": "decay",
+      "at": {
+        "arg": 2
+      },
+      "size": 4
+    },
+    {
+      "name": "currentHP",
+      "at": {
+        "object": "monster",
+        "offset": 43
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[0]",
+      "at": {
+        "object": "monster",
+        "offset": 87
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[1]",
+      "at": {
+        "object": "monster",
+        "offset": 91
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[2]",
+      "at": {
+        "object": "monster",
+        "offset": 95
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[3]",
+      "at": {
+        "object": "monster",
+        "offset": 99
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[4]",
+      "at": {
+        "object": "monster",
+        "offset": 103
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[5]",
+      "at": {
+        "object": "monster",
+        "offset": 107
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[6]",
+      "at": {
+        "object": "monster",
+        "offset": 111
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[7]",
+      "at": {
+        "object": "monster",
+        "offset": 115
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[8]",
+      "at": {
+        "object": "monster",
+        "offset": 119
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[9]",
+      "at": {
+        "object": "monster",
+        "offset": 123
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[10]",
+      "at": {
+        "object": "monster",
+        "offset": 127
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[11]",
+      "at": {
+        "object": "monster",
+        "offset": 131
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[12]",
+      "at": {
+        "object": "monster",
+        "offset": 135
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[13]",
+      "at": {
+        "object": "monster",
+        "offset": 139
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[14]",
+      "at": {
+        "object": "monster",
+        "offset": 143
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[15]",
+      "at": {
+        "object": "monster",
+        "offset": 147
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[16]",
+      "at": {
+        "object": "monster",
+        "offset": 151
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[17]",
+      "at": {
+        "object": "monster",
+        "offset": 155
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[18]",
+      "at": {
+        "object": "monster",
+        "offset": 159
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[19]",
+      "at": {
+        "object": "monster",
+        "offset": 163
+      },
+      "size": 4
+    },
+    {
+      "name": "poisonStrength",
+      "at": {
+        "object": "monster",
+        "offset": 267
+      },
+      "size": 4
+    },
+    {
+      "name": "primaryCondition",
+      "at": {
+        "object": "monster",
+        "offset": 263
+      },
+      "size": 4
+    }
+  ],
+  "out": [
+    {
+      "name": "conditionDuration[0]",
+      "at": {
+        "object": "monster",
+        "offset": 87
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[1]",
+      "at": {
+        "object": "monster",
+        "offset": 91
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[2]",
+      "at": {
+        "object": "monster",
+        "offset": 95
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[3]",
+      "at": {
+        "object": "monster",
+        "offset": 99
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[4]",
+      "at": {
+        "object": "monster",
+        "offset": 103
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[5]",
+      "at": {
+        "object": "monster",
+        "offset": 107
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[6]",
+      "at": {
+        "object": "monster",
+        "offset": 111
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[7]",
+      "at": {
+        "object": "monster",
+        "offset": 115
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[8]",
+      "at": {
+        "object": "monster",
+        "offset": 119
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[9]",
+      "at": {
+        "object": "monster",
+        "offset": 123
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[10]",
+      "at": {
+        "object": "monster",
+        "offset": 127
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[11]",
+      "at": {
+        "object": "monster",
+        "offset": 131
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[12]",
+      "at": {
+        "object": "monster",
+        "offset": 135
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[13]",
+      "at": {
+        "object": "monster",
+        "offset": 139
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[14]",
+      "at": {
+        "object": "monster",
+        "offset": 143
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[15]",
+      "at": {
+        "object": "monster",
+        "offset": 147
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[16]",
+      "at": {
+        "object": "monster",
+        "offset": 151
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[17]",
+      "at": {
+        "object": "monster",
+        "offset": 155
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[18]",
+      "at": {
+        "object": "monster",
+        "offset": 159
+      },
+      "size": 4
+    },
+    {
+      "name": "conditionDuration[19]",
+      "at": {
+        "object": "monster",
+        "offset": 163
+      },
+      "size": 4
+    },
+    {
+      "name": "poisonStrength",
+      "at": {
+        "object": "monster",
+        "offset": 267
+      },
+      "size": 4
+    },
+    {
+      "name": "primaryCondition",
+      "at": {
+        "object": "monster",
+        "offset": 263
+      },
+      "size": 4
+    }
+  ],
+  "boundary": [
+    [
+      123,
+      7,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      7,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      7,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      19
+    ],
+    [
+      123,
+      7,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      100,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      19
+    ],
+    [
+      123,
+      7,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      100,
+      19
+    ],
+    [
+      123,
+      7,
+      10,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      7,
+      11,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      0,
+      10,
+      1,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      19,
+      10,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      5,
+      19
+    ],
+    [
+      123,
+      1,
+      1,
+      1,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      13,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      7,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      19
+    ],
+    [
+      123,
+      7,
+      2147483648,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      2,
+      19
+    ],
+    [
+      123,
+      7,
+      4294967294,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4294967295,
+      19
+    ],
+    [
+      123,
+      7,
+      10,
+      1,
+      0,
+      0,
+      0,
+      50,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      19,
+      10,
+      1,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0,
+      40,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      5,
+      19
+    ],
+    [
+      123,
+      0,
+      1,
+      1,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      1,
+      1,
+      1,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      2,
+      1,
+      1,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      3,
+      1,
+      1,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      4,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      5,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      6,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      7,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      8,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      9,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      10,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      11,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      12,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      13,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      14,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      15,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      16,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      17,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      18,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      5,
+      19
+    ],
+    [
+      123,
+      19,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      5,
+      19
+    ]
+  ],
+  "random": {
+    "seed": 524110,
+    "count": 64,
+    "ranges": [
+      [
+        0,
+        100000
+      ],
+      [
+        0,
+        19
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        3,
+        4294967295
+      ],
+      [
+        0,
+        4294967295
+      ],
+      [
+        0,
+        19
+      ]
+    ]
+  }
+}

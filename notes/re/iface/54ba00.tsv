@@ -1,0 +1,103 @@
+call	2b6	無關	分析器列出的例外展開輔助目標；正常返回不執行，與施法規則無關
+call	40efa0	R(n) 亂數	失敗判定 R(100)、失敗語音 R(100)<0x46、反噬語音二選一 R(2)；calc 以同序 Rand 呼叫重現
+call	4aca00	spellNoDiceScale	法術 0x30..0x5d 查 .text 表 0x4aca2c：為真時不改骰（不乘 PL）；calc aca00
+call	517f90	percentBonus	威力 += 威力×(加成/2)/100（u32）；calc spcPct
+call	53bea0	isCharacterSource	來源型別 1（或旗標 1 時型別 3 有索引）；calc isChar／sdmSource
+data	4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertImport	srAssertFail import；斷言塊停止、無規則結果（cov-exempt）
+data	5ebc7c	missileLift	類別 6 飛彈目標 y 的浮點乘數
+data	61e2c4	無關	原始檔名字串（4e5550 查找與斷言的檔名參數）
+data	65be1c	spellTable	法術記錄表（步距 0x1bf）
+data	68510c	messageMode	訊息輸出模式：選 590950/58ac00 或 5905f0
+data	685174	characterBase	角色記錄基底（步距 0x1862）
+data	ffffffffffffffc4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+field	eax+0x0	listOrRecordHead	清單 vtable 或記錄第 0 dword（來源／目標型別、佇列項法術）
+field	ebx+eax*1+0x133	spell.realm	法術領域（59af40 參數）
+field	edi+0x0	source.type	來源型別
+field	edi+0x8	source.monsterId	來源怪物 id
+field	esi+0x0	listOrRecordHead	清單 vtable 或實例第 0 dword
+call	451280	visualManager	取得全域視覺管理器指標（0x4b 交給 4506c0 的 this）；參數不影響回傳
+call	52c320	spellPowerLevel	法術記錄 +0x56 加等級，等級 8 回 0；calc spLevel
+call	551500	areaReleaseSweep	法術 0x26：區域查詢（幾何，case 輸入）後逐一判定心智抵抗並解除；calc sweep
+call	587c80	trapDisarmOrLockPin	法術 0x27：依 683f99／683f98 交給陷阱解除（58a930）、開鎖（5871a0）或提示（58ac00）；回傳不讀
+call	58a9c0	trapLevelSet	法術 0x12：等級寫入目前陷阱物件，無陷阱時提示（58ac00）
+call	5905c0	setCombatMessageEnabled	狀態訊息段後恢復訊息啟用；calc status
+call	5905e0	messagePendingQuery	訊息待續旗標（69b7b8）查詢；為真先輸出分隔訊息
+call	5af2d0	partyEffectIconRefresh	畫面矩形清除與髒區標記（排除）；只在 gameMode 7 呼叫，calc 以 4263f0／422d50 位址 stub 對帳
+data	54c6c4	spellArmJumpTable	131 項 switch 跳躍表（法術 id 減 1 索引）；每臂以法術 id 列舉覆蓋
+data	54c8d0	backArmJumpTable	反彈臂（0x13 群）的小跳躍表；索引來自 54c8f0
+data	54c8dd	backArmJumpTableTail	54c8d0 表內位址（表尾項）；分析器列為資料引用
+data	54c920	backRandomArmJumpTable	法術 0x10 反彈 R(5) 選效果的跳躍表（0..3，4 走預設）
+data	5ebcc8	durationQuarter	f32 0.25：法術 0x5f 時長 = PL×0.25 + 5ebc7c
+data	5ec2f0	lightDurationScale	f32 15000：法術 0x1e／0x7b 時長 = PL×15000 + 5ee838
+data	5ee838	lightDurationBase	f32 25000：法術 0x1e／0x7b 時長基值
+data	609b24	assertMessage	assert 訊息字串（54bb41 斷言塊）；只在 assert 失敗時使用（cov-exempt）
+data	619788	statusMessagePrefix	狀態訊息段的前綴字串；只作 5905f0 參數，不進規則
+data	61a944	無關	隊伍目標 id 為 -1 時 assert 的訊息字串（54c10b，cov-exempt）
+data	61aa9c	spellNameFormat	法術 0x5f 訊息格式字串（517a70 排除）；只作訊息參數
+data	61e258	unknownSpellMessage	未列舉法術 id 的訊息字串（預設臂 58aad0 參數）
+data	61e29c	無關	來源不是角色時 assert 的訊息字串（54c057、54c1cb，cov-exempt）
+data	683f94	inCombat	戰鬥中旗標：法術 0x1e／0x7b 非戰鬥時設 +0x125
+data	685189	partyGold	隊伍金幣；法術 0x7c 扣除 p%（p 由 517970 取得）
+data	68691f	sharedPartySpellRecords	十二筆共享隊伍效果槽；每槽 0x11 bytes，啟用 byte、法術、強度、倍率
+data	686920	partySlotSpellField	68691f 槽的法術 u32（+1）；法術 0x7f 清除時歸 0
+data	686924	partySlotPowerField	68691f 槽的強度 u32（+5）；法術 0x7f 迴圈起點
+data	68692c	partySlotScaleField	68691f 槽的倍率 u32（+0xd）；法術 0x7f 清除時歸 0
+data	686930	partySharedBuffSlotActive	第二筆共享槽的啟用 byte；迴圈下一槽
+data	686931	partySharedBuffSlotSpell	第二筆共享槽的法術 u32
+data	686935	partySharedBuffSlotPower	第二筆共享槽的強度 u32
+data	68693d	partySharedBuffSlotScale	第二筆共享槽的倍率 u32
+data	6869f0	partySlotEnd	共享槽迴圈結束位址（12 槽之後）
+data	686a70	currentGameTick	全域值；法術 0x4b 寫入施法者 +0x1813（同時 +0x1861=1）
+data	68c09c	stringTable	訊息字串表（+0x694、+0x6c0、+0x6d4、+0x6d8 作 5905f0 參數）
+data	68ec78	gameMode	值 6 時收尾呼叫 590bd0(-1)（法術 0x17 除外）；值 7 時法術 0x7f 刷新畫面區
+data	800100	partyBuffRefreshMask	刷新位元立即值（562a50 參數）；不是物件指標或 exe 資料表
+data	fffffffffffffff8	無關	參數堆疊位移或區域暫存位移被分析為資料引用，非遊戲資料或表
+field	eax*4+0x54c6c4	spellArmJumpTable	switch 跳躍表項（見 data 54c6c4）
+field	eax*4+0x54c920	backRandomArmJumpTable	法術 0x10 反彈臂跳躍表項
+field	eax+0x54c8f0	backArmIndex	反彈臂索引 byte 表（法術 id 減 0x13）
+field	eax+0x6	item.flagA	法術 0x17 物品 +6；與 +0xb 同非零時設 +0x125
+field	eax+0x694	stringTable.msgA	訊息字串指標（5905f0 參數）
+field	eax+0x6d4	stringTable.msgB	法術 0x7c 金幣訊息字串指標（p<100）
+field	eax+0xb	item.flagB	法術 0x17 物品 +0xb
+field	eax+edx*2+0x1813	character.tickStamp	法術 0x4b 寫入 686a70
+field	eax+edx*2+0x1861	character.tickStampFlag	法術 0x4b 設 1
+field	ebp+0xb1d	character.castLevel	重施判定：法術等級（spLevel(spell,1)）不大於此值
+field	ebp+ecx*4+0xb45	character.realmPoints	依法術領域索引的法力；不小於法術 +0x49 才重施（進 4fa4d0）
+field	ebx+eax*1+0x49	spell.cost	法術記錄 +0x49：重施的法力門檻
+field	ecx*4+0x54c8d0	backArmJumpTable	反彈臂跳躍表項
+field	ecx+0x6c0	stringTable.msgC	訊息字串指標（5905f0 參數）
+field	edi+eax*1+0x13f	spell.gated	法術記錄 +0x13f：非零且 4aca00 為假時只處理型別 6／2
+field	edi-0x4	partySlot.spell	共享槽法術 u32（法術 0x7f 清 0）
+field	edi-0x5	partySlot.active	共享槽啟用 byte（法術 0x7f 判定並清 0）
+field	edx+0x6d8	stringTable.msgD	法術 0x7c 金幣訊息字串指標（p>=100）
+field	esi+0x120	inst.repeat	實例 +0x120：非零且結果 0 時走重施／重投
+field	esi+0x124	inst.messageDone	實例 +0x124：已輸出狀態訊息
+field	esi+0x125	inst.effectApplied	實例 +0x125：效果已套用
+field	esi+0x60	source.charIndex	來源角色索引（+0x5c+4）
+field	esi+0x68	source.posX	來源位置 x（法術 0x1e／0x7b 光源位置）
+field	esi+0x6c	source.posY	來源位置 y
+field	esi+0x70	source.posZ	來源位置 z
+field	esi+0x74	source.b18	來源 +0x18：非零時（法術 9 除外）設 +0x124；結果 0 時改走 cast 重投
+field	esi+0x75	source.b19	來源 +0x19：法術 0x27 陷阱參數
+field	esi+0x78	source.reflected	來源 +0x1c：反彈旗標，選反彈臂
+field	esi+0xac	target.itemPtr	目標 +0x1c：法術 0x17 的物品指標
+field	esi+0xb6	inst.flagsB6	法術 0x72 左移一位
+field	esi+0xd0	inst.powerLevel	威力等級 PL
+field	esi+0xd4	inst.bonus	威力加成百分比（spcPct）
+field	esi+0xd8	inst.duration	法術 0x23 反彈時長輸出
+field	esi+0xf4	inst.listCount	目標清單筆數（0x73、0x7c、0x7f）
+field	esi+0xfc	inst.listPtr	目標清單指標（0x73 隊伍 id）
+# G3 follow-up 4a：recast 固定次數硬上限 [未取得]。build/wiz8.asm:451548-451644（54c575..54c696）只見效果結果、來源、stamina 與 SP/cost 的停止條件，未見固定深度計數器。
+# 夾具工作上限取既有 4fa4d0 輸入的 SP 上限 60 ÷ 最小正 cost 1＝60 次；這是夾具範圍，遊戲全域 SP 硬上限 [未取得]，不宣稱 60 是原版輸入域上限。原有 cost=0 與所有 random 範圍完整保留。
+# 每個原 4 次呼叫組擴為 61 次（60 次施放，加一次終止資格檢查）；原每輪多筆序列同比擴充。record/ret 使用 notes/re/emu.md 的 n，超量仍報錯，禁止截斷或循環重放。所有既有 boundary 保留、舊輸入欄順序不變，新欄只追加。
+# 原版 SP 扣除在巢狀施法返回之後（build/wiz8.asm:337721-337733，4fab67..4fab89），故 SP/cost 不是所有巢狀遞迴的數學上界；亦可能由效果進度與 stamina 終止。需另票確認全域合法上限與擴大 emulator 堆疊，才能證明完整輸入域。
+# 驗證：4fa4d0 新 boundary 與 g3-probe 使用合成 HP 差額 5、每次恢復 1、cost 1、SP 60；原版 replay 與 F 各實際走 5 次施法。g3-probe.sh 60 另檢查 F 的 60 層，HP 100→160，資格/效果/SP 扣除各 60 次。
+# 54ba00 新 boundary 走 60 次 fizzle 重試：sound 60、資格檢查 61（最後回拒絕）、SP 扣除 60。這驗證上限呼叫次數而非 60 層巢狀堆疊；原版 60 層在 emulator 的固定 32 KiB 向下可用堆疊觸界，白名單禁止改 emu.py，沒有放寬其驗證或隱藏故障。
+# 上限列的 F 另以固定合法 RNG 檢查：sound=60、資格檢查=60、SP 扣除=60；F 的真實 SP 扣除使迴圈自然結束。Emu 的 SP callee 是無寫回樁，故以第 61 筆資格拒絕結束；四條抽樣 replay 均與 calc Emu 全欄相同，未放寬 RNG 或輸出比對。

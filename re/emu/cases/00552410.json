@@ -1,0 +1,402 @@
+{
+  "cc": "cdecl",
+  "steps": 20000,
+  "path_limit": 512,
+  "samples": 64,
+  "objects": {
+    "target": 16,
+    "monster": 12288,
+    "template": 16384,
+    "list": 20480,
+    "entries": 20512
+  },
+  "args": [
+    "@target",
+    0
+  ],
+  "setup": [
+    {
+      "at": {
+        "object": "target",
+        "offset": 4
+      },
+      "value": 0,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "target",
+        "offset": 8
+      },
+      "value": 123,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x683fad"
+      },
+      "value": "@list",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "list",
+        "offset": 0
+      },
+      "value": "@entries",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "list",
+        "offset": 8
+      },
+      "value": 1,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "entries",
+        "offset": 0
+      },
+      "value": "@monster",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 0
+      },
+      "value": 123,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 8
+      },
+      "value": 0,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x6840c7"
+      },
+      "value": "@template",
+      "size": 4
+    }
+  ],
+  "in": [
+    {
+      "name": "effectStrength",
+      "at": {
+        "arg": 1
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "monsterCategory",
+      "at": {
+        "object": "template",
+        "offset": 203
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "primaryStatus",
+      "at": {
+        "object": "monster",
+        "offset": 263
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "monsterLevel",
+      "at": {
+        "object": "template",
+        "offset": 591
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "mentalResistance",
+      "at": {
+        "object": "template",
+        "offset": 378
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "mentalResistanceBonus",
+      "at": {
+        "object": "monster",
+        "offset": 539
+      },
+      "size": 1,
+      "signed": true
+    }
+  ],
+  "out": [
+    {
+      "name": "resisted",
+      "at": {
+        "reg": "eax"
+      },
+      "size": 1,
+      "signed": false
+    }
+  ],
+  "boundary": [
+    [
+      0,
+      20,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      20,
+      18,
+      255,
+      255,
+      127
+    ],
+    [
+      0,
+      19,
+      17,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      21,
+      18,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      19,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      255,
+      4294967295,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2147483648,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      6,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      94,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      95,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      96,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      255,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -128
+    ],
+    [
+      0,
+      0,
+      0,
+      255,
+      255,
+      127
+    ],
+    [
+      255,
+      0,
+      0,
+      0,
+      0,
+      -128
+    ],
+    [
+      10,
+      0,
+      0,
+      10,
+      50,
+      -1
+    ],
+    [
+      10,
+      0,
+      0,
+      9,
+      50,
+      1
+    ],
+    [
+      10,
+      0,
+      0,
+      11,
+      50,
+      -1
+    ],
+    [
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2147483647,
+      0,
+      0,
+      255,
+      255,
+      127
+    ],
+    [
+      715827882,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      715827883,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -715827882,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      -715827883,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "random": {
+    "seed": 552410,
+    "count": 64,
+    "ranges": [
+      [
+        -2147483648,
+        2147483647
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        20
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        -128,
+        127
+      ]
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+call	5010f0	spellTargetClass	法術目標分類；calc 的 spellClass 重現（經 536570 的 actionClass）
+call	519180	targetReachable	目標是否仍可達；calc 的 reach 重現。種類 6（座標目標）幾何為原生計算；其中 434f20（遠程碰撞，射線／遮擋，已登記排除）以位址 stub 取代，回傳值來自 case 輸入，涵蓋被擋與未被擋，並記錄計數與參數。stub 434f20 會略過其內部 R(100) 方塊擲骰（擲骰在 41c330 內的 0x41c3f3），本節點不重現該擲骰。種類 1 路徑的 5199f0、51b000 以位址 stub 組合
+call	5207c0	itemSpellFlag	由物品定義推得傳給 5010f0 的物品旗標；calc 內嵌於 spellClass 的 itemflag
+call	537160	targetKindMatches	動作記錄是否符合目標分類；calc 的 kindOK 重現
+data	53654c	switchJumpTable	編譯器為 switch 產生的跳轉表，內容是本函式內的基本塊位址；控制流由 calc 的 switch 重現，不是遊戲資料
+data	68516c	itemDefinitionRecords	物品定義陣列指標，索引乘 0x10d；+0x63 為法術位元組；case 用 arena 模擬可變記錄，非固定 exe 表
+data	685174	partyCharacterRecords	角色記錄陣列指標，stride 0x1862；+0xb01、+0xb11 為本節點讀的欄位；case 用 arena 模擬
+data	685178	partySlotRecords	槽位記錄陣列的執行期指標，索引乘 0x106；非 exe 常數表
+field	eax*4+0x53654c	switchJumpTableOperand	跳轉表索引運算元；表為 53654c
+field	eax+0x0	actionRecordFirst	動作記錄第一個欄位，只當引數傳給 536570／519180 的重現
+field	eax+0x4	actionRecordSecond	動作記錄第二個欄位，只當引數傳給 536570／519180 的重現
+field	eax+ebp*1+0xb01	characterActionKind	角色記錄 +0xb01 的動作種類，大於等於 0xd 時該槽跳過
+field	eax+ebp*1+0xb11	characterActionActive	角色記錄 +0xb11 的動作有效旗標，為 0 時該槽跳過
+field	ebx+eax*1	partySlotExists	槽位記錄首位元組，非零才進入迴圈本體
+field	esi+0x63	itemSpellByte	物品定義 +0x63 的法術位元組
+field	esi+ecx*1+0x63	itemSpellByte	物品定義 +0x63 的法術位元組（索引形式）
+data	fffffffffffffff0	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	fffffffffffffff4	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	fffffffffffffff8	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用
+data	fffffffffffffffc	無關	堆疊參數或區域變數的位移立即值，非資料表或全域記憶體引用

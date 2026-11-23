@@ -1,0 +1,30 @@
+call	2b6	無關	擷取器把怪物欄位位移誤列為呼叫目標，低於 PE ImageBase，並非遊戲函式。
+call	40efa0	randomSizeJitter	呼叫 R(1000)，乘以千分之零點四再減零點二，得到 -0.2 到 +0.2 的尺寸抖動比例。
+call	4c5780	getModelBaseSize	回傳怪物模型內部物件 +0x5f0 的基準尺寸；任一尺寸界限為零時直接當結果。
+call	4c57c0	getModelSizeBounds	取出怪物模型內部物件 +0x5f4 尺寸下限與 +0x5f8 尺寸上限。
+call	54a8a0	loadMonsterTemplate	模板快取未命中時從遊戲資料庫讀入怪物模板；本節點的 case 以快取命中配線，不執行檔案載入。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5eb1a0	allocateMonsterStorage	CRT malloc 匯入槽；快取未命中時配置 0x297 位元組的模板緩衝。
+data	5eb224	releaseMonsterStorage	CRT free 匯入槽；模板載入失敗時釋放緩衝。
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；怪物指標為空或種類不小於 1000 時停止。
+data	5ebb34	zeroSizeBound	f32 零常數；尺寸下限或上限為零時退回基準尺寸；來源 exe 0x4e65ef、0x4e6607。
+data	5ec040	jitterCenter	f32 0.2 常數；抖動比例的中心偏移，讓比例落在 -0.2 到 +0.2；來源 exe 0x4e6720。
+data	5ed2a8	jitterStep	f32 0.0004 常數；乘上 R(1000) 的結果；來源 exe 0x4e671a。
+data	6147e0	無關	assert 診斷來源檔名；不是遊戲規則資料。
+data	614840	無關	assert 診斷：怪物種類小於 1000 的條件文字；不參與規則計算。
+data	614910	無關	assert 診斷：怪物資訊指標必須存在的條件文字；不參與規則計算。
+data	6840c7	monsterTemplateCache	按怪物種類索引的模板指標快取，種類小於 1000；case 固定種類 7 並讓該格指向 arena 模板。
+data	ffffffffffffffec	無關	區域暫存（尺寸界限、插值結果、亂數轉換）的堆疊位移，非全域資料引用。
+data	fffffffffffffff0	無關	區域暫存（尺寸界限、插值結果、亂數轉換）的堆疊位移，非全域資料引用。
+data	fffffffffffffff4	無關	區域暫存（尺寸界限、插值結果、亂數轉換）的堆疊位移，非全域資料引用。
+data	fffffffffffffff8	無關	區域暫存（尺寸界限、插值結果、亂數轉換）的堆疊位移，非全域資料引用。
+data	fffffffffffffffc	無關	區域暫存（尺寸界限、插值結果、亂數轉換）的堆疊位移，非全域資料引用。
+field	eax+0xd6	templateHpBase	模板 +0xd6 的有號 16 位 HP 骰底值；最小 HP 為底值加顆數，最大 HP 為底值加顆數乘面數。
+field	eax+0xd8	templateHpDiceCount	模板 +0xd8 的 u8 HP 骰顆數。
+field	eax+0xd9	templateHpDiceSides	模板 +0xd9 的 u8 HP 骰面數。
+field	ebx+0x27	monsterMaximumHp	怪物 +0x27 的 u32 最大 HP；以它在模板 HP 範圍中的位置決定尺寸插值。
+field	ebx+0x8	monsterSpecies	怪物種類 ID，小於 1000，用來索引模板快取；case 固定為 7。
+field	ebx+0xc	monsterSceneObject	怪物場景物件指標；其 +0x1d8 指向模型內部物件，尺寸界限與基準尺寸都在該物件。
+field	edi*4+0x6840c7	monsterTemplateCacheEntry	以怪物種類索引的模板指標快取項；case 固定指向 arena 模板。
+call	65	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。
+call	86	無關	分析器列出的低於 PE ImageBase 目標；本函式實際沒有此子呼叫，與規則無關。

@@ -1,0 +1,21 @@
+call	528a80	postCombatEvent	事件佇列推入：新增事件（種類 0x17、訊息文字、承載資料），計數加一，容量不足時恰增至計數；原版子函式照跑，calc 重現計數與容量
+call	5e1ce0	allocateEventStorage	配置 0x400 bytes 訊息緩衝區與 8 bytes 事件承載（XP 值、播報側旗標）；承載內容為 calc 輸出 eventXp／eventSide
+call	5f	無關	分析器對 CRT 格式化匯入呼叫（swprintf）的雜項標記；只產生訊息文字，不參與 XP 規則
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5eb188	formatEventMessage	CRT swprintf 匯入槽；把 XP 值格式化進訊息緩衝區，文字不是規則輸出（case 用 %d 範本）
+data	683f9f	xpAwardedFlag	全域位元組；有任何角色獲得 XP 時設為 1，否則保持原值
+data	685174	角色主記錄陣列	執行期指標；八個角色記錄步長 0x1862，讀寫 XP 池 C+0x9ed、當前 HP C+0xb11、主狀態 C+0xb01
+data	685178	角色副記錄陣列	執行期指標；八個角色副記錄步長 0x106，讀 Q+0 角色槽有效旗標
+data	686a70	名冊統計索引	有號全域；小於 47 才累加名冊統計表項，否則不動表
+data	686b79	名冊統計表	47 項、步長 0x21 的表（每項首 dword 累計 XP，不飽和：加法溢位則不變）；在 exe 的 .data 內，case 以全域輸入覆蓋每項
+data	68c09c	事件訊息範本表指標	執行期指標；指向的記錄在 +0x8c4／+0x8c8 持有兩份訊息範本指標，依播報側選一；文字不是規則輸出
+field	eax+0x0	無關	8 bytes 事件承載的第一個 dword，寫入 XP 值（對應 calc 輸出 eventXp）
+field	eax+0x4	播報側旗標	8 bytes 事件承載的第二欄 byte，存第二參數（對應 calc 輸出 eventSide）
+field	eax+ebp*1	角色槽有效旗標	副記錄 Q+0 的 u8；零值不獲得 XP
+field	ecx+0x0	名冊統計項	名冊統計表選中項的 u32 累計值；加 XP 未溢位才寫回
+field	ecx+0x8c8	訊息範本指標（第二播報側）	播報側旗標為零時選此範本；文字不是規則輸出
+field	edx+0x8c4	訊息範本指標（第一播報側）	播報側旗標非零時選此範本；文字不是規則輸出
+field	edx+esi*1+0x9ed	角色XP池	C+0x9ed，u32；加 XP，溢位飽和為 0xffffffff
+field	edx+esi*1+0xb01	角色主狀態	C+0xb01，u32；小於 18 才獲得 XP
+field	edx+esi*1+0xb11	角色當前HP	C+0xb11，32 位；為零者不獲得 XP

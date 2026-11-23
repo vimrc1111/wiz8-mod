@@ -1,0 +1,382 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "8d459a0bbf6bc4ad54e9aa281632872692c4174d9851dc3fca92dbf6808e9a0e",
+  "zh": "多麼不公！離我遠點！"
+ },
+ {
+  "id": 3,
+  "src_sha256": "b15b7403c129c2cc2dc4cc3ebc630067c7729bbaf67cd74c77739b51a642e397",
+  "zh": "你們說什麼都改變不了我的心意。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "79971715eb300da870518fe47f98e0915ddfd684fb132f68df392e4c6e5bcd7b",
+  "zh": "嘶！你們竟敢攻擊我！！"
+ },
+ {
+  "id": 7,
+  "src_sha256": "a42d82382b0fab4bb98c8670617809a3cddb4b309e32a7ef21c0ec4f7190a7a8",
+  "zh": "你們以為我該拿那個怎麼辦？！？"
+ },
+ {
+  "id": 8,
+  "src_sha256": "b569a19ce1177a29de3e33899b224e847328f1b9b771777e1b71ea888365deea",
+  "zh": "嘶！毀了他們！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "16d697b83e0bb8973c257d915b5ddd4be7000569b8acebf50167641bacbe3a15",
+  "zh": "嘶！你們這些小蠢蛋！難道沒注意到我被關在籠子裡嗎！？！？"
+ },
+ {
+  "id": 11,
+  "src_sha256": "759643dd8a0848f2c5cf4350f61f87361cb0d10886ee0b5daa7ad094d32ce588",
+  "zh": "是（ Yess ）！讓我們（ us ）走吧！"
+ },
+ {
+  "id": 12,
+  "src_sha256": "70a53140dbf70a7a23970210561cab77105e27c11cf2c71b8799e27adad1863c",
+  "zh": "或許它派得上用場。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "d821436df2be6ffd9ef209d56ed102cfa011e5029a112bedee8f184888b4b051",
+  "zh": "嘶！我不要！"
+ },
+ {
+  "id": 14,
+  "src_sha256": "2f3663c864054702a8130cd998369936e87694a009a800a18ee1076b1d7e52ed",
+  "zh": "是，我知道那東西。但它讓我付出代價，所以你們也得付出代價……"
+ },
+ {
+  "id": 15,
+  "src_sha256": "5eb390abda207fc801491a772cd3fc443cf9604ae6d4dd773a000b88ecfc81a0",
+  "zh": "Ssst ！我不再有興趣交易了！"
+ },
+ {
+  "id": 17,
+  "src_sha256": "764866a51e6f8c486e1e9885a254703b692c09f6841038d7ddd8dcbecd1c58f6",
+  "zh": "是，我一向喜歡這些……"
+ },
+ {
+  "id": 18,
+  "src_sha256": "3cb2649937541b8b823a0ed6c96fb7efea8093038f044d1524789e8ec65ff884",
+  "zh": "嘶！為了這個我該殺了你們！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "3a9d20e02c716a1b531fa66e69af0fc715011ed011015a80286485341d2f4e75",
+  "zh": "你們偷了 Drazic T'Rang 的東西！我會讓你們為此付出代價……"
+ },
+ {
+  "id": 20,
+  "src_sha256": "1913b49b8fd034f664a17c251145b15e62b01400cd63ef0a51ef23926e234869",
+  "zh": "Ssst ！帝國的敵人！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "255ea3df496638346d43ee89e4e0c923edfe5aaffeb7255d8bd770cdbd032fe4",
+  "zh": "我不需要錢……"
+ },
+ {
+  "id": 22,
+  "src_sha256": "7fe3f4cea393cf0685e6054604c2dfad9414e94b1ff32a9d6636067ea6acb26b",
+  "zh": "嘶！那不重要！"
+ },
+ {
+  "id": 23,
+  "src_sha256": "c0ceffd8d81444f907a5570da66b22daf34b778af269cbb6f90e78dd0fbeecae",
+  "zh": "我沒有興趣……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "0afdb36cb7eb5feaf77e06df3938c4f2275b9dd95a1d7c9065e869350b775f4b",
+  "zh": "嘶！我絕對「不會」說……"
+ },
+ {
+  "id": 25,
+  "src_sha256": "ce63bdf460255dda2f6e930cca7118b3cb2c1a1e914cba6e5e43da0a1cd3aee4",
+  "zh": "嘶！聽著……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "338f7449119a6a7d270aeb140cb1f0db4322d972268704c59a0a221ddd212e40",
+  "zh": "Ssst ！你們問的超出我能回答的範圍……"
+ },
+ {
+  "id": 27,
+  "src_sha256": "eb9eba16f6d9a3a7712d62e7aa0f1491fdef893685568a460ab0fae2d35b0347",
+  "zh": "這個也是……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "b558c3e93e579b50a2b3ae86651f4dcb72916c6a0803013312acb26b203cbb25",
+  "zh": "這值得考慮……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "d743ac0f9e08dc6a3d6d83e174af7557567a93d8ce76bf1c9799812c85b701b2",
+  "zh": "現在不是時候……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "7b3749be592b824c0af11bb64990c42622584e302b3869b0ad6dbc6e113753d0",
+  "zh": "我們有重要得多的事要談。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "a5ac412dae3d80027fbe40c7cbea017862522b17cfc7756a168dea8c6b40be33",
+  "zh": "等我們抵達 Mt. Gigas， Rodan 會去跟 Yamir 談……"
+ },
+ {
+  "id": 38,
+  "src_sha256": "4c4f7bcea85a9d80bad76da67ab641de3dd3d92a01b521e38785f94fcf776ea0",
+  "zh": "我會在那裡跟 Z'Ant 談……"
+ },
+ {
+  "id": 45,
+  "src_sha256": "107c90ff2767a17f46441341e1f6d97d0ee2eb6fa53ee11b54125a48fb0b13e9",
+  "zh": "嘶！他們與 Dark Savant 勾結……我們的死敵……"
+ },
+ {
+  "id": 46,
+  "src_sha256": "74138ddb86b05599ab0aa5a30ece708813d9c0bd3d8153969a83e41692afe772",
+  "zh": "與 Umpani 的戰爭（ war ）已經拖得太久……是時候和平了。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "eb0d52db6312bad91b6ac3dd75d8e3b2ea34bbb4b5b5f66ce52d6aac903667cc",
+  "zh": "T'Rang 會支持我們締結和平！"
+ },
+ {
+  "id": 54,
+  "src_sha256": "c991eed7fc7fdd13a850a93004c7bf1f5d5f20b8a4d66c69c196e51d41545b86",
+  "zh": "嘶！別隨便提那個名字！他打算殺光我們所有人，還利用 Rapax 達成目的。Rapax 強大之處，他就機靈過人，並利用他們的貪婪誘使他們與我們（ us ）全體為敵！"
+ },
+ {
+  "id": 60,
+  "src_sha256": "a3a8f24055fea6dcc1238e3e6dfd4a6635d2cbd9dec59e2c3cf8c9210a27629f",
+  "zh": "Rodan 會跟他談……"
+ },
+ {
+  "id": 61,
+  "src_sha256": "e7167ec8f60ae201a6c04b4d0f992a41f46140dd1500459a201633605a4a4449",
+  "zh": "只要 Umpani 與 T'Rang 結盟， Rapax King 就什麼都不是！ Ssst ！"
+ },
+ {
+  "id": 65,
+  "src_sha256": "a888859bdc94a0af3e54ccda623feaf6de6243809433d261d11df76fc18326cd",
+  "zh": "Ssst ！等我們抵達 Marten's Bluff，我會去跟 Z'Ant 談。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "ccc3df7e86572aa466ec9e1505ac32fa80438cc510b93f7867ff19435c9b6a43",
+  "zh": "我聽說你們拿蠢問題浪費時間！ Ssst ！"
+ },
+ {
+  "id": 73,
+  "src_sha256": "64d159a48a6b37c4db54cb131f74e350c15b367044d765226e42bae2dfacf9b3",
+  "zh": "Drazic T'Rang！"
+ },
+ {
+  "id": 75,
+  "src_sha256": "8d4fd318315f6a5807fe34135122e686a9b110dcfc304ec123a262b6e8bfe466",
+  "zh": "嘶！"
+ },
+ {
+  "id": 76,
+  "src_sha256": "e91f458490c2bd00674cabd95f24a2835d6bb384382b8a5f3e41190f592129ec",
+  "zh": "嘶！我還有太多理由要活下去！"
+ },
+ {
+  "id": 77,
+  "src_sha256": "e8e6e3db949e2935b04732a652a1d858b13ad318af018f57149fd2a7cffc2ad4",
+  "zh": "問候……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "c308beb8e2c64b6bc137eeb28af304bbf656f8b3068991b80a1061127f0a2131",
+  "zh": "嘶！你們要去哪裡？！？我們需要你們幫忙（ help ）！"
+ },
+ {
+  "id": 79,
+  "src_sha256": "1b724f8beacfae78206c1c6f2a1a43f4e9e8fe8b19405450ca594373f36ededb",
+  "zh": "嘶！我需要你們幫忙（ help ）！"
+ },
+ {
+  "id": 80,
+  "src_sha256": "598397a107c85cfb7cce70296c60b41da8bea71056b3228f91ca61ef193b1248",
+  "zh": "現在不是時候！"
+ },
+ {
+  "id": 81,
+  "src_sha256": "74adf3990e67ea115b2be3cfe67223e84655574d019ce0c52ea9f1b6f1422bd8",
+  "zh": "我期盼我們能達成和平。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "598397a107c85cfb7cce70296c60b41da8bea71056b3228f91ca61ef193b1248",
+  "zh": "現在不是時候！"
+ },
+ {
+  "id": 83,
+  "src_sha256": "c58b411c24ca64a3beaf61eb69eddb6ff59e530c643b22abc7d643ae5dd9d1f3",
+  "zh": "只要我們能避免（ help ），就不會！"
+ },
+ {
+  "id": 87,
+  "src_sha256": "d3b75e61affed16cfc8163e3e95507ee8f7d469c43976b21eafef5931f12fcf9",
+  "zh": "不知道他們是否還留著那件奇妙的裝置？！那能毀掉 Dark Savant！"
+ },
+ {
+  "id": 88,
+  "src_sha256": "e0755d2ea9b3faad07e36a9a246353e3d4ebfcd1eb1bb0e6741ed5e537eba660",
+  "zh": "是，要信任一個 Umpani 讓我十分緊張……但我必須這麼做……"
+ },
+ {
+  "id": 89,
+  "src_sha256": "6750f259c03eddfe45770ec25c3b692f95fae51b9badc0ac82821b66295dfe5b",
+  "zh": "嘶！我們必須確保我們（ us ）之間的和平！"
+ },
+ {
+  "id": 93,
+  "src_sha256": "2f6a73d7438f14cfffcd7eedc4cfff1467e098eb19ce77cf6ecc81a5bfe7739e",
+  "zh": "是！在 Marten's Bluff！"
+ },
+ {
+  "id": 95,
+  "src_sha256": "9bfe73439632f60dcac00b20cacb8bdb45e1e282ea81565f89b3e271c1ba52ae",
+  "zh": "在 Mt. Gigas！"
+ },
+ {
+  "id": 102,
+  "src_sha256": "f36be7a875ac3913a0e0dfdb4a86d62645025ef072044f2cb7585fd0cd92fd7d",
+  "zh": "我不知道！"
+ },
+ {
+  "id": 104,
+  "src_sha256": "16578f7722cb55185772ddfa4f95a355d94441c54fa68abbd6e121409cbb45a8",
+  "zh": "嘶！小心點，你們這些小蠢蛋！ Rapax 有跟著你們來這裡嗎？"
+ },
+ {
+  "id": 105,
+  "src_sha256": "5fffa0b58a7ef8e20ebd10ff20619e177a92eee67c216ecd84c78b346449b174",
+  "zh": "嘶！ Rodan 說你們會來！去跟他談！！ Ssst ！"
+ },
+ {
+  "id": 106,
+  "src_sha256": "0f45a2a55668fd861cacf939fc87cd5260ccb8315025612d5cfbf95a510400e7",
+  "zh": "你們聽到 Rodan 說的了！把門打開！"
+ },
+ {
+  "id": 107,
+  "src_sha256": "f4cbd7a3291e50dba22ec758439e771a92c9c2e5b3611cf06c34341c65ec7c93",
+  "zh": "Ssst ！你們是這個宇宙的恥辱！你們毀了那艘船，也毀了我們唯一的和平希望！可你們哪懂什麼和平？！你們是一群愚蠢的工蜂，盲目聽從領導者的話，從不停下來看看大局。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "8d6a09d92b81e2aac15ff07156cad0afcb60185427b7fd12f63c97c6bd03d4e9",
+  "zh": "一艘船毀了，和解已無希望！現在一切都完了……"
+ },
+ {
+  "id": 109,
+  "src_sha256": "175b4106c7a142d8d98ac1bac82b3d12af95148f7dd482bd89b0b550b70c6fed",
+  "zh": "我寧可殺了你們，也不想跟你們說話。嘶嘶嘶！"
+ },
+ {
+  "id": 110,
+  "src_sha256": "b0465db11770c72bdd87bd634b2b162412daaead3509298db7c1f91762a3a585",
+  "zh": "你們會因這項偉大的壯舉被人記住……現在，我們需要你們護送（ escort ）我們去見我們的領袖。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "cb20b1c1f26a05de3a8f4cf7743fbfb89e5da2a21d8902d03a7d8293f3efb308",
+  "zh": "把我從這籠子裡弄出（ out ）去！"
+ },
+ {
+  "id": 112,
+  "src_sha256": "6ef2431b5934b52a5f01033060d450e13fc96b8406cfaa7b22aeef65e7464182",
+  "zh": "我們需要你們護送我們（ us ）去見領袖。不能浪費時間！我們走吧！"
+ },
+ {
+  "id": 113,
+  "src_sha256": "14fe5df387a1721ba71554034890ef21cb9b5b5036d8f4c330d03cb2b66c1216",
+  "zh": "那你們必須格外小心。現在到了你們最大的考驗。你們必須仔細聽我說……"
+ },
+ {
+  "id": 114,
+  "src_sha256": "c24bc2926e0b2c07f76ed4787bca93452bf945ab8fc983a8848ad45fcd0f70f7",
+  "zh": "你們已為帝國立下大功！現在到了你們最大的考驗。你們必須仔細聽我說……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "0a73e0fdcd86f5085934f4a8d272e8b9ae8a591a375247022c254fb473d16dee",
+  "zh": "我是被 Rapax 帶來這裡的囚犯，偉大的 Drazic T'Rang！而隔壁籠子裡竟然是各個世界的禍害，一個 Umpani！我打算當晚就殺了他。然後出現了一個更邪惡的人，Dark Savant 本人！"
+ },
+ {
+  "id": 116,
+  "src_sha256": "70c2b483186e9e8eca8e7b512a632f4e96f67ccb693081aebb989e1d5b94ca71",
+  "zh": "他和 Rapax King 打算毀滅 Dominus 上所有的生命！就在那時我明白了，Umpani 與 T'Rang 聯手，就能做到我們各自無法做到的事……我們必須團結起來毀滅他們！在 Savant 出手之前，把我們（ us ）弄出（ out ）這些籠子，送到我們的領袖那裡！"
+ },
+ {
+  "id": 117,
+  "src_sha256": "12bb710d16fc47e0e0b56f73c78f3f7c61f4a10c84e70145dcbf5aa5d453ac9e",
+  "zh": "T'Rang 與 Umpani 之間的和平，是我們對抗 Dark Savant 唯一的希望！"
+ },
+ {
+  "id": 118,
+  "src_sha256": "778c941028e1aab9de05b58cf3085294bd255bbd0687b7e8fcd526411c9023dd",
+  "zh": "嘶！安靜！守衛，他有鑰匙。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "8179d2862a7eefd2954defee39b72a487946a535e013aa5ac60f1bc055648ac9",
+  "zh": "別人都讓我失望時， Rodan 一直站在我這邊！我信任他，你們也必須信任他！"
+ },
+ {
+  "id": 120,
+  "src_sha256": "8c3d61d1771098e57ad5acad2a9d0c94241b525624882bfb526f6d2d3442fc29",
+  "zh": "帶我們（ us ）去見我們的領袖，在那裡，你們會聽到我們的計畫。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "a5bc361a642e0d19cd53ea4955979a1a0871adbad7b16114f1678720526584a9",
+  "zh": "關於我自己，我有太多可說的，但我想現在不是時候。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "0be9af0bb33e0768296020318830092e27800ccb5b6c6ce204ac08932b5330a2",
+  "zh": "是，與你們同行去見我們的領袖對我們最安全。我們願意加入你們。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "bfb8660b804afc30a3fd2eb190e959d7959972381373d0f0193adf5483a63925",
+  "zh": "是（ Yess ），去找 Yamir 和 Z'Ant ！"
+ },
+ {
+  "id": 124,
+  "src_sha256": "66a4a979ec4dfd650bdb65be9cb18ca5771517f880fb140cafe2fd454baaf0f8",
+  "zh": "是！"
+ },
+ {
+  "id": 125,
+  "src_sha256": "f8992adb34e04acd89d0fc59f335085a1fac9ccbf2f95032a88584b7b87bde22",
+  "zh": "在這裡的北邊。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "0618e6a044cf562067f8f6286b46db19926b828f4573b30fe741732ff63fee06",
+  "zh": "在這裡的南邊。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "854c6387aa82617e85299b067af997840770a925dc685939c3dac570d2f99a1f",
+  "zh": "在我們所在位置的東邊。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "dca0a23cc1744f9f235a306386a1e9109786a258e0f19eca39aad24da9cb6520",
+  "zh": "我們得往西走。"
+ }
+]

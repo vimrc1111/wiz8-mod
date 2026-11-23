@@ -1,0 +1,15 @@
+call	5001e0	spellUsableInContext	法術在目前情境可否使用（情境類型、模式旗標），calc 以節點內區域閉包重現
+call	5248a0	characterRestrictFlag	讀角色記錄 +0x181f 的位元組；法術 0x3c 非 0 時不可排施法，該位元組是 calc 輸入 restrictByte
+call	537220	spellTargetValid	法術目標是否合格；與 0x501530 同一條檢查鏈（只差 context 3），calc 直接呼叫 queuedSpellTargetEligibilityNode，battlePresent 固定 0
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	65be1c	spellRecords	法術記錄表基址，步長 0x1bf；費用、領域、持有條件、情境、類別欄位作為 calc 輸入，不內嵌
+data	683f94	modeFlag	全域位元組模式旗標；非 0 時不呼叫目標檢查即通過，是 calc 輸入
+data	685174	characterRecords	角色記錄表基址，步長 0x1862；已學法術旗標、領域 SP、限制位元組作為 calc 輸入
+data	685178	partyActionRecords	隊員行動記錄表基址，步長 0x106；排施法的法術、槽模式、目標類型作為 calc 輸入
+field	edi+ecx*1+0x75	queuedSpell	隊員行動記錄 u32：已排施法的法術編號；0 表示沒有排施法
+field	edi+ecx*1+0x79	queueSlotMode	隊員行動記錄 u32：排施法的 PL 倍數；8 視為 1，乘法術每級費用
+field	edx+ebx*1+0xbcd	spellLearned	角色記錄 u32（每法術 4 bytes）：已學旗標，等於 1 才可排施
+field	eax+ebx*1+0xb45	realmPoints	角色記錄 i32（每領域 4 bytes）：該領域目前 SP，不小於總費用才可
+field	ecx+0x49	costPerLevel	法術記錄 i32：每 PL 的 SP 費用，乘 queueSlotMode 得總費用
+field	ecx+0x133	spellRealm	法術記錄 u32：所屬領域，選取 SP 欄位
+field	edx+ecx*1+0x12b	heldCondition	法術記錄 u32：等於 1 且 queueSlotMode 為 8 且 modeFlag 非 0 時不可排施

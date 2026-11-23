@@ -1,0 +1,97 @@
+call	2b6	無關	分析器列出的例外展開輔助目標；正常返回不執行，與施法規則無關
+call	40efa0	R(n) 亂數	失敗語音二選一 R(2)（只在 flag 為 0 時）；calc 以同序 Rand 呼叫重現
+call	4acba0	spellRequiredCasterLevel	法術等級 2..7 對應所需職業技能等級，其餘 1；calc 讀 schoolSelectionData.required
+call	4ff3b0	classEffectiveCasterLevel	職業 k（−1＝自身職業）技能加 exe 修正 0x616310，非施法職業 −1；calc faClassSkill
+call	5001e0	spellUsableNow	依法術情境欄、戰鬥模式、鎖定與旗標判定可否施放（計數迴圈用）；calc faUsable，同 n_501660 qimSpellUsable
+call	52c320	spellPowerLevel	法術記錄 +0x56 加等級，等級 8 回 0；calc spLevel（輸出 *out）
+call	53be00	characterDescriptorInit	把堆疊上查詢描述符清零並填入種類 1、自身索引、−1；calc marCharSource
+call	5905c0	messageWindowMode	設 0x69b7b8＝1、持續 0x64bd54＝8；calc faMessageMode，兩欄進輸出
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffbc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4fac30	powerModeJumpTable	.text 跳表：法術 +0x12b 模式 0..3 的四個分支（夾限／戰外 PL8 檢查／PL8 檢查／PL 固定 1）；>3 走預設塊（cov-exempt）
+data	5ebaf4	無關	srAssertFail import；只在斷言塊呼叫（cov-exempt）
+data	5ed8c8	voiceEventArg4	失敗語音 52e690（stub）第四參數，全域；case 以 exe 初值記錄於樁參數
+data	5ed914	voiceEventArg5	失敗語音 52e690（stub）第五參數，全域；case 以 exe 初值記錄於樁參數
+data	609b24	無關	assert 訊息字串位址；只在斷言塊使用
+data	61634c	classSchoolMask	十五職業對應四學派資格位元；與法術學派 mask 相交才計入多職業技能
+data	61634d	無關	0x61634c 表第二筆，分析器另列；同 classSchoolMask
+data	616df0	spellDifficultySkillThreshold	索引＝法術等級＋成本/2（上限 16）的技能門檻，乘 PL/7 得 m
+data	616e30	spellDifficultySkillThresholdLast	門檻表索引 16（上限夾值）
+data	61920c	無關	斷言用原始檔名字串
+data	619238	無關	斷言用運算式字串；只在斷言塊使用
+data	65be1c	spellTable	法術記錄表（步距 0x1bf）；讀模式、成本、等級、領域、學派旗標
+data	6836a8	combatState	戰鬥狀態物件；成員 idx 的行動階段（+idx*0xd4+0xb4）餵 0x501910
+data	683f94	combatFlag	戰鬥中旗標：模式 1 的 PL8 分支與 0x501910 縮放
+data	6850d5	difficultySetting	難度 0..2，0x501910 的階段縮放；其他值斷言（cov-exempt 4fa99d）
+data	68510c	messageMode	訊息輸出模式：選 4f97a0＋590950 或另兩種組合
+data	685174	characterBase	角色記錄基底（步距 0x1862）
+data	685178	partySlotRecords	隊員副記錄陣列（步距 0x106）；+0x1d 起為目標描述
+data	689232	spellCastCounter	每法術施放次數（步距 16），本次施放 +1；進輸出
+data	689236	spellAvailableCounter	每法術「此刻可施放」次數（步距 16）；迴圈對可施放者 +1；進輸出
+data	689246	spellAvailableCounterLoopStart	0x689236＋16（法術 1）：計數迴圈起點指標
+data	68c09c	messageCatalog	訊息目錄指標；只取字串指標當 590950 格式參數，文字無規則效果
+data	68c524	failVoiceA	失敗語音 id A（R(2)==0）；52e690 樁參數記錄
+data	68c528	failVoiceB	失敗語音 id B（R(2)!=0）；52e690 樁參數記錄
+field	eax*4+0x4fac30	powerModeJumpTable	以法術 +0x12b 模式索引跳表 0x4fac30
+field	eax*4+0x616df0	spellDifficultySkillThreshold	門檻表索引（等級＋成本/2，上限 16）
+field	eax+0x0	listOrRecordHead	目標描述或計數表項第 0 dword（目標型別／計數值）
+field	edx+0x0	listOrRecordHead	同上：計數表項或描述符第 0 dword
+field	eax+0x1d	targetType	隊員副記錄 +0x1d：目標型別（0x4a 檢查型別 1）
+field	eax+0x21	targetIndex	隊員副記錄 +0x21：目標索引（0x4a 對自身加 0x32 失敗率）
+field	eax+0x49	spellCost	法術成本（SP）；PL 夾限、SP 不足與門檻索引
+field	eax+0x61634c	classSchoolMask	職業 i 的學派資格位元
+field	eax+0x628	messageCatalogText	訊息目錄字串指標，590950 格式參數；無規則效果
+field	edx+0x62c	messageCatalogText	同上
+field	edx+0x630	messageCatalogText	同上
+field	ecx+0x634	messageCatalogText	同上
+field	eax+0x689236	spellAvailableCounter	法術 s 的可施放計數 +1
+field	edx+0x689232	spellCastCounter	本次法術施放計數 +1
+field	eax+0x9c	memberActionPhase	戰鬥狀態中成員的行動階段，餵 0x501910
+field	eax+edi*1+0x5cb	realmSkill	角色領域技能（步距 0x26，以領域索引），技能值權重 4/5
+field	ebx+edi*1+0x1a3	schoolSkill	角色學派技能（步距 0x26，以 4ff7f0 回傳學派索引），權重 1/5
+field	eax+edx*1+0x133	spellRealm	法術領域 0..5
+field	esi+eax*1+0x133	spellRealm	法術領域 0..5，選 SP 欄 0xb45
+field	esi+ecx*1+0x133	spellRealm	法術領域（計數迴圈）
+field	esi+eax*1+0x11f	divinityUsable	法術神術學派旗標；mask 位元 2
+field	esi+eax*1+0x120	psionicUsable	法術靈能學派旗標；mask 位元 8
+field	esi+eax*1+0x12b	powerMode	法術 PL 模式 0..3，選跳表分支
+field	esi+eax*1+0x48	alchemyUsable	法術煉金學派旗標；mask 位元 4；與 c+0xa21 一起擋施法
+field	esi+edx*1+0x48	alchemyUsable	同上
+field	esi+eax*1+0x49	spellCost	法術成本
+field	esi+ecx*1+0x49	spellCost	法術成本（計數迴圈）
+field	esi+eax*1+0x5a	wizardryUsable	法術魔法學派旗標；mask 位元 1
+field	esi+ecx*1+0x56	spellLevel	法術等級：所需職業技能、失敗加成、經驗等級
+field	esi+edx*1+0x56	spellLevel	同上
+field	edi+0x57f	characterFlag57f	與 c+0xa21、法術 +0x48 一起決定是否擋施法
+field	edi+0x69	characterClass	角色目前職業索引；自身職業技能、跳過自身於多職業迴圈
+field	edi+0x6cf	bonusFlag	非零時 bonus＝(c+0x6d5>>2)+1，並多給 0x23 技能經驗
+field	edi+0x6d5	bonusSkill	加成技能值；bonus＝值>>2＋1，傳給 4fe480 與 4fb4c0
+field	edi+0xa21	castBlockFlag	非零且（法術 +0x48 為零或 c+0x57f 為零）時不施法
+field	edi+eax*4+0xb45	realmSP	領域 SP；夾限 PL、SP 不足檢查
+field	edi+ecx*4+0xb45	realmSP	領域 SP（計數迴圈）
+field	edi+ebx*4+0xbcd	spellKnown	角色已學法術旗標（==1 才計數）
+# G3 follow-up 4a：recast 固定次數硬上限 [未取得]。build/wiz8.asm:451548-451644（54c575..54c696）只見效果結果、來源、stamina 與 SP/cost 的停止條件，未見固定深度計數器。
+# 夾具工作上限取既有 4fa4d0 輸入的 SP 上限 60 ÷ 最小正 cost 1＝60 次；這是夾具範圍，遊戲全域 SP 硬上限 [未取得]，不宣稱 60 是原版輸入域上限。原有 cost=0 與所有 random 範圍完整保留。
+# 每個原 4 次呼叫組擴為 61 次（60 次施放，加一次終止資格檢查）；原每輪多筆序列同比擴充。record/ret 使用 notes/re/emu.md 的 n，超量仍報錯，禁止截斷或循環重放。所有既有 boundary 保留、舊輸入欄順序不變，新欄只追加。
+# 原版 SP 扣除在巢狀施法返回之後（build/wiz8.asm:337721-337733，4fab67..4fab89），故 SP/cost 不是所有巢狀遞迴的數學上界；亦可能由效果進度與 stamina 終止。需另票確認全域合法上限與擴大 emulator 堆疊，才能證明完整輸入域。
+# 驗證：4fa4d0 新 boundary 與 g3-probe 使用合成 HP 差額 5、每次恢復 1、cost 1、SP 60；原版 replay 與 F 各實際走 5 次施法。g3-probe.sh 60 另檢查 F 的 60 層，HP 100→160，資格/效果/SP 扣除各 60 次。
+# 54ba00 新 boundary 走 60 次 fizzle 重試：sound 60、資格檢查 61（最後回拒絕）、SP 扣除 60。這驗證上限呼叫次數而非 60 層巢狀堆疊；原版 60 層在 emulator 的固定 32 KiB 向下可用堆疊觸界，白名單禁止改 emu.py，沒有放寬其驗證或隱藏故障。
+# 四段注入：將 calc 的 4fac40 ret/record n 由 61 改為 3 → 指定驗收第一段印 FAIL g3-probe，第四次呼叫觸發 fixture record cap panic（NodeDist 捕捉後由 CLI 報錯）→ 逐 byte 還原副本 → 第一段 PASS。case 的 n 與驗證器均未更改。
+# 最終驗收（2026-10-12）：指定 g3-probe 第一段 PASS；bash scripts/node-accept.sh tickets/nodes/g3.list → ok node-accept 5 節點 D4。另驗 probe 深度 60 的 F：HP 100→160，4fac40／54f190／52b480 各 60 次。僅因 sandbox cache 不可寫而將 GOCACHE 指向 /tmp，驗收器未修改。

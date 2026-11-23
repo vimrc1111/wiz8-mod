@@ -1,0 +1,111 @@
+{
+  "cc": "cdecl",
+  "steps": 20000,
+  "path_limit": 512,
+  "samples": 64,
+  "objects": {
+    "dice": 0
+  },
+  "args": [
+    "@dice"
+  ],
+  "in": [
+    {
+      "name": "Z",
+      "at": {
+        "object": "dice",
+        "offset": 0
+      },
+      "size": 2,
+      "signed": true
+    },
+    {
+      "name": "N",
+      "at": {
+        "object": "dice",
+        "offset": 2
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "S",
+      "at": {
+        "object": "dice",
+        "offset": 3
+      },
+      "size": 1,
+      "signed": false
+    }
+  ],
+  "out": [
+    {
+      "name": "value",
+      "at": {
+        "reg": "eax"
+      },
+      "size": 4,
+      "signed": true
+    }
+  ],
+  "boundary": [
+    [
+      -32768,
+      0,
+      0
+    ],
+    [
+      32767,
+      0,
+      255
+    ],
+    [
+      -7,
+      1,
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      2,
+      3,
+      6
+    ],
+    [
+      0,
+      2,
+      255
+    ],
+    [
+      32767,
+      255,
+      1
+    ],
+    [
+      -32768,
+      255,
+      0
+    ]
+  ],
+  "random": {
+    "seed": 1002,
+    "count": 24,
+    "ranges": [
+      [
+        -32768,
+        32767
+      ],
+      [
+        0,
+        4
+      ],
+      [
+        0,
+        8
+      ]
+    ]
+  }
+}

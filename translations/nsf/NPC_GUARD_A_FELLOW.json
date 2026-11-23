@@ -1,0 +1,22 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "ba6ad2946b7fbd81178e0640b1c6d27c2b066cbb543595814aac29c7ea1d62cb",
+  "zh": "我得回聖殿去了。失陪。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "e16f0b09c538305e0668dea50cc6b00aa3d7af3c7a718321c7bfb7f149419046",
+  "zh": "歡迎，兄弟。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "b72d03c3fc3b9d2e2cee473e198cce3815e533bb72bad70ef0f162c0dda3537d",
+  "zh": "請別打擾，我正在冥想。"
+ },
+ {
+  "id": 5,
+  "src_sha256": "bcfb4ce2a61b5325b74be4c168a366297bc7912e421454e09db1c4096d3c1960",
+  "zh": "我建議你們去找{{Lord}} Braffit 談談。"
+ }
+]

@@ -1,0 +1,192 @@
+[
+ {
+  "id": 13,
+  "src_sha256": "e477b89fe1f7d2034007e9f76a6b98110cecd30d950cf4aa78939dc9b428b6ed",
+  "zh": "該物件不是預先授權的元件。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "9fa79afaef376d52b45c04a770dd049db4b05b1142362341cdc116abfeb09f45",
+  "zh": "系統未設定接受硬幣。"
+ },
+ {
+  "id": 21,
+  "src_sha256": "d3b0138605743c66ae002e004bdd6cf6fc8e7589c78b514e719d84a0c43a4bfd",
+  "zh": "無效的請求。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "a2b7c9151b11c218988f62f86d11408c4f8a225e8b8af8713113c413a73a134f",
+  "zh": "無法處理請求。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "c748b94c22b2e13f3018f917709ac944feefdeef43d11f1188db9fc749573710",
+  "zh": "無法處理請求。參數過多。"
+ },
+ {
+  "id": 26,
+  "src_sha256": "d7f7069f201ba75cf93e8a1eee932305848b05d75c2aa1b78869ac4642f24956",
+  "zh": "物件二："
+ },
+ {
+  "id": 27,
+  "src_sha256": "8d2d724434e1e8eb1f8851afe7d2e7589135ad4dedffb02e0b918c7b354ce8e7",
+  "zh": "正在編譯報告……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "0fb340f45243d915732d97862fbb0bec8802058b26f753bae52a9858aa39e3a3",
+  "zh": "輸入錯誤。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "c787d5c5e4ce392351ccc28b5889bbc041f9b7be5ef0271b01ed776d8a20f47f",
+  "zh": "無法理解輸入的項目。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "e9a490f29d01d8672a644ff9ea32e8f3526b1d664398b33b80ce56955e08fa67",
+  "zh": "正在結束程式……"
+ },
+ {
+  "id": 86,
+  "src_sha256": "bbf7c3a6d4b3848fa1f27efa656ad2ec374e253d1e7b1c8ac1996809447ae223",
+  "zh": "系統檢查中……"
+ },
+ {
+  "id": 87,
+  "src_sha256": "88dcf4356f5a09412f63caa8909765eb846eb179d2110a38cca3488d968ee450",
+  "zh": "正在存取中央儲存裝置……"
+ },
+ {
+  "id": 88,
+  "src_sha256": "17b35f55e7eabe1b7205c5e61a7df6ee95f2ed0e0c660b6d0b1358bbf3fae14e",
+  "zh": "嗡嗡嗡……嗶嗶……嗡嗡嗡……"
+ },
+ {
+  "id": 101,
+  "src_sha256": "bf3c03b54fbe91a8b869cbb0932bf0ca132d89fc69cc8a983f8bfda60c25d9c5",
+  "zh": "未知的答案。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "90a5938878cda728d8b0baf5c1547c4f1fff07ef8028a362b8b3fa94532cb033",
+  "zh": "軌道追蹤\n            ***錯誤***\n    追蹤模組尚未安裝\n     是否要存取\n            系統檔案？\n"
+ },
+ {
+  "id": 103,
+  "src_sha256": "4f04231357cde111f759dfeb08bcc62c5b10453100b91079788917a4e15c1b10",
+  "zh": "未存取系統檔案。若要存取檔案，請說 ACCESS FILES 。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "35f260d8f5f8d23d44ff08670846e322c9cb42db504d7e3da8d052c51f786ecd",
+  "zh": "記錄結束。無法追蹤（ track ）目前的掃描。追蹤模組尚未安裝。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "79fa7a1716605f173fa804f21644a83ad2afcea80892b7e8f4587a93458cc765",
+  "zh": "正在顯示系統日誌……"
+ },
+ {
+  "id": 107,
+  "src_sha256": "ad0835f82e0105fed232da07b0024ab4d95099d44dd6e2693054e6795933940a",
+  "zh": "呼號： Black Ship\n 追蹤：002:21 - 追蹤受到干擾\n 狀態：[未知]\n . . . . . .\n 呼號： HLL Guardia I\n 追蹤：010:34 40X:21Y:152Z Dominus\n 狀態：已啟動降落程序 . . . . . ."
+ },
+ {
+  "id": 108,
+  "src_sha256": "7a29803cca7ec77bcefc36fee8161f0e19858e64dd3407428b51de8394d16c9e",
+  "zh": "呼號： HLL Guardia I\n 追蹤：011:34 12X:2Y:30Z Dominus\n 狀態：撞擊 撞擊 撞擊\n 警報：系統故障。 ARNIKA 。\n . . . . . .\n 呼號： HLL Defender\n 追蹤：011:37 - 離開 Dominus 升空\n 狀態：攔截 - Black Ship"
+ },
+ {
+  "id": 109,
+  "src_sha256": "29beb925fe9e947384c62a2aaa2410f449e21165985de12f7c268a5b4c57d73b",
+  "zh": "呼號： UME MK Callisto\n 追蹤：已著陸 . . .\n 狀態：已切換為地面追蹤（ track ）\n . . . . . ."
+ },
+ {
+  "id": 110,
+  "src_sha256": "1eddc95223b4d7742614605ee2da2812f8982592234f73303ea6ec2bc7fa300b",
+  "zh": "追蹤模組已安裝。\n HLL 追蹤程序啟動\n 正在從記憶體還原 . . ."
+ },
+ {
+  "id": 111,
+  "src_sha256": "88570d325cb41887289b91de9f63c2348ed1cbcadfd2b9c6077ca0fce3b5e4a5",
+  "zh": "天空掃描進行中 . . .\n 顯示目前追蹤座標。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "f1e585006ad6fc225ca3047fbe4550daff6cca219c6718b14ca6c5ebbd4b7c08",
+  "zh": "呼號： Nargisst ……追蹤中\n 追蹤：141:24 2X:4Y:10Z, Dominus\n 呼號： IUF Galleon ……追蹤中\n 追蹤：141:25 Mt. Gigas - 已著陸\n 呼號： Black Ship ……追蹤中\n 追蹤：源頭受到干擾，無法追蹤"
+ },
+ {
+  "id": 113,
+  "src_sha256": "2bfdb8928cce60864cfa1c79c576fa1007b72b6e3333c878eaf12ff952f5e1bd",
+  "zh": "HLL 軌道追蹤電腦。可用的選項如下……"
+ },
+ {
+  "id": 114,
+  "src_sha256": "04291b2fc94581e7237946fa8906def61329e6df81cb966e6d7bc346ea418a10",
+  "zh": "TRACK........依呼號追蹤船艦\n CALCULATE....計算軌道座標\n EXIT"
+ },
+ {
+  "id": 115,
+  "src_sha256": "ba5f0cfb547134a285b170a2ebbd04abeae637c1dcb3c09a1b872a41c8398bf7",
+  "zh": "請輸入呼號，或輸入 exit 返回主選單："
+ },
+ {
+  "id": 116,
+  "src_sha256": "d82480f1db36aee2df1510b4d14f5fbd493da16aaa4431de4a4e16aebc91de77",
+  "zh": "呼號： IUF Galleon ……追蹤中\n 追蹤：141:25 Mt. Gigas - 已著陸"
+ },
+ {
+  "id": 117,
+  "src_sha256": "dbb831dab1df568c9d798644b4663394bf4a98bda5c462e0fa05c493aa249d6a",
+  "zh": "呼號： Nargisst ……追蹤中\n 追蹤：141:24 2X:4Y:10Z, Dominus"
+ },
+ {
+  "id": 118,
+  "src_sha256": "d7ecb6f8afdea24c7518016a43328321f848693e0d60a6c6f3a7cb1ad6601ff3",
+  "zh": "呼號： Forge ……追蹤中\n 追蹤：未知。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "9b25579aef8cca4365b7e0de880d1fcf39f5abecd83b155024fe0f3ca82ed2ae",
+  "zh": "呼號： Earth Vessel ……追蹤中\n 追蹤：機密。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "a8dc63305c11f79859e1fba5472c8c4790e5e15642d709bd71d7cdb3f68f4397",
+  "zh": "呼號： Black Ship ……追蹤中\n 追蹤：源頭受到干擾。"
+ },
+ {
+  "id": 121,
+  "src_sha256": "24dd4ca2f41ffe7178c6628a6a390125ee10abe8d7cb8a400f8a13d853298d2e",
+  "zh": "更新：----船艦已被摧毀----"
+ },
+ {
+  "id": 122,
+  "src_sha256": "1a75c78291d7136c23231af2121a5da7aa37a7d4f5204eb00f5016550b1ca13a",
+  "zh": "找不到船艦登記資料。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "99f3b77cbddc2c951231853cd755d5bd5cd51b3ae8405af012594eabf111dbd3",
+  "zh": "計算（ calculate ）軌道座標 請輸入最後已知位置（ X Y Z ），或輸入 EXIT 返回主選單："
+ },
+ {
+  "id": 124,
+  "src_sha256": "84faa785a1bd3b0121fcabf513a80953ca50fb5fee7cc95ecb00fc8ee3ee17f1",
+  "zh": "軌道座標為：10:24"
+ },
+ {
+  "id": 125,
+  "src_sha256": "ff6759de7389d422a3f9720058d3ac6d1bbcedd96667870de8ce36a277b39b39",
+  "zh": "軌道座標為：7:17"
+ },
+ {
+  "id": 126,
+  "src_sha256": "1ad95511283398a83554a2d5faf6508125cc23886bdc88f447bd55b817802b1e",
+  "zh": "無法計算（ calculate ）座標。"
+ }
+]

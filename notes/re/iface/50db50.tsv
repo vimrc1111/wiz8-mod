@@ -1,0 +1,16 @@
+call	50e650	statusEffectRebuild	每個符合在場與角色存活條件的槽位清除地區懲罰後，重建狀態修正、合計修正及能力；重用完整 statusEffectRebuildNode 介面，表由使用者 exe 讀取
+data	685174	partyCharacterBase	角色陣列基址；只處理前兩筆，記錄步長 0x1862（build/wiz8.asm:364200）
+data	685178	partyNpcSideRecords	NPC 副表基址；前兩筆步長 0x106，含在場、NPC索引及懲罰旗標
+data	686a48	currentRegionIdentity	本次清除懲罰時保存的地區識別值；與子函式控制狀態使用的 686a70 為不同全域
+data	68759a	resetRegionIdentity	保存本次重置來源地區的輸出
+data	68759e	regionResetPending	地區重置待處理旗標；入口無條件設為 1
+data	689f94	npcRecordList	NPC 物件列表；用副表索引取物件，索引不小於列表長度時回退第一筆
+field	eax+0x0	npcEntryPointer	列表儲存陣列中的 NPC 物件指標；非空且可用才可合法寫入懲罰欄位
+field	eax+0x4	npcListCount	列表長度；與 NPC 索引作有號比較，越界回退陣列第一筆
+field	eax+0xc	npcListEntries	NPC 指標陣列基址；由副表連結索引選取
+field	eax+0xc7	npcUnavailable	NPC 不可用旗標；非零轉成空指標，之後非法寫入，該錯誤路徑不屬合法遊戲狀態
+field	eax+0xe8	npcRegionPenalty	NPC 本體地區懲罰旗標輸出；合法連結的 NPC 清為零
+field	ecx+ebp*1	npcPresent	NPC 副表在場旗標；每槽非零才檢查角色目前生命值
+field	edx+0xfa	npcRecordIndex	NPC 副表中本體索引；有號比較列表長度，過大索引回退第一筆
+field	edx+0xfe	npcRegionPenaltyEnabled	副表地區懲罰旗標；符合條件清零，後續狀態重建不再套用屬性技能懲罰
+field	esi+eax*1+0xb11	characterCurrentHitPoints	角色目前生命值；u32 非零才重置。0x52a38b..0x52a3ab 顯示 +b0d 是生命上限、+b11 是目前生命，與登記簿所稱 NPC 連結不同；案例以滿生命同步上限，零值跳過並保留能力及懲罰

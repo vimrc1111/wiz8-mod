@@ -1,0 +1,61 @@
+call	42e620	monsterScenePositionIndex	把怪物識別碼的低 16 位及三維位置加入場景網格；場景物件由全域 6598a4 取得。 來源 build/wiz8.asm:305451 起。
+call	4be5c0	headingTowardParty	從生成位置及隊伍位置求 X/Z 朝向；有限座標的 _finite 回傳值在 case 指定 1。 來源 build/wiz8.asm:305451 起。
+call	52a780	staminaDepletionTier	以當前／最大 SP 求耗竭級別；無號乘法回繞，原版最大 SP 為零會除以零。 來源 build/wiz8.asm:305451 起。
+call	565420	battleSceneContentsDirty	模式 7 且戰鬥物件存在時設其 +0xf4 的 0x20000 旗標。 來源 build/wiz8.asm:305451 起。
+call	5e2480	appendMonsterToList	依模板特殊分類加入普通或特殊怪物清單，必要時擴充容量；回傳新增索引。 來源 build/wiz8.asm:305451 起。
+call	5e2aa0	appendMonsterIdToGroup	把新怪物 ID 加入群組成員識別碼清單，必要時擴充容量。 來源 build/wiz8.asm:305451 起。
+call	65	無關	登記簿列出的非函式目標，位址低於 PE ImageBase；0x4e3930..0x4e3ae7 的實際子呼叫沒有此目標，與規則無關。來源 build/wiz8.asm:305451 起。
+call	86	無關	登記簿列出的非函式目標，位址低於 PE ImageBase；0x4e3930..0x4e3ae7 的實際子呼叫沒有此目標，與規則無關。來源 build/wiz8.asm:305451 起。
+data	4	無關	堆疊第一個參數位移，定位群組指標，並非絕對位址資料。
+data	8	無關	堆疊第二個參數位移，定位模板指標，並非規則表。
+data	c	無關	堆疊第三個參數位移，定位生成位置指標，並非規則表。
+data	5eb1a0	allocateMonsterStorage	CRT malloc 匯入槽；配置 0x425 bytes，新物件清零。
+data	5eb224	releaseMonsterStorage	CRT free 匯入槽；清單新增失敗時釋放物件。
+data	6598a4	worldSceneIndex	場景物件基址，子函式用低 16 位 ID 及網格座標建立索引。
+data	683fad	normalMonsterList	普通怪物列表指標；模板特殊分類為零時使用。
+data	683fb9	specialMonsterList	特殊怪物列表指標；模板特殊分類非零時使用。
+data	6874be	nextMonsterInstanceId	遞增的怪物實例識別碼；跳過零。
+field	ebp+0x0	groupId	群組識別碼，複製至怪物 +0x4。 來源 0x4e3930..0x4e3ae7。
+field	ebp+0x4	groupMemberCount	建立成功後遞增的群組成員計數。 來源 0x4e3930..0x4e3ae7。
+field	ebp+0x8	groupMemberIdList	接收新怪物識別碼的群組成員清單。 來源 0x4e3930..0x4e3ae7。
+field	ebp+0x14	groupTotalCreated	建立成功後遞增的群組累計成員計數。 來源 0x4e3930..0x4e3ae7。
+field	ebp+0x18	groupMonsterTemplateId	怪物模板索引，複製至怪物 +0x8。 來源 0x4e3930..0x4e3ae7。
+field	ebp+0x2a	groupMonsterKind	群組怪物分類 byte，複製至怪物 +0x16；本節點不判斷分類。 來源 0x4e3930..0x4e3ae7。
+field	ecx+0x0	positionXOrScenePositionX	位置來源 X；尾段同一運算元也用來清零怪物場景位置 X。 來源 0x4e3930..0x4e3ae7。
+field	ecx+0x4	positionYOrScenePositionY	位置來源 Y；尾段同一運算元也用來清零怪物場景位置 Y。 來源 0x4e3930..0x4e3ae7。
+field	ecx+0x8	positionZOrScenePositionZ	位置來源 Z；尾段同一運算元也用來清零怪物場景位置 Z。 來源 0x4e3930..0x4e3ae7。
+field	edi+0x0	zeroInitializedMonsterStorage	清零配置物件時的目的指標；與生成位置複製及 HP/SP 初始化共用暫存器。 來源 0x4e3930..0x4e3ae7。
+field	edx+0x0	monsterPositionX	指向怪物 +0x17，接收生成位置 X。 來源 0x4e3930..0x4e3ae7。
+field	edx+0x4	monsterPositionY	指向怪物 +0x1b，接收生成位置 Y。 來源 0x4e3930..0x4e3ae7。
+field	edx+0x8	monsterPositionZ	指向怪物 +0x1f，接收生成位置 Z。 來源 0x4e3930..0x4e3ae7。
+field	edx+0x26a	templateSpecialMonster	模板特殊分類 byte；零走普通清單，任意非零走特殊清單。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x0	monsterInstanceId	非零實例識別碼，清單及場景索引用它識別怪物。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x4	monsterGroupId	所屬群組識別碼。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x8	monsterTemplateId	所屬怪物模板索引。 來源 0x4e3930..0x4e3ae7。
+field	esi+0xc	monsterSceneObject	場景實體指標，建立時清零，42e540 僅在非零時更新實體所在區。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x10	monsterCombatActionState	攻擊／行動控制物件指標，建立時清零；用途見 notes/re/backstab.md:17。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x14	monsterPresent	怪物在場旗標，建立時為零；目標資格用途見 iface/501530.tsv。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x15	monsterActive	怪物啟用旗標，建立時為零；4e3b0b 檢查後選擇場景清理。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x16	monsterGroupKind	從群組怪物分類複製的 byte。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x23	monsterHeading	面向隊伍的 X/Z 平面角，以 float32 儲存。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x27	monsterMaximumHP	模板 +0xd6 的骰結果，以 32 位元原樣寫入。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x2b	monsterCurrentHP	初始化為最大 HP。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x2f	monsterMaximumSP	模板 +0xda 的骰結果，以 32 位元原樣寫入。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x33	monsterCurrentSP	初始化為最大 SP。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x107	monsterMainCondition	主狀態碼，初始化零；狀態效果用途見 notes/re/formulas-2.md:72。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x10b	monsterConditionCompanionState	緊鄰主狀態的配套狀態槽，初始化零；此入口不讀該值或作判斷。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x242	monsterStaminaDepletion	SP 耗竭級別，疲勞用途見 notes/re/combat-2.md:30。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x24e	monsterActionControlFlag	初始化為零的行動控制 byte，本入口沒有額外讀取或判斷。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x24f	monsterActionTimeUnset	初始化為 float32 -1 的動作時間槽；本入口沒有額外判斷。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x255	monsterActionSecondaryFlag	初始化為零的第二行動控制 byte，本入口沒有額外判斷。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x2da	monsterAuxiliaryActionState	初始化為零的額外行動狀態 dword，本入口沒有額外判斷。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x2de	monsterAuxiliaryActionFlag	初始化為零的額外行動旗標 byte，本入口沒有額外判斷。 來源 0x4e3930..0x4e3ae7。
+field	esi+0x344	monsterSceneHandle	初始化為 -1 的場景控制索引。 來源 0x4e3930..0x4e3ae7。
+field	D+0xd6	templateHPDice	有號 16 位底值、u8 顆數、u8 面數；case 三欄皆輸入，calc 使用既有 diceNode。
+field	D+0xda	templateSPDice	有號 16 位底值、u8 顆數、u8 面數；零骰結果使原版除以零，沒有正常輸出。
+data	5eb17c	finiteHeadingPredicate	MSVCRT _finite；case 有限座標的平面角必為有限，使用情境樁回傳 1，不替換角度計算。
+data	65a0f8	partyWorldPosition	隊伍位置物件的 +0x8c/+0x90/+0x94 三個 float32 值皆輸入。
+data	68ec78	gameSceneMode	模式 7 會標記戰鬥場景內容更新；case 模式是輸入。
+data	68edcc	battleContext	case 配置戰鬥物件並輸入其 +0xf4 更新旗標；物件指標為配置。
+data	5ec3fc,5ed1e8	zeroDepthHeadingEndpoints	Z 位移為零時的朝向常數由 calc 初始化讀使用者 exe，不內嵌其值。
+data	case-domain	syntheticEmptyScene	清單初始空、容量 64，群組 ID 清單初始空；場景雙向雜湊初始空、各四槽，網格單位 1，原版子函式照常執行。座標限有限且網格轉換可表示，實例 ID 隨機 1..65535；0、65536 為邊界。超過 16 位且低位非零的 ID 會在原版查找 assert，不是正常回傳。

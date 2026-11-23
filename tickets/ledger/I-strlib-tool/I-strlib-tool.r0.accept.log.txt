@@ -1,0 +1,32 @@
+ok  	wiz8-mod/tools/atlas	0.529s
+ok  	wiz8-mod/tools/fitcheck	0.020s
+ok  	wiz8-mod/tools/hashdir	0.013s
+ok  	wiz8-mod/tools/shot	0.010s
+ok  	wiz8-mod/tools/slf	50.831s
+ok  	wiz8-mod/tools/strings	0.041s
+ok  	wiz8-mod/tools/strlib	0.184s
+ok  	wiz8-mod/tools/trcheck	0.048s
+ok   good
+ok   nosrc
+ok   notag
+ok   nosec
+ok   empty
+ok wiz8-run --check：17 出貨情境＋7 壞情境
+ok check-sigs：29 條簽章相符（18a74ff61c65）
+PASS ddraw-proxy: pei-i386, 22 個匯出與系統一致, imports: GDI32.dll KERNEL32.dll USER32.dll 
+PASS bmp-roundtrip
+PASS wrap-rule
+PASS space-rule
+PASS baseline
+PASS inject:printf
+PASS inject:code
+PASS inject:coverage
+PASS inject:pronoun
+PASS inject:pronoun-template
+ok check-translations.test：5 種注入皆紅
+PASS baseline
+PASS inject:over
+PASS inject:reason
+PASS inject:stale
+PASS inject:lines
+ok check-fit.test：4 種注入皆紅

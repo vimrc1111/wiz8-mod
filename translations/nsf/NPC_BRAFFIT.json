@@ -1,0 +1,667 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "4236e579a361e400e9a780dfbe1ab913ee4e61afd3cad642347c0ba813d48ad3",
+  "zh": "已經很久沒有人來過神殿（ temple ）了。不過我想，你們遲早會來的。你們抵達的消息（ news ）傳得可真快。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "816e62a63272a491492927f2bc95108d1b7849fd089feb24499c6da56b2bac79",
+  "zh": "我們現在彼此無話可說……"
+ },
+ {
+  "id": 3,
+  "src_sha256": "6d8fe0556a389baa856c534ed5a43c3eda17c0564c669f257381563bccdf3a5d",
+  "zh": "你們的居心都寫在臉上了……"
+ },
+ {
+  "id": 4,
+  "src_sha256": "082574d0c35c97add401a01a86a13a8dfdd5d87b91a2caa697fc5f78f45f7a00",
+  "zh": "拜託，拜託，這裡可不興那一套。抱歉。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "2fbee0917ebcf3d069862dc27c448573e6ca1ac98656d39ab89281d851b2b8de",
+  "zh": "你們竟敢威脅神職人員？這不算預言，不過我敢打賭，你們的運氣只會越來越差。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "9e0afc4960ee3149fea294f787ff4068576544e3a1b1e76327c8d9c053f1f3c5",
+  "zh": "我不吃賄賂這一套。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "f59bc15291eda899cf30996ceedc5d49be088fa95abd5cbc437459916aec5311",
+  "zh": "這裡出了什麼事？"
+ },
+ {
+  "id": 9,
+  "src_sha256": "de250613c6c2a397ed88dc01d151a3246a7b915fa9c3c13f2952843956e0cd63",
+  "zh": "不，我決定留在這裡。 Arnika 的人民需要我。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "a62c2a01cc0b1f19c78cc7dcf943b486513e0e6b99cb79a18da671bc0b32e403",
+  "zh": "感謝你們的惠顧。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "ae2819ba6922aa1f952caf941c4c16854196c322c85a9706df128b33e4d8de98",
+  "zh": "這對我沒有用處。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "d291a4baafb10658aa7439376fee1209f511a74c123dd88dc439824790f89012",
+  "zh": "我的錢（ money ）不夠，沒辦法再跟你們買更多了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "53700e1efdd16796c7b03d1f4ed97ded5974942bc43450962714bcb71deec23e",
+  "zh": "你們數過錢了嗎？你們的錢（ money ）不夠。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "e01b1d58d58a9959f836f29d40f0a88ef4e7fbc5faadedeeb8233793e1730368",
+  "zh": "真有意思，這是我的東西。你們知道的，這是一種罪過。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "2365123db06a1c904cc820ae31419287126869f1ae1fa7ad098fff029fadf6d7",
+  "zh": "今天早上我該多冥想（ meditated ）一會兒的……"
+ },
+ {
+  "id": 19,
+  "src_sha256": "6d3052968633989e92d1b2b1f80f614b210db82f0db2bf01b8c35577f84500af",
+  "zh": "你們要偷神職人員的東西？你們的永恆靈魂真是不幸啊……"
+ },
+ {
+  "id": 20,
+  "src_sha256": "47221fc2c138436acc016b4262e9dd8fe68da30e8ba41d0617248386117f7ea3",
+  "zh": "異端！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "ede3d44e5e3a88c76846ac17dfb4df56b01af269c2f2fe4611a0545373d22617",
+  "zh": "感謝你們的奉獻。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "9327019c81886cbbea9fe957d2651e5639c70d3cf2e4454449a82ad3214e2441",
+  "zh": "這其實與我無關。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "d2f5c556d5270589c74ef12d6263fa0722b6657249a2652e8532e01ecbd23b9c",
+  "zh": "我有更重要的事得考慮。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "06d91096ab39d28cd344a78f3ab3d41ef0390f5c95c6cc14d8be76dbfc90fc5e",
+  "zh": "信仰啊，孩子們，信仰。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "81bc1e8f6d4c15d0dcc5fd68851fe26ce261902d281a34f45f9710078b88909f",
+  "zh": "你們沒聽見嗎？我說……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "48e790af11d874e274d1f79faa04ffff800ebce1edff448f395fe392247ec66e",
+  "zh": "我們先專心談一件事……"
+ },
+ {
+  "id": 27,
+  "src_sha256": "597c65ac14e6beb9fab4970685ce217cfa9994c20da6acc11da7728ce3d6be1f",
+  "zh": "現在讓我來談談另一件事……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "983e155ae1f3fcdb88d698ae4c25253cea7c46157cbd860ace82cade91b62e0b",
+  "zh": "謝謝你們告訴我這件事。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "b3cfec295a5281486e29bbbcf2f12935c3b5d81bc9a6f996736ae61996d75c5f",
+  "zh": "唔，如果沒有其他需要我幫忙的地方……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "5324b8e47aa6cb4a96096da33a7a8e63178f14d89d19becd3efbe8e6e8336520",
+  "zh": "我還有事要處理……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "cfe4ddf12fc3c2541217010f031d0701dcdd274d2aa36a3d365ed0470b989642",
+  "zh": "Dominus 已經變了樣。自從 Ascension 開始，一切都不同了。說 Higardi 早就知道會變成這樣，那是錯的……我們原先預期會發生的事，跟我們眼前面對的現實相去甚遠。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "4f06f96b0966c0ff4c5d12d2f69dbc9b28539ddc16dca462d6c06e481a9c7491",
+  "zh": "在 Arnika 待久了並不明智。我的城市已經只剩過去的影子。你們也看到了那座黑塔，還有街上的軍隊。這不是我們原本的樣子！我的弟兄大多都離開了。但是我，我會留下來。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "dba8695b02bd20c9b62cb526bc0916273cb65b0c4a963a103ed34944cb201434",
+  "zh": "在這裡的南邊。我已經很久很久沒去過了。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "b023a7f621ca29ec130181f9c36c3227f2e7b2544ac9dcbb7315857d75b48be5",
+  "zh": "是的， Rapax Castle 。離這裡很遠。謝天謝地。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "d46f8c48f970b76b7b90babbb9f65425db28622f3a142caba20699dfd3288d30",
+  "zh": "Rapax Rift 離這裡很遠。那是個滿是熔岩的地方，我想像不出去那裡會有什麼好事。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "e496095f15e7e43618192b32ce3c68a1107537b9a278331fba602dd2b1216a71",
+  "zh": "我聽說有個叫 Umpani 的族群住在那裡。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "16ca1b1d8ea6165d9843c67fea2493ed7cc07936feaa9458545f44527aa1d5b5",
+  "zh": "有些生物住在那裡——肯定不是 Dominus 的原生物種。他們自稱 T'Rang 。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "6f53cf38692b63cb80e8d4de2bfd7a911b09c6a565265a458500b46255554874",
+  "zh": "那是 Dominus 上最{{Divine}}的地方。從那裡，人可以升起——也就是飛升（ ascend ）——前往 Cosmic Circle 。傳說要飛升，必須讓自己變得像 Cosmic Lord 一樣，學會他們所知的一切。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "7ec9ca2883565fd9b73d58b9b9f46b0aca95475b991d81ae6c7e8f5001200367",
+  "zh": "我們原本相信 Destinae Dominus 會為我們指引道路，可是它在很多年前就從修道院（ monastery ）被偷走了。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "a18b202843d7669e60e231cbae7425e301c8c818c3cc46e0e9d87da9e3eb057b",
+  "zh": "我只能想像那是什麼樣子。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "cd92ac94b314cec32c1982930e97a36d0530ed4b73f07aadbadaace649658c21",
+  "zh": "Higardi ，我們剩下的人。我的族人分成了兩派。有些人留在 Arnika ，對抗從 Dark Tower 來的 Troopers ，保護屬於我們的東西！另一些人，像 Anselm ，則是去奪回*曾經*屬於我們的東西…… Destinae Dominus 。現在可不是什麼好時候。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "dd0d22c40d303cb57d4cdc869cd40126d9cc7697d2716696bd5f2dbef75b9913",
+  "zh": "他們是難以捉摸的生物。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "c5605845c2a83f890ee94657179976df29b747687bd3d9d9fb54bb27d591612e",
+  "zh": "我對他們了解不多，無從評斷。"
+ },
+ {
+  "id": 48,
+  "src_sha256": "f1584781d2235dd5dbdb51282bd7d0a025eeb5c53379a47b3d440b41a953f085",
+  "zh": "是的，我見過他們，不過我可不是論斷別人的人。"
+ },
+ {
+  "id": 49,
+  "src_sha256": "9b837c52d320b76b1769c7bc9262aaaed7048a11c468fd0b783e9994815f9168",
+  "zh": "我們來自另一個世界的姊妹。我想她們總有一天會回家，那一天應該不遠了……"
+ },
+ {
+  "id": 52,
+  "src_sha256": "18c96978f6e629361406ddda7f7f1aec066b208037b267ef7765ca8aa5929501",
+  "zh": "你們最好自己去問他們。他們已經在 Arnika 住下了。不過我得說，他們似乎不太想開口。我聽說他們在等 Umpani 或 T'Rang 派代表來。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "13e7e780f16559e85e2ec2481580340bcfee10c9b70057fa3c5dfea1c8435089",
+  "zh": "我所侍奉的那位。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "af11b232d7e195bbe1a692bc08cf0a8fff15b0464f79663ce5389e7388e5c403",
+  "zh": "是的，Guardia……我沒去過，不過我知道那個地方。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "b466d15907686edc4602b4e4d5c8b5cc99c09a6391155e10afa9acbfbdc5ff28",
+  "zh": "我對他知道得太多，卻又嫌太少。我從沒見過他，可是聽到、看到的已經夠多了。他來到 Dominus ，想把我們的 Ascension 據為己有——要升上 Cosmic Circle ！而且他威脅，誰擋他的路就殺誰。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "03fae3693f5664231d23a8a55bcf8c3be48e61f9945fa84490998c2b56b4bb2e",
+  "zh": "他一夜之間蓋起那座可怕的高塔（ tower ），還毀掉了我城裡的一角！他的突擊兵已經奪走數十條人命。而我們，依然拿他沒辦法。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "ddbae92f84040a2fb7164fd89d08963f0867687472f85e113992090a97a7f3dd",
+  "zh": "我不由得相信，是 Cosmic Lords 刻意這樣安排的，也許最後會有好結果。但我的信仰正受到考驗……"
+ },
+ {
+  "id": 58,
+  "src_sha256": "98b1364e2295d0cf160d74aa815c02da83aafb7995420f29a281f9047d0daeb8",
+  "zh": "Vitalia ，是啊。我們都很疼那個女孩。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "31860f0bf96915d566551b8235b19e426a0c2e8599d135c2b17dec44ab45427b",
+  "zh": "Vitalia ，是啊。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "9adaf3fdc1282d10fac2b94390fdd7db00a40e0845d61b96e0daddca2fab1e31",
+  "zh": "那位 Father……那位無所不知的。是他創造了 Destinae Dominus ，也是他看顧著我們所有人。我相信，直到現在也是。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "88309b82bc3b2f53801bca89864828f7895fd9d5c8845da354870ddc09b3d979",
+  "zh": "Marten ……是啊，是他偷走了 Destinae Dominus 。你們要是想打聽他的事，也許該去問問 HLL 的人。"
+ },
+ {
+  "id": 64,
+  "src_sha256": "c9d6857155c73a684b1e23e7ea6a1079aae313bfa64b052e1a1b1fc601ec83a9",
+  "zh": "有些事還是別去碰比較好……"
+ },
+ {
+  "id": 70,
+  "src_sha256": "6602ccc5f85659d1d617a3a16189dab07e6b79ef4c99fcd012c19f18af894c61",
+  "zh": "我聽說過，是的。對我來說它仍然只是傳說。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "ea64ebad6c0386bfc45e9669e2627f062900aed65578e561bf732242b4a2751f",
+  "zh": "那是 Father 賜給 Dominus 上眾人的禮物。據說裡面蘊含一切知識。現在只有 Father 知道它在哪裡……都是因為 Marten 。沒有 Destinae Dominus ，就不會有 Ascension 。我只希望我們能趕在 Dark Savant 之前找到它。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "0ecfd9c65099d246cf8e514bc77dd30c650a2628d42621e6941b93c38b0e133b",
+  "zh": "你們是說 Cosmic Forge （ forge ）？你們竟然知道它，真奇怪。知道的人太少了。如果你們知道它的名字，那你們就知道它的作用。我們不再多談了。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "60fbc66faf8bba1642b28cbf43b457146730bca9a59ba4b26c39ad55d89f8aac",
+  "zh": "已經開始了。我們現在要找的地方是 Ascension Peak 。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "931b66c63c44ef96f9d0cea4b655a9d523f317709711aaf4d79b0bc5306f5921",
+  "zh": "我不聽那種事。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "95941a8e765c0f342c8e442625e7ac6f0eec9122edbf5173d924e32a27ecd066",
+  "zh": "我是 {{Lord}} Braffit ，這座神殿（ temple ）的領袖。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "a9d922e96ce56a49d9a92522a1dbb7aec92579497c86d7e7edf26e22962a7242",
+  "zh": "你們正在過你們自己的。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "8a0d07fdd83cc07113814bf80b8da86e284e154bc03f8143576b9e64677ec554",
+  "zh": "哎呀……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "69863f4670e41c21a30b2848d47839c1d58f444eaec1ae0637007dd8c82df35b",
+  "zh": "那還有誰會在這裡替你們復活呢？"
+ },
+ {
+  "id": 80,
+  "src_sha256": "7577b30c17f3453b85058289fd4d63f4c7763ae957114fefc6ab9628f0d6a5ea",
+  "zh": "歡迎來到神殿（ temple ）。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "a97de4009fcdd9f9f13e18da36c8cc7778e7c1f8987e9b8488141aeb61ee5645",
+  "zh": "希望還能再見到你們……"
+ },
+ {
+  "id": 82,
+  "src_sha256": "9349a6eb79232034111a06b45fba8948ffdf507bc5fd932da9bd6264bf359673",
+  "zh": "我們當然能幫你們。幾乎所有{{Divine}}的事我們都能辦到……復活、治療、解除各種疾病。當然，這並不是精確的科學。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "664cfed08c097a3788ad873b190fbc436a529d043fbcf2cd97975affbb858178",
+  "zh": "我可以提供一些東西……"
+ },
+ {
+  "id": 84,
+  "src_sha256": "87e48cd17da60ea3cc3991ae73d79c11fcbae3e26c92467d64b76c8dbecb1ae3",
+  "zh": "我很好……"
+ },
+ {
+  "id": 85,
+  "src_sha256": "b633912b056cac8982b988456a915d55be9c43fbe940415045f00d1e2ec02572",
+  "zh": "是的，你們最好帶一些在身上，比較明智。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "5cdc19b7004563031bafcbfde7c600ec310c5619e7aa210d908182997a3aa5d5",
+  "zh": "拜託，這裡別提戰爭（ war ）。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "8a33726547816dbc870d0cf2b19bb517a3f6577b7e0f5d028ffbb7d90711d900",
+  "zh": "我真希望 Anselm 平安無事……"
+ },
+ {
+  "id": 91,
+  "src_sha256": "b63770ba8d4d80a18f5447894048e3edbffa9a8a42b79141addcb88853a7ee19",
+  "zh": "Marten 會在哪裡呢？ Bluff 、 Gigas ，連 Rift 都找過了。哪裡都沒有！他一定在某處，可是在哪裡！還有那些小 Trynnie ，他們一定知道些什麼。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "9da506b59fb35333b2f8c42c00e2511169ffedf9c4a0fb1c238555d9730d9381",
+  "zh": "在這裡， Arnika 。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "08de4be8c6d52187c93d97d7c05a56d2f45fa606d7ede6808da08c6dc38d26d5",
+  "zh": "你們得去 Trynton 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "cc49ee41a00c38a4838ab71a441a7438af3d1589b9f5ad633a78372e3e790856",
+  "zh": "我相信是在沼澤。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "a7d357ea12ec2636633ac9a6c3e3bb5e306b4b23408c97052419a8b236cd8269",
+  "zh": "也許在 Marten's Bluff 。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "08abdfc1fb8c18615907b8124d14f7322bc0f62bccc6a6b2262602b31f1d8cc1",
+  "zh": "在 Mount Gigas 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "148b2d07200a828cd313acc2b700aeb29855adfdf261439998c41a013d0dc669",
+  "zh": "我們相信是在 Sea Caves 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "c338bcfc1193554ac80bfa5eb4ee776127f823e24736f48e90ff13b40a137352",
+  "zh": "在 Rapax Rift 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "dda18c3a8353db6dbb12628d994cfc0ab42cad63be73b91edbbc57782a1f051e",
+  "zh": "在 Rapax Castle 。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "31cc0c814aee4641eb8b4a7503249ccc0f5757264dcf4fba7bc0f1a7ed61879a",
+  "zh": "在 Ascension Peak 上。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "5a44378384e39d48ad3088601f57f601230085618777921a5ffe6889e4ae9c9b",
+  "zh": "Cosmic Circle ……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "7ba52a14d29058b7f780a83ace5162f2892dec7b138a51f1f421f6f36548ce2a",
+  "zh": "當然是在這裡。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "0b1cbf4952aea40923de78fa65252179db442ffaea229ffa367b02d6ac4bfa8c",
+  "zh": "你們跟我一樣清楚……"
+ },
+ {
+  "id": 106,
+  "src_sha256": "2a9d1033a992e89b90e9df1a72536fa69b6dce632a1522386c354140deec2cdb",
+  "zh": "我想是在 Bayjin 附近。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "18dfe49b8ad6ced230716c205bdb0c85d5cf436e774fe5a2d7775990c840f3c3",
+  "zh": "Vitalia Domina ，見到你，我最感意外。已經很久很久了……"
+ },
+ {
+  "id": 108,
+  "src_sha256": "e12de54459b0bcc79c994c8f757530bb42a7218c18fdd5997871abe4a297f697",
+  "zh": "我相信你是，孩子。你跟他走，可是拿性命在冒險啊。離開 Dominus 安穩的家，跟個瘋子穿越太空……還有你的眼睛。你的眼睛（ eye ）是怎麼了？"
+ },
+ {
+  "id": 109,
+  "src_sha256": "42b055552dc83a90872f08038e893e3b0775f8ebe50e5ab37c002cc63d92a9de",
+  "zh": "他就在這裡，在 Dominus 上，你知道的。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "7d0d1faad85b932f344233afb39af65ef6c5160417953203435ccbb9e70b6805",
+  "zh": "我們誰都不是，Vitalia 。他在這裡蓋了座高塔，宣稱裡面的炸藥（ explosives ）足以炸毀整個 Arnika 。我勸你小心點。他似乎因為某個原因需要你。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "77f68322cb1ad94972b3a21821ddfeefaf22cd86bd74f6fdfd2f4a6199b33cd4",
+  "zh": "至於你們幾位呢？你們平安把她送回來，全 Arnika 都感謝你們。你們也一樣，要離 Savant 遠一點……"
+ },
+ {
+  "id": 112,
+  "src_sha256": "696c1ff36d5b0bfe94564c5f88562f9afbaee275c0fa2b779b5592f7300627e6",
+  "zh": "我很高興你獨自回來了。有件關於 Vitalia 的事你該知道。我很感激你這樣保護她。多年來，我們也是這樣做的。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "7ed0a95dd845efaf654689f52571525d21695417065078c23a4fd4b1d459da24",
+  "zh": "Vitalia 還很小的時候，她的家人死於一場離奇的意外。不久之後 Dark Savant 就在這裡被人目擊，這恐怕不是巧合。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "6acffd10794c7efce89abd44f4d6c6f81840d78ed3873d7ba52704054c8a0317",
+  "zh": "我們收留她，把她當成自己的孩子撫養，可是她越來越叛逆，就像所有孩子一樣。她十八歲那年，我們失去了她。她跟著 Dark Savant 離開了 Dominus 。也許是他迷惑了她。我們永遠不會知道。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "379193be22fcb7813e009ce3e6bbee635741611a2547ad9a418cb19ee18d1cab",
+  "zh": "她的家族一直被稱為 Guardians of the Key 。這個稱號的意義早已被遺忘——但也許 Dark Savant 知道些我們不知道的事。所以，請繼續守護她。我擔心他仍會把她奪走。也許這個能幫上忙……"
+ },
+ {
+  "id": 116,
+  "src_sha256": "a8a965af557b28681e77a32074c373c7a9ea0231acd7b00de3052c0cc954b413",
+  "zh": "真有意思。 Marten's Badge 。你們知道的，他偷走了 Destinae Dominus 。戴著那個，可不是什麼提升人緣的好辦法。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "025d47ecbba68d9854d5679d96519b8e94531576858c1a306340c24f12c0b5fe",
+  "zh": "朋友們，我真希望能帶給你們一些好消息（ news ）。我剛聽說 Dark Savant 和 Rapax 結盟了。我會為我們大家祈禱。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "8a41b7bc38a730eaf68618dbb456cecca6d1b037ff58b39b4dd24fcad8e8f880",
+  "zh": "Rapax 仍然在這裡給我們添麻煩。你們來之前，有個 Rapax 衛兵來找過我。他說我們的 Ascension 計畫，用他的話怎麼說來著？「徹底無望」。他們造成了一場山崩（ landslide ），除了穿過 Rapax Castle 之外，通往 Ascension Peak 的路全被封死了。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "6c08053d6cfde2b246976eb4a104ad17ab604c9e2c30e84035a76555d154cbf6",
+  "zh": "如果你們需要什麼，可以在這裡找到。我們提供{{Magic}}——治療之類的——只收很象徵性的費用。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "a57e76c63241e5440a0873ea7d3c9e43aca59a424918603d62618b6bf035cecc",
+  "zh": "很高興再見到你們……"
+ },
+ {
+  "id": 121,
+  "src_sha256": "db7c57bae1286aa4835afb658a9fc338be0b0970cbe12bbfa721f32d19d6ccd0",
+  "zh": "是的， Myles 。一個迷途的靈魂……"
+ },
+ {
+  "id": 122,
+  "src_sha256": "070e4b2953e3259860a53eb2ab60fef983e26b513d8bb62693f281c4207a4e3c",
+  "zh": "她很粗魯，但心地善良。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "f154a1f2069027ce455f0e4d0753bda49078b4c65ddd7ca5e6c5ff8daf10925b",
+  "zh": "是個好女人。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "a8472d86692e3dff689d98e063bebe47b1a07dc0db9a19ad6825baad90ecf77a",
+  "zh": "Anselm 是我的領導者，嗯，當然 Phoonzang 除外。他正在尋找 Destinae Dominus ，我現在為他祈禱。沒有它， Ascension 本身就完了。我只希望他能趕在 Dark Savant 之前找到。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "8b15cec712000527dd7e8dbab3d139065abf9155e62bb5b8ac2d7116b37f7287",
+  "zh": "他是個好人。順帶一提，他對 Marten 知道得很多。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "1eb903b3e13ebdfba7ac413623edb7ab02d02f4975902680f80802a2dc19aec4",
+  "zh": "他就是他。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "9e06ccf00a5baef2ec2a908f748752a7bef291a969f5233181f04f3bbc92017c",
+  "zh": "邪惡的生物！要是我們能把他們全部消滅就好了。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "8de8e28f52a1a982c7b9d2bb5f17d328c0a40ed074708ef9b5935f92158def54",
+  "zh": "我對他所知甚少，只知道他鍛造出了絕佳的{{Weaponry}}。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "74b2a5d1efffbe4ae8089dc7016e8325bcf5dd210e15d29bb6005a83e2ddbe6d",
+  "zh": "我在 Arnika 照管這座神殿（ temple ）。你們有任何需要，我都會在這裡。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "dd429b5e66558630b91db6d00d6ff78144b10f0a16ed3ead8f185df13d136936",
+  "zh": "是的，我的教團。"
+ },
+ {
+  "id": 131,
+  "src_sha256": "571858fcbccdfcd2480c45a197740081b9085c4fa69c315761faed1243a85023",
+  "zh": "你們一定看過了。每個人都看過。我無法解釋它是怎麼來的。有一晚，發生了劇烈的爆發。我聽見石塊像雨一樣砸在神殿（ temple ）的屋頂上。等我終於敢往外看的時候，它就在那裡了。從那之後我禱告了好多次。"
+ },
+ {
+  "id": 132,
+  "src_sha256": "b113156f15ba2ccc1d862aa5b385d5aa22d5f3a76c1a266ecdf4815790f231f7",
+  "zh": "可憐 Anna 的船被 Troopers 毀成那樣。害可憐的 Anna 生意都沒了。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "ba846f9963ac82daca066f1ed8e950fe523e763d4e43593fc4c0eee843209145",
+  "zh": "我沒有親眼見過，不過我沒理由懷疑告訴我這件事的 Rapax 衛兵。"
+ },
+ {
+  "id": 134,
+  "src_sha256": "7f84cf078ae6724547cd4c304f2e09adff1c91b66e17fb2b900e03416b401b40",
+  "zh": "當然，我自己是不會去那種地方的。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "5512e08d5ef05431d4dbb1c2f685ea05b9c49ab87d4b9c12d7d0ced53e6d892a",
+  "zh": "Antone Rapax 掌管著兵器庫（ Armory ）。他是你們能找到最好的鐵匠。"
+ },
+ {
+  "id": 136,
+  "src_sha256": "6fc2c707788704b7239be4e957ea3c60c210aa9953bb940a761dcb0b261c13f7",
+  "zh": "歡迎你們四處看看。"
+ },
+ {
+  "id": 137,
+  "src_sha256": "67bb29e12b9af51a74a883fe867e8177ece4614285d01d98752ec23841897a87",
+  "zh": "在樓下。"
+ },
+ {
+  "id": 138,
+  "src_sha256": "4ec84cb8e3d651adaf1a0541de446195c3ccfb140c99dc30e009f7e4a25f391b",
+  "zh": "我們現在已經不再費心駕駛飛船了。凡是升上天空的東西都掉了下來——我們相信，這是 Dark Savant 的「功勞」。"
+ },
+ {
+  "id": 139,
+  "src_sha256": "bf75887287964ca5d1c4702fbf27402eb8b6ffdf4c9baa9a73cc7a165f7ef6c0",
+  "zh": "我們相信那艘船是被擊落的。"
+ },
+ {
+  "id": 140,
+  "src_sha256": "c0c347e31a2e563f508c4cff1013f64b2fa36032e841f4eb01d46428be87c4e9",
+  "zh": "Higardi Lunar Legion 。你們可以自己去拜訪他們。"
+ },
+ {
+  "id": 141,
+  "src_sha256": "694328c25bd5b68e20a87c95eabec9dbfa44dea71ee493e3eba0f7e22bc8a034",
+  "zh": "就在城外。 Savant 來之前，那裡是個最安寧的地方。現在，唉，已經沒人了！ Anselm 帶著所有弟兄去尋找 Destinae Dominus 了。"
+ },
+ {
+  "id": 142,
+  "src_sha256": "1516b1fd682c6595796862a1734d70f344bdaf6f18160b3664da28de732063ef",
+  "zh": "把這些東西好好帶在你們身上。它們是 Cierdan 特別鍛造，用來消滅 Rapax 的。"
+ },
+ {
+  "id": 143,
+  "src_sha256": "bdd4faee11427925a4192110af2ff5170c1bacdc9f3e28ddf2c15072bdbc946b",
+  "zh": "我很慶幸這些物品在我們手上。"
+ },
+ {
+  "id": 144,
+  "src_sha256": "3dffa9d4f67760a084047810e59461adba6db33e229175d0ea8ed5aa86ebfded",
+  "zh": "一定是 Anselm 派你們來的！你們是來拿輪子鑰匙的，沒錯吧。你們會發現它安全地藏在我們的神殿（ temple ）地下墓室。所以，Anselm 認為是時候打開 Cierdan 的墳墓，使用他的{{Weaponry}}了？那麼這真是黑暗的時代啊。"
+ },
+ {
+  "id": 145,
+  "src_sha256": "e7f6e162ea1c8f3418ca117d50d4708b3480e0414eaac53a685fc8a9266098db",
+  "zh": "那件事怎麼了？"
+ },
+ {
+  "id": 146,
+  "src_sha256": "c5d732e4c20be943114263d5c305e6a78531180e6b65fea99fe092aceb32bb04",
+  "zh": "是的，首先是 Savant 。他那顆炸彈。 Ascension 。 Anselm 弟兄。 Destinae Dominus 。這些都需要我費心。"
+ },
+ {
+  "id": 147,
+  "src_sha256": "fed45280833b93e45985f2e32ee2b0a1c61176d0dcfa15fe4cd10ca41b5f559b",
+  "zh": "它讓這裡的一切得以運轉。"
+ },
+ {
+  "id": 148,
+  "src_sha256": "66a9d80093062a4ce109fc755225033f2354952b1dd34874c2eaff52e872079b",
+  "zh": "我自己也是最近才注意到的。"
+ },
+ {
+  "id": 149,
+  "src_sha256": "8c5349f6506d36e229d0db6735177ad4706a3ffe2dbd364e23ab0b78be4d5fc1",
+  "zh": "Savant 的塔裡有一顆炸彈。外頭有個奇怪的物體這麼說。我可不想去戳破 Savant 的虛張聲勢。"
+ },
+ {
+  "id": 150,
+  "src_sha256": "668ddf13fd43b3c59addd8a88d08352f55077c223c7de0cc4424fd2f4632d836",
+  "zh": "除了名字之外，我什麼也不知道。我猜，大概像是一枚紋章吧。"
+ },
+ {
+  "id": 151,
+  "src_sha256": "b596180c016c5d0d5557a7f61bdb73e0fdc0c5e4246c983b0ac4c1e44185c4ee",
+  "zh": "這面旗幟？你們找到她們了？嗯……所以被 Savant 擊落的是她們的船。 Burz 告訴我，他看見一艘船在 Bayjin 附近墜毀（ ship crash ）。我想要是有人倖存，你們一定會帶她們一起來的。當然了。謝謝你們把我們姊妹剩下的遺骸送回來。"
+ },
+ {
+  "id": 155,
+  "src_sha256": "7154d3c07b60b4b8863c315a89f0a22ee5fd6879e40783ed35179c5e2a473b38",
+  "zh": "是的，沒錯。"
+ },
+ {
+  "id": 156,
+  "src_sha256": "0cee142f17f0229d1ce9ab7530c7c5ee958806a309cc2a8f0d7b70238911b6ec",
+  "zh": "在這裡的北邊。"
+ },
+ {
+  "id": 157,
+  "src_sha256": "f1119c2f7849831d4f089c921a001dac3d29be24e784f349e88f314fd784d048",
+  "zh": "在神殿（ temple ）的南邊。"
+ },
+ {
+  "id": 158,
+  "src_sha256": "67b9a7e23b10433a6adf2fb57cfe79daa17e6068e2c5cfc17654a46164899629",
+  "zh": "在 Arnika 的東邊。"
+ },
+ {
+  "id": 159,
+  "src_sha256": "5e54195583eb134345398020cdcfe5ce2350acebc9d6baa440de4dffe97e9e8d",
+  "zh": "在這裡的西邊。"
+ }
+]

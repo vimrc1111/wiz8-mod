@@ -1,0 +1,37 @@
+call	40efa0	boundedRandom	有界亂數 R(N)：威力商為 0 時每淘汰一隻怪物擲一次 R(目前筆數)；TestEmu 以錄下的 rng 序列逐次對齊
+call	53be00	makeCharacterSource	來源描述十三個雙字清零後寫種類 1、角色索引、怪物欄 -1；原生執行，來源描述為輸出 src0..12
+call	5905c0	messageOverlaySet	原生執行：寫位元組 0x69b7b8＝1；第二參數 -1 時不寫 0x64bd54；0x69b7b8 為輸出 messageContinue
+call	5e1c10	無關	operator delete：釋放兩個 id 名單緩衝，emu 堆不回收，無規則輸出
+call	5e1ce0	無關	operator new：兩個容量五的 id 名單初始緩衝；緩衝位址不是輸出（怪物名單由 0x4fd030 樁改指 case 物件）
+data	4	idx_argument	第一個 cdecl 參數：隊員索引 0..7
+data	8	costOut_argument	第二個 cdecl 參數：體力消耗輸出指標，非零才呼叫 0x52b2f0 並寫回
+data	c	mode_argument	第三個 cdecl 參數：低位元組非零走可用性檢查與已用旗標，為零則威力加 10
+data	5ebfe0	無關	id 名單的虛函數表，屬容器生命週期
+data	6836a8	battleObject	戰鬥物件指標；戰鬥角色列步距 0xd4、+0xb1 驅散已用旗標
+data	685174	partyCharacterRecords	角色記錄陣列基址，步長 0x1862；讀 +0xb5、+0xbd 職業級數
+data	68c09c	無關	訊息字串表指標；只交給 0x590950 顯示，無規則輸出
+data	ffffffffffffff8c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff90	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe6	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x1448	無關	訊息字串表的提示字串指標，不可用時交給 0x590950 顯示
+field	eax+0x6dc	無關	訊息字串表的提示字串指標，不可用時交給 0x590950 顯示
+field	ecx+0x608	無關	訊息字串表的施放字串指標，模式非零時交給 0x590950 顯示
+field	eax+0xb5	classLevel10	角色職業歷史級數列第 10 筆（0x8d+4×10），有號 32 位，加進驅散威力
+field	eax+edx*2+0xb5	classLevel10	角色職業歷史級數列第 10 筆（0x8d+4×10），有號 32 位，加進驅散威力
+field	eax+edx*2+0xbd	classLevel12	角色職業歷史級數列第 12 筆（0x8d+4×12），有號 32 位，加進驅散威力
+field	ecx+eax*2+0xbd	classLevel12	角色職業歷史級數列第 12 筆（0x8d+4×12），有號 32 位，加進驅散威力
+field	eax+edx*4+0xb1	characterTurnUndeadUsed	戰鬥角色列的驅散使用旗標，步距 212 bytes；可用時寫 1
+field	ecx+eax*4	idListEntry	怪物 id 名單第 k 筆（淘汰時的左移寫入）
+field	ecx+eax*4+0x4	idListEntry	怪物 id 名單第 k+1 筆（淘汰時的左移讀取）
+field	edi+0x0	fatigueCostOut	體力消耗輸出：*costOut＝0x52b2f0(idx, 3)
+fixture	monsterCount	monsterListLimit	[未取得] 原版群／清單固定上限未取得。build/wiz8.asm:233249–233290（0x4addf0）按要求筆數擴容；:340883–340926（0x4fd44d–0x4fd4cc）按群組容器筆數遍歷並逐筆擴容；:445372–445446（0x547e27–0x547eea）使用選出的筆數，未限制為八。取 9 作可達替代值：本票已知正常遊玩一群能超過 8，因此至少九筆可達；9 是本次夾具容量，並非宣稱原版最大值。boundary 保留既有列並新增九筆淘汰／商數邊界；random monCount 全域 0..9。
+fixture	F_world	coLocatedMonsters	保留原有 sa_* 單怪物世界；sa_extraMonsterCount 0..8 增加同位置、同屬性而 ID 各異（123+i）的記錄，以單記錄 4fd030 選取結果逐筆建立名單。F 不讀樁的 monCount 作選取結果。probe 設為九筆世界、威力 10，F result＝9；既有父節點 143 欄停放輸入補零保持原有單怪物行為。此表示不涵蓋異質怪物／多群的完整世界。

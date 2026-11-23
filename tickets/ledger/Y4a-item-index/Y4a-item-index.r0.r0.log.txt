@@ -1,0 +1,5 @@
+0051cce0 itemIndex random 上限 3 < 100
+0051e920 itemIndex random 上限 3 < 100
+0051cce0 還在用 also
+0051e920 還在用 also
+FAIL case-index case 檔結構

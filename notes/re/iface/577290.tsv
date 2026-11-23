@@ -1,0 +1,31 @@
+call	50a3c0	findMonsterById	依怪物 ID 先搜即時怪物列表 A 再搜 B，查無即 assert；回傳怪物記錄，交給 0x4c7f10；原版子函式照跑，calc 以夾具的 A/B 兩表重現搜尋，查無時 panic
+call	528830	postCombatEvent	把事件（種類 0 或 1，其餘引數為零）推入戰鬥事件佇列：配置 0x24 bytes 事件（種類、時間戳記），計數加一，容量不足時恰增至計數加一並複製舊項；原版子函式照跑，calc 重現事件、佇列計數、容量與指標
+data	4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	619c54	greeting_monster_arg	交給 0x4c7f10 的第一個引數（位址常數）；0x4c7f10 在模擬器以位址 stub 取代，只記錄呼叫次數與引數，calc 只重現呼叫的次數與引數
+data	649f1c	game_state_ptr	全域遊戲狀態指標 G；+0x1d4 為對話記錄，+0x252／+0x25c 為忙碌旗標與計數，由 setup 指到夾具
+data	683f97	greeting_mode_flag	位元組旗標；非零且 G+0x252 為零時走 0x571660，否則走 0x5775d0 或直接返回
+data	685174	party_character_records	隊伍角色記錄陣列基址（指標），第 i 個記錄在 +0x1862*i；讀 +0xb01、+0xb11 決定是否呼叫 0x553f10
+data	685178	party_slot_flags	隊伍欄位旗標位元組陣列基址（指標），第 i 項在 +0x106*i；非零才檢查角色記錄
+data	68f064	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f0e2	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f0ec	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+field	eax+0x1c	dialogue_talk_lock	對話記錄 D 的位元組 +0x1c；與 sayFlag 及定義記錄 +0x2f0 為零同時成立時直接返回
+field	eax+0x1d	dialogue_first_greeting	對話記錄 D 的位元組 +0x1d；零則發事件 1 並返回，非零則發事件 0 並清零
+field	eax+0x2e	dialogue_kind	對話記錄 D 的種類位元組 +0x2e；0x2a 時才查怪物
+field	eax+0x2ea	definition_flag_2ea	定義記錄 E 的位元組 +0x2ea；為零（連同 +0x54、+0x56）才掃隊伍狀態，也決定是否走 0x5775d0
+field	eax+0x2f0	definition_talk_lock	定義記錄 E 的位元組 +0x2f0；與 sayFlag、D+0x1c 一起決定是否返回
+field	eax+0x54	definition_flag_54	定義記錄 E 的位元組 +0x54；為零才可能掃隊伍或呼叫 0x5775d0，非零則直接返回
+field	eax+0x56	definition_flag_56	定義記錄 E 的位元組 +0x56；為零（連同 +0x54、+0x2ea）才掃隊伍狀態
+field	eax+0x6	dialogue_definition_ptr	對話記錄 D 的指標 +0x6，指向定義記錄 E；E+4 也是交給 0x571660／0x5775d0 的名稱位址
+field	eax+0xb01	character_status_strength	角色記錄的 u32 +0xb01；無號小於 0xf 才呼叫 0x553f10
+field	eax+0xb11	character_status_cap	角色記錄的 u32 +0xb11；大於零（有號）才呼叫 0x553f10
+field	eax+0xc	monster_record_ecx	怪物記錄 +0xc，0x4c7f10 的 this；0x4c7f10 在模擬器被位址 stub 取代，該值不影響任何輸出，未觀察
+field	ecx+0x1d	dialogue_first_greeting	對話記錄 D 的位元組 +0x1d（清零的寫入點）
+field	ecx+0x1d4	game_dialogue_record_ptr	G+0x1d4，指向對話記錄 D
+field	ecx+0x25	dialogue_flag_25	對話記錄 D 的位元組 +0x25；非零時 E+0x2ea 非零也會走 0x5775d0，同時是查怪物的第二個旗標
+field	ecx+0x252	game_busy_flag	G+0x252 的旗標；為零且模式旗標非零才走 0x571660
+field	ecx+0x25c	game_status_count	G+0x25c 的 i32；大於零（有號）則直接返回
+field	ecx+0x6	dialogue_definition_ptr	對話記錄 D 的指標 +0x6，指向定義記錄 E
+field	edx+0x1d4	game_dialogue_record_ptr	G+0x1d4，指向對話記錄 D
+field	edx+0x6	dialogue_definition_ptr	對話記錄 D 的指標 +0x6，指向定義記錄 E
+field	esi+eax*1	party_slot_byte	隊伍欄位旗標陣列的第 i 個位元組（基址 *0x685178）；非零才檢查角色記錄

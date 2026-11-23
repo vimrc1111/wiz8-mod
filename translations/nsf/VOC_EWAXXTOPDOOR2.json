@@ -1,0 +1,22 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "7eb28db1b00bc86df37dc1470ffd366e4db596abb86d55e135f2f1c333b5a933",
+  "zh": "上層飛行甲板禁止進入。請向 EWAXX UNIT 出示安全通行證。"
+ },
+ {
+  "id": 2,
+  "src_sha256": "d62b4f89ca102382c2dd0fc5f40da4673d18504b0383de204d4b3555e0392022",
+  "zh": "錯誤。需要 Imperial Umpani Federation 安全通行卡。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "8a0c0293f1ef3d60d0677f853ed966485a3f9e76a658ba0b4a00bd164d74eccf",
+  "zh": "驗證通行權限中……存取遭拒。需要最高安全等級通行證。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "85545fd926493367e4bd3cc22c34897f82e989208340a5c3a50c1376c0c2d489",
+  "zh": "驗證通行權限中……准許存取。請小心前進。"
+ }
+]

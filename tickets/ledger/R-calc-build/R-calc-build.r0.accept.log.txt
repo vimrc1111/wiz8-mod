@@ -1,0 +1,81 @@
+=== RUN   TestPlanAttrs
+--- PASS: TestPlanAttrs (0.00s)
+=== RUN   TestEffectiveSkill
+--- PASS: TestEffectiveSkill (0.00s)
+=== RUN   TestBuildDualL28
+--- PASS: TestBuildDualL28 (0.00s)
+=== RUN   TestBuildBerserkL28
+--- PASS: TestBuildBerserkL28 (0.00s)
+=== RUN   TestBuildDualL5
+--- PASS: TestBuildDualL5 (0.00s)
+=== RUN   TestBuildRealData
+--- PASS: TestBuildRealData (0.00s)
+=== RUN   TestScale
+--- PASS: TestScale (0.00s)
+=== RUN   TestDice
+--- PASS: TestDice (0.00s)
+=== RUN   TestSwingProb
+--- PASS: TestSwingProb (0.00s)
+=== RUN   TestPhysDamage
+--- PASS: TestPhysDamage (0.00s)
+=== RUN   TestKillThreshold
+--- PASS: TestKillThreshold (0.00s)
+=== RUN   TestRoundCounts
+--- PASS: TestRoundCounts (0.00s)
+=== RUN   TestSpell
+--- PASS: TestSpell (0.00s)
+=== RUN   TestResist
+--- PASS: TestResist (0.00s)
+=== RUN   TestLoadSpellsSynthetic
+--- PASS: TestLoadSpellsSynthetic (0.00s)
+=== RUN   TestRealData
+--- PASS: TestRealData (0.00s)
+=== RUN   TestExeTables
+--- PASS: TestExeTables (0.00s)
+=== RUN   TestMeleeRoundComposition
+--- PASS: TestMeleeRoundComposition (0.00s)
+=== RUN   TestBuildStrengthAndDualPenaltyEdges
+--- PASS: TestBuildStrengthAndDualPenaltyEdges (0.00s)
+=== RUN   TestBuildHandModesIndependent
+--- PASS: TestBuildHandModesIndependent (0.00s)
+=== RUN   TestAttackValuesComposition
+--- PASS: TestAttackValuesComposition (0.00s)
+=== RUN   TestAttackValuesSlowAndSkip
+--- PASS: TestAttackValuesSlowAndSkip (0.00s)
+=== RUN   TestSpellCastComposition
+--- PASS: TestSpellCastComposition (0.00s)
+=== RUN   TestDistributionEnumeration
+--- PASS: TestDistributionEnumeration (0.00s)
+=== RUN   TestLoadItemsMonstersSynthetic
+--- PASS: TestLoadItemsMonstersSynthetic (0.00s)
+=== RUN   TestLoadRecordLengthValidation
+=== RUN   TestLoadRecordLengthValidation/spells
+=== RUN   TestLoadRecordLengthValidation/items
+=== RUN   TestLoadRecordLengthValidation/monsters
+--- PASS: TestLoadRecordLengthValidation (0.01s)
+    --- PASS: TestLoadRecordLengthValidation/spells (0.00s)
+    --- PASS: TestLoadRecordLengthValidation/items (0.00s)
+    --- PASS: TestLoadRecordLengthValidation/monsters (0.00s)
+PASS
+ok  	wiz8-mod/internal/calc	0.019s
+ok  	wiz8-mod/internal/calc	0.015s
+?   	wiz8-mod/internal/dbsname	[no test files]
+?   	wiz8-mod/internal/fact	[no test files]
+?   	wiz8-mod/internal/glossary	[no test files]
+?   	wiz8-mod/internal/nsf	[no test files]
+?   	wiz8-mod/internal/slf	[no test files]
+?   	wiz8-mod/internal/stringdata	[no test files]
+?   	wiz8-mod/internal/strlib	[no test files]
+ok  	wiz8-mod/tools/atlas	0.686s
+?   	wiz8-mod/tools/calc	[no test files]
+?   	wiz8-mod/tools/dbsname	[no test files]
+ok  	wiz8-mod/tools/fact	0.062s
+ok  	wiz8-mod/tools/fitcheck	0.035s
+ok  	wiz8-mod/tools/hashdir	0.017s
+ok  	wiz8-mod/tools/nsf	0.535s
+ok  	wiz8-mod/tools/shot	0.014s
+ok  	wiz8-mod/tools/slf	28.995s
+ok  	wiz8-mod/tools/strings	0.050s
+ok  	wiz8-mod/tools/strlib	0.194s
+ok  	wiz8-mod/tools/trcheck	0.069s
+?   	wiz8-mod/tools/zhpatch	[no test files]

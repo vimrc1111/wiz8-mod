@@ -1,0 +1,14 @@
+call	408860	playSound	播放音效檔（此處為現金交易音）；呈現，呼叫端不讀回傳；原樣跑，音效旗標 0x650e50 為 exe 初值時第一個判斷即返回
+call	51bea0	addPartyGold	隊伍金錢加上價格（u32 環繞），索引小於 0x2f 時同加名冊統計表該項；訊息旗標傳 0 不顯示訊息；未登記，原樣跑
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	68516c	itemDefinitions	物品定義陣列的執行期指標，每筆 0x10d bytes；讀 +0x41 的位元 1
+data	62a80c	cashTransactionSoundPath	音效檔路徑字串，只交給 408860 播放，不是規則輸入
+field	ecx+edx*1+0x41	itemSaleBlockedFlags	物品定義 +0x41：位元 1（0x2）為真時不可出售，直接回 0
+field	esi+0x0	soldItemIndex	出售記錄的物品編號（dword），查物品定義並交給實例初始化
+field	esi+0x4	saleRecordFlag	出售記錄 +0x4（u8）：為零時改成 1
+field	esi+0x6	itemQualityByte	出售記錄 +0x6（u8）：交給實例初始化的第三個參數

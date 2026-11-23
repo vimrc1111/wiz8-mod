@@ -1,0 +1,1 @@
+4ecf50	4ecf64	戰鬥模式位元組 0x683f94 為零時的 assert 塊（srAssertFail 停止、無返回值可差分）；本函式只在戰鬥中被呼叫，calc 對模式 0 panic。

@@ -1,0 +1,19 @@
+call	2b6	無關	抽取器把偏移當成呼叫目標；低於 PE ImageBase，並非遊戲函式（同 4e4280 的處理）
+call	40efa0	rand_n	怪物分支一次 R(100) 與模板兩個 u8 之和的一半比較；Rand 重放原呼叫次序
+call	528830	postCombatEvent	把事件（種類 0x16／0x67／0x68／0x69，其餘引數為零）推入戰鬥事件佇列：配置 0x24 bytes 事件（種類、時間戳記），計數加一，容量不足時恰增至計數加一並複製舊項；原版子函式照跑，calc 重現事件、佇列計數、容量與指標
+call	53bea0	targetRecordValid	檢查第一個目標記錄是已選定的角色（種類 1 且索引非 -1），否則 srAssertFail；合法輸入恆回 1，不影響規則，calc 對非法值 panic
+call	576da0	mark_resist_event_shown	共用旗標字 bit0 未設則發事件 0x67 並設 bit0；否則 bit1 未設發 0x68 並設 bit1；否則發 0x69；旗標字是 calc 的輸入與輸出，原版子函式照跑
+data	4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL 的 srAssertFail 匯入槽；目標記錄種類不合或查不到怪物時停止，沒有可差分的返回，合法輸入走不到
+data	61e29c	無關	第一目標記錄不是角色時 assert 使用的訊息字串，不參與規則運算
+data	61e2c4	無關	assert 與怪物查找失敗診斷用的來源檔名字串，不參與規則運算
+data	61e334	無關	第二目標記錄不是怪物時 assert 使用的訊息字串，不參與規則運算
+data	65be1c	spell_records	法術記錄陣列基址（指標）；效果的法術索引乘記錄長度 0x1bf 選取記錄，讀 +0x133 的領域
+field	esi+0x0	effect_spell_index	施法效果記錄的法術索引 u32，選法術記錄
+field	esi+0x78	effect_monster_branch	施法效果記錄的位元組旗標；非零走怪物模板兩個 u8 之和一半的機率分支，零走抗性判定分支
+field	esi+0x90	effect_second_target_kind	第二目標記錄的種類；必須是 3（怪物），其餘 assert
+field	esi+0x98	effect_target_monster_id	第二目標記錄的怪物 ID，交給即時怪物列表搜尋，同時是抗性判定的目標
+field	esi+0xc8	effect_strength	施法效果強度 u32，作為抗性判定的效果強度引數
+field	ecx+edx*1+0x133	spell_realm	法術記錄的領域 u32，作為抗性判定的領域引數
+field	ecx+0xd2	monster_template_chance_byte_a	怪物模板 u8（與 +0xd5 相加後取半，為百分骰門檻）；欄位語意未追到，只知其為門檻一半的加數
+field	ecx+0xd5	monster_template_chance_byte_b	怪物模板 u8（與 +0xd2 相加後取半，為百分骰門檻）；欄位語意未追到，只知其為門檻一半的加數

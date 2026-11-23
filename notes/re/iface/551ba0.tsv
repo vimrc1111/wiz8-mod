@@ -1,0 +1,42 @@
+data	4	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+data	1c	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+data	20	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+data	24	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+data	28	無關	參數堆疊位移（或目標記錄 +4／+8 位移）被分析為資料引用，非遊戲資料或表
+call	53bea0	sourceIsCharacter	以旗標 0 判定來源記錄是否為角色（種類 1）；是則回 1（索引 -1 時 srAssertFail），否則回 0。目標為怪物且來源是角色時，把來源角色索引傳給 551eb0 第 7 參數，否則傳 -1；calc 對索引 -1 panic
+call	547940	characterHasFeature	角色職業列（0x61507c，C+0x69）與種族列（0x615130，C+0x71）是否含該能力碼；本節點用碼 3、0x1e、0xe 決定狀態 6、2..4/7/15、11/13 的硬免疫，calc 以 pcActionFeature 重現
+data	551e84	status_immunity_jump_targets	狀態 2..15 的分派目標表（5 個位址），執行時從 exe 讀
+data	551e96	無關	分派目標表與選擇位元組之間被誤解碼成指令的位元組，非獨立資料
+data	6171a8	monster_category_immunities	怪物類別免疫表：3 列、每列 0x52 bytes（類別位元組＋20 個狀態 u32）；模板類別相符且狀態在列中即免疫，執行時從 exe 讀
+data	6171aa	monster_category_immunities	類別免疫表第一列的狀態清單起點（類別位元組在其前 2 bytes）
+data	6171ae	monster_category_immunities	類別免疫表第一列狀態清單內的位址（分析器從列內位移推得），同一張表
+data	6171fa	monster_category_immunities	類別免疫表第二列的類別位元組，同一張表
+data	6171fc	monster_category_immunities	類別免疫表第二列的狀態清單起點，同一張表
+data	6172a0	monster_category_immunities_end	類別免疫表結尾（迴圈上界），同時是 5520d0 狀態加成表起點
+data	61e2c4	無關	怪物查找 assert 用的來源檔名字串，不參與規則運算
+data	61e570	status_text_ids	每個狀態 8 bytes 的記錄，+0 u16 是狀態名稱的文字 ID；能力免疫提示（狀態 11、13）取其名稱，執行時從 exe 讀
+data	68510c	messages_enabled	全域訊息開關位元組；為零時抵抗提示不送出
+data	685174	party_characters	角色記錄陣列指標（步距 0x1862）
+data	68c09c	text_table	遊戲文字指標表；+0x600、+0x604、+0x6cc 為三種抵抗提示，另依文字 ID 取狀態名稱
+field	esi+0x0	target_kind	目標記錄種類：1 角色，3 怪物；非 1 一律走怪物查找
+field	esi+0x4	target_character_index	目標記錄的角色索引（i32）：種類 1 時 0..7；種類 3（怪物）時本節點不以它定址，原版呼叫端寫 −1（543fc1、544184、544200）或沿用上一個角色索引 0..7（54d5c0），照值轉給 5520d0（u32）與 551eb0（有號）
+field	esi+0x8	target_monster_id	目標記錄的怪物 ID，交給即時怪物列表搜尋
+field	edi+0x4	source_character_index	來源記錄（種類 1）的角色索引，作為 551eb0 第 7 參數
+field	ecx+0x0	monster_category_status	類別免疫表列內的狀態 u32，與輸入狀態比對
+field	edx-0x2	monster_category_byte	類別免疫表列首的類別位元組，與模板 +0xcb 比對
+field	eax+0x0	primary_state	主狀態 u32（角色 C+0xb01 或怪物 +0x107）；>= 0x12 即抵抗
+field	eax+0x1be	template_status12_immune	怪物模板位元組；非零時對狀態 0x12 免疫
+field	eax+0xcb	template_category	怪物模板類別位元組，查類別免疫表
+field	eax+0x551e98	status_immunity_jump_select	狀態減 2 為索引的分派選擇位元組（14 個），執行時從 exe 讀
+field	edx*4+0x551e84	status_immunity_jump_targets	依選擇位元組取分派目標
+field	eax+edx*2+0xa4d	character_status13_block	角色 u32；狀態 0x13 時非零即抵抗
+field	edi*8+0x61e570	status_text_id	狀態名稱文字 ID（u16），代入 +0x604 提示
+field	eax+ecx*4	status_name_text	文字表依狀態名稱文字 ID 取字串指標
+field	eax+0x600	notice_feature3_text	能力 3 免疫（狀態 6）的提示文字
+field	eax+0x604	notice_feature14_text	能力 0xe 免疫（狀態 11、13）的提示格式，帶狀態名稱
+field	edx+0x6cc	notice_resisted_text	抵抗成功提示文字（角色經 590950，怪物經 590b40）

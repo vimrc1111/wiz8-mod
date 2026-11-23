@@ -1,0 +1,2 @@
+50baf0	50bb7c	npc+0x1a 為 0 時 4e5720(NULL) 斷言後讀位址 8 崩潰，無可回傳路徑；calc panic
+50baf0	50bb87	npc+0x25 為 0 時 4e5720(NULL) 斷言後讀位址 8 崩潰，無可回傳路徑；calc panic

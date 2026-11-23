@@ -1,0 +1,76 @@
+call	1a3	srClassBaseClassNode	SR 基底類別查詢；case 回傳 arena 的基底 ClassNode，不讀其欄位，與種子和 ID 無關
+call	1a4	registerTriggerClass	以類別 ID 0x10008、名稱 Trigger 與基底節點登記；case 回傳 Trigger ClassNode，無規則欄位運算
+call	1a5	lookupTriggerClass	查詢 Trigger 類別 0x10008；case 回傳零表示首次登記，覆蓋本函式全部三塊
+call	1b0	registerTriggerInstance	登記建構中的 Trigger 實例；外部 SR bookkeeping 與種子、ID 無關，case 樁清 8 bytes
+call	1b1	constructSRBase	SR 基底建構子；既有內建樁回 this，本函式隨後自行初始化規則欄位
+call	40efa0	treasureSeedRandomOffset	一次 R(30000)，供後續寶物種子初始化
+call	a	treasureSeedClock	GetTickCount 的 u32 時鐘；現有模擬器以 case.tick 固定，與亂數相加後以 u32 回繞
+data	5e4369	無關	SEH 清理處理入口；正常建構不影響種子或 ID
+data	5eb02c	treasureSeedClockImport	GetTickCount 匯入槽；case.tick=4294960000，測種子溢位
+data	5eb6a8	srBaseClassNodeImport	SR 基底類別查詢匯入槽；見 call 1a3
+data	5eb6ac	registerTriggerClassImport	SR 類別登記匯入槽；見 call 1a4
+data	5eb6b0	lookupTriggerClassImport	SR 類別查詢匯入槽；見 call 1a5
+data	5eb6dc	registerTriggerInstanceImport	SR 實例登記匯入槽；見 call 1b0
+data	5eb6e0	constructSRBaseImport	SR 基底建構匯入槽；見 call 1b1
+data	5eb70c	runtimeCore	SR 核心物件匯入；case 指向 arena core，其 +0x2c 指向 registry
+data	5ec0e4	triggerDispatchTable	Trigger 虛擬方法表；只設定指標，初始化種子不查表
+data	5ec104	triggerBaseDispatchTable	Trigger 基底虛擬方法表；建構中暫設，之後被 Trigger 表取代
+data	60699c	triggerClassName	SR 類別登記名稱 Trigger；不作掉落表查詢
+data	6874c6	nextTriggerID	下一個 Trigger 實例 ID；賦給 +0x9c 再 u32 遞增
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	fffffffffffffff0	無關	索引器將堆疊負位移辨識為資料引用；建構局部暫存，不是規則全域
+data	fffffffffffffff4	無關	索引器將堆疊負位移辨識為資料引用；SEH 局部狀態，不是規則全域
+data	fffffffffffffffc	無關	索引器將堆疊負位移辨識為資料引用；SEH 局部狀態，不是規則全域
+field	eax+0x2c	runtimeClassRegistry	核心物件的 SR registry 指標；case arena core 提供
+field	edx+0x0	無關	Trigger +0x371 的四個初始化零位元組；不讀舊值、不參與種子或 ID
+field	edx+0x4	無關	Trigger +0x375 的四個初始化零位元組；不讀舊值、不參與種子或 ID
+field	esi+0x0	triggerDispatchTable	Trigger 方法表指標；建構設定，不參與種子計算
+field	esi+0x10c	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x110	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x114	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x118	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x11c	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x120	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x124	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x128	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x18	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x1c	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x229	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x22a	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x22c	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x22e	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x230	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x232	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x234	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x238	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x23c	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x240	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x244	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x248	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x34c	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x350	treasureGenerated	初始化為未生成；寶物生成後才設，notes/re/loot.md:35
+field	esi+0x354	treasureSeed	R(30000)+GetTickCount，u32 回繞；後續寶物使用此種子，notes/re/loot.md:35
+field	esi+0x358	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x35c	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x360	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x364	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x368	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x36c	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x370	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x37c	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x380	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x384	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x388	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0x9c	triggerID	被 nextTriggerID 覆蓋；不讀物件舊 ID
+field	esi+0xa0	triggerFlags	先清零再設 0x10；不依賴物件舊旗標
+field	esi+0xa4	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xa8	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xac	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xb0	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xb1	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xb2	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xb3	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xb4	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xb8	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xc8	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認
+field	esi+0xfc	無關	Trigger 建構時寫入固定初值；本函式不讀此前欄位值，不影響寶物種子或實例 ID；詳細後續用途未確認

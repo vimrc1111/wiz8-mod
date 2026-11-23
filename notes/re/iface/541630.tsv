@@ -1,0 +1,94 @@
+call	2b6	無關	登記器把 assertion 的 IAT 間接呼叫誤列為相對目標，實際為 srAssertFail；來源 exe 0x541630 內 0x5ebaf4 引用
+call	57	無關	推入立即值被誤識為相對呼叫目標，非子呼叫；來源 exe 0x541630 內格式字串參數
+call	5f	無關	推入立即值被誤識為相對呼叫目標，非子呼叫；來源 exe 0x541630 內格式字串參數
+call	66	無關	推入立即值被誤識為相對呼叫目標，非子呼叫；來源 exe 0x541630 內格式字串參數
+call	40efa0	randomRoll	R(n) 亂數；怪物受害者轉身判定取 R(100)，來源 exe 0x541a4e..0x541a63
+call	4c62c0	無關	怪物受害者轉向的副作用，只改受害者朝向（不是輸出）；case 不建模，來源 exe 0x4c62c0
+call	4e5550	monsterIndexByID	依怪物 ID 查列表索引，供戰鬥訊息取名；只進訊息緩衝，來源 exe 0x4e5550
+call	4e5620	monsterRecordByIndex	由索引取怪物實例，供戰鬥訊息取名；來源 exe 0x4e5620
+call	4ec900	無關	戰鬥訊息文字／名稱查找，只寫訊息緩衝，不影響旗標
+call	517a90	無關	戰鬥訊息格式化，只寫訊息緩衝
+call	5182e0	無關	診斷或訊息記錄，不影響旗標
+call	51a730	monsterAttackRange	怪物目前攻擊的有效射程：依射程型別取攻擊紀錄射程、法術射程、固定 2 或 0 或 -1；移植為 monsterAttackFlagsNode 內的 switch；來源 exe 0x51a730
+call	546f80	monsterDisposition	怪物對怪物的態度判定，僅供訊息選字，不影響旗標；來源 exe 0x546f80
+call	555820	characterTurnToAttacker	角色受害者轉向攻擊者並累計攔截；轉身成功時改該槽朝向；移植為 playerTurnInterceptNode 加朝向寫入；來源 exe 0x555820
+call	555960	attackerQuadrant	攻擊者相對隊伍朝向的四方位（0..3），與受害者槽朝向比較；來源 exe 0x555960
+call	555b00	monsterVictimFacesAttacker	怪物受害者朝向與攻擊者方位角差是否在正面容差內；來源 exe 0x555b00
+call	555c60	characterRearCheck	角色受害者槽朝向與攻擊者象限差為 2 即為背後；來源 exe 0x555c60
+call	555de0	monsterVictimRearCheck	怪物受害者與攻擊者方位角最小環繞差是否達背後門檻；來源 exe 0x555de0
+call	58ac00	無關	戰鬥視窗刷新，只改畫面
+call	58b410	無關	戰鬥視窗刷新，只改畫面
+data	0	無關	堆疊位移或小立即值，不是絕對資料位址；來源 exe 0x541630..0x541b00 內 ebp 相對運算
+data	4	無關	堆疊位移或小立即值，不是絕對資料位址；來源 exe 0x541630..0x541b00 內 ebp 相對運算
+data	8	無關	堆疊位移或小立即值，不是絕對資料位址；來源 exe 0x541630..0x541b00 內 ebp 相對運算
+data	10	無關	堆疊位移或小立即值，不是絕對資料位址；來源 exe 0x541630..0x541b00 內 ebp 相對運算
+data	14	無關	堆疊位移或小立即值，不是絕對資料位址；來源 exe 0x541630..0x541b00 內 ebp 相對運算
+data	18	無關	堆疊位移或小立即值，不是絕對資料位址；來源 exe 0x541630..0x541b00 內 ebp 相對運算
+data	fffffffffffffff0	無關	堆疊位移或小立即值，不是絕對資料位址；來源 exe 0x541630..0x541b00 內 ebp 相對運算
+data	fffffffffffffff8	無關	堆疊位移或小立即值，不是絕對資料位址；來源 exe 0x541630..0x541b00 內 ebp 相對運算
+data	fffffffffffffffc	無關	堆疊位移或小立即值，不是絕對資料位址；來源 exe 0x541630..0x541b00 內 ebp 相對運算
+data	541bec	無關	switch 跳轉表位址（依射程型別選訊息分支），不是數值輸入
+data	5eb168	無關	import 位址表項目（字串函式指標），訊息格式化用
+data	5eb188	無關	import 位址表項目（wcscat），訊息格式化用
+data	5eb1a4	無關	import 位址表項目（vsprintf），訊息格式化用
+data	5ebaf4	無關	assertion 失敗訊息文字
+data	60cc74	無關	訊息格式字串
+data	60cc78	無關	訊息格式字串
+data	61d2ac	無關	戰鬥訊息格式字串或檔名字串
+data	61d39c	無關	戰鬥訊息格式字串或檔名字串
+data	61d858	無關	戰鬥訊息格式字串或檔名字串
+data	61d890	無關	戰鬥訊息格式字串或檔名字串
+data	61d8c4	無關	戰鬥訊息格式字串或檔名字串
+data	61e9aa	無關	依攻擊型別取戰鬥訊息文字代碼的表，只進訊息緩衝
+data	61eb02	無關	依攻擊型別取戰鬥訊息文字代碼的表，只進訊息緩衝
+data	61eb4c	無關	依攻擊型別取戰鬥訊息文字代碼的表，只進訊息緩衝
+data	6836a8	combatState	戰鬥狀態物件指標；arena 固定接線；+0x9a4 為背後旗標、+0x9a5 為特殊攻擊旗標、+0xa8 起每角色 0xd4 為攔截次數
+data	68510c	verboseMode	詳細戰鬥訊息開關，只決定是否寫訊息；為數值輸入
+data	685174	partyCharacterRecords	角色記錄陣列指標，訊息取名用；arena 固定接線
+data	685178	monsterRecords	怪物實例記錄陣列指標，訊息取名用；arena 固定接線
+data	68c09c	無關	戰鬥視窗物件指標，只用於畫面刷新
+field	eax*2+0x61eb4c	無關	訊息文字代碼表索引
+field	ebx*4+0x541bec	無關	switch 跳轉表索引
+field	ebx*4+0x61e9aa	無關	訊息文字代碼表索引
+field	ecx*4+0x61eb02	無關	訊息文字代碼表索引
+field	eax+0x11	templateName	怪物模板名稱字串，只進訊息
+field	eax+0x844	無關	戰鬥狀態物件的訊息顯示欄位
+field	eax+0x854	無關	戰鬥狀態物件的訊息顯示欄位
+field	eax+0x9a4	rearFlag	戰鬥狀態物件 +0x9a4：背後旗標，輸出
+field	eax+0x9a5	specialFlag	戰鬥狀態物件 +0x9a5：特殊攻擊旗標，輸出
+field	ecx+0x9a4	rearFlag	戰鬥狀態物件 +0x9a4：背後旗標，輸出
+field	ecx+0x9a5	specialFlag	戰鬥狀態物件 +0x9a5：特殊攻擊旗標，輸出
+field	edx+0x9a4	rearFlag	戰鬥狀態物件 +0x9a4：背後旗標，輸出
+field	ebp+0x10	continuation	第三參數，續行旗標；由 caller 傳入，為數值輸入
+field	ebp+0xc	templateD	第二參數，怪物模板指標；arena 固定接線
+field	ebp+0x2ba	targetType	攻擊事件的受害者種類（1 角色、3 怪物）；arena 欄位，輸入
+field	ebp+0x2be	targetSlot	攻擊事件的角色受害者槽；arena 欄位，輸入
+field	ebp+0x2c2	victimMonsterId	攻擊事件的怪物受害者 ID；arena 欄位，輸入
+field	ebp+0x2e5	attackerMonsterId	攻擊事件的攻擊者怪物 ID；arena 欄位，輸入
+field	ecx+0x1	attackTextId	攻擊紀錄 E1 文字代碼；特殊攻擊斷言，輸入
+field	ecx+0x2	attackE2	攻擊紀錄 E2，選訊息文字；輸入
+field	edx+0x1	attackTextId	攻擊紀錄 E1 文字代碼；輸入
+field	edx+0x2	attackE2	攻擊紀錄 E2，選訊息文字；輸入
+field	esi+0x1	attackTextId	攻擊紀錄 E1 文字代碼，為 0 即斷言；輸入
+field	ecx+0x13d	victimAttempts	怪物受害者轉身嘗試次數；輸入與輸出 victimAttemptsOut
+field	ecx+0x247	無關	怪物模板／實例的訊息用欄位
+field	ecx+0x810	無關	戰鬥狀態物件的訊息顯示欄位
+field	ecx+0x848	無關	戰鬥狀態物件的訊息顯示欄位
+field	ecx+0x854	無關	戰鬥狀態物件的訊息顯示欄位
+field	ecx+0x858	無關	戰鬥狀態物件的訊息顯示欄位
+field	ecx+0x85c	無關	戰鬥狀態物件的訊息顯示欄位
+field	ecx+0x860	無關	戰鬥狀態物件的訊息顯示欄位
+field	ecx+edx*4	無關	訊息／名稱表索引
+field	edx+ecx*4	無關	訊息／名稱表索引
+field	edx+ecx*2+0xf1	attackE0	攻擊紀錄 E0，每紀錄 0x22 bytes；輸入
+field	edi+0xcb	templateClass	怪物模板類別，3 時可成特殊攻擊；輸入
+field	edx+0x81c	無關	戰鬥狀態物件的訊息顯示欄位
+field	edx+0xd	無關	戰鬥狀態物件的訊息顯示欄位
+field	esi+0x10	victimTurns	怪物受害者轉身基礎機率相關欄；輸入
+field	esi+0x107	victimLevel	怪物受害者等級（小於 14 才可轉身）；輸入
+field	esi+0x24b	victimTurns	怪物受害者轉身機率基底（u8）；輸入
+field	esi+0x2b	victimAlive	怪物受害者存活；輸入
+field	esi+0x2e1	victimTurnable	怪物受害者可轉身旗標；輸入
+field	esi+0x33	victimAwake	怪物受害者清醒；輸入
+field	esi+0x87	victimStun	怪物受害者暈眩計數；輸入
+field	esi+0xc	victimMonsterRecord	怪物受害者指標欄位，供訊息取名；arena 接線

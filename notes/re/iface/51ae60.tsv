@@ -1,0 +1,5 @@
+data	4	無關	分析器把第一參數的堆疊位移 4 列為資料引用；入口取區位參數，不讀絕對位址 0x4；來源 exe 0x51ae60
+data	685174	partyCharacterRecords	執行期角色主記錄陣列指標；每筆 0x1862 bytes，case 指向 arena 八筆記錄；notes/re/growth.md:67
+data	687511	formationQuadrantSlots	隊形區位槽陣列；區位低八位乘 3，每區三個 u8 角色索引，255 表空槽；來源 exe 0x51ae6a..0x51ae82；五區依 exe 0x55498e..0x554997
+field	edi+eax*2+0x17b5	characterFormationUnavailable	角色隊形不可用旗標，u8，零表示可用，任意非零排除；角色步長 0x1862，來源 exe 0x51ae84..0x51ae9f，notes/re/combat-2.md:32；不推定為 HP 或主狀態
+field	esi+edx*1	quadrantSlotCharacterIndex	所選區位的三個隊員槽；255 跳過，其餘按有號八位索引角色記錄；case 使用隊伍索引 0..7，來源 exe 0x51ae7d..0x51aea7；回傳僅比較 AL，呼叫端 exe 0x53c82b、0x53c839

@@ -1,0 +1,56 @@
+call	50a3c0	npcMonsterRecord	對話記錄 +0x1a 與 +0x25 皆非零時，依 +0x16 怪物 ID 先搜怪物列表 *0x683fad 再搜群組列表 *0x683fb9，查無即 assert；回傳怪物記錄。原版子函式照跑，calc 以夾具兩筆怪物重現，查無 panic
+call	50a500	npcAttitudeClass	對話對象態度分級：0x50a280（npcAttitudeNode）的有號位元組 <0x21 為 2、<0x42 為 1、其餘 0；等於 2 且定義 +0x56 為零時推事件 0x18。原版子函式照跑，calc 以同一夾具組 npcAttitudeNode 的 44 個輸入
+call	50b800	npcListEntry	NPC 列表 *0x689f94 依 ID 取記錄（ID 小於計數取該筆，否則第 0 筆），空記錄或 +0xc7 不可用回 0；本函式接著讀 +0x2e 種類。原版子函式照跑，calc 回 0 時 panic（原版會存取 0+0x2e 而失敗）
+call	528830	postDialogueEvent	把事件（種類、其餘引數為零）推入事件佇列：配置 0x24 bytes 事件（種類、時間戳記 *0x68c4ac），計數加一，容量不足時增至計數加一並複製舊項。原版子函式照跑，calc 重現事件、佇列計數、容量與指標
+call	52e460	voiceQueuePending	語音佇列物件 +0x44 有號大於零即真，真則呼叫 0x52e3b0（排除，位址樁只記次數）。原版子函式照跑，calc 以 voice.44 輸入重現
+data	4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移（區域位置向量），被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移（區域位置向量），被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移（區域位置向量），被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移，被分析為資料引用，非遊戲資料或表
+data	649f1c	dialogue_panel_ptr	全域對話面板指標 G；+0x1d4 對話記錄、+0x1ed 狀態 12 bytes、+0x1f9 旗標、+0x252 已開啟旗標、+0x25c 計數，由 setup 指到夾具
+data	65a0f8	camera_ptr	0x476f90（排除，鏡頭移動）的 this；位址樁不讀，setup 指到空夾具物件
+data	683f97	dialogue_open_flag	本函式在尾段寫 1；為輸入亦為輸出
+data	683f9b	skip_representative	為零時呼叫 0x56d030(dlg, flag) 選代表；輸入
+data	683fd7	voice_queue_ptr	語音佇列物件指標，交給 0x52e460／0x52e3b0 當 this；setup 指到夾具，+0x44 為輸入
+data	685174	characters_ptr	角色記錄基底（步距 0x1862）；+0xb01 主狀態、+0xa01 狀態槽、+0xb11 現有 HP
+data	685178	party_slots_ptr	隊伍槽基底（步距 0x106）；+0 在場位元組、+0xfa NPC ID
+data	6874ca	state_flag_source	非零且有狀態引數時把 G+0x1f9 設 1；輸入
+data	68f064	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f07d	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f081	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f085	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f089	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f0e2	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f0ec	無關	本函式指令未直接引用此位址（反組譯掃描範圍外溢列出）；不是本函式的資料輸入或輸出，與規則無關。
+data	68f0f9	dialogue_reset_byte	本函式開頭寫 0；為輸入亦為輸出
+field	eax+0x0	state.word0	狀態引數（12 bytes）第 0 字，複製到 G+0x1ed；輸入 vec0
+field	eax+0x4	state.word1	狀態引數第 1 字，複製到 G+0x1f1；輸入 vec1
+field	eax+0x8	state.word2	狀態引數第 2 字，複製到 G+0x1f5；輸入 vec2
+field	eax+0xc	monster.body	怪物記錄 +0xc 的位置節點指標：0x4c6240 的第一引數（記錄為輸出），也是 0x476f90 位置向量的來源；setup 固定指向夾具
+field	eax+0x178	無關	位置節點 +0x18+0x178 的浮點高度，只加進交給 0x476f90（鏡頭，排除）的位置向量；幾何，不在數值範圍
+field	eax+0x1d4	panel.dialogueRecord	G+0x1d4 對話記錄 R：尾段讀其 +0x2e 種類並交給 0x50a3c0；輸入 panel.1d4（D 或 alt）
+field	eax+0x25c	panel.counter	G+0x25c，本函式開頭與尾段寫 0；輸入亦輸出
+field	eax+0x2e	record.kind	0x50b800 所回 NPC 記錄的種類（0x10／0x11 才復活），或 R 的種類（0x84／0x85 跳過 0x4c6240）；輸入 npc*.kind、dlg.kind、alt.kind
+field	eax+0x2ea	definition.2ea	定義記錄 +0x2ea 旗標：非零走狀態引數／0x577290／事件分支；輸入 def.2ea
+field	eax+0x54	definition.54	定義記錄 +0x54 旗標：與 +0x2ea 皆零時查態度；也是 0x50a280 的固定陣營態度旗標；輸入 def.54
+field	eax+ebp*1	slot.present	隊伍槽 i 在場位元組；輸入 slot*.active
+field	eax+ebp*1+0xfa	slot.npcIndex	隊伍槽 i 的 NPC ID，交給 0x50b800；輸入 slot*.npcIndex
+field	eax+ecx*1+0xa01	character.stateSlot	角色狀態槽 s（0..0x12）非零即呼叫 0x523330(i, s, 0)；輸入 char*.s*
+field	ecx+0x0	無關	位置節點 +0x118 起的浮點位置 x，只交給 0x476f90（鏡頭，排除）；幾何，不在數值範圍
+field	ecx+0x4	無關	位置節點浮點位置 y，加上 +0x190 高度後交給 0x476f90；幾何，不在數值範圍
+field	ecx+0x8	無關	位置節點浮點位置 z，只交給 0x476f90；幾何，不在數值範圍
+field	ecx+0x1d4	panel.dialogueRecord	G+0x1d4 對話記錄 R，尾段第二次交給 0x50a3c0；輸入 panel.1d4
+field	ecx+0x1f9	panel.stateFlag	G+0x1f9，0x6874ca 非零且有狀態引數時寫 1；輸入亦輸出
+field	ecx+0x56	definition.56	定義記錄 +0x56：態度分級為 2 時為零才推事件 0x18；輸入 def.56
+field	edi+edx*1+0xb01	character.primaryState	角色主狀態，無號 >= 0xf 才清狀態；輸入 char*.b01
+field	edi+edx*1+0xb11	character.currentHP	角色現有 HP，清到狀態槽 0x12 時設 10；輸入亦輸出 char*.b11
+field	edx+0x0	panel.state0	G+0x1ed，狀態引數第 0 字寫入處；輸出 panel.1ed0
+field	edx+0x4	panel.state1	G+0x1f1；輸出 panel.1ed1
+field	edx+0x8	panel.state2	G+0x1f5；輸出 panel.1ed2
+field	edx+0x252	panel.opened	G+0x252，尾段寫 1；輸入亦輸出
+field	esi+0x2e	dlg.kind	對話對象種類：0xf／0x12 才跑復活迴圈；輸入 dlg.kind
+field	esi+0x6	dlg.definition	對話對象的定義記錄指標 E；setup 固定指向夾具

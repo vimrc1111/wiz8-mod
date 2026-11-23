@@ -1,0 +1,7 @@
+call	40efa0	lockCodeRandom	鎖碼用 R(4)，以 Rand 重放八次；既有模擬器 RNG 樁記錄每次界限和值
+field	edi+0x0	lockType	鎖類型，32 位；僅值 1 初始化鎖碼與嘗試額度，其他值保留；build/wiz8.asm:92842
+field	edi+0x4	difficulty	鎖難度，有號 32 位，初始化額度時限制至 2..8；build/wiz8.asm:92855
+field	edi+esi*1+0x9	lockCode	八個鎖碼，逐 byte 寫入 R(4)，涵蓋 +0x9..+0x10；build/wiz8.asm:92849
+field	edi+0x1c	attemptsRemaining	剩餘開鎖嘗試額度，鎖類型 1 時改為限制後難度乘 3；其他類型保留；build/wiz8.asm:92865、92880、92891
+field	edi+0x20	lockAttemptIndex	開鎖嘗試狀態索引，初始化一律清為 -1（未選定）；build/wiz8.asm:92866、92882
+field	edi+0x8	unlocked	鎖解除旗標，初始化一律清為 0；呼叫端亦以此旗標判斷鎖狀態；build/wiz8.asm:92867、92883、513652

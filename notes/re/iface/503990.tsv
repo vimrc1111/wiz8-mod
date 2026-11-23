@@ -1,0 +1,105 @@
+# 位址樁：0x524110、0x5526f0、0x52beb0、0x523c00、0x4e4280、0x4e46f0、0x5049c0（D4 公式，回傳取自輸入）；0x462e60、0x4be940、0x434b60、0x510cc0、0x590b40、0x58aad0、0x48f650、0x4acd80、0x4e4db0、0x4e3af0、0x4c5a00（排除，記錄引數與次數成為輸出；0x510cc0 已登記排除 group_place）。其餘原樣執行。
+call	40efa0	隨機數	R(n)，取 [0,max(1,n)) 整數；行動計時器重抽區間
+call	453970	物件朝向	讀場景物件朝向角 float32，原樣交給群組重新定位（排除類）當參數
+call	456660	巡邏路徑目前點	讀路徑物件目前目標點三維座標；座標只當排除類定位呼叫的輸入，calc 原樣搬運
+call	462e60	位置可用查詢（排除）	引擎場景查詢；回傳 al 取自 case 輸入，決定是否略過歸位（MG 2026-10-11 純數值範圍）
+call	482760	發現觸發全域浮點	讀全域浮點 0x60a390，與 0x5ec254 相等時才進入歸位檢查
+call	4be940	位置可見查詢（排除）	引擎場景查詢；回傳依序取自 case 輸入，非零即略過歸位
+call	4c5730	怪物世界座標	讀怪物場景物件 +0x1d8 位置記錄 +4/+8/+c 三維座標（float32 經 x87 搬運）
+call	524390	怪物增益到期清除	清除增益槽 3 個雙字、通知顯示（排除樁）、重建怪物快取；槽 6 時重算察覺
+call	52bb60	怪物傷害入口	吸收護盾、累計結果、記錄攻擊來源、扣生命，致死進倒下，未致死扣體力並觸發受擊狀態反應
+call	52bfd0	怪物生命回復	生命加回復量，封頂最大值；觸發顯示更新
+call	52c070	怪物體力消耗	體力扣除，見 550c10 體力消耗模型；疲勞門檻跨越時套用狀態（523c00 位址樁）
+call	52c140	怪物體力回復	體力加回復量封頂；更新疲勞等級，體力 ≥10 且條件 17 持續 9999 時解除
+call	536150	來源記錄初始化	把 13 雙字的堆疊來源記錄填成預設（+4、+8 為 -1，其他 0），當持續傷害來源
+call	5524b0	效果槽解除（無槽指標）	只在效果槽指標為空時呼叫；本函式三處呼叫點指標皆為非空記錄位址，走不到
+call	5524e0	效果槽到期解除	通知顯示（排除樁）、清空效果槽並重建怪物快取
+call	5e1c22	ftol	x87 轉 64 位整數（向零截斷），把回復累積量轉成整數回復點
+data	4	呼叫參數與向量位移	小位移是堆疊參數或三維向量內的相對位置，不是絕對資料位址；語意依相關 call 與 field 記錄。
+data	8	呼叫參數與向量位移	小位移是堆疊參數或三維向量內的相對位置，不是絕對資料位址；語意依相關 call 與 field 記錄。
+data	c	呼叫參數與向量位移	小位移是堆疊參數或三維向量內的相對位置，不是絕對資料位址；語意依相關 call 與 field 記錄。
+data	5ebb34	浮點零	float32 0.0，座標未設判定與回復係數門檻
+data	5ebb40	路徑點零長度門檻	double；路徑點長度等於此值時改用怪物家位置
+data	5ebc64	歸位高度偏移	float32，加到 y 座標再做可見查詢
+data	5ebcc8	旗標回復倍率	float32；怪物有 +0x5f 計數時乘到回復係數
+data	5ec150	歸位距離門檻	double；與目前座標和家座標的距離比較
+data	5ec254	發現觸發比較值	float32；全域 0x60a390 等於它時才檢查歸位
+data	619864	無關	斷言／字串常數位址，不是規則資料
+data	6598a4	無關	場景管理物件指標；只當排除類場景查詢的 this
+data	683f94	戰鬥訊息開啟旗標	byte；傳給傷害入口當訊息參數 a5，並決定是否送訊息（排除樁）
+data	683fc5	全速回復旗標	byte；非零時回復係數為 1.0
+data	ffffffffffffff44	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff68	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff6c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff70	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff77	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff78	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff7c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff80	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff84	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff88	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff8c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff90	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x0	怪物編號／記錄指標	怪物記錄 +0 編號，或取得記錄位址後讀 +0
+field	eax+0x17c	模板生命再生修正	int8，與怪物 +0x1e4 相加乘 tick 得生命再生量
+field	eax+0x291	歸位中旗標	byte，場景物件；非零走歸位分支
+field	eax+0x2c8	行動計時器 B 區間	int32，計時器到期時重抽 R(n)+n/2
+field	eax+0x2cc	行動計時器 A 區間	int32，計時器到期時重抽 R(n)+n/2
+field	eax+0x3c	場景物件旗標 3c	byte；與怪物 +0x254 ≤1 合用決定略過歸位
+field	eax+0x3d	場景物件旗標 3d	byte；非零略過歸位
+field	eax+0x4	座標 x／記錄欄	三維向量 x 或記錄 +4
+field	eax+0x74	場景物件忙碌欄	非零略過歸位
+field	eax+0x8	座標 y／記錄欄	三維向量 y 或記錄 +8
+field	eax+0xd	效果槽剩餘時間	uint32，每 tick 遞減，到期解除
+field	eax+edi*1+0xd7	隊伍光環效果槽	byte，隊伍記錄 +0xd7 起 6 槽 × 0x11
+field	ebp+0x0	三維向量 x	堆疊向量首欄
+field	ecx+0x0	記錄首欄	路徑物件旗標或向量 x
+field	ecx+0x280	場景物件目標座標	float32×3；全為 0 時以家座標補上
+field	ecx+0x4	向量 y	三維向量 y
+field	ecx+0x8	向量 z	三維向量 z
+field	ecx+0xce	模板體力再生修正	int8，與怪物 +0x1e5 相加乘 tick 得體力再生量
+field	edi+0x0	效果槽種類	byte，非零代表槽占用
+field	edi+0x4	向量 y／槽欄	三維向量 y
+field	edi+0x8	向量 z／槽欄	三維向量 z
+field	edi+0xd	效果槽剩餘時間	uint32，每 tick 遞減，到期解除
+field	edi+edx*1+0x3e	隊伍效果槽	byte，隊伍記錄 +0x3e 起 9 槽 × 0x11
+field	edx+0x180	無關	場景管理物件子物件指標，只當排除類查詢的 this
+field	edx+0x184	路徑物件指標	場景物件 +0x184，巡邏路徑
+field	esi+0x0	怪物編號	怪物記錄 +0
+field	esi+0x10	怪物隊伍記錄指標	+0x15 為真時指向隊伍共用效果記錄
+field	esi+0x15	隊伍成員旗標	byte；持續傷害 1.5 倍、隊伍效果槽、回復係數 0
+field	esi+0x17	家座標 x	float32
+field	esi+0x1b	家座標 y	float32
+field	esi+0x1e3	持續傷害強度	uint8，乘 tick 得每回合持續傷害
+field	esi+0x1e4	生命再生修正	int8
+field	esi+0x1e5	體力再生修正	int8
+field	esi+0x1f	家座標 z	float32
+field	esi+0x246	歸位狀態欄	歸位後清 0
+field	esi+0x254	歸位計數	int8；>0 時每回合 +1，歸位後清 0
+field	esi+0x255	歸位旗標	歸位後清 0
+field	esi+0x27	最大生命	uint32
+field	esi+0x2ab	戰鬥中旗標	byte；非零略過歸位、傷害送訊息
+field	esi+0x2b	目前生命	uint32
+field	esi+0x2f	最大體力	uint32
+field	esi+0x302	行動計時器 A	uint8，每回合減 tick
+field	esi+0x303	行動計時器 B	uint8，每回合減 tick
+field	esi+0x33	目前體力	uint32
+field	esi+0x338	上回合座標 x	float32
+field	esi+0x33c	上回合座標 y	float32
+field	esi+0x340	上回合座標 z	float32
+field	esi+0x4	怪物群組編號	查群組記錄，交群組重新定位
+field	esi+0x47	生命回復率	float32，乘 tick 與係數
+field	esi+0x4b	生命回復餘量	float32 小數累積
+field	esi+0x4f	體力回復率	float32
+field	esi+0x53	體力回復餘量	float32 小數累積
+field	esi+0x5f	回復倍率計數	uint32；>0 時回復係數乘 0x5ebcc8
+field	esi+0xc	怪物場景物件指標	位置、計時器區間、歸位旗標

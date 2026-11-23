@@ -1,0 +1,20 @@
+call	2b6	無關	抽取器將間接assert呼叫誤列為目標；僅非法目標種類進入，非防禦公式
+call	4e5550	monster_id_to_slot	由目標怪物id查找已載入實例列表位置
+call	4e5620	monster_instance	由列表位置取得即時怪物記錄
+call	4e5720	monster_template	由實例的模板索引取得已載入模板
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	assert import槽，非法目標種類時停止，非規則計算
+data	609b24	無關	assert診斷條件字串，非規則資料
+data	61d2ac	無關	怪物查找及assert的來源檔名診斷字串，非規則資料
+data	685174	character_records	角色陣列指標，依目標索引與0x1862記錄長度選取角色
+field	eax+0x15d	monster_base_ac_encoding	怪物模板有號AC編碼；defPen加回此值；notes/re/combat-2.md:28
+field	eax+0xe85	character_defhit_encoding	所選角色的有號32位防禦命中編碼；defPen扣除此值；notes/re/combat-2.md:28
+field	eax+ebx*1+0x16d	monster_template_mode_ac	怪物模板依攻擊模式索引的有號AC修正（9項）；notes/re/combat-2.md:113
+field	eax+edx*1+0x166	monster_template_location_ac	怪物模板依部位索引的有號AC修正（7項）；notes/re/combat-2.md:112
+field	eax+edx*4+0xec1	character_location_defense	所選角色依部位索引的有號32位防禦編碼（每部位4 bytes）；notes/re/combat-2.md:28
+field	edi+0x0	target_kind	目標種類1角色、3怪物；其他種類進assert
+field	edi+0x4	target_character_index	角色陣列索引，case以index欄位選取實際記錄
+field	edi+0x8	target_monster_id	即時怪物id，經列表查找實例，再取得模板
+field	esi+0x1e0	monster_penetration_defense	怪物即時有號防禦穿透修正；defPen加入；notes/re/combat-2.md:28

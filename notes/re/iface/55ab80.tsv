@@ -1,0 +1,26 @@
+call	40efa0	rollPercentDie	亂數骰 R(n)：先 R(100) 與分類機率比較（小於才補貨），成功後 R(3) 決定缺額加半、減半或不變
+call	506280	storyFactQuery	劇情事實查詢：本函式只問事實 0x15f（351），回全域事實陣列 0x689b78 的該位元組；子函式 0x5080f0 的除錯記錄受 0x688290 控制，不影響回傳
+call	5e2870	stockListGet	清單取第 i 個條目指標（空清單或索引不小於筆數回 0）
+call	5e2c70	stockListCount	清單筆數；清單指標為 0 回 0
+data	4	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	55ad88	restockChanceJumpTable	switch 跳轉表位址（分類 0 至 4 對應 0、25、50、75、100 百分比的程式塊），非遊戲資料表；機率常數寫在 calc
+data	55ad98	restockChanceJumpTable	同一跳轉表的尾端位址（表內第五項），非遊戲資料
+data	ffffffffffffffec	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax*4+0x55ad88	restockChanceJumpTable	以分類為索引的 switch 跳轉（0 至 4 對應 0、25、50、75、100 百分比）
+field	eax+0x0	offerItemId	貨單條目 +0 物品編號：與其他貨單條目比較找首個同編號條目，並作為庫存清單與補貨呼叫的物品編號
+field	eax+0x10	stockEntryOnHand	庫存清單條目 +0x10 現有件數 byte：大於貨單數量一半則不補
+field	eax+0x2ca	shopOfferList	商店記錄 +0x2ca 的貨單清單指標（迴圈內重讀）
+field	eax+0x4	stockEntryItemId	庫存清單條目 +4 物品編號，與貨單物品編號比對
+field	ebp+0x6	merchantShopRecord	商人物件 +0x6 的商店記錄指標
+field	ebp+0xa	merchantStockList	商人物件 +0xa 的庫存清單指標（可為 0）
+field	ecx+0x0	offerItemId	貨單條目 +0 物品編號（與迴圈中另一條目比對、補貨呼叫的物品編號）
+field	ecx+0x2ca	shopOfferList	商店記錄 +0x2ca 的貨單清單指標
+field	ecx+0x5	offerFixedFlag	貨單條目 +5 旗標 byte：此處讀取時必為 0（開頭已略過非 0 者），分支走不到
+field	edx+0x0	offerItemId	貨單條目 +0 物品編號
+field	edx+0x2ca	shopOfferList	商店記錄 +0x2ca 的貨單清單指標
+field	esi+0x0	offerItemId	貨單條目 +0 物品編號（是否為 0x1fc＝508 的特例判斷）
+field	esi+0x5	offerFixedFlag	貨單條目 +5 旗標 byte：非 0 為固定貨，不在此補貨

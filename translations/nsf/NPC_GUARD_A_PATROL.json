@@ -1,0 +1,52 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "2405e8069dc022a23fbadfacba445b7f3818fe91b80f16074d3c91cb2d9b1b4f",
+  "zh": "最好辦你們的事去吧。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "ee4fe498b8a87acf3586e7b2a0ecc60cf8eb59e836a43ca645208e06778a322b",
+  "zh": "在這裡要小心……"
+ },
+ {
+  "id": 4,
+  "src_sha256": "9ce114f5fff2e752abdea2364b7695fca18d5b4c0cad399cd284eb75d84a6d32",
+  "zh": "我的建議是，趕緊去你們該去的地方。我們今天看到更多 Trooper 了。"
+ },
+ {
+  "id": 5,
+  "src_sha256": "c1960a59c0cb0ec79e99ced60b21adc17c13cf067589cd719e217050f1ca02dd",
+  "zh": "我盯著你們呢。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "56ddb72eddfb6a19969902d59290cbbb93d761b9a68cbd0bfdca7fbd9d749325",
+  "zh": "這裡一切正常。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "06dc18ff82eb881190e46e5245f45bccd1f890d34695354d573457c1d61f7324",
+  "zh": "離那座 Tower 遠一點。今天那邊的麻煩更多。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "ecbd86f99c03904c5c25f41a77ab09457729af7b1f0e12c45c7afb5c8e01aae4",
+  "zh": "這裡是怎麼回事！散開！散開！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "864fa464eae2d1c461176e1dc29532fb0052d2930a620b3b96b0ee37dd2d4ecd",
+  "zh": "我就想你們可能會往這邊來！"
+ },
+ {
+  "id": 10,
+  "src_sha256": "1dd78e2b184a0588eed4a339e7bc8f169ac19e1ab93f955904265744e29b45d5",
+  "zh": "這下逮到你們了！"
+ },
+ {
+  "id": 11,
+  "src_sha256": "b2866d9872b1c11521807013079d34012c785c696d18a257ec79d7a78e9fd49a",
+  "zh": "你們準備好受死了嗎，老兄？！"
+ }
+]

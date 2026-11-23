@@ -1,0 +1,4 @@
+hook/ddraw/proxy.c
+hook/ddraw/bmp.h
+hook/ddraw/build.sh
+hook/ddraw/check.sh

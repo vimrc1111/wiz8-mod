@@ -1,0 +1,1 @@
+52abf0	52ac27	不在場成員的 assert（srAssertFail 停止、無可差分返回）；呼叫端只對在場成員呼叫，在場旗標由 calc 的 panic 對應。

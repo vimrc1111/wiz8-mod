@@ -1,0 +1,21 @@
+call	53a930	releaseSourceAction	釋放來源 6 的動作記錄（解除目標、清怪物遮罩）；calc 的 release 重現（n_4e8000.go），第一個分支，記錄指標為空（來源解析為 7）時原版必崩，fixture 不產生
+data	ffffffffffffffbc	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffc0	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffc4	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffc8	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffcc	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffe0	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffe4	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffe8	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	ffffffffffffffec	無關	參數堆疊位移立即值，非資料表或全域記憶體引用
+data	61d18c	assertSourceFile	assert 呼叫的來源檔名字串位址（0x53c095）；只在 assert 失敗時使用，無規則效果
+data	685174	partyCharacterRecords	角色主記錄陣列的執行期指標，索引乘 0x1862；非 exe 常數表
+data	685178	partySlotRecords	槽位記錄陣列的執行期指標，索引乘 0x106；非 exe 常數表
+field	ecx+ebp*1	slotActive	槽位記錄 +0 位元組，零則跳過該槽；來源 exe 0x53bf9a
+field	eax+ecx*1+0xb11	currentHP	角色目前 HP，i32；與主狀態一起決定是否略過；來源 exe 0x53bfaa
+field	eax+ecx*1+0xb01	mainStatus	角色主狀態碼，u32；不小於 0x12 且 HP 為零則略過；來源 exe 0x53bfb5
+field	edi+0x0	sourceRecordKind	來源 6 的動作記錄第一個 dword，非零才改寫成 {0,-1,-1,-1}；指標為空時原版即崩（解析為 7），fixture 不產生；來源 exe 0x53c00b
+field	ecx+ebp*1+0x3d	slotActionCode	槽位記錄 +0x3d 動作碼，i32；只有 0 或 1 才繼續；來源 exe 0x53c054
+field	ecx+ebp*1+0x105	autoFireToggle	槽位記錄 +0x105 位元組；為零才查 4e79a0 是否略過；來源 exe 0x53c065
+field	eax+ebp*1+0x55	slotMonsterId	槽位記錄 +0x55 怪物 ID，i32；-1 表無；來源 exe 0x53c088
+field	eax+0x4	monsterEntryValue	怪物查表項 +4 的值，作為 53c990 的第二參數 u6；來源 exe 0x53c0b1

@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+504670	公式	D4	party_stamina_recovery	partyStaminaRecoveryNode	讀角色副表+0與角色+b01/+a49及回復模式，依資格與時間差呼叫體力回復，輸出經 helper 更新角色+b1d/+b75（build/wiz8.asm:350758）。
+504730	公式	D4	stamina_recovery	staminaRecoveryNode	讀角色+177a/+a09/+b19/+b1d/+b71/+b75、能力0及模式，累積小數並更新體力+b1d與餘數+b75（build/wiz8.asm:350886）；notes/re/abilities.md:23。
+5049c0	公式	D4	visibility_awareness_update	visibilityAwarenessUpdateNode	讀角色+69/+161/+3dd/+a31、怪物+24f/+248與雙方座標，計算察覺後更新怪物+28d/+353等可見狀態，含視線查詢但仍有規則察覺計算（build/wiz8.asm:351416）。
+506670	公式	D4	script_attribute_skill_gain	scriptAttributeSkillGainNode	讀事件編號、角色+f9/+69/+2a9與存活狀態，特定事件把+f9增加5並封頂100或提升+2a9到10，再重建衍生能力（build/wiz8.asm:354310）。
+5080f0	非公式	-	story_fact_query		依事件編號查詢物品、NPC、陣營與職業存在條件並回傳劇情事實，沒有算出規則數值（build/wiz8.asm:356715）。
+508d70	非公式	-	death_story_reactions		死亡事件更新劇情旗標，亂數抽出的角色只送往語音播放 helper（build/wiz8.asm:357209）。
+5090c0	非公式	-	death_fact_dispatch		按死亡怪物的模板編號呼叫劇情事實設定 helper，屬事件分派（build/wiz8.asm:357313）。
+50a280	公式	D4	npc_attitude	npcAttitudeNode	讀NPC+1a/+25/+1b、怪物+2de/+8b與模板+5f/+54/+6e，合成或覆寫態度並以回傳值輸出（build/wiz8.asm:358970）。
+50a570	公式	D4	npc_attitude_adjustment	npcAttitudeAdjustmentNode	讀角色說服技能與+89、NPC+1b/+ca、模板+5d/+5e及禮物價值，調整並夾限NPC態度+1b到0至99，另扣除禮物額度+ca（build/wiz8.asm:359317）。
+50b160	公式	D4	npc_recruit_skill_state	npcRecruitSkillStateNode	不確定：加入隊伍主要是記錄轉移，但讀角色技能+19f並逐項設定+1b0後重建能力，這些技能旗標對規則的影響需追查（build/wiz8.asm:360428）。
+50b3b0	非公式	-	npc_dismissal_flow		依主狀態及區域限制安排離隊、回應語音與對話，決定性分支呼叫對話 helper（build/wiz8.asm:360770）。
+50b590	公式	D4	npc_departure_stamina	npcDepartureStaminaNode	讀離隊角色+b1d/+b19及對應怪物+9b，在指定分支把兩者較小值寫入怪物+33，故包含體力數值處理（build/wiz8.asm:360981）。
+50b8b0	非公式	-	npc_party_character_ptr		讀NPC+2b的隊伍槽索引並換算角色記錄指標，屬資料定位（build/wiz8.asm:361114）。
+50b8f0	非公式	-	npc_party_presence		比對前兩個NPC槽的身分與角色狀態，回傳指定NPC是否在場，供劇情存在條件查詢（build/wiz8.asm:361163）。
+50b9b0	非公式	-	npc_party_slot_count		僅檢查角色副表+0及+106的占用旗標並回傳占用槽數，屬隊伍資料查詢（build/wiz8.asm:361220）。
+50baf0	公式	D4	pickpocket_chance	pickpocketChanceNode	讀角色+391/+139/+69/+89、NPC態度與+84、怪物+24f及物品重量價值，含亂數懲罰並輸出夾限至0至127的偷竊門檻（build/wiz8.asm:361364）；notes/re/abilities.md:109。
+50bc90	公式	D4	pickpocket_resolve	pickpocketResolveNode	讀角色偷竊技能與NPC+30物品槽/+80金錢/+84嘗試次數，亂數選偷錢或物品並比較偷竊門檻，輸出結果碼與物品金額且更新NPC庫存及技能（build/wiz8.asm:361622）。
+50c040	公式	D4	targeted_pickpocket_resolve	targetedPickpocketResolveNode	讀指定物品、角色偷竊相關欄位與NPC+84，將亂數與偷竊門檻及其兩倍比較，回傳成功或失敗被察覺結果並增加嘗試次數及技能訓練（build/wiz8.asm:361853）。
+50c870	公式	D4	npc_recruit_level_gate	npcRecruitLevelGateNode	讀有效隊員+b11/+b01/+89及NPC模板+6f，計算平均等級並比較招募門檻，輸出可招募旗標（build/wiz8.asm:362731）。
+50ca80	公式	D4	npc_region_status	npcRegionStatusNode	不確定：混合區域劇情流程；讀NPC身分與模板+68、角色+75/+b11/+b01，指定分支施加狀態10與期限9999並寫副表+fe後重建能力，狀態 helper 的實際欄位需追查（build/wiz8.asm:362908）。
+50d530	非公式	-	npc_story_update		週期更新NPC劇情事實與回應語音，百分比亂數只觸發劇情旗標，另有語音及延遲抽樣（build/wiz8.asm:363715）。
+50db50	公式	D4	npc_region_penalty_reset	npcRegionPenaltyResetNode	讀副表在場旗標及NPC連結、角色+b11，清除副表+fe區域懲罰旗標後呼叫狀態重建，輸出經 helper 更新的角色+16a2/+1770能力修正（build/wiz8.asm:364235）。
+50dbf0	公式	D4	npc_region_stat_penalty	npcRegionStatPenaltyNode	讀NPC槽副表+fe與呼叫者能力緩衝，啟用懲罰時將輸出緩衝+c至+12屬性及+13至+3b技能各減20（build/wiz8.asm:364286）。
+50dc50	非公式	-	npc_requested_item_check		比對NPC劇情所需物品或物品類別，已招募時另查持有件數以決定劇情交物條件，沒有生成價格或掉落數值（build/wiz8.asm:364359）。
+50dec0	非公式	-	npc_region_warning		按NPC區域限制與同行者存在條件啟動對話警告，決定性分支只呼叫對話 helper（build/wiz8.asm:364823）。
+50e230	非公式	-	npc_region_departure_flow		按區域限制及同行關係安排NPC離隊對話，屬劇情流程（build/wiz8.asm:364912）。
+50e5c0	公式	D4	equipment_effect_rebuild	equipmentEffectRebuildNode	讀角色裝備槽+f5d、狀態修正+16a2與隊伍效果，生成裝備修正+1709並合計至+1770，再重建角色規則能力（build/wiz8.asm:365182）。
+50e650	公式	D4	status_effect_rebuild	statusEffectRebuildNode	讀角色+a01/+b09/+a65、NPC區域懲罰及裝備修正+1709，生成狀態修正+16a2並合計至+1770後重建規則能力（build/wiz8.asm:365257）。
+50e700	公式	D4	party_effect_rebuild	partyEffectRebuildNode	讀隊伍法術效果+7c1/+7c2/+7c6及角色+b11/+b01與能力0x0a，更新隊伍效果0x687453與0x687495至0x687497並合計各角色+1770能力修正（build/wiz8.asm:365378）；notes/re/abilities.md:49。
+50e980	公式	D4	equipment_effect_sum	equipmentEffectSumNode	讀角色+f5d裝備槽與物品+48/+49/+6c至+74/+b1至+b4，累加裝備的行動、命中、屬性技能及抗性修正，輸出緩衝+0/+1/+9至+41並把抗性夾限至正負125（build/wiz8.asm:365592）。
+50f1a0	公式	D4	monster_group_spawn	monsterGroupSpawnNode	不確定：讀怪物模板、要求數量與座標，限制群體數量並呼叫個體初始化，輸出群體+4數量/+8清單及怪物記錄；初始化是否只分配資料或另生成HP等遭遇數值需追查（build/wiz8.asm:366418）。
+50f720	非公式	-	monster_group_remove		按群體與成員狀態移除個體並清理群體連結，決定性呼叫是怪物記錄釋放，沒有計算擊殺或傷害（build/wiz8.asm:367000）。
+510280	非公式	-	monster_group_name		依怪物群模板及特殊角色選取名稱並格式化文字，輸出名稱緩衝（build/wiz8.asm:367898）。
+511050	公式	D4	monster_group_reposition	monsterGroupRepositionNode	不確定：讀隊伍座標、怪物模型+9c半徑與距離參數，以亂數角度計算新位置並經0x510cc0輸出群體位置，需確認是遭遇配置或純場景移動（build/wiz8.asm:369178）。
+511670	非公式	-	monster_group_debug_text		將群體名稱、數量及狀態交給文字顯示 helper，屬資訊繪字（build/wiz8.asm:369769）。
+515cf0	非公式	-	party_status_load		從存檔讀入長度與資料區塊，角色引用用於版本相容及欄位恢復，屬存讀檔I/O（build/wiz8.asm:375586）。
+5171c0	非公式	-	exploration_discovery_flow		將察覺 helper 的結果用於提示文字、物品顯示與探索事件流程，亂數僅選擇發現時的語音變體（build/wiz8.asm:377506）。
+517560	公式	D4	exploration_detection_range	explorationDetectionRangeNode	讀角色+3dd/+161/+b11/+b01、能力0x0c、搜尋旗標與物件座標，計算探索距離並比較物件距離，輸出發現者槽或失敗值並訓練搜尋技能（build/wiz8.asm:377762）；notes/re/abilities.md:49。
+517970	公式	D4	dice_roll	diceNode	讀骰記錄+0有號基值/+2骰數/+3面數，累加各次1加亂數的骰值並回傳總和（build/wiz8.asm:378014）；notes/re/loot.md:15。
+517ec0	非公式	-	character_pointer_slot		逐一比對角色指標並回傳其隊伍槽索引，屬記錄定位（build/wiz8.asm:378569）。
+517f30	非公式	-	character_pointer_in_party		以指標相等判斷是否屬於八個隊伍角色記錄，屬資料成員查詢（build/wiz8.asm:378598）。
+517fb0	非公式	-	reaction_speaker_subset		亂數抽出的合格角色槽供事件語音使用，呼叫端逐一交給語音 helper，沒有規則目標輸出（呼叫用途見 build/wiz8.asm:411633、build/wiz8.asm:411657）（build/wiz8.asm:378774）。
+518150	公式	D4	random_party_member	randomPartyMemberNode	不確定：讀副表在場旗標及角色+b11/+b01/+75與排除條件，亂數決定合格隊員槽並回傳槽號；共用選人入口兼有語音及效果呼叫，後者用途仍待確認（build/wiz8.asm:393934）（build/wiz8.asm:378809）。
+518230	非公式	-	next_party_member		依起始槽順序尋找在場且符合主狀態的下一個角色，供隊員切換與選取流程使用，未計算命中或機率（build/wiz8.asm:378915）。
+518e30	公式	D4	attack_target_available	attackTargetAvailableNode	讀攻擊者陣營、手部啟用與射程及目標+b11/+b01/+17b5、隊形槽與怪物察覺狀態，輸出是否存在規則上可攻擊目標（build/wiz8.asm:380218）。
+5194e0	公式	D4	monster_target_attack_range	monsterTargetAttackRangeNode	讀射程枚舉、怪物+28a/+28b及隊形可達懲罰，選取距離門檻並比較目標距離，輸出攻擊可達旗標（build/wiz8.asm:380780）；notes/re/backstab.md:11。
+5197c0	公式	D4	party_target_attack_range	partyTargetAttackRangeNode	讀角色手部資料、射程枚舉、雙方陣營及隊形槽與角色+17b5，檢查遠近射程和中央隊員阻隔條件並輸出可攻擊旗標（build/wiz8.asm:380954）。
+519920	公式	D4	monster_group_target_valid	monsterGroupTargetValidNode	不確定：讀角色槽、怪物群ID與攻擊context，整理攻擊資料後呼叫0x537780並回傳群體目標有效旗標，該 helper 的規則距離與幾何遮擋分界需追查（build/wiz8.asm:381028）。
+5199f0	公式	D4	action_attack_range	actionAttackRangeNode	讀動作類型、角色手部與裝備資料或法術模板+12f，依動作選取並回傳射程枚舉或無效值（build/wiz8.asm:381115）。
+519ac0	公式	D4	char_attack_range	charAttackRangeNode	讀角色+1149/+114d手部啟用資料及物品+47，依手別與武器類型選取或合併最大射程，輸出GetCharAttackRange射程枚舉（build/wiz8.asm:381229）；notes/re/combat-2.md:90。
+519c00	公式	D4	monster_attack_target_available	monsterAttackTargetAvailableNode	讀怪物+2e1、模板+e7/+ea或法術+12f與可見目標、角色+b11/+b01及隊形懲罰，按攻擊射程比較距離並回傳是否有可攻擊目標（build/wiz8.asm:381469）。
+51ae60	公式	D4	formation_quadrant_available	formationQuadrantAvailableNode	讀隊形0x687511的象限槽及角色+17b5，判斷該象限是否有可用隊員並回傳旗標供攻擊可達計算（build/wiz8.asm:382989）。
+51aec0	公式	D4	formation_range_penalty	formationRangePenaltyNode	讀角色象限0x687525、怪物相對方向、隊形0x687511及中央槽0x68751d與角色+17b5，判斷對向象限及中央占用後回傳0至2的射程懲罰（build/wiz8.asm:383080）；notes/re/backstab.md:11。
+51b000	公式	D4	party_formation_range_penalty	partyFormationRangePenaltyNode	讀兩角色象限0x687525、中央槽0x68751d及角色+17b5，依象限對向與中央可用隊員回傳0或1的射程懲罰（build/wiz8.asm:383181）。
+51b0a0	公式	D4	random_party_attack_target	randomPartyAttackTargetNode	讀角色+b11/+b01、攻擊者手部與射程、陣營及隊形+17b5，列出合法攻擊目標後亂數抽取，輸出目標槽或無目標值（build/wiz8.asm:383368）。
+51b5c0	排除	-	item_display_name		按物品鑑定旗標與數量選擇名稱或類別文字並格式化顯示，屬名稱呈現（build/wiz8.asm:383767）。；2026-10-10 非公式→排除（cc 依 MG 授權）：只產名稱字串並懶建 0x68c09c 顯示名稱表，呼叫端拿回傳當訊息格式化參數（push eax）或忽略，不進規則數值
+51b7b0	非公式	-	item_name		按鑑定狀態查詢或快取物品名稱字串，決定性呼叫只格式化文字（build/wiz8.asm:383873）。
+51b840	公式	D4	item_value	itemValueNode	讀物品實例+0編號/+4數量與模板+3e/+66/+86價值，按類型比例換算或按堆疊數相乘並回傳物品價值（build/wiz8.asm:383901）。
+51b8b0	非公式	-	item_weight_field		僅按物品編號讀模板+8a重量原欄位並回傳，未計算負重或修正值（build/wiz8.asm:383944）。
+51b8e0	非公式	-	item_type_field		僅按物品編號讀模板+3e類型原欄位並回傳，屬資料存取（build/wiz8.asm:383963）。

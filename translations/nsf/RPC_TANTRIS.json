@@ -1,0 +1,417 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "102ca6530129c773566a06ad803c9192a80742a146a56b6f4ef8584846c400ef",
+  "zh": "嘶——好！我們出發吧！"
+ },
+ {
+  "id": 1,
+  "src_sha256": "be3f6b1a1e3843038c4b7f5ba25bf16a8df21d508b6df4361be7e0a0b527c8d8",
+  "zh": "我們的聯盟讓我受益良多！我的技能變強了！"
+ },
+ {
+  "id": 2,
+  "src_sha256": "83449be073565bfb9a9780919f66b72dd12dc0dad50deea5fae8e7f196d64390",
+  "zh": "嘶！我需要治療！"
+ },
+ {
+  "id": 3,
+  "src_sha256": "6b03daa533059857db85f8a98bda2588e621527b67c7ee1e772acfbb009e5286",
+  "zh": "嘶……我……我不能死……"
+ },
+ {
+  "id": 4,
+  "src_sha256": "f7148126b6c8c40a14b2f2fbf5e38ec1dd8949190fb592fbbb61ffb2dd75f49c",
+  "zh": "讓我們休息一下。這樣才能更好地為帝國效力。"
+ },
+ {
+  "id": 5,
+  "src_sha256": "f57c7a7a6c3d83073e2726bb67aa85c3eafdf09a17fd1088c11cfb731acd13c6",
+  "zh": "嘶！我的 rekamat 上有斑點！"
+ },
+ {
+  "id": 6,
+  "src_sha256": "7cfa6ba1a6b3de70744f86962515eae74b8cecd3cc5972739766182ff136f31a",
+  "zh": "這股籠罩著我的東西是什麼？"
+ },
+ {
+  "id": 7,
+  "src_sha256": "44582f59d4ce9ccb2f8687f53ce0896cd79249ed6dcedb4b09c73ae6d8656703",
+  "zh": "我瞎了！嘶——！"
+ },
+ {
+  "id": 8,
+  "src_sha256": "c211ca02eaae4c149c5cba547220eff6d4ffd252da54232abdbdfc9df179f299",
+  "zh": "或許有人可以幫忙扛這些東西。我已經扛了我該扛的那一份了。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "596aaa41436808c248e1fe18d75065baccbbcb9d973ff3b4a3a32dbec25ed092",
+  "zh": "嘶！我被麻痺了！"
+ },
+ {
+  "id": 10,
+  "src_sha256": "258d7aab59968cec4b79417bfdc0833e6d6f4ff371495f25ca33d103a48f3182",
+  "zh": "我就是想說這個！"
+ },
+ {
+  "id": 11,
+  "src_sha256": "f0f8b55c15fd09cfd75ae3ab097e334614c1f2c3bc555793b5d4bdd26661a327",
+  "zh": "我沒料到這會是件輕鬆的任務，但這種情況我確實沒考慮到。以後我們要避免。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "40e4cbea667fc80142c1b0ce3d2b4b5a2b34e2fc8718966ee798f6b1d25593b0",
+  "zh": "嘶，你們有我永恆的感激。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "850f6ecdc6af66b50524e575ccb934ae1d545bd45c83aeac9a02908dfbdfe21d",
+  "zh": "就算蒙上眼的十二個 T'Rang 年輕人，也不會犯這種錯……"
+ },
+ {
+  "id": 14,
+  "src_sha256": "0c12ef26c62f7ed9677502ba04689ce79946c964eb9e847d7d7a512c36793b37",
+  "zh": "想看看我的劍嗎？當然，我不能讓你們碰它。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "170a6d595aa43cbe525a5470170a2062f817b0f1837609f612aeb7530beb17bc",
+  "zh": "我們的歷史相當有趣。或許哪天 Sadok 可以講給你們聽。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "7415b9a2d22e90129eec185c2973a566762bf63f3517e5db219cbabcdcf7c0b4",
+  "zh": "嘶！那是意外，我向你們保證！"
+ },
+ {
+  "id": 17,
+  "src_sha256": "d4b77c01f1cc602a7cefffae1b88f44e86e0925a342e1767efbd2a0c49251bca",
+  "zh": "嘶！你們打到的是我啊！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "4c27fa27860f3fd00af7dc4e0db46da597a3c7536aae728f78c09d79d6247eca",
+  "zh": "嘶！快把他復活！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "2b5c312674697fdadc3b2e16fbd6af9d78955af67dd06c73e224b17c321eef70",
+  "zh": "嘶！她死了！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "e9b0b52c025c3e0855fcf5fad72f6e411d287023eea23cba10704f79761ffe5d",
+  "zh": "復活，或者埋葬。我們只有這兩條路。"
+ },
+ {
+  "id": 21,
+  "src_sha256": "6cd28d3a9392cae3273a09bce4bf156290d8237ccff5da4c36a5aa33bf7aec59",
+  "zh": "嘶！我要為這些死者報仇！"
+ },
+ {
+  "id": 22,
+  "src_sha256": "98e1cc561cf4076e59b0d5ae26abd569023f031e63c8dc89c8de41d3889a6890",
+  "zh": "或許 Z'Ant 看錯了你們的戰鬥能力……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "5ead2f7c5755a5f0dfd849d0c9a626b6e339658a4113db95ff8510f1a7018388",
+  "zh": "我看到了什麼東西……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "5d8dfcf56918817a90b8411768d9c1ea5999e1dc84ea6b3ffb1b38a23f026ed8",
+  "zh": "你們看見那個東西了嗎？"
+ },
+ {
+  "id": 25,
+  "src_sha256": "5bf82615bf498b319ed0ccbf09573025ae2b381023a7bdcbab9b5e91704265f9",
+  "zh": "嘶嘶——！陷阱！"
+ },
+ {
+  "id": 26,
+  "src_sha256": "16d8c2e8b0775f133a299f7fd8799fea8eae38953f8dfafa01d3a9aa4159f1f4",
+  "zh": "有人在這裡藏了東西。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "5a55c5b465f54b300b106da7fa4e1f36ce1a6a9f891345a8b829d1ca865dd4d5",
+  "zh": "嘶……我們在這裡必須小心！"
+ },
+ {
+  "id": 28,
+  "src_sha256": "be476b471d23d8371ee9ab7060ee455ca9b72130f716fbcb9ee73a7ac39b3c93",
+  "zh": "我們得抽時間把這個治好！"
+ },
+ {
+  "id": 29,
+  "src_sha256": "2aeab24c47001a48676f476ff393d58b2a67681a9dd0a74d3a308a528465741d",
+  "zh": "嘶！讓我去殺了他們！"
+ },
+ {
+  "id": 30,
+  "src_sha256": "d605a4b0a843f7bce64d96624745e73f87eaa3f45307468d96beaf477cbeb433",
+  "zh": "配得上我的劍的東西！"
+ },
+ {
+  "id": 31,
+  "src_sha256": "f69aeb34d86888fbe869db483a1de88b689bf749122fd2c10f1438cdbac6e62e",
+  "zh": "我的劍會與我同在！"
+ },
+ {
+  "id": 32,
+  "src_sha256": "3f70267da5b446e43a9b1ebda6b9d7e628642c893a5c5ec4fb46d227b5a91514",
+  "zh": "我該瞄準誰？"
+ },
+ {
+  "id": 33,
+  "src_sha256": "9ec4cb5394538bf386726fb7e087b7d50dd17c56a1993aabc9985a8ece45b398",
+  "zh": "這些東西是從哪裡冒出來的！？"
+ },
+ {
+  "id": 34,
+  "src_sha256": "1c4aaa8434909c727ba6fb5301150f1892c908c606a6c0b888a9c4b7af80f19c",
+  "zh": "嘶！差點打中我！"
+ },
+ {
+  "id": 35,
+  "src_sha256": "b3705dadabcecbce63b29539034f6b23fca6c167cdb786d54cb0c1f8ba6f2754",
+  "zh": "偉大的 T'Rang 帝國獲勝了！"
+ },
+ {
+  "id": 37,
+  "src_sha256": "b9756ce67823a7135c1c177786587903ec499f04b7a6a19737afa739039c549c",
+  "zh": "沒有什麼比敵人流血更讓人滿足了……"
+ },
+ {
+  "id": 38,
+  "src_sha256": "0b091ba561456e5b4d4a02f3269ec3882af1df6d47ad093205408de1c6c8c80b",
+  "zh": "讓我們跟他們談談……"
+ },
+ {
+  "id": 39,
+  "src_sha256": "e2c3aa85840692e77587f3106c53efdd6fcae2562caf65f8862e4eb2e63dd7ab",
+  "zh": "嘶！我沒有彈藥了！"
+ },
+ {
+  "id": 40,
+  "src_sha256": "f739d2afac043aadfefcb23ffab6f1f8bf5f6e4abe11e357d63de86dc2f1e24f",
+  "zh": "嘶！有人不見了！我們去找他們！"
+ },
+ {
+  "id": 43,
+  "src_sha256": "fab0f48b8add350caee35bdc3d66ccba6f030a58c69b4a336423cc4704957f6e",
+  "zh": "嘶！這該怎麼說呢。我相信她所期待的，我辦不到。你們瞧，我們的種族無法繁衍後代。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "36c3e336e58ac54103f6cb417c9f6860c38d89e066f1f7cb100635123762523a",
+  "zh": "嘶！ Astral Dominae ！終於落入 T'Rang 帝國手中了！"
+ },
+ {
+  "id": 47,
+  "src_sha256": "5f140e2d4b8944156de4538bf0cc50616d009dfc4ca89a41e4226655c27b50b1",
+  "zh": "Destinae Dominus ？ Z'Ant 會很高興的……"
+ },
+ {
+  "id": 49,
+  "src_sha256": "654f787876e2aa999c822dd9ee9de937042bfc381cd825aa082bbdd6adcc0dbf",
+  "zh": "這個裝置就是 Mook 帶到 Dominus 來的東西！我就知道我們會奪下它！"
+ },
+ {
+  "id": 53,
+  "src_sha256": "15b23043c9e25bb02188a578e971fcdb1f9a9707bddc73712faee86bbaede662",
+  "zh": "不可能……"
+ },
+ {
+  "id": 54,
+  "src_sha256": "1e5bf815b48e0f147336ff6c71f3491b3ee3402fe28079ef830c3b1cecb24c9a",
+  "zh": "我相信他們在對我們說謊……"
+ },
+ {
+  "id": 55,
+  "src_sha256": "b21011d6a38bce766bcac5238479d77eca6bc3b460aa99fe15a011d1530a4f50",
+  "zh": "這件東西真讓人印象深刻！"
+ },
+ {
+  "id": 56,
+  "src_sha256": "547796c18aa9413921b1066dae628ba24137a5cc13bbd5b1fc062810da7976a0",
+  "zh": "嘶，是的，我的技能是 T'Rang 帝國的光榮！"
+ },
+ {
+  "id": 57,
+  "src_sha256": "05c044fd42c8a105d50b5db93147047f954ba9f4b96202161e6371e90fdc818f",
+  "zh": "是那個女孩……"
+ },
+ {
+  "id": 58,
+  "src_sha256": "537a38ccfcd22628c0a71e2cf5e2ff6842bfcda6c684ac93258910ace1a25ec7",
+  "zh": "嘶，我們甩掉他們了……"
+ },
+ {
+  "id": 59,
+  "src_sha256": "637d7d3caf53b6bf60a72159457f385713574f0a037c097da98d5ab0b25c9375",
+  "zh": "嘶！這消息最令人不安。只要偉大的 T'Rang 帝國還在，Dark Menace 就達不成他的邪惡目的！與 Rapax 結盟也阻止不了我們！"
+ },
+ {
+  "id": 60,
+  "src_sha256": "0d0b87c6d4f51a4830d08e8bb87064a7f588a23444cd44be4edcd93f85a60858",
+  "zh": "嘶！ Dark Menace 本人！ Watchers 會把這件事回報給 Z'Ant 。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "e8d36cc4eb9059ba523c96713d146d4472ba4a189ec1736ff548ea7b2e1a1bf7",
+  "zh": "我會好好想想他說的話。我猜，那是真的。"
+ },
+ {
+  "id": 65,
+  "src_sha256": "dea0774beb002e84ff6a7d3bff9f6b5681590f192a96de7f15e37dda2b412fa6",
+  "zh": "嘶！我們找到要找的東西了！"
+ },
+ {
+  "id": 66,
+  "src_sha256": "bcf03907c4bbc2c0205c94ad86f34717cffc5e83a57fa0f8d44c99b405b931d8",
+  "zh": "這……這東西一文不值，是假貨！騙不了我！"
+ },
+ {
+  "id": 67,
+  "src_sha256": "3b70e6b12894d4cddb3936b5395c24e7170401925533405a8947ad427b0bafb3",
+  "zh": "嘶！它可能有敵意。"
+ },
+ {
+  "id": 68,
+  "src_sha256": "1b434c4c9675ec5a3b2a767fcfd0ccbfa6871d1d45760babd1537f05e48fca15",
+  "zh": "嘶！把你們的劍指向這裡！"
+ },
+ {
+  "id": 69,
+  "src_sha256": "eeaaa1078a243cb9bc6c13c4eecdcc61dfccbe221c85dbb2f1062a2ccb5559b0",
+  "zh": "我們還會再來一次的……"
+ },
+ {
+  "id": 70,
+  "src_sha256": "7fc850e7a9ec908e1472e23d774cb023f0f4635aac5ead4261c7d6bc71c85db8",
+  "zh": "Arnika ……Watchers 回報說 Dark Savant 在這裡蓋了一座塔。或許我們可以問問當地人知道些什麼。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "73ccdb3750314f560a26bc3d278dc6da0e6c44fc346c12eeddd47928f7612c28",
+  "zh": "Trynnie 就在這片樹林的某處。我聽說 Marten 本人在到 Bluff 之前曾經過這裡。或許我們可以向當地人打聽。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "04d4b30dbffcd08f857c89a298e39c7355ba3bcde8fa82eeccbb9063edc3c922",
+  "zh": "Marten's Bluff 。嗯，能再回到這裡真好。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "ba5bf0edc9c207281520d8b9d2f7d639c3c553f1cc7295cb1f3b421d29e4513e",
+  "zh": "Z'Ant 需要我回 Marten's Bluff 。我得走了……"
+ },
+ {
+  "id": 74,
+  "src_sha256": "538e6e44348156ad7f51a464322d1b0acdafd1e431791785657ea4945f9d94b3",
+  "zh": "等等。我一直在想。如果我跟你們一起進入 Umpani 的營區，一定會被攔下來。但沒有我，你們要潛入他們、拿到我們需要的東西會容易得多。我在這裡等你們。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "619f62795418356cdc59d47245de31bd0fec712305a2ccf3f387d81b859f6b23",
+  "zh": "嘶……Watchers 回報說有許多可怕的生物在這道裂谷（ rift ）裡徘徊！我們就來看看他們的劍是什麼做的！"
+ },
+ {
+  "id": 76,
+  "src_sha256": "d7cf45d7b209826011537c38d62bf778caf53e2d4b10ac8a33a78318238a76ed",
+  "zh": "嘶，原來這就是 Rapax 的家。我們安靜地走吧……"
+ },
+ {
+  "id": 77,
+  "src_sha256": "12d5608b4b3fc7023c4584a3945e4b85c30312be4a142becd98dccce2515c243",
+  "zh": "嘶！水對 T'Rang 來說不明智！我在這裡等你們……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "f75277157c3fe81371e4e842f4df88dce03f446fd7a5d53cc3da7995ace6ffa8",
+  "zh": "嘶！ Watchers 回報說這邊只有 Higardi ，而這些生物引不起偉大的 Tantris T'Rang 的興趣！要走你們自己走！"
+ },
+ {
+  "id": 80,
+  "src_sha256": "afc2443ea272b4a5d630bc27b485858f74ab67dc02d314302beb611637f7afb1",
+  "zh": "我們應該小心。我在這片沼澤裡看到很多 Savant Troopers 。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "fb27149a021b6b84a63c0afbd3b1f91a911b7a65375360cd7ff37485b44c6dd5",
+  "zh": "嘶嘶！等等！就像 Watchers 告訴我的一樣！我相信 Rapax 大軍就在前方。我聽得到他們，你們聽得到嗎？仔細聽……你們去調查。我要立刻回去向 Z'Ant 報告！真不知道這代表什麼！"
+ },
+ {
+  "id": 82,
+  "src_sha256": "ba5bf0edc9c207281520d8b9d2f7d639c3c553f1cc7295cb1f3b421d29e4513e",
+  "zh": "Z'Ant 需要我回 Marten's Bluff 。我得走了……"
+ },
+ {
+  "id": 83,
+  "src_sha256": "f753559390df0c2e2d4beb3e8fbdd5d6e84dcec3b80a5c4b33ef377b43ffa7d4",
+  "zh": "嘶！你們竟敢想把我一個人丟在這裡！我不走。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "38698441f3f3e7739155a19a647b7f4c935e82e6d174009a4c0b83b02c0ee235",
+  "zh": "我的狀況好轉了……"
+ },
+ {
+  "id": 85,
+  "src_sha256": "ebe57581448bdd595aafdbe2dd0e5bde312300819c5eefdf36de2acd058a24dd",
+  "zh": "嘶，我想病痛消失了。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "ef9b34d0d3116db0e4fa1c475e952d3764285eec8f5bf2c75f92fac1f7f080bd",
+  "zh": "嘶！我在哪裡？我們立刻離開這裡！"
+ },
+ {
+  "id": 87,
+  "src_sha256": "713beaaffe2ea95623ed6553c2168ee69005e047d879eb329280c9a35d6b36e4",
+  "zh": "我當初應該留在 Marten's Bluff ……"
+ },
+ {
+  "id": 88,
+  "src_sha256": "cf40dc7df4374527c6d5185457f848ed6ec76d6bee4f7f04168b0f4a60b2e137",
+  "zh": "我不想再打了……"
+ },
+ {
+  "id": 92,
+  "src_sha256": "6ee1f23c35b23188a7df4b082f36ed165409881255cdf44c76c7deca79a660f0",
+  "zh": "嘶！把你們的手拿開！那是我的。"
+ },
+ {
+  "id": 93,
+  "src_sha256": "ac2defcfb2c64a7e74c28f92c8baaa5ff1579e71a67a12b527c97fec3bb6464a",
+  "zh": "我說過了……我不想待在這裡。請尊重我的意願。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "b84aaaa7cbfdb2e6dc5fa2885b62d4751cf555788bb903b27c50085339fb8459",
+  "zh": "Z'Ant 對你們讚譽有加。他會支持你們的。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "4a5a45216e80527217a273a2e5ff837bdfe21f91406d467439c0d0ac3dc39133",
+  "zh": "我跟小小的 Trynnie 沒有過節。事實上，我相信他們對這位 Marten's Bluff 的 Marten 知道不少。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "2fe9eb7cf287eaf8cdfd27acedbb03cb410a959e2b9da18598178791a09a167b",
+  "zh": "嘶！別相信 Rattkin 。他們以前就背叛過我們！"
+ },
+ {
+  "id": 97,
+  "src_sha256": "32da71df81d66521bb213119c3ac96978e6bf8cfdee4d1c1f0481d2eef0c85fc",
+  "zh": "或許這東西會在這裡是有原因的……"
+ },
+ {
+  "id": 99,
+  "src_sha256": "b649efb5022ea8ce990e8c6854641e2d04326c035d0db7a57fd853417e3ac2f4",
+  "zh": "這頂頭盔，我確信它對我們會很有用……"
+ }
+]

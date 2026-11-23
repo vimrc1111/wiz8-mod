@@ -1,0 +1,37 @@
+call	2b6	無關	登記器把 assertion 的 IAT 間接呼叫（0x5ebaf4）誤列為相對目標，實際為 srAssertFail；來源 exe 0x4ecf75
+call	40efa0	randomRoll	R(100) 亂數；小於 20 才使隊伍失去本輪行動，來源 exe 0x4ed029..0x4ed031、0x4ed053..0x4ed05b
+call	41efb0	sceneDefenseFlag	場景旗標：場景指標非空且其第一個 u32 的位元 8 為真，calc 內聯為 scenePointer／sceneFlags；來源 exe 0x41efb0
+call	4e5620	monsterAtIndex	依列表索引取怪物實例，索引必小於筆數；交模擬器直接執行
+call	4ed1c0	partyAwarenessCheckNode	隊伍警覺檢查，已是 calc 節點，本節點直接呼叫其 Go 函數並共用同一個 R；來源 exe 0x4ecffa
+call	58ac00	無關	戰鬥日誌訊息入列，只改畫面訊息佇列，不影響兩個旗標輸出；視窗物件空時直接返回，模擬器照常執行
+call	5e2c70	monsterListCount	列表指標為空回零，否則讀列表 +8 的筆數；每次迴圈重讀
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	無關	srAssertFail 的 IAT 槽，只在 assert 塊使用
+data	6149e8	無關	assert 訊息字串位址，只在 assert 塊使用
+data	61738c	無關	assert 來源檔名字串位址，只在 assert 塊使用
+data	6836a8	battlePointer	戰鬥物件指標；寫其 +0x1、+0xa52、+0xa53
+data	683f94	combatMode	戰鬥模式位元組，為零時走 assert 塊
+data	683fad	monsterListPointer	戰場怪物列表指標；+0 指向實例指標陣列，+8 是筆數，空指標視為零筆
+data	683fc5	awarenessMode	警覺檢查啟用旗標，同時是 0x4ed1c0 的模式；為零時第二輪旗標 +0xa53 可被設起
+data	68749d	surpriseBlockFlag	非零時略過第一輪怪物掃描與警覺檢查（語意名稱未取得）
+data	6874ff	ambushFlag	場景旗標為假時的備援旗標，非零才擲 R(100)（語意名稱未取得）
+data	68c09c	無關	日誌訊息編號表指標，只讀其 +0x8f8..+0x904 當作 58ac00 的參數
+data	fffffffffffffffe	無關	推入 -2 的立即值（Ghidra 視作資料引用），非記憶體位址
+data	ffffffffffffffff	無關	推入 -1 的立即值（58ac00 的參數），非記憶體位址
+field	eax+0x1	battleByte1	戰鬥物件 +0x1，第一輪旗標設起時清為零
+field	eax+0x107	monsterField107	怪物欄位（u32），須小於 16（無號）才合格（語意未取得）
+field	eax+0x14	monsterPresent	怪物在場旗標，須非零
+field	eax+0x15	monsterActive	怪物啟用旗標，須非零
+field	eax+0x16	monsterState	怪物狀態位元組，須等於 1
+field	eax+0x28a	monsterField28a	第一輪掃描要求等於 1 的怪物位元組（語意未取得）
+field	eax+0x2b	monsterCurrentHP	怪物目前生命（u32），須非零
+field	eax+0x34c	monsterField34c	第二輪掃描要求等於 1 的怪物位元組（語意未取得）
+field	eax+0x8fc	無關	日誌訊息編號，只傳給 58ac00
+field	eax+0xa52	battleFlag52	戰鬥物件第一輪失去行動旗標（輸出）
+field	eax+0xa53	battleFlag53	戰鬥物件第二輪失去行動旗標（輸出）
+field	ecx+0x8f8	無關	日誌訊息編號，只傳給 58ac00
+field	ecx+0x904	無關	日誌訊息編號，只傳給 58ac00
+field	ecx+0xa52	battleFlag52	戰鬥物件第一輪失去行動旗標（輸出）
+field	edx+0x900	無關	日誌訊息編號，只傳給 58ac00
+field	edx+0xa52	battleFlag52	戰鬥物件第一輪失去行動旗標（輸出）
+field	edx+0xa53	battleFlag53	戰鬥物件第二輪失去行動旗標（輸出）

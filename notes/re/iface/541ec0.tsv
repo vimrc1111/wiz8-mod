@@ -1,0 +1,35 @@
+call	4e5550	monster_id_to_slot	由目標怪物 id 查找已載入實例列表位置；case 的列表接線與 542fc0 相同
+call	4e5620	monster_instance	由列表位置取得即時怪物記錄；其 +0x248..0x24b 四個 u8 是怪物四屬性
+call	5182e0	無關	目標種類既非角色也非怪物時的診斷輸出分支；同一目標已先經 542fc0，非法種類在那裡停止，合法輸入到不了
+call	52a7d0	lowStaminaPenaltyGrade	把角色的耐力懲罰等級 0..4 換成 0、5、10、20、40，其他值原樣返回；本函式內重現
+call	542e10	attackModePenModifier	依攻擊模式 0..8 的穿透修正表（第一參數非零選穿透表）：0、10、-5、-30、5、-5、0、-10、10；本函式內重現
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	61d2ac	無關	怪物查找及診斷用的來源檔名字串位址，不影響規則輸出
+data	61d764	無關	非法目標種類診斷訊息的格式字串位址，只供診斷輸出
+data	6836a8	combatBattleObject	戰鬥物件指標；+0x8c5 起是目前攻擊目標（種類、角色索引、怪物 id），case 以 arena 物件接線
+data	685174	partyCharacters	角色記錄陣列基址；步長 0x1862，按攻擊者與目標角色索引尋址
+field	eax+0xfd	targetCharacterIntellect	目標角色（種類 1）的 i32 智力類屬性；與攻擊者四屬性和相減
+field	eax+edx*2+0x115a	handPenetrationBase	攻擊者當手欄（步長 0x5b）的穿透基礎項 i32，權重 1
+field	eax+edx*2+0x139	targetCharacterDexterity	目標角色的 i32 敏捷類屬性
+field	eax+edx*2+0x14d	targetCharacterSpeed	目標角色的 i32 速度類屬性
+field	eax+edx*2+0x161	targetCharacterSense	目標角色的 i32 感知類屬性
+field	edi+0x114e	handKind	當手欄的種類 u32；等於 7 時不扣耐力懲罰
+field	edi+0x116a	handPenetrationSkill	當手欄的穿透技能項 i32，權重 5
+field	edi+0x116e	handPenetrationBonus	當手欄的穿透加成項 i32，權重 5
+field	esi+0x139	attackerDexterity	攻擊者的 i32 敏捷類屬性；四屬性和的一項
+field	esi+0x14d	attackerSpeed	攻擊者的 i32 速度類屬性；四屬性和的一項
+field	esi+0x161	attackerSense	攻擊者的 i32 感知類屬性；四屬性和的一項
+field	esi+0x169e	staminaPenaltyGrade	攻擊者的耐力懲罰等級 u32（F15 存放處），經 52a7d0 換成扣分
+field	esi+0x1771	attackerBonusA	攻擊者的有號 byte 加成，權重 5
+field	esi+0x1772	attackerBonusB	攻擊者的有號 byte 加成，權重 5；notes/re/combat-2.md:34
+field	esi+0x248	monsterAttributeA	目標怪物實例的 u8 屬性，四項和與攻擊者四屬性和相減
+field	esi+0x249	monsterAttributeB	目標怪物實例的 u8 屬性
+field	esi+0x24a	monsterAttributeC	目標怪物實例的 u8 屬性
+field	esi+0x24b	monsterAttributeD	目標怪物實例的 u8 屬性
+field	esi+0xfd	attackerIntellect	攻擊者的 i32 智力類屬性；四屬性和的一項
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x8c5	targetKind	戰鬥物件上目前目標的種類 u32：1 角色、3 怪物；同時是 542fc0 的目標參數起點
+field	eax+0x8c9	targetCharacterIndex	目前目標的角色陣列索引 u32；種類 1 時選出被比較的角色記錄
+field	eax+0x8cd	targetMonsterId	目前目標的即時怪物 id；種類 3 時經列表查找取得怪物實例

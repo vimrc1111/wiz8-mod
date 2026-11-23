@@ -1,0 +1,25 @@
+call	40efa0	randomRoll	每個陷阱部位呼叫 R(100)，小於偵測機率才算辨識出；共八次，依部位順序。
+call	4f4650	refreshInspectButton	按鈕顯示更新（參數 0）；case 讓按鈕的子元件指標為空，只把按鈕 +0xa0 設為 1，其值不參與規則計算。
+call	5e3730	trapPartTableByte	查表 0x650434 + 8*列 + 部位的位元組；陷阱種類列決定各部位的結果格值，職業列決定零值格是否仍標記。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	6504e8	trapTierDifficultyTable	以陷阱等級（負值當 0）索引的 dword 難度表，10、25、35、40、50…；從使用者自己的 build/Wiz8.exe 於執行時讀取。
+data	6850d5	difficultySetting	難度設定 dword；偵測機率加上 (11 - 難度) * 10。
+data	685174	partyCharacterArray	隊伍角色記錄陣列基底指標，每名角色 0x1862 位元組；以面板上的角色索引取得角色記錄。
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x319	characterTrapSkillUsableFlag	角色 +0x319 的 u8 旗標；自然成長後與有效技能一起決定技能值是否為 -1。
+field	eax+0x31f	characterTrapEffectiveSkill	角色 +0x31f 的 dword 有效陷阱技能；為負以外時加上六倍的面板技能加成。
+field	eax+0x78	panelClassRow	面板子物件 +0x78 的職業列號；用於 0x5e3730 查表，決定零值格是否仍標記。
+field	eax+0x80	panelRowBlockPointer	面板子物件 +0x80 指向目前角色在面板格陣列中的列（面板 +0x4c + 32*角色）。
+field	ebx*4+0x6504e8	trapTierDifficultyEntry	陷阱等級對應的 dword 難度表項。
+field	ebx+0x0	trapPartCell	面板格陣列中目前角色該部位的格值；非零時直接寫到對應按鈕。
+field	ecx+0xb8	inspectButtonValue	部位按鈕 +0xb8 的格值；格值為零且職業列表值為零時寫 -1。
+field	edi+0x0	inspectButtonPointer	面板子物件 +0x54 起的八個部位按鈕指標之一。
+field	edx+esi*1+0x44	panelCharacterDoneFlag	面板 +0x44 起按角色索引的 u8 旗標；偵測完成後設為 1。
+field	esi+0x14c	panelSkillBonusMultiplier	面板 +0x14c 的有號技能加成倍率；每點加六點技能。
+field	esi+0x150	panelField150	面板 +0x150 在入口被設為 0；本函式不再讀它。
+field	esi+0x1c	panelCharacterIndex	面板目前偵測的角色索引（隊伍位置）。
+field	esi+0x34	panelTrapType	面板的陷阱種類；0x5e3730 的列號，決定各部位辨識到時的格值。
+field	esi+0x38	panelTrapTier	面板的陷阱等級；負值當 0，索引難度表。
+field	esi+0xc	panelChildObject	面板子物件指標，持有職業列、八個按鈕與格列指標。
+field	esi+ecx*4+0x4c	panelTrapPartCell	面板格陣列中以 8*角色+部位索引的 dword 格值（辨識到為表值，否則 2）。
+field	esi+edx*4+0x4c	panelTrapPartCellRead	同一格陣列的讀取，供後續按鈕更新取值。

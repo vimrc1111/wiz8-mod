@@ -1,0 +1,53 @@
+call	2b6	無關	分析器列出的例外展開輔助目標；正常返回不執行，與物品初始化規則無關
+call	404b50	無關	物品編號越界斷言的錯誤訊息格式化，只在斷言路徑出現，不影響合法輸入的結果
+call	55f1e0	clearHeldItemCursor	持握物品實例（0x6874cb）重設：清該實例與 0x6874ca，實例首格寫 -1，游標物品 0x683fdb 不為 -1 時呼叫游標圖像更新兩個函式再把 0x683fdb 設 -1、0x683fdf／0x683fe3 設 0；原樣重放，case 輸出涵蓋這些格子
+call	5e1da0	無關	編譯器的堆疊探測（本函式約 0x1770 bytes 區域變數），與規則無關
+call	427ab0	cursorImageBlit	游標圖像繪製（登記 排除）；位址樁，記錄四個參數與呼叫次數；參數由 55f1e0 以 0x5493e0 與 0x549390 的結果組成
+call	427ff0	cursorImageReset	游標圖像收尾（登記 排除）；位址樁，記錄呼叫次數
+data	18	無關	堆疊參數位移立即值，非資料表或全域記憶體引用
+data	5ebaf4	srAssertFail	srAssertFail 匯入槽；物品編號越界、骰子最大值達 256、堆疊種類碼大於 4 三處斷言，合法輸入走不到
+data	609b24	無關	斷言訊息字串位址（種類碼條件）；只在斷言路徑使用
+data	61a758	無關	斷言訊息字串位址（原始檔名）；只在斷言路徑使用
+data	61a7bc	無關	斷言訊息字串位址（種類碼訊息）；只在斷言路徑使用
+data	61a7e4	無關	斷言訊息字串位址（骰子條件）；只在斷言路徑使用
+data	61a800	無關	斷言訊息字串位址（物品編號條件）；只在斷言路徑使用
+data	61a828	無關	斷言訊息字串位址（invalid item 格式）；只在斷言路徑使用
+data	683f78	itemDefinitionCount	物品定義筆數；物品編號不小於它即斷言（0x51c038）
+data	6840c0	heldItemSourceId	持握物品來源編號 dword；持握實例重設時寫 -1（0x51c072）
+data	6840c4	heldItemSourceKind	持握物品來源種類 byte；持握實例重設時寫 0xff（0x51c077）
+data	6840c5	heldItemSourceSlot	持握物品來源槽 word；持握實例重設時寫 0xffff（0x51c07e）
+data	68516c	itemDefinitions	物品定義陣列的執行期指標，每筆 269 bytes；非 exe 常數表
+data	685185	sharedPackLastSlot	共用背包槽陣列前一槽位址（685191 減 12）加每槽 12 bytes 索引的基址，用來清除並標記最後一槽
+data	685189	sharedPackSlotsBase	共用背包槽陣列分析器列出的相鄰位址；與 0x685185、0x68518d 同一陣列
+data	68518d	sharedPackSlotsBase	共用背包槽陣列分析器列出的相鄰位址
+data	685191	sharedPackSlots	共用背包槽陣列起點，每槽 12 bytes（首 dword 為 -1 表示空槽）；實例位址落在這裡時代表該槽
+data	68519d	sharedPackSlotsNext	共用背包第二槽起點；移除槽時用它作搬移來源
+data	6851a1	sharedPackSlots	共用背包槽陣列欄位位址（分析器列出）
+data	6851a2	sharedPackSlots	共用背包槽陣列欄位位址（分析器列出）
+data	6851a9	sharedPackSlots	共用背包槽陣列欄位位址（分析器列出）
+data	6851ad	sharedPackSlots	共用背包槽陣列欄位位址（分析器列出）
+data	6851ae	sharedPackSlots	共用背包槽陣列欄位位址（分析器列出）
+data	6868f5	sharedPackLastSlotAddress	共用背包槽陣列最後一個合法槽位址（上限 500 槽）；實例位址超過它就不當成背包槽
+data	686901	sharedPackCount	共用背包槽數 dword；移除槽後減 1
+data	6874cb	heldItemInstance	持握物品實例（游標上的物品）固定位址；以它為實例時走游標重設
+field	eax+0x0	sharedPackSlotWord0	共用背包末槽首 dword 清零後寫 -1
+field	eax+0x4	sharedPackSlotWord1	共用背包末槽第二 dword 清零
+field	eax+0x8	sharedPackSlotWord2	共用背包末槽第三 dword 清零
+field	ecx*4+0x685185	sharedPackSlotWord0	末槽首 dword 寫 -1（槽數×12 位移）
+field	ecx+0x0	instanceItemId	新實例前 12 bytes 先清零，首 dword 為物品編號
+field	ecx+0x4	instanceState4	新實例第二 dword 清零
+field	ecx+0x8	instanceState8	新實例第三 dword 清零
+field	ebp+0x0	instanceItemId	實例物品編號（先 -1 作空標記，最後寫入物品編號）
+field	ebp+0x4	instanceQuantity	實例數量（堆疊種類 1：擲骰或最大值）
+field	ebp+0x5	instanceCharges	實例充能（堆疊種類 2 至 4：擲骰或最大值）
+field	ebp+0x6	instanceFlag6	實例旗標，呼叫端要求或物品定義屬性位 0 時設 1
+field	ebp+0xb	instanceFlagB	實例旗標，呼叫端要求時設 1
+field	edi+0x0	itemDiceBase	物品定義骰記錄基值（定義 +0x67 的低 byte，最大值模式加到結果）
+field	edi+0x2	itemDiceCount	物品定義骰記錄骰數 N（定義 +0x69）
+field	edi+0x3	itemDiceSides	物品定義骰記錄面數 S（定義 +0x6a）
+field	edx+0x685191	sharedPackSlotWord0	被搬移槽的首 dword；實例位址落在槽上時必須為 -1 才移除
+field	esi+0x0	無關	分析器對 rep movs 來源指標的欄位誤判，與規則無關（資料搬移由槽陣列欄位涵蓋）
+field	esi+eax*1+0x66	itemStackKind	物品定義 +0x66：0 無堆疊資料；1 數量（寫實例 +4）；2 至 4 充能（寫實例 +5）；大於 4 斷言
+field	esi+ecx*1+0x66	itemStackKind	同一定義欄位 +0x66，擲骰後第二次讀取
+field	esi+eax*1+0x67	itemDiceBaseWord	物品定義 +0x67 起的骰記錄基值，i16 有號
+field	esi+edx*1+0x41	itemAttributeBits	物品定義 +0x41 屬性 byte；位 0 設定時實例旗標 +6 設 1

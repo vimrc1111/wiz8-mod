@@ -1,0 +1,23 @@
+call	538620	storeActionRecord	清空指定來源的動作記錄：以種類碼加三個 -1 組成記錄交給 5387f0 寫入；本節點傳種類 0、來源 1；calc 的 record／store 重現（0x520ea7..0x520eaa）
+call	562a50	markPanelsDirty	模式 7 且介面物件存在時對 +0xf4 併入更新位元；calc 的 ui 重現，位元＝1<<槽位（0x520ee5）
+call	5653f0	markMonsterDisplayDirty	選中槽位時標記介面物件 +0x2c0／+0x2c8；calc 的 cone 重現（0x520edc）
+data	4	無關	堆疊參數位移立即值，非資料表或全域記憶體引用
+data	8	無關	堆疊參數位移立即值，非資料表或全域記憶體引用
+data	c	無關	堆疊參數位移立即值，非資料表或全域記憶體引用
+data	652da6	hasMagicItemFlag	背包是否持有 0x254 號物品的快取位元組，換到 0xfe1 欄時由 521060 結果寫入；來源 exe 0x520daf
+data	68517c	partyActiveFlag	隊伍啟用旗標位元組；為零則不處理（0x520d5f）
+data	6836a8	battleContext	戰鬥上下文指標；每角色 0xd4 記錄的 +0x99 位元組在行動更新時取反；case 配置合法物件
+data	683f94	combatActiveFlag	戰鬥進行中旗標位元組；非零才重做行動記錄與切換 +0x99
+data	685178	partySlotRecords	槽位記錄陣列的執行期指標，索引乘 0x106；非 exe 常數表
+data	68518d	activeCharacterIndex	目前選中角色索引；與槽位相同才標記怪物顯示（0x520ed4）
+data	68ec78	combatPhaseType	畫面模式；7 才碰介面選取物件
+data	68edcc	uiSelectionObject	介面選取物件指標；+0x2ca 為字，不是 -1 才呼叫 595600；case 配置合法物件
+field	eax+0x0	combatSlotToggle	與 eax+edx*4+0x99 同一個位元組，以 lea 取址後寫回；來源 exe 0x520ed2
+field	eax+0x2ca	uiSelectionSlot	介面選取物件 +0x2ca 的 u16；不是 0xffff 才多呼叫一次 595600；來源 exe 0x520f00
+field	eax+edx*4+0x99	combatSlotToggle	戰鬥上下文每角色記錄 +0x99 的位元組，行動更新時 xor 1；來源 exe 0x520ec1
+field	esi+0x4	characterPresent	角色主記錄 +4 的存在位元組；為零直接返回；來源 exe 0x520d54
+field	esi+eax*1+0x104	slotWeaponReady	槽位記錄 +0x104 位元組；與 5458a0 結果一起決定 +0x6d 是否設 1；來源 exe 0x520e2d
+field	esi+eax*1+0x3d	slotActionCode	槽位記錄 +0x3d 動作碼，i32；來源 exe 0x520dcb
+field	esi+eax*1+0x49	slotActionArg	槽位記錄 +0x49 動作參數（指標），i32；等於被換的欄位位址才重套；來源 exe 0x520dd7
+field	esi+eax*1+0x6d	slotHandChoice	槽位記錄 +0x6d 手別選擇，i32；來源 exe 0x520df3
+field	esi+ecx*1+0x6d	slotHandChoice	同 esi+eax*1+0x6d，另一暫存器的寫入；來源 exe 0x520e4b

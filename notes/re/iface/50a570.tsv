@@ -1,0 +1,32 @@
+data	4	無關	參數堆疊位移、迴圈計數與回收量，被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移、迴圈計數與回收量，被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移、迴圈計數與回收量，被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移、迴圈計數與回收量，被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移、迴圈計數與回收量，被分析為資料引用，非遊戲資料或表
+call	51bf40	payGold	付款：持有金幣扣掉價格，價格大於持有時歸零；模式 2 原樣跑，calc 內聯同一行為
+data	50a9a4	無關	模式 0..4 的跳躍表，編譯器產物；表外的模式走 0x50a280 尾段
+data	619ebc	無關	怪物記錄 assert 的來源檔名字串，不參與規則
+data	6836a0	npcKindRecords	依 NPC 種類（+0x2e）索引、步長 777 的記錄表；+0x2 的字為送禮額度重置值，case 以 kindAllowance 輸入
+data	685174	partyCharacterRecords	角色主表指標；成長函式 0x553f10 的角色參數 = 表 + 索引*0x1862
+data	685178	partyCharacterSideRecords	角色副表指標，步長 0x106，讀使用旗標
+data	686a48	gameTime	遊戲時間，模式 0 寫入 +0xcc、模式 1 寫入 +0xd0
+field	edx+0x5d	persuadeMin	NPC 模板說服最小調整（有號 byte），模式 1 用
+field	ecx+0x5e	persuadeAdj	NPC 模板說服調整（有號 byte），模式 0 用
+field	esi+0x16	linkedMonsterIdentity	NPC 對應怪物識別碼
+field	esi+0x1a	monsterLinkEnabled	NPC 怪物連結旗標；模式 1 為零時交 0x4e5720 空記錄而 assert
+field	esi+0x1b	npcBaseAttitude	NPC 個體態度 byte，0..99 夾限後寫回
+field	esi+0x25	linkedMonsterAvailable	NPC 已連結怪物可用旗標；模式 1 為零同上
+field	esi+0x2e	npcKind	NPC 種類，索引 0x6836a0 記錄
+field	esi+0x6	npcTemplatePointer	NPC 模板指標
+field	esi+0xc8	flagC8	模式 0 寫 1
+field	esi+0xc9	flagC9	模式 1 寫 1
+field	esi+0xca	giftAllowance	送禮額度 word，模式 2、3 扣減，歸零時重置
+field	esi+0xcc	stampCC	模式 0 寫入遊戲時間
+field	esi+0xd0	stampD0	模式 1 寫入遊戲時間
+field	eax+edx*1+0x2	kindAllowance	0x6836a0 記錄 +0x2 的 word，送禮額度歸零時的重置值
+field	eax+0x24f	monsterTemplateLevel	怪物模板等級 byte；模式 1 的除數，小於 1 取 1
+field	ecx+0x0	partySlotLife	角色欄位的生命 u32，非零才計入隊伍平均
+field	ecx+0x10	partySlotStatus	角色欄位的狀態 u32，小於 15 才計入
+field	ecx-0xa78	partySlotF89	角色 +0x89 值，模式 1 的平均來源
+field	eax*4+0x50a9a4	無關	跳躍表索引，見 0x50a9a4
+field	edx+0x0	partySlotActive	角色副表欄位的使用旗標 byte，非零才計入隊伍平均

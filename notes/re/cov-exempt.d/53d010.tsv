@@ -1,0 +1,1 @@
+53d010	53d143	局部攻擊來源記錄位址為零的 assert（lea eax,[esp+0x14] 之後 test eax,eax）；該位址是堆疊位址，不可能為零，且 srAssertFail 停止、沒有可差分的返回。

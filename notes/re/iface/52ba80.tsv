@@ -1,0 +1,20 @@
+call	4c5730	monster_world_position	從怪物場景物件+0x1d8 的位置記錄+4/+8/+c 取三維座標，供半徑距離比較
+call	4e5620	monster_by_list_index	依目前掃描索引取得全域怪物列表中的怪物記錄；case 配置 list、entries 與 monster，投影涵蓋零或一個已載入怪物，怪物模板索引固定零
+call	517970	damage_dice_roll	半徑內且有效的怪物各擲一次傷害骰，使用 i16 修正與 u8 骰數、面數；HP 為零仍擲骰，负骰值交傷害入口後按 u32 處理，無預先歸零
+call	52bb60	apply_monster_damage	接收骰值、傷害來源與結果累計物件；怪物+0xc5 的 u16 護盾由 +0xc7 期間啟用，完全吸收仍增加結果+4 次數，穿透量才累計至結果+0；怪物+0x2b HP、+0x2f 最大耐力、+0x33 耐力與 +0x242 疲勞均列入 case 投影。0x52be5d 以 u32 溢位後的雙倍傷害除三扣耐力；0x4e4280 死亡清 HP／耐力。固定非戰鬥、無反應狀態，+0x9b=9999 為無期限昏迷以避免另建狀態；來源種類 3／索引 -1 不歸功角色。場景保留原版 vtable 0x5ed22c、timer vtable 0x5ec078，動畫已載入旗標為 4（0x4b6717），空效果列表及訊息文字均在 arena 配置；無 exe 表內嵌
+call	5e2c70	monster_list_count	讀全域怪物列表+8 的數量，空指標回零；迴圈每次重新讀數量
+data	683fad	active_monster_list	全域怪物列表指標，提供數量與索引查找
+data	4	stack_argument_or_saved_register	分析器列出的堆疊位移；入口第一參數為三維中心指標，內部位移亦受暫存器保存與呼叫推參影響，非資料表
+data	8	radius_argument	入口第二參數為 IEEE-754 binary32 半徑；內部堆疊位移隨推參改變，非資料表
+data	c	damage_dice_argument	入口第三參數為四 byte 傷害骰記錄指標；內部堆疊位移隨推參改變，非資料表
+data	10	damage_source_argument_and_scan_index	入口第四參數為傷害來源記錄指標；保存暫存器後的局部堆疊+0x10 保存怪物掃描索引，非資料表
+data	14	damage_result_argument_and_position_scratch	入口第五參數為傷害結果累計物件指標；保存暫存器後的局部堆疊+0x14 起為怪物三維座標暫存，非資料表
+data	fffffffffffffff0	monster_scan_index_local	分析器將負堆疊位移符號延伸為 hex；局部掃描索引，非 exe 資料表
+data	fffffffffffffff4	monster_position_x_local	分析器將負堆疊位移符號延伸為 hex；怪物世界 X 座標暫存，非 exe 資料表
+data	fffffffffffffff8	monster_position_y_local	分析器將負堆疊位移符號延伸為 hex；怪物世界 Y 座標暫存，非 exe 資料表
+data	fffffffffffffffc	monster_position_z_local	分析器將負堆疊位移符號延伸為 hex；怪物世界 Z 座標暫存，非 exe 資料表
+field	eax+0x0	radius_center_x	中心向量 X，binary32；與怪物世界 X 相減，三軸平方按 Z+Y+X 累加再開根號，以 x87 64 位有效精度保留各步取整；等距及 unordered 比較均命中（0x52bb08）
+field	eax+0x4	radius_center_y	中心向量 Y，binary32；與怪物世界 Y 相減
+field	eax+0x8	radius_center_z	中心向量 Z，binary32；與怪物世界 Z 相減
+field	esi+0x14	monster_active	怪物有效旗標，u8；零時跳過距離判定與傷害骰
+field	esi+0xc	monster_scene_object	怪物場景物件指標；位置查詢經場景物件+0x1d8 取得位置記錄

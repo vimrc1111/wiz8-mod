@@ -1,0 +1,3 @@
+5ba740	5ba753	施法者索引 <0 的 assert 塊；srAssertFail 停止、沒有可差分的返回。calc 對施法者 0..7 以外 panic。
+5ba740	5ba773	施法者索引 ≥8 的 assert 塊；srAssertFail 停止、沒有可差分的返回。calc 對施法者 0..7 以外 panic。
+5ba740	5ba7a3	施法者在場旗標為 0 的 assert 塊；srAssertFail 停止、沒有可差分的返回。calc 在在場 byte 為 0 時 panic。

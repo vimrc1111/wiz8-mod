@@ -1,0 +1,23 @@
+call	406bf0	cachedClockPlus	快取時鐘 0x6eb70c 加參數，u32 回繞（build/wiz8.asm:348525 前後）；這裡參數是 R(5000)+5000，結果存入肖像記錄 +0x95；calc 重現加法，時鐘為 case 輸入 tickBase。
+call	40efa0	boundedRandom	有界亂數 R(n)：迴圈 1 每個合格成員 R(100)，迴圈 2 每個在場成員 R(2) 與（非零時）R(5000)；模擬器 RNG 樁記錄順序，calc 以 Rand 重放。
+call	562a50	battleTargetMaskSet	模式 0x68ec78 為 7 且戰鬥物件 0x68edcc 存在時，把成員位元 1<<m 以 OR 寫入戰鬥物件 +0xf4；case 輸入 mode、batPtr、batMask，輸出 obatMask。
+call	598c10	widgetShowRefresh	對十二個介面小工具呼叫 5db8d0(widget,1)：寫小工具 +0x35，並依小工具索引 +0x1c 與表 0x6e1240 設物件 +0x60 位元 0 與小工具 +0x38；case 以十二個小工具與表項目物件輸入／輸出，calc 重現（表只有索引 0..11 有物件）。
+data	61e5e8	noticeTextIndex	低 16 bits 是文字表索引（只決定通知文字指標，不影響規則輸出）；case 拆成 idxLo／idxHi 兩個輸入，高 16 bits 被 and 0xffff 遮掉。
+data	6836a8	partyRecord	隊伍記錄指標；空則整段迴圈 1 略過，+0xa52 非零才跑；case 輸入 partyPtr（0 或夾具）。
+data	6836b8	portraitRecords	八筆肖像／頭像記錄陣列（每筆 0x118 bytes）；+0x8d 表情、+0x95 時間、+0x99／+0x9a 旗標；case 輸入與輸出。
+data	68374d	portraitRecords	肖像記錄 0 的 +0x95 時間欄位址（迴圈 2 以 esi-5 存取）。
+data	683752	portraitRecords	肖像記錄 0 的 +0x9a 旗標欄位址，也是迴圈 2 的指標與其 +0x118 步進的起點。
+data	6837d0	無關	肖像記錄陣列內的掃描邊界引用（記錄 1 的 +0x118 位置），非獨立資料。
+data	684012	portraitRecords	迴圈 2 的結束位址（記錄 0 的 +0x9a 加 8 筆）；決定成員數 8。
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）；case 以夾具接線，通知記錄的角色名位址由它推出。
+data	685178	partyPresenceRecords	隊伍在場記錄陣列基址（每人 0x106 bytes，第 0 個 byte 為在場旗標）。
+data	68c09c	noticeTextTable	通知文字表物件指標；+0x90c 與按索引取的格式／引數字串指標，只決定通知文字，不影響規則輸出。
+field	eax+0x90c	noticeFormatText	文字表 +0x90c 的通知格式字串指標，只決定通知文字，不影響規則輸出。
+field	eax+0xa52	partyRestActive	隊伍記錄 +0xa52 byte；為零時略過迴圈 1（不施加也不通知）；case 輸入。
+field	eax+ecx*4	noticeText	文字表按索引取的通知引數指標，只決定通知文字，不影響規則輸出。
+field	ebx+eax*1	memberPresent	在場記錄第 0 byte，迴圈 1 非零才處理該成員；case 輸入。
+field	ebx+ecx*1	memberPresent	同上，迴圈 2 的檢查形式；case 輸入。
+field	edi+ecx*1+0xb01	primaryCondition	角色主狀態 u32（+0xb01）；迴圈 1 小於 0x12 才擲骰，迴圈 2 由 52f000 比 0xf 決定表情；case 輸入。
+field	edi+edx*1+0x161	restResistStat	角色 +0x161 u32，乘 70 除以 100（32 位回繞）後自擲骰扣除，決定是否施加狀態與持續時間；case 輸入。
+field	esi+0x0	portraitRestFlag	肖像記錄 +0x9a byte，迴圈 2 對在場成員寫 1；case 輸入與輸出。
+field	esi-0x5	portraitRestTime	肖像記錄 +0x95 u32，R(2) 非零時寫入 R(5000)+5000 加快取時鐘；case 輸入與輸出。

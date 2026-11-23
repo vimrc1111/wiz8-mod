@@ -1,0 +1,16 @@
+{
+  "id": "overlay-p2",
+  "duration": 45,
+  "files": [
+    {
+      "src": "build/overlay/p2/PATCH.002",
+      "dst": "Patches/PATCH.002"
+    }
+  ],
+  "steps": [
+    {
+      "t": 40,
+      "shot": "menu"
+    }
+  ]
+}

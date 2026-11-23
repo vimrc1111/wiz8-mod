@@ -1,0 +1,60 @@
+# 位址樁：0x524a10、0x4f0500、0x4f00c0、0x4e79a0、0x4e9f90（D4 公式，回傳取自 case 輸入；F 跑 characterActionEligibilityNode、combatPhaseStepNode、combatMovementPhaseLimitNode、pcActionEligibilityNode、combatDefeatResolutionNode）；0x4e9b20、0x4e8370（D4 公式，回傳不被讀，0x5a5a5a5a 檢查 diff=0）；0x4f0630、0x562a50、0x58ac00、0x408860（排除，記錄引數與次數成為輸出；0x4f0630 寫 cb+0x918=3、0x683fce=0）。其餘子呼叫原樣執行，calc 依其在本節點輸入域的行為重現。
+call	2b6	無關	登記器把 assertion 的 IAT 間接呼叫（0x5ebaf4）誤列為相對目標，實際為 srAssertFail；只在入口 cb+0x7b0 非零時到達，calc panic，cov-exempt 登記
+call	406bf0	clockAfter	快取時鐘 0x6eb70c 加參數，u32 回繞；cb+0x7ac 與 cb+0x91c 由 case 輸入 clock 重現
+call	41f140	optionBit6	選項 dword（*0x652dac）bit 6，指標為空回 0；case 輸入 optPtr、opts
+call	5e2c70	monsterListCount	列表指標為空回零，否則讀列表 +8 的筆數；每輪重讀，case 輸入 monCount（上限 4，超過 calc panic）
+data	5ebaf4	無關	srAssertFail 匯入槽；只用於入口斷言，見 call 2b6
+data	61738c	無關	斷言訊息字串（原始檔名），只傳給 srAssertFail
+data	61744c	無關	斷言條件字串，只傳給 srAssertFail
+data	6836a8	戰鬥狀態記錄指標	cb：+8 階段、+0x7ac..0x7b8 選定行動者、+0x910..0x918 移動階段、+0xa50..0xa60 旗標
+data	683f94	在戰鬥中	byte；非零才掃隊伍放棄行動的角色
+data	683fa5	敵對怪物數	與受魅惑怪物數任一非零且選項 bit6 時才設 cb+0x7ac 計時
+data	683fad	活動怪物清單指標	怪物 k 的物件指標；case 固定為 4 筆以下的清單
+data	683fce	移動階段旗標	byte；非零時呼叫 0x4f00c0 決定是否推進階段，0x4f0630 清零
+data	6850be	受魅惑怪物數	同 683fa5
+data	6850d2	旗標 6850d2	byte；非零時不檢 pcActionEligibility，影響 0x7ac 上限與 0x91c 寫入
+data	6850dd	行動延遲毫秒	u32；cb+0x7ac＝時鐘＋此值，0xa60 設時上限 800
+data	685174	角色記錄基底	角色 i 記錄＝基底＋0x1862×i
+data	685178	隊伍欄位基底	欄位 i＝基底＋0x106×i；+0 在場、+1 行動、+0x3d 替代行動
+data	68c09c	字串表指標	+0x8a8 行動者訊息字串
+data	ffffffffffffffff	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x0	角色行動階段	cb+0x18+0xd4×i，u32；放棄行動時寫 0
+field	eax+0x10	怪物群組指標	怪物物件 +0x10，指向群組記錄（+0 階段、+4 旗標）
+field	eax+0x107	怪物主狀態	u32；<0xf 才可被選為行動者
+field	eax+0x15	怪物啟用	byte；零則略過
+field	eax+0x24e	怪物忙碌	byte；非零不可選
+field	eax+0x2b	怪物可行動	u32；非零才可選
+field	eax+0x2e1	怪物行動	i32；群組到階段時寫 -1，選定時讀出判略過
+field	eax+0x34	角色已處理旗標	cb+0x4c+0xd4×i，byte；放棄行動時設 1
+field	eax+0x4	群組已處理旗標	byte；群組階段到時設 1
+field	eax+0x8a8	行動者訊息字串	字串表項，排除樁 0x58ac00 引數
+field	ecx+0x8a8	行動者訊息字串	同 eax+0x8a8
+field	eax+0xa50	cb 回合旗標 a50	byte；迴圈後清零
+field	eax+0xa51	cb 回合旗標 a51	byte；迴圈後清零
+field	eax+ebp*1	角色在場	byte，隊伍欄位 +0；零則略過
+field	ebx+edx*1	角色在場	同 eax+ebp*1
+field	ebx+edx*1+0x1	角色行動	i32；等於 9 才走放棄行動處理
+field	edx+ebp*1+0x1	角色行動	i32；放棄行動時寫 -1
+field	esi+ecx*2+0x1	角色行動	i32；選定角色行動
+field	esi+ecx*2+0x3d	角色替代行動	i32；cb+0x4c 旗標設時改讀
+field	ebx+ecx*1+0xb01	角色主狀態	u32；<0xf 才可選、≤0xc 才走放棄行動處理
+field	esi+ecx*1+0xb01	角色主狀態	同 ebx+ecx*1+0xb01
+field	ebx+ecx*1+0xb11	角色生命	u32；零則略過
+field	esi+ecx*1+0xb11	角色生命	同 ebx+ecx*1+0xb11
+field	ecx+0x0	群組階段	u32；等於 cb+8 才處理該群組，處理後寫 0
+field	esi+0x0	戰鬥階段	cb+8，u32；加上 0x4f0500 的步進
+field	edi+edx*1+0x18	角色行動階段	cb+0x18+0xd4×i；等於 cb+8 才可選
+field	edx+ecx*4+0x4c	角色已處理旗標	cb+0x4c+0xd4×i；決定讀行動或替代行動
+field	edx+0x8	戰鬥階段	cb+8，u32
+field	edx+0x7ac	下次行動時刻	u32；時鐘＋延遲
+field	edx+0x7b0	已選定行動者	u32；入口須為 0（斷言），選定時設 1
+field	edx+0x7b4	選定角色索引	i32；-1 為無
+field	ecx+0x7b4	選定角色索引	同 edx+0x7b4
+field	edx+0x7b8	選定怪物指標	u32；0 為無
+field	ecx+0x7b8	選定怪物指標	同 edx+0x7b8
+field	edx+0x910	移動階段啟用	u32；非零且 0x918＝0、0x914＝cb+8 時進移動階段
+field	edx+0x914	移動階段開始階段	u32
+field	edx+0x918	移動階段狀態	u32；0 未開始、2 進行中、3 結束
+field	edx+0xa50	cb 回合旗標 a50	同 eax+0xa50
+field	edx+0xa60	行動延遲上限旗標	byte；非零時延遲上限 800，處理後清零
+field	ecx+0xa60	行動延遲上限旗標	同 edx+0xa60

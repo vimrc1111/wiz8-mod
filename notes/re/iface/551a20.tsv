@@ -1,0 +1,4 @@
+call	517970	effectQuantityDice	擲效果量骰：效果+4 的 i16 基值、+6 的 u8 骰數、+7 的 u8 面數；每骰含固定 +1 與 R(面數)
+call	517f90	effectQuantityPercentBonus	效果量加上百分加成；乘積保留低 32 位後按無號值除以 100，最後加法亦保留低 32 位
+data	4	無關	分析器將清理骰指標參數的立即值 4 列為資料引用，沒有讀取該位址的規則資料
+field	esi+0x24	effectQuantityBonusPercent	效果量百分加成，32 位；9999 規則效果量略過加成；來源 notes/re/formulas-2.md:35

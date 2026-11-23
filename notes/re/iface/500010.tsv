@@ -1,0 +1,7 @@
+call	51d610	character_scroll_use_qualification	角色職業、種族、性別遮罩與兩組屬性／技能需求；卷軸只在已學狀態恰為 1 時拒絕。子函式原樣重放，calc 重用 itemUseRequirementsNode；介面詳見 notes/re/iface/51d610.tsv。
+data	4	無關	第一個堆疊參數的位移；參數是角色指標，並非全域規則資料。
+data	8	無關	第二個堆疊參數位移與子呼叫參數清理量；物品實例指標由 case 提供，非資料表。
+data	68516c	item_definition_records	物品定義庫指標；以實例的定義編號選記錄，每筆 269 bytes，case 的 indexed arena 提供合成記錄。
+field	ecx+esi*1+0x42	item_effect_kind	效果種類 u8；值 3 為卷軸，其他種類不可使用此介面。來源 0x50002b..0x500038；case 涵蓋全部 byte 值。
+field	edx+0x0	instance_item_definition_index	實例的物品定義編號 u32，選擇定義庫記錄；本函式沒有空物品檢查，輸入須指向有效記錄。
+field	edx+0x6	instance_identified	鑑定狀態 u8，零拒絕、任意非零繼續資格判定；來源 0x500039..0x500042。名稱證據 0x51b5dc..0x51b656：零使用類別名稱，非零使用物品名稱；與 +4 堆疊數量及 +5 充能次數不同。

@@ -1,0 +1,1 @@
+ok  	wiz8-mod/tools/fitcheck	0.015s

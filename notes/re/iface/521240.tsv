@@ -1,0 +1,21 @@
+call	5211a0	charItemCount	單一角色的背包 12 格（+0xf5d 起）累計 itemId 數量；scope 非零時再掃 8 格（+0x1029 起，計數取 +0xf61 起的 byte）；首筆格位址寫入輸出指標。calc 在本檔內重現
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	685174	charArrayBase	角色記錄陣列指標，每筆 0x1862 bytes（notes/re/formulas.md:9）
+data	685178	charActiveFlagsBase	每角色 0x106 bytes 的狀態記錄陣列指標，記錄首 byte 非零才計入該角色
+data	685191	partyItemTable	隊伍物品表，每筆 12 bytes：物品 ID u32 +0、數量 u8 +4；容量 500 筆
+data	685195	partyItemTable	隊伍物品表首筆的數量 byte（+4）
+data	68519d	partyItemTable	隊伍物品表第二筆的物品 ID（分析器把 +0xc 的筆距當成獨立位址）
+data	6851a1	partyItemTable	隊伍物品表第二筆的數量 byte（同上）
+data	686901	partyItemCount	隊伍物品表目前筆數 u32
+data	6874ca	pendingFlag	待拾取物品記錄的有效旗標 byte
+data	6874cb	pendingItemId	待拾取物品記錄：物品 ID u32；其位址也作為首筆格位址輸出
+data	6874cf	pendingCount	待拾取物品記錄：數量 byte（不套用零當一）
+field	ebp+0x0	firstOwnerOut	呼叫端第 3 參數的輸出位置：第一個持有該物品的角色記錄位址
+field	ebx+0x0	firstSlotOut	呼叫端第 2 參數的輸出位置：第一個命中的格位址
+field	ecx+0x0	partyItemId	隊伍物品表筆的物品 ID u32
+field	ecx+0x4	partyItemCnt	隊伍物品表筆的數量 byte，0 視為 1
+field	edi+edx*1	charActive	狀態記錄陣列第 i 筆首 byte，非零表示該角色在隊

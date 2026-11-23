@@ -1,0 +1,13 @@
+FAIL wrap-rule：英文字中間 U+0061|U+0062 得 1 要 0
+FAIL wrap-rule：格式記號中間 U+0025|U+0073 得 1 要 0
+FAIL wrap-rule：中|， U+4F0D|U+FF0C 得 1 要 0
+FAIL wrap-rule：中|。 U+4F0D|U+3002 得 1 要 0
+FAIL wrap-rule：中|、 U+4F0D|U+3001 得 1 要 0
+FAIL wrap-rule：中|！ U+4F0D|U+FF01 得 1 要 0
+FAIL wrap-rule：中|？ U+4F0D|U+FF1F 得 1 要 0
+FAIL wrap-rule：中|」 U+4F0D|U+300D 得 1 要 0
+FAIL wrap-rule：中|） U+4F0D|U+FF09 得 1 要 0
+FAIL wrap-rule：「|中 U+300C|U+4F0D 得 1 要 0
+FAIL wrap-rule：（|中 U+FF08|U+4F0D 得 1 要 0
+FAIL wrap-rule：英|， U+0061|U+FF0C 得 1 要 0
+FAIL wrap-rule

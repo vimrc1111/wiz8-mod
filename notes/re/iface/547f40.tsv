@@ -1,0 +1,12 @@
+call	4e5620	monsterByIndex	依怪物列表索引取得實例；本節點使用 0 起算的戰場列表，不使用 10000 起算的另一列表（0x4e56a4）。
+call	547940	characterHasAbility	角色目前職業與種族能力的聯集；本節點查祈禱能力 11，無動態吐息例外（notes/re/abilities.md:11）。
+call	5e2c70	monsterListCount	空列表指標回零，否則讀列表 +8 的筆數（0x5e2c70）。
+data	4	無關	清理一個列表參數的堆疊長度立即值；不是遊戲資料位址。
+data	6836a8	battlePointer	戰鬥物件指標，空指標禁止祈禱；含各角色祈禱使用旗標（notes/re/abilities.md:35）。
+data	683fad	monsterListPointer	戰場怪物列表指標；列表 +0 指向實例指標陣列，+8 是筆數（0x5e2870、0x5e2c70）。
+data	685174	partyCharacterBase	角色陣列基址，角色索引乘 6242 取得能力查詢記錄（0x547f40）。
+field	eax+0x14	monsterPresent	怪物在場旗標，非零才可成為祈禱的敵人候選（iface/4e3930.tsv、0x547fa6）。
+field	eax+0x15	monsterActive	怪物啟用旗標，非零才可成為祈禱的敵人候選（iface/4e3930.tsv、0x547fb0）。
+field	eax+0x16	monsterDisposition	怪物陣營必須為敵方 1；中立 0、友方 2 不合格（iface/547080.tsv、0x547fb7）。
+field	eax+0x2b	monsterCurrentHP	目前生命 u32 非零即存活；含最高位值，不做有號正數判斷（notes/re/combat-2.md:103、0x547fbd）。
+field	ecx+eax*4+0xb0	characterPrayerUsed	戰鬥物件中角色列的祈禱使用旗標，位於 +176+212×角色索引；非零禁止再祈禱（0x547f76、notes/re/abilities.md:35）。

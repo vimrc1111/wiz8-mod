@@ -1,0 +1,14 @@
+call	4e5620	monsterByListIndex	依列表索引取得怪物記錄，資格逐筆檢查。
+call	4e5720	monsterTemplate	由怪物模板索引取得已載入模板，讀取其類型。
+call	547940	characterHasAbility	合併職業與種族能力表，查能力 0x11；表由玩家 exe 讀取。
+call	5e2c70	monsterListCount	空列表回零，否則讀列表筆數，控制搜尋範圍。
+data	4	無關	索引運算比例與堆疊參數清理大小，不是遊戲資料位址。
+data	6836a8	battleState	戰鬥狀態指標；不存在戰鬥則不可使用。
+data	683fad	monsterList	怪物列表指標；空列表沒有候選目標。
+data	685174	partyCharacters	角色陣列基址，每列 6242 bytes；職業與種族决定能力。
+field	eax+0x14	monsterPresent	怪物在場旗標，非零才是候選。
+field	eax+0x15	monsterActive	怪物存活／活動旗標，非零才是候選。
+field	eax+0x16	monsterDisposition	怪物對隊伍關係，值 1 表示敵對候選。
+field	eax+0x2b	monsterCurrentHP	怪物目前生命，以無號非零判斷，包含高位為 1 的數值。
+field	eax+0xcb	monsterTemplateType	模板類型需等於 20；亡靈名稱依 abilities.md:33 為推測。
+field	ecx+eax*4+0xb1	characterTurnUndeadUsed	戰鬥角色列的驅散使用旗標，角色步距 212 bytes；非零不可再次使用。

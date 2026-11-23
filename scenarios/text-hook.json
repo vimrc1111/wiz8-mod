@@ -1,0 +1,16 @@
+{
+  "id": "text-hook",
+  "duration": 60,
+  "files": [
+    {
+      "src": "hook/ddraw/out/ddraw.dll",
+      "dst": "ddraw.dll"
+    }
+  ],
+  "steps": [
+    {
+      "t": 40,
+      "shot": "menu"
+    }
+  ]
+}

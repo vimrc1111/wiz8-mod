@@ -1,0 +1,12 @@
+call	50e650	rebuildCharacterStatusAndAbilities	移除後重建狀態／總修正、有效屬性技能及負重；重用 statusEffectRebuildNode 的完整差分介面與使用者 exe 表；其他能力快取沿用該節點輸出範圍（build/wiz8.asm:395620）
+call	55ee30	markCharacterInterfaceRefresh	模式 6 設物品介面刷新位 0x100；模式 7 將角色槽位旗標送交戰鬥介面刷新；其他模式不寫入（build/wiz8.asm:478051）
+call	562a50	markCombatInterfaceRefresh	模式 7 且戰鬥介面物件存在時，將刷新位元加入物件 +0xf4；本節點要求效果與能力面板刷新（build/wiz8.asm:482405）
+data	4	無關	子呼叫的一個參數堆疊清理大小，非遊戲資料
+data	8	無關	兩次刷新子呼叫參數的堆疊清理大小，非遊戲資料
+data	6840bb	magicBuffRefreshPending	移除索引 6 後設為 1；其他索引保留原 byte 值
+data	685174	partyCharacterRecords	角色陣列基址；隊伍索引選取步長 0x1862 的記錄
+data	68ec78	interfaceMode	模式 7 要求戰鬥介面面板刷新；子呼叫也讀取模式 6 的物品介面分支
+field	eax+ebx*1+0xb05	characterPrimaryTimedEffect	角色主效果索引；從 7 向下選 u32 剩餘時間非零的最高索引，全空也寫 0；掃描起點 C+0xac1 為第 7 筆 +8，而非強度
+field	edx+0x0	characterTimedEffectStrength	C+0xa65+12×效果索引的四位元組強度；指定記錄歸零，其他記錄保留；能力重算讀 low byte；主效果選擇不讀強度
+field	edx+0x4	characterTimedEffectMultiplier	持續效果倍率欄；移除清 full-u32，能力重算讀 low u16
+field	edx+0x8	characterTimedEffectDuration	持續效果剩餘時間；移除清 full-u32，主效果選擇及能力重算皆以非零判定生效

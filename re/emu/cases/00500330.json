@@ -1,0 +1,7663 @@
+{
+ "cc": "cdecl",
+ "steps": 60000,
+ "path_limit": 512,
+ "samples": 64,
+ "objects": {
+  "monster": 0,
+  "templates": 4096,
+  "chars": 8192,
+  "spells": 12288
+ },
+ "args": [
+  "@monster",
+  0,
+  0
+ ],
+ "setup": [
+  {
+   "at": {
+    "global": "0x65be1c"
+   },
+   "value": "@spells",
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x685174"
+   },
+   "value": "@chars",
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x6875ef"
+   },
+   "value": 0,
+   "size": 4
+  },
+  {
+   "at": {
+    "global": "0x6840c7"
+   },
+   "value": "0x20001000",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "templates",
+    "offset": 623
+   },
+   "value": 11,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "templates",
+    "offset": 391
+   },
+   "value": 397,
+   "size": 2
+  },
+  {
+   "at": {
+    "global": "0x6840cb"
+   },
+   "value": "0x20001297",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "templates",
+    "offset": 1286
+   },
+   "value": 13,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "templates",
+    "offset": 1054
+   },
+   "value": 397,
+   "size": 2
+  },
+  {
+   "at": {
+    "global": "0x6840cf"
+   },
+   "value": "0x2000152e",
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "templates",
+    "offset": 1949
+   },
+   "value": 17,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "templates",
+    "offset": 1717
+   },
+   "value": 397,
+   "size": 2
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 73
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 86
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 520
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 533
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 967
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 980
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 1414
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 1427
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 1861
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 1874
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 2308
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 2321
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 2755
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 2768
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 3202
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 3215
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 3649
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 3662
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 4096
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 4109
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 4543
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 4556
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 4990
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 5003
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 5437
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 5450
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 5884
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 5897
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 6331
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 6344
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 6778
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 6791
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 7225
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 7238
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 7672
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 7685
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 8119
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 8132
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 8566
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 8579
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 9013
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 9026
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 9460
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 9473
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 9907
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 9920
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 10354
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 10367
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 10801
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 10814
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 11248
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 11261
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 11695
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 11708
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 12142
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 12155
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 12589
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 12602
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 13036
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 13049
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 13483
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 13496
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 13930
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 13943
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 14377
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 14390
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 14824
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 14837
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 15271
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 15284
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 15718
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 15731
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 16165
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 16178
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 16612
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 16625
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 17059
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 17072
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 17506
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 17519
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 17953
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 17966
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 18400
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 18413
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 18847
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 18860
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 19294
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 19307
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 19741
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 19754
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 20188
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 20201
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 20635
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 20648
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 21082
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 21095
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 21529
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 21542
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 21976
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 21989
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 22423
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 22436
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 22870
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 22883
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 23317
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 23330
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 23764
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 23777
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 24211
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 24224
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 24658
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 24671
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 25105
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 25118
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 25552
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 25565
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 25999
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 26012
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 26446
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 26459
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 26893
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 26906
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 27340
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 27353
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 27787
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 27800
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 28234
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 28247
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 28681
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 28694
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 29128
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 29141
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 29575
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 29588
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 30022
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 30035
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 30469
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 30482
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 30916
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 30929
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 31363
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 31376
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 31810
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 31823
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 32257
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 32270
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 32704
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 32717
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 33151
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 33164
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 33598
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 33611
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 34045
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 34058
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 34492
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 34505
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 34939
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 34952
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 35386
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 35399
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 35833
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 35846
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 36280
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 36293
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 36727
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 36740
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 37174
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 37187
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 37621
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 37634
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 38068
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 38081
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 38515
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 38528
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 38962
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 38975
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 39409
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 39422
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 39856
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 39869
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 40303
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 40316
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 40750
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 40763
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 41197
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 41210
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 41644
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 41657
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 42091
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 42104
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 42538
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 42551
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 42985
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 42998
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 43432
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 43445
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 43879
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 43892
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 44326
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 44339
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 44773
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 44786
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 45220
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 45233
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 45667
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 45680
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 46114
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 46127
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 46561
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 46574
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 47008
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 47021
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 47455
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 47468
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 47902
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 47915
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 48349
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 48362
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 48796
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 48809
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 49243
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 49256
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 49690
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 49703
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 50137
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 50150
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 50584
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 50597
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 51031
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 51044
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 51478
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 51491
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 51925
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 51938
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 52372
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 52385
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 52819
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 52832
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 53266
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 53279
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 53713
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 53726
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 54160
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 54173
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 54607
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 54620
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 55054
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 55067
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 55501
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 55514
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 55948
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 55961
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 56395
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 56408
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 56842
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 56855
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 57289
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 57302
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 57736
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 57749
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 58183
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 58196
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 58630
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 58643
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 59077
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 59090
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 59524
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 59537
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 59971
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 59984
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 60418
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 60431
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 60865
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 60878
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 61312
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 61325
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 61759
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 61772
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 62206
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 62219
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 62653
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 62666
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 63100
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 63113
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 63547
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 63560
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 63994
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 64007
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 64441
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 64454
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 64888
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 64901
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 65335
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 65348
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 65782
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 65795
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 66229
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 66242
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 66676
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 66689
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 67123
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 67136
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 67570
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 67583
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 68017
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 68030
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 68464
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 68477
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 68911
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 68924
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 69358
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 69371
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 69805
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 69818
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 70252
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 70265
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 70699
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 70712
+   },
+   "value": 9,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 71146
+   },
+   "value": 7,
+   "size": 4
+  },
+  {
+   "at": {
+    "object": "spells",
+    "offset": 71159
+   },
+   "value": 9,
+   "size": 4
+  }
+ ],
+ "in": [
+  {
+   "name": "monsterBonus",
+   "at": {
+    "object": "monster",
+    "offset": 761
+   },
+   "size": 4,
+   "signed": true
+  },
+  {
+   "name": "templateBonus",
+   "at": {
+    "object": "templates",
+    "offset": 623,
+    "index": "templateId",
+    "stride": 663,
+    "count": 3
+   },
+   "size": 4,
+   "signed": true
+  },
+  {
+   "name": "templateId",
+   "at": {
+    "object": "monster",
+    "offset": 8
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "spellId",
+   "at": {
+    "arg": 2
+   },
+   "size": 4,
+   "signed": false
+  },
+  {
+   "name": "spellCostPerLevel",
+   "at": {
+    "object": "spells",
+    "offset": 73,
+    "index": "spellId",
+    "stride": 447,
+    "count": 160
+   },
+   "size": 4,
+   "signed": true
+  },
+  {
+   "name": "spellRealmLevel",
+   "at": {
+    "object": "spells",
+    "offset": 86,
+    "index": "spellId",
+    "stride": 447,
+    "count": 160
+   },
+   "size": 4,
+   "signed": true
+  }
+ ],
+ "out": [
+  {
+   "name": "powerLevel",
+   "at": {
+    "reg": "eax"
+   },
+   "size": 4,
+   "signed": false
+  }
+ ],
+ "boundary": [
+  [
+   5,
+   5,
+   0,
+   119,
+   3,
+   3
+  ],
+  [
+   -9,
+   0,
+   1,
+   119,
+   30,
+   30
+  ],
+  [
+   0,
+   0,
+   2,
+   5,
+   6,
+   2
+  ],
+  [
+   30,
+   0,
+   2,
+   5,
+   6,
+   2
+  ],
+  [
+   -5,
+   0,
+   2,
+   5,
+   6,
+   2
+  ],
+  [
+   40,
+   0,
+   2,
+   5,
+   6,
+   2
+  ],
+  [
+   200,
+   0,
+   2,
+   5,
+   6,
+   2
+  ],
+  [
+   -100,
+   10,
+   0,
+   3,
+   6,
+   2
+  ],
+  [
+   -1,
+   0,
+   1,
+   3,
+   6,
+   2
+  ],
+  [
+   2147483647,
+   2147483647,
+   0,
+   3,
+   6,
+   2
+  ],
+  [
+   -2147483648,
+   5,
+   1,
+   3,
+   6,
+   2
+  ],
+  [
+   -2147483648,
+   -2147483648,
+   2,
+   3,
+   6,
+   2
+  ],
+  [
+   2147483647,
+   1,
+   0,
+   3,
+   6,
+   2
+  ],
+  [
+   2147483647,
+   0,
+   0,
+   3,
+   6,
+   2
+  ],
+  [
+   0,
+   2147483647,
+   2,
+   3,
+   6,
+   2
+  ],
+  [
+   10,
+   10,
+   0,
+   0,
+   50,
+   40
+  ],
+  [
+   10,
+   10,
+   1,
+   119,
+   50,
+   40
+  ],
+  [
+   10,
+   10,
+   2,
+   159,
+   50,
+   40
+  ],
+  [
+   10,
+   10,
+   1,
+   118,
+   50,
+   40
+  ],
+  [
+   10,
+   10,
+   0,
+   120,
+   50,
+   40
+  ],
+  [
+   4,
+   3,
+   0,
+   2,
+   -4,
+   -6
+  ],
+  [
+   4,
+   3,
+   0,
+   2,
+   -5,
+   -6
+  ],
+  [
+   4,
+   3,
+   0,
+   2,
+   -1,
+   -1
+  ],
+  [
+   4,
+   3,
+   0,
+   2,
+   -31,
+   -1
+  ],
+  [
+   4,
+   3,
+   0,
+   2,
+   2147483647,
+   -2147483648
+  ],
+  [
+   -3,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   54,
+   -6,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   55,
+   -5,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   56,
+   -4,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   57,
+   -3,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   58,
+   -2,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   59,
+   -1,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   60,
+   0,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   61,
+   1,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   62,
+   2,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   63,
+   3,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   64,
+   4,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   65,
+   5,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   66,
+   6,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   67,
+   7,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   68,
+   8,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   69,
+   9,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   70,
+   10,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   71,
+   11,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   72,
+   12,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   73,
+   13,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   74,
+   14,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   75,
+   15,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   76,
+   16,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   77,
+   17,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   78,
+   18,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   79,
+   19,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   80,
+   20,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   81,
+   21,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   82,
+   22,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   83,
+   23,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   84,
+   24,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   85,
+   25,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   86,
+   26,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   87,
+   27,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   88,
+   28,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   89,
+   29,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   90,
+   30,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   91,
+   31,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   92,
+   32,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   93,
+   33,
+   0
+  ],
+  [
+   -3,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   -2,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   2,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   17,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   26,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   27,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   28,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   42,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   57,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   77,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   107,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   197,
+   3,
+   1,
+   94,
+   34,
+   0
+  ],
+  [
+   -3,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   -2,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   2,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   17,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   26,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   27,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   28,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   42,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   57,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   77,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   107,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   197,
+   3,
+   2,
+   95,
+   35,
+   0
+  ],
+  [
+   -3,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   -2,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   2,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   17,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   26,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   27,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   28,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   42,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   57,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   77,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   107,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   197,
+   3,
+   0,
+   96,
+   36,
+   0
+  ],
+  [
+   0,
+   0,
+   1,
+   2,
+   5,
+   -3
+  ],
+  [
+   0,
+   1,
+   2,
+   2,
+   5,
+   -3
+  ],
+  [
+   17,
+   0,
+   1,
+   2,
+   5,
+   -3
+  ],
+  [
+   17,
+   1,
+   2,
+   2,
+   5,
+   -3
+  ],
+  [
+   40,
+   0,
+   1,
+   2,
+   5,
+   -3
+  ],
+  [
+   40,
+   1,
+   2,
+   2,
+   5,
+   -3
+  ],
+  [
+   70,
+   0,
+   1,
+   2,
+   5,
+   -3
+  ],
+  [
+   70,
+   1,
+   2,
+   2,
+   5,
+   -3
+  ],
+  [
+   100,
+   0,
+   1,
+   2,
+   5,
+   -3
+  ],
+  [
+   100,
+   1,
+   2,
+   2,
+   5,
+   -3
+  ],
+  [
+   0,
+   0,
+   1,
+   2,
+   5,
+   -1
+  ],
+  [
+   0,
+   1,
+   2,
+   2,
+   5,
+   -1
+  ],
+  [
+   17,
+   0,
+   1,
+   2,
+   5,
+   -1
+  ],
+  [
+   17,
+   1,
+   2,
+   2,
+   5,
+   -1
+  ],
+  [
+   40,
+   0,
+   1,
+   2,
+   5,
+   -1
+  ],
+  [
+   40,
+   1,
+   2,
+   2,
+   5,
+   -1
+  ],
+  [
+   70,
+   0,
+   1,
+   2,
+   5,
+   -1
+  ],
+  [
+   70,
+   1,
+   2,
+   2,
+   5,
+   -1
+  ],
+  [
+   100,
+   0,
+   1,
+   2,
+   5,
+   -1
+  ],
+  [
+   100,
+   1,
+   2,
+   2,
+   5,
+   -1
+  ],
+  [
+   0,
+   0,
+   1,
+   2,
+   5,
+   1
+  ],
+  [
+   0,
+   1,
+   2,
+   2,
+   5,
+   1
+  ],
+  [
+   17,
+   0,
+   1,
+   2,
+   5,
+   1
+  ],
+  [
+   17,
+   1,
+   2,
+   2,
+   5,
+   1
+  ],
+  [
+   40,
+   0,
+   1,
+   2,
+   5,
+   1
+  ],
+  [
+   40,
+   1,
+   2,
+   2,
+   5,
+   1
+  ],
+  [
+   70,
+   0,
+   1,
+   2,
+   5,
+   1
+  ],
+  [
+   70,
+   1,
+   2,
+   2,
+   5,
+   1
+  ],
+  [
+   100,
+   0,
+   1,
+   2,
+   5,
+   1
+  ],
+  [
+   100,
+   1,
+   2,
+   2,
+   5,
+   1
+  ],
+  [
+   0,
+   0,
+   1,
+   2,
+   5,
+   8
+  ],
+  [
+   0,
+   1,
+   2,
+   2,
+   5,
+   8
+  ],
+  [
+   17,
+   0,
+   1,
+   2,
+   5,
+   8
+  ],
+  [
+   17,
+   1,
+   2,
+   2,
+   5,
+   8
+  ],
+  [
+   40,
+   0,
+   1,
+   2,
+   5,
+   8
+  ],
+  [
+   40,
+   1,
+   2,
+   2,
+   5,
+   8
+  ],
+  [
+   70,
+   0,
+   1,
+   2,
+   5,
+   8
+  ],
+  [
+   70,
+   1,
+   2,
+   2,
+   5,
+   8
+  ],
+  [
+   100,
+   0,
+   1,
+   2,
+   5,
+   8
+  ],
+  [
+   100,
+   1,
+   2,
+   2,
+   5,
+   8
+  ],
+  [
+   0,
+   0,
+   1,
+   2,
+   5,
+   16
+  ],
+  [
+   0,
+   1,
+   2,
+   2,
+   5,
+   16
+  ],
+  [
+   17,
+   0,
+   1,
+   2,
+   5,
+   16
+  ],
+  [
+   17,
+   1,
+   2,
+   2,
+   5,
+   16
+  ],
+  [
+   40,
+   0,
+   1,
+   2,
+   5,
+   16
+  ],
+  [
+   40,
+   1,
+   2,
+   2,
+   5,
+   16
+  ],
+  [
+   70,
+   0,
+   1,
+   2,
+   5,
+   16
+  ],
+  [
+   70,
+   1,
+   2,
+   2,
+   5,
+   16
+  ],
+  [
+   100,
+   0,
+   1,
+   2,
+   5,
+   16
+  ],
+  [
+   100,
+   1,
+   2,
+   2,
+   5,
+   16
+  ],
+  [
+   0,
+   0,
+   1,
+   2,
+   5,
+   17
+  ],
+  [
+   0,
+   1,
+   2,
+   2,
+   5,
+   17
+  ],
+  [
+   17,
+   0,
+   1,
+   2,
+   5,
+   17
+  ],
+  [
+   17,
+   1,
+   2,
+   2,
+   5,
+   17
+  ],
+  [
+   40,
+   0,
+   1,
+   2,
+   5,
+   17
+  ],
+  [
+   40,
+   1,
+   2,
+   2,
+   5,
+   17
+  ],
+  [
+   70,
+   0,
+   1,
+   2,
+   5,
+   17
+  ],
+  [
+   70,
+   1,
+   2,
+   2,
+   5,
+   17
+  ],
+  [
+   100,
+   0,
+   1,
+   2,
+   5,
+   17
+  ],
+  [
+   100,
+   1,
+   2,
+   2,
+   5,
+   17
+  ],
+  [
+   0,
+   0,
+   1,
+   2,
+   5,
+   30
+  ],
+  [
+   0,
+   1,
+   2,
+   2,
+   5,
+   30
+  ],
+  [
+   17,
+   0,
+   1,
+   2,
+   5,
+   30
+  ],
+  [
+   17,
+   1,
+   2,
+   2,
+   5,
+   30
+  ],
+  [
+   40,
+   0,
+   1,
+   2,
+   5,
+   30
+  ],
+  [
+   40,
+   1,
+   2,
+   2,
+   5,
+   30
+  ],
+  [
+   70,
+   0,
+   1,
+   2,
+   5,
+   30
+  ],
+  [
+   70,
+   1,
+   2,
+   2,
+   5,
+   30
+  ],
+  [
+   100,
+   0,
+   1,
+   2,
+   5,
+   30
+  ],
+  [
+   100,
+   1,
+   2,
+   2,
+   5,
+   30
+  ]
+ ],
+ "random": {
+  "seed": 500330,
+  "count": 400,
+  "ranges": [
+   [
+    -40,
+    150
+   ],
+   [
+    -40,
+    150
+   ],
+   [
+    0,
+    2
+   ],
+   [
+    0,
+    159
+   ],
+   [
+    -6,
+    40
+   ],
+   [
+    -8,
+    16
+   ]
+  ]
+ }
+}

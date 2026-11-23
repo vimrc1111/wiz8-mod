@@ -1,0 +1,26 @@
+call	2b6	無關	分析器列出的例外展開輔助目標；正常返回不執行，與重生規則無關
+call	40efa0	respawnJitterRandom	重放間隔變動的 R(n)，包含有號間隔轉成 u32 的支集
+call	439b80	setRespawnTimerInterval	正秒數覆寫持續秒數，再按速率換算計時單位
+call	43a4e0	constructRespawnTimer	建立速率 1、一般時鐘、未到期的計時器
+call	43a530	restartRespawnTimer	清除到期狀態並更新起迄時間
+call	5e1c22	truncateTimerValue	x87 數值向零截斷為整數
+call	5e1ce0	allocateRespawnTimer	配置 40 bytes；case 固定回 arena 計時器，原版建構子仍執行
+data	5e560b	無關	例外清理描述符，正常路徑不影響重生時間
+data	5ebaf4	respawnTimerAllocationAssert	SR 配置失敗斷言 import，失敗停止而無規則結果
+data	5ec040	respawnJitterFraction	從使用者 exe 讀間隔變動比例，不內嵌表值
+data	607c74	無關	配置失敗斷言的計時器指標名稱文字
+data	60a6b6	defaultRespawnInterval	有號 16 位全域重生間隔，旗標位元 3 選用
+data	60a6e0	無關	配置失敗斷言的來源檔名文字
+data	60a924	無關	配置失敗斷言的說明文字
+data	ffdff000	無關	FS 執行緒例外鏈，不是遊戲重生資料
+field	eax+0x8	respawnTimerFlags	新建時計時器清除位元 1；既有計時器保留旗標
+field	esi+0x0	generatorFlags	位元 3 選全域間隔，其他位元不參與此規則
+field	esi+0x20	respawnTimerPointer	既有或本次建立的重生計時器
+field	esi+0x6	generatorRespawnInterval	旗標未選全域值時使用的有號 16 位間隔
+data	ffffffffffffffdc	無關	分析器列出的堆疊區域偏移；保存暫存值或例外鏈，非絕對遊戲資料
+data	ffffffffffffffe4	無關	分析器列出的堆疊區域偏移；保存暫存值或例外鏈，非絕對遊戲資料
+data	ffffffffffffffe8	無關	分析器列出的堆疊區域偏移；保存暫存值或例外鏈，非絕對遊戲資料
+data	ffffffffffffffec	無關	分析器列出的堆疊區域偏移；保存暫存值或例外鏈，非絕對遊戲資料
+data	fffffffffffffff0	無關	分析器列出的堆疊區域偏移；保存暫存值或例外鏈，非絕對遊戲資料
+data	fffffffffffffff4	無關	分析器列出的堆疊區域偏移；保存暫存值或例外鏈，非絕對遊戲資料
+data	fffffffffffffffc	無關	分析器列出的堆疊區域偏移；保存暫存值或例外鏈，非絕對遊戲資料

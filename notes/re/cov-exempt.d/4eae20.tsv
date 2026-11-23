@@ -1,0 +1,1 @@
+4eae20	4eae51	不在戰鬥中（0x683f94 為 0）的 assert 塊；srAssertFail 停止、沒有可差分的返回（同 4e65d0 4e6645 前例）。calc 在 0x683f94 為 0 時 panic。

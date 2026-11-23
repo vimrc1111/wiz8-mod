@@ -1,0 +1,52 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "0cd62a364e5ea7cdb032ad8aaaa1a828600de27861409eaf4527d882932bc64f",
+  "zh": "離我遠一點。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "b0446bdd486397e151b9900cc29420338d2bb92e979da50d3185083d51121903",
+  "zh": "別管我。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "b221ec9d1dad0038f1d1791d3c9ffc5996c7a99300b3dd9cd8f2349157a41482",
+  "zh": "我對你們的話不太感興趣……"
+ },
+ {
+  "id": 5,
+  "src_sha256": "c3fe2f4fa515b966cd4d1ddc8c04d59b9775c595cae9ef7fd742ec216e8b6aac",
+  "zh": "只是這裡那裡死幾個人而已， Templar 。沒別的好說了。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "64466545bd1e7eadd4d2961cdd85e5daa8e1925b8e63bf6e30b0a1808a722ceb",
+  "zh": "歡迎， Templar 兄弟。"
+ },
+ {
+  "id": 7,
+  "src_sha256": "1ccd43a99dc5eb4bd38c84c54a6591ac91d70447a960b6293a0b4dced13f80bb",
+  "zh": "沒錯， Templar ，一切都照著國王的計畫進行。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "66490d2328270beea84d84a97880a08a7a42e87b22e7e4615b00d080b91da039",
+  "zh": "這是你的血，兄弟！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "64e8642e6bd1889dea7b06dc891d0921f8e0fdb3521db3e2578cb435537e7acc",
+  "zh": "你們會為此付出生命！"
+ },
+ {
+  "id": 10,
+  "src_sha256": "31417af38e2ce1f6c0699d7a5a3bcc8c508523603a3731a8ecf8fb7c73f84ad3",
+  "zh": "我等這一刻等了好久了……"
+ },
+ {
+  "id": 11,
+  "src_sha256": "117781f29d8f7e6f9ae9ca4df15275523039ca5b00b9e2be6e8fb1901699331e",
+  "zh": "來嚐嚐刀劍穿透身體的滋味吧！"
+ }
+]

@@ -1,0 +1,49 @@
+call	2b6	assertFailureIndirectCall	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，成員在場位元組為零時的防禦性斷言，合法輸入不到，只在 cov-exempt 的塊裡出現
+call	65	無關	分析器對 import 0x5eb1a0（malloc）的識別值；實際以間接呼叫配置 0x6c bytes 的擊殺紀錄，case 以 import 樁的回傳輸入 mallocRet 控制成敗
+call	40efa0	boundedRandom	有界亂數 R(n)：後段 R(100) 與百分骰比較；其餘 R(2)、R(3) 在子函式 0x59ac40、0x52f2c0 內；模擬器 RNG 樁記錄順序，calc 以 Rand 重放
+call	547940	characterHasFeature	測試職業列 0x61507c／種族列 0x615130 是否含特性碼（此處查特性 2，致命一擊時是否被 0x547a50 救回）；非公式，case 原樣執行，calc 以 ccaS.feat 讀同兩表建模
+call	5e1c10	operatorDelete	擴充擊殺清單後釋放舊資料緩衝；配置器在模擬器中的釋放為空操作，不影響任何輸出
+call	5e1ce0	operatorNew	擴充擊殺清單時配置 (n+1)*4 bytes（跳到 import 0x5eb1bc）；case 以 import 樁的回傳輸入 newRet 控制成敗，失敗則不加入紀錄
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	1c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5eb1a0	mallocImport	擊殺紀錄（0x6c bytes）的配置；失敗（空指標）就不加入清單；case 以 import 樁輸入控制
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail 的 import；只在斷言失敗路徑呼叫，stop 無返回值可差分
+data	61a710	無關	斷言檔名字串位址，僅 srAssertFail 路徑使用
+data	61c8ac	無關	斷言訊息字串位址，僅 srAssertFail 路徑使用
+data	683fc5	damageFeedbackSuppressed	非零時肖像受傷更新 0x59ac40 不做事，且存活者不發痛苦語音 0x52f2c0；exe 全域位元組，case 當輸入
+data	685174	characterRecords	角色記錄陣列基址（每人 0x1862 bytes）
+data	685178	characterPresenceRecords	在場記錄陣列基址（每人 0x106 bytes，首位元組為在場旗標）；為零時進入斷言
+data	687500	damageNoticeOnlyFlag	非零時只顯示通知（文字表 0x94c）就返回 0，不扣血；exe 全域位元組，case 當輸入
+data	689b34	emptyTextDefault	旗標 a3 為零時 0x590950 的備用文字位址（空字串）；只當格式化參數，文字內容不是輸出
+data	68c09c	textTable	遊戲文字表指標；本函式取項 0x192、0x193、0x194、0x253、0x254、0x255、0x257、0x268 當通知文字，只是 printf 參數，case 全指向空字串
+field	eax+0x4	擊殺清單計數 +0x4	吸收整筆傷害或承傷後加 1（清單非空才加）
+field	eax+0x94c	文字表項 0x94c	0x687500 通知用的文字指標，只是格式化參數
+field	eax+ecx*4	文字表項（索引）	依旗標 a3 選吸收通知文字 0x192／0x193，只是格式化參數
+field	ebp+0x0	擊殺清單傷害累計 +0x0	清單非空時加上承受的傷害量
+field	ebp+0x4	擊殺清單計數 +0x4	承傷後加 1
+field	ebp+0x5c	擊殺清單項數 +0x5c	新增死亡紀錄的索引，增加 1
+field	ebp+0x60	擊殺清單容量 +0x60	有號；項數加 1 超過容量時重配緩衝並設為項數加 1
+field	ebp+0x64	擊殺清單資料指標 +0x64	重配成功時指向新緩衝；失敗時還原舊值
+field	ecx+0x950	文字表項 0x950	旗標 a5 的通知文字指標，只是格式化參數
+field	ecx+0x954	文字表項 0x954	預設通知文字指標，只是格式化參數
+field	ecx+0x95c	文字表項 0x95c	旗標 a3 非零時的備用文字指標，只是格式化參數
+field	ecx+eax*2	在場記錄（索引）	依成員編號取在場位元組
+field	ecx+eax*4	擊殺清單資料項（索引）	複製舊資料到新緩衝，或在尾端放新紀錄
+field	edi+0x0	新擊殺紀錄清零區	配置後 27 個字清零，之後設型態與成員編號
+field	edi+0x161	角色感知 +0x161	無號；末段 R(100) 與 其半值加 0x32 比較，決定是否解除狀態 0xf
+field	edi+0xa3d	角色狀態槽 +0xa3d	狀態 0xf 的持續值；大於 0 且旗標 a3 為零才擲骰
+field	edi+0xa45	角色狀態槽 +0xa45	狀態 0x11 的持續值；致命一擊時小於 7 且有特性 2 才被 0x547a50 救回
+field	edi+0xa83	吸收池 +0xa83	16 位元；先扣吸收池再承傷
+field	edi+0xa85	吸收池啟用 +0xa85	非零才使用吸收池
+field	edi+0xb11	角色 HP +0xb11	為零時不處理；承傷後寫回
+field	edx+0x0	新擊殺紀錄型態 +0x0	設為 1
+field	edx+0x4	新擊殺紀錄成員編號 +0x4	設為 who
+field	edx+0x650	文字表項 0x650	吸收池不足時第二則通知文字，只是格式化參數
+field	edx+0x9a0	文字表項 0x9a0	旗標 a7 的通知文字指標，只是格式化參數
+field	edx+eax*4	擊殺清單資料項（索引）	複製舊資料到新緩衝
+field	edx+ecx*4	文字表項（索引）	依旗標 a3 選吸收通知文字，只是格式化參數

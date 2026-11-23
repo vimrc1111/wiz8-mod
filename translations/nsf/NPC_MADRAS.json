@@ -1,0 +1,572 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "e1c281d0c16ab757717645de6ca4f744e3736d1cce658687fff8979b286790fc",
+  "zh": "是 Gari 派你們來的？來得正是時候！他以為他被 Rapax 搞得很慘？跟我這邊比起來根本小事一樁——巨鼠！牠們跟、嗯……跟你們差不多大！不過你們來了，我的問題就等於解決了一半！準備好進行滅鼠行動（ operation extermination ）了嗎？"
+ },
+ {
+  "id": 2,
+  "src_sha256": "dd66af79e364c96918f04587ed369b92798cde6aed6af62dd8a20915e48eb2e8",
+  "zh": "我很忙。別來煩我。"
+ },
+ {
+  "id": 3,
+  "src_sha256": "15aefe1253ce1ac476300822a1e56ba38191ae3453036bc952fd48cf873a8431",
+  "zh": "走開。"
+ },
+ {
+  "id": 4,
+  "src_sha256": "6ed55ffc30de846b985e90a2def9056bdbe8bef182ded30eb78c940dd0db7b0e",
+  "zh": "*嘿*！我開玩笑的啦！很高興又見到你們。"
+ },
+ {
+  "id": 6,
+  "src_sha256": "b67851785b5319c2e3bd1b373d32c5e797709b611bb938b8dafa401cee9abd27",
+  "zh": "別逼我揍你們！"
+ },
+ {
+  "id": 7,
+  "src_sha256": "dac4dcb91f88b7cc7f5f2abbbd392a79b7036294ea1f3f5f471d4b818445d1d6",
+  "zh": "這是什麼？哼！我被侮辱了！"
+ },
+ {
+  "id": 8,
+  "src_sha256": "09a1ee7800ad0a2af7e4f8606fb4ab47424800b5e9b9732bac913daae6641344",
+  "zh": "哦！嘿！住手！別打了！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "b255491a21d355831586b51ae69f872eb44c2a65ee3cd8959f02ee58b5fe11a0",
+  "zh": "等我做完這個專案才行，不過做完我就去。"
+ },
+ {
+  "id": 10,
+  "src_sha256": "8ac13b423a4dafb415325dbd8f9202220c2b991339b837ee11b6fb601cc8aa2d",
+  "zh": "哦……人這麼多可不行。我個子這麼小，人又這麼多，我會被踩扁的。也許你們讓一個人留下來。"
+ },
+ {
+  "id": 11,
+  "src_sha256": "b9406c1c2aa141dec619b7761c2cb991a571a3a3a62ff3ca0c47030dfffb7428",
+  "zh": "當然！你們知道的，我技術很高超的。真的！我可是一流的 Gadgeteer （ gadgeteer ）！"
+ },
+ {
+  "id": 12,
+  "src_sha256": "de391abab649b30fd071fec14fd053b95a55e3e531c64db3a75e9bb04f65f92c",
+  "zh": "哇！謝謝你們！"
+ },
+ {
+  "id": 13,
+  "src_sha256": "216c3b8df9ecf16f0edc53c51c0c7468644de41373e0326ce93e852e02578a7d",
+  "zh": "這是垃圾嗎？"
+ },
+ {
+  "id": 14,
+  "src_sha256": "1e64716e1573e7ed2c3472019e466b6bce904ef51bed8f82c639071a08e29f95",
+  "zh": "我想我手上要是有點錢，記性會更好……"
+ },
+ {
+  "id": 15,
+  "src_sha256": "f4907b08d8ab0683986ee25045adfbb97d497a744c16a0b8f43ef9e30ac3720c",
+  "zh": "我現在不需要更多東西了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "2f4fa399f5357dd22ef0174f29792c3df31111336b349b31ed5fbbe89a48f579",
+  "zh": "你們很有常識。你們缺的是錢。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "f4bf345f78d507371dd9c6dbf0b04968b65273623eebdbf062484ecdf2d085a0",
+  "zh": "哇！對耶！我有另一個跟這個一模一樣的……只是我找不到它了。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "e035a2435ded9c7767c3b9e27808d99747409cbefa6dde02f0caf50d85f8fad0",
+  "zh": "哎呀，這樣好嗎？"
+ },
+ {
+  "id": 19,
+  "src_sha256": "f3f885796b7433bb56d52df8ad3b144997351415e7387c0d5238bc908c25a2a7",
+  "zh": "嘿，小偷！我還以為我們是朋友！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "afb3e5dd5762db006f727805ffd91cf1f8b77c2e7288f64f483bef12a2f9eeb7",
+  "zh": "我專門為你們發明了一樣東西——它會把你們的腦袋轟掉！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "30efd6603823f6ddc236301d8a983b164b74083748bad7c566458f6120b15e4e",
+  "zh": "對……亮晶晶的錢……"
+ },
+ {
+  "id": 22,
+  "src_sha256": "b527d789b0b44895049f85255588ac1019e4bb437cae6d1cf79a810793a6168d",
+  "zh": "我不太適合問這個……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "2de0af5db49d82cb5aa480b53723ff46663d5ab78db759855030c76d0373e93c",
+  "zh": "也許去問別人吧……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "27c0ca2a86d6f4bcdb8156bab440ba428de390e6e706ab78b6e7dfd54a70576a",
+  "zh": "哦！那是秘密！"
+ },
+ {
+  "id": 25,
+  "src_sha256": "93aa3135a92981a2ed8236ebb100d5e5d8c283b81a3236c544a7a296a7a6bf94",
+  "zh": "聽著！我說……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "ec3494f00692ceb7a3564562cec06a726b1a51910d93dad0915efa02d644b104",
+  "zh": "過載了！哇！我想不了那麼快……"
+ },
+ {
+  "id": 27,
+  "src_sha256": "2e3a47fcada6130b2281e50354b7832126d81c679678a99faca6b02047fa0040",
+  "zh": "然後呢……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "0f00ae4fe94de8c7151cceb1bc5514a4228458980cd489fe3ae7bb60136b16ea",
+  "zh": "真的喔。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "7c55d851dd589ccf9cb9bfa68824865bd2669dcd2d8d69308cccb43449bfffbb",
+  "zh": "我想我們該繼續了，對吧？"
+ },
+ {
+  "id": 30,
+  "src_sha256": "0081e152f1f752a8a88ea95b952ec77fe10ac28a0cab237d02565f95c27efe41",
+  "zh": "咦？抱歉。我剛剛神遊了一下。"
+ },
+ {
+  "id": 31,
+  "src_sha256": "6758ef4518ea56078497bcb3783e503192e08d4abfde96f358886dc8925e8658",
+  "zh": "大致上這是個好地方。真正要避開的只有 Rapax Castle 和 Bayjin 。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "042d00de403cc5d5428ec16e41db106c110bb9dbb4e844f1cd516e7ac57772a5",
+  "zh": "那邊，北邊。老實跟你們說？我有些最棒的東西就是從那邊來的！ Higardi 把東西到處亂丟，十次有九次，他們的垃圾就是我的寶貝！我有一次從太空港弄到一顆很棒的銀球（ silver ball ），可惜我想不出它能幹嘛。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "cea0ca87c9cba585a640b9f266d032336b802987066f046c14444dd54678ce5c",
+  "zh": "不是個好地方，對 Trynnie 來說啦。得穿過一大片水、幾塊石頭和一些沙地。那裡有各種又大又壞的魚，等著把我當一餐。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "c85db2200288a9ac8523f50959fb018a52241316d40ccab315521556d0d5be12",
+  "zh": "對對對！四處看看。總共有七根樹枝（ bough ）。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "83fcad694969891a7b43efa6e46a68429ce74f062c7f1eee26f1ebbaf7e65f66",
+  "zh": "哦不！離 Rapax 遠遠的……"
+ },
+ {
+  "id": 37,
+  "src_sha256": "52c5c65329db8173225a803ef19d1cff0baa6a8120525cc061274825671cd5fe",
+  "zh": "對，就是 Sparkle 去的地方！ Ump …… Ump 什麼的（ Ump-something ）住在那裡。很久以前，我們習慣把東西存放在山裡的洞穴。自從那些 Ump 什麼啦（ Ump-abobs ）進駐以後，我不知道那裡還剩什麼。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "b3284e7bcfe8c39ad5a15bcfee065a5fe487d78b0cd57d798986b787897b878f",
+  "zh": "哦，對，我很熟 Marten's Bluff 。我們 Trynnie 甚至認識 Marten 本人呢！"
+ },
+ {
+  "id": 39,
+  "src_sha256": "b2573d09c23ce5b103c33a7606c5588de10a8155eff16343b5e8f77b50c3ae0e",
+  "zh": "你們知道那些洞穴？！很少人知道。傳說 Marten 就葬在東海邊的一個洞穴裡！我當然沒去過，不過我用我的 DistaView 裝置看到過。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "3583d094614e855f481fbe10d05386a5c0ca0cf3fe3ec70ec7eb73492e9155bc",
+  "zh": "Ascension Peak 啊？哦，那個該去問 Shaman 。我有一次用我的 Memor-X-Ray 讀過他的心思……"
+ },
+ {
+  "id": 41,
+  "src_sha256": "993505ef46ef193f2f05ea79fa3f8652216fffc19bef42326b8a44c39fac24bf",
+  "zh": "對，就是 Cosmic Lords 住的地方！你們知道嗎，我有一次試著造一台機器去那裡。基本上就是你走進去，*噗！*你就到 Cosmic Circle 了。不過測試（ testing ）時失敗了。結果把我的測試志願者變成了一坨爛泥。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "00d7f8f5f0d5d318863a890512ac891b752a8de7e8dd78d99bb04288191e5d61",
+  "zh": "又深又藍，沒什麼好說的了。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "d8dc3e4a13c93c9e259156774d543130f01007ee6589f5bda66c335596d7167d",
+  "zh": "我認識他們……不過不太熟。老實跟你們說？我對從他們身上能拿到什麼，比對能學到什麼有興趣多了。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "c02f2b9864b18bab5dfd5914cc8e2e74ee7c2327554da6d8ddcfd133575602fa",
+  "zh": "就是我！我敢說你們已經聽過很多關於我們的事了……嗯，大概大部分都是真的。"
+ },
+ {
+  "id": 45,
+  "src_sha256": "cf99c225f048b62494ddf4201f0339a66d843e5f0b39306fb2cc5933b0bca847",
+  "zh": "可怕的生物！所有生物裡最糟的！我有一次發明了 RapaVac ，打算把他們一個不剩全部清光。基本上，這個裝置會把他們吸進一個巨大的帶刺罐子裡，然後他們就死定了！啊，可是測試（ testing ）的時候，死掉（ die ）的卻是所有操作員。有贏有輸（ lose ）嘛。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "30639470b571e7e3f776040fc130c3a4f9d17db12617698f76c031571a183193",
+  "zh": "對，那些 Ump …… ani ！對！我對他們不太了解。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "f09f4440a46cb778585319e399656480f4b4abc2b4bc81d284451cc25d7e692b",
+  "zh": "哦。那些東西啊。我還沒決定對他們的看法。"
+ },
+ {
+  "id": 49,
+  "src_sha256": "ed3d012cadc0038954d62d4c17f6c763c3d66cf18c00fedd5647928dce174078",
+  "zh": "凶惡的魚……"
+ },
+ {
+  "id": 50,
+  "src_sha256": "6b1760bd33221ee692805d8b9414b9a03a80dc4182bf53c38b2d0fa1e771b87f",
+  "zh": "對！又大又臭的老鼠！"
+ },
+ {
+  "id": 51,
+  "src_sha256": "8cb6e9db2dc69774345c58bced8d226b64b505cd9d35588b722da5b37d7d6531",
+  "zh": "所以你們知道 Mook 啊？嗯，他們在 Arnika 的舊市政廳裡。依我看，他們長得像毛茸茸（ hairy ）的巨樹！不過，聽著，我有個秘密要告訴你們。我從朋友的朋友那裡聽說，他們在裡面有某種特殊裝置。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "5a143ad8950b577862e2f73ca7aaa70f0bc64995e3bc88e44cb955c5115d50f2",
+  "zh": "不過他們不是隨便誰都讓進去的。我聽說他們想跟 Umpani 或 T'Rang 結盟，所以也許那是個進去的好辦法。如果你們不介意利用別人的話。我是不介意啦。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "a2da688437a299296895702efa28f86ca560907dade8d5608d3934653496fd36",
+  "zh": "對， Cosmic Lords 。關於無限的存在，還有什麼沒被說過的好說呢？"
+ },
+ {
+  "id": 55,
+  "src_sha256": "18227ac2021091cf100049585971fbf2c1bc68fb371c31348c3f8b1f56a8f61b",
+  "zh": "我連想都不想想他！其他 Trynnie 其實都不談這件事，不過我感覺得到大家都怕他。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "d95870c6f0f5014e99709a67b4af79321ab0832498016aad73e138360aa6e7c7",
+  "zh": "Phoonzang ！那位父親！"
+ },
+ {
+  "id": 59,
+  "src_sha256": "3ce12014a1b94a6b0b043509086364b847f5d8d587786e7b01a773a675bac15e",
+  "zh": "Marten ，對，我們 Trynnie 對他可清楚了。哎呀，大概一百個一百打年前，上下差個一百打年吧，他就在這裡！嗯，不是這裡，是在 Trynton 這裡。他偷走了 Destinae Dominus 。"
+ },
+ {
+  "id": 62,
+  "src_sha256": "594459c70ef0fefc3ee66f4e2426bca01731e3b18f326dc2f3478a04bf8ef2fb",
+  "zh": "死亡射線的好目標！"
+ },
+ {
+  "id": 67,
+  "src_sha256": "15891df1db5a9d6281f0e2f17cda68873ae259efb26dfec4af23a30d96c62af5",
+  "zh": "那些笨老鼠！"
+ },
+ {
+  "id": 69,
+  "src_sha256": "9ac13705ad3a74b394b15e29c57c28c64e9bdebddcb74b40857a391887067f28",
+  "zh": "很多人都想知道它在哪裡，你們知道的。我不知道它在哪，但我知道誰知道！"
+ },
+ {
+  "id": 72,
+  "src_sha256": "838f685e44793901b7c95940c60014c43e96ee2d7706014a8889d2dc9a18a8fc",
+  "zh": "去問 Shaman ，或是隨便哪個 Higardi 。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "8f01a9edebddb5bfe949c402a9cb6ae82d71c5d31a35db9d8cbb4a1f2673c582",
+  "zh": "哦，我什麼都聽說過。我知道一些 Destinae Dominus 的事，也知道命運（ destiny ）！"
+ },
+ {
+  "id": 74,
+  "src_sha256": "946ee5d4db833f2441fab292b08b6b41dee5b5888ab91e0756bc18ed29d651ef",
+  "zh": "星際 Gadgeteer ！"
+ },
+ {
+  "id": 75,
+  "src_sha256": "b768fb2d9127c51aa93518fe6921b161f0f4255ef66ffd3b8cd9599092f44196",
+  "zh": "在 Seventh Bough （第七根樹枝）上，每個 Trynnie 都能得知自己在這顆星球上的個人命運（ destiny ）。我看不出為什麼對你們就不行！而且，嘿，你們說不定能學到點什麼。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "b4380b7a4f63b6a15bf0fa64404ac0559f21a415d2284e006ddbef414b74591f",
+  "zh": "這樣不太好喔！"
+ },
+ {
+  "id": 77,
+  "src_sha256": "932037cc2b8c78deaa36aa60846a273c3f5bb3a4a5361959c5459ee142272543",
+  "zh": "可是這樣我就不能加入你們了……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "ca51ce1fb15acc6d69b8a5700256172fcc507e02073e6f19592e341bd6508ab8",
+  "zh": "嗨！"
+ },
+ {
+  "id": 79,
+  "src_sha256": "c330978d116519d7b4de4d0bfba4c80063ebaf26415c437121c09753427bc6ed",
+  "zh": "掰！"
+ },
+ {
+  "id": 80,
+  "src_sha256": "20207cf5dcac24bcd94b6000f9641a5a6c0c7b437e51134cfa99060eff65d1f1",
+  "zh": "當然……怎麼做？"
+ },
+ {
+  "id": 81,
+  "src_sha256": "4b6e9374801bd732274dcf535f208840a98b50d2bb96a8a64d8025977e44e03e",
+  "zh": "Fuzzfas ……你們要找的就是他。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "e35a450aed968bc5d63026d0ac1e3da43efedec61cf9a2e8c9a42ca685b6ab27",
+  "zh": "哇……我不知道。我真的沒想過。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "16089504dcd3664dd62be91103dbc864b61269fa8e0e466afe4e048f480f0957",
+  "zh": "Trynnie 永遠會與 Rapax 開戰（ war ）！"
+ },
+ {
+  "id": 88,
+  "src_sha256": "58db0f871e94b766a95f67b16678964735f4fbfd382caa7a5594a5bc2f1504ff",
+  "zh": "我敢打賭他知道 Destinae Dominus 在哪裡……"
+ },
+ {
+  "id": 89,
+  "src_sha256": "dcc063608211a3421aa5b23c831a8754cabb7c10a1501051b83aa5f4d9685ff8",
+  "zh": "命運（ destiny ）……"
+ },
+ {
+  "id": 90,
+  "src_sha256": "26c2caa6eabedd6091602200429d6d6b70d2a4dec0c479fa1562ddbec3a0454a",
+  "zh": "我把我的 FurbleMeister 放到哪去了？"
+ },
+ {
+  "id": 91,
+  "src_sha256": "a3e99bb255881eed2a804bedddee27efde2849b747d65f2349253723ffc6fe13",
+  "zh": "哦，那在 Arnika 。"
+ },
+ {
+  "id": 92,
+  "src_sha256": "d106240b7357f7675ca923218e7f7c474e5bd242ae620ba14215afc926a0d45f",
+  "zh": "當然是在 Trynton ！"
+ },
+ {
+  "id": 93,
+  "src_sha256": "23db22dfa4bdabcdb0047c0c109f0cb82338d1ede83f81a7766e696a792ee900",
+  "zh": "就在這裡正南邊的沼澤。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "b03966bdf02f2c8a0db346512dbf26845c880128d4e5db277361f779a216b01f",
+  "zh": "就在這裡正南邊的 Marten's Bluff 。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "245d4341b7b2254d2af3c0086714e750416f6c6f3afff2d4a5d175f892822d25",
+  "zh": "Mt. Gigas ！肯定的！"
+ },
+ {
+  "id": 97,
+  "src_sha256": "9d53792214529edc6a6786dbd9c299284a6604c01d748259269cabfd776a8c8d",
+  "zh": "有一些洞穴，你們知道的，幾乎就在這裡正東邊。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "e7d0300cdbc691e93f6dac2c208653b5bea1eced805840bc650e3241d2f6a8c6",
+  "zh": "對，就在 Rapax Rift 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "4ad498f0c0a2bced7c4cd148756f786f3cd1adffe61932a0c6fdac8b6e5482fe",
+  "zh": "那是 Rapax Castle 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "08051f39b923df42afcf8716452dbf69bafb5582df014682f49955ddb5d5a538",
+  "zh": "Ascension Peak 。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "5c4338c1ba74cf323303d7c2e44c22ca8736637acecf29cb215e5cf2acb5d1d3",
+  "zh": "在 Cosmic Circle 裡。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "4fa4f9a9ef4338fa5cf5321dd9215f8b0b2fd2785d83c3bdcb05e8acc7df4695",
+  "zh": "就在這裡！天啊。"
+ },
+ {
+  "id": 103,
+  "src_sha256": "956d6f0d18a9408bbcb744aba697b978ab67447e53b73e5b7bb6bc492d5552e6",
+  "zh": "我找不到路！"
+ },
+ {
+  "id": 104,
+  "src_sha256": "8e0deeef882dfcd6c39ed134ed6893549e5669d59ad6f257b4c2e48241318299",
+  "zh": "那是在 Bayjin 。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "381dab37fc29dcfb9b7c2dae786f1926e8edb0bb6d72dd40011729f45be441e7",
+  "zh": "太好了！這些會讓你們有個開始……"
+ },
+ {
+  "id": 106,
+  "src_sha256": "f83356cbd4b582be23211a9c0886fc5943b5dc608bb82b0341335c9982cff353",
+  "zh": "你們什麼意思？當然，你們準備好了。天啊。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "d812514592367eeb10edadf0d60d2c9c8a28fd160e45fb4c3eada8366c4d3788",
+  "zh": "這會是苦差事。牠們把整個第六根樹枝（ bough ）都占滿了。我們試過要清掉牠們。殺掉十隻二十隻，牠們馬上又冒出來。所以我用這裡這支望遠鏡去偷看牠們……然後就看到我這輩子見過最肥——最醜的東西了！"
+ },
+ {
+  "id": 108,
+  "src_sha256": "a5a45ab9ec153f4a9c69f1952a6f70a0cdcd1d25c4684bc2b6e88bd21909bf22",
+  "zh": "育種怪（ Breeders ）！大得像房子，寬得像山，醜得像放了一天的……啊，算了（ nevermind ）。牠們就是問題的根源！衝進去殺了牠們，其餘的就好收拾了。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "e2307f35b1e8e5e9a940b3b924e86ff8092be3c753c94a0cfb3002f5edac409b",
+  "zh": "我還以為你們要去殺育種怪（ breeders ）？嗯……"
+ },
+ {
+  "id": 110,
+  "src_sha256": "c9771a1ce170a539e1382fa32f8f652da791a73cd9025fbc79d1c078cefd80b4",
+  "zh": "你們辦到了！你們辦到了！我在這麼遠的地方都聽到那陣騷動了。你們拯救了 Trynton ！我們永遠感激你們，還有……啊，很遺憾（ unfortunately ）你們能得到的就只有這個。我窮得叮噹響！*嘿* 不過聽著，既然老鼠不再是問題，我們哪裡都能去了！"
+ },
+ {
+  "id": 111,
+  "src_sha256": "4f998ee84c3615758e74f5b5dbfdb9616b4c0f7ca6be10e4b543783af846433a",
+  "zh": "我到處去過，你們知道的，我對很多特定的東西都知道很多一般性的事。真的！"
+ },
+ {
+  "id": 112,
+  "src_sha256": "d451d2a79e0a1f87270b313ca7d9e589359cb3d2aa906594529dcbc0535fd0f3",
+  "zh": "嗨！"
+ },
+ {
+  "id": 113,
+  "src_sha256": "36885057c536f9300f2f86b7d483dfb377548870097d6d3558484bb551bf099c",
+  "zh": "對了，我知道一些 Destinae Dominus 的事喔……"
+ },
+ {
+  "id": 114,
+  "src_sha256": "29f6aedee0d2caf44da46307125563b71a45e4c53309aa34a87533eef39aad4e",
+  "zh": "是 Crock ！你們可以在沼澤找到他。別指望他會直接交出來，你們得先討他歡心。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "f78a1ad61bb9e50fa8f4ea1c15c8637bf67652f7037c63e2efd3c80131bbaeec",
+  "zh": "當然！那是我的職業，而且是個很棒的職業。基本上，就是我有一股愛修修補補的天分（ knack ）。你們知道的，把東西組合起來，讓它變得更好。Gadgeteer 最棒了！"
+ },
+ {
+  "id": 116,
+  "src_sha256": "0ac4a82ef761ff7d8f0258fa13098c55eb5474cf6b3239105a76e948faab3f9d",
+  "zh": "你們該親自去見見 Shaman ！他在第五根樹枝（ bough ）上。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "dca448efa5368ddc4c42b28c8be94dc13b76fad0d41b148f41d4c1b582c1b02d",
+  "zh": "不知道有沒有人跟你們說過，你們可以在這裡得知你們的命運（ destiny ），你們知道的。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "3125867647b0e0da7937ade550781e40e4960b96f13a31974ec5776a6f307ce9",
+  "zh": "Trynton 有很多樹枝（ bough ）。看它們最好的方法就是……親眼去看！"
+ },
+ {
+  "id": 119,
+  "src_sha256": "49945ad77e99635582bd65f0c4121a823b0d82bbde3a5512c8a6331ff8c6c87d",
+  "zh": "Seventh Bough 是幻象（ illusion ）……那是所有 Trynnie 到了一定年紀都會去的地方。他們在那裡得知自己的命運（ destiny ）。去問 Fuzzfas 吧。他會告訴你們該怎麼做。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "fd6af59c86839ed2e33d402049d5ad60722f325a2ef3475dab12f148efd627c6",
+  "zh": "老鼠占滿了第六根樹枝（ bough ）！"
+ },
+ {
+  "id": 121,
+  "src_sha256": "2d3f5f3101fc0c7656fb450f4a9e927830bbb2a98e30400b1af0938669331f5d",
+  "zh": "Marten 在哪？他死了啦，傻瓜！我說過是一百個一百年前了。不過他的遺體不在 Marten's Bluff 。但我知道誰知道它在哪！"
+ },
+ {
+  "id": 122,
+  "src_sha256": "5c9295c6059708c8431813a7f7d1217dab62a8f5d6c8ae9bbfe0cfd9b2027ae5",
+  "zh": "我不太會記名字……"
+ },
+ {
+  "id": 123,
+  "src_sha256": "83b765bfc9630b582a0dc69a6ba90ba69ab60934d6167d23c64ccd5e606e0783",
+  "zh": "很遺憾（ unfortunately ），它壞掉了。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "d4442edcbafa955324125ff0f4a66d3194721bea84768bae5de6630deab0fa0c",
+  "zh": "我把它丟進動物園的 Hogar 籠子裡了……"
+ },
+ {
+  "id": 125,
+  "src_sha256": "be3440125702075f782fc0d528994b2fea8323f605190fde74b190d1ca8b3762",
+  "zh": "大概惹了一身麻煩吧！"
+ },
+ {
+  "id": 126,
+  "src_sha256": "4195420d6f029cff246e560819c1b7eb8fd05ef2d25bddf377c98a3d34e1f49c",
+  "zh": "牠們造的是個好家！"
+ },
+ {
+  "id": 127,
+  "src_sha256": "9b1e322a518155abf2f1ae4093f41b5f550f75d5df61384fdde89cee5edb4b10",
+  "zh": "這種事得親身體驗。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "c380a7fcf1835f9e4a438aa0ed1971e5007dcf82c24e6d0dbe24ca73d4451417",
+  "zh": "好朋友！"
+ },
+ {
+  "id": 130,
+  "src_sha256": "0da1011262df62dacea2a6cd9a13adfd4454c197b52167d1e1453e437c8b7fce",
+  "zh": "這個老東西？它很派得上用場。"
+ },
+ {
+  "id": 132,
+  "src_sha256": "7f81e5f9126d0ad9a9783b964f156cbe76cf84a819c191d55fcad4d2dafd5af1",
+  "zh": "就像我說的！"
+ },
+ {
+  "id": 133,
+  "src_sha256": "37301ed0460924b5461814a3b4284290cc3d640cd1f7c4fcce26421359f42f78",
+  "zh": "我想是在這裡的北邊。"
+ },
+ {
+  "id": 134,
+  "src_sha256": "7188307916cce895b8e88fdfa5b3bf651f85a279d11deeb93159265cd592fff0",
+  "zh": "可能在這裡的南邊，你們知道的。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "931e23e1ef06e4666e8c8cecd9597457a4ccf4c77ad25ddbdcc8ab13ff642869",
+  "zh": "是在這裡的東邊嗎？"
+ },
+ {
+  "id": 136,
+  "src_sha256": "48bb60945cea9fabca76d3280106f45174d7d60aa35562d66851b4fa9bfc2b1d",
+  "zh": "可能是西邊。我想。"
+ }
+]

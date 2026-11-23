@@ -1,0 +1,36 @@
+call	2b6	無關	抽取器將本函式 0x5362b6 的參數入棧位址誤列為子呼叫；實際子呼叫只有四個查找函式與 assert import，沒有呼叫 0x2b6
+call	4e5550	monsterIndexByID	依目標怪物 ID 先查主列表再查次列表，次列表索引加 10000，查無回 -1；原樣執行，calc 重現首個命中語意；0x5362c0、0x4e5550
+call	4e5620	monsterRecordByIndex	按主／次列表編碼索引取得怪物記錄；有效列表項不得為 NULL；0x5362d3、0x4e5620
+call	5100b0	monsterGroupIndexByID	依群組 ID 先查主列表再查次列表，查无回 -1；次列表索引加 10000；0x536351、0x5100b0
+call	5101b0	monsterGroupRecordByIndex	按編碼索引取得群組記錄；有效列表項不得為 NULL；0x536364、0x5101b0
+data	4	無關	抽取器記錄的小位移／堆疊清理量，不是規則資料表或絕對全域；角色索引與群組成員欄另以 field 命名
+data	5363d4	targetKindDispatch	九項目標種類分派表；calc 初始化由使用者 exe 讀取，沒有把表內容寫進 repo；0x5361ab
+data	5ebaf4	srAssertFailImport	非法 ID、NULL 記錄的防禦性檢查；正常輸入不呼叫，模擬器遇 assert 停止
+data	614910	無關	NULL 怪物記錄的 assert 訊息，不參與有效目標判定；0x5362ec
+data	6191bc	無關	怪物 ID 為 -1 的 assert 訊息；合法輸入排除此無效 ID；0x5362a6
+data	6191e0	無關	角色索引為 -1 的 assert 訊息；合法角色索引是 0..7；0x5361c1、0x53622b
+data	61a010	無關	NULL 怪物群組記錄的 assert 訊息；0x53637d
+data	61d150	無關	NULL 物品指標的 assert 訊息；0x5363b2
+data	61d16c	無關	群組 ID 為 -1 的 assert 訊息；0x536337
+data	61d18c	無關	assert 的原始來源檔路徑；僅診斷文字，不影響規則；0x5361bc 等
+data	685174	characterRecords	角色主記錄基址；每筆 stride 6242，由 characterIndex 選擇，case 放八筆 arena 記錄；0x5361e8、0x53625c
+data	685178	characterPresenceRecords	角色副記錄基址；每筆 stride 262，首 byte 非零表示在場；0x5361d2、0x53623c
+field	eax*4+0x5363d4	targetKindDispatch	目標種類減一後查九項分派；超出範圍預設 true；0x5361a1..0x5361ab
+field	eax+0x0	itemDefinitionID	物品記錄首 u32，-1 是空物品而不可作目標；0x5363c3
+field	eax+0xa49	resurrectionAvailable	死亡角色需此復活可用狀態非零；不推定狀態來源；0x536274，沿用 iface/501530.tsv 命名
+field	eax+0xa4d	resurrectionBlocked	死亡角色需此阻止復活狀態為零；0x53627e，沿用 iface/501530.tsv 命名
+field	eax+0xb01	characterPrimaryStatus	角色主狀態碼 u32，小於 18 可作一般目標；0x53620a
+field	eax+0xb11	characterCurrentHP	角色當前 HP u32，非零允許一般目標；0x536200
+field	eax+edx*2+0xb11	characterCurrentHP	依角色索引取主記錄當前 HP；死亡目標必須為零；0x536266
+field	ecx+eax*2	characterPresent	副記錄首 byte，依索引乘 262，死亡角色需在場；0x53624c
+field	edx+ecx*2	characterPresent	副記錄首 byte，依索引乘 262，一般角色需在場；0x5361e2
+field	esi+0x0	targetKind	目標種類：1 一般角色、3 怪物、4 群組、7 物品、9 死亡角色，其他預設 true；分派表執行時讀 exe；0x53619f
+field	esi+0x14	monsterActive	怪物活動 byte，非零才可作目標；0x53630f
+field	esi+0x1c	targetItemPointer	物品種類的物品記錄指標，合法物品目標不得為 NULL；0x53639f
+field	esi+0x28	monsterGroupActive	群組活動 byte，非零才可作目標；0x536393
+field	esi+0x2b	monsterCurrentHP	怪物當前 HP u32，非零才有效；最高位不解釋為負生命；0x5362f6
+field	esi+0x4	targetCharacterIndex_or_groupMembers	目標結構中為角色索引；換成群組記錄後為成員數 u32，需非零；0x5361b2、0x53621c、0x536387
+field	esi+0x8	targetMonsterID	目標怪物 ID，-1 觸發 assert，查無其他 ID 則回 false；0x536291、0x5362b0
+field	esi+0x9f	monsterRemovedState	怪物移除狀態 u32，需為零；本函式只判斷非零，不推定狀態來源；0x536301
+field	esi+0xc	targetMonsterGroupID	目標群組 ID，-1 觸發 assert，查無其他 ID 回 false；0x53631f、0x536341
+field	lists+0,+8;entries+index*4	entityListRecords	四個列表全域 0x683fad/0x683fb9/0x683fb1/0x683fbd 各有 arena 指標陣列及 0..2 筆 count；首筆為無效目標 decoy，次筆 ID 與規則欄位各自輸入；0x5e2870、0x5e2c70。主列表先命中則不查次列表；case 有相同 ID 不同欄位驗優先序

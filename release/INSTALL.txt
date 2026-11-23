@@ -1,0 +1,45 @@
+Wizardry 8 繁體中文化（wiz8-mod）安裝說明
+
+需要：你自己的 Wizardry 8 原版（Steam／GOG，v1.2.4，Patches 資料夾裡有 PATCH.001）。
+本包不含任何原版檔案；中文資料在安裝時用你電腦上的原版現場產生。
+
+安裝
+1. 把這個 zip 解壓到任意資料夾（不要解在遊戲資料夾裡）。
+2. 在解壓出來的資料夾裡開「命令提示字元」，執行：
+     install.bat "C:\Program Files (x86)\Steam\steamapps\common\Wizardry8"
+   （遊戲裝在 Steam 預設位置時，可以只打 install.bat）
+   遊戲裝在 Program Files 底下時，要用「以系統管理員身分執行」開命令提示字元。
+3. 看到 [wiz8-mod] Installed 就完成。安裝只會在遊戲資料夾加兩個檔：
+     ddraw.dll                 中文繪字（字型 Fusion Pixel／Noto Sans TC，OFL，見 LICENSES）
+     Patches\PATCH.002         中文文字（由你的原版＋本包 translations 產生）
+   原版檔案一個 byte 都不改。之後在遊戲裡用 F10 選單存設定時，會多一個 wiz8mod.ini。
+
+使用方式
+- 安裝後照常啟動遊戲（Steam 或直接執行 Wiz8.exe），選單、對話、物品、怪物、法術、日誌就是中文。
+- 遊戲中按 F10 開關速度設定選單：
+    上／下      選一列
+    左／右      每次調 25%（範圍 10%～5000%）
+    Home        這一列回到原版（100%）
+    End         全部回到原版
+    Esc 或 F10  關閉選單，設定自動存進遊戲資料夾的 wiz8mod.ini
+  四列與預設值：怪物移動 400%、事件停頓 300%、攻擊動畫 200%、隊伍移動 100%（100% 就是原版速度）。
+- 遊戲內建的截圖會存成 BMP，放在「使用者資料夾\Pictures\Wiz8\」。
+- 要用存檔修改器之前，先跑 uninstall.bat：中文化裝著的時候修改器會顯示亂碼。改完存檔再跑 install.bat 裝回來。
+- 更新：解壓新版，直接跑新版的 install.bat。會先移除舊版再裝，存檔不受影響。
+
+安裝失敗時
+- 「Not a Wizardry 8 folder」：路徑不對，要指到有 Data\DATA.SLF 的資料夾。
+- 已裝過舊版 wiz8-mod：直接跑新版 install.bat，會先自動移除舊版再裝。
+- 「ddraw.dll is in the way」：遊戲資料夾的 ddraw.dll 不是 wiz8-mod 的（別的模組或包裝層），自己移開後再裝。
+- 「PATCH.002 already exists」：有 PATCH.002 但沒有 wiz8-mod 的 ddraw.dll，認不出是誰的，確認後自己移開。
+- zhpatch 報 sha 不符：你的原版版本與本包對照的不同，什麼都不會裝。
+
+移除
+  uninstall.bat "C:\...\Wizardry8"
+刪掉上面那兩個檔就回到原版。存檔不受影響。
+ddraw.dll 不是 wiz8-mod 的（或不在）時什麼都不刪（任何版本的 wiz8-mod 都認得，不必用當初安裝的那一包）：PATCH.002 本身認不出是誰做的，確定是本 mod 留下的再自己刪。
+
+已知限制
+- 和 NPC 對話時，關鍵字要點或打英文（譯文寫成「銀行（ bank ）」，點括號裡的英文）。
+- 存檔裡的關鍵字清單是開新遊戲時寫入的；舊存檔的清單仍是英文。
+- ddraw.dll 執行時會在 %TEMP% 寫 wiz8-mod-ddraw.log 與 wiz8-mod-text.log（除錯用，可隨時刪）。

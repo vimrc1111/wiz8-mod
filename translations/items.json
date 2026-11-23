@@ -1,0 +1,3977 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "5679daa7c55dde153a0e3f2e5d7c5318f149fa10716a7d874fa97e46639426a3",
+  "zh": "{{Dagger}}"
+ },
+ {
+  "id": 1,
+  "src_sha256": "b95842b5ecf82fabcf3681553782d52ab2386592baafaae728c13511239d7ccd",
+  "zh": "左手短劍"
+ },
+ {
+  "id": 2,
+  "src_sha256": "f7606979e62ec54992168711be5b626e17d5270996c9c6e68a86502f73af0bc6",
+  "zh": "短匕"
+ },
+ {
+  "id": 3,
+  "src_sha256": "f26d8b6ff5357207f5d8416a618b0fbc6119c21e692ab22570c7e418229676e9",
+  "zh": "錐刺短劍"
+ },
+ {
+  "id": 4,
+  "src_sha256": "c5d51218c7306a865853e12dfaae02c48d7319ddb3e387a4e1242bc6af6092bd",
+  "zh": "毒{{Dagger}}"
+ },
+ {
+  "id": 5,
+  "src_sha256": "aba8536ee713d6e1dc81487932e47d90bf50eb6d4a561fdc9dfeadb0fc4ea48f",
+  "zh": "竊賊{{Dagger}}"
+ },
+ {
+  "id": 6,
+  "src_sha256": "2686aa159d09c51d3d5c1ead5a927672a07cabd99b417f0294ec862a7649dfb9",
+  "zh": "鏽劍"
+ },
+ {
+  "id": 7,
+  "src_sha256": "c47593d2cf1da5f5febca151a7f2be3a13397667a51881906b12af1ef5aa0887",
+  "zh": "長劍"
+ },
+ {
+  "id": 8,
+  "src_sha256": "357ad3cc89a37597c61c97358b3f34cd1af74eada928ed82f46969b44cecdacb",
+  "zh": "闊劍"
+ },
+ {
+  "id": 9,
+  "src_sha256": "9760e90581ce58d0221a064e76b0dcc0a71f50de769e92029c894a403452f1f3",
+  "zh": "手半劍"
+ },
+ {
+  "id": 11,
+  "src_sha256": "f4cd82569957ed925c75ecba2c904a692ab93f621d79397bb09281e2352a0bb6",
+  "zh": "附魔闊劍"
+ },
+ {
+  "id": 12,
+  "src_sha256": "66cbb7853852127477dfc283e02d69debfecb444df3a2be31231be8106be2d78",
+  "zh": "聖手半劍"
+ },
+ {
+  "id": 13,
+  "src_sha256": "be0d439be3c8abac6ed544359ebe310bfbce6cd35d7c47b037c8fb7010b5af47",
+  "zh": "雙刃斧"
+ },
+ {
+  "id": 14,
+  "src_sha256": "31370b116a027cb14ed1c6a840430306e3f7f2c909595e59d44832e33e91e1de",
+  "zh": "十字軍雙手斧 +1"
+ },
+ {
+  "id": 15,
+  "src_sha256": "4ef6b9a949f94df489388b436aed98b0bca7504a2981e50bb5db6dad16d62c59",
+  "zh": "萬符文斧"
+ },
+ {
+  "id": 16,
+  "src_sha256": "80ec047bb6a5ee35ea5c7f11070c739f03a2f11226c84463e8cd1e4d07cfa153",
+  "zh": "阿薩神族之刃"
+ },
+ {
+  "id": 17,
+  "src_sha256": "f54ba39d958abf2f9911e53ef1a346f70ed030da94bf76c7a0cf173814ccaafb",
+  "zh": "長鬚戰斧"
+ },
+ {
+  "id": 18,
+  "src_sha256": "218e607c02c8cdc9724cc5fc004f5d881c31df8e366db89a4c90396a7743e88f",
+  "zh": "戰斧"
+ },
+ {
+  "id": 19,
+  "src_sha256": "e7e4304829dc23ce2f07671d9fa63e1cb16be7a2b6d10cf8ae15e047771ca293",
+  "zh": "聖油連枷"
+ },
+ {
+  "id": 20,
+  "src_sha256": "1bdd9cc0dcfea413e7e59ec6b20da6c589e402314ded900d54f3a4cd1820637b",
+  "zh": "傑士卡星錘"
+ },
+ {
+  "id": 21,
+  "src_sha256": "765576f3e9f15177f3b4e2eefa2fa1d8b10380f92358411b44d3a1a488e4be08",
+  "zh": "戰杖"
+ },
+ {
+  "id": 22,
+  "src_sha256": "6659c4ca642045f49ac22d26f1e05d8bdbc2fd6e7698d1f5ee631c2df58b3221",
+  "zh": "釘頭錘"
+ },
+ {
+  "id": 23,
+  "src_sha256": "ca949ab43e76d70b2863a2583e2842dcbe3030a3ee126d0aa1e4472cef8e3fe4",
+  "zh": "晨星錘"
+ },
+ {
+  "id": 24,
+  "src_sha256": "24ab16b2ee27d971cb367e3e09db74cf08703dbbd3b243a80a266777a00c8da4",
+  "zh": "少女頭錘"
+ },
+ {
+  "id": 25,
+  "src_sha256": "3737ed9fb772e7bb520b7d99ed3e13ac2ff517d9df1fb4a15b089b02c750e2b8",
+  "zh": "鑽石之眼"
+ },
+ {
+  "id": 26,
+  "src_sha256": "c157cbf647f56e730a083e3cfd4de511b593e9f0e665b0b81fed4815137358ce",
+  "zh": "錘"
+ },
+ {
+  "id": 27,
+  "src_sha256": "e9b207b24d122aac47512ec2509bd6da12b034737461ebf40332e05f75b0ffc0",
+  "zh": "火神之錘"
+ },
+ {
+  "id": 28,
+  "src_sha256": "d1a862206df357885d56d3c1f2e89cae91b46ef82dccd83fa44245c6c3117779",
+  "zh": "短杖"
+ },
+ {
+  "id": 29,
+  "src_sha256": "7c303529e77da3dfccb65feda82ddb0c25152f3660f8371c32122430eb85cab3",
+  "zh": "骸之杖"
+ },
+ {
+  "id": 30,
+  "src_sha256": "7606edf0523745f552b8ff7e3e61fed01d0c6e58d6946ebb34483efd8d06a20e",
+  "zh": "蘇格蘭大劍"
+ },
+ {
+  "id": 31,
+  "src_sha256": "982f00f32de7e0a25cbd741da3b8d5477392a3f1cffcc47445c76898c51b7f1c",
+  "zh": "雙手巨劍"
+ },
+ {
+  "id": 32,
+  "src_sha256": "61c383f068cba811031066541a19769ef1797c19bf09041f190c58d5c11a9571",
+  "zh": "屠龍劍"
+ },
+ {
+  "id": 33,
+  "src_sha256": "334e37d2310b73c177279f2f2b7c4f4d6318d4a4bb163a2e018e53bb54ea0529",
+  "zh": "四風之劍"
+ },
+ {
+  "id": 34,
+  "src_sha256": "c692db986123eaf33ce775e6be56f3f30ff349469598e75a8eb969a36498d6af",
+  "zh": "王者之劍"
+ },
+ {
+  "id": 35,
+  "src_sha256": "827d1a2235804db2eb37e5e540cc5f03632c4d65037f663da30524586be5b49d",
+  "zh": "刺劍"
+ },
+ {
+  "id": 36,
+  "src_sha256": "569c1191fe20ad3e3a69aa2c9acb883a567bd830bd49dbbb58f5cb6692b18d7b",
+  "zh": "紅心之劍"
+ },
+ {
+  "id": 37,
+  "src_sha256": "287449a66993f39fc287c37658a9276ada01b09dea005256786ba67c5590efb4",
+  "zh": "奧莉維亞穿甲劍"
+ },
+ {
+  "id": 38,
+  "src_sha256": "2a35ee9463d44929a97b6172c4d05540a7c21deb5f145303f8d284d19bbdd440",
+  "zh": "{{Samurai}}刀"
+ },
+ {
+  "id": 39,
+  "src_sha256": "bdaf328bef58be0876c6d288d5de4cade4e3876fbcdd5fe29ecab0f70ef41d99",
+  "zh": "野太刀"
+ },
+ {
+  "id": 40,
+  "src_sha256": "b47c7edf33f43039d3a9f5c7b8c4775105575a755a5844e02b730359ff9b837b",
+  "zh": "{{Samurai}}道之刃"
+ },
+ {
+  "id": 41,
+  "src_sha256": "2d4f89084b479f60220260159d3ae6eb423711d63bfa7e73cdb88d3f6c65989b",
+  "zh": "村正"
+ },
+ {
+  "id": 42,
+  "src_sha256": "fb94aedcd9be64ddee5c77019fb9f9cf4051f513ec8ce2c05f1e0656507af182",
+  "zh": "風之魔杖"
+ },
+ {
+  "id": 43,
+  "src_sha256": "8d81feef1cdbdc7f5013b69fdd15de7554373922ea375460646bf5675142ec3a",
+  "zh": "十二星之杖"
+ },
+ {
+  "id": 44,
+  "src_sha256": "694fb03983f03ac74613359a4bb1d9ab94fa5c9d2234222eb40fc2aed9d775ff",
+  "zh": "沉默之杖"
+ },
+ {
+  "id": 45,
+  "src_sha256": "b590f3a68706e46a9f444a1aaad4992b51ed739b04d9e6fcf3c6975f702a4c05",
+  "zh": "防麻痺之杖"
+ },
+ {
+  "id": 46,
+  "src_sha256": "7c7d8aa142d3c446f9ba471de5a43064e7d7efcc5a811e0010269e2306abdc97",
+  "zh": "{{Dracon}}吐息藥水"
+ },
+ {
+  "id": 47,
+  "src_sha256": "a00a7d3cca39b723738750f5e08d4c6ec0c41c80ee6ffcb66f05d0efc63a7ea6",
+  "zh": "剃刀斗篷藥水"
+ },
+ {
+  "id": 48,
+  "src_sha256": "f2a34f5a89276825bcb4a4dbe5fb5e8db59400c5d258e906f6a230678310a337",
+  "zh": "巨蛇之環"
+ },
+ {
+  "id": 49,
+  "src_sha256": "8dafc3efddb9482493dc3f944f99ac7018dd29685e666af1be2d6bed5091ded7",
+  "zh": "脇差"
+ },
+ {
+  "id": 50,
+  "src_sha256": "6d10e048a8658507db47969252b0a4495fcdd8687a3697d1ea5dc5bde79d73f4",
+  "zh": "{{Ninja}}刀"
+ },
+ {
+  "id": 51,
+  "src_sha256": "77cdd42f626e28ac7f301b2c27262df382796c7523ae1172e1058e3875a1e10a",
+  "zh": "附魔脇差"
+ },
+ {
+  "id": 52,
+  "src_sha256": "7c7bb9fa539767124901a13bed99db9c5c094a01be5bea7c83008539520a368c",
+  "zh": "戰錘"
+ },
+ {
+  "id": 53,
+  "src_sha256": "22d7d706d68c34abdfb9d4c10d864388306deecdc4eb4a737cc624221d3b72f5",
+  "zh": "鴉喙錘"
+ },
+ {
+  "id": 54,
+  "src_sha256": "2c7f832ea1c3ad04a109e06731383004bce4e81660569694190ac323dd7e3290",
+  "zh": "焰形劍"
+ },
+ {
+  "id": 55,
+  "src_sha256": "b6c7e88b41b7646066874feb220acad3212a9d7bc42ecf395b518762211fb70b",
+  "zh": "釵"
+ },
+ {
+  "id": 56,
+  "src_sha256": "c510e74ed0d9cdfe75412a12afc5692fe2bf4a6935724d12e445ad0c876aae59",
+  "zh": "雙節棍"
+ },
+ {
+  "id": 57,
+  "src_sha256": "04d9f2826cfdb36bcf872026b9b01c3df9345dce4eeb210a4f3066dc2bb7d4b0",
+  "zh": "斬首之刃"
+ },
+ {
+  "id": 58,
+  "src_sha256": "e59d8db43ecf50bc9274150354677ceb1152f7cdf24103f5340e89cac08bbac1",
+  "zh": "美膳雅之劍"
+ },
+ {
+  "id": 59,
+  "src_sha256": "f1e508c4582c09cd3b6eba95c91fea8be8d838414f21b66756b48caf956ac4c5",
+  "zh": "獠牙"
+ },
+ {
+  "id": 60,
+  "src_sha256": "35bc20273435e3a1062496ed6cb22596d85ab93597a52271b5bf4bfb2f139ca9",
+  "zh": "烈焰之劍"
+ },
+ {
+  "id": 61,
+  "src_sha256": "b665d89e74452ca87291a0c2384a7afbb1c8b3e2c18760b2936c5ba2d4fd0184",
+  "zh": "復仇者"
+ },
+ {
+  "id": 62,
+  "src_sha256": "befbbe857e2003ecc9ff9de8f668bf5d5b89d30fdb1b510783fd5a95f86efdda",
+  "zh": "{{*LIGHT* *SWORD*}}"
+ },
+ {
+  "id": 63,
+  "src_sha256": "051e516b46582b913d4064d006eea9ad77bb91cbf017ecbad1aabaa5e25881c8",
+  "zh": "{{Faerie}}短棒"
+ },
+ {
+  "id": 64,
+  "src_sha256": "72e33311ccba29ec0293d8913d8b654d7eca60312c847eb262875f340c9c05cf",
+  "zh": "木釘棒"
+ },
+ {
+  "id": 65,
+  "src_sha256": "a510e9b75028bac83cf712516ff76d7ecabeddd4c6125077031b187ed1273d30",
+  "zh": "刻痕木棒"
+ },
+ {
+  "id": 66,
+  "src_sha256": "750f9f904f0a8c1372a0e2aa39ef427e8a3f4967d01bb6bb3e362242344bc934",
+  "zh": "巴塞拉德短劍"
+ },
+ {
+  "id": 67,
+  "src_sha256": "92df7fecbb348bc0d3cc2ac1c7bbd418199c9d5cbbf1bc9dd564f71e9b51559f",
+  "zh": "彎刀"
+ },
+ {
+  "id": 68,
+  "src_sha256": "e25f2f3ae12de32a25ad4dcd2c3f0de9e84b47f8f60b105548c60a61aa624648",
+  "zh": "寒冬魔杖"
+ },
+ {
+  "id": 69,
+  "src_sha256": "344706072c07591b60fff572a22abc0aac57b972ca26e936daf3a3c367b9a913",
+  "zh": "以眼還眼藥水"
+ },
+ {
+  "id": 70,
+  "src_sha256": "8e390a79a7642b7681849b8036f8fca4d9940f20b7107c6989715381bd9417d3",
+  "zh": "妖精之杖"
+ },
+ {
+  "id": 71,
+  "src_sha256": "9bd3f8f924eccf7be16482495f38391e633f7ed0e1e77597a12d769b431749b1",
+  "zh": "Ymmu 之爪"
+ },
+ {
+  "id": 72,
+  "src_sha256": "60c397046c19b1d1cd1962952390fc8ed88c821cdc105b69a6e3916744a4ab10",
+  "zh": "戟"
+ },
+ {
+  "id": 73,
+  "src_sha256": "70c800cb7069e19eb436131d0b64b2ce9b202adba23ef9254c2a7d669f98885c",
+  "zh": "渡鴉鉤戟"
+ },
+ {
+  "id": 74,
+  "src_sha256": "f19e876fd77b6b1d8acfe22071c95867c6ece421c224d02304d02f8409f6e5ad",
+  "zh": "浮士德之戟"
+ },
+ {
+  "id": 75,
+  "src_sha256": "c71c66ea7e4c65d6131187cb9938f7eb34364d78f436b140f6e3192619a4bd30",
+  "zh": "矛"
+ },
+ {
+  "id": 76,
+  "src_sha256": "32f6c2ed53d70cf5c5ed71be1bc187c9d216b74bf90aee47a3aa53083edde391",
+  "zh": "錐槍"
+ },
+ {
+  "id": 77,
+  "src_sha256": "e9e75e939b3b44a5a91ed91e572ad8dd615c68597cc8e98a7371e8215904ed98",
+  "zh": "秘法之矛"
+ },
+ {
+  "id": 78,
+  "src_sha256": "26140d690a7cf1155b930cdbf238ba441b1b5dde182afa0a242f75753d913df9",
+  "zh": "死亡之矛"
+ },
+ {
+  "id": 79,
+  "src_sha256": "e52e1ceda3c73b493c102c8085db4343bae2f6f9fec59b841578b1c89bb0b206",
+  "zh": "棍"
+ },
+ {
+  "id": 80,
+  "src_sha256": "511a37c43df02ffb6114ed8ca9e4890ea303883c0fab95516a310250b2678c8b",
+  "zh": "疾棍"
+ },
+ {
+  "id": 81,
+  "src_sha256": "0732bef33ba8a31dae3bc6cef9d8ceb0eb4dd53d8d3b37db68c49ed67b4f66eb",
+  "zh": "座頭市之棍"
+ },
+ {
+  "id": 82,
+  "src_sha256": "1d992b785bf9b98b4bd19386edbae178abeaf6cf7ac3bfbf97aedac82ba483b7",
+  "zh": "長棍"
+ },
+ {
+  "id": 83,
+  "src_sha256": "8c19cbda04bf969d1a905f58858503b8b19adc738a57122d50b16377357c81c7",
+  "zh": "聖體匣杖"
+ },
+ {
+  "id": 84,
+  "src_sha256": "5e23370f83952601c49daa5c1f2e56e9462577c10db368ab1f8ee44e9244a14c",
+  "zh": "聖光重擊杖"
+ },
+ {
+  "id": 85,
+  "src_sha256": "2ae8a193429b3bafa84c6fdab5c1cffa542956842a2d3e98476d6c758df73a7a",
+  "zh": "衝角杖"
+ },
+ {
+  "id": 86,
+  "src_sha256": "5288f8f24b3a57eb30ba658eb25559016abcc0e07507ef0371aa97cf3f696ee3",
+  "zh": "毀滅之杖"
+ },
+ {
+  "id": 87,
+  "src_sha256": "195cf916f34e93db8fbb6a9416103d7e4f40b048efbedd860e24ccb1738965d3",
+  "zh": "魅惑之杖"
+ },
+ {
+  "id": 88,
+  "src_sha256": "f499687d3813fe50a893791842ecc29acabed9bcc6d8b574890bd41af5d7cf55",
+  "zh": "祝福之杖"
+ },
+ {
+  "id": 89,
+  "src_sha256": "46cee202293eff7bc93b3b988d104179ac224979a427b3a2680073d708423929",
+  "zh": "渡越十字杖"
+ },
+ {
+  "id": 90,
+  "src_sha256": "087c859df7bbb86823058e1c326b2b46d2dbc37273eed174bc5b33277c32937b",
+  "zh": "牛鞭"
+ },
+ {
+  "id": 91,
+  "src_sha256": "c0662085d5caeb2e0e9e628934d98d7e9c4c689fccfd5c28919c8a0269247b6b",
+  "zh": "鐮刀槍"
+ },
+ {
+  "id": 92,
+  "src_sha256": "fa8570b59afaa1f69334174746277f5127a10dbe6da46dd27d5c5e127df6ffe2",
+  "zh": "薙刀"
+ },
+ {
+  "id": 93,
+  "src_sha256": "6387c46369d1b2827366f6bf4c718197cc1287c658e3a4e59340967d6a982454",
+  "zh": "長柄鏟"
+ },
+ {
+  "id": 94,
+  "src_sha256": "2a5c5002415eb12f5ea7c195f852c6592c6420e82aa0007f3053ed8fb2f9125b",
+  "zh": "九尾鞭"
+ },
+ {
+  "id": 95,
+  "src_sha256": "cb115a7ab849366a9c7c20accdc447ade3b9194d421d82ff687cf4dcc690cabc",
+  "zh": "騎槍"
+ },
+ {
+  "id": 96,
+  "src_sha256": "95ead41efc31925994b3fe951a4d55898d0bd4aeb4443bc93d0471cdda2ecd47",
+  "zh": "狂女之槍"
+ },
+ {
+  "id": 97,
+  "src_sha256": "297d1722c698eefc45f5b1ba9a8f4a193233f56c4e747783d0b6dd663c94f1a4",
+  "zh": "擊昏棒"
+ },
+ {
+  "id": 99,
+  "src_sha256": "88b30ec3c1793b00f2d03d6901b4953137c15ed294644444cb68a5cea2d7b71b",
+  "zh": "飛刀"
+ },
+ {
+  "id": 100,
+  "src_sha256": "457a34ad11ddd80a95e3b13f222dbc3b435d7cbc6e81710fee00c36e83792dfd",
+  "zh": "冰錐棒"
+ },
+ {
+  "id": 101,
+  "src_sha256": "4b5ca9f5d0520871e80ddc8e669e2b622574e9d187c16cb36ddccfc6ff2ac0c7",
+  "zh": "火焰棒"
+ },
+ {
+  "id": 102,
+  "src_sha256": "38b90c0cedc06b1412118afde84db14a1f077e877ec937c76ffde8323c6d26a2",
+  "zh": "火箭棒"
+ },
+ {
+  "id": 103,
+  "src_sha256": "8dfe1191ec4a229c47b2f21721943c113e0a067c0d59f7a589070f8eb690ccb7",
+  "zh": "羽鏢"
+ },
+ {
+  "id": 104,
+  "src_sha256": "2584e97b8e7ae183f6d07018409bb235c7edbcc259b620cbfe1a6fa689c30272",
+  "zh": "毒鏢"
+ },
+ {
+  "id": 105,
+  "src_sha256": "ea3270ac8785c38bc66360e40506143e170551a373b7e71101b3a5c686a7cdde",
+  "zh": "手裡劍"
+ },
+ {
+  "id": 106,
+  "src_sha256": "fe3b8cb4a6146920705283b6d9f0451507ad06a3f6cc442706831d16f0ab6be7",
+  "zh": "死亡之星"
+ },
+ {
+  "id": 107,
+  "src_sha256": "4257cb438fc6f1146db09ec81e0218b4cee168422fbeadf888b14a09da38e6ad",
+  "zh": "熱能鳳梨"
+ },
+ {
+  "id": 108,
+  "src_sha256": "af4f6d8706e9a7c5dc01b292f8d8508f28a7f8b68084b193841d2068af99e42d",
+  "zh": "火花棒"
+ },
+ {
+  "id": 109,
+  "src_sha256": "262b180076fa8f521fd9e26d86bc070bcdefb297c5bcc0310c2e7e47937addb5",
+  "zh": "爆竹棒"
+ },
+ {
+  "id": 110,
+  "src_sha256": "bc0f80620ba6caca3610b225b8778d82fa0ea15189970a0aed91f8adbdc450ff",
+  "zh": "短弓"
+ },
+ {
+  "id": 111,
+  "src_sha256": "4cf469d6ea547ff7636dff67c26b7b4b72240ce1378f4c2e286df9cb9e038550",
+  "zh": "長弓"
+ },
+ {
+  "id": 112,
+  "src_sha256": "26f1eae873e27becc0fcea172cfcc7f69c304097f3c28296532f4988200cce9e",
+  "zh": "附魔弓"
+ },
+ {
+  "id": 113,
+  "src_sha256": "90d8d6de638ced1b9a2431f8d63287dc7a0d66763c90ea855dd2323e37024902",
+  "zh": "輕弩"
+ },
+ {
+  "id": 114,
+  "src_sha256": "80d40c8d1f843eaf6ba25df4c00ee52f99d7cc42f2411c62a8f86d076ed93507",
+  "zh": "重弩"
+ },
+ {
+  "id": 115,
+  "src_sha256": "643c61d050c073667cc4f62cdbb4bd241f05c8785d657058eea4a1926fd42249",
+  "zh": "攻城重弩"
+ },
+ {
+  "id": 116,
+  "src_sha256": "892b3e48247423ea2409c3ce353a912289bac5fb1ae8d08712fe4d791e8ac881",
+  "zh": "投石索"
+ },
+ {
+  "id": 117,
+  "src_sha256": "ca8a3ebddba341c240f9e0e89e371bb5f911e1647c4f00aa7a989c7eb445abd7",
+  "zh": "腕力彈弓"
+ },
+ {
+  "id": 118,
+  "src_sha256": "9fb4899f972bd2385e8cae0349791dbe9f5673877697b30ed11707f1437981ce",
+  "zh": "巨弓"
+ },
+ {
+  "id": 119,
+  "src_sha256": "5cf4aeb67880d662ac9d08772175052bfbc7b487279611cfb52e49b89ec265b3",
+  "zh": "{{Elf}}弓"
+ },
+ {
+  "id": 120,
+  "src_sha256": "b87476a6f04534b5b2d188b330932f681c59067f3f4dbe7165d1a20452909220",
+  "zh": "鈷藍動力手套"
+ },
+ {
+  "id": 121,
+  "src_sha256": "65727e5de45a7b5c034f94ceef5e05c4d7307cc0c701e8016f029288d9ddcf0b",
+  "zh": "拓荒者相位槍"
+ },
+ {
+  "id": 122,
+  "src_sha256": "0a941cd32752259c93db38c7eaacc4400f90c9aa3a2958a919367a9a552f6e31",
+  "zh": "神秘射線槍"
+ },
+ {
+  "id": 123,
+  "src_sha256": "7672dad9894ba3d33c1a4a0146e594d068fe79a64b26e8bff3d091aa9e64976e",
+  "zh": "火繩槍"
+ },
+ {
+  "id": 124,
+  "src_sha256": "4fd533f4e4f2c3f73a0ce54170a869f14d80f58598c29a6604b825830c1b08d3",
+  "zh": "喇叭槍"
+ },
+ {
+  "id": 125,
+  "src_sha256": "70737fd8d489a1ee800f0ff6cd2defe290de0b4bd6cc486a9acca216b0838d14",
+  "zh": "一束箭"
+ },
+ {
+  "id": 126,
+  "src_sha256": "ca20806b04b9b9bad3c0befcb2d8add9b0629293249bf15ac41393dc92d901cc",
+  "zh": "一束伯勞箭"
+ },
+ {
+  "id": 127,
+  "src_sha256": "bc811572e1bea7cc88aae3e9c5e99c2ba3d29ebf469d9026bac982ae392c2089",
+  "zh": "一束倒鉤箭"
+ },
+ {
+  "id": 128,
+  "src_sha256": "51c5e62e84c4c98a6b724f776e0314b96178b897ab83763bf49c8491a9ca4153",
+  "zh": "一束穿甲箭"
+ },
+ {
+  "id": 129,
+  "src_sha256": "735df2a770573c33f4a5b63bb3b92b691ea25ca95993eeeb4f727cb317007a24",
+  "zh": "一束蝮蛇箭"
+ },
+ {
+  "id": 130,
+  "src_sha256": "085b7eafdc52ed5e59d6883930f25f406e0bf98d79dff032a0eb8990663fdd87",
+  "zh": "一束秘法箭"
+ },
+ {
+  "id": 131,
+  "src_sha256": "894317b0a9fbffe9baa75ddc5f196096d192711e764068a109f3b5c625c49b53",
+  "zh": "一束和平使者"
+ },
+ {
+  "id": 132,
+  "src_sha256": "67aa5c75268e6da560a736e3f30c2dffb79480d1a6553046a96c66c0e0ae8178",
+  "zh": "彈石"
+ },
+ {
+  "id": 133,
+  "src_sha256": "dc8f8248701eb9a8b0f87232d378db802e9a49bfcd917902e060a36bdec60501",
+  "zh": "尖刺石"
+ },
+ {
+  "id": 134,
+  "src_sha256": "8b2f81b1b0603ab2a39fbf476a4e7f5b6ed3b660a09531e93235fec407de19dc",
+  "zh": "穿刺石"
+ },
+ {
+  "id": 135,
+  "src_sha256": "ab2eb09487f148c6fcede412d61d865935b37acd2ed1f4613cc26b68237dd9bf",
+  "zh": "塔利石"
+ },
+ {
+  "id": 136,
+  "src_sha256": "6307c38da2ac7e7e37f2ceb37df507981cd2bd8aa7a7683f6efee2eb1163b5f2",
+  "zh": "梅杜莎石"
+ },
+ {
+  "id": 137,
+  "src_sha256": "052d50d1bc8fa9e77deed15b1a17912fcf1c74350bbe9ebfbd6eefdb098f8255",
+  "zh": "一束弩箭"
+ },
+ {
+  "id": 138,
+  "src_sha256": "3143f47500b938f933e6c1476347d1ba3aca1031108bad87b37b3ea47961749d",
+  "zh": "一束獵人弩箭"
+ },
+ {
+  "id": 139,
+  "src_sha256": "44e9d0baa56e9fc4db1aee53e12b33e67563dbbc5ce9a0c2a6f63df6240cac92",
+  "zh": "一束閃電弩箭"
+ },
+ {
+  "id": 140,
+  "src_sha256": "28227369a7112584644278778d0f0f55b5683d917c86a21492fcc4a5f6fc75b2",
+  "zh": "能量匣"
+ },
+ {
+  "id": 141,
+  "src_sha256": "d1702cd2a1b31e70ccea253118741b79090aebd992dc6d1d49a211a271de88fd",
+  "zh": "鉛彈"
+ },
+ {
+  "id": 142,
+  "src_sha256": "aadd1d92b826b5f4d3ec551e29873383890e91c5cc7a2eb1230f312222fdedde",
+  "zh": "龍形鳶盾"
+ },
+ {
+  "id": 143,
+  "src_sha256": "93ed1589f7e47b4db1a042bfd7f0238aaf856efceee0e84b90fe7d9b32cb21ac",
+  "zh": "小圓盾"
+ },
+ {
+  "id": 144,
+  "src_sha256": "577a1b47bcaea05e6987d98177ed54c04a8e77dbab12be9225793839c8d5ef58",
+  "zh": "圓盾"
+ },
+ {
+  "id": 145,
+  "src_sha256": "ec95f93fab3f66d701913f7ba0edd756ac1cdce49a25d8525081eab462cff628",
+  "zh": "翱翔之盾"
+ },
+ {
+  "id": 146,
+  "src_sha256": "3f0fc85e5c5ed9fb4f6431e114228eab456fb5129c2a47d6763e8f3bf078c4a9",
+  "zh": "{{*Light* *Shield*}}"
+ },
+ {
+  "id": 147,
+  "src_sha256": "7c0041e2d2521b1ebce7f79483068107a7a9205335689ac9ab42503548b31132",
+  "zh": "熨斗盾"
+ },
+ {
+  "id": 148,
+  "src_sha256": "85eed638b3bb813d59d62be80ed8c930d166869f672c5f57f2e0c636eddc11c2",
+  "zh": "板甲(上)"
+ },
+ {
+  "id": 149,
+  "src_sha256": "f58e51fd779d6d7ad9d549823e6c63fab900efc5a8a9a5e25aca448c3c91ccc8",
+  "zh": "死亡鎖甲"
+ },
+ {
+  "id": 150,
+  "src_sha256": "70ca1d23aac00e900bb74a5e3d90f23e1c1565c01d2e9e5441c31a62b6667067",
+  "zh": "板甲+2(上)"
+ },
+ {
+  "id": 151,
+  "src_sha256": "847b9f7bac6a0cc29ac746e5594640303ade21c2619586c9553d4c39320bb9e0",
+  "zh": "板甲+3(上)"
+ },
+ {
+  "id": 152,
+  "src_sha256": "ccad825905e8aacc430bb5374139a7299aa5a788d4b265ad1f5b6cfe6d50e845",
+  "zh": "烏木板甲(上)"
+ },
+ {
+  "id": 153,
+  "src_sha256": "c46f9e75b4ba3b010de6065eac1b7208cdbce3c5bd8eb03747775209a3eafd03",
+  "zh": "皮胸甲"
+ },
+ {
+  "id": 154,
+  "src_sha256": "f1bd32783ae9cdab7546f4d728b74033d31d551ec4e329c874c15839ea6fdaef",
+  "zh": "青銅胸甲"
+ },
+ {
+  "id": 155,
+  "src_sha256": "b1b0ae071372fb8003f5f6bba2cac5fcc88cffc021ea9f174959bdea9db3fa3d",
+  "zh": "防彈背心"
+ },
+ {
+  "id": 156,
+  "src_sha256": "bc05d65f93607a55a68625e2104938d3e9812fc154ab81792c8dcd73081f6428",
+  "zh": "布衣"
+ },
+ {
+  "id": 157,
+  "src_sha256": "444cf4c71e2d264e5f9c431394ec85e22a3ffa160e5981952dd0194975c37496",
+  "zh": "麂皮緊身衣"
+ },
+ {
+  "id": 158,
+  "src_sha256": "072efea154dbabc39f96918d8b52823d03c05a823a573e5c7e93350415cb111e",
+  "zh": "棉襖"
+ },
+ {
+  "id": 159,
+  "src_sha256": "5144ba379da97bffcb70570daf8002fa20c36fdab8a5eb2a8f8c6d111022c459",
+  "zh": "皮鎧衫"
+ },
+ {
+  "id": 160,
+  "src_sha256": "b6274af0a2f06ff837f12941dd76c08839e0c28e209c65e25d20fe99baf9ca44",
+  "zh": "橄欖皮緊身衣"
+ },
+ {
+  "id": 161,
+  "src_sha256": "4e129830ca086f522ff383500b515355dd5f7fbfbc4fe2efcb99e093325be129",
+  "zh": "鉚釘鎧衫"
+ },
+ {
+  "id": 162,
+  "src_sha256": "33604c383c2001579e346aeac314d4cf721ef0113d87697f3e943325c82523f9",
+  "zh": "鱗片鎧衫"
+ },
+ {
+  "id": 163,
+  "src_sha256": "2ca4c0c88f31436c404fc9308007bc0f8f648acce3048fa7c09f56febbce0f54",
+  "zh": "鏈環緊身衣+2"
+ },
+ {
+  "id": 164,
+  "src_sha256": "015487420e42fa63dfd26c79ddf433f78425ca5bacd8fdf6d59267c405d8ba49",
+  "zh": "防彈夾克"
+ },
+ {
+  "id": 165,
+  "src_sha256": "077676a54d898f49bb88728db62ae829a521e8dca628fe3c80029485ba3e281f",
+  "zh": "長袍(上)"
+ },
+ {
+  "id": 166,
+  "src_sha256": "e766c233fb6dd755c8adbda311d4aebcf56e0d6d483bb01b75db5ba4809f8a12",
+  "zh": "長袍(上) +1"
+ },
+ {
+  "id": 167,
+  "src_sha256": "f2c0b1f6d0ad8ce91a3858a2a1ea026bb05d704740308837c52dfab6e3fbf65c",
+  "zh": "附魔長袍(上)"
+ },
+ {
+  "id": 168,
+  "src_sha256": "7c43463a6a7747927230812125bdc18fa5844e862ec5a3e03a287fabcf41975f",
+  "zh": "黑色死亡長袍(上)"
+ },
+ {
+  "id": 169,
+  "src_sha256": "fb9d052d5bcc48e795db1422dec08d590f94fe125618e2207255e505afb2fab2",
+  "zh": "薄紗長袍(上)"
+ },
+ {
+  "id": 170,
+  "src_sha256": "7cd239bd01b0b5a64ca93c68302e71823503f9488cc719e9e773c9f13ee766d9",
+  "zh": "毛皮背心"
+ },
+ {
+  "id": 171,
+  "src_sha256": "fa6f0f8e7474e874ce46d8edfb3f22319e278c4edd3f26080838a5e6b9ce8463",
+  "zh": "鉚釘皮胸衣+2"
+ },
+ {
+  "id": 172,
+  "src_sha256": "334f4458e141f665594f64b46eb5fac331cd7deb5496119769d02afa8bbd29ca",
+  "zh": "胸甲"
+ },
+ {
+  "id": 173,
+  "src_sha256": "4fe205d16d6d59a8b89b4a06ee8ca489ea5f260f515c32363c4182cabd253d65",
+  "zh": "胴丸(上)"
+ },
+ {
+  "id": 174,
+  "src_sha256": "0b2a6ab6418d02fe8259c76b94684a2fcff92adc1764794e607d84bad94930a6",
+  "zh": "當世具足(上)"
+ },
+ {
+  "id": 175,
+  "src_sha256": "29766b56bbb0dd5d8024328e5110166f82bbb26c92df41542579d4eddf2ae81d",
+  "zh": "緋金胴(上)"
+ },
+ {
+  "id": 176,
+  "src_sha256": "d2f40f7fb3c2e6bdd8f2820d137678398d2886aad7f5fbce1991e2c60f819419",
+  "zh": "鏽鎖甲"
+ },
+ {
+  "id": 177,
+  "src_sha256": "eda717b792c2211f28ecdadaaa3a0706bbc886bfeb7d4b5233498933a08d90c8",
+  "zh": "鎖子鎧衫"
+ },
+ {
+  "id": 178,
+  "src_sha256": "f44882c8198bf3f42b60381ffb199b569345673e7f54b35d63a502a0e1fcdc61",
+  "zh": "鎖子甲+1(上)"
+ },
+ {
+  "id": 179,
+  "src_sha256": "8f95151bb166fcb4f577912b8ab2335b18e62c10cb4294fe85a9fbe9a4903434",
+  "zh": "{{Divine}}鎖袍(上)"
+ },
+ {
+  "id": 180,
+  "src_sha256": "121fe4f595d08ea0ffe5bd03a141597885b5dde4abb092ec83e84a11e7f4c213",
+  "zh": "{{Ninja}}裝(上)"
+ },
+ {
+  "id": 181,
+  "src_sha256": "af74721fcf38e5390c49ca8dc389a05f102ee736f73718cad719b1ba5df6ff70",
+  "zh": "板甲(下)"
+ },
+ {
+  "id": 182,
+  "src_sha256": "dcd4c0af28c865bc864ee189f7b1b1016b46a9e84f8e5ed43317dbbe2bb0fabe",
+  "zh": "板甲+2(下)"
+ },
+ {
+  "id": 183,
+  "src_sha256": "4e888bb72f140fe26de4ea546a0127aeb87d5a9edd5d652d20cb2732e4a137d8",
+  "zh": "板甲+3(下)"
+ },
+ {
+  "id": 184,
+  "src_sha256": "81b346bd76c2934ba7ff86f10eeed8453166c30282ac87ce44659adf9cf5ed95",
+  "zh": "烏木板甲(下)"
+ },
+ {
+  "id": 185,
+  "src_sha256": "4cdaf49fbe5a9610561a8420c543fb06724d28a95eef5a11b037deaa99762629",
+  "zh": "皮護脛"
+ },
+ {
+  "id": 186,
+  "src_sha256": "5307c32290e2c6da851f3279372ddcfa69c3634b306c90eb69e21fbfc38797ce",
+  "zh": "青銅護脛"
+ },
+ {
+  "id": 187,
+  "src_sha256": "866e39582b1dbefb5c4362e95ddbbcbdec9ff648f4a931591409b11b5f075c2a",
+  "zh": "布褲"
+ },
+ {
+  "id": 188,
+  "src_sha256": "1f2ba4f9e5f0ab5f73279128ac52332ff1d73060e26ab24baa1ee34fc207c331",
+  "zh": "麂皮褲"
+ },
+ {
+  "id": 189,
+  "src_sha256": "6f94c8225adf46a377368644b2f683b05754b673997b13d50249f9ea7578bcd4",
+  "zh": "皮綁腿"
+ },
+ {
+  "id": 190,
+  "src_sha256": "e1a15ac59a3dfa260eacf8c70a5892cd18dff5e359209e1c163caf25b737da00",
+  "zh": "鉚釘腿甲"
+ },
+ {
+  "id": 191,
+  "src_sha256": "0ae197bd672b78c1ec3fce5774625574d49139c89cd4c9a14ff125fcde5a7aa5",
+  "zh": "鏈環褲+2"
+ },
+ {
+  "id": 192,
+  "src_sha256": "63acbf81bb4c1821b81737d1bbf84650c3a5db395e39f50914562915556b1509",
+  "zh": "長袍(下)"
+ },
+ {
+  "id": 193,
+  "src_sha256": "551f15b4bfef3a676398f87b73d4140681d6e6a1bc747d2f64224b868b188d83",
+  "zh": "長袍(下) +1"
+ },
+ {
+  "id": 194,
+  "src_sha256": "704f39a4e594c4d17cb05f4c2b39698f7f89464b4339493cc4bcae913ca74f78",
+  "zh": "附魔長袍(下)"
+ },
+ {
+  "id": 195,
+  "src_sha256": "120736801fc9b8d1dd92fd4b5a4d3c62efb05332160c8f5f26015255e78a117b",
+  "zh": "黑色死亡長袍(下)"
+ },
+ {
+  "id": 196,
+  "src_sha256": "d11ac6cebf4641677be5714914f2669e516ede533d02eb65847110ba58abd932",
+  "zh": "薄紗長袍(下)"
+ },
+ {
+  "id": 197,
+  "src_sha256": "9806f453fd7e5dfc8776a6db82a2cb5adef4fdd8452531bd2bd44c5f1bf6e6a2",
+  "zh": "羚羊皮裙"
+ },
+ {
+  "id": 198,
+  "src_sha256": "ac7e34f798cddb88bf70223e190c6511afb5bd2f1e1d928d2a6f976cbb296359",
+  "zh": "鱗片裙甲"
+ },
+ {
+  "id": 199,
+  "src_sha256": "236db148fbc5a47b2bbfb974b95a29c53ea5e434277a413ec5df1285fddfe965",
+  "zh": "鉚釘皮裙+2"
+ },
+ {
+  "id": 200,
+  "src_sha256": "c19a034f11bf5dd810309565ee8c440ade023247eea4dc4e629c3e5b0da9f375",
+  "zh": "胴丸(下)"
+ },
+ {
+  "id": 201,
+  "src_sha256": "7d1af00c3adfa8c2d5bf49ad893a00bf2355e46ab834ba606b72dbace6789231",
+  "zh": "當世具足(下)"
+ },
+ {
+  "id": 202,
+  "src_sha256": "7b077adea48fac2aaf4d502481e6a50632a0a5806f7055da31999a3eed7de914",
+  "zh": "緋金胴(下)"
+ },
+ {
+  "id": 203,
+  "src_sha256": "039ad2a55fd97b689ecbb3c853f7414349a79ae5c87d8dbc85e8c04d085f6886",
+  "zh": "毛皮綁腿"
+ },
+ {
+  "id": 204,
+  "src_sha256": "d85eae924307b6dd54738aa6827acb3fcdd5869a6a8fd08affb7ce3d5a7a33ed",
+  "zh": "棉綁腿"
+ },
+ {
+  "id": 205,
+  "src_sha256": "6e733d6247a70f6882d3293c7b54f47fd0578c9f21b1e86660bccac3c1762bec",
+  "zh": "橄欖皮綁腿"
+ },
+ {
+  "id": 206,
+  "src_sha256": "28e70662f19a8db716383e5d1bda5b1ce0da3f85c62c2c87809c32cacb023081",
+  "zh": "鎖子腿甲"
+ },
+ {
+  "id": 207,
+  "src_sha256": "251f3f7630a2bba80ec70ebdb2e735a321718ab242cd0069507924aae5c69e7f",
+  "zh": "鎖子甲+1(下)"
+ },
+ {
+  "id": 208,
+  "src_sha256": "9dc4c2bfc2b41c92c4a48499cf5adc68916b07efa7e7a4cbe13284264eece7bc",
+  "zh": "{{Divine}}鎖袍(下)"
+ },
+ {
+  "id": 209,
+  "src_sha256": "3448dcf3cad9320c128be7c19c71cb254797bfedc6f6dda21a0692a0b7e04b52",
+  "zh": "{{Ninja}}裝(下)"
+ },
+ {
+  "id": 210,
+  "src_sha256": "cb7e9aef5294884c5a1f6bbcbba0d8135db3cecad1f24a0157ba8940aaa83380",
+  "zh": "鋼盔"
+ },
+ {
+  "id": 211,
+  "src_sha256": "e9ff5d35a8f5b01b81d96274ac1d6366ef22e1fbacbbcec7863b6586d1216a00",
+  "zh": "輕盔"
+ },
+ {
+  "id": 212,
+  "src_sha256": "181c51911454dfb5ce41238f8fe7b2b2b3d467aa6e7aac4580eb2e5d9ddee37f",
+  "zh": "頭盔與頭巾"
+ },
+ {
+  "id": 213,
+  "src_sha256": "cc5feb1b8abfec8658f50141702a049ba117ccf959732ba77023e98a56ed3b31",
+  "zh": "輕盔與護頸"
+ },
+ {
+  "id": 214,
+  "src_sha256": "e3ddf60f158761c5ef5c4dc42919727a8e2316ba9a1c007e33214a1f019e100b",
+  "zh": "巫師尖帽"
+ },
+ {
+  "id": 215,
+  "src_sha256": "5d73cb74c4f1db87b6f03e3703d21a5a5d435e3cb5683c0c76d9527cec91077d",
+  "zh": "皮盔"
+ },
+ {
+  "id": 216,
+  "src_sha256": "2142738e991dd0b51dc3dd6bb40e0105c5e7ce92394028921ab0769ac6626ccb",
+  "zh": "無簷帽"
+ },
+ {
+  "id": 217,
+  "src_sha256": "1ef65554ff24986ee0054d2c79a03eb54a5f1b360e35e6c60cd26294e6b820a1",
+  "zh": "詭計之帽"
+ },
+ {
+  "id": 218,
+  "src_sha256": "546fb872218ca94aa42f1fecc37d49fbac66d8a79f93e9882d002880e0398b44",
+  "zh": "{{Faerie}}帽"
+ },
+ {
+  "id": 219,
+  "src_sha256": "8b63d422a0fde5a8608ab79f372930d29758ce6d283c0c917a5efdbd71bdc194",
+  "zh": "毛線帽"
+ },
+ {
+  "id": 220,
+  "src_sha256": "2e53e849181057649c949fa13d26e9185da1ae81609488c19b656db0e14682a6",
+  "zh": "羽毛帽"
+ },
+ {
+  "id": 221,
+  "src_sha256": "f6c364ebb0432a52b58d19395a7398bc4d6b18e126ff063ff72533961e3094ef",
+  "zh": "弗里吉亞帽"
+ },
+ {
+  "id": 222,
+  "src_sha256": "c8dfecb52d0f2189be03d32737a153423a5d11461361320688763f2b5a8a9277",
+  "zh": "Flynn 之帽"
+ },
+ {
+  "id": 223,
+  "src_sha256": "81f3c1507efa12f3d9fbd0e2ef76957d52fdcbd53a703d752a076419688dc99a",
+  "zh": "{{Bishop}}冠"
+ },
+ {
+  "id": 224,
+  "src_sha256": "86da62a41f8f3bd55f9da3e5c99153d891e458841f22fa496069cd8da71e7db3",
+  "zh": "聖潔{{Bishop}}冠"
+ },
+ {
+  "id": 225,
+  "src_sha256": "caeffc1b6b8651e4f681a60e23cff49a1c997b18dd0efb17006e2e8581396ed9",
+  "zh": "兜"
+ },
+ {
+  "id": 226,
+  "src_sha256": "970a4d5445b357cef971da07f583c350ffbca2e592e7d0945d163efbdbacbfd5",
+  "zh": "勃艮第盔"
+ },
+ {
+  "id": 227,
+  "src_sha256": "21ca7857faf0fa0402ddc5fe243fe48637a4a502912d26631c906ce6b5d5206e",
+  "zh": "鎖子頭巾"
+ },
+ {
+  "id": 228,
+  "src_sha256": "c3d29c2b7d39c3c78e68e8aef6cbdc35c0bf77f520a3d43326cd30926c490e59",
+  "zh": "{{Divine}}鎖子頭巾"
+ },
+ {
+  "id": 229,
+  "src_sha256": "f7f6b328124bf3a20fa862488d6681533c257bcd3500875d978a59efca5ad21c",
+  "zh": "全罩盔"
+ },
+ {
+  "id": 230,
+  "src_sha256": "fb1635d03609ee8ae19f7b7cdaaa458e00e935441851029ba4c3ce23cb1ab860",
+  "zh": "{{Ninja}}頭巾"
+ },
+ {
+  "id": 231,
+  "src_sha256": "fdfb8b8a8684c5f91564dcb8af1436964bb776338cedef15456836e0cb7bf9b2",
+  "zh": "巨盔"
+ },
+ {
+  "id": 232,
+  "src_sha256": "07c7c509177b7e889f1dadb40cbc006e012f2afa4f747aeb372e47c5fd3a5d76",
+  "zh": "烏木巨盔"
+ },
+ {
+  "id": 233,
+  "src_sha256": "b7a08e7d03ce0cb180e28ca0a6bc71ccae8e8c3498a07e3ee5376cfbea597b6e",
+  "zh": "十字軍頭盔"
+ },
+ {
+  "id": 234,
+  "src_sha256": "802e4da18f27518587e750e15ce4f09b165b7fe1c0583f3593969a9312ca5b9f",
+  "zh": "死靈頭盔"
+ },
+ {
+  "id": 235,
+  "src_sha256": "cdb77abe00cb245d4dc993ae9a1cabba9a5c87e31435796bf87d335bad89b5d1",
+  "zh": "鋼護手"
+ },
+ {
+  "id": 236,
+  "src_sha256": "7b11fdf8201926f4d585cf0d47041d41bc9c297e5b88ba58b3e7623dd207d4cf",
+  "zh": "銀手套"
+ },
+ {
+  "id": 237,
+  "src_sha256": "bf114f81ed2f95052a58c5dab1db4449875d21d370c155fde448382d8a212502",
+  "zh": "皮護手"
+ },
+ {
+  "id": 238,
+  "src_sha256": "c314e4fa2a1902cf50a756b450655eab259d8dd07d06b2ab7f561d9dfd1cb931",
+  "zh": "絲手套"
+ },
+ {
+  "id": 239,
+  "src_sha256": "3860335890155fcf0f3e02ff69e16ad9b22d696fd5ef7585ca2b94cb616c9735",
+  "zh": "羚羊皮手套"
+ },
+ {
+  "id": 240,
+  "src_sha256": "314b08d968e1e2f3d706d8dda3c9fbac4f891169f3b1946cdc211d13d9e18c54",
+  "zh": "螳螂手套"
+ },
+ {
+  "id": 241,
+  "src_sha256": "1f1bb780f3f2e47a657bcb4dd6d67749fa4cc297ef106f7975da8cda342ee7f9",
+  "zh": "鎖子手套"
+ },
+ {
+  "id": 242,
+  "src_sha256": "c52a5efd072341b9ceffc0bd4f4bb388c28df33939bd04027f9d9a26f9483ba4",
+  "zh": "銅手套"
+ },
+ {
+  "id": 243,
+  "src_sha256": "7b0acd67d3acbbc278837581de876f5e4d3b5aa5cbfafe46e5c34642568c7c61",
+  "zh": "鐵靴"
+ },
+ {
+  "id": 244,
+  "src_sha256": "5babfa1782fcb7a75d7f2a909493c5a9713bd5e27d39688737f55c3f3303ec0a",
+  "zh": "銀鐵靴"
+ },
+ {
+  "id": 245,
+  "src_sha256": "78236e4f25ad2d39deb0201b32ad50a707c09d82d8106392e0d12e8be8cb0191",
+  "zh": "磁力靴"
+ },
+ {
+  "id": 246,
+  "src_sha256": "08205319f476c5f91e95c7060b61f59271dca6d3f7d5db53feca20a61ea71549",
+  "zh": "涼鞋"
+ },
+ {
+  "id": 247,
+  "src_sha256": "e0e38f159fd475077887c1624d38ab82e994bd4711b0fa450fa37ff7d9868e89",
+  "zh": "半筒靴"
+ },
+ {
+  "id": 248,
+  "src_sha256": "b8037f3bdb57d625a2c64d72701cda18a3af11eb5b304feeee5ab2203825a062",
+  "zh": "橡膠鞋(1)"
+ },
+ {
+  "id": 249,
+  "src_sha256": "f8e3c289cecfe95e8769e1f20204828021a8b518485f81889486275ca2b45119",
+  "zh": "皮靴"
+ },
+ {
+  "id": 250,
+  "src_sha256": "1cd71bd5b23aac6a1f0b12fc10d01d303d3420c9231f04da79fd54416b300f0c",
+  "zh": "羊蹄靴"
+ },
+ {
+  "id": 251,
+  "src_sha256": "91debed7a9f6c1a2ce33f6b27b48b90f62708e23f5ef3ae05754c3f45891870c",
+  "zh": "螳螂靴"
+ },
+ {
+  "id": 252,
+  "src_sha256": "0fb67f0aef491c98736ff8e01d930856538938f258cf808dc1a73a9dd98c9c7e",
+  "zh": "鎖子長襪"
+ },
+ {
+  "id": 253,
+  "src_sha256": "86783171db52f071f237005706e3e9182b037491596f53771cb2a1dd5a4bbe38",
+  "zh": "足袋靴"
+ },
+ {
+  "id": 254,
+  "src_sha256": "6f333107d493a2e30ff1fc22be4540e90177d8122b2fd2f08924f32075b7463d",
+  "zh": "治療護身符"
+ },
+ {
+  "id": 255,
+  "src_sha256": "17ad055d2e010d1df3a5e7074d5e331418b8a2cb27639cb9a4c78a6004bd9f0d",
+  "zh": "蜘蛛護身符"
+ },
+ {
+  "id": 256,
+  "src_sha256": "c3cafa657f70f89dcfc74dd599aec2fc270ab0b4542cf123ee28068a2e2f8583",
+  "zh": "靜止護身符"
+ },
+ {
+  "id": 257,
+  "src_sha256": "62702ed7d431ff812c29e1260b791f6c645681384bbb72fe72d9295fffc9a0d3",
+  "zh": "風息護身符"
+ },
+ {
+  "id": 258,
+  "src_sha256": "01366ffda17b37f8a0240004d7f8a45ea7f16bac6bcf3002510220e0d0547991",
+  "zh": "罐裝元素"
+ },
+ {
+  "id": 259,
+  "src_sha256": "e4f512e54f248b47ee0682eeea954e4662484733aa92305656372d255b2efb21",
+  "zh": "生命護身符"
+ },
+ {
+  "id": 260,
+  "src_sha256": "b47c36885ff8ef2dabee53a233d064ece49ef9503c6a28d436b07b9567fac368",
+  "zh": "花崗岩藥水"
+ },
+ {
+  "id": 261,
+  "src_sha256": "c3bf4287261742217d50e7921d18db739aace31559f2751a52f92e46a6d5746e",
+  "zh": "星辰之戒"
+ },
+ {
+  "id": 262,
+  "src_sha256": "f7b8a2864062d3032e408dbb97e2fe25101256a4a36e4d30d981ddd1e3f7cc83",
+  "zh": "清醒之戒"
+ },
+ {
+  "id": 263,
+  "src_sha256": "394906cc9e28545fabe3e8f42f30a937bcc1799b4eeaa2fdebed086ccaec45e4",
+  "zh": "迴響之戒"
+ },
+ {
+  "id": 264,
+  "src_sha256": "a4aa76064b76b4fdcf0fe1f49cf1bfb94b38b44f88a9a680c1b5f8e13c604f82",
+  "zh": "{{Magic}}甘露"
+ },
+ {
+  "id": 265,
+  "src_sha256": "49f486e0a05bbd1c394773dd49587a71389b8a51a243ea25ccabeead8a142edf",
+  "zh": "秘術士之戒"
+ },
+ {
+  "id": 266,
+  "src_sha256": "4aca8a8e117d04d2c232fb65bd30b9a418dd41ac1c64d7f2b9da8600076353c1",
+  "zh": "防寒之戒"
+ },
+ {
+  "id": 267,
+  "src_sha256": "7474289211bc6b6de6b874d620c984eb35d891e91a45f87e457deb12af768bba",
+  "zh": "防魔之戒"
+ },
+ {
+  "id": 268,
+  "src_sha256": "5d0fb3bece210b6e913190abc7f9963dccbf8cfeb4dc17af4ab00d1de3533e88",
+  "zh": "{{Reflextion}}之戒"
+ },
+ {
+  "id": 269,
+  "src_sha256": "0b05a7384b21bf510964f64b85989e1e3f044b1ce82d04b252e5699c2f7b255c",
+  "zh": "嗅鹽"
+ },
+ {
+  "id": 270,
+  "src_sha256": "ceb850e16dd3c737644f34d0bad78ce08e8546a9bc33ab77c20e4623214e2967",
+  "zh": "浮雕墜盒"
+ },
+ {
+  "id": 271,
+  "src_sha256": "1e86355a1199ee1d2059015ba913f43779ae6a9a9e3dc665d67ed413f56ab210",
+  "zh": "{{Strength}}安卡"
+ },
+ {
+  "id": 272,
+  "src_sha256": "5e30c55544046fb6a679c804a3fdcca32af3c114824a4deb0250810f9009ea81",
+  "zh": "青春安卡"
+ },
+ {
+  "id": 273,
+  "src_sha256": "09fb3ddfc95fc0ad67d97be60cda1d740c2fcf368873a4717850d799a87c0719",
+  "zh": "{{Speed}}安卡"
+ },
+ {
+  "id": 274,
+  "src_sha256": "6b36162a56ac1df535deb0b4149b4b66a008ca22b609c2ffd4bad9b7fd47f3bf",
+  "zh": "{{Dexterity}}安卡"
+ },
+ {
+  "id": 275,
+  "src_sha256": "0e061db85914df5d9146e5ecf808daf44df44201d930b4d73ecf66b57ddc13d3",
+  "zh": "聖潔安卡"
+ },
+ {
+  "id": 276,
+  "src_sha256": "73944ccd65ee26d983652942ab2ad7c192a713acaec77b3cf379b3ac567d934a",
+  "zh": "生命安卡"
+ },
+ {
+  "id": 277,
+  "src_sha256": "30b6434f445f525e65573d4c883b40796b5f254f6d5e061cb4ebb6f0c6c7fc9c",
+  "zh": "死亡安卡"
+ },
+ {
+  "id": 278,
+  "src_sha256": "75e777e3cecf1be574a9f1051a8f5040eb4c58c637b532495ba7e833e589efe8",
+  "zh": "治療安卡"
+ },
+ {
+  "id": 279,
+  "src_sha256": "c3799356aa6214b695f5735dc2500d40271a2e0aed842d1149d9c36a49f3aa50",
+  "zh": "五花黑帶"
+ },
+ {
+  "id": 280,
+  "src_sha256": "edff8cce4279a6efd2d22a207b62fa6fe493a6e73221f521c4d8bffe83a359dc",
+  "zh": "玫瑰花環"
+ },
+ {
+  "id": 281,
+  "src_sha256": "cd6d8d451b9d0c1384328205dc00fddb0c5ab0f921597977b7b34e0142d6e6bd",
+  "zh": "銀十字架"
+ },
+ {
+  "id": 282,
+  "src_sha256": "83dd7bf76d2503413508e9135c6d8479ab5239f31ecf7ebe1cd40fb1507ad65c",
+  "zh": "脫水之塵"
+ },
+ {
+  "id": 283,
+  "src_sha256": "cfe7c165af66279eda67d53aa672fe760ed05b46137851844810dfc739a2a27a",
+  "zh": "守護十字架"
+ },
+ {
+  "id": 284,
+  "src_sha256": "a07cf564cac4641ba0afa7f903ea23628bee3a16878523d39f6b87ba3b9833a2",
+  "zh": "情人項鍊"
+ },
+ {
+  "id": 285,
+  "src_sha256": "6a0bbd0c6a75d7b7f54a2be1fe310400359917d0953a014f59fd4ea3f7f02963",
+  "zh": "窒息護身符"
+ },
+ {
+  "id": 286,
+  "src_sha256": "f7ba3e2fc499551a628a58e4468a9fa3fc1d949c8beb4422b3bdd285d7d2b0a1",
+  "zh": "防魔護身符"
+ },
+ {
+  "id": 287,
+  "src_sha256": "927c724ca8c2def2106383b01044a869a5f834fc01a13ca9a9316795c4776b67",
+  "zh": "彩虹護身符"
+ },
+ {
+  "id": 288,
+  "src_sha256": "c649f4b99b1dabaeddd2d41788979c985c1d646cbcdeade0bdbed615de69c3de",
+  "zh": "金牌墜"
+ },
+ {
+  "id": 289,
+  "src_sha256": "ab9d493e59861fa03b019da2e5151062afcf49c59c51e5166b9438bcba68fb55",
+  "zh": "翡翠護符"
+ },
+ {
+  "id": 290,
+  "src_sha256": "5cc1ffad5cd9e02318ea30a5567c24d5d0fb0e529dc81e8a827905afeb382f21",
+  "zh": "Helazoid 墜飾"
+ },
+ {
+  "id": 291,
+  "src_sha256": "2c49fc0b62ed468f62147b833fe779f6b883f292b60ea261ffc86989e6ed644a",
+  "zh": "聖甲蟲項鍊"
+ },
+ {
+  "id": 292,
+  "src_sha256": "bacc722c84180657a03c5cb71df21a0864d18da7dc276dd0f2f06275b74596fe",
+  "zh": "念力水晶"
+ },
+ {
+  "id": 293,
+  "src_sha256": "1670ec84095f2cdb8b1a6568ca6a35e044608aa8e7b65feaf3c8b92c79454e60",
+  "zh": "蝙蝠項鍊"
+ },
+ {
+  "id": 294,
+  "src_sha256": "c479e6e4c6193d086d7db600f7115dade178976e8b128ae92cdadb2783478017",
+  "zh": "威能寶石"
+ },
+ {
+  "id": 295,
+  "src_sha256": "dc933db39d0c713b4d4e923f33ace5e40ec15ea634cec17c9169c34f74596f90",
+  "zh": "強酸守護符"
+ },
+ {
+  "id": 296,
+  "src_sha256": "6dc3a150cb443eba7f9f3a3b80cf316424c7721c6cbfc7d7624da22a2a3d74bc",
+  "zh": "鑽石戒指"
+ },
+ {
+  "id": 297,
+  "src_sha256": "f82fb65f5f7f3eab5464dffa6cca684133ecab4599c1a34896a2ba2fdd320d1d",
+  "zh": "石英"
+ },
+ {
+  "id": 298,
+  "src_sha256": "fd93b772004bc697c1740b10b3d23f95241207d16efa1002309661a18201a565",
+  "zh": "硫磺塊"
+ },
+ {
+  "id": 299,
+  "src_sha256": "0a5a7001621ea9e932aa10c70a8613dd7e999e50896260b133380321d8a53610",
+  "zh": "芳香鹽"
+ },
+ {
+  "id": 300,
+  "src_sha256": "b6d6e6bc5d98e9e342e1749a75b112c5061e60862aa0a4375a6c6380715f20fd",
+  "zh": "蝠鱝根"
+ },
+ {
+  "id": 301,
+  "src_sha256": "4c4ccd112bbff6c952de1954e7170837d57233da22106b7da9775b18aefcb9ee",
+  "zh": "獅爪"
+ },
+ {
+  "id": 302,
+  "src_sha256": "9968025aad3661f4ba722086c0dedac907602cabc4b2e7e607e653042b1b4cb5",
+  "zh": "符咒石"
+ },
+ {
+  "id": 303,
+  "src_sha256": "0dc3e09e643589a25b84aa1dcb9103b6bd2e5d6b44c9608aa1debc31ed3b1b70",
+  "zh": "龍牙"
+ },
+ {
+  "id": 304,
+  "src_sha256": "67b2d5609bdb39cbfd8bfb9c401becd18d4b96e12a7933b18afdc7633126de0e",
+  "zh": "藥袋"
+ },
+ {
+  "id": 305,
+  "src_sha256": "91493131ef18556c5672abb17a2b409c21014fcb1be922c657ea04bccd9e31c0",
+  "zh": "死亡之袋"
+ },
+ {
+  "id": 306,
+  "src_sha256": "e35ada954988a19b0fcbd09128bdcc1c740a679353f72bbd182582ccb6d05925",
+  "zh": "轟隆彈"
+ },
+ {
+  "id": 307,
+  "src_sha256": "904f2a9682de1315656ae1e11844e79a32728466a36e6696aff3ec5db1196699",
+  "zh": "頭骨"
+ },
+ {
+  "id": 308,
+  "src_sha256": "53c7450cf5cad01baaa8b0f5c7c24f31fcee2bdf73a00c02b32a0de6118567fe",
+  "zh": "死人頭髮"
+ },
+ {
+  "id": 309,
+  "src_sha256": "6223c433008410dab42c9330db9eb0d9e5452ad9345e2219e11872eade1621f0",
+  "zh": "防風之石"
+ },
+ {
+  "id": 310,
+  "src_sha256": "b702fb980aef497d7c92b3d120044018c290234ac9a073a17e9c6bf3cf3537c7",
+  "zh": "新生之石"
+ },
+ {
+  "id": 311,
+  "src_sha256": "cb6cb77119af9f233a120449646a4c858bd7114961ef0f7993169b91b109876a",
+  "zh": "防禦護腕"
+ },
+ {
+  "id": 312,
+  "src_sha256": "f963d2c63d5ee6b9e3377d06315ec28ea02c9566ef6415967db89ea5bf50c00b",
+  "zh": "扒手腕帶"
+ },
+ {
+  "id": 313,
+  "src_sha256": "52fd11d9c5ffefc5d0911401aa165ebb0bf324d0d0e9aa28c35082a3f753f343",
+  "zh": "死亡裹屍布"
+ },
+ {
+  "id": 314,
+  "src_sha256": "af2e6cfb73e0ffc20436c729dd5eeb0bbf804714193c8e9af556be3084533479",
+  "zh": "聖油斗篷"
+ },
+ {
+  "id": 315,
+  "src_sha256": "68c41be7b285829dae5a4c761d85a14c0f25c4c99307510240ebcdedce9163cf",
+  "zh": "洞察斗篷"
+ },
+ {
+  "id": 316,
+  "src_sha256": "389f474512488f8e7677675d3f4cb220fe7ee1d62b4b793f85326cd911511453",
+  "zh": "森林披風"
+ },
+ {
+  "id": 317,
+  "src_sha256": "4a059ed9c4dbe919adf8eaf1bebb2c7bfda8f7aafeafea53e587e8577cfcf985",
+  "zh": "提神藥水"
+ },
+ {
+  "id": 318,
+  "src_sha256": "248d117fb0ff560b2c2b9466519640d3b45a1b8bce2e0b993649bf45093fa0ce",
+  "zh": "暗影斗篷"
+ },
+ {
+  "id": 319,
+  "src_sha256": "d192e0613ec968d6e8ef5bec256e62db3bc7f6ac1614f78ddc15396486bda220",
+  "zh": "午夜斗篷"
+ },
+ {
+  "id": 320,
+  "src_sha256": "08737fe2babc9a4e165e78e0b741cd81af16a7009b904bed1702b77c25e55fec",
+  "zh": "毀滅風笛"
+ },
+ {
+  "id": 321,
+  "src_sha256": "a40958a3973b7dc3ec31f34fb0f2b04ba9677429eee6c1b88ada2583d8242a0e",
+  "zh": "七彩豎琴"
+ },
+ {
+  "id": 322,
+  "src_sha256": "3f65234f8c7666c4fcd50378278b827a40f554aa2d092d6aa62bce7658db1fef",
+  "zh": "沉默豎琴"
+ },
+ {
+  "id": 323,
+  "src_sha256": "6ce1025c65781b352dce2ac7185e848b101c50c1fc2d354fec11798def63a0ec",
+  "zh": "蛋糕豎琴"
+ },
+ {
+  "id": 324,
+  "src_sha256": "4a99ecc9f5cc83c5bde35f2fc97998321ceb8cca35de736870bd5d184615fd36",
+  "zh": "詩人魯特琴"
+ },
+ {
+  "id": 325,
+  "src_sha256": "8e5ab13f4c2bc6744919b588d6229fcf717a0297f3061039e80c32feaaf5643b",
+  "zh": "怠惰魯特琴"
+ },
+ {
+  "id": 326,
+  "src_sha256": "c9bf06dee4d933b910fedc6785cd92b4aa6476862a151e2f7ea93a00f80c3244",
+  "zh": "天使之舌"
+ },
+ {
+  "id": 327,
+  "src_sha256": "02871bb3c2218a3f204a52d1c3847e2e5c6fb04fed547082e02340e60e8df70b",
+  "zh": "海妖哀歌"
+ },
+ {
+  "id": 328,
+  "src_sha256": "9ba9be13e01d3ccfc7b240ffac83d21342dad083034229fcb267989b0df2863e",
+  "zh": "普羅米修斯號角"
+ },
+ {
+  "id": 329,
+  "src_sha256": "4981e9c6b02191171ba869b6ec3b207f7af842e37de6c6b5d85acea2b0c66af6",
+  "zh": "加速藥水"
+ },
+ {
+  "id": 330,
+  "src_sha256": "97704d1be10eba50db784a429fb0c045b0d17b4713728cf48a10a776228aa965",
+  "zh": "魔裔號角"
+ },
+ {
+  "id": 331,
+  "src_sha256": "0e65782c04fabf6053d587a91a0a05f3583fb031838ef360323d37c97d9255ad",
+  "zh": "開鎖器"
+ },
+ {
+  "id": 332,
+  "src_sha256": "c9a4721527cb753dbafb3b59b38f5779dd1ae3c6061c27ec14aa0e4474847d60",
+  "zh": "法力石"
+ },
+ {
+  "id": 333,
+  "src_sha256": "b45f2857b83ef28934c0648c67bccd37cdbeddba9e14a1e221f970b8a1c5c8ab",
+  "zh": "Helazoid 旗幟"
+ },
+ {
+  "id": 334,
+  "src_sha256": "6a61ae129e07f3ffc935f7b4b1f0c3ffab0371767162d2155916077f9b781530",
+  "zh": "減毒藥水"
+ },
+ {
+  "id": 335,
+  "src_sha256": "6576978439e55f69643120cedb69b82219d0d4c009c206c94e90b61c56a9c9de",
+  "zh": "輕度治療藥水"
+ },
+ {
+  "id": 336,
+  "src_sha256": "477f91a516da076c964da1d6373f1bdba4442dc7ce11bf756ee4ca0a36ef03a7",
+  "zh": "中度治療藥水"
+ },
+ {
+  "id": 337,
+  "src_sha256": "bbe1d6c3390619133d3f02db5192fd6036fd9b00194c253f12205bac8c1cf59e",
+  "zh": "重度治療藥水"
+ },
+ {
+  "id": 338,
+  "src_sha256": "5c7c24d34fb634143c382f54f75d943300acb514d73d8c1409c87c274ea23163",
+  "zh": "超人藥水"
+ },
+ {
+  "id": 339,
+  "src_sha256": "493f6a1a323db25bbdf2eecbdf0b13df5fc7ba836bbf4a5743dcc2700621a73e",
+  "zh": "復原藥水"
+ },
+ {
+  "id": 340,
+  "src_sha256": "d68824aead8eaa475eb79f1255b49e743b24cdb9be93a27626d292b264e87757",
+  "zh": "Fuzzfas 氣泡水"
+ },
+ {
+  "id": 341,
+  "src_sha256": "59d1115f06f576a5f5b0274c0ff10a4ec422c01128c67060b11edf16609962e1",
+  "zh": "解毒藥水"
+ },
+ {
+  "id": 342,
+  "src_sha256": "53bec41eea97827fc64f1997f255b030a78a2e8fbd77c9c687ee01b6084022bd",
+  "zh": "解麻痺粉"
+ },
+ {
+  "id": 343,
+  "src_sha256": "62879a9d6233e2a50bcce0622c59c2d2f32e959720d7c78e39fda63462e37e7c",
+  "zh": "燃燒彈"
+ },
+ {
+  "id": 344,
+  "src_sha256": "9483a8c2aaa4791961b674b5c4b707639cb7bfd080c2ca279cf0fe8205883a01",
+  "zh": "酋長沼澤麥芽酒"
+ },
+ {
+  "id": 345,
+  "src_sha256": "f0ff617c4bf66eb9adf1832b90a6b6fa3feb8ea97962ba52c9bd4105c2a62229",
+  "zh": "重度恢復耐力藥水"
+ },
+ {
+  "id": 346,
+  "src_sha256": "0192d17fc730914ad75332a7461acbba1e447908c4875d28e940eaa5b1b69884",
+  "zh": "中度恢復耐力藥水"
+ },
+ {
+  "id": 347,
+  "src_sha256": "ed5242c2a70a80e1d79ed4ad7b1fce30ef613348b5acb3a9b96ad0a1d3a6924e",
+  "zh": "解除輕症藥水"
+ },
+ {
+  "id": 348,
+  "src_sha256": "de35d92d54a78e715807d3c0b7ea41e064ced3dedac0bdf8391c7d54f273098f",
+  "zh": "治療疾病藥水"
+ },
+ {
+  "id": 349,
+  "src_sha256": "ae351f9a3fcd5ab533d54dc3d780b919a941229fb18d1bbed6f11a33515ea526",
+  "zh": "聖水"
+ },
+ {
+  "id": 350,
+  "src_sha256": "f7ad1a676adf5c2b36e4b0106dd2bece1bc8b832873481060e6f12bbc745a48b",
+  "zh": "櫻桃炸彈"
+ },
+ {
+  "id": 351,
+  "src_sha256": "9b1ced8bedd734e85341cdccc84cf62438d1730119d89b6d0d85f7d77061e832",
+  "zh": "火焰炸彈"
+ },
+ {
+  "id": 352,
+  "src_sha256": "e7d44675262dd65b7e02a86464c0b266eb462845ba6d6cee6457afb0bbd5903b",
+  "zh": "酸液炸彈"
+ },
+ {
+  "id": 353,
+  "src_sha256": "35e9a8f9c5f44d46d0481928cd4204b4a345f512558262441fa5637adc0b6bfb",
+  "zh": "臭彈"
+ },
+ {
+  "id": 354,
+  "src_sha256": "8a7d570bbfd15e6c90172a17c280af0e59e0fedfe059794d80617207104078e1",
+  "zh": "冰凍炸彈"
+ },
+ {
+  "id": 355,
+  "src_sha256": "6976485fae7da173ce136cc7549d15c46ba59684a0378110dee6dddcf90ea267",
+  "zh": "骷髏粉"
+ },
+ {
+  "id": 356,
+  "src_sha256": "3985cc1b5b413379de9a1def7159998e935fcd20e028837498c7069ef540da06",
+  "zh": "死亡炸彈"
+ },
+ {
+  "id": 357,
+  "src_sha256": "5ececa65f062b8395753b1922ba8bc55c01b814064206abf738ac97e00f3abdb",
+  "zh": "惡魔之塵"
+ },
+ {
+  "id": 358,
+  "src_sha256": "886a476562a99340e84ed9ca49dacf8a1649c88a26764f6f7810486345455fd5",
+  "zh": "{{Faerie}}之塵"
+ },
+ {
+  "id": 359,
+  "src_sha256": "6f7b15b904d1e8e5048cc2229771d9cef922c882a7b50f4f8ead0d2c793421eb",
+  "zh": "噴嚏粉"
+ },
+ {
+  "id": 360,
+  "src_sha256": "fb6baee2dde4d185e6420760055e9572eff30ae2db5049651281a7597dda599d",
+  "zh": "閃光粉"
+ },
+ {
+  "id": 361,
+  "src_sha256": "e6c728875c2ec092d5f099551ffeb0ca168e281153b967ce73a67c296ca7b806",
+  "zh": "倒戈之塵"
+ },
+ {
+  "id": 362,
+  "src_sha256": "a2b8a551a93c70fe08245e33986e8c345de081ae8a1604f651459b85ba42d164",
+  "zh": "放逐之塵"
+ },
+ {
+  "id": 363,
+  "src_sha256": "62075cd9af74c86929c1fa33437a0d1926877a113864a49d5ae33f85ad34a48d",
+  "zh": "群魔亂舞粉"
+ },
+ {
+  "id": 364,
+  "src_sha256": "efdc8d3a2ea6a8c3d63f70b796ceedfd47862bf9cc851679f508ec5b0f312f4d",
+  "zh": "震盪粉"
+ },
+ {
+  "id": 365,
+  "src_sha256": "608fb4c9e9a80631d3304dc0da466d7936d6031b182e283b18ea3283c0d6f8a0",
+  "zh": "短 Gooda 藤"
+ },
+ {
+  "id": 366,
+  "src_sha256": "608fb4c9e9a80631d3304dc0da466d7936d6031b182e283b18ea3283c0d6f8a0",
+  "zh": "短 Gooda 藤"
+ },
+ {
+  "id": 367,
+  "src_sha256": "365bc66fbf59cab442590d5e59dedffe04b91988762a4eeb82f346fb77cc9d1a",
+  "zh": "Gooda 藤繩"
+ },
+ {
+  "id": 368,
+  "src_sha256": "85664976dca2dfe6d28f9d42b6eda91549d577aea8125c1ae7ad2190b7e13521",
+  "zh": "休息之書"
+ },
+ {
+  "id": 369,
+  "src_sha256": "10a81940b5581b9bfa24c0b52e5c329866d2fd403fbb690c864acf7608962952",
+  "zh": "屏障之書"
+ },
+ {
+  "id": 370,
+  "src_sha256": "02fbbc85217ca680f4f140ced689d34816350879fc1dd76f3b92331151c59e7b",
+  "zh": "開鎖術之書"
+ },
+ {
+  "id": 371,
+  "src_sha256": "38c0466811e3a2860acf7a0fdfa4cf1e4a1b25a00dee9cc24b2287a686d11e4f",
+  "zh": "偵測之書"
+ },
+ {
+  "id": 372,
+  "src_sha256": "f4c6a62acce4384e19eca4f10b46dde088341d8a76ee64a2b34ff8d38d38dc9f",
+  "zh": "加速之書"
+ },
+ {
+  "id": 373,
+  "src_sha256": "7c0938240c349278f6b156e9567b6ae5141c118e80f84f5aefc710aa8020bfd6",
+  "zh": "大{{Mage}}曼陀林"
+ },
+ {
+  "id": 374,
+  "src_sha256": "3644583620d80b779c083aa601f62606c996f40db4ff699855a25a0f58862b10",
+  "zh": "祝福之書"
+ },
+ {
+  "id": 375,
+  "src_sha256": "8c314cd8776b2a4acab67f265e89bdbf2e107a554c3a7b3ae4ed52af605a8d1a",
+  "zh": "魅惑之書"
+ },
+ {
+  "id": 376,
+  "src_sha256": "582ebe8b94d0875f8a3ec5e3d5e4a84bcf0f81188c796e7e5c8344ec9ca612c5",
+  "zh": "治癒揚琴"
+ },
+ {
+  "id": 377,
+  "src_sha256": "e32a46a039e974c0951e7bb51bbaee2a0a6b7fea033f2264d7b312a530e553da",
+  "zh": "文藝復興魯特琴"
+ },
+ {
+  "id": 378,
+  "src_sha256": "5534922e4a8f237fcbcf0a73b7ab39b8cc45712184ccf76b534f73696c0f9091",
+  "zh": "解除之書"
+ },
+ {
+  "id": 379,
+  "src_sha256": "ec2fe2c81c51f636371d71785ad9ad1d123217badbbd0889ff976897636d78fd",
+  "zh": "放逐之書"
+ },
+ {
+  "id": 380,
+  "src_sha256": "cc9f289dc761678587b4041f5a7568556ce11443db7d3baf13cd98f126050378",
+  "zh": "耶利哥號角"
+ },
+ {
+  "id": 381,
+  "src_sha256": "bfaa258a8693a7a10d86e16cdec20446322fe4a3c02ecf822c44490c37422af5",
+  "zh": "地獄號角"
+ },
+ {
+  "id": 382,
+  "src_sha256": "dd5e9d59665bcdaba2928c31a9798ef66d84386636314f34a5da2c93668fae1e",
+  "zh": "聖物之書"
+ },
+ {
+  "id": 383,
+  "src_sha256": "c940f45754e0c25e2232de70095987c82438c469b52f1c37b356fd5767b31c3d",
+  "zh": "冰寒小提琴"
+ },
+ {
+  "id": 384,
+  "src_sha256": "3f0a469fb44c3e40963f664d465c42fd32de8e636297cb79499779f8c9776bd6",
+  "zh": "{{Magic}}屏障卷軸"
+ },
+ {
+  "id": 385,
+  "src_sha256": "2eed65df1829b0a53e58de2c479072f91a8a5579a510fc5a9efa93acee4c59a1",
+  "zh": "{{Magic}}飛彈卷軸"
+ },
+ {
+  "id": 386,
+  "src_sha256": "4f89d7dd546b272d99e8dbc349d07fab82a1099259606a3f845328ebd2b8414b",
+  "zh": "恐懼卷軸"
+ },
+ {
+  "id": 387,
+  "src_sha256": "f4203da20bbc99c64353fdb935103dd8a12f2c697b22f410aefb5187a23e3257",
+  "zh": "定身詠嘆調"
+ },
+ {
+  "id": 388,
+  "src_sha256": "969a61aa8366bd97c7404200fc1400a47c44a8776997fe00936c1c028d3d6462",
+  "zh": "遲緩卷軸"
+ },
+ {
+  "id": 389,
+  "src_sha256": "32f1a566ea770726f298209d91d32e871eaa94ee4fc4e7a4cc8942c19e3497f5",
+  "zh": "開鎖術卷軸"
+ },
+ {
+  "id": 390,
+  "src_sha256": "d9044bdbb7b2f2a9ce3bc9730c15a80628b400992b94e086fa86a7cd753365d3",
+  "zh": "冰凍肉身卷軸"
+ },
+ {
+  "id": 391,
+  "src_sha256": "8321f2f820feaaca63a414e4e010960fc6ec64f5abd79a6ee3a7169f0a687806",
+  "zh": "碎石鞭擊卷軸"
+ },
+ {
+  "id": 392,
+  "src_sha256": "573afbe81b6c6368a57b7ac2330dbd8e70cc9b9b0486d61e6433aab49a12d259",
+  "zh": "飛彈護盾卷軸"
+ },
+ {
+  "id": 393,
+  "src_sha256": "51a9bd1e3ed887fbe124eef4c64579c78bcfe3c92058ff8e08090405273b6728",
+  "zh": "鎧甲術卷軸"
+ },
+ {
+  "id": 394,
+  "src_sha256": "7a635e0f97339730dd690765bec629cdf8bde1039059dda081d457c340a83b8d",
+  "zh": "附魔刀刃卷軸"
+ },
+ {
+  "id": 395,
+  "src_sha256": "2a1128e36d3db7c5abae99228f2fa3abfa3c5477fb33f50c25be3f595ff207f8",
+  "zh": "加速卷軸"
+ },
+ {
+  "id": 396,
+  "src_sha256": "1f884c3f9f3df922c5f291c7c2b743fcb4413a1189c2b549151c73d04a5ed6f9",
+  "zh": "火球卷軸"
+ },
+ {
+  "id": 397,
+  "src_sha256": "ce2a5c404bd44c90e6262e1206eacd51d17a8c3c423d2b066dfa270c17914f9b",
+  "zh": "誘惑之弦"
+ },
+ {
+  "id": 398,
+  "src_sha256": "7bb8831464b01a513daf27b19c1ffc926ee7a2b5ed7a883c19b99ce014ee5cff",
+  "zh": "報喪女妖之嚎"
+ },
+ {
+  "id": 399,
+  "src_sha256": "450912c2984f2ad766bb8d5413a8b5af2b4538e09719d4fd113885ac36da100b",
+  "zh": "混沌風笛"
+ },
+ {
+  "id": 400,
+  "src_sha256": "3f7b25cd837afc38914f26005a0d5c29bfcfe30d4d8ac7e11c687fc78d116e84",
+  "zh": "魅魔之歌"
+ },
+ {
+  "id": 401,
+  "src_sha256": "f30857d4f6762c50805dbdbdd3750a47c7464971384886fff7472725b2ee41ba",
+  "zh": "冥府豎琴"
+ },
+ {
+  "id": 402,
+  "src_sha256": "3edc958b4744958ea25bf5af00e3b98816b6a63ba8cf454ddd48ed76706c7b71",
+  "zh": "復活卷軸"
+ },
+ {
+  "id": 403,
+  "src_sha256": "1b48bd4618a6b9205e2cdc4de4b2aaab6559d4ba7eb81ad6a619fa023991f02d",
+  "zh": "熔甲卷軸"
+ },
+ {
+  "id": 404,
+  "src_sha256": "ce2594cef7fb0e83f3c4ebd74b773c023561f7dee7040a122c476589c6eba147",
+  "zh": "粉碎卷軸"
+ },
+ {
+  "id": 405,
+  "src_sha256": "19138a15280193a592a5896de086e089957282b45e37ed404d19937155a9666b",
+  "zh": "瘋狂卷軸"
+ },
+ {
+  "id": 406,
+  "src_sha256": "26aead4da8ff43206003af0976bf702059f90a1d0be982334b11919226c5db6e",
+  "zh": "解除詛咒卷軸"
+ },
+ {
+  "id": 407,
+  "src_sha256": "0d51086bf96e316068ac04782848e7aff5f3214ef1db46a86d2e34e79616191d",
+  "zh": "全體休息卷軸"
+ },
+ {
+  "id": 408,
+  "src_sha256": "2030d6c05af93d51d89a7b7cd79881acd2176cb2818190709e0508972975c44c",
+  "zh": "全體治療卷軸"
+ },
+ {
+  "id": 409,
+  "src_sha256": "5eddd1e2579908f1eb76673a354616e1d793a82ed86af463aa88556d061c2b8e",
+  "zh": "心鞭卷軸"
+ },
+ {
+  "id": 410,
+  "src_sha256": "960d3c2ce1593afc6cf6081f4ab5a6cce4cd11618e74d91c39a048e4c29217c0",
+  "zh": "麵包捲"
+ },
+ {
+  "id": 411,
+  "src_sha256": "b29685c79fff6b4d7067f69171291ce81f432cb65dc1eb9470136aec12ef14f9",
+  "zh": "金蘋果"
+ },
+ {
+  "id": 412,
+  "src_sha256": "8b8b439e20879147287b44d3552471795c2daaf233df2a4e39be00159cc96ad7",
+  "zh": "一串香蕉"
+ },
+ {
+  "id": 413,
+  "src_sha256": "0b5780a30d60091500a7ec2b8b23a7470ce9fc0d5f9f0301e91b5e1c152b22a1",
+  "zh": "鹽漬蒙克肉"
+ },
+ {
+  "id": 414,
+  "src_sha256": "f56747c0130161e9eae12b7f10c3937d4869582242fac1b642182de0d796e930",
+  "zh": "Moser 魔力茶"
+ },
+ {
+  "id": 416,
+  "src_sha256": "3f1b9cd3126b5662a82798195e026cbdd69fbc3c0ea65c7cc8f866c88cd3c3e8",
+  "zh": "熔岩鎂乳"
+ },
+ {
+  "id": 417,
+  "src_sha256": "11a33aa19b184a0d715c66b19db9e07cf928ef00ec995d6835d6e4320f053922",
+  "zh": "Dungore 麥芽啤酒"
+ },
+ {
+  "id": 418,
+  "src_sha256": "8fece3624bd467f721573aefa3c8eaa8a5108a64b0b5c043b0efc979aff2e4d3",
+  "zh": "一瓶老傑克"
+ },
+ {
+  "id": 419,
+  "src_sha256": "42bfcbbbfbe6e9c9d663cfff30c270dfaafb8844b87902f5a3698872da7761ad",
+  "zh": "洞察之盔"
+ },
+ {
+  "id": 420,
+  "src_sha256": "5059e1fda84f0da05c6017a33f1e39fe9c6fca7e50c7481f9faddd25d7f7e735",
+  "zh": "獵人披風"
+ },
+ {
+  "id": 421,
+  "src_sha256": "062028966d79d2569be1a6290d9a55c01fa3f8aef027191b8e79122b00c14a0a",
+  "zh": "寧靜之鑰"
+ },
+ {
+  "id": 423,
+  "src_sha256": "039506fa8825c12b2374358de8124b6a18807894d14913f03462117a27f615a2",
+  "zh": "Ratt 鑰匙"
+ },
+ {
+  "id": 424,
+  "src_sha256": "d33ccf0eb635b6f2a43ab9b221d0e1d75c9b86096698dd5b3506da4e72363d17",
+  "zh": "土製手槍"
+ },
+ {
+  "id": 425,
+  "src_sha256": "435b62fe29ba2afc0c67a2c5dd79ad140862eee25a2363c0f2f571abb5b52ff5",
+  "zh": "鑑定物品卷軸"
+ },
+ {
+  "id": 426,
+  "src_sha256": "4d7a9690460bab857cd76e08a9952117cc8a6c84081b2c6dcad0c1c2f9688100",
+  "zh": "陷阱之書"
+ },
+ {
+  "id": 427,
+  "src_sha256": "99efab513c09e9901d407828f265eef9899829486fc11240874bff2069417e1c",
+  "zh": "裝腔者之帽"
+ },
+ {
+  "id": 428,
+  "src_sha256": "a0467ae17de1a34ef6c4578d54782ef3320800e10a635d7f5b59cdae6831d219",
+  "zh": "解毒卷軸"
+ },
+ {
+  "id": 429,
+  "src_sha256": "9f2d188a0e8e38ddbd393f64d0d442f6a8fc471181fc96421353c5ad7e97215d",
+  "zh": "復活粉"
+ },
+ {
+  "id": 430,
+  "src_sha256": "7f6217e0066e570a2ec97abbd0096e97fc150ccf4833c926cdab3f1bd7477f9c",
+  "zh": "妖精{{Dagger}}"
+ },
+ {
+  "id": 431,
+  "src_sha256": "697a59f26702b4538655ae49c84954f5fd54aaa50aa3744cd5f296ffb0fa41a8",
+  "zh": "Felix 之戒"
+ },
+ {
+  "id": 432,
+  "src_sha256": "e2eaada645a0bb90483f43300a021ded783d113c94ce53da58ac10bc371ac02e",
+  "zh": "撼地炸彈"
+ },
+ {
+  "id": 433,
+  "src_sha256": "751ec8a6b42fa5dae191284deb205367317b8f69eff20753c846b1d05b2a2785",
+  "zh": "鏽黃銅鑰匙"
+ },
+ {
+  "id": 434,
+  "src_sha256": "a2be2aa5e1ad8fda4fd35cab3b60978ba6806bdb96ffb4213670e7570d17055e",
+  "zh": "藍彈珠"
+ },
+ {
+  "id": 435,
+  "src_sha256": "a24b3247a2385acff2d550e321884f696ae964ac16f5ddf6eb2f1a7b2753e92b",
+  "zh": "Zuzu 花瓣"
+ },
+ {
+  "id": 436,
+  "src_sha256": "859752ac3f8b88df5497fe58e9e99f060083fe37128c24cbe134c96c1f47b391",
+  "zh": "腐肉"
+ },
+ {
+  "id": 437,
+  "src_sha256": "c5f6a45c4de22de8c38f2220a57d8f462ef73ef83e3e0f3e8acfe0d12578fd88",
+  "zh": "光明術之書"
+ },
+ {
+  "id": 438,
+  "src_sha256": "9ab15f64a4257ac490634a1978e0109c0b42cf844d50bc79e91a8292f6055538",
+  "zh": "解除輕症之書"
+ },
+ {
+  "id": 439,
+  "src_sha256": "247a881d95bf130bad5666ed492602114494d60b33d945567f471e95dc784835",
+  "zh": "酸液之書"
+ },
+ {
+  "id": 440,
+  "src_sha256": "182cbf24884d179b3b9907f8f88ab07e88fb8f76b7982b8568283022153206c1",
+  "zh": "治療之書"
+ },
+ {
+  "id": 441,
+  "src_sha256": "42878e97b31ddb830baee4952e06eae60b6276af22e69fb994e62b8bc1c8eaae",
+  "zh": "搔癢之書"
+ },
+ {
+  "id": 442,
+  "src_sha256": "5d72c46accdb90e926acf8a97aedcfcabaee5e2bfc4ba08bad21d29d7c4707e4",
+  "zh": "沉睡之書"
+ },
+ {
+  "id": 443,
+  "src_sha256": "67a48e8433fdd1005646604f1aa7540dd1a7fc0b2081a03692c6ee1ac800f540",
+  "zh": "耐力之書"
+ },
+ {
+  "id": 444,
+  "src_sha256": "bda9905a74cc54a1958deedf6cf7d63f08bb00fb95dd85c5843bcaed95bad047",
+  "zh": "能量之書"
+ },
+ {
+  "id": 445,
+  "src_sha256": "804cc1bfa42174a7b375eeb51cee3b18bbfb26a1b947e549028d9681a1db20e2",
+  "zh": "冰霜之書"
+ },
+ {
+  "id": 446,
+  "src_sha256": "69a514aacf6e439268b1f09cf73316a07b8dceadcce2358e73d36b863fe01890",
+  "zh": "倉庫鑰匙"
+ },
+ {
+  "id": 447,
+  "src_sha256": "e4acbfd09427437ba85d2df1470717339f6b831ddbc5f59da0ef8bd7afe1a3f9",
+  "zh": "恐懼之書"
+ },
+ {
+  "id": 448,
+  "src_sha256": "796280e376237540dc22a5ddcffa5a14d234dd5cec648a991681abdafd2350e6",
+  "zh": "創傷之書"
+ },
+ {
+  "id": 449,
+  "src_sha256": "47bde42fdee64c056b73dcedd5e97cf6b05c9d59cd8a6805fc5b160a727bafea",
+  "zh": "麻痺之書"
+ },
+ {
+  "id": 450,
+  "src_sha256": "a71e919ee60556ca7e2f1b498512bf420487d82506e5fc9cd15dd12ec795d8fe",
+  "zh": "下藥的肉"
+ },
+ {
+  "id": 451,
+  "src_sha256": "1d3ee854d37c31981d3ffebdb0388850a2865ab1ad4fe39bdd8de8aab13b5dc3",
+  "zh": "神秘藥水"
+ },
+ {
+  "id": 452,
+  "src_sha256": "687c05ec42ed6f4a9da8ebcb658a01eace20f47f789ebe3f360653fc534929e6",
+  "zh": "秘密旗幟"
+ },
+ {
+  "id": 453,
+  "src_sha256": "bae7b1d2419735f5bcfad4f7e6f91c5c294a412dbc5b5d03d90263cbbcdb9057",
+  "zh": "國王寢宮鑰匙"
+ },
+ {
+  "id": 454,
+  "src_sha256": "267a33ab0c32baf346a930944ccd3d44d916c7a293cd6be2c72f798118711843",
+  "zh": "閘門鑰匙"
+ },
+ {
+  "id": 455,
+  "src_sha256": "bdb51fc526ed5297e7a20527080093e281216f3bd66c0b249399facab0ca1e8f",
+  "zh": "女王鑰匙"
+ },
+ {
+  "id": 456,
+  "src_sha256": "88c620094115f85658e06efa02e1b6315b7bb3e63d7e4409a54b6c3207b3379a",
+  "zh": "治安官鑰匙"
+ },
+ {
+  "id": 457,
+  "src_sha256": "b124ed0044e236e5f156e7a03e14a48bc18eac3575990f464aaece68bf041836",
+  "zh": "華麗金屬棒"
+ },
+ {
+  "id": 458,
+  "src_sha256": "823504835417b9002d28a2a4b7a818b48c224751cd088aa37c26b38b15c3139d",
+  "zh": "刺客之帽"
+ },
+ {
+  "id": 459,
+  "src_sha256": "9eb4ca753cefa971a73c8f20db64c10f15a1064cbc62eebe13f3de515c547605",
+  "zh": "女王存款單"
+ },
+ {
+  "id": 460,
+  "src_sha256": "c68774e4e56da364e6dc33593eeb2e75297e5b8c24570c179df54e4333e70f7d",
+  "zh": "破爛存款單"
+ },
+ {
+  "id": 461,
+  "src_sha256": "9be536a277c8880bfd347c3b05cf37c2658facc57e664c1654010dc3345f517b",
+  "zh": "摺起的存款單"
+ },
+ {
+  "id": 462,
+  "src_sha256": "9c128613f1dff27819e8a15154933073e6273d5ec9e7fd47eba9c8ebbc7918aa",
+  "zh": "髒污存款單"
+ },
+ {
+  "id": 463,
+  "src_sha256": "b9545118efad134686523e6bd7712d4ddfa429afee1450fad7fc748de7c1701a",
+  "zh": "紅絲長袍"
+ },
+ {
+  "id": 464,
+  "src_sha256": "3c07f870ddf7e92b119fa7e1c68f7a8a9feef488959ca32b8c9392962665e740",
+  "zh": "火焰噴射器"
+ },
+ {
+  "id": 465,
+  "src_sha256": "db506253991a143ff09217c00f8e3fb24dace7aff74a36f01dd895126f487b73",
+  "zh": "滅火魔杖"
+ },
+ {
+  "id": 466,
+  "src_sha256": "0562dac3fd6b26157f66fb65ae0171e5c87c1850b74dfb95d4bde629fa1e7195",
+  "zh": "燃燒之矛"
+ },
+ {
+  "id": 467,
+  "src_sha256": "93dcacdd9287915c1a6a1269cf3b48dc1134bc3ff4c971614dc0ce0f3dca497a",
+  "zh": "燃料罐"
+ },
+ {
+  "id": 468,
+  "src_sha256": "d5a6d085182a8fd139705e4cd3ff458473aa8e398fba1dc09b717fa4fe63c00c",
+  "zh": "聖典"
+ },
+ {
+  "id": 469,
+  "src_sha256": "daadf8c2483157fcafff22761dc0708e832b91098906f06e074d7b8a04f102ed",
+  "zh": "碎骨杖"
+ },
+ {
+  "id": 470,
+  "src_sha256": "caa5f14a5487ae942393d531fd3e1155461804c3dbf6ed296483680539006246",
+  "zh": "酋長權杖"
+ },
+ {
+  "id": 471,
+  "src_sha256": "bf61a4742a7a354a196ef4b45504f0b95528d930ab5f4ab89249989020c4cd8c",
+  "zh": "死青蛙"
+ },
+ {
+  "id": 472,
+  "src_sha256": "2dd4e6b11cd3fb7e8f52058196b74583e75756cfacbec44bbfc3a65b98f2c426",
+  "zh": "香"
+ },
+ {
+  "id": 473,
+  "src_sha256": "1ba4f459397c380c998a7d74417326f17e52fecf36e3c0bcd26afe6b875bd4ff",
+  "zh": "獵人之弓"
+ },
+ {
+  "id": 474,
+  "src_sha256": "3a1a2b852ca053c5e2975512ed8355ee4d31f63fba2dc8ac85b8a8139922ed65",
+  "zh": "碎骨烈釀"
+ },
+ {
+  "id": 475,
+  "src_sha256": "4a53e5cd4cf96d61006b0f7110f1c7d51a0a827c65288cfcfa39f96d84083360",
+  "zh": "致盲之書"
+ },
+ {
+  "id": 476,
+  "src_sha256": "d155e7aca6dd9748f936da1bf3a1b8a7f1bed34463f7d1eed8380cb06b77aa55",
+  "zh": "精神穿刺之書"
+ },
+ {
+  "id": 477,
+  "src_sha256": "b1b4f936f37fe0d0a1ace04a4c8b113d9c35859bb65198416a10049dd85b0a56",
+  "zh": "吐息之書"
+ },
+ {
+  "id": 478,
+  "src_sha256": "1957d62baaa01dee623291287d323524a7fdfb3b95f2dcc42613273fd120d977",
+  "zh": "附魔之書"
+ },
+ {
+  "id": 479,
+  "src_sha256": "7a91fbfb6761fde1229dfecbebbf8628d0f1cb5d3acff66c97840ca9ab1318ac",
+  "zh": "天使之書"
+ },
+ {
+  "id": 480,
+  "src_sha256": "ba6d56b6dc7a158c6a069f6d2293f5494b30a5f86a52b62bb2bfa0caa7d24fd0",
+  "zh": "聖水之書"
+ },
+ {
+  "id": 481,
+  "src_sha256": "de15dd491d9f95f9a61a79901fb51467e6c38c052ae31b273158a0c2b7b79b3d",
+  "zh": "瘋狂之書"
+ },
+ {
+  "id": 482,
+  "src_sha256": "49520fa2fed171db8fe95395020479eae024525494396bf9d3a170a399042666",
+  "zh": "飛彈之書"
+ },
+ {
+  "id": 483,
+  "src_sha256": "eefa8a147b592c8c4c9c59ad529903110e93403ebb4e232ba087df2539fd2c45",
+  "zh": "剃刀之書"
+ },
+ {
+  "id": 484,
+  "src_sha256": "b9a0772030cd7d54b0c5073dba154748df94c1ea242f16a9c46cb26698500905",
+  "zh": "音波之書"
+ },
+ {
+  "id": 485,
+  "src_sha256": "cbc8b3aa54742e1a38b5cb294766580dd8cab64251b54d219aa4d5ca84b70190",
+  "zh": "潛水裝備"
+ },
+ {
+  "id": 486,
+  "src_sha256": "248f216fd992a0d2cdcc3c188b92f2dabe9e646c6b8bf08f905ad9903925abe6",
+  "zh": "Glumph 的身分牌"
+ },
+ {
+  "id": 487,
+  "src_sha256": "82d906184e3430210383425b7e1e883098add4e951689efb79a8f6ad1a616cc9",
+  "zh": "見習者徽章"
+ },
+ {
+  "id": 488,
+  "src_sha256": "1e3e99c9a7227ca536e6f003cb2bbc3960a75f8229490f8e0f86c6d4304e1853",
+  "zh": "再生藥水"
+ },
+ {
+  "id": 489,
+  "src_sha256": "8a7ec912e15b73faaeadee9dc8c2fddf5c5159cf37e07882888d280df3c8864b",
+  "zh": "秒殺器"
+ },
+ {
+  "id": 490,
+  "src_sha256": "6aecf6eadd72d972975b83c241d93f39bfec65a447338b5ead1a1486686d7c4a",
+  "zh": "藍羽毛"
+ },
+ {
+  "id": 491,
+  "src_sha256": "ac5d72bab8bdfcac98295b3b36fd5e2a4ee7d9d7888c3470d23143daf598e0ef",
+  "zh": "{{Gadgeteer}}收納護腕"
+ },
+ {
+  "id": 492,
+  "src_sha256": "3ae62091f7b03754f5365ffe67960cac9cb05f7e9c3fa0f31964bb1b192322d0",
+  "zh": "旅途之戒"
+ },
+ {
+  "id": 493,
+  "src_sha256": "2790a093d5ee091a66cab843d3da9e6ef97339d321c29da500f590898d50f984",
+  "zh": "水之戒"
+ },
+ {
+  "id": 494,
+  "src_sha256": "8d0643d3eadbcc33c8f2f6bb101be7c48451e5ad5dcf2df521c7ecb874873907",
+  "zh": "硫磺之戒"
+ },
+ {
+  "id": 495,
+  "src_sha256": "de29f07a9acc4062fd0d83afd0fe87cf56e12c7de4274c1b6ae153ae69d8216c",
+  "zh": "花崗岩之戒"
+ },
+ {
+  "id": 496,
+  "src_sha256": "d81300520dc4553e9f43c9b018970454bfff3d54ad46c1e70da7fc22c5cbdbf6",
+  "zh": "微風之戒"
+ },
+ {
+  "id": 497,
+  "src_sha256": "1a87fb75bad11ba24222f0159c32195b4d0f7fd52f0a0cd65c9eb26e55857197",
+  "zh": "巨大銀塊"
+ },
+ {
+  "id": 498,
+  "src_sha256": "f9c20fd3b530084fad46855daa028d167113fe771d0c611c8d19e79e620797eb",
+  "zh": "Obsidian 碎片"
+ },
+ {
+  "id": 499,
+  "src_sha256": "d9483bb42d8b39ee33a60cb8c996b2ea41167964b3657ad2573dfa18e8fb8ff5",
+  "zh": "映照墜盒"
+ },
+ {
+  "id": 502,
+  "src_sha256": "ebedd6562d78e356b43d370e25e77c032517b26106c31662dd3ead9c69a3afc7",
+  "zh": "Hogar 獠牙"
+ },
+ {
+  "id": 503,
+  "src_sha256": "6bb99b7a3e28ec627fc5bfe57318a96bc317ed3777fa8b44e6591cd8d525ce26",
+  "zh": "珊瑚碎片"
+ },
+ {
+  "id": 505,
+  "src_sha256": "ad5ae97794a1d3afb97175becb91c03ea2904c924a674edcb29db08578fa9dc8",
+  "zh": "Vampire Bat Wing"
+ },
+ {
+  "id": 506,
+  "src_sha256": "dae0896cbc2c67bfbf74f011e826f2fb06aac119ed2938ec2c2f049774a7b89c",
+  "zh": "鎖鏈"
+ },
+ {
+  "id": 507,
+  "src_sha256": "e54b6af1dd10aa19b043e1631c97c23fb8443fd1267e16b5a27cb9f3ea1d72e7",
+  "zh": "女術士之心"
+ },
+ {
+  "id": 509,
+  "src_sha256": "a0a9d234ff591d84a4a2fc66b9433c6bd97ffffa3fb94e399a2dbe4612c3eb39",
+  "zh": "Canezou 長袍"
+ },
+ {
+  "id": 510,
+  "src_sha256": "b1ef0475a1be526aeb4bd752340ff6ed61e875fbff3c56d55d7796c88e2376c9",
+  "zh": "Canezou 頭盔"
+ },
+ {
+  "id": 511,
+  "src_sha256": "33788cd4d9335d966e403df0b936b5ae9d37e4be77419e34da08598589c4dbf9",
+  "zh": "Canezou {{Dagger}}"
+ },
+ {
+  "id": 512,
+  "src_sha256": "ddb8353dce383f87c988d4b5160509dbc14c9b3a69751f12bad844452c38ec6d",
+  "zh": "惡魔之刺"
+ },
+ {
+  "id": 513,
+  "src_sha256": "630ddefae998b2d563bcc500512d92579b1ec1830c258298eb3f8309e4ab79c1",
+  "zh": "惡魔剋星"
+ },
+ {
+  "id": 514,
+  "src_sha256": "f5ce8adde76451e8059fc376f25eb54c054a59dd47efd678feb6d7e7044c41d4",
+  "zh": "破爛紙條"
+ },
+ {
+  "id": 515,
+  "src_sha256": "1e7262875ee2a07b21fd17a454176a2c8297759a8727f23e34ca74c20e0a1697",
+  "zh": "遲緩之書"
+ },
+ {
+  "id": 516,
+  "src_sha256": "c692d834ed0518000e141bae6df448f4c647ef5508cf7f68b3df4a002e3adbfe",
+  "zh": "音爆之書"
+ },
+ {
+  "id": 517,
+  "src_sha256": "1f639327131f3dc894f8df1b7de463760445b0177b9ba2bf34c3d492d3b32e3b",
+  "zh": "蛛網之書"
+ },
+ {
+  "id": 518,
+  "src_sha256": "6aa1e53164bee9019e8a4257a04a758788ca454b10769cf07f08697e1b3e9dd4",
+  "zh": "鎧甲術之書"
+ },
+ {
+  "id": 519,
+  "src_sha256": "f15b069a51f2e1264b0ad3900f3c0c09cfff36f54b36b7e65422bf101d35eb31",
+  "zh": "擬態之書"
+ },
+ {
+  "id": 520,
+  "src_sha256": "a735b7cae14f2b5c8cd37cabc374ba854806389e3fc885f895af4140852052ea",
+  "zh": "解除麻痺之書"
+ },
+ {
+  "id": 521,
+  "src_sha256": "218a0ca68fa1e6d3f3699534983e68a9a04706acd63f02add9319ce465ada74a",
+  "zh": "解毒之書"
+ },
+ {
+  "id": 522,
+  "src_sha256": "85d8092dea3884dec665112eabfece84a894d4f4e2fd039271cf07a97b4c210c",
+  "zh": "火球之書"
+ },
+ {
+  "id": 523,
+  "src_sha256": "683916f780b0f6004135d59db48f25e4a3767e1eaa7f9363dd8647115a60fede",
+  "zh": "冰凍之書"
+ },
+ {
+  "id": 524,
+  "src_sha256": "86a7e1753ea115b80c04293d9845bdc08cb6c775b79d862b8a2e9126e76ee855",
+  "zh": "誘惑之書"
+ },
+ {
+  "id": 525,
+  "src_sha256": "804fbfe6a074a225559acdcd798b092026f6761f3ca072dde43d8fd1338c2ec2",
+  "zh": "屏障術之書"
+ },
+ {
+  "id": 526,
+  "src_sha256": "a2300f2371dc6f186176d18229e2c465ad72b1940291a3627619ae2de29918ca",
+  "zh": "讀心術之書"
+ },
+ {
+  "id": 527,
+  "src_sha256": "0d807afa744d7a8c2878aec48db4a1132660c5b7dadef42f7f670ceefd9fc2c4",
+  "zh": "毒霧之書"
+ },
+ {
+  "id": 528,
+  "src_sha256": "0f66be2329c83cf77fa17c7ab20f2fb1030cb5fe4be364db503e0fd49d2b67ed",
+  "zh": "念力火焰之書"
+ },
+ {
+  "id": 529,
+  "src_sha256": "7ca96ea481eefe190076389d4657833b7462bddc46023eb95f352f522765813a",
+  "zh": "暗影獵犬之書"
+ },
+ {
+  "id": 530,
+  "src_sha256": "6295d167ee6f33c309c2188057b1b9330df438ffa779c2686e866ce99f7508b3",
+  "zh": "沉默之書"
+ },
+ {
+  "id": 531,
+  "src_sha256": "e413692229785a9c6cf7d20af03517a646eca41832b4a4958876bebe11664f92",
+  "zh": "碎石之書"
+ },
+ {
+  "id": 532,
+  "src_sha256": "5448e0643e9c50cece9c3e4df72d67dca9d9c88d0daf6a3cea1e1c94fba32759",
+  "zh": "酸液炸彈之書"
+ },
+ {
+  "id": 533,
+  "src_sha256": "ed3f0d783cf564c78d212e1a57e2958ec52a0c7241f779118a5c774d6873a688",
+  "zh": "熔甲之書"
+ },
+ {
+  "id": 534,
+  "src_sha256": "72ed38147e4d3565d1f69cbb07bc0e477712503280691ee237e72103718dd1c9",
+  "zh": "粉碎之書"
+ },
+ {
+  "id": 535,
+  "src_sha256": "c0295d8f2beea9d77ff4dba04272baba210c5797e1b271192a23d40dc39a0dab",
+  "zh": "治療疾病之書"
+ },
+ {
+  "id": 536,
+  "src_sha256": "457d7b0183ce49fd45aba2b207a9fa20037b12d30e487656452bc518eb2d5045",
+  "zh": "心鞭之書"
+ },
+ {
+  "id": 537,
+  "src_sha256": "5c98a1ddca4c68fb56423aa2cda8f00e6c41b7c7a9cb15799fc3f15cf8209876",
+  "zh": "元素之書"
+ },
+ {
+  "id": 538,
+  "src_sha256": "79baaf2071276263a761efb03117da59a3f331aa4eea1819b5d26a2ed5550c66",
+  "zh": "以眼還眼之書"
+ },
+ {
+  "id": 539,
+  "src_sha256": "b371e845b5f4d0b8deedde46685e6296cebae4a316320882b4c47c43fc2482b3",
+  "zh": "火焰之書"
+ },
+ {
+  "id": 540,
+  "src_sha256": "98139ce89c8f5bb4b3b069722dc14327e792a25f06e50c187a4ae42a8a564e04",
+  "zh": "冰球之書"
+ },
+ {
+  "id": 541,
+  "src_sha256": "4ebb8224a51c0bd4b3c176f5be7a0471ea71f4ef1859a3b2576b8d7b0073f85e",
+  "zh": "靈魂之書"
+ },
+ {
+  "id": 542,
+  "src_sha256": "9febe437f21b111699414ad97cdea1b703ec1d709bb6e6d43f0593488346c3d4",
+  "zh": "召喚之書"
+ },
+ {
+  "id": 543,
+  "src_sha256": "76bc71a24ad10733c89c4ee52125670d95fd34949df5a90561eced1c36496540",
+  "zh": "超人之書"
+ },
+ {
+  "id": 544,
+  "src_sha256": "eae008c571199e5bc462f98ca4831dcd3649d41085554c2a1f1bd5cd1215d1d9",
+  "zh": "火環之書"
+ },
+ {
+  "id": 545,
+  "src_sha256": "12393a72c5ae1f6ed00a357422415677b450c4d115ab010b64ae77a075382e84",
+  "zh": "旋風之書"
+ },
+ {
+  "id": 546,
+  "src_sha256": "9cce19af9f33879d5d7b62c38acf041f3571f4b83d8c8123e491b858023de45c",
+  "zh": "透視之書"
+ },
+ {
+  "id": 547,
+  "src_sha256": "e081905d9776720cdbfb0348b2ca2effb3739966472db10605377b809ff0febb",
+  "zh": "石化之書"
+ },
+ {
+  "id": 548,
+  "src_sha256": "7c0035131d979d1dc0cd225d81165af5658aa82752a3408dd2617436e8b10b6e",
+  "zh": "脫水之書"
+ },
+ {
+  "id": 549,
+  "src_sha256": "85d0e21efea4883267ad114ffc4779891d6cee56ad1c30c9b7185a7f1e4d1e9f",
+  "zh": "全體冰凍之書"
+ },
+ {
+  "id": 550,
+  "src_sha256": "10312bb7be766b957cd30e4e0339fa12188499600558f0393180d02cc21aec48",
+  "zh": "全體治療之書"
+ },
+ {
+  "id": 551,
+  "src_sha256": "7d9130ac862a6430545d645e88a12c81c480c2383dfae28f03b234ac56496a61",
+  "zh": "邪咒之書"
+ },
+ {
+  "id": 552,
+  "src_sha256": "54a41d400c1dccac2f60f0cbeb633e93a7a5b36c42015a0d419c2a1ea217d26a",
+  "zh": "即死之書"
+ },
+ {
+  "id": 553,
+  "src_sha256": "b37e2ce6b26a195aa1e99a5ddc8d42cda833172b5602bd1900691b68919e590a",
+  "zh": "念力衝擊之書"
+ },
+ {
+  "id": 554,
+  "src_sha256": "16634ae18e4f6761c11024c28d238ad5fc9fbd085d96dc4dad588201becf40b3",
+  "zh": "淨化之書"
+ },
+ {
+  "id": 555,
+  "src_sha256": "7feaa5823c3c6a8b284328b4b43bd1f3220adb2d8b8e9ff4179c98fa644dcd5c",
+  "zh": "返回之書"
+ },
+ {
+  "id": 556,
+  "src_sha256": "79860282e85ebd6716b3d9e28926082ef5f65271ac6d608356e5871039f88a81",
+  "zh": "神智之書"
+ },
+ {
+  "id": 557,
+  "src_sha256": "e8589d97d18b4c623cd36615d5b1fd59604f4fc1e6b76997f0d93721878aa9c6",
+  "zh": "傳送門之書"
+ },
+ {
+  "id": 558,
+  "src_sha256": "3f05bb383de3f9040ca771a33bc5611cbf21e33ca48ebad1c5ecae54f46cf6ce",
+  "zh": "毒雲之書"
+ },
+ {
+  "id": 559,
+  "src_sha256": "27c3a2045b05d4c083a72931dc86a45650db1419a8070d012e62b04be68e8f4f",
+  "zh": "Rapax 胸甲"
+ },
+ {
+  "id": 560,
+  "src_sha256": "df94feaffb5c7759412745cae5f658c6afa168d77d3ce868ca032a425bba6dad",
+  "zh": "Kunar 的鑰匙"
+ },
+ {
+  "id": 561,
+  "src_sha256": "f404b24c37ec7e886afa8e7e3008ef18f0214102a7dda09a7d5827e6099d355c",
+  "zh": "生命之戒"
+ },
+ {
+  "id": 562,
+  "src_sha256": "888f45a481f894d0804ec07c0f9ad26541571054c3d83b352efc182ebbe7bca6",
+  "zh": "灰燼法杖"
+ },
+ {
+  "id": 563,
+  "src_sha256": "1c32f4ff4d537facc5daf234f0ab86bd5d3a1cca1e833ab6e4a9e67cf97a38dc",
+  "zh": "裂隙鑰匙"
+ },
+ {
+  "id": 564,
+  "src_sha256": "b972163decede5473f6faae62030b6c9a46d875485a359c80ccaf79dc01ba5ce",
+  "zh": "召喚石"
+ },
+ {
+  "id": 565,
+  "src_sha256": "adcf892668254da2d53b871545b6ecefe17f76034f6b4afa253a0ff1cbfe1533",
+  "zh": "刺耳風笛"
+ },
+ {
+  "id": 566,
+  "src_sha256": "9e53fdc454d558d702050f62fde4648bbb8dc04d65eba0a8426d287fadc55a0f",
+  "zh": "木板"
+ },
+ {
+  "id": 567,
+  "src_sha256": "7a05d72a2817d20551cae829ef5a57ef9c0af3d4ca11098d44a4e5be9188082e",
+  "zh": "大鎚"
+ },
+ {
+  "id": 568,
+  "src_sha256": "9c962a46431700ee23ad2806c7a4a6c7560f701e70aeff10b23b22e15e57db48",
+  "zh": "釣鉤與釣線"
+ },
+ {
+  "id": 570,
+  "src_sha256": "3ac91df911e5c3e92270dff32e219c1a25c510edd17371225474abb34646abf5",
+  "zh": "Marten 之墓鑰匙"
+ },
+ {
+  "id": 571,
+  "src_sha256": "b3caac1dc95bfba516de23a47c2e4c194fc7ffba1ebc292a64800b720d5e735a",
+  "zh": "海蝕洞大門鑰匙"
+ },
+ {
+  "id": 572,
+  "src_sha256": "087913dc15021603978c3d02e17102f93ce10458cc34ffb8ba2ada316c485419",
+  "zh": "物品袋"
+ },
+ {
+  "id": 573,
+  "src_sha256": "d2f7e4aa268cb0eb7f09700cddacab59f19584f3caad9f9dfb5a3c0ae39fa4d0",
+  "zh": "Bela 粉 #trynton"
+ },
+ {
+  "id": 574,
+  "src_sha256": "bdfd9e2a2b6dcc926f3171475cb1a86cd76d36d9b3fe3ba92701161aa8cdcca1",
+  "zh": "隱匿披風"
+ },
+ {
+  "id": 576,
+  "src_sha256": "2e93fb42bf2b9de2cf3b7920d8aef6f4daf6e194aba0232da8eae0461d4496b7",
+  "zh": "閃亮金屬球"
+ },
+ {
+  "id": 577,
+  "src_sha256": "d6d9999a564d50b55658cc2bfe35eb4ce32658939bd9f161492017ecc36f2606",
+  "zh": "損壞的 Black Box"
+ },
+ {
+  "id": 581,
+  "src_sha256": "849fc8e47bde1cef93ef35a726b9c00caf85fe627cb61a18bd67970f98299ab3",
+  "zh": "Anna 的鑰匙卡"
+ },
+ {
+  "id": 582,
+  "src_sha256": "f7ee302e2e8beb7dc9b9f7a867b9ef0adcbffbf212734fda05bc2a4e4f8e46a1",
+  "zh": "Antone 的鑰匙卡"
+ },
+ {
+  "id": 583,
+  "src_sha256": "32778ff5645f362cc3d82796039c4178d794906aaa30413936ae770a64486199",
+  "zh": "He'Li 的鑰匙卡"
+ },
+ {
+  "id": 584,
+  "src_sha256": "bce4a2eea66a6bdc0bf036bdfe5a761fa349bb30abc99d2e1f11f52e388800d3",
+  "zh": "遲緩小鼓"
+ },
+ {
+  "id": 585,
+  "src_sha256": "2ceb6ed17bf0fdf9f34ad6d748297b99d3c55eefbae0af8033209b192acbb066",
+  "zh": "深情薩克斯風"
+ },
+ {
+  "id": 586,
+  "src_sha256": "a1cd33f49b56a485f7d542d29cbd91c2906cc6db6226e2596d88fa05969666f9",
+  "zh": "柔音提琴"
+ },
+ {
+  "id": 587,
+  "src_sha256": "3282fedf430907ebaa54a10999cb41f10e050c204bb0b956f97bf4f49f717d00",
+  "zh": "牛吼器"
+ },
+ {
+  "id": 588,
+  "src_sha256": "c0650ca88e36cb0d54353256cd31b281060d3d2d2a4fce17371a8a4c5590141e",
+  "zh": "輪盤鑰匙"
+ },
+ {
+  "id": 589,
+  "src_sha256": "483637f759a4cc054a8a9b43be38f715cc0b814a3e2055c3aaef9f7edf5adac3",
+  "zh": "保險箱鑰匙"
+ },
+ {
+  "id": 590,
+  "src_sha256": "94be22b19134090e7e68242d4dc5c7b7671af284d6f2dfc3e8a7b284a70f2865",
+  "zh": "恐懼號角"
+ },
+ {
+  "id": 591,
+  "src_sha256": "8ca7ae016ba8fff9980ee430f5665041b6f298252cd4ebc88dda57b6eddfcf73",
+  "zh": "雷霆棒"
+ },
+ {
+  "id": 592,
+  "src_sha256": "c3211a48d56804b0e6ecc3f42fd41a68ad77bb7b72ff787845173a8037d28179",
+  "zh": "靜電魔杖"
+ },
+ {
+  "id": 593,
+  "src_sha256": "b20d9fc5f89c57916c28fef93d63b435eb981f17647d4bdc18b933448ecc6e50",
+  "zh": "靜電護身符"
+ },
+ {
+  "id": 594,
+  "src_sha256": "7a9c2ab315e587277b5e857143ca3583f03406a66054a08b7ca14cec2d0f13ee",
+  "zh": "粗鐵鑰匙"
+ },
+ {
+  "id": 595,
+  "src_sha256": "c73f7473e1e48bc80604f02ffaba6724fc9dc2970ca3163be89c43819629c20b",
+  "zh": "黑盒子"
+ },
+ {
+  "id": 596,
+  "src_sha256": "20be7f8992a84e413e2f94f77db945888974d4eb273d66ed9e9c5ecfa24723e4",
+  "zh": "尖刺靴"
+ },
+ {
+  "id": 597,
+  "src_sha256": "e1f6def111fde20106001385fc05387c0edf0e5ac291cd7c30d5caff17ff9dfc",
+  "zh": "祝福藥水"
+ },
+ {
+  "id": 598,
+  "src_sha256": "0cc9df3aa67e41834c9fc03c40985696fa54a32f01dfacdc7e70e32ab4e1c58f",
+  "zh": "守護天使藥水"
+ },
+ {
+  "id": 599,
+  "src_sha256": "a182859df95507e7983acbe9db30d6211df546b970cd09ec0c0484ef83f43a2e",
+  "zh": "萬能槍 Mk 1"
+ },
+ {
+  "id": 600,
+  "src_sha256": "915b75055e46ed8ebdf84061562d1c80afb02d424a40b7ca891e164b10306c85",
+  "zh": "萬能槍 Mk 2"
+ },
+ {
+  "id": 601,
+  "src_sha256": "dda336df871154efac41a649a17aada26c052ffe1ec831f57f73f0e8c152de92",
+  "zh": "萬能槍 Mk 3"
+ },
+ {
+  "id": 602,
+  "src_sha256": "d932e602c763e1e8dca1a603eee6cd526395b060e6063d64b2a794570c197c16",
+  "zh": "萬能槍 Mk 4"
+ },
+ {
+  "id": 603,
+  "src_sha256": "1ea4e55b4e9c57b791bef1cf4ad9ec7d8e335e4c96076c3249ef077d4a8458e7",
+  "zh": "萬能槍 Mk 5"
+ },
+ {
+  "id": 604,
+  "src_sha256": "9642617bd5f8f61926ce0856a0e7647d69799e2e211ad364bc8aa157ec63e7c7",
+  "zh": "萬能槍 Mk 6"
+ },
+ {
+  "id": 605,
+  "src_sha256": "65444fb47897151291f5c08d7615e9f54c4f10246c2817d826f14ca98f5ebe14",
+  "zh": "萬能槍 Mk 7"
+ },
+ {
+  "id": 606,
+  "src_sha256": "bc996fd044ac41d4223e38ebc3b32759316b687adce31b063641dd4cf72fcf5b",
+  "zh": "萬能槍 Mk 8"
+ },
+ {
+  "id": 607,
+  "src_sha256": "83d2b1381fcb7b16085b92584615f6beb0aa03be79355d7c6bef7044489674f1",
+  "zh": "萬能槍 Mk 9"
+ },
+ {
+  "id": 608,
+  "src_sha256": "2fb30a225e2c96148285df4904deb31b8e36388c380ef5024431b78477d967fc",
+  "zh": "萬能槍 Mk 10"
+ },
+ {
+  "id": 609,
+  "src_sha256": "d702ab2711886a718023afe8d4b3e69e208177ec8f825fc63caa7a8d7e64260b",
+  "zh": "萬能槍 Mk 11"
+ },
+ {
+  "id": 610,
+  "src_sha256": "24b171f06470d78e4b309411c795ac16ade9695ceace906ad808b45d28749e0a",
+  "zh": "萬能槍 Mk 12"
+ },
+ {
+  "id": 611,
+  "src_sha256": "748472271cec6a5d05f26a05cddf79bfcb6bcf3a525547b3ef056602113a6869",
+  "zh": "聖所鑰匙"
+ },
+ {
+  "id": 612,
+  "src_sha256": "b4c1c19765841283b6ff89b1c9b1ed1c11b41fb91f55b9608e528f8b105e4e41",
+  "zh": "Astral Dominae(偽)"
+ },
+ {
+  "id": 613,
+  "src_sha256": "335b788478be586dd27788ff4c5e4da25249321be808a6c20fdfc1f7e7ffb06c",
+  "zh": "Screg 的鑰匙"
+ },
+ {
+  "id": 614,
+  "src_sha256": "9b718233c6aa7f06f59c9f91348f06a6e5e9224fa3c7e06eb00edfdbc8fb3b75",
+  "zh": "太陽能能量匣"
+ },
+ {
+  "id": 615,
+  "src_sha256": "ad32bb86fc19077789fe06a7837c703223584576dd9fdccc63bbc09fd8a1bce4",
+  "zh": "IUF 第 1 級通行證"
+ },
+ {
+  "id": 616,
+  "src_sha256": "9c4ba4dd32ab60b560f43d2ef2bfd5189271598e5a4672c224939216903061e2",
+  "zh": "IUF 第 2 級通行證"
+ },
+ {
+  "id": 617,
+  "src_sha256": "fbd37fad390cdc8ef2ec0b5d538012550aa30a13bd21838ce5e0b67a18d75703",
+  "zh": "IUF 第 3 級通行證"
+ },
+ {
+  "id": 618,
+  "src_sha256": "f4a2c3d4e0dd86e61241a1e35b519e6302d14aff5007f208fca00b2bdaced58c",
+  "zh": "IUF 第 4 級通行證"
+ },
+ {
+  "id": 619,
+  "src_sha256": "e30c278774eacddd8eca21d19738233eecf483c6198b141ee3118f79a0b2ff6c",
+  "zh": "IUF 第 5 級通行證"
+ },
+ {
+  "id": 620,
+  "src_sha256": "98a7dba3de63ec1c49bf65f2e3129859df6a627083f7859198c7e5ebbd4639bb",
+  "zh": "IUF 第 6 級通行證"
+ },
+ {
+  "id": 621,
+  "src_sha256": "781d3c48eeb19bc396f6ac2be8ab5c65ac72dac1fba4399eac8a261308deb6e5",
+  "zh": "IUF 最高級通行證"
+ },
+ {
+  "id": 622,
+  "src_sha256": "5871c0c019f133345ea2513d27a8986997ed720b7f73c8fa7b1371802dbf8e5d",
+  "zh": "IUF 最高級通行證(偽)"
+ },
+ {
+  "id": 624,
+  "src_sha256": "aec3e512fc43e71ab35c6dc7f4f7cbf7e6e7f01c3be4db828967ec16c95b2ab5",
+  "zh": "軍械庫鑰匙"
+ },
+ {
+  "id": 625,
+  "src_sha256": "ea023ea872301cfb2dd5ac394b3efc874f9e147e5e4e3fba9d73ab82ad743a09",
+  "zh": "火箭彈"
+ },
+ {
+  "id": 626,
+  "src_sha256": "dcf4847e1af87fb45b879b1df37d0dca3ea7401e111b2f502e58737495514e4d",
+  "zh": "火箭發射器"
+ },
+ {
+  "id": 627,
+  "src_sha256": "9acb5a85d32b0fec60bd3614f249588895d4c97b7266ef9af48081ecbf16ab90",
+  "zh": "Z'Ant 結盟書"
+ },
+ {
+  "id": 628,
+  "src_sha256": "d9e099d383f8f5931bba44d0b8214f22b0837e5c5dda53aa9af4b4a297f9af2c",
+  "zh": "Yamir 結盟書"
+ },
+ {
+  "id": 629,
+  "src_sha256": "b95eb2ef4ab0faee7fc713e197fb47200765f9ef6c041403db727fc636cbee33",
+  "zh": "Z'Ant 互惠結盟書"
+ },
+ {
+  "id": 630,
+  "src_sha256": "07bba98574008d796cef0a4e31bbef033f7a79d78e76fc5aaa1a78a4fa43ebaa",
+  "zh": "Mook 結盟提議"
+ },
+ {
+  "id": 631,
+  "src_sha256": "832a0f06a2c5f2d37d9e2468565e21c6f48de5a200fe168bbdab2c3687d48c30",
+  "zh": "Mook 結盟接受書"
+ },
+ {
+  "id": 632,
+  "src_sha256": "9a56addad759d678571061c3ede200a4660556df85617b6e49d8375058ca68b8",
+  "zh": "脈衝撬鎖器"
+ },
+ {
+  "id": 633,
+  "src_sha256": "4171ecac6b26ffaf4aed0a6bfd1124ee7f5d875d3ed1764b965294ccd12bf93b",
+  "zh": "T'Rang 追蹤裝置"
+ },
+ {
+  "id": 634,
+  "src_sha256": "d302ef3ced2a56672e0190cf9ba9537f27004c18a3e85e1168dd05b33a933588",
+  "zh": "IUF 身分牌"
+ },
+ {
+  "id": 635,
+  "src_sha256": "ca9d86a5dc977b86c020f50fe54ce584c34ca4880841e36c8c03919e7a3da4df",
+  "zh": "Marten 身分牌"
+ },
+ {
+  "id": 636,
+  "src_sha256": "b639c243cebdfad98aee950e39ba8b2a00d82c17cd7d8310fffe40c331b32eec",
+  "zh": "鑽石"
+ },
+ {
+  "id": 637,
+  "src_sha256": "7c31e2169af4d35afa25a6b313181bcec7e00077e6f5ac41564a2b800ae4bb7f",
+  "zh": "Rattus 的紙條"
+ },
+ {
+  "id": 638,
+  "src_sha256": "2d14918ee9b6fc8a45fb4b639c09430a0978e2a507713bee5dfebac65a054280",
+  "zh": "毒液蟹殼"
+ },
+ {
+  "id": 639,
+  "src_sha256": "20d165a9c353ff57ce0fe89448386935e137746fa80ba0e9385694197255329d",
+  "zh": "蜘蛛絲"
+ },
+ {
+  "id": 640,
+  "src_sha256": "ab02e183110ab1cf7f046c48d67620ded3c4af88257ef4202d9df92d8a2c9f55",
+  "zh": "鋼皮獸皮"
+ },
+ {
+  "id": 641,
+  "src_sha256": "54509a98902718f901a9f9f9c51ccf25c292760f0a88a216a9a2040c87d30b3a",
+  "zh": "毒囊"
+ },
+ {
+  "id": 642,
+  "src_sha256": "0493baecbbe4f7b9e2cce557f9f3fad1f45b770aac5c0979e82fd56c41d53f1b",
+  "zh": "Iron Weed 荊棘"
+ },
+ {
+  "id": 643,
+  "src_sha256": "f76d07866095292af0e24cc0b93b46073e9f22a250aeef188732dbb5ab6b5c9d",
+  "zh": "黃蜂翅膀"
+ },
+ {
+  "id": 644,
+  "src_sha256": "daaf735b0573e131ecae1f35957c7c41fef3ee650f8e5a831d85ceaf386cb512",
+  "zh": "羽蛇羽毛"
+ },
+ {
+  "id": 645,
+  "src_sha256": "51db45a68cefec4a7d49c75d0eec7d1dd99972c6aaf4fefeec44f38abdc6faff",
+  "zh": "穿刺 Modai 之爪"
+ },
+ {
+  "id": 646,
+  "src_sha256": "e50e0412f836e22ac959ce68ef057acb7a6f6bb2a7ee300c9f40e829036073af",
+  "zh": "切肉刀"
+ },
+ {
+  "id": 647,
+  "src_sha256": "a6afbe3778978a88c6de908366ad625e8511ed83c38fe75bc987dd3ca86634f1",
+  "zh": "靈魂之杖"
+ },
+ {
+  "id": 648,
+  "src_sha256": "26316044742cc473f29f043cc3cda004b304318715504e01cbcb28ee501f8ea1",
+  "zh": "Ebon 寶石"
+ },
+ {
+  "id": 649,
+  "src_sha256": "59eade8a963d3a5c5706c75c40079951c5ce4b258c27bca94f72fd2e26027fb2",
+  "zh": "木乃伊粉末"
+ },
+ {
+  "id": 655,
+  "src_sha256": "57e9934fdee6bb24cfa3aa8fb2905dcfa3fe1e611ba3a98e9c5110de59173a30",
+  "zh": "巨型 Picus 蛋"
+ },
+ {
+  "id": 656,
+  "src_sha256": "537dc897d8d5fbac56d3745c4759a7e24a2a2ab98cee77ccce4a1491d26c4de9",
+  "zh": "Umpani 旗幟"
+ },
+ {
+  "id": 657,
+  "src_sha256": "9a22ff58a52c76c0653d4ac4d9f1a956fc44a8b5dca120ceedf413cf0df7e56b",
+  "zh": "石像"
+ },
+ {
+  "id": 658,
+  "src_sha256": "0ed862db95a079737501700776ae32df8b82f069f48d25f4396299d4a5dbf2e5",
+  "zh": "渡鴉 Rapax 的首級"
+ },
+ {
+  "id": 659,
+  "src_sha256": "e8517a267d3bdea85a8bd1930aa0aa7746e19ef2c6dd6f35c81a92f591bd2621",
+  "zh": "激昂戰鼓"
+ },
+ {
+  "id": 660,
+  "src_sha256": "e075b70f94b95cb29e0acc7fcc3358b49b56f8cdb7d305152f0accdf8efa3f26",
+  "zh": "嗜血"
+ },
+ {
+  "id": 661,
+  "src_sha256": "6d6e2037879773910b74f3f1525f693ac5efedeb36ef635aa59ea587ef291bf2",
+  "zh": "耐久項鍊"
+ },
+ {
+  "id": 662,
+  "src_sha256": "7c7fe9652973a49a855d35a460f75ab064baa242ae5ac2f66694298539e7e34a",
+  "zh": "巨靈之眼"
+ },
+ {
+  "id": 663,
+  "src_sha256": "d4cce6956258986205c194b7de183403b33c3d934661e477ba0e322fa72a3e93",
+  "zh": "擊昏錘"
+ },
+ {
+  "id": 664,
+  "src_sha256": "99729ab310ea7ba2cb12c3265a2fb0cc7c095f68188b5f5674c130590b92e5aa",
+  "zh": "網狀綁腿"
+ },
+ {
+  "id": 665,
+  "src_sha256": "a265740515c038c398041846abd18dcc4fa2e2199562c7bb3fc36de96d50e3ef",
+  "zh": "干擾錘"
+ },
+ {
+  "id": 666,
+  "src_sha256": "1e5774b47856e0ecab4019c41b514f9c8817388408ca0942d8b22094e4b04778",
+  "zh": "鑽石銳劍"
+ },
+ {
+  "id": 667,
+  "src_sha256": "7d8bdf5a1f8a375dfbdbb817a2e21a890cbad7c0a266048b031530fd3c736649",
+  "zh": "油布斗篷"
+ },
+ {
+  "id": 668,
+  "src_sha256": "ca15cee95192abe8715a5d078686c35e74fe349f12738591b1cf4239116381c8",
+  "zh": "守護之戒"
+ },
+ {
+  "id": 670,
+  "src_sha256": "ddc42045a9c1046f11f42843bc561e4087dd2a7de8c1764afe64388126ed21a3",
+  "zh": "巨蛙腿"
+ },
+ {
+  "id": 672,
+  "src_sha256": "e8db7f21ea9d14a3aa055ca747b1ccb70aaf5489adc48f6aa4fa441fb34e3271",
+  "zh": "T'Rang-Mook 信函"
+ },
+ {
+  "id": 673,
+  "src_sha256": "69b8ec18bd8daca3a6cc3507eb6a8a15111fd36d6722bae54e2c2bb0d2346259",
+  "zh": "短柄斧"
+ },
+ {
+  "id": 674,
+  "src_sha256": "53eb91b32db7ed692f7db91464af2c2fb2c6abe7c86b3179a10c120ef60d3f11",
+  "zh": "瘟疫之斧"
+ },
+ {
+  "id": 675,
+  "src_sha256": "824d231c18b4da944dbee6340defcd67cd49af75c7ac3d5e769c9b1b235b12f1",
+  "zh": "開膛手"
+ },
+ {
+  "id": 676,
+  "src_sha256": "7563060b8caec7449c93e2273e0e6eb786a186566180521c2ebc8e92bb4550b1",
+  "zh": "雙擊{{Dagger}}"
+ },
+ {
+  "id": 677,
+  "src_sha256": "c600613067cb9953be49ac98f0fa0f2b219159b771499110bd307781e2a747d4",
+  "zh": "手斧"
+ },
+ {
+  "id": 678,
+  "src_sha256": "9acc2fb0524ffb05ba408443170c6ff70ec68bba8c75cd4a1c59f211a8385eb1",
+  "zh": "樵夫斧"
+ },
+ {
+  "id": 679,
+  "src_sha256": "ac0d1913d943d8112deca93ff25740f2e407006087ec0af35e9bb4484a840be1",
+  "zh": "龍皮斗篷"
+ },
+ {
+  "id": 680,
+  "src_sha256": "e6308c728a756fa46cd52b90cdebf42ec1d857b84c8f0b587cfeb2cde904df6b",
+  "zh": "雙發弩"
+ },
+ {
+  "id": 681,
+  "src_sha256": "f9cbd53827f1cd97ac122c7130bd7a0dd09ec123219446085284773d7140a5d9",
+  "zh": "愛爾蘭棍"
+ },
+ {
+  "id": 682,
+  "src_sha256": "54756a7024e5361e6f9155759646ff3835d2b7e11a861971f1bb9bef48ae9cdf",
+  "zh": "膠帶"
+ },
+ {
+  "id": 683,
+  "src_sha256": "5d907e09f9c22fec429d7e0e83ddf443cd4f6d0204328c3d7203456032a48dab",
+  "zh": "避雷針"
+ },
+ {
+  "id": 684,
+  "src_sha256": "c6f6b42f2c8a789d7b4e561ce5a3839acc6c04d9663e8d99c9ca37141377f537",
+  "zh": "驚嚇箱"
+ },
+ {
+  "id": 685,
+  "src_sha256": "04417d8b9e2bc14c450f7dfa71b0294ae06a6d6ef494f7c537dbad07e5b36c32",
+  "zh": "探照燈"
+ },
+ {
+  "id": 686,
+  "src_sha256": "f7368f57ef47bcb67fa8af02464d8759b904f500a5aa25195d09a5c117467f98",
+  "zh": "全像投影機"
+ },
+ {
+  "id": 687,
+  "src_sha256": "da69530c16977bf2f0efd34698465349b98e68c6c956ef818ae2ed69f2fdd3fa",
+  "zh": "噪音器"
+ },
+ {
+  "id": 688,
+  "src_sha256": "a2cdc0f23ec003db1a0b0db27eacf87136329a2bc013cc2a706b1464ca9e34d6",
+  "zh": "看門狗警報器"
+ },
+ {
+  "id": 689,
+  "src_sha256": "3d7c798e920309aa0ed255ae9b0276185c644c4e9fab4da33b6fafb15c396714",
+  "zh": "熔岩燈"
+ },
+ {
+  "id": 690,
+  "src_sha256": "48282d8e9225917589af900039192e99a5765196d8653e9f76ac7e2b88af833d",
+  "zh": "力場產生器"
+ },
+ {
+  "id": 691,
+  "src_sha256": "13444d2dd2fd4c4a7406d614ec66b0a2a94ff34a8d8ecc1631fad5f7e7190771",
+  "zh": "X 光掃描器"
+ },
+ {
+  "id": 692,
+  "src_sha256": "60992a0547268d51e519933ae13d2864759a48e88f92bf7e4453c1d1556a6bcc",
+  "zh": "活力腰帶"
+ },
+ {
+  "id": 693,
+  "src_sha256": "f73f5ff513a2677212fe938fa46882175a9c849b8fa5801c222b0fce8a33a0cc",
+  "zh": "魔鏡"
+ },
+ {
+  "id": 694,
+  "src_sha256": "3badafd6f83fe04c4259c8f1f66c924faf77d9427008028354924360e35ef5dc",
+  "zh": "汽化器"
+ },
+ {
+  "id": 695,
+  "src_sha256": "43b15b1840fe9d7bd8ecf160abdb35f70caa6b5bc572d9dd39b7e8a1395d2ebc",
+  "zh": "惡魔箱"
+ },
+ {
+  "id": 696,
+  "src_sha256": "f58b4e032634532c04a419b78f7cfbf64cd9eb13feb49c2c5075641ea248f737",
+  "zh": "再生之石"
+ },
+ {
+  "id": 697,
+  "src_sha256": "1ae13cb2c541a34a77d3b03060acaa57aae6b1843bc9d1f9c113ae420f5ef86f",
+  "zh": "微波射線槍"
+ },
+ {
+  "id": 698,
+  "src_sha256": "9bc4329879d75a072e5da700a5f768b81d6fa6933413077d2f969453f373a076",
+  "zh": "閃光燈"
+ },
+ {
+  "id": 699,
+  "src_sha256": "94ad74beab6858b1658f60d05aa502c6aaa04b3d418b8bdf57f9f6a7b4e00ea0",
+  "zh": "電擊器"
+ },
+ {
+  "id": 700,
+  "src_sha256": "fb705611e0af7e77801b00b25de91fd1d4d2fa736ba15c31cd51ac3ae0af3f88",
+  "zh": "水砲"
+ },
+ {
+  "id": 701,
+  "src_sha256": "bc6d3ce13f2945774f0e9e98fe663247291caaa1d7fdeb27c79d2267d0bcc7dc",
+  "zh": "反氣器"
+ },
+ {
+  "id": 702,
+  "src_sha256": "7bda1c8faa97568944d2f6e594b15737cc2266690610939085ce8a9e21b60810",
+  "zh": "手提鑽"
+ },
+ {
+  "id": 703,
+  "src_sha256": "828132fd223fa254fcc6f6883c66bbd264eb646488a817a1506db337ea144ae7",
+  "zh": "鉸鏈盒"
+ },
+ {
+  "id": 704,
+  "src_sha256": "907991df5759ba2319b348d963e3e510edc881968b8bdecb463875a541e33c9d",
+  "zh": "娃娃"
+ },
+ {
+  "id": 705,
+  "src_sha256": "e730b181996a00c21d64c71072c05a7fe51b0a056fb31655554e44a2d8fe1758",
+  "zh": "放大鏡"
+ },
+ {
+  "id": 706,
+  "src_sha256": "295169841ae51e8ff8a0e03bf0106326dec79cca3cef809c8f9420bde69446c5",
+  "zh": "大稜鏡"
+ },
+ {
+  "id": 707,
+  "src_sha256": "04c2adf29ab6f6b823b91fbdf64adff2ba4053b8ecccd1988c4cc1f8d032f30e",
+  "zh": "雷射筆"
+ },
+ {
+  "id": 708,
+  "src_sha256": "ed9485dca097b7107f171beb207b125931b58e86fe121d335e7778bf31d95482",
+  "zh": "火藥"
+ },
+ {
+  "id": 709,
+  "src_sha256": "3dfb9ea2cf7c2be6ca02c216dda293734eba93a28f224f41ac51e4807826b648",
+  "zh": "流動廁所"
+ },
+ {
+  "id": 710,
+  "src_sha256": "d2b92f6624fc190d5af78b1c233c35cf4ca248c0abe332d7f80bc90026bb9840",
+  "zh": "電眼"
+ },
+ {
+  "id": 711,
+  "src_sha256": "49fe663e54f4e3cb31a7dfe7c28f369b58eb230efe1289fd2325cc398aed1870",
+  "zh": "擴音器"
+ },
+ {
+  "id": 712,
+  "src_sha256": "a9f384b27564cd2e4f56c96241bc288b6efadbfdfb6496244eb59923d635915c",
+  "zh": "發光黏液"
+ },
+ {
+  "id": 713,
+  "src_sha256": "546e81dfe0264de4b1c447a5bf42a84982884bba45ffe5765f7b67c1fce7600f",
+  "zh": "橘色黏液"
+ },
+ {
+  "id": 714,
+  "src_sha256": "9801d8f564b3a5046189925a7a66d60aa9e7f826ceb65c2ea148a30dbecfaaae",
+  "zh": "電壓放大器"
+ },
+ {
+  "id": 715,
+  "src_sha256": "39a41f924b655b7ca16e8772da2a2930855c00cc59d713584926b263178a0f2f",
+  "zh": "巨型磁鐵"
+ },
+ {
+  "id": 716,
+  "src_sha256": "df468c24269ad454eb5fcda22c320bed4c714586de541db7cb9e89ff56ce215d",
+  "zh": "舷窗"
+ },
+ {
+  "id": 717,
+  "src_sha256": "0c1680b109d504fc81e9f14ea9b33f3af5c2b1f3ebd2c22840e7dc9ad61aac1b",
+  "zh": "帶鉸鏈的鍋"
+ },
+ {
+  "id": 718,
+  "src_sha256": "dc8c99ffde60cbd04ae869ac582aecd1396be7b260c6478db1423d8455032873",
+  "zh": "X 光晶片"
+ },
+ {
+  "id": 719,
+  "src_sha256": "71d4cf953e59506f9827c81d11463be503d0702309c7aa2c4041bac617ae5f1a",
+  "zh": "掃描器"
+ },
+ {
+  "id": 720,
+  "src_sha256": "a52ba43ae47400c40563dc13403de404a4359d0cfcb9a061b6dc0690061ab1e0",
+  "zh": "空瓶"
+ },
+ {
+  "id": 721,
+  "src_sha256": "41da5371e95dbfce9184bd99af8c01a33fe1bb608cd97e3135ebac37896bcd34",
+  "zh": "電極"
+ },
+ {
+  "id": 722,
+  "src_sha256": "03465abd495fa4c964994e6836512db898bb4a61316a655f3c292fe0bdc23997",
+  "zh": "{{Magic}}亮光劑"
+ },
+ {
+  "id": 723,
+  "src_sha256": "078aa69830854e5073da001229dac6f77b41a8737803dee5313bac4be681e017",
+  "zh": "閃亮鍍鉻板"
+ },
+ {
+  "id": 724,
+  "src_sha256": "41b466f0111b25343d19d85a5a557d56f251c62303153af7b1af5ff1d2b16821",
+  "zh": "惡魔娃娃"
+ },
+ {
+  "id": 725,
+  "src_sha256": "fa50d154bdef542add26e7954c998dde63501f1b3b1389eefcde3d8de123ae8b",
+  "zh": "青金石"
+ },
+ {
+  "id": 727,
+  "src_sha256": "4dacc6a50bab2fa1227db5de28a0a1f57ec76eed866dafd3198ace37adba9b0d",
+  "zh": "微波晶片"
+ },
+ {
+  "id": 728,
+  "src_sha256": "f3ce9653f03e17fb5964b03e228f3800a6c924582ac6e54f35b47a43b3c457a4",
+  "zh": "損壞的爆能槍"
+ },
+ {
+  "id": 729,
+  "src_sha256": "e73277116b1abeee3419c7e42c44564b5ad10d61483f8c693b9436241b88d893",
+  "zh": "電燈"
+ },
+ {
+  "id": 730,
+  "src_sha256": "343940a849400e5a343dc3151db0ffd1d48d23e3cb58ce4644a64cf04df7615a",
+  "zh": "振盪器"
+ },
+ {
+  "id": 731,
+  "src_sha256": "c4093089b56693c1960298cae753862d382046ed4f4bbedbacf2fd7b28a5357a",
+  "zh": "高壓變壓器"
+ },
+ {
+  "id": 732,
+  "src_sha256": "5ffdfd6dc15c249900c4ff65101e48b9ea41039413c939484bcd4f0bd197dbf8",
+  "zh": "水管"
+ },
+ {
+  "id": 733,
+  "src_sha256": "7b10e2358b701338941977a526ec667c4de03bba9823000254f3e4272276dcca",
+  "zh": "風箱"
+ },
+ {
+  "id": 734,
+  "src_sha256": "0173f8154e22da116cf61260adfff80f84449a14f25b81e9e870954e12a0d22a",
+  "zh": "真空泵"
+ },
+ {
+  "id": 735,
+  "src_sha256": "a889b84b4b0ad017abdd7813b393f3091f1b881c52e8760ebcdad5747820e0fc",
+  "zh": "長金屬管"
+ },
+ {
+  "id": 736,
+  "src_sha256": "9aa7e682cf041fe076e2665c0facd1e7446f72d735943ae06c0eac32a379de7c",
+  "zh": "鑿子"
+ },
+ {
+  "id": 737,
+  "src_sha256": "0ea95b826d8d13a5521d55f45b278561ca78d59a882b25a7da74a741b3b30ba8",
+  "zh": "鐘擺"
+ },
+ {
+  "id": 738,
+  "src_sha256": "a271d47ede273bd8cbe03fe0da579b0d4029b651ec328b0389da17e39d2ecccd",
+  "zh": "噴燈"
+ },
+ {
+  "id": 739,
+  "src_sha256": "753a005b09b3916b72d45e942a33038446a21cebbfc085d5e4f97594b7c8b3da",
+  "zh": "三發弩"
+ },
+ {
+  "id": 740,
+  "src_sha256": "ae7a51a59a4c27a77fea8684fe3e6564825452d9402c7a0aae778d8bd974d600",
+  "zh": "金屬腰帶"
+ },
+ {
+  "id": 743,
+  "src_sha256": "829e850c7811a120196b80bdae0e8285f857fc85faef665d34ff668b4b4dd6a1",
+  "zh": "雙人份烈酒"
+ },
+ {
+  "id": 744,
+  "src_sha256": "2cfa50e52151b920d7c47036d96f9be2d5b0e0f555e6e174af04251ac16d508d",
+  "zh": "暗影酊劑"
+ },
+ {
+  "id": 745,
+  "src_sha256": "263d46992df553c3122fb057a3b8c3d5350484bc5c448097e34f3be37d42afec",
+  "zh": "紅黃電線"
+ },
+ {
+  "id": 746,
+  "src_sha256": "dc9f760b719c49acb616c9bf3155b4de1955b70da10d0342012384e00ef12874",
+  "zh": "Rapax 之水香水"
+ },
+ {
+  "id": 747,
+  "src_sha256": "a5208f88f4072d5fa859c6483bb2d392437f2d5ed1186392d0420bea2e07e251",
+  "zh": "藍花"
+ },
+ {
+  "id": 748,
+  "src_sha256": "999b402526c91e3870062d7dd19ddbd3f9988091296cff9c04077244ccd50d35",
+  "zh": "毒刺"
+ },
+ {
+  "id": 749,
+  "src_sha256": "999b402526c91e3870062d7dd19ddbd3f9988091296cff9c04077244ccd50d35",
+  "zh": "毒刺"
+ },
+ {
+  "id": 750,
+  "src_sha256": "f4f2c7884896f69cb7b17d0db5257e67d26ed0b4cdea2bc25c31a96d7aa9676d",
+  "zh": "寫著「7--」的紙"
+ },
+ {
+  "id": 751,
+  "src_sha256": "95c975d9a9aba7b92a2161f021ed042c658a1a7dd95ab2e4dd8f729e52c7b229",
+  "zh": "寫著「-4-」的紙"
+ },
+ {
+  "id": 752,
+  "src_sha256": "23d82a39bacf39d18a273d1c5cb364df879e243c1c3388d30315fae78f4cdc38",
+  "zh": "寫著「--0」的紙"
+ },
+ {
+  "id": 753,
+  "src_sha256": "e2f7e7f9c024e7e2a0cc3da61cf2d5760f2040c0b34bb35b503b28363eca2a70",
+  "zh": "心爆棒"
+ },
+ {
+  "id": 754,
+  "src_sha256": "c2c703b3a86580ef22754650c6a56a37eb446edddbe705d22193f9891dff44d0",
+  "zh": "璀璨頭盔"
+ },
+ {
+  "id": 755,
+  "src_sha256": "9670492e127e4adcc5e1e7aa5c6cc175d112a39585c732409c98ed49ca4ed2a2",
+  "zh": "巧言石護身符"
+ },
+ {
+  "id": 756,
+  "src_sha256": "c719c25da0cf14d8508e6758bec6ba86e1eb33447480c087b3a51efa36fa19a1",
+  "zh": "動物園小屋鑰匙"
+ },
+ {
+  "id": 757,
+  "src_sha256": "95ee546ed06847bc5203d2676cb36c01fec0042bf92436a29233c214c514308a",
+  "zh": "醃漬 Trynnie"
+ },
+ {
+  "id": 758,
+  "src_sha256": "0fbb406e919ec924854e11405f0072d013b160070122a7a490741a9887c0f29a",
+  "zh": "Rapax {{Mage}}之刃"
+ },
+ {
+  "id": 759,
+  "src_sha256": "05ea84118d21dfa54d64315eec73892b61d6352bba1a30a3505c3aa73753fbe6",
+  "zh": "娃娃盔甲(下)"
+ },
+ {
+  "id": 760,
+  "src_sha256": "8d97598f8dfd9b242f00e055ddc59397d1a31c1f41020219c97425f9f612c6e0",
+  "zh": "娃娃手套"
+ },
+ {
+  "id": 761,
+  "src_sha256": "aa058fb30d0bd99fd62c2941816ce7d8508d416133f6950bfd3c616d49db89d7",
+  "zh": "國王洞窟鑰匙"
+ },
+ {
+  "id": 762,
+  "src_sha256": "a65bb388002ef655016418405bba334369d05a9a7b7eb8414e1b281c2bc13c40",
+  "zh": "毀滅飛鏢"
+ },
+ {
+  "id": 763,
+  "src_sha256": "378dede8fef08255b6dc78e47164e9ff95d5664c74625bc349a7cbdde2be1d3d",
+  "zh": "迴旋手裡劍"
+ },
+ {
+  "id": 764,
+  "src_sha256": "6517e650ef49b62c10f2b44af70ea5fde8aa80fd54ce34d9335084fefdaf515c",
+  "zh": "投擲錐劍"
+ },
+ {
+  "id": 765,
+  "src_sha256": "27ba2121ec074cdbde969561fcd52c943e7d57faf1b0f134bd07072adae8f828",
+  "zh": "一束恐懼弩箭"
+ },
+ {
+  "id": 766,
+  "src_sha256": "97433d393cf761edca88af8fa534d3f49c1c7983dc11474d221543cc999971c8",
+  "zh": "一束精準箭"
+ },
+ {
+  "id": 767,
+  "src_sha256": "aa53818df819ac7c7a9c4706f6fd581bdd957c38a8878d64612f1132e39c4a53",
+  "zh": "雙發投石索"
+ },
+ {
+  "id": 768,
+  "src_sha256": "0aac4f3d8041a76c4c895898b28ae8a9c1867a47cea75e1913e0a79ae3b6a07a",
+  "zh": "連枷"
+ },
+ {
+  "id": 769,
+  "src_sha256": "07467b84a7ed394bd83a1407d914d000abff0d60a4cdc11f5e23a633064f1f26",
+  "zh": "短劍"
+ },
+ {
+  "id": 770,
+  "src_sha256": "1b90fad429f31dc3d72a06d48c2e35243b94c63673c7df836d22ef63c2347e51",
+  "zh": "火焰之杖"
+ },
+ {
+  "id": 771,
+  "src_sha256": "c0e7d916ac9701c151338354ecd0dbc42ddad9231e3ac57ad0fb4a714133faf0",
+  "zh": "強弓"
+ },
+ {
+  "id": 772,
+  "src_sha256": "c551c1effb36a36990845d4c91dfe0b2f1dfd26d28b8ddf140676f407a60823a",
+  "zh": "重擊者"
+ },
+ {
+  "id": 773,
+  "src_sha256": "def6268c450ddbb77c20c494ef6e8a9db095065c6615c13d8df4abbe3e258629",
+  "zh": "愛麗兒的拖鞋"
+ },
+ {
+  "id": 774,
+  "src_sha256": "2854d0d3b9a190a85717225358d132eb7ee5db7890c5a046cbb729f4f7930216",
+  "zh": "莫枯修之刃"
+ },
+ {
+  "id": 775,
+  "src_sha256": "d4be5a4a12193016b5d4d41e2a34f1bd5be63f7005ad5ebbb1e9842af1edec31",
+  "zh": "帕克之帽"
+ },
+ {
+  "id": 776,
+  "src_sha256": "3ac1cc92a43256096e273cc79968e1e834f4b95357dbf5ee77001fc5717498b1",
+  "zh": "普洛斯彼羅斗篷"
+ },
+ {
+  "id": 777,
+  "src_sha256": "b090c3aaaeb6acad5a512d6ee06e58e6008556530ea023291e2242a2ef3146a5",
+  "zh": "野獸之戒"
+ },
+ {
+  "id": 778,
+  "src_sha256": "fc8ac04b6c43f21967c535258334a4a8cf85bfba394efc71cda5042b2dd81386",
+  "zh": "巨人之劍"
+ },
+ {
+  "id": 779,
+  "src_sha256": "235382ea10b3cb1d5bafb896fce81b1099a46286ee648621eb264d61313f1e3f",
+  "zh": "Trynnie 胸甲"
+ },
+ {
+  "id": 780,
+  "src_sha256": "35d4155ff00b71d7a033e753daf754988be541b97ff06f1df2570edf1724a49e",
+  "zh": "蛇牙"
+ },
+ {
+  "id": 781,
+  "src_sha256": "05f8e3c4b559eb8ee7502c7e238ed17634cc8e336d4c556582f8377b4a7193eb",
+  "zh": "精怪之戒"
+ },
+ {
+  "id": 782,
+  "src_sha256": "5c8f10c174be07c015ad01ae7dc1b615ec28321332224cf52b0cf4136aa488f0",
+  "zh": "土術士之戒"
+ },
+ {
+  "id": 783,
+  "src_sha256": "0b8aafcfe319954cffb14c87eac03aa503d574c3c37de9b5ecceb6b3919dbd2a",
+  "zh": "氣術士之戒"
+ },
+ {
+  "id": 784,
+  "src_sha256": "aa7263f4a5b505139d749bf966f2e26cac99c710be8cdcfcf9796b7b64c5a60d",
+  "zh": "火術士之戒"
+ },
+ {
+  "id": 785,
+  "src_sha256": "5e983b8499973392421ea097c5543e57fead1a8cdc11de14fb2e10507d3c3b53",
+  "zh": "水術士之戒"
+ },
+ {
+  "id": 786,
+  "src_sha256": "535fa445642df01fc9896efd6ab82cfc450c6bcf18932dc25ba6bccdb1ef17b6",
+  "zh": "附魔{{Samurai}}刀"
+ },
+ {
+  "id": 787,
+  "src_sha256": "f9a584479e2b106c2ab5e014a817ec2cb404a19c8cfd48a33c42fd86cfede8d1",
+  "zh": "金塊"
+ },
+ {
+  "id": 788,
+  "src_sha256": "f0fdd1272ceb6f4f73952a3a1527d473c40491240a982f4a211fbf27b5fc1cc1",
+  "zh": "再生之戒"
+ },
+ {
+  "id": 789,
+  "src_sha256": "277335e544b28385a248cecd027f6ecb7c7a56eebb2b58fd3195b262456289b0",
+  "zh": "彩虹之盾"
+ },
+ {
+  "id": 790,
+  "src_sha256": "67d3682b2cf74d377f077f8bc4af2635cb23c0e5ebe39a6bb7936c3b9460bc4c",
+  "zh": "輕巧小圓盾"
+ },
+ {
+  "id": 791,
+  "src_sha256": "cbc2d35966b54d907aefcc3d1b7e8c903b13a444f74c9f88867cfa0649432f9e",
+  "zh": "犧牲之盾"
+ },
+ {
+  "id": 792,
+  "src_sha256": "642971dc5346a89b842a2b744b1ffe5123e733226d6105ee106700f77b452476",
+  "zh": "賢者之盾"
+ },
+ {
+  "id": 793,
+  "src_sha256": "5a8a37abdaa5ec181b5dfcae90c5a670c346812ee81e1f460cd40256a8433af2",
+  "zh": "竊賊小圓盾"
+ },
+ {
+  "id": 794,
+  "src_sha256": "1167683e0ff5a1dc1dc7e879dc45da5308301e20a0c16ca928d790f3d4eaf3a7",
+  "zh": "綠林弓"
+ },
+ {
+  "id": 795,
+  "src_sha256": "8cb2873e2764cf89c61a4a71b5a306ad90d823a9630d6fa0f11336a60c851bf5",
+  "zh": "附魔長劍"
+ },
+ {
+  "id": 796,
+  "src_sha256": "c68e6a56e1e7cbf4717e81181c78b4a4ed5b3b4a985dc9153f2d6b64c17cbe80",
+  "zh": "附魔釘頭錘"
+ },
+ {
+  "id": 797,
+  "src_sha256": "3595a888a147445033bbf056fb99d9ddaed55f0b19565cdbc6263a634934fc6d",
+  "zh": "閃耀之劍"
+ },
+ {
+  "id": 798,
+  "src_sha256": "e041473dbaf2f1997bf2b7357eb9cb19f85e7f228d034cbbb741a3ece261d7e3",
+  "zh": "詛咒彎刀"
+ },
+ {
+  "id": 799,
+  "src_sha256": "b41512c844cd131d65faae902dcfdcff2f8548075cb5321d8b1e6629af0779e5",
+  "zh": "花崗岩之盾"
+ },
+ {
+  "id": 800,
+  "src_sha256": "65573d51699e261dadadd109e06335965fa3a7caee8506b6452b6529752f341d",
+  "zh": "硫磺之盾"
+ },
+ {
+  "id": 801,
+  "src_sha256": "fbe2e1059df7091be6e14fcf291880284b6d11f0d0f7eb3731cd922a089491f8",
+  "zh": "水之盾"
+ },
+ {
+  "id": 802,
+  "src_sha256": "265c090660e670085c586b4d3f02ae73ff728007267866f38fd36da747d9c7ec",
+  "zh": "風之盾"
+ },
+ {
+  "id": 803,
+  "src_sha256": "fce306275aae47ef820fab35359263d2fcccdb9912ed4f489912d53b39c42d76",
+  "zh": "尖刺之矛"
+ },
+ {
+  "id": 804,
+  "src_sha256": "31be9e3c9a1e7ecf15d991a09e1a51e4810d09b447439670edd70bacc8a81444",
+  "zh": "蟹餅"
+ },
+ {
+  "id": 805,
+  "src_sha256": "f5a213e258700fe7a972404ea07a43173120c71d90e16d7b736393f673c68b73",
+  "zh": "多彩斗篷"
+ },
+ {
+  "id": 806,
+  "src_sha256": "9b0107d06f1e4cf83d43a38fdbc8896b3c9ac3ddb845b37f4dbe9af21568933b",
+  "zh": "黃金胸甲"
+ },
+ {
+  "id": 807,
+  "src_sha256": "b454f61f9ac28edeaf6ee2ddb975b02f760eb027c2daddd590fd3dd92f7d8872",
+  "zh": "有翼之靴"
+ },
+ {
+  "id": 808,
+  "src_sha256": "3742e38e6d344aab7802e6d6e0e4daf35fd9d773667b06c67fc542c248370379",
+  "zh": "蛇皮靴"
+ },
+ {
+  "id": 809,
+  "src_sha256": "af6eb3a9fecf4ceebf3d8cc8783298ae45712a8ef383e3b592d4395f2978f5c0",
+  "zh": "無限頭盔"
+ },
+ {
+  "id": 810,
+  "src_sha256": "c3813ec82fd962b3ffc68e598549f79612ad272d6072cae8bf532b9b4834df5a",
+  "zh": "白金護脛"
+ },
+ {
+  "id": 811,
+  "src_sha256": "8f1a8d137404bd3ca94de454ed0dbe964c7129c4c22f2ee7fec858bd3ccdafbc",
+  "zh": "回春長袍"
+ },
+ {
+  "id": 812,
+  "src_sha256": "c3f7d53103d1bc83785cac85e4cd0abc41817e4d7976f4cc48c49b2b6392952e",
+  "zh": "威能之戒"
+ },
+ {
+  "id": 813,
+  "src_sha256": "3962dccdc01000f7fce4973923ffb893ed0b28a64f451dce96344a014eead507",
+  "zh": "牢房鑰匙"
+ },
+ {
+  "id": 814,
+  "src_sha256": "70b1322c7d4c9aa0f532fa4ed0f074cfc694627a039a4fb77e7878c6709c2807",
+  "zh": "{{Eagle Eye}}弓"
+ },
+ {
+  "id": 815,
+  "src_sha256": "685d76d7ed6c06886bb1049841808b0bd83eae9e09a5156992dfccc70d2320ee",
+  "zh": "恐懼之矛"
+ },
+ {
+  "id": 816,
+  "src_sha256": "894131b6bcdc83014b8445e67f32cf3eb257fb45f5ae264b7f40c2c96542cba9",
+  "zh": "卡利班胸甲"
+ },
+ {
+  "id": 817,
+  "src_sha256": "97f86f0455e3b9d844acdc1851bb4fb9171748170de701231a38f1f3e76d38ad",
+  "zh": "奧伯龍護脛"
+ },
+ {
+  "id": 818,
+  "src_sha256": "005991ab27c7e07453a62a0e9b0adddb214b2b3d87e5a783190ed1273d40411c",
+  "zh": "Nebdar 護身符"
+ }
+]

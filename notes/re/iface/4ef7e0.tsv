@@ -1,0 +1,36 @@
+call	2b6	assertFailureIndirectCall	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，防禦性 assert，合法輸入不到，只在 cov-exempt 的塊 4ef905 裡出現。
+call	4ed9d0	rebuildCharacterRuleAbilities	角色放回後重建有效屬性、技能值與負重等快取；原版照常執行（emu native），本節點只轉寫七屬性、四十一技能值鏈，其餘階段不在輸出。
+call	4ef610	characterReplacedNotification	替換角色前的通知（排除）：以隊伍槽與 0 呼叫，位址樁記參數與次數；回傳值呼叫端不看。
+call	50f030	recomputeEquipmentBonusTotals	角色裝備修正合計重算（技能加成位元組的來源）；轉寫技能位元組部分，其餘原版照常執行。
+call	517ec0	partyCharacterIndex	由角色位址查隊伍槽索引。
+call	521ef0	fileItemIntoSharedPack	把角色背包格的物品放入共用背包（可合併堆疊）後清空該格；經 51f900 合併與 51d610／51c5a0／51b840 子判斷。
+call	54b300	resetCharacterRuntimeRecord	重置隊伍槽的輔助記錄並以 R(5000) 設計時器；轉寫為十四個輸出欄。
+call	54b470	resetCharacterPresenceRecord	重置隊伍槽的在場記錄（行動佇列項）；轉寫為八個輸出欄。
+call	554ae0	rebuildPartyFormation	替換後重排隊形區塊；原版照常執行（emu native），寫入不在輸出，只有隊形象限位元組 0x687526 由本節點直接寫。
+call	557430	grantStartingKit	替換後發放該職業起始裝備並重算裝備修正（尾端 50e540）；轉寫。
+call	558640	startingKitPrice	計算起始裝備的金額（經 51b840 物品價值加總與 520310）；轉寫。
+call	561ec0	refreshCharacterUi	模式 7 時刷新角色介面；原版照常執行（emu native），不在輸出。
+data	4	無關	參數堆疊位移或結構內相對位置被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移或結構內相對位置被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移或結構內相對位置被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail；只在隊形數為 1 等不可能狀態呼叫，合法輸入不到。
+data	6176b8	無關	斷言來源檔名字串，不參與規則
+data	617858	無關	斷言條件文字字串，不參與規則
+data	685178	actionQueue	每人行動佇列記錄基址（每人 0x106 bytes）；重置時清除被替換槽。
+data	68517d	partyMemberCount	隊員計數；替換後加一。
+data	685185	sharedItemSlotCount	共用背包已用格數；放入舊背包物品與替換後更新。
+data	685189	partyGold	隊伍金幣；有付費時扣除起始裝備金額，金額大於持有為斷言。
+data	686a50	formationOrderTable	八個 dword 的隊員順序表，-1 為空；新角色進第一個空位。
+data	686a54	formationOrderTable	同上，第二個 dword 起的別名。
+data	686a70	currentMapID	目前地圖 ID；經 5227d0／522640 的故事旗標路徑讀取。
+data	687511	formationBlock	隊形區塊 132 bytes；554ae0 重排。
+data	687526	formationQuadrantSlotByte	隊形區塊中每槽 12 bytes 步距的角色槽位元組；新角色寫入 255（空）。
+data	68ec78	combatPhaseType	畫面模式；6 或 5 時改走不同路徑，7 時刷新介面。
+field	eax+0x0	itemSlotId	物品格第一欄：物品定義編號，-1 為空。
+field	ebp+0x4	characterPresenceFlag	角色記錄 +4：在場旗標，替換後寫 1。
+field	ecx*4+0x687526	formationQuadrantSlotByte	隊形區塊每槽位元組（槽×12 步距，以槽索引縮放）。
+field	ecx+eax*1+0xf1	presenceOrderIndex	在場記錄 +0xf1：該槽在順序表的位置。
+field	ecx+edx*1+0xfa	presenceLinkedSlot	在場記錄 +0xfa：連結槽，重置為 -1。
+field	edi+0x0	itemSlotId	物品格第一欄：物品定義編號，-1 為空。
+field	edx*4+0x686a50	formationOrderTable	順序表第 n 個 dword。
+field	esi+0x0	itemSlotId	物品格第一欄：物品定義編號，-1 為空。

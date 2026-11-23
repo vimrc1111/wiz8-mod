@@ -1,0 +1,40 @@
+# case 範圍：八個角色、三個怪物模板、目標種類 1／3／其他、骰組數至多 6 組皆由 arena 建立，不讀寫遊戲目錄；角色索引與模板槽超出上限 calc 報錯。
+# 位址樁：0x517970、0x4ed2d0、0x553f10（D4 公式，回傳取自輸入，引數與呼叫次數成為輸出）。0x4ed2b0（不另列，已登記）、0x4e5550、0x4e5620、0x4e5720、0x5100b0、0x5101b0、0x547a00、0x40efa0、0x5e1c22 原樣執行。
+# 斷言路徑：目標角色索引為負、目標怪物編號找不到（全 1），calc 一律報錯，不回傳值；結果為負的分支不可達，calc 報錯。
+# 目標種類 1 以外且不為 3 時，原版把怪物模板當角色記錄讀 +0xed9／+0x71b；case 用相隔 0x1000 的模板槽供這兩欄，calc 照讀。
+call	2b6	srAssertFail	分析器列出的 srAssertFail 標記；只在斷言路徑停止，合法輸入走不到
+call	40efa0	rollPercentDie	亂數 R(n)：百分比骰，與攻擊者模板等級比例比較決定多骰；以 Rand 重放
+call	547a00	monsterLevelScaleValue	依攻擊者怪物模板 +0x24f 等級 byte 取比例值，乘第三引數 100.0；等級超過 20 回原值；原樣執行
+call	5e1c22	_ftol	浮點轉整數截斷（x87）
+data	5ebaf4	srAssertFail	srAssertFail 的 IAT 位址；僅斷言路徑使用，合法輸入走不到
+data	61d2ac	assertText	斷言訊息字串位址，非遊戲資料
+data	61d938	assertText	斷言訊息字串位址，非遊戲資料
+data	61d960	assertText	斷言訊息字串位址，非遊戲資料
+data	6836a8	combatGlobal	戰鬥全域記錄指標
+data	685174	characterRecords	角色記錄陣列基址，步距 0x1862
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff3	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	eax+0x0	damageDiceCountOut	輸出：骰組數寫入第三參數指向的 u32
+field	edx+0x0	damageDiceCountOut	輸出：骰組數寫入第三參數指向的 u32
+field	eax+0x8c5	targetKind	戰鬥全域 +0x8c5 目標種類：1 為角色，3 為怪物（吸收取自怪物修正），其餘查怪物但把模板當角色記錄讀
+field	ecx+0x8c5	targetKind	戰鬥全域 +0x8c5 目標種類：3 時用怪物傷害修正，其餘用目標記錄的傷害調整
+field	eax+0x8c9	targetCharacter	戰鬥全域 +0x8c9 目標角色索引（有號，目標為角色時作 0..7 索引，-1 斷言）
+field	edx+0x8c9	targetCharacter	戰鬥全域 +0x8c9 目標角色索引
+field	eax+0x8cd	targetMonsterId	戰鬥全域 +0x8cd 目標怪物編號，用來找怪物記錄；全 1 為無效
+field	eax+0x9a4	flag9a4	戰鬥全域 +0x9a4 旗標：非零時多骰一次，並抑制減骰
+field	edx+0x9a4	flag9a4	戰鬥全域 +0x9a4 旗標：非零時多骰一次，並抑制減骰
+field	eax+0x9a5	flag9a5	戰鬥全域 +0x9a5 旗標：非零時依攻擊者模板等級比例擲骰決定多骰 0..3
+field	ebp+0x17b5	targetAttrByte	目標角色記錄 +0x17b5 byte：非零時加骰
+field	ebp+0x1e1	monsterDamageMod	怪物記錄 +0x1e1 有號 byte 傷害修正：與模板 +0xcf 相加後從 100 扣
+field	ebp+0x220	monsterAttrByte	怪物記錄 +0x220 byte：非零時加骰
+field	ebp+0x2e1	monsterKind	怪物記錄 +0x2e1 種類：1 與 8 為減骰條件、4 為加骰條件
+field	ebp+0x4	monsterRecordTemplateId	怪物記錄 +0x4 編號：只交給 0x5100b0 反查表索引，結果交 0x5101b0 後丟棄，不影響傷害；找不到時 0x5100b0 斷言，case 把該編號放進表
+field	edi+0x2e5	attackerMonsterKind	攻擊者怪物記錄 +0x2e5 種類：4、7、8 不加骰，3 多一骰
+field	edi+0x71b	targetStatusByte	目標記錄 +0x71b byte：非零時對目標登記一筆 0x553f10 呼叫
+field	edi+0xcf	templateClassFlag	怪物模板 +0xcf 位元組：加進怪物傷害修正
+field	edi+0xed9	targetDamageAdjust	目標記錄 +0xed9 有號傷害調整：100 減此值作縮放

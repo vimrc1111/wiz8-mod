@@ -1,0 +1,3907 @@
+{
+  "cc": "cdecl",
+  "steps": 200000,
+  "path_limit": 512,
+  "samples": 64,
+  "objects": {
+    "monster": 0,
+    "template": 4096,
+    "position": 8192,
+    "spells": 16384
+  },
+  "args": [
+    "@monster",
+    "@template"
+  ],
+  "setup": [
+    {
+      "at": {
+        "global": "0x65be1c"
+      },
+      "value": "@spells",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x6840c7"
+      },
+      "value": "@template",
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 12
+      },
+      "value": "@position",
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x652db0"
+      },
+      "value": 0,
+      "size": 4
+    },
+    {
+      "at": {
+        "global": "0x65ba5c"
+      },
+      "value": 0,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 311
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 758
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 1205
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 1652
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 2099
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 2546
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 2993
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 3440
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 3887
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 4334
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 4781
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 5228
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 5675
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 6122
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 6569
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 7016
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 7463
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 7910
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 8357
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 8804
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 9251
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 9698
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 10145
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 10592
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 11039
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 11486
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 11933
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 12380
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 12827
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 13274
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 13721
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 14168
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 14615
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 15062
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 15509
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 15956
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 16403
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 16850
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 17297
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 17744
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 18191
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 18638
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 19085
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 19532
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 19979
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 20426
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 20873
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 21320
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 21767
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 22214
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 22661
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 23108
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 23555
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 24002
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 24449
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 24896
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 25343
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 25790
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 26237
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 26684
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 27131
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 27578
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 28025
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 28472
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 28919
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 29366
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 29813
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 30260
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 30707
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 31154
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 31601
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 32048
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 32495
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 32942
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 33389
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 33836
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 34283
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 34730
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 35177
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 35624
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 36071
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 36518
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 36965
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 37412
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 37859
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 38306
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 38753
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 39200
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 39647
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 40094
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 40541
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 40988
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 41435
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 41882
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 42329
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 42776
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 43223
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 43670
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 44117
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 44564
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 45011
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 45458
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 45905
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 46352
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 46799
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 47246
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 47693
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 48140
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 48587
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 49034
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 49481
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 49928
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 50375
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 50822
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 51269
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 51716
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 52163
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 52610
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 53057
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 53504
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 53951
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 54398
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 54845
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 55292
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 55739
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 56186
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 56633
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 57080
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 57527
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 57974
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 58421
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 58868
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 59315
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 59762
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 60209
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 60656
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 61103
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 61550
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 61997
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 62444
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 62891
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 63338
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 63785
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 64232
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 64679
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 65126
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 65573
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 66020
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 66467
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 66914
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 67361
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 67808
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 68255
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 68702
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 69149
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 69596
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 70043
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 70490
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 70937
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 71384
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 71831
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 72278
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 72725
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 73172
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 73619
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 74066
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 74513
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 74960
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 75407
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 75854
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 76301
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 76748
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 77195
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 77642
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 78089
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 78536
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 78983
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 79430
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 79877
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 80324
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 80771
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 81218
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 81665
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 82112
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 82559
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 83006
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 83453
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 83900
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 84347
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 84794
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 85241
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 85688
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 86135
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 86582
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 87029
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 87476
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 87923
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 88370
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 88817
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 89264
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 89711
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 90158
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 90605
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 91052
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 91499
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 91946
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 92393
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 92840
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 93287
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 93734
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 94181
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 94628
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 95075
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 95522
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 95969
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 96416
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 96863
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 97310
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 97757
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 98204
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 98651
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 99098
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 99545
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 99992
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 100439
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 100886
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 101333
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 101780
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 102227
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 102674
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 103121
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 103568
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 104015
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 104462
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 104909
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 105356
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 105803
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 106250
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 106697
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 107144
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 107591
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 108038
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 108485
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 108932
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 109379
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 109826
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 110273
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 110720
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 111167
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 111614
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 112061
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 112508
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 112955
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 113402
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 113849
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "spells",
+        "offset": 114296
+      },
+      "value": 8,
+      "size": 4
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 8
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 737
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "monster",
+        "offset": 741
+      },
+      "size": 4,
+      "value": 4294967295
+    }
+  ],
+  "in": [
+    {
+      "name": "silence",
+      "at": {
+        "object": "monster",
+        "offset": 119
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "creatureType",
+      "at": {
+        "object": "template",
+        "offset": 203
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "specialSpellTarget",
+      "at": {
+        "object": "monster",
+        "offset": 836
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "combat",
+      "at": {
+        "global": "0x652da4"
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "regionChecksDisabled",
+      "at": {
+        "global": "0x68f105"
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "position0Bits",
+      "at": {
+        "object": "position",
+        "offset": 280
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "position1Bits",
+      "at": {
+        "object": "position",
+        "offset": 284
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "position2Bits",
+      "at": {
+        "object": "position",
+        "offset": 288
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell0",
+      "at": {
+        "object": "template",
+        "offset": 333
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled0",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell0",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal0",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell0",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable0",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell0",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell1",
+      "at": {
+        "object": "template",
+        "offset": 334
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled1",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell1",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal1",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell1",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable1",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell1",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell2",
+      "at": {
+        "object": "template",
+        "offset": 335
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled2",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell2",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal2",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell2",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable2",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell2",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell3",
+      "at": {
+        "object": "template",
+        "offset": 336
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled3",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell3",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal3",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell3",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable3",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell3",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell4",
+      "at": {
+        "object": "template",
+        "offset": 337
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled4",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell4",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal4",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell4",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable4",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell4",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell5",
+      "at": {
+        "object": "template",
+        "offset": 338
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled5",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell5",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal5",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell5",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable5",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell5",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell6",
+      "at": {
+        "object": "template",
+        "offset": 339
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled6",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell6",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal6",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell6",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable6",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell6",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell7",
+      "at": {
+        "object": "template",
+        "offset": 340
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled7",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell7",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal7",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell7",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable7",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell7",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell8",
+      "at": {
+        "object": "template",
+        "offset": 341
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled8",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell8",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal8",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell8",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable8",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell8",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "spell9",
+      "at": {
+        "object": "template",
+        "offset": 342
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "enabled9",
+      "at": {
+        "object": "spells",
+        "offset": 294,
+        "index": "spell9",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "verbal9",
+      "at": {
+        "object": "spells",
+        "offset": 72,
+        "index": "spell9",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "combatUsable9",
+      "at": {
+        "object": "spells",
+        "offset": 307,
+        "index": "spell9",
+        "stride": 447,
+        "count": 256
+      },
+      "size": 4,
+      "signed": false
+    }
+  ],
+  "out": [
+    {
+      "name": "spellID",
+      "at": {
+        "reg": "eax"
+      },
+      "size": 4
+    }
+  ],
+  "boundary": [
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1,
+      1,
+      6,
+      1,
+      1,
+      1,
+      7,
+      1,
+      1,
+      1,
+      8,
+      1,
+      1,
+      1,
+      9,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      60,
+      1,
+      1,
+      1,
+      255,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1,
+      1,
+      6,
+      1,
+      1,
+      1,
+      7,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1,
+      119,
+      1,
+      1,
+      1
+    ],
+    [
+      4294967295,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1,
+      1,
+      6,
+      1,
+      1,
+      1,
+      7,
+      1,
+      1,
+      1,
+      8,
+      1,
+      1,
+      1,
+      9,
+      1,
+      1,
+      1
+    ],
+    [
+      4294967295,
+      5,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1,
+      1,
+      6,
+      1,
+      1,
+      1,
+      7,
+      1,
+      1,
+      1,
+      8,
+      1,
+      1,
+      1,
+      9,
+      1,
+      1,
+      1
+    ],
+    [
+      4294967295,
+      13,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1,
+      1,
+      6,
+      1,
+      1,
+      1,
+      7,
+      1,
+      1,
+      1,
+      8,
+      1,
+      1,
+      1,
+      9,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      1,
+      2,
+      0,
+      1,
+      1,
+      3,
+      0,
+      1,
+      1,
+      4,
+      0,
+      1,
+      1,
+      5,
+      0,
+      1,
+      1,
+      6,
+      0,
+      1,
+      1,
+      7,
+      0,
+      1,
+      1,
+      8,
+      0,
+      1,
+      1,
+      9,
+      0,
+      1,
+      1
+    ],
+    [
+      1,
+      4,
+      -1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      1,
+      2,
+      1,
+      0,
+      1,
+      3,
+      1,
+      0,
+      1,
+      4,
+      1,
+      0,
+      1,
+      5,
+      1,
+      0,
+      1,
+      6,
+      1,
+      0,
+      1,
+      7,
+      1,
+      0,
+      1,
+      8,
+      1,
+      0,
+      1,
+      9,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0,
+      2,
+      1,
+      1,
+      0,
+      3,
+      1,
+      1,
+      0,
+      4,
+      1,
+      1,
+      0,
+      5,
+      1,
+      1,
+      0,
+      6,
+      1,
+      1,
+      0,
+      7,
+      1,
+      1,
+      0,
+      8,
+      1,
+      1,
+      0,
+      9,
+      1,
+      1,
+      0
+    ],
+    [
+      0,
+      4,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      119,
+      1,
+      1,
+      1,
+      60,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1,
+      1,
+      6,
+      1,
+      1,
+      1,
+      7,
+      1,
+      1,
+      1,
+      8,
+      1,
+      1,
+      1,
+      9,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      4,
+      -1,
+      0,
+      1,
+      1065353216,
+      3212836864,
+      1073741824,
+      119,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1,
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      4,
+      1,
+      1,
+      1,
+      5,
+      1,
+      1,
+      1,
+      6,
+      1,
+      1,
+      1,
+      7,
+      1,
+      1,
+      1,
+      8,
+      1,
+      1,
+      1,
+      9,
+      1,
+      1,
+      1
+    ]
+  ],
+  "random": {
+    "seed": 533260,
+    "count": 32,
+    "ranges": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        -2147483648,
+        2147483647
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        255
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        119,
+        119
+      ],
+      [
+        1,
+        255
+      ],
+      [
+        1,
+        255
+      ],
+      [
+        1,
+        4294967295
+      ],
+      [
+        20,
+        39
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        40,
+        59
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        60,
+        79
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        80,
+        99
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        100,
+        118
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        120,
+        139
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        140,
+        159
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        160,
+        179
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        180,
+        199
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  }
+}

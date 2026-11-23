@@ -1,0 +1,537 @@
+[
+ {
+  "id": 2,
+  "src_sha256": "e7d24e2925877c7510bc42542068c76a4136145371323eaaebd1e1fbf60a42f5",
+  "zh": "我已經警告過你們了！"
+ },
+ {
+  "id": 3,
+  "src_sha256": "fb94b00fcc21e6be6c185defcedb6552e97ce86824926c4f158cf3f39e41e452",
+  "zh": "真正的善良是幫助他人，而你們竟然拒絕了這個機會！"
+ },
+ {
+  "id": 6,
+  "src_sha256": "15b6b2ea1c7063699175c4a2cde607af46d2d9ea42d1db097c5bee7dc400cc93",
+  "zh": "我就知道！我就知道你們不安好心！"
+ },
+ {
+  "id": 7,
+  "src_sha256": "e5bf03239bef49913aa595cabb86ba6f550196f95943d4a1bf9b2b786effbc3e",
+  "zh": "我的價值遠遠不只這樣！"
+ },
+ {
+  "id": 8,
+  "src_sha256": "1a014b263c4a091b6d9e4961fad357bda5ec08ed23773e9242b3dae9b24cc979",
+  "zh": "哎呀我的天！衛兵！快制止這場打鬥！"
+ },
+ {
+  "id": 9,
+  "src_sha256": "c1089b7335200cab7a5551adf73b57fa2b3ea8119ca18ed3b8b03bf4553a0adb",
+  "zh": "我？丟下我的 Trynnie 同胞們？我怎麼可能做這種事。他們需要我來領導！"
+ },
+ {
+  "id": 12,
+  "src_sha256": "0a06c89ec022e6ea18cabef619baab706cf42c237cf8345950168091f44b07e9",
+  "zh": "非常感激。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "519cd70f76d19cbe7ed8f4845a42ebc7a0dbc9e953bbdca011bb11238ccebc83",
+  "zh": "我想這對我們沒有什麼幫助（ help ）。"
+ },
+ {
+  "id": 14,
+  "src_sha256": "726f1b9f6ddbc72c6b8918273478115ae517758082a0c60c77ec70431bc805f5",
+  "zh": "當然，你們應該願意為我們的理想捐獻一點什麼作為交換吧……"
+ },
+ {
+  "id": 15,
+  "src_sha256": "6c6d1f5e1b389d54b9666be2ce127c6359d4fcc89a6ae8a13aed20a76d581e76",
+  "zh": "我需要的都有了。"
+ },
+ {
+  "id": 16,
+  "src_sha256": "8d4a25250aadc689924ea73687a276fc89368a4b2c47a1373cf98164f60212f8",
+  "zh": "看來你們買不起。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "e610b8462ed92d44efd514729b928c7076983e7665f4b07e5205976c0db4760e",
+  "zh": "太好了！我正好有一個跟這個一模一樣的！"
+ },
+ {
+  "id": 18,
+  "src_sha256": "ba563d1215e66b219f3d97943b019578365f7833352e20731c6a1d31cc8379a9",
+  "zh": "我就知道！我就知道！"
+ },
+ {
+  "id": 19,
+  "src_sha256": "bf899c934bd7fe6a5a791110a14c72abe44049acb5a1f1790892e2fda113c3ba",
+  "zh": "你們、你們這些……！！！"
+ },
+ {
+  "id": 20,
+  "src_sha256": "782602cc790a6d017558d864bfcfa254cf3f529c6a755eb00ca211998235e317",
+  "zh": "你們瞧不起的這是最後一個 Trynnie 了！"
+ },
+ {
+  "id": 21,
+  "src_sha256": "8249b6d8216e8953f4f6c6fc505fc55d74f9a43abdc117acf52b38ac2a72a839",
+  "zh": "這對我們的理想很有幫助（ help ）！"
+ },
+ {
+  "id": 22,
+  "src_sha256": "215de0a50b6c7d1d07e6ba12b9e5339194fad68deb0fb4e51786bf75be8d08ce",
+  "zh": "我沒聽說過這個。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "9bc2f44f433daedd94e5d3b413a221e3fa60d683b35c213d14b2a2cc05d759b4",
+  "zh": "我不記得了……"
+ },
+ {
+  "id": 24,
+  "src_sha256": "752fd9e0d455e3900a7dec6ca2b626f35c0f01eb57242dafa1d199b88436a810",
+  "zh": "我不想談這件事。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "7f81e5f9126d0ad9a9783b964f156cbe76cf84a819c191d55fcad4d2dafd5af1",
+  "zh": "就像我說的！"
+ },
+ {
+  "id": 26,
+  "src_sha256": "f8c3c3dfb0799a88ea6a18319a80aaa5e90b48e063e28658dda2ebefcdbe74d7",
+  "zh": "我們一次談一件事吧……"
+ },
+ {
+  "id": 27,
+  "src_sha256": "b7f232d0fcf86ab4b7710e46e254049b3c5a0788ea55f9fdc8aca40b1bc5bd48",
+  "zh": "還有……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "c7617647d6403051f4c6b5d8fac7530e4984dd0521ae92ae6cdda612666abff2",
+  "zh": "我會把消息傳出去……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "9298a47b890d9956d05ea47bdd3a5e6fbc9f7d527af70d2cced704cb61b9a924",
+  "zh": "你們大概急著出發了吧……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "e270657b95b48cc6d0123df8fb56312b0fca6a2b0c72d05b2be3baa1ec5e9d0f",
+  "zh": "我們別再浪費時間了……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "d88d7af8ee7bdf137df51b5c380f6e651da9f2c812529af5adab322d9544801c",
+  "zh": "當然就是你們現在所在的地方。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "bc48c90914cd7780088ef0629654b96485c680c34f3c9f1e6dd2c46f24afd827",
+  "zh": "哦，那是個好地方。往北走一點就到了。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "14c706a09aeee744acfdce6dfd9d54efa7164adbf41cf8118b481cb596686d26",
+  "zh": "哦，不行。我們不能去那裡。我們、呃，是住在那裡的生物的食物。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "3170876c7c88e76f626cf895545495c00ea0c6b11295e3477ccb6893ca50a82a",
+  "zh": "沒錯，沒錯！你們就在這裡。我們非常以我們的城市為傲。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "ace779ade35e1c5aaf414befb2e4c2b498b8b2f963517e2e8b3ed7fbfa72bc35",
+  "zh": "那是 Umpani 的所在地。從這裡往西北走就是。在他們來之前，山裡的洞穴除了巨大的生物什麼都沒有！嗯，對你們來說也許不算太巨大……"
+ },
+ {
+  "id": 38,
+  "src_sha256": "a7a3c3367ceb85116d144679d83bad776af961aeaa88de2b8e34704951354a62",
+  "zh": "沒錯…… Marten's Bluff ！我們很熟悉。很久很久以前，在 T'Rang 來之前， Marten 本人就住在那裡。 Trynnie 和 Marten 訂下了非常特別的盟約（ pact ），直到今天依然有效！"
+ },
+ {
+  "id": 39,
+  "src_sha256": "daad12c809206af445dd4bae304c3e6387fd309090f4d5743f4b8bec3489bf1e",
+  "zh": "我們聽說過有這種地方，不過我們從不出海……"
+ },
+ {
+  "id": 40,
+  "src_sha256": "1b13f276290e09fe8f9c8ce312a1bae99e7f5092dce07ec6b687f12ce837bb54",
+  "zh": " Higardi 知道得比較多……"
+ },
+ {
+  "id": 41,
+  "src_sha256": "322adc6dc20648fad762d0810311823f2cfeba60fe7a7aadedb2d6393089f55b",
+  "zh": " Cosmic Lords 統治的地方……而且很快就要選出新的 {{Lord}} 了！"
+ },
+ {
+  "id": 42,
+  "src_sha256": "d4d3937903619203455b9920c438f1847c11aa01d4b42d476400e612c57a33de",
+  "zh": "對我們來說非常危險。我們常常被誤認為，嗯，誘餌。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "b60bf9d692c93503f28060657228d112265e1b17d2ed538077cb6f18d08b46ff",
+  "zh": " Higardi 已經證明了他們是愛好和平又善良的生物。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "1ad8b4881b0ceba8a0d80cccfc49d386a20233c7be58fa937cacc5e17aa36ee6",
+  "zh": "你們面前就站著一個！我不知道你們聽說過我們什麼……不過請相信，我們是 Dominus 上最驕傲的種族！我們也許個子小，但我們的{{Magic}}受人敬畏……也令人恐懼！我們很高興你們能來到我們之中！"
+ },
+ {
+  "id": 45,
+  "src_sha256": "fd38d55b6cea0770f1fd7ccc42e4316fd35a90695163fd3c8ee8e6b6c8ee61b8",
+  "zh": " Rapax 威脅要攻下 Trynton ！我不知道為什麼——我們一向小心地不去招惹他們。為什麼他們現在要來找我們？我不認為這是他們自己的主意。我懷疑是 Umpani 或 T'Rang 在幕後指使，但我的斥候告訴我不是。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "b2736e436b79a6861fa9bbdad7481f0a71841022dbac55d64ea49325a59579c0",
+  "zh": "不管是誰、是什麼，要是 Rapax 攻擊我們的家園，我們會讓他們為小看我們的勇氣付出代價！"
+ },
+ {
+  "id": 47,
+  "src_sha256": "5ff45219338a7dd48d02eeaca03e8b946b8983909568c047831f64344f229a8b",
+  "zh": " Sparkle 跟他們在一起已經好一陣子了。她似乎挺喜歡他們的。"
+ },
+ {
+  "id": 48,
+  "src_sha256": "72db232436f382918c1f2c73be8c85930b365c1f96411db301ea07bbcc6f2e86",
+  "zh": "我聽過他們這樣稱呼自己，就是 Marten's Bluff 裡的那些生物……"
+ },
+ {
+  "id": 52,
+  "src_sha256": "6da95744bfe38c696325d2812fe3b54288c654bc4013ed329593319cc0ac6a3d",
+  "zh": "Arnika 那些大個子？在搞清楚他們覺得我們好不好吃之前，我選擇躲遠一點。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "3abbccb66221db7a785838ad86f2072021f450ab60015e322d6d109ad6a58590",
+  "zh": "沒錯， Phoonzang ！你們當然認識他。不久之後，就會選出新的 {{Lord}} 。 Higardi 會告訴你們……"
+ },
+ {
+  "id": 55,
+  "src_sha256": "d294a1efb634988dd2b5e5c5eeadc33a8fdedfc075956578321c6ea921df48d5",
+  "zh": "那你們已經見過他們了？我們認為他們是 Rapax 的間諜——所以我們才需要你們的幫助（ help ）！ Madras 會告訴你們該怎麼做，不過你們必須小心……他們狡猾、難以捉摸又強大！輕輕鬆鬆就有兩個我……再加一個你那麼高！"
+ },
+ {
+  "id": 56,
+  "src_sha256": "4d6f8efa28fd5eb176794ed74c32e0324a61dd0867ab563bd77562bb6b823647",
+  "zh": "沒錯！ Trynton 擺脫 Rats 了！"
+ },
+ {
+  "id": 57,
+  "src_sha256": "4fa35017cde24a2f58cd45b7b78de5a07c46bb96494e45798fc69d9947d7b24f",
+  "zh": "你們知道……他？我不知道他是誰，也不知道他從哪裡來。我們在這裡見過他，你們知道……他在找 Rats ！我們有一次跟蹤他到 Arnika ……但他消失在一棟建築裡，我們找不到進去的路。我們遲早會查出更多的。我很確定。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "321e61cdfefc7bd74cce62b5695635bc2c13015f3639734f069e17ca1dd88ea1",
+  "zh": "沒錯， Cosmic Lord ！"
+ },
+ {
+  "id": 61,
+  "src_sha256": "116fd2572f33befccf16dd435a0f4a4ccbc102a8c96107e377b4f5bc8d9cd0cc",
+  "zh": " Trynnie 對他很熟悉，而 Trynnie 的 Shaman 與他最熟。我們是他祕密的守護者！我們的盟約（ pact ）可以追溯到一百多年前。"
+ },
+ {
+  "id": 64,
+  "src_sha256": "069c4bfd3c6a4b2b5a7eadfb314e16b26fe1962966dc3f39df81727091097dee",
+  "zh": "Rapax 去死吧！"
+ },
+ {
+  "id": 70,
+  "src_sha256": "c8b650552e0466a932312473a6da3393c85d9e476073aa38013df828a305b9d8",
+  "zh": " Shaman 也許知道……"
+ },
+ {
+  "id": 71,
+  "src_sha256": "26fb7583ddd5f40a9e101fd4db275f75ff36c9d89cc7752dea1d0946b570a9d2",
+  "zh": "對，對！那是我們 Trynnie 知道的事！ Madras 可以告訴你們更多，不過 Shaman 知道得最多！"
+ },
+ {
+  "id": 72,
+  "src_sha256": "c8b650552e0466a932312473a6da3393c85d9e476073aa38013df828a305b9d8",
+  "zh": " Shaman 也許知道……"
+ },
+ {
+  "id": 74,
+  "src_sha256": "8fb477b3176a322d049ebe3122df787295ba8d9039106b221d9015fc2b643c65",
+  "zh": "最好去問 Higardi 。他們很久以前就告訴過我們飛升（ Ascension ）的事了！"
+ },
+ {
+  "id": 75,
+  "src_sha256": "ac8c05e8ea233caf14aa123554af21862e6fc38da59418d4f85033046ee8c92c",
+  "zh": " Dominus 到處都是傳聞和故事……"
+ },
+ {
+  "id": 76,
+  "src_sha256": "2847c6f7e4b4ad139e2dfa30ae5f2bd90c78c895dce4161429dd133020931c4c",
+  "zh": "我是 Chief Gari ！"
+ },
+ {
+  "id": 77,
+  "src_sha256": "a1ca070a3b52cf028ac60c5603f47e621267c53ac7367df24325184e0d76dd83",
+  "zh": "我不敢談論命運（ destiny ）……最好留給 Shaman 。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "08c98305c29c08718861a85c328e63913f352678099bafa876f8b532b3f3d0b1",
+  "zh": "嗯……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "7a21bed24558582bdec465361861ad8903bccaa3ca6877ec18ff181393b0b808",
+  "zh": "這是我的恐懼。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "5eb3ac8f810effbb5af481021798bf9c97dc55995622cbf970059efe3c98ae30",
+  "zh": "你好。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "07b6bed516cfedcc2b96b4079b453d452d863797f3f4bfc97eb480d360e430d6",
+  "zh": "小心點！"
+ },
+ {
+  "id": 82,
+  "src_sha256": "78e200b294fec1113b5659f6b7c5fcd3dc3b5be53c4655920acd779f085cdf59",
+  "zh": "對，對！我相信你們可以在很多方面幫助（ help ）我們。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "7068daf6ae55ea94a872af2b81667ce34b020b04ff1fb6954759221e38a6df46",
+  "zh": "你們可以在第一層枝幹（ bough ）的 Fuzzfas 那裡找到比較好的物品。我都在那裡買東西。就在上週他做了一瓶藥水，說是可以讓我長高。我還在等……"
+ },
+ {
+  "id": 84,
+  "src_sha256": "ded2f7a88ce91ef2dde5576d96dd318d1aa3de7ef2258535963d908290332082",
+  "zh": "這年頭很難說。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "6352a2e9637e08d0d1f53f7d35b81af287992754cc026ad0f617e92f1ce79a79",
+  "zh": "去 Fuzzfas 的 Magic Shoppe 。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "4f74223fd05c94acb5f91c196556b5fe9e076e0436daaf592ec48464b64590b0",
+  "zh": "是 Rapax 先動手的！"
+ },
+ {
+  "id": 93,
+  "src_sha256": "b999afe98711e81b33eb3f443fba87888b89098b795e3168044c4c70f3e7faa1",
+  "zh": "往北，在 Arnika 。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "9aeb76d133d9d041bf63a69cdedd1c9031cfad829379c85634ddf48c0383aed6",
+  "zh": "就在這裡的 Trynton 。"
+ },
+ {
+  "id": 95,
+  "src_sha256": "42e05aedeb7992be2337ca353d935633243fe03ffa21072e3714cacfe9d00498",
+  "zh": "去 Swamp 找找。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "784485b4ca864f433fefd43a9450be3348eb1344806b290c5295ecaa22b2c6f7",
+  "zh": "我上次知道的是在 Marten's Bluff 。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "78960a10c5813400055958ef435be6eabe576787fb7e0e25cb887db998cfe3ee",
+  "zh": " Rapax 在某處有個營地……"
+ },
+ {
+  "id": 98,
+  "src_sha256": "070171c020a3900f5bfae08d3862144117c3700821bb0ec45992b23e988c9db0",
+  "zh": " Mt. Gigas 。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "065c8d54c05a1fe595fceff1f8d03b33ccdbb59c4f72ea30c9b7ee5138b628c9",
+  "zh": "在 Sea Caves 。"
+ },
+ {
+  "id": 100,
+  "src_sha256": "c8ef8bc77d1b9d99fc9206faa905a4d3e90cf0d00fb9b361d2b0b20a043eca7a",
+  "zh": " Rapax Rift ……不過我不會去那裡！"
+ },
+ {
+  "id": 101,
+  "src_sha256": "a6dbd8f6a09e25c9f756bfdd4a34db734cd880f87f98dde6c10a3534a1bcaa88",
+  "zh": " Rapax Castle 。"
+ },
+ {
+  "id": 102,
+  "src_sha256": "f30200b35d60eaa53790f12afce2377542e8d55d0d8ea0d363ddd9a1f404e6eb",
+  "zh": "當然是在 Ascension Peak ！"
+ },
+ {
+  "id": 103,
+  "src_sha256": "5c4338c1ba74cf323303d7c2e44c22ca8736637acecf29cb215e5cf2acb5d1d3",
+  "zh": "在 Cosmic Circle 。"
+ },
+ {
+  "id": 104,
+  "src_sha256": "d579147794df85b6877307f4f3685dc6d75cb2d998b67e3e4c47e2696bb71f13",
+  "zh": "就在這裡！"
+ },
+ {
+  "id": 105,
+  "src_sha256": "055133a1f5c782fa4ce0b62721c0ff5ebf3ad5dac7687101f60ff1936a789458",
+  "zh": " Shaman 也許知道。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "5835e3b7275cd7fd06d86326bae80114de622b64a6b419378ffec307d1964d4b",
+  "zh": "對，在 Bayjin 。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "c77f369434b51a2cb2bae432424ca5ef5e3e4a51bafb03920602b9007ffda70d",
+  "zh": "他們在哪裡？！你們替他們當間諜的 Rapax 在哪裡？你們這些星星來的人，還要我們送多少個下地才夠！立刻離開 Trynton ，我們就不追究……但要替我們帶個警告給你們的主子： Trynton 絕不會被攻下！"
+ },
+ {
+  "id": 108,
+  "src_sha256": "624dbda07b47dc56ac88717141ef00bc8fc52598decc495d3926659d3aacd018",
+  "zh": "除非……呃……你們其實不是替 Rapax 工作，當然……嗯，那樣的話，可就有意思了！我說……"
+ },
+ {
+  "id": 109,
+  "src_sha256": "046db97190a9b06cd9ebc97214371defa4d9e045e59198a83c72afa93c042a48",
+  "zh": " Sparkle ？！？這是怎麼回事？"
+ },
+ {
+  "id": 110,
+  "src_sha256": "25e73f0ae63f684bf74cfcfe0908e464864e07eecd799563903f6074088f77e0",
+  "zh": "你們改變主意了，是吧？"
+ },
+ {
+  "id": 111,
+  "src_sha256": "882dd59f3b9c3aa855944e313a8e17e22a5dd1f124477c3195b008e142cbeaac",
+  "zh": "我的衛兵說 Rats 還在樹（ tree ）上！你們還沒殺掉他們。也許他們比我們想的還難對付……"
+ },
+ {
+  "id": 112,
+  "src_sha256": "789da83bdeafaa067ccf60f4df4a918c561efa51944b881a65a61e75483ded8d",
+  "zh": "見到你們我太感激了！ Rats 終於死光， Trynton 又是我們的了。要是你們也能對 Rapax 做同樣的事就好了！不過他們危險多了……"
+ },
+ {
+  "id": 113,
+  "src_sha256": "378257f5c7956df4487310ba64ac17d75c2df4dd62d222eff58845e78116980e",
+  "zh": "你們戴著 Marten's Helm ？！你們知道這代表什麼嗎？！代表你們就是 Marten 等待的信使（ messenger ）！我從沒想過我有生之年能看到這一天。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "84f2a137328fba9e01b994dfc9c5a363e90824bca0e9c0e7d2a354e200ac7008",
+  "zh": "你好，朋友們……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "8ec2f4f41665643075afe61f6322fca6b2f4fd651fe65ec5b26061b38b601257",
+  "zh": "沒錯，很多年前 Marten 把頭盔留在我們這裡時，他說會有一位信使（ messenger ）回來。我們不知道要等多少年！"
+ },
+ {
+  "id": 116,
+  "src_sha256": "1be8b7cbaf96af08759cf400e265100bd4e849bbdc20616b097739fcbc18a2b5",
+  "zh": "你們會在 Trynton 找到他……如果他沒有先找到你們的話。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "8f09031a94d97cda8941e767791202dce77af9f9051e2b40fe02a4b6c9d33421",
+  "zh": "他離開我們之後去了 Marten's Bluff ，不過再往後就沒人知道了。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "d106240b7357f7675ca923218e7f7c474e5bd242ae620ba14215afc926a0d45f",
+  "zh": "當然是在 Trynton ！"
+ },
+ {
+  "id": 119,
+  "src_sha256": "df5f26dc1b8222e6a85c2e237230a1d4c3f7fb9ccabdd13a88b0bffacea70b72",
+  "zh": " Trynton 有很多層枝幹（ boughs ）。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "9047e8dfc13148e374c440becb985d761ccacf54ee1a3e4e0d00dada8850e7c0",
+  "zh": "你們就站在其中一層上！"
+ },
+ {
+  "id": 121,
+  "src_sha256": "b42d00ea00e2b987f62fc6cc64d95d96b46a7beec990367c8dd1ab517a769e89",
+  "zh": "你們一定聽過 Destinae Dominus ！我們跟 Marten 的盟約（ pact ）、我們的祕密，就是從那裡開始的。他從 Higardi 那裡偷了它，來到 Trynton 。我們把他藏起來，不讓他們找到，直到他可以安全離開。"
+ },
+ {
+  "id": 122,
+  "src_sha256": "620eac616d5d18d4d42856d1a40683e862c6141b135bf2c74feea05e5b000fb5",
+  "zh": "終於，那一天到來了。傳說他把一頂特別的頭盔交給了 Shaman ，說有一天會有一位信使（ messenger ）回來取走。我們答應替他好好保管頭盔，而我們也做到了！"
+ },
+ {
+  "id": 123,
+  "src_sha256": "b1b00f30372877469c6d3cb9f5430ea7a7bade30d00cd0d3c98a94dc295fa4b5",
+  "zh": "去問 Shaman ……他會告訴你們。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "1d04989d392dd4fbfe248e809694c5ce74185e06b0011297a059c4a6a87b1bf7",
+  "zh": "當然是跟 Marten 在一起！"
+ },
+ {
+  "id": 125,
+  "src_sha256": "9c70cbcdfe418081f2aa5d816f684b65e810ac2f8e62e6780227f04d5f365380",
+  "zh": "你們願意幫助（ help ）我們嗎？"
+ },
+ {
+  "id": 126,
+  "src_sha256": "519c77ea1e84aa2e5641bdd58fc40f6909a0d3a05ca2b4d2cd63fa4b84b8d28d",
+  "zh": "我就知道在你們身上看到了一點好的地方！眾神（ Gods ）終於回應了我們的祈禱！ Ratts 佔領我們的城市太久了！我們允許你們進入 Trynton 。到第四層枝幹（ bough ）找 Madras 。他會告訴你們該怎麼做……"
+ },
+ {
+  "id": 127,
+  "src_sha256": "5fcb08818e1e0369ba4e4a8c9afe2b00e08e9a3c1d32b1058be9a33fdd22d7ad",
+  "zh": "那就立刻離開 Trynton ！"
+ },
+ {
+  "id": 128,
+  "src_sha256": "bed63f0164967441099bf72dba40af9be9bad828258504506029148b68ec9ec9",
+  "zh": "去問他們！"
+ },
+ {
+  "id": 129,
+  "src_sha256": "00f1275ecb92b9973fe74bb81b1474192c4d8f9d9746ee7671f3ed3dc52862d5",
+  "zh": " Umpani 啊，嗯？那你們是來幫助（ help ）我們的……幹得好， Sparkle ！"
+ },
+ {
+  "id": 131,
+  "src_sha256": "c54d2ef1414e1876686906295bdd11b1e278289b7da19bea3ed12897403f1404",
+  "zh": "沒錯！"
+ },
+ {
+  "id": 132,
+  "src_sha256": "e7674168f91e41476d6436c7c7f042e854c859bffea4e0855fef588b0479f81e",
+  "zh": "在這裡的北邊。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "64b7050f375b74be5295914474d829a2252e3323fd4d08e6f6931f4423a5d3e3",
+  "zh": "那裡？那在南邊。"
+ },
+ {
+  "id": 134,
+  "src_sha256": "829869b139d7fc5a26a30343f033317ab6948670f70007123c2e688c19b526f4",
+  "zh": "對，那在東邊。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "56d862602f0102fffc5abca8a3a7c8b42ba51ca6030a4ae5912396721b730471",
+  "zh": "在這裡的西邊。"
+ }
+]

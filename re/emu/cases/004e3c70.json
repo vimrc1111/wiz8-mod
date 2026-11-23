@@ -1,0 +1,5323 @@
+{
+  "cc": "cdecl",
+  "steps": 1500000,
+  "path_limit": 512,
+  "samples": 64,
+  "objects": {
+    "monster": 0,
+    "template": 4096,
+    "render": 8192,
+    "renderState": 12288,
+    "visualManager": 16384,
+    "camera": 20480,
+    "unbornList": 24576,
+    "unbornEntries": 24608,
+    "animationEntries": 28672,
+    "animation": 32768,
+    "mesh": 36864,
+    "meshEntries": 40960,
+    "meshNode": 45056,
+    "activeList": 49152,
+    "activeEntries": 53248,
+    "modelPosition": 57344,
+    "modelName": 61440,
+    "emptyEntries": 65536,
+    "timer": 69632,
+    "visibleList": 73728,
+    "visibleEntries": 77824,
+    "npcList": 81920,
+    "eventModel": 86016,
+    "eventCodes": 90112,
+    "eventIndices": 94208,
+    "eventFrames": 98304,
+    "eventVector": 102400,
+    "decoyTemplate": 106496,
+    "world": 110592,
+    "gridRef": 114688,
+    "forwardHash": 118784,
+    "reverseHash": 122880,
+    "forwardBuckets": 126976,
+    "reverseBuckets": 131072,
+    "forwardRecords": 135168,
+    "reverseRecords": 139264,
+    "sceneScratchBits": 143360,
+    "sceneCollision": 147456,
+    "sceneMonster": 151552
+  },
+  "args": ["@monster"],
+  "setup": [
+    {
+      "at": {
+        "object": "monster",
+        "offset": 12
+      },
+      "size": 4,
+      "value": "@render"
+    },
+    {
+      "at": {
+        "object": "render",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "0x5ed22c"
+    },
+    {
+      "at": {
+        "object": "render",
+        "offset": 472
+      },
+      "size": 4,
+      "value": "@renderState"
+    },
+    {
+      "at": {
+        "object": "visualManager",
+        "offset": 68
+      },
+      "size": 4,
+      "value": "@camera"
+    },
+    {
+      "at": {
+        "global": "0x659ab4"
+      },
+      "size": 4,
+      "value": "@visualManager"
+    },
+    {
+      "at": {
+        "global": "0x6840c7"
+      },
+      "size": 4,
+      "value": "@decoyTemplate"
+    },
+    {
+      "at": {
+        "global": "0x683fb9"
+      },
+      "size": 4,
+      "value": "@unbornList"
+    },
+    {
+      "at": {
+        "object": "unbornList",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@unbornEntries"
+    },
+    {
+      "at": {
+        "object": "unbornList",
+        "offset": 4
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "unbornEntries",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@monster"
+    },
+    {
+      "at": {
+        "object": "renderState"
+      },
+      "size": 4,
+      "value": "0x5ed200"
+    },
+    {
+      "at": {
+        "object": "animationEntries",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@animation"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 176
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 184
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 192
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 200
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 208
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 216
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 224
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 232
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 240
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 248
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 256
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 264
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 272
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 280
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 288
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 296
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 304
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 312
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 320
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 328
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 336
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 344
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 352
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 360
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 368
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 376
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 384
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 392
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 400
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 408
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 416
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 424
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 432
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 440
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 448
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 456
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 464
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 472
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 480
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 488
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 496
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 504
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 512
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 520
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 528
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 536
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 544
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 552
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 560
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 568
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 576
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 584
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 592
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 600
+      },
+      "size": 4,
+      "value": "@animationEntries"
+    },
+    {
+      "at": {
+        "object": "animation",
+        "offset": 24
+      },
+      "size": 4,
+      "value": "@mesh"
+    },
+    {
+      "at": {
+        "object": "animation",
+        "offset": 28
+      },
+      "size": 4,
+      "value": "@mesh"
+    },
+    {
+      "at": {
+        "object": "animation",
+        "offset": 32
+      },
+      "size": 4,
+      "value": "@mesh"
+    },
+    {
+      "at": {
+        "object": "mesh",
+        "offset": 0
+      },
+      "size": 1,
+      "value": 7
+    },
+    {
+      "at": {
+        "object": "mesh",
+        "offset": 1
+      },
+      "size": 1,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "mesh",
+        "offset": 4
+      },
+      "size": 4,
+      "value": "@meshEntries"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "global": "0x683fad"
+      },
+      "size": 4,
+      "value": "@activeList"
+    },
+    {
+      "at": {
+        "object": "activeList"
+      },
+      "size": 4,
+      "value": "@activeEntries"
+    },
+    {
+      "at": {
+        "object": "activeList",
+        "offset": 8
+      },
+      "size": 4,
+      "value": 2
+    },
+    {
+      "at": {
+        "object": "activeEntries"
+      },
+      "size": 4,
+      "value": "@monster"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1472
+      },
+      "size": 4,
+      "value": "@modelName"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 616
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 632
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 648
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 664
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 680
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 696
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 712
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 728
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 744
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 760
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 776
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 792
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 808
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 824
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 840
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 856
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 872
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 888
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 904
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 920
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 936
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 952
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 968
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 984
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1000
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1016
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1032
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1048
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1064
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1080
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1096
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1112
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1128
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1144
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1160
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1176
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1192
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1208
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1224
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1240
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1256
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1272
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1288
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1304
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1320
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1336
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1352
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1368
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1384
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1400
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1416
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1432
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1448
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 1464
+      },
+      "size": 4,
+      "value": "@emptyEntries"
+    },
+    {
+      "at": {
+        "global": "0x6598b8"
+      },
+      "size": 4,
+      "value": "@timer"
+    },
+    {
+      "at": {
+        "object": "timer"
+      },
+      "size": 4,
+      "value": "0x5ec078"
+    },
+    {
+      "at": {
+        "object": "visualManager",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@visibleList"
+    },
+    {
+      "at": {
+        "object": "visibleList",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@visibleEntries"
+    },
+    {
+      "at": {
+        "object": "visibleList",
+        "offset": 4
+      },
+      "size": 4,
+      "value": 10
+    },
+    {
+      "at": {
+        "global": "0x689f94"
+      },
+      "size": 4,
+      "value": "@npcList"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 4
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 8
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 12
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 16
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 20
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 24
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 28
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 32
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 36
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 40
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 44
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 48
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 52
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 56
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "meshEntries",
+        "offset": 60
+      },
+      "size": 4,
+      "value": "@meshNode"
+    },
+    {
+      "at": {
+        "object": "renderState",
+        "offset": 448
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "meshNode",
+        "offset": 312
+      },
+      "size": 4,
+      "value": "0x5ec7c0"
+    },
+    {
+      "at": {
+        "object": "eventModel",
+        "offset": 1076
+      },
+      "size": 4,
+      "value": 2
+    },
+    {
+      "at": {
+        "object": "eventModel",
+        "offset": 1084
+      },
+      "size": 4,
+      "value": "@eventCodes"
+    },
+    {
+      "at": {
+        "object": "eventModel",
+        "offset": 1060
+      },
+      "size": 4,
+      "value": 2
+    },
+    {
+      "at": {
+        "object": "eventModel",
+        "offset": 1068
+      },
+      "size": 4,
+      "value": "@eventIndices"
+    },
+    {
+      "at": {
+        "object": "eventModel",
+        "offset": 976
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "eventModel",
+        "offset": 980
+      },
+      "size": 4,
+      "value": "@eventFrames"
+    },
+    {
+      "at": {
+        "object": "eventModel",
+        "offset": 556
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "eventFrames",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@eventVector"
+    },
+    {
+      "at": {
+        "object": "decoyTemplate",
+        "offset": 591
+      },
+      "size": 1,
+      "value": 99
+    },
+    {
+      "at": {
+        "object": "decoyTemplate",
+        "offset": 192
+      },
+      "size": 1,
+      "value": 1
+    },
+    {
+      "at": {
+        "global": "0x6598a4"
+      },
+      "size": 4,
+      "value": "@world"
+    },
+    {
+      "at": {
+        "object": "world",
+        "offset": 112
+      },
+      "size": 4,
+      "value": 1065353216
+    },
+    {
+      "at": {
+        "object": "world",
+        "offset": 188
+      },
+      "size": 4,
+      "value": "@gridRef"
+    },
+    {
+      "at": {
+        "object": "gridRef",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@forwardHash"
+    },
+    {
+      "at": {
+        "object": "gridRef",
+        "offset": 4
+      },
+      "size": 4,
+      "value": "@reverseHash"
+    },
+    {
+      "at": {
+        "object": "forwardHash",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@forwardBuckets"
+    },
+    {
+      "at": {
+        "object": "forwardHash",
+        "offset": 4
+      },
+      "size": 4,
+      "value": "@forwardRecords"
+    },
+    {
+      "at": {
+        "object": "forwardHash",
+        "offset": 8
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "forwardHash",
+        "offset": 12
+      },
+      "size": 4,
+      "value": 4
+    },
+    {
+      "at": {
+        "object": "forwardBuckets",
+        "offset": 0
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "forwardRecords",
+        "offset": 0
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "forwardBuckets",
+        "offset": 4
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "forwardRecords",
+        "offset": 12
+      },
+      "size": 4,
+      "value": 2
+    },
+    {
+      "at": {
+        "object": "forwardBuckets",
+        "offset": 8
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "forwardRecords",
+        "offset": 24
+      },
+      "size": 4,
+      "value": 3
+    },
+    {
+      "at": {
+        "object": "forwardBuckets",
+        "offset": 12
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "forwardRecords",
+        "offset": 36
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "reverseHash",
+        "offset": 0
+      },
+      "size": 4,
+      "value": "@reverseBuckets"
+    },
+    {
+      "at": {
+        "object": "reverseHash",
+        "offset": 4
+      },
+      "size": 4,
+      "value": "@reverseRecords"
+    },
+    {
+      "at": {
+        "object": "reverseHash",
+        "offset": 8
+      },
+      "size": 4,
+      "value": 0
+    },
+    {
+      "at": {
+        "object": "reverseHash",
+        "offset": 12
+      },
+      "size": 4,
+      "value": 4
+    },
+    {
+      "at": {
+        "object": "reverseBuckets",
+        "offset": 0
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "reverseRecords",
+        "offset": 0
+      },
+      "size": 4,
+      "value": 1
+    },
+    {
+      "at": {
+        "object": "reverseBuckets",
+        "offset": 4
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "reverseRecords",
+        "offset": 12
+      },
+      "size": 4,
+      "value": 2
+    },
+    {
+      "at": {
+        "object": "reverseBuckets",
+        "offset": 8
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "reverseRecords",
+        "offset": 24
+      },
+      "size": 4,
+      "value": 3
+    },
+    {
+      "at": {
+        "object": "reverseBuckets",
+        "offset": 12
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "reverseRecords",
+        "offset": 36
+      },
+      "size": 4,
+      "value": 4294967295
+    },
+    {
+      "at": {
+        "object": "world",
+        "offset": 404
+      },
+      "size": 4,
+      "value": "@sceneScratchBits"
+    },
+    {
+      "at": {
+        "object": "world",
+        "offset": 84
+      },
+      "size": 4,
+      "value": 1065353216
+    },
+    {
+      "at": {
+        "global": "0x652db0"
+      },
+      "size": 4,
+      "value": "@sceneCollision"
+    },
+    {
+      "at": {
+        "object": "activeEntries",
+        "offset": 4
+      },
+      "size": 4,
+      "value": "@sceneMonster"
+    }
+  ],
+  "in": [
+    {
+      "name": "monsterEnabled",
+      "at": {
+        "object": "monster",
+        "offset": 20
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "monsterId",
+      "at": {
+        "object": "monster",
+        "offset": 0
+      },
+      "size": 4,
+      "signed": false,
+      "also": [
+        {
+          "at": {
+            "object": "sceneMonster",
+            "offset": 0
+          },
+          "size": 4
+        },
+        {
+          "at": {
+            "object": "render",
+            "offset": 484
+          },
+          "size": 4
+        }
+      ]
+    },
+    {
+      "name": "species",
+      "at": {
+        "object": "monster",
+        "offset": 8
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "modelRefreshNeeded",
+      "at": {
+        "object": "render",
+        "offset": 534
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "maxHP",
+      "at": {
+        "object": "monster",
+        "offset": 39
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "HP",
+      "at": {
+        "object": "monster",
+        "offset": 43
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "headingBits",
+      "at": {
+        "object": "monster",
+        "offset": 35
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "idleAnimationSuppressed",
+      "at": {
+        "object": "monster",
+        "offset": 590
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "templateLevel",
+      "at": {
+        "object": "template",
+        "offset": 591
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "templateSpecialDisplayFlag",
+      "at": {
+        "object": "template",
+        "offset": 192
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "templateNpcIndex",
+      "at": {
+        "object": "template",
+        "offset": 205
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "activeMonsterCount",
+      "at": {
+        "global": "0x683fa1"
+      },
+      "size": 4
+    },
+    {
+      "name": "totalModelActivationMemory",
+      "at": {
+        "global": "0x65ba4c"
+      },
+      "size": 4
+    },
+    {
+      "name": "modelFlags",
+      "at": {
+        "object": "render",
+        "offset": 216
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "unbornCount",
+      "at": {
+        "object": "unbornList",
+        "offset": 8
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "damageAppearanceCount",
+      "at": {
+        "object": "meshNode",
+        "offset": 396
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "damageAppearanceBefore",
+      "at": {
+        "object": "meshNode",
+        "offset": 388
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "activationDiagnostics",
+      "at": {
+        "global": "0x68f105"
+      },
+      "size": 1
+    },
+    {
+      "name": "attack1Enabled",
+      "at": {
+        "object": "template",
+        "offset": 231
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "attack1Count",
+      "at": {
+        "object": "template",
+        "offset": 234
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "attack2Enabled",
+      "at": {
+        "object": "template",
+        "offset": 265
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "attack2Count",
+      "at": {
+        "object": "template",
+        "offset": 268
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "attack3Enabled",
+      "at": {
+        "object": "template",
+        "offset": 299
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "attack3Count",
+      "at": {
+        "object": "template",
+        "offset": 302
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "rangedAttackCount",
+      "at": {
+        "object": "template",
+        "offset": 224
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "primaryAttackBefore",
+      "at": {
+        "object": "monster",
+        "offset": 889
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "multipleAttackBefore",
+      "at": {
+        "object": "monster",
+        "offset": 890
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "secondaryAttackBefore",
+      "at": {
+        "object": "monster",
+        "offset": 891
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "rangedAttackBefore",
+      "at": {
+        "object": "monster",
+        "offset": 892
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "associationBefore",
+      "at": {
+        "object": "monster",
+        "offset": 694
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "animationFrames",
+      "at": {
+        "object": "mesh",
+        "offset": 1
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "cameraXBits",
+      "at": {
+        "object": "camera",
+        "offset": 0
+      },
+      "size": 8,
+      "signed": true
+    },
+    {
+      "name": "cameraYBits",
+      "at": {
+        "object": "camera",
+        "offset": 8
+      },
+      "size": 8,
+      "signed": true
+    },
+    {
+      "name": "cameraZBits",
+      "at": {
+        "object": "camera",
+        "offset": 16
+      },
+      "size": 8,
+      "signed": true
+    },
+    {
+      "name": "multipleAttackEventCode",
+      "at": {
+        "object": "eventCodes",
+        "offset": 0
+      },
+      "size": 2
+    },
+    {
+      "name": "rangedAttackEventCode",
+      "at": {
+        "object": "eventCodes",
+        "offset": 2
+      },
+      "size": 2
+    },
+    {
+      "name": "selectedTemplatePointer",
+      "at": {
+        "object": "monster",
+        "offset": -530038585,
+        "index": "species",
+        "stride": 4,
+        "count": 1000
+      },
+      "size": 4
+    },
+    {
+      "name": "modelLevelIdentityBefore",
+      "at": {
+        "object": "render",
+        "offset": 224
+      },
+      "size": 4
+    },
+    {
+      "name": "animationRunningBefore",
+      "at": {
+        "object": "renderState",
+        "offset": 109
+      },
+      "size": 1
+    },
+    {
+      "name": "animationCycleBefore",
+      "at": {
+        "object": "renderState",
+        "offset": 164
+      },
+      "size": 1
+    },
+    {
+      "name": "animationFrameBefore",
+      "at": {
+        "object": "renderState",
+        "offset": 100
+      },
+      "size": 1
+    },
+    {
+      "name": "monsterXBits",
+      "at": {
+        "object": "monster",
+        "offset": 23
+      },
+      "size": 4
+    },
+    {
+      "name": "monsterYBits",
+      "at": {
+        "object": "monster",
+        "offset": 27
+      },
+      "size": 4
+    },
+    {
+      "name": "monsterZBits",
+      "at": {
+        "object": "monster",
+        "offset": 31
+      },
+      "size": 4
+    },
+    {
+      "name": "modelXBits",
+      "at": {
+        "object": "renderState",
+        "offset": 4
+      },
+      "size": 4
+    },
+    {
+      "name": "modelYBits",
+      "at": {
+        "object": "renderState",
+        "offset": 8
+      },
+      "size": 4
+    },
+    {
+      "name": "modelZBits",
+      "at": {
+        "object": "renderState",
+        "offset": 12
+      },
+      "size": 4
+    },
+    {
+      "name": "modelActivationMemoryBefore",
+      "at": {
+        "object": "render",
+        "offset": 636
+      },
+      "size": 4
+    },
+    {
+      "name": "modelUnbornPresentationBefore",
+      "at": {
+        "object": "render",
+        "offset": 160
+      },
+      "size": 1
+    },
+    {
+      "name": "modelUnbornActivationBefore",
+      "at": {
+        "object": "render",
+        "offset": 533
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[0]",
+      "at": {
+        "object": "monster",
+        "offset": 475
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[1]",
+      "at": {
+        "object": "monster",
+        "offset": 476
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[2]",
+      "at": {
+        "object": "monster",
+        "offset": 477
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[3]",
+      "at": {
+        "object": "monster",
+        "offset": 478
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[4]",
+      "at": {
+        "object": "monster",
+        "offset": 479
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[5]",
+      "at": {
+        "object": "monster",
+        "offset": 480
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[6]",
+      "at": {
+        "object": "monster",
+        "offset": 481
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[7]",
+      "at": {
+        "object": "monster",
+        "offset": 482
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[8]",
+      "at": {
+        "object": "monster",
+        "offset": 483
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[9]",
+      "at": {
+        "object": "monster",
+        "offset": 484
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[10]",
+      "at": {
+        "object": "monster",
+        "offset": 485
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[11]",
+      "at": {
+        "object": "monster",
+        "offset": 486
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[12]",
+      "at": {
+        "object": "monster",
+        "offset": 487
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[13]",
+      "at": {
+        "object": "monster",
+        "offset": 488
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[14]",
+      "at": {
+        "object": "monster",
+        "offset": 489
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[15]",
+      "at": {
+        "object": "monster",
+        "offset": 490
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[16]",
+      "at": {
+        "object": "monster",
+        "offset": 491
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[17]",
+      "at": {
+        "object": "monster",
+        "offset": 492
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[18]",
+      "at": {
+        "object": "monster",
+        "offset": 493
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[19]",
+      "at": {
+        "object": "monster",
+        "offset": 494
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[20]",
+      "at": {
+        "object": "monster",
+        "offset": 495
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[21]",
+      "at": {
+        "object": "monster",
+        "offset": 496
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[22]",
+      "at": {
+        "object": "monster",
+        "offset": 497
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[23]",
+      "at": {
+        "object": "monster",
+        "offset": 498
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[24]",
+      "at": {
+        "object": "monster",
+        "offset": 499
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[25]",
+      "at": {
+        "object": "monster",
+        "offset": 500
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[26]",
+      "at": {
+        "object": "monster",
+        "offset": 501
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[27]",
+      "at": {
+        "object": "monster",
+        "offset": 502
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[28]",
+      "at": {
+        "object": "monster",
+        "offset": 503
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[29]",
+      "at": {
+        "object": "monster",
+        "offset": 504
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[30]",
+      "at": {
+        "object": "monster",
+        "offset": 505
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[31]",
+      "at": {
+        "object": "monster",
+        "offset": 506
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[32]",
+      "at": {
+        "object": "monster",
+        "offset": 507
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[33]",
+      "at": {
+        "object": "monster",
+        "offset": 508
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[34]",
+      "at": {
+        "object": "monster",
+        "offset": 509
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[35]",
+      "at": {
+        "object": "monster",
+        "offset": 510
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[36]",
+      "at": {
+        "object": "monster",
+        "offset": 511
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[37]",
+      "at": {
+        "object": "monster",
+        "offset": 512
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[38]",
+      "at": {
+        "object": "monster",
+        "offset": 513
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[39]",
+      "at": {
+        "object": "monster",
+        "offset": 514
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[40]",
+      "at": {
+        "object": "monster",
+        "offset": 515
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[41]",
+      "at": {
+        "object": "monster",
+        "offset": 516
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[42]",
+      "at": {
+        "object": "monster",
+        "offset": 517
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[43]",
+      "at": {
+        "object": "monster",
+        "offset": 518
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[44]",
+      "at": {
+        "object": "monster",
+        "offset": 519
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[45]",
+      "at": {
+        "object": "monster",
+        "offset": 520
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[46]",
+      "at": {
+        "object": "monster",
+        "offset": 521
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[47]",
+      "at": {
+        "object": "monster",
+        "offset": 522
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[48]",
+      "at": {
+        "object": "monster",
+        "offset": 523
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[49]",
+      "at": {
+        "object": "monster",
+        "offset": 524
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[50]",
+      "at": {
+        "object": "monster",
+        "offset": 525
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[51]",
+      "at": {
+        "object": "monster",
+        "offset": 526
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[52]",
+      "at": {
+        "object": "monster",
+        "offset": 527
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[53]",
+      "at": {
+        "object": "monster",
+        "offset": 528
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[54]",
+      "at": {
+        "object": "monster",
+        "offset": 529
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[55]",
+      "at": {
+        "object": "monster",
+        "offset": 530
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[56]",
+      "at": {
+        "object": "monster",
+        "offset": 531
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[57]",
+      "at": {
+        "object": "monster",
+        "offset": 532
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[58]",
+      "at": {
+        "object": "monster",
+        "offset": 533
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[59]",
+      "at": {
+        "object": "monster",
+        "offset": 534
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[60]",
+      "at": {
+        "object": "monster",
+        "offset": 535
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[61]",
+      "at": {
+        "object": "monster",
+        "offset": 536
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[62]",
+      "at": {
+        "object": "monster",
+        "offset": 537
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[63]",
+      "at": {
+        "object": "monster",
+        "offset": 538
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[64]",
+      "at": {
+        "object": "monster",
+        "offset": 539
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[65]",
+      "at": {
+        "object": "monster",
+        "offset": 540
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[66]",
+      "at": {
+        "object": "monster",
+        "offset": 541
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[67]",
+      "at": {
+        "object": "monster",
+        "offset": 542
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[68]",
+      "at": {
+        "object": "monster",
+        "offset": 543
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[69]",
+      "at": {
+        "object": "monster",
+        "offset": 544
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[70]",
+      "at": {
+        "object": "monster",
+        "offset": 545
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[71]",
+      "at": {
+        "object": "monster",
+        "offset": 546
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[72]",
+      "at": {
+        "object": "monster",
+        "offset": 547
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[73]",
+      "at": {
+        "object": "monster",
+        "offset": 548
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[74]",
+      "at": {
+        "object": "monster",
+        "offset": 549
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[75]",
+      "at": {
+        "object": "monster",
+        "offset": 550
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[76]",
+      "at": {
+        "object": "monster",
+        "offset": 551
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[77]",
+      "at": {
+        "object": "monster",
+        "offset": 552
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[78]",
+      "at": {
+        "object": "monster",
+        "offset": 553
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[79]",
+      "at": {
+        "object": "monster",
+        "offset": 554
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[80]",
+      "at": {
+        "object": "monster",
+        "offset": 555
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[81]",
+      "at": {
+        "object": "monster",
+        "offset": 556
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[82]",
+      "at": {
+        "object": "monster",
+        "offset": 557
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[83]",
+      "at": {
+        "object": "monster",
+        "offset": 558
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[84]",
+      "at": {
+        "object": "monster",
+        "offset": 559
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[85]",
+      "at": {
+        "object": "monster",
+        "offset": 560
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[86]",
+      "at": {
+        "object": "monster",
+        "offset": 561
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[87]",
+      "at": {
+        "object": "monster",
+        "offset": 562
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[88]",
+      "at": {
+        "object": "monster",
+        "offset": 563
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[89]",
+      "at": {
+        "object": "monster",
+        "offset": 564
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[90]",
+      "at": {
+        "object": "monster",
+        "offset": 565
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[91]",
+      "at": {
+        "object": "monster",
+        "offset": 566
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[92]",
+      "at": {
+        "object": "monster",
+        "offset": 567
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[93]",
+      "at": {
+        "object": "monster",
+        "offset": 568
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[94]",
+      "at": {
+        "object": "monster",
+        "offset": 569
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[95]",
+      "at": {
+        "object": "monster",
+        "offset": 570
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[96]",
+      "at": {
+        "object": "monster",
+        "offset": 571
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[97]",
+      "at": {
+        "object": "monster",
+        "offset": 572
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[98]",
+      "at": {
+        "object": "monster",
+        "offset": 573
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[99]",
+      "at": {
+        "object": "monster",
+        "offset": 574
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[100]",
+      "at": {
+        "object": "monster",
+        "offset": 575
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[101]",
+      "at": {
+        "object": "monster",
+        "offset": 576
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierBefore[102]",
+      "at": {
+        "object": "monster",
+        "offset": 577
+      },
+      "size": 1
+    },
+    {
+      "name": "templateStrength",
+      "at": {
+        "object": "template",
+        "offset": 209
+      },
+      "size": 1
+    },
+    {
+      "name": "templateIntelligence",
+      "at": {
+        "object": "template",
+        "offset": 210
+      },
+      "size": 1
+    },
+    {
+      "name": "templateDexterity",
+      "at": {
+        "object": "template",
+        "offset": 211
+      },
+      "size": 1
+    },
+    {
+      "name": "templateSpeed",
+      "at": {
+        "object": "template",
+        "offset": 212
+      },
+      "size": 1
+    },
+    {
+      "name": "templateSenses",
+      "at": {
+        "object": "template",
+        "offset": 213
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveStrengthBefore",
+      "at": {
+        "object": "monster",
+        "offset": 583
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveIntelligenceBefore",
+      "at": {
+        "object": "monster",
+        "offset": 584
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveDexterityBefore",
+      "at": {
+        "object": "monster",
+        "offset": 585
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveSpeedBefore",
+      "at": {
+        "object": "monster",
+        "offset": 586
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveSensesBefore",
+      "at": {
+        "object": "monster",
+        "offset": 587
+      },
+      "size": 1
+    },
+    {
+      "name": "hpRecoveryCoefficientBitsBefore",
+      "at": {
+        "object": "monster",
+        "offset": 71
+      },
+      "size": 4
+    },
+    {
+      "name": "spRecoveryCoefficientBitsBefore",
+      "at": {
+        "object": "monster",
+        "offset": 79
+      },
+      "size": 4
+    },
+    {
+      "name": "maxSP",
+      "at": {
+        "object": "monster",
+        "offset": 47
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[0]",
+      "at": {
+        "object": "monster",
+        "offset": 87
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[1]",
+      "at": {
+        "object": "monster",
+        "offset": 91
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[2]",
+      "at": {
+        "object": "monster",
+        "offset": 95
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[3]",
+      "at": {
+        "object": "monster",
+        "offset": 99
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[4]",
+      "at": {
+        "object": "monster",
+        "offset": 103
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[5]",
+      "at": {
+        "object": "monster",
+        "offset": 107
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[6]",
+      "at": {
+        "object": "monster",
+        "offset": 111
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[7]",
+      "at": {
+        "object": "monster",
+        "offset": 115
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[8]",
+      "at": {
+        "object": "monster",
+        "offset": 119
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[9]",
+      "at": {
+        "object": "monster",
+        "offset": 123
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[10]",
+      "at": {
+        "object": "monster",
+        "offset": 127
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[11]",
+      "at": {
+        "object": "monster",
+        "offset": 131
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[12]",
+      "at": {
+        "object": "monster",
+        "offset": 135
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[13]",
+      "at": {
+        "object": "monster",
+        "offset": 139
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[14]",
+      "at": {
+        "object": "monster",
+        "offset": 143
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[15]",
+      "at": {
+        "object": "monster",
+        "offset": 147
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[16]",
+      "at": {
+        "object": "monster",
+        "offset": 151
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[17]",
+      "at": {
+        "object": "monster",
+        "offset": 155
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[18]",
+      "at": {
+        "object": "monster",
+        "offset": 159
+      },
+      "size": 4
+    },
+    {
+      "name": "statusDuration[19]",
+      "at": {
+        "object": "monster",
+        "offset": 163
+      },
+      "size": 4
+    },
+    {
+      "name": "poisonStrength",
+      "at": {
+        "object": "monster",
+        "offset": 267
+      },
+      "size": 4
+    },
+    {
+      "name": "timedBuffStrength[0]",
+      "at": {
+        "object": "monster",
+        "offset": 167
+      },
+      "size": 1
+    },
+    {
+      "name": "timedBuffMultiplier[0]",
+      "at": {
+        "object": "monster",
+        "offset": 171
+      },
+      "size": 2
+    },
+    {
+      "name": "timedBuffDuration[0]",
+      "at": {
+        "object": "monster",
+        "offset": 175
+      },
+      "size": 4
+    },
+    {
+      "name": "timedBuffStrength[1]",
+      "at": {
+        "object": "monster",
+        "offset": 179
+      },
+      "size": 1
+    },
+    {
+      "name": "timedBuffMultiplier[1]",
+      "at": {
+        "object": "monster",
+        "offset": 183
+      },
+      "size": 2
+    },
+    {
+      "name": "timedBuffDuration[1]",
+      "at": {
+        "object": "monster",
+        "offset": 187
+      },
+      "size": 4
+    },
+    {
+      "name": "timedBuffStrength[2]",
+      "at": {
+        "object": "monster",
+        "offset": 191
+      },
+      "size": 1
+    },
+    {
+      "name": "timedBuffMultiplier[2]",
+      "at": {
+        "object": "monster",
+        "offset": 195
+      },
+      "size": 2
+    },
+    {
+      "name": "timedBuffDuration[2]",
+      "at": {
+        "object": "monster",
+        "offset": 199
+      },
+      "size": 4
+    },
+    {
+      "name": "timedBuffStrength[3]",
+      "at": {
+        "object": "monster",
+        "offset": 203
+      },
+      "size": 1
+    },
+    {
+      "name": "timedBuffMultiplier[3]",
+      "at": {
+        "object": "monster",
+        "offset": 207
+      },
+      "size": 2
+    },
+    {
+      "name": "timedBuffDuration[3]",
+      "at": {
+        "object": "monster",
+        "offset": 211
+      },
+      "size": 4
+    },
+    {
+      "name": "timedBuffStrength[4]",
+      "at": {
+        "object": "monster",
+        "offset": 215
+      },
+      "size": 1
+    },
+    {
+      "name": "timedBuffMultiplier[4]",
+      "at": {
+        "object": "monster",
+        "offset": 219
+      },
+      "size": 2
+    },
+    {
+      "name": "timedBuffDuration[4]",
+      "at": {
+        "object": "monster",
+        "offset": 223
+      },
+      "size": 4
+    },
+    {
+      "name": "timedBuffStrength[5]",
+      "at": {
+        "object": "monster",
+        "offset": 227
+      },
+      "size": 1
+    },
+    {
+      "name": "timedBuffMultiplier[5]",
+      "at": {
+        "object": "monster",
+        "offset": 231
+      },
+      "size": 2
+    },
+    {
+      "name": "timedBuffDuration[5]",
+      "at": {
+        "object": "monster",
+        "offset": 235
+      },
+      "size": 4
+    },
+    {
+      "name": "timedBuffStrength[6]",
+      "at": {
+        "object": "monster",
+        "offset": 239
+      },
+      "size": 1
+    },
+    {
+      "name": "timedBuffMultiplier[6]",
+      "at": {
+        "object": "monster",
+        "offset": 243
+      },
+      "size": 2
+    },
+    {
+      "name": "timedBuffDuration[6]",
+      "at": {
+        "object": "monster",
+        "offset": 247
+      },
+      "size": 4
+    },
+    {
+      "name": "timedBuffStrength[7]",
+      "at": {
+        "object": "monster",
+        "offset": 251
+      },
+      "size": 1
+    },
+    {
+      "name": "timedBuffMultiplier[7]",
+      "at": {
+        "object": "monster",
+        "offset": 255
+      },
+      "size": 2
+    },
+    {
+      "name": "timedBuffDuration[7]",
+      "at": {
+        "object": "monster",
+        "offset": 259
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[0]",
+      "at": {
+        "object": "monster",
+        "offset": 271
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[0]",
+      "at": {
+        "object": "monster",
+        "offset": 272
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[0]",
+      "at": {
+        "object": "monster",
+        "offset": 276
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[0]",
+      "at": {
+        "object": "monster",
+        "offset": 280
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[1]",
+      "at": {
+        "object": "monster",
+        "offset": 288
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[1]",
+      "at": {
+        "object": "monster",
+        "offset": 289
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[1]",
+      "at": {
+        "object": "monster",
+        "offset": 293
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[1]",
+      "at": {
+        "object": "monster",
+        "offset": 297
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[2]",
+      "at": {
+        "object": "monster",
+        "offset": 305
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[2]",
+      "at": {
+        "object": "monster",
+        "offset": 306
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[2]",
+      "at": {
+        "object": "monster",
+        "offset": 310
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[2]",
+      "at": {
+        "object": "monster",
+        "offset": 314
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[3]",
+      "at": {
+        "object": "monster",
+        "offset": 322
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[3]",
+      "at": {
+        "object": "monster",
+        "offset": 323
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[3]",
+      "at": {
+        "object": "monster",
+        "offset": 327
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[3]",
+      "at": {
+        "object": "monster",
+        "offset": 331
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[4]",
+      "at": {
+        "object": "monster",
+        "offset": 339
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[4]",
+      "at": {
+        "object": "monster",
+        "offset": 340
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[4]",
+      "at": {
+        "object": "monster",
+        "offset": 344
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[4]",
+      "at": {
+        "object": "monster",
+        "offset": 348
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[5]",
+      "at": {
+        "object": "monster",
+        "offset": 356
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[5]",
+      "at": {
+        "object": "monster",
+        "offset": 357
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[5]",
+      "at": {
+        "object": "monster",
+        "offset": 361
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[5]",
+      "at": {
+        "object": "monster",
+        "offset": 365
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[6]",
+      "at": {
+        "object": "monster",
+        "offset": 373
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[6]",
+      "at": {
+        "object": "monster",
+        "offset": 374
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[6]",
+      "at": {
+        "object": "monster",
+        "offset": 378
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[6]",
+      "at": {
+        "object": "monster",
+        "offset": 382
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[7]",
+      "at": {
+        "object": "monster",
+        "offset": 390
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[7]",
+      "at": {
+        "object": "monster",
+        "offset": 391
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[7]",
+      "at": {
+        "object": "monster",
+        "offset": 395
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[7]",
+      "at": {
+        "object": "monster",
+        "offset": 399
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[8]",
+      "at": {
+        "object": "monster",
+        "offset": 407
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[8]",
+      "at": {
+        "object": "monster",
+        "offset": 408
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[8]",
+      "at": {
+        "object": "monster",
+        "offset": 412
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[8]",
+      "at": {
+        "object": "monster",
+        "offset": 416
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[9]",
+      "at": {
+        "object": "monster",
+        "offset": 424
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[9]",
+      "at": {
+        "object": "monster",
+        "offset": 425
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[9]",
+      "at": {
+        "object": "monster",
+        "offset": 429
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[9]",
+      "at": {
+        "object": "monster",
+        "offset": 433
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[10]",
+      "at": {
+        "object": "monster",
+        "offset": 441
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[10]",
+      "at": {
+        "object": "monster",
+        "offset": 442
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[10]",
+      "at": {
+        "object": "monster",
+        "offset": 446
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[10]",
+      "at": {
+        "object": "monster",
+        "offset": 450
+      },
+      "size": 4
+    },
+    {
+      "name": "effectActive[11]",
+      "at": {
+        "object": "monster",
+        "offset": 458
+      },
+      "size": 1
+    },
+    {
+      "name": "effectType[11]",
+      "at": {
+        "object": "monster",
+        "offset": 459
+      },
+      "size": 4
+    },
+    {
+      "name": "effectStrength[11]",
+      "at": {
+        "object": "monster",
+        "offset": 463
+      },
+      "size": 1
+    },
+    {
+      "name": "effectMultiplier[11]",
+      "at": {
+        "object": "monster",
+        "offset": 467
+      },
+      "size": 4
+    },
+    {
+      "name": "sceneMonsterIdHighWord",
+      "at": {
+        "object": "sceneMonster",
+        "offset": 2
+      },
+      "size": 2
+    },
+    {
+      "name": "multipleAttackCycleSupported",
+      "at": {
+        "object": "renderState",
+        "offset": 384
+      },
+      "size": 4
+    },
+    {
+      "name": "rangedAttackCycleSupported",
+      "at": {
+        "object": "renderState",
+        "offset": 576
+      },
+      "size": 4
+    }
+  ],
+  "out": [
+    {
+      "name": "monsterEnabledAfter",
+      "at": {
+        "object": "monster",
+        "offset": 20
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "activeMonsterCountAfter",
+      "at": {
+        "global": "0x683fa1"
+      },
+      "size": 4
+    },
+    {
+      "name": "maxHPAfter",
+      "at": {
+        "object": "monster",
+        "offset": 39
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "HPAfter",
+      "at": {
+        "object": "monster",
+        "offset": 43
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "modelFlagsAfter",
+      "at": {
+        "object": "render",
+        "offset": 216
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "visibleMonsterAssociationList",
+      "at": {
+        "object": "monster",
+        "offset": 694
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "primaryAttackAnimation",
+      "at": {
+        "object": "monster",
+        "offset": 889
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "multipleAttackAnimation",
+      "at": {
+        "object": "monster",
+        "offset": 890
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "secondaryAttackAnimation",
+      "at": {
+        "object": "monster",
+        "offset": 891
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "rangedAttackAnimation",
+      "at": {
+        "object": "monster",
+        "offset": 892
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "damageAppearanceAfter",
+      "at": {
+        "object": "meshNode",
+        "offset": 388
+      },
+      "size": 4,
+      "signed": true
+    },
+    {
+      "name": "modelLevelIdentityAfter",
+      "at": {
+        "object": "render",
+        "offset": 224
+      },
+      "size": 4,
+      "signed": false
+    },
+    {
+      "name": "modelRefreshAfter",
+      "at": {
+        "object": "render",
+        "offset": 534
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "animationRunningAfter",
+      "at": {
+        "object": "renderState",
+        "offset": 109
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "animationCycleAfter",
+      "at": {
+        "object": "renderState",
+        "offset": 164
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "animationFrameAfter",
+      "at": {
+        "object": "renderState",
+        "offset": 100
+      },
+      "size": 1,
+      "signed": false
+    },
+    {
+      "name": "totalModelActivationMemoryAfter",
+      "at": {
+        "global": "0x65ba4c"
+      },
+      "size": 4
+    },
+    {
+      "name": "modelActivationMemoryAfter",
+      "at": {
+        "object": "render",
+        "offset": 636
+      },
+      "size": 4
+    },
+    {
+      "name": "modelUnbornPresentationAfter",
+      "at": {
+        "object": "render",
+        "offset": 160
+      },
+      "size": 1
+    },
+    {
+      "name": "modelUnbornActivationAfter",
+      "at": {
+        "object": "render",
+        "offset": 533
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[0]",
+      "at": {
+        "object": "monster",
+        "offset": 475
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[1]",
+      "at": {
+        "object": "monster",
+        "offset": 476
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[2]",
+      "at": {
+        "object": "monster",
+        "offset": 477
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[3]",
+      "at": {
+        "object": "monster",
+        "offset": 478
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[4]",
+      "at": {
+        "object": "monster",
+        "offset": 479
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[5]",
+      "at": {
+        "object": "monster",
+        "offset": 480
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[6]",
+      "at": {
+        "object": "monster",
+        "offset": 481
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[7]",
+      "at": {
+        "object": "monster",
+        "offset": 482
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[8]",
+      "at": {
+        "object": "monster",
+        "offset": 483
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[9]",
+      "at": {
+        "object": "monster",
+        "offset": 484
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[10]",
+      "at": {
+        "object": "monster",
+        "offset": 485
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[11]",
+      "at": {
+        "object": "monster",
+        "offset": 486
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[12]",
+      "at": {
+        "object": "monster",
+        "offset": 487
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[13]",
+      "at": {
+        "object": "monster",
+        "offset": 488
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[14]",
+      "at": {
+        "object": "monster",
+        "offset": 489
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[15]",
+      "at": {
+        "object": "monster",
+        "offset": 490
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[16]",
+      "at": {
+        "object": "monster",
+        "offset": 491
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[17]",
+      "at": {
+        "object": "monster",
+        "offset": 492
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[18]",
+      "at": {
+        "object": "monster",
+        "offset": 493
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[19]",
+      "at": {
+        "object": "monster",
+        "offset": 494
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[20]",
+      "at": {
+        "object": "monster",
+        "offset": 495
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[21]",
+      "at": {
+        "object": "monster",
+        "offset": 496
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[22]",
+      "at": {
+        "object": "monster",
+        "offset": 497
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[23]",
+      "at": {
+        "object": "monster",
+        "offset": 498
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[24]",
+      "at": {
+        "object": "monster",
+        "offset": 499
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[25]",
+      "at": {
+        "object": "monster",
+        "offset": 500
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[26]",
+      "at": {
+        "object": "monster",
+        "offset": 501
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[27]",
+      "at": {
+        "object": "monster",
+        "offset": 502
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[28]",
+      "at": {
+        "object": "monster",
+        "offset": 503
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[29]",
+      "at": {
+        "object": "monster",
+        "offset": 504
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[30]",
+      "at": {
+        "object": "monster",
+        "offset": 505
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[31]",
+      "at": {
+        "object": "monster",
+        "offset": 506
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[32]",
+      "at": {
+        "object": "monster",
+        "offset": 507
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[33]",
+      "at": {
+        "object": "monster",
+        "offset": 508
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[34]",
+      "at": {
+        "object": "monster",
+        "offset": 509
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[35]",
+      "at": {
+        "object": "monster",
+        "offset": 510
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[36]",
+      "at": {
+        "object": "monster",
+        "offset": 511
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[37]",
+      "at": {
+        "object": "monster",
+        "offset": 512
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[38]",
+      "at": {
+        "object": "monster",
+        "offset": 513
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[39]",
+      "at": {
+        "object": "monster",
+        "offset": 514
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[40]",
+      "at": {
+        "object": "monster",
+        "offset": 515
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[41]",
+      "at": {
+        "object": "monster",
+        "offset": 516
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[42]",
+      "at": {
+        "object": "monster",
+        "offset": 517
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[43]",
+      "at": {
+        "object": "monster",
+        "offset": 518
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[44]",
+      "at": {
+        "object": "monster",
+        "offset": 519
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[45]",
+      "at": {
+        "object": "monster",
+        "offset": 520
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[46]",
+      "at": {
+        "object": "monster",
+        "offset": 521
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[47]",
+      "at": {
+        "object": "monster",
+        "offset": 522
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[48]",
+      "at": {
+        "object": "monster",
+        "offset": 523
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[49]",
+      "at": {
+        "object": "monster",
+        "offset": 524
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[50]",
+      "at": {
+        "object": "monster",
+        "offset": 525
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[51]",
+      "at": {
+        "object": "monster",
+        "offset": 526
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[52]",
+      "at": {
+        "object": "monster",
+        "offset": 527
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[53]",
+      "at": {
+        "object": "monster",
+        "offset": 528
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[54]",
+      "at": {
+        "object": "monster",
+        "offset": 529
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[55]",
+      "at": {
+        "object": "monster",
+        "offset": 530
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[56]",
+      "at": {
+        "object": "monster",
+        "offset": 531
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[57]",
+      "at": {
+        "object": "monster",
+        "offset": 532
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[58]",
+      "at": {
+        "object": "monster",
+        "offset": 533
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[59]",
+      "at": {
+        "object": "monster",
+        "offset": 534
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[60]",
+      "at": {
+        "object": "monster",
+        "offset": 535
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[61]",
+      "at": {
+        "object": "monster",
+        "offset": 536
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[62]",
+      "at": {
+        "object": "monster",
+        "offset": 537
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[63]",
+      "at": {
+        "object": "monster",
+        "offset": 538
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[64]",
+      "at": {
+        "object": "monster",
+        "offset": 539
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[65]",
+      "at": {
+        "object": "monster",
+        "offset": 540
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[66]",
+      "at": {
+        "object": "monster",
+        "offset": 541
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[67]",
+      "at": {
+        "object": "monster",
+        "offset": 542
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[68]",
+      "at": {
+        "object": "monster",
+        "offset": 543
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[69]",
+      "at": {
+        "object": "monster",
+        "offset": 544
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[70]",
+      "at": {
+        "object": "monster",
+        "offset": 545
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[71]",
+      "at": {
+        "object": "monster",
+        "offset": 546
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[72]",
+      "at": {
+        "object": "monster",
+        "offset": 547
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[73]",
+      "at": {
+        "object": "monster",
+        "offset": 548
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[74]",
+      "at": {
+        "object": "monster",
+        "offset": 549
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[75]",
+      "at": {
+        "object": "monster",
+        "offset": 550
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[76]",
+      "at": {
+        "object": "monster",
+        "offset": 551
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[77]",
+      "at": {
+        "object": "monster",
+        "offset": 552
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[78]",
+      "at": {
+        "object": "monster",
+        "offset": 553
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[79]",
+      "at": {
+        "object": "monster",
+        "offset": 554
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[80]",
+      "at": {
+        "object": "monster",
+        "offset": 555
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[81]",
+      "at": {
+        "object": "monster",
+        "offset": 556
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[82]",
+      "at": {
+        "object": "monster",
+        "offset": 557
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[83]",
+      "at": {
+        "object": "monster",
+        "offset": 558
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[84]",
+      "at": {
+        "object": "monster",
+        "offset": 559
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[85]",
+      "at": {
+        "object": "monster",
+        "offset": 560
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[86]",
+      "at": {
+        "object": "monster",
+        "offset": 561
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[87]",
+      "at": {
+        "object": "monster",
+        "offset": 562
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[88]",
+      "at": {
+        "object": "monster",
+        "offset": 563
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[89]",
+      "at": {
+        "object": "monster",
+        "offset": 564
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[90]",
+      "at": {
+        "object": "monster",
+        "offset": 565
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[91]",
+      "at": {
+        "object": "monster",
+        "offset": 566
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[92]",
+      "at": {
+        "object": "monster",
+        "offset": 567
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[93]",
+      "at": {
+        "object": "monster",
+        "offset": 568
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[94]",
+      "at": {
+        "object": "monster",
+        "offset": 569
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[95]",
+      "at": {
+        "object": "monster",
+        "offset": 570
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[96]",
+      "at": {
+        "object": "monster",
+        "offset": 571
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[97]",
+      "at": {
+        "object": "monster",
+        "offset": 572
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[98]",
+      "at": {
+        "object": "monster",
+        "offset": 573
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[99]",
+      "at": {
+        "object": "monster",
+        "offset": 574
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[100]",
+      "at": {
+        "object": "monster",
+        "offset": 575
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[101]",
+      "at": {
+        "object": "monster",
+        "offset": 576
+      },
+      "size": 1
+    },
+    {
+      "name": "conditionRuleModifierAfter[102]",
+      "at": {
+        "object": "monster",
+        "offset": 577
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveStrengthAfter",
+      "at": {
+        "object": "monster",
+        "offset": 583
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveIntelligenceAfter",
+      "at": {
+        "object": "monster",
+        "offset": 584
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveDexterityAfter",
+      "at": {
+        "object": "monster",
+        "offset": 585
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveSpeedAfter",
+      "at": {
+        "object": "monster",
+        "offset": 586
+      },
+      "size": 1
+    },
+    {
+      "name": "effectiveSensesAfter",
+      "at": {
+        "object": "monster",
+        "offset": 587
+      },
+      "size": 1
+    },
+    {
+      "name": "hpRecoveryCoefficientBitsAfter",
+      "at": {
+        "object": "monster",
+        "offset": 71
+      },
+      "size": 4
+    },
+    {
+      "name": "spRecoveryCoefficientBitsAfter",
+      "at": {
+        "object": "monster",
+        "offset": 79
+      },
+      "size": 4
+    }
+  ],
+  "boundary": [
+    [0, 0, 0, 0, 100, 100, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [1, 0, 0, 0, 1, 0, 0, 1, 255, 1, 255, 4294967295, 4294967295, 4294967295, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 0, 0, 0, 1, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 100, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, -10, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 110, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 200, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 2147483647, -2147483648, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 1073741824, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 1, -2147483648, 0, 0, 1, 0, 0, 0, 0, 0, 0, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 999, 1, 100, 50, 0, 0, 1, 0, 0, 4294967295, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 8, -4586634745500139520, 4632233691727265792, 4636737291354636288, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 1, 1, 100, 50, 0, 0, 1, 0, 0, 4294967295, 0, 0, 1, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 8, -4586634745500139520, 4632233691727265792, 4636737291354636288, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [255, 0, 0, 0, 1, 0, 0, 1, 255, 1, 255, 4294967295, 4294967295, 4294967295, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 254, 253, 252, 4294967295, 1, 0, 0, 0, 0, 0, 536875008, 4294967295, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 1, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 65535, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 65536, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 4294967295, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 8, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 9, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 10, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 11, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 12, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 13, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 14, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 15, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 16, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 17, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 18, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 19, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 20, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 21, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 22, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 23, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 24, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 25, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 26, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 27, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 28, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 29, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 30, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 31, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 32, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 33, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 34, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 35, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 36, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 37, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 38, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 39, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 40, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 41, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 42, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 43, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 44, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 50, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 2, 1, 3, 1, 4, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 5, 6, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 45, 255, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 100, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2147483647, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 100, 0, 0, 1, 0, 0, 0, 0, 0, 0, 2147483648, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1],
+    [0, 0, 0, 1, 100, 100, 0, 0, 1, 0, 0, 0, 0, 0, 0, 4294967295, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 536875008, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 50, 50, 50, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+  ],
+  "random": {
+    "seed": 5127280,
+    "count": 64,
+    "ranges": [
+      [0, 1],
+      [0, 4294967295],
+      [0, 999],
+      [0, 1],
+      [1, 2147483647],
+      [-2147483648, 2147483647],
+      [0, 1120403456],
+      [0, 1],
+      [0, 255],
+      [0, 1],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1000],
+      [0, 4294967295],
+      [0, 1],
+      [0, 4294967295],
+      [-10, 10],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1000],
+      [1, 8],
+      [0, 4636737291354636288],
+      [0, 4636737291354636288],
+      [0, 4636737291354636288],
+      [0, 6],
+      [0, 6],
+      [536875008, 536875008],
+      [0, 4294967295],
+      [0, 1],
+      [0, 1],
+      [0, 3],
+      [0, 1120403456],
+      [0, 1120403456],
+      [0, 1120403456],
+      [0, 1120403456],
+      [0, 1120403456],
+      [0, 1120403456],
+      [0, 4294967295],
+      [0, 255],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 255],
+      [0, 125],
+      [0, 125],
+      [0, 125],
+      [0, 125],
+      [0, 125],
+      [0, 1120403456],
+      [0, 1120403456],
+      [0, 4294967295],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 1],
+      [0, 0],
+      [0, 4294967295],
+      [0, 255],
+      [0, 65535],
+      [0, 1],
+      [0, 255],
+      [0, 65535],
+      [0, 1],
+      [0, 255],
+      [0, 65535],
+      [0, 1],
+      [0, 255],
+      [0, 65535],
+      [0, 1],
+      [0, 255],
+      [0, 65535],
+      [0, 1],
+      [0, 255],
+      [0, 65535],
+      [0, 1],
+      [0, 255],
+      [0, 65535],
+      [0, 1],
+      [0, 255],
+      [0, 65535],
+      [0, 1],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 1],
+      [0, 255],
+      [0, 255],
+      [0, 4294967295],
+      [0, 0],
+      [0, 1],
+      [0, 1]
+    ]
+  },
+  "stubs": {
+    "GlobalMemoryStatus": {
+      "ret": 0,
+      "pop": 4,
+      "write": [
+        {
+          "arg": 1,
+          "offset": 16,
+          "size": 4,
+          "value": 1048576
+        },
+        {
+          "arg": 1,
+          "offset": 20,
+          "size": 4,
+          "value": 524288
+        }
+      ]
+    },
+    "?getLocationX@srNode@@QBENXZ": {
+      "ret": 0,
+      "st0": {
+        "at": {
+          "object": "camera",
+          "offset": 0
+        }
+      }
+    },
+    "?getLocationY@srNode@@QBENXZ": {
+      "ret": 0,
+      "st0": {
+        "at": {
+          "object": "camera",
+          "offset": 8
+        }
+      }
+    },
+    "?getLocationZ@srNode@@QBENXZ": {
+      "ret": 0,
+      "st0": {
+        "at": {
+          "object": "camera",
+          "offset": 16
+        }
+      }
+    },
+    "_finite": {
+      "ret": 1,
+      "pop": 0
+    },
+    "?getLocation@srNode@@QBE?AV?$srVector3T@N@@XZ": {
+      "ret": "camera",
+      "pop": 4,
+      "write": [
+        {
+          "arg": 1,
+          "offset": 0,
+          "size": 8,
+          "value": 0
+        },
+        {
+          "arg": 1,
+          "offset": 8,
+          "size": 8,
+          "value": 0
+        },
+        {
+          "arg": 1,
+          "offset": 16,
+          "size": 8,
+          "value": 0
+        }
+      ]
+    },
+    "?getModel@Client@srModel@@UBEPAV2@XZ": {
+      "ret": "eventModel",
+      "pop": 0
+    },
+    "?getWorldSpaceRotation@srNode@@QBEXAAV?$srMatrix3T@M@@@Z": {
+      "ret": 0,
+      "pop": 4,
+      "write": [
+        {
+          "arg": 1,
+          "offset": 0,
+          "size": 4,
+          "value": 1065353216
+        },
+        {
+          "arg": 1,
+          "offset": 4,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "arg": 1,
+          "offset": 8,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "arg": 1,
+          "offset": 12,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "arg": 1,
+          "offset": 16,
+          "size": 4,
+          "value": 1065353216
+        },
+        {
+          "arg": 1,
+          "offset": 20,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "arg": 1,
+          "offset": 24,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "arg": 1,
+          "offset": 28,
+          "size": 4,
+          "value": 0
+        },
+        {
+          "arg": 1,
+          "offset": 32,
+          "size": 4,
+          "value": 1065353216
+        }
+      ]
+    },
+    "?setLocation@srNode@@QAEXABV?$srVector3T@N@@@Z": {
+      "ret": 0,
+      "pop": 4
+    }
+  }
+}

@@ -1,0 +1,5 @@
+51dde0	51e1a9	特殊物品 0x29f 的 NPC 記錄缺席斷言（0x89d）；srAssertFail 停止、沒有可差分的返回，calc 對應 panic
+51dde0	51e1c5	特殊物品 0x29f 的 NPC 記錄 +0x2e 不為 0x20 的斷言（0x89e）；srAssertFail 停止、沒有可差分的返回，calc 對應 panic
+51dde0	51e471	物品 kind 不小於 10 的斷言（0x906）；srAssertFail 停止、沒有可差分的返回，calc 對應 panic
+51dde0	51e6a7	目標來源既非角色也非怪物的斷言（0x924）；來源由 53be00／53be50 只寫型別 1 或 2，此塊走不到；srAssertFail 停止，calc 對應 panic
+51dde0	51e6fa	物品法術為 0 的斷言（0x934，先取 517a70 名稱）；srAssertFail 停止、沒有可差分的返回，calc 對應 panic

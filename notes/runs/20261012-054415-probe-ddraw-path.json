@@ -1,0 +1,40 @@
+{
+  "run_id": "20261012-054415-probe-ddraw-path",
+  "commit": "002edc6acc9e28e84af05a44f34ef836396e8b0f",
+  "scenario": {
+    "id": "probe-ddraw-path",
+    "duration": 35,
+    "files": [
+      {
+        "src": "hook/ddraw/out/ddraw.dll",
+        "dst": "ddraw.dll"
+      },
+      {
+        "src": "build/zh/PATCH.002",
+        "dst": "Patches/PATCH.002"
+      }
+    ],
+    "steps": []
+  },
+  "before_diff": "noise A Saves/Ascension Peak.SAV\nnoise A Saves/Ascension Peak2.SAV\nnoise A Saves/Bayjin Shallows.SAV\nnoise A Saves/Cosmic Circle.SAV\nnoise A Saves/Cosmic Circle2.SAV\nnoise A Saves/Ending.SAV\nnoise A Saves/Ending1.SAV\nnoise A Saves/Ending2.SAV\nnoise A Saves/Ending3.SAV\nnoise A Saves/Ending4.SAV\nnoise A Saves/Ending5.SAV\nnoise A Saves/Ending6.SAV\nnoise A Saves/Ending7.SAV\nnoise A Saves/Import/SAVEGAME.GLB\nnoise A Saves/Import/SAVEGAME.GRL\nnoise A Saves/Import/SAVEGAME.TRA\nnoise A Saves/Import/SAVEGAME.UMP\nnoise A Saves/Jan-Ette.SAV\nnoise A Saves/Mountain Wilderness Retro.Fin.SAV\nnoise A Saves/Mt. Gigas Water Caves.SAV\nnoise A Saves/Quick 1.SAV\nnoise A Saves/Quick 2.SAV\nnoise A Saves/Quick 3.SAV\nnoise A Saves/Rapax Castle Main Level.SAV\nnoise A Saves/light shield.SAV\nnoise A Saves/light sword.SAV\nnoise A Saves/test.SAV\nnoise M Saves/CurrentGame.SAV\nnoise M Wiz8.CFG\nsummary: 27 added, 0 removed, 2 changed, 0 non-noise",
+  "after_diff": "summary: 0 added, 0 removed, 0 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [
+    "0.1 start pid=9868"
+  ],
+  "modules": [],
+  "powershell": "",
+  "placed": [
+    {
+      "dst": "ddraw.dll",
+      "sha256": "460ff1ebc55eb5d542b77a1403dc47a3c04ce45d1a55823b35002d5a1b5edc57"
+    },
+    {
+      "dst": "Patches/PATCH.002",
+      "sha256": "19feeaf3cd09b551b0f9f0630b6c507628b5d90d72384c01f20c358235aa6e7f"
+    }
+  ],
+  "shots": {},
+  "ddraw_log": [],
+  "text_log_lines": 0
+}

@@ -1,0 +1,14 @@
+call	5001e0	spellUsableInContext	法術記錄 +0x13b 的使用情境類（0..4）配合場景旗標 683f94／683f9b／683f9c／683f9d 與介面狀態 68ec78，決定法術此刻能否施放；第二參數 0。來源 0x5014a9、0x5001e0。
+call	537220	queuedSpellTargetAcceptable	以排程法術與情境 3 檢查目標類別相容、目標存在與射程；與 0x501530 同組合，只差目標類別的情境值。來源 0x5014c2、0x537220。
+data	4	無關	參數堆疊位移與清堆疊立即值被分析為資料引用，非遊戲資料或表
+data	65be1c	spellDefinitions	法術記錄表，stride 447；+0x49 每 PL 的 SP 成本、+0x12b 情境旗標、+0x133 領域索引。來源 0x50147b、0x5014e7、notes/re/combat-2.md 法術欄位表。
+data	683f94	combatFlag	場景旗標：非零時略過目標檢查，且 PL8 自動選擇配情境旗標 1 的法術直接失敗。來源 0x501499、0x5014b5。
+data	685174	partyCharacterRecords	角色記錄基址，stride 0x1862；已學法術旗標在 +0xbcd+4*法術ID，領域 SP 在 +0xb45+4*領域。來源 0x501466、0x50150c。
+data	685178	partyQueuedActionRecords	角色排程動作副表基址，每筆 0x106 bytes；+0x75 排程法術 ID、+0x79 要求的 PL。來源 0x50141a、0x501420。
+field	eax+ecx*1+0x12b	spellContextFlag	法術記錄 +0x12b；PL 為 8（自動選擇）且此值恰為 1 且場景旗標非零時整個函式回 0。來源 0x50148f。
+field	eax+edx*1+0xbcd	learnedSpellFlag	C+0xbcd+4*法術ID 的已學旗標，必須恰為 1。來源 0x501466。
+field	ecx+0x133	spellDomainIndex	法術記錄 +0x133 領域索引，用來選領域 SP。來源 0x501503、notes/re/combat-2.md。
+field	ecx+0x49	spellSpCostPerLevel	法術記錄 +0x49 每 PL 的 SP 成本（有號 32 位元），乘 PL 後與領域 SP 比較。來源 0x501513。
+field	ecx+ebp*1+0x75	queuedSpellId	Q+0x75 排程法術 ID，0 表示無排程。來源 0x50141a。
+field	ecx+ebp*1+0x79	queuedPowerLevel	Q+0x79 排程的 PL；8 視為 1，0 回 0，其餘逐級降低直到負擔得起。來源 0x501420、0x5014d2。
+field	edx+esi*1+0xb45	domainSpellPoints	C+0xb45+4*領域的 SP（有號 32 位元），與成本×PL 以有號比較。來源 0x50150c、0x50151b。

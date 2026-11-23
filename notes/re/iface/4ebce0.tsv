@@ -1,0 +1,62 @@
+call	421070	partyEyePosition	取得隊伍攝影機的施法起點。
+call	421750	normalizeBreathDirection	將目標減起點的向量正規化為單位長度。
+call	438f90	rotateBreathYaw	以水平角的正弦與餘弦旋轉效果朝向。
+call	467310	identityEffectOrientation	初始化效果的三維單位矩陣。
+call	4a5ab0	rotateBreathPitch	依垂直角追加效果朝向旋轉。
+call	4adb20	createBreathEffect	從法術資料指定的效果名稱建立效果，套用起點與朝向。
+call	4ecc80	refreshTargetPresentation	依來源與目標更新目前選取的目標呈現。
+call	4ed950	transformBreathDirection	用水平旋轉矩陣轉換向量，供俯仰角計算。
+call	4fd030	selectBreathTargets	法術 119、威力 0、角色來源的合成目標選取。
+call	517a90	formatNoBreathTargets	組合沒有可用目標的說明文字。
+call	53be00	characterSourceDescriptor	建立角色來源描述，包含角色索引與空怪物 ID。
+call	555560	faceBreathTarget	依目標位置設定隊員相對隊伍朝向的面向。
+call	590950	showCharacterActionMessage	對角色顯示沒有目標或開始吐息的訊息。
+call	5e1c10	無關	釋放暫存目標名單儲存，沒有改變資格或方向規則。
+call	5e1ce0	allocateTargetStorage	配置兩個容量五的暫存目標名單。
+data	4	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	5e6e06	無關	例外展開處理資訊，正常遊戲規則沒有讀取。
+data	5ebb40	zeroDirectionAngle	浮點零值比較，判定是否需要水平旋轉。
+data	5ebfe0	無關	暫存名單的虛函數表，屬容器生命週期。
+data	6175b0	breathActionMessage	一般吐息行動的格式字串，由 exe 映射。
+data	6175c0	alternateBreathActionMessage	替代吐息行動的格式字串，由 exe 映射。
+data	61ec8c	breathActionTextID	行動訊息文字目錄索引，案例使用合成目錄。
+data	65be1c	spellRecords	法術資料基址；119 的目標規則及吐息效果名稱。
+data	6836a8	battleContext	戰鬥上下文的目前吐息效果欄位。
+data	68510c	alternateBreathMessage	是否使用替代吐息行動格式。
+data	685178	partyActionRecords	每筆 262 bytes，目標描述位於 +29。
+data	68c09c	textCatalog	沒有目標的格式文字與吐息行動名稱。
+data	ffdff000	無關	執行緒例外鏈的分析器位址，與吐息規則無關。
+data	ffffffffffffff38	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff40	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff58	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff5c	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff60	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff64	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff68	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff6c	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff70	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff74	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff78	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff7c	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff80	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff84	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff88	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff8c	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff90	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff94	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff98	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffff9c	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	ffffffffffffffc0	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	fffffffffffffff4	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+data	fffffffffffffffc	無關	分析器列出的堆疊位移或暫存空間；實際輸入為角色參數、目標描述、位置及朝向，不是外部資料位址。
+field	eax+0x0	directionXOrEffectType	向量結果的 X 座標，建立效果後為效果虛函數表。
+field	eax+0x1e6	breathEffectPhase	成功後把效果的行動階段設為零。
+field	eax+0x4	directionY	轉換後向量的 Y 座標。
+field	eax+0x8	directionZ	轉換後向量的 Z 座標。
+field	ebp+0x10	breathTargetX	目標描述的世界 X 座標。
+field	ebp+0x14	breathTargetY	目標描述的世界 Y 座標。
+field	ebp+0x18	breathTargetZ	目標描述的世界 Z 座標。
+field	ecx+0x6dc	noTargetsMessage	文字目錄內的無目標格式指標。
+field	ecx+0xa4c	activeBreathEffect	建立效果後存入戰鬥上下文。
+field	edx+0xa4c	activeBreathEffect	讀回目前吐息效果，判定建立結果及初始化階段。
+field	edx+eax*4	breathActionText	按文字 ID 取得吐息行動名稱。

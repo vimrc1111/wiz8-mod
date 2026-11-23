@@ -1,0 +1,492 @@
+[
+ {
+  "id": 0,
+  "src_sha256": "e88cc390e86ea69ede92a8319c079e8d1fd22579f81cae8ab0cc58964bea4fa7",
+  "zh": "你們……在……尋……找……誰？"
+ },
+ {
+  "id": 1,
+  "src_sha256": "503fb05a35b93452992a9f4bcd2cabe3cfbbb19a3645415a68d33f57190c0b42",
+  "zh": "現在，告訴我……"
+ },
+ {
+  "id": 9,
+  "src_sha256": "5da78efb90b087fc7c45f52f2b66ff408567095496a6ea581aa2b8fe194d8d90",
+  "zh": "我在這世上已有過我的位置。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "b87dadc0ae74a7343f4c3c5d3435dfca3ed029a36b43c8b214f34b94be3aa6d7",
+  "zh": "你們的饋贈，不必了。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "f52bf24fd1d6374d0dcf53f9270893361fd2be11adc32412a9eaa22ef43d225c",
+  "zh": "我什麼都不需要。"
+ },
+ {
+  "id": 15,
+  "src_sha256": "f52bf24fd1d6374d0dcf53f9270893361fd2be11adc32412a9eaa22ef43d225c",
+  "zh": "我什麼都不需要。"
+ },
+ {
+  "id": 17,
+  "src_sha256": "391bbf68608193d75cd190575a2b364f871206861c86df3f1f4bedc24b70adcd",
+  "zh": "你們被原諒了。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "391bbf68608193d75cd190575a2b364f871206861c86df3f1f4bedc24b70adcd",
+  "zh": "你們被原諒了。"
+ },
+ {
+  "id": 19,
+  "src_sha256": "8ab3cca2a515cdd8ed9e54c2f8a406fd1b9dc86c94badb3c1b055596c7d1c2bb",
+  "zh": "可憐的傻瓜。這樣是走不到哪裡去的。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "757f5d242e6295b6d76ad14142d41bcd8a0654048ab9d6857978707ced58d25d",
+  "zh": "你們殺不死永恆的存在。你們要學的還太多了……"
+ },
+ {
+  "id": 21,
+  "src_sha256": "f52bf24fd1d6374d0dcf53f9270893361fd2be11adc32412a9eaa22ef43d225c",
+  "zh": "我什麼都不需要。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "d152ee48fe70819b567450d188af85769044c6471c1f53c1e9d51f385ae0f9b7",
+  "zh": "你們不需要知道……"
+ },
+ {
+  "id": 23,
+  "src_sha256": "a7db5542643be0087c85f129db1d5dbab387d7021ac9e6a5861ebca861525a8b",
+  "zh": "時機到了，答案自會明朗。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "105a853c272f725bad6cf7c7a825968f7d476032f52efbb14bfe28054db7b7cf",
+  "zh": "你們忘了嗎？我說過……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "1b4bd56950c318c74e9f182959215ac37873b704a66efdc0868bb3dd686b6533",
+  "zh": "你們求知（ knowledge ）的渴望很強烈。告訴我，你們想先知道哪一項……"
+ },
+ {
+  "id": 27,
+  "src_sha256": "1ed0cf5fee2c9f6f9c0034d31e117d38abb9fcc93dbf89c8a2f2dfbf6d72418f",
+  "zh": "另一件事，我沒有忘……"
+ },
+ {
+  "id": 28,
+  "src_sha256": "3a067bbe9387e2afc1afca700c231db1dd50166a8490e43f4e9af62ce653b3d6",
+  "zh": "是的，我知道……"
+ },
+ {
+  "id": 29,
+  "src_sha256": "1fbb3da6cc3df8af2e30ab7a07f13cfdd5314e221c3ea792dfefb07a88b4256d",
+  "zh": "你們該回去了……"
+ },
+ {
+  "id": 30,
+  "src_sha256": "c37567f65ade0b8469c8243166e7bcd3d5a8d5060d8c25eb8c057ebf9e6a8678",
+  "zh": "我們不必再多說了……"
+ },
+ {
+  "id": 31,
+  "src_sha256": "808bb0311663e0a61bcdf3b672ee2630f876e212d7d8deefd58a679b04145aab",
+  "zh": "這個世界，是 Cosmic Lords 在他們三件創造物中所造的世界： Chaos Moliri 、 Astral Dominae 與 Destinae Dominus 。這世界所有該知道的，你們已親眼看見。"
+ },
+ {
+  "id": 32,
+  "src_sha256": "8c39d9b2b8ecf38053f009cb3813386ec2fc434fd397fd4c3680881bb18c0c0b",
+  "zh": "這與你們所追尋的無關緊要。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "8c39d9b2b8ecf38053f009cb3813386ec2fc434fd397fd4c3680881bb18c0c0b",
+  "zh": "這與你們所追尋的無關緊要。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "8c39d9b2b8ecf38053f009cb3813386ec2fc434fd397fd4c3680881bb18c0c0b",
+  "zh": "這與你們所追尋的無關緊要。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "8c39d9b2b8ecf38053f009cb3813386ec2fc434fd397fd4c3680881bb18c0c0b",
+  "zh": "這與你們所追尋的無關緊要。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "8c39d9b2b8ecf38053f009cb3813386ec2fc434fd397fd4c3680881bb18c0c0b",
+  "zh": "這與你們所追尋的無關緊要。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "8c39d9b2b8ecf38053f009cb3813386ec2fc434fd397fd4c3680881bb18c0c0b",
+  "zh": "這與你們所追尋的無關緊要。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "4a861513fac27e69b934dddf4a4cb0c89c7245949200f01a0e68ebcc1dd0c69b",
+  "zh": "我的故居……那是多少年前的事了？追隨我到那裡的人，也追隨我來到這裡……走向他們的死亡。我可憐的子民（ people ）！"
+ },
+ {
+  "id": 39,
+  "src_sha256": "c0cf612ecf56cd2ec5da63e1d1e7a668e7ddf7fd0f0498fdadd21749ed0ab908",
+  "zh": "我知道你們會找到這裡來……時候到了自然會的。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "02311eab03f36ee0702bf80ad2bb5958920bd2d31471e4c0dcfb1fbe6f69584d",
+  "zh": " Ascension Peak ……通往 Cosmic Circle 的橋。當你們學會所有該學的，道路便會升起，你們也將隨之升起。這是眾神（ gods ）的考驗，證明你們已學會他們所知的一切。而他們所知的一切，都蘊含在 Trinity 之中。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "47e670b9f2b996349a8e33576eb8661e68edb00a7279c4b298867d5b36ab3882",
+  "zh": " Cosmic Lords 的居所……也是那些想要承接嶄新黎明命運（ destiny ）之人的未來居所。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "cca06d837215a3fd4ed3ada5c07c288727c33a2ea7094ef4d3e904f19fbcd1da",
+  "zh": "就在那裡……"
+ },
+ {
+  "id": 43,
+  "src_sha256": "cef1b4fbda7d6b65d9280312a42283326a49df92eb26869cc7cc1c49da05d63c",
+  "zh": "他們和其他人一樣……"
+ },
+ {
+  "id": 44,
+  "src_sha256": "d9cb1f3f669d90b993b73f0d6a8d1cb8df42dbd397761871d6dbf31005daf26a",
+  "zh": " Trynnie ……當我需要一處安全的港灣時，是他們為我提供。多年來，他們向許多自稱使者的冒牌貨守住了 Helm 的祕密。"
+ },
+ {
+  "id": 48,
+  "src_sha256": "970e79b3a8f1a6ebd92975b00c300d53fedca4fd7e313f00ec457eecd6962dcb",
+  "zh": "他們都不在了。最後一位在深藍的海水下迎來死亡……是 Dark Savant 殺了他們。"
+ },
+ {
+  "id": 52,
+  "src_sha256": "bd0a4347c26f15dc944e8de03bccb92690eb7d1e6097365aa3cd78620144916c",
+  "zh": "受造者崇拜造物者，向來如此。然而，本不必如此。 Cosmic Lords 傾盡所知，是為了讓其他人能像他們一樣……成為{{Lord}}。我們崇拜的，是我們自以為永遠無法成為的存在。"
+ },
+ {
+  "id": 53,
+  "src_sha256": "06a6d5ea9384679cebfe15d31c8281fc814075c74fa84e381017bedd090b2e75",
+  "zh": "是的，我知道 Guardia ，但在這裡無關緊要。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "808bc07bb831ea1f78b58c77b2763148fef3b532894673498dfd8d94e6665571",
+  "zh": "想想你們是向誰提出這個問題，而我又可能知道什麼答案……如果我真的無所不知的話。請對你們將聽到的答案做好準備……"
+ },
+ {
+  "id": 55,
+  "src_sha256": "830dadcf37f1beaae4713b5cddb460c2f06acbe1600be085a90ad36d096ca357",
+  "zh": "你和 Dark Savant 注定要彼此對立，注定為了同一件事而戰。你們兩人分別體現善與惡，仁慈與貪婪。或許有一天，你們會發現自己站在同一邊。但關於這件事，我不會再多說了。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "7d71e0000aa71fc904981a8b810bc2cc23e67568edc9ef8ef291ace934be3ec8",
+  "zh": " Cosmic Lords 之子……"
+ },
+ {
+  "id": 57,
+  "src_sha256": "92c73387329ccfe556345f67c9ac91044092aa99323ef168255429fde9a94fe8",
+  "zh": "她自己會說……"
+ },
+ {
+  "id": 58,
+  "src_sha256": "83b7a657b34596d0ba44df4c6b025611b57df3418af1b9f3ac278d24e0eb3f83",
+  "zh": "那位 Cosmic Lords 之一……"
+ },
+ {
+  "id": 59,
+  "src_sha256": "ef88f07feeb7ceb0f37b63b308d109f5994e83b8fb4fba37404f7af364143e9f",
+  "zh": "那就是我。關於我，你們需要知道的，早已有人告訴你們了。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "fe61f3bfb847abcb4a880d90f7a888632053c5882b1e4e82d26231260cd4dd7f",
+  "zh": "另一位{{Lord}}之子，既非 Cosmic ，也非 Dark 。仔細聽他告訴你們的話……"
+ },
+ {
+  "id": 61,
+  "src_sha256": "bc552ddb163d2da2814085f2c40a3001ffa1d13332f3d30eeddd81057679bbf3",
+  "zh": "他和其他人一樣……"
+ },
+ {
+  "id": 65,
+  "src_sha256": "d1d53f2990aa8616c17980bd6c4fe92fc73c793ffc161b2bcb4b1239b3289f6f",
+  "zh": "她和其他人一樣……"
+ },
+ {
+  "id": 68,
+  "src_sha256": "6c694605a22a76fc3f2ea0527400a57caa40f398b7edd801dcf7baf59880455e",
+  "zh": "是的， Astral Dominae ！它是 Trinity 的第一位。它是生命（ life ），是物質與能量的交會點。沒有生命，變化（ change ）便毫無意義，知識（ knowledge ）也失去目的。"
+ },
+ {
+  "id": 69,
+  "src_sha256": "0879556135869f9541b89e56f2e716e615fe33b251fa21f60cf35f7066881c37",
+  "zh": "是的，我很熟悉。它是 Trinity 的第二位。它是一切的知識（ knowledge ）。"
+ },
+ {
+  "id": 70,
+  "src_sha256": "584adaca3dd5a9271611b9621e19532081ba7946afdafe44f692a4854cb9868f",
+  "zh": " Cosmic Lords 的第三件創造物， Chaos Moliri ……沒有混沌，知識（ knowledge ）與生命（ life ）將永遠靜止不變……三者缺一不可，才有存在（ existence ），才有眾{{Lord}}的知識。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "77113eba6649ac191f0ea28ecd084e1ce26a5db56009954bfc8e8f1b03cc72c8",
+  "zh": "Forge …… Cosmic Forge 。那是最崇高的事物。 Forge 是 Cosmic Lords 書寫律法（ laws ）的筆，萬物的創造皆出於它。宇宙始於這支筆，也將終於這支筆。凡以它所書寫的，立即成真。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "201b6d2bdbcbc44e2aac6693afb2b7a3223112cfd141763a970accb7061875ef",
+  "zh": "Ascension ？是的……時候到了自然會來。當你們準備好的時候。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "bcee3114fc2d5cae6a5d3fe787be69884d9ee51fdd8cdb7a6f9efb5e40d500c2",
+  "zh": "我不知道任何傳聞。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "4367ddd6f0fbfd795fe46e199645415ea7470edc674d1f02a64a80470c365dab",
+  "zh": "我是 Marten 。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "553ad3fe309e7e82e37a631ee909f596f329ba8efc23d85c57f121e6809d9a51",
+  "zh": "命運（ destiny ）不過是你們尚未看見的一條路，有時旁人反而看得一清二楚……"
+ },
+ {
+  "id": 76,
+  "src_sha256": "422a41ae78a336feb77a079d239b2032378166ec40413110ba6129297f98abc0",
+  "zh": "我以前聽過這話。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "13df08fae80b2f970bdfb27f7b50cac270071121b025a3f59df23d7208eddf8a",
+  "zh": "我不能……"
+ },
+ {
+  "id": 78,
+  "src_sha256": "f04427070edda834513cf98138a625fd419f64c92044c862a3a9d961514fbc9b",
+  "zh": "問候……"
+ },
+ {
+  "id": 79,
+  "src_sha256": "aa8668d80397f5e588567f8a6b47357372ef76ab26fd2f8d602b80d651ad2d9d",
+  "zh": "今生我們不會再相見了。我只盼你們能保衛這嶄新的命運（ destiny ），對抗 Dark Savant ，如此我們才能在來世重逢。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "2b4d5ca11ba4d8fa754545e77b456199c52bba6686c2141c673bd793623affeb",
+  "zh": "我給不了你們任何你們自己給不了自己的協助（ help ）。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "54516f5961b3e24aa7f409e3d675bc07cebe5c51d4cba4b78a1d6d373cca221a",
+  "zh": "我沒有東西可賣（ sell ），也沒有任何需求要滿足。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "498774cb70304e858fefb4ae1d08e370aaf4be353825d6bd1a0a379baa759d2f",
+  "zh": "我已不在生者之列。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "8e2bac9fdc576f80f537f89646dc5cc67fe906bb0dc275a487de44808b49e54a",
+  "zh": "法術是一種幻象……"
+ },
+ {
+  "id": 84,
+  "src_sha256": "6c97b6cd10e9a3746e56e903ef6558c6925a70c4b9dc1568e71b1839f55dfa6b",
+  "zh": "戰爭（ war ）……改變（ change ）的偉大催化劑。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "78f1db0c92983a581b0d5e67188d734dcd3857f2d44e0f59e7b15bc08f3dae35",
+  "zh": "說出名字，它就是你們的了……"
+ },
+ {
+  "id": 91,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 92,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 93,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 94,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 95,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 96,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 97,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 98,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 99,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 100,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 101,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 102,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 103,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 104,
+  "src_sha256": "48b813a3de35b2a663ea8c8452025d0919a60de5727cb963b83042c185b38ad9",
+  "zh": "無關緊要……"
+ },
+ {
+  "id": 105,
+  "src_sha256": "556d2a3b6e4233962b59b585606919a4df861aa05bc1b19c753264931e709bf8",
+  "zh": " Astral Dominae 、 Destinae Dominus 與 Chaos Moliri 。生命（ life ）、知識（ knowledge ）與變化（ change ）。有了這三者，便能造出一個宇宙。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "b6b2718daf6e4ed4fac6e1962d617e982df064f8aa56f360132cc9bade560963",
+  "zh": "是的，和我一樣，他們相信 Brotherhood 不該獨自擁有 Destinae Dominus 。所以當我接手時，他們跟著我來到 Marten's Bluff ，保護我與這件裝置。然而，他們的保護並不足夠。我們被迫逃來此地。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "d6535bc42e4ac5e7a7fc5318d3c28a246f8231b8a82bd77a575b6b8f96a80faa",
+  "zh": "我們把自己封在裡面，他們為此而死，只為讓 Dominus 得以存活（ live ）。若落入不當之人手中， Destinae Dominus 會招致災難……"
+ },
+ {
+  "id": 108,
+  "src_sha256": "1bb949e08265dab28a4f160216cc415c2b26c7d9171666b0392c578686627333",
+  "zh": " Helm 的鍛造，是為了保護你們不致太早知道太多。 Destinae Dominus 讓我發了瘋，因為我在一瞬間學會了一切！我把它留給了正等候我信使的 Trynnie 。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "73cb7172454a5bc64334a1d9347ba7d6aa726d9ef971882b40f73b94296ad1dc",
+  "zh": "你們……在……尋……找……什麼？"
+ },
+ {
+  "id": 110,
+  "src_sha256": "36eaa83d2fc8196afd0191da97e0b83f3a34ef223f0f1114ae7f22879f68a21a",
+  "zh": "那麼，莫……在……此……尋！"
+ },
+ {
+  "id": 112,
+  "src_sha256": "8a4508b7a3226450edd1b1a2760cdc85d24bfcd5d0af0dbd9a83446be771f6c0",
+  "zh": "多年前，我也曾追尋知識（ knowledge ），但我對自己即將知道的一切毫無準備。 Destinae Dominus 讓我發了瘋……在一瞬間學會一切！我毫無準備，而你們就和當年的我一樣。我在你們身上看不到 Helm of Serenity ，只看到盲目的熱切。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "aaf9483212106cfaee364d2f6db0b8abdc96ee9554b7859f8457e361ec7ec20b",
+  "zh": "而這個，你們已準備好接受了。我留下的 Helm 會保護你們不受 Destinae Dominus 侵害，保護你們免於我現在的命運。"
+ },
+ {
+  "id": 114,
+  "src_sha256": "b2e8a9909b656b3e5e9358c131a756c54d919ed1e54841880804be4387a21309",
+  "zh": "和你們一樣，我渴求眾神（ gods ）的一切知識（ knowledge ），於是我從 Brotherhood 手中偷走了 Destinae Dominus 。它是我的！這樣的禮物，何其美妙，又何其可怕！我看見了過去的一切與未來的一切。我活著卻沒有活過，死去卻沒有死過……"
+ },
+ {
+  "id": 115,
+  "src_sha256": "bb53a4acf8a2aa41e7e8bc8aef81951b0acd51e72879d1408366011114490b03",
+  "zh": "眾神（ gods ）的知識（ knowledge ）本就不是給凡人的……所以我決定把它永遠藏起來，直到 Ascension 降臨之時。我們先逃往 Trynton ，再到 Bluff ，最後來到這些洞窟。現在，時候到了。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "566ee48a581eae50cce039290a0a0511d9381740e50705bbd4baffb4acd68eb3",
+  "zh": "我已盡了我的職責……或許終於能找到那困擾我許久的寧靜。當 Destinae Dominus 升起時，我也將隨之升起……"
+ },
+ {
+  "id": 117,
+  "src_sha256": "191fa3d0e77f21f3e9b9411c9fb61687569ec0ffd311407954552d65fdab85cc",
+  "zh": "完整的知識（ knowledge ），就是活著（ live ）卻沒有活過，死去（ die ）卻沒有死過……是看透時間與空間的幻象，看見一切生靈存在的緣由，知道已經發生的、正在發生的，以及必將發生的？通曉一切者，看見的是如神一般，卻沒有理解的能力！"
+ },
+ {
+  "id": 118,
+  "src_sha256": "146016148a37343279cbfa1732069c2273d7e19c778e9530b1d715dde07acc6f",
+  "zh": "我的心不再遊蕩，我的靈魂不再尋覓。我不必行動，因為我知道行動會帶來什麼。我不必思考，答案我早已知道。我只看見那唯一值得知道的事……知識（ knowledge ）並不足夠。還需要生命（ life ）與變化（ change ）才能存在。"
+ },
+ {
+  "id": 119,
+  "src_sha256": "5c0ab4cb86fd1695032f421a65ba07258b78a77471655d342e0aa1276aa4a5a0",
+  "zh": "生命（ life ）是核心，是讓變化（ change ）與知識（ knowledge ）得以運作、造出我們稱之為存在（ existence ）的這個幻象的催化劑。生命從知識中學習，因此生命被迫變化以滿足自身的欲望。它是進化的根基，是三者之中最主要的作用力（ forces ）。"
+ },
+ {
+  "id": 120,
+  "src_sha256": "357a48cc2449bd919ff49003e0be4c204461a63da7462d7f69266dbe91134bd2",
+  "zh": "變化（ change ）是眾{{Lord}}各種作用力（ forces ）中的小鬼，總在推、總在拉，把我們推往某個我們可能成為的樣子。透過知識（ knowledge ），生命（ life ）被迫走向變化；透過變化，生命獲得知識。因此三者永遠交纏。好好思索這些事吧……"
+ },
+ {
+  "id": 121,
+  "src_sha256": "5b649e7e4f050ce8c9db9a3d921ef060d17cb98a5bf6a78dc0452268d7903656",
+  "zh": "一切存在（ existence ）、宇宙，連你們，都是由三股相互牽動的作用力（ forces ）所構成。這三股作用力就是 Cosmic Lords 的 Trinity ，是他們期望你們在 Ascend 之前學會的事。"
+ },
+ {
+  "id": 123,
+  "src_sha256": "40a32cde8e1d1bd29c12a3be6c100e03eccfab90e845e3ecfb476ad184e36893",
+  "zh": "我不會再透露更多了。"
+ },
+ {
+  "id": 124,
+  "src_sha256": "5f7e57bd96b2b17d1f9e79de7020399c7cf75c5ad06c9b8f069f49e80eb1e977",
+  "zh": "就在這裡以北。"
+ },
+ {
+  "id": 125,
+  "src_sha256": "89f85d51886091ca4aae86247e5e57b07b8268c3b7051dedae5a4c2e58c41af6",
+  "zh": "南邊。"
+ },
+ {
+  "id": 126,
+  "src_sha256": "f729bfbf71b90a984b50c0062141de095096f07a4cddb8708eb7ecc5248fbc10",
+  "zh": "往東。"
+ },
+ {
+  "id": 127,
+  "src_sha256": "5e54195583eb134345398020cdcfe5ce2350acebc9d6baa440de4dffe97e9e8d",
+  "zh": "這裡以西。"
+ }
+]

@@ -1,0 +1,10 @@
+call	4f0480	combatPhaseRounding	依隊伍行動模式將行動階段取整、夾制並檢查正常返回值在 1..100；calc 使用既有 combatPhaseRoundingNode
+call	5179f0	clampUnsignedPhase	以無號比較先檢查上限 100，再檢查當前階段下限，原地回寫；上下限倒置時仍依此順序
+data	4	無關	第一參數的堆疊位移被分析為資料引用，非遊戲資料或表
+data	6836a8	combatState	隊伍戰鬥狀態物件指標；arena 固定接線，當前階段與子函式讀取的行動模式另列數值輸入
+field	eax+0x8	currentPhase	隊伍當前行動階段，u32；用於階段差、夾制下限與最後記錄更新
+field	ecx+0x8	currentPhase	同一隊伍當前行動階段，用於取整子函式下限
+field	edx+0x8	currentPhase	同一隊伍當前行動階段，用於第一個夾制子函式下限
+field	esi+0x0	actionPhase	戰鬥行動記錄的行動階段，u32；加上 currentPhase 減 previousPhase 的 32 位回繞差後夾制與取整
+field	esi+0x9c	previousPhase	戰鬥行動記錄上次重定位時的隊伍階段，u32；先讀取以計算差，正常返回前改寫為 currentPhase
+field	eax+0x910	partyActionMode	子函式 4f0480 讀取的隊伍行動模式，u32；零不取整，非零按半步 5、步長 10 取整並將下限向上取整

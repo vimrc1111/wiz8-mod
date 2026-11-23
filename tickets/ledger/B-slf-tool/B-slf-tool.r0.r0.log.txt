@@ -1,0 +1,25 @@
+ok  	wiz8-mod/tools/hashdir	0.007s
+--- FAIL: TestFixtureListExtract (0.00s)
+    slf_test.go:175: slf [list /tmp/TestFixtureListExtract2655005645/001/TEST.SLF]: code=2 err=未實作 out=
+--- FAIL: TestFixturePackRoundTrip (0.00s)
+    slf_test.go:182: slf [extract /tmp/TestFixturePackRoundTrip2721751400/001/TEST.SLF /tmp/TestFixturePackRoundTrip2721751400/002/x]: code=2 err=未實作 out=
+--- FAIL: TestRealArchives (7.89s)
+    --- FAIL: TestRealArchives/DATA.SLF (0.70s)
+        slf_test.go:285: slf [list /mnt/c/Program Files (x86)/Steam/steamapps/common/Wizardry8/Data/DATA.SLF]: code=2 err=未實作 out=
+    --- FAIL: TestRealArchives/MONSTERS.SLF (0.64s)
+        slf_test.go:285: slf [list /mnt/c/Program Files (x86)/Steam/steamapps/common/Wizardry8/Data/MONSTERS/MONSTERS.SLF]: code=2 err=未實作 out=
+    --- FAIL: TestRealArchives/MONSTERSOUND.SLF (1.15s)
+        slf_test.go:285: slf [list /mnt/c/Program Files (x86)/Steam/steamapps/common/Wizardry8/Data/Sound/Monsters/MONSTERSOUND.SLF]: code=2 err=未實作 out=
+    --- FAIL: TestRealArchives/SOUND.SLF (3.00s)
+        slf_test.go:285: slf [list /mnt/c/Program Files (x86)/Steam/steamapps/common/Wizardry8/Data/Sound/SOUND.SLF]: code=2 err=未實作 out=
+    --- FAIL: TestRealArchives/LEVELS.SLF (2.34s)
+        slf_test.go:285: slf [list /mnt/c/Program Files (x86)/Steam/steamapps/common/Wizardry8/Levels/LEVELS.SLF]: code=2 err=未實作 out=
+    --- FAIL: TestRealArchives/PATCH.001 (0.00s)
+        slf_test.go:285: slf [list /mnt/c/Program Files (x86)/Steam/steamapps/common/Wizardry8/Patches/PATCH.001]: code=2 err=未實作 out=
+    --- FAIL: TestRealArchives/Lang.SLF (0.03s)
+        slf_test.go:285: slf [list /mnt/c/Program Files (x86)/Steam/steamapps/common/Wizardry8_Uninstall/Localization/Fan-Patch1.28/POL/Lang.SLF]: code=2 err=未實作 out=
+--- FAIL: TestRealPatchPackRoundTrip (0.01s)
+    slf_test.go:297: slf [extract /mnt/c/Program Files (x86)/Steam/steamapps/common/Wizardry8/Patches/PATCH.001 /tmp/TestRealPatchPackRoundTrip1458721673/001/x]: code=2 err=未實作 out=
+FAIL
+FAIL	wiz8-mod/tools/slf	8.024s
+FAIL

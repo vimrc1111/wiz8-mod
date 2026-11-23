@@ -1,0 +1,47 @@
+call	2b6	assertFailureIndirectCall	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，只在 cov-exempt 的塊 5e3b7b（trap+0x10c≠2）
+call	40efa0	R(n) 亂數	R(2) 決定陷阱是否觸發；R(等級/2) 扣受影響人數；威力超過 7 時 R(威力-7) 加人數；calc 以同序 Rand.R 重現
+call	4447f0	trapSpring	陷阱觸發：trap+0x370＝1，連結物件 trap+0x234 非空且 +4 類別為 0x0a 時清其 +8 位元 2；calc trapSprungOut／linkFlagsOut
+call	517a90	formatMessage	以 "%s %s" 格式化陷阱名稱與觸發／未觸發訊息到共用緩衝 0x689fd0；calc msgW*
+call	5299b0	queueMessage	把訊息排進訊息佇列：0x1d、文字、0x1d 三筆，靜音位元（**0x652dac 位元 6）設定時只排文字；calc msgCount
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertImport	srAssertFail import；只在 cov-exempt 斷言塊 5e3b7b
+data	5ebe80	halfConstant	double 0.5：包圍盒兩角相加後乘它得中心；calc 從 exe 讀
+data	606ad8	無關	斷言訊息字串（原始檔名／條件）；只當 srAssertFail 參數
+data	606af8	無關	斷言訊息字串；只當 srAssertFail 參數
+data	617584	messageFormatString	陷阱名稱與訊息共用的 "%s %s" 格式字串
+data	61e9ec	trapNameStringId	陷阱類型 → 訊息文字物件字串索引（word 表，類型 0..14＝1346..1360）；case 讓每格指向各自的誘餌字串
+data	6504ac	trapBaseLevel	陷阱類型基準等級表（15 筆）；等級超過它才提高威力；calc 從 exe 讀
+data	650514	trapSpell	陷阱類型對應的法術編號表（15 筆），交 0x5e3800；calc 從 exe 讀
+data	6598a4	mapObject	地圖物件指標；只當排除的射線查詢 0x434f20 的 this，樁不讀
+data	68c09c	messageTextObject	訊息文字物件：陷阱名稱字串表與 +0x1ecc／+0x1ed0 兩則陷阱訊息
+data	ffffffffffffff90	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffff94	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffff98	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffb8	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffbc	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffc0	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffc4	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffc8	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffcc	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffd0	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffd4	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffd8	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffdc	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffe0	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffe4	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	ffffffffffffffec	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	fffffffffffffff0	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+data	fffffffffffffff4	無關	靜態掃描所列的堆疊相對位移；本函式區域暫存（包圍盒兩角、陷阱位置、視角位置），位置經 castX..castZ 輸出
+field	eax+0x0	castArgX	交 0x5e3800 的位置 x（float32 bits），寫進傳參堆疊；calc castX
+field	eax+0x4	castArgY	交 0x5e3800 的位置 y；calc castY
+field	eax+0x8	castArgZ	交 0x5e3800 的位置 z；calc castZ
+field	eax+0x1ecc	trapTriggerMessage	訊息文字物件 +0x1ecc：R(2)＝0（陷阱觸發）時的訊息字串指標
+field	eax+0x1ed0	trapResistMessage	訊息文字物件 +0x1ed0：R(2)≠0 時的訊息字串指標
+field	eax+edx*4	trapNameString	訊息文字物件第 0x61e9ec[類型] 個字串指標：陷阱名稱
+field	ebp*2+0x61e9ec	trapNameStringId	依陷阱類型查名稱字串索引
+field	ebp*4+0x6504ac	trapBaseLevel	依陷阱類型查基準等級
+field	ebp*4+0x650514	trapSpell	依陷阱類型查法術編號
+field	edi+0x36c	trapLevel	陷阱物件 +0x36c 等級（有號），限於 1..7
+field	edi+0x37c	trapType	陷阱物件 +0x37c 類型，三張表的索引
+field	esi+0x10c	trapObjectKind	陷阱物件 +0x10c 類別位元組，須為 2（否則斷言）
+field	esi+0x110	trapModel	陷阱物件 +0x110 模型指標：非空取模型包圍盒中心（0x44d5c0），空則取鏡頭前方點（0x421150）

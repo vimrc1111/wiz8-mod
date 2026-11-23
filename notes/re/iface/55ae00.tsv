@@ -1,0 +1,11 @@
+call	5e2870	getStockEntry	取商店庫存清單第 index 筆條目；清單指標為空或 index 不小於筆數回空，來源 exe 0x5e2870
+data	68516c	itemDefinitions	物品定義表基址，步長 0x10d、堆疊型態位於 +0x66，來源 exe 0x55ae3a、0x55ae40
+field	eax+0x4	itemIndex	庫存條目的物品編號，用來索引物品定義表，來源 exe 0x55ae2a
+field	eax+0x8	stackQuantity	堆疊型物品的庫存數量（u8），扣減後為零則清空單位欄，來源 exe 0x55ae47、0x55ae4f
+field	eax+0x10	stockUnits	非堆疊物品的庫存單位數（u8），扣減下限為零；堆疊耗盡時清零，來源 exe 0x55ae54、0x55ae5c、0x55ae67
+field	ecx+0xa	stockListPointer	商店物件的庫存清單指標，交給 5e2870 查條目，來源 exe 0x55ae15
+field	edx+0x66	stackType	物品定義的堆疊型態位元組，等於 1 時走堆疊分支，來源 exe 0x55ae40
+data	c	無關	堆疊上的立即數 0xc（第二個參數 stockIndex 的堆疊偏移），不是資料表位址，來源 exe 0x55ae0d
+field	edx+ecx*1+0x66	stackType	物品定義表基址加物品偏移，+0x66 為堆疊型態位元組（與 edx+0x66 同一欄位），來源 exe 0x55ae40
+data	4	無關	小立即數 4（條目 +0x4 位移與取得物品編號的欄位偏移），不是資料表位址，來源 exe 0x55ae2a
+data	8	無關	小立即數 8（呼叫 5e2870 後 add esp 清掉兩個參數的位元組數；亦為條目 +0x8 位移），不是資料表位址，來源 exe 0x55ae1f

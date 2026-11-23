@@ -1,0 +1,11 @@
+call	2b6	無關	分析器對 srAssertFail 間接匯入呼叫的標記；只診斷魅惑角色遇到非法陣營碼，不參與合法目標陣營規則（0x546f61）
+data	4	無關	第一個參數的堆疊位移被列為資料引用，實際是角色索引，非全域資料（0x546f10）
+data	8	無關	第二個參數的堆疊位移被列為資料引用，實際是怪物指標，非全域資料（0x546f34、0x546f3c）
+data	5ebaf4	無關	srAssertFail 匯入槽；非法陣營碼的防禦性斷言，不是遊戲規則或查表子函式（0x546f61）
+data	609b24	無關	斷言失敗條件文字，只供非法陣營碼診斷，不影響合法輸出（0x546f5c）
+data	61dc60	無關	斷言原始碼檔名，只供錯誤診斷，不是遊戲資料表（0x546f57）
+data	61dc98	無關	目標陣營錯誤診斷訊息，只在非法陣營碼時使用（0x546f50）
+data	685174	partyCharacterRecords	角色主記錄陣列的執行期指標；每筆步長 0x1862，並非 exe 常數表（notes/re/growth.md:67、0x546f23）
+field	ecx+eax*2+0xa35	characterCharm	所選角色 C+0xa35 的 32 位魅惑狀態；零保留怪物陣營，任何非零值交換敵友（0x546f29、0x546f30）
+field	edx+0x16	monsterDisposition	未魅惑分支讀取怪物 M+0x16 的 u8 陣營，原樣回傳低 byte（0x546f38）
+field	ecx+0x16	monsterDisposition	魅惑分支讀取同一怪物 M+0x16；0 中立不變，1 敵方與 2 友方互換，其餘觸發斷言（0x546f42..0x546f70）

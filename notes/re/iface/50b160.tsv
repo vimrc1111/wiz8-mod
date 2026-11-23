@@ -1,0 +1,27 @@
+call	524250	npcItemsGrantToMember	NPC 的物品記錄（20 個字）逐項交給成員（經 517ec0 取隊伍槽、522fe0 套用）；未登記成節點，case 原樣執行 524250 與 517ec0，522fe0 以位址樁記錄參數與次數（回傳被忽略）
+call	553cd0	memberSkillAvailabilityPass	依 113 個法術狀態建六個領域旗標，再逐一用 553d90 重算 41 項技能的啟用位元組；未登記成節點，case 原樣執行，calc 的 rssAvailable 重現 553d90
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes，八個隊伍槽）
+data	619eac	npcTemplateSkillSlot	模板 +0x12c 位元組的存放處（五格，每次迴圈寫第 0 格，值為零時五格全寫零）
+data	619ead	npcTemplateSkillSlot	同 619eac 的第 1 格（迴圈 ecx=1 的位址，被分析為獨立資料引用）
+data	619ebc	sourceFileName	傳給 4e5550 的來源檔名字串，只用於斷言訊息，與規則無關
+data	6875aa	npcTemplateSkillRegistry	五格位元組登記表：模板技能值已在其中就不動，否則寫入第一個空格，滿了不寫
+data	6875ab	npcTemplateSkillRegistry	同 6875aa 的第 1 格起位址（迴圈引用）
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	esi+0x6	npcTemplate	NPC 物件 +6 的模板指標
+field	eax+0x57	npcTemplateJoinFlag	模板 +0x57 位元組，為零就不加入隊伍直接回傳 0
+field	edx+0x12c	npcTemplateSkillValue	模板 +0x12c 位元組，寫進 619eac 並登記到 6875aa
+field	esi+0x27	npcMemberSourceRef	NPC +0x27 的 32 位值，原樣當 4ef4a0 第一參數
+field	esi+0x2c	npcMemberSourceByte	NPC +0x2c 位元組，當 4ef4a0 第二參數
+field	esi+0x2b	npcJoinedSlot	NPC +0x2b 寫入隊伍槽號低位元組
+field	esi+0x26	npcJoinedFlag	NPC +0x26 加入後寫 1
+field	esi+0x25	npcRecruitPending	NPC +0x25 位元組，非零才處理物品記錄，加入後清零
+field	esi+0x1a	npcItemGrantFlag	NPC +0x1a 位元組，非零才處理物品記錄
+field	esi+0x16	npcItemRecordId	NPC +0x16 物品記錄編號，交 4e5550 轉索引
+field	esi+0xe9	npcStateByte	NPC +0xe9 加入後清零
+field	esi+0xc5	npcStateByte	NPC +0xc5 加入後清零
+field	esi+0x0	npcLinkedObject	NPC +0 的 32 位值，交 55a0a0 後清零
+field	ebp+0x0	npcItemRecordIdCopy	物品記錄第一欄（編號），再交 4e5550 轉索引後給 4e3af0
+field	eax+ecx*1+0x19f	memberSkillBase	成員 +0x19f 起每項技能 0x26 bytes 的基礎值（32 位），非零就設啟用標記
+field	eax+ecx*1+0x1b0	memberSkillMark	成員 +0x1b0 起每項技能的標記位元組，基礎值非零時寫 1
+field	ecx+0x619eac	npcTemplateSkillSlot	619eac 起五格的第 i 格（ecx 為迴圈索引）
+field	ecx+0x6875aa	npcTemplateSkillRegistry	6875aa 起五格的第 i 格（ecx 為迴圈索引）

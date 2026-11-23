@@ -1,0 +1,23 @@
+call	51c020	initNewItem	以物品編號、最大值選項 1、強制旗標 1、旗標B 0 初始化新庫存條目 +0x4 起的物品實例（寫編號、堆疊件數或充能、旗標）；已 D4，本節點原樣跑它並在 calc 內呼叫其 Go 函式
+call	5e1ce0	無關	operator new 轉接，配置 0x14 bytes 條目；記憶體配置，模擬器內建樁，calc 以 bump 配置模型重現位址
+call	5e22c0	createList	建立商人庫存清單（0xc bytes 表頭、容量 10、筆數 0、0x28 bytes 指標陣列）；calc 重現表頭與陣列
+call	5e2480	appendToList	把條目指標加入清單末端，筆數不小於容量時換成容量加 5 的新陣列並複製舊指標；回傳新增索引，calc 重現配置與複製
+call	5e2870	getStockEntry	取清單第 index 筆條目；清單空或 index 不小於筆數回空
+call	5e2c70	listCount	取清單筆數，控制搜尋迴圈
+data	68516c	itemDefinitions	物品定義陣列的執行期指標，每筆 0x10d bytes；非 exe 常數表
+data	4	無關	小立即數 4：物品定義 +0x3e 的比較值（堆疊型態 4 不併入既有條目）、條目 +0x4 位移，與清單 capacity／立即值，不是資料表位址
+data	8	無關	小立即數 8：條目 +0x8 位移與清單筆數位移，不是資料表位址
+data	c	無關	小立即數 0xc：清單表頭配置大小與堆疊參數位移，不是資料表位址
+field	esi+0x8	stackQuantity	庫存條目 +0x8（u8）：非堆疊型物品的堆疊件數，新條目先清零，堆疊型物品加售出件數
+field	esi+0x4	itemIndex	庫存條目 +0x4：物品編號，搜尋時與待售物品索引比對，也用來查物品定義 +0x66
+field	esi+0x10	stockUnits	庫存條目 +0x10（u8）：堆疊型物品的單位數，新條目為零，非堆疊型物品加售出件數
+field	ebp+0xa	stockListPointer	商人物件 +0xa 的庫存清單指標，空時建立
+field	eax+0x4	itemIndex	庫存條目 +0x4 的物品編號，與待售物品索引比對
+field	eax+ecx*1+0x3e	itemStackClass	物品定義 +0x3e：值為 4 時略過搜尋，永遠新增條目
+field	ecx+edx*1+0x66	stackType	物品定義 +0x66 堆疊型態：等於 1 時走堆疊分支
+field	esi+0x0	無關	新條目 +0x0 清零；也是參數 2 指標（待售物品索引）的讀取，欄位語意見 ecx+0x0
+field	ecx+0x0	soldItemIndex	參數 2 指向的待售物品索引（有號 dword），負值回 -1
+field	eax+0x0	無關	新條目 +0x0 清零，之後無人讀取，條目首 dword 不影響規則
+field	eax+0x8	stackQuantity	新條目 +0x8 清零（同 esi+0x8 的欄位）
+field	eax+0xc	無關	新條目 +0xc 清零，之後無人讀取
+field	eax+0x10	stockUnits	新條目 +0x10 清零（同 esi+0x10 的欄位）

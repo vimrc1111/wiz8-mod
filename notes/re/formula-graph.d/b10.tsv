@@ -1,0 +1,61 @@
+addr	class	depth	node	calc	evidence
+5861a0	非公式	-	lock_panel_create		依角色技能及體力啟用按鈕並建立開鎖面板，計算結果僅供控制項可用性；build/wiz8.asm:527047。
+586740	非公式	-	lock_panel_update		按開鎖面板狀態分派既有操作並開啟法術選擇，未在此生成開鎖機率；build/wiz8.asm:527575。
+586a70	公式	D4	lock_spell_power	lockSpellPowerNode	不確定：目前呼叫端只檢查回傳值符號，但本函式讀角色 +0xc69、+0x1a3+0x26*s、+0x5cb+0x26*r，依技能與領域加權除以 5 回傳開鎖法術能力，保守保留此規則數值來源；build/wiz8.asm:527724。
+586c60	公式	D4	lock_pick_pin_chance	lockPickPinChanceNode	讀角色 +0x31f、難度 0x6850d5、開鎖物件 +0xc/+0x2c/+0x30，百分骰決定既有鎖銷掉落並寫物件 +0x38+4*i、+0x60+4*c，另以五分之一機率送出技能 10 練習；build/wiz8.asm:527899、build/wiz8.asm:527955。
+586e40	公式	D4	force_lock_chance	forceLockChanceNode	讀角色 +0xe9/+0xb1d、鎖銷數 +0xc 與難度 0x6850d5，以力量超過 50 的餘量除難度相關分母後擲百分骰，扣體力 80 並在成功時寫開鎖物件 +0x34=8；build/wiz8.asm:528080。
+5871a0	公式	D4	lock_spell_pin_chance	lockSpellPinChanceNode	讀法術強度參數、結果旗標、鎖銷數 +0xc 與機率表 0x64ba90，亂數洗牌後以千分骰決定升降鎖銷，寫物件 +0x38+4*i、+0x58+i 與完成狀態 +0x34；build/wiz8.asm:528360、build/wiz8.asm:528396。
+587510	非公式	-	lock_panel_open		建立或恢復開鎖面板並產生 600 毫秒拒絕提示事件，角色數值僅決定按鈕可用性；build/wiz8.asm:528638；notes/re/speed.md:57。
+587a30	排除	-	lock_panel_refresh		鎖面板刷新；565740 依 byte 0x683f98 呼叫，呼叫端不讀 eax（cc 判斷）；build/wiz8.asm:529023、485891。
+588e60	非公式	-	trap_skill_display		將角色技能及法術能力格式化寫到文字控制項，算術只用於顯示；build/wiz8.asm:530955。
+589090	非公式	-	lock_skill_get		檢查角色有效與技能啟用後直接回傳角色 +0x31f，屬既有欄位讀取；build/wiz8.asm:531056。
+589a80	公式	D4	trap_attempt_training	trapAttemptTrainingNode	不確定：主體為陷阱面板狀態分派，但狀態 2 讀物件 +0x1c 選角色並送出技能 10 的一次練習，間接寫角色 +0x19f/+0x1a3/+0x1ab+0x26*10，是否僅屬流程包裝留待 D1；build/wiz8.asm:532000、build/wiz8.asm:461805、build/wiz8.asm:461807、build/wiz8.asm:461842。
+589d90	非公式	-	trap_panel_refresh		將角色既有陷阱辨識結果搬到控制項 +0xb8 並刷新按鈕，未生成新的辨識機率；build/wiz8.asm:532307。
+58a060	公式	D4	trap_inspect_chance	trapInspectChanceNode	讀角色 +0x31f、物件 +0x1c/+0x38/+0x14c、難度 0x6850d5 與門檻表 0x6504e8，將辨識率限制為 0–99 後對八個部件擲百分骰，寫物件 +0x4c+4*(8*c+i) 與 +0x44+c；build/wiz8.asm:532455、build/wiz8.asm:532467。
+58a200	非公式	-	trap_spell_select		檢查角色兩種法術可用性後關閉陷阱面板並轉入施法選擇流程；build/wiz8.asm:532663。
+58a470	非公式	-	trap_panel_open		百分骰僅在兩種提示回應事件間選擇，隨後播放陷阱偵測聲音並記提示時間，陷阱結果由其他函式處理；build/wiz8.asm:532832、build/wiz8.asm:532844；notes/re/speed.md:58。
+58a930	公式	D4	trap_spell_disarm_chance	trapSpellDisarmChanceNode	讀法術強度及失敗參數、陷阱物件 +0x38，以 50+5*強度-6*難度作百分骰門檻，寫物件 +0x18=7 或 8 決定解除或觸發陷阱；build/wiz8.asm:533162、build/wiz8.asm:533168。
+58b5f0	非公式	-	message_expiry		依文字長度與訊息速度計算最多 60000 毫秒的文字保留期限，寫文字記錄 +8 並捲動訊息框；build/wiz8.asm:534198；notes/re/combat-timing.md:25。
+590950	非公式	-	character_message_format		讀角色 +5 名稱格式化訊息並設定姓名文字色彩範圍；build/wiz8.asm:541091。
+590a40	非公式	-	character_message_format_args		帶附加參數格式化角色姓名訊息並設定文字色彩範圍；build/wiz8.asm:541174。
+591960	非公式	-	input_command_dispatch		依輸入命令切換面板、存讀檔及調整訊息顯示速度，數值修改為 UI 設定；build/wiz8.asm:542662；notes/re/combat-timing.md:27。
+593360	非公式	-	party_action_button_frames		依角色動作與法術領域選擇按鈕影像，寫控制項 +0x48/+0x4c/+0x50/+0x54；build/wiz8.asm:544781。
+594d20	非公式	-	party_action_button_enable		讀戰鬥、角色與模態面板旗標後切換動作按鈕的啟用狀態；build/wiz8.asm:546946。
+595850	非公式	-	party_action_popup_create		依動作子項可用性配置選單大小、影像與回呼，建立彈出按鈕；build/wiz8.asm:547914。
+595fe0	非公式	-	party_action_button_state		把角色動作及可用性映射為 0–4 的控制項狀態，供選單影像與顯示使用；build/wiz8.asm:548461、build/wiz8.asm:544781。
+596360	非公式	-	attack_button_state		比較目前選擇動作與角色副表 +0x3d，再把攻擊可用性組成按鈕狀態碼；build/wiz8.asm:548625。
+596fe0	非公式	-	party_action_text_draw		讀角色姓名、狀態與裝備動作組成文字，量寬後置中繪字；build/wiz8.asm:549645。
+597790	非公式	-	party_control_button_enable		讀隊伍與戰鬥旗標切換控制按鈕可用性並重繪；build/wiz8.asm:550236。
+597d70	非公式	-	combat_mode_button_state		依隊伍回合與計時狀態選擇五個戰鬥模式按鈕的按下狀態；build/wiz8.asm:550770。
+598810	非公式	-	party_toolbar_draw		繪製工具列底圖，更新角色動作文字及多組按鈕；build/wiz8.asm:551637。
+5993a0	非公式	-	portrait_animation_update		讀角色生命、肖像與戰鬥旗標更新肖像動畫，回傳呈現更新狀態；build/wiz8.asm:552681。
+5994c0	非公式	-	portrait_draw		讀角色裝備、職業、姓名與狀態後繪製肖像及圖示文字；build/wiz8.asm:553008。
+59a180	非公式	-	action_icon_frame		把動作種類、攻擊方式與法術領域映射成動作圖示影格索引，供繪圖端使用；build/wiz8.asm:553879、build/wiz8.asm:555593。
+59a3a0	非公式	-	resource_bar_lengths		把目前與最大 HP、體力及 SP 比例縮放為 45 像素條長，寫顯示快取並要求重繪；build/wiz8.asm:553985、build/wiz8.asm:554073。
+59a540	非公式	-	resource_bars_draw		依顯示快取的資源條長度畫線、裁切及輸出目前 HP 文字；build/wiz8.asm:554431。
+59ac40	非公式	-	portrait_damage_animation		累加已給定的傷害顯示量並以二選一亂數挑 0x90 或 0x91 肖像動畫影格，未計算實際 HP 傷害；build/wiz8.asm:554660。
+59b1a0	非公式	-	portrait_animation_tick		以 100 毫秒期限推進肖像受傷及其他動畫計數，完成後清顯示旗標；build/wiz8.asm:555109。
+59b270	非公式	-	portrait_animation_reset		清空角色肖像動畫旗標、計數與顯示期限，未更改角色規則數值；build/wiz8.asm:555153。
+59b2d0	非公式	-	portrait_visibility_update		依角色存在及肖像動畫狀態切換肖像區顯示與互動控制項；build/wiz8.asm:555217。
+59b390	非公式	-	action_popup_timeout		檢查選中角色與動作彈出框狀態並設定 600 毫秒關閉期限；build/wiz8.asm:555297。
+59b4c0	非公式	-	action_icon_animation		依角色動作及 100 毫秒動畫計時更新隊伍工作區 +0x9c/+0xa0 圖示影格，後續只送繪圖；build/wiz8.asm:555428、build/wiz8.asm:555593。
+59b720	非公式	-	action_icons_draw		讀隊伍工作區 +0x9c/+0xa0 的影格索引並繪製各角色動作與目標圖示；build/wiz8.asm:555593。
+59bb70	非公式	-	party_slot_controls		讀角色資格與副表 +0x103 切換角色槽控制項是否顯示；build/wiz8.asm:555870。
+59bbd0	非公式	-	party_slot_redraw		僅在角色槽存在時要求該控制項重繪；build/wiz8.asm:555905。
+59bc10	非公式	-	party_slot_panel_update		依角色資格與副表 +0x103 開關角色槽按鈕，最後更新其父面板；build/wiz8.asm:555950。
+59c080	非公式	-	status_icon_update		讀角色 +0xb01/+0xb05 狀態碼搬到圖示控制項 +0xbc/+0xb8，並顯示或隱藏控制項；build/wiz8.asm:556361。
+59cc40	非公式	-	item_panel_open		恢復物品使用面板的選擇、切換模式按鈕並捲到既有選中清單列；build/wiz8.asm:557296。
+59cf50	非公式	-	item_panel_update		更新面板控制項後驗證選中物品並呼叫既有動作提交器，未在此計算物品效果或消耗；build/wiz8.asm:557588。
+59d180	非公式	-	item_action_submit		驗證選中角色與物品後把角色及物品指標交給既有動作提交器，沒有新的數值計算；build/wiz8.asm:557741。
+59d230	非公式	-	usable_item_list_build		清選擇顯示欄位後遍歷背包或隊伍物品，逐項送清單列產生器；build/wiz8.asm:557872。
+59d450	非公式	-	usable_item_list_row		依物品可用性與現有數量格式化清單文字、設定色彩並加入訊息框，沒有生成數量；build/wiz8.asm:558117。
+59d6b0	非公式	-	usable_item_list_filter		依清單篩選旗標、角色與物品已有屬性回傳是否隱藏該物品列；build/wiz8.asm:558222、build/wiz8.asm:558117。
+59d880	非公式	-	item_detail_popup		建立帶角色指標的物品詳情視窗，設定大小與完成回呼後加入 UI；build/wiz8.asm:558365。
+59ddc0	非公式	-	item_list_select		處理清單列點選、確認提示與物品選取，將既有物品資料交給目標選擇流程；build/wiz8.asm:558847。
+59dfa0	非公式	-	selected_item_display		讀物品圖示與堆疊或使用次數，寫選中物品控制項並格式化數量文字；build/wiz8.asm:559058。
+59f490	非公式	-	spell_panel_character		更換施法面板的角色資料來源，重設選擇並依既有 SP 與法術領域刷新控制項；build/wiz8.asm:560616。
+5a0110	排除	-	spell_panel_select		依選中法術領域切換施法面板頁籤並定位法術列，未計算施法效果；子樹 59f0e0 建法術面板 widget（4f4250、4f3dd0、5618f0、426250，至 VideoObjectManager 斷言）；回傳值為玩家在面板的選擇，經 58a200 傳成 589a80 回傳，當 case 輸入（使用者輸入）。由非公式改排除供位址樁（589a80 票；cc 判斷）；build/wiz8.asm:561517。
+5a1150	公式	D4	spell_affordable_power	spellAffordablePowerNode	讀角色 +0xb45+4*r 的目前 SP、法術 +0x49 基本消耗及 +0x133 領域，整除後限制到 0–7，寫面板 +0x110 作可選施法強度上限及 +0x100/+0x10c 選中法術資訊；build/wiz8.asm:562863、build/wiz8.asm:562885。
+5a1370	公式	D4	spell_cast_power_submit	spellCastPowerSubmitNode	不確定：可能屬 UI 提交包裝，但讀面板 +0xf8/+0x100/+0x108，將零起算強度加一後交施法動作，間接寫角色副表 +0x75 法術與 +0x79 強度，保留其規則輸入轉換；build/wiz8.asm:563078、build/wiz8.asm:336313、build/wiz8.asm:336315。
+5a19b0	非公式	-	combat_progress_draw		把 UI 百分比 +0x2dc 換算成畫面裁切座標，依當前隊伍動作選擇圖示與提示文字；build/wiz8.asm:563651。
+5a1c40	非公式	-	combat_progress_animation		依動作模式設定 50 或 90 毫秒動畫期限，推進十二影格並繪製進度游標與提示文字；build/wiz8.asm:563768。

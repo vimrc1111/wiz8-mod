@@ -1,0 +1,27 @@
+call	524400	monsterBuffShorten	怪物第 5 筆增益持續值大於本次持續則扣減，否則清空該筆、以 4acd80（排除，位址樁）停止效果 0x15 並跑 50e8c0 重建；本節點以 sdrCancelMonsterBuff 原生重現（mcaWorld.rebuild 即 50e8c0）。
+call	536150	sourceRecordInit	初始化 0x34 位元組的堆疊來源記錄，只當作 523c00 的第 5 參數位址傳下；523c00 為位址樁不讀其內容，本節點不重現內容。
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	10	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	20	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	24	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffcc	無關	堆疊位移（區域來源記錄 0x34 位元組），非遊戲資料或表
+data	614a3c	無關	怪物抵抗通知格式字串位址，只當 58aad0 第 2 參數傳下（case 記錄）
+data	6175c0	無關	角色抵抗通知格式字串位址，交 590950 格式化；calc 於執行時從 exe 讀取
+data	61e2c4	無關	4e5840 斷言用原始檔名字串位址，非遊戲資料
+data	61e59a	resistNoticeTextId	u16 文字編號（861），索引 0x68c09c 文字表取通知文字；calc 於執行時從 exe 讀取
+data	685174	characterRecordBase	角色記錄陣列基底，步距 0x1862
+data	68c09c	textTable	文字指標表基底
+field	eax+edx*2+0xaa9	characterBuff5Duration	角色第 5 筆增益持續值 u32；非零時以 523b30 扣減並由本次持續減去。case 輸入。
+field	ebp+0x0	targetType	目標記錄型別 u32：1 角色走角色增益分支；3 交 523c00；其他交 522fe0。case 輸入。
+field	ebp+0x4	targetCharacterIndex	目標隊伍槽 i32：type 1 為 0..7；怪物目標（type 3）由呼叫端 543fc1／544184／544200 傳 −1，只在 type 1 與非 3 型分支當索引。case 輸入（signed，boundary 含 type 3 −1 列）。
+field	ebp+0x8	targetMonsterId	目標怪物 id u32，以 4e5840 找怪物記錄。case 輸入。
+field	edi+0xeb	monsterBuff5Duration	怪物第 5 筆增益持續值 u32；非零時以 524400 扣減並由本次持續減去。case 輸入與輸出。
+field	edx+ecx*4	noticeText	文字表第 861 項指標。case 輸入（指向 case 文字）。
+call	590950	characterNotice	已核實 build/wiz8.asm:541048–541070：格式化文字起於區域基底 +4；後綴依其首字元選 689b34 或 60cc74，以 wcscat 寫入基底 +0 的另一個兩字元區域，未見初始化。541081–541091：後綴區域與格式文字分別為 58aad0 第 4、5 參數。541095–541102：姓名長度只依格式文字首兩字元加一或二。舊 sdrNotice 將後綴接在格式文字後，單一 apostrophe 且後綴首字元為 s 時，誤把後綴首字元當作格式文字第二字元。
+data	6175c2	noticeFormatFixture	人工 UTF-16 格式欄位 noticeFmt0／noticeFmt1；既有 boundary 保留 %s 轉換與原有尾文字，新增 32 列覆蓋單一 apostrophe（8 槽、姓名長度 0..3）。random 新增格式域為 apostrophe、NUL，使原有 400 列中的角色通知走該情境；所有既有 random 範圍與 seed 保留。欄位為人工測試語法，未複製 exe 字串或資料表。
+data	689b34	noticeSuffixFixture	後綴是可變全域資料，離線載入落在未初始化資料區而為空；僅補單一 apostrophe 格式仍無法使舊模型差分。新增人工 suffix0 輸入：既有 boundary 保留 0；新增 boundary 與 random 設為字元 s（115），後續 NUL 保持 fixture 初始零，以驗證長度不得讀到後綴。不複製原版資料。
+data	6175c0	parentNoticeDefaults	G2b：noticeFmt0、noticeFmt1、suffix0 僅屬 551eb0 自己的 case；sdrParentFields 排除三欄，551ba0 與 54dbe0 共用 sdrParentInput，543270、5560a0 經 sirIn 自動沿用，父節點名稱、順序與 arity 回到 G2 前。出處為 314bbd8^ 的 n_551eb0.go：sdrSpec 未覆寫這三處，sdrNotice 的 sdrWide 經 mcaWorld.u16／mstWorld.u8 讀原始映像，未映射區域為零。預設沿用同一讀取規則，執行時取原版格式首兩字元（原有註解 %s! 的 %、s）及後綴首字元（未映射區域的 NUL）；後續字元仍照原有規則讀取。未從 exe 讀表寫入 repo，亦未新增父 case 輸入。

@@ -1,0 +1,5 @@
+data	4	無關	參數堆疊槽的位移常數被列為資料引用，不是規則資料或全域讀取
+data	68516c	itemDefinitions	物品定義庫基址；索引以 269-byte 記錄定位，重量由所選記錄讀取（notes/re/formulas.md:9；build/wiz8.asm:384604）
+field	edx+0x0	itemIndex	物品實例的 i32 定義索引；-1 表示空物品並回傳零（0x51bfd4..0x51bfdb）
+field	edx+0x4	quantity	物品實例的 u8 堆疊數量；零按單件計算（0x51bffd..0x51c019）
+field	esi+ecx*1+0x8a	unitWeight	所選物品定義 +0x8a 的 u16 單件重量；記錄步長 269，乘以非零數量得到整疊重量（0x51bfdd..0x51bff3）

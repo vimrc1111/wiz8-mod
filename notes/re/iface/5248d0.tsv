@@ -1,0 +1,17 @@
+call	4e5620	monsterEntryAt	怪物列表第 i 筆（i 小於 5e2c70 回的數量）；case 原樣執行，calc 取 list 的第 i 筆
+call	523330	characterConditionRemove	對成員（參數 1）、狀態槽 0x13（參數 2）、通知旗標 1 解除狀態；已 D4，case 以位址樁記錄最後一次參數與呼叫次數
+call	5e2c70	listCount	容器（參數）的元素數，空指標回 0；case 原樣執行，calc 以 list 指標與 count 輸入重現
+data	683fad	monsterList	怪物列表容器指標，+8 為元素數；0 表示尚未建立
+data	685174	partyCharacterBase	角色記錄陣列基址（每人 0x1862 bytes）
+data	686a70	dependencySourceTag	來源記錄的標記值，記錄第一欄等於它才算本次來源
+data	ffffffffffffffff	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移…被分析為資料引用，非遊戲資料或表
+field	ecx+0x0	dependencySourceId	來源物件 +0 的編號，與來源記錄第二欄比對
+field	edx+0x0	dependencySourceId	同上，經暫存器重取參數指標後讀 +0
+field	ecx+0x24c	dependencyFlags	來源物件 +0x24c 的位元旗標，bit0 對應怪物／被動依賴、bit1 對應狀態 0x13 依賴
+field	eax+ecx*1+0xa01	characterConditionSlot	角色 +0xa01 起每槽 4 bytes 的狀態字，只讀槽 0x13（+0xa4d），非零才掃描該成員
+field	esi+edx*1+0x4	characterPresent	角色 +4 的在場位元組，非零才通知解除狀態
+field	eax+0x0	dependencyRecordTag	依賴記錄（角色 +0x1817 起，每種依賴 0x11 bytes）第一欄，與 686a70 比對並清零
+field	eax+0x4	dependencyRecordSource	依賴記錄第二欄，與來源編號比對並清零
+field	eax+0x8	dependencyRecordFlag	依賴記錄第三欄（1 byte），比對成功時清零
+field	eax+0x344	monsterDependencyLink	怪物 +0x344 關聯編號，等於來源編號時改寫為 0xffffffff

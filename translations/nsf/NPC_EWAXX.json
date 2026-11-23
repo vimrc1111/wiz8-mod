@@ -1,0 +1,677 @@
+[
+ {
+  "id": 7,
+  "src_sha256": "208cc9e2eba8fd41c9c4d47b1a900195807f078ff81b926735dc2f6b5f30bf87",
+  "zh": "EWAXX 未配備投幣口。"
+ },
+ {
+  "id": 8,
+  "src_sha256": "66acf2a0254fc16daac78ff4b5c9d86d649f7cd4a2eeac0c9571564936b4d7ca",
+  "zh": "EWAXX 偵測到入侵者。"
+ },
+ {
+  "id": 9,
+  "src_sha256": "9b19b5975a9c10652a0c545644b0a3e4d579bb93232371032bfac4afdce12223",
+  "zh": "EWAXX 攜帶版無法使用。"
+ },
+ {
+  "id": 12,
+  "src_sha256": "f298987b86571c10e5f77f87275af323a592ad50ff9270f7a17656311adc10ce",
+  "zh": "謝謝。物品已加入物品欄。"
+ },
+ {
+  "id": 13,
+  "src_sha256": "fe633a1ea69bf764874691f85005107a5b6f3203442295eb4b238a9d2d38db55",
+  "zh": "EWAXX 僅配備資訊交換功能。"
+ },
+ {
+  "id": 18,
+  "src_sha256": "d5d5f48a1ce2927ae3bd49e499b8797a55c51ef2073069ac89ab435de4c36e74",
+  "zh": "呼叫保全中……"
+ },
+ {
+  "id": 19,
+  "src_sha256": "9b754d9cf9d432b48d2f1a59154a66040bfe22f112c680556cf0874de9d61587",
+  "zh": "竊取企圖失敗。"
+ },
+ {
+  "id": 20,
+  "src_sha256": "1d1694ede47abda1d831d828a365453aee03d115e8446141c961d754f238af3d",
+  "zh": "保全已得知你們的所在。命令：見面即殺。"
+ },
+ {
+  "id": 21,
+  "src_sha256": "99e6379b343c5fcfd6e0fc5e3f1569a79a30c9e0c8caa65bf6d4022cab698ef0",
+  "zh": "EWAXX 未配備 ATM 插槽。"
+ },
+ {
+  "id": 22,
+  "src_sha256": "683f8cc24a2946fcb521ddc2d1d8f1aba6a42d2e02ae5098d55c9978c36e8dab",
+  "zh": "無法處理該請求。"
+ },
+ {
+  "id": 23,
+  "src_sha256": "c8c6a33ddde9a4bfc6ac0abdb915b58d37d115d69395ffa7e7fc6a3854d7e954",
+  "zh": "網路錯誤。封包遺失。"
+ },
+ {
+  "id": 24,
+  "src_sha256": "825fb48162f4849272622bc66119fa64fd39c9ec5df09dd3422d5bddd8bef0a3",
+  "zh": "存取受限。"
+ },
+ {
+  "id": 25,
+  "src_sha256": "442de114c82fba6ee6a5ce52eb8aa50b32dae9f2434b764f1681d4a22ac78d1e",
+  "zh": "自快取讀取……"
+ },
+ {
+  "id": 26,
+  "src_sha256": "67820b1f2247af74b5223bf2e6af4f903d36343a156734855ac7bb0a2df102ba",
+  "zh": "輸入錯誤。檔案請求上限為兩筆。"
+ },
+ {
+  "id": 27,
+  "src_sha256": "8a60dc91d5167676120c5efe9724201c9b913c307994e49db7aa0f90c67b08b0",
+  "zh": "第二項："
+ },
+ {
+  "id": 28,
+  "src_sha256": "df46ad233fa33488631f8b6961617eb4e3063d47f61ea918a39c5a55519e316d",
+  "zh": "正在加入隨機冷知識資料庫。"
+ },
+ {
+  "id": 29,
+  "src_sha256": "b7f8f481e27675ef6b9f49b335d1a42b8e7801f351dc6670d7da711bc890903e",
+  "zh": "所請求的資訊無法取得。"
+ },
+ {
+  "id": 30,
+  "src_sha256": "b9b062d6a855773043b966d96c46a00d34481edb5932699855ffb5d07e357545",
+  "zh": "進一步的資訊無法取得。"
+ },
+ {
+  "id": 31,
+  "src_sha256": "628f510c776bb2b75130b56f959cbd70536d8045277f724d3d0a7fbb4af58de6",
+  "zh": "處理中……\n 分類：行星\n 生命體： Higardi 、 Rapax 、 Rynjin\n Trynnie 、 T'Rang 、神祇（ Deity ）、 Helazoid 。\n 目前任務：多項。\n 請以名稱查詢任務。\n"
+ },
+ {
+  "id": 32,
+  "src_sha256": "a5f87126dd2b070c935fea89c10d676b3122cf7b76bb7372a0811b0e982dfef7",
+  "zh": "處理中……\n 分類：城市\n 生命體： Higardi 、 Mook\n 目前任務：調查中。 Dark Savant 出沒。已確認。"
+ },
+ {
+  "id": 33,
+  "src_sha256": "b73db38559d0887a990a496a109db3414a87c10bf08e89859887eeec5eb0104c",
+  "zh": "處理中……\n 分類：城市，地下\n 生命體： Rynjin 。偵測到 Rapax 。\n 目前任務： Helazoid 回收、黑盒子回收。\n 備註：該生物具敵意。偵測請使用嗅覺感官。"
+ },
+ {
+  "id": 34,
+  "src_sha256": "8ca3486bb75781aba24fb88339afa34c71ac3edfa7ee2bff0d2430dc284f3134",
+  "zh": "處理中……\n 分類：城市，樹冠層\n 生命體： Trynnie 、 Rattkin\n 目前任務： Helm of Serenity 。傳聞使用 Destinae Dominus 必須持有此物。\n 備註： Trynnie 智商偏低。"
+ },
+ {
+  "id": 35,
+  "src_sha256": "1a59860ae475e8922bde7197999a170ae7b60bec089a7262cafed144b299c299",
+  "zh": "處理中……\n 分類：城市，要塞\n 生命體： Rapax\n 目前任務：調查中。 Dark Savant 與 Rapax 之間可能有關聯。"
+ },
+ {
+  "id": 36,
+  "src_sha256": "b8584d5dcd3b6c3a07df6baf67d6152b41280bbad2fcd6556ce86a7ee4a04b42",
+  "zh": "備註： Rapax 崇拜一位名為 Al-Sedexus 的女魔。在 Arnika 的 Monastery 中發現的物品，使這個傳說更為可信。極度敵視外人的種族。進入城堡大部分區域必須是 Templar Rapax 的成員。"
+ },
+ {
+  "id": 37,
+  "src_sha256": "793f3f312b03b82bd64800c4f09185d0f989a25d5e1c751b584b26a26eab10a5",
+  "zh": "處理中……\n 分類：地形，熔岩\n 生命體： Rapax\n 目前任務：無。\n 備註：可能是 Al-Sedexus 的所在地。先前任務指出此區域有濃烈的香水味。"
+ },
+ {
+  "id": 38,
+  "src_sha256": "ae73512514785b6f19f6c9c8c296f0b8b5ac0da941085099c25191815a2693c6",
+  "zh": "處理中……\n 分類：要塞\n 生命體： Umpani\n 目前任務：機密。\n 備註：機密。"
+ },
+ {
+  "id": 39,
+  "src_sha256": "224e5753a02904d695350f08ae3b8101745bac47f90f319073759ca4518b7a76",
+  "zh": "處理中……\n 分類：要塞\n 生命體： T'Rang\n 目前任務：調查中。 Higardi 竊賊 Mad Marten 的舊要塞。"
+ },
+ {
+  "id": 40,
+  "src_sha256": "36a9a91a4a2c09b99cd7efdd2d79b71b293069a7bc818983791016cb0b906914",
+  "zh": "備註：先前任務指出 T'Rang 母艦不在此處。懷疑 T'Rang 正將幼體（ Youngers ）運送至本星球，以投入族群繁衍與防禦行動。必須消滅傳送裝置。"
+ },
+ {
+  "id": 41,
+  "src_sha256": "02c6cd108cccd3a3024f7f627135ab9b27fe2213d8dbb21bde7a25463ebb0fa8",
+  "zh": "處理中……\n 分類：地形\n 生命體：無\n 目前任務：調查中。\n 備註：先前任務指出洞穴有一處假入口。尚未找到入口。"
+ },
+ {
+  "id": 42,
+  "src_sha256": "a4af5204f9bea6c701c9dd21622c42ad6bd206e7a83596e8e12a5d1e4d6b7143",
+  "zh": "處理中……\n 分類：地形\n 生命體：無\n 目前任務：無。\n 備註：當地宗教慶典的舉辦地。據信是通往 Cosmic Circle 的傳送點。"
+ },
+ {
+  "id": 43,
+  "src_sha256": "e8cbfda2c3b792b307d782773c028502e7d3d835d669c2731992f5fabe662152",
+  "zh": "當地人訊問結果顯示，啟動傳送需要三件物品：混沌、生命與知識。未來任務將進行調查。"
+ },
+ {
+  "id": 44,
+  "src_sha256": "d5740e930d7e141b2dd73373fb18260cb6b173b2b5718c9796ba2f35439c3ce0",
+  "zh": "處理中……\n 分類：神話\n 生命體：神祇、神話\n 目前任務：無\n 備註：傳說中 Cosmic Lords 與 Phoonzang 的故鄉。"
+ },
+ {
+  "id": 46,
+  "src_sha256": "7d178b76792d41cbfdb43602f4467d1dd6348997b240c34eb5087c8ceaeb80df",
+  "zh": "顯示資料……\n 分類： Dominus ，原住種族\n 描述：友善、聰明。\n 盟友：無。與 Helazoid 有淵源。\n 敵人：無。\n 備註：曾持有 Destinae Dominus 。"
+ },
+ {
+  "id": 47,
+  "src_sha256": "26d48cb5c8ad1f315ce03086eeb6632da224b1c4e56e2691c31ca3e95b863120",
+  "zh": "顯示資料……\n 分類： Dominus ，原住種族\n 描述：友善、{{Intelligence}}偏低、仰賴{{Magic}}與自然。盟友：無。\n 敵人： Rapax 、 Rynjin 。\n 備註：信使傳說。可能與 Marten 有關。"
+ },
+ {
+  "id": 48,
+  "src_sha256": "93e8cc0b32ed43b0c69272d4aace0dc82cdd28fc6609ea22d028f512cabdfedb",
+  "zh": "顯示資料……\n 分類： Dominus ，原住種族\n 描述：敵意強、好鬥。\n 戰鬥技巧高度發達。盟友：無。可能與 Savant 有關。\n 敵人：所有人。斥候（ Recon ）查出其消滅所有生命體、以奪取行星控制權的計畫。"
+ },
+ {
+  "id": 49,
+  "src_sha256": "c2116e0aff0f375e856bbc6df69d82af21250e48c392eec7ac32b1393c56dab0",
+  "zh": "顯示資料……\n 分類：機動 IUF 艦隊\n 描述：不適用。\n 盟友：請見各別情報檔案。\n 敵人： Dark Savant 、 T'Rang\n 備註：請見各單位檔案。"
+ },
+ {
+  "id": 50,
+  "src_sha256": "3313ccb8486111bf3856ffbf8d960a4a6dd6d6ca7188b31b1f8ef828c4447571",
+  "zh": "顯示資料……\n 分類：***摧毀***\n 描述：敵意強、{{Intelligence}}低下的種族，妄想推翻 IUF 的宇宙霸權。\n 備註：摧毀了 Guardia 上的 Ukpyr 基地。過去可能與 Dark Savant 有牽連。"
+ },
+ {
+  "id": 51,
+  "src_sha256": "7b79c3943637436d949646f9d614dd7a5ad30ff3d49f5ea50590d76c24ca99cb",
+  "zh": "違反所有已知的宇宙條約。違反和平協定。****見面即摧毀****"
+ },
+ {
+  "id": 52,
+  "src_sha256": "7f7577ea61dcc8e773b130b293096b7bfb31b5cb2114a5c8f946382f1a57d748",
+  "zh": "顯示資料……\n 分類： Guardia ，原住種族\n 描述：友善、{{Intelligence}}極高。\n 盟友： Higardi\n 敵人：不明\n"
+ },
+ {
+  "id": 53,
+  "src_sha256": "e255609e4394e85dd18d30e916e8d2b332e49678cc784c4c45621bad25ab3eec",
+  "zh": "備註： Guardia 上的最後一次接觸，顯示其與 Higardi 種族有關聯。消息來源證實， Dominus 領空曾發現 Helazoid 的船艦，但並未降落。"
+ },
+ {
+  "id": 54,
+  "src_sha256": "76f11b38236d75777ea05ce0086e1ef0dd17160aaca11296271d7f8144897b91",
+  "zh": "顯示資料……\n 分類： Dominus ，原住種族\n 描述：聰明、兩棲。\n 盟友：無\n 備註：目前正進行任務，以增進對該種族的了解。"
+ },
+ {
+  "id": 55,
+  "src_sha256": "a4585aff82a9b9d184dec0bbc9c5f11ea035cc49f792662ef7b86373b679f8e7",
+  "zh": "顯示資料……\n 分類： Guardia ，原住種族\n 描述：善於操弄、狡猾。\n 盟友：不詳\n 敵人： Dane 、 Munk 、 Gorn 、 Helazoid 。\n 備註：**更新** 於 Dominus 發現其蹤跡。"
+ },
+ {
+  "id": 56,
+  "src_sha256": "6525051d470215ad00189e1a1c1f7742569d873b2b6688388725ddd65e680732",
+  "zh": "顯示資料……\n 分類：恆星 XJ746 ，原住種族\n 描述：聰明，可能具有超自然天賦。\n 盟友：不詳。\n 敵人：不詳。"
+ },
+ {
+  "id": 57,
+  "src_sha256": "31b9ce8025a362e01abcdaec47b0005aae135dce25540b610bb15adf19d22879",
+  "zh": "備註：調查任務顯示， Mook 是帶著一件名為 Chaos Moliri 的裝置抵達 Dominus 。該裝置據信與 Astral Dominae 有關。"
+ },
+ {
+  "id": 58,
+  "src_sha256": "822638bd6aa5836ac2bef7387d7d68fc7aceb2e483050a50062d52e5f70dde5e",
+  "zh": "顯示資料……\n 分類：神祇， Cosmic Lords ， Phoonzang 描述：不明。至今尚無與其接觸的紀錄。盟友：不詳\n 敵人： Dark Savant\n 備註：在 Dominus 上亦有同名之稱。調查持續中。"
+ },
+ {
+  "id": 59,
+  "src_sha256": "92568659c5529e3496584297d907aca614eff474c6644a40a0036f63424c6f01",
+  "zh": "顯示資料……\n 分類：已結束任務，失去 Guardia 。\n 描述：失敗。 Yamo 將軍敗於 T'Rang 部隊之手。 Astral Dominae 落入 Dark Savant 手中。\n 後續： Dominus 。"
+ },
+ {
+  "id": 60,
+  "src_sha256": "41216f3d6b2de5f33911b49880655f5b6f4f8a3a2ae37f04190c6ed18fcb39b6",
+  "zh": "機密檔案……\n 分類：不明。\n 描述：好戰。{{Intelligence}}極高，擅長{{Magic}}。已培育出名為「 Troopers 」的守衛。\n 盟友：不明。可能與 Rapax 有關。可能與 Vi Domina 有關。"
+ },
+ {
+  "id": 61,
+  "src_sha256": "98e7518aa37467382cbb1f09209485c1afc5747a0fe10ec5e1570c56725495ee",
+  "zh": "敵人：所有已知種族。\n 備註： IUF 部隊最初是在 Guardia 星上發現 Dark Savant 。他在一場慘烈的戰爭（ war ）中奪得 Astral Dominae 。 IUF 艦艇曾追蹤 Black Ship 至 Dominus 。他最後已知的目標，是推翻 Cosmic Lords 並取得宇宙霸權。"
+ },
+ {
+  "id": 62,
+  "src_sha256": "59b4ce46644b41eb74d7c6ead475b96eb5e3f81119e028513ee8fee8b011ddd1",
+  "zh": "機密檔案……\n 分類：不明\n 描述：友善、{{Intelligence}}極高。獨立行事。\n 盟友：過去與 Dark Savant 有聯繫。\n 敵人：不詳。"
+ },
+ {
+  "id": 63,
+  "src_sha256": "88e10600cbf692b6803a99d656dca2cbccc69f120448b0b1871b699a5ea51948",
+  "zh": "備註：已證實的報告指出， Vi Domina 曾與 Dark Savant 同行。在發現 Astral Dominae 之後兩人發生衝突。傳聞是 Cosmic Lords 的孩子，可能是 Phoonzang 之子。"
+ },
+ {
+  "id": 64,
+  "src_sha256": "59b4ce46644b41eb74d7c6ead475b96eb5e3f81119e028513ee8fee8b011ddd1",
+  "zh": "機密檔案……\n 分類：不明\n 描述：友善、{{Intelligence}}極高。獨立行事。\n 盟友：過去與 Dark Savant 有聯繫。\n 敵人：不詳。"
+ },
+ {
+  "id": 65,
+  "src_sha256": "88e10600cbf692b6803a99d656dca2cbccc69f120448b0b1871b699a5ea51948",
+  "zh": "備註：已證實的報告指出， Vi Domina 曾與 Dark Savant 同行。在發現 Astral Dominae 之後兩人發生衝突。傳聞是 Cosmic Lords 的孩子，可能是 Phoonzang 之子。"
+ },
+ {
+  "id": 66,
+  "src_sha256": "60dc7c5c584dbadd5eeb790fd0f1810060d83cf21823d8632c8c29620b567730",
+  "zh": "機密檔案……\n 分類：神祇\n 描述： Cosmic Lord 。更多資訊無法取得。\n 盟友：不明。\n 敵人： Dark Savant 。\n 備註：調查持續中。"
+ },
+ {
+  "id": 67,
+  "src_sha256": "3cebe02310893d017d4a9bacf3556e2377d071cd8f9ab0a0ad80c20d2488aa9a",
+  "zh": "機密檔案……\n 分類： Dominus ，原住民。 Higardi 。\n 描述：狡猾，據信已死。\n 盟友： Higardi {{Rogue}}、 Trynnie\n 敵人： Higardi 、守法者。"
+ },
+ {
+  "id": 68,
+  "src_sha256": "ee101b0ccd332397db5c4804415136397e7d55e32f27f7dad30810dfe2831f83",
+  "zh": "備註：因從 Higardi 手中竊取 Destinae Dominus 遭到通緝。經由 Trynton 失蹤，在 Marten's Bluff （現為 T'Rang 據點）建造要塞。 HLL 部隊未能攻入該處。據信 Marten 已離開該處前往「埋骨」之地，目前下落不明。"
+ },
+ {
+  "id": 69,
+  "src_sha256": "6085545401882b9eda185562131ef29ac98bb5acedabb577bd9812bc04c31fd7",
+  "zh": "機密檔案……\n 分類：惡魔\n 描述：機密。\n 盟友：不明。\n 敵人：不明。"
+ },
+ {
+  "id": 70,
+  "src_sha256": "3199150679574bc93886654015942da3a284711400fb8aa53ed934ab2f702380",
+  "zh": "備註：與 Cosmic Lords 淵源深遠，據信是唯一親身了解 Cosmic Lords 的生物。兩者關係為何，尚不確定。"
+ },
+ {
+  "id": 71,
+  "src_sha256": "35952ec516d0616858a07e3a6efa800b04dc555fa686061f98edf066aa22432a",
+  "zh": "機密檔案……\n 分類：將軍， Umpani 。\n 描述：領導者，{{Intelligence}}極高。\n 備註： Yamo 將軍於 Guardia 戰役中陣亡後接掌領導權。"
+ },
+ {
+  "id": 72,
+  "src_sha256": "ec77b6c35c78589db5b5f3c296a41b438973235b78ab9104739c4e4dff4f59e1",
+  "zh": "機密檔案……\n 分類： Rapax King\n 描述：聰明、極具攻擊性。\n 備註：斥候回報， Rapax King 目前不在城堡中。"
+ },
+ {
+  "id": 73,
+  "src_sha256": "1ff4dcc79a5b9f5d5e0746b7725894abddd8c8f9f3bc96b1ecee304e98be1e61",
+  "zh": "機密檔案……\n 分類： Rapax Queen\n 描述：無法取得。\n 備註：無可用資料。"
+ },
+ {
+  "id": 74,
+  "src_sha256": "c62a1ecff939ae13a1f8326db6ed692ad928a3cf4b40fe81dbb21779401c9311",
+  "zh": "機密檔案……\n 分類： Rapax Prince 。\n 描述：極具攻擊性。\n 備註：無可用資料。"
+ },
+ {
+  "id": 75,
+  "src_sha256": "1209cb91962f4edfdfbb13bad860698803cd505958b5caa3132c9347e1e14ea4",
+  "zh": "機密檔案……\n 分類：不明。\n 描述：傳聞中 Rapax 的女魔。\n 備註：可能位於 Rapax Rift 。斥候在修道院發現防禦攻擊用的{{Weaponry}}。"
+ },
+ {
+  "id": 76,
+  "src_sha256": "5e272a0b334794fe091d707d6ff6820fd4bc2010873a65f4274b2d45a47095f9",
+  "zh": "機密檔案……\n 分類： T'Rang Queen\n 描述：蟲族，{{Magic}}能力極強。\n 備註：據信在 Dominus 的 Marten's Bluff 。想必戒備森嚴。"
+ },
+ {
+  "id": 77,
+  "src_sha256": "19bed6e56ac01c60d73b721355b74073db1e9566b58c468b7db4bee86bb176cc",
+  "zh": "機密檔案……\n 分類： Rattkin ， Guardia 原住民。\n 描述：極度聰明，不可信任。\n 備註： Razuka 之首。 Trynnie 曾在 Dominus 上發現他。來此目的據信是探勘。"
+ },
+ {
+  "id": 78,
+  "src_sha256": "fed21bd04e7e17f1539e787b73363a366177f3590d88fb07f7efada7ae5b4a4c",
+  "zh": "來自關鍵任務檔案……\n 分類：宇宙裝置\n 描述：生命。由 Cosmic Lords 創造。\n 備註：先前由 Dark Savant 持有。 IUF 部隊必須取得。進入 Cosmic Circle 所需。"
+ },
+ {
+  "id": 79,
+  "src_sha256": "26f066535c8d2ea9515e1ac13f4d25877c3fec9e0f1f4922d6bffb460019c16c",
+  "zh": "來自關鍵任務檔案……\n 分類：宇宙裝置\n 描述：知識。由 Cosmic Lords 創造。\n 備註：原本由 Higardi 持有，被 Marten 偷走。"
+ },
+ {
+  "id": 80,
+  "src_sha256": "7156e0e5398ea4e84fafb21ea43bad74df1eabb9b2936fc520aea8c8e52f7751",
+  "zh": "重要： Trynnie 消息來源指出，沒有 Helm of Serenity 不得碰觸該裝置。據稱會造成永久瘋狂。進入 Cosmic Circle 所需。"
+ },
+ {
+  "id": 81,
+  "src_sha256": "6f83a2ff384ef68ef916dedb0899f13c703aee8e888d0f2e46f5215e2642a27f",
+  "zh": "來自關鍵任務檔案……\n 分類：宇宙裝置\n 描述：混沌、變化。由 Cosmic Lords 創造。\n 備註：原本由 Mook 持有。裝置上的地圖將他們引導至 Dominus 。進入 Cosmic Circle 所需。"
+ },
+ {
+  "id": 82,
+  "src_sha256": "5fd8cca7d8f0bf5a69713766b821a75d884b0073e0c2e075ef2299fbda223f2e",
+  "zh": "來自關鍵任務檔案……\n 分類：宇宙裝置\n 描述：Cosmic Lords 用來書寫宇宙法則的裝置，凡以它寫下的，都會成真。可能只是神話。"
+ },
+ {
+  "id": 83,
+  "src_sha256": "b211ad429f526d21a64876f0ffa05f0063d477abee75a2518daa10fa21943ad6",
+  "zh": "備註：請參考 Bela ，據稱曾見過該裝置。對此生物的調查持續中。"
+ },
+ {
+  "id": 84,
+  "src_sha256": "bec1e77439b3dddaeadd98a196b666648fc825fe6d594858c1661868b3fc9d92",
+  "zh": "來自關鍵任務檔案……\n 分類：事件， Dominus 。\n 描述：調查顯示「 Ascension 」可通往 Cosmic Circle 的入口。\n 備註：調查持續中。"
+ },
+ {
+  "id": 85,
+  "src_sha256": "debf7d9b40fc062ab024c179f3577011c51c0a6b14c762e7733111cd25e14d69",
+  "zh": "謠言未經授權，已從系統清除。"
+ },
+ {
+  "id": 86,
+  "src_sha256": "9d543c9af5c75321eb2e925c71a65b54f217f79247786fa1844da2fa7cf3ac96",
+  "zh": "EWAXX 4.2 版 無線。"
+ },
+ {
+  "id": 87,
+  "src_sha256": "d9ba707de701dff8d252b8258dd365740e3a48f10d986d34e06e6a0718c07017",
+  "zh": "概念：命運（ destiny ）。\n 分析：因果。"
+ },
+ {
+  "id": 88,
+  "src_sha256": "118e6dafbb4ff41352caa5cc4eca2bb5ee64459fc31530204e066aa806a75333",
+  "zh": "分析：使用者缺乏創意。"
+ },
+ {
+  "id": 90,
+  "src_sha256": "bd5b64f617bf395942dde8be151e4a0788ca092094f2d78788e91e9d8f755d4b",
+  "zh": "歡迎使用 EWAXX 4.2 。"
+ },
+ {
+  "id": 91,
+  "src_sha256": "b13cbd21b617aeffe6501381535cfb8bd84026d87090181eaf5d806d6dea2f6b",
+  "zh": "使用者登出中……"
+ },
+ {
+  "id": 92,
+  "src_sha256": "36bc0d381bfe8c013a9dcc94a9d5a85f8bcdac2a7b62016296834c1a7a34255c",
+  "zh": "請輸入查詢："
+ },
+ {
+  "id": 93,
+  "src_sha256": "44e3c5c6b2b26ec03b898670afc633b64765f289bdec8fb84cad337262b4117f",
+  "zh": "商品於福利社販售。"
+ },
+ {
+  "id": 94,
+  "src_sha256": "655d0584911b92ed7a644d9f3466618ef8dc702ce9952d8658355a5923fa2ca7",
+  "zh": "我運算。"
+ },
+ {
+  "id": 96,
+  "src_sha256": "4e193288b805df3421078e7fd83f4858c0fc64031b80461ea29ba2d23cd5deb9",
+  "zh": "目前針對 T'Rang 、 Dark Savant 的宣告。"
+ },
+ {
+  "id": 97,
+  "src_sha256": "b7f404697ecdd54971533c2a87a1a6421b72e8eeb18beaa5d1eb92fe6c8317c6",
+  "zh": "機密船艦檔案……\n 分類： T'Rang 母艦\n 描述：軌道上。船上配備傳送裝置與護盾。無法突破。"
+ },
+ {
+  "id": 98,
+  "src_sha256": "322d60bb02413a1ba511ba5d528334192f1d9bb1681ce8f7826ec97d03086a0e",
+  "zh": "備註：調查顯示船上正在繁殖。關閉傳送裝置可能對船上的維生系統造成負擔。未來任務將進行調查。"
+ },
+ {
+  "id": 99,
+  "src_sha256": "d2503ee3337f5c08fed3061b110109b77d2cc04a22abba5f5f21222b35122219",
+  "zh": "機密船艦檔案……\n 分類： Dark Savant 座艦\n 描述：隱形。不明。\n 備註：無法確定船艦位置。"
+ },
+ {
+  "id": 101,
+  "src_sha256": "acf440991faebddef16cca46b2cf984b1506ac023721d345b57c9879b7da77b2",
+  "zh": "www.sir-tech.com"
+ },
+ {
+  "id": 102,
+  "src_sha256": "48a3d45bf455bb8e4e00ca3aba8b9edf20d4f1acdbb190c2c8d658631b740c6e",
+  "zh": "www.wizardry8.com"
+ },
+ {
+  "id": 103,
+  "src_sha256": "e8cf1cb4972c200fd06c8757a8fbc518b9724c061c3871cc711cfd3c41b9f5aa",
+  "zh": "0100 1100 0110 1001 0001 1010"
+ },
+ {
+  "id": 104,
+  "src_sha256": "f3b5720019a9c1c2603fe756fd02fffe4eab071174c734dc1210244695cec5f3",
+  "zh": "位置在 Arnika 。"
+ },
+ {
+  "id": 105,
+  "src_sha256": "585e7944158a1339e7e660ab6f921a0b15f76cc506d3635f130650a04423ce99",
+  "zh": "位置在 Trynton 。"
+ },
+ {
+  "id": 106,
+  "src_sha256": "e39c64aad3518568743795abc4b2b5abbebc8489d2244e7d2a6a17d8970c7b77",
+  "zh": "位置在沼澤。"
+ },
+ {
+  "id": 107,
+  "src_sha256": "8afd07e82600bd6715e2e3424dcf4b5787e6c8ffcecf7eb32ef373f27d42af48",
+  "zh": "位置在 Marten's Bluff 。"
+ },
+ {
+  "id": 108,
+  "src_sha256": "e6e886e39ed14430eb3a9b8fb2d4858bd8ee38ecc16c9836820400271726e832",
+  "zh": "位置在 Rapax Away Camp 。"
+ },
+ {
+  "id": 109,
+  "src_sha256": "0c2260add4c00c359acb89b84a1296c02e4c13d72aaf055ceca5ec74283f5456",
+  "zh": "位置在 Mt. Gigas 。"
+ },
+ {
+  "id": 110,
+  "src_sha256": "1c237200e5609c98287c5aec2ef74b9cceee91fae705a27dbd8261f518ee45e3",
+  "zh": "位置在海底洞窟。"
+ },
+ {
+  "id": 111,
+  "src_sha256": "4260732ac617c5b335ab891b5817a06d9bafd974155942b5bc5c70d769ce4c7a",
+  "zh": "位置在 Rapax Rift 。"
+ },
+ {
+  "id": 112,
+  "src_sha256": "39347622034e20bb5ced04115e1925372f4f73e8d621224cd406cac839dff0c6",
+  "zh": "位置在 Rapax Castle 。"
+ },
+ {
+  "id": 113,
+  "src_sha256": "21cf446128748db395bafda07807944637af07e6a58f6dca7bde996aedd6ae07",
+  "zh": "位置在 Ascension Peak"
+ },
+ {
+  "id": 114,
+  "src_sha256": "634b91002afecb84fa155474f97a0630a87deb3fc2408ec7ded789a639baaa58",
+  "zh": "位置在 Cosmic Circle 。"
+ },
+ {
+  "id": 115,
+  "src_sha256": "106c408e4627d12f58a1d53adfdfc470825cf4a425955442c3408d2a10793605",
+  "zh": "位置在 Mt. Gigas ，大本營。"
+ },
+ {
+  "id": 116,
+  "src_sha256": "e69e6ae9549f1adce10445dfe7f059fa92277d698bab671b028e9dbc2a51039e",
+  "zh": "答案不明。"
+ },
+ {
+  "id": 117,
+  "src_sha256": "dba279eeb52a04b1553e50c949bfe96f29e97414490fb6a7b6995aa5dbf86c5e",
+  "zh": "位置在 Bayjin 。"
+ },
+ {
+  "id": 118,
+  "src_sha256": "7a025b66cdb01d0e6c992793365f6475e6e09091f5cdb2995356fe3b852ff3f6",
+  "zh": "請輸入 EWAXX 登入名稱："
+ },
+ {
+  "id": 119,
+  "src_sha256": "1e99ad6ae4c11cd4c47515011b335fb92ad7a682b634b7864a1d723ca0ce31de",
+  "zh": "請輸入密碼："
+ },
+ {
+  "id": 120,
+  "src_sha256": "1e99ad6ae4c11cd4c47515011b335fb92ad7a682b634b7864a1d723ca0ce31de",
+  "zh": "請輸入密碼："
+ },
+ {
+  "id": 121,
+  "src_sha256": "1e99ad6ae4c11cd4c47515011b335fb92ad7a682b634b7864a1d723ca0ce31de",
+  "zh": "請輸入密碼："
+ },
+ {
+  "id": 122,
+  "src_sha256": "1e99ad6ae4c11cd4c47515011b335fb92ad7a682b634b7864a1d723ca0ce31de",
+  "zh": "請輸入密碼："
+ },
+ {
+  "id": 123,
+  "src_sha256": "1e99ad6ae4c11cd4c47515011b335fb92ad7a682b634b7864a1d723ca0ce31de",
+  "zh": "請輸入密碼："
+ },
+ {
+  "id": 124,
+  "src_sha256": "1e99ad6ae4c11cd4c47515011b335fb92ad7a682b634b7864a1d723ca0ce31de",
+  "zh": "請輸入密碼："
+ },
+ {
+  "id": 125,
+  "src_sha256": "1e99ad6ae4c11cd4c47515011b335fb92ad7a682b634b7864a1d723ca0ce31de",
+  "zh": "請輸入密碼："
+ },
+ {
+  "id": 126,
+  "src_sha256": "1e99ad6ae4c11cd4c47515011b335fb92ad7a682b634b7864a1d723ca0ce31de",
+  "zh": "請輸入密碼："
+ },
+ {
+  "id": 127,
+  "src_sha256": "8b2a93fba5a59ddcb49c928df83177d4d6fb62605e076be0176d270810507871",
+  "zh": "資料庫中無此使用者名稱。"
+ },
+ {
+  "id": 128,
+  "src_sha256": "08fc53de06ff2ccbf4ae8d7a68ed0f8c9dd3180aa3dcd001c02b722d5eb4833e",
+  "zh": "驗證密碼中……掃描病毒中……連線至 EWAXX 中央伺服器。已連線。"
+ },
+ {
+  "id": 129,
+  "src_sha256": "45c843370fda07733d18a7a56e41c459530aef130b569b7c71346ded386bd9b6",
+  "zh": "使用者名稱與密碼組合無法辨識。拒絕存取。"
+ },
+ {
+  "id": 130,
+  "src_sha256": "9e85bbaea7c942a14958b63bac80225227a21258fdb861e8206a7577bdd771b4",
+  "zh": "存取 900.4.162.148 中……已連線 EWAXX 無線。\n\n 請輸入查詢："
+ },
+ {
+  "id": 131,
+  "src_sha256": "36bc0d381bfe8c013a9dcc94a9d5a85f8bcdac2a7b62016296834c1a7a34255c",
+  "zh": "請輸入查詢："
+ },
+ {
+  "id": 132,
+  "src_sha256": "3a90d983ed467ad88451923fa0f8c1fa7aaaf6f407cc27fb0a534ee0e64b6dc8",
+  "zh": "分類：二等兵，警衛。\n 描述：目前任務，周邊警戒。\n 備註：無。"
+ },
+ {
+  "id": 133,
+  "src_sha256": "b393b3789daa56ba451ab44fef67411c3e09fca0de83d875dd5e47112c54f593",
+  "zh": "分類： IUF 將軍\n 描述：已故。\n 備註：於 Guardia 遭 T'Rang 殺害。"
+ },
+ {
+  "id": 134,
+  "src_sha256": "25666b53ef0501743c3daf91caa5f5bd0965e569f497322ffcbe0c13e530e093",
+  "zh": "分類：{{Android}}\n 描述：由 Dark Savant 創造。\n 備註：極度危險，只有一個執念：殺戮。"
+ },
+ {
+  "id": 135,
+  "src_sha256": "7ee96b5f13ab90975c432a2717fa6f6b509641bccc23fc1bb3827728b919b151",
+  "zh": "分類：追蹤者。\n 描述：極度聰明。\n 備註：因父親之死而極度痛恨 T'Rang 。曾在 Guardia 違抗命令，未經授權攻擊 T'Rang 營地，已受申誡。在另行通知前，所有任務都應受監督。"
+ },
+ {
+  "id": 136,
+  "src_sha256": "3ac8c934779e194e5ced1b41e1c859e98ae78c7ea0868fb220c2404f7b2dc150",
+  "zh": "分類： T'Rang 領袖\n 描述：已死。\n 備註：無。"
+ },
+ {
+  "id": 137,
+  "src_sha256": "91192cb792f2797ee8ffc468638c7fb0d8477db2ac67113bc51f53ac1f3266b6",
+  "zh": "分類： IUF 退役。無進一步資訊。"
+ },
+ {
+  "id": 138,
+  "src_sha256": "6f3b16eae587454da2af20becddc04803d3428d3e193cef320fc1ea4e7af67c3",
+  "zh": "分類：神祇\n 描述：基地回報描述一名自稱「 Cosmic Lords 使者」的生物。"
+ },
+ {
+  "id": 139,
+  "src_sha256": "d5a5d7863534c4d2ac6ad76946aef895e02169c8a665a0c33fec678a65a26e0d",
+  "zh": "實體： Microsoft\n 領域：地球\n 歷史：領導者於西元 2005 年被揭露是執行 LINUX 系統的{{Android}}。\n"
+ },
+ {
+  "id": 140,
+  "src_sha256": "47e674410a02003a3efe42eec120fd25d7d7f9e1c623e7a538af8d51d17a6827",
+  "zh": "遠端伺服器存取遭拒。"
+ },
+ {
+  "id": 141,
+  "src_sha256": "24794570e1cb048eb7fe9e775935efa90fd571a81c8898d6d79efd71354563d6",
+  "zh": "分類：中士，娛樂委員會\n 描述：人緣極佳、備受敬重，'35 年入伍。\n 備註：機密。"
+ },
+ {
+  "id": 142,
+  "src_sha256": "6dab757a108ea441a13920a59bcb369f02e9ca7ebd2c1397d13ac12ff6e91e02",
+  "zh": "分類：中士，訓練\n 描述： Guardia 之後加入 IUF ，負責訓練，待晉升。\n 備註：優秀的教官。近期砲術訓練意外造成部分身體傷殘，但預後良好。"
+ },
+ {
+  "id": 143,
+  "src_sha256": "f7a6cfc6d9956bea5e3c596b97620f69e058dd0d24977f7b7d9dc46392fc3ed0",
+  "zh": "分類：中士， UTU 任務\n 描述：**機密** Glumph 中士逐漸成為人事問題；態度不佳，在士兵之間引發問題。\n 備註： Yamo 將安排聽證會。"
+ },
+ {
+  "id": 144,
+  "src_sha256": "1115535e5043468b0dc7eebc6f0533b223bdf8c5bf01cb74377e6ded1b2abe1c",
+  "zh": "分類：退役中士，娛樂\n 描述：外交派任。 Saxx 中士於 '59 年從現役退伍。\n 備註：士兵們要求他到 Dominus ，屬士氣任務。"
+ },
+ {
+  "id": 145,
+  "src_sha256": "b955beaf9407614e931ba7dd8575d0a6dd7076389a8dc8b19ea81586aedcb46c",
+  "zh": "分類：新兵， SFT 。\n 描述：評估中。\n 備註：迄今任務成果極佳。 Yamo 每天都在檢閱其檔案。"
+ },
+ {
+  "id": 146,
+  "src_sha256": "f878a15dfe7b4752a30362e013880f3185b2c4d48ff52c4eaff699182a9e26b1",
+  "zh": "分類：中士，招募與特種作戰。\n 描述：人緣極佳、備受敬重，'32 年入伍。 Guardia 老兵。榮譽勳章。\n 備註：機密。"
+ },
+ {
+  "id": 147,
+  "src_sha256": "0eec5582058d93771fdbe5ee05c0f16a2a2ef9a922672aecfe66253a6e0d864c",
+  "zh": "未授權存取 EWAXX 。存取需具備 5 級安全權限。"
+ },
+ {
+  "id": 148,
+  "src_sha256": "fd12cf20ad5dc6c45676be3db4d655a52e3de42d11e7826f0c7341da9a976def",
+  "zh": "位置在 EWAXX 北方。"
+ },
+ {
+  "id": 149,
+  "src_sha256": "a12f0e91c68d50a9c0200fb0cfa415cc1b0b9fac6dd9d0ac5c480383f2e06c54",
+  "zh": "位置在 EWAXX 南方。"
+ },
+ {
+  "id": 150,
+  "src_sha256": "b8de2adeab70a4810b3e0a158f0d124810ffe52c342b4b1dff624c8ed026a94d",
+  "zh": "位置在 EWAXX 東方。"
+ },
+ {
+  "id": 151,
+  "src_sha256": "c7950da56a541243054f26f2d9d608cad8d5f6c3c127bf2913c3007fa2748a28",
+  "zh": "位置在 EWAXX 西方。"
+ }
+]

@@ -1,0 +1,22 @@
+# R5 帳本殘存：原帳本目錄（未入版）隨 worktree --force 移除而遺失（cc 失誤 2026-10-07）；下列為 impl-run stdout 全文
+impl-run 版本：claude-memory 4f736b4
+執行器: muse  模型: muse-spark-1.3  檔位: high
+沙箱：selftest PASS
+=== r0 基準：bash scripts/check-research.sh notes/research/2026-10-07-R5-pronouns-keywords.md
+r0 紅，且只紅在宣告的測試上：research:2026-10-07-R5-pronouns-keywords
+muse session id: 0e57430e-ae01-4cac-8224-394a9daa1dc4
+=== R5-pronouns-keywords 結束，本輪輸出：~/Projects/games/wiz8-mod-R5/.claude/pm-diffs/R5-pronouns-keywords.r0.out（最新一份：~/Projects/games/wiz8-mod-R5/.claude/pm-diffs/R5-pronouns-keywords.out）
+!!! 執行方沒有交「規格疑慮」段
+=== 驗收 exit=0（bash scripts/check-research.sh notes/research/2026-10-07-R5-pronouns-keywords.md）
+ok 第 0 輪，無停止條件成立（規模 medium，已過 0 分）
+結算：重做 1/2，高模 -/0，人類 0 次（高模未量測）
+收貨 commit 訊息加一行：Feedback-muse: [僅限本案｜可提煉通則｜待確認] <一句>（selfcheck 8b 與 feedback-collect.sh 讀這行）
+=== 未入版的改動（grok 做完常常不 commit 就退出，由 cc 審後分 commit）：
+ M notes/research/2026-10-07-R5-pronouns-keywords.md
+  model muse-spark-1.3 53
+  sum cache_read_tokens 3956385
+  sum cache_write_tokens 0
+  sum cached_tokens 3956385
+  sum input_tokens 4250962
+  sum output_tokens 36485
+  sum reasoning_tokens 22012

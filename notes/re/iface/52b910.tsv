@@ -1,0 +1,20 @@
+call	53	sp_gap_qsort	CRT qsort 的匯入識別；對六筆領域缺口作降序排序，等值順序依 shortsort 保留（notes/re/emu.md qsort）
+call	590950	character_sp_recovery_notification	以角色名稱及實際回復總量格式化通知；case 提供空名稱、合成 :%u 格式與空後綴，通知子函式照跑；無 renderer、模式零時沒有持久 UI 寫入，calc 輸出包含傳入通知的實際總量
+data	4	character_index_argument	第一個 cdecl 參數的堆疊位移；角色索引 0..7，亦是排序陣列尾端後一個缺口讀取的位置
+data	8	heal_amount_argument	第二個 cdecl 參數的堆疊位移；無號 32 位回復總需求
+data	52b8e0	realm_sp_gap_descending_comparator	以無號缺口比較，較大缺口先分配；相等回傳零，不以領域索引破同值
+data	5eb158	sp_gap_qsort_import	CRT qsort IAT 槽；六筆、每筆八 bytes，模擬器呼叫原版比較器，calc 重現六筆 shortsort 的同值順序
+data	685174	party_character_records	八名角色主記錄陣列指標，每筆 0x1862 bytes；case 以 characterIndex 尋址各領域最大與目前 SP
+data	68c09c	game_notification_text_directory	訊息目錄指標；本節點取 +0x68c 的角色 SP 回復通知格式，case 配置合成文字而非複製 exe 表
+data	ffffffffffffffd0	realm_sp_gap_records	掃描所得負堆疊位移；六筆領域索引與缺口的局部陣列，沒有額外全域表
+data	ffffffffffffffd4	realm_sp_gap_value	掃描所得負堆疊位移；局部領域缺口欄位，最大減目前 SP 後以 u32 保存
+data	ffffffffffffffdc	next_realm_sp_gap_value	掃描所得負堆疊位移；相鄰局部缺口用於控制分配及同值輪流
+field	eax+0x0	realm_sp_remaining_gap	排序後目前領域缺口；每回復一點減一，零時略過
+field	eax+0x8	next_realm_sp_remaining_gap	下一筆排序缺口，用無號比較決定繼續同輪或回到首筆；最後一筆會讀到第一參數 characterIndex，影響控制路徑但不影響更新結果
+field	eax-0x4	realm_sp_pool_index	排序記錄的領域索引，0..5 對應火、水、風、土、Mental、Divine（notes/re/combat-2.md:71），決定回寫哪個 SP
+field	ebx+ecx*4+0xb45	character_current_realm_sp	所選角色的領域目前 SP；每次增加一點，保留 32 位回繞，case 六格各自輸入輸出
+field	ecx+0x0	character_maximum_realm_sp	所選角色 +0xb25 起六格最大 SP，每格 u32，用來計算缺口
+field	ecx+0x20	character_current_realm_sp	所選角色 +0xb45 起六格目前 SP；與最大值相減保留 u32 回繞，包含目前大於最大值的輸入
+field	edx+0x0	realm_sp_gap_record_value	初始化局部排序記錄的缺口欄位，不是另一份角色 SP
+field	edx+0x68c	character_sp_recovery_message_format	訊息目錄內角色 SP 回復格式指標；case 使用合成 :%u 消耗真正的通知總量參數
+field	edx-0x4	realm_sp_gap_record_index	初始化局部排序記錄的領域索引，與缺口一起排序

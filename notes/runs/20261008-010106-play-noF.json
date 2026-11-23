@@ -1,0 +1,64 @@
+{
+  "run_id": "20261008-010106-play-noF",
+  "commit": "e969dd148b664126adba8806b2c3182bdb5bd920",
+  "scenario": {
+    "id": "play-noF",
+    "duration": 600,
+    "files": [
+      {
+        "src": "/tmp/claude-1000/-home-mg-Projects-games-wiz8-mod/d06f7575-86be-46cb-bd4f-47f006a4e13e/scratchpad/noF/ddraw.dll",
+        "dst": "ddraw.dll"
+      }
+    ],
+    "steps": []
+  },
+  "before_diff": "noise A Saves/Ascension Peak.SAV\nnoise A Saves/Ascension Peak2.SAV\nnoise A Saves/Bayjin Shallows.SAV\nnoise A Saves/Cosmic Circle.SAV\nnoise A Saves/Cosmic Circle2.SAV\nnoise A Saves/Ending.SAV\nnoise A Saves/Ending1.SAV\nnoise A Saves/Ending2.SAV\nnoise A Saves/Ending3.SAV\nnoise A Saves/Ending4.SAV\nnoise A Saves/Ending5.SAV\nnoise A Saves/Ending6.SAV\nnoise A Saves/Import/SAVEGAME.GLB\nnoise A Saves/Import/SAVEGAME.GRL\nnoise A Saves/Import/SAVEGAME.TRA\nnoise A Saves/Import/SAVEGAME.UMP\nnoise A Saves/Jan-Ette.SAV\nnoise A Saves/Mountain Wilderness Retro.Fin.SAV\nnoise A Saves/Mt. Gigas Water Caves.SAV\nnoise A Saves/Quick 1.SAV\nnoise A Saves/Quick 2.SAV\nnoise A Saves/Quick 3.SAV\nnoise A Saves/Rapax Castle Main Level.SAV\nnoise A Saves/light shield.SAV\nnoise A Saves/light sword.SAV\nnoise M Saves/CurrentGame.SAV\nnoise M Wiz8.CFG\nsummary: 25 added, 0 removed, 2 changed, 0 non-noise",
+  "after_diff": "noise M Saves/CurrentGame.SAV\nsummary: 0 added, 0 removed, 1 changed, 0 non-noise",
+  "after_clean": true,
+  "events": [
+    "0.1 start pid=21572"
+  ],
+  "modules": [],
+  "powershell": "",
+  "placed": [
+    {
+      "dst": "ddraw.dll",
+      "sha256": "c055140f306c36e55852655515afdf88f830225e3f4839491bd98bd5914a0e00"
+    }
+  ],
+  "shots": {},
+  "ddraw_log": [
+    "2026-10-08 01:01:28.310 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe attach real=C:\\WINDOWS\\SysWOW64\\ddraw.dll missing=0",
+    "2026-10-08 01:01:28.310 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked A 0x00407650",
+    "2026-10-08 01:01:28.310 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked B 0x004077d0",
+    "2026-10-08 01:01:28.311 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked S 0x004229e0",
+    "2026-10-08 01:01:28.311 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked G 0x004071f0",
+    "2026-10-08 01:01:28.311 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x004f35b0",
+    "2026-10-08 01:01:28.312 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x005d2a50",
+    "2026-10-08 01:01:28.312 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x0058ac00",
+    "2026-10-08 01:01:28.312 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x0058ae17",
+    "2026-10-08 01:01:28.312 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x005d0050",
+    "2026-10-08 01:01:28.313 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x005d03ad",
+    "2026-10-08 01:01:28.313 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x005d00e9",
+    "2026-10-08 01:01:28.313 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x005d0770",
+    "2026-10-08 01:01:28.313 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x005d0d24",
+    "2026-10-08 01:01:28.314 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x005d0811",
+    "2026-10-08 01:01:28.314 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked W 0x0058dcfc",
+    "2026-10-08 01:01:28.314 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe wstr patched 0x0064fc84",
+    "2026-10-08 01:01:28.315 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe wstr patched 0x0064a0a0",
+    "2026-10-08 01:01:28.315 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe wstr patched 0x006174b4",
+    "2026-10-08 01:01:28.315 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe wstr patched 0x006174c0",
+    "2026-10-08 01:01:28.315 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked nsf 0x0055a242 + swprintf/vswprintf IAT",
+    "2026-10-08 01:01:28.316 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe patched msg pitch 0x0058c749",
+    "2026-10-08 01:01:28.316 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe hooked msg first 0x0058c62c",
+    "2026-10-08 01:01:44.557 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe chars extended 252 -> 2952",
+    "2026-10-08 01:01:47.712 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe wrap hit 0x004f35b0",
+    "2026-10-08 01:01:55.221 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe wrap hit 0x0058ac00",
+    "2026-10-08 01:01:59.566 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe wrap hit 0x005d2a50",
+    "2026-10-08 01:02:56.960 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe shot ok C:\\Users\\User\\Pictures\\Wiz8\\Wiz8-20261008-010256-950.bmp 3840x2160 via=screen",
+    "2026-10-08 01:03:01.900 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe shot ok C:\\Users\\User\\Pictures\\Wiz8\\Wiz8-20261008-010301-889.bmp 3840x2160 via=screen",
+    "2026-10-08 01:03:04.594 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe shot ok C:\\Users\\User\\Pictures\\Wiz8\\Wiz8-20261008-010304-584.bmp 3840x2160 via=screen",
+    "2026-10-08 01:03:07.010 pid=21572 exe=C:\\Program Files (x86)\\Steam\\steamapps\\common\\Wizardry8\\Wiz8.exe shot ok C:\\Users\\User\\Pictures\\Wiz8\\Wiz8-20261008-010307-001.bmp 3840x2160 via=screen"
+  ],
+  "text_log_lines": 115
+}

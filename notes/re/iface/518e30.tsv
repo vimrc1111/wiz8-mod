@@ -1,0 +1,40 @@
+call	4e5620	monsterAtListIndex	按怪物列表序號取怪物記錄；case 配置列表與三筆怪物。本檔內聯
+call	5e2c70	monsterListCount	空列表指標回零，否則取列表 +8 的筆數；迴圈每次重讀。本檔內聯
+data	10	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffe8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffec	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff0	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	519150	attackKindDispatchTable	動作種類 0..8 的跳轉表，執行時從使用者 exe 讀；各種類分支在 n_518e30.go 逐項註明
+data	65be1c	spellDefinitions	法術記錄表基址，stride 0x1bf；射程在 +0x12f。case 擺合成記錄，不複製 exe 表
+data	6836a8	combatStatePtr	戰鬥狀態結構指標；+4 回合、+0x98+0xd4*槽 為槽旗標、+0xa54 開局封鎖旗標
+data	683f94	combatFormationMode	非零表示戰鬥中，與槽旗標一起決定期望態度
+data	683fad	monsterListPtr	怪物列表指標；+8 為筆數
+data	685174	partyCharacterRecords	隊伍角色記錄基址，stride 0x1862；case 擺八筆
+data	685178	partyActionRecords	角色動作記錄基址，stride 0x106；+0 存在旗標、+1 動作種類、+5 法術 ID、+0x19 物品清單指標
+data	687500	partyQuadrantBytes	隊形象限表基址（4 象限×3 位元組，0x687511 起），供手攻擊可用性與射程節點使用
+data	68751d	partyOrderBytes	三個隊形位置的角色槽位元組（0xff 為空）
+data	68751e	partyOrderBytes	同 68751d 表的後續位元組（逐位元組索引被拆成多個位址）
+data	687525	partyTeamBytes	每槽 12 bytes 結構的第一個位元組＝陣營
+data	687531	partyTeamBytes	同 687525 表第 1 槽
+data	68753d	partyTeamBytes	同 687525 表第 2 槽
+data	687585	partyTeamBytesEnd	687525 表（八槽×12）結尾位址，迴圈終止比較；非資料讀取
+field	eax*4+0x519150	attackKindDispatchEntry	動作種類跳轉表索引，見 data 519150
+field	eax*4+0x687525	partyTeamBytes	陣營位元組，見 data 687525
+field	eax+edx*1	partyActionPresence	動作記錄 +0 存在旗標，零則略過該槽
+field	ecx+0x4	combatRound	戰鬥狀態 +4 回合數，交開局條件判定
+field	ecx+eax*4+0x98	slotCombatFlag	戰鬥狀態每槽旗標（stride 0xd4），非零且戰鬥中期望態度為 2
+field	edi+0x107	monsterStatus	怪物 +0x107 狀態，須小於 0x12
+field	edi+0x14	monsterActive	怪物 +0x14 啟用旗標，零則略過
+field	edi+0x2b	monsterHP	怪物 +0x2b 生命，零則略過
+field	edi+eax*2+0x17b5	characterUnavailableFlag	角色 C+0x17b5 旗標；隊形位置上為零者計數，計數為零才放行
+field	edi+ebp*1+0xb01	characterMainStatus	角色 C+0xb01 主要狀態，須小於 0x12
+field	edi+ebp*1+0xb11	characterHP	角色 C+0xb11 生命，零不可作目標
+field	edx+0x0	無關	區域陣列／指標解參，非遊戲欄位
+field	edx+eax*1+0x12f	spellRange	法術記錄 +0x12f 射程（有號，-1 不可用，0 短射程）
+field	esi+0x68751d	partyOrderBytes	隊形位置位元組，見 data 68751d

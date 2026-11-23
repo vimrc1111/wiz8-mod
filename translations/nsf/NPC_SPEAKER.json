@@ -1,0 +1,42 @@
+[
+ {
+  "id": 35,
+  "src_sha256": "a4949e2c96de26681c9519749e57bfb362bbac2a8f40c89b24c35d1de111336d",
+  "zh": "什麼？"
+ },
+ {
+  "id": 36,
+  "src_sha256": "55c3e5daec20a64dcc70fbed694d58b7b529e567f03b0c43f0d6ac23630f7c4e",
+  "zh": "嗯？"
+ },
+ {
+  "id": 137,
+  "src_sha256": "53ecd27943c91274211f688ef257230a154629c96fdfa9f99a9673bbb7248f52",
+  "zh": "這裡是作業組。"
+ },
+ {
+  "id": 138,
+  "src_sha256": "f0dfc78c8b18aa3d5610b8661b77ce43856f2076decd519cdab0be4d2aca4839",
+  "zh": "這正是我們想聽的。把他們送上樓，Balbrak。"
+ },
+ {
+  "id": 139,
+  "src_sha256": "7a3f6f76c372c634657068c14398dd98ab94b68fc05e25d5c66201aeb6305e41",
+  "zh": "再說一次，Balbrak。你說的我一個字都聽不清楚。"
+ },
+ {
+  "id": 140,
+  "src_sha256": "bc06ea1fd7a39dcbd8ec2540fb1aee96f3f6318b433a678b7bfd220611a16202",
+  "zh": "好吧。我去叫保全（ security ）。以防萬一。"
+ },
+ {
+  "id": 141,
+  "src_sha256": "fc215ea63380def3360d2e2c9216bb40faffd95b07764d824a9f843e8ec88f4b",
+  "zh": "這裡是作業組。Balbrak，又是你嗎？"
+ },
+ {
+  "id": 142,
+  "src_sha256": "2221ecc6fc698512b3d3f28be2241ededdae5f7ca7312808e3b2c143fed335e8",
+  "zh": "已啟動，Balbrak。當作辦妥了。將軍那邊已經通知過。我下線了。"
+ }
+]

@@ -1,0 +1,106 @@
+call	2b6	無關	分析器對 import 的識別值；實際經 IAT 0x5ebaf4 呼叫 srAssertFail，只在 cov-exempt 的斷言塊出現
+call	40efa0	rand_n	亂數 R(n)：R(100) 決定各效果槽是否觸發、語音事件分支；calc 以 Rand 介面重放
+call	517950	diceReset	效果數量骰（E+4 底值、+6 骰數、+7 面數）重設；持續值低於 2 時才走，calc 的 quantity 重現並輸出三欄
+call	52c070	monsterFatigueApply	怪物目標效果槽 12：活著才扣 SP（cost ≥ SP 歸零）、M+0x242 = staminaFatigueLevel；SP 為零且狀態 17 槽 < 0x270f 時套用耗盡 523c00（樁）；calc aeStaminaDrain 原生重現
+call	53bf10	sourceIsMonster	第二參數 0：只有來源種類 2 為怪物；種類 2 且 ID -1 時 assert（calc panic）；決定效果槽 9、10 是否作用
+call	5e1c10	無關	operator delete：釋放函式開頭配置的 0x14 bytes 暫存清單，emu 堆不回收，無規則輸出
+call	5e1ce0	無關	operator new(0x14)：配置暫存清單緩衝，emu bump 配置，內容不外露，無規則輸出
+call	a	noticeTick	GetTickCount 的 u32 時鐘；hostile>1 時寫入語音事件 +0x34，case.tick=4660 固定
+data	10	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	14	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	18	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	543d74	attackEffectSlotJumpTable	效果槽 2..15 的分派目標表（switch），執行時從 exe 讀；calc 以槽號分支重現
+data	5e73db	無關	SEH 例外處理常式位址，寫進例外鏈，非遊戲資料
+data	5eb02c	noticeTickImport	GetTickCount 匯入槽；見 call a
+data	5ebaf4	無關	srAssertFail 匯入槽；只在斷言分支被呼叫
+data	5ece4c	無關	暫存清單的型別（vtable）指標，屬容器生命週期，無規則
+data	5ed8c8	voiceEventArgA	0x52e690 的語音參數，exe 常數，原樣傳入樁並記錄
+data	5ed914	voiceEventArgB	0x52e690 的語音參數，exe 常數，原樣傳入樁並記錄
+data	5ee668	voiceEventCookie	0x52e690 的語音參數，exe 常數，原樣傳入樁並記錄
+data	6175c0	characterNoticeFormat	角色事件訊息格式字串（%s），交 0x590950 格式化；calc 從 exe 讀並決定姓名色彩範圍長度
+data	6191bc	無關	怪物 ID 為 -1 的 assert 訊息；只在 cov-exempt 斷言塊
+data	6191e0	無關	角色索引為 -1 的 assert 訊息；只在 cov-exempt 斷言塊
+data	61d2ac	無關	斷言的來源檔名字串；只在斷言塊
+data	61dadc	無關	斷言訊息字串；只在 cov-exempt 斷言塊
+data	61db04	無關	斷言訊息字串；只在 cov-exempt 斷言塊
+data	61e602	noticeTextId	無號 16 位文字 ID（913），自文字表取角色事件訊息的結尾字串
+data	683fa5	hostileMonsterCount	敵對怪物數；>1 時效果槽 5 寫語音事件 +0x30/+0x34
+data	685174	party_characters	角色記錄陣列指標（步距 0x1862）
+data	685178	party_slots	隊伍格陣列指標（步距 262）；+0 在場、+0xf1 姓名色彩
+data	68518d	activeCharacterIndex	目前行動角色索引；與目標相同時改走角色事件訊息路徑
+data	68c09c	text_table	遊戲文字指標表；+0x5fc 為日誌字串，另依文字 ID 913 取訊息結尾
+data	68c510	damageEventCookie	傳給 0x52e690 的全域值，原樣記錄
+data	8	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffdff000	無關	FS 的 SEH 鏈存取辨識；非遊戲規則資料
+data	ffffffffffffff3c	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff43	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff44	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff48	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff4c	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff50	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff5c	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff60	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff68	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff70	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff74	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff7c	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff84	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff88	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff8c	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff94	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff98	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffff9c	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa0	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa4	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffa8	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffac	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb0	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb4	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffb8	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffbc	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	ffffffffffffffc0	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	fffffffffffffff4	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+data	fffffffffffffffc	無關	參數堆疊位移（或區域暫存位移）被分析為資料引用，非遊戲資料或表
+field	eax+0x0	attackStatsField	結尾累加：統計輸出（arg5）欄位逐欄加上區域區塊對應欄
+field	eax+0x107	monsterPrimaryState	怪物主狀態；≥ 0x12 停止效果迴圈
+field	eax+0x8	monsterTemplateIndex	怪物模板索引；取模板供體力消耗
+field	eax+ebp*1	attackStatsLocal	結尾累加：區域統計區塊欄位（與輸出區塊同偏移）
+field	eax+edx*2	partySlotPresence	隊伍格在場位元組（步距 262）；為零時 assert
+field	eax+edx*2+0xb01	characterPrimaryState	角色主狀態；≥ 0x12 停止效果迴圈
+field	ebp+0x10	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x10：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x18	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x18：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x20	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x20：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x24	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x24：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x2c	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x2c：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x34	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x34：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x38	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x38：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x3c	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x3c：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x44	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x44：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x48	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x48：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x4c	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x4c：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x50	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x50：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x54	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x54：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x68	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x68：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x6c	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x6c：各效果槽成功時累加，結尾併入輸出
+field	ebp+0x70	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0x70：各效果槽成功時累加，結尾併入輸出
+field	ebp+0xc	attackStatsLocal	區域統計區塊（僅 arg5 非零時存在）+0xc：各效果槽成功時累加，結尾併入輸出
+field	ebx+0x0	sourceKind	來源記錄種類；1 角色時走角色事件路徑
+field	ebx+0x30	voiceEventDelay	0x52e690 回傳的語音事件 +0x30，寫 0x320
+field	ebx+0x34	voiceEventTick	語音事件 +0x34，寫 GetTickCount
+field	ebx+0x4	sourceIndex	來源角色索引，經換算後作為語音事件 0x52e690 的參數
+field	ebx+0x50	attackStats50	統計輸出 +0x50（摧毀類計數）；區域 +0x50 非零時累加，其餘歸零
+field	ebx+0x68	attackStats68	統計輸出 +0x68
+field	ebx+0x6c	attackStats6c	統計輸出 +0x6c
+field	ebx+0x70	attackStats70	統計輸出 +0x70
+field	ebx+eax*4+0x8	attackStatsField	統計輸出 +0xc..+0x54 逐欄歸零
+field	ecx*4+0x543d74	attackEffectSlotJumpTable	效果槽分派表索引
+field	edi+0x0	targetKind	目標記錄種類：1 角色、3 怪物，其他 assert
+field	edi+0x4	targetCharacterIndex	目標角色索引（0..7）；-1 assert
+field	edi+0x8	targetMonsterId	目標怪物 ID；-1 assert，交 0x4e5550 查找
+field	edx+0x5fc	text383	文字表 +0x5fc，日誌樁的字串參數
+field	edx+ecx*4	text_table_entry	依文字 ID 取字串指標
+field	edx+esi*1+0x8	effectChance	效果物件 +8..+0x17 的 16 個機率位元組；0 跳過，R(100) < 值時作用
+field	esi+0x18	effectStrength	效果強度；數量 q = 強度/3 + 1 與各槽參數
+field	esi+0x1c	effectPenalty	效果抵抗減免參數

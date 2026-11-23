@@ -1,0 +1,25 @@
+call	2b6	無關	反組譯把函式前一段尾端跨界錯解成子呼叫；入口 bytes 沒有此呼叫，並非遊戲 helper。
+call	4e5550	findMonsterIndexById	依怪物 ID 先搜活動列表再搜備用列表；備用索引加 10000，找不到回 -1。來源 0x4e5550。
+call	4e5620	monsterAtIndex	把活動或備用索引轉成怪物記錄指標。來源 0x4e5620。
+call	5100b0	findMonsterGroupIndexById	依群體 ID 先搜活動列表再搜備用列表；備用索引加 10000。來源 0x5100b0。
+call	5101b0	monsterGroupAtIndex	把活動或備用索引轉成群體記錄指標。來源 0x5101b0。
+data	10	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	4	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	8	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	c	無關	參數堆疊位移被分析為資料引用，非遊戲資料或表
+data	5ebaf4	assertFailureImport	SR.DLL srAssertFail；只在 ID／索引找不到或種類不合法時呼叫，合法輸入不到。
+data	609b24	無關	斷言訊息字串，不參與規則。
+data	6175c8	無關	斷言診斷字串，不參與規則。
+data	617614	無關	斷言診斷字串，不參與規則。
+data	61d18c	無關	斷言來源檔名字串，不參與規則。
+data	685174	partyCharacterRecords	角色記錄陣列基址，每筆 0x1862 bytes；來源與目標角色都用索引讀同一陣列。
+field	esi+0x0	sourceKind	來源種類：1 角色、2 怪物，其他為斷言。
+field	esi+0x4	sourceCharacterIndex	來源種類為角色時的隊伍索引。
+field	esi+0x8	sourceMonsterId	來源種類為怪物時的怪物 ID。
+field	eax+0x0	targetKind	目標種類：1 角色、3 怪物、4 群體，其他為斷言。
+field	eax+0x4	targetCharacterIndex	目標種類為角色時的隊伍索引。
+field	eax+0x8	targetMonsterId	目標種類為怪物時的怪物 ID。
+field	eax+0xc	targetGroupId	目標種類為群體時的群體 ID。
+field	ecx+eax*2+0xa35	characterAllegiance	角色記錄 +0xa35 的 u32 陣營旗標，非零視為一方。
+field	eax+0x16	monsterAllegiance	怪物記錄 +0x16 byte，等於 1 視為一方。
+field	eax+0x2a	monsterGroupAllegiance	群體記錄 +0x2a byte，等於 1 視為一方。
