@@ -29,13 +29,6 @@ license = "ZPL-2.1/GPL mix"
 env     = "PROMODEUS_TOOL_MINGW_W64"
 why     = "cross-build the Windows DLL / ScummVM"
 
-[[requires_external]]
-name    = "bun"
-version = ""
-license = "MIT"
-env     = "PROMODEUS_TOOL_BUN"
-why     = "BitAtlas map adapter"
-
 [[key_file]]
 path   = "Wiz8.exe"
 sha256 = "18a74ff61c65b8a2d4cfa11ffce82ad7fef022a94eaf0c2f217e479e981420d2"
@@ -58,10 +51,5 @@ trigger        = "F10"
 effect      = "speed menu: up/down select, left/right change by 25% (10%-5000%), Home resets a row, End resets all, Esc/F10 closes; defaults monster move 400%, event pause 300%, attack animation 200%, party move 100%"
 verified_by = "MG playtest 2026-10-12 (menu works); headless run 072352; party-movement effect in game pending MG"
 
-[[feature]]
-trigger        = "(external page)"
-effect      = "live map page (BitAtlas) fed by the hook writing MAPPOS.JS"
-verified_by = "MG 2026-10-31 (map matches in-game view); position dot checked headless/test-double only"
-
 [notes]
-limits = "Baseline hashes are the Steam v1.2.4 install (baseline/2026-10-07-steam-clean.json); GOG and other builds unverified. Steam copy was uninstalled 2026-11-01, so CI lanes that read the original are red. release.sh needs Windows' SysWOW64 ddraw.dll (SYS_DDRAW= override); the map deploy (bitatlas/deploy.sh wiz8) needs the shared ../bitatlas outside the case dir. Third-party save editors show garbled text while the patch is installed: run uninstall.bat first."
+limits = "Baseline hashes are the Steam v1.2.4 install (baseline/2026-10-07-steam-clean.json); GOG and other builds unverified. Steam copy was uninstalled 2026-11-01 and reinstalled 2026-11-23; without it CI lanes that read the original are red. release.sh needs Windows' SysWOW64 ddraw.dll (SYS_DDRAW= override); Third-party save editors show garbled text while the patch is installed: run uninstall.bat first."
