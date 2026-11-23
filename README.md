@@ -110,6 +110,33 @@ bash scripts/ci-run.sh wiz8-mod bash scripts/ci-check.sh   # 本機 CI（五道�
 | `tickets/` | 工單與收貨帳本（`tickets/ledger/`）：每張單的規格、驗收、派工紀錄 |
 | `resume.md` | 進度總表與結案狀態（2026-11-01 結案） |
 
+### 交給 AI 接手（ChatGPT／Claude 訂閱）
+
+在 WSL 裡 `git clone https://github.com/vimrc1111/wiz8-mod.git` 後 `cd wiz8-mod`，依訂閱啟動：
+
+- ChatGPT 訂閱：執行 `codex`（Codex CLI）
+- Claude 訂閱：執行 `claude`（Claude Code，會自動載入 `CLAUDE.md`）
+
+然後貼下面這段，最後一行換成要做的事：
+
+```
+你要接手這個 repo：Wizardry 8 中文化＋現代機器相容 mod，必須搭配 Steam 版 Wizardry 8 v1.2.4 原版使用。
+
+先做這三件事再動手：
+1. 讀完 README.md，再讀 CLAUDE.md 的「CI」段。CLAUDE.md 的「派工」「常設核准」是原作者自己的工作流程，不適用，忽略。
+2. 照 README「開發機需要」逐項檢查環境：Go（版本見 go.mod）、i686-w64-mingw32、python3、cpio、原版遊戲目錄（WIZ8_DIR）、系統 32 位元 ddraw.dll（SYS_DDRAW）、兩個字型檔（來源見 assets/LICENSES）。缺什麼列給我，不要自己下載或複製任何原版遊戲檔。
+3. 跑 go test ./... 和 bash scripts/ci-run.sh wiz8-mod bash scripts/ci-check.sh，回報五道（go／hook／tr／lib／zhpatch）各自的結果。
+
+一律遵守：
+- 原版遊戲目錄只讀，一個 byte 都不改；不碰 Saves 存檔。
+- repo 不收原版檔案、從原版抽出的表或反組譯碼；這類產物放 build/（已 gitignore）。
+- 改動前先說要改哪些檔；改完跑 CI，把結果給我看。
+
+我要做的事：<例如「在新電腦裝好中文化」「修某段譯文」>
+```
+
+只想玩、不開發：照上面「安裝」段跑 `install.bat` 即可，不需要 AI。
+
 ### 工作紀錄
 
 - 工作規則、派工、常設核准：`CLAUDE.md`；進度與結案狀態：`resume.md`（2026-11-01 結案）。
