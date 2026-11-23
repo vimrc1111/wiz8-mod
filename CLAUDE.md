@@ -30,7 +30,7 @@ Wizardry 8 中文化＋現代機器相容。原版資料與美術一個 byte 不
 - 與地板 §10.8 的差異（專案規格優先）：cc 也寫碼；agy 從選填實作改為研究。
 
 ## 常設核准（MG 在本專案直接給，地板 §5.2）
-- push：「給你常設 push 的授權」（MG 2026-10-08）。2026-10-19～11-23 曾併入 `rpg-mod`（子目錄 `wiz8-mod/`）；2026-11-23 拆回獨立 repo（單一 first commit，舊歷史留在 rpg-mod）。origin＝`https://github.com/vimrc1111/wiz8-mod.git`（MG 2026-11-23：「這是獨立 repo」）。照舊要 tip 有 CI exit 0 證據（pre-push 閘）。不含 force push、改寫已推歷史。
+- push：「給你常設 push 的授權」（MG 2026-10-08）。2026-10-19～11-23 曾併入 `rpg-mod`（子目錄 `wiz8-mod/`）；2026-11-23 拆回獨立 repo（從 first commit 重新起始，舊歷史留在 rpg-mod）。origin＝`https://github.com/vimrc1111/wiz8-mod.git`（MG 2026-11-23：「這是獨立 repo」）。照舊要 tip 有 CI exit 0 證據（pre-push 閘）。不含 force push、改寫已推歷史。
 - 數值規劃範圍：「只要碰到要實際跑遊戲路線或投射障礙物的都不做。你可以理解爲我們現在單純跑數值規劃而不是實體世界」（MG 2026-10-11）。地圖幾何、路徑、移動、射線／視線、投射物、碰撞、放置一律排除，結果當 case 輸入（`decisions/2026-10-11-numeric-only-scope.md`）。
 - 排除登記：「未來這些排除跟登記你自己判斷就好」（MG 2026-10-10）。範圍：`notes/re/formula-graph.d` 的 `排除` 歸類由 cc 判斷，不逐列上報；一列一 commit 附證據照舊（`decisions/2026-10-10-exclusion-delegated.md`）。
 

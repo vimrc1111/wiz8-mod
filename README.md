@@ -161,4 +161,4 @@ bash scripts/ci-run.sh wiz8-mod bash scripts/ci-check.sh   # 本機 CI（五道�
 
 - 工作規則、派工、常設核准：`CLAUDE.md`；進度與結案狀態：`resume.md`（2026-11-01 結案）。
 - 安裝流程實測紀錄：`notes/zh-patch-log.md:257`。
-- 本 repo 從 `rpg-mod`（子目錄 `wiz8-mod/`）的最新進度拆出，只有一個 first commit；完整歷史（含 2026-10-19 併入前的原 repo 歷史）留在 `rpg-mod`。文件裡引用的 commit sha 要到 `rpg-mod` 查（`git -C rpg-mod show <sha>`）。
+- 本 repo 從開發完成時的狀態重新起始，不帶開發期間的 git 歷史；文件裡引用的 commit sha 屬於那段歷史，只供對照，不在本 repo 內。
