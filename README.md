@@ -95,6 +95,21 @@ bash scripts/ci-run.sh wiz8-mod bash scripts/ci-check.sh   # 本機 CI（五道�
 
 近戰與單體直接傷害法術的期望傷害；公式條目在 `notes/re/formulas.md`。結論與用法見 `notes/party.md`（最終隊伍建議）。
 
+### 文件導覽
+
+| 文件 | 內容 |
+|---|---|
+| `notes/party.md` | **最佳隊伍試算**：用從原版反組譯推得的戰鬥公式，對全部職業×種族×武器組合算期望擊殺值，排出 6 人隊與每人配裝（武器、取得處）。現行結論在檔頭 TL;DR；舊版定稿留在後段作沿革 |
+| `notes/calc.md` | 試算工具 `tools/calc` 的用法與限制：`fight`（單角色一回合近戰）、`rank`（開局列舉排名）、`party`（創角 Pareto 前緣）、掉落查表 |
+| `notes/calc-qa.md` | calc 題庫：「某情境該算出多少」的固定問答，CI 機檢讀取 |
+| `notes/re/` | 反組譯推得的遊戲規則，每條附 exe 位址：`formulas.md`（近戰公式）、`combat-*.md`（戰鬥流程與時序）、`weapon-effects.md`（武器特效）、`loot.md`（掉落）、`growth.md`（升級成長）、`draw.md`（繪字，中文化用）等 |
+| `notes/zh-patch-log.md` | 中文化技術紀錄：PATCH 疊讀規則、ddraw 代理、CJK 繪字路線、驗收規則、安裝流程實測 |
+| `notes/research/` | 外部研究：檔案格式（SLF／DBS／NSF）、社群翻譯（德／法／日）、存檔修改器、社群攻略與隊伍說法對照，每條附來源 |
+| `decisions/` | 重要裁決，例如反組譯解禁與「必須搭配原版」原則、試算只做數值不碰地圖幾何 |
+| `goals/stage1.md`～`stage16.md` | 各階段目標與完成條件：1–7 中文化、8–16 戰鬥加速、遊戲內選單、配裝試算 |
+| `tickets/` | 工單與收貨帳本（`tickets/ledger/`）：每張單的規格、驗收、派工紀錄 |
+| `resume.md` | 進度總表與結案狀態（2026-11-01 結案） |
+
 ### 工作紀錄
 
 - 工作規則、派工、常設核准：`CLAUDE.md`；進度與結案狀態：`resume.md`（2026-11-01 結案）。
